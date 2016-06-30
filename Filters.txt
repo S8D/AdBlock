@@ -1,0 +1,116 @@
+[Adblock Plus 2.0]
+! Title: Darias: Gg.gG/a_
+! Expires: 3 days
+! Last edit by: Darias
+! License: Gg.gG/a_
+! ChangeLog: Sắp xếp theo ABC
+! Updated: 20160530
+!-------------------------------------=><=-------------------------------------
+##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
+*.fshare.vn/images/homepage/bg_content_page.jpg
+@@_social_icons.
+@@||ouo.io^$elemhide
+@@||uplod.it^$elemhide
+ads.zaloapp.com###msgModal
+ads.zaloapp.com##.modal-backdrop.fade.in
+ads.zaloapp.com##.modal.fade.in
+d-h.st/assets/img/download3.png
+datafilehost.com###dldtable > TBODY > TR:first-child
+datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
+facebook.com###pagelet_canvas_nav_content
+facebook.com###pagelet_ego_pane
+facebook.com###u_0_0
+facebook.com##*._64b.fixed_elem
+facebook.com##._4-u2._5v6e.cardRightCol._4-u8
+facebook.com##._5qqe
+freetuts.net##div#boxed-content-wrapper.clearfix
+freetuts.net##div#show-popup-bottom
+fshare.vn###popup-eventFollowFolder
+fshare.vn##*.dl_6
+fshare.vn##*.pull-left.saokhue_lbl
+fshare.vn##*.pull-right
+fshare.vn##.btn.btn-danger.btn-lg.btn-block.clearfix.btn-download-vip
+fshare.vn##.btn.btn-default.btn-lg.btn-block.dl-btn.btn-download-free
+fshare.vn##.btn.btn-primary.btn-lg.btn-block.btn-download-sms
+fshare.vn##.col-lg-12
+fshare.vn##.logo
+fshare.vn##div.modal-backdrop.in
+hdvietnam.com###sidebar_container
+hdvietnam.com###topbillboard
+hdvietnam.com###yamaha_ads_1
+hdvietnam.com###yamaha_ads_2
+linksieutoc.net##.col.s12.m4
+linksieutoc.net##.nav-down
+linksieutoc.net##.page-footer.teal
+linksvip.net###box_huongdan
+linksvip.net###box_most_download
+linksvip.net###footer
+linksvip.net##div.col-md-4:last-child
+linksvip.net##div.col-sm-6:nth-child(2)
+linksvip.net##div.likebox-fb:nth-child(15)
+linksvip.net##div.mainbar:nth-child(9)
+linksvip.net##div.row.quangcao-top:first-child
+rsload.net###e00001959e_c_0
+rsload.net###e00001959e_c_1
+rsload.net###e00001959e_c_2
+rsload.net###e00001959e_c_3
+rsload.net###e00001959e_c_4
+rsload.net###foot
+rsload.net###loga
+sinhvienit.net###vtlai_bookmark
+sinhvienit.net###vtlai_top_box
+talk.secafe.vn###headerProxy
+talk.secafe.vn##.hs-hide-992
+talk.secafe.vn##.mfp-container.mfp-s-ready.mfp-inline-holder
+talk.secafe.vn##.scrollContainer
+talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-right: 12px; background-color: #ccc;"]
+uploadshub.com/images/start-download.gif
+userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
+vn-zoom.com###header
+vn-zoom.com##.floatcontainer.doc_header
+vn-zoom.com##.z2-zads-zone
+vn-zoom.com##blink
+vn-zoom.com##div[style="float:left;width:49%;padding-right:2px"]
+vn-zoom.com##td[width="300"][valign="top"]
+youtube.com##*.video-ads
+youtube.com/embed/*$domain=www.fshare.vn|www.zero-cyberz-server.com|safetyurlzerocyberz.blogspot.com
+zero-cyberz-server.com##*.author-meta
+zero-cyberz-server.com##*.main-header
+zero-cyberz-server.com##*.main-menu
+zero-cyberz-server.com##*.sidebar
+zero-cyberz-server.com##*.sub-navigation
+zero-cyberz-server.com##*.sub-navigation-footer
+zero-cyberz-server.com##*.sweet-alert.showSweetAlert.visible
+zero-cyberz-server.com##*.sweet-overlay
+zero-cyberz-server.com##footer
+||*.2mdn.*^
+||*.adloft.*^
+||*.adskeeper.*^
+||*.adtimaserver.*^
+||*.advertisingwouldbegreat.*^
+||*.alicdn.com^
+||*.comeadvertisewithus.*^
+||*.doubleclick.*^
+||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
+||*.fshare.vn/images/default/*.jpg
+||*.fshare.vn/img/background/*.png
+||*.fshare.vn/web/*.gif
+||*.googleadservices.*^
+||*.googlesyndication.*^
+||*.hit4hit.*^
+||*.kjsrv.net^
+||*.popads.*^
+||*.tamanae.*^
+||*.wap4dollar.*^
+||ads.crackhex.com^
+||click.alibaba.com^
+||crackhex.com^$popup
+||facebook.com/plugins/comments.php$domain=chiasenhac.com|zero-cyberz-server.com|igame4v.com|getlinkonline.com|nhac.pro.vn
+||freetuts.net/public/theme/js/adsense.js
+||freetuts.net/public/theme/js/my.js
+||i1.wp.com/codex.onhax.net
+||marketing.vatgia.com^
+||rsload.net/images5/2120.png
+||storage.fshare.vn/images/ball.png
+||uplod.it^$popup
+||userscloud.com^$popup
