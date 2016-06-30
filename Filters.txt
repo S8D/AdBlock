@@ -4,7 +4,7 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 20160530
+! Updated: 2016++
 !-------------------------------------=><=-------------------------------------
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fshare.vn/images/homepage/bg_content_page.jpg
