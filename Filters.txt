@@ -6,6 +6,8 @@
 ! ChangeLog: Sắp xếp theo ABC
 ! Updated: 2016++
 !-------------------------------------=><=-------------------------------------
+@@||4.3.2.1$elemhide
+||*.eclick.*^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fshare.vn/images/homepage/bg_content_page.jpg
 @@_social_icons.
