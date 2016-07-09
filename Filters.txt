@@ -6,11 +6,10 @@
 ! ChangeLog: Sắp xếp theo ABC
 ! Updated: 2016++
 !-------------------------------------=><=-------------------------------------
-@@||4.3.2.1$elemhide
-||*.eclick.*^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fshare.vn/images/homepage/bg_content_page.jpg
 @@_social_icons.
+@@||4.3.2.1$elemhide
 @@||ouo.io^$elemhide
 @@||uplod.it^$elemhide
 ads.zaloapp.com###msgModal
@@ -101,6 +100,7 @@ zero-cyberz-server.com##footer
 ||*.alicdn.com^
 ||*.comeadvertisewithus.*^
 ||*.doubleclick.*^
+||*.eclick.*^
 ||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
 ||*.fshare.vn/images/default/*.jpg
 ||*.fshare.vn/img/background/*.png
@@ -109,6 +109,7 @@ zero-cyberz-server.com##footer
 ||*.googlesyndication.*^
 ||*.hit4hit.*^
 ||*.kjsrv.net^
+||*.opus-static.*
 ||*.popads.*^
 ||*.tamanae.*^
 ||*.wap4dollar.*^
@@ -121,7 +122,10 @@ zero-cyberz-server.com##footer
 ||i1.wp.com/codex.onhax.net
 ||marketing.vatgia.com^
 ||rsload.net/images5/2120.png
+||sbbanner.*^
 ||storage.fshare.vn/images/ball.png
 ||uniad.phimmoi.net^
 ||uplod.it^$popup
 ||userscloud.com^$popup
+||videowood.tv^
+||ylx-1.com
