@@ -63,6 +63,12 @@ rsload.net###foot
 rsload.net###loga
 sinhvienit.net###vtlai_bookmark
 sinhvienit.net###vtlai_top_box
+sinhvienit.net##.link_box
+sinhvienit.net###footer
+sinhvienit.net##.footer
+sinhvienit.net##.inner_block
+sinhvienit.net###header
+sinhvienit.net##.threadinfohead
 sitecuatui.com###sidebar
 talk.secafe.vn###headerProxy
 talk.secafe.vn##.hs-hide-992
