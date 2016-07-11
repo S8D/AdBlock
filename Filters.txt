@@ -12,6 +12,11 @@
 @@||4.3.2.1$elemhide
 @@||ouo.io^$elemhide
 @@||uplod.it^$elemhide
+||storage.fshare.vn/images/*.gif
+uptobox.com###fan-exit
+vn-zoom.com###footerMain
+vn-zoom.com##.clearfix
+vn-zoom.com##.options_block_container
 ads.zaloapp.com###msgModal
 ads.zaloapp.com##.modal-backdrop.fade.in
 ads.zaloapp.com##.modal.fade.in
