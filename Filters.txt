@@ -16,6 +16,7 @@
 ||*.uniad.*
 ||*.admicro.*
 ||*.googletagservices.*
+||*.phimmoi.*/widget.php
 uptobox.com###fan-exit
 vn-zoom.com###footerMain
 vn-zoom.com##.clearfix
