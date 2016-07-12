@@ -13,6 +13,8 @@
 @@||ouo.io^$elemhide
 @@||uplod.it^$elemhide
 ||storage.fshare.vn/images/*.gif
+||*.uniad.*
+||*.admicro.*
 ||*.googletagservices.*
 uptobox.com###fan-exit
 vn-zoom.com###footerMain
