@@ -4,7 +4,7 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.07.16+
+! Updated: 2016.07.24+
 !-------------------------------------=><=-------------------------------------
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fshare.vn/images/homepage/bg_content_page.jpg
@@ -89,6 +89,7 @@ talk.secafe.vn##.mfp-container.mfp-s-ready.mfp-inline-holder
 talk.secafe.vn##.scrollContainer
 talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-right: 12px; background-color: #ccc;"]
 tamnhin.net##.col_180.right.clearfix
+tampermonkey.net##td[style="vertical-align: top;"]
 uploadshub.com/images/start-download.gif
 uptobox.com###fan-exit
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
@@ -161,4 +162,5 @@ zero-cyberz-server.com##footer
 ||uniad.phimmoi.net^
 ||uplod.it^$popup
 ||userscloud.com^$popup
+||vn-zoom.com/img/custommudim.js
 ||ylx-1.com
