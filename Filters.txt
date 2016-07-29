@@ -4,8 +4,18 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.07.24+
+! Updated: 2016.07.30+
 !-------------------------------------=><=-------------------------------------
+linksvip.net###ouo
+quantrimang.com##.underlay
+quantrimang.com###_shad_3
+quantrimang.com##.outclose
+quantrimang.com##.modal-body
+quantrimang.com###footer
+quantrimang.com##.clearfix
+||realclick.vn
+||asc.quantrimang.com
+||quantrimang.com/scripts/main?
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fshare.vn/images/homepage/bg_content_page.jpg
 /banners/click/*
