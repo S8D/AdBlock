@@ -16,6 +16,7 @@ quantrimang.com##.clearfix
 ||realclick.vn
 ||asc.quantrimang.com
 ||quantrimang.com/scripts/main?
+||mystatus.skype.com/smallicon/*
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fshare.vn/images/homepage/bg_content_page.jpg
 /banners/click/*
