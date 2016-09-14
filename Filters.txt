@@ -4,8 +4,23 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.08.03+
+! Updated: 2016.09.14+
 !-------------------------------------=><=-------------------------------------
+*phim2b.*$popup
+||uptruyen.*
+||*.facebook.*$domain=linksieutoc.net
+||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
+linksieutoc.net###fb-chat-header
+userscloud.com##.jkfuxayxx1473507998442fwzkra
+chiasenhac.vn##.vjs-error-display
+chiasenhac.vn###vid2
+chiasenhac.vn##.video-js.vjs-default-skin.vjs-controls-enabled.vjs-has-started.vjs-waiting.vjs-error.vjs-paused.vjs-user-active
+forum.xda-developers.com###footer
+linksvip.net###social
+linksvip.net##.col-sm-6
+linksvip.net##.tag
+linksvip.net##.portlet-header
+
 linksvip.net###ouo
 quantrimang.com##.underlay
 quantrimang.com###_shad_3
