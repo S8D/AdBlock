@@ -20,7 +20,8 @@ linksvip.net###social
 linksvip.net##.col-sm-6
 linksvip.net##.tag
 linksvip.net##.portlet-header
-
+facebook.com###u_ps_0_1_2
+facebook.com###pagelet_canvas_nav_content
 linksvip.net###ouo
 quantrimang.com##.underlay
 quantrimang.com###_shad_3
