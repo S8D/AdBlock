@@ -4,8 +4,16 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.09.14+
+! Updated: 2016.10.28+
 !-------------------------------------=><=-------------------------------------
+||money.yandex.ru^
+||*.bitpit.*^
+||*.liveinternet.*^
+||*.omiai-jp.*^
+sonyfan.vn###sidebar > .theiaStickySidebar
+sonyfan.vn###check-also-box
+sonyfan.vn###wrapper > .inner-wrapper > .footer-bottom
+@@||https://www.dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/popup_handler.min-vflNC-RB-.js
 *phim2b.*$popup
 ||uptruyen.*
 ||*.facebook.*$domain=linksieutoc.net
