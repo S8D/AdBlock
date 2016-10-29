@@ -13,7 +13,7 @@
 sonyfan.vn###sidebar > .theiaStickySidebar
 sonyfan.vn###check-also-box
 sonyfan.vn###wrapper > .inner-wrapper > .footer-bottom
-@@||https://www.dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/popup_handler.min-vflNC-RB-.js
+@@||https://www.dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
 *phim2b.*$popup
 ||uptruyen.*
 ||*.facebook.*$domain=linksieutoc.net
