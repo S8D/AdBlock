@@ -4,8 +4,19 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.10.28+
+! Updated: 2016.11.11+
 !-------------------------------------=><=-------------------------------------
+mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
+mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
+mackie100projects.altervista.org##*.shareaholic-share-buttons-container
+*.disquscdn.*$domain=mackie100projects.altervista.org
+disqus.*$domain=mackie100projects.altervista.org
+mackie100projects.altervista.org###et-bio-author
+mackie100projects.altervista.org###et-post-share
+mackie100projects.altervista.org###menu-navigation
+mackie100projects.altervista.org###copyright
+mackie100projects.altervista.org##.av-credit-link
+mackie100projects.altervista.org###top-info
 ||money.yandex.ru^
 ||*.bitpit.*^
 ||*.liveinternet.*^
