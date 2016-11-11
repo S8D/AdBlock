@@ -36,7 +36,6 @@ quantrimang.com###_shad_3
 quantrimang.com##.outclose
 quantrimang.com##.modal-body
 quantrimang.com###footer
-quantrimang.com##.clearfix
 talk.secafe.vn##.mfp-wrap.mfp-close-btn-in.mfp-auto-cursor.mfp-ready
 talk.secafe.vn##.mfp-bg.mfp-ready
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
