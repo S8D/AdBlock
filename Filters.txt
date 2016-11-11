@@ -6,6 +6,9 @@
 ! ChangeLog: Sắp xếp theo ABC
 ! Updated: 2016.11.11+
 !-------------------------------------=><=-------------------------------------
+||macintosh.vn/forum/js/jscustome.js
+||macintosh.vn/forum/js/jquery.gallery.js
+macintosh.vn###dg-container
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
 mackie100projects.altervista.org##*.shareaholic-share-buttons-container
