@@ -81,6 +81,7 @@ mackie100projects.altervista.org###menu-navigation
 mackie100projects.altervista.org###top-info
 mackie100projects.altervista.org##*.shareaholic-share-buttons-container
 mackie100projects.altervista.org##.av-credit-link
+mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
 ouo.press##.about
