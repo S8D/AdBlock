@@ -145,16 +145,7 @@ vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 youtube.com##*.video-ads
-youtube.com/embed/*$domain=www.fshare.vn|www.zero-cyberz-server.com|safetyurlzerocyberz.blogspot.com
-zero-cyberz-server.com##*.author-meta
-zero-cyberz-server.com##*.main-header
-zero-cyberz-server.com##*.main-menu
-zero-cyberz-server.com##*.sidebar
-zero-cyberz-server.com##*.sub-navigation
-zero-cyberz-server.com##*.sub-navigation-footer
-zero-cyberz-server.com##*.sweet-alert.showSweetAlert.visible
-zero-cyberz-server.com##*.sweet-overlay
-zero-cyberz-server.com##footer
+youtube.com/embed/*$domain=www.fshare.vn|abc.com|
 ||*.2mdn.*^
 ||*.adloft.*^
 ||*.admicro.*
@@ -189,7 +180,7 @@ zero-cyberz-server.com##footer
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
 ||crackhex.com^$popup
-||facebook.com/plugins/comments.php$domain=chiasenhac.com|zero-cyberz-server.com|igame4v.com|getlinkonline.com|nhac.pro.vn
+||facebook.com/plugins/comments.php$domain=chiasenhac.com|igame4v.com|getlinkonline.com|nhac.pro.vn
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
 ||getlinkpro.net/images/banner_shink.jpg
