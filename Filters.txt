@@ -1,10 +1,11 @@
 [Adblock Plus 2.0]
-! Title: Darias: Gg.gG/a_    
-! Expires: 3 days
-! Last edit by: Darias
-! License: Gg.gG/a_
+! Version: 2016.11.13+
+! Title: Darias: Gg.gG/a_
+! Last modified: 2016.11.13+
+! Expires: 4 days
+! Homepage: Gg.gG/a_
+! Licence: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.11.13+
 !-------------------------------------=><=-------------------------------------
 ||secafe.vn/ads/maruko/728x90.gif$image
 talk.secafe.vn##.hs-hide-900
