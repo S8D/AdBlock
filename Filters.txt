@@ -6,6 +6,14 @@
 ! ChangeLog: Sắp xếp theo ABC
 ! Updated: 2016.11.11+
 !-------------------------------------=><=-------------------------------------
+||secafe.vn/ads/maruko/728x90.gif$image
+talk.secafe.vn##.hs-hide-900
+onhax.me###bottom-promo-dload
+uplod.ws##.adsbygoogle
+forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
+forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
+||.puhtml.^
+||.mobile-10.^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
