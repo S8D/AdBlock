@@ -4,7 +4,7 @@
 ! Last edit by: Darias
 ! License: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
-! Updated: 2016.11.11+
+! Updated: 2016.11.13+
 !-------------------------------------=><=-------------------------------------
 ||secafe.vn/ads/maruko/728x90.gif$image
 talk.secafe.vn##.hs-hide-900
