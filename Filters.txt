@@ -7,14 +7,6 @@
 ! Licence: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
 !-------------------------------------=><=-------------------------------------
-||secafe.vn/ads/maruko/728x90.gif$image
-talk.secafe.vn##.hs-hide-900
-onhax.me###bottom-promo-dload
-uplod.ws##.adsbygoogle
-forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
-forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
-||.puhtml.^
-||.mobile-10.^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -36,14 +28,9 @@ d-h.st/assets/img/download3.png
 datafilehost.com###dldtable > TBODY > TR:first-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 disqus.*$domain=mackie100projects.altervista.org
-facebook.com###pagelet_canvas_nav_content
-facebook.com###pagelet_ego_pane
-facebook.com###u_0_0
-facebook.com###u_ps_0_1_2
-facebook.com##*._64b.fixed_elem
-facebook.com##._4-u2._5v6e.cardRightCol._4-u8
-facebook.com##._5qqe
 forum.xda-developers.com###footer
+forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
+forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
 fshare.vn###popup-eventFollowFolder
@@ -93,6 +80,7 @@ mackie100projects.altervista.org##.av-credit-link
 mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
+onhax.me###bottom-promo-dload
 ouo.press##.about
 ouo.press##.footer-copy
 ouo.press##.join-now
@@ -126,6 +114,7 @@ sonyfan.vn###check-also-box
 sonyfan.vn###sidebar > .theiaStickySidebar
 sonyfan.vn###wrapper > .inner-wrapper > .footer-bottom
 talk.secafe.vn###headerProxy
+talk.secafe.vn##.hs-hide-900
 talk.secafe.vn##.hs-hide-992
 talk.secafe.vn##.mfp-bg.mfp-ready
 talk.secafe.vn##.mfp-container.mfp-s-ready.mfp-inline-holder
@@ -135,6 +124,7 @@ talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-righ
 tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
 uploadshub.com/images/start-download.gif
+uplod.ws##.adsbygoogle
 uptobox.com###fan-exit
 userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
@@ -185,6 +175,8 @@ youtube.com/embed/*$domain=www.fshare.vn|abc.com|
 ||*.tamanae.*^
 ||*.uniad.*
 ||*.wap4dollar.*^
+||.mobile-10.^
+||.puhtml.^
 ||ads.crackhex.com^
 ||asc.quantrimang.com
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
@@ -206,6 +198,7 @@ youtube.com/embed/*$domain=www.fshare.vn|abc.com|
 ||realclick.vn
 ||rsload.net/images5/2120.png
 ||sbbanner.*^
+||secafe.vn/ads/maruko/728x90.gif$image
 ||shink.in/imagenes/logo.png
 ||storage.fshare.vn/images/*.gif
 ||storage.fshare.vn/images/ball.png
