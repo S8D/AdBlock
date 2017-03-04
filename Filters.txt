@@ -28,6 +28,8 @@ d-h.st/assets/img/download3.png
 datafilehost.com###dldtable > TBODY > TR:first-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 disqus.*$domain=mackie100projects.altervista.org
+www.facebook.com###u_ps_0_1_3
+www.facebook.com###pagelet_canvas_nav_content
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
