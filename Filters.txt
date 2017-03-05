@@ -57,19 +57,15 @@ linksieutoc.net###fb-chat-header
 linksieutoc.net##.col.s12.m4
 linksieutoc.net##.nav-down
 linksieutoc.net##.page-footer.teal
-linksvip.net###box_huongdan
-linksvip.net###box_most_download
+linksvip.net##.portlet:nth-of-type(4)
 linksvip.net###footer
-linksvip.net###ouo
-linksvip.net###social
-linksvip.net##.col-sm-6
-linksvip.net##.portlet-header
-linksvip.net##.tag
-linksvip.net##div.col-md-4:last-child
-linksvip.net##div.col-sm-6:nth-child(2)
-linksvip.net##div.likebox-fb:nth-child(15)
-linksvip.net##div.mainbar:nth-child(9)
-linksvip.net##div.row.quangcao-top:first-child
+||linksvip.net/images/bg-facebook.png$image
+linksvip.net##.likebox-fb
+linksvip.net##.col-md-4 > .portlet:nth-of-type(3)
+linksvip.net##.portlet:nth-of-type(2)
+||linksvip.net/images/getlinktailieu.gif$image
+linksvip.net##.navbar
+linksvip.net##.col-md-8 > .row
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
 mackie100projects.altervista.org###et-bio-author
