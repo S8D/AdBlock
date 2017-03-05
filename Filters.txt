@@ -35,16 +35,15 @@ forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
-fshare.vn###popup-eventFollowFolder
-fshare.vn##*.dl_6
-fshare.vn##*.pull-left.saokhue_lbl
-fshare.vn##*.pull-right
-fshare.vn##.btn.btn-danger.btn-lg.btn-block.clearfix.btn-download-vip
-fshare.vn##.btn.btn-default.btn-lg.btn-block.dl-btn.btn-download-free
-fshare.vn##.btn.btn-primary.btn-lg.btn-block.btn-download-sms
-fshare.vn##.col-lg-12
-fshare.vn##.logo
-fshare.vn##div.modal-backdrop.in
+www.fshare.vn###livechat_content
+www.fshare.vn##footer
+www.fshare.vn###livechat_header > .clearfix
+www.fshare.vn##.container-favorite.col-xs-7
+www.fshare.vn##.col-md-5
+www.fshare.vn##.col-md-3
+||static2.fshare.vn/img/logo_fsharev2.png$image
+www.fshare.vn###livechat_title
+www.fshare.vn##.pull-left.close_btn > .glyphicon-remove.glyphicon
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
 getlinkpro.net##.col.s3
