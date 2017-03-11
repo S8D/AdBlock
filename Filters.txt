@@ -7,6 +7,22 @@
 ! Licence: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
 !-------------------------------------=><=-------------------------------------
+www.ramleague.net###exposeMask
+www.ramleague.net##.errorOverlay
+www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
+www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
+www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
+||www.mpgh.net/images/mini_offur.png$image
+www.mpgh.net##.navi3
+www.mpgh.net##.navi1
+www.mpgh.net##.logo_container > div:nth-of-type(1)
+www.mpgh.net##.below_body
+||i.imgur.com/aSCNofV.jpg$image
+www.nyaa.se##.ad_b347
+www.nyaa.se##.ad_bl345
+www.nyaa.se##.ad_b345
+www.nyaa.se##.ad_bl346
+www.nyaa.se##.ad_b346
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
