@@ -11,23 +11,6 @@
 ||facebook.com/v2.3/plugins/page.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
-||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
-www.ramleague.net###exposeMask
-www.ramleague.net##.errorOverlay
-www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
-www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
-www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
-||www.mpgh.net/images/mini_offur.png$image
-www.mpgh.net##.navi3
-www.mpgh.net##.navi1
-www.mpgh.net##.logo_container > div:nth-of-type(1)
-www.mpgh.net##.below_body
-||i.imgur.com/aSCNofV.jpg$image
-www.nyaa.se##.ad_b347
-www.nyaa.se##.ad_bl345
-www.nyaa.se##.ad_b345
-www.nyaa.se##.ad_bl346
-www.nyaa.se##.ad_b346
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -49,22 +32,11 @@ d-h.st/assets/img/download3.png
 datafilehost.com###dldtable > TBODY > TR:first-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 disqus.*$domain=mackie100projects.altervista.org
-www.facebook.com###u_ps_0_1_3
-www.facebook.com###pagelet_canvas_nav_content
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
-www.fshare.vn###livechat_content
-www.fshare.vn##footer
-www.fshare.vn###livechat_header > .clearfix
-www.fshare.vn##.container-favorite.col-xs-7
-www.fshare.vn##.col-md-5
-www.fshare.vn##.col-md-3
-||static2.fshare.vn/img/logo_fsharev2.png$image
-www.fshare.vn###livechat_title
-www.fshare.vn##.pull-left.close_btn > .glyphicon-remove.glyphicon
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
 getlinkpro.net##.col.s3
@@ -78,15 +50,13 @@ linksieutoc.net###fb-chat-header
 linksieutoc.net##.col.s12.m4
 linksieutoc.net##.nav-down
 linksieutoc.net##.page-footer.teal
-linksvip.net##.portlet:nth-of-type(4)
 linksvip.net###footer
-||linksvip.net/images/bg-facebook.png$image
-linksvip.net##.likebox-fb
 linksvip.net##.col-md-4 > .portlet:nth-of-type(3)
-linksvip.net##.portlet:nth-of-type(2)
-||linksvip.net/images/getlinktailieu.gif$image
-linksvip.net##.navbar
 linksvip.net##.col-md-8 > .row
+linksvip.net##.likebox-fb
+linksvip.net##.navbar
+linksvip.net##.portlet:nth-of-type(2)
+linksvip.net##.portlet:nth-of-type(4)
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
 mackie100projects.altervista.org###et-bio-author
@@ -162,6 +132,33 @@ vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
+www.facebook.com###pagelet_canvas_nav_content
+www.facebook.com###u_ps_0_1_3
+www.fshare.vn###livechat_content
+www.fshare.vn###livechat_header > .clearfix
+www.fshare.vn###livechat_title
+www.fshare.vn##.col-md-3
+www.fshare.vn##.col-md-5
+www.fshare.vn##.container-favorite.col-xs-7
+www.fshare.vn##.pull-left.close_btn > .glyphicon-remove.glyphicon
+www.fshare.vn##footer
+www.mpgh.net##.below_body
+www.mpgh.net##.logo_container > div:nth-of-type(1)
+www.mpgh.net##.navi1
+www.mpgh.net##.navi3
+www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
+www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
+www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
+www.nhaccuatui.com###right_support_online
+www.nhaccuatui.com##.cfooter
+www.nhaccuatui.com##.footer
+www.nyaa.se##.ad_b345
+www.nyaa.se##.ad_b346
+www.nyaa.se##.ad_b347
+www.nyaa.se##.ad_bl345
+www.nyaa.se##.ad_bl346
+www.ramleague.net###exposeMask
+www.ramleague.net##.errorOverlay
 youtube.com##*.video-ads
 ||*.2mdn.*^
 ||*.adloft.*^
@@ -203,12 +200,16 @@ youtube.com##*.video-ads
 ||freetuts.net/public/theme/js/my.js
 ||getlinkpro.net/images/banner_shink.jpg
 ||getlinkpro.net/images/ouoads.png
+||i.imgur.com/aSCNofV.jpg$image
 ||i1.wp.com/codex.onhax.net
+||linksvip.net/images/bg-facebook.png$image
+||linksvip.net/images/getlinktailieu.gif$image
 ||macintosh.vn/forum/js/jquery.gallery.js
 ||macintosh.vn/forum/js/jscustome.js
 ||marketing.vatgia.com^
 ||money.yandex.ru^
 ||mystatus.skype.com/smallicon/*
+||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
 ||phimmoi.net/widget.php
 ||quantrimang.com/scripts/main?
 ||realclick.vn
@@ -216,6 +217,7 @@ youtube.com##*.video-ads
 ||sbbanner.*^
 ||secafe.vn/ads/maruko/728x90.gif$image
 ||shink.in/imagenes/logo.png
+||static2.fshare.vn/img/logo_fsharev2.png$image
 ||storage.fshare.vn/images/*.gif
 ||storage.fshare.vn/images/ball.png
 ||uniad.phimmoi.net^
@@ -224,4 +226,5 @@ youtube.com##*.video-ads
 ||userscloud.com^$popup
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
+||www.mpgh.net/images/mini_offur.png$image
 ||ylx-1.com
