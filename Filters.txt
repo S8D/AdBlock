@@ -6,6 +6,12 @@
 ! Licence: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
 !-------------------------------------=><=-------------------------------------
+||facebook.com/plugins/comments.php$domain=chiasenhac.com|igame4v.com|getlinkonline.com|nhac.pro.vn|www.taifile.net
+||facebook.com/v2.3/plugins/like.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net
+||facebook.com/v2.3/plugins/page.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net
+||youtube.com/embed/*$domain=www.fshare.vn|abc.com
+!-------------------------------------=><=-------------------------------------
+||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
 www.ramleague.net###exposeMask
 www.ramleague.net##.errorOverlay
 www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
@@ -157,7 +163,6 @@ vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 youtube.com##*.video-ads
-youtube.com/embed/*$domain=www.fshare.vn|abc.com|
 ||*.2mdn.*^
 ||*.adloft.*^
 ||*.admicro.*
@@ -194,7 +199,6 @@ youtube.com/embed/*$domain=www.fshare.vn|abc.com|
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
 ||crackhex.com^$popup
-||facebook.com/plugins/comments.php$domain=chiasenhac.com|igame4v.com|getlinkonline.com|nhac.pro.vn
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
 ||getlinkpro.net/images/banner_shink.jpg
