@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.03.19
+! Version: 2017.03.20
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -12,10 +12,6 @@
 ||facebook.com/plugins/feedback.php$domain=chiaseacc.com
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
-www.nhaccuatui.com###right_support_online
-onhax.me###bottom-promo-abdload
-onhax.me##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
-www.tranducit.com##.popScroll
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -24,7 +20,7 @@ www.tranducit.com##.popScroll
 /banners/click/*
 @@_social_icons.
 @@||4.3.2.1$elemhide
-@@||https://www.dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
+@@||https://dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
 @@||ouo.io^$elemhide
 @@||uplod.it^$elemhide
 ads.zaloapp.com###msgModal
@@ -37,11 +33,21 @@ d-h.st/assets/img/download3.png
 datafilehost.com###dldtable > TBODY > TR:first-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 disqus.*$domain=mackie100projects.altervista.org
+facebook.com###pagelet_canvas_nav_content
+facebook.com###u_ps_0_1_3
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
+fshare.vn###livechat_content
+fshare.vn###livechat_header > .clearfix
+fshare.vn###livechat_title
+fshare.vn##.col-md-3
+fshare.vn##.col-md-5
+fshare.vn##.container-favorite.col-xs-7
+fshare.vn##.pull-left.close_btn > .glyphicon-remove.glyphicon
+fshare.vn##footer
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
 getlinkpro.net##.col.s3
@@ -73,7 +79,25 @@ mackie100projects.altervista.org##.av-credit-link
 mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
+mpgh.net##.below_body
+mpgh.net##.logo_container > div:nth-of-type(1)
+mpgh.net##.navi1
+mpgh.net##.navi3
+mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
+mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
+mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
+nhaccuatui.com###right_support_online
+nhaccuatui.com###right_support_online
+nhaccuatui.com##.cfooter
+nhaccuatui.com##.footer
+nyaa.se##.ad_b345
+nyaa.se##.ad_b346
+nyaa.se##.ad_b347
+nyaa.se##.ad_bl345
+nyaa.se##.ad_bl346
+onhax.me###bottom-promo-abdload
 onhax.me###bottom-promo-dload
+onhax.me##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
 ouo.press##.about
 ouo.press##.footer-copy
 ouo.press##.join-now
@@ -83,6 +107,8 @@ quantrimang.com###footer
 quantrimang.com##.modal-body
 quantrimang.com##.outclose
 quantrimang.com##.underlay
+ramleague.net###exposeMask
+ramleague.net##.errorOverlay
 rsload.net###e00001959e_c_0
 rsload.net###e00001959e_c_1
 rsload.net###e00001959e_c_2
@@ -116,8 +142,13 @@ talk.secafe.vn##.scrollContainer
 talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-right: 12px; background-color: #ccc;"]
 tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
+tranducit.com##.popScroll
 uploadshub.com/images/start-download.gif
+uplod.ws###container > h2
+uplod.ws###content:nth-of-type(2)
 uplod.ws##.adsbygoogle
+uplod.ws##.mainfooter
+uplod.ws##.TopMenuMain
 uptobox.com###fan-exit
 userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
@@ -137,33 +168,6 @@ vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
-www.facebook.com###pagelet_canvas_nav_content
-www.facebook.com###u_ps_0_1_3
-www.fshare.vn###livechat_content
-www.fshare.vn###livechat_header > .clearfix
-www.fshare.vn###livechat_title
-www.fshare.vn##.col-md-3
-www.fshare.vn##.col-md-5
-www.fshare.vn##.container-favorite.col-xs-7
-www.fshare.vn##.pull-left.close_btn > .glyphicon-remove.glyphicon
-www.fshare.vn##footer
-www.mpgh.net##.below_body
-www.mpgh.net##.logo_container > div:nth-of-type(1)
-www.mpgh.net##.navi1
-www.mpgh.net##.navi3
-www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
-www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
-www.mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
-www.nhaccuatui.com###right_support_online
-www.nhaccuatui.com##.cfooter
-www.nhaccuatui.com##.footer
-www.nyaa.se##.ad_b345
-www.nyaa.se##.ad_b346
-www.nyaa.se##.ad_b347
-www.nyaa.se##.ad_bl345
-www.nyaa.se##.ad_bl346
-www.ramleague.net###exposeMask
-www.ramleague.net##.errorOverlay
 youtube.com##*.video-ads
 ||*.2mdn.*^
 ||*.adloft.*^
@@ -172,6 +176,7 @@ youtube.com##*.video-ads
 ||*.adtimaserver.*^
 ||*.advertisingwouldbegreat.*^
 ||*.alicdn.com^
+||*.bfidvcsuazwy.*^
 ||*.bitpit.*^
 ||*.comeadvertisewithus.*^
 ||*.doubleclick.*^
@@ -185,13 +190,17 @@ youtube.com##*.video-ads
 ||*.googlesyndication.*^
 ||*.googletagservices.*
 ||*.hit4hit.*^
+||*.hutkuzwropgf.*^
 ||*.kjsrv.net^
 ||*.liveinternet.*^
+||*.meagjivconqt.*^
 ||*.omiai-jp.*^
 ||*.opus-static.*
 ||*.phimmoi.*/widget.php
 ||*.popads.*^
+||*.popads.*^
 ||*.tamanae.*^
+||*.tjpzulhghqai.*^
 ||*.uniad.*
 ||*.wap4dollar.*^
 ||.mobile-10.^
@@ -205,6 +214,7 @@ youtube.com##*.video-ads
 ||freetuts.net/public/theme/js/my.js
 ||getlinkpro.net/images/banner_shink.jpg
 ||getlinkpro.net/images/ouoads.png
+||goo.gl/CGHVVo$image
 ||i.imgur.com/aSCNofV.jpg$image
 ||i1.wp.com/codex.onhax.net
 ||linksvip.net/images/bg-facebook.png$image
@@ -213,6 +223,7 @@ youtube.com##*.video-ads
 ||macintosh.vn/forum/js/jscustome.js
 ||marketing.vatgia.com^
 ||money.yandex.ru^
+||mpgh.net/images/mini_offur.png$image
 ||mystatus.skype.com/smallicon/*
 ||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
 ||phimmoi.net/widget.php
@@ -231,5 +242,4 @@ youtube.com##*.video-ads
 ||userscloud.com^$popup
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
-||www.mpgh.net/images/mini_offur.png$image
 ||ylx-1.com
