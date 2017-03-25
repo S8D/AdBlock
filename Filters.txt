@@ -6,21 +6,12 @@
 ! Licence: Gg.gG/a_
 ! ChangeLog: Sắp xếp theo ABC
 !-------------------------------------=><=-------------------------------------
-||facebook.com/plugins/comments.php$domain=chiasenhac.com|igame4v.com|getlinkonline.com|nhac.pro.vn|www.taifile.net
-||facebook.com/v2.3/plugins/like.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net|vn-zoom.com
-||facebook.com/v2.3/plugins/page.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net
+||facebook.com/plugins/comments.php$domain=chiasenhac.vn|www.taifile.net
+||facebook.com/*/plugins/like.php$domain=chiasenhac.vn|www.nhaccuatui.com|www.taifile.net|vn-zoom.com
+||facebook.com/*/plugins/page.php$domain=chiasenhac.vn|www.nhaccuatui.com|www.taifile.net
 ||facebook.com/plugins/feedback.php$domain=chiaseacc.com
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
-samsungvn.com##.welcomeBlock_content
-samsungvn.com###adsgoogle-top
-win10.vn###boxzilla-overlay
-win10.vn###boxzilla-1929
-||*.pwizshlkrpyh.*^
-||*.ivsqnmridfxn.*^
-||*.lbypppwfvagq.*^
-||*.fhawywadfjlo.*^
-||cdn.ay.gy/js/link-converter.js$script
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -126,6 +117,8 @@ rsload.net###e00001959e_c_4
 rsload.net###foot
 rsload.net###loga
 rsload.net##A[href^="http://et-code.ru/"]
+samsungvn.com###adsgoogle-top
+samsungvn.com##.welcomeBlock_content
 shink.in###bs-example-navbar-collapse-1
 shink.in##.col-md-6.col-md-offset-3
 shink.in##.collapse.navbar-collapse
@@ -177,6 +170,8 @@ vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
+win10.vn###boxzilla-1929
+win10.vn###boxzilla-overlay
 youtube.com##*.video-ads
 ||*.2mdn.*^
 ||*.adloft.*^
@@ -192,6 +187,7 @@ youtube.com##*.video-ads
 ||*.eclick.*^
 ||*.facebook.*$domain=linksieutoc.net
 ||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
+||*.fhawywadfjlo.*^
 ||*.fshare.vn/images/default/*.jpg
 ||*.fshare.vn/img/background/*.png
 ||*.fshare.vn/web/*.gif
@@ -200,7 +196,9 @@ youtube.com##*.video-ads
 ||*.googletagservices.*
 ||*.hit4hit.*^
 ||*.hutkuzwropgf.*^
+||*.ivsqnmridfxn.*^
 ||*.kjsrv.net^
+||*.lbypppwfvagq.*^
 ||*.liveinternet.*^
 ||*.meagjivconqt.*^
 ||*.omiai-jp.*^
@@ -208,6 +206,7 @@ youtube.com##*.video-ads
 ||*.phimmoi.*/widget.php
 ||*.popads.*^
 ||*.popads.*^
+||*.pwizshlkrpyh.*^
 ||*.tamanae.*^
 ||*.tjpzulhghqai.*^
 ||*.uniad.*
@@ -216,6 +215,7 @@ youtube.com##*.video-ads
 ||.puhtml.^
 ||ads.crackhex.com^
 ||asc.quantrimang.com
+||cdn.ay.gy/js/link-converter.js$script
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
 ||crackhex.com^$popup
