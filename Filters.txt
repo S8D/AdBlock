@@ -7,8 +7,8 @@
 ! ChangeLog: Sắp xếp theo ABC
 !-------------------------------------=><=-------------------------------------
 ||facebook.com/plugins/comments.php$domain=chiasenhac.vn|www.taifile.net
-||facebook.com/*/plugins/like.php$domain=chiasenhac.vn|www.nhaccuatui.com|www.taifile.net|vn-zoom.com
-||facebook.com/*/plugins/page.php$domain=chiasenhac.vn|www.nhaccuatui.com|www.taifile.net
+||facebook.com/v2.8/plugins/like.php$domain=chiasenhac.vn|www.nhaccuatui.com|www.taifile.net|vn-zoom.com
+||facebook.com/v2.8/plugins/page.php$domain=chiasenhac.vn|www.nhaccuatui.com|www.taifile.net
 ||facebook.com/plugins/feedback.php$domain=chiaseacc.com
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
