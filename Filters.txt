@@ -12,6 +12,7 @@
 ||facebook.com/plugins/feedback.php$domain=chiaseacc.com
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
+@@||chiasenhac.vn/js/ads.js
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
