@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.03.25
+! Version: 2017.03.26
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -13,6 +13,17 @@
 ||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
+chiasenhac.vn##.pl-c2 > .forumnone > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
+www.mediafire.com###footer
+www.mediafire.com##.socialFBContainer
+www.mediafire.com###header
+www.mediafire.com##.dlInfo-Body
+boxphanmem.com##.user.nut-red
+boxphanmem.com##.user.nut-green
+boxphanmem.com##.user.nut-black
+boxphanmem.com##.user.nut-blue
+www.fshare.vn##.balloon
+||dezaula.*^
 @@||chiasenhac.vn/js/ads.js
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
