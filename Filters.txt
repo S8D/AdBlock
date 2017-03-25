@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.03.20
+! Version: 2017.03.25
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -7,11 +7,20 @@
 ! ChangeLog: Sắp xếp theo ABC
 !-------------------------------------=><=-------------------------------------
 ||facebook.com/plugins/comments.php$domain=chiasenhac.com|igame4v.com|getlinkonline.com|nhac.pro.vn|www.taifile.net
-||facebook.com/v2.3/plugins/like.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net
+||facebook.com/v2.3/plugins/like.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net|vn-zoom.com
 ||facebook.com/v2.3/plugins/page.php$domain=chiasenhac.com|www.nhaccuatui.com|www.taifile.net
 ||facebook.com/plugins/feedback.php$domain=chiaseacc.com
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
+samsungvn.com##.welcomeBlock_content
+samsungvn.com###adsgoogle-top
+win10.vn###boxzilla-overlay
+win10.vn###boxzilla-1929
+||*.pwizshlkrpyh.*^
+||*.ivsqnmridfxn.*^
+||*.lbypppwfvagq.*^
+||*.fhawywadfjlo.*^
+||cdn.ay.gy/js/link-converter.js$script
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
