@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.03.26
+! Version: 2017.03.27
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -14,6 +14,13 @@
 ||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
+||kenh76.vn/js/popupamthuc.js
+pan.baidu.com###unzip-vip-intro
+pan.baidu.com##.module-canvas
+pan.baidu.com##.module-canvas
+||chiasefile.net/wp-content/uploads/euJBBLTGmsSM/aYEtZNpNRSOp.js
+chiasefile.net##.bottom.shareit
+chiasefile.net##.header-inner
 chiasenhac.vn##.pl-c2 > .forumnone > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
 www.mediafire.com###footer
 www.mediafire.com##.socialFBContainer
