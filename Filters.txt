@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.04.01
+! Version: 2017.04.02
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -31,124 +31,6 @@
 ||*.lskzcjgerhzn.*^
 ||*.jzlzdnvvktcf.*^
 !--------------------------------------------------------------------------
-||trafflict.*^
-||upera.ir^
-||*.sabavision.*^
-||*.bnserving.*^
-||*.puserving.*^
-||uplod.ws/responsive_js/paging.js
-||onhax.me/*/*.js
-uploadocean.com##.down1_holder > div:nth-of-type(2)
-uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
-uploadocean.com##a[href="https://uploadocean.com/premium-features.html"] > h2
-uploadocean.com###header
-onhax.me###respond
-onhax.me###prologue-147320 > table > tbody > tr > td:nth-of-type(1)
-onhax.me###prologue-147320 > table
-uploadocean.com##.report
-vn-zoom.com##td:nth-of-type(1) > center:nth-of-type(2)
-nomanatif.net##div:nth-of-type(1) > .user.button-red
-nomanatif.net##div:nth-of-type(2) > .user.button-red
-nomanatif.net##.entry-inner > div:nth-of-type(3)
-nomanatif.net##.post-tags
-||disqus.*^$subdocument
-nomanatif.net###footer-bottom
-nomanatif.net###blog_subscription-4
-nomanatif.net##.group.sidebar-top
-nomanatif.net###nav-topbar > .container.nav-wrap
-nomanatif.net##.group.container > .container-inner > .pad.group
-nomanatif.net##.author-bio
-nomanatif.net###disqus_thread > div
-nomanatif.net##.entry-inner > div:nth-of-type(2)
-||*.2mdn.*^
-||*.adloft.*^
-||*.admicro.*
-||*.adskeeper.*^
-||*.adtimaserver.*^
-||*.advertisingwouldbegreat.*^
-||*.alicdn.com^
-||*.bitpit.*^
-||*.comeadvertisewithus.*^
-||*.doubleclick.*^
-||*.eclick.*^
-||*.facebook.*$domain=linksieutoc.net
-||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
-||*.fhawywadfjlo.*^
-||*.fshare.vn/images/default/*.jpg
-||*.fshare.vn/img/background/*.png
-||*.fshare.vn/web/*.gif
-||*.googleadservices.*^
-||*.googlesyndication.*^
-||*.googletagservices.*
-||*.hit4hit.*^
-||*.kjsrv.net^
-||*.liveinternet.*^
-||*.omiai-jp.*^
-||*.opus-static.*
-||*.phimmoi.*/widget.php
-||*.tamanae.*^
-||*.uniad.*
-||*.wap4dollar.*^
-||.mobile-10.^
-||.puhtml.^
-||ads.crackhex.com^
-||asc.quantrimang.com
-||cdn.ay.gy/js/link-converter.js$script
-||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
-||click.alibaba.com^
-||crackhex.com^$popup
-||freetuts.net/public/theme/js/adsense.js
-||freetuts.net/public/theme/js/my.js
-||getlinkpro.net/images/banner_shink.jpg
-||getlinkpro.net/images/ouoads.png
-||goo.gl/CGHVVo$image
-||i.imgur.com/aSCNofV.jpg$image
-||i1.wp.com/codex.onhax.net
-||linksvip.net/images/bg-facebook.png$image
-||linksvip.net/images/getlinktailieu.gif$image
-||macintosh.vn/forum/js/jquery.gallery.js
-||macintosh.vn/forum/js/jscustome.js
-||marketing.vatgia.com^
-||money.yandex.ru^
-||mpgh.net/images/mini_offur.png$image
-||mystatus.skype.com/smallicon/*
-||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
-||phimmoi.net/widget.php
-||quantrimang.com/scripts/main?
-||realclick.vn
-||rsload.net/images5/2120.png
-||sbbanner.*^
-||secafe.vn/ads/maruko/728x90.gif$image
-||shink.in/imagenes/logo.png
-||static2.fshare.vn/img/logo_fsharev2.png$image
-||storage.fshare.vn/images/*.gif
-||storage.fshare.vn/images/ball.png
-||uniad.phimmoi.net^
-||uplod.it^$popup
-||uptruyen.*
-||userscloud.com^$popup
-||vkool.net/js/abp.js
-||vn-zoom.com/img/custommudim.js
-||ylx-1.com
-||kenh76.vn/js/popupamthuc.js
-pan.baidu.com###unzip-vip-intro
-pan.baidu.com##.module-canvas
-pan.baidu.com##.module-canvas
-||chiasefile.net/wp-content/uploads/euJBBLTGmsSM/aYEtZNpNRSOp.js
-chiasefile.net##.bottom.shareit
-chiasefile.net##.header-inner
-chiasenhac.vn##.pl-c2 > .forumnone > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
-www.mediafire.com###footer
-www.mediafire.com##.socialFBContainer
-www.mediafire.com###header
-www.mediafire.com##.dlInfo-Body
-boxphanmem.com##.user.nut-red
-boxphanmem.com##.user.nut-green
-boxphanmem.com##.user.nut-black
-boxphanmem.com##.user.nut-blue
-www.fshare.vn##.balloon
-||dezaula.*^
-@@||chiasenhac.vn/js/ads.js
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -157,13 +39,21 @@ www.fshare.vn##.balloon
 /banners/click/*
 @@_social_icons.
 @@||4.3.2.1$elemhide
+@@||chiasenhac.vn/js/ads.js
 @@||https://dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
 @@||ouo.io^$elemhide
 @@||uplod.it^$elemhide
 ads.zaloapp.com###msgModal
 ads.zaloapp.com##.modal-backdrop.fade.in
 ads.zaloapp.com##.modal.fade.in
+boxphanmem.com##.user.nut-black
+boxphanmem.com##.user.nut-blue
+boxphanmem.com##.user.nut-green
+boxphanmem.com##.user.nut-red
+chiasefile.net##.bottom.shareit
+chiasefile.net##.header-inner
 chiasenhac.vn###vid2
+chiasenhac.vn##.pl-c2 > .forumnone > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
 chiasenhac.vn##.video-js.vjs-default-skin.vjs-controls-enabled.vjs-has-started.vjs-waiting.vjs-error.vjs-paused.vjs-user-active
 chiasenhac.vn##.vjs-error-display
 d-h.st/assets/img/download3.png
@@ -224,21 +114,46 @@ mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
 nhaccuatui.com###right_support_online
-nhaccuatui.com###right_support_online
 nhaccuatui.com##.cfooter
 nhaccuatui.com##.footer
+nomanatif.net###blog_subscription-4
+nomanatif.net###disqus_thread > div
+nomanatif.net###footer-bottom
+nomanatif.net###nav-topbar > .container.nav-wrap
+nomanatif.net##.author-bio
+nomanatif.net##.entry-inner > div:nth-of-type(2)
+nomanatif.net##.entry-inner > div:nth-of-type(3)
+nomanatif.net##.group.container > .container-inner > .pad.group
+nomanatif.net##.group.sidebar-top
+nomanatif.net##.post-tags
+nomanatif.net##div:nth-of-type(1) > .user.button-red
+nomanatif.net##div:nth-of-type(2) > .user.button-red
 nyaa.se##.ad_b345
 nyaa.se##.ad_b346
 nyaa.se##.ad_b347
 nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
+onhax.me###blog_subscription-3
 onhax.me###bottom-promo-abdload
 onhax.me###bottom-promo-dload
+onhax.me###facebook-likebox-2
+onhax.me###googleplus-badge-2
+onhax.me###pages-2
+onhax.me###prologue-147320 > table
+onhax.me###prologue-147320 > table > tbody > tr > td:nth-of-type(1)
+onhax.me###respond
+onhax.me###sb_footer
+onhax.me###text-17
+onhax.me###text-18
+onhax.me###text-3
+onhax.me###text-5
 onhax.me##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
 ouo.press##.about
 ouo.press##.footer-copy
 ouo.press##.join-now
 ouo.press##.navbar.navbar-default.navbar-top
+pan.baidu.com###unzip-vip-intro
+pan.baidu.com##.module-canvas
 quantrimang.com###_shad_3
 quantrimang.com###footer
 quantrimang.com##.modal-body
@@ -282,6 +197,11 @@ talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-righ
 tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
 tranducit.com##.popScroll
+uploadocean.com###header
+uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
+uploadocean.com##.down1_holder > div:nth-of-type(2)
+uploadocean.com##.report
+uploadocean.com##a[href="https://uploadocean.com/premium-features.html"] > h2
 uploadshub.com/images/start-download.gif
 uplod.ws###container > h2
 uplod.ws###content:nth-of-type(2)
@@ -302,6 +222,7 @@ vn-zoom.com##.z2-zads-zone
 vn-zoom.com##blink
 vn-zoom.com##div[style="float:left;width:49%;padding-right:2px"]
 vn-zoom.com##div[style="float:right;width:49%;padding-left:2px"]
+vn-zoom.com##td:nth-of-type(1) > center:nth-of-type(2)
 vn-zoom.com##td[width="300"][valign="top"]
 vozforums.com###neo_logobar
 vozforums.com##.clearfix
@@ -309,5 +230,91 @@ vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 win10.vn###boxzilla-1929
 win10.vn###boxzilla-overlay
+www.fshare.vn##.balloon
+www.mediafire.com###footer
+www.mediafire.com###header
+www.mediafire.com##.dlInfo-Body
+www.mediafire.com##.socialFBContainer
 youtube.com##*.video-ads
+||*.2mdn.*^
+||*.adloft.*^
+||*.admicro.*
+||*.adskeeper.*^
+||*.adtimaserver.*^
+||*.advertisingwouldbegreat.*^
+||*.alicdn.com^
+||*.bitpit.*^
+||*.bnserving.*^
+||*.comeadvertisewithus.*^
+||*.doubleclick.*^
+||*.eclick.*^
+||*.facebook.*$domain=linksieutoc.net
+||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
+||*.fhawywadfjlo.*^
+||*.fshare.vn/images/default/*.jpg
+||*.fshare.vn/img/background/*.png
+||*.fshare.vn/web/*.gif
+||*.googleadservices.*^
+||*.googlesyndication.*^
+||*.googletagservices.*
+||*.hit4hit.*^
+||*.kjsrv.net^
+||*.liveinternet.*^
+||*.omiai-jp.*^
+||*.opus-static.*
+||*.phimmoi.*/widget.php
+||*.puserving.*^
+||*.sabavision.*^
+||*.tamanae.*^
+||*.uniad.*
+||*.wap4dollar.*^
+||.mobile-10.^
+||.puhtml.^
+||ads.crackhex.com^
+||asc.quantrimang.com
+||cdn.ay.gy/js/link-converter.js$script
+||chiasefile.net/wp-content/uploads/euJBBLTGmsSM/aYEtZNpNRSOp.js
+||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
+||click.alibaba.com^
+||crackhex.com^$popup
+||dezaula.*^
+||disqus.*^$subdocument
+||freetuts.net/public/theme/js/adsense.js
+||freetuts.net/public/theme/js/my.js
+||getlinkpro.net/images/banner_shink.jpg
+||getlinkpro.net/images/ouoads.png
+||goo.gl/CGHVVo$image
+||i.imgur.com/aSCNofV.jpg$image
+||i1.wp.com/codex.onhax.net
+||kenh76.vn/js/popupamthuc.js
+||linksvip.net/images/bg-facebook.png$image
+||linksvip.net/images/getlinktailieu.gif$image
+||macintosh.vn/forum/js/jquery.gallery.js
+||macintosh.vn/forum/js/jscustome.js
+||marketing.vatgia.com^
+||money.yandex.ru^
+||mpgh.net/images/mini_offur.png$image
+||mystatus.skype.com/smallicon/*
+||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
+||onhax.me/*/*.js
+||phimmoi.net/widget.php
+||quantrimang.com/scripts/main?
+||realclick.vn
+||rsload.net/images5/2120.png
+||sbbanner.*^
+||secafe.vn/ads/maruko/728x90.gif$image
+||shink.in/imagenes/logo.png
+||static2.fshare.vn/img/logo_fsharev2.png$image
+||storage.fshare.vn/images/*.gif
+||storage.fshare.vn/images/ball.png
+||trafflict.*^
+||uniad.phimmoi.net^
+||upera.ir^
+||uplod.it^$popup
+||uplod.ws/responsive_js/paging.js
+||uptruyen.*
+||userscloud.com^$popup
+||vkool.net/js/abp.js
+||vn-zoom.com/img/custommudim.js
+||ylx-1.com
 
