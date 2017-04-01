@@ -28,7 +28,10 @@
 ||*.xhvhisywkvha.*^
 ||*.tjkckpytpnje.*^
 ||*.zpctncydojjh.*^
+||*.lskzcjgerhzn.*^
+||*.jzlzdnvvktcf.*^
 !--------------------------------------------------------------------------
+||trafflict.*^
 ||upera.ir^
 ||*.sabavision.*^
 ||*.bnserving.*^
