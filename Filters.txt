@@ -1,36 +1,48 @@
 [Adblock Plus 2.0]
-! Version: 2017.04.02
+! Version: 2017.04.03
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
 !-------------------------------------=><=-------------------------------------
-||facebook.com/plugins/comments.php
-||facebook.com/plugins/share_button.php
-||facebook.com/v2.8/plugins/like.php
-||facebook.com/v2.8/plugins/page.php
-||facebook.com/plugins/feedback.php
+||facebook.com/plugins/comments.php$subdocument
+||facebook.com/plugins/feedback.php$subdocument
+||facebook.com/plugins/like_box.php$subdocument
+||facebook.com/plugins/share_button.php$subdocument
+||facebook.com/*/plugins/page.php$subdocument
+||facebook.com/*/plugins/like.php$subdocument
 ||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
 !-------------------------------------PopAds-------------------------------------
 ||*.popads.*^
+||*.bfidvcsuazwy.*^
+||*.epoxtzgddiwp.*^
 ||*.hutkuzwropgf.*^
 ||*.ivsqnmridfxn.*^
+||*.jzlzdnvvktcf.*^
+||*.lbpndcvhuqlm.*^
 ||*.lbypppwfvagq.*^
+||*.lcpqoewrzuxh.*^
+||*.leuojmgbkpcl.*^
+||*.lfvrjrdrgazl.*^
+||*.lgnjcntegeqf.*^
+||*.liqbipkfbafq.*^
+||*.ljhuvzutnpza.*^
+||*.lskzcjgerhzn.*^
 ||*.meagjivconqt.*^
 ||*.pwizshlkrpyh.*^
-||*.tjpzulhghqai.*^
-||*.bfidvcsuazwy.*^
+||*.pydpcqjenhjx.*^
 ||*.spotscenered.*^
-||*.epoxtzgddiwp.*^
-||*.xhvhisywkvha.*^
 ||*.tjkckpytpnje.*^
+||*.tjpzulhghqai.*^
+||*.tqdarrhactqc.*^
+||*.xhvhisywkvha.*^
 ||*.zpctncydojjh.*^
-||*.lskzcjgerhzn.*^
-||*.jzlzdnvvktcf.*^
 !--------------------------------------------------------------------------
+onhax.me###footer
+||*.adtrue.*^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
