@@ -308,7 +308,7 @@ youtube.com##*.video-ads
 ||mpgh.net/images/mini_offur.png$image
 ||mystatus.skype.com/smallicon/*
 ||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
-||onhax.me/*/*.js
+||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
 ||phimmoi.net/widget.php
 ||quantrimang.com/scripts/main?
 ||realclick.vn
