@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.04.03
+! Version: 2017.07.09+
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -17,8 +17,6 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !--------------------------------------------------------------------------
-onhax.me###footer
-||*.adtrue.*^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -30,6 +28,7 @@ onhax.me###footer
 @@||chiasenhac.vn/js/ads.js
 @@||https://dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
 @@||ouo.io^$elemhide
+@@||shink.in/js/show_ads.js
 @@||uplod.it^$elemhide
 ads.zaloapp.com###msgModal
 ads.zaloapp.com##.modal-backdrop.fade.in
@@ -45,11 +44,16 @@ chiasenhac.vn##.pl-c2 > .forumnone > tbody > tr:nth-of-type(1) > td:nth-of-type(
 chiasenhac.vn##.video-js.vjs-default-skin.vjs-controls-enabled.vjs-has-started.vjs-waiting.vjs-error.vjs-paused.vjs-user-active
 chiasenhac.vn##.vjs-error-display
 d-h.st/assets/img/download3.png
+dailyuploads.net##.adsbygoogle
+dailyuploads.net##.footer
 datafilehost.com###dldtable > TBODY > TR:first-child
+datafilehost.com##.col-md-10.col-sm-10.col-xs-20
+datafilehost.com##.col-md-4.col-xs-6.text-center
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 disqus.*$domain=mackie100projects.altervista.org
 facebook.com###pagelet_canvas_nav_content
 facebook.com###u_ps_0_1_3
+facebook.com##._4-u2._1-ib._2tyk._20os._4-u8
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
@@ -79,6 +83,7 @@ linksieutoc.net##.page-footer.teal
 linksvip.net###footer
 linksvip.net##.col-md-4 > .portlet:nth-of-type(3)
 linksvip.net##.col-md-8 > .row
+linksvip.net##.col-sm-6
 linksvip.net##.likebox-fb
 linksvip.net##.navbar
 linksvip.net##.portlet:nth-of-type(2)
@@ -125,6 +130,7 @@ onhax.me###blog_subscription-3
 onhax.me###bottom-promo-abdload
 onhax.me###bottom-promo-dload
 onhax.me###facebook-likebox-2
+onhax.me###footer
 onhax.me###googleplus-badge-2
 onhax.me###pages-2
 onhax.me###prologue-147320 > table
@@ -135,6 +141,8 @@ onhax.me###text-17
 onhax.me###text-18
 onhax.me###text-3
 onhax.me###text-5
+onhax.me###top-promo-dload
+onhax.me##.lelabp
 onhax.me##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
 ouo.press##.about
 ouo.press##.footer-copy
@@ -184,6 +192,8 @@ talk.secafe.vn##.scrollContainer
 talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-right: 12px; background-color: #ccc;"]
 tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
+thiendia.com###hide_float_right
+thiendia.com###logoBlock
 tranducit.com##.popScroll
 uploadocean.com###header
 uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
@@ -197,8 +207,16 @@ uplod.ws##.adsbygoogle
 uplod.ws##.mainfooter
 uplod.ws##.TopMenuMain
 uptobox.com###fan-exit
+us.24h.com.vn###crt-47a9479f
+us.24h.com.vn##.banner300250-L
+us.24h.com.vn##.copyright
+us.24h.com.vn##.footer-menu2
+us.24h.com.vn##.text-banner-horizontal
 userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
+vietnamnet.vn###Box-FixFB
+vietnamnet.vn##.BoxFix
+vietnamnet.vn##.Main-Footer.p-t-20
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
 vn-zoom.com###footerMain
@@ -224,19 +242,24 @@ www.mediafire.com###header
 www.mediafire.com##.dlInfo-Body
 www.mediafire.com##.socialFBContainer
 youtube.com##*.video-ads
+|https://$script,domain=uplod.ws,third-party
 ||*.2mdn.*^
 ||*.adloft.*^
 ||*.admicro.*
+||*.adnetwork.*^
 ||*.adskeeper.*^
 ||*.adtimaserver.*^
+||*.adtrue.*^
 ||*.advertisingwouldbegreat.*^
 ||*.alicdn.com^
 ||*.bitpit.*^
 ||*.bnserving.*^
 ||*.comeadvertisewithus.*^
 ||*.doubleclick.*^
+||*.eboundservices.*^
 ||*.eclick.*^
 ||*.facebook.*$domain=linksieutoc.net
+||*.facebook.*$script,third-party,image,domain=*.amazon.*
 ||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
 ||*.fhawywadfjlo.*^
 ||*.fshare.vn/images/default/*.jpg
@@ -258,13 +281,14 @@ youtube.com##*.video-ads
 ||*.wap4dollar.*^
 ||.mobile-10.^
 ||.puhtml.^
+||66.70.164.147/images/2017/03/03/VFC.4682qc5c794.jpg
 ||ads.crackhex.com^
 ||asc.quantrimang.com
 ||cdn.ay.gy/js/link-converter.js$script
+||cdn.engine.4dsply.com^
 ||chiasefile.net/wp-content/uploads/euJBBLTGmsSM/aYEtZNpNRSOp.js
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
-||crackhex.com^$popup
 ||dezaula.*^
 ||disqus.*^$subdocument
 ||freetuts.net/public/theme/js/adsense.js
@@ -272,14 +296,26 @@ youtube.com##*.video-ads
 ||getlinkpro.net/images/banner_shink.jpg
 ||getlinkpro.net/images/ouoads.png
 ||goo.gl/CGHVVo$image
+||goo.gl^$image,domain=uplod.ws
+||hdvietnam.com/banner/16/9/himedia-right-4--vinabox.swf
+||hdvietnam.com/banner/16/9/right-1--itvplus_2.swf
+||hdvietnam.com/banner/17/4/hieuhien.gif
+||hdvietnam.com/banner/17/6/banner-tieng-ngoc-top-3-1.jpg
+||hdvietnam.com/banner/17/6/top-3-song-nhac-new.jpg
 ||i.imgur.com/aSCNofV.jpg$image
+||i.imgur.com/m5ttIa7.gif
+||i.imgur.com/TejADRU.gif
 ||i1.wp.com/codex.onhax.net
+||img.thiendia.com/server7/images/2016/02/29/VDN_media_banner_728_x_90d032b.gif
 ||kenh76.vn/js/popupamthuc.js
 ||linksvip.net/images/bg-facebook.png$image
 ||linksvip.net/images/getlinktailieu.gif$image
+||linksvip.net/images/vip/shortes.png
+||log.news.zing.vn
 ||macintosh.vn/forum/js/jquery.gallery.js
 ||macintosh.vn/forum/js/jscustome.js
 ||marketing.vatgia.com^
+||media.adnetwork.vn/assets/js/abd.inpage.preroll.v1.js
 ||money.yandex.ru^
 ||mpgh.net/images/mini_offur.png$image
 ||mystatus.skype.com/smallicon/*
@@ -289,20 +325,24 @@ youtube.com##*.video-ads
 ||quantrimang.com/scripts/main?
 ||realclick.vn
 ||rsload.net/images5/2120.png
+||rsload.net/images5/downasd1.png
 ||sbbanner.*^
 ||secafe.vn/ads/maruko/728x90.gif$image
+||server7.upload69.net/images/2017/04/10/CMDD116_300x2509852e.gif
+||server7.upload69.net/images/2017/05/10/banner300x250vapingvn270203.gif
+||server7.upload69.net/images/2017/06/06/thiendia-300keb3aa.gif
 ||shink.in/imagenes/logo.png
+||shink.in/img/downloadad.png
+||sp.zalo.me/plugins/share?*
 ||static2.fshare.vn/img/logo_fsharev2.png$image
 ||storage.fshare.vn/images/*.gif
 ||storage.fshare.vn/images/ball.png
 ||trafflict.*^
+||trafflict.com^
 ||uniad.phimmoi.net^
 ||upera.ir^
-||uplod.it^$popup
 ||uplod.ws/responsive_js/paging.js
 ||uptruyen.*
-||userscloud.com^$popup
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
-||ylx-1.com
-
+||ylx-1.com 
