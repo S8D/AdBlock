@@ -17,6 +17,35 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !--------------------------------------------------------------------------
+taifile.net###content_download > a:first-child
+@@||2.2.2.7^$important,document,~extension
+@@||darias.ddns.net^$important,document,~extension
+taifile.net###content_download > a:nth-child(2)
+fshare.vn###download-index > div.panel.panel-default > div.panel-body > div.row.margin-bottom-15:first-child > div.col-xs-6:first-child
+tago.vn##div.sbzon:nth-child(26)
+@@||a86.demo.synology.com^$important,document,~extension
+boxphanmem.com###warning > center:nth-child(2)
+boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(24)
+boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(4)
+boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(8)
+boxphanmem.com###warning > ul:last-child
+boxphanmem.com###warning > center:first-child > div:nth-child(5)
+boxphanmem.com##center:first-child > a > img.aligncenter
+tudienabc.com###container > div.row:nth-child(4)
+@@||www.vnjpclub.com^$important,document,~extension
+nhaccuatui.com###box_playing_id > div.adsZoneMp3:first-child
+nhaccuatui.com###coverImageflashPlayer
+@@||responsivevoice.org^$important,document,~extension
+leech.thoaimedia.com##center:nth-child(3)
+leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
+@@||save.thoaimedia.com^$important,document,~extension
+@@||win10.vn^$important,document,~extension
+@@||www.exrapidleech.info^$important,document,~extension
+xyhs.mad.buttobi.net##div:first-child > table:first-child
+debrid.ml###linkform > font:first-child
+@@||debrid.ml^$important,document,~extension
+||douploads.com/mngez/music/$media,domain=douploads.com
+filedwon.info###container > div:nth-child(3)
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
