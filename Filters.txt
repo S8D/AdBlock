@@ -102,6 +102,7 @@ linksieutoc.net##.col.s12.m4
 linksieutoc.net##.nav-down
 linksieutoc.net##.page-footer.teal
 linksvip.net###footer
+linksvip.net##div.likebox-fb:nth-child(11)
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row.top:first-child
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(2)
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(3)
