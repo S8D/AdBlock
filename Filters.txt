@@ -17,35 +17,6 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !--------------------------------------------------------------------------
-taifile.net###content_download > a:first-child
-@@||2.2.2.7^$important,document,~extension
-@@||darias.ddns.net^$important,document,~extension
-taifile.net###content_download > a:nth-child(2)
-fshare.vn###download-index > div.panel.panel-default > div.panel-body > div.row.margin-bottom-15:first-child > div.col-xs-6:first-child
-tago.vn##div.sbzon:nth-child(26)
-@@||a86.demo.synology.com^$important,document,~extension
-boxphanmem.com###warning > center:nth-child(2)
-boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(24)
-boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(4)
-boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(8)
-boxphanmem.com###warning > ul:last-child
-boxphanmem.com###warning > center:first-child > div:nth-child(5)
-boxphanmem.com##center:first-child > a > img.aligncenter
-tudienabc.com###container > div.row:nth-child(4)
-@@||www.vnjpclub.com^$important,document,~extension
-nhaccuatui.com###box_playing_id > div.adsZoneMp3:first-child
-nhaccuatui.com###coverImageflashPlayer
-@@||responsivevoice.org^$important,document,~extension
-leech.thoaimedia.com##center:nth-child(3)
-leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
-@@||save.thoaimedia.com^$important,document,~extension
-@@||win10.vn^$important,document,~extension
-@@||www.exrapidleech.info^$important,document,~extension
-xyhs.mad.buttobi.net##div:first-child > table:first-child
-debrid.ml###linkform > font:first-child
-@@||debrid.ml^$important,document,~extension
-||douploads.com/mngez/music/$media,domain=douploads.com
-filedwon.info###container > div:nth-child(3)
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -53,19 +24,35 @@ filedwon.info###container > div:nth-child(3)
 *phim2b.*$popup
 /banners/click/*
 @@_social_icons.
+@@||2.2.2.7^$important,document,~extension
 @@||4.3.2.1$elemhide
+@@||a86.demo.synology.com^$important,document,~extension
 @@||chiasenhac.vn/js/ads.js
+@@||darias.ddns.net^$important,document,~extension
+@@||debrid.ml^$important,document,~extension
 @@||https://dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
 @@||ouo.io^$elemhide
+@@||responsivevoice.org^$important,document,~extension
+@@||save.thoaimedia.com^$important,document,~extension
 @@||shink.in/js/show_ads.js
 @@||uplod.it^$elemhide
+@@||win10.vn^$important,document,~extension
+@@||www.exrapidleech.info^$important,document,~extension
+@@||www.vnjpclub.com^$important,document,~extension
 ads.zaloapp.com###msgModal
 ads.zaloapp.com##.modal-backdrop.fade.in
 ads.zaloapp.com##.modal.fade.in
+boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(24)
+boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(4)
+boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(8)
+boxphanmem.com###warning > center:first-child > div:nth-child(5)
+boxphanmem.com###warning > center:nth-child(2)
+boxphanmem.com###warning > ul:last-child
 boxphanmem.com##.user.nut-black
 boxphanmem.com##.user.nut-blue
 boxphanmem.com##.user.nut-green
 boxphanmem.com##.user.nut-red
+boxphanmem.com##center:first-child > a > img.aligncenter
 chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
 chiasenhac.vn###vid2
@@ -79,15 +66,18 @@ datafilehost.com###dldtable > TBODY > TR:first-child
 datafilehost.com##.col-md-10.col-sm-10.col-xs-20
 datafilehost.com##.col-md-4.col-xs-6.text-center
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
+debrid.ml###linkform > font:first-child
 disqus.*$domain=mackie100projects.altervista.org
 facebook.com###pagelet_canvas_nav_content
 facebook.com###u_ps_0_1_3
 facebook.com##._4-u2._1-ib._2tyk._20os._4-u8
+filedwon.info###container > div:nth-child(3)
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
+fshare.vn###download-index > div.panel.panel-default > div.panel-body > div.row.margin-bottom-15:first-child > div.col-xs-6:first-child
 fshare.vn###livechat_content
 fshare.vn###livechat_header > .clearfix
 fshare.vn###livechat_title
@@ -105,18 +95,20 @@ hdvietnam.com###sidebar_container
 hdvietnam.com###topbillboard
 hdvietnam.com###yamaha_ads_1
 hdvietnam.com###yamaha_ads_2
+leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
+leech.thoaimedia.com##center:nth-child(3)
 linksieutoc.net###fb-chat-header
 linksieutoc.net##.col.s12.m4
 linksieutoc.net##.nav-down
 linksieutoc.net##.page-footer.teal
 linksvip.net###footer
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div:last-child
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row.top:first-child
-linksvip.net##div.navbar:nth-child(5)
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(3)
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(2)
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.row:nth-child(2)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(3)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div:last-child
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.portlet:last-child > div.portlet-content:last-child > ul.tags
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.row:nth-child(2)
+linksvip.net##div.navbar:nth-child(5)
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
 mackie100projects.altervista.org###et-bio-author
@@ -135,6 +127,8 @@ mpgh.net##.navi3
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
+nhaccuatui.com###box_playing_id > div.adsZoneMp3:first-child
+nhaccuatui.com###coverImageflashPlayer
 nhaccuatui.com###right_support_online
 nhaccuatui.com##.cfooter
 nhaccuatui.com##.footer
@@ -211,6 +205,9 @@ sitecuatui.com###sidebar
 sonyfan.vn###check-also-box
 sonyfan.vn###sidebar > .theiaStickySidebar
 sonyfan.vn###wrapper > .inner-wrapper > .footer-bottom
+tago.vn##div.sbzon:nth-child(26)
+taifile.net###content_download > a:first-child
+taifile.net###content_download > a:nth-child(2)
 talk.secafe.vn###headerProxy
 talk.secafe.vn##.hs-hide-900
 talk.secafe.vn##.hs-hide-992
@@ -224,6 +221,7 @@ tampermonkey.net##td[style="vertical-align: top;"]
 thiendia.com###hide_float_right
 thiendia.com###logoBlock
 tranducit.com##.popScroll
+tudienabc.com###container > div.row:nth-child(4)
 uploadocean.com###header
 uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
 uploadocean.com##.down1_holder > div:nth-of-type(2)
@@ -270,6 +268,7 @@ www.mediafire.com###footer
 www.mediafire.com###header
 www.mediafire.com##.dlInfo-Body
 www.mediafire.com##.socialFBContainer
+xyhs.mad.buttobi.net##div:first-child > table:first-child
 youtube.com##*.video-ads
 |https://$script,domain=uplod.ws,third-party
 ||*.2mdn.*^
@@ -320,6 +319,7 @@ youtube.com##*.video-ads
 ||click.alibaba.com^
 ||dezaula.*^
 ||disqus.*^$subdocument
+||douploads.com/mngez/music/$media,domain=douploads.com
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
 ||getlinkpro.net/images/banner_shink.jpg
@@ -374,4 +374,4 @@ youtube.com##*.video-ads
 ||uptruyen.*
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
-||ylx-1.com 
+||ylx-1.com
