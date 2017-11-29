@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.07.09+
+! Version: 2017.11.29+
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -81,13 +81,13 @@ linksieutoc.net##.col.s12.m4
 linksieutoc.net##.nav-down
 linksieutoc.net##.page-footer.teal
 linksvip.net###footer
-linksvip.net##.col-md-4 > .portlet:nth-of-type(3)
-linksvip.net##.col-md-8 > .row
-linksvip.net##.col-sm-6
-linksvip.net##.likebox-fb
-linksvip.net##.navbar
-linksvip.net##.portlet:nth-of-type(2)
-linksvip.net##.portlet:nth-of-type(4)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div:last-child
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row.top:first-child
+linksvip.net##div.navbar:nth-child(5)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(3)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(2)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.row:nth-child(2)
+linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.portlet:last-child > div.portlet-content:last-child > ul.tags
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
 mackie100projects.altervista.org###et-bio-author
