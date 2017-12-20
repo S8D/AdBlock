@@ -1,11 +1,13 @@
 [Adblock Plus 2.0]
-! Version: 2017.12.20+
+! Version: 2017.12.21+
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
 !-------------------------------------=><=-------------------------------------
+@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|gram.im|l2s.io
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 ||facebook.com/plugins/comments.php$subdocument
 ||facebook.com/plugins/feedback.php$subdocument
 ||facebook.com/plugins/like_box.php$subdocument
@@ -17,8 +19,6 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !--------------------------------------------------------------------------
-@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|gram.im
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
@@ -33,7 +33,6 @@
 @@||darias.ddns.net^$important,document,~extension
 @@||debrid.ml^$important,document,~extension
 @@||https://dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
-@@||ouo.io^$elemhide
 @@||responsivevoice.org^$important,document,~extension
 @@||save.thoaimedia.com^$important,document,~extension
 @@||shink.in/js/show_ads.js
