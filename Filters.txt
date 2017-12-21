@@ -1,13 +1,11 @@
 [Adblock Plus 2.0]
-! Version: 2017.12.21+
+! Version: 2017.12.21.1
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
 !-------------------------------------=><=-------------------------------------
-@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|gram.im|l2s.io
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 ||facebook.com/plugins/comments.php$subdocument
 ||facebook.com/plugins/feedback.php$subdocument
 ||facebook.com/plugins/like_box.php$subdocument
@@ -18,47 +16,32 @@
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
-!--------------------------------------------------------------------------
+!------------------------------------------------------------------------------
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
 *.fshare.vn/images/homepage/bg_content_page.jpg
-*phim2b.*$popup
 /banners/click/*
+@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|gram.im
+@@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
 @@||2.2.2.7^$important,document,~extension
-@@||4.3.2.1$elemhide
+@@||4.3.2.1$$important,document,~extension
 @@||a86.demo.synology.com^$important,document,~extension
-@@||chiasenhac.vn/js/ads.js
 @@||darias.ddns.net^$important,document,~extension
 @@||debrid.ml^$important,document,~extension
-@@||https://dropboxstatic.com/static/javascript/compiled/modules/clean/profile_services/*.js
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 @@||responsivevoice.org^$important,document,~extension
 @@||save.thoaimedia.com^$important,document,~extension
-@@||shink.in/js/show_ads.js
 @@||uplod.it^$elemhide
-@@||win10.vn^$important,document,~extension
 @@||www.exrapidleech.info^$important,document,~extension
 ads.zaloapp.com###msgModal
 ads.zaloapp.com##.modal-backdrop.fade.in
 ads.zaloapp.com##.modal.fade.in
-boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(24)
-boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(4)
-boxphanmem.com###post-749 > div.entry-content:last-child > div:nth-child(8)
-boxphanmem.com###warning > center:first-child > div:nth-child(5)
-boxphanmem.com###warning > center:nth-child(2)
-boxphanmem.com###warning > ul:last-child
-boxphanmem.com##.user.nut-black
-boxphanmem.com##.user.nut-blue
-boxphanmem.com##.user.nut-green
-boxphanmem.com##.user.nut-red
-boxphanmem.com##center:first-child > a > img.aligncenter
 chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
-chiasenhac.vn###vid2
-chiasenhac.vn##.pl-c2 > .forumnone > tbody > tr:nth-of-type(1) > td:nth-of-type(2)
-chiasenhac.vn##.video-js.vjs-default-skin.vjs-controls-enabled.vjs-has-started.vjs-waiting.vjs-error.vjs-paused.vjs-user-active
-chiasenhac.vn##.vjs-error-display
+chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
+chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child > div.f-c:nth-child(2) > ul
 d-h.st/assets/img/download3.png
 dailyuploads.net##.adsbygoogle
 dailyuploads.net##.footer
@@ -77,15 +60,12 @@ forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
-fshare.vn###download-index > div.panel.panel-default > div.panel-body > div.row.margin-bottom-15:first-child > div.col-xs-6:first-child
-fshare.vn###livechat_content
-fshare.vn###livechat_header > .clearfix
-fshare.vn###livechat_title
-fshare.vn##.col-md-3
-fshare.vn##.col-md-5
-fshare.vn##.container-favorite.col-xs-7
-fshare.vn##.pull-left.close_btn > .glyphicon-remove.glyphicon
-fshare.vn##footer
+fshare.vn###dlnav > div.filelist_header.clearfix:last-child > div.pull-right.file_date_modify.align-right.header_item:nth-child(5) > div.tourGuide:nth-child(2) > div.modal-backdrop.fade.in:first-child
+fshare.vn###dlnav > div.filelist_header.clearfix:last-child > div.pull-right.file_date_modify.align-right.header_item:nth-child(5) > div.tourGuide:nth-child(2) > div.popover.fade.bottom.in:last-child > div.popover-content:last-child
+fshare.vn###e_itexpress_bottom_left
+fshare.vn###homepage > footer:nth-child(7)
+fshare.vn###jssor_1 > div > div > div
+fshare.vn###livechat
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
 getlinkpro.net##.col.s3
@@ -97,18 +77,14 @@ hdvietnam.com###yamaha_ads_1
 hdvietnam.com###yamaha_ads_2
 leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
 leech.thoaimedia.com##center:nth-child(3)
-linksieutoc.net###fb-chat-header
-linksieutoc.net##.col.s12.m4
-linksieutoc.net##.nav-down
-linksieutoc.net##.page-footer.teal
 linksvip.net###footer
-linksvip.net##div.likebox-fb:nth-child(11)
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row.top:first-child
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(2)
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(3)
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div:last-child
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.portlet:last-child > div.portlet-content:last-child > ul.tags
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.row:nth-child(2)
+linksvip.net##div.likebox-fb:nth-child(11)
 linksvip.net##div.navbar:nth-child(5)
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
@@ -133,41 +109,11 @@ nhaccuatui.com###coverImageflashPlayer
 nhaccuatui.com###right_support_online
 nhaccuatui.com##.cfooter
 nhaccuatui.com##.footer
-nomanatif.net###blog_subscription-4
-nomanatif.net###disqus_thread > div
-nomanatif.net###footer-bottom
-nomanatif.net###nav-topbar > .container.nav-wrap
-nomanatif.net##.author-bio
-nomanatif.net##.entry-inner > div:nth-of-type(2)
-nomanatif.net##.entry-inner > div:nth-of-type(3)
-nomanatif.net##.group.container > .container-inner > .pad.group
-nomanatif.net##.group.sidebar-top
-nomanatif.net##.post-tags
-nomanatif.net##div:nth-of-type(1) > .user.button-red
-nomanatif.net##div:nth-of-type(2) > .user.button-red
 nyaa.se##.ad_b345
 nyaa.se##.ad_b346
 nyaa.se##.ad_b347
 nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
-onhax.me###blog_subscription-3
-onhax.me###bottom-promo-abdload
-onhax.me###bottom-promo-dload
-onhax.me###facebook-likebox-2
-onhax.me###footer
-onhax.me###googleplus-badge-2
-onhax.me###pages-2
-onhax.me###prologue-147320 > table
-onhax.me###prologue-147320 > table > tbody > tr > td:nth-of-type(1)
-onhax.me###respond
-onhax.me###sb_footer
-onhax.me###text-17
-onhax.me###text-18
-onhax.me###text-3
-onhax.me###text-5
-onhax.me###top-promo-dload
-onhax.me##.lelabp
-onhax.me##.sd-sharing.sd-social-icon.sd-social.sd-block.robots-nocontent
 ouo.press##.about
 ouo.press##.footer-copy
 ouo.press##.join-now
@@ -181,14 +127,6 @@ quantrimang.com##.outclose
 quantrimang.com##.underlay
 ramleague.net###exposeMask
 ramleague.net##.errorOverlay
-rsload.net###e00001959e_c_0
-rsload.net###e00001959e_c_1
-rsload.net###e00001959e_c_2
-rsload.net###e00001959e_c_3
-rsload.net###e00001959e_c_4
-rsload.net###foot
-rsload.net###loga
-rsload.net##A[href^="http://et-code.ru/"]
 samsungvn.com###adsgoogle-top
 samsungvn.com##.welcomeBlock_content
 shink.in###bs-example-navbar-collapse-1
@@ -247,8 +185,10 @@ vietnamnet.vn##.BoxFix
 vietnamnet.vn##.Main-Footer.p-t-20
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
+vn-zoom.com###contentMain > div.bodyWrapper > div.body_wrapper:nth-child(2) > center:nth-child(8)
 vn-zoom.com###footerMain
 vn-zoom.com###header
+vn-zoom.com###toolbar_bottom
 vn-zoom.com##.clearfix
 vn-zoom.com##.floatcontainer.doc_header
 vn-zoom.com##.options_block_container
