@@ -39,7 +39,6 @@
 @@||uplod.it^$elemhide
 @@||win10.vn^$important,document,~extension
 @@||www.exrapidleech.info^$important,document,~extension
-@@||www.vnjpclub.com^$important,document,~extension
 ads.zaloapp.com###msgModal
 ads.zaloapp.com##.modal-backdrop.fade.in
 ads.zaloapp.com##.modal.fade.in
