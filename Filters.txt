@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2017.12.21.1
+! Version: 2018.02.15.1
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -17,6 +17,24 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
+dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
+||s30.postimg.org^*.png$domain=~langitbox.net
+||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
+lehait.net##div.kda06f-container.kda06f-2.kda06f-hide:nth-child(5)
+lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
+karanpc.com###post-18253 > div.entry:first-child > center:first-child
+@@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
+tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
+vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody > tr:last-child
+megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:last-child
+megaurl.in##footer:nth-child(3)
+megaurl.in###mainNav
+megaurl.in###__admvnlb_modal
+megaurl.in###__admvnlb_modal_container
+codevn.net###header
+codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.block.block--messages:nth-child(2) > div.block-container.lbContainer:nth-child(3) > div.block-body.js-replyNewMessageContainer > div.codevn_adsfirstpost:nth-child(2)
+codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-sidebar:last-child > div.CodeVnStickySidebar
+codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.float-shareBar:first-childcodevn.net###footer
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
