@@ -17,34 +17,14 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
-ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
-ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
-dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
-||s30.postimg.org^*.png$domain=~langitbox.net
-||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
-lehait.net##div.kda06f-container.kda06f-2.kda06f-hide:nth-child(5)
-lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
-karanpc.com###post-18253 > div.entry:first-child > center:first-child
-@@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
-tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
-vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody > tr:last-child
-megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:last-child
-megaurl.in##footer:nth-child(3)
-megaurl.in###mainNav
-megaurl.in###__admvnlb_modal
-megaurl.in###__admvnlb_modal_container
-codevn.net###header
-codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.block.block--messages:nth-child(2) > div.block-container.lbContainer:nth-child(3) > div.block-body.js-replyNewMessageContainer > div.codevn_adsfirstpost:nth-child(2)
-codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-sidebar:last-child > div.CodeVnStickySidebar
-codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.float-shareBar:first-childcodevn.net###footer
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
-*.fshare.vn/images/homepage/bg_content_page.jpg
 /banners/click/*
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|gram.im
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
+@@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
 @@||2.2.2.7^$important,document,~extension
 @@||4.3.2.1$$important,document,~extension
 @@||a86.demo.synology.com^$important,document,~extension
@@ -62,6 +42,10 @@ chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child > div.f-c:nth-child(2) > ul
+codevn.net###header
+codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.block.block--messages:nth-child(2) > div.block-container.lbContainer:nth-child(3) > div.block-body.js-replyNewMessageContainer > div.codevn_adsfirstpost:nth-child(2)
+codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.float-shareBar:first-childcodevn.net###footer
+codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-sidebar:last-child > div.CodeVnStickySidebar
 d-h.st/assets/img/download3.png
 dailyuploads.net##.adsbygoogle
 dailyuploads.net##.footer
@@ -71,6 +55,7 @@ datafilehost.com##.col-md-4.col-xs-6.text-center
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 debrid.ml###linkform > font:first-child
 disqus.*$domain=mackie100projects.altervista.org
+dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 facebook.com###pagelet_canvas_nav_content
 facebook.com###u_ps_0_1_3
 facebook.com##._4-u2._1-ib._2tyk._20os._4-u8
@@ -80,12 +65,6 @@ forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
-fshare.vn###dlnav > div.filelist_header.clearfix:last-child > div.pull-right.file_date_modify.align-right.header_item:nth-child(5) > div.tourGuide:nth-child(2) > div.modal-backdrop.fade.in:first-child
-fshare.vn###dlnav > div.filelist_header.clearfix:last-child > div.pull-right.file_date_modify.align-right.header_item:nth-child(5) > div.tourGuide:nth-child(2) > div.popover.fade.bottom.in:last-child > div.popover-content:last-child
-fshare.vn###e_itexpress_bottom_left
-fshare.vn###homepage > footer:nth-child(7)
-fshare.vn###jssor_1 > div > div > div
-fshare.vn###livechat
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
 getlinkpro.net##.col.s3
@@ -95,8 +74,13 @@ hdvietnam.com###sidebar_container
 hdvietnam.com###topbillboard
 hdvietnam.com###yamaha_ads_1
 hdvietnam.com###yamaha_ads_2
+ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
+ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
+karanpc.com###post-18253 > div.entry:first-child > center:first-child
 leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
 leech.thoaimedia.com##center:nth-child(3)
+lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
+lehait.net##div.kda06f-container.kda06f-2.kda06f-hide:nth-child(5)
 linksvip.net###footer
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row.top:first-child
 linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(2)
@@ -117,6 +101,11 @@ mackie100projects.altervista.org##.av-credit-link
 mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
+megaurl.in###__admvnlb_modal
+megaurl.in###__admvnlb_modal_container
+megaurl.in###mainNav
+megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:last-child
+megaurl.in##footer:nth-child(3)
 mpgh.net##.below_body
 mpgh.net##.logo_container > div:nth-of-type(1)
 mpgh.net##.navi1
@@ -179,6 +168,7 @@ tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
 thiendia.com###hide_float_right
 thiendia.com###logoBlock
+tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
 tranducit.com##.popScroll
 tudienabc.com###container > div.row:nth-child(4)
 uploadocean.com###header
@@ -200,6 +190,7 @@ us.24h.com.vn##.footer-menu2
 us.24h.com.vn##.text-banner-horizontal
 userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
+vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody > tr:last-child
 vietnamnet.vn###Box-FixFB
 vietnamnet.vn##.BoxFix
 vietnamnet.vn##.Main-Footer.p-t-20
@@ -224,7 +215,6 @@ vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 win10.vn###boxzilla-1929
 win10.vn###boxzilla-overlay
-www.fshare.vn##.balloon
 www.mediafire.com###footer
 www.mediafire.com###header
 www.mediafire.com##.dlInfo-Body
@@ -251,9 +241,6 @@ youtube.com##*.video-ads
 ||*.facebook.*$script,third-party,image,domain=*.amazon.*
 ||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
 ||*.fhawywadfjlo.*^
-||*.fshare.vn/images/default/*.jpg
-||*.fshare.vn/img/background/*.png
-||*.fshare.vn/web/*.gif
 ||*.googleadservices.*^
 ||*.googlesyndication.*^
 ||*.googletagservices.*
@@ -316,6 +303,8 @@ youtube.com##*.video-ads
 ||realclick.vn
 ||rsload.net/images5/2120.png
 ||rsload.net/images5/downasd1.png
+||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
+||s30.postimg.org^*.png$domain=~langitbox.net
 ||sbbanner.*^
 ||secafe.vn/ads/maruko/728x90.gif$image
 ||server7.upload69.net/images/2017/04/10/CMDD116_300x2509852e.gif
@@ -324,9 +313,6 @@ youtube.com##*.video-ads
 ||shink.in/imagenes/logo.png
 ||shink.in/img/downloadad.png
 ||sp.zalo.me/plugins/share?*
-||static2.fshare.vn/img/logo_fsharev2.png$image
-||storage.fshare.vn/images/*.gif
-||storage.fshare.vn/images/ball.png
 ||trafflict.*^
 ||trafflict.com^
 ||uniad.phimmoi.net^
