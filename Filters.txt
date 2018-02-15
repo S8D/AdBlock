@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Version: 2018.02.15.1
+! Version: 2018.02.15.2
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
 !-------------------------------------=><=-------------------------------------
-||facebook.com/plugins/comments.php$subdocument
+||facebook.com/plugins/comments.php^$domain=ios.codevn.net
 ||facebook.com/plugins/feedback.php$subdocument
 ||facebook.com/plugins/like_box.php$subdocument
 ||facebook.com/plugins/share_button.php$subdocument
@@ -17,6 +17,8 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
+ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
+ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 ||s30.postimg.org^*.png$domain=~langitbox.net
 ||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
