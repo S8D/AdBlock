@@ -1,6 +1,4 @@
-# AdBlock for iOS DNS Proxy rules 
-# https://itunes.apple.com/us/app/adblock/id691121579
-# Exported Mar 11, 2018 at 10:18:17 AM with AdBlock v4.1
+Khong 43.3123
 Một 2mdnsys.com
 Hai Ba/4.567
 , zyiis.net
