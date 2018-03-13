@@ -1,9 +1,9 @@
-#AdBlock_20180313
+#20180313
 123c.vn
 24h.com.vn
 2ch.net
+2mdnsys.com
 4chan-ads.org
-a.applovin.com
 a.medialytics.com
 acd.com.vn
 actrk.me
@@ -13,6 +13,7 @@ ad.zing.vn
 ad360.vn
 adcash.com
 adcloud.jp
+adcolony.com
 adcontent.saymedia.com
 adex.bmediaasia.com
 adex2.bmediaasia.com
@@ -37,6 +38,7 @@ ads.mobilefuse.net
 ads.yahoo.com
 ads.youtube.com
 ads0.nexage.com
+adserver-vpc-production-v2-669935021.us-east-1.elb.amazonaws.com
 adserver.yahoo.com
 adservice.google.com
 adsupply.com
@@ -62,8 +64,11 @@ app.sysdigcloud.com
 appldnld.apple.com
 applift.com
 applovin.com
+applvn.com
 appodeal.com
 apps.facebook.com
+appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com
+appsflyer.com
 appshelf.ttpsdk.info
 asimgs.pplive.cn
 astrsk.net
@@ -108,8 +113,8 @@ comradmobile.com
 connect.facebook.com
 content-ad.net
 corp.meitu.com
+crashlytics.com
 crosspromo.zeptolab.com
-d.applovin.com
 d.appsdt.com
 d.dropbox.com
 d1k5gitkzferqo.cloudfront.net
@@ -167,6 +172,7 @@ googlesyndication.com
 googletagmanager.com
 h2.msn.com
 hao123union.baidu.com
+heyzap.com
 hghit.com
 hhbekxxw5d9e.pflexads.com
 hi5.com
@@ -200,12 +206,15 @@ kadam.net
 kochava.com
 ktopodgladamnienafacebooku.wordpress.com
 leadbolt.com
+leadzutw.com
 lfstmedia.com
 liftoff.io
 liveadexchanger.com
 liveintent.com
+llnwd.net
 localytics.com
 log.baomoi.com
+logv2.mp3.zing.vn
 m.adsymptotic.com
 m.jd.com
 m.quantserve.com
@@ -221,6 +230,7 @@ medialand.ru
 mellowads.com
 message.meitu.com
 mesu.apple.com
+mgid.com
 misterbell.com
 mobads-logs.baidu.com
 mobile.sina.cn
@@ -233,7 +243,6 @@ mucu.jp
 nativex-sdk.appspot.com
 nend.net
 newspush.sinajs.cn
-next.tweakboxapp.com
 nr-data.net
 ocsp.apple.com
 omgmta.qq.com
@@ -247,13 +256,13 @@ openxmarket.jp
 otherlevels.com
 ox-d.advanceweb.com
 ox-d.majorgeeks.com
-pdn.applovin.com
 phanquang.vn
 pingjs.qq.com
 pingma.qq.com
 pixel.facebook.com
 pixel.wp.com
 playhaven.com
+popads.net
 pos.baidu.com
 projectwonderful.com
 propellerpops.com
