@@ -1,4 +1,5 @@
-#20180313
+#20180318
+#AdBlock
 123c.vn
 24h.com.vn
 2ch.net
@@ -37,11 +38,14 @@ ads.huntmad.com
 ads.mobilefuse.net
 ads.yahoo.com
 ads.youtube.com
+ads.zdn.vn
 ads0.nexage.com
 adserver-vpc-production-v2-669935021.us-east-1.elb.amazonaws.com
 adserver.yahoo.com
 adservice.google.com
+adservice.google.com.vn
 adsupply.com
+adtilt.com
 adtima.vn
 adtimaserver.vn
 adtoma.com
@@ -50,6 +54,7 @@ advertisingvietnam.com
 advertstar.net
 adxmi.com
 ah.yimg.jp
+aliexpress.com
 alitui.weibo.com
 amobee.com
 amp.avai.com
@@ -57,7 +62,6 @@ analytics.google.com
 analytics.vnreview.vn
 api.airpush.com
 api.appodeal.com
-api.zaloapp.com
 app-c.net
 app-measurement.com
 app.sysdigcloud.com
@@ -65,11 +69,14 @@ appldnld.apple.com
 applift.com
 applovin.com
 applvn.com
+appnext.com
 appodeal.com
 apps.facebook.com
 appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com
 appsflyer.com
 appshelf.ttpsdk.info
+asdkd.tutuapp.com
+asdkd.tutuapp.com.w.alikunlun.com
 asimgs.pplive.cn
 astrsk.net
 au.youmi.net
@@ -119,6 +126,7 @@ d.appsdt.com
 d.dropbox.com
 d1k5gitkzferqo.cloudfront.net
 d2bgg7rjywcwsy.cloudfront.net
+d2m1qxggnnaaex.cloudfront.net
 d3o20pxlleg2k6.cloudfront.net
 d3oltyb66oj2v8.cloudfront.net
 data.airpush.com
@@ -131,6 +139,8 @@ doubleclick.ne.jp
 doubleclick.net
 doubleclickbygoogle.com
 dts.startappservice.com
+duclick.baidu.com
+e10204.dsca.akamaiedge.net
 eclick.baidu.com
 eclick.vn
 ecpmrocks.com
@@ -167,6 +177,7 @@ go.polyad.net
 go2cloud.org
 goo.ne.jp
 google-analytics.com
+googleadservices.com
 googlefeud.com
 googlesyndication.com
 googletagmanager.com
@@ -213,7 +224,9 @@ liveadexchanger.com
 liveintent.com
 llnwd.net
 localytics.com
+log.api.zaloapp.com
 log.baomoi.com
+log4x.nixcdn.com
 logv2.mp3.zing.vn
 m.adsymptotic.com
 m.jd.com
@@ -236,10 +249,12 @@ mobads-logs.baidu.com
 mobile.sina.cn
 mobile.yahoo.com
 mobiledl.adobe.com
+mobtrks.com
 mobusi.com
 mopub.com
 movad.de
 mucu.jp
+mzstatic.com
 nativex-sdk.appspot.com
 nend.net
 newspush.sinajs.cn
@@ -269,6 +284,7 @@ propellerpops.com
 pubdirecte.com
 pubnative.net
 r1.ykimg.com
+rayjump.com
 rcm.amazon.com
 redclick.ru
 redintelligence.net
@@ -286,6 +302,7 @@ sd.domob.cn
 service.urchin.com
 sf.vserv.mobi
 sharethrough.com
+shop.zalo.me
 shopdunk.baomoi.com
 simaba.taobao.com
 smart-c.jp
@@ -293,10 +310,12 @@ spotad.cn
 spotscenered.info
 sprout-ad.com
 spstaticimg.ameba.jp
+ssl-google-analytics.l.google.com
 st.polyad.net
 startapp.com
 startappexchange.com
 statcounter.com
+static-doubleclick-net.l.google.com
 static.criteo.net
 static.estebull.com
 static.novanet.vn
@@ -322,6 +341,7 @@ uedata.amazon.com
 umeng.com
 unimhk.com
 union.baidu.com
+unityads.unity3d.com
 untd.com
 vads.vn
 vamaker.com
@@ -342,6 +362,7 @@ www.wwwgoogles.com
 wwwpromoter.com
 yicha.jp
 yieldmo.com
+ymtracking.com
 yumenetworks.com
 zedo.com
 zestads.com
