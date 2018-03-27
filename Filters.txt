@@ -17,6 +17,20 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
+downmienphi.com##footer:nth-child(4)
+downmienphi.com###index_middle > div.container.dad > div.mainContainer:nth-child(3) > div.mainContent > div.innerContent:nth-child(5) > div.interested:nth-child(7)
+taive.in##footer:nth-child(3)
+taive.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:last-child
+taive.in###mainNav
+filehippo.com###zeus_1522072502357
+fshare.vn###web-container > footer:nth-child(3)
+||www.fshare.vn/images/Banner_22032018_900x100.gif
+||*.coccoc.com
+||*.serving-sys.com
+||*.moatads.com
+||*.adsafeprotected.com
+||qccoccocmedia.vn
+||coccoc.com/webhp/*.*
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.disquscdn.*$domain=mackie100projects.altervista.org
 *.fsdn.com/con/js/min/sf.js?*
