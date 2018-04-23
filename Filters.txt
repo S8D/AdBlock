@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.04.23.01
+! Version: 2018.04.23.02
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -23,7 +23,7 @@
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fsdn.com/con/js/min/sf.js?*
 /banners/click/*
-@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|gram.im
+@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
 @@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
