@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.04.24.06
+! Version: 2018.04.24.07
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -8,6 +8,8 @@
 !-------------------------------------=><=-------------------------------------
 ||facebook.com/plugins/$domain=~facebook.com
 ||facebook.com/*/plugins/$domain=~facebook.com
+||facebook.com/tr/*.*
+||facebook.com/impression.php
 ||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !-------------------------------------=><=-------------------------------------
