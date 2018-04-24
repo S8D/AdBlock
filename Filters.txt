@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.04.24.04
+! Version: 2018.04.24.05
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -62,7 +62,6 @@ datafilehost.com##div.container:nth-child(2) > div.row:nth-child(6)
 datafilehost.com##div.container:nth-child(2) > div.row:nth-child(6) > div.col-lg-12:first-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 debrid.ml###linkform > font:first-child
-disqus.*$domain=mackie100projects.altervista.org
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.paymentoffersone1:nth-child(5) > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
 douploads.com###wrapper > div.paymentoffersone1:last-child > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
@@ -247,7 +246,7 @@ youtube.com##*.video-ads
 ||*.adloft.*^
 ||*.admicro.*
 ||*.adnetwork.*^
-||*.adsafeprotected.com
+||*.adsafeprotected.*^
 ||*.adskeeper.*^
 ||*.adtima.*^
 ||*.adtimaserver.*^
@@ -257,8 +256,9 @@ youtube.com##*.video-ads
 ||*.amcdn.vn^
 ||*.bitpit.*^
 ||*.bnserving.*^
-||*.coccoc.^
+||*.coccoc.*^
 ||*.comeadvertisewithus.*^
+||*.disqus.*^
 ||*.disquscdn.*^
 ||*.doubleclick.*^
 ||*.eboundservices.*^
@@ -267,12 +267,12 @@ youtube.com##*.video-ads
 ||*.google-analytics.*^
 ||*.googleadservices.*^
 ||*.googlesyndication.*^
-||*.googletagservices.*
+||*.googletagservices.*^
 ||*.hit4hit.*^
 ||*.kjsrv.net^
 ||*.liveinternet.*^
 ||*.microad.*^
-||*.moatads.com
+||*.moatads.*^
 ||*.mookie1.*^
 ||*.omiai-jp.*^
 ||*.opus-static.*
@@ -280,9 +280,9 @@ youtube.com##*.video-ads
 ||*.puserving.*^
 ||*.sabavision.*^
 ||*.serving-sys.*^
-||*.serving-sys.com
 ||*.tamanae.*^
 ||*.uniad.*
+||*.upload69.*^
 ||*.wap4dollar.*^
 ||.mobile-10.^
 ||.puhtml.^
@@ -300,8 +300,6 @@ youtube.com##*.video-ads
 ||daytiengnhat.edu.vn/upload/administrator/image/*.*
 ||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
 ||dezaula.*^
-||disqus.*^$subdocument
-||disqus.com^
 ||douploads.com/mngez/music/$media,domain=douploads.com
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
@@ -322,7 +320,7 @@ youtube.com##*.video-ads
 ||linksvip.net/images/getlinktailieu.gif$image
 ||linksvip.net/images/vip/shortes.png
 ||log.baomoi.com^
-||log.news.zing.vn
+||log.news.zing.vn^
 ||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
 ||macintosh.vn/forum/js/jquery.gallery.js
 ||macintosh.vn/forum/js/jscustome.js
@@ -334,9 +332,9 @@ youtube.com##*.video-ads
 ||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
 ||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
 ||phimmoi.net/widget.php
-||qccoccocmedia.vn
+||qccoccocmedia.*^
 ||quantrimang.com/scripts/main?
-||realclick.vn
+||realclick.*^
 ||rsload.net/images5/2120.png
 ||rsload.net/images5/downasd1.png
 ||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
@@ -344,9 +342,6 @@ youtube.com##*.video-ads
 ||sbbanner.*^
 ||scorecardresearch.com^
 ||secafe.vn/ads/maruko/728x90.gif$image
-||server7.upload69.net/images/2017/04/10/CMDD116_300x2509852e.gif
-||server7.upload69.net/images/2017/05/10/banner300x250vapingvn270203.gif
-||server7.upload69.net/images/2017/06/06/thiendia-300keb3aa.gif
 ||shink.in/imagenes/logo.png
 ||shink.in/img/downloadad.png
 ||sp.zalo.me/plugins/share?*
@@ -354,7 +349,6 @@ youtube.com##*.video-ads
 ||stc.sp.zdn.vn/zaloid/client/zavisitor.js
 ||thongke.24h.com.vn
 ||trafflict.*^
-||trafflict.com^
 ||uniad.phimmoi.net^
 ||upera.ir^
 ||uplod.ws/responsive_js/paging.js
