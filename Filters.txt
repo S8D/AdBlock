@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.04.24.02
+! Version: 2018.04.24.03
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -20,6 +20,16 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
+/fingerprint2.min.js^
+||*.adtima.*^
+||scorecardresearch.com^
+||criteo.net^
+||log.baomoi.com^
+||stc.sp.zdn.vn/zaloid/client/zavisitor.js
+||static.24h.com.vn/js/js_outsite/analytics.js
+||thongke.24h.com.vn
+||*.amcdn.vn^
+!---------------------------------------
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fsdn.com/con/js/min/sf.js?*
 /adsense/*
@@ -258,8 +268,6 @@ youtube.com##*.video-ads
 ||*.alicdn.com^
 ||*.bitpit.*^
 ||*.bnserving.*^
-||*.coccoc.com
-||*.coccoc.com^
 ||*.comeadvertisewithus.*^
 ||*.disquscdn.*^
 ||*.doubleclick.*^
@@ -298,6 +306,7 @@ youtube.com##*.video-ads
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
 ||coccoc.com/webhp/*.*
+||*.coccoc.^
 ||daytiengnhat.edu.vn/upload/administrator/image/*.*
 ||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
 ||dezaula.*^
