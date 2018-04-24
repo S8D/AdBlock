@@ -1,16 +1,12 @@
 [Adblock Plus 2.0]
-! Version: 2018.04.24.03
+! Version: 2018.04.24.04
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
 !-------------------------------------=><=-------------------------------------
-||*.facebook.*$domain=linksieutoc.net
-||*.facebook.*$script,third-party,image,domain=*.amazon.*
-||*.facebook.*/*/sdk.js$domain=getlinkonline.com|igame4v.com
-||facebook.com/plugins/comments.php^$domain=ios.codevn.net
-||facebook.com/plugins/feedback.php^$domain=www.baocalitoday.com
+||*.facebook.*^$domain=linksieutoc.net|*.amazon.*|getlinkonline.com|igame4v.com|ios.codevn.net|www.baocalitoday.com
 ||facebook.com/plugins/like_box.php$subdocument
 ||facebook.com/plugins/share_button.php$subdocument
 ||facebook.com/*/plugins/page.php$subdocument
@@ -20,25 +16,16 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
-/fingerprint2.min.js^
-||*.adtima.*^
-||scorecardresearch.com^
-||criteo.net^
-||log.baomoi.com^
-||stc.sp.zdn.vn/zaloid/client/zavisitor.js
-||static.24h.com.vn/js/js_outsite/analytics.js
-||thongke.24h.com.vn
-||*.amcdn.vn^
-!---------------------------------------
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 *.fsdn.com/con/js/min/sf.js?*
 /adsense/*
 /banners/click/*
+/fingerprint2.min.js^
+@@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
 @@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
-@@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 @@||uplod.it^$elemhide
 ads.zaloapp.com###msgModal
@@ -262,12 +249,15 @@ youtube.com##*.video-ads
 ||*.adnetwork.*^
 ||*.adsafeprotected.com
 ||*.adskeeper.*^
+||*.adtima.*^
 ||*.adtimaserver.*^
 ||*.adtrue.*^
 ||*.advertisingwouldbegreat.*^
 ||*.alicdn.com^
+||*.amcdn.vn^
 ||*.bitpit.*^
 ||*.bnserving.*^
+||*.coccoc.^
 ||*.comeadvertisewithus.*^
 ||*.disquscdn.*^
 ||*.doubleclick.*^
@@ -306,7 +296,7 @@ youtube.com##*.video-ads
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
 ||coccoc.com/webhp/*.*
-||*.coccoc.^
+||criteo.net^
 ||daytiengnhat.edu.vn/upload/administrator/image/*.*
 ||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
 ||dezaula.*^
@@ -317,8 +307,6 @@ youtube.com##*.video-ads
 ||freetuts.net/public/theme/js/my.js
 ||getlinkpro.net/images/banner_shink.jpg
 ||getlinkpro.net/images/ouoads.png
-||goo.gl/CGHVVo$image
-||goo.gl^$image,domain=uplod.ws
 ||hdvietnam.com/banner/16/9/himedia-right-4--vinabox.swf
 ||hdvietnam.com/banner/16/9/right-1--itvplus_2.swf
 ||hdvietnam.com/banner/17/4/hieuhien.gif
@@ -333,6 +321,7 @@ youtube.com##*.video-ads
 ||linksvip.net/images/bg-facebook.png$image
 ||linksvip.net/images/getlinktailieu.gif$image
 ||linksvip.net/images/vip/shortes.png
+||log.baomoi.com^
 ||log.news.zing.vn
 ||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
 ||macintosh.vn/forum/js/jquery.gallery.js
@@ -353,6 +342,7 @@ youtube.com##*.video-ads
 ||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
 ||s30.postimg.org^*.png$domain=~langitbox.net
 ||sbbanner.*^
+||scorecardresearch.com^
 ||secafe.vn/ads/maruko/728x90.gif$image
 ||server7.upload69.net/images/2017/04/10/CMDD116_300x2509852e.gif
 ||server7.upload69.net/images/2017/05/10/banner300x250vapingvn270203.gif
@@ -360,6 +350,9 @@ youtube.com##*.video-ads
 ||shink.in/imagenes/logo.png
 ||shink.in/img/downloadad.png
 ||sp.zalo.me/plugins/share?*
+||static.24h.com.vn/js/js_outsite/analytics.js
+||stc.sp.zdn.vn/zaloid/client/zavisitor.js
+||thongke.24h.com.vn
 ||trafflict.*^
 ||trafflict.com^
 ||uniad.phimmoi.net^
