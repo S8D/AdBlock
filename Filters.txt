@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.04.23.02
+! Version: 2018.04.24.01
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -21,9 +21,13 @@
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
+megaurl.in##div.jquery-adi.dark
+||*.coccoc.com^
+||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
+||*.google-analytics.*^
 *.fsdn.com/con/js/min/sf.js?*
 /banners/click/*
-@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im
+@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
 @@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
