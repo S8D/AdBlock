@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.12.01
+! Version: 2018.05.12.02
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -153,6 +153,10 @@ megaurl.top##.adsbygoogle
 megaurl.top##.copyright-container
 megaurl.top##.navbar, .navbar-default
 megaurl.top##.text-left
+megaurl.club##.adsbygoogle
+megaurl.club##.copyright-container
+megaurl.club##.navbar, .navbar-default
+megaurl.club##.text-left
 mina.mazii.net###myShare
 mina.mazii.net##div.modal-backdrop.fade.in
 mobifone.vn###home-slider > div.owl-wrapper-outer
