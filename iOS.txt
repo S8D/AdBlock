@@ -1,10 +1,12 @@
 #AdBlock
-#20180505
+#20180511
 123c.vn
 1rx.io
 2ch.net
+2mdn.net
 2mdnsys.com
 4chan-ads.org
+51y5.net
 a.medialytics.com
 acd.com.vn
 actrk.me
@@ -25,6 +27,7 @@ adfonic.net
 adform.net
 adfox.vn
 adhigh.net
+adjust.com
 adm3.autoimg.cn
 admaster.com.cn
 admetix.com
@@ -44,6 +47,7 @@ ads.google.com
 ads.huntmad.com
 ads.ictnews.vn
 ads.mobilefuse.net
+ads.netflix.com
 ads.yahoo.com
 ads.youtube.com
 ads.zdn.vn
@@ -57,6 +61,7 @@ adshostnet.com
 adsmain.com
 adsrvr.org
 adsupply.com
+adsymptotic.com
 adtilt.com
 adtima.vn
 adtimaserver.vn
@@ -99,6 +104,8 @@ asdkd.tutuapp.com
 asdkd.tutuapp.com.w.alikunlun.com
 asimgs.pplive.cn
 astrsk.net
+atdmt.com
+attenhance.com
 au.youmi.net
 badad.googleplex.com
 beacon.qq.com
@@ -211,6 +218,7 @@ gmossp-sp.jp
 go.mobpartner.mobi
 go.polyad.net
 go2cloud.org
+go2speed.org
 goo.ne.jp
 google-analytics.com
 googleadapis.l.google.com
@@ -220,6 +228,7 @@ googlehosted.l.googleusercontent.com
 googlesyndication.com
 googletagmanager.com
 googletagservices.com
+gowadogo.com
 h2.msn.com
 hao123union.baidu.com
 heyzap.com
@@ -252,11 +261,13 @@ intellitxt.com
 interlogistics.com.vn
 intermarkets.net
 irs01.com
+islandmob.com
 js-agent.newrelic.com
 jtbmxdoadktnm.com
 kadam.net
 kochava.com
 ktopodgladamnienafacebooku.wordpress.com
+ladsp.com
 leadbolt.com
 leadzutw.com
 lfstmedia.com
@@ -269,9 +280,11 @@ log.api.zaloapp.com
 log.baomoi.com
 log.infonet.vn
 log.news.zing.vn
+log.pinterest.com
 log4x.nixcdn.com
 logperf.vnexpress.net
 logv2.mp3.zing.vn
+lucklayed.info
 m.adsymptotic.com
 m.jd.com
 m.quantserve.com
@@ -291,8 +304,10 @@ mesu.apple.com
 metric.gstatic.com
 mgid.com
 misterbell.com
+mixpanel.com
 moatads.com
 mobads-logs.baidu.com
+mobile-gtalk.l.google.com
 mobile.sina.cn
 mobile.yahoo.com
 mobiledl.adobe.com
@@ -302,6 +317,8 @@ mookie1.cn
 mopub.com
 movad.de
 mucu.jp
+mzstatic.com
+mzstatic.com.edgesuite.net
 nativex-sdk.appspot.com
 nend.net
 newspush.sinajs.cn
@@ -329,10 +346,12 @@ playhaven.com
 polyad.net
 popads.net
 pos.baidu.com
+prodaa.netflix.com
 projectwonderful.com
 propellerpops.com
 pubdirecte.com
 pubnative.net
+questmedia.ru
 r1.ykimg.com
 rayjump.com
 rcm.amazon.com
@@ -343,6 +362,7 @@ req.startappservice.com
 res-zalo.zadn.vn
 res.hunantv.com
 revmob.com
+rfrl.pw
 rs-staticart.ybcdn.net
 s3.amazonasw.com
 s3.amazonaws.com
@@ -430,6 +450,7 @@ yicha.jp
 yieldmo.com
 ymtracking.com
 yumenetworks.com
+zalo-ads-td.zadn.vn
 zedo.com
 zestads.com
 zestadz.com
