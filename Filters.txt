@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.01.01
+! Version: 2018.05.12.01
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -145,14 +145,14 @@ mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0,
 mazii.net###view2 > ui-view.ng-scope > ng-affilate.ng-scope:nth-child(2) > div.box-notify-mean.affilate-screen.ng-scope
 mazii.net###view2 > ui-view.ng-scope > ng-affilate.ng-scope:nth-child(2) > div.box-notify-mean.affilate-screen.ng-scope > div.main:last-child
 mazii.net###view2 > ui-view.ng-scope > ng-affilate.ng-scope:nth-child(2) > div.box-notify-mean.affilate-screen.ng-scope > div.main:last-child > div.affilate > a > img
-megaurl.in###__admvnlb_modal
-megaurl.in###__admvnlb_modal_container
-megaurl.in###mainNav
-megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.link-details:first-child
-megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.link-details:nth-child(2)
-megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:last-child
-megaurl.in##div.jquery-adi.dark
-megaurl.in##footer:nth-child(3)
+megaurl.in##.adsbygoogle
+megaurl.in##.copyright-container
+megaurl.in##.navbar, .navbar-default
+megaurl.in##.text-left
+megaurl.top##.adsbygoogle
+megaurl.top##.copyright-container
+megaurl.top##.navbar, .navbar-default
+megaurl.top##.text-left
 mina.mazii.net###myShare
 mina.mazii.net##div.modal-backdrop.fade.in
 mobifone.vn###home-slider > div.owl-wrapper-outer
@@ -302,6 +302,7 @@ youtube.com##*.video-ads
 ||*.bnserving.*^
 ||*.coccoc.*^
 ||*.comeadvertisewithus.*^
+||*.directadvert.*^
 ||*.disqus.*^
 ||*.disquscdn.*^
 ||*.doubleclick.*^
@@ -313,6 +314,7 @@ youtube.com##*.video-ads
 ||*.googlesyndication.*^
 ||*.googletagservices.*^
 ||*.hit4hit.*^
+||*.infolinks.*^
 ||*.kjsrv.net^
 ||*.linkbucks.com^
 ||*.liveinternet.*^
