@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.12.02
+! Version: 2018.05.12.03
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -39,38 +39,31 @@ allsolu4u.vn###headerProxy
 allsolu4u.vn###logoBlock
 allsolu4u.vn###widget-16
 bkshare.com###itro_opaco
-canhme.com###main > div.et_bloom_inline_form.et_bloom_optin.et_bloom_make_form_visible.et_bloom_optin_6:nth-child(2)
-canhme.com###masthead > div.container
-canhme.com###post-22951 > footer.entry-footer:last-child
+canhme.com###masthead
 canhme.com###secondary
-canhme.com##div.et_bloom_popup.et_bloom_optin.et_bloom_resize.et_bloom_optin_1.et_bloom_auto_popup.et_bloom_trigger_bottom.et_bloom_hide_mobile_optin.et_bloom_visible.et_bloom_animated:nth-child(10)
+canhme.com##.entry-footer
+canhme.com##.et_bloom_inline_form, .et_bloom_optin, .et_bloom_make_form_visible, .et_bloom_optin_6
+canhme.com##.site-footer
+canhme.com##.slide-on-scroll
 chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child > div.f-c:nth-child(2) > ul
+codevn.net###footer
 codevn.net###header
-codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.block.block--messages:nth-child(2) > div.block-container.lbContainer:nth-child(3) > div.block-body.js-replyNewMessageContainer > div.codevn_adsfirstpost:nth-child(2)
-codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-content:first-child > div.p-body-pageContent > div.float-shareBar:first-childcodevn.net###footer
-codevn.net###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main.p-body-main--withSidebar:nth-child(5) > div.p-body-sidebar:last-child > div.CodeVnStickySidebar
+codevn.net##.codevnFooter
 cydia.vn###tag_cloud-4
 d-h.st/assets/img/download3.png
 dailyuploads.net##.adsbygoogle
 dailyuploads.net##.footer
-datafilehost.com###dldtable > TBODY > TR:first-child
+datafilehost.com##.col-lg-12
 datafilehost.com##.col-md-10.col-sm-10.col-xs-20
 datafilehost.com##.col-md-4.col-xs-6.text-center
-datafilehost.com##div.container:nth-child(2) > div.row:first-child > div.col-lg-12
+datafilehost.com##.col-sm-3, .col-xs-6
+datafilehost.com##.navbar, .navbar-inverse, .navbar-fixed-top
 datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:first-child > a:nth-child(8) > h4
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:first-child > h4:nth-child(4)
 datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:last-child
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-8.text-center:first-child > div:last-child
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(3) > div.col-lg-12
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(4)
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(5)
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(6)
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(6) > div.col-lg-12:first-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
-debrid.ml###linkform > font:first-child
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 dongnaigsm.vn###headerMover > header:last-child
 dongnaigsm.vn###headerProxy
@@ -99,7 +92,6 @@ forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
-fshare.vn###web-container > footer:nth-child(3)
 getlinkpro.net###search-4
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
@@ -123,14 +115,12 @@ leech.thoaimedia.com##center:nth-child(3)
 lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
 lehait.net##div.kda06f-container.kda06f-2.kda06f-hide:nth-child(5)
 linksvip.net###footer
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row.top:first-child
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(2)
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div.portlet:nth-child(3)
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-4:last-child > div:last-child
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.portlet:last-child > div.portlet-content:last-child > ul.tags
-linksvip.net##div.container:nth-child(7) > div.content > div.content-container > div.row:last-child > div.col-md-8:first-child > div.row:nth-child(2)
-linksvip.net##div.likebox-fb:nth-child(11)
-linksvip.net##div.navbar:nth-child(5)
+linksvip.net##.mainbar
+linksvip.net##.tags
+linksvip.net##[id$="social"],[class$="col-sm-6"]
+linksvip.net##div[style^="line-height:50px"]
+linksvip.net##div[style^="margin:0;padding:0"]
+linksvip.net##table[width='100%']
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
 mackie100projects.altervista.org###et-bio-author
@@ -142,9 +132,10 @@ mackie100projects.altervista.org##.av-credit-link
 mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
-mazii.net###view2 > ui-view.ng-scope > ng-affilate.ng-scope:nth-child(2) > div.box-notify-mean.affilate-screen.ng-scope
-mazii.net###view2 > ui-view.ng-scope > ng-affilate.ng-scope:nth-child(2) > div.box-notify-mean.affilate-screen.ng-scope > div.main:last-child
-mazii.net###view2 > ui-view.ng-scope > ng-affilate.ng-scope:nth-child(2) > div.box-notify-mean.affilate-screen.ng-scope > div.main:last-child > div.affilate > a > img
+megaurl.club##.adsbygoogle
+megaurl.club##.copyright-container
+megaurl.club##.navbar, .navbar-default
+megaurl.club##.text-left
 megaurl.in##.adsbygoogle
 megaurl.in##.copyright-container
 megaurl.in##.navbar, .navbar-default
@@ -153,10 +144,6 @@ megaurl.top##.adsbygoogle
 megaurl.top##.copyright-container
 megaurl.top##.navbar, .navbar-default
 megaurl.top##.text-left
-megaurl.club##.adsbygoogle
-megaurl.club##.copyright-container
-megaurl.club##.navbar, .navbar-default
-megaurl.club##.text-left
 mina.mazii.net###myShare
 mina.mazii.net##div.modal-backdrop.fade.in
 mobifone.vn###home-slider > div.owl-wrapper-outer
@@ -227,8 +214,6 @@ talk.secafe.vn##.scrollContainer
 talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-right: 12px; background-color: #ccc;"]
 tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
-thiendia.com###hide_float_right
-thiendia.com###logoBlock
 tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
 tinhte.vn###uix_wrapper > footer:last-child
 tranducit.com##.popScroll
@@ -362,25 +347,12 @@ youtube.com##*.video-ads
 ||downmienphi.net/themes/downmienphi/images/*.*
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
-||getlinkpro.net/images/banner_shink.jpg
-||getlinkpro.net/images/ouoads.png
-||hdvietnam.com/banner/16/9/himedia-right-4--vinabox.swf
-||hdvietnam.com/banner/16/9/right-1--itvplus_2.swf
-||hdvietnam.com/banner/17/4/hieuhien.gif
-||hdvietnam.com/banner/17/6/banner-tieng-ngoc-top-3-1.jpg
-||hdvietnam.com/banner/17/6/top-3-song-nhac-new.jpg
-||i.imgur.com/aSCNofV.jpg$image
-||i.imgur.com/m5ttIa7.gif
-||i.imgur.com/TejADRU.gif
-||i1.wp.com/codex.onhax.net
-||img.thiendia.com/server7/images/2016/02/29/VDN_media_banner_728_x_90d032b.gif
 ||jwge1505.*^
 ||kenh76.vn/js/popupamthuc.js
 ||linksvip.net/images/bg-facebook.png$image
 ||linksvip.net/images/getlinktailieu.gif$image
 ||linksvip.net/images/vip/shortes.png
 ||log.baomoi.com^
-||log.news.zing.vn
 ||log.news.zing.vn^
 ||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
 ||macintosh.vn/forum/js/jquery.gallery.js
@@ -420,5 +392,4 @@ youtube.com##*.video-ads
 ||uptruyen.*
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
-||www.fshare.vn/images/Banner_22032018_900x100.gif
 ||ylx-1.com
