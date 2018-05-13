@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.14.03
+! Version: 2018.05.14.04
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -21,10 +21,14 @@
 /banners/click/*
 /fingerprint2.min.js^
 /tracking.ashx?
-###mainNav$domain=123link.co|123link.pw|gram.im|wi.cr
-##.banner-inner$domain=123link.co|123link.pw|gram.im|wi.cr
-##.copyright-container$domain=123link.co|123link.pw|gram.im|wi.cr
-##.text-left$domain=123link.co|123link.pw|gram.im|wi.cr
+123link.pw###mainNav
+123link.pw##.banner-inner
+123link.pw##.copyright-container
+123link.pw##.text-left
+wi.cr##.copyright-container
+wi.cr##.text-left
+wi.cr###mainNav
+wi.cr##.adsbygoogle
 @@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr
 @@/js/show_ads.js^$domain=shink.in
