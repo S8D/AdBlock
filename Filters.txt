@@ -21,6 +21,10 @@
 /banners/click/*
 /fingerprint2.min.js^
 /tracking.ashx?
+123link.pw###mainNav
+123link.pw##.banner-inner
+123link.pw##.copyright-container
+123link.pw##.text-left
 @@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in
 @@/js/show_ads.js^$domain=shink.in
@@ -52,6 +56,10 @@ chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
 codevn.net###footer
 codevn.net###header
 codevn.net##.codevnFooter
+cuon.io###mainNav
+cuon.io##.banner, .banner-468x60
+cuon.io##.blog-item
+cuon.io##.copyright-container
 cydia.vn###tag_cloud-4
 d-h.st/assets/img/download3.png
 dailyuploads.net##.adsbygoogle
@@ -100,6 +108,7 @@ getlinkpro.net##.nav-wrapper
 getlinkpro.net##.page-footer
 getlinkpro.net##div.boxed:nth-child(4) > footer.flat-footer.flat-reset:nth-child(4) > div.flat-footer-top
 gg.gg###footer
+hardreset.info###modal-facebook
 hdvietnam.com###sidebar_container
 hdvietnam.com###topbillboard
 hdvietnam.com###yamaha_ads_1
@@ -110,6 +119,13 @@ ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads7
 ios.codevn.net##footer:nth-child(18)
 iphonecake.com##div.container:nth-child(2) > div.ui-app-detail:nth-child(2) > div.row > div.col-md-9.right-side:last-child > div.ui-grid-right > a.ui-download:nth-child(3)
 karanpc.com###post-18253 > div.entry:first-child > center:first-child
+kenhtao.net##.adsbygoogle
+kenhtao.net##.desktop-ad
+kenhtao.net##.footer-social
+kenhtao.net##.social-section
+kenhtao.net##.wrap-footer
+kichnguon.com##.mfp-content
+kichnguon.com##.mfp-wrap, .mfp-close-btn-in, .mfp-auto-cursor, .mfp-ready
 leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
 leech.thoaimedia.com##center:nth-child(3)
 lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
@@ -180,6 +196,7 @@ quantrimang.com##.underlay
 ramleague.net###exposeMask
 ramleague.net##.errorOverlay
 romshared.com###content > div.pageWidth > div.pageContent > table:nth-child(4)
+s.ytimg.com/yts/jsbin/*/www-pagead-id.js
 samsungvn.com###adsgoogle-top
 samsungvn.com##.welcomeBlock_content
 shink.in###bs-example-navbar-collapse-1
@@ -216,6 +233,8 @@ tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
 tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
 tinhte.vn###uix_wrapper > footer:last-child
+trainghiemso.vn###mvp-foot-bot-wrap
+trainghiemso.vn##.attachment-, .size-, .wp-post-image
 tranducit.com##.popScroll
 trithucvn.net###post-sidebar
 tudienabc.com###container > div.row:nth-child(4)
@@ -270,8 +289,19 @@ www.mediafire.com###footer
 www.mediafire.com###header
 www.mediafire.com##.dlInfo-Body
 www.mediafire.com##.socialFBContainer
+www110.zippyshare.com###bottom
+www110.zippyshare.com###lrbox > div.slickbox:nth-child(5) > div.center:first-child
+www110.zippyshare.com##.smalltab
 xyhs.mad.buttobi.net##div:first-child > table:first-child
+youtube.com###masthead-ad
 youtube.com##*.video-ads
+youtube.com/*_204?
+youtube.com/ad_companion^
+youtube.com/api/stats^
+youtube.com/get_endscreen^
+youtube.com/pagead^
+youtube.com/ptracking?
+youtube.com/youtubei/*/log_*?
 |https://$script,domain=uplod.ws,third-party
 ||*.2mdn.*^
 ||*.8ox.*^
@@ -286,9 +316,11 @@ youtube.com##*.video-ads
 ||*.adtrue.*^
 ||*.advertisingwouldbegreat.*^
 ||*.alicdn.com^
+||*.amazon-adsystem.*^
 ||*.amcdn.vn^
 ||*.bitpit.*^
 ||*.bnserving.*^
+||*.civi.*^
 ||*.coccoc.*^
 ||*.comeadvertisewithus.*^
 ||*.directadvert.*^
@@ -302,11 +334,13 @@ youtube.com##*.video-ads
 ||*.googleadservices.*^
 ||*.googlesyndication.*^
 ||*.googletagservices.*^
+||*.googlevideo.com/*_204
 ||*.hit4hit.*^
 ||*.infolinks.*^
 ||*.kjsrv.net^
 ||*.linkbucks.com^
 ||*.liveinternet.*^
+||*.maxonclick.*^
 ||*.microad.*^
 ||*.moatads.*^
 ||*.mookie1.*^
@@ -318,16 +352,17 @@ youtube.com##*.video-ads
 ||*.qiqivv.*^
 ||*.revcontent.*^
 ||*.sabavision.*^
+||*.servebom.*^
 ||*.serving-sys.*^
+||*.statcounter.*^
 ||*.tamanae.*^
 ||*.uniad.*
 ||*.upload69.*^
 ||*.vnnv777.*^
 ||*.wap4dollar.*^
 ||*.webstats.*^
-||.mobile-10.^
-||.puhtml.^
-||66.70.164.147/images/2017/03/03/VFC.4682qc5c794.jpg
+||*.mobile-10.^
+||*.puhtml.^
 ||ads.crackhex.com^
 ||adsrvmedia.adk2x.com
 ||apinas.nct.vn^
@@ -347,6 +382,7 @@ youtube.com##*.video-ads
 ||downmienphi.net/themes/downmienphi/images/*.*
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
+||gigaonclick.*^
 ||jwge1505.*^
 ||kenh76.vn/js/popupamthuc.js
 ||linksvip.net/images/bg-facebook.png$image
