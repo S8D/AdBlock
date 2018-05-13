@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.14.04
+! Version: 2018.05.14.05
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -25,10 +25,6 @@
 123link.pw##.banner-inner
 123link.pw##.copyright-container
 123link.pw##.text-left
-wi.cr##.copyright-container
-wi.cr##.text-left
-wi.cr###mainNav
-wi.cr##.adsbygoogle
 @@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr
 @@/js/show_ads.js^$domain=shink.in
@@ -206,6 +202,9 @@ samsungvn.com##.welcomeBlock_content
 shink.in###bs-example-navbar-collapse-1
 shink.in##.col-md-6.col-md-offset-3
 shink.in##.collapse.navbar-collapse
+short.pe###link-view > center:nth-child(9)
+short.pe##.copyright-container
+short.pe##.text-left
 sinhvienit.net###footer
 sinhvienit.net###header
 sinhvienit.net###vtlai_bookmark
@@ -287,6 +286,10 @@ vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 vyctravel.com###wrap-page > footer:nth-child(12)
 vyctravel.com###wrap-page > footer:nth-child(15) > div.wrap-foottour.hidden-xs:first-child > div.foottour
+wi.cr###mainNav
+wi.cr##.adsbygoogle
+wi.cr##.copyright-container
+wi.cr##.text-left
 win10.vn###boxzilla-1929
 win10.vn###boxzilla-overlay
 www.mediafire.com###footer
@@ -306,6 +309,7 @@ youtube.com##*.video-ads
 ||*.adloft.*^
 ||*.admicro.*
 ||*.adnetwork.*^
+||*.adright.*^
 ||*.adsafeprotected.*^
 ||*.adskeeper.*^
 ||*.adtima.*^
@@ -320,6 +324,7 @@ youtube.com##*.video-ads
 ||*.civi.*^
 ||*.coccoc.*^
 ||*.comeadvertisewithus.*^
+||*.cpmstar.*^
 ||*.directadvert.*^
 ||*.disqus.*^
 ||*.disquscdn.*^
@@ -343,6 +348,7 @@ youtube.com##*.video-ads
 ||*.moatads.*^
 ||*.mobile-10.^
 ||*.mookie1.*^
+||*.mybestmv.*^
 ||*.omiai-jp.*^
 ||*.opus-static.*
 ||*.phimmoi.*/widget.php
@@ -361,6 +367,7 @@ youtube.com##*.video-ads
 ||*.vnnv777.*^
 ||*.wap4dollar.*^
 ||*.webstats.*^
+||1ea1sley.*^
 ||ads.crackhex.com^
 ||adsrvmedia.adk2x.com
 ||apinas.nct.vn^
@@ -395,6 +402,7 @@ youtube.com##*.video-ads
 ||marketing.vatgia.com^
 ||mazii.net/img_fa/banner_mina.png
 ||media.adnetwork.vn/assets/js/abd.inpage.preroll.v1.js
+||mellowads.*^
 ||money.yandex.ru^
 ||mpgh.net/images/mini_offur.png$image
 ||mystatus.skype.com/smallicon/*
