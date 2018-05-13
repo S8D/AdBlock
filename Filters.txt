@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.14.01
+! Version: 2018.05.14.02
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -295,13 +295,6 @@ www110.zippyshare.com##.smalltab
 xyhs.mad.buttobi.net##div:first-child > table:first-child
 youtube.com###masthead-ad
 youtube.com##*.video-ads
-youtube.com/*_204?
-youtube.com/ad_companion^
-youtube.com/api/stats^
-youtube.com/get_endscreen^
-youtube.com/pagead^
-youtube.com/ptracking?
-youtube.com/youtubei/*/log_*?
 |https://$script,domain=uplod.ws,third-party
 ||*.2mdn.*^
 ||*.8ox.*^
@@ -331,6 +324,7 @@ youtube.com/youtubei/*/log_*?
 ||*.eclick.*^
 ||*.fhawywadfjlo.*^
 ||*.google-analytics.*^
+||*.google.com/*_204
 ||*.googleadservices.*^
 ||*.googlesyndication.*^
 ||*.googletagservices.*^
@@ -383,6 +377,7 @@ youtube.com/youtubei/*/log_*?
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
 ||gigaonclick.*^
+||google.*.*/pagead^
 ||jwge1505.*^
 ||kenh76.vn/js/popupamthuc.js
 ||linksvip.net/images/bg-facebook.png$image
@@ -429,3 +424,12 @@ youtube.com/youtubei/*/log_*?
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
 ||ylx-1.com
+||youtube.com/*_204?
+||youtube.com/ad_companion^
+||youtube.com/annotations_invideo^
+||youtube.com/api/stats/ads^
+||youtube.com/get_endscreen^
+||youtube.com/get_midroll_info?
+||youtube.com/pagead^
+||youtube.com/ptracking?
+||youtube.com/youtubei/*/log_*?
