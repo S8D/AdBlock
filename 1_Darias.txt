@@ -1,5 +1,6 @@
-#20180513
-#457
+#AdBlock
+#20180515
+#460+
 123c.vn
 1rx.io
 2ch.net
@@ -41,6 +42,7 @@ adnxs.com
 adroll.com
 ads-a-darwin.hulu.com
 ads-twitter.com
+ads.2mdnsys.com
 ads.appota.com
 ads.gmodules.com
 ads.google.com
@@ -95,6 +97,7 @@ applift.com
 applovin.com
 applvn.com
 appnext.com
+appnext.hs.llnwd.net
 appodeal.com
 apps.facebook.com
 appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com
@@ -212,6 +215,7 @@ gdt.qq.com
 gemini.yahoo.com
 genieesspv.jp
 geoadnxs.com
+global.appnext.com
 glossom.co.jp
 gma.alicdn.com
 gmossp-sp.jp
@@ -392,9 +396,12 @@ startappexchange.com
 statcounter.com
 static-doubleclick-net.l.google.com
 static.24h.com.vn
+static.akacdn.ru
 static.criteo.net
 static.estebull.com
 static.novanet.vn
+static1.akacdn.ru
+statics.hdo-cdn.ru
 suggestqueries.l.google.com
 survey.foreseeresults.com
 swrve.com
