@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.17.02
+! Version: 2018.05.17.03
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -15,7 +15,11 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
+###mainNav
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
+##.adsbygoogle
+##.copyright-container
+##.text-left
 *.fsdn.com/con/js/min/sf.js?*
 /adsense/*
 /banners/click/*
@@ -45,6 +49,7 @@ allsolu4u.vn###headerProxy
 allsolu4u.vn###logoBlock
 allsolu4u.vn###widget-16
 bkshare.com###itro_opaco
+camnangnhatban.com###ppsPopupBgOverlay
 canhme.com###masthead
 canhme.com###secondary
 canhme.com##.entry-footer
@@ -59,6 +64,8 @@ chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
 codevn.net###footer
 codevn.net###header
 codevn.net##.codevnFooter
+crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:last-child
+crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:nth-child(3)
 cuon.io###mainNav
 cuon.io##.banner, .banner-468x60
 cuon.io##.blog-item
@@ -111,6 +118,11 @@ forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 fpt.center###thread_info
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
+getlinkfshare.com###precomments
+getlinkfshare.com##.bg-secondary
+getlinkfshare.com##.nav-bar
+getlinkfshare.com##div.main-container:nth-child(6) > section.page-title.page-title-4.bg-dark:last-child
+getlinkfshare.com##div.main-container:nth-child(7) > section.page-title.page-title-4.bg-dark:last-child
 getlinkpro.net###search-4
 getlinkpro.net##.card-panel.indigo.lighten-5
 getlinkpro.net##.card-panel.light-green.lighten-2
@@ -373,6 +385,7 @@ youtube.com##*.video-ads
 ||*.eboundservices.*^
 ||*.eclick.*^
 ||*.exdynsrv.*^
+||*.exosrv.*^
 ||*.fhawywadfjlo.*^
 ||*.google-analytics.*^
 ||*.google.com/*_204
@@ -384,6 +397,7 @@ youtube.com##*.video-ads
 ||*.hit4hit.*^
 ||*.hotlog.*^
 ||*.infolinks.*^
+||*.juicyads.*^
 ||*.kjsrv.net^
 ||*.linkbucks.com^
 ||*.liveinternet.*^
@@ -394,7 +408,9 @@ youtube.com##*.video-ads
 ||*.mookie1.*^
 ||*.mybestmv.*^
 ||*.oclaserver.*^
+||*.oclasrv.*^
 ||*.omiai-jp.*^
+||*.onclasrv.*^
 ||*.opus-static.*
 ||*.phimmoi.*/widget.php
 ||*.plugrush.com^
@@ -407,6 +423,7 @@ youtube.com##*.video-ads
 ||*.serving-sys.*^
 ||*.statcounter.*^
 ||*.tamanae.*^
+||*.terraclicks.*^
 ||*.twitter.*/*/*_iframe*
 ||*.uniad.*
 ||*.upload69.*^
@@ -440,6 +457,7 @@ youtube.com##*.video-ads
 ||google.*.*/pagead^
 ||hh-btr.*^
 ||hitcounter.*^
+||i.imgur.com$domain=jetleech.com
 ||jwge1505.*^
 ||kenh76.vn/js/popupamthuc.js
 ||linksvip.net/images/bg-facebook.png$image
@@ -500,8 +518,9 @@ youtube.com##*.video-ads
 ||youtube.com/get_endscreen^
 ||youtube.com/get_midroll_info?
 ||youtube.com/pagead^
-||youtube.com/ptracking?
-||youtube.com/youtubei/*/log_*??
 ||youtube.com/pagead^
 ||youtube.com/ptracking?
+||youtube.com/ptracking?
 ||youtube.com/youtubei/*/log_*?
+||youtube.com/youtubei/*/log_*??
+||z6naousb.*^
