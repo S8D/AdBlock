@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.17.01
+! Version: 2018.05.17.02
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -356,7 +356,6 @@ youtube.com##*.video-ads
 ||*.adtimaserver.*^
 ||*.adtrue.*^
 ||*.advertisingwouldbegreat.*^
-||*.alicdn.com^
 ||*.amazon-adsystem.*^
 ||*.amcdn.vn^
 ||*.bitpit.*^
