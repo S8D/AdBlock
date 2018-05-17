@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.14.05
+! Version: 2018.05.17.01
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -25,11 +25,13 @@
 123link.pw##.banner-inner
 123link.pw##.copyright-container
 123link.pw##.text-left
+4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
 @@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
 @@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
+@@||archive.org^$important,document,~extension
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 @@||uplod.it^$elemhide
 @@||www.asus.com^$important,document,~extension
@@ -49,6 +51,7 @@ canhme.com##.entry-footer
 canhme.com##.et_bloom_inline_form, .et_bloom_optin, .et_bloom_make_form_visible, .et_bloom_optin_6
 canhme.com##.site-footer
 canhme.com##.slide-on-scroll
+cellphones.com.vn###ematic_background_overlay
 chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
@@ -85,6 +88,7 @@ douploads.com###wrapper > div.directlinkpage:last-child > div.title:first-child
 douploads.com###wrapper > div.paymentoffersone1:last-child
 douploads.com###wrapper > div.paymentoffersone1:last-child > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
 douploads.com##header:first-child
+douploads.com/images/StartDownload.gif$domain=douploads.com
 downmienphi.com###index_middle > div.container.dad > div.mainContainer:nth-child(3) > div.mainContent > div.innerContent:nth-child(5) > div.interested:nth-child(7)
 downmienphi.com##footer:nth-child(4)
 downmienphi.net##footer:nth-child(5)
@@ -93,11 +97,18 @@ facebook.com###pagelet_canvas_nav_content
 facebook.com###pagelet_page_cover
 facebook.com###u_ps_0_1_3
 facebook.com##._4-u2._1-ib._2tyk._20os._4-u8
+file-upload.com##.dareaname
+file-upload.com##.header-top
+file-upload.com##.navbar, .navbar-default
+file-upload.com##footer
+file-upload.com##section.page-content:nth-child(6) > div.container > div.page-wrap:nth-child(4) > div.leftcol:nth-child(5) > div.row
 filedwon.info###container > div:nth-child(3)
+filedwon.info##.leftcol
 filehippo.com###zeus_1522072502357
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
+fpt.center###thread_info
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
 getlinkpro.net###search-4
@@ -108,11 +119,14 @@ getlinkpro.net##.nav-wrapper
 getlinkpro.net##.page-footer
 getlinkpro.net##div.boxed:nth-child(4) > footer.flat-footer.flat-reset:nth-child(4) > div.flat-footer-top
 gg.gg###footer
+goo.gl/GNBOVM$domain=thuviensoft.net
+goo.gl/i5gr3Z$domain=thuviensoft.net
 hardreset.info###modal-facebook
 hdvietnam.com###sidebar_container
 hdvietnam.com###topbillboard
 hdvietnam.com###yamaha_ads_1
 hdvietnam.com###yamaha_ads_2
+i.imgur.com/A4Kwg6k.png$domain=uploadocean.com
 ijailbreak.com###om-fqy5jwodan-canvas
 ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
 ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
@@ -126,6 +140,7 @@ kenhtao.net##.social-section
 kenhtao.net##.wrap-footer
 kichnguon.com##.mfp-content
 kichnguon.com##.mfp-wrap, .mfp-close-btn-in, .mfp-auto-cursor, .mfp-ready
+lazada.vn##.footer-fourth
 leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmonitor > ins.adsbygoogle:first-child
 leech.thoaimedia.com##center:nth-child(3)
 lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
@@ -156,6 +171,7 @@ megaurl.in##.adsbygoogle
 megaurl.in##.copyright-container
 megaurl.in##.navbar, .navbar-default
 megaurl.in##.text-left
+megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:nth-child(2)
 megaurl.top##.adsbygoogle
 megaurl.top##.copyright-container
 megaurl.top##.navbar, .navbar-default
@@ -188,6 +204,9 @@ ouo.press##.join-now
 ouo.press##.navbar.navbar-default.navbar-top
 pan.baidu.com###unzip-vip-intro
 pan.baidu.com##.module-canvas
+phanmemtop.net###colophon
+phanmemtop.net###masthead
+phanmemtop.net##.entry-footer
 quantrimang.com###_shad_3
 quantrimang.com###footer
 quantrimang.com##.modal-body
@@ -196,12 +215,17 @@ quantrimang.com##.underlay
 ramleague.net###exposeMask
 ramleague.net##.errorOverlay
 romshared.com###content > div.pageWidth > div.pageContent > table:nth-child(4)
+rsload.net/images5/51rsload5895.png$domain=rsload.net
 s.ytimg.com/yts/jsbin/*/www-pagead-id.js
 samsungvn.com###adsgoogle-top
 samsungvn.com##.welcomeBlock_content
+scloud.ws###block_blogs
+scloud.ws##.tag-cloud, .word-wrap
 shink.in###bs-example-navbar-collapse-1
 shink.in##.col-md-6.col-md-offset-3
 shink.in##.collapse.navbar-collapse
+shopee.vn##.popup-banner__img
+shopee.vn##.shopee-popup__overlay
 short.pe###link-view > center:nth-child(9)
 short.pe##.copyright-container
 short.pe##.text-left
@@ -234,19 +258,35 @@ talk.secafe.vn##.scrollContainer
 talk.secafe.vn##div[style="width: 320px; height: 100px; float: left; margin-right: 12px; background-color: #ccc;"]
 tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
+thanhnien.vn##.site-footer__info
+thuviensoft.net##.extraFooter
+thuviensoft.net##footer
+tienichmaytinh.com###Mod211
+tienichmaytinh.com###yt_footer
+tienichmaytinh.com###yt_footnav
+tienichmaytinh.com###yt_header
+tienichmaytinh.com###yt_new2wrap
 tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
 tinhte.vn###uix_wrapper > footer:last-child
+tinhte.vn##.adWidget, .adWidget-gpt, .ad-17, .slot-7
 trainghiemso.vn###mvp-foot-bot-wrap
 trainghiemso.vn##.attachment-, .size-, .wp-post-image
 tranducit.com##.popScroll
 trithucvn.net###post-sidebar
 tudienabc.com###container > div.row:nth-child(4)
 uploadocean.com###header
+uploadocean.com###lkika
 uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
 uploadocean.com##.down1_holder > div:nth-of-type(2)
 uploadocean.com##.report
 uploadocean.com##a[href="https://uploadocean.com/premium-features.html"] > h2
+uploadocean.com##div[style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2147483647; background: black; opacity: 0.01; height: 637px; width: 1366px;"]
+uploadocean.com##footer
 uploadshub.com/images/start-download.gif
+uplod.org##.clearfix
+uplod.org##.col-md-4, .pt20
+uplod.org##.navbar, .navbar-inverse, .navbar-static-top
+uplod.org##footer
 uplod.ws###container > h2
 uplod.ws###content:nth-of-type(2)
 uplod.ws##.adsbygoogle
@@ -321,9 +361,11 @@ youtube.com##*.video-ads
 ||*.amcdn.vn^
 ||*.bitpit.*^
 ||*.bnserving.*^
+||*.bubblesmedia.*^
 ||*.civi.*^
 ||*.coccoc.*^
 ||*.comeadvertisewithus.*^
+||*.cpm20.*^
 ||*.cpmstar.*^
 ||*.directadvert.*^
 ||*.disqus.*^
@@ -331,6 +373,7 @@ youtube.com##*.video-ads
 ||*.doubleclick.*^
 ||*.eboundservices.*^
 ||*.eclick.*^
+||*.exdynsrv.*^
 ||*.fhawywadfjlo.*^
 ||*.google-analytics.*^
 ||*.google.com/*_204
@@ -338,7 +381,9 @@ youtube.com##*.video-ads
 ||*.googlesyndication.*^
 ||*.googletagservices.*^
 ||*.googlevideo.com/*_204
+||*.hibids10.*^
 ||*.hit4hit.*^
+||*.hotlog.*^
 ||*.infolinks.*^
 ||*.kjsrv.net^
 ||*.linkbucks.com^
@@ -349,6 +394,7 @@ youtube.com##*.video-ads
 ||*.mobile-10.^
 ||*.mookie1.*^
 ||*.mybestmv.*^
+||*.oclaserver.*^
 ||*.omiai-jp.*^
 ||*.opus-static.*
 ||*.phimmoi.*/widget.php
@@ -362,15 +408,18 @@ youtube.com##*.video-ads
 ||*.serving-sys.*^
 ||*.statcounter.*^
 ||*.tamanae.*^
+||*.twitter.*/*/*_iframe*
 ||*.uniad.*
 ||*.upload69.*^
 ||*.vnnv777.*^
 ||*.wap4dollar.*^
 ||*.webstats.*^
+||*.yadro.*^
 ||1ea1sley.*^
 ||ads.crackhex.com^
 ||adsrvmedia.adk2x.com
 ||apinas.nct.vn^
+||arrassley.*^
 ||asc.quantrimang.com
 ||cdn.ay.gy/js/link-converter.js$script
 ||cdn.engine.4dsply.com^
@@ -388,7 +437,10 @@ youtube.com##*.video-ads
 ||freetuts.net/public/theme/js/adsense.js
 ||freetuts.net/public/theme/js/my.js
 ||gigaonclick.*^
+||google*.*/*_204
 ||google.*.*/pagead^
+||hh-btr.*^
+||hitcounter.*^
 ||jwge1505.*^
 ||kenh76.vn/js/popupamthuc.js
 ||linksvip.net/images/bg-facebook.png$image
@@ -407,12 +459,14 @@ youtube.com##*.video-ads
 ||mpgh.net/images/mini_offur.png$image
 ||mystatus.skype.com/smallicon/*
 ||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
+||onclickmega.*^
 ||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
 ||phimmoi.net/widget.php
 ||popcash.*^
 ||qccoccocmedia.*^
 ||quantrimang.com/scripts/main?
 ||realclick.*^
+||ria.fpt.center/attachments/truyen-hinh-fpt-play-hd/8539d1504691299-cac-goi-dich-vu-truyen-hinh-fpt-play-hd-combo-fpt.jpgg$domain=fpt.center
 ||rsload.net/images5/2120.png
 ||rsload.net/images5/downasd1.png
 ||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
@@ -422,6 +476,7 @@ youtube.com##*.video-ads
 ||sbbanner.*^
 ||scorecardresearch.com^
 ||secafe.vn/ads/*
+||shalleda.*^
 ||shink.in/imagenes/logo.png
 ||shink.in/img/downloadad.png
 ||sp.zalo.me/plugins/share?*
@@ -429,10 +484,12 @@ youtube.com##*.video-ads
 ||stc.sp.zdn.vn/zaloid/client/zavisitor.js
 ||thongke.24h.com.vn
 ||trafflict.*^
+||tremember.*^
 ||uniad.phimmoi.net^
 ||upera.ir^
 ||uplod.ws/responsive_js/paging.js
 ||uptruyen.*
+||velocecdn.com
 ||vkool.net/js/abp.js
 ||vn-zoom.com/img/custommudim.js
 ||ylx-1.com
