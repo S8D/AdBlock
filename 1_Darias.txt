@@ -1,466 +1,466 @@
 #AdBlock
 #20180515
 #460+
-123c.vn
-1rx.io
-2ch.net
-2mdn.net
-2mdnsys.com
-4chan-ads.org
-51y5.net
-a.medialytics.com
-acd.com.vn
-actrk.me
-ad.toutiao.com
-ad.vatgia.com
-ad.zing.vn
-ad360.vn
-adcash.com
-adcloud.jp
-adcolony.com
-adcontent.saymedia.com
-addthis.com
-addthisedge.com
-adex.bmediaasia.com
-adex2.bmediaasia.com
-adexprt.com
-adfonic.net
-adform.net
-adfox.vn
-adhigh.net
-adjust.com
-adm3.autoimg.cn
-admaster.com.cn
-admetix.com
-admicro.vn
-admicro1.vcmedia.vn
-admixer.co.kr
-admtpmp124.com
-adnetwork.vn
-adnium.com
-adnxs.com
-adroll.com
-ads-a-darwin.hulu.com
-ads-twitter.com
-ads.2mdnsys.com
-ads.appota.com
-ads.gmodules.com
-ads.google.com
-ads.huntmad.com
-ads.ictnews.vn
-ads.mobilefuse.net
-ads.netflix.com
-ads.yahoo.com
-ads.youtube.com
-ads.zdn.vn
-ads0.nexage.com
-adsco.re
-adserver-vpc-production-v2-669935021.us-east-1.elb.amazonaws.com
-adserver.yahoo.com
-adservice.google.com
-adservice.google.com.vn
-adshostnet.com
-adsmain.com
-adsrvr.org
-adsupply.com
-adsymptotic.com
-adtilt.com
-adtima.vn
-adtimaserver.vn
-adtoma.com
-adv.aftonbladet.se
-advertising.com
-advertisingvietnam.com
-advertstar.net
-adx1.com
-adxmi.com
-adxxx.org
-aerserv.com
-afs.googleusercontent.com
-ah.yimg.jp
-aliexpress.com
-alitui.weibo.com
-amazon-adsystem.com
-amobee.com
-amp.avai.com
-analytics.google.com
-analytics.vnreview.vn
-ants.vn
-api.airpush.com
-api.appodeal.com
-app-c.net
-app-measurement.com
-app.sysdigcloud.com
-appier.net
-appldnld.apple.com
-applift.com
-applovin.com
-applvn.com
-appnext.com
-appnext.hs.llnwd.net
-appodeal.com
-apps.facebook.com
-appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com
-appsflyer.com
-appshelf.ttpsdk.info
-asdkd.tutuapp.com
-asdkd.tutuapp.com.w.alikunlun.com
-asimgs.pplive.cn
-astrsk.net
-atdmt.com
-attenhance.com
-au.youmi.net
-badad.googleplex.com
-beacon.qq.com
-beacon.tingyun.com
-beap-bc.yahoo.com
-beautyzone.vn
-bebi.com
-bidgear.com
-biz.weibo.com
-bluekai.com
-blueseed.tv
-blueserving.com
-bms.zeptolab.com
-bnr.rssad.jp
-bom.baomoi.com
-bs.eyeblaster.akadns.net
-buzzurl.jp
-bwnet.com.tw
-bzadx.pro
-c.greystripe.com
-c.vrvm.com
-cache-ssl.celtra.com
-cache.celtra.com
-cb.baidu.com
-cdn.airpush.com
-cdn.applift.com
-cdn.appnext.com
-cdn.caprofitx.com
-cdn.mdotm.com
-cdn.millennialmedia.com
-cdn.nearbyad.com
-chartboost.com
-cityads.ru
-cj.com
-click.vn
-clickmngr.com
-clicks.truongton.net
-clientmetrics-pa.googleapis.com
-cliphub.io
-clix.vn
-clksite.com
-cloudads-a.akamaihd.net
-cloudmobi.net
-cold-cold-freezing.com
-collector.githubapp.com
-comradmobile.com
-connect.facebook.com
-content-ad.net
-contently.com
-corp.meitu.com
-crashlytics.com
-criteo.com
-crosspromo.zeptolab.com
-d.appsdt.com
-d.dropbox.com
-d1k5gitkzferqo.cloudfront.net
-d2bgg7rjywcwsy.cloudfront.net
-d2m1qxggnnaaex.cloudfront.net
-d3o20pxlleg2k6.cloudfront.net
-d3oltyb66oj2v8.cloudfront.net
-data.airpush.com
-digitalmerkat.com
-directadvert.ru
-dl-debug.dropbox.com
-dotandad.com
-doubleciick.net
-doubleclick.ne.jp
-doubleclick.net
-doubleclickbygoogle.com
-dts.startappservice.com
-duclick.baidu.com
-e10204.dsca.akamaiedge.net
-eclick.baidu.com
-eclick.vn
-ecpmrocks.com
-edge.reporo.net
-eiv.baidu.com
-en.alibaba.com
-entry.baidu.com
-epom.com
-erebor.douban.com
-error.facebook.com
-eventonline.vn
-exelator.com
-exoclick.com
-exosrv.com
-exoticads.com
-eyeota.net
-facebook-chrome.ml
-facebook-uzaleznienie.wirtualnie.pl
-fancywap.com
-fc2.com
-fgoogle.com
-firstimpression.io
-flashtalking.com
-flurry.com
-fout.jp
-fqtag.com
-ftpcontent.worldnow.com
-g.kuwo.cn
-game.weibo.cn
-game.weibo.com
-gdt.qq.com
-gemini.yahoo.com
-genieesspv.jp
-geoadnxs.com
-global.appnext.com
-glossom.co.jp
-gma.alicdn.com
-gmossp-sp.jp
-go.mobpartner.mobi
-go.polyad.net
-go2cloud.org
-go2speed.org
-goo.ne.jp
-google-analytics.com
-googleadapis.l.google.com
-googleadservices.com
-googlefeud.com
-googlehosted.l.googleusercontent.com
-googlesyndication.com
-googletagmanager.com
-googletagservices.com
-gowadogo.com
-h2.msn.com
-hao123union.baidu.com
-heyzap.com
-hghit.com
-hhbekxxw5d9e.pflexads.com
-hi5.com
-hm.baidu.com
-hmma.baidu.com
-hot-mob.com
-hotwords.com
-hybl9bazbc35.pflexads.com
-i-mobile.co.jp
-i.jumptap.com
-igp06.gameloft.com
-imageplus.baidu.com
-images.startappservice.com
-img2.autoimg.cn
-imgraovat.vnecdn.net
-imp.optaim.com
-imp.startappservice.com
-imp.voiceads.cn
-infolinks.com
-inmobi-jp.com
-inmobi.com
-inmobicdn.com
-inmobicdn.net
-innovid.com
-integral-marketing.com
-intellitxt.com
-interlogistics.com.vn
-intermarkets.net
-irs01.com
-islandmob.com
-js-agent.newrelic.com
-jtbmxdoadktnm.com
-kadam.net
-kochava.com
-ktopodgladamnienafacebooku.wordpress.com
-ladsp.com
-leadbolt.com
-leadzutw.com
-lfstmedia.com
-liftoff.io
-liveadexchanger.com
-liveintent.com
-llnwd.net
-localytics.com
-log.api.zaloapp.com
-log.baomoi.com
-log.infonet.vn
-log.news.zing.vn
-log.pinterest.com
-log4x.nixcdn.com
-logperf.vnexpress.net
-logv2.mp3.zing.vn
-lucklayed.info
-m.adsymptotic.com
-m.jd.com
-m.quantserve.com
-m.taobao.com
-madvertise.de
-marsads.com
-mc.yandex.ru
-mdn1.phluantmobile.net
-mdn2.phluantmobile.net
-mdn3.phluantmobile.net
-media.mobpartner.mobi
-mediadser.com
-medialand.ru
-mellowads.com
-message.meitu.com
-mesu.apple.com
-metric.gstatic.com
-mgid.com
-misterbell.com
-mixpanel.com
-moatads.com
-mobads-logs.baidu.com
-mobile-gtalk.l.google.com
-mobile.sina.cn
-mobile.yahoo.com
-mobiledl.adobe.com
-mobtrks.com
-mobusi.com
-mookie1.cn
-mopub.com
-movad.de
-mucu.jp
-mzstatic.com
-mzstatic.com.edgesuite.net
-nativex-sdk.appspot.com
-nend.net
-newspush.sinajs.cn
-nexage.com
-nr-data.net
-ocsp.apple.com
-omgmta.qq.com
-omniture.com
-on.cc
-onclasrv.com
-onclickads.net
-onclkds.com
-online-dn.com
-openxmarket.jp
-org.vn
-otherlevels.com
-ox-d.advanceweb.com
-ox-d.majorgeeks.com
-phanquang.vn
-pingjs.qq.com
-pingma.qq.com
-pixel.facebook.com
-pixel.wp.com
-playhaven.com
-polyad.net
-popads.net
-pos.baidu.com
-prodaa.netflix.com
-projectwonderful.com
-propellerpops.com
-pubdirecte.com
-pubnative.net
-questmedia.ru
-r1.ykimg.com
-rayjump.com
-rcm.amazon.com
-redclick.ru
-redintelligence.net
-report.qq.com
-req.startappservice.com
-res-zalo.zadn.vn
-res.hunantv.com
-revmob.com
-rfrl.pw
-rs-staticart.ybcdn.net
-s3.amazonasw.com
-s3.amazonaws.com
-s3.phluant.com
-sax.sina.cn
-sd.domob.cn
-service.urchin.com
-serving-sys.com
-sf.vserv.mobi
-sharethis.com
-sharethis.net
-sharethrough.com
-shop.zalo.me
-shopdunk.baomoi.com
-simaba.taobao.com
-smart-c.jp
-sp.zalo.me
-spotad.cn
-spotscenered.info
-sprout-ad.com
-spstaticimg.ameba.jp
-srv.vietnamnet.vn
-ssl-google-analytics.l.google.com
-st.polyad.net
-startapp.com
-startappexchange.com
-statcounter.com
-static-doubleclick-net.l.google.com
-static.24h.com.vn
-static.akacdn.ru
-static.criteo.net
-static.estebull.com
-static.novanet.vn
-static1.akacdn.ru
-statics.hdo-cdn.ru
-suggestqueries.l.google.com
-survey.foreseeresults.com
-swrve.com
-syndication.twitter.com
-tapad.com
-tcss.qq.com
-terraclicks.com
-test-enabled.adblockios.com
-thinknear-hosted.thinknearhub.com
-thongke.24h.com.vn
-thoughtleadr.com
-tieba.baidu.com
-track-srv.vietnamnet.vn
-tracking.admobsphere.com
-tracktopapp.com
-traffichaus.com
-trafficjunky.com
-trafficposse.com
-traffpartners.com
-trax-ad.jp
-tribalfusion.com
-tuiguang.meitu.com
-turn.com
-twimg.com
-uedata.amazon.com
-umeng.com
-unimhk.com
-union.baidu.com
-unityads.unity3d.com
-untd.com
-userreport.com
-vads.vn
-vamaker.com
-vclick.vn
-vdopia.com
-veeseo.com
-video.qiyi.com
-vietad.vn
-vietid.net
-vietnamnetad.vn
-visitweb.com
-vungle.com
-waps.cn
-wintricksbanner.googlepages.com
-wqmobile.com
-ws.tapjoyads.com
-www.googlecommerce.com
-www.startapp.com
-www.wwwgoogles.com
-www3.l.google.com
-wwwpromoter.com
-yicha.jp
-yieldmo.com
-ymtracking.com
-yumenetworks.com
-zalo-ads-td.zadn.vn
-zedo.com
-zestads.com
-zestadz.com
-zplayer-trk.zdn.vn
-zucks.co.jp
-zwaar.org
+127.0.0.1       123c.vn
+127.0.0.1       1rx.io
+127.0.0.1       2ch.net
+127.0.0.1       2mdn.net
+127.0.0.1       2mdnsys.com
+127.0.0.1       4chan-ads.org
+127.0.0.1       51y5.net
+127.0.0.1       a.medialytics.com
+127.0.0.1       acd.com.vn
+127.0.0.1       actrk.me
+127.0.0.1       ad.toutiao.com
+127.0.0.1       ad.vatgia.com
+127.0.0.1       ad.zing.vn
+127.0.0.1       ad360.vn
+127.0.0.1       adcash.com
+127.0.0.1       adcloud.jp
+127.0.0.1       adcolony.com
+127.0.0.1       adcontent.saymedia.com
+127.0.0.1       addthis.com
+127.0.0.1       addthisedge.com
+127.0.0.1       adex.bmediaasia.com
+127.0.0.1       adex2.bmediaasia.com
+127.0.0.1       adexprt.com
+127.0.0.1       adfonic.net
+127.0.0.1       adform.net
+127.0.0.1       adfox.vn
+127.0.0.1       adhigh.net
+127.0.0.1       adjust.com
+127.0.0.1       adm3.autoimg.cn
+127.0.0.1       admaster.com.cn
+127.0.0.1       admetix.com
+127.0.0.1       admicro.vn
+127.0.0.1       admicro1.vcmedia.vn
+127.0.0.1       admixer.co.kr
+127.0.0.1       admtpmp124.com
+127.0.0.1       adnetwork.vn
+127.0.0.1       adnium.com
+127.0.0.1       adnxs.com
+127.0.0.1       adroll.com
+127.0.0.1       ads-a-darwin.hulu.com
+127.0.0.1       ads-twitter.com
+127.0.0.1       ads.2mdnsys.com
+127.0.0.1       ads.appota.com
+127.0.0.1       ads.gmodules.com
+127.0.0.1       ads.google.com
+127.0.0.1       ads.huntmad.com
+127.0.0.1       ads.ictnews.vn
+127.0.0.1       ads.mobilefuse.net
+127.0.0.1       ads.netflix.com
+127.0.0.1       ads.yahoo.com
+127.0.0.1       ads.youtube.com
+127.0.0.1       ads.zdn.vn
+127.0.0.1       ads0.nexage.com
+127.0.0.1       adsco.re
+127.0.0.1       adserver-vpc-production-v2-669935021.us-east-1.elb.amazonaws.com
+127.0.0.1       adserver.yahoo.com
+127.0.0.1       adservice.google.com
+127.0.0.1       adservice.google.com.vn
+127.0.0.1       adshostnet.com
+127.0.0.1       adsmain.com
+127.0.0.1       adsrvr.org
+127.0.0.1       adsupply.com
+127.0.0.1       adsymptotic.com
+127.0.0.1       adtilt.com
+127.0.0.1       adtima.vn
+127.0.0.1       adtimaserver.vn
+127.0.0.1       adtoma.com
+127.0.0.1       adv.aftonbladet.se
+127.0.0.1       advertising.com
+127.0.0.1       advertisingvietnam.com
+127.0.0.1       advertstar.net
+127.0.0.1       adx1.com
+127.0.0.1       adxmi.com
+127.0.0.1       adxxx.org
+127.0.0.1       aerserv.com
+127.0.0.1       afs.googleusercontent.com
+127.0.0.1       ah.yimg.jp
+127.0.0.1       aliexpress.com
+127.0.0.1       alitui.weibo.com
+127.0.0.1       amazon-adsystem.com
+127.0.0.1       amobee.com
+127.0.0.1       amp.avai.com
+127.0.0.1       analytics.google.com
+127.0.0.1       analytics.vnreview.vn
+127.0.0.1       ants.vn
+127.0.0.1       api.airpush.com
+127.0.0.1       api.appodeal.com
+127.0.0.1       app-c.net
+127.0.0.1       app-measurement.com
+127.0.0.1       app.sysdigcloud.com
+127.0.0.1       appier.net
+127.0.0.1       appldnld.apple.com
+127.0.0.1       applift.com
+127.0.0.1       applovin.com
+127.0.0.1       applvn.com
+127.0.0.1       appnext.com
+127.0.0.1       appnext.hs.llnwd.net
+127.0.0.1       appodeal.com
+127.0.0.1       apps.facebook.com
+127.0.0.1       appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com
+127.0.0.1       appsflyer.com
+127.0.0.1       appshelf.ttpsdk.info
+127.0.0.1       asdkd.tutuapp.com
+127.0.0.1       asdkd.tutuapp.com.w.alikunlun.com
+127.0.0.1       asimgs.pplive.cn
+127.0.0.1       astrsk.net
+127.0.0.1       atdmt.com
+127.0.0.1       attenhance.com
+127.0.0.1       au.youmi.net
+127.0.0.1       badad.googleplex.com
+127.0.0.1       beacon.qq.com
+127.0.0.1       beacon.tingyun.com
+127.0.0.1       beap-bc.yahoo.com
+127.0.0.1       beautyzone.vn
+127.0.0.1       bebi.com
+127.0.0.1       bidgear.com
+127.0.0.1       biz.weibo.com
+127.0.0.1       bluekai.com
+127.0.0.1       blueseed.tv
+127.0.0.1       blueserving.com
+127.0.0.1       bms.zeptolab.com
+127.0.0.1       bnr.rssad.jp
+127.0.0.1       bom.baomoi.com
+127.0.0.1       bs.eyeblaster.akadns.net
+127.0.0.1       buzzurl.jp
+127.0.0.1       bwnet.com.tw
+127.0.0.1       bzadx.pro
+127.0.0.1       c.greystripe.com
+127.0.0.1       c.vrvm.com
+127.0.0.1       cache-ssl.celtra.com
+127.0.0.1       cache.celtra.com
+127.0.0.1       cb.baidu.com
+127.0.0.1       cdn.airpush.com
+127.0.0.1       cdn.applift.com
+127.0.0.1       cdn.appnext.com
+127.0.0.1       cdn.caprofitx.com
+127.0.0.1       cdn.mdotm.com
+127.0.0.1       cdn.millennialmedia.com
+127.0.0.1       cdn.nearbyad.com
+127.0.0.1       chartboost.com
+127.0.0.1       cityads.ru
+127.0.0.1       cj.com
+127.0.0.1       click.vn
+127.0.0.1       clickmngr.com
+127.0.0.1       clicks.truongton.net
+127.0.0.1       clientmetrics-pa.googleapis.com
+127.0.0.1       cliphub.io
+127.0.0.1       clix.vn
+127.0.0.1       clksite.com
+127.0.0.1       cloudads-a.akamaihd.net
+127.0.0.1       cloudmobi.net
+127.0.0.1       cold-cold-freezing.com
+127.0.0.1       collector.githubapp.com
+127.0.0.1       comradmobile.com
+127.0.0.1       connect.facebook.com
+127.0.0.1       content-ad.net
+127.0.0.1       contently.com
+127.0.0.1       corp.meitu.com
+127.0.0.1       crashlytics.com
+127.0.0.1       criteo.com
+127.0.0.1       crosspromo.zeptolab.com
+127.0.0.1       d.appsdt.com
+127.0.0.1       d.dropbox.com
+127.0.0.1       d1k5gitkzferqo.cloudfront.net
+127.0.0.1       d2bgg7rjywcwsy.cloudfront.net
+127.0.0.1       d2m1qxggnnaaex.cloudfront.net
+127.0.0.1       d3o20pxlleg2k6.cloudfront.net
+127.0.0.1       d3oltyb66oj2v8.cloudfront.net
+127.0.0.1       data.airpush.com
+127.0.0.1       digitalmerkat.com
+127.0.0.1       directadvert.ru
+127.0.0.1       dl-debug.dropbox.com
+127.0.0.1       dotandad.com
+127.0.0.1       doubleciick.net
+127.0.0.1       doubleclick.ne.jp
+127.0.0.1       doubleclick.net
+127.0.0.1       doubleclickbygoogle.com
+127.0.0.1       dts.startappservice.com
+127.0.0.1       duclick.baidu.com
+127.0.0.1       e10204.dsca.akamaiedge.net
+127.0.0.1       eclick.baidu.com
+127.0.0.1       eclick.vn
+127.0.0.1       ecpmrocks.com
+127.0.0.1       edge.reporo.net
+127.0.0.1       eiv.baidu.com
+127.0.0.1       en.alibaba.com
+127.0.0.1       entry.baidu.com
+127.0.0.1       epom.com
+127.0.0.1       erebor.douban.com
+127.0.0.1       error.facebook.com
+127.0.0.1       eventonline.vn
+127.0.0.1       exelator.com
+127.0.0.1       exoclick.com
+127.0.0.1       exosrv.com
+127.0.0.1       exoticads.com
+127.0.0.1       eyeota.net
+127.0.0.1       facebook-chrome.ml
+127.0.0.1       facebook-uzaleznienie.wirtualnie.pl
+127.0.0.1       fancywap.com
+127.0.0.1       fc2.com
+127.0.0.1       fgoogle.com
+127.0.0.1       firstimpression.io
+127.0.0.1       flashtalking.com
+127.0.0.1       flurry.com
+127.0.0.1       fout.jp
+127.0.0.1       fqtag.com
+127.0.0.1       ftpcontent.worldnow.com
+127.0.0.1       g.kuwo.cn
+127.0.0.1       game.weibo.cn
+127.0.0.1       game.weibo.com
+127.0.0.1       gdt.qq.com
+127.0.0.1       gemini.yahoo.com
+127.0.0.1       genieesspv.jp
+127.0.0.1       geoadnxs.com
+127.0.0.1       global.appnext.com
+127.0.0.1       glossom.co.jp
+127.0.0.1       gma.alicdn.com
+127.0.0.1       gmossp-sp.jp
+127.0.0.1       go.mobpartner.mobi
+127.0.0.1       go.polyad.net
+127.0.0.1       go2cloud.org
+127.0.0.1       go2speed.org
+127.0.0.1       goo.ne.jp
+127.0.0.1       google-analytics.com
+127.0.0.1       googleadapis.l.google.com
+127.0.0.1       googleadservices.com
+127.0.0.1       googlefeud.com
+127.0.0.1       googlehosted.l.googleusercontent.com
+127.0.0.1       googlesyndication.com
+127.0.0.1       googletagmanager.com
+127.0.0.1       googletagservices.com
+127.0.0.1       gowadogo.com
+127.0.0.1       h2.msn.com
+127.0.0.1       hao123union.baidu.com
+127.0.0.1       heyzap.com
+127.0.0.1       hghit.com
+127.0.0.1       hhbekxxw5d9e.pflexads.com
+127.0.0.1       hi5.com
+127.0.0.1       hm.baidu.com
+127.0.0.1       hmma.baidu.com
+127.0.0.1       hot-mob.com
+127.0.0.1       hotwords.com
+127.0.0.1       hybl9bazbc35.pflexads.com
+127.0.0.1       i-mobile.co.jp
+127.0.0.1       i.jumptap.com
+127.0.0.1       igp06.gameloft.com
+127.0.0.1       imageplus.baidu.com
+127.0.0.1       images.startappservice.com
+127.0.0.1       img2.autoimg.cn
+127.0.0.1       imgraovat.vnecdn.net
+127.0.0.1       imp.optaim.com
+127.0.0.1       imp.startappservice.com
+127.0.0.1       imp.voiceads.cn
+127.0.0.1       infolinks.com
+127.0.0.1       inmobi-jp.com
+127.0.0.1       inmobi.com
+127.0.0.1       inmobicdn.com
+127.0.0.1       inmobicdn.net
+127.0.0.1       innovid.com
+127.0.0.1       integral-marketing.com
+127.0.0.1       intellitxt.com
+127.0.0.1       interlogistics.com.vn
+127.0.0.1       intermarkets.net
+127.0.0.1       irs01.com
+127.0.0.1       islandmob.com
+127.0.0.1       js-agent.newrelic.com
+127.0.0.1       jtbmxdoadktnm.com
+127.0.0.1       kadam.net
+127.0.0.1       kochava.com
+127.0.0.1       ktopodgladamnienafacebooku.wordpress.com
+127.0.0.1       ladsp.com
+127.0.0.1       leadbolt.com
+127.0.0.1       leadzutw.com
+127.0.0.1       lfstmedia.com
+127.0.0.1       liftoff.io
+127.0.0.1       liveadexchanger.com
+127.0.0.1       liveintent.com
+127.0.0.1       llnwd.net
+127.0.0.1       localytics.com
+127.0.0.1       log.api.zaloapp.com
+127.0.0.1       log.baomoi.com
+127.0.0.1       log.infonet.vn
+127.0.0.1       log.news.zing.vn
+127.0.0.1       log.pinterest.com
+127.0.0.1       log4x.nixcdn.com
+127.0.0.1       logperf.vnexpress.net
+127.0.0.1       logv2.mp3.zing.vn
+127.0.0.1       lucklayed.info
+127.0.0.1       m.adsymptotic.com
+127.0.0.1       m.jd.com
+127.0.0.1       m.quantserve.com
+127.0.0.1       m.taobao.com
+127.0.0.1       madvertise.de
+127.0.0.1       marsads.com
+127.0.0.1       mc.yandex.ru
+127.0.0.1       mdn1.phluantmobile.net
+127.0.0.1       mdn2.phluantmobile.net
+127.0.0.1       mdn3.phluantmobile.net
+127.0.0.1       media.mobpartner.mobi
+127.0.0.1       mediadser.com
+127.0.0.1       medialand.ru
+127.0.0.1       mellowads.com
+127.0.0.1       message.meitu.com
+127.0.0.1       mesu.apple.com
+127.0.0.1       metric.gstatic.com
+127.0.0.1       mgid.com
+127.0.0.1       misterbell.com
+127.0.0.1       mixpanel.com
+127.0.0.1       moatads.com
+127.0.0.1       mobads-logs.baidu.com
+127.0.0.1       mobile-gtalk.l.google.com
+127.0.0.1       mobile.sina.cn
+127.0.0.1       mobile.yahoo.com
+127.0.0.1       mobiledl.adobe.com
+127.0.0.1       mobtrks.com
+127.0.0.1       mobusi.com
+127.0.0.1       mookie1.cn
+127.0.0.1       mopub.com
+127.0.0.1       movad.de
+127.0.0.1       mucu.jp
+127.0.0.1       mzstatic.com
+127.0.0.1       mzstatic.com.edgesuite.net
+127.0.0.1       nativex-sdk.appspot.com
+127.0.0.1       nend.net
+127.0.0.1       newspush.sinajs.cn
+127.0.0.1       nexage.com
+127.0.0.1       nr-data.net
+127.0.0.1       ocsp.apple.com
+127.0.0.1       omgmta.qq.com
+127.0.0.1       omniture.com
+127.0.0.1       on.cc
+127.0.0.1       onclasrv.com
+127.0.0.1       onclickads.net
+127.0.0.1       onclkds.com
+127.0.0.1       online-dn.com
+127.0.0.1       openxmarket.jp
+127.0.0.1       org.vn
+127.0.0.1       otherlevels.com
+127.0.0.1       ox-d.advanceweb.com
+127.0.0.1       ox-d.majorgeeks.com
+127.0.0.1       phanquang.vn
+127.0.0.1       pingjs.qq.com
+127.0.0.1       pingma.qq.com
+127.0.0.1       pixel.facebook.com
+127.0.0.1       pixel.wp.com
+127.0.0.1       playhaven.com
+127.0.0.1       polyad.net
+127.0.0.1       popads.net
+127.0.0.1       pos.baidu.com
+127.0.0.1       prodaa.netflix.com
+127.0.0.1       projectwonderful.com
+127.0.0.1       propellerpops.com
+127.0.0.1       pubdirecte.com
+127.0.0.1       pubnative.net
+127.0.0.1       questmedia.ru
+127.0.0.1       r1.ykimg.com
+127.0.0.1       rayjump.com
+127.0.0.1       rcm.amazon.com
+127.0.0.1       redclick.ru
+127.0.0.1       redintelligence.net
+127.0.0.1       report.qq.com
+127.0.0.1       req.startappservice.com
+127.0.0.1       res-zalo.zadn.vn
+127.0.0.1       res.hunantv.com
+127.0.0.1       revmob.com
+127.0.0.1       rfrl.pw
+127.0.0.1       rs-staticart.ybcdn.net
+127.0.0.1       s3.amazonasw.com
+127.0.0.1       s3.amazonaws.com
+127.0.0.1       s3.phluant.com
+127.0.0.1       sax.sina.cn
+127.0.0.1       sd.domob.cn
+127.0.0.1       service.urchin.com
+127.0.0.1       serving-sys.com
+127.0.0.1       sf.vserv.mobi
+127.0.0.1       sharethis.com
+127.0.0.1       sharethis.net
+127.0.0.1       sharethrough.com
+127.0.0.1       shop.zalo.me
+127.0.0.1       shopdunk.baomoi.com
+127.0.0.1       simaba.taobao.com
+127.0.0.1       smart-c.jp
+127.0.0.1       sp.zalo.me
+127.0.0.1       spotad.cn
+127.0.0.1       spotscenered.info
+127.0.0.1       sprout-ad.com
+127.0.0.1       spstaticimg.ameba.jp
+127.0.0.1       srv.vietnamnet.vn
+127.0.0.1       ssl-google-analytics.l.google.com
+127.0.0.1       st.polyad.net
+127.0.0.1       startapp.com
+127.0.0.1       startappexchange.com
+127.0.0.1       statcounter.com
+127.0.0.1       static-doubleclick-net.l.google.com
+127.0.0.1       static.24h.com.vn
+127.0.0.1       static.akacdn.ru
+127.0.0.1       static.criteo.net
+127.0.0.1       static.estebull.com
+127.0.0.1       static.novanet.vn
+127.0.0.1       static1.akacdn.ru
+127.0.0.1       statics.hdo-cdn.ru
+127.0.0.1       suggestqueries.l.google.com
+127.0.0.1       survey.foreseeresults.com
+127.0.0.1       swrve.com
+127.0.0.1       syndication.twitter.com
+127.0.0.1       tapad.com
+127.0.0.1       tcss.qq.com
+127.0.0.1       terraclicks.com
+127.0.0.1       test-enabled.adblockios.com
+127.0.0.1       thinknear-hosted.thinknearhub.com
+127.0.0.1       thongke.24h.com.vn
+127.0.0.1       thoughtleadr.com
+127.0.0.1       tieba.baidu.com
+127.0.0.1       track-srv.vietnamnet.vn
+127.0.0.1       tracking.admobsphere.com
+127.0.0.1       tracktopapp.com
+127.0.0.1       traffichaus.com
+127.0.0.1       trafficjunky.com
+127.0.0.1       trafficposse.com
+127.0.0.1       traffpartners.com
+127.0.0.1       trax-ad.jp
+127.0.0.1       tribalfusion.com
+127.0.0.1       tuiguang.meitu.com
+127.0.0.1       turn.com
+127.0.0.1       twimg.com
+127.0.0.1       uedata.amazon.com
+127.0.0.1       umeng.com
+127.0.0.1       unimhk.com
+127.0.0.1       union.baidu.com
+127.0.0.1       unityads.unity3d.com
+127.0.0.1       untd.com
+127.0.0.1       userreport.com
+127.0.0.1       vads.vn
+127.0.0.1       vamaker.com
+127.0.0.1       vclick.vn
+127.0.0.1       vdopia.com
+127.0.0.1       veeseo.com
+127.0.0.1       video.qiyi.com
+127.0.0.1       vietad.vn
+127.0.0.1       vietid.net
+127.0.0.1       vietnamnetad.vn
+127.0.0.1       visitweb.com
+127.0.0.1       vungle.com
+127.0.0.1       waps.cn
+127.0.0.1       wintricksbanner.googlepages.com
+127.0.0.1       wqmobile.com
+127.0.0.1       ws.tapjoyads.com
+127.0.0.1       www.googlecommerce.com
+127.0.0.1       www.startapp.com
+127.0.0.1       www.wwwgoogles.com
+127.0.0.1       www3.l.google.com
+127.0.0.1       wwwpromoter.com
+127.0.0.1       yicha.jp
+127.0.0.1       yieldmo.com
+127.0.0.1       ymtracking.com
+127.0.0.1       yumenetworks.com
+127.0.0.1       zalo-ads-td.zadn.vn
+127.0.0.1       zedo.com
+127.0.0.1       zestads.com
+127.0.0.1       zestadz.com
+127.0.0.1       zplayer-trk.zdn.vn
+127.0.0.1       zucks.co.jp
+127.0.0.1       zwaar.org
