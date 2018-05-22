@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 2018.05.19.01
+! Version: 2018.05.22.01
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -15,14 +15,6 @@
 !-------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !------------------------------------------------------------------------------
-vienthongtayninh.vn###footer
-||*.advertserve.*^
-||*.adriver.*
-||*.dumedia.*^
-||*.adlabs.*^
-||adx.com.ru^
-||*.*.doubleclick.*^ 
-||adlmerge.*^
 ###mainNav
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
@@ -34,7 +26,7 @@ vienthongtayninh.vn###footer
 /fingerprint2.min.js^
 /tracking.ashx?
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
-@@$important,document,~extension$domain=1.1.1.1|2.2.2.1|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
+@@$important,document,~extension$domain=1.1.1.1|2.2.2.1|2.2.2.2|2.2.2.3|2.2.2.4|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
@@ -120,8 +112,15 @@ forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 fpt.center###thread_info
+fptsieutoc.com###de_adblock
+fptsieutoc.com##.bgmodal
+fptsieutoc.com##.warning
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
+getintopc.com###footer
+getintopc.com###menu-page-top-menu
+getintopc.com###sidebar
+getintopc.com###site-title
 getlinkfshare.com###precomments
 getlinkfshare.com##.bg-secondary
 getlinkfshare.com##.nav-bar
@@ -277,6 +276,9 @@ trainghiemso.vn##.attachment-, .size-, .wp-post-image
 tranducit.com##.popScroll
 trithucvn.net###post-sidebar
 tudienabc.com###container > div.row:nth-child(4)
+upload4earn.org##footer
+upload4earn.org##header
+upload4earn.org##nav
 uploadocean.com###header
 uploadocean.com###lkika
 uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
@@ -303,11 +305,13 @@ us.24h.com.vn##.footer-menu2
 us.24h.com.vn##.text-banner-horizontal
 userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
+vienthongtayninh.vn###footer
 vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody > tr:last-child
 vietnamnet.vn###Box-FixFB
 vietnamnet.vn##.BoxFix
 vietnamnet.vn##.Main-Footer.p-t-20
 vitinhvuhoang.com###sbox-overlay
+vitinhvuhoang.com###sbox-window
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
 vn-zoom.com###contentMain > div.bodyWrapper > div.body_wrapper:nth-child(2) > center:nth-child(8)
@@ -342,19 +346,23 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 youtube.com###masthead-ad
 youtube.com##*.video-ads
 |https://$script,domain=uplod.ws,third-party
+||*.*.doubleclick.*^ 
 ||*.2mdn.*^
 ||*.8ox.*^
 ||*.adk2.com^
+||*.adlabs.*^
 ||*.adloft.*^
 ||*.admicro.*
 ||*.adnetwork.*^
 ||*.adright.*^
+||*.adriver.*
 ||*.adsafeprotected.*^
 ||*.adskeeper.*^
 ||*.adtima.*^
 ||*.adtimaserver.*^
 ||*.adtrue.*^
 ||*.advertisingwouldbegreat.*^
+||*.advertserve.*^
 ||*.amazon-adsystem.*^
 ||*.amcdn.vn^
 ||*.bitpit.*^
@@ -369,6 +377,7 @@ youtube.com##*.video-ads
 ||*.disqus.*^
 ||*.disquscdn.*^
 ||*.doubleclick.*^
+||*.dumedia.*^
 ||*.eboundservices.*^
 ||*.eclick.*^
 ||*.exdynsrv.*^
@@ -379,6 +388,7 @@ youtube.com##*.video-ads
 ||*.googleadservices.*^
 ||*.googlesyndication.*^
 ||*.googletagservices.*^
+||*.googleusercontent.*^$domain=upload4earn.org
 ||*.googlevideo.com/*_204
 ||*.hibids10.*^
 ||*.hit4hit.*^
@@ -419,8 +429,10 @@ youtube.com##*.video-ads
 ||*.webstats.*^
 ||*.yadro.*^
 ||1ea1sley.*^
+||adlmerge.*^
 ||ads.crackhex.com^
 ||adsrvmedia.adk2x.com
+||adx.com.ru^
 ||apinas.nct.vn^
 ||arrassley.*^
 ||asc.quantrimang.com
@@ -505,8 +517,6 @@ youtube.com##*.video-ads
 ||youtube.com/get_endscreen^
 ||youtube.com/get_midroll_info?
 ||youtube.com/pagead^
-||youtube.com/pagead^
-||youtube.com/ptracking?
 ||youtube.com/ptracking?
 ||youtube.com/youtubei/*/log_*?
 ||youtube.com/youtubei/*/log_*??
