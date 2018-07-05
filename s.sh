@@ -85,7 +85,9 @@ export ADHOLEIP="0.1.2.3"
 # needn't be /jffs, could be /opt
 # preferably use a USB drive for this
 export MPDIR="${ThuMuc}"
-mkdir ${ThuMuc}/tmp
+if [ ! -d "${ThuMuc}/tmp" ]; then
+  mkdir ${ThuMuc}/tmp
+fi
 
 # temporary directory
 export TMPDIR="${ThuMuc}/tmp"
