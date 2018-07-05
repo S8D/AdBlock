@@ -264,6 +264,7 @@ selfUpdate ()
 			lognecho ">>> Update failed. Try again."
 		fi
 		rm -f $TMPFILE
+		rm -rf ${ThuMuc}/tmp
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
