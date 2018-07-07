@@ -1,13 +1,12 @@
 #!/bin/sh
 # set -euxo pipefail
 # File: s.sh
-export BLITZ=1
-VERSION="2018.07.07.07"
+export BLITZ=3
+VERSION="2018.07.07.23"
 
-export ThuMuc="/${PWD#*/}"
+export ThuMuc="${PWD##*/}"
 # temporary directory
 export Tam="${ThuMuc}/tmp"
-export MPDIR="${ThuMuc}"
 if [ ! -d "${Tam}" ]; then
   mkdir ${Tam}
 fi
@@ -177,7 +176,7 @@ export DISTRIB=0
 
 # where ads go to die
 # do not use 0.0.0.0 or 127.0.0.1
-export ADHOLEIP="0.1.2.3"
+export SetIP="0.1.2.3"
 
 # define dnsmasq directory and path
 # needn't be /jffs, could be /opt
@@ -185,46 +184,46 @@ export ADHOLEIP="0.1.2.3"
 
 
 # dnsmasq hosts & domain files
-export mphosts="${MPDIR}/m"
-export mphostspaused="${MPDIR}/mphosts.zzz"
+export mphosts="${ThuMuc}/h"
+export mphostspaused="${ThuMuc}/mphosts.zzz"
 export tmphosts="${Tam}/mphosts.tmp"
 
 # temporary dnsmasq hosts & domain files
-export mpdomains="${MPDIR}/d"
-export mpdomainspaused="${MPDIR}/mpdomains.zzz"
+export mpdomains="${ThuMuc}/m"
+export mpdomainspaused="${ThuMuc}/mpdomains.zzz"
 export tmpdomains="${Tam}/mpdomains.tmp"
 
 # pause flag
-export pauseflag="${MPDIR}/PAUSED"
+export pauseflag="${ThuMuc}/PAUSED"
 
 # blacklist file: a list of blacklisted domains one per line
-export blacklist="${MPDIR}/blacklist"
+export blacklist="${ThuMuc}/blacklist"
 
 # whitelist file: a list of whitelisted domains one per line
-export whitelist="${MPDIR}/whitelist"
+export whitelist="${ThuMuc}/whitelist"
 
 # encoded whitelist file: a list of whitelisted domains one per line
-export base64wl="${MPDIR}/base64wl"
+export base64wl="${ThuMuc}/base64wl"
 
 # user's custom blacklist file: a list of blacklisted domains one per line
-export myblacklist="${MPDIR}/myblacklist"
+export myblacklist="${ThuMuc}/myblacklist"
 
 # user's custom whitelist file: a list of whitelisted domains one per line
-export mywhitelist="${MPDIR}/mywhitelist"
+export mywhitelist="${ThuMuc}/mywhitelist"
 
 # log file
-export MPLOG="${MPDIR}/mphosts.log"
+export MPLOG="${ThuMuc}/mphosts.log"
 #[ -s $MPLOG ] && rm -f $MPLOG
 
 # help cron a bit
 export SHELL=/bin/sh
-export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${MPDIR}"
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${ThuMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
-export PWD="${MPDIR}"
+export PWD="${ThuMuc}"
 
 ###############################################################################
 
-cd "${MPDIR}"
+cd "${ThuMuc}"
 logger ">>> $(basename "$0") started"
 
 ###############################################################################
@@ -236,10 +235,10 @@ if [ -z "$(which curl)" ]; then
 	exit 1
 fi
 
-export CURL_CA_BUNDLE="${MPDIR}/cacert.pem"
+export CURL_CA_BUNDLE="${ThuMuc}/cacert.pem"
 alias MPGET="curl -f -s -k"
 alias MPGETSSL="curl -f -s -k"
-[ $SECURL -eq 1 ] && unalias MPGETSSL && alias MPGETSSL="curl -f -s --capath ${MPDIR} --cacert $CURL_CA_BUNDLE"
+[ $SECURL -eq 1 ] && unalias MPGETSSL && alias MPGETSSL="curl -f -s --capath ${ThuMuc} --cacert $CURL_CA_BUNDLE"
 alias MPGETMHK="curl -f -s -A "Mozilla/5.0" -e http://forum.xda-developers.com/"
 
 ###############################################################################
@@ -311,7 +310,7 @@ printHelp ()
 	printf '\t'; echo -n "[-d | -D]"; printf '\t\t\t'; echo "Ignore myblacklist/mywhitelist entries"
 	printf '\t'; echo -n "[-b | --bl=]"; printf '\t'; echo -n "domain.name"; printf '\t'; echo "Add domain.name to myblacklist"
 	printf '\t'; echo -n "[-w | --wl=]"; printf '\t'; echo -n "domain.name"; printf '\t'; echo "Add domain.name to mywhitelist"
-	printf '\t'; echo -n "[-i | --ip=]"; printf '\t'; echo -n "ip.ad.dr.ss"; printf '\t'; echo "Send ads to this IP, default: $ADHOLEIP"
+	printf '\t'; echo -n "[-i | --ip=]"; printf '\t'; echo -n "ip.ad.dr.ss"; printf '\t'; echo "Send ads to this IP, default: $SetIP"
 	printf '\t'; echo -n "[-q | --quiet]"; printf '\t\t\t'; echo "Print outout to log file only"
 	printf '\t'; echo -n "[-p | --pause]"; printf '\t\t\t'; echo "Pause protection"
 	printf '\t'; echo -n "[-r | --resume]"; printf '\t\t\t'; echo "Resume protection"
@@ -386,14 +385,14 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		u|U  ) selfUpdate ;;
 		b    ) echo "$OPTARG" >> $myblacklist ;;
 		w    ) echo "$OPTARG" >> $mywhitelist ;;
-		i    ) ADHOLEIP="$OPTARG" ;;
+		i    ) SetIP="$OPTARG" ;;
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
 			bl=?*   ) ARG_BL="$LONG_OPTARG" ; echo $ARG_BL >> $myblacklist ;;
 			bl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			wl=?*   ) ARG_WL="$LONG_OPTARG" ; echo $ARG_WL >> $mywhitelist ;;
 			wl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
-			ip=?*   ) ARG_IP="$LONG_OPTARG" ; ADHOLEIP=$ARG_IP ;;
+			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			9000    ) BLITZ=9000 ;;
 			quiet   ) QUIET=1 ;;
@@ -441,7 +440,7 @@ fi
 if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 
 	lognecho "# NETWORK: UP | MODE: ONLINE"
-	lognecho "# IP ADDRESS FOR ADS: $ADHOLEIP"
+	lognecho "# IP ADDRESS FOR ADS: $SetIP"
 	lognecho "# SECURE [0=NO | 1=YES]: $SECURL"
 	lognecho "# BLITZ LEVEL [0|1|2|3]: $BLITZ"
 
@@ -452,11 +451,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 
 	lognecho "# Creating mpdomains file"
 	lognecho "# Downloading ${u01}"
-	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$ADHOLEIP'/' > $tmpdomains
+	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$SetIP'/' > $tmpdomains
 	lognecho "# Downloading ${u02}"
-	MPGETSSL ${u02} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$ADHOLEIP'/' >> $tmpdomains
+	MPGETSSL ${u02} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$SetIP'/' >> $tmpdomains
 	lognecho "# Downloading ${u03}"
-	MPGETSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} | grep -o '^[^#]*' | grep -v "::" | sed 's/127.0.0.1$/'$ADHOLEIP'/' >> $tmpdomains
+	MPGETSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} | grep -o '^[^#]*' | grep -v "::" | sed 's/127.0.0.1$/'$SetIP'/' >> $tmpdomains
 
 	lognecho "# Creating mphosts file"
 	lognecho "# Downloading ${u04}"
@@ -762,7 +761,7 @@ fi
 # remove non-printable non-ASCII characters because DD-WRT dnsmasq throws "bad name at line n" errors
 # merge blacklists with other lists and remove whitelist entries from the stream
 lognecho "> Processing final mphosts/mpdomains files"
-LC_ALL=C cat $tmphosts | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$ADHOLEIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
+LC_ALL=C cat $tmphosts | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
 LC_ALL=C cat $tmpdomains | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf tmpwl | sort -u > $mpdomains
 
 lognecho "> Removing temporary files"
