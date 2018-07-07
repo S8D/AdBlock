@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=1
-VERSION="2018.07.07"
+VERSION="2018.07.07.07"
 
 export ThuMuc="/${PWD#*/}"
 # temporary directory
@@ -185,12 +185,12 @@ export ADHOLEIP="0.1.2.3"
 
 
 # dnsmasq hosts & domain files
-export mphosts="${MPDIR}/mphosts"
+export mphosts="${MPDIR}/m"
 export mphostspaused="${MPDIR}/mphosts.zzz"
 export tmphosts="${Tam}/mphosts.tmp"
 
 # temporary dnsmasq hosts & domain files
-export mpdomains="${MPDIR}/mpdomains"
+export mpdomains="${MPDIR}/d"
 export mpdomainspaused="${MPDIR}/mpdomains.zzz"
 export tmpdomains="${Tam}/mpdomains.tmp"
 
