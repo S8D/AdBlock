@@ -2,9 +2,9 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.07.23"
-
-export ThuMuc="${PWD##*/}"
+VERSION="2018.07.07.24"
+ThuMuc='/jffs'
+#export ThuMuc="${PWD##*/}"
 # temporary directory
 export Tam="${ThuMuc}/tmp"
 if [ ! -d "${Tam}" ]; then
