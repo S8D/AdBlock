@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.08.10"
+VERSION="2018.07.08.11"
 ThuMuc='/jffs'
 
 #export ThuMuc="${PWD##*/}"
