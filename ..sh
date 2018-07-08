@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.08.15"
+VERSION="2018.07.08.08"
 ThuMuc='/jffs'
 
 #export ThuMuc="${PWD##*/}"
@@ -320,7 +320,7 @@ printHelp ()
 	printf '\t'; echo -n "[-s | --secure]"; printf '\t\t\t'; echo "Use cURL CA certs for secure file transfer"
 	printf '\t'; echo -n "[-o | --offline]"; printf '\t\t'; echo "Process local lists without downloading"
 	printf '\t'; echo -n "[-h | --help]"; printf '\t\t\t'; echo "Display this help screen and exit"
-	printf '\t'; echo -n "[-u | --update]"; printf '\t\t\t'; echo "Update $(basename "$0") to the latest version ${VERSION}"
+	printf '\t'; echo -n "[-u | --update]"; printf '\t\t\t'; echo "Update $(basename "$0") to the latest version: $VERSION"
 	printf '\t'; echo -n "[-v | --version]"; printf '\t\t'; echo "Print $(basename "$0") version and exit"
 	echo ""
 	echo "EXAMPLES:"
@@ -354,7 +354,7 @@ selfUpdate ()
 				mv $TMPFILE $0
 				lognecho ">>> Updated to the latest version."
 			else
-				lognecho ">>> No updates available. Current version: ${VERSION}."
+				lognecho ">>> No updates available. Current version: $VERSION."
 			fi
 		else
 			lognecho ">>> Update failed. Try again."
