@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.08.11"
+VERSION="2018.07.08.12"
 ThuMuc='/jffs'
 
 #export ThuMuc="${PWD##*/}"
@@ -372,7 +372,7 @@ selfUpdate ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) printHelp ;;
-		v    ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+		v    ) echo "Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 		0    ) BLITZ=0 ;;
 		1    ) BLITZ=1 ;;
 		2    ) BLITZ=2 ;;
