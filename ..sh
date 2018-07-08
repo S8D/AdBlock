@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.08.09"
+VERSION="2018.07.08.10"
 ThuMuc='/jffs'
 
 #export ThuMuc="${PWD##*/}"
@@ -192,7 +192,7 @@ export mphostspaused="${ThuMuc}/mphosts.zzz"
 export tmphosts="${Tam}/mphosts.tmp"
 
 # temporary dnsmasq hosts & domain files
-export mpdomains="${ThuMuc}/m"
+export mpdomains="${ThuMuc}/d"
 export mpdomainspaused="${ThuMuc}/mpdomains.zzz"
 export tmpdomains="${Tam}/mpdomains.tmp"
 
