@@ -1,465 +1,463 @@
-#20180515
-#463
-127.0.0.1       123c.vn
-127.0.0.1       1rx.io
-127.0.0.1       2ch.net
-127.0.0.1       2mdn.net
-127.0.0.1       2mdnsys.com
-127.0.0.1       4chan-ads.org
-127.0.0.1       51y5.net
-127.0.0.1       a.medialytics.com
-127.0.0.1       acd.com.vn
-127.0.0.1       actrk.me
-127.0.0.1       ad.toutiao.com
-127.0.0.1       ad.vatgia.com
-127.0.0.1       ad.zing.vn
-127.0.0.1       ad360.vn
-127.0.0.1       adcash.com
-127.0.0.1       adcloud.jp
-127.0.0.1       adcolony.com
-127.0.0.1       adcontent.saymedia.com
-127.0.0.1       addthis.com
-127.0.0.1       addthisedge.com
-127.0.0.1       adex.bmediaasia.com
-127.0.0.1       adex2.bmediaasia.com
-127.0.0.1       adexprt.com
-127.0.0.1       adfonic.net
-127.0.0.1       adform.net
-127.0.0.1       adfox.vn
-127.0.0.1       adhigh.net
-127.0.0.1       adjust.com
-127.0.0.1       adm3.autoimg.cn
-127.0.0.1       admaster.com.cn
-127.0.0.1       admetix.com
-127.0.0.1       admicro.vn
-127.0.0.1       admicro1.vcmedia.vn
-127.0.0.1       admixer.co.kr
-127.0.0.1       admtpmp124.com
-127.0.0.1       adnetwork.vn
-127.0.0.1       adnium.com
-127.0.0.1       adnxs.com
-127.0.0.1       adroll.com
-127.0.0.1       ads-a-darwin.hulu.com
-127.0.0.1       ads-twitter.com
-127.0.0.1       ads.2mdnsys.com
-127.0.0.1       ads.appota.com
-127.0.0.1       ads.gmodules.com
-127.0.0.1       ads.google.com
-127.0.0.1       ads.huntmad.com
-127.0.0.1       ads.ictnews.vn
-127.0.0.1       ads.mobilefuse.net
-127.0.0.1       ads.netflix.com
-127.0.0.1       ads.yahoo.com
-127.0.0.1       ads.youtube.com
-127.0.0.1       ads.zdn.vn
-127.0.0.1       ads0.nexage.com
-127.0.0.1       adsco.re
-127.0.0.1       adserver-vpc-production-v2-669935021.us-east-1.elb.amazonaws.com
-127.0.0.1       adserver.yahoo.com
-127.0.0.1       adservice.google.com
-127.0.0.1       adservice.google.com.vn
-127.0.0.1       adshostnet.com
-127.0.0.1       adsmain.com
-127.0.0.1       adsrvr.org
-127.0.0.1       adsupply.com
-127.0.0.1       adsymptotic.com
-127.0.0.1       adtilt.com
-127.0.0.1       adtima.vn
-127.0.0.1       adtimaserver.vn
-127.0.0.1       adtoma.com
-127.0.0.1       adv.aftonbladet.se
-127.0.0.1       advertising.com
-127.0.0.1       advertisingvietnam.com
-127.0.0.1       advertstar.net
-127.0.0.1       adx1.com
-127.0.0.1       adxmi.com
-127.0.0.1       adxxx.org
-127.0.0.1       aerserv.com
-127.0.0.1       afs.googleusercontent.com
-127.0.0.1       ah.yimg.jp
-127.0.0.1       aliexpress.com
-127.0.0.1       alitui.weibo.com
-127.0.0.1       amazon-adsystem.com
-127.0.0.1       amobee.com
-127.0.0.1       amp.avai.com
-127.0.0.1       analytics.google.com
-127.0.0.1       analytics.vnreview.vn
-127.0.0.1       ants.vn
-127.0.0.1       api.airpush.com
-127.0.0.1       api.appodeal.com
-127.0.0.1       app-c.net
-127.0.0.1       app-measurement.com
-127.0.0.1       app.sysdigcloud.com
-127.0.0.1       appier.net
-127.0.0.1       appldnld.apple.com
-127.0.0.1       applift.com
-127.0.0.1       applovin.com
-127.0.0.1       applvn.com
-127.0.0.1       appnext.com
-127.0.0.1       appnext.hs.llnwd.net
-127.0.0.1       appodeal.com
-127.0.0.1       apps.facebook.com
-127.0.0.1       appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com
-127.0.0.1       appsflyer.com
-127.0.0.1       appshelf.ttpsdk.info
-127.0.0.1       asdkd.tutuapp.com
-127.0.0.1       asdkd.tutuapp.com.w.alikunlun.com
-127.0.0.1       asimgs.pplive.cn
-127.0.0.1       astrsk.net
-127.0.0.1       atdmt.com
-127.0.0.1       attenhance.com
-127.0.0.1       au.youmi.net
-127.0.0.1       badad.googleplex.com
-127.0.0.1       beacon.qq.com
-127.0.0.1       beacon.tingyun.com
-127.0.0.1       beap-bc.yahoo.com
-127.0.0.1       beautyzone.vn
-127.0.0.1       bebi.com
-127.0.0.1       bidgear.com
-127.0.0.1       biz.weibo.com
-127.0.0.1       bluekai.com
-127.0.0.1       blueseed.tv
-127.0.0.1       blueserving.com
-127.0.0.1       bms.zeptolab.com
-127.0.0.1       bnr.rssad.jp
-127.0.0.1       bom.baomoi.com
-127.0.0.1       bs.eyeblaster.akadns.net
-127.0.0.1       buzzurl.jp
-127.0.0.1       bwnet.com.tw
-127.0.0.1       bzadx.pro
-127.0.0.1       c.greystripe.com
-127.0.0.1       c.vrvm.com
-127.0.0.1       cache-ssl.celtra.com
-127.0.0.1       cache.celtra.com
-127.0.0.1       cb.baidu.com
-127.0.0.1       cdn.airpush.com
-127.0.0.1       cdn.applift.com
-127.0.0.1       cdn.appnext.com
-127.0.0.1       cdn.caprofitx.com
-127.0.0.1       cdn.mdotm.com
-127.0.0.1       cdn.millennialmedia.com
-127.0.0.1       cdn.nearbyad.com
-127.0.0.1       chartboost.com
-127.0.0.1       cityads.ru
-127.0.0.1       cj.com
-127.0.0.1       click.vn
-127.0.0.1       clickmngr.com
-127.0.0.1       clicks.truongton.net
-127.0.0.1       clientmetrics-pa.googleapis.com
-127.0.0.1       cliphub.io
-127.0.0.1       clix.vn
-127.0.0.1       clksite.com
-127.0.0.1       cloudads-a.akamaihd.net
-127.0.0.1       cloudmobi.net
-127.0.0.1       cold-cold-freezing.com
-127.0.0.1       collector.githubapp.com
-127.0.0.1       comradmobile.com
-127.0.0.1       connect.facebook.com
-127.0.0.1       content-ad.net
-127.0.0.1       contently.com
-127.0.0.1       corp.meitu.com
-127.0.0.1       crashlytics.com
-127.0.0.1       criteo.com
-127.0.0.1       crosspromo.zeptolab.com
-127.0.0.1       d.appsdt.com
-127.0.0.1       d.dropbox.com
-127.0.0.1       d1k5gitkzferqo.cloudfront.net
-127.0.0.1       d2bgg7rjywcwsy.cloudfront.net
-127.0.0.1       d2m1qxggnnaaex.cloudfront.net
-127.0.0.1       d3o20pxlleg2k6.cloudfront.net
-127.0.0.1       d3oltyb66oj2v8.cloudfront.net
-127.0.0.1       data.airpush.com
-127.0.0.1       digitalmerkat.com
-127.0.0.1       directadvert.ru
-127.0.0.1       dl-debug.dropbox.com
-127.0.0.1       dotandad.com
-127.0.0.1       doubleciick.net
-127.0.0.1       doubleclick.ne.jp
-127.0.0.1       doubleclick.net
-127.0.0.1       doubleclickbygoogle.com
-127.0.0.1       dts.startappservice.com
-127.0.0.1       duclick.baidu.com
-127.0.0.1       e10204.dsca.akamaiedge.net
-127.0.0.1       eclick.baidu.com
-127.0.0.1       eclick.vn
-127.0.0.1       ecpmrocks.com
-127.0.0.1       edge.reporo.net
-127.0.0.1       eiv.baidu.com
-127.0.0.1       en.alibaba.com
-127.0.0.1       entry.baidu.com
-127.0.0.1       epom.com
-127.0.0.1       erebor.douban.com
-127.0.0.1       error.facebook.com
-127.0.0.1       eventonline.vn
-127.0.0.1       exelator.com
-127.0.0.1       exoclick.com
-127.0.0.1       exosrv.com
-127.0.0.1       exoticads.com
-127.0.0.1       eyeota.net
-127.0.0.1       facebook-chrome.ml
-127.0.0.1       facebook-uzaleznienie.wirtualnie.pl
-127.0.0.1       fancywap.com
-127.0.0.1       fc2.com
-127.0.0.1       fgoogle.com
-127.0.0.1       firstimpression.io
-127.0.0.1       flashtalking.com
-127.0.0.1       flurry.com
-127.0.0.1       fout.jp
-127.0.0.1       fqtag.com
-127.0.0.1       ftpcontent.worldnow.com
-127.0.0.1       g.kuwo.cn
-127.0.0.1       game.weibo.cn
-127.0.0.1       game.weibo.com
-127.0.0.1       gdt.qq.com
-127.0.0.1       gemini.yahoo.com
-127.0.0.1       genieesspv.jp
-127.0.0.1       geoadnxs.com
-127.0.0.1       global.appnext.com
-127.0.0.1       glossom.co.jp
-127.0.0.1       gma.alicdn.com
-127.0.0.1       gmossp-sp.jp
-127.0.0.1       go.mobpartner.mobi
-127.0.0.1       go.polyad.net
-127.0.0.1       go2cloud.org
-127.0.0.1       go2speed.org
-127.0.0.1       goo.ne.jp
-127.0.0.1       google-analytics.com
-127.0.0.1       googleadapis.l.google.com
-127.0.0.1       googleadservices.com
-127.0.0.1       googlefeud.com
-127.0.0.1       googlehosted.l.googleusercontent.com
-127.0.0.1       googlesyndication.com
-127.0.0.1       googletagmanager.com
-127.0.0.1       googletagservices.com
-127.0.0.1       gowadogo.com
-127.0.0.1       h2.msn.com
-127.0.0.1       hao123union.baidu.com
-127.0.0.1       heyzap.com
-127.0.0.1       hghit.com
-127.0.0.1       hhbekxxw5d9e.pflexads.com
-127.0.0.1       hi5.com
-127.0.0.1       hm.baidu.com
-127.0.0.1       hmma.baidu.com
-127.0.0.1       hot-mob.com
-127.0.0.1       hotwords.com
-127.0.0.1       hybl9bazbc35.pflexads.com
-127.0.0.1       i-mobile.co.jp
-127.0.0.1       i.jumptap.com
-127.0.0.1       igp06.gameloft.com
-127.0.0.1       imageplus.baidu.com
-127.0.0.1       images.startappservice.com
-127.0.0.1       img2.autoimg.cn
-127.0.0.1       imgraovat.vnecdn.net
-127.0.0.1       imp.optaim.com
-127.0.0.1       imp.startappservice.com
-127.0.0.1       imp.voiceads.cn
-127.0.0.1       infolinks.com
-127.0.0.1       inmobi-jp.com
-127.0.0.1       inmobi.com
-127.0.0.1       inmobicdn.com
-127.0.0.1       inmobicdn.net
-127.0.0.1       innovid.com
-127.0.0.1       integral-marketing.com
-127.0.0.1       intellitxt.com
-127.0.0.1       interlogistics.com.vn
-127.0.0.1       intermarkets.net
-127.0.0.1       irs01.com
-127.0.0.1       islandmob.com
-127.0.0.1       js-agent.newrelic.com
-127.0.0.1       jtbmxdoadktnm.com
-127.0.0.1       kadam.net
-127.0.0.1       kochava.com
-127.0.0.1       ktopodgladamnienafacebooku.wordpress.com
-127.0.0.1       ladsp.com
-127.0.0.1       leadbolt.com
-127.0.0.1       leadzutw.com
-127.0.0.1       lfstmedia.com
-127.0.0.1       liftoff.io
-127.0.0.1       liveadexchanger.com
-127.0.0.1       liveintent.com
-127.0.0.1       llnwd.net
-127.0.0.1       localytics.com
-127.0.0.1       log.api.zaloapp.com
-127.0.0.1       log.baomoi.com
-127.0.0.1       log.infonet.vn
-127.0.0.1       log.news.zing.vn
-127.0.0.1       log.pinterest.com
-127.0.0.1       log4x.nixcdn.com
-127.0.0.1       logperf.vnexpress.net
-127.0.0.1       logv2.mp3.zing.vn
-127.0.0.1       lucklayed.info
-127.0.0.1       m.adsymptotic.com
-127.0.0.1       m.jd.com
-127.0.0.1       m.quantserve.com
-127.0.0.1       m.taobao.com
-127.0.0.1       madvertise.de
-127.0.0.1       marsads.com
-127.0.0.1       mc.yandex.ru
-127.0.0.1       mdn1.phluantmobile.net
-127.0.0.1       mdn2.phluantmobile.net
-127.0.0.1       mdn3.phluantmobile.net
-127.0.0.1       media.mobpartner.mobi
-127.0.0.1       mediadser.com
-127.0.0.1       medialand.ru
-127.0.0.1       mellowads.com
-127.0.0.1       message.meitu.com
-127.0.0.1       mesu.apple.com
-127.0.0.1       metric.gstatic.com
-127.0.0.1       mgid.com
-127.0.0.1       misterbell.com
-127.0.0.1       mixpanel.com
-127.0.0.1       moatads.com
-127.0.0.1       mobads-logs.baidu.com
-127.0.0.1       mobile-gtalk.l.google.com
-127.0.0.1       mobile.sina.cn
-127.0.0.1       mobile.yahoo.com
-127.0.0.1       mobiledl.adobe.com
-127.0.0.1       mobtrks.com
-127.0.0.1       mobusi.com
-127.0.0.1       mookie1.cn
-127.0.0.1       mopub.com
-127.0.0.1       movad.de
-127.0.0.1       mucu.jp
-127.0.0.1       mzstatic.com
-127.0.0.1       mzstatic.com.edgesuite.net
-127.0.0.1       nativex-sdk.appspot.com
-127.0.0.1       nend.net
-127.0.0.1       newspush.sinajs.cn
-127.0.0.1       nexage.com
-127.0.0.1       nr-data.net
-127.0.0.1       ocsp.apple.com
-127.0.0.1       omgmta.qq.com
-127.0.0.1       omniture.com
-127.0.0.1       on.cc
-127.0.0.1       onclasrv.com
-127.0.0.1       onclickads.net
-127.0.0.1       onclkds.com
-127.0.0.1       online-dn.com
-127.0.0.1       openxmarket.jp
-127.0.0.1       org.vn
-127.0.0.1       otherlevels.com
-127.0.0.1       ox-d.advanceweb.com
-127.0.0.1       ox-d.majorgeeks.com
-127.0.0.1       phanquang.vn
-127.0.0.1       pingjs.qq.com
-127.0.0.1       pingma.qq.com
-127.0.0.1       pixel.facebook.com
-127.0.0.1       pixel.wp.com
-127.0.0.1       playhaven.com
-127.0.0.1       polyad.net
-127.0.0.1       popads.net
-127.0.0.1       pos.baidu.com
-127.0.0.1       prodaa.netflix.com
-127.0.0.1       projectwonderful.com
-127.0.0.1       propellerpops.com
-127.0.0.1       pubdirecte.com
-127.0.0.1       pubnative.net
-127.0.0.1       questmedia.ru
-127.0.0.1       r1.ykimg.com
-127.0.0.1       rayjump.com
-127.0.0.1       rcm.amazon.com
-127.0.0.1       redclick.ru
-127.0.0.1       redintelligence.net
-127.0.0.1       report.qq.com
-127.0.0.1       req.startappservice.com
-127.0.0.1       res-zalo.zadn.vn
-127.0.0.1       res.hunantv.com
-127.0.0.1       revmob.com
-127.0.0.1       rfrl.pw
-127.0.0.1       rs-staticart.ybcdn.net
-127.0.0.1       s3.amazonasw.com
-127.0.0.1       s3.amazonaws.com
-127.0.0.1       s3.phluant.com
-127.0.0.1       sax.sina.cn
-127.0.0.1       sd.domob.cn
-127.0.0.1       service.urchin.com
-127.0.0.1       serving-sys.com
-127.0.0.1       sf.vserv.mobi
-127.0.0.1       sharethis.com
-127.0.0.1       sharethis.net
-127.0.0.1       sharethrough.com
-127.0.0.1       shop.zalo.me
-127.0.0.1       shopdunk.baomoi.com
-127.0.0.1       simaba.taobao.com
-127.0.0.1       smart-c.jp
-127.0.0.1       sp.zalo.me
-127.0.0.1       spotad.cn
-127.0.0.1       spotscenered.info
-127.0.0.1       sprout-ad.com
-127.0.0.1       spstaticimg.ameba.jp
-127.0.0.1       srv.vietnamnet.vn
-127.0.0.1       ssl-google-analytics.l.google.com
-127.0.0.1       st.polyad.net
-127.0.0.1       startapp.com
-127.0.0.1       startappexchange.com
-127.0.0.1       statcounter.com
-127.0.0.1       static-doubleclick-net.l.google.com
-127.0.0.1       static.24h.com.vn
-127.0.0.1       static.akacdn.ru
-127.0.0.1       static.criteo.net
-127.0.0.1       static.estebull.com
-127.0.0.1       static.novanet.vn
-127.0.0.1       static1.akacdn.ru
-127.0.0.1       statics.hdo-cdn.ru
-127.0.0.1       suggestqueries.l.google.com
-127.0.0.1       survey.foreseeresults.com
-127.0.0.1       swrve.com
-127.0.0.1       syndication.twitter.com
-127.0.0.1       tapad.com
-127.0.0.1       tcss.qq.com
-127.0.0.1       terraclicks.com
-127.0.0.1       test-enabled.adblockios.com
-127.0.0.1       thinknear-hosted.thinknearhub.com
-127.0.0.1       thongke.24h.com.vn
-127.0.0.1       thoughtleadr.com
-127.0.0.1       tieba.baidu.com
-127.0.0.1       track-srv.vietnamnet.vn
-127.0.0.1       tracking.admobsphere.com
-127.0.0.1       tracktopapp.com
-127.0.0.1       traffichaus.com
-127.0.0.1       trafficjunky.com
-127.0.0.1       trafficposse.com
-127.0.0.1       traffpartners.com
-127.0.0.1       trax-ad.jp
-127.0.0.1       tribalfusion.com
-127.0.0.1       tuiguang.meitu.com
-127.0.0.1       turn.com
-127.0.0.1       twimg.com
-127.0.0.1       uedata.amazon.com
-127.0.0.1       umeng.com
-127.0.0.1       unimhk.com
-127.0.0.1       union.baidu.com
-127.0.0.1       unityads.unity3d.com
-127.0.0.1       untd.com
-127.0.0.1       userreport.com
-127.0.0.1       vads.vn
-127.0.0.1       vamaker.com
-127.0.0.1       vclick.vn
-127.0.0.1       vdopia.com
-127.0.0.1       veeseo.com
-127.0.0.1       video.qiyi.com
-127.0.0.1       vietad.vn
-127.0.0.1       vietid.net
-127.0.0.1       vietnamnetad.vn
-127.0.0.1       visitweb.com
-127.0.0.1       vungle.com
-127.0.0.1       waps.cn
-127.0.0.1       wintricksbanner.googlepages.com
-127.0.0.1       wqmobile.com
-127.0.0.1       ws.tapjoyads.com
-127.0.0.1       www.googlecommerce.com
-127.0.0.1       www.startapp.com
-127.0.0.1       www.wwwgoogles.com
-127.0.0.1       www3.l.google.com
-127.0.0.1       wwwpromoter.com
-127.0.0.1       yicha.jp
-127.0.0.1       yieldmo.com
-127.0.0.1       ymtracking.com
-127.0.0.1       yumenetworks.com
-127.0.0.1       zalo-ads-td.zadn.vn
-127.0.0.1       zedo.com
-127.0.0.1       zestads.com
-127.0.0.1       zestadz.com
-127.0.0.1       zplayer-trk.zdn.vn
-127.0.0.1       zucks.co.jp
-127.0.0.1       zwaar.org
+address=/123c.vn/0.1.2.3
+address=/1rx.io/0.1.2.3
+address=/2ch.net/0.1.2.3
+address=/2mdn.net/0.1.2.3
+address=/2mdnsys.com/0.1.2.3
+address=/4chan-ads.org/0.1.2.3
+address=/51y5.net/0.1.2.3
+address=/a.medialytics.com/0.1.2.3
+address=/acd.com.vn/0.1.2.3
+address=/actrk.me/0.1.2.3
+address=/ad.toutiao.com/0.1.2.3
+address=/ad.vatgia.com/0.1.2.3
+address=/ad.zing.vn/0.1.2.3
+address=/ad360.vn/0.1.2.3
+address=/adcash.com/0.1.2.3
+address=/adcloud.jp/0.1.2.3
+address=/adcolony.com/0.1.2.3
+address=/adcontent.saymedia.com/0.1.2.3
+address=/addthis.com/0.1.2.3
+address=/addthisedge.com/0.1.2.3
+address=/adex.bmediaasia.com/0.1.2.3
+address=/adex2.bmediaasia.com/0.1.2.3
+address=/adexprt.com/0.1.2.3
+address=/adfonic.net/0.1.2.3
+address=/adform.net/0.1.2.3
+address=/adfox.vn/0.1.2.3
+address=/adhigh.net/0.1.2.3
+address=/adjust.com/0.1.2.3
+address=/adm3.autoimg.cn/0.1.2.3
+address=/admaster.com.cn/0.1.2.3
+address=/admetix.com/0.1.2.3
+address=/admicro.vn/0.1.2.3
+address=/admicro1.vcmedia.vn/0.1.2.3
+address=/admixer.co.kr/0.1.2.3
+address=/admtpmp124.com/0.1.2.3
+address=/adnetwork.vn/0.1.2.3
+address=/adnium.com/0.1.2.3
+address=/adnxs.com/0.1.2.3
+address=/adroll.com/0.1.2.3
+address=/ads-a-darwin.hulu.com/0.1.2.3
+address=/ads-twitter.com/0.1.2.3
+address=/ads.2mdnsys.com/0.1.2.3
+address=/ads.appota.com/0.1.2.3
+address=/ads.gmodules.com/0.1.2.3
+address=/ads.google.com/0.1.2.3
+address=/ads.huntmad.com/0.1.2.3
+address=/ads.ictnews.vn/0.1.2.3
+address=/ads.mobilefuse.net/0.1.2.3
+address=/ads.netflix.com/0.1.2.3
+address=/ads.yahoo.com/0.1.2.3
+address=/ads.youtube.com/0.1.2.3
+address=/ads.zdn.vn/0.1.2.3
+address=/ads0.nexage.com/0.1.2.3
+address=/adsco.re/0.1.2.3
+address=/adserver-vpc-production-v2-669935021.us-east-1.elb.amazonaws.com/0.1.2.3
+address=/adserver.yahoo.com/0.1.2.3
+address=/adservice.google.com/0.1.2.3
+address=/adservice.google.com.vn/0.1.2.3
+address=/adshostnet.com/0.1.2.3
+address=/adsmain.com/0.1.2.3
+address=/adsrvr.org/0.1.2.3
+address=/adsupply.com/0.1.2.3
+address=/adsymptotic.com/0.1.2.3
+address=/adtilt.com/0.1.2.3
+address=/adtima.vn/0.1.2.3
+address=/adtimaserver.vn/0.1.2.3
+address=/adtoma.com/0.1.2.3
+address=/adv.aftonbladet.se/0.1.2.3
+address=/advertising.com/0.1.2.3
+address=/advertisingvietnam.com/0.1.2.3
+address=/advertstar.net/0.1.2.3
+address=/adx1.com/0.1.2.3
+address=/adxmi.com/0.1.2.3
+address=/adxxx.org/0.1.2.3
+address=/aerserv.com/0.1.2.3
+address=/afs.googleusercontent.com/0.1.2.3
+address=/ah.yimg.jp/0.1.2.3
+address=/aliexpress.com/0.1.2.3
+address=/alitui.weibo.com/0.1.2.3
+address=/amazon-adsystem.com/0.1.2.3
+address=/amobee.com/0.1.2.3
+address=/amp.avai.com/0.1.2.3
+address=/analytics.google.com/0.1.2.3
+address=/analytics.vnreview.vn/0.1.2.3
+address=/ants.vn/0.1.2.3
+address=/api.airpush.com/0.1.2.3
+address=/api.appodeal.com/0.1.2.3
+address=/app-c.net/0.1.2.3
+address=/app-measurement.com/0.1.2.3
+address=/app.sysdigcloud.com/0.1.2.3
+address=/appier.net/0.1.2.3
+address=/appldnld.apple.com/0.1.2.3
+address=/applift.com/0.1.2.3
+address=/applovin.com/0.1.2.3
+address=/applvn.com/0.1.2.3
+address=/appnext.com/0.1.2.3
+address=/appnext.hs.llnwd.net/0.1.2.3
+address=/appodeal.com/0.1.2.3
+address=/apps.facebook.com/0.1.2.3
+address=/appsflyer-impressions-1319352537.eu-west-1.elb.amazonaws.com/0.1.2.3
+address=/appsflyer.com/0.1.2.3
+address=/appshelf.ttpsdk.info/0.1.2.3
+address=/asdkd.tutuapp.com/0.1.2.3
+address=/asdkd.tutuapp.com.w.alikunlun.com/0.1.2.3
+address=/asimgs.pplive.cn/0.1.2.3
+address=/astrsk.net/0.1.2.3
+address=/atdmt.com/0.1.2.3
+address=/attenhance.com/0.1.2.3
+address=/au.youmi.net/0.1.2.3
+address=/badad.googleplex.com/0.1.2.3
+address=/beacon.qq.com/0.1.2.3
+address=/beacon.tingyun.com/0.1.2.3
+address=/beap-bc.yahoo.com/0.1.2.3
+address=/beautyzone.vn/0.1.2.3
+address=/bebi.com/0.1.2.3
+address=/bidgear.com/0.1.2.3
+address=/biz.weibo.com/0.1.2.3
+address=/bluekai.com/0.1.2.3
+address=/blueseed.tv/0.1.2.3
+address=/blueserving.com/0.1.2.3
+address=/bms.zeptolab.com/0.1.2.3
+address=/bnr.rssad.jp/0.1.2.3
+address=/bom.baomoi.com/0.1.2.3
+address=/bs.eyeblaster.akadns.net/0.1.2.3
+address=/buzzurl.jp/0.1.2.3
+address=/bwnet.com.tw/0.1.2.3
+address=/bzadx.pro/0.1.2.3
+address=/c.greystripe.com/0.1.2.3
+address=/c.vrvm.com/0.1.2.3
+address=/cache-ssl.celtra.com/0.1.2.3
+address=/cache.celtra.com/0.1.2.3
+address=/cb.baidu.com/0.1.2.3
+address=/cdn.airpush.com/0.1.2.3
+address=/cdn.applift.com/0.1.2.3
+address=/cdn.appnext.com/0.1.2.3
+address=/cdn.caprofitx.com/0.1.2.3
+address=/cdn.mdotm.com/0.1.2.3
+address=/cdn.millennialmedia.com/0.1.2.3
+address=/cdn.nearbyad.com/0.1.2.3
+address=/chartboost.com/0.1.2.3
+address=/cityads.ru/0.1.2.3
+address=/cj.com/0.1.2.3
+address=/click.vn/0.1.2.3
+address=/clickmngr.com/0.1.2.3
+address=/clicks.truongton.net/0.1.2.3
+address=/clientmetrics-pa.googleapis.com/0.1.2.3
+address=/cliphub.io/0.1.2.3
+address=/clix.vn/0.1.2.3
+address=/clksite.com/0.1.2.3
+address=/cloudads-a.akamaihd.net/0.1.2.3
+address=/cloudmobi.net/0.1.2.3
+address=/cold-cold-freezing.com/0.1.2.3
+address=/collector.githubapp.com/0.1.2.3
+address=/comradmobile.com/0.1.2.3
+address=/connect.facebook.com/0.1.2.3
+address=/content-ad.net/0.1.2.3
+address=/contently.com/0.1.2.3
+address=/corp.meitu.com/0.1.2.3
+address=/crashlytics.com/0.1.2.3
+address=/criteo.com/0.1.2.3
+address=/crosspromo.zeptolab.com/0.1.2.3
+address=/d.appsdt.com/0.1.2.3
+address=/d.dropbox.com/0.1.2.3
+address=/d1k5gitkzferqo.cloudfront.net/0.1.2.3
+address=/d2bgg7rjywcwsy.cloudfront.net/0.1.2.3
+address=/d2m1qxggnnaaex.cloudfront.net/0.1.2.3
+address=/d3o20pxlleg2k6.cloudfront.net/0.1.2.3
+address=/d3oltyb66oj2v8.cloudfront.net/0.1.2.3
+address=/data.airpush.com/0.1.2.3
+address=/digitalmerkat.com/0.1.2.3
+address=/directadvert.ru/0.1.2.3
+address=/dl-debug.dropbox.com/0.1.2.3
+address=/dotandad.com/0.1.2.3
+address=/doubleciick.net/0.1.2.3
+address=/doubleclick.ne.jp/0.1.2.3
+address=/doubleclick.net/0.1.2.3
+address=/doubleclickbygoogle.com/0.1.2.3
+address=/dts.startappservice.com/0.1.2.3
+address=/duclick.baidu.com/0.1.2.3
+address=/e10204.dsca.akamaiedge.net/0.1.2.3
+address=/eclick.baidu.com/0.1.2.3
+address=/eclick.vn/0.1.2.3
+address=/ecpmrocks.com/0.1.2.3
+address=/edge.reporo.net/0.1.2.3
+address=/eiv.baidu.com/0.1.2.3
+address=/en.alibaba.com/0.1.2.3
+address=/entry.baidu.com/0.1.2.3
+address=/epom.com/0.1.2.3
+address=/erebor.douban.com/0.1.2.3
+address=/error.facebook.com/0.1.2.3
+address=/eventonline.vn/0.1.2.3
+address=/exelator.com/0.1.2.3
+address=/exoclick.com/0.1.2.3
+address=/exosrv.com/0.1.2.3
+address=/exoticads.com/0.1.2.3
+address=/eyeota.net/0.1.2.3
+address=/facebook-chrome.ml/0.1.2.3
+address=/facebook-uzaleznienie.wirtualnie.pl/0.1.2.3
+address=/fancywap.com/0.1.2.3
+address=/fc2.com/0.1.2.3
+address=/fgoogle.com/0.1.2.3
+address=/firstimpression.io/0.1.2.3
+address=/flashtalking.com/0.1.2.3
+address=/flurry.com/0.1.2.3
+address=/fout.jp/0.1.2.3
+address=/fqtag.com/0.1.2.3
+address=/ftpcontent.worldnow.com/0.1.2.3
+address=/g.kuwo.cn/0.1.2.3
+address=/game.weibo.cn/0.1.2.3
+address=/game.weibo.com/0.1.2.3
+address=/gdt.qq.com/0.1.2.3
+address=/gemini.yahoo.com/0.1.2.3
+address=/genieesspv.jp/0.1.2.3
+address=/geoadnxs.com/0.1.2.3
+address=/global.appnext.com/0.1.2.3
+address=/glossom.co.jp/0.1.2.3
+address=/gma.alicdn.com/0.1.2.3
+address=/gmossp-sp.jp/0.1.2.3
+address=/go.mobpartner.mobi/0.1.2.3
+address=/go.polyad.net/0.1.2.3
+address=/go2cloud.org/0.1.2.3
+address=/go2speed.org/0.1.2.3
+address=/goo.ne.jp/0.1.2.3
+address=/google-analytics.com/0.1.2.3
+address=/googleadapis.l.google.com/0.1.2.3
+address=/googleadservices.com/0.1.2.3
+address=/googlefeud.com/0.1.2.3
+address=/googlehosted.l.googleusercontent.com/0.1.2.3
+address=/googlesyndication.com/0.1.2.3
+address=/googletagmanager.com/0.1.2.3
+address=/googletagservices.com/0.1.2.3
+address=/gowadogo.com/0.1.2.3
+address=/h2.msn.com/0.1.2.3
+address=/hao123union.baidu.com/0.1.2.3
+address=/heyzap.com/0.1.2.3
+address=/hghit.com/0.1.2.3
+address=/hhbekxxw5d9e.pflexads.com/0.1.2.3
+address=/hi5.com/0.1.2.3
+address=/hm.baidu.com/0.1.2.3
+address=/hmma.baidu.com/0.1.2.3
+address=/hot-mob.com/0.1.2.3
+address=/hotwords.com/0.1.2.3
+address=/hybl9bazbc35.pflexads.com/0.1.2.3
+address=/i-mobile.co.jp/0.1.2.3
+address=/i.jumptap.com/0.1.2.3
+address=/igp06.gameloft.com/0.1.2.3
+address=/imageplus.baidu.com/0.1.2.3
+address=/images.startappservice.com/0.1.2.3
+address=/img2.autoimg.cn/0.1.2.3
+address=/imgraovat.vnecdn.net/0.1.2.3
+address=/imp.optaim.com/0.1.2.3
+address=/imp.startappservice.com/0.1.2.3
+address=/imp.voiceads.cn/0.1.2.3
+address=/infolinks.com/0.1.2.3
+address=/inmobi-jp.com/0.1.2.3
+address=/inmobi.com/0.1.2.3
+address=/inmobicdn.com/0.1.2.3
+address=/inmobicdn.net/0.1.2.3
+address=/innovid.com/0.1.2.3
+address=/integral-marketing.com/0.1.2.3
+address=/intellitxt.com/0.1.2.3
+address=/interlogistics.com.vn/0.1.2.3
+address=/intermarkets.net/0.1.2.3
+address=/irs01.com/0.1.2.3
+address=/islandmob.com/0.1.2.3
+address=/js-agent.newrelic.com/0.1.2.3
+address=/jtbmxdoadktnm.com/0.1.2.3
+address=/kadam.net/0.1.2.3
+address=/kochava.com/0.1.2.3
+address=/ktopodgladamnienafacebooku.wordpress.com/0.1.2.3
+address=/ladsp.com/0.1.2.3
+address=/leadbolt.com/0.1.2.3
+address=/leadzutw.com/0.1.2.3
+address=/lfstmedia.com/0.1.2.3
+address=/liftoff.io/0.1.2.3
+address=/liveadexchanger.com/0.1.2.3
+address=/liveintent.com/0.1.2.3
+address=/llnwd.net/0.1.2.3
+address=/localytics.com/0.1.2.3
+address=/log.api.zaloapp.com/0.1.2.3
+address=/log.baomoi.com/0.1.2.3
+address=/log.infonet.vn/0.1.2.3
+address=/log.news.zing.vn/0.1.2.3
+address=/log.pinterest.com/0.1.2.3
+address=/log4x.nixcdn.com/0.1.2.3
+address=/logperf.vnexpress.net/0.1.2.3
+address=/logv2.mp3.zing.vn/0.1.2.3
+address=/lucklayed.info/0.1.2.3
+address=/m.adsymptotic.com/0.1.2.3
+address=/m.jd.com/0.1.2.3
+address=/m.quantserve.com/0.1.2.3
+address=/m.taobao.com/0.1.2.3
+address=/madvertise.de/0.1.2.3
+address=/marsads.com/0.1.2.3
+address=/mc.yandex.ru/0.1.2.3
+address=/mdn1.phluantmobile.net/0.1.2.3
+address=/mdn2.phluantmobile.net/0.1.2.3
+address=/mdn3.phluantmobile.net/0.1.2.3
+address=/media.mobpartner.mobi/0.1.2.3
+address=/mediadser.com/0.1.2.3
+address=/medialand.ru/0.1.2.3
+address=/mellowads.com/0.1.2.3
+address=/message.meitu.com/0.1.2.3
+address=/mesu.apple.com/0.1.2.3
+address=/metric.gstatic.com/0.1.2.3
+address=/mgid.com/0.1.2.3
+address=/misterbell.com/0.1.2.3
+address=/mixpanel.com/0.1.2.3
+address=/moatads.com/0.1.2.3
+address=/mobads-logs.baidu.com/0.1.2.3
+address=/mobile-gtalk.l.google.com/0.1.2.3
+address=/mobile.sina.cn/0.1.2.3
+address=/mobile.yahoo.com/0.1.2.3
+address=/mobiledl.adobe.com/0.1.2.3
+address=/mobtrks.com/0.1.2.3
+address=/mobusi.com/0.1.2.3
+address=/mookie1.cn/0.1.2.3
+address=/mopub.com/0.1.2.3
+address=/movad.de/0.1.2.3
+address=/mucu.jp/0.1.2.3
+address=/mzstatic.com/0.1.2.3
+address=/mzstatic.com.edgesuite.net/0.1.2.3
+address=/nativex-sdk.appspot.com/0.1.2.3
+address=/nend.net/0.1.2.3
+address=/newspush.sinajs.cn/0.1.2.3
+address=/nexage.com/0.1.2.3
+address=/nr-data.net/0.1.2.3
+address=/ocsp.apple.com/0.1.2.3
+address=/omgmta.qq.com/0.1.2.3
+address=/omniture.com/0.1.2.3
+address=/on.cc/0.1.2.3
+address=/onclasrv.com/0.1.2.3
+address=/onclickads.net/0.1.2.3
+address=/onclkds.com/0.1.2.3
+address=/online-dn.com/0.1.2.3
+address=/openxmarket.jp/0.1.2.3
+address=/org.vn/0.1.2.3
+address=/otherlevels.com/0.1.2.3
+address=/ox-d.advanceweb.com/0.1.2.3
+address=/ox-d.majorgeeks.com/0.1.2.3
+address=/phanquang.vn/0.1.2.3
+address=/pingjs.qq.com/0.1.2.3
+address=/pingma.qq.com/0.1.2.3
+address=/pixel.facebook.com/0.1.2.3
+address=/pixel.wp.com/0.1.2.3
+address=/playhaven.com/0.1.2.3
+address=/polyad.net/0.1.2.3
+address=/popads.net/0.1.2.3
+address=/pos.baidu.com/0.1.2.3
+address=/prodaa.netflix.com/0.1.2.3
+address=/projectwonderful.com/0.1.2.3
+address=/propellerpops.com/0.1.2.3
+address=/pubdirecte.com/0.1.2.3
+address=/pubnative.net/0.1.2.3
+address=/questmedia.ru/0.1.2.3
+address=/r1.ykimg.com/0.1.2.3
+address=/rayjump.com/0.1.2.3
+address=/rcm.amazon.com/0.1.2.3
+address=/redclick.ru/0.1.2.3
+address=/redintelligence.net/0.1.2.3
+address=/report.qq.com/0.1.2.3
+address=/req.startappservice.com/0.1.2.3
+address=/res-zalo.zadn.vn/0.1.2.3
+address=/res.hunantv.com/0.1.2.3
+address=/revmob.com/0.1.2.3
+address=/rfrl.pw/0.1.2.3
+address=/rs-staticart.ybcdn.net/0.1.2.3
+address=/s3.amazonasw.com/0.1.2.3
+address=/s3.amazonaws.com/0.1.2.3
+address=/s3.phluant.com/0.1.2.3
+address=/sax.sina.cn/0.1.2.3
+address=/sd.domob.cn/0.1.2.3
+address=/service.urchin.com/0.1.2.3
+address=/serving-sys.com/0.1.2.3
+address=/sf.vserv.mobi/0.1.2.3
+address=/sharethis.com/0.1.2.3
+address=/sharethis.net/0.1.2.3
+address=/sharethrough.com/0.1.2.3
+address=/shop.zalo.me/0.1.2.3
+address=/shopdunk.baomoi.com/0.1.2.3
+address=/simaba.taobao.com/0.1.2.3
+address=/smart-c.jp/0.1.2.3
+address=/sp.zalo.me/0.1.2.3
+address=/spotad.cn/0.1.2.3
+address=/spotscenered.info/0.1.2.3
+address=/sprout-ad.com/0.1.2.3
+address=/spstaticimg.ameba.jp/0.1.2.3
+address=/srv.vietnamnet.vn/0.1.2.3
+address=/ssl-google-analytics.l.google.com/0.1.2.3
+address=/st.polyad.net/0.1.2.3
+address=/startapp.com/0.1.2.3
+address=/startappexchange.com/0.1.2.3
+address=/statcounter.com/0.1.2.3
+address=/static-doubleclick-net.l.google.com/0.1.2.3
+address=/static.24h.com.vn/0.1.2.3
+address=/static.akacdn.ru/0.1.2.3
+address=/static.criteo.net/0.1.2.3
+address=/static.estebull.com/0.1.2.3
+address=/static.novanet.vn/0.1.2.3
+address=/static1.akacdn.ru/0.1.2.3
+address=/statics.hdo-cdn.ru/0.1.2.3
+address=/suggestqueries.l.google.com/0.1.2.3
+address=/survey.foreseeresults.com/0.1.2.3
+address=/swrve.com/0.1.2.3
+address=/syndication.twitter.com/0.1.2.3
+address=/tapad.com/0.1.2.3
+address=/tcss.qq.com/0.1.2.3
+address=/terraclicks.com/0.1.2.3
+address=/test-enabled.adblockios.com/0.1.2.3
+address=/thinknear-hosted.thinknearhub.com/0.1.2.3
+address=/thongke.24h.com.vn/0.1.2.3
+address=/thoughtleadr.com/0.1.2.3
+address=/tieba.baidu.com/0.1.2.3
+address=/track-srv.vietnamnet.vn/0.1.2.3
+address=/tracking.admobsphere.com/0.1.2.3
+address=/tracktopapp.com/0.1.2.3
+address=/traffichaus.com/0.1.2.3
+address=/trafficjunky.com/0.1.2.3
+address=/trafficposse.com/0.1.2.3
+address=/traffpartners.com/0.1.2.3
+address=/trax-ad.jp/0.1.2.3
+address=/tribalfusion.com/0.1.2.3
+address=/tuiguang.meitu.com/0.1.2.3
+address=/turn.com/0.1.2.3
+address=/twimg.com/0.1.2.3
+address=/uedata.amazon.com/0.1.2.3
+address=/umeng.com/0.1.2.3
+address=/unimhk.com/0.1.2.3
+address=/union.baidu.com/0.1.2.3
+address=/unityads.unity3d.com/0.1.2.3
+address=/untd.com/0.1.2.3
+address=/userreport.com/0.1.2.3
+address=/vads.vn/0.1.2.3
+address=/vamaker.com/0.1.2.3
+address=/vclick.vn/0.1.2.3
+address=/vdopia.com/0.1.2.3
+address=/veeseo.com/0.1.2.3
+address=/video.qiyi.com/0.1.2.3
+address=/vietad.vn/0.1.2.3
+address=/vietid.net/0.1.2.3
+address=/vietnamnetad.vn/0.1.2.3
+address=/visitweb.com/0.1.2.3
+address=/vungle.com/0.1.2.3
+address=/waps.cn/0.1.2.3
+address=/wintricksbanner.googlepages.com/0.1.2.3
+address=/wqmobile.com/0.1.2.3
+address=/ws.tapjoyads.com/0.1.2.3
+address=/www.googlecommerce.com/0.1.2.3
+address=/www.startapp.com/0.1.2.3
+address=/www.wwwgoogles.com/0.1.2.3
+address=/www3.l.google.com/0.1.2.3
+address=/wwwpromoter.com/0.1.2.3
+address=/yicha.jp/0.1.2.3
+address=/yieldmo.com/0.1.2.3
+address=/ymtracking.com/0.1.2.3
+address=/yumenetworks.com/0.1.2.3
+address=/zalo-ads-td.zadn.vn/0.1.2.3
+address=/zedo.com/0.1.2.3
+address=/zestads.com/0.1.2.3
+address=/zestadz.com/0.1.2.3
+address=/zplayer-trk.zdn.vn/0.1.2.3
+address=/zucks.co.jp/0.1.2.3
+address=/zwaar.org/0.1.2.3
