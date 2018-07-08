@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.08.14"
+VERSION="2018.07.08.15"
 ThuMuc='/jffs'
 
 #export ThuMuc="${PWD##*/}"
@@ -352,7 +352,7 @@ selfUpdate ()
 				cp $0 $0.$OLDVER
 				chmod 755 $TMPFILE
 				mv $TMPFILE $0
-				lognecho ">>> Updated to the latest version: ${VERSION}."
+				lognecho ">>> Updated to the latest version."
 			else
 				lognecho ">>> No updates available. Current version: ${VERSION}."
 			fi
