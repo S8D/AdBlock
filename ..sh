@@ -2,7 +2,7 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.08.12"
+VERSION="2018.07.08.13"
 ThuMuc='/jffs'
 
 #export ThuMuc="${PWD##*/}"
@@ -453,15 +453,15 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 
 	lognecho "# Creating mpdomains file"
-	lognecho "# Downloading ${u01}"
-	MPGETSSL ${u00} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.1.2.3$/'$SetIP'/' > $tmpdomains
+	lognecho "# Downloading ${u00}"
+	MPGETSSL ${u00} | sed 's/0.1.2.3$/'$SetIP'/' > $tmpdomains
 	
 	lognecho "# Creating mphosts file"
-	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/address=/$/''/' | sed 's/0.0.0.0$/''/' > $tmphosts
+	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | awk '{gsub("address=/", "");print}' | awk '{gsub("/0.0.0.0", "");print}' | awk '{gsub("127.0.0.1", "");print}' > $tmphosts
 	lognecho "# Downloading ${u02}"
-	MPGETSSL ${u02} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/address=/$/''/' | sed 's/0.0.0.0$/''/' >> $tmphosts
+	MPGETSSL ${u02} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | awk '{gsub("address=/", "");print}' | awk '{gsub("/0.0.0.0", "");print}' | awk '{gsub("127.0.0.1", "");print}' >> $tmphosts
 	lognecho "# Downloading ${u03}"
-	MPGETSSL ${u03} | grep -o '^[^#]*' | grep -v "::" | sed 's/127.0.0.1$/''/' >> $tmphosts
+	MPGETSSL ${u03} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | awk '{gsub("address=/", "");print}' | awk '{gsub("/0.0.0.0", "");print}' | awk '{gsub("127.0.0.1", "");print}' >> $tmphosts
 	lognecho "# Downloading ${u04}"
 	lognecho "> Processing StevenBlack lists"
 	MPGETSSL ${u04} | grep -o '^[^#]*' | grep -o '^[^<]*' | awk '{print $2}' >> $tmphosts
