@@ -454,8 +454,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 
 	lognecho "# Creating mpdomains file"
 	lognecho "# Downloading ${u00}"
-	MPGETSSL ${u00} | sed 's/0.1.2.3$/'$SetIP'/' > $tmpdomains
-	
+	MPGETSSL ${u00} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$SetIP'/' > $tmpdomains
 	lognecho "# Creating mphosts file"
 	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | awk '{gsub("address=/", "");print}' | awk '{gsub("/0.0.0.0", "");print}' | awk '{gsub("127.0.0.1", "");print}' > $tmphosts
 	lognecho "# Downloading ${u02}"
