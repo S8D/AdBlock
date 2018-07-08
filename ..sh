@@ -2,8 +2,9 @@
 # set -euxo pipefail
 # File: s.sh
 export BLITZ=3
-VERSION="2018.07.07.24"
+VERSION="2018.07.08.10"
 ThuMuc='/jffs'
+
 #export ThuMuc="${PWD##*/}"
 # temporary directory
 export Tam="${ThuMuc}/tmp"
@@ -11,8 +12,13 @@ if [ ! -d "${Tam}" ]; then
   mkdir ${Tam}
 fi
 
+# where ads go to die
+# do not use 0.0.0.0 or 127.0.0.1
+export SetIP="0.1.2.3"
+###############################################################################
 # Set URL
-export u00="https://raw.githubusercontent.com/S8D/AdBlock/master"
+export upd="https://raw.githubusercontent.com/S8D/AdBlock/master"
+export u00="https://github.com/S8D/AdBlock/raw/master/1_Darias.txt"
 export u01="https://github.com/oznu/dns-zone-blacklist/raw/master/dnsmasq/dnsmasq.blacklist"
 export u02="https://github.com/notracking/hosts-blocklists/raw/master/domains.txt"
 export u03="https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0"
@@ -102,7 +108,8 @@ export u86="https://github.com/m-parashar/adbhostgen/raw/master/blacklists/faceb
 export u87="https://github.com/m-parashar/adbhostgen/raw/master/blacklists/blacklist"
 export u88="https://github.com/m-parashar/adbhostgen/raw/master/whitelists/whitelist"
 export u89="https://github.com/m-parashar/adbhostgen/raw/master/whitelists/fruitydomains"
-#export u90="https://github.com/FadeMind/hosts/raw/master/extensions/porn/clefspeare13/hosts"
+export u90="https://github.com/FadeMind/hosts/raw/master/extensions/porn/clefspeare13/hosts"
+export u91="https://github.com/Yhonay/antipopads/raw/master/hosts"
 # Script to generate massive block lists for DD-WRT
 #
 # AUTHOR: Manish Parashar
@@ -173,10 +180,6 @@ export DAYOFWEEK=$(date +"%u")
 # if set to 1, ignores myblacklist/mywhitelist files
 # DO NOT CHANGE; use command line argument instead
 export DISTRIB=0
-
-# where ads go to die
-# do not use 0.0.0.0 or 127.0.0.1
-export SetIP="0.1.2.3"
 
 # define dnsmasq directory and path
 # needn't be /jffs, could be /opt
@@ -336,7 +339,7 @@ selfUpdate ()
 	lognecho ">>> Checking for updates."
 
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		MPGETSSL ${u00}/$(basename "$0") > $TMPFILE
+		MPGETSSL ${upd}/$(basename "$0") > $TMPFILE
 
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
@@ -451,16 +454,17 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 
 	lognecho "# Creating mpdomains file"
 	lognecho "# Downloading ${u01}"
-	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$SetIP'/' > $tmpdomains
-	lognecho "# Downloading ${u02}"
-	MPGETSSL ${u02} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.0.0.0$/'$SetIP'/' >> $tmpdomains
-	lognecho "# Downloading ${u03}"
-	MPGETSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} | grep -o '^[^#]*' | grep -v "::" | sed 's/127.0.0.1$/'$SetIP'/' >> $tmpdomains
-
+	MPGETSSL ${u00} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/0.1.2.3$/'$SetIP'/' > $tmpdomains
+	
 	lognecho "# Creating mphosts file"
+	MPGETSSL ${u01} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/address=/$/''/' | sed 's/0.0.0.0$/''/' > $tmphosts
+	lognecho "# Downloading ${u02}"
+	MPGETSSL ${u02} | grep -o '^[^#]*' | grep -v "::" | grep -o '^[^<]*' | sed 's/address=/$/''/' | sed 's/0.0.0.0$/''/' >> $tmphosts
+	lognecho "# Downloading ${u03}"
+	MPGETSSL ${u03} | grep -o '^[^#]*' | grep -v "::" | sed 's/127.0.0.1$/''/' >> $tmphosts
 	lognecho "# Downloading ${u04}"
 	lognecho "> Processing StevenBlack lists"
-	MPGETSSL ${u04} | grep -o '^[^#]*' | grep -o '^[^<]*' | awk '{print $2}' > $tmphosts
+	MPGETSSL ${u04} | grep -o '^[^#]*' | grep -o '^[^<]*' | awk '{print $2}' >> $tmphosts
 
 	lognecho "> Processing notracking blocklists"
 	lognecho "# Downloading ${u05}"
@@ -725,6 +729,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	MPGETSSL ${u88} | grep -o '^[^<]*' | grep -o '^[^#]*' > $whitelist
 	lognecho "# Downloading ${u89}"
 	MPGETSSL ${u89} | grep -o '^[^<]*' > $base64wl
+	lognecho "# Downloading ${u90}"
+	MPGETSSL ${u90} | grep -o '^[^<]*' | grep -o '^[^#]*' | grep -v "::" | awk '{print $2}' >> $tmphosts		
+	lognecho "# Downloading ${u91}"
+	MPGETSSL ${u91} | grep -o '^[^#]*' | grep -o '^[^<]*' | awk '{print $2}' >> $tmphosts
+		
 	LC_ALL=C uudecode $base64wl && cat applewhitelist >> $whitelist && rm applewhitelist && rm $base64wl
 
 else
