@@ -294,7 +294,7 @@ shift $((OPTIND-1))
 TIMERSTART=`date +%s`
 lognecho "======================================"
 lognecho "|      AdBlock for DD-WRT            |"
-lognecho "|      ${HomePage}/$0                |"
+lognecho "|      ${HomePage}                   |"
 lognecho "|      Tac gia: Manish Parashar      |"
 lognecho "|      Chinh sua: Darias             |"
 lognecho "======================================"
@@ -477,21 +477,21 @@ fi
 printFileSize $hTam
 printFileSize $dTam
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-lognecho "> Dang tai: denOn/trangOn files"
+lognecho "> Dang xu ly: denOn/trangOn files"
 LC_ALL=C cat $denOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpbl && cp tmpbl $denOn
 LC_ALL=C cat $trangOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpwl && cp tmpwl $trangOn
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	lognecho "> Dang tai: denOff/trangOff files"
+	lognecho "> Dang xu ly: denOff/trangOff files"
 	LC_ALL=C cat $denOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > tmpbl
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > tmpwl
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-lognecho "> Dang tai: final hChinh/dChinh files"
-LC_ALL=C cat $hTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
-LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf tmpwl | sort -u > $dChinh
+#lognecho "> Dang xu ly: final hChinh/dChinh files"
+#LC_ALL=C cat $hTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+#LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf tmpwl | sort -u > $dChinh
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 lognecho "> Removing temporary files"
 rm -f $hTam
