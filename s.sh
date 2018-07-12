@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018.07.12.12"
+VERSION="2018.07.12.13"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -434,7 +434,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "> Dang xu ly: final hChinh/dChinh files"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's/#.*$//; s|\.$||; s|/::||; s|/0.0.0.0||; s|/127.0.0.1||; s|^::\s||; s|^address=/||; s|^0.0.0.0||; s|^127.0.0.1||; s|^\s\s||; s|^\s||; s|^\t\t||; s|^\t||; s|^\.||; s|^-||; s/;.*$//; s/:.*$//; s/<.*$//; s|\?||; s|$\n\n||; s|$.\n|\n|; s|m1\n|m\n|; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d; s|www$||; s|com1$|com|; s|\s||; s|^--||; s|^\-||; s|^0.0.0.0||; s|^[^.]+$||; s|\.com12276\.|\.com\n12276\.|; s|\.$||; s/tl2$/tl/; s/comf4a$/comf4a/; s/\^$//; s|^🔗||; s|^\t||; s|0.0.0.0$||; s|^\.||; s|^\-||; s|\/$||; s|\-$||; s|co14$|co|; s|\+$||' | sort -u > $hChinh
+	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's/#.*$//; s|\.$||; s|/::||; s|/0.0.0.0||; s|/127.0.0.1||; s|^::\s||; s|^address=/||; s|^0.0.0.0||; s|^127.0.0.1||; s|^\s\s||; s|^\s||; s|^\t\t||; s|^\t||; s|^\.||; s|^-||; s/;.*$//; s/:.*$//; s/<.*$//; s|\?||; s|$\n\n||; s|$.\n|\n|; s|m1\n|m\n|; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d; s|www$||; s|com1$|com|; s|\s||; s|^--||; s|^\-||; s|^0.0.0.0||; s|^[^.]+$||; s|\.com12276\.|\.com\n12276\.|; s|\.$||; s/tl2$/tl/; s/comf4a$/comf4a/; s/\^$//; s|^🔗||; s|^\t||; s|0.0.0.0$||; s|^\.||; s|^\-||; s|\/$||; s|\-$||; s|co14$|co|; s|\+$||' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf tmpwl | sort -u > $dChinh
 	lognecho "> Removing temporary files"
 	rm -f $hTam
