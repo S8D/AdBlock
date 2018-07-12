@@ -1,0 +1,12 @@
+http://sangvandev.tk/SangVan.js
+https://ios.codevn.net/files/ORCvs.js
+https://ios.codevn.net/files/BlockADS.js
+http://sangvandev.tk/LQMsv.js
+https://ios.codevn.net/Blocked.js
+https://ios.codevn.net/files/BlockedFull.js
+
+https://filters.adtidy.org/ios/filters/15_optimized.txt
+https://adaway.org/hosts.txt
+https://hosts-file.net/ad_servers.txt
+http://abpvn.com/android/abpvn.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
