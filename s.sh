@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018.07.12.15"
+VERSION="2018.07.16.01"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -410,8 +410,8 @@ fi
 	lognecho "> Updating official denOn/trangOn files"
 	MPGETSSL ${HomePage}/denOn/denOn > $denOn
 	MPGETSSL ${HomePage}/trangOn/trangOn > $trangOn
-	MPGETSSL ${HomePage}/trangOn/fruitydomains > $base64wl
-	LC_ALL=C uudecode $base64wl && cat applewhitelist >> $trangOn && rm applewhitelist && rm $base64wl
+	MPGETSSL ${HomePage}/trangOn/apple >> $trangOn
+	#LC_ALL=C uudecode $base64wl && cat applewhitelist >> $trangOn && rm applewhitelist && rm $base64wl
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 else
 	lognecho "# NETWORK: DOWN | MODE: OFFLINE"
