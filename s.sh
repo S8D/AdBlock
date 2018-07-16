@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018.07.16.01"
+VERSION="2018.07.16.03"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -22,9 +22,8 @@ u71="http://gg.gg/u71_";u72="http://gg.gg/u72_";u73="http://gg.gg/u73_";u74="htt
 u76="http://gg.gg/u76_";u77="http://gg.gg/u77_";u78="http://gg.gg/u78_";u79="http://gg.gg/u79_";u91="http://gg.gg/u91_";
 u81="http://gg.gg/u81_";u82="http://gg.gg/u82_";u83="http://gg.gg/u83_";u84="http://gg.gg/u84_";u85="http://gg.gg/u85_";
 u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="http://gg.gg/u89_";u90="http://gg.gg/u90_";
-u80="http://adblock.mahakala.is/hosts";
+u92="http://gg.gg/u92_";u80="http://adblock.mahakala.is/hosts";
 #u80="http://gg.gg/u80_";
-#u92="http://gg.gg/u92_"
 #u93="http://gg.gg/u93_"
 #u94="http://gg.gg/u94_"
 #u95="http://gg.gg/u95_"
@@ -53,6 +52,7 @@ export hChinh="${TMuc}/h"
 export hDung="${TMuc}/h.zzz"
 export hTam="${Tam}/h.tmp"
 export Tamh="${Tam}/ht.tmp"
+export Tamt="${Tam}/tt.tmp"
 export dChinh="${TMuc}/d"
 export dDung="${TMuc}/d.zzz"
 export dTam="${Tam}/d.tmp"
@@ -341,6 +341,7 @@ fi
 		lognecho "# Dang tai: ${u46}";MPGETSSL ${u46} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 		lognecho "# Dang tai: ${u47}";MPGETSSL ${u47} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 		lognecho "# Dang tai: ${u48}";MPGETSSL ${u48} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Dang tai: ${u92}";MPGETSSL ${u92} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 		lognecho ">>>File size Level [1] cua ban ben duoi";printFileSize $hTam;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
@@ -389,7 +390,7 @@ fi
 		lognecho ">>>File size Level [3] cua ban ben duoi";printFileSize $hTam;
 	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "> Dang xu ly: [0]+[1]+[2]+[3]"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's/#.*$//; s|\.$||; s|/::||; s|/0.0.0.0||; s|/127.0.0.1||; s|^::\s||; s|^address=/||; s|^0.0.0.0||; s|^127.0.0.1||; s|^\s\s||; s|^\s||; s|^\t\t||; s|^\t||; s|^\.||; s|^-||; s/;.*$//; s/:.*$//; s/<.*$//; s|\?||; s|$\n\n||; s|$.\n|\n|; s|m1\n|m\n|; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d; s|www$||; s|com1$|com|; s|\s||; s|^--||; s|^\-||; s|^0.0.0.0||; s|^[^.]+$||; s|\.com12276\.|\.com\n12276\.|; s|\.$||; s/tl2$/tl/; s/comf4a$/comf4a/; s/\^$//; s|^🔗||; s|^\t||; s|0.0.0.0$||; s|^\.||; s|^\-||; s|\/$||; s|\-$||; s|co14$|co|; s|\+$||' | sort -u > $hChinhTam
+	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's/#.*$//; s|\.$||; s|/::||; s|/0.0.0.0||; s|/127.0.0.1||; s|^::\s||; s|^address=/||; s|^0.0.0.0||; s|^127.0.0.1||; s|^\s\s||; s|^\s||; s|^\t\t||; s|^\t||; s|^\.||; s|^-||; s/;.*$//; s/:.*$//; s/<.*$//; s|\?||; s|$\n\n||; s|$.\n|\n|; s|m1\n|m\n|; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d; s|www$||; s|com1$|com|; s|\s||; s|^--||; s|^\-||; s|^0.0.0.0||; s|^[^.]+$||; s|\.com12276\.|\.com\n12276\.|; s|\.$||; s/tl2$/tl/; s/comf4a$/comf4a/; s/\^$//; s|^🔗||; s|^\t||; s|0.0.0.0$||; s|^\.||; s|^\-||; s|\/$||; s|\-$||; s|co14$|co|; s|\+$||; /^\s*$/d' | sort -u > $hChinhTam
 	printFileSize $hChinhTam
 	cat $hChinhTam > $hTam
 	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -409,9 +410,8 @@ fi
 	fi
 	lognecho "> Updating official denOn/trangOn files"
 	MPGETSSL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
-	MPGETSSL ${HomePage}/trangOn/trangOn > $trangOn;printFileSize $trangOn;
-	MPGETSSL ${HomePage}/trangOn/apple >> $trangOn;printFileSize $trangOn;
-	#LC_ALL=C uudecode $base64wl && cat applewhitelist >> $trangOn && rm applewhitelist && rm $base64wl
+	MPGETSSL ${HomePage}/trangOn/trangOn > $Tamt;printFileSize $Tamt;cat $Tamt > $trangOn;
+	MPGETSSL ${HomePage}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 else
 	lognecho "# NETWORK: DOWN | MODE: OFFLINE"
@@ -434,7 +434,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "> Dang xu ly: final hChinh/dChinh files"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's/#.*$//; s|\.$||; s|/::||; s|/0.0.0.0||; s|/127.0.0.1||; s|^::\s||; s|^address=/||; s|^0.0.0.0||; s|^127.0.0.1||; s|^\s\s||; s|^\s||; s|^\t\t||; s|^\t||; s|^\.||; s|^-||; s/;.*$//; s/:.*$//; s/<.*$//; s|\?||; s|$\n\n||; s|$.\n|\n|; s|m1\n|m\n|; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d; s|www$||; s|com1$|com|; s|\s||; s|^--||; s|^\-||; s|^0.0.0.0||; s|^[^.]+$||; s|\.com12276\.|\.com\n12276\.|; s|\.$||; s/tl2$/tl/; s/comf4a$/comf4a/; s/\^$//; s|^🔗||; s|^\t||; s|0.0.0.0$||; s|^\.||; s|^\-||; s|\/$||; s|\-$||; s|co14$|co|; s|\+$||' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's/#.*$//; s|\.$||; s|/::||; s|/0.0.0.0||; s|/127.0.0.1||; s|^::\s||; s|^address=/||; s|^0.0.0.0||; s|^127.0.0.1||; /^[[:space:]]*$/d; s/[[:space:]]*$//; s|^\s\s||; s|^\s||; s|^\t\t||; s|^\t||; s|^\.||; s|^-||; s/;.*$//; s/:.*$//; s/<.*$//; s|\?||; s|$\n\n||; s|$.\n|\n|; s|m1\n|m\n|; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; s|www$||; s|com1$|com|; s|\s||; s|^--||; s|^\-||; s|^0.0.0.0||; s|^[^.]+$||; s|\.com12276\.|\.com\n12276\.|; s|\.$||; s/tl2$/tl/; s/comf4a$/comf4a/; s/\^$//; s|^🔗||; s|^\t||; s|0.0.0.0$||; s|^\.||; s|^\-||; s|\/$||; s|\-$||; s|co14$|co|; s|\+$||; s|\.$||; s|^\-||; /^\s*$/d' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf tmpwl | sort -u > $dChinh
 	lognecho "> Removing temporary files"
 	rm -f $hTam
