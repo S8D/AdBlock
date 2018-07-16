@@ -46,7 +46,7 @@ if [ -d "$Tam" ]
 then
 	echo "Using $Tam"
 else
-	echo "Dang tao: $Tam"
+	echo "Creating: $Tam"
 	mkdir ${Tam}
 fi
 export hChinh="${TMuc}/h"
@@ -255,7 +255,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	lognecho "# NETWORK: UP | MODE: ONLINE"
 	lognecho "# IP ADDRESS FOR ADS: $SetIP"
 	lognecho "# SECURE [0=NO | 1=YES]: $SECURL"
-	lognecho "# Level LEVEL [0|1|2|3|4]: $Level"
+	#lognecho "# Level LEVEL [0|1|2|3|4]: $Level"
 
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		lognecho "> Downloading / updating cURL certificates"
@@ -401,16 +401,16 @@ fi
 	fi
 	if [ $NOFB = "f" ]; then
 		lognecho "# Dang tai: ${u85}"
-		MPGETSSL ${HomePage}/denOn/facebookonly.block >> $hTam;printFileSize $Tamh;cat $Tamh >> $hTam;
+		MPGETSSL ${HomePage}/denOn/facebook.only >> $hTam;printFileSize $Tamh;cat $Tamh >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		lognecho "# Dang tai: ${u86}";MPGETSSL ${HomePage}/denOn/facebookall.block >> $hTam;printFileSize $Tamh;
+		lognecho "# Dang tai: ${u86}";MPGETSSL ${HomePage}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
 		cat $Tamh >> $hTam
 	fi
 	lognecho "> Updating official denOn/trangOn files"
-	MPGETSSL ${HomePage}/denOn/denOn > $denOn
-	MPGETSSL ${HomePage}/trangOn/trangOn > $trangOn
-	MPGETSSL ${HomePage}/trangOn/apple >> $trangOn
+	MPGETSSL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
+	MPGETSSL ${HomePage}/trangOn/trangOn > $trangOn;printFileSize $trangOn;
+	MPGETSSL ${HomePage}/trangOn/apple >> $trangOn;printFileSize $trangOn;
 	#LC_ALL=C uudecode $base64wl && cat applewhitelist >> $trangOn && rm applewhitelist && rm $base64wl
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 else
