@@ -255,31 +255,12 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	lognecho "# NETWORK: UP | MODE: ONLINE"
 	lognecho "# IP ADDRESS FOR ADS: $SetIP"
 	lognecho "# SECURE [0=NO | 1=YES]: $SECURL"
-	#lognecho "# Level LEVEL [0|1|2|3|4]: $Level"
+	lognecho "# Level [0|1|2|3|4]: $Level"
 
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		lognecho "> Downloading / updating cURL certificates"
 		GetSLL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
-#___________________________________________________________________________________________________________________________________________________________________________________________________
-if [ $Level=0 ]; then
-	fsz="12+"
-fi
-if [ $Level=1 ]; then
-	fsz="21+"
-fi
-if [ $Level=2 ]; then
-	fsz="41+"
-fi
-if [ $Level=3 ]; then
-	fsz="62+"
-fi
-if [ $Level=4 ]; then
-	fsz="99+"
-fi
-	lognecho ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-	lognecho "> Ban da chon Level: ${Level}. FileSize khoang: ${fsz} Mb (chua sort)>"
-	lognecho ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "# Unlocking Level=0 lists"
 	lognecho "# Dang tai: ${u00}";GetSLL ${u00} > $Tamd;printFileSize $Tamd;cat $Tamd > $dTam
