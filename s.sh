@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018.07.16.16"
+VERSION="2018.07.17.17"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -418,16 +418,14 @@ fi
 	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s/tl2$/tl/; s/comf4a$/comf4a/; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\n^\.com||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh
 	lognecho "> Deleting $Tam";rm -rf ${Tam};
-	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;
-	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//')
+	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 	lognecho "# Number of ads Hosts blocked: $Counts"
-	lognecho ">>>>File size Domains<<<<";printFileSize $dChinh;
-	Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//')
+	lognecho ">>>>File size Domains<<<<";printFileSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
 	lognecho "# Number of ads domains blocked: $Counts"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ]
 then
-	echo "${TMuc}/Location found. Skip restart DNS server"
+	echo "Skip restart DNS server"
 else
 	lognecho "> Restarting DNS server (dnsmasq)"
 	restart_dnsmasq
