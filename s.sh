@@ -53,6 +53,8 @@ export hDung="${TMuc}/h.zzz"
 export hTam="${Tam}/h.tmp"
 export Tamh="${Tam}/ht.tmp"
 export Tamt="${Tam}/tt.tmp"
+export Tambl="${Tam}/bl.tmp"
+export Tamwl="${Tam}/wl.tmp"
 export dChinh="${TMuc}/d"
 export dDung="${TMuc}/d.zzz"
 export dTam="${Tam}/d.tmp"
@@ -267,9 +269,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "# Dang tai: ${u01}";GetSLL ${u01} > $Tamh;printFileSize $Tamh;cat $Tamh > $hTam;
 	lognecho "# Dang tai: ${u02}";GetSLL ${u02} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u03}"
-	GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $Tamh;printFileSize $Tamh
-	cat $Tamh >> $hTam | printFileSize $hTam
+	lognecho "# Dang tai: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $Tamh;
+	printFileSize $Tamh;cat $Tamh >> $hTam | printFileSize $hTam;
 	lognecho "# Dang tai: file Chinh"
 	lognecho "# Dang tai: ${u04}";GetSLL ${u04} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 	lognecho "# Dang tai: ${u05}";GetSLL ${u05} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
@@ -289,7 +290,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	lognecho "# Dang tai: ${u19}";GetSLL ${u19} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "# Dang tai: ${u90}";GetSLL ${u90} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho ">>>File size Level [0] cua ban ben duoi";printFileSize $hTam
+	lognecho ">>>File size Level [0] cua ban ben duoi";printFileSize $hTam;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		lognecho "# Unlocking Level=1 lists"
@@ -372,8 +373,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "> Dang xu ly: [0]+[1]+[2]+[3]"
 	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s/tl2$/tl/; s/comf4a$/comf4a/; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\n^\.com||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | sort -u > $hChinhTam
-	printFileSize $hChinhTam
-	cat $hChinhTam > $hTam
+	printFileSize $hChinhTam;cat $hChinhTam > $hTam;
 	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
@@ -391,7 +391,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 	lognecho "> Updating official denOn/trangOn files"
 	GetSLL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
-	GetSLL ${HomePage}/trangOn/trangOn > $Tamt;printFileSize $Tamt;cat $Tamt > $trangOn;
+	GetSLL ${HomePage}/trangOn/trangOn > $trangOn;printFileSize $trangOn;
 	GetSLL ${HomePage}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 else
@@ -403,29 +403,27 @@ printFileSize $hTam
 printFileSize $dTam
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 lognecho "> Dang xu ly: denOn/trangOn files"
-LC_ALL=C cat $denOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpbl && cp tmpbl $denOn
-LC_ALL=C cat $trangOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpwl && cp tmpwl $trangOn
+LC_ALL=C cat $denOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tambl && cp $Tambl $denOn
+LC_ALL=C cat $trangOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tamwl && cp $Tamwl $trangOn
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	lognecho "> Dang xu ly: denOff/trangOff files"
 	LC_ALL=C cat $denOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmywl && mv tmpmywl $trangOff
-	cat $denOn | cat $denOff - > tmpbl
-	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > tmpwl
+	cat $denOn | cat $denOff - > $Tambl
+	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "> Dang xu ly: final hChinh/dChinh files"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s/tl2$/tl/; s/comf4a$/comf4a/; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\n^\.com||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | tr -cd '\000-\177' | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
-	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf tmpwl | sort -u > $dChinh
-	lognecho "> Deleting $Tam"
-	lognecho ">>>>File size Hosts<<<<"
-	printFileSize $hChinh
-	numberOfAdsBlocked=$(cat $hChinh | wc -l | sed 's/^[ \t]*//')
-	lognecho "# Number of ad Hosts blocked: $numberOfAdsBlocked"
-	lognecho ">>>>File size Domains<<<<"
-	printFileSize $dChinh
-	numberOfAdsBlocked=$(cat $dChinh | wc -l | sed 's/^[ \t]*//')
-	lognecho "# Number of ad domains blocked: $numberOfAdsBlocked"
+	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s/tl2$/tl/; s/comf4a$/comf4a/; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\n^\.com||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh
+	lognecho "> Deleting $Tam";rm -rf ${Tam};
+	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;
+	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//')
+	lognecho "# Number of ads Hosts blocked: $Counts"
+	lognecho ">>>>File size Domains<<<<";printFileSize $dChinh;
+	Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//')
+	lognecho "# Number of ads domains blocked: $Counts"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ]
 then
@@ -433,7 +431,6 @@ then
 else
 	lognecho "> Restarting DNS server (dnsmasq)"
 	restart_dnsmasq
-	rm -rf ${Tam}
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
