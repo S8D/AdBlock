@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018.07.17.18"
+VERSION="2018_07_18"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -19,19 +19,12 @@ u56="http://gg.gg/u56_";u57="http://gg.gg/u57_";u58="http://gg.gg/u58_";u59="htt
 u61="http://gg.gg/u61_";u62="http://gg.gg/u62_";u63="http://gg.gg/u63_";u64="http://gg.gg/u64_";u65="http://gg.gg/u65_";
 u66="http://gg.gg/u66_";u67="http://gg.gg/u67_";u68="http://gg.gg/u68_";u69="http://gg.gg/u69_";u70="http://gg.gg/u70_";
 u71="http://gg.gg/u71_";u72="http://gg.gg/u72_";u73="http://gg.gg/u73_";u74="http://gg.gg/u74_";u75="http://gg.gg/u75_";
-u76="http://gg.gg/u76_";u77="http://gg.gg/u77_";u78="http://gg.gg/u78_";u79="http://gg.gg/u79_";u91="http://gg.gg/u91_";
+u76="http://gg.gg/u76_";u77="http://gg.gg/u77_";u78="http://gg.gg/u78_";u79="http://gg.gg/u79_";u80="http://adblock.mahakala.is/hosts";
 u81="http://gg.gg/u81_";u82="http://gg.gg/u82_";u83="http://gg.gg/u83_";u84="http://gg.gg/u84_";u85="http://gg.gg/u85_";
 u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="http://gg.gg/u89_";u90="http://gg.gg/u90_";
-u92="http://gg.gg/u92_";u80="http://adblock.mahakala.is/hosts";
+u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
+u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
 #u80="http://gg.gg/u80_";
-#u93="http://gg.gg/u93_"
-#u94="http://gg.gg/u94_"
-#u95="http://gg.gg/u95_"
-#u96="http://gg.gg/u96_"
-#u97="http://gg.gg/u97_"
-#u98="http://gg.gg/u98_"
-#u99="http://gg.gg/u99_"
-#u100="http://gg.gg/u100_"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 export NOFB=0
 export ONLINE=1
@@ -239,13 +232,13 @@ shift $((OPTIND-1))
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 TIMERSTART=`date +%s`
 lognecho "============================================================="
-lognecho "|      AdBlock for DD-WRT base on Linux                     |"
+lognecho "|      AdBlock for DD-WRT/Android base on Linux             |"
 lognecho "|      ${HomePage} |"
-lognecho "|      Tac gia: Manish Parashar                             |"
-lognecho "|      Chinh sua: Darias                                    |"
+lognecho "|      Author: Manish Parashar                              |"
+lognecho "|      Editor: Darias                                       |"
 lognecho "============================================================="
 lognecho "             `date`"
-lognecho "# VERSION: $VERSION"
+lognecho "# Version: $VERSION"
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
@@ -265,128 +258,139 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	lognecho "# Unlocking Level=0 lists"
-	lognecho "# Dang tai: ${u00}";GetSLL ${u00} > $Tamd;printFileSize $Tamd;cat $Tamd > $dTam
+	lognecho "# Downloading: ${u00}";GetSLL ${u00} > $Tamd;printFileSize $Tamd;cat $Tamd > $dTam
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "# Dang tai: ${u01}";GetSLL ${u01} > $Tamh;printFileSize $Tamh;cat $Tamh > $hTam;
-	lognecho "# Dang tai: ${u02}";GetSLL ${u02} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $Tamh;
+	lognecho "# Downloading: ${u01}";GetSLL ${u01} > $Tamh;printFileSize $Tamh;cat $Tamh > $hTam;
+	lognecho "# Downloading: ${u02}";GetSLL ${u02} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $Tamh;
 	printFileSize $Tamh;cat $Tamh >> $hTam | printFileSize $hTam;
-	lognecho "# Dang tai: file Chinh"
-	lognecho "# Dang tai: ${u04}";GetSLL ${u04} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u05}";GetSLL ${u05} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u06}";GetSLL ${u06} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u07}";GetSLL ${u07} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u08}";GetSLL ${u08} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u09}";GetSLL ${u09} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u10}";GetSLL ${u10} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u11}";GetSLL ${u11} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u12}";GetSLL ${u12} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u13}";GetSLL ${u13} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u14}";GetSLL ${u14} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u15}";GetSLL ${u15} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u16}";GetSLL ${u16} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u17}";GetSLL ${u17} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u18}";GetSLL ${u18} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Dang tai: ${u19}";GetSLL ${u19} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: Main lists"
+	lognecho "# Downloading: ${u04}";GetSLL ${u04} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u05}";GetSLL ${u05} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u06}";GetSLL ${u06} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u07}";GetSLL ${u07} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u08}";GetSLL ${u08} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u09}";GetSLL ${u09} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u10}";GetSLL ${u10} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u11}";GetSLL ${u11} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u12}";GetSLL ${u12} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u13}";GetSLL ${u13} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u14}";GetSLL ${u14} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u15}";GetSLL ${u15} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u16}";GetSLL ${u16} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u17}";GetSLL ${u17} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u18}";GetSLL ${u18} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	lognecho "# Downloading: ${u19}";GetSLL ${u19} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "# Dang tai: ${u90}";GetSLL ${u90} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho ">>>File size Level [0] cua ban ben duoi";printFileSize $hTam;
+	lognecho "# Downloading: ${u90}";GetSLL ${u90} > $Tamh;printFileSize $Tamh;cat $Tamh > $Tamt;
+	lognecho "# Downloading: ${u91}";GetSLL ${u91} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u92}";GetSLL ${u92} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u93}";GetSLL ${u93} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u94}";GetSLL ${u94} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u95}";GetSLL ${u95} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u96}";GetSLL ${u96} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u97}";GetSLL ${u97} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u98}";GetSLL ${u98} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "# Downloading: ${u99}";GetSLL ${u99} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
+	lognecho "> Processing: [0]"
+	LC_ALL=C cat $Tamt | tr '[:upper:]' '[:lower:]' | grep -vE '(#|@|!|\*)' | sed -r 's|\^.*$||; s|\$.*$||; s|\/.*$||; s/\|\|//; s|^\.||; s|~.*$||;s|^yelp\.be.*$||;  s|^elpais.*$||; s|^mangapanda.*$||; s|^116\.ru.*$||; s|^yandex\..*$||; s|[[:blank:]]|\n|; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | sort -u > $hChinhTam
+	printFileSize $hChinhTam;cat $hChinhTam >> $hTam;
+	lognecho ">>>File size Level [0] is:";printFileSize $hTam;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		lognecho "# Unlocking Level=1 lists"
-		lognecho "# Dang tai: ${u20}";GetSLL ${u20} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u21}";GetSLL ${u21} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u22}";GetSLL ${u22} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u23}";GetSLL ${u23} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u24}";GetSLL ${u24} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u25}";GetSLL ${u25} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u26}";GetSLL ${u26} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u27}";GetSLL ${u27} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u28}";GetSLL ${u28} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u29}";GetSLL ${u29} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u30}";GetSLL ${u30} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u31}";GetSLL ${u31} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u32}";GetSLL ${u32} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u33}";GetSLL ${u33} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u34}";GetSLL ${u34} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u35}";GetSLL ${u35} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u36}";GetSLL ${u36} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u37}";GetSLL ${u37} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u38}";GetSLL ${u38} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u39}";GetSLL ${u39} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u40}";GetSLL ${u40} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u41}";GetSLL ${u41} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u42}";GetSLL ${u42} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u43}";GetSLL ${u43} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u44}";GetSLL ${u44} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u45}";GetSLL ${u45} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u46}";GetSLL ${u46} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u47}";GetSLL ${u47} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u48}";GetSLL ${u48} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u92}";GetSLL ${u92} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho ">>>File size Level [1] cua ban ben duoi";printFileSize $hTam;
+		lognecho "# Downloading: ${u20}";GetSLL ${u20} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u21}";GetSLL ${u21} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u22}";GetSLL ${u22} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u23}";GetSLL ${u23} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u24}";GetSLL ${u24} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u25}";GetSLL ${u25} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u26}";GetSLL ${u26} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u27}";GetSLL ${u27} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u28}";GetSLL ${u28} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u29}";GetSLL ${u29} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u30}";GetSLL ${u30} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u31}";GetSLL ${u31} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u32}";GetSLL ${u32} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u33}";GetSLL ${u33} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u34}";GetSLL ${u34} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u35}";GetSLL ${u35} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u36}";GetSLL ${u36} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u37}";GetSLL ${u37} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u38}";GetSLL ${u38} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u39}";GetSLL ${u39} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u40}";GetSLL ${u40} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u41}";GetSLL ${u41} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u42}";GetSLL ${u42} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u43}";GetSLL ${u43} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u44}";GetSLL ${u44} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u45}";GetSLL ${u45} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u46}";GetSLL ${u46} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u47}";GetSLL ${u47} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u48}";GetSLL ${u48} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho ">>>File size Level [1] is:";printFileSize $hTam;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
 		lognecho "# Unlocking Level=2 lists"
-		lognecho "# Dang tai: ${u49}";GetSLL ${u49} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u50}";GetSLL ${u50} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u51}";GetSLL ${u51} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u52}";GetSLL ${u52} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u53}";GetSLL ${u53} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u54}";GetSLL ${u54} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u55}";GetSLL ${u55} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u56}";GetHTT ${u56} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u57}";GetHTT ${u57} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u58}";GetHTT ${u58} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u59}";GetSLL ${u59} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u60}";GetSLL ${u60} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u61}";GetSLL ${u61} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u62}";GetSLL ${u62} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u63}";GetSLL ${u63} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u64}";GetSLL ${u64} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u65}";GetSLL ${u65} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u66}";GetSLL ${u66} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u67}";GetSLL ${u67} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u68}";GetSLL ${u68} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u69}";GetSLL ${u69} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u70}";GetSLL ${u70} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u71}";GetSLL ${u71} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u72}";GetSLL ${u72} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u73}";GetSLL ${u73} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u74}";GetSLL ${u74} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u75}";GetSLL ${u75} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u76}";GetSLL ${u76} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u77}";GetSLL ${u77} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho ">>>File size Level [2] cua ban ben duoi";printFileSize $hTam;
+		lognecho "# Downloading: ${u49}";GetSLL ${u49} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u50}";GetSLL ${u50} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u51}";GetSLL ${u51} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u52}";GetSLL ${u52} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u53}";GetSLL ${u53} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u54}";GetSLL ${u54} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u55}";GetSLL ${u55} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u56}";GetHTT ${u56} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u57}";GetHTT ${u57} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u58}";GetSLL ${u58} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u59}";GetSLL ${u59} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u60}";GetSLL ${u60} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u61}";GetSLL ${u61} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u62}";GetSLL ${u62} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u63}";GetSLL ${u63} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u64}";GetSLL ${u64} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u65}";GetSLL ${u65} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u66}";GetSLL ${u66} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u67}";GetSLL ${u67} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u68}";GetSLL ${u68} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u69}";GetSLL ${u69} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u70}";GetSLL ${u70} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u71}";GetSLL ${u71} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u72}";GetSLL ${u72} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u73}";GetSLL ${u73} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u74}";GetSLL ${u74} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u75}";GetSLL ${u75} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u76}";GetSLL ${u76} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u77}";GetSLL ${u77} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho ">>>File size Level [2] is:";printFileSize $hTam;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
 		lognecho "# Unlocking Level=3 lists"
-		lognecho "# Dang tai: ${u78}";GetSLL ${u78} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u79}";GetSLL ${u79} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u80}";GetMHK ${u80} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;		
-		lognecho "# Dang tai: ${u81}";GetSLL ${u81} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u82}";GetSLL ${u82} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u83}";GetSLL ${u83} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho ">>>File size Level [3] cua ban ben duoi";printFileSize $hTam;
+		lognecho "# Downloading: ${u78}";GetSLL ${u78} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u79}";GetSLL ${u79} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u80}";GetMHK ${u80} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;		
+		lognecho "# Downloading: ${u81}";GetSLL ${u81} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u82}";GetSLL ${u82} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u83}";GetSLL ${u83} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho ">>>File size Level [3] is:";printFileSize $hTam;
 	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "> Dang xu ly: [0]+[1]+[2]+[3]"
+	lognecho "> Processing: [0]+[1]+[2]+[3]"
 	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | sort -u > $hChinhTam
 	printFileSize $hChinhTam;cat $hChinhTam > $hTam;
 	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		lognecho "# Unlocking Level=4 lists"
-		lognecho "# Dang tai: ${u84}";GetSLL ${u84} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Dang tai: ${u91}";GetSLL ${u91} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u84}";GetSLL ${u84} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		lognecho "# Downloading: ${u100}";GetSLL ${u100} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
 	fi
 	if [ $NOFB = "f" ]; then
-		lognecho "# Dang tai: ${u85}"
+		lognecho "# Downloading: ${u85}"
 		GetSLL ${HomePage}/denOn/facebook.only >> $hTam;printFileSize $Tamh;cat $Tamh >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		lognecho "# Dang tai: ${u86}";GetSLL ${HomePage}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
+		lognecho "# Downloading: ${u86}";GetSLL ${HomePage}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
 		cat $Tamh >> $hTam
 	fi
 	lognecho "> Updating official denOn/trangOn files"
@@ -402,20 +406,20 @@ fi
 printFileSize $hTam
 printFileSize $dTam
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-lognecho "> Dang xu ly: denOn/trangOn files"
+lognecho "> Processing: Black/WhiteList Online"
 LC_ALL=C cat $denOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tambl && cp $Tambl $denOn
 LC_ALL=C cat $trangOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tamwl && cp $Tamwl $trangOn
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	lognecho "> Dang xu ly: denOff/trangOff files"
+	lognecho "> Processing: Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $Tambl
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "> Dang xu ly: final hChinh/dChinh files"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	lognecho "> Processing: final Main files"
+	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; s|\-\.$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh
 	lognecho "> Deleting $Tam";rm -rf ${Tam};
 	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
