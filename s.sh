@@ -156,7 +156,7 @@ printHelp ()
 selfUpdate ()
 {
 	fTam="${Tam}/update"
-	lognecho ">>> Checking for updates."
+	lognecho ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSLL ${HomePage}/$(basename "$0") > $fTam
 		if [ 0 -eq $? ]; then
@@ -393,7 +393,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		lognecho "# Downloading: ${u86}";GetSLL ${HomePage}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
 		cat $Tamh >> $hTam
 	fi
-	lognecho "> Updating official denOn/trangOn files"
+	lognecho "> Updating official Black/WhiteList Online"
 	GetSLL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
 	GetSLL ${HomePage}/trangOn/trangOn > $trangOn;printFileSize $trangOn;
 	GetSLL ${HomePage}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
@@ -418,14 +418,14 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "> Processing: final Main files"
+	lognecho "> Processing: Final main files"
 	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; s|\-\.$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh
-	lognecho "> Deleting $Tam";rm -rf ${Tam};
+	lognecho "> Deleting: $Tam";rm -rf ${Tam};
 	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-	lognecho "# Number of ads Hosts blocked: $Counts"
+	lognecho "# Blocked: $Counts Hosts"
 	lognecho ">>>>File size Domains<<<<";printFileSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
-	lognecho "# Number of ads domains blocked: $Counts"
+	lognecho "# Blocked: $Counts Domains"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ]
 then
