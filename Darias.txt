@@ -43,7 +43,6 @@ address=/media.jxf88.com/0.1.2.3
 address=/media2d.net/0.1.2.3
 address=/meta.vn/0.1.2.3
 address=/mopub.com/0.1.2.3
-address=/ocsp.apple.com/0.1.2.3
 address=/pub.lavanetwork.net/0.1.2.3
 address=/qq.com/0.1.2.3
 address=/realclick.vn/0.1.2.3

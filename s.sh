@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018_07_18"
+VERSION="2018_07_17"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -176,8 +176,7 @@ selfUpdate ()
 		else
 			lognecho ">>> Update failed. Try again."
 		fi
-		rm -f $fTam
-		rm -rf ${Tam}
+		rm -rf ${Tam};
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -186,7 +185,7 @@ selfUpdate ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) printHelp ;;
-		v    ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${Tam}; exit 0 ;;
 		0    ) Level=0 ;;
 		1    ) Level=1 ;;
 		2    ) Level=2 ;;
@@ -431,8 +430,7 @@ if [ -f "${TMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	lognecho "> Restarting DNS server (dnsmasq)"
-	restart_dnsmasq
+	lognecho "> Restarting DNS server (dnsmasq)";restart_dnsmasq;
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
