@@ -2,6 +2,7 @@ address=/ss.ss/4.3.2.1
 address=/sd.ss/4.3.2.2
 address=/120.138.74.139/0.1.2.3
 address=/120.138.74.171/0.1.2.3
+address=/analytics.rayjump.com/0.1.2.3
 address=/ad360.vn/0.1.2.3
 address=/adasiaholdings.com/0.1.2.3
 address=/adflex.vn/0.1.2.3
