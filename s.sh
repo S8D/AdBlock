@@ -423,7 +423,7 @@ fi
 	lognecho "> Deleting: Special Character"
 	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; s|\-\.$||; /^$/d' > $hChinh
 	lognecho "> Deleting: Mid-level domains";
-	LC_ALL=C cat $hChinh | grep -vE '(${mdomains})' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sed -r 's|^\-\-||; s|^\-||; s|\-$||; s|\.$||; s|^\.||; s|^[^.]+$||g; /^$/d' | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam && cp $hTam $hChinh
+	LC_ALL=C cat $hChinh | grep -vE "(${mdomains})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sed -r 's|^\-\-||; s|^\-||; s|\-$||; s|\.$||; s|^\.||; s|^[^.]+$||g; /^$/d' | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam && cp $hTam $hChinh
 	lognecho "> Deleting: $Tam";rm -rf ${Tam};
 	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 	lognecho "# Blocked: $Counts Hosts"
