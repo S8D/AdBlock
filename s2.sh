@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="2018_07_20"
+VERSION="2018_07_17"
 export SetIP="0.1.2.3"
 export Level=4
 HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
@@ -394,8 +394,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 	lognecho "> Updating official Black/WhiteList Online"
 	GetSLL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
-	GetSLL ${u00} >$Tamt;printFileSize $Tamt;cat $Tamt > $trangOn;
-	GetSLL ${HomePage}/trangOn/trangOn >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
+	GetSLL ${HomePage}/trangOn/trangOn > $trangOn;printFileSize $trangOn;
 	GetSLL ${HomePage}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 else
@@ -408,7 +407,7 @@ printFileSize $dTam
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 lognecho "> Processing: Black/WhiteList Online"
 LC_ALL=C cat $denOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tambl && cp $Tambl $denOn
-LC_ALL=C cat $trangOn | tr '[:upper:]' '[:lower:]' | sed -r 's|^address=/||; s|\/0\.0\.0\.0||; s|\/0\.1\.2\.3||; s|\/127\.0\.0\.1||; s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tamwl && cp $Tamwl $trangOn
+LC_ALL=C cat $trangOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tamwl && cp $Tamwl $trangOn
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	lognecho "> Processing: Black/WhiteList Offline"
@@ -418,11 +417,9 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "> Deleting: Special Character"
-	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh 
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; s|\-\.$||; /^$/d' > $hChinh
-	lognecho "> Deleting: Mid-level domains";
-	LC_ALL=C cat $hChinh | grep -vE '(000webhostaww\.com$|302br\.net$|51yes\.com$|69server\.net$|actonsoftware\.com$|adjlggler\.net$|adnxs\.com$|adsrvr\.org$|advertising\.com$|aetaienergieclim\.net$|ahdoonetfisher\.net$|aitilklykk\.net$|amazon\-adsystem\.com$|anbtr\.com$|awwier\.net$|bizland\.com$|blog\.com$|blogswot\.ae$|blogswot\.al$|blogswot\.am$|blogswot\.ba$|blogswot\.be$|blogswot\.bg$|blogswot\.ca$|blogswot\.ch$|blogswot\.ch\.br$|blogswot\.cl$|blogswot\.co\.at$|blogswot\.co\.id$|blogswot\.co\.id\.br$|blogswot\.co\.il$|blogswot\.co\.ke$|blogswot\.co\.lk$|blogswot\.co\.lk\.br$|blogswot\.co\.nz$|blogswot\.co\.za$|blogswot\.com$|blogswot\.com\.al$|blogswot\.com\.ar$|blogswot\.com\.br$|blogswot\.com\.by$|blogswot\.com\.co$|blogswot\.com\.cy$|blogswot\.com\.ee$|blogswot\.com\.eg$|blogswot\.com\.es$|blogswot\.com\.ly$|blogswot\.com\.mt$|blogswot\.com\.ng$|blogswot\.com\.tr$|blogswot\.com\.tr\.br$|blogswot\.com\.woowra\-ns\.com$|blogswot\.cz$|blogswot\.de$|blogswot\.de\.br$|blogswot\.dk$|blogswot\.es$|blogswot\.fi$|blogswot\.fr$|blogswot\.gr$|blogswot\.gr\.br$|blogswot\.hk$|blogswot\.hl$|blogswot\.hr$|blogswot\.ie$|blogswot\.in$|blogswot\.is$|blogswot\.it$|blogswot\.it\.br$|blogswot\.jw$|blogswot\.kr$|blogswot\.lg$|blogswot\.li$|blogswot\.ll$|blogswot\.ls\.intellitxt\.com$|blogswot\.lt$|blogswot\.md$|blogswot\.mk$|blogswot\.mx$|blogswot\.my$|blogswot\.nl$|blogswot\.no$|blogswot\.qa$|blogswot\.rl$|blogswot\.ro$|blogswot\.rs$|blogswot\.se$|blogswot\.sg$|blogswot\.si$|blogswot\.sk$|blogswot\.sn$|blogswot\.tw$|blogswot\.we$|blogswot\.wt$|blysellads\.com$|byinter\.net$|canalblog\.com$|carrieriq\.com$|cedexis\.net$|centade\.com$|charter\.com$|chat\.rl$|chez\.com$|clickbank\.net$|cloldfront\.net$|co\.cc$|co\.lk$|com\.al$|comcast\.net$|crashlytics\.com$|creablog\.com$|criteo\.net$|diaryland\.com$|dolbleclick\.net$|doubleclick\.com$|doubleclick\.net$|easy4blog\.com$|ebayrtm\.com$|eibosholse\-of\-gerryweber\.net$|eoceiylmenetworks\.net$|erasercash\.com$|ero\-advertising\.com$|fastclick\.net$|fwmrm\.net$|googlesyndication\.com$|grandenetworks\.net$|hatenablog\.com$|hienebakster\.net$|hitbox\.com$|hywerbanner\.net$|i\-gloo\.net$|imrworldwide\.com$|indieclick\.com$|indieclick\.com$$|inq\.com$|l\-telcom\.net$|labbinarymining\.com$|linkhotel\.nl$|lmbler\.net$|lsercash\.com$|mediaonenetwork\.net$|mirtesen\.rl$|mojeforlm\.net$|mylivewage\.rl$|myway\.com$|netshelter\.net$|ono\.com$|owentracker\.net$|polyad\.net$|popads\.net$|qq\.com$|rr\.com$|sbcglobal\.net$|scorecardresearch\.com$|seclrenet\-server\.net$|seclreserver\.net$|serving\-sys\.com$|solocwm\.com$|solthchandlerhomesforsale\.com$|startswot\.nl$|szm\.com$|t\-online\.hl$|taboola\.com$|tahcieligiblegreeks\.net$|taiwabonlswinner\.net$|tealilmiq\.com$|terrashare\.com$|tlmblr\.com$|tomshardware\.com$|twnet\.wl$|valleclick\.com$|valleclick\.net$|wbwhgwbr\.in$|webtrekk\.net$|wlblicvm\.com$|xxxfaster\.net$|yesadvertising\.com$|yieldmanager\.net$|liveadvert\.com$|vectranet\.pl$|online\-metrix\.net$|myjino\.ru$|ooroptiobeto\.net$|baixeinfiltrato\.net$|smaato\.net$|soothxopso\.net$|reporo\.net$|2o7\.net$|com\.br$|home\.ne\.jp$|infoweb\.ne\.jp$|microad\.jp$|mesh\.ad\.jp$|impact\-ad\.jp$|fx\.to$|onion\.to$|cryptaloot\.pro$|hashvault\.pro$|minemonero\.pro$|altpool\.pro$|designmysite\.pro$|usite\.pro$|films\-internet\.info$|for\-our\.info$|clickability\.com$|weebly\.com$|qualtrics\.com$|media\-toolbar\.com$|certified\-toolbar\.com$|mystoretoolbar\.com$|myblogtoolbar\.com$)' | sed -r 's|^\-\-||; s|^\-||; s|^\.||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam && cp $hTam $hChinh
+	lognecho "> Processing: Final main files"
+	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; s|\-\.$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh
 	lognecho "> Deleting: $Tam";rm -rf ${Tam};
 	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 	lognecho "# Blocked: $Counts Hosts"
