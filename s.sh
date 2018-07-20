@@ -1,9 +1,10 @@
 #!/bin/sh
-VERSION="20180720"
+VERSION="20180720+"
 export SetIP="0.1.2.3"
 export Level=4
-HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
-u00="${HomePage}/Darias.txt"
+Home1Page="https://github.com/S8D/AdBlock"
+Home2Page="https://raw.githubusercontent.com/S8D/AdBlock/master"
+u00="${Home2Page}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
 u11="http://gg.gg/u11_";u12="http://gg.gg/u12_";u13="http://gg.gg/u13_";u14="http://gg.gg/u14_";u15="http://gg.gg/u15_";
@@ -159,7 +160,7 @@ selfUpdate ()
 	fTam="${Tam}/update"
 	lognecho ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSLL ${HomePage}/$(basename "$0") > $fTam
+		GetSLL ${Home2Page}/$(basename "$0") > $fTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $fTam | cut -d' ' -f1`
@@ -233,7 +234,7 @@ shift $((OPTIND-1))
 TIMERSTART=`date +%s`
 lognecho "============================================================="
 lognecho "|      AdBlock for DD-WRT/Android base on Linux             |"
-lognecho "|      ${HomePage} |"
+lognecho "|      ${Home1Page}                       |"
 lognecho "|      Author: Manish Parashar                              |"
 lognecho "|      Editor: Darias                                       |"
 lognecho "============================================================="
@@ -387,17 +388,17 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 	if [ $NOFB = "f" ]; then
 		lognecho "# Downloading: ${u85}"
-		GetSLL ${HomePage}/denOn/facebook.only >> $hTam;printFileSize $Tamh;cat $Tamh >> $hTam;
+		GetSLL ${Home2Page}/denOn/facebook.only >> $hTam;printFileSize $Tamh;cat $Tamh >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		lognecho "# Downloading: ${u86}";GetSLL ${HomePage}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
+		lognecho "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
 		cat $Tamh >> $hTam
 	fi
 	lognecho "> Updating official Black/WhiteList Online"
-	GetSLL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
+	GetSLL ${Home2Page}/denOn/denOn > $denOn;printFileSize $denOn;
 	GetSLL ${u00} >$Tamt;printFileSize $Tamt;cat $Tamt > $trangOn;
-	GetSLL ${HomePage}/trangOn/trangOn >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
-	GetSLL ${HomePage}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
+	GetSLL ${Home2Page}/trangOn/trangOn >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
+	GetSLL ${Home2Page}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 else
 	lognecho "# NETWORK: DOWN | MODE: OFFLINE"
