@@ -57,7 +57,7 @@ else
 fi
 export hChinh="${ThuMuc}/h";export dChinh="${ThuMuc}/d";
 export Tam="${TmTam}/t.tmp"
-export File="${TmTam}/File.tmp";export Tam2h="${TmTam}/Tam.tmp";
+export File="${TmTam}/File.tmp";export Tam2h="${TmTam}/Total.tmp";
 export Tamd="${TmTam}/d.tmp"
 export hNgu="${ThuMuc}/h.zzz";export dNgu="${ThuMuc}/d.zzz";
 export ScURL="${ThuMuc}/cacert.pem"
