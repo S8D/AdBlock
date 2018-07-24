@@ -1,12 +1,12 @@
-#!/bin/sh
+#_______________________________________________________________________________________________
 VERSION="20180725+"
 export SetIP="0.1.2.3"
 export Level=4
 Home1Page="https://github.com/S8D/AdBlock"
 Home2Page="https://raw.githubusercontent.com/S8D/AdBlock/master"
-# Delete SubDomain
+#_______________________________________________________________________________________________
 SubDM="\~|000webhostapp\.com$|000webhostaww\.com$|2o7\.net$|302br\.net$|51yes\.com$|69server\.net$|actonsoftware\.com$|adjlggler\.net$|adnxs\.com$|adsrvr\.org$|advertising\.com$|aetaienergieclim\.net$|ahdoonetfisher\.net$|aitilklykk\.net$|allyes\.com$|alphonso\.tv$|alpol\.com$|altpool\.pro$|amazon\-adsystem\.com$|anbtr\.com$|angelfire\.com$|awwier\.net$|baixeinfiltrato\.net$|bizland\.com$|blog\.com$|blogswot\.ae$|blogswot\.al$|blogswot\.am$|blogswot\.ba$|blogswot\.be$|blogswot\.bg$|blogswot\.ca$|blogswot\.ch$|blogswot\.ch\.br$|blogswot\.cl$|blogswot\.co\.at$|blogswot\.co\.id$|blogswot\.co\.id\.br$|blogswot\.co\.il$|blogswot\.co\.ke$|blogswot\.co\.lk$|blogswot\.co\.lk\.br$|blogswot\.co\.nz$|blogswot\.co\.za$|blogswot\.com$|blogswot\.com\.al$|blogswot\.com\.ar$|blogswot\.com\.br$|blogswot\.com\.by$|blogswot\.com\.co$|blogswot\.com\.cy$|blogswot\.com\.ee$|blogswot\.com\.eg$|blogswot\.com\.es$|blogswot\.com\.ly$|blogswot\.com\.mt$|blogswot\.com\.ng$|blogswot\.com\.tr$|blogswot\.com\.tr\.br$|blogswot\.com\.woowra\-ns\.com$|blogswot\.cz$|blogswot\.de$|blogswot\.de\.br$|blogswot\.dk$|blogswot\.es$|blogswot\.fi$|blogswot\.fr$|blogswot\.gr$|blogswot\.gr\.br$|blogswot\.hk$|blogswot\.hl$|blogswot\.hr$|blogswot\.ie$|blogswot\.in$|blogswot\.is$|blogswot\.it$|blogswot\.it\.br$|blogswot\.jw$|blogswot\.kr$|blogswot\.lg$|blogswot\.li$|blogswot\.ll$|blogswot\.ls\.intellitxt\.com$|blogswot\.lt$|blogswot\.md$|blogswot\.mk$|blogswot\.mx$|blogswot\.my$|blogswot\.nl$|blogswot\.no$|blogswot\.qa$|blogswot\.rl$|blogswot\.ro$|blogswot\.rs$|blogswot\.se$|blogswot\.sg$|blogswot\.si$|blogswot\.sk$|blogswot\.sn$|blogswot\.tw$|blogswot\.we$|blogswot\.wt$|blysellads\.com$|bpa\.nu$|btcchina\.com$|btttag\.com$|byinter\.net$|cablelink\.ro$|canalblog\.com$|carrieriq\.com$|cedexis\.net$|centade\.com$|centerblog\.net$|certified\-toolbar\.com$|charter\.com$|chat\.rl$|chez\.com$|clickability\.com$|clickbank\.net$|cloldfront\.net$|co\.cc$|co\.lk$|co\.tv$|co\.zw$|com\.al$|com\.br$|com1\.ru$|comcast\.net$|consensu\.org$|crashlytics\.com$|creablog\.com$|criteo\.net$|cryptaloot\.pro$|de\.sr$|de\.vu$|designmysite\.pro$|diaryland\.com$|dolbleclick\.net$|doubleclick\.com$|doubleclick\.net$|easy4blog\.com$|ebafesangbadpratidin\.com$|ebayrtm\.com$|eibosholse\-of\-gerryweber\.net$|envy\.nu$|eoceiylmenetworks\.net$|erasercash\.com$|ero\-advertising\.com$|fastclick\.net$|fateback\.com$|films\-internet\.info$|flu\.cc$|for\-our\.info$|fora\.pl$|forum2x2\.ru$|freehosting\.cc$|freesitesnetwork\.com$|fwmrm\.net$|fx\.to$|googlesyndication\.com$|grandenetworks\.net$|hashvault\.pro$|hatenablog\.com$|hienebakster\.net$|hitbox\.com$|home\.ne\.jp$|hut1\.ru$|hywerbanner\.net$|i\-gloo\.net$|idv\.tw$|ikwilhet\.nu$|impact\-ad\.jp$|imrworldwide\.com$|indieclick\.com$|indieclick\.com$$|infoweb\.ne\.jp$|inq\.com$|insightfirst\.com$|l\-telcom\.net$|labbinarymining\.com$|land\.ru$|linkhotel\.nl$|liveadvert\.com$|lmbler\.net$|lsercash\.com$|media\-toolbar\.com$|mediaonenetwork\.net$|mesh\.ad\.jp$|microad\.jp$|minemonero\.pro$|minerhills\.com$|mirtesen\.rl$|mojeforlm\.net$|musicfrost\.com$|myblogtoolbar\.com$|myhomescreen\.tv$|myjino\.ru$|mylivepage\.ru$|mylivewage\.rl$|mystoretoolbar\.com$|myway\.com$|narod\.ru$|narod2\.ru$|neliver\.com$|netshelter\.net$|nnarod\.ru$|nut\.cc$|obohytaipeinavi\.net$|onion\.to$|online\-metrix\.net$|ono\.com$|ooroptiobeto\.net$|owentracker\.net$|pagina\.nu$|peiwetrannydates\.com$|pinballpublishernetwork\.com$|polyad\.net$|polybuild\.ru$|popads\.net$|puserving\.com$|qq\.com$|qualtrics\.com$|queroumforum\.com$|reporo\.net$|rr\.com$|rr\.nu$|rubiconproject\.com$|sbcglobal\.net$|science\-directory\.net$|scorecardresearch\.com$|seclrenet\-server\.net$|seclreserver\.net$|secureorganictrade\.ru$|serving\-sys\.com$|sextracker\.de$|sicherheitshilfe\-hilfeservice\.gq$|smaato\.net$|smi2\.ru$|solocwm\.com$|solthchandlerhomesforsale\.com$|soothxopso\.net$|spacevilla\.net$|startspot\.nl$|startswot\.nl$|student\-24\.ru$|subito\.cc$|szm\.com$|t\-online\.hl$|taboola\.com$|tahcieligiblegreeks\.net$|taiwabonlswinner\.net$|teads\.tv$|tealilmiq\.com$|terrashare\.com$|tlmblr\.com$|tmall\.com$|tomshardware\.com$|tpnet\.pl$|truth\-is\-out\-there\.org$|twnet\.wl$|uni\.cc$|usite\.pro$|valleclick\.com$|valleclick\.net$|vectranet\.pl$|vertamedia\.com$|vi\.net$|vsn\.nu$|wbwhgwbr\.in$|web\.tr$|webtrekk\.net$|weebly\.com$|wlblicvm\.com$|work5\.ru$|xxxfaster\.net$|yesadvertising\.com$|yieldmanager\.net$|zachasinderella\.net$|zz\.mu$|forumtoolbar\.com$|loyaltytoolbar\.com$|mycitytoolbar\.com$|mycollegetoolbar\.com$|myfamilytoolbar\.com$|myforumtoolbar\.com$|mylibrarytoolbar\.com$|myradiotoolbar\.com$|myteamtoolbar\.com$|mytowntoolbar\.com$|myuniversitytoolbar\.com$|ourtoolbar\.com$|xooit\.com$|0catch\.com$|0x1f4b0\.com$|126\.net$|207\.net$|7us\.us$|adap\.tv$|adhese\.com$|adkmob\.com$|admob\.com$|adotmob\.com$|adprotect\.net$|adscience\.nl$|aiziezq6\.net$|am15\.net$|atspace\.us$|aviasales\.ru$|beeplog\.de$|bestdeals\.at$|blueadvertise\.com$|bt\.net$|bubblesmedia\.ru$|caiyupasadenastarnews\.net$|cdi\.no$|chartbeat\.net$|chiejgravuremodels\.net$|cjb\.net$|cjt1\.net$|clan\.su$|clicksmob\.com$|co\.at$|com\-oo4\.net$|connextra\.com$|creativemedia\.buzz$|cz\.cc$|da\.ru$|deluxepass\.com$|demdex\.net$|demos\.su$|dtiblog\.com$|e\-city\.tv$|ed10\.net$|eigenpage\.nl$|eiyoojuegosparawindows\.net$|eloqua\.com$|ensighten\.com$|f3322\.net$|fastestshopa\.su$|fasthost\.tv$|favorietje\.nl$|fgpp\.com$|firstfind\.nl$|frem\.com$|gb\.net$|gerelateerd\.nl$|getrestinfom\.su$|getrestinfon\.su$|go2affise\.com$|gotech\.tk$|herokuapp\.com$|iedoobuzzlike\.com$|iehohicv2\.net$|indymedia\.org$|installantivirus\.us$|isgre\.at$|ixaichumoroutcasts\.net$|klantenservicenederland\.nl$|klantenservicetelefoonnummernederland\.com$|krovatka\.su$|level3\.net$|linkexchange\.nl$|linkgoed\.nl$|linkpulse\.com$|lookingat\.us$|madvertise\.com$|mchsi\.com$|miningpoolhub\.com$|mktoresp\.com$|mob\.com$|monerise\.com$|my\-place\.us$|mybjjblog\.com$|n3\.net$|nanopool\.org$|nationalcablenetworks\.ru$|nedstat\.net$|net16\.net$|net23\.net$|net46\.net$|net63\.net$|net76\.net$|net78\.net$|net84\.net$|netpass\.tv$|nupaifree\-crochet\.net$|oasuagoals\.net$|oewabox\.at$|ohxeimysonicwall\.net$|onlinepricex\.su$|ontheweb\.nl$|oowaividaddict\.net$|openxenterprise\.com$|pacbell\.net$|plp7\.ru$|pornhub\.com$|publicus\.com$|raeniretweet\.net$|rfihub\.com$|servecounterstrike\.com$|shaeyffh6\.net$|sharezips\.net$|shoofle\.tv$|site40\.net$|site50\.net$|site88\.net$|site90\.com$|site90\.net$|skyrock\.com$|smartnaturalshop\.su$|smi2\.net$|sponsormob\.com$|spywarestrike\.com$|startclub\.nl$|startmee\.nl$|startvista\.nl$|startvriend\.nl$|suprnova\.cc$|switchadhub\.com$|syndicaster\.tv$|telekom\.hu$|telering\.at$|thetrafficstat\.net$|thohjkuvat\.net$|tie\.cl$|tmfweb\.nl$|toprealsalen\.su$|trademob\.com$|uni5\.net$|veruta\.com$|videoplaza\.tv$|vidible\.tv$|vidzi\.tv$|webgidsje\.nl$|webservis\.ru$|webtradeplus\.su$|webwise\.com$|yamanoha\.com$|zeblog\.com$|zinoiosijek031\.net$|360\.cn$|3g\.cn$|zj\.cn$|ac\.cn$|adpush\.cn$|alimabi\.cn$|alimama\.cn$|analysys\.cn$|autoimg\.cn$|baidu\.com$|casee\.cn$|china\.cn$|chinaenter\.cn$|com\.cn$|domob\.cn$|edu\.cn$|firstlight\.cn$|fj\.cn$|gov\.cn$|hi\.cn$|icast\.cn$|jl\.cn$|jpush\.cn$|jtle0\.cn$|liuliangbao\.cn$|maxthon\.cn$|minisplat\.cn$|moad\.cn$|net\.cn$|nx\.cn$|org\.cn$|shuzilm\.cn$|sina\.cn$|sinaimg\.cn$|soarfi\.cn$|tianya\.cn$|uc\.cn$|voiceads\.cn$|voicecloud\.cn$|weibo\.cn$|wostore\.cn$|wps\.cn$|xj\.cn$|xz\.cn$|weibo\.com$|wechat\.com$|6\.cn$";
-# Level 0-4
+#_______________________________________________________________________________________________
 sed0="s|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d";
 sed00="s|!.*$||; s|#.*$||; s|:.*$||; s|\^.*$||; s|\@.*$||; s|\/.*$||; s|\?.*$||; s|.*\*.$||; s|~.*$||; s|0.0.0.0||; s|\,|\n|g; s|^127\.0\.0\.1.*$||; s/\|\|//; s|[[:blank:]]|\n|; s|^\.||; s|^[^.]+$||; s|>.*$||; s|\\.*$||; s|^\-||; s|\&.*$||; s|\*$||; s|^.*\.$||g; s|.*\*.*||; s|.*\.$||; s|\n.*\.$||";
 sed01="s|\.invalid$||; s|.*main$||; s|\.co.*orn$|.com|; s|^i.*nt$||; s|^s.*pt$||";
@@ -17,7 +17,7 @@ sed4="s|\.z$||; s|\.com.*orn$|.com|; s|^w.*orn$||; s|\/.*ads$||";
 setbw="s|#.*$||; /^$/d"
 sed6="s|\n^[^.]+$||; /^$/d";
 sed7="s|^Tp.*kim$||; s|^\.com$||; s|\-.*\.$||; s|^\.$||; /^$/d";
-#_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 u00="${Home2Page}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
@@ -39,8 +39,7 @@ u81="http://gg.gg/u81_";u82="http://gg.gg/u82_";u83="http://gg.gg/u83_";u84="htt
 u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="http://gg.gg/u89_";u90="http://gg.gg/u90_";
 u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
-#u80="http://gg.gg/u80_";
-#________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -71,7 +70,7 @@ export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${ThuMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${ThuMuc}"
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 cd "${ThuMuc}"
 logger ">>> $(basename "$0") started"
 if [ -z "$(which curl)" ]; then
@@ -83,7 +82,7 @@ alias GetHTT="curl -f -s -k -L"
 alias GetSLL="curl -f -s -k -L"
 [ $SECURL -eq 1 ] && unalias GetSLL && alias GetSLL="curl -f -s --capath ${ThuMuc} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 InChu ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
@@ -186,7 +185,7 @@ CapNhat ()
 	logger ">>> $(basename "$0") finished"
 	exit 0
 }
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) GiupDo ;;
@@ -233,7 +232,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	esac
 done
 shift $((OPTIND-1))
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 TIMERSTART=`date +%s`
 InChu "============================================================="
 InChu "|      AdBlock for DD-WRT/Android base on Linux             |"
@@ -244,7 +243,7 @@ InChu "============================================================="
 InChu "             `date`"
 InChu "# Version: $VERSION"
 
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
 	InChu "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	BatChan
@@ -258,9 +257,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "> Downloading / updating cURL certificates"
 		GetSLL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 	InChu "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 	InChu ">>>> Unlocking [0] Hosts"	
 	InChu "# Downloading: ${u01}";GetSLL ${u01} > $File;InSize $File;cat $File > $Tam2h;
 	InChu "# Downloading: ${u02}";GetSLL ${u02} > $File;InSize $File;cat $File >> $Tam2h;
@@ -284,7 +283,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InChu "# File Size [0] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [0]";
 	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed "${sed6}" > $File;
 	InChu "# File Size [0] Formatted"; cat $File > $Tam; InSize $Tam;
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 	InChu "# Downloading: ${u90}";GetSLL ${u90} > $File;InSize $File;cat $File > $Tam2h;
 	InChu "# Downloading: ${u91}";GetSLL ${u91} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u92}";GetSLL ${u92} > $File;InSize $File;cat $File >> $Tam2h;
@@ -299,7 +298,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed00}" | sed -r "${sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' > $File;
 	InChu "# File Size [0.5] Formatted";InSize $File; cat $File >> $Tam;
 	InChu "# File Size [1.5]";InSize $Tam;
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InChu ">>>> Unlocking [1] lists"
 		InChu "# Downloading: ${u20}";GetSLL ${u20} > $File;InSize $File;cat $File > $Tam2h;
@@ -336,7 +335,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# File Size [1] Formatted";InSize $File; cat $File >> $Tam;
 		InChu "# File Size [0-1]";InSize $Tam;
 	fi
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
 		InChu ">>>> Unlocking [2] lists"
 		InChu "# Downloading: ${u49}";GetSLL ${u49} > $File;InSize $File;cat $File > $Tam2h;
@@ -373,7 +372,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# File Size [2] Formatted";InSize $File; cat $File >> $Tam;
 		InChu "# File Size [0-2]";InSize $Tam;
 	fi
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
 		InChu ">>>> Unlocking [3] lists"
 		InChu "# Downloading: ${u78}";GetSLL ${u78} > $File;InSize $File;cat $File > $Tam2h;
@@ -409,17 +408,17 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
 	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
 	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;
-#_____________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 else
 	InChu "# NETWORK: DOWN | MODE: OFFLINE"
 	[ -s $hChinh ] && cat $hChinh | awk '{print $2}' > $Tam2h
 	[ -s $dChinh ] && cp $dChinh $Tamd
 fi
-#_____________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 InChu ">>>> Processing: Black/WhiteList Online"
 LC_ALL=C cat $denOn | sed -r "${setbw}" | sort -u > $Tambl && cp $Tambl $denOn
 LC_ALL=C cat $trangOn | tr '[:upper:]' '[:lower:]' | sed -r "${setbw}" | sort -u > $Tamwl && cp $Tamwl $trangOn
-#_____________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	InChu ">>>> Processing: Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r "${setbw}" | sort -u > tmpmybl && mv tmpmybl $denOff
@@ -427,14 +426,14 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $denOn | cat $denOff - > $Tambl
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
-#_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 InChu "> Processing: Black/WhiteList/SubDomain/IP";
 LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 InChu ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Hosts"
 InChu ">>>> File size Domains";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Domains"
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________
 if [ -f "${ThuMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
@@ -449,4 +448,4 @@ InChu "# Total time: $RTMINUTES:$RTSECONDS minutes"
 InChu "# DONE"
 logger ">>> $(basename "$0") finished"
 exit 0
-# FIN
+#_______________________________________________________________________________________________
