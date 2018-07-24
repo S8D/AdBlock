@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180724+"
+VERSION="20180725+"
 export SetIP="0.1.2.3"
 export Level=4
 Home1Page="https://github.com/S8D/AdBlock"
