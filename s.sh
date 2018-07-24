@@ -72,10 +72,10 @@ export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib
 export PWD="${ThuMuc}"
 #_______________________________________________________________________________________________
 cd "${ThuMuc}"
-logger ">>> $(basename "$0") started"
+logger ">>>> $(basename "$0") started"
 if [ -z "$(which curl)" ]; then
-	echo ">>> WARNING: cURL not found"
-	echo ">>> ERROR: ABORTING"
+	echo ">>>> WARNING: cURL not found"
+	echo ">>>> ERROR: ABORTING"
 	exit 1
 fi
 alias GetHTT="curl -f -s -k -L"
@@ -94,33 +94,33 @@ InSize ()
 }
 ReBoot ()
 {
-	logger ">>> $(basename "$0") restarting dnsmasq"
+	logger ">>>> $(basename "$0") restarting dnsmasq"
 	restart_dns &
-	logger ">>> $(basename "$0") restarted dnsmasq"
+	logger ">>>> $(basename "$0") restarted dnsmasq"
 }
 BatChan ()
 {
 	if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
-		InChu ">>> RESUMING PROTECTION"
+		InChu ">>>> RESUMING PROTECTION"
 		mv $hNgu $hChinh
 		mv $dNgu $dChinh
 		rm -f $pauseflag
 		ReBoot
 	fi
-	logger ">>> $(basename "$0") finished"
+	logger ">>>> $(basename "$0") finished"
 	exit 0
 }
 TatChan ()
 {
-	InChu ">>> WARNING: PAUSING PROTECTION"
+	InChu ">>>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hNgu
 	[ -f $dChinh ] && mv $dChinh $dNgu
 	echo "" > $hChinh
 	echo "" > $dChinh
 	echo "PAUSED" > $pauseflag
 	ReBoot
-	InChu ">>> Type $(basename "$0") --resume to resume protection."
-	logger ">>> $(basename "$0") finished"
+	InChu ">>>> Type $(basename "$0") --resume to resume protection."
+	logger ">>>> $(basename "$0") finished"
 	exit 0
 }
 GiupDo ()
@@ -154,13 +154,13 @@ GiupDo ()
 	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 --bl=example1.com --wl=example2.com"
 	printf '\t'; echo "$(basename "$0") -3Fqs -b example1.com -w example2.com --wl=example3.com"
 	echo ""
-	logger ">>> $(basename "$0") finished"
+	logger ">>>> $(basename "$0") finished"
 	exit 0
 }
 CapNhat ()
 {
 	File="${TmTam}/update"
-	InChu ">>> Checking for updates..."
+	InChu ">>>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSLL ${Home2Page}/$(basename "$0") > $File
 		if [ 0 -eq $? ]; then
@@ -168,28 +168,28 @@ CapNhat ()
 			new_md5=`md5sum $File | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
 				NEWVER=`grep -w -m 1 "VERSION" $File`
-				InChu ">>> Update available: $NEWVER"
+				InChu ">>>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
 				chmod 755 $File
 				mv $File $0
-				InChu ">>> Updated to the latest version."
+				InChu ">>>> Updated to the latest version."
 			else
-				InChu ">>> Current version: $VERSION"
+				InChu ">>>> Current version: $VERSION"
 			fi
 		else
-			InChu ">>> Update failed. Try again."
+			InChu ">>>> Update failed. Try again."
 		fi
 		InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam};
 	fi
-	logger ">>> $(basename "$0") finished"
+	logger ">>>> $(basename "$0") finished"
 	exit 0
 }
 #_______________________________________________________________________________________________
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) GiupDo ;;
-		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam}; exit 0 ;;
+		v    ) echo ">>>> Current version: $VERSION" ; logger ">>>> $(basename "$0") finished" ;InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam}; exit 0 ;;
 		0    ) Level=0 ;;
 		1    ) Level=1 ;;
 		2    ) Level=2 ;;
@@ -209,11 +209,11 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
 			bl=?*   ) ARG_BL="$LONG_OPTARG" ; echo $ARG_BL >> $denOff ;;
-			bl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
+			bl*     ) echo ">>>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			wl=?*   ) ARG_WL="$LONG_OPTARG" ; echo $ARG_WL >> $trangOff ;;
-			wl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
+			wl*     ) echo ">>>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
-			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
+			ip*     ) echo ">>>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			4    ) Level=4 ;;
 			quiet   ) QUIET=1 ;;
 			pause   ) TatChan ;;
@@ -222,11 +222,11 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			offline ) ONLINE=0 ;;
 			help    ) GiupDo ;;
 			update  ) CapNhat ;;
-			version ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$VERSION" ; logger ">>>> $(basename "$0") finished" ; exit 0 ;;
 			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
-					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
+					echo ">>>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )    break ;;
-			* )     echo ">>> ERROR: unsupported option --$OPTARG" >&2; exit 2 ;;
+			* )     echo ">>>> ERROR: unsupported option --$OPTARG" >&2; exit 2 ;;
 		esac ;;
   	  \? ) exit 2 ;;
 	esac
@@ -254,7 +254,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InChu "# SECURE [0=NO | 1=YES]: $SECURL"
 	InChu "# Level [0|1|2|3|4]: $Level"
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
-		InChu "> Downloading / updating cURL certificates"
+		InChu ">>>> Downloading / updating cURL certificates"
 		GetSLL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 #_______________________________________________________________________________________________
@@ -404,7 +404,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $Tam2h;InSize $File;
 		cat $File >> $Tam2h
 	fi
-	InChu "> Updating Black/WhiteList Online"
+	InChu ">>>> Updating Black/WhiteList Online"
 	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
 	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
 	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;
@@ -427,7 +427,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #_______________________________________________________________________________________________
-InChu "> Processing: Black/WhiteList/SubDomain/IP";
+InChu ">>>> Processing: Black/WhiteList/SubDomain/IP";
 LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 InChu ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Hosts"
@@ -446,6 +446,6 @@ RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
 RTSECONDS=$(( $((TIMERSTOP - TIMERSTART)) %60 ))
 InChu "# Total time: $RTMINUTES:$RTSECONDS minutes"
 InChu "# DONE"
-logger ">>> $(basename "$0") finished"
+logger ">>>> $(basename "$0") finished"
 exit 0
 #_______________________________________________________________________________________________
