@@ -430,9 +430,9 @@ fi
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 InChu "> Processing: Black/WhiteList/SubDomain/IP";
 LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
-InChu ">>>>File size Hosts<<<<";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+InChu ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Hosts"
-InChu ">>>>File size Domains<<<<";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
+InChu ">>>> File size Domains";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Domains"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 if [ -f "${ThuMuc}/Location" ]
