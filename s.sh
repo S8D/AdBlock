@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180726+"
+VERSION="20180725+"
 export SetIP="0.1.2.3"
 export Level=4
 Home1Page="https://github.com/S8D/AdBlock"
@@ -58,7 +58,7 @@ else
 fi
 export hChinh="${ThuMuc}/h";export dChinh="${ThuMuc}/d";
 export Tam="${TmTam}/t.tmp"
-export File="${TmTam}/File.tmp";export Tam2h="${TmTam}/h2.tmp";
+export File="${TmTam}/File.tmp";export Tam2h="${TmTam}/Tam.tmp";
 export Tamd="${TmTam}/d.tmp"
 export hNgu="${ThuMuc}/h.zzz";export dNgu="${ThuMuc}/d.zzz";
 export ScURL="${ThuMuc}/cacert.pem"
@@ -181,7 +181,7 @@ CapNhat ()
 		else
 			InChu ">>> Update failed. Try again."
 		fi
-		rm -rf ${TmTam};
+		InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam};
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -190,7 +190,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) GiupDo ;;
-		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TmTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam}; exit 0 ;;
 		0    ) Level=0 ;;
 		1    ) Level=1 ;;
 		2    ) Level=2 ;;
@@ -261,7 +261,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	InChu "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	InChu "# Unlocking Level [0] Hosts"	
+	InChu ">>>> Unlocking [0] Hosts"	
 	InChu "# Downloading: ${u01}";GetSLL ${u01} > $File;InSize $File;cat $File > $Tam2h;
 	InChu "# Downloading: ${u02}";GetSLL ${u02} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $File;InSize $File;cat $File >> $Tam2h | InChu "# Downloading: Main lists";
@@ -281,9 +281,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InChu "# Downloading: ${u17}";GetSLL ${u17} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u18}";GetSLL ${u18} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u19}";GetSLL ${u19} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# File Size Level [0] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [0]";
+	InChu "# File Size [0] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [0]";
 	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed "${sed6}" > $File;
-	InChu "# File Size Level [0] Formatted"; cat $File > $Tam; InSize $Tam;
+	InChu "# File Size [0] Formatted"; cat $File > $Tam; InSize $Tam;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	InChu "# Downloading: ${u90}";GetSLL ${u90} > $File;InSize $File;cat $File > $Tam2h;
 	InChu "# Downloading: ${u91}";GetSLL ${u91} > $File;InSize $File;cat $File >> $Tam2h;
@@ -295,13 +295,13 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InChu "# Downloading: ${u97}";GetSLL ${u97} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u98}";GetSLL ${u98} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u99}";GetSLL ${u99} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# File Size Level [0.5] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [0.5]";
+	InChu "# File Size [0.5] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [0.5]";
 	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed00}" | sed -r "${sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' > $File;
-	InChu "# File Size Level [0.5] Formatted";InSize $File; cat $File >> $Tam;
-	InChu "# File Size Level [1.5]";InSize $Tam;
+	InChu "# File Size [0.5] Formatted";InSize $File; cat $File >> $Tam;
+	InChu "# File Size [1.5]";InSize $Tam;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
-		InChu "# Unlocking Level=1 lists"
+		InChu ">>>> Unlocking [1] lists"
 		InChu "# Downloading: ${u20}";GetSLL ${u20} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u21}";GetSLL ${u21} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u22}";GetSLL ${u22} > $File;InSize $File;cat $File >> $Tam2h;
@@ -331,14 +331,14 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# Downloading: ${u46}";GetSLL ${u46} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u47}";GetSLL ${u47} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u48}";GetSLL ${u48} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size Level [1] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [1]";
+		InChu "# File Size [1] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [1]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed1}" | sed "${sed6}" > $File;
-		InChu "# File Size Level [1] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size Level [0-1]";InSize $Tam;
+		InChu "# File Size [1] Formatted";InSize $File; cat $File >> $Tam;
+		InChu "# File Size [0-1]";InSize $Tam;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
-		InChu "# Unlocking Level=2 lists"
+		InChu ">>>> Unlocking [2] lists"
 		InChu "# Downloading: ${u49}";GetSLL ${u49} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u50}";GetSLL ${u50} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u51}";GetSLL ${u51} > $File;InSize $File;cat $File >> $Tam2h;
@@ -368,34 +368,34 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# Downloading: ${u75}";GetSLL ${u75} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u76}";GetSLL ${u76} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u77}";GetSLL ${u77} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size Level [2] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [2]";
+		InChu "# File Size [2] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [2]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed2}" | sed "${sed6}" > $File;
-		InChu "# File Size Level [2] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size Level [0-2]";InSize $Tam;
+		InChu "# File Size [2] Formatted";InSize $File; cat $File >> $Tam;
+		InChu "# File Size [0-2]";InSize $Tam;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
-		InChu "# Unlocking Level=3 lists"
+		InChu ">>>> Unlocking [3] lists"
 		InChu "# Downloading: ${u78}";GetSLL ${u78} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u79}";GetSLL ${u79} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u80}";GetMHK ${u80} > $File;InSize $File;cat $File >> $Tam2h;		
 		InChu "# Downloading: ${u81}";GetSLL ${u81} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u82}";GetSLL ${u82} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u83}";GetSLL ${u83} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size Level [3] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [3]";
+		InChu "# File Size [3] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [3]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed3}" | sed "${sed6}" > $File;
-		InChu "# File Size Level [3] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size Level [0-3]";InSize $Tam;
+		InChu "# File Size [3] Formatted";InSize $File; cat $File >> $Tam;
+		InChu "# File Size [0-3]";InSize $Tam;
 	#_________________________________________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
-		InChu "# Unlocking Level=4 lists"
+		InChu ">>>> Unlocking [4] lists"
 		InChu "# Downloading: ${u84}";GetSLL ${u84} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u100}";GetSLL ${u100} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size Level [4] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [4]";
+		InChu "# File Size [4] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [4]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed4}" | sed "${sed6}" > $File;
-		InChu "# File Size Level [4] Formatted";InSize $File; cat $File | sort -u >> $Tam;
-		InChu "# File Size Level [0-4]";InSize $Tam;
+		InChu "# File Size [4] Formatted";InSize $File; cat $File | sort -u >> $Tam;
+		InChu "# File Size [0-4]";InSize $Tam;
 	fi
 	if [ $NOFB = "f" ]; then
 		InChu "# Downloading: ${u85}"
@@ -405,7 +405,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $Tam2h;InSize $File;
 		cat $File >> $Tam2h
 	fi
-	InChu "> Updating official Black/WhiteList Online"
+	InChu "> Updating Black/WhiteList Online"
 	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
 	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
 	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;
@@ -416,12 +416,12 @@ else
 	[ -s $dChinh ] && cp $dChinh $Tamd
 fi
 #_____________________________________________________________________________________________________________
-InChu "> Processing: Black/WhiteList Online"
+InChu ">>>> Processing: Black/WhiteList Online"
 LC_ALL=C cat $denOn | sed -r "${setbw}" | sort -u > $Tambl && cp $Tambl $denOn
 LC_ALL=C cat $trangOn | tr '[:upper:]' '[:lower:]' | sed -r "${setbw}" | sort -u > $Tamwl && cp $Tamwl $trangOn
 #_____________________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	InChu "> Processing: Black/WhiteList Offline"
+	InChu ">>>> Processing: Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r "${setbw}" | sort -u > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r "${setbw}" | sort -u > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $Tambl
@@ -439,8 +439,8 @@ if [ -f "${ThuMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	InChu "> Restarting DNS Server (dnsmasq)";ReBoot;
-	InChu "> Deleting: $TmTam";rm -rf ${TmTam};
+	InChu ">>>> Restarting DNS Server (dnsmasq)";ReBoot;
+	InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
