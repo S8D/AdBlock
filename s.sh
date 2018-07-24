@@ -1,5 +1,5 @@
 #_______________________________________________________________________________________________
-VERSION="20180725+"
+VERSION="20180725++"
 export SetIP="0.1.2.3"
 export Level=4
 Home1Page="https://github.com/S8D/AdBlock"
@@ -393,7 +393,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# Downloading: ${u100}";GetSLL ${u100} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# File Size [4] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [4]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed4}" | sed "${sed6}" > $File;
-		InChu "# File Size [4] Formatted";InSize $File; cat $File | >> $Tam;
+		InChu "# File Size [4] Formatted";InSize $File; cat $File >> $Tam;
 		InChu "# File Size [0-4]";InSize $Tam;
 	fi
 	if [ $NOFB = "f" ]; then
