@@ -428,7 +428,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-InChu "> Processing: Black/IP-WhiteList/SubDomain";
+InChu "> Processing: Black/WhiteList/SubDomain/IP";
 LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 InChu ">>>>File size Hosts<<<<";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Hosts"
