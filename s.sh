@@ -1,9 +1,23 @@
 #!/bin/sh
-VERSION="2018_07_17"
+VERSION="20180724+"
 export SetIP="0.1.2.3"
 export Level=4
-HomePage="https://raw.githubusercontent.com/S8D/AdBlock/master"
-u00="${HomePage}/Darias.txt"
+Home1Page="https://github.com/S8D/AdBlock"
+Home2Page="https://raw.githubusercontent.com/S8D/AdBlock/master"
+# Delete SubDomain
+SubDM="\~|000webhostapp\.com$|000webhostaww\.com$|2o7\.net$|302br\.net$|51yes\.com$|69server\.net$|actonsoftware\.com$|adjlggler\.net$|adnxs\.com$|adsrvr\.org$|advertising\.com$|aetaienergieclim\.net$|ahdoonetfisher\.net$|aitilklykk\.net$|allyes\.com$|alphonso\.tv$|alpol\.com$|altpool\.pro$|amazon\-adsystem\.com$|anbtr\.com$|angelfire\.com$|awwier\.net$|baixeinfiltrato\.net$|bizland\.com$|blog\.com$|blogswot\.ae$|blogswot\.al$|blogswot\.am$|blogswot\.ba$|blogswot\.be$|blogswot\.bg$|blogswot\.ca$|blogswot\.ch$|blogswot\.ch\.br$|blogswot\.cl$|blogswot\.co\.at$|blogswot\.co\.id$|blogswot\.co\.id\.br$|blogswot\.co\.il$|blogswot\.co\.ke$|blogswot\.co\.lk$|blogswot\.co\.lk\.br$|blogswot\.co\.nz$|blogswot\.co\.za$|blogswot\.com$|blogswot\.com\.al$|blogswot\.com\.ar$|blogswot\.com\.br$|blogswot\.com\.by$|blogswot\.com\.co$|blogswot\.com\.cy$|blogswot\.com\.ee$|blogswot\.com\.eg$|blogswot\.com\.es$|blogswot\.com\.ly$|blogswot\.com\.mt$|blogswot\.com\.ng$|blogswot\.com\.tr$|blogswot\.com\.tr\.br$|blogswot\.com\.woowra\-ns\.com$|blogswot\.cz$|blogswot\.de$|blogswot\.de\.br$|blogswot\.dk$|blogswot\.es$|blogswot\.fi$|blogswot\.fr$|blogswot\.gr$|blogswot\.gr\.br$|blogswot\.hk$|blogswot\.hl$|blogswot\.hr$|blogswot\.ie$|blogswot\.in$|blogswot\.is$|blogswot\.it$|blogswot\.it\.br$|blogswot\.jw$|blogswot\.kr$|blogswot\.lg$|blogswot\.li$|blogswot\.ll$|blogswot\.ls\.intellitxt\.com$|blogswot\.lt$|blogswot\.md$|blogswot\.mk$|blogswot\.mx$|blogswot\.my$|blogswot\.nl$|blogswot\.no$|blogswot\.qa$|blogswot\.rl$|blogswot\.ro$|blogswot\.rs$|blogswot\.se$|blogswot\.sg$|blogswot\.si$|blogswot\.sk$|blogswot\.sn$|blogswot\.tw$|blogswot\.we$|blogswot\.wt$|blysellads\.com$|bpa\.nu$|btcchina\.com$|btttag\.com$|byinter\.net$|cablelink\.ro$|canalblog\.com$|carrieriq\.com$|cedexis\.net$|centade\.com$|centerblog\.net$|certified\-toolbar\.com$|charter\.com$|chat\.rl$|chez\.com$|clickability\.com$|clickbank\.net$|cloldfront\.net$|co\.cc$|co\.lk$|co\.tv$|co\.zw$|com\.al$|com\.br$|com1\.ru$|comcast\.net$|consensu\.org$|crashlytics\.com$|creablog\.com$|criteo\.net$|cryptaloot\.pro$|de\.sr$|de\.vu$|designmysite\.pro$|diaryland\.com$|dolbleclick\.net$|doubleclick\.com$|doubleclick\.net$|easy4blog\.com$|ebafesangbadpratidin\.com$|ebayrtm\.com$|eibosholse\-of\-gerryweber\.net$|envy\.nu$|eoceiylmenetworks\.net$|erasercash\.com$|ero\-advertising\.com$|fastclick\.net$|fateback\.com$|films\-internet\.info$|flu\.cc$|for\-our\.info$|fora\.pl$|forum2x2\.ru$|freehosting\.cc$|freesitesnetwork\.com$|fwmrm\.net$|fx\.to$|googlesyndication\.com$|grandenetworks\.net$|hashvault\.pro$|hatenablog\.com$|hienebakster\.net$|hitbox\.com$|home\.ne\.jp$|hut1\.ru$|hywerbanner\.net$|i\-gloo\.net$|idv\.tw$|ikwilhet\.nu$|impact\-ad\.jp$|imrworldwide\.com$|indieclick\.com$|indieclick\.com$$|infoweb\.ne\.jp$|inq\.com$|insightfirst\.com$|l\-telcom\.net$|labbinarymining\.com$|land\.ru$|linkhotel\.nl$|liveadvert\.com$|lmbler\.net$|lsercash\.com$|media\-toolbar\.com$|mediaonenetwork\.net$|mesh\.ad\.jp$|microad\.jp$|minemonero\.pro$|minerhills\.com$|mirtesen\.rl$|mojeforlm\.net$|musicfrost\.com$|myblogtoolbar\.com$|myhomescreen\.tv$|myjino\.ru$|mylivepage\.ru$|mylivewage\.rl$|mystoretoolbar\.com$|myway\.com$|narod\.ru$|narod2\.ru$|neliver\.com$|netshelter\.net$|nnarod\.ru$|nut\.cc$|obohytaipeinavi\.net$|onion\.to$|online\-metrix\.net$|ono\.com$|ooroptiobeto\.net$|owentracker\.net$|pagina\.nu$|peiwetrannydates\.com$|pinballpublishernetwork\.com$|polyad\.net$|polybuild\.ru$|popads\.net$|puserving\.com$|qq\.com$|qualtrics\.com$|queroumforum\.com$|reporo\.net$|rr\.com$|rr\.nu$|rubiconproject\.com$|sbcglobal\.net$|science\-directory\.net$|scorecardresearch\.com$|seclrenet\-server\.net$|seclreserver\.net$|secureorganictrade\.ru$|serving\-sys\.com$|sextracker\.de$|sicherheitshilfe\-hilfeservice\.gq$|smaato\.net$|smi2\.ru$|solocwm\.com$|solthchandlerhomesforsale\.com$|soothxopso\.net$|spacevilla\.net$|startspot\.nl$|startswot\.nl$|student\-24\.ru$|subito\.cc$|szm\.com$|t\-online\.hl$|taboola\.com$|tahcieligiblegreeks\.net$|taiwabonlswinner\.net$|teads\.tv$|tealilmiq\.com$|terrashare\.com$|tlmblr\.com$|tmall\.com$|tomshardware\.com$|tpnet\.pl$|truth\-is\-out\-there\.org$|twnet\.wl$|uni\.cc$|usite\.pro$|valleclick\.com$|valleclick\.net$|vectranet\.pl$|vertamedia\.com$|vi\.net$|vsn\.nu$|wbwhgwbr\.in$|web\.tr$|webtrekk\.net$|weebly\.com$|wlblicvm\.com$|work5\.ru$|xxxfaster\.net$|yesadvertising\.com$|yieldmanager\.net$|zachasinderella\.net$|zz\.mu$|forumtoolbar\.com$|loyaltytoolbar\.com$|mycitytoolbar\.com$|mycollegetoolbar\.com$|myfamilytoolbar\.com$|myforumtoolbar\.com$|mylibrarytoolbar\.com$|myradiotoolbar\.com$|myteamtoolbar\.com$|mytowntoolbar\.com$|myuniversitytoolbar\.com$|ourtoolbar\.com$|xooit\.com$|0catch\.com$|0x1f4b0\.com$|126\.net$|207\.net$|7us\.us$|adap\.tv$|adhese\.com$|adkmob\.com$|admob\.com$|adotmob\.com$|adprotect\.net$|adscience\.nl$|aiziezq6\.net$|am15\.net$|atspace\.us$|aviasales\.ru$|beeplog\.de$|bestdeals\.at$|blueadvertise\.com$|bt\.net$|bubblesmedia\.ru$|caiyupasadenastarnews\.net$|cdi\.no$|chartbeat\.net$|chiejgravuremodels\.net$|cjb\.net$|cjt1\.net$|clan\.su$|clicksmob\.com$|co\.at$|com\-oo4\.net$|connextra\.com$|creativemedia\.buzz$|cz\.cc$|da\.ru$|deluxepass\.com$|demdex\.net$|demos\.su$|dtiblog\.com$|e\-city\.tv$|ed10\.net$|eigenpage\.nl$|eiyoojuegosparawindows\.net$|eloqua\.com$|ensighten\.com$|f3322\.net$|fastestshopa\.su$|fasthost\.tv$|favorietje\.nl$|fgpp\.com$|firstfind\.nl$|frem\.com$|gb\.net$|gerelateerd\.nl$|getrestinfom\.su$|getrestinfon\.su$|go2affise\.com$|gotech\.tk$|herokuapp\.com$|iedoobuzzlike\.com$|iehohicv2\.net$|indymedia\.org$|installantivirus\.us$|isgre\.at$|ixaichumoroutcasts\.net$|klantenservicenederland\.nl$|klantenservicetelefoonnummernederland\.com$|krovatka\.su$|level3\.net$|linkexchange\.nl$|linkgoed\.nl$|linkpulse\.com$|lookingat\.us$|madvertise\.com$|mchsi\.com$|miningpoolhub\.com$|mktoresp\.com$|mob\.com$|monerise\.com$|my\-place\.us$|mybjjblog\.com$|n3\.net$|nanopool\.org$|nationalcablenetworks\.ru$|nedstat\.net$|net16\.net$|net23\.net$|net46\.net$|net63\.net$|net76\.net$|net78\.net$|net84\.net$|netpass\.tv$|nupaifree\-crochet\.net$|oasuagoals\.net$|oewabox\.at$|ohxeimysonicwall\.net$|onlinepricex\.su$|ontheweb\.nl$|oowaividaddict\.net$|openxenterprise\.com$|pacbell\.net$|plp7\.ru$|pornhub\.com$|publicus\.com$|raeniretweet\.net$|rfihub\.com$|servecounterstrike\.com$|shaeyffh6\.net$|sharezips\.net$|shoofle\.tv$|site40\.net$|site50\.net$|site88\.net$|site90\.com$|site90\.net$|skyrock\.com$|smartnaturalshop\.su$|smi2\.net$|sponsormob\.com$|spywarestrike\.com$|startclub\.nl$|startmee\.nl$|startvista\.nl$|startvriend\.nl$|suprnova\.cc$|switchadhub\.com$|syndicaster\.tv$|telekom\.hu$|telering\.at$|thetrafficstat\.net$|thohjkuvat\.net$|tie\.cl$|tmfweb\.nl$|toprealsalen\.su$|trademob\.com$|uni5\.net$|veruta\.com$|videoplaza\.tv$|vidible\.tv$|vidzi\.tv$|webgidsje\.nl$|webservis\.ru$|webtradeplus\.su$|webwise\.com$|yamanoha\.com$|zeblog\.com$|zinoiosijek031\.net$|360\.cn$|3g\.cn$|zj\.cn$|ac\.cn$|adpush\.cn$|alimabi\.cn$|alimama\.cn$|analysys\.cn$|autoimg\.cn$|baidu\.com$|casee\.cn$|china\.cn$|chinaenter\.cn$|com\.cn$|domob\.cn$|edu\.cn$|firstlight\.cn$|fj\.cn$|gov\.cn$|hi\.cn$|icast\.cn$|jl\.cn$|jpush\.cn$|jtle0\.cn$|liuliangbao\.cn$|maxthon\.cn$|minisplat\.cn$|moad\.cn$|net\.cn$|nx\.cn$|org\.cn$|shuzilm\.cn$|sina\.cn$|sinaimg\.cn$|soarfi\.cn$|tianya\.cn$|uc\.cn$|voiceads\.cn$|voicecloud\.cn$|weibo\.cn$|wostore\.cn$|wps\.cn$|xj\.cn$|xz\.cn$|weibo\.com$|wechat\.com$|6\.cn$";
+# Level 0-4
+sed0="s|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d";
+sed00="s|!.*$||; s|#.*$||; s|:.*$||; s|\^.*$||; s|\@.*$||; s|\/.*$||; s|\?.*$||; s|.*\*.$||; s|~.*$||; s|0.0.0.0||; s|\,|\n|g; s|^127\.0\.0\.1.*$||; s/\|\|//; s|[[:blank:]]|\n|; s|^\.||; s|^[^.]+$||; s|>.*$||; s|\\.*$||; s|^\-||; s|\&.*$||; s|\*$||; s|^.*\.$||g; s|.*\*.*||; s|.*\.$||; s|\n.*\.$||";
+sed01="s|\.invalid$||; s|.*main$||; s|\.co.*orn$|.com|; s|^i.*nt$||; s|^s.*pt$||";
+sed1="s|.*ating$||; s|.*kbang$||; s|.*ztop$||; s|.*kdns$||; s|.*main$||; s|\.v.*ost$|.vn|; s|\.co.*ost$|.com|; s|\.co.*ies$|.com|; s|\.co.*orn$|.com|";
+sed2="s|\.$||; s|\.k$||; s|\.co.*orn$|.com|; s|www$||";
+sed3="s|\.com.*orn$|.com|; s|^w.*orn$||; s|.*html$||";
+sed4="s|\.z$||; s|\.com.*orn$|.com|; s|^w.*orn$||; s|\/.*ads$||";
+sed6="s|\n^[^.]+$||; /^$/d"
+sed7="s|^Tp.*kim$||; s|^\.com$||; s|\-.*\.$||; s|^\.$||; /^$/d"
+#_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+u00="${Home2Page}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
 u11="http://gg.gg/u11_";u12="http://gg.gg/u12_";u13="http://gg.gg/u13_";u14="http://gg.gg/u14_";u15="http://gg.gg/u15_";
@@ -25,100 +39,91 @@ u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="htt
 u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
 #u80="http://gg.gg/u80_";
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#________________________________________________________________________________________________________________________________________
 export NOFB=0
 export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
-export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export Tam="${TMuc}/tmp"
-if [ -d "$Tam" ]
+export ThuMuc=""$(cd "$(dirname "${0}")" && pwd)""
+export TmTam="${ThuMuc}/tmp"
+if [ -d "$TmTam" ]
 then
-	echo "Using $Tam"
+	echo "Using $TmTam"
 else
-	echo "Creating: $Tam"
-	mkdir ${Tam}
+	echo "Creating: $TmTam"
+	mkdir ${TmTam}
 fi
-export hChinh="${TMuc}/h"
-export hDung="${TMuc}/h.zzz"
-export hTam="${Tam}/h.tmp"
-export Tamh="${Tam}/ht.tmp"
-export Tamt="${Tam}/tt.tmp"
-export Tambl="${Tam}/bl.tmp"
-export Tamwl="${Tam}/wl.tmp"
-export dChinh="${TMuc}/d"
-export dDung="${TMuc}/d.zzz"
-export dTam="${Tam}/d.tmp"
-export Tamd="${Tam}/dt.tmp"
-export hChinhTam="${Tam}/hct.tmp"
-export pauseflag="${TMuc}/PAUSED"
-export denOn="${TMuc}/den.On"
-export trangOn="${TMuc}/trang.On"
-export base64wl="${TMuc}/base64wl"
-export denOff="${TMuc}/den.Off"
-export trangOff="${TMuc}/trang.Off"
-export hLog="${TMuc}/h.log"
+export hChinh="${ThuMuc}/h";export dChinh="${ThuMuc}/d";
+export T4m="${TmTam}/t.tmp"
+export File="${TmTam}/File.tmp";export Tam2h="${TmTam}/h2.tmp";
+export Tamd="${TmTam}/d.tmp"
+export hNgu="${ThuMuc}/h.zzz";export dNgu="${ThuMuc}/d.zzz";
+export ScURL="${ThuMuc}/cacert.pem"
+export Tambl="${TmTam}/bl.tmp";export Tamwl="${TmTam}/wl.tmp";
+export pauseflag="${ThuMuc}/PAUSED"
+export denOn="${ThuMuc}/den.On";export trangOn="${ThuMuc}/trang.On";
+export denOff="${ThuMuc}/den.Off";export trangOff="${ThuMuc}/trang.Off";
+export hLog="${ThuMuc}/h.log"
 export SHELL=/bin/sh
-export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${ThuMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
-export PWD="${TMuc}"
+export PWD="${ThuMuc}"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-cd "${TMuc}"
+cd "${ThuMuc}"
 logger ">>> $(basename "$0") started"
 if [ -z "$(which curl)" ]; then
 	echo ">>> WARNING: cURL not found"
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export CURL_CA_BUNDLE="${TMuc}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSLL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSLL && alias GetSLL="curl -f -s --capath ${TMuc} --cacert $CURL_CA_BUNDLE"
+[ $SECURL -eq 1 ] && unalias GetSLL && alias GetSLL="curl -f -s --capath ${ThuMuc} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
-lognecho ()
+#___________________________________________________________________________________________________________________________________________________________________________________________________
+InChu ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
 	echo "$1" >> $hLog
 }
-printFileSize ()
+InSize ()
 {
-	lognecho "# Size of $1: `du -h $1 | awk '{print $1}'`"
+	InChu "# Size of $1: `du -h $1 | awk '{print $1}'`"
 }
-restart_dnsmasq ()
+ReBoot ()
 {
 	logger ">>> $(basename "$0") restarting dnsmasq"
 	restart_dns &
 	logger ">>> $(basename "$0") restarted dnsmasq"
 }
-protectOn ()
+BatChan ()
 {
-	if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
-		lognecho ">>> RESUMING PROTECTION"
-		mv $hDung $hChinh
-		mv $dDung $dChinh
+	if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
+		InChu ">>> RESUMING PROTECTION"
+		mv $hNgu $hChinh
+		mv $dNgu $dChinh
 		rm -f $pauseflag
-		restart_dnsmasq
+		ReBoot
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
 }
-protectOff ()
+TatChan ()
 {
-	lognecho ">>> WARNING: PAUSING PROTECTION"
-	[ -f $hChinh ] && mv $hChinh $hDung
-	[ -f $dChinh ] && mv $dChinh $dDung
+	InChu ">>> WARNING: PAUSING PROTECTION"
+	[ -f $hChinh ] && mv $hChinh $hNgu
+	[ -f $dChinh ] && mv $dChinh $dNgu
 	echo "" > $hChinh
 	echo "" > $dChinh
 	echo "PAUSED" > $pauseflag
-	restart_dnsmasq
-	lognecho ">>> Type $(basename "$0") --resume to resume protection."
+	ReBoot
+	InChu ">>> Type $(basename "$0") --resume to resume protection."
 	logger ">>> $(basename "$0") finished"
 	exit 0
 }
-#___________________________________________________________________________________________________________________________________________________________________________________________________
-printHelp ()
+GiupDo ()
 {
 	echo ""
 	echo "USAGE:"
@@ -152,31 +157,30 @@ printHelp ()
 	logger ">>> $(basename "$0") finished"
 	exit 0
 }
-#___________________________________________________________________________________________________________________________________________________________________________________________________
-selfUpdate ()
+CapNhat ()
 {
-	fTam="${Tam}/update"
-	lognecho ">>> Checking for updates..."
+	File="${TmTam}/update"
+	InChu ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSLL ${HomePage}/$(basename "$0") > $fTam
+		GetSLL ${Home2Page}/$(basename "$0") > $File
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
-			new_md5=`md5sum $fTam | cut -d' ' -f1`
+			new_md5=`md5sum $File | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				NEWVER=`grep -w -m 1 "VERSION" $fTam`
-				lognecho ">>> Update available: $NEWVER"
+				NEWVER=`grep -w -m 1 "VERSION" $File`
+				InChu ">>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
-				chmod 755 $fTam
-				mv $fTam $0
-				lognecho ">>> Updated to the latest version."
+				chmod 755 $File
+				mv $File $0
+				InChu ">>> Updated to the latest version."
 			else
-				lognecho ">>> Current version: $VERSION"
+				InChu ">>> Current version: $VERSION"
 			fi
 		else
-			lognecho ">>> Update failed. Try again."
+			InChu ">>> Update failed. Try again."
 		fi
-		rm -rf ${Tam};
+		rm -rf ${TmTam};
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -184,8 +188,8 @@ selfUpdate ()
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
-		h|\? ) printHelp ;;
-		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${Tam}; exit 0 ;;
+		h|\? ) GiupDo ;;
+		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TmTam}; exit 0 ;;
 		0    ) Level=0 ;;
 		1    ) Level=1 ;;
 		2    ) Level=2 ;;
@@ -194,11 +198,11 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		F    ) NOFB="F" ;;
 		d|D  ) DISTRIB=1 ;;
 		q|Q  ) QUIET=1 ;;
-		p|P  ) protectOff ;;
-		r|R  ) protectOn ;;
+		p|P  ) TatChan ;;
+		r|R  ) BatChan ;;
 		s|S  ) SECURL=1 ;;
 		o|O  ) ONLINE=0 ;;
-		u|U  ) selfUpdate ;;
+		u|U  ) CapNhat ;;
 		b    ) echo "$OPTARG" >> $denOff ;;
 		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
@@ -212,12 +216,12 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			4    ) Level=4 ;;
 			quiet   ) QUIET=1 ;;
-			pause   ) protectOff ;;
-			resume  ) protectOn ;;
+			pause   ) TatChan ;;
+			resume  ) BatChan ;;
 			secure  ) SECURL=1 ;;
 			offline ) ONLINE=0 ;;
-			help    ) printHelp ;;
-			update  ) selfUpdate ;;
+			help    ) GiupDo ;;
+			update  ) CapNhat ;;
 			version ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
@@ -230,213 +234,214 @@ done
 shift $((OPTIND-1))
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 TIMERSTART=`date +%s`
-lognecho "============================================================="
-lognecho "|      AdBlock for DD-WRT/Android base on Linux             |"
-lognecho "|      ${HomePage} |"
-lognecho "|      Author: Manish Parashar                              |"
-lognecho "|      Editor: Darias                                       |"
-lognecho "============================================================="
-lognecho "             `date`"
-lognecho "# Version: $VERSION"
+InChu "============================================================="
+InChu "|      AdBlock for DD-WRT/Android base on Linux             |"
+InChu "|      ${Home1Page}                       |"
+InChu "|      Author: Manish Parashar                              |"
+InChu "|      Editor: Darias                                       |"
+InChu "============================================================="
+InChu "             `date`"
+InChu "# Version: $VERSION"
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
-	lognecho "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
-	protectOn
+if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
+	InChu "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
+	BatChan
 fi
 if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
-
-	lognecho "# NETWORK: UP | MODE: ONLINE"
-	lognecho "# IP ADDRESS FOR ADS: $SetIP"
-	lognecho "# SECURE [0=NO | 1=YES]: $SECURL"
-	lognecho "# Level [0|1|2|3|4]: $Level"
-
+	InChu "# NETWORK: UP | MODE: ONLINE"
+	InChu "# IP ADDRESS FOR ADS: $SetIP"
+	InChu "# SECURE [0=NO | 1=YES]: $SECURL"
+	InChu "# Level [0|1|2|3|4]: $Level"
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
-		lognecho "> Downloading / updating cURL certificates"
+		InChu "> Downloading / updating cURL certificates"
 		GetSLL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "# Unlocking Level=0 lists"
-	lognecho "# Downloading: ${u00}";GetSLL ${u00} > $Tamd;printFileSize $Tamd;cat $Tamd > $dTam
+	InChu "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "# Downloading: ${u01}";GetSLL ${u01} > $Tamh;printFileSize $Tamh;cat $Tamh > $hTam;
-	lognecho "# Downloading: ${u02}";GetSLL ${u02} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $Tamh;
-	printFileSize $Tamh;cat $Tamh >> $hTam | printFileSize $hTam;
-	lognecho "# Downloading: Main lists"
-	lognecho "# Downloading: ${u04}";GetSLL ${u04} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u05}";GetSLL ${u05} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u06}";GetSLL ${u06} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u07}";GetSLL ${u07} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u08}";GetSLL ${u08} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u09}";GetSLL ${u09} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u10}";GetSLL ${u10} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u11}";GetSLL ${u11} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u12}";GetSLL ${u12} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u13}";GetSLL ${u13} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u14}";GetSLL ${u14} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u15}";GetSLL ${u15} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u16}";GetSLL ${u16} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u17}";GetSLL ${u17} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u18}";GetSLL ${u18} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-	lognecho "# Downloading: ${u19}";GetSLL ${u19} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+	InChu "# Unlocking Level [0] Hosts"	
+	InChu "# Downloading: ${u01}";GetSLL ${u01} > $File;InSize $File;cat $File > $Tam2h;
+	InChu "# Downloading: ${u02}";GetSLL ${u02} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $File;InSize $File;cat $File >> $Tam2h | InSize $Tam2h;InChu "# Downloading: Main lists";
+	InChu "# Downloading: ${u04}";GetSLL ${u04} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u05}";GetSLL ${u05} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u06}";GetSLL ${u06} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u07}";GetSLL ${u07} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u08}";GetSLL ${u08} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u09}";GetSLL ${u09} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u10}";GetSLL ${u10} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u11}";GetSLL ${u11} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u12}";GetSLL ${u12} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u13}";GetSLL ${u13} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u14}";GetSLL ${u14} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u15}";GetSLL ${u15} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u16}";GetSLL ${u16} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u17}";GetSLL ${u17} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u18}";GetSLL ${u18} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u19}";GetSLL ${u19} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# File Size Level [0] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [0]";
+	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed "${sed6}" > $File;
+	InChu "# File Size Level [0] Formatted";InSize $File; cat $File | sort -u > $T4m;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "# Downloading: ${u90}";GetSLL ${u90} > $Tamh;printFileSize $Tamh;cat $Tamh > $Tamt;
-	lognecho "# Downloading: ${u91}";GetSLL ${u91} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u92}";GetSLL ${u92} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u93}";GetSLL ${u93} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u94}";GetSLL ${u94} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u95}";GetSLL ${u95} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u96}";GetSLL ${u96} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u97}";GetSLL ${u97} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u98}";GetSLL ${u98} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "# Downloading: ${u99}";GetSLL ${u99} > $Tamh;printFileSize $Tamh;cat $Tamh >> $Tamt;
-	lognecho "> Processing: [0]"
-	LC_ALL=C cat $Tamt | tr '[:upper:]' '[:lower:]' | grep -vE '(#|@|!|\*)' | sed -r 's|\^.*$||; s|\$.*$||; s|\/.*$||; s/\|\|//; s|^\.||; s|~.*$||;s|^yelp\.be.*$||;  s|^elpais.*$||; s|^mangapanda.*$||; s|^116\.ru.*$||; s|^yandex\..*$||; s|[[:blank:]]|\n|; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | sort -u > $hChinhTam
-	printFileSize $hChinhTam;cat $hChinhTam >> $hTam;
-	lognecho ">>>File size Level [0] is:";printFileSize $hTam;
+	InChu "# Downloading: ${u90}";GetSLL ${u90} > $File;InSize $File;cat $File > $Tam2h;
+	InChu "# Downloading: ${u91}";GetSLL ${u91} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u92}";GetSLL ${u92} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u93}";GetSLL ${u93} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u94}";GetSLL ${u94} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u95}";GetSLL ${u95} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u96}";GetSLL ${u96} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u97}";GetSLL ${u97} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u98}";GetSLL ${u98} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# Downloading: ${u99}";GetSLL ${u99} > $File;InSize $File;cat $File >> $Tam2h;
+	InChu "# File Size Level [0.5] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [0.5]";
+	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed00}" | sed -r "${sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' > $File;
+	InChu "# File Size Level [0.5] Formatted";InSize $File; cat $File | sort -u >> $T4m;
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
-		lognecho "# Unlocking Level=1 lists"
-		lognecho "# Downloading: ${u20}";GetSLL ${u20} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u21}";GetSLL ${u21} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u22}";GetSLL ${u22} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u23}";GetSLL ${u23} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u24}";GetSLL ${u24} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u25}";GetSLL ${u25} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u26}";GetSLL ${u26} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u27}";GetSLL ${u27} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u28}";GetSLL ${u28} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u29}";GetSLL ${u29} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u30}";GetSLL ${u30} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u31}";GetSLL ${u31} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u32}";GetSLL ${u32} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u33}";GetSLL ${u33} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u34}";GetSLL ${u34} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u35}";GetSLL ${u35} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u36}";GetSLL ${u36} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u37}";GetSLL ${u37} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u38}";GetSLL ${u38} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u39}";GetSLL ${u39} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u40}";GetSLL ${u40} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u41}";GetSLL ${u41} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u42}";GetSLL ${u42} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u43}";GetSLL ${u43} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u44}";GetSLL ${u44} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u45}";GetSLL ${u45} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u46}";GetSLL ${u46} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u47}";GetSLL ${u47} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u48}";GetSLL ${u48} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho ">>>File size Level [1] is:";printFileSize $hTam;
+		InChu "# Unlocking Level=1 lists"
+		InChu "# Downloading: ${u20}";GetSLL ${u20} > $File;InSize $File;cat $File > $Tam2h;
+		InChu "# Downloading: ${u21}";GetSLL ${u21} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u22}";GetSLL ${u22} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u23}";GetSLL ${u23} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u24}";GetSLL ${u24} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u25}";GetSLL ${u25} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u26}";GetSLL ${u26} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u27}";GetSLL ${u27} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u28}";GetSLL ${u28} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u29}";GetSLL ${u29} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u30}";GetSLL ${u30} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u31}";GetSLL ${u31} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u32}";GetSLL ${u32} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u33}";GetSLL ${u33} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u34}";GetSLL ${u34} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u35}";GetSLL ${u35} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u36}";GetSLL ${u36} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u37}";GetSLL ${u37} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u38}";GetSLL ${u38} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u39}";GetSLL ${u39} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u40}";GetSLL ${u40} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u41}";GetSLL ${u41} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u42}";GetSLL ${u42} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u43}";GetSLL ${u43} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u44}";GetSLL ${u44} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u45}";GetSLL ${u45} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u46}";GetSLL ${u46} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u47}";GetSLL ${u47} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u48}";GetSLL ${u48} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# File Size Level [1] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [1]";
+		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed1}" | sed "${sed6}" > $File;
+		InChu "# File Size Level [1] Formatted";InSize $File; cat $File | sort -u >> $T4m;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
-		lognecho "# Unlocking Level=2 lists"
-		lognecho "# Downloading: ${u49}";GetSLL ${u49} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u50}";GetSLL ${u50} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u51}";GetSLL ${u51} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u52}";GetSLL ${u52} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u53}";GetSLL ${u53} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u54}";GetSLL ${u54} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u55}";GetSLL ${u55} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u56}";GetHTT ${u56} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u57}";GetHTT ${u57} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u58}";GetSLL ${u58} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u59}";GetSLL ${u59} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u60}";GetSLL ${u60} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u61}";GetSLL ${u61} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u62}";GetSLL ${u62} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u63}";GetSLL ${u63} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u64}";GetSLL ${u64} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u65}";GetSLL ${u65} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u66}";GetSLL ${u66} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u67}";GetSLL ${u67} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u68}";GetSLL ${u68} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u69}";GetSLL ${u69} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u70}";GetSLL ${u70} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u71}";GetSLL ${u71} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u72}";GetSLL ${u72} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u73}";GetSLL ${u73} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u74}";GetSLL ${u74} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u75}";GetSLL ${u75} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u76}";GetSLL ${u76} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u77}";GetSLL ${u77} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho ">>>File size Level [2] is:";printFileSize $hTam;
+		InChu "# Unlocking Level=2 lists"
+		InChu "# Downloading: ${u49}";GetSLL ${u49} > $File;InSize $File;cat $File > $Tam2h;
+		InChu "# Downloading: ${u50}";GetSLL ${u50} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u51}";GetSLL ${u51} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u52}";GetSLL ${u52} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u53}";GetSLL ${u53} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u54}";GetSLL ${u54} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u55}";GetSLL ${u55} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u56}";GetHTT ${u56} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u57}";GetHTT ${u57} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u58}";GetSLL ${u58} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u59}";GetSLL ${u59} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u60}";GetSLL ${u60} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u61}";GetSLL ${u61} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u62}";GetSLL ${u62} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u63}";GetSLL ${u63} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u64}";GetSLL ${u64} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u65}";GetSLL ${u65} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u66}";GetSLL ${u66} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u67}";GetSLL ${u67} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u68}";GetSLL ${u68} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u69}";GetSLL ${u69} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u70}";GetSLL ${u70} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u71}";GetSLL ${u71} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u72}";GetSLL ${u72} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u73}";GetSLL ${u73} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u74}";GetSLL ${u74} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u75}";GetSLL ${u75} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u76}";GetSLL ${u76} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u77}";GetSLL ${u77} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# File Size Level [2] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [2]";
+		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed2}" | sed "${sed6}" > $File;
+		InChu "# File Size Level [2] Formatted";InSize $File; cat $File | sort -u >> $T4m;
 	fi
 #___________________________________________________________________________________________________________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
-		lognecho "# Unlocking Level=3 lists"
-		lognecho "# Downloading: ${u78}";GetSLL ${u78} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u79}";GetSLL ${u79} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u80}";GetMHK ${u80} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;		
-		lognecho "# Downloading: ${u81}";GetSLL ${u81} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u82}";GetSLL ${u82} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u83}";GetSLL ${u83} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho ">>>File size Level [3] is:";printFileSize $hTam;
-	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "> Processing: [0]+[1]+[2]+[3]"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; /^$/d' | sort -u > $hChinhTam
-	printFileSize $hChinhTam;cat $hChinhTam > $hTam;
-	#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+		InChu "# Unlocking Level=3 lists"
+		InChu "# Downloading: ${u78}";GetSLL ${u78} > $File;InSize $File;cat $File > $Tam2h;
+		InChu "# Downloading: ${u79}";GetSLL ${u79} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u80}";GetMHK ${u80} > $File;InSize $File;cat $File >> $Tam2h;		
+		InChu "# Downloading: ${u81}";GetSLL ${u81} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u82}";GetSLL ${u82} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# Downloading: ${u83}";GetSLL ${u83} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# File Size Level [3] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [3]";
+		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed3}" | sed "${sed6}" > $File;
+		InChu "# File Size Level [3] Formatted";InSize $File; cat $File | sort -u >> $T4m;
+	#_________________________________________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
-		lognecho "# Unlocking Level=4 lists"
-		lognecho "# Downloading: ${u84}";GetSLL ${u84} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
-		lognecho "# Downloading: ${u100}";GetSLL ${u100} > $Tamh;printFileSize $Tamh;cat $Tamh >> $hTam;
+		InChu "# Unlocking Level=4 lists"
+		InChu "# Downloading: ${u84}";GetSLL ${u84} > $File;InSize $File;cat $File > $Tam2h;
+		InChu "# Downloading: ${u100}";GetSLL ${u100} > $File;InSize $File;cat $File >> $Tam2h;
+		InChu "# File Size Level [4] Orginal";InSize $Tam2h;InChu "> Deleting Symbol: [4]";
+		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed4}" | sed "${sed6}" > $File;
+		InChu "# File Size Level [4] Formatted";InSize $File; cat $File | sort -u >> $T4m;
 	fi
 	if [ $NOFB = "f" ]; then
-		lognecho "# Downloading: ${u85}"
-		GetSLL ${HomePage}/denOn/facebook.only >> $hTam;printFileSize $Tamh;cat $Tamh >> $hTam;
+		InChu "# Downloading: ${u85}"
+		GetSLL ${Home2Page}/denOn/facebook.only >> $Tam2h;InSize $File;cat $File >> $Tam2h;
 	fi
 	if [ $NOFB = "F" ]; then
-		lognecho "# Downloading: ${u86}";GetSLL ${HomePage}/denOn/facebook.all >> $hTam;printFileSize $Tamh;
-		cat $Tamh >> $hTam
+		InChu "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $Tam2h;InSize $File;
+		cat $File >> $Tam2h
 	fi
-	lognecho "> Updating official Black/WhiteList Online"
-	GetSLL ${HomePage}/denOn/denOn > $denOn;printFileSize $denOn;
-	GetSLL ${HomePage}/trangOn/trangOn > $trangOn;printFileSize $trangOn;
-	GetSLL ${HomePage}/trangOn/apple >$Tamt;printFileSize $Tamt;cat $Tamt >> $trangOn;
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+	InChu "> Updating official Black/WhiteList Online"
+	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
+	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
+	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;
+#_____________________________________________________________________________________________________________
 else
-	lognecho "# NETWORK: DOWN | MODE: OFFLINE"
-	[ -s $hChinh ] && cat $hChinh | awk '{print $2}' > $hTam
-	[ -s $dChinh ] && cp $dChinh $dTam
+	InChu "# NETWORK: DOWN | MODE: OFFLINE"
+	[ -s $hChinh ] && cat $hChinh | awk '{print $2}' > $Tam2h
+	[ -s $dChinh ] && cp $dChinh $Tamd
 fi
-printFileSize $hTam
-printFileSize $dTam
-#___________________________________________________________________________________________________________________________________________________________________________________________________
-lognecho "> Processing: Black/WhiteList Online"
-LC_ALL=C cat $denOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tambl && cp $Tambl $denOn
-LC_ALL=C cat $trangOn | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > $Tamwl && cp $Tamwl $trangOn
-#___________________________________________________________________________________________________________________________________________________________________________________________________
+#_____________________________________________________________________________________________________________
+InChu "> Processing: Black/WhiteList Online"
+LC_ALL=C cat $denOn | sed -r "${setbw}" | sort -u > $Tambl && cp $Tambl $denOn
+LC_ALL=C cat $trangOn | tr '[:upper:]' '[:lower:]' | sed -r "${setbw}" | sort -u > $Tamwl && cp $Tamwl $trangOn
+#_____________________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	lognecho "> Processing: Black/WhiteList Offline"
-	LC_ALL=C cat $denOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmybl && mv tmpmybl $denOff
-	LC_ALL=C cat $trangOff | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | sort -u > tmpmywl && mv tmpmywl $trangOff
+	InChu "> Processing: Black/WhiteList Offline"
+	LC_ALL=C cat $denOff | sed -r "${setbw}" | sort -u > tmpmybl && mv tmpmybl $denOff
+	LC_ALL=C cat $trangOff | sed -r "${setbw}" | sort -u > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $Tambl
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
+#_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+InChu "# File Size Hosts Orginal";InSize $T4m;
+InChu "> Processing: Add Black/IP - Remove WhiteList/SubDomain";
+LC_ALL=C cat $T4m | grep -vE "(${SubDM})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+InChu ">>>>File size Hosts<<<<";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+InChu "# Blocked: $Counts Hosts"
+InChu ">>>>File size Domains<<<<";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
+InChu "# Blocked: $Counts Domains"
 #___________________________________________________________________________________________________________________________________________________________________________________________________
-	lognecho "> Processing: Final main files"
-	LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|;.*$||; s|:.*$||; s|<.*$||; s|^address=/||; s|^127.0.0.1||; s|127.0.0.1$||; s|\]||; s|0\.0\.0\.0|\n|; s|0\.0\.0\.0||; s/\|//; s|^\s+$||; s|^\s+||; s|\s+$||; s|\$||; s|\/$||; s|^🔗||; s|^\.||; s|^127\.0.*$||; s|\?||; s|\.$||; s|\-$||; s|\+$||; s|[[:blank:]]|\n|; s|\t|\n|; s|tl2$|tl|; s|comf4a$|com|; s|\.com12276\.|\.com\n12276\.|; s|cn000info\.|cn\.000info|; s|co14$|co|; s/st.adxxx.o$//; s|^255.255.255.255||; s|com1$|com|; s|[[:blank:]]||; s|\-\.$||; s|\.$||; s|^\.com$||; s|\^$||; s|^[^.]+$||g; s|\n^[^.]+$||; s|\-\.$||; /^$/d' | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
-	LC_ALL=C cat $dTam | sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d' | tr -cd '\000-\177' | grep -Fvwf $Tamwl | sort -u > $dChinh
-	lognecho "> Deleting: $Tam";rm -rf ${Tam};
-	lognecho ">>>>File size Hosts<<<<";printFileSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-	lognecho "# Blocked: $Counts Hosts"
-	lognecho ">>>>File size Domains<<<<";printFileSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
-	lognecho "# Blocked: $Counts Domains"
-#___________________________________________________________________________________________________________________________________________________________________________________________________
-if [ -f "${TMuc}/Location" ]
+if [ -f "${ThuMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	lognecho "> Restarting DNS server (dnsmasq)";restart_dnsmasq;
+	InChu "> Restarting DNS Server (dnsmasq)";ReBoot;
+	InChu "> Deleting: $TmTam";rm -rf ${TmTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
 RTSECONDS=$(( $((TIMERSTOP - TIMERSTART)) %60 ))
-lognecho "# Total time: $RTMINUTES:$RTSECONDS minutes"
-lognecho "# DONE"
+InChu "# Total time: $RTMINUTES:$RTSECONDS minutes"
+InChu "# DONE"
 logger ">>> $(basename "$0") finished"
 exit 0
 # FIN
