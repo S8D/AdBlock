@@ -83,14 +83,14 @@ alias GetSLL="curl -f -s -k -L"
 [ $SECURL -eq 1 ] && unalias GetSLL && alias GetSLL="curl -f -s --capath ${ThuMuc} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 #_______________________________________________________________________________________________
-InChu ()
+InRa ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
 	echo "$1" >> $hLog
 }
 InSize ()
 {
-	InChu "# Size of $1: `du -h $1 | awk '{print $1}'`"
+	InRa "# Size of $1: `du -h $1 | awk '{print $1}'`"
 }
 ReBoot ()
 {
@@ -101,7 +101,7 @@ ReBoot ()
 BatChan ()
 {
 	if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
-		InChu ">>>> RESUMING PROTECTION"
+		InRa ">>>> RESUMING PROTECTION"
 		mv $hNgu $hChinh
 		mv $dNgu $dChinh
 		rm -f $pauseflag
@@ -112,14 +112,14 @@ BatChan ()
 }
 TatChan ()
 {
-	InChu ">>>> WARNING: PAUSING PROTECTION"
+	InRa ">>>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hNgu
 	[ -f $dChinh ] && mv $dChinh $dNgu
 	echo "" > $hChinh
 	echo "" > $dChinh
 	echo "PAUSED" > $pauseflag
 	ReBoot
-	InChu ">>>> Type $(basename "$0") --resume to resume protection."
+	InRa ">>>> Type $(basename "$0") --resume to resume protection."
 	logger ">>>> $(basename "$0") finished"
 	exit 0
 }
@@ -160,7 +160,7 @@ GiupDo ()
 CapNhat ()
 {
 	File="${TmTam}/update"
-	InChu ">>>> Checking for updates..."
+	InRa ">>>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSLL ${Home2Page}/$(basename "$0") > $File
 		if [ 0 -eq $? ]; then
@@ -168,19 +168,19 @@ CapNhat ()
 			new_md5=`md5sum $File | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
 				NEWVER=`grep -w -m 1 "VERSION" $File`
-				InChu ">>>> Update available: $NEWVER"
+				InRa ">>>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
 				chmod 755 $File
 				mv $File $0
-				InChu ">>>> Updated to the latest version."
+				InRa ">>>> Updated to the latest version."
 			else
-				InChu ">>>> Current version: $VERSION"
+				InRa ">>>> Current version: $VERSION"
 			fi
 		else
-			InChu ">>>> Update failed. Try again."
+			InRa ">>>> Update failed. Try again."
 		fi
-		InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam};
+		InRa ">>>> Deleting: $TmTam";rm -rf ${TmTam};
 	fi
 	logger ">>>> $(basename "$0") finished"
 	exit 0
@@ -189,7 +189,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) GiupDo ;;
-		v    ) echo ">>>> Current version: $VERSION" ; logger ">>>> $(basename "$0") finished" ;InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam}; exit 0 ;;
+		v    ) echo ">>>> Current version: $VERSION" ; logger ">>>> $(basename "$0") finished" ;InRa ">>>> Deleting: $TmTam";rm -rf ${TmTam}; exit 0 ;;
 		0    ) Level=0 ;;
 		1    ) Level=1 ;;
 		2    ) Level=2 ;;
@@ -234,223 +234,223 @@ done
 shift $((OPTIND-1))
 #_______________________________________________________________________________________________
 TIMERSTART=`date +%s`
-InChu "============================================================="
-InChu "|      AdBlock for DD-WRT/Android base on Linux             |"
-InChu "|      ${Home1Page}                       |"
-InChu "|      Author: Manish Parashar                              |"
-InChu "|      Editor: Darias                                       |"
-InChu "============================================================="
-InChu "             `date`"
-InChu "# Version: $VERSION"
+InRa "============================================================="
+InRa "|      AdBlock for DD-WRT/Android base on Linux             |"
+InRa "|      ${Home1Page}                       |"
+InRa "|      Author: Manish Parashar                              |"
+InRa "|      Editor: Darias                                       |"
+InRa "============================================================="
+InRa "             `date`"
+InRa "# Version: $VERSION"
 
 #_______________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
-	InChu "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
+	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	BatChan
 fi
 if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
-	InChu "# NETWORK: UP | MODE: ONLINE"
-	InChu "# IP ADDRESS FOR ADS: $SetIP"
-	InChu "# SECURE [0=NO | 1=YES]: $SECURL"
-	InChu "# Level [0|1|2|3|4]: $Level"
+	InRa "# NETWORK: UP | MODE: ONLINE"
+	InRa "# IP ADDRESS FOR ADS: $SetIP"
+	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
+	InRa "# Level [0|1|2|3|4]: $Level"
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
-		InChu ">>>> Downloading / updating cURL certificates"
+		InRa ">>>> Downloading / updating cURL certificates"
 		GetSLL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 #_______________________________________________________________________________________________
-	InChu ">>>> Updating Black/WhiteList Online"
+	InRa ">>>> Updating Black/WhiteList Online"
 	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
 	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
 	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;InSize $trangOn;
-	InChu "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
+	InRa "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
 #_______________________________________________________________________________________________
-	InChu ">>>> Unlocking level [0]"	
-	InChu "# Downloading: ${u01}";GetSLL ${u01} > $File;InSize $File;cat $File > $Tam2h;
-	InChu "# Downloading: ${u02}";GetSLL ${u02} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $File;InSize $File;cat $File >> $Tam2h | InChu "# Downloading: Main";
-	InChu "# Downloading: ${u04}";GetSLL ${u04} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u05}";GetSLL ${u05} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u06}";GetSLL ${u06} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u07}";GetSLL ${u07} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u08}";GetSLL ${u08} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u09}";GetSLL ${u09} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u10}";GetSLL ${u10} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u11}";GetSLL ${u11} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u12}";GetSLL ${u12} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u13}";GetSLL ${u13} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u14}";GetSLL ${u14} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u15}";GetSLL ${u15} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u16}";GetSLL ${u16} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u17}";GetSLL ${u17} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u18}";GetSLL ${u18} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u19}";GetSLL ${u19} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# File Size [0] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [0]";
+	InRa ">>>> Unlocking level [0]"	
+	InRa "# Downloading: ${u01}";GetSLL ${u01} > $File;InSize $File;cat $File > $Tam2h;
+	InRa "# Downloading: ${u02}";GetSLL ${u02} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $File;InSize $File;cat $File >> $Tam2h | InRa "# Downloading: Main";
+	InRa "# Downloading: ${u04}";GetSLL ${u04} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u05}";GetSLL ${u05} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u06}";GetSLL ${u06} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u07}";GetSLL ${u07} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u08}";GetSLL ${u08} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u09}";GetSLL ${u09} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u10}";GetSLL ${u10} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u11}";GetSLL ${u11} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u12}";GetSLL ${u12} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u13}";GetSLL ${u13} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u14}";GetSLL ${u14} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u15}";GetSLL ${u15} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u16}";GetSLL ${u16} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u17}";GetSLL ${u17} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u18}";GetSLL ${u18} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u19}";GetSLL ${u19} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# File Size [0] Orginal";InSize $Tam2h;InRa ">>>> Deleting Symbol: [0]";
 	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed "${sed6}" > $File;
-	InChu "# File Size [0] Formatted"; cat $File > $Tam; InSize $Tam;
+	InRa "# File Size [0] Formatted"; cat $File > $Tam; InSize $Tam;
 #_______________________________________________________________________________________________
-	InChu "# Downloading: ${u90}";GetSLL ${u90} > $File;InSize $File;cat $File > $Tam2h;
-	InChu "# Downloading: ${u91}";GetSLL ${u91} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u92}";GetSLL ${u92} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u93}";GetSLL ${u93} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u94}";GetSLL ${u94} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u95}";GetSLL ${u95} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u96}";GetSLL ${u96} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u97}";GetSLL ${u97} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u98}";GetSLL ${u98} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u99}";GetSLL ${u99} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# File Size [0.5] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [0.5]";
+	InRa "# Downloading: ${u90}";GetSLL ${u90} > $File;InSize $File;cat $File > $Tam2h;
+	InRa "# Downloading: ${u91}";GetSLL ${u91} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u92}";GetSLL ${u92} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u93}";GetSLL ${u93} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u94}";GetSLL ${u94} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u95}";GetSLL ${u95} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u96}";GetSLL ${u96} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u97}";GetSLL ${u97} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u98}";GetSLL ${u98} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# Downloading: ${u99}";GetSLL ${u99} > $File;InSize $File;cat $File >> $Tam2h;
+	InRa "# File Size [0.5] Orginal";InSize $Tam2h;InRa ">>>> Deleting Symbol: [0.5]";
 	LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed00}" | sed -r "${sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' > $File;
-	InChu "# File Size [0.5] Formatted";InSize $File; cat $File >> $Tam;
-	InChu "# File Size [1.5]";InSize $Tam;
+	InRa "# File Size [0.5] Formatted";InSize $File; cat $File >> $Tam;
+	InRa "# File Size [1.5]";InSize $Tam;
 #_______________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
-		InChu ">>>> Unlocking level [1]"
-		InChu "# Downloading: ${u20}";GetSLL ${u20} > $File;InSize $File;cat $File > $Tam2h;
-		InChu "# Downloading: ${u21}";GetSLL ${u21} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u22}";GetSLL ${u22} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u23}";GetSLL ${u23} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u24}";GetSLL ${u24} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u25}";GetSLL ${u25} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u26}";GetSLL ${u26} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u27}";GetSLL ${u27} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u28}";GetSLL ${u28} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u29}";GetSLL ${u29} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u30}";GetSLL ${u30} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u31}";GetSLL ${u31} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u32}";GetSLL ${u32} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u33}";GetSLL ${u33} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u34}";GetSLL ${u34} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u35}";GetSLL ${u35} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u36}";GetSLL ${u36} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u37}";GetSLL ${u37} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u38}";GetSLL ${u38} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u39}";GetSLL ${u39} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u40}";GetSLL ${u40} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u41}";GetSLL ${u41} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u42}";GetSLL ${u42} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u43}";GetSLL ${u43} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u44}";GetSLL ${u44} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u45}";GetSLL ${u45} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u46}";GetSLL ${u46} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u47}";GetSLL ${u47} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u48}";GetSLL ${u48} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size [1] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [1]";
+		InRa ">>>> Unlocking level [1]"
+		InRa "# Downloading: ${u20}";GetSLL ${u20} > $File;InSize $File;cat $File > $Tam2h;
+		InRa "# Downloading: ${u21}";GetSLL ${u21} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u22}";GetSLL ${u22} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u23}";GetSLL ${u23} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u24}";GetSLL ${u24} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u25}";GetSLL ${u25} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u26}";GetSLL ${u26} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u27}";GetSLL ${u27} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u28}";GetSLL ${u28} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u29}";GetSLL ${u29} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u30}";GetSLL ${u30} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u31}";GetSLL ${u31} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u32}";GetSLL ${u32} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u33}";GetSLL ${u33} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u34}";GetSLL ${u34} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u35}";GetSLL ${u35} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u36}";GetSLL ${u36} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u37}";GetSLL ${u37} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u38}";GetSLL ${u38} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u39}";GetSLL ${u39} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u40}";GetSLL ${u40} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u41}";GetSLL ${u41} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u42}";GetSLL ${u42} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u43}";GetSLL ${u43} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u44}";GetSLL ${u44} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u45}";GetSLL ${u45} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u46}";GetSLL ${u46} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u47}";GetSLL ${u47} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u48}";GetSLL ${u48} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# File Size [1] Orginal";InSize $Tam2h;InRa ">>>> Deleting Symbol: [1]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed1}" | sed "${sed6}" > $File;
-		InChu "# File Size [1] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size [0-1]";InSize $Tam;
+		InRa "# File Size [1] Formatted";InSize $File; cat $File >> $Tam;
+		InRa "# File Size [0-1]";InSize $Tam;
 	fi
 #_______________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
-		InChu ">>>> Unlocking level [2]"
-		InChu "# Downloading: ${u49}";GetSLL ${u49} > $File;InSize $File;cat $File > $Tam2h;
-		InChu "# Downloading: ${u50}";GetSLL ${u50} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u51}";GetSLL ${u51} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u52}";GetSLL ${u52} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u53}";GetSLL ${u53} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u54}";GetSLL ${u54} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u55}";GetSLL ${u55} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u56}";GetHTT ${u56} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u57}";GetHTT ${u57} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u58}";GetSLL ${u58} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u59}";GetSLL ${u59} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u60}";GetSLL ${u60} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u61}";GetSLL ${u61} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u62}";GetSLL ${u62} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u63}";GetSLL ${u63} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u64}";GetSLL ${u64} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u65}";GetSLL ${u65} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u66}";GetSLL ${u66} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u67}";GetSLL ${u67} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u68}";GetSLL ${u68} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u69}";GetSLL ${u69} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u70}";GetSLL ${u70} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u71}";GetSLL ${u71} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u72}";GetSLL ${u72} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u73}";GetSLL ${u73} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u74}";GetSLL ${u74} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u75}";GetSLL ${u75} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u76}";GetSLL ${u76} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u77}";GetSLL ${u77} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size [2] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [2]";
+		InRa ">>>> Unlocking level [2]"
+		InRa "# Downloading: ${u49}";GetSLL ${u49} > $File;InSize $File;cat $File > $Tam2h;
+		InRa "# Downloading: ${u50}";GetSLL ${u50} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u51}";GetSLL ${u51} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u52}";GetSLL ${u52} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u53}";GetSLL ${u53} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u54}";GetSLL ${u54} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u55}";GetSLL ${u55} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u56}";GetHTT ${u56} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u57}";GetHTT ${u57} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u58}";GetSLL ${u58} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u59}";GetSLL ${u59} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u60}";GetSLL ${u60} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u61}";GetSLL ${u61} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u62}";GetSLL ${u62} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u63}";GetSLL ${u63} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u64}";GetSLL ${u64} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u65}";GetSLL ${u65} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u66}";GetSLL ${u66} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u67}";GetSLL ${u67} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u68}";GetSLL ${u68} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u69}";GetSLL ${u69} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u70}";GetSLL ${u70} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u71}";GetSLL ${u71} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u72}";GetSLL ${u72} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u73}";GetSLL ${u73} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u74}";GetSLL ${u74} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u75}";GetSLL ${u75} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u76}";GetSLL ${u76} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u77}";GetSLL ${u77} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# File Size [2] Orginal";InSize $Tam2h;InRa ">>>> Deleting Symbol: [2]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed2}" | sed "${sed6}" > $File;
-		InChu "# File Size [2] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size [0-2]";InSize $Tam;
+		InRa "# File Size [2] Formatted";InSize $File; cat $File >> $Tam;
+		InRa "# File Size [0-2]";InSize $Tam;
 	fi
 #_______________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
-		InChu ">>>> Unlocking level [3]"
-		InChu "# Downloading: ${u78}";GetSLL ${u78} > $File;InSize $File;cat $File > $Tam2h;
-		InChu "# Downloading: ${u79}";GetSLL ${u79} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u80}";GetMHK ${u80} > $File;InSize $File;cat $File >> $Tam2h;		
-		InChu "# Downloading: ${u81}";GetSLL ${u81} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u82}";GetSLL ${u82} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# Downloading: ${u83}";GetSLL ${u83} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size [3] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [3]";
+		InRa ">>>> Unlocking level [3]"
+		InRa "# Downloading: ${u78}";GetSLL ${u78} > $File;InSize $File;cat $File > $Tam2h;
+		InRa "# Downloading: ${u79}";GetSLL ${u79} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u80}";GetMHK ${u80} > $File;InSize $File;cat $File >> $Tam2h;		
+		InRa "# Downloading: ${u81}";GetSLL ${u81} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u82}";GetSLL ${u82} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# Downloading: ${u83}";GetSLL ${u83} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# File Size [3] Orginal";InSize $Tam2h;InRa ">>>> Deleting Symbol: [3]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed3}" | sed "${sed6}" > $File;
-		InChu "# File Size [3] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size [0-3]";InSize $Tam;
+		InRa "# File Size [3] Formatted";InSize $File; cat $File >> $Tam;
+		InRa "# File Size [0-3]";InSize $Tam;
 	#_________________________________________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
-		InChu ">>>> Unlocking level [4]"
-		InChu "# Downloading: ${u84}";GetSLL ${u84} > $File;InSize $File;cat $File > $Tam2h;
-		InChu "# Downloading: ${u100}";GetSLL ${u100} > $File;InSize $File;cat $File >> $Tam2h;
-		InChu "# File Size [4] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [4]";
+		InRa ">>>> Unlocking level [4]"
+		InRa "# Downloading: ${u84}";GetSLL ${u84} > $File;InSize $File;cat $File > $Tam2h;
+		InRa "# Downloading: ${u100}";GetSLL ${u100} > $File;InSize $File;cat $File >> $Tam2h;
+		InRa "# File Size [4] Orginal";InSize $Tam2h;InRa ">>>> Deleting Symbol: [4]";
 		LC_ALL=C cat $Tam2h | tr '[:upper:]' '[:lower:]' | sed -r "${sed0}" | sed -r "${sed4}" | sed "${sed6}" > $File;
-		InChu "# File Size [4] Formatted";InSize $File; cat $File >> $Tam;
-		InChu "# File Size [0-4]";InSize $Tam;
+		InRa "# File Size [4] Formatted";InSize $File; cat $File >> $Tam;
+		InRa "# File Size [0-4]";InSize $Tam;
 	fi
 	if [ $NOFB = "f" ]; then
-		InChu "# Downloading: ${u85}"
+		InRa "# Downloading: ${u85}"
 		GetSLL ${Home2Page}/denOn/facebook.only >> $Tam2h;InSize $File;cat $File >> $Tam2h;
 	fi
 	if [ $NOFB = "F" ]; then
-		InChu "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $Tam2h;InSize $File;
+		InRa "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $Tam2h;InSize $File;
 		cat $File >> $Tam2h
 	fi
 #_______________________________________________________________________________________________
 else
-	InChu "# NETWORK: DOWN | MODE: OFFLINE"
+	InRa "# NETWORK: DOWN | MODE: OFFLINE"
 	[ -s $hChinh ] && cat $hChinh | awk '{print $2}' > $Tam2h
 	[ -s $dChinh ] && cp $dChinh $Tamd
 fi
 #_______________________________________________________________________________________________
-InChu ">>>> Processing: Black/WhiteList Online"
+InRa ">>>> Processing: Black/WhiteList Online"
 LC_ALL=C cat $denOn | sed -r "${setbw}" | sort -u > $Tambl && cp $Tambl $denOn
 LC_ALL=C cat $trangOn | tr '[:upper:]' '[:lower:]' | sed -r "${setbw}" | sort -u > $Tamwl && cp $Tamwl $trangOn
 #_______________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	InChu ">>>> Processing: Black/WhiteList Offline"
+	InRa ">>>> Processing: Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r "${setbw}" | sort -u > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r "${setbw}" | sort -u > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $Tambl
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #_______________________________________________________________________________________________
-#InChu ">>>> Processing: Black/WhiteList/SubDomain/IP";
-InChu ">>>> Processing: Black-WhiteList/SubDomain";
+#InRa ">>>> Processing: Black/WhiteList/SubDomain/IP";
+InRa ">>>> Processing: Black-WhiteList/SubDomain";
 LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" > $File
-InChu ">>>> Processing: Add IP";
+InRa ">>>> Processing: Add IP";
 cat $File | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 #LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 #tr -cd '\000-\177' | 
-InChu ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-InChu "# Blocked: $Counts Hosts"
-InChu ">>>> File size Domains";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
-InChu "# Blocked: $Counts Domains"
+InRa ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+InRa "# Blocked: $Counts Hosts"
+InRa ">>>> File size Domains";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
+InRa "# Blocked: $Counts Domains"
 #_______________________________________________________________________________________________
 if [ -f "${ThuMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	InChu ">>>> Restarting DNS Server (dnsmasq)";ReBoot;
-	InChu ">>>> Deleting: $TmTam";rm -rf ${TmTam};
+	InRa ">>>> Restarting DNS Server (dnsmasq)";ReBoot;
+	InRa ">>>> Deleting: $TmTam";rm -rf ${TmTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
 RTSECONDS=$(( $((TIMERSTOP - TIMERSTART)) %60 ))
-InChu "# Total time: $RTMINUTES:$RTSECONDS minutes"
-InChu "# DONE"
+InRa "# Total time: $RTMINUTES:$RTSECONDS minutes"
+InRa "# DONE"
 logger ">>>> $(basename "$0") finished"
 exit 0
 #_______________________________________________________________________________________________

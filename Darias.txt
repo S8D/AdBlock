@@ -1,5 +1,3 @@
-address=/ss.ss/4.3.2.1
-address=/sd.ss/4.3.2.2
 address=/120.138.74.139/0.1.2.3
 address=/120.138.74.171/0.1.2.3
 address=/admicro.vn/0.1.2.3
@@ -120,6 +118,7 @@ address=/smaato.net/0.1.2.3
 address=/soothxopso.net/0.1.2.3
 address=/reporo.net/0.1.2.3
 address=/i-gloo.net/0.1.2.3
+address=/criteo.com/0.1.2.3
 address=/criteo.net/0.1.2.3
 address=/fwmrm.net/0.1.2.3
 address=/l-telcom.net/0.1.2.3
