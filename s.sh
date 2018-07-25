@@ -50,9 +50,9 @@ export ThuMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export TmTam="${ThuMuc}/tmp"
 if [ -d "$TmTam" ]
 then
-	echo "Using $TmTam"
+	echo ">>>> Using $TmTam"
 else
-	echo "Creating: $TmTam"
+	echo ">>>> Creating $TmTam"
 	mkdir ${TmTam}
 fi
 export hChinh="${ThuMuc}/h";export dChinh="${ThuMuc}/d";
@@ -258,6 +258,10 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSLL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 #_______________________________________________________________________________________________
+	InChu ">>>> Updating Black/WhiteList Online"
+	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
+	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
+	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;InSize $trangOn;
 	InChu "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
 #_______________________________________________________________________________________________
 	InChu ">>>> Unlocking [0] Hosts"	
@@ -404,10 +408,6 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InChu "# Downloading: ${u86}";GetSLL ${Home2Page}/denOn/facebook.all >> $Tam2h;InSize $File;
 		cat $File >> $Tam2h
 	fi
-	InChu ">>>> Updating Black/WhiteList Online"
-	GetSLL ${Home2Page}/denOn/denOn > $denOn;InSize $denOn;
-	GetSLL ${Home2Page}/trangOn/trangOn >$File;InSize $File;cat $File > $trangOn;
-	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;
 #_______________________________________________________________________________________________
 else
 	InChu "# NETWORK: DOWN | MODE: OFFLINE"
@@ -428,7 +428,8 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 fi
 #_______________________________________________________________________________________________
 InChu ">>>> Processing: Black/WhiteList/SubDomain/IP";
-LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | tr -cd '\000-\177' | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+#tr -cd '\000-\177' | 
 InChu ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Hosts"
 InChu ">>>> File size Domains";InSize $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
