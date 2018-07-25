@@ -1,5 +1,5 @@
 #_______________________________________________________________________________________________
-VERSION="20180725++"
+VERSION="20180725"
 export SetIP="0.1.2.3"
 export Level=4
 Home1Page="https://github.com/S8D/AdBlock"
@@ -16,7 +16,7 @@ sed3="s|\.com.*orn$|.com|; s|^w.*orn$||; s|.*html$||";
 sed4="s|\.z$||; s|\.com.*orn$|.com|; s|^w.*orn$||; s|\/.*ads$||";
 setbw="s|#.*$||; /^$/d"
 sed6="s|\n^[^.]+$||; /^$/d";
-sed7="s|^Tp.*kim$||; s|^\.com$||; s|\-.*\.$||; s|^\.$||; /^$/d";
+sed7="s|.*tin .*||; s|^\.com$||; s|\-.*\.$||; s|^\.$||; /^$/d";
 #_______________________________________________________________________________________________
 u00="${Home2Page}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -427,8 +427,12 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
 fi
 #_______________________________________________________________________________________________
-InChu ">>>> Processing: Black/WhiteList/SubDomain/IP";
-LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+#InChu ">>>> Processing: Black/WhiteList/SubDomain/IP";
+InChu ">>>> Processing: Black-WhiteList/SubDomain";
+LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" > $File
+InChu ">>>> Processing: Add IP";
+cat $File | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+#LC_ALL=C cat $Tam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $Tamd | sed -r "${sed7}" | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 #tr -cd '\000-\177' | 
 InChu ">>>> File size Hosts";InSize $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InChu "# Blocked: $Counts Hosts"
