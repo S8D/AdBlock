@@ -264,10 +264,10 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSLL ${Home2Page}/trangOn/apple >$File;InSize $File;cat $File >> $trangOn;InSize $trangOn;
 	InChu "# Downloading: Domains";GetSLL ${u00} > $dChinh;InSize $dChinh; cat $dChinh | sed -r 's|.*\=\/||; s|\/.*$||' | sort -u > $Tamd;
 #_______________________________________________________________________________________________
-	InChu ">>>> Unlocking [0] Hosts"	
+	InChu ">>>> Unlocking level [0]"	
 	InChu "# Downloading: ${u01}";GetSLL ${u01} > $File;InSize $File;cat $File > $Tam2h;
 	InChu "# Downloading: ${u02}";GetSLL ${u02} > $File;InSize $File;cat $File >> $Tam2h;
-	InChu "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $File;InSize $File;cat $File >> $Tam2h | InChu "# Downloading: Main lists";
+	InChu "# Downloading: ${u03}";GetSLL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $File;InSize $File;cat $File >> $Tam2h | InChu "# Downloading: Main";
 	InChu "# Downloading: ${u04}";GetSLL ${u04} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u05}";GetSLL ${u05} > $File;InSize $File;cat $File >> $Tam2h;
 	InChu "# Downloading: ${u06}";GetSLL ${u06} > $File;InSize $File;cat $File >> $Tam2h;
@@ -304,7 +304,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InChu "# File Size [1.5]";InSize $Tam;
 #_______________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
-		InChu ">>>> Unlocking [1] lists"
+		InChu ">>>> Unlocking level [1]"
 		InChu "# Downloading: ${u20}";GetSLL ${u20} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u21}";GetSLL ${u21} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u22}";GetSLL ${u22} > $File;InSize $File;cat $File >> $Tam2h;
@@ -341,7 +341,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 #_______________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
-		InChu ">>>> Unlocking [2] lists"
+		InChu ">>>> Unlocking level [2]"
 		InChu "# Downloading: ${u49}";GetSLL ${u49} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u50}";GetSLL ${u50} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u51}";GetSLL ${u51} > $File;InSize $File;cat $File >> $Tam2h;
@@ -378,7 +378,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 #_______________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
-		InChu ">>>> Unlocking [3] lists"
+		InChu ">>>> Unlocking level [3]"
 		InChu "# Downloading: ${u78}";GetSLL ${u78} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u79}";GetSLL ${u79} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# Downloading: ${u80}";GetMHK ${u80} > $File;InSize $File;cat $File >> $Tam2h;		
@@ -392,7 +392,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	#_________________________________________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
-		InChu ">>>> Unlocking [4] lists"
+		InChu ">>>> Unlocking level [4]"
 		InChu "# Downloading: ${u84}";GetSLL ${u84} > $File;InSize $File;cat $File > $Tam2h;
 		InChu "# Downloading: ${u100}";GetSLL ${u100} > $File;InSize $File;cat $File >> $Tam2h;
 		InChu "# File Size [4] Orginal";InSize $Tam2h;InChu ">>>> Deleting Symbol: [4]";
