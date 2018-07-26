@@ -2,7 +2,7 @@
 # set -euxo pipefail
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180727c"
+VERSION="20180727d"
 export BLITZ=3
 export NOFB=0
 export ONLINE=1
@@ -384,12 +384,8 @@ fi
 InRa "> Processing final mphosts/mpdomains files"
 LC_ALL=C cat $tmphosts | SEDSPACE | cat $tmpbl - | grep -Fvwf $tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
 LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf $tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
-Size $mphosts
-Size $mpdomains
-hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//')
-InRa "# Blocked: $hCount Hosts"
-dCount=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//')
-InRa "# Blocked: $dCount Domains"
+hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $hCount Hosts";Size $mphosts;
+dCount=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $dCount Domains";Size $mpdomains;
 if [ -f "${TMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
