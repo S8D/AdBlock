@@ -357,8 +357,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/facebookall.block > $tam; Size $tam; cat $tam >> $tmphosts
 	fi
 	InRa "> Processing official blacklist/whitelist files"
-	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/blacklist | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
-	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/whitelist | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
+	GetSLL ${Nha}/denOn/denOn | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
+	GetSLL ${Nha}/trangOn/trangOn | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
+	GetSLL ${Nha}/trangOn/apple | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
+	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/blacklist | GREPFILTER > $tam; Size $tam; cat $tam >> $blacklist
+	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/whitelist | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/fruitydomains > $tam; Size $tam; cat $tam > $base64wl
 	LC_ALL=C uudecode $base64wl && cat applewhitelist >> $whitelist && rm applewhitelist && rm $base64wl
 else
