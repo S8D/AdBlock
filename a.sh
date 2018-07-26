@@ -2,7 +2,7 @@
 # set -euxo pipefail
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180727a"
+VERSION="20180727b"
 export BLITZ=3
 export NOFB=0
 export ONLINE=1
@@ -11,8 +11,7 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export SetIP="0.1.2.3"
-export TMuc="$(cd "$(dirname "${0}")" && pwd)"
-export TMTam="${TMuc}/tmp"
+export TMuc="$(cd "$(dirname "${0}")" && pwd)";export TMTam="${TMuc}/tmp";
 if [ -d "$TMTam" ]
 then
 	echo "Using $TMTam"
@@ -20,20 +19,13 @@ else
 	echo "Creating: $TMTam"
 	mkdir ${TMTam}
 fi
-export tam="${TMTam}/t.tmp"
-export mphosts="${TMuc}/h"
-export mphostspaused="${TMuc}/h.zzz"
-export tmphosts="${TMTam}/h.tmp"
-export mpdomains="${TMuc}/d"
-export mpdomainspaused="${TMuc}/d.zzz"
-export tmpdomains="${TMTam}/d.tmp"
-export pauseflag="${TMuc}/PAUSED"
-export blacklist="${TMuc}/Den.On"
-export whitelist="${TMuc}/Trang.On"
-export base64wl="${TMuc}/base64wl"
-export myblacklist="${TMuc}/Den.Off"
-export mywhitelist="${TMuc}/Trang.Off"
-export MPLOG="${TMuc}/h.log"
+export mphosts="${TMuc}/h";export mphostspaused="${TMuc}/h.zzz";export tmphosts="${TMTam}/h.tmp";
+export mpdomains="${TMuc}/d";export mpdomainspaused="${TMuc}/d.zzz";export tmpdomains="${TMTam}/d.tmp";
+export blacklist="${TMuc}/Den.On";export whitelist="${TMuc}/Trang.On";
+export tam="${TMTam}/t.tmp";export tmpwl="${TMTam}/wl.tmp";export tmpbl="${TMTam}/bl.tmp";
+export pauseflag="${TMuc}/PAUSED";export base64wl="${TMuc}/base64wl";
+export myblacklist="${TMuc}/Den.Off";export mywhitelist="${TMuc}/Trang.Off";
+export MPLOG="${TMuc}/h.log";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -380,18 +372,18 @@ fi
 Size $tmphosts
 Size $tmpdomains
 InRa "> Processing blacklist/whitelist files"
-LC_ALL=C cat $blacklist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpbl && cp tmpbl $blacklist
-LC_ALL=C cat $whitelist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpwl && cp tmpwl $whitelist
+LC_ALL=C cat $blacklist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tmpbl && cp $tmpbl $blacklist
+LC_ALL=C cat $whitelist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tmpwl && cp $tmpwl $whitelist
 if [ $DISTRIB -eq 0 ] && { [ -s "$myblacklist" ] || [ -s "$mywhitelist" ]; }; then
 	InRa "> Processing myblacklist/mywhitelist files"
 	LC_ALL=C cat $myblacklist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpmybl && mv tmpmybl $myblacklist
 	LC_ALL=C cat $mywhitelist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpmywl && mv tmpmywl $mywhitelist
-	cat $blacklist | cat $myblacklist - > tmpbl
-	cat $whitelist | cat $mywhitelist - | grep -Fvwf $myblacklist > tmpwl
+	cat $blacklist | cat $myblacklist - > $tmpbl
+	cat $whitelist | cat $mywhitelist - | grep -Fvwf $myblacklist > $tmpwl
 fi
 InRa "> Processing final mphosts/mpdomains files"
-LC_ALL=C cat $tmphosts | SEDSPACE | cat tmpbl - | grep -Fvwf tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
-LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
+LC_ALL=C cat $tmphosts | SEDSPACE | cat $tmpbl - | grep -Fvwf $tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
+LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf $tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
 Size $mphosts
 Size $mpdomains
 hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//')
