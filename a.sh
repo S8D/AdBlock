@@ -348,9 +348,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/facebookall.block > $tam; Size $tam; cat $tam >> $tmphosts
 	fi
 	InRa "> Processing official blacklist/whitelist files"
-	GetSLL ${Nha}/denOn/denOn | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
-	GetSLL ${Nha}/trangOn/trangOn | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
-	GetSLL ${Nha}/trangOn/apple | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
+	GetSSL ${Nha}/denOn/denOn | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
+	GetSSL ${Nha}/trangOn/trangOn | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
+	GetSSL ${Nha}/trangOn/apple | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/blacklist | GREPFILTER > $tam; Size $tam; cat $tam >> $blacklist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/whitelist | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/fruitydomains > $tam; Size $tam; cat $tam > $base64wl
