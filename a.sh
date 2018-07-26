@@ -52,7 +52,6 @@ alias GetSSL="curl -f -s -k"
 alias GetMHK="curl -f -s -A "Mozilla/5.0" -e http://forum.xda-developers.com/"
 alias SEDSPACE="sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d'"
 alias GREPFILTER="tr -cd '\000-\177' | grep -o '^[^#]*' | grep -vF -e \"::\" -e \";\" -e \"//\" -e \"http\" -e \"https\""
-alias SORT="awk '{if ($1 in a) next; a[$1]=$0; print}'"
 InRa ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
@@ -381,18 +380,18 @@ fi
 Size $tmphosts
 Size $tmpdomains
 InRa "> Processing blacklist/whitelist files"
-LC_ALL=C cat $blacklist | SEDSPACE | SORT > tmpbl && cp tmpbl $blacklist
-LC_ALL=C cat $whitelist | SEDSPACE | SORT > tmpwl && cp tmpwl $whitelist
+LC_ALL=C cat $blacklist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpbl && cp tmpbl $blacklist
+LC_ALL=C cat $whitelist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpwl && cp tmpwl $whitelist
 if [ $DISTRIB -eq 0 ] && { [ -s "$myblacklist" ] || [ -s "$mywhitelist" ]; }; then
 	InRa "> Processing myblacklist/mywhitelist files"
-	LC_ALL=C cat $myblacklist | SEDSPACE | SORT > tmpmybl && mv tmpmybl $myblacklist
-	LC_ALL=C cat $mywhitelist | SEDSPACE | SORT > tmpmywl && mv tmpmywl $mywhitelist
+	LC_ALL=C cat $myblacklist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpmybl && mv tmpmybl $myblacklist
+	LC_ALL=C cat $mywhitelist | SEDSPACE | awk '{if ($1 in a) next; a[$1]=$0; print}' > tmpmywl && mv tmpmywl $mywhitelist
 	cat $blacklist | cat $myblacklist - > tmpbl
 	cat $whitelist | cat $mywhitelist - | grep -Fvwf $myblacklist > tmpwl
 fi
 InRa "> Processing final mphosts/mpdomains files"
-LC_ALL=C cat $tmphosts | SEDSPACE | cat tmpbl - | grep -Fvwf tmpwl | SORT | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
-LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf tmpwl | SORT > $mpdomains
+LC_ALL=C cat $tmphosts | SEDSPACE | cat tmpbl - | grep -Fvwf tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
+LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf tmpwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
 Size $mphosts
 Size $mpdomains
 hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//')
