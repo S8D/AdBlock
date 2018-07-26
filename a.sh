@@ -2,7 +2,7 @@
 # set -euxo pipefail
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180727b"
+VERSION="20180727c"
 export BLITZ=3
 export NOFB=0
 export ONLINE=1
@@ -135,7 +135,7 @@ CapNhat ()
 				mv $upFile $0
 				InRa ">>> Updated to the latest version."
 			else
-				InRa ">>> Current version: $VERSION ."
+				InRa ">>> Current version: $VERSION."
 			fi
 		else
 			InRa ">>> Update failed. Try again."
