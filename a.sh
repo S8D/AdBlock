@@ -2,7 +2,7 @@
 # set -euxo pipefail
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180727a1"
+VERSION="20180727a"
 export BLITZ=3
 export NOFB=0
 export ONLINE=1
@@ -356,7 +356,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "> Blocking Facebook, Messenger, Instagram, WhatsApp"
 		GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/facebookall.block > $tam; Size $tam; cat $tam >> $tmphosts
 	fi
-	InRa "> Updating official blacklist/whitelist files"
+	InRa "> Processing official blacklist/whitelist files"
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/blacklist | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/whitelist | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/fruitydomains > $tam; Size $tam; cat $tam > $base64wl
@@ -392,15 +392,15 @@ LC_ALL=C cat $tmphosts | SEDSPACE | cat tmpbl - | grep -Fvwf tmpwl | SORT | awk 
 LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf tmpwl | SORT > $mpdomains
 Size $mphosts
 Size $mpdomains
-numHostsBlocked=$(cat $mphosts | wc -l | sed 's/^[ \t]*//')
-InRa "# Number of ad hosts blocked: approx $numHostsBlocked"
-numDomainsBlocked=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//')
-InRa "# Number of ad domains blocked: approx $numDomainsBlocked"
+hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//')
+InRa "# Blocked: $hCount Hosts"
+dCount=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//')
+InRa "# Blocked: $dCount Domains"
 if [ -f "${TMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	InRa "> Restarting DNS server (dnsmasq)";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
+	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
