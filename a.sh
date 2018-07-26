@@ -218,7 +218,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq https://pgl.yoyo.org/adservers/serverlist.php? | GREPFILTER | sed 's/127.0.0.1$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
 	InRa "# Creating mphosts file"
 	InRa "> Processing StevenBlack lists"
-	GetSSL https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | GREPFILTER | awk '{print $2}' > $tmphosts
+	GetSSL https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam > $tmphosts
 	InRa "> Processing notracking blocklists"
 	GetSSL https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
 	InRa "> Processing Disconnect.me lists"
