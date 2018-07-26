@@ -2,7 +2,7 @@
 # set -euxo pipefail
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180725a1"
+VERSION="20180727a1"
 export BLITZ=3
 export NOFB=0
 export ONLINE=1
@@ -52,6 +52,7 @@ alias GetSSL="curl -f -s -k"
 alias GetMHK="curl -f -s -A "Mozilla/5.0" -e http://forum.xda-developers.com/"
 alias SEDSPACE="sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d'"
 alias GREPFILTER="tr -cd '\000-\177' | grep -o '^[^#]*' | grep -vF -e \"::\" -e \";\" -e \"//\" -e \"http\" -e \"https\""
+alias SORT="awk '{if ($1 in a) next; a[$1]=$0; print}'"
 InRa ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
@@ -377,18 +378,18 @@ fi
 Size $tmphosts
 Size $tmpdomains
 InRa "> Processing blacklist/whitelist files"
-LC_ALL=C cat $blacklist | SEDSPACE | sort -u > tmpbl && cp tmpbl $blacklist
-LC_ALL=C cat $whitelist | SEDSPACE | sort -u > tmpwl && cp tmpwl $whitelist
+LC_ALL=C cat $blacklist | SEDSPACE | SORT > tmpbl && cp tmpbl $blacklist
+LC_ALL=C cat $whitelist | SEDSPACE | SORT > tmpwl && cp tmpwl $whitelist
 if [ $DISTRIB -eq 0 ] && { [ -s "$myblacklist" ] || [ -s "$mywhitelist" ]; }; then
 	InRa "> Processing myblacklist/mywhitelist files"
-	LC_ALL=C cat $myblacklist | SEDSPACE | sort -u > tmpmybl && mv tmpmybl $myblacklist
-	LC_ALL=C cat $mywhitelist | SEDSPACE | sort -u > tmpmywl && mv tmpmywl $mywhitelist
+	LC_ALL=C cat $myblacklist | SEDSPACE | SORT > tmpmybl && mv tmpmybl $myblacklist
+	LC_ALL=C cat $mywhitelist | SEDSPACE | SORT > tmpmywl && mv tmpmywl $mywhitelist
 	cat $blacklist | cat $myblacklist - > tmpbl
 	cat $whitelist | cat $mywhitelist - | grep -Fvwf $myblacklist > tmpwl
 fi
 InRa "> Processing final mphosts/mpdomains files"
-LC_ALL=C cat $tmphosts | SEDSPACE | cat tmpbl - | grep -Fvwf tmpwl | sort -u | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
-LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf tmpwl | sort -u > $mpdomains
+LC_ALL=C cat $tmphosts | SEDSPACE | cat tmpbl - | grep -Fvwf tmpwl | SORT | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
+LC_ALL=C cat $tmpdomains | SEDSPACE | grep -Fvwf tmpwl | SORT > $mpdomains
 Size $mphosts
 Size $mpdomains
 numHostsBlocked=$(cat $mphosts | wc -l | sed 's/^[ \t]*//')
