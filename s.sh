@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180725c"
+VERSION="20180726a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -261,6 +261,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSLL ${Nha}/denOn/denOn > $denOn;Size $denOn;
 	GetSLL ${Nha}/trangOn/trangOn > $Tamh;Size $Tamh;cat $Tamh > $trangOn;
 	GetSLL ${Nha}/trangOn/apple > $Tamh;Size $Tamh;cat $Tamh >> $trangOn;Size $trangOn
+	InRa "> Deleting Special character: Black/WhiteList Online"
+	LC_ALL=C cat $denOn | sed -r "${DenTrang}" > $Tambl && cp $Tambl $denOn
+	LC_ALL=C cat $trangOn | sed -r "${DenTrang}" > $Tamwl && cp $Tamwl $trangOn
+#__________________________________________________________________________________________________
+
 	InRa ">> Unlocking Level [0]"
 	InRa "# Downloading: Domains";GetSLL ${u00} > $Tamd;Size $Tamd;cat $Tamd | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
 #__________________________________________________________________________________________________
@@ -385,6 +390,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa ">> Unlocking Level [4]"
 		InRa "# Downloading: ${u84}";GetSLL ${u84} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
 		InRa "# Downloading: ${u100}";GetSLL ${u100} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
+		InRa "> Deleting Special character: [4]";LC_ALL=C cat $hTam | sed -r 's|#.*$||; s|0.0.0.0||; s|0.0.0.0$||; s|.* br.*||; s|.* lo.*||; s|:.*$||; s|^[[:space:]]*||g; s|^\-\-||; s|^\-||; s|^\_\_||; s|^\_||; s|^🔗||; s|^\.||; s|\.$||; s|\/.*$||; s|\.com.*orn$|.com|; s|\.co.*rls$|.com|; s|^w.*orn$||; s|\.v$||; s|\.w$||; s|\.z$||; s|\+$||; s|\-$||; s|^[^.]+$||; /^$/d' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
 		InRa ">>> File size Level [4]";Size $hTam
 	fi
 	if [ $NOFB = "f" ]; then
@@ -402,10 +408,6 @@ else
 	[ -s $dChinh ] && cp $dChinh $dTam
 fi
 #__________________________________________________________________________________________________
-InRa "> Deleting Special character: Black/WhiteList Online"
-LC_ALL=C cat $denOn | sed -r "${DenTrang}" > $Tambl && cp $Tambl $denOn
-LC_ALL=C cat $trangOn | sed -r "${DenTrang}" > $Tamwl && cp $Tamwl $trangOn
-#__________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	InRa "> Deleting Special character: Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r "${DenTrang}" > tmpmybl && mv tmpmybl $denOff
@@ -415,7 +417,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 fi
 #__________________________________________________________________________________________________
 InRa "> Add-Remove Black-White List"
-LC_ALL=C cat $hTam | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|0.0.0.0||; s|0.0.0.0$||; s|.* br.*||; s|.* lo.*||; s|:.*$||; s|^[[:space:]]*||g; s|^\-\-||; s|^\-||; s|^\_\_||; s|^\_||; s|^🔗||; s|^\.||; s|\.$||; s|\/.*$||; s|\.com.*orn$|.com|; s|\.co.*rls$|.com|; s|^w.*orn$||; s|\.v$||; s|\.w$||; s|\.z$||; s|\+$||; s|\-$||; s|^[^.]+$||; /^$/d' | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+LC_ALL=C cat $hTam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 LC_ALL=C cat $dTam | grep -Fvwf $Tamwl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 InRa ">>>> File size Hosts";Size $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InRa "# Blocked: $Counts Hosts"
