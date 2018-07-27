@@ -1,6 +1,7 @@
 TMuc="$(cd "$(dirname "${0}")" && pwd)"
 TMTam="${TMuc}/dl"
-pc="${TMuc}/pc.sh"
+process="http://gg.gg/p_"
+pc="${TMuc}/p.sh"
 if [ -d "$TMTam" ]
 then
 	echo "Using $TMTam"
