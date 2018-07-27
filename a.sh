@@ -1,7 +1,7 @@
 #!/bin/sh
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180727d"
+VERSION="20180727e"
 export BLITZ=3
 export NOFB=0
 export ONLINE=1
@@ -46,7 +46,8 @@ alias GetSSL="curl -f -s -k"
 alias GetMHK="curl -f -s -A "Mozilla/5.0" -e http://forum.xda-developers.com/"
 alias SEDCLEAN="sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; s/^[[:punct:]]*//; s/[[:punct:]]*$//; /^$/d; /^\s*$/d'"
 alias GREPFILTER="grep -o '^[^#]*' | grep -vF -e \"::\" -e \";\" -e \"//\" -e \"http\" -e \"https\" -e \"@\" -e \"mailto\" | tr -cd '\000-\177'"
-alias FNSED="sed -r 's|:.*$||; s|^[^.]+$||; s|\.$||; s|\.co.*ies$|.com|; s|\.com.*orn$|.com|; s|.*tporn$||; s|.*html$||'"
+alias FNSED="sed -r 's|:.*$||; s|^\_\_||g; s|^\_||g; s|^\-||; s|^\.||; s|0.0.0.0||; s|[[:blank:]]||'"
+SedFN="s|\.co.*ies$|.com|; s|\.com.*orn$|.com|; s|.*tporn$||; s|.*html$||; s|st\..*\.0$||; s|\.k$||; s|\.v$||; s|\.w$||; 's|\.$||; s|^[^.]+$||; /^$/d; /^\s*$/d'"
 InRa ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
@@ -386,7 +387,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$bloff" ] || [ -s "$wloff" ]; }; then
 	cat $whitelist | cat $wloff - | grep -Fvwf $bloff > $nwl
 fi
 InRa "> Processing final mphosts/mpdomains files"
-LC_ALL=C cat $tmphosts | SEDCLEAN | cat $nbl - | grep -Fvwf $nwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam; Size $tam | cat $tam | FNSED | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
+LC_ALL=C cat $tmphosts | tr '[:upper:]' '[:lower:]' | SEDCLEAN | cat $nbl - | grep -Fvwf $nwl | FNSED | sed -r "${SedFN}" | sort | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam; Size $tam | cat $tam | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
 LC_ALL=C cat $tmpdomains | SEDCLEAN | grep -Fvwf $nwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
 hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $hCount Hosts";Size $mphosts;
 dCount=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $dCount Domain";Size $mpdomains;
