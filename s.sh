@@ -1,8 +1,9 @@
 #!/bin/sh
-VERSION="20180726a"
+VERSION="20180728a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
+d="http://gg.gg/d_"
 u00="${Nha}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
@@ -24,10 +25,8 @@ u81="http://gg.gg/u81_";u82="http://gg.gg/u82_";u83="http://gg.gg/u83_";u84="htt
 u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="http://gg.gg/u89_";u90="http://gg.gg/u90_";
 u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
-#u80="http://gg.gg/u80_";
-DenTrang="s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d";
-SubDM="\~|000webhostapp\.com$|000webhostaww\.com$|0catch\.com$|0x1f4b0\.com$|126\.net$|207\.net$|2o7\.net$|302br\.net$|360\.cn$|3g\.cn$|51yes\.com$|69server\.net$|6\.cn$|7us\.us$|ac\.cn$|actonsoftware\.com$|adaos\-ads\.net$|adap\.tv$|adbureau\.net$|adclear\.net$|adhese\.com$|adjlggler\.net$|adkmob\.com$|admob\.com$|adnxs\.com$|adotmob\.com$|adprotect\.net$|adpush\.cn$|adscience\.nl$|adsrvr\.org$|advertising\.com$|aeta.*lim\.net$|ahdoonetfisher\.net$|aitilklykk\.net$|aiziezq6\.net$|alimabi\.cn$|alimama\.cn$|allyes\.com$|alphonso\.tv$|alpol\.com$|altpool\.pro$|am15\.net$|amazon\-adsystem\.com$|analysys\.cn$|anbtr\.com$|angelfire\.com$|aobohalbirex\.net$|aplus\.net$|appier\.net$|atspace\.us$|autoimg\.cn$|aviasales\.ru$|awwier\.net$|baidu\.com$|baixeinfiltrato\.net$|beeplog\.de$|bestdeals\.at$|bizland\.com$|blog\.com$|blogswot\..*$|blueadvertise\.com$|blysellads\.com$|bpa\.nu$|bt\.net$|btcchina\.com$|btttag\.com$|bubblesmedia\.ru$|byinter\.net$|cablelink\.ro$|caiy.*ews\.net$|canalblog\.com$|carrieriq\.com$|casee\.cn$|cdi\.no$|ce.*d\-t.*ar\.com$|cedexis\.net$|centade\.com$|centerblog\.net$|chartbeat\.net$|charter\.com$|chat\.rl$|chez\.com$|chiej.*ls\.net$|china\.cn$|chinaenter\.cn$|cjb\.net$|cjt1\.net$|clan\.su$|clickability\.com$|clickbank\.net$|clicksmob\.com$|cloldfront\.net$|co\.at$|co\.cc$|co\.lk$|co\.tv$|co\.zw$|codns\.com$|coin\-have\.com$|coinblockers\.com$|com1\.ru$|com\-oo4\.net$|com\.al$|com\.br$|com\.cn$|comcast\.net$|comlu\.com$|comoj\.com$|company\-target\.com$|connextra\.com$|consensu\.org$|crashlytics\.com$|creablog\.com$|creativemedia\.buzz$|criteo\.(com|net)$|cryptaloot\.pro$|cz\.cc$|da\.ru$|ddns\.net$|de\.sr$|de\.vu$|deluxepass\.com$|demdex\.net$|demos\.su$|designmysite\.pro$|diaryland\.com$|digitalinsight\.com$|dolbleclick\.net$|domob\.cn$|doubleclick\.com$|doubleclick\.net$|dtiblog\.com$|dy4\.de$|e.*e\-of\-g.*er\.net$|e\-city\.tv$|easy4blog\.com$|ebaf.*idin\.com$|ebayrtm\.com$|ed10\.net$|edu\.cn$|eigenpage\.nl$|eiyo.*ows\.net$|eloqua\.com$|ensighten\.com$|envy\.nu$|eoc.*orks\.net$|erasercash\.com$|ero\-advertising\.com$|f3322\.net$|fastclick\.net$|fastestshopa\.su$|fasthost\.tv$|fateback\.com$|favorietje\.nl$|fgpp\.com$|films\-internet\.info$|firstfind\.nl$|firstlight\.cn$|fj\.cn$|flu\.cc$|for\-our\.info$|fora\.pl$|forum2x2\.ru$|forumtoolbar\.com$|free\.fr$|freehosting\.cc$|freesitesnetwork\.com$|frem\.com$|fwmrm\.net$|fx\.to$|gb\.net$|gerelateerd\.nl$|getrestinfom\.su$|getrestinfon\.su$|go2affise\.com$|googlesyndication\.com$|gotech\.tk$|gov\.cn$|grandenetworks\.net$|hashvault\.pro$|hatenablog\.com$|herokuapp\.com$|hi\.cn$|hienebakster\.net$|hitbox\.com$|hol\.es$|home\.ne\.jp$|hotjar\.com$|hotlinkimage\.com$|hotpaginas\.com$|httpool\.com$|huanqiu\.com$|hunantv\.com$|hut1\.ru$|hyperphp\.com$|hywerbanner\.net$|i2idata\.com$|i2iserv\.com$|i3log\.com$|i\-gloo\.net$|i\-lookup\.com$|ibelgique\.com$|iblogs\.com$|ibnsites\.com$|ibohpjavme\.com$|icast\.cn$|idv\.tw$|iedoobuzzlike\.com$|iegh.*rror\.com$|iehohicv2\.net$|iembarazadas\.com$|iequutravel4u\.com$|ieyipluckyscent\.com$|ifeng\.com$|ifengimg\.com$|ifrance\.com$|igexin\.com$|ign\.com$|ignorelist\.com$|igodigital\.com$|ihielatelevisao\.com$|iiniamoca\-news\.com$|ijijiji\.com$|ijinshan\.com$|iknowthatgirl\.com$|ikwilhet\.nu$|impact\-ad\.jp$|imrworldwide\.com$|indieclick\.com$|indymedia\.org$|infoweb\.ne\.jp$|inq\.com$|insightfirst\.com$|installantivirus\.us$|isgre\.at$|ixa.*sts\.net$|jl\.cn$|jpush\.cn$|jtle0\.cn$|kla.*and\.nl$|klan.*land\.com$|krovatka\.su$|l\-telcom\.net$|lab.*ining\.com$|land\.ru$|level3\.net$|linkexchange\.nl$|linkgoed\.nl$|linkhotel\.nl$|linkpulse\.com$|liuliangbao\.cn$|liveadvert\.com$|lmbler\.net$|localytics\.com$|loizuseolita\.com$|lookingat\.us$|lookseekpages\.com$|looksmart\.com$|loomia\.com$|looq.*ciety\.com$|loyaltytoolbar\.com$|lphbs\.com$|lsercash\.com$|ltdomains\.com$|lycos\.com$|mabulle\.com$|madvertise\.com$|maxthon\.cn$|mchsi\.com$|media\-toolbar\.com$|mediaonenetwork\.net$|meegmfio\.in$|mesh\.ad\.jp$|microad\.jp$|minemonero\.pro$|minerhills\.com$|minertopia\.org$|miningpoolhub\.com$|minisplat\.cn$|mirtesen\.rl$|mktoresp\.com$|moad\.cn$|mob\.com$|mobileapptracking\.com$|mobilecore\.com$|mobiletheory\.com$|mobpartner\.com$|mocean\.mobi$|mojeforlm\.net$|monerise\.com$|musicfrost\.com$|my.*toolbar\.com$|my\-place\.us$|mybjjblog\.com$|mydas\.mobi$|myhomescreen\.tv$|myjino\.ru$|mylivepage\.ru$|mylivewage\.rl$|myway\.com$|n3\.net$|nanopool\.org$|narod2\.ru$|narod\.ru$|nat.*orks\.ru$|nedstat\.net$|neliver\.com$|net16\.net$|net23\.net$|net46\.net$|net63\.net$|net76\.net$|net78\.net$|net84\.net$|net\.cn$|netpass\.tv$|netshelter\.net$|nnarod\.ru$|nu.*e\-cr.*t\.net$|nut\.cc$|nx\.cn$|oasuagoals\.net$|oboh.*avi\.net$|oewabox\.at$|ohx.*all\.net$|onion\.to$|online\-metrix\.net$|onlinepricex\.su$|ono\.com$|ontheweb\.nl$|ooroptiobeto\.net$|oowaividaddict\.net$|openxenterprise\.com$|org\.cn$|ourtoolbar\.com$|owentracker\.net$|pacbell\.net$|pagina\.nu$|peiw.*es\.com$|pinba.*twork\.com$|plp7\.ru$|plugrush\.com$|pma\-network\.com$|pointroll\.com$|polarmobile\.com$|poloniex\.com$|polyad\.net$|polybuild\.ru$|popads\.net$|pornhub\.com$|publicus\.com$|puserving\.com$|qq\.com$|qualtrics\.com$|queroumforum\.com$|raeniretweet\.net$|reporo\.net$|rfihub\.com$|rr\.com$|rr\.nu$|rubiconproject\.com$|s.*e\-dir.*y\.net$|sbcglobal\.net$|scorecardresearch\.com$|searchmiracle\.com$|searchwho\.com$|sec.*ctrade\.ru$|seclrenet\-server\.net$|seclreserver\.net$|secureintl\.com$|ser.*rike\.com$|serving\-sys\.com$|sextracker\.de$|shaeyffh6\.net$|sharezips\.net$|shoofle\.tv$|shuzilm\.cn$|si.*fe\-hi.*ce\.gq$|sina\.cn$|sinaimg\.cn$|site40\.net$|site50\.net$|site88\.net$|site90\.com$|site90\.net$|skyrock\.com$|smaato\.net$|smartnaturalshop\.su$|smi2\.net$|smi2\.ru$|soarfi\.cn$|solocwm\.com$|solt.*ale\.com$|soothxopso\.net$|spacevilla\.net$|sponsormob\.com$|spylog\.com$|spywarestrike\.com$|startclub\.nl$|startmee\.nl$|startspot\.nl$|startswot\.nl$|startvista\.nl$|startvriend\.nl$|student\-24\.ru$|subito\.cc$|suprnova\.cc$|switchadhub\.com$|syndicaster\.tv$|szm\.com$|t\-online\.hl$|taboola\.com$|tahc.*eks\.net$|taiwabonlswinner\.net$|teads\.tv$|tealilmiq\.com$|telekom\.hu$|telering\.at$|terrashare\.com$|theglobeandmail\.com$|thetrafficstat\.net$|thohjkuvat\.net$|tianya\.cn$|tie\.cl$|tlmblr\.com$|tmall\.com$|tmfweb\.nl$|tomshardware\.com$|top100\.org$|toprealsalen\.su$|tpnet\.pl$|tr.*ut\-t.*e\.org$|trademob\.com$|tsx\.org$|tvgoods\.ru$|twnet\.wl$|uc\.cn$|ucoz\.ru$|ufanet\.ru$|uni5\.net$|uni\.cc$|usite\.pro$|valleclick\.com$|valleclick\.net$|vectranet\.pl$|vertamedia\.com$|veruta\.com$|vi\.net$|videoplaza\.tv$|vidible\.tv$|vidzi\.tv$|voiceads\.cn$|voicecloud\.cn$|voluumtrk2\.com$|voluumtrk3\.com$|voluumtrk\.com$|vsn\.nu$|w8w\.pl$|waligrucha\.pl$|warszawa\.pl$|waw\.pl$|wbwhgwbr\.in$|web\.tr$|webgidsje\.nl$|webjump\.com$|webservis\.ru$|website\.pl$|webtradeplus\.su$|webtrekk\.net$|webwise\.com$|wechat\.com$|weebly\.com$|weibo\.cn$|weibo\.com$|wirtualnie\.pl$|wlblicvm\.com$|work5\.ru$|wostore\.cn$|wow\-hosting\.com$|woxaeoboads\.com$|woyo8g\.com$|wps\.cn$|wrating\.com$|wtcsites\.com$|wxv\.pl$|x10host\.com$|x10hosting\.com$|x2z\.com$|xae.*is\.com$|xanga\.com$|xbloggers\.com$|xblogspot\.com$|xg4ken\.com$|xhamster\.com$|xiaocen\.com$|xiaomi\.com$|xiti\.com$|xj\.cn$|xlogz\.com$|xmatch\.com$|xmiler\.com$|xooit\.com$|xrus\.org$|xxxfaster\.net$|xz\.cn$|yamanoha\.com$|yesadvertising\.com$|yi\.org$|yieldmanager\.net$|yoyohost\.com$|zac.*ella\.net$|zapto\.org$|zeblog\.com$|zinoiosijek031\.net$|zj\.cn$|zrus\.org$|zz\.mu$";
 #__________________________________________________________________________________________________
+SedBW="s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d";
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -35,31 +34,23 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export Tam="${TMuc}/tmp"
-if [ -d "$Tam" ]
+export TMTam="${TMuc}/tmp"
+if [ -d "$TMTam" ]
 then
-	echo "Using $Tam"
+	echo "Using $TMTam"
 else
-	echo "Creating: $Tam"
-	mkdir ${Tam}
+	echo "Creating: $TMTam"
+	mkdir ${TMTam}
 fi
-export hChinh="${TMuc}/h"
-export hDung="${TMuc}/h.zzz"
-export hTam="${Tam}/h.tmp"
-export Tamh="${Tam}/ht.tmp"
-export Tamt="${Tam}/tt.tmp"
-export Tambl="${Tam}/bl.tmp"
-export Tamwl="${Tam}/wl.tmp"
-export dChinh="${TMuc}/d"
-export dDung="${TMuc}/d.zzz"
-export dTam="${Tam}/d.tmp"
-export Tamd="${Tam}/dt.tmp"
+export pc="${TMuc}/d.sh"
+export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";export hTam="${TMTam}/h.tmp"
+export tam="${TMTam}/t.tmp"
+export t8m="${TMTam}/t8.tmp"
+export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
+export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp"
 export pauseflag="${TMuc}/PAUSED"
-export denOn="${TMuc}/den.On"
-export trangOn="${TMuc}/trang.On"
-export base64wl="${TMuc}/base64wl"
-export denOff="${TMuc}/den.Off"
-export trangOff="${TMuc}/trang.Off"
+export denOn="${TMuc}/den.On";export trangOn="${TMuc}/trang.On"
+export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off"
 export hLog="${TMuc}/h.log"
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
@@ -126,11 +117,11 @@ Giup ()
 	printf '\t'; echo "$(basename "$0") [-? | -h | --help] [-v | --version] [-1] [-2] [-b | --bl=<domain.name>] [-w | --wl=<domain.name>] ..."
 	echo ""
 	echo "OPERATION:"
-	printf '\t'; echo -n "[-0]"; printf '\t\t\t\t'; echo "Level [0: safe minimum protection"
-	printf '\t'; echo -n "[-1]"; printf '\t\t\t\t'; echo "Level [1: increased protection"
-	printf '\t'; echo -n "[-2]"; printf '\t\t\t\t'; echo "Level [2: optimum protection"
-	printf '\t'; echo -n "[-3]"; printf '\t\t\t\t'; echo "Level [3: unlock maximum protection"
-	printf '\t'; echo -n "[-4]"; printf '\t\t\t\t'; echo "Level [4: unlock Ultra protection [DEFAULT]"
+	printf '\t'; echo -n "[-0]"; printf '\t\t\t\t'; echo "Level [0]: safe minimum protection"
+	printf '\t'; echo -n "[-1]"; printf '\t\t\t\t'; echo "Level [1]: increased protection"
+	printf '\t'; echo -n "[-2]"; printf '\t\t\t\t'; echo "Level [2]: optimum protection"
+	printf '\t'; echo -n "[-3]"; printf '\t\t\t\t'; echo "Level [3]: unlock maximum protection"
+	printf '\t'; echo -n "[-4]"; printf '\t\t\t\t'; echo "Level [4]: unlock Ultra protection [DEFAULT]"
 	printf '\t'; echo -n "[-f]"; printf '\t\t\t\t'; echo "Block Facebook and Messenger services"
 	printf '\t'; echo -n "[-F]"; printf '\t\t\t\t'; echo "Block Facebook, Messenger, Instagram, WhatsApp"
 	printf '\t'; echo -n "[-d | -D]"; printf '\t\t\t'; echo "Ignore denOff/trangOff entries"
@@ -156,20 +147,20 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	fTam="${Tam}/update"
+	fTMTam="${TMTam}/update"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $fTam
+		GetSSL ${Nha}/$(basename "$0") > $fTMTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
-			new_md5=`md5sum $fTam | cut -d' ' -f1`
+			new_md5=`md5sum $fTMTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				NEWVER=`grep -w -m 1 "VERSION" $fTam`
+				NEWVER=`grep -w -m 1 "VERSION" $fTMTam`
 				InRa ">>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
-				chmod 755 $fTam
-				mv $fTam $0
+				chmod 755 $fTMTam
+				mv $fTMTam $0
 				InRa ">>> Updated to the latest version."
 			else
 				InRa ">>> Current version: $VERSION"
@@ -177,7 +168,7 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
-		rm -rf ${Tam};
+		rm -rf ${TMTam};
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -186,7 +177,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${Tam}; exit 0 ;;
+		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
 		0    ) Level [0 ;;
 		1    ) Level [1 ;;
 		2    ) Level [2 ;;
@@ -256,150 +247,145 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "> Downloading / updating cURL certificates"
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
+	InRa "# Downloading: ${pc}";GetSSL ${d} > $tam;Size $tam;cat $tam > $pc;
 #__________________________________________________________________________________________________
 	InRa "> Updating official Black/WhiteList Online"
 	GetSSL ${Nha}/denOn/denOn > $denOn;Size $denOn;
-	GetSSL ${Nha}/trangOn/trangOn > $Tamh;Size $Tamh;cat $Tamh > $trangOn;
-	GetSSL ${Nha}/trangOn/apple > $Tamh;Size $Tamh;cat $Tamh >> $trangOn;Size $trangOn
+	GetSSL ${Nha}/trangOn/trangOn > $tam;Size $tam;cat $tam > $trangOn;
+	GetSSL ${Nha}/trangOn/apple > $tam;Size $tam;cat $tam >> $trangOn;Size $trangOn
 	InRa "> Deleting Special character: Black/WhiteList Online"
-	LC_ALL=C cat $denOn | sed -r "${DenTrang}" > $Tambl && cp $Tambl $denOn
-	LC_ALL=C cat $trangOn | sed -r "${DenTrang}" > $Tamwl && cp $Tamwl $trangOn
+	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
+	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
 #__________________________________________________________________________________________________
 
 	InRa ">> Unlocking Level [0]"
-	InRa "# Downloading: Domains";GetSSL ${u00} > $Tamd;Size $Tamd;cat $Tamd | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
+	InRa "# Downloading: Domains";GetSSL ${u00} > $tam;Size $tam;cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
 #__________________________________________________________________________________________________
-	InRa "# Downloading: ${u01}";GetSSL ${u01} > $Tamh;Size $Tamh;cat $Tamh > $hTam;
-	InRa "# Downloading: ${u02}";GetSSL ${u02} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u03}";GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $Tamh;Size $Tamh;cat $Tamh >> $hTam | Size $hTam;
-	InRa "# Downloading: ${u04}";GetSSL ${u04} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u05}";GetSSL ${u05} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u06}";GetSSL ${u06} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u07}";GetSSL ${u07} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u08}";GetSSL ${u08} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u09}";GetSSL ${u09} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u10}";GetSSL ${u10} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u11}";GetSSL ${u11} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u12}";GetSSL ${u12} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u13}";GetSSL ${u13} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u14}";GetSSL ${u14} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u15}";GetSSL ${u15} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u16}";GetSSL ${u16} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u17}";GetSSL ${u17} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u18}";GetSSL ${u18} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "# Downloading: ${u19}";GetSSL ${u19} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-	InRa "> Deleting Special character: [0]";LC_ALL=C cat $hTam | sed -r 's|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d' | sed -r 's|\n^[^.]+$||; /^$/d' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
-	cat $Tamh > $hTam;InRa ">> File size Level [0]";Size $hTam;
+	InRa "# Downloading: ${u01}";GetSSL ${u01} > $tam;Size $tam;cat $tam > $hTam;
+	InRa "# Downloading: ${u02}";GetSSL ${u02} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u03}";GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $tam;Size $tam;cat $tam >> $hTam | Size $hTam;
+	InRa "# Downloading: ${u04}";GetSSL ${u04} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u05}";GetSSL ${u05} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u06}";GetSSL ${u06} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u07}";GetSSL ${u07} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u08}";GetSSL ${u08} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u09}";GetSSL ${u09} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u10}";GetSSL ${u10} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u11}";GetSSL ${u11} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u12}";GetSSL ${u12} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u13}";GetSSL ${u13} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u14}";GetSSL ${u14} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u15}";GetSSL ${u15} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u16}";GetSSL ${u16} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u17}";GetSSL ${u17} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u18}";GetSSL ${u18} > $tam;Size $tam;cat $tam >> $hTam;
+	InRa "# Downloading: ${u19}";GetSSL ${u19} > $tam;Size $tam;cat $tam > $Lv0;
+	InRa "# Call $pc";sh $pc;
 #__________________________________________________________________________________________________
-	InRa "# Downloading: ${u90}";GetSSL ${u90} > $Tamh;Size $Tamh;cat $Tamh > $Tamt;
-	InRa "# Downloading: ${u91}";GetSSL ${u91} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u92}";GetSSL ${u92} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u93}";GetSSL ${u93} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u94}";GetSSL ${u94} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u95}";GetSSL ${u95} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u96}";GetSSL ${u96} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u97}";GetSSL ${u97} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u98}";GetSSL ${u98} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "# Downloading: ${u99}";GetSSL ${u99} > $Tamh;Size $Tamh;cat $Tamh >> $Tamt;
-	InRa "> Deleting Special character: [0.5]";LC_ALL=C cat $Tamt | tr '[:upper:]' '[:lower:]' | sed -r 's|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d' | sed -r 's|!.*$||; s|#.*$||; s|:.*$||; s|\^.*$||; s|\@.*$||; s|\/.*$||; s|\?.*$||; s|.*\*.$||; s|~.*$||; s|0.0.0.0||; s|\,|\n|g; s|^127\.0\.0\.1.*$||; s/\|\|//; s|[[:blank:]]|\n|; s|^\.||; s|^[^.]+$||; s|>.*$||; s|\\.*$||; s|^\-||; s|\&.*$||; s|\*$||; s|^.*\.$||g; s|.*\*.*||; s|.*\.$||; s|\n.*\.$||' | sed -r 's|\.invalid$||; s|.*main$||; s|\.co.*orn$|.com|; s|^i.*nt$||; s|^s.*pt$||' | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
-	cat $Tamh >> $hTam;InRa ">> File size Level [0.5]";Size $hTam;
+	InRa "# Downloading: ${u90}";GetSSL ${u90} > $tam;Size $tam;cat $tam > $t8m;
+	InRa "# Downloading: ${u91}";GetSSL ${u91} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u92}";GetSSL ${u92} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u93}";GetSSL ${u93} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u94}";GetSSL ${u94} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u95}";GetSSL ${u95} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u96}";GetSSL ${u96} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u97}";GetSSL ${u97} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u98}";GetSSL ${u98} > $tam;Size $tam;cat $tam >> $t8m;
+	InRa "# Downloading: ${u99}";GetSSL ${u99} > $tam;Size $tam;cat $tam > $Lv00;
+	InRa "# Call $pc";sh $pc;
+	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking Level [1]"
-		InRa "# Downloading: ${u20}";GetSSL ${u20} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u21}";GetSSL ${u21} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u22}";GetSSL ${u22} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u23}";GetSSL ${u23} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u24}";GetSSL ${u24} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u25}";GetSSL ${u25} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u26}";GetSSL ${u26} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u27}";GetSSL ${u27} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u28}";GetSSL ${u28} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u29}";GetSSL ${u29} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u30}";GetSSL ${u30} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u31}";GetSSL ${u31} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u32}";GetSSL ${u32} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u33}";GetSSL ${u33} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u34}";GetSSL ${u34} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u35}";GetSSL ${u35} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u36}";GetSSL ${u36} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u37}";GetSSL ${u37} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u38}";GetSSL ${u38} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u39}";GetSSL ${u39} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u40}";GetSSL ${u40} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u41}";GetSSL ${u41} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u42}";GetSSL ${u42} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u43}";GetSSL ${u43} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u44}";GetSSL ${u44} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u45}";GetSSL ${u45} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u46}";GetSSL ${u46} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u47}";GetSSL ${u47} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u48}";GetSSL ${u48} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "> Deleting Special character: [1]";LC_ALL=C cat $hTam | sed -r 's|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d' | sed -r 's|.*ating$||; s|.*kbang$||; s|.*ztop$||; s|.*kdns$||; s|.*main$||; s|\.v.*ost$|.vn|; s|\.co.*ost$|.com|; s|\.co.*ies$|.com|; s|\.co.*orn$|.com|' | sed -r 's|\n^[^.]+$||; /^$/d' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
-		cat $Tamh > $hTam;InRa ">> File size Level [1]";Size $hTam;
+		InRa "# Downloading: ${u20}";GetSSL ${u20} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u21}";GetSSL ${u21} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u22}";GetSSL ${u22} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u23}";GetSSL ${u23} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u24}";GetSSL ${u24} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u25}";GetSSL ${u25} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u26}";GetSSL ${u26} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u27}";GetSSL ${u27} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u28}";GetSSL ${u28} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u29}";GetSSL ${u29} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u30}";GetSSL ${u30} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u31}";GetSSL ${u31} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u32}";GetSSL ${u32} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u33}";GetSSL ${u33} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u34}";GetSSL ${u34} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u35}";GetSSL ${u35} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u36}";GetSSL ${u36} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u37}";GetSSL ${u37} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u38}";GetSSL ${u38} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u39}";GetSSL ${u39} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u40}";GetSSL ${u40} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u41}";GetSSL ${u41} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u42}";GetSSL ${u42} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u43}";GetSSL ${u43} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u44}";GetSSL ${u44} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u45}";GetSSL ${u45} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u46}";GetSSL ${u46} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u47}";GetSSL ${u47} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u48}";GetSSL ${u48} > $tam;Size $tam;cat $tam > $Lv1;
+		InRa "# Call $pc";sh $pc;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
 		InRa ">> Unlocking Level [2]"
-		InRa "# Downloading: ${u49}";GetSSL ${u49} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u50}";GetSSL ${u50} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u51}";GetSSL ${u51} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u52}";GetSSL ${u52} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u53}";GetSSL ${u53} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u54}";GetSSL ${u54} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u55}";GetSSL ${u55} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u56}";GetHTT ${u56} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u57}";GetHTT ${u57} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u58}";GetSSL ${u58} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u59}";GetSSL ${u59} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u60}";GetSSL ${u60} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u61}";GetSSL ${u61} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u62}";GetSSL ${u62} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u63}";GetSSL ${u63} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u64}";GetSSL ${u64} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u65}";GetSSL ${u65} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u66}";GetSSL ${u66} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u67}";GetSSL ${u67} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u68}";GetSSL ${u68} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u69}";GetSSL ${u69} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u70}";GetSSL ${u70} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u71}";GetSSL ${u71} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u72}";GetSSL ${u72} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u73}";GetSSL ${u73} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u74}";GetSSL ${u74} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u75}";GetSSL ${u75} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u76}";GetSSL ${u76} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u77}";GetSSL ${u77} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "> Deleting Special character: [2]";LC_ALL=C cat $hTam | sed -r 's|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d' | sed -r 's|\.$||; s|\.k$||; s|\.co.*orn$|.com|; s|www$||' | sed -r 's|\n^[^.]+$||; /^$/d' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
-		cat $Tamh > $hTam;InRa ">> File size Level [2]";Size $hTam;
+		InRa "# Downloading: ${u49}";GetSSL ${u49} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u50}";GetSSL ${u50} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u51}";GetSSL ${u51} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u52}";GetSSL ${u52} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u53}";GetSSL ${u53} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u54}";GetSSL ${u54} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u55}";GetSSL ${u55} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u56}";GetHTT ${u56} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u57}";GetHTT ${u57} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u58}";GetSSL ${u58} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u59}";GetSSL ${u59} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u60}";GetSSL ${u60} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u61}";GetSSL ${u61} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u62}";GetSSL ${u62} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u63}";GetSSL ${u63} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u64}";GetSSL ${u64} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u65}";GetSSL ${u65} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u66}";GetSSL ${u66} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u67}";GetSSL ${u67} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u68}";GetSSL ${u68} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u69}";GetSSL ${u69} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u70}";GetSSL ${u70} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u71}";GetSSL ${u71} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u72}";GetSSL ${u72} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u73}";GetSSL ${u73} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u74}";GetSSL ${u74} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u75}";GetSSL ${u75} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u76}";GetSSL ${u76} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u77}";GetSSL ${u77} > $tam;Size $tam;cat $tam > $Lv2;
+		InRa "# Call $pc";sh $pc;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
 		InRa ">> Unlocking Level [3]"
-		InRa "# Downloading: ${u78}";GetSSL ${u78} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u79}";GetSSL ${u79} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u80}";GetMHK ${u80} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;		
-		InRa "# Downloading: ${u81}";GetSSL ${u81} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u82}";GetSSL ${u82} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u83}";GetSSL ${u83} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "> Deleting Special character: [3]";LC_ALL=C cat $hTam | sed -r 's|#.*$||; s|<.*$||; s|::||; s|^address=/||; s|0.0.0.0||; s|:.*$||; s|^127.0.0.1||; s|^255.255.*||; s|0.0.0.0||; s|\/$||; s|\.$||; s|^[[:space:]]*||g; s|\;|\n|; s|\s+$||; s|\^$||; s|^\-\-||; s|^\-||; s|^[^.]+$||; s|&.*$||; s|^🔗||; s|^\.||; s|^\_\_||g; s|^\_||g; s|\.$||; s|\?$||; s|\-$||; s|\+$||; s|\$.*$||; s|\.v$||; s|\.w$||; s|p.*mq$||; s|\.co.*rls$|.com|; /^$/d' | sed -r 's|\.com.*orn$|.com|; s|^w.*orn$||; s|.*html$||' | sed -r 's|\n^[^.]+$||; /^$/d' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
-		cat $Tamh > $hTam;InRa ">> File size Level [3]";Size $hTam;
+		InRa "# Downloading: ${u78}";GetSSL ${u78} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u79}";GetSSL ${u79} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u80}";GetMHK ${u80} > $tam;Size $tam;cat $tam >> $hTam;		
+		InRa "# Downloading: ${u81}";GetSSL ${u81} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u82}";GetSSL ${u82} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u83}";GetSSL ${u83} > $tam;Size $tam;cat $tam > $Lv3;
+		InRa "# Call $pc";sh $pc;
 	#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking Level [4]"
-		InRa "# Downloading: ${u84}";GetSSL ${u84} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "# Downloading: ${u100}";GetSSL ${u100} > $Tamh;Size $Tamh;cat $Tamh >> $hTam;
-		InRa "> Deleting Special character: [4]";LC_ALL=C cat $hTam | sed -r 's|#.*$||; s|0.0.0.0||; s|0.0.0.0$||; s|.* br.*||; s|.* lo.*||; s|:.*$||; s|^[[:space:]]*||g; s|^\-\-||; s|^\-||; s|^\_\_||; s|^\_||; s|^🔗||; s|^\.||; s|\.$||; s|\/.*$||; s|\.com.*orn$|.com|; s|\.co.*rls$|.com|; s|^w.*orn$||; s|\.v$||; s|\.w$||; s|\.z$||; s|\+$||; s|\-$||; s|^[^.]+$||; /^$/d' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $Tamh
-		InRa ">>> File size Level [4]";Size $hTam
+		InRa "# Downloading: ${u84}";GetSSL ${u84} > $tam;Size $tam;cat $tam >> $hTam;
+		InRa "# Downloading: ${u100}";GetSSL ${u100} > $tam;Size $tam;cat $tam > $Lv4;
+		InRa "# Call $pc";sh $pc;
 	fi
 	if [ $NOFB = "f" ]; then
 		InRa "# Downloading: ${u85}"
-		GetSSL ${Nha}/denOn/facebook.only >> $hTam;Size $Tamh;cat $Tamh >> $hTam;
+		GetSSL ${Nha}/denOn/facebook.only > $tam;Size $tam;cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		InRa "# Downloading: ${u86}";GetSSL ${Nha}/denOn/facebook.all >> $hTam;Size $Tamh;
-		cat $Tamh >> $hTam
+		InRa "# Downloading: ${u86}";GetSSL ${Nha}/denOn/facebook.all > $tam;Size $tam;cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
 else
@@ -410,15 +396,15 @@ fi
 #__________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	InRa "> Deleting Special character: Black/WhiteList Offline"
-	LC_ALL=C cat $denOff | sed -r "${DenTrang}" > tmpmybl && mv tmpmybl $denOff
-	LC_ALL=C cat $trangOff | sed -r "${DenTrang}" > tmpmywl && mv tmpmywl $trangOff
-	cat $denOn | cat $denOff - > $Tambl
-	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $Tamwl
+	LC_ALL=C cat $denOff | sed -r "${SedBW}" > tmpmybl && mv tmpmybl $denOff
+	LC_ALL=C cat $trangOff | sed -r "${SedBW}" > tmpmywl && mv tmpmywl $trangOff
+	cat $denOn | cat $denOff - > $tbl
+	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $twl
 fi
 #__________________________________________________________________________________________________
 InRa "> Add-Remove Black-White List"
-LC_ALL=C cat $hTam | grep -vE "(${SubDM})" | cat $Tambl - | grep -Fvwf $Tamwl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
-LC_ALL=C cat $dTam | grep -Fvwf $Tamwl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
+LC_ALL=C cat $hTam | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 InRa ">>>> File size Hosts";Size $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InRa "# Blocked: $Counts Hosts"
 InRa ">>>> File size Domains";Size $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
@@ -428,7 +414,7 @@ if [ -f "${TMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	InRa "> Restarting DNS server (dnsmasq)";ReBoot;InRa "> Deleting: $Tam";rm -rf ${Tam};
+	InRa "> Restarting DNS server (dnsmasq)";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
