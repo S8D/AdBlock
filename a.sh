@@ -1,7 +1,6 @@
 #!/bin/sh
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-u00="${Nha}/Darias.txt"
 VERSION="20180727d"
 export BLITZ=3
 export NOFB=0
@@ -218,7 +217,7 @@ if ping -q -c 1 -W 1 google.com &> /dev/null; then
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 	InRa "# Downloading mpdomains file"
-	GetSLL ${u00} > $tam; Size $tam; cat $tam > $tmpdomains;
+	GetSSL ${Nha}/Darias.txt > $tam; Size $tam; cat $tam > $tmpdomains;
 	GetSSL https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/dnsmasq/dnsmasq.blacklist | GREPFILTER | sed 's/0.0.0.0$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
 	GetSSL https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt | GREPFILTER | sed 's/0.0.0.0$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
 	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq https://pgl.yoyo.org/adservers/serverlist.php? | GREPFILTER | sed 's/127.0.0.1$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
