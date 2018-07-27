@@ -330,9 +330,8 @@ if ping -q -c 1 -W 1 google.com &> /dev/null; then
 	fi
 	if [ $BLITZ -ge 3 ]; then
 		InRa "# Unlocking BLITZ=3 level lists"
-		InRa "> Downloading hosts-file PSH/PUP/WRZ lists"
+		InRa "> Downloading hosts-file PSH/WRZ lists"
 		GetSSL https://hosts-file.net/psh.txt | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
-		GetSSL https://hosts-file.net/pup.txt | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
 		GetSSL https://hosts-file.net/wrz.txt | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
 		InRa "> Downloading Mahakala list"
 		GetMHK http://adblock.mahakala.is/hosts | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
