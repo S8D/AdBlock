@@ -3,6 +3,10 @@ Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
 VERSION="20180727e"
 export BLITZ=3
+SedF1="s|#.*$||; s|<.*$||; s|^address\=\/||; s|0.0.0.0 ||; s|^127.0.0.1||; s|:.*$||; s|\/.*$||; s|\;.*$||; s|\s\s|\n|; s|\s|\n|; s|^0\.0\.0\.0||; s|\&.*$||; s|localhost$||; s|\.k$||; s|\.v$||; s|\.w$||; s|\.col.*rn$||; s|[[:blank:]]||; s|^[[:space:]]*||g"
+SedF2="s|^\_\_||; s|^\_||; s|^\-||; s|\?$||; s|^\.||; s|^[^.]+$||; /^$/d"
+SedF3="s/\.com(a|m|1|en|f4a|http|stu.*rls|malware|ca.*(ies|orn))$/\.com/"
+SedWL="s|#.*$||; s|^0\.0\.0\.0||; s|^127.0.0.1||; s|.*ldomain$||; s|^[^.]+$||; s|^[[:space:]]*||g; /^$/d"
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -46,8 +50,6 @@ alias GetSSL="curl -f -s -k"
 alias GetMHK="curl -f -s -A "Mozilla/5.0" -e http://forum.xda-developers.com/"
 alias SEDCLEAN="sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; s/^[[:punct:]]*//; s/[[:punct:]]*$//; /^$/d; /^\s*$/d'"
 alias GREPFILTER="grep -o '^[^#]*' | grep -vF -e \"::\" -e \";\" -e \"//\" -e \"http\" -e \"https\" -e \"@\" -e \"mailto\" | tr -cd '\000-\177'"
-alias FNSED="sed -r 's|:.*$||; s|^\_\_||g; s|^\_||g; s|^\-||; s|^\.||; s|0.0.0.0||; s|[[:blank:]]||'"
-SedFN="s|\.co.*ies$|.com|; s|\.com.*orn$|.com|; s|.*tporn$||; s|.*html$||; s|st\..*\.0$||; s|\.k$||; s|\.v$||; s|\.w$||; 's|\.$||; s|^[^.]+$||; /^$/d; /^\s*$/d'"
 InRa ()
 {
 	[ $QUIET -eq 0 ] && echo "$1"
@@ -378,7 +380,7 @@ Size $tmphosts
 Size $tmpdomains
 InRa "> Processing blacklist/whitelist files"
 LC_ALL=C cat $blacklist | SEDCLEAN | awk '{if ($1 in a) next; a[$1]=$0; print}' > $nbl && cp $nbl $blacklist
-LC_ALL=C cat $whitelist | SEDCLEAN | awk '{if ($1 in a) next; a[$1]=$0; print}' > $nwl && cp $nwl $whitelist
+LC_ALL=C cat $whitelist | sed -r "${SedWL}" | awk '{if ($1 in a) next; a[$1]=$0; print}' > $nwl && cp $nwl $whitelist
 if [ $DISTRIB -eq 0 ] && { [ -s "$bloff" ] || [ -s "$wloff" ]; }; then
 	InRa "> Processing bloff/wloff files"
 	LC_ALL=C cat $bloff | SEDCLEAN | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mbl && mv $mbl $bloff
@@ -387,7 +389,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$bloff" ] || [ -s "$wloff" ]; }; then
 	cat $whitelist | cat $wloff - | grep -Fvwf $bloff > $nwl
 fi
 InRa "> Processing final mphosts/mpdomains files"
-LC_ALL=C cat $tmphosts | tr '[:upper:]' '[:lower:]' | SEDCLEAN | cat $nbl - | grep -Fvwf $nwl | FNSED | sed -r "${SedFN}" | sort | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam; Size $tam | cat $tam | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
+LC_ALL=C cat $tmphosts | tr '[:upper:]' '[:lower:]' | sed -r "${SedF1}" | sed -r "${SedF2}" | sed -r "${SedF3}" | sed -r 's/\.$\n//' | cat $nbl - | grep -Fvwf $nwl | sort | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam; Size $tam | cat $tam | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $mphosts
 LC_ALL=C cat $tmpdomains | SEDCLEAN | grep -Fvwf $nwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
 hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $hCount Hosts";Size $mphosts;
 dCount=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $dCount Domain";Size $mpdomains;
