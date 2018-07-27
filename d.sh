@@ -1,7 +1,5 @@
 TMuc="$(cd "$(dirname "${0}")" && pwd)"
 TMTam="${TMuc}/dl"
-process="http://gg.gg/p_"
-pc="${TMuc}/p.sh"
 if [ -d "$TMTam" ]
 then
 	echo "Using $TMTam"
@@ -9,6 +7,8 @@ else
 	echo "Creating: $TMTam"
 	mkdir ${TMTam}
 fi
+process="http://gg.gg/p_"
+pc="${TMuc}/p.sh"
 tai="${TMTam}/h.txt"
 tam="${TMTam}/h.tmp"
 tbl="${TMTam}/bl.txt"
