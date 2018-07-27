@@ -7,6 +7,7 @@ else
 	echo "Creating: $TMTam"
 	mkdir ${TMTam}
 fi
+SetIP=0.1.2.3
 tai="${TMTam}/h.txt"
 tam="${TMTam}/h.tmp"
 tbl="${TMTam}/bl.txt"
@@ -22,5 +23,7 @@ SedF1="s|#.*$||; s|<.*$||; s|^address\=\/||; s|0.0.0.0 ||; s|^127.0.0.1||; s|:.*
 SedF2="s|^\_\_||; s|^\_||; s|^\-||; s|\?$||; s|^\.||; s|^[^.]+$||; /^$/d"
 SedF3="s/\.com(a|m|1|en|f4a|http|stu.*rls|malware|ca.*(ies|orn))$/\.com/"
 SedWL="s|#.*$||; s|^0\.0\.0\.0||; s|^127.0.0.1||; s|.*ldomain$||; s|^[^.]+$||; s|^[[:space:]]*||g; /^$/d"
+echo "> Processing WhiteList"
 cat $twl | sed -r "${SedWL}" > $wl
+echo "> Processing Hosts"
 cat $fIn | tr '[:upper:]' '[:lower:]' | sed -r "${SedF1}" | sed -r "${SedF2}" | sed -r "${SedF3}" | sed -r 's/\.$\n//' | sort | uniq | cat $tbl - | grep -Fvwf $twl | sort -u > $PreOut; cat $PreOut | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $fOut
