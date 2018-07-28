@@ -253,8 +253,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "> Downloading / updating cURL certificates"
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
-	InRa "# Downloading: ${pc}";GetSSL ${d} > $tam;Size $tam;cat $tam > $pc;
-#__________________________________________________________________________________________________
+	#__________________________________________________________________________________________________
+	InRa "> Downloading: ${pc}";GetSSL ${d} > $pc;Size $pc;
 	InRa "> Updating official Black/WhiteList Online"
 	GetSSL ${Nha}/denOn/denOn > $denOn;Size $denOn;
 	GetSSL ${Nha}/trangOn/trangOn > $tam;Size $tam;cat $tam > $trangOn;
