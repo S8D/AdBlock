@@ -9,6 +9,7 @@ else
 fi
 process="http://gg.gg/p_"
 pc="${TMuc}/p.sh"
+Lv0="${TMTam}/lv0";Lv00="${TMTam}/lv00";Lv1="${TMTam}/lv1";Lv2="${TMTam}/lv2";Lv3="${TMTam}/lv3";Lv4="${TMTam}/lv4";
 tai="${TMTam}/h.txt"
 tam="${TMTam}/h.tmp"
 tbl="${TMTam}/bl.txt"

@@ -42,6 +42,7 @@ else
 	echo "Creating: $TMTam"
 	mkdir ${TMTam}
 fi
+Lv0="${TMTam}/lv0";Lv00="${TMTam}/lv00";Lv1="${TMTam}/lv1";Lv2="${TMTam}/lv2";Lv3="${TMTam}/lv3";Lv4="${TMTam}/lv4";
 export pc="${TMuc}/d.sh"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";export hTam="${TMTam}/h.tmp"
 export tam="${TMTam}/t.tmp"
