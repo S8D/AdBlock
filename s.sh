@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180729a"
+VERSION="20180729b"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -177,10 +177,10 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
-		0    ) Level [0 ;;
-		1    ) Level [1 ;;
-		2    ) Level [2 ;;
-		3    ) Level [3 ;;
+		0    ) [0 ;;
+		1    ) [1 ;;
+		2    ) [2 ;;
+		3    ) [3 ;;
 		f    ) NOFB="f" ;;
 		F    ) NOFB="F" ;;
 		d|D  ) DISTRIB=1 ;;
@@ -201,7 +201,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			wl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
-			4    ) Level [4 ;;
+			4    ) [4 ;;
 			quiet   ) QUIET=1 ;;
 			pause   ) Tat ;;
 			resume  ) Bat ;;
@@ -240,7 +240,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
-	InRa "# Level [0|1|2|3|4]: $Level"
+	InRa "# [0|1|2|3|4]: $Level"
 
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
@@ -257,7 +257,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
 #__________________________________________________________________________________________________
 
-	InRa ">> Unlocking Level [0]"
+	InRa ">> Unlocking [0]"
 	GetSSL ${u00} > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
 #__________________________________________________________________________________________________
 	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
@@ -279,7 +279,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u17} > $tam;InRa "# Size of ${u17} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u18} > $tam;InRa "# Size of ${u18} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;
-	InRa "# Downloaded Level [0]: $(Size "$Lv0")";sh $dsh;
+	InRa "# Downloaded [0]: $(Size "$Lv0")";sh $dsh;
 #__________________________________________________________________________________________________
 	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv00;
 	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv00;
@@ -291,11 +291,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;
-	InRa "# Downloaded Level [0.5]: $(Size "$Lv00")";sh $dsh;
+	InRa "# Downloaded [0.5]: $(Size "$Lv00")";sh $dsh;
 	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
-		InRa ">> Unlocking Level [1]"
+		InRa ">> Unlocking [1]"
 		GetSSL ${u20} > $tam;InRa "# Size of ${u20} is: $(Size "$tam")";cat $tam > $Lv1;
 		GetSSL ${u21} > $tam;InRa "# Size of ${u21} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u22} > $tam;InRa "# Size of ${u22} is: $(Size "$tam")";cat $tam >> $Lv1;
@@ -325,11 +325,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u46} > $tam;InRa "# Size of ${u46} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u47} > $tam;InRa "# Size of ${u47} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u48} > $tam;InRa "# Size of ${u48} is: $(Size "$tam")";cat $tam >> $Lv1;
-		InRa "# Downloaded Level [1]: $(Size "$Lv1")";sh $dsh;
+		InRa "# Downloaded [1]: $(Size "$Lv1")";sh $dsh;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
-		InRa ">> Unlocking Level [2]"
+		InRa ">> Unlocking [2]"
 		GetSSL ${u49} > $tam;InRa "# Size of ${u49} is: $(Size "$tam")";cat $tam > $Lv2;
 		GetSSL ${u50} > $tam;InRa "# Size of ${u50} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u51} > $tam;InRa "# Size of ${u51} is: $(Size "$tam")";cat $tam >> $Lv2;
@@ -359,25 +359,25 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u75} > $tam;InRa "# Size of ${u75} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u76} > $tam;InRa "# Size of ${u76} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u77} > $tam;InRa "# Size of ${u77} is: $(Size "$tam")";cat $tam >> $Lv2;
-		InRa "# Downloaded Level [2]: $(Size "$Lv2")";sh $dsh;
+		InRa "# Downloaded [2]: $(Size "$Lv2")";sh $dsh;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
-		InRa ">> Unlocking Level [3]"
+		InRa ">> Unlocking [3]"
 		GetSSL ${u78} > $tam;InRa "# Size of ${u78} is: $(Size "$tam")";cat $tam > $Lv3;
 		GetSSL ${u79} > $tam;InRa "# Size of ${u79} is: $(Size "$tam")";cat $tam >> $Lv3;
-		GetMHK ${u80} > $tam;InRa "# Size of ${u80} is: $(Size "$tam")";cat $tam >> $Lv3;
+		GetMHK ${u80} > $tam;InRa "# Size of mahakala.is/hosts is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u81} > $tam;InRa "# Size of ${u81} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u82} > $tam;InRa "# Size of ${u82} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u83} > $tam;InRa "# Size of ${u83} is: $(Size "$tam")";cat $tam >> $Lv3;
-		InRa "# Downloaded Level [3]: $(Size "$Lv3")";sh $dsh;
+		InRa "# Downloaded [3]: $(Size "$Lv3")";sh $dsh;
 	#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
-		InRa ">> Unlocking Level [4]"
+		InRa ">> Unlocking [4]"
 		GetSSL ${u84} > $tam;InRa "# Size of ${u84} is: $(Size "$tam")";cat $tam > $Lv4;
 		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;
-		InRa "# Downloaded Level [4]: $(Size "$Lv4")";sh $dsh;
+		InRa "# Downloaded [4]: $(Size "$Lv4")";sh $dsh;
 	fi
 	if [ $NOFB = "f" ]; then
 		GetSSL ${Nha}/denOn/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
