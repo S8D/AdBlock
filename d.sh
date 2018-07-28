@@ -13,6 +13,16 @@ Sed4="s|\.z$||; s|\.com.*orn$|.com|; s|^w.*orn$||; s|\/.*ads$||";
 SedY="s|\n^[^.]+$||; /^$/d"
 #grep -vE "(${SubDM})" | 
 #__________________________________________________________________________________________________
+InRa ()
+{
+	[ $QUIET -eq 0 ] && echo "$1"
+	echo "$1" >> $hLog
+}
+Size ()
+{
+	InRa "# Size of $1: `du -h $1 | awk '{print $1}'`"
+}
+#__________________________________________________________________________________________________
 if [ -f $Lv0 ];then
 	InRa "> Deleting Special character: [0]";
 	cat $Lv0 | sed -r "${SedX}" | sed -r "${SedY}" > $tam;Size $tam;cat $tam > $hTam;
