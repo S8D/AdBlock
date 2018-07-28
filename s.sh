@@ -221,12 +221,12 @@ done
 shift $((OPTIND-1))
 #__________________________________________________________________________________________________
 TIMERSTART=`date +%s`
-InRa "============================================================="
-InRa "|      AdBlock for DD-WRT/Android base on Linux             |"
-InRa "|      ${HomePage}                       |"
-InRa "|      Author: Manish Parashar                              |"
-InRa "|      Editor: Darias                                       |"
-InRa "============================================================="
+InRa "======================================================"
+InRa "|      AdBlock for DD-WRT/Android base on Linux      |"
+InRa "|      ${HomePage}                |"
+InRa "|      Author: Manish Parashar                       |"
+InRa "|      Editor: Darias                                |"
+InRa "======================================================"
 InRa "             `date`"
 InRa "# Version: $VERSION"
 
