@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180728c"
+VERSION="20180728d"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -255,11 +255,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 	#__________________________________________________________________________________________________
 	InRa "> Downloading: ${pc}";GetSSL ${d} > $pc;Size $pc;
-	InRa "> Updating official Black/WhiteList Online"
+	InRa "> Updating Black/WhiteList Online"
 	GetSSL ${Nha}/denOn/denOn > $denOn;Size $denOn;
 	GetSSL ${Nha}/trangOn/trangOn > $tam;Size $tam;cat $tam > $trangOn;
 	GetSSL ${Nha}/trangOn/apple > $tam;Size $tam;cat $tam >> $trangOn;Size $trangOn
-	InRa "> Deleting Special character: Black/WhiteList Online"
+	InRa "> Processing Black/WhiteList Online"
 	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
 #__________________________________________________________________________________________________
@@ -403,7 +403,7 @@ else
 fi
 #__________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	InRa "> Deleting Special character: Black/WhiteList Offline"
+	InRa "> Processing Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r "${SedBW}" > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r "${SedBW}" > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $tbl
