@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180728a"
+VERSION="20180728b"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -50,7 +50,7 @@ export Lv3="${TMTam}/lv3";
 export Lv4="${TMTam}/lv4";
 export pc="${TMuc}/d.sh"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
-#export hTam="${TMTam}/h.tmp"
+export hTam="${TMTam}/h.tmp"
 export tam="${TMTam}/t.tmp"
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp"
@@ -286,7 +286,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InRa "# Downloading: ${u17}";GetSSL ${u17} > $tam;Size $tam;cat $tam >> $Lv0;
 	InRa "# Downloading: ${u18}";GetSSL ${u18} > $tam;Size $tam;cat $tam >> $Lv0;
 	InRa "# Downloading: ${u19}";GetSSL ${u19} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Call $pc";sh $pc;
+	InRa "# File size Level [0]";Size $Lv0;InRa "# Call $pc";sh $pc;
 #__________________________________________________________________________________________________
 	InRa "# Downloading: ${u90}";GetSSL ${u90} > $tam;Size $tam;cat $tam > $Lv00;
 	InRa "# Downloading: ${u91}";GetSSL ${u91} > $tam;Size $tam;cat $tam >> $Lv00;
@@ -298,7 +298,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InRa "# Downloading: ${u97}";GetSSL ${u97} > $tam;Size $tam;cat $tam >> $Lv00;
 	InRa "# Downloading: ${u98}";GetSSL ${u98} > $tam;Size $tam;cat $tam >> $Lv00;
 	InRa "# Downloading: ${u99}";GetSSL ${u99} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Call $pc";sh $pc;
+	InRa "# File size Level [0.5]";Size $Lv00;InRa "# Call $pc";sh $pc;
 	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
@@ -332,7 +332,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "# Downloading: ${u46}";GetSSL ${u46} > $tam;Size $tam;cat $tam >> $Lv1;
 		InRa "# Downloading: ${u47}";GetSSL ${u47} > $tam;Size $tam;cat $tam >> $Lv1;
 		InRa "# Downloading: ${u48}";GetSSL ${u48} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Call $pc";sh $pc;
+		InRa "# File size Level [1]";Size $Lv1;InRa "# Call $pc";sh $pc;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
@@ -366,7 +366,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "# Downloading: ${u75}";GetSSL ${u75} > $tam;Size $tam;cat $tam >> $Lv2;
 		InRa "# Downloading: ${u76}";GetSSL ${u76} > $tam;Size $tam;cat $tam >> $Lv2;
 		InRa "# Downloading: ${u77}";GetSSL ${u77} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Call $pc";sh $pc;
+		InRa "# File size Level [2]";Size $Lv2;InRa "# Call $pc";sh $pc;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
@@ -377,14 +377,14 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "# Downloading: ${u81}";GetSSL ${u81} > $tam;Size $tam;cat $tam >> $Lv3;
 		InRa "# Downloading: ${u82}";GetSSL ${u82} > $tam;Size $tam;cat $tam >> $Lv3;
 		InRa "# Downloading: ${u83}";GetSSL ${u83} > $tam;Size $tam;cat $tam >> $Lv3;
-		InRa "# Call $pc";sh $pc;
+		InRa "# File size Level [3]";Size $Lv3;InRa "# Call $pc";sh $pc;
 	#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking Level [4]"
 		InRa "# Downloading: ${u84}";GetSSL ${u84} > $tam;Size $tam;cat $tam > $Lv4;
 		InRa "# Downloading: ${u100}";GetSSL ${u100} > $tam;Size $tam;cat $tam >> $Lv4;
-		InRa "# Call $pc";sh $pc;
+		InRa "# File size Level [4]";Size $Lv4;InRa "# Call $pc";sh $pc;
 	fi
 	if [ $NOFB = "f" ]; then
 		InRa "# Downloading: ${u85}"
@@ -411,7 +411,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 fi
 #__________________________________________________________________________________________________
 InRa "> Add-Remove Black-White List"
-LC_ALL=C cat $tam | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+LC_ALL=C cat $hTam | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 InRa ">>>> File size Hosts";Size $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 InRa "# Blocked: $Counts Hosts"
