@@ -29,7 +29,7 @@ Size ()
 #__________________________________________________________________________________________________
 #InRa ">>> d.sh version: $dVersion";
 if [ -f $Lv0 ];then
-	InRa "> Compacting: [0]";
+	InRa "> Compacting [0]";
 	cat $Lv0 | sed -r "${SedX}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [0]: $(Size "$tam")";cat $tam > $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cat $Lv0 > ${Dl}/Lv1.txt
@@ -37,7 +37,7 @@ if [ -f $Lv0 ];then
 	rm -f $Lv0;
 fi
 if [ -f $Lv00 ];then
-	InRa "> Compacting: [0.5]";
+	InRa "> Compacting [0.5]";
 	cat $Lv00 | tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed00}" | sed -r "${Sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' > $tam;InRa ">> Compacted [0.5]: $(Size "$tam")";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cat $Lv00 > ${Dl}/Lv00.txt
@@ -45,7 +45,7 @@ if [ -f $Lv00 ];then
 	rm -f $Lv00;
 fi
 if [ -f $Lv1 ];then
-	InRa "> Compacting: [1]";
+	InRa "> Compacting [1]";
 	cat $Lv1 | sed -r "${SedX}" | sed -r "${Sed1}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [1]: $(Size "$tam")";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cat $Lv1 > ${Dl}/Lv1.txt
@@ -53,7 +53,7 @@ if [ -f $Lv1 ];then
 	rm -f $Lv1;
 fi
 if [ -f $Lv2 ];then
-	InRa "> Compacting: [2]";
+	InRa "> Compacting [2]";
 	cat $Lv2 | sed -r "${SedX}" | sed -r "${Sed2}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [2]: $(Size "$tam")";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cat $Lv2 > ${Dl}/Lv2.txt
@@ -61,7 +61,7 @@ if [ -f $Lv2 ];then
 	rm -f $Lv2;
 fi
 if [ -f $Lv3 ];then
-	InRa "> Compacting: [3]";
+	InRa "> Compacting [3]";
 	cat $Lv3 | sed -r "${SedX}" | sed -r "${Sed3}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [3]: $(Size "$tam")";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cat $Lv3 > ${Dl}/Lv3.txt
@@ -69,7 +69,7 @@ if [ -f $Lv3 ];then
 	rm -f $Lv3;
 fi
 if [ -f $Lv4 ];then
-	InRa "> Compacting: [4]";
+	InRa "> Compacting [4]";
 	cat $Lv4 | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [4]: $(Size "$tam")";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cat $Lv4 > ${Dl}/Lv4.txt
