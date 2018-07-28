@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180728d"
+VERSION="20180728e"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -34,14 +34,7 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp"
-if [ -d "$TMTam" ]
-then
-	echo "Using $TMTam"
-else
-	echo "Creating: $TMTam"
-	mkdir ${TMTam}
-fi
+export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};
 export Lv0="${TMTam}/lv0";
 export Lv00="${TMTam}/lv00";
 export Lv1="${TMTam}/lv1";
