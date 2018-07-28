@@ -1,9 +1,9 @@
 #!/bin/sh
-VERSION="20180728e"
+VERSION="20180729a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-d="http://gg.gg/d_"
+d="http://gg.gg/d_";dName="d.sh";
 u00="${Nha}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
@@ -41,7 +41,7 @@ export Lv1="${TMTam}/lv1";
 export Lv2="${TMTam}/lv2";
 export Lv3="${TMTam}/lv3";
 export Lv4="${TMTam}/lv4";
-export pc="${TMuc}/d.sh"
+export dsh="${TMuc}/${dName}"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
 export hTam="${TMTam}/h.tmp"
 export tam="${TMTam}/t.tmp"
@@ -75,7 +75,7 @@ InRa ()
 }
 Size ()
 {
-	InRa "# Size of $1: `du -h $1 | awk '{print $1}'`"
+	InRa "`du -h $1 | awk '{print $1}'`"
 }
 ReBoot ()
 {
@@ -243,149 +243,148 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InRa "# Level [0|1|2|3|4]: $Level"
 
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
-		InRa "> Downloading / updating cURL certificates"
+		InRa "> Downloading cURL certificates"
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 	#__________________________________________________________________________________________________
-	InRa "> Downloading: ${pc}";GetSSL ${d} > $pc;Size $pc;
-	InRa "> Updating Black/WhiteList Online"
-	GetSSL ${Nha}/denOn/denOn > $denOn;Size $denOn;
-	GetSSL ${Nha}/trangOn/trangOn > $tam;Size $tam;cat $tam > $trangOn;
-	GetSSL ${Nha}/trangOn/apple > $tam;Size $tam;cat $tam >> $trangOn;Size $trangOn
-	InRa "> Processing Black/WhiteList Online"
+	GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
+	InRa "> Downloading Black/WhiteList Online"
+	GetSSL ${Nha}/denOn/denOn > $denOn;InRa "# Size of denOn is: $(Size "$denOn")";
+	GetSSL ${Nha}/trangOn/trangOn > $tam;InRa "# Size of trangOn is: $(Size "$tam")";cat $tam > $trangOn;
+	GetSSL ${Nha}/trangOn/apple > $tam;InRa "# Size of apple is: $(Size "$tam")";cat $tam >> $trangOn;
+	InRa "> Compacting Black/WhiteList Online"
 	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
 #__________________________________________________________________________________________________
 
 	InRa ">> Unlocking Level [0]"
-	InRa "# Downloading: Domains";GetSSL ${u00} > $tam;Size $tam;cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
+	GetSSL ${u00} > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
 #__________________________________________________________________________________________________
-	InRa "# Downloading: ${u01}";GetSSL ${u01} > $tam;Size $tam;cat $tam > $Lv0;
-	InRa "# Downloading: ${u02}";GetSSL ${u02} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u03}";GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u04}";GetSSL ${u04} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u05}";GetSSL ${u05} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u06}";GetSSL ${u06} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u07}";GetSSL ${u07} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u08}";GetSSL ${u08} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u09}";GetSSL ${u09} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u10}";GetSSL ${u10} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u11}";GetSSL ${u11} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u12}";GetSSL ${u12} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u13}";GetSSL ${u13} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u14}";GetSSL ${u14} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u15}";GetSSL ${u15} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u16}";GetSSL ${u16} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u17}";GetSSL ${u17} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u18}";GetSSL ${u18} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# Downloading: ${u19}";GetSSL ${u19} > $tam;Size $tam;cat $tam >> $Lv0;
-	InRa "# File size Level [0]";Size $Lv0;InRa "# Call $pc";sh $pc;
+	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
+	GetSSL ${u02} > $tam;InRa "# Size of ${u02} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $tam;InRa "# Size of ${u03} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u04} > $tam;InRa "# Size of ${u04} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u05} > $tam;InRa "# Size of ${u05} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u06} > $tam;InRa "# Size of ${u06} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u07} > $tam;InRa "# Size of ${u07} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u08} > $tam;InRa "# Size of ${u08} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u09} > $tam;InRa "# Size of ${u09} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u10} > $tam;InRa "# Size of ${u10} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u11} > $tam;InRa "# Size of ${u11} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u12} > $tam;InRa "# Size of ${u12} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u13} > $tam;InRa "# Size of ${u13} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u14} > $tam;InRa "# Size of ${u14} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u15} > $tam;InRa "# Size of ${u15} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u16} > $tam;InRa "# Size of ${u16} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u17} > $tam;InRa "# Size of ${u17} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u18} > $tam;InRa "# Size of ${u18} is: $(Size "$tam")";cat $tam >> $Lv0;
+	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;
+	InRa "# Downloaded Level [0]: $(Size "$Lv0")";sh $dsh;
 #__________________________________________________________________________________________________
-	InRa "# Downloading: ${u90}";GetSSL ${u90} > $tam;Size $tam;cat $tam > $Lv00;
-	InRa "# Downloading: ${u91}";GetSSL ${u91} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u92}";GetSSL ${u92} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u93}";GetSSL ${u93} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u94}";GetSSL ${u94} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u95}";GetSSL ${u95} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u96}";GetSSL ${u96} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u97}";GetSSL ${u97} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u98}";GetSSL ${u98} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# Downloading: ${u99}";GetSSL ${u99} > $tam;Size $tam;cat $tam >> $Lv00;
-	InRa "# File size Level [0.5]";Size $Lv00;InRa "# Call $pc";sh $pc;
+	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv00;
+	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u92} > $tam;InRa "# Size of ${u92} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u93} > $tam;InRa "# Size of ${u93} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u94} > $tam;InRa "# Size of ${u94} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u95} > $tam;InRa "# Size of ${u95} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u96} > $tam;InRa "# Size of ${u96} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
+	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;
+	InRa "# Downloaded Level [0.5]: $(Size "$Lv00")";sh $dsh;
 	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking Level [1]"
-		InRa "# Downloading: ${u20}";GetSSL ${u20} > $tam;Size $tam;cat $tam > $Lv1;
-		InRa "# Downloading: ${u21}";GetSSL ${u21} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u22}";GetSSL ${u22} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u23}";GetSSL ${u23} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u24}";GetSSL ${u24} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u25}";GetSSL ${u25} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u26}";GetSSL ${u26} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u27}";GetSSL ${u27} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u28}";GetSSL ${u28} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u29}";GetSSL ${u29} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u30}";GetSSL ${u30} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u31}";GetSSL ${u31} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u32}";GetSSL ${u32} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u33}";GetSSL ${u33} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u34}";GetSSL ${u34} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u35}";GetSSL ${u35} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u36}";GetSSL ${u36} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u37}";GetSSL ${u37} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u38}";GetSSL ${u38} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u39}";GetSSL ${u39} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u40}";GetSSL ${u40} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u41}";GetSSL ${u41} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u42}";GetSSL ${u42} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u43}";GetSSL ${u43} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u44}";GetSSL ${u44} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u45}";GetSSL ${u45} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u46}";GetSSL ${u46} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u47}";GetSSL ${u47} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# Downloading: ${u48}";GetSSL ${u48} > $tam;Size $tam;cat $tam >> $Lv1;
-		InRa "# File size Level [1]";Size $Lv1;InRa "# Call $pc";sh $pc;
+		GetSSL ${u20} > $tam;InRa "# Size of ${u20} is: $(Size "$tam")";cat $tam > $Lv1;
+		GetSSL ${u21} > $tam;InRa "# Size of ${u21} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u22} > $tam;InRa "# Size of ${u22} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u23} > $tam;InRa "# Size of ${u23} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u24} > $tam;InRa "# Size of ${u24} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u25} > $tam;InRa "# Size of ${u25} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u26} > $tam;InRa "# Size of ${u26} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u27} > $tam;InRa "# Size of ${u27} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u28} > $tam;InRa "# Size of ${u28} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u29} > $tam;InRa "# Size of ${u29} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u30} > $tam;InRa "# Size of ${u30} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u31} > $tam;InRa "# Size of ${u31} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u32} > $tam;InRa "# Size of ${u32} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u33} > $tam;InRa "# Size of ${u33} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u34} > $tam;InRa "# Size of ${u34} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u35} > $tam;InRa "# Size of ${u35} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u36} > $tam;InRa "# Size of ${u36} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u37} > $tam;InRa "# Size of ${u37} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u38} > $tam;InRa "# Size of ${u38} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u39} > $tam;InRa "# Size of ${u39} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u40} > $tam;InRa "# Size of ${u40} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u41} > $tam;InRa "# Size of ${u41} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u42} > $tam;InRa "# Size of ${u42} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u43} > $tam;InRa "# Size of ${u43} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u44} > $tam;InRa "# Size of ${u44} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u45} > $tam;InRa "# Size of ${u45} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u46} > $tam;InRa "# Size of ${u46} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u47} > $tam;InRa "# Size of ${u47} is: $(Size "$tam")";cat $tam >> $Lv1;
+		GetSSL ${u48} > $tam;InRa "# Size of ${u48} is: $(Size "$tam")";cat $tam >> $Lv1;
+		InRa "# Downloaded Level [1]: $(Size "$Lv1")";sh $dsh;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
 		InRa ">> Unlocking Level [2]"
-		InRa "# Downloading: ${u49}";GetSSL ${u49} > $tam;Size $tam;cat $tam > $Lv2;
-		InRa "# Downloading: ${u50}";GetSSL ${u50} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u51}";GetSSL ${u51} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u52}";GetSSL ${u52} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u53}";GetSSL ${u53} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u54}";GetSSL ${u54} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u55}";GetSSL ${u55} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u56}";GetHTT ${u56} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u57}";GetHTT ${u57} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u58}";GetSSL ${u58} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u59}";GetSSL ${u59} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u60}";GetSSL ${u60} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u61}";GetSSL ${u61} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u62}";GetSSL ${u62} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u63}";GetSSL ${u63} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u64}";GetSSL ${u64} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u65}";GetSSL ${u65} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u66}";GetSSL ${u66} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u67}";GetSSL ${u67} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u68}";GetSSL ${u68} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u69}";GetSSL ${u69} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u70}";GetSSL ${u70} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u71}";GetSSL ${u71} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u72}";GetSSL ${u72} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u73}";GetSSL ${u73} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u74}";GetSSL ${u74} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u75}";GetSSL ${u75} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u76}";GetSSL ${u76} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# Downloading: ${u77}";GetSSL ${u77} > $tam;Size $tam;cat $tam >> $Lv2;
-		InRa "# File size Level [2]";Size $Lv2;InRa "# Call $pc";sh $pc;
+		GetSSL ${u49} > $tam;InRa "# Size of ${u49} is: $(Size "$tam")";cat $tam > $Lv2;
+		GetSSL ${u50} > $tam;InRa "# Size of ${u50} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u51} > $tam;InRa "# Size of ${u51} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u52} > $tam;InRa "# Size of ${u52} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u53} > $tam;InRa "# Size of ${u53} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u54} > $tam;InRa "# Size of ${u54} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u55} > $tam;InRa "# Size of ${u55} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetHTT ${u56} > $tam;InRa "# Size of ${u56} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetHTT ${u57} > $tam;InRa "# Size of ${u57} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u58} > $tam;InRa "# Size of ${u58} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u59} > $tam;InRa "# Size of ${u59} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u60} > $tam;InRa "# Size of ${u60} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u61} > $tam;InRa "# Size of ${u61} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u62} > $tam;InRa "# Size of ${u62} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u63} > $tam;InRa "# Size of ${u63} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u64} > $tam;InRa "# Size of ${u64} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u65} > $tam;InRa "# Size of ${u65} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u66} > $tam;InRa "# Size of ${u66} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u67} > $tam;InRa "# Size of ${u67} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u68} > $tam;InRa "# Size of ${u68} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u69} > $tam;InRa "# Size of ${u69} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u70} > $tam;InRa "# Size of ${u70} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u71} > $tam;InRa "# Size of ${u71} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u72} > $tam;InRa "# Size of ${u72} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u73} > $tam;InRa "# Size of ${u73} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u74} > $tam;InRa "# Size of ${u74} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u75} > $tam;InRa "# Size of ${u75} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u76} > $tam;InRa "# Size of ${u76} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetSSL ${u77} > $tam;InRa "# Size of ${u77} is: $(Size "$tam")";cat $tam >> $Lv2;
+		InRa "# Downloaded Level [2]: $(Size "$Lv2")";sh $dsh;
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
 		InRa ">> Unlocking Level [3]"
-		InRa "# Downloading: ${u78}";GetSSL ${u78} > $tam;Size $tam;cat $tam > $Lv3;
-		InRa "# Downloading: ${u79}";GetSSL ${u79} > $tam;Size $tam;cat $tam >> $Lv3;
-		InRa "# Downloading: ${u80}";GetMHK ${u80} > $tam;Size $tam;cat $tam >> $Lv3;		
-		InRa "# Downloading: ${u81}";GetSSL ${u81} > $tam;Size $tam;cat $tam >> $Lv3;
-		InRa "# Downloading: ${u82}";GetSSL ${u82} > $tam;Size $tam;cat $tam >> $Lv3;
-		InRa "# Downloading: ${u83}";GetSSL ${u83} > $tam;Size $tam;cat $tam >> $Lv3;
-		InRa "# File size Level [3]";Size $Lv3;InRa "# Call $pc";sh $pc;
+		GetSSL ${u78} > $tam;InRa "# Size of ${u78} is: $(Size "$tam")";cat $tam > $Lv3;
+		GetSSL ${u79} > $tam;InRa "# Size of ${u79} is: $(Size "$tam")";cat $tam >> $Lv3;
+		GetMHK ${u80} > $tam;InRa "# Size of ${u80} is: $(Size "$tam")";cat $tam >> $Lv3;
+		GetSSL ${u81} > $tam;InRa "# Size of ${u81} is: $(Size "$tam")";cat $tam >> $Lv3;
+		GetSSL ${u82} > $tam;InRa "# Size of ${u82} is: $(Size "$tam")";cat $tam >> $Lv3;
+		GetSSL ${u83} > $tam;InRa "# Size of ${u83} is: $(Size "$tam")";cat $tam >> $Lv3;
+		InRa "# Downloaded Level [3]: $(Size "$Lv3")";sh $dsh;
 	#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking Level [4]"
-		InRa "# Downloading: ${u84}";GetSSL ${u84} > $tam;Size $tam;cat $tam > $Lv4;
-		InRa "# Downloading: ${u100}";GetSSL ${u100} > $tam;Size $tam;cat $tam >> $Lv4;
-		InRa "# File size Level [4]";Size $Lv4;InRa "# Call $pc";sh $pc;
+		GetSSL ${u84} > $tam;InRa "# Size of ${u84} is: $(Size "$tam")";cat $tam > $Lv4;
+		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;
+		InRa "# Downloaded Level [4]: $(Size "$Lv4")";sh $dsh;
 	fi
 	if [ $NOFB = "f" ]; then
-		InRa "# Downloading: ${u85}"
-		GetSSL ${Nha}/denOn/facebook.only > $tam;Size $tam;
+		GetSSL ${Nha}/denOn/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
 		#cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		InRa "# Downloading: ${u86}";GetSSL ${Nha}/denOn/facebook.all > $tam;Size $tam;
+		GetSSL ${Nha}/denOn/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
 		#cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
@@ -396,7 +395,7 @@ else
 fi
 #__________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	InRa "> Processing Black/WhiteList Offline"
+	InRa "> Compacting Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | sed -r "${SedBW}" > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | sed -r "${SedBW}" > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $tbl
@@ -406,10 +405,8 @@ fi
 InRa "> Add-Remove Black-White List"
 LC_ALL=C cat $hTam | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
-InRa ">>>> File size Hosts";Size $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-InRa "# Blocked: $Counts Hosts"
-InRa ">>>> File size Domains";Size $dChinh;Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
-InRa "# Blocked: $Counts Domains"
+Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
+Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Domains $(Size "$dChinh")";
 #__________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ]
 then
