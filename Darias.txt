@@ -1,6 +1,7 @@
 address=/000webhostapp.com/0.1.2.3
 address=/000webhostaww.com/0.1.2.3
 address=/0catch.com/0.1.2.3
+address=/realclick.vn/0.1.2.3
 address=/0x1f4b0.com/0.1.2.3
 address=/120.138.74.139/0.1.2.3
 address=/120.138.74.171/0.1.2.3
