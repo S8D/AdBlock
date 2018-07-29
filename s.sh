@@ -46,10 +46,10 @@ export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/den.On";export trangOn="${TMuc}/trang.On";
 export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off";
 if [ ! -f $denOff ];then
-    mkdir $denOff
+    touch $denOff
 fi
 if [ ! -f $denOn ];then
-    mkdir $denOn
+    touch $denOn
 fi
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
