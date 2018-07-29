@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180729b"
+VERSION="20180729c"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -35,22 +35,16 @@ export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};
-export Lv0="${TMTam}/lv0";
-export Lv00="${TMTam}/lv00";
-export Lv1="${TMTam}/lv1";
-export Lv2="${TMTam}/lv2";
-export Lv3="${TMTam}/lv3";
-export Lv4="${TMTam}/lv4";
+export Lv0="${TMTam}/lv0";export Lv00="${TMTam}/lv00";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
+export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
 export dsh="${TMuc}/${dName}"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
-export hTam="${TMTam}/h.tmp"
-export tam="${TMTam}/t.tmp"
+export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
-export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp"
-export pauseflag="${TMuc}/PAUSED"
-export denOn="${TMuc}/den.On";export trangOn="${TMuc}/trang.On"
-export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off"
-export hLog="${TMuc}/h.log"
+export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
+export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
+export denOn="${TMuc}/den.On";export trangOn="${TMuc}/trang.On";
+export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off";mkdir -p ${denOff};mkdir -p ${trangOff};
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
