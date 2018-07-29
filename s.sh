@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180729c"
+VERSION="20180729d"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -44,7 +44,13 @@ export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
 export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/den.On";export trangOn="${TMuc}/trang.On";
-export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off";mkdir -p ${denOff};mkdir -p ${trangOff};
+export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off";
+if [ ! -f $denOff ];then
+    mkdir $denOff
+fi
+if [ ! -f $denOn ];then
+    mkdir $denOn
+fi
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -402,10 +408,8 @@ LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|'
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
 Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Domains $(Size "$dChinh")";
 #__________________________________________________________________________________________________
-if [ -f "${TMuc}/Location" ]
-then
-	echo "Skip restart DNS server"
-else
+if [ -f "${TMuc}/Location" ];then
+	echo "Skip restart DNS server";else
 	InRa "> Restarting DNS server (dnsmasq)";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
 fi
 TIMERSTOP=`date +%s`
