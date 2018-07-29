@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180729g"
+VERSION="20180729h"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -249,9 +249,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	#__________________________________________________________________________________________________
 	GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
 	InRa "> Downloading Black/WhiteList Online"
-	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of denOn is: $(Size "$denOn")";
-	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of trangOn is: $(Size "$tam")";cat $tam > $trangOn;
-	GetSSL ${Nha}/Lists/apple > $tam;InRa "# Size of apple is: $(Size "$tam")";cat $tam >> $trangOn;
+	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
+	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
+	GetSSL ${Nha}/Lists/apple > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
 	InRa "> Compacting Black/WhiteList Online"
 	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
