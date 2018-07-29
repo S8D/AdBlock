@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180729f"
+VERSION="20180729g"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -34,7 +34,7 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p $${TMuc}/Lists;
+export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Lists;
 export Lv0="${TMTam}/lv0";export Lv00="${TMTam}/lv00";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
 export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
 export dsh="${TMuc}/${dName}"
@@ -46,10 +46,10 @@ export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/Lists/den.on";export trangOn="${TMuc}/Lists/trang.on";
 export denOff="${TMuc}/Lists/den.off";export trangOff="${TMuc}/Lists/trang.off";
 if [ ! -f $denOff ];then
-    touch $denOff
+    echo -n "" > $denOff
 fi
 if [ ! -f $denOn ];then
-    touch $denOn
+    echo -n "" > $denOn
 fi
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
