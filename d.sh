@@ -72,7 +72,7 @@ if [ -f $Lv4 ];then
 	InRa "> Compacting [4]";
 	LC_ALL=C cat $Lv4 | tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [4]: $(Size "$tam")";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
-		cat $Lv4 > ${Dl}/Lv4.txt;cat $tam > ${Dl}/Lv4.txt
+		cat $Lv4 > ${Dl}/Lv4.txt;cat $tam > ${Dl}/Lv4_.txt
 	fi
 	rm -f $Lv4;
 fi
