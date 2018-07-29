@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180729d"
+VERSION="20180729e"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -43,8 +43,8 @@ export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
 export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
-export denOn="${TMuc}/den.On";export trangOn="${TMuc}/trang.On";
-export denOff="${TMuc}/den.Off";export trangOff="${TMuc}/trang.Off";
+export denOn="${TMuc}/Lists/den.on";export trangOn="${TMuc}/Lists/trang.on";
+export denOff="${TMuc}/Lists/den.off";export trangOff="${TMuc}/Lists/trang.off";
 if [ ! -f $denOff ];then
     touch $denOff
 fi
@@ -249,9 +249,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	#__________________________________________________________________________________________________
 	GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
 	InRa "> Downloading Black/WhiteList Online"
-	GetSSL ${Nha}/denOn/denOn > $denOn;InRa "# Size of denOn is: $(Size "$denOn")";
-	GetSSL ${Nha}/trangOn/trangOn > $tam;InRa "# Size of trangOn is: $(Size "$tam")";cat $tam > $trangOn;
-	GetSSL ${Nha}/trangOn/apple > $tam;InRa "# Size of apple is: $(Size "$tam")";cat $tam >> $trangOn;
+	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of denOn is: $(Size "$denOn")";
+	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of trangOn is: $(Size "$tam")";cat $tam > $trangOn;
+	GetSSL ${Nha}/Lists/apple > $tam;InRa "# Size of apple is: $(Size "$tam")";cat $tam >> $trangOn;
 	InRa "> Compacting Black/WhiteList Online"
 	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
@@ -380,11 +380,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "# Downloaded [4]: $(Size "$Lv4")";sh $dsh;
 	fi
 	if [ $NOFB = "f" ]; then
-		GetSSL ${Nha}/denOn/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
+		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
 		#cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		GetSSL ${Nha}/denOn/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
+		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
 		#cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
