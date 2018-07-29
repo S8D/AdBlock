@@ -27,7 +27,7 @@ Size ()
 	InRa "`du -h $1 | awk '{print $1}'`"
 }
 #__________________________________________________________________________________________________
-#InRa ">>> d.sh version: $dVersion";
+InRa "> Running $dVersion";
 if [ -f $Lv0 ];then
 	InRa "> Compacting [0]";
 	LC_ALL=C cat $Lv0 | sed -r "${SedX}" | sed -r "${SedY}" > $tam;InRa ">> Compacted [0]: $(Size "$tam")";cat $tam > $hTam;
