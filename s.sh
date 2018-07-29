@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180730a"
+VERSION="20180730b"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
@@ -248,6 +248,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 	#__________________________________________________________________________________________________
 	GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
+	if [ -x $dsh ];then
+		chmod +x $dsh
+	fi
 	InRa "> Downloading Black/WhiteList Online"
 	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
 	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
