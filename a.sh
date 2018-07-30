@@ -1,7 +1,7 @@
 #!/bin/sh
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180727e"
+VERSION="20180731a"
 export BLITZ=3
 SedF1="s|#.*$||; s|<.*$||; s|^address\=\/||; s|0.0.0.0 ||; s|^127.0.0.1||; s|:.*$||; s|\/.*$||; s|\;.*$||; s|\s\s|\n|; s|\s|\n|; s|^0\.0\.0\.0||; s|\&.*$||; s|localhost$||; s|\.k$||; s|\.v$||; s|\.w$||; s|\.col.*rn$||; s|[[:blank:]]||; s|^[[:space:]]*||g"
 SedF2="s|^\_\_||; s|^\_||; s|^\-||; s|\?$||; s|^\.||; s|^[^.]+$||; /^$/d"
@@ -133,7 +133,7 @@ CapNhat ()
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $uTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				NEWVER=`grep -w -m 1 "VERSION" $uTam`
+				dv=`grep -w -m 1 "VERSION" $uTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
@@ -220,7 +220,7 @@ if ping -q -c 1 -W 1 google.com &> /dev/null; then
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 	InRa "# Downloading mpdomains file"
-	GetSSL ${Nha}/Darias.txt > $tam; Size $tam; cat $tam > $tmpdomains;
+	GetSSL ${Nha}/Lists/Darias.txt > $tam; Size $tam; cat $tam > $tmpdomains;
 	GetSSL https://raw.githubusercontent.com/oznu/dns-zone-blacklist/master/dnsmasq/dnsmasq.blacklist | GREPFILTER | sed 's/0.0.0.0$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
 	GetSSL https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt | GREPFILTER | sed 's/0.0.0.0$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
 	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq https://pgl.yoyo.org/adservers/serverlist.php? | GREPFILTER | sed 's/127.0.0.1$/'$SetIP'/' > $tam; Size $tam; cat $tam >> $tmpdomains
@@ -344,7 +344,7 @@ if ping -q -c 1 -W 1 google.com &> /dev/null; then
 		InRa "> Downloading Kowabit list"
 		GetSSL https://v.firebog.net/hosts/Kowabit.txt | GREPFILTER > $tam; Size $tam; cat $tam >> $tmphosts
 		InRa "> Downloading ADZHOSTS list"
-		GetSSL https://adzhosts.hizo.fr/hosts/adzhosts-android.txt | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
+		GetSSL https://adzhosts.eu/hosts/adzhosts-android.txt | GREPFILTER | awk '{print $2}' > $tam; Size $tam; cat $tam >> $tmphosts
 	fi
 	if [ $NOFB = "f" ]; then
 		InRa "> Blocking Facebook and Messenger"
@@ -355,9 +355,9 @@ if ping -q -c 1 -W 1 google.com &> /dev/null; then
 		GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/facebookall.block > $tam; Size $tam; cat $tam >> $tmphosts
 	fi
 	InRa "> Downloading official blacklist/whitelist files"
-	GetSSL ${Nha}/denOn/denOn | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
-	GetSSL ${Nha}/trangOn/trangOn | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
-	GetSSL ${Nha}/trangOn/apple | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
+	GetSSL ${Nha}/Lists/den.on | GREPFILTER > $tam; Size $tam; cat $tam > $blacklist
+	GetSSL ${Nha}/Lists/trang.on | GREPFILTER > $tam; Size $tam; cat $tam > $whitelist
+	GetSSL ${Nha}/Lists/apple | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/blacklists/blacklist | GREPFILTER > $tam; Size $tam; cat $tam >> $blacklist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/whitelist | GREPFILTER > $tam; Size $tam; cat $tam >> $whitelist
 	GetSSL https://raw.githubusercontent.com/m-parashar/adbhostgen/master/whitelists/fruitydomains > $tam; Size $tam; cat $tam > $base64wl
