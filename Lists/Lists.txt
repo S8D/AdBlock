@@ -80,11 +80,11 @@ https://hosts-file.net/wrz.txt
 http://adblock.mahakala.is/hosts
 https://hostsfile.mine.nu/hosts0.txt
 https://v.firebog.net/hosts/Kowabit.txt
-https://adzhosts.fr/hosts/adzhosts-mac-linux.txt
+https://adzhosts.eu/hosts/adzhosts-mac-linux.txt
 https://github.com/chadmayfield/my-pihole-blocklists/raw/master/lists/pi_blocklist_porn_all.list
-https://github.com/m-parashar/adbhostgen/raw/master/blacklists/facebookonly.block
-https://github.com/m-parashar/adbhostgen/raw/master/blacklists/facebookall.block
-https://github.com/m-parashar/adbhostgen/raw/master/blacklists/blacklist
-https://github.com/m-parashar/adbhostgen/raw/master/whitelists/whitelist
-https://github.com/m-parashar/adbhostgen/raw/master/whitelists/fruitydomains
+https://github.com/S8D/AdBlock/raw/master/Lists/facebook.only
+https://github.com/S8D/AdBlock/raw/master/Lists/facebook.all
+https://github.com/S8D/AdBlock/raw/master/Lists/den.on
+https://github.com/S8D/AdBlock/raw/master/Lists/trang.on
+https://github.com/S8D/AdBlock/raw/master/Lists/apple
 https://github.com/FadeMind/hosts/raw/master/extensions/porn/clefspeare13/hosts
