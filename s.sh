@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180730g"
+VERSION="20180730h"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
@@ -153,7 +153,7 @@ CapNhat ()
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $fTMTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				NEWVER=`grep -w -m 1 "VERSION" $fTMTam`
+				dv=`grep -w -m 1 "VERSION" $fTMTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
@@ -227,8 +227,12 @@ InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
 InRa "             `date`"
-InRa "# Version: $VERSION"
-
+InRa "> s.sh version: $VERSION"
+GetSSL ${d} > $dsh;dv=`grep -w -m 1 "dVersion" $dsh`;vers=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+InRa "> d.sh version: $vers. Size: $(Size "$dsh")";
+if [ -x $dsh ];then
+	chmod +x $dsh
+fi
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
@@ -246,11 +250,6 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 	#__________________________________________________________________________________________________
-	#GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
-	GetSSL ${d} > $dsh;dv=`grep -w -m 1 "dVersion" $dsh`;InRa "> $dv. Size: $(Size "$dsh")";
-	if [ -x $dsh ];then
-		chmod +x $dsh
-	fi
 	InRa "> Downloading Black/WhiteList Online"
 	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
 	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
