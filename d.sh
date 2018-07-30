@@ -74,5 +74,5 @@ if [ -f $Lv4 ];then
 	if [ -f "${TMuc}/Location" ];then
 		cp $Lv4 ${Dl}/_Lv4.txt; cp $tam ${Dl}/Lv4.txt;
 	fi
-	#rm -f $Lv4;
+	rm -f $Lv4;
 fi
