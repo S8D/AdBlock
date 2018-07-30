@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180730i"
+VERSION="20180731a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
@@ -26,6 +26,7 @@ u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="htt
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
 #__________________________________________________________________________________________________
 SedBW="s|#.*$||; s|^[^.]+$||; /^$/d";
+alias SedFN="sed -r 's/\.$//; s|^[^.]+$||; /^$/d'"
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -404,8 +405,8 @@ fi
 #__________________________________________________________________________________________________
 InRa "> Add-Remove Black-White List";
 if [ -f "${TMuc}/Location" ];then
-	LC_ALL=C cat $hTam | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' > $hChinh;else
-	LC_ALL=C cat $hTam | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $hTam | SedFN | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' > $hChinh;else
+	LC_ALL=C cat $hTam | SedFN | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 fi
 LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
