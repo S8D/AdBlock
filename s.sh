@@ -145,20 +145,20 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	fTMTam="${TMTam}/update"
+	upTam="${TMTam}/update"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $fTMTam
+		GetSSL ${Nha}/$(basename "$0") > $upTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
-			new_md5=`md5sum $fTMTam | cut -d' ' -f1`
+			new_md5=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				dv=`grep -w -m 1 "VERSION" $fTMTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				dv=`grep -w -m 1 "VERSION" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
-				chmod 755 $fTMTam
-				mv $fTMTam $0
+				chmod 755 $upTam
+				mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
 				InRa ">>> Current version: $VERSION"
