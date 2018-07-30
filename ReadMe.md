@@ -1,6 +1,6 @@
-# AdBlock
+# AdBlock for DD-WRT / Android base on Linux
 AdBlock hosts scripts for Linux Platform
 Thanks to Manish Parashar
 
-- chmod +x s.sh / h.sh
-- sh s.sh / h.sh
+- chmod +x s.sh
+- sh s.sh

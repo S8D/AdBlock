@@ -11,7 +11,7 @@ Sed2="s|\.$||; s|\.k$||; s|\.co.*orn$|.com|; s|www$||";
 Sed3="s|\.com.*orn$|.com|; s|^w.*orn$||; s|.*html$||";
 Sed4="s|\.z$||; s|\.com.*orn$|.com|; s|^w.*orn$||; s|\/.*ads$||";
 SedY="s|^[^.]+$||; /^$/d"
-Dl="${TMuc}/dl";
+export Dl="${TMuc}/dl";
 if [ -f "${TMuc}/Location" ];then
 	rm -rf ${Dl};mkdir ${Dl};
 fi
