@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180730f"
+VERSION="20180730g"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
@@ -246,7 +246,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 	#__________________________________________________________________________________________________
-	GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
+	#GetSSL ${d} > $dsh;InRa "> Size of ${dName} is: $(Size "$dsh")";
+	GetSSL ${d} > $dsh;dv=`grep -w -m 1 "dVersion" $dsh`;InRa "> $dv. Size: $(Size "$dsh")";
 	if [ -x $dsh ];then
 		chmod +x $dsh
 	fi
