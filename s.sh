@@ -258,7 +258,6 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
 #__________________________________________________________________________________________________
-
 	InRa ">> Unlocking [0]"
 	GetSSL ${u00} > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
 #__________________________________________________________________________________________________
@@ -293,8 +292,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;
-	InRa "# Downloaded [0.5]: $(Size "$Lv00")";sh $dsh;
-	
+	InRa "# Downloaded [0.5]: $(Size "$Lv00")";sh $dsh;	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking [1]"
