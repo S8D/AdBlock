@@ -47,8 +47,8 @@ export denOff="${TMuc}/Lists/den.off";export trangOff="${TMuc}/Lists/trang.off";
 if [ ! -f $denOff ];then
     echo -n "" > $denOff
 fi
-if [ ! -f $denOn ];then
-    echo -n "" > $denOn
+if [ ! -f $trangOff ];then
+    echo -n "" > $trangOff
 fi
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
