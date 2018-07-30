@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180730h"
+VERSION="20180730i"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
@@ -227,8 +227,8 @@ InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
 InRa "             `date`"
-InRa "> s.sh version: $VERSION"
 GetSSL ${d} > $dsh;dv=`grep -w -m 1 "dVersion" $dsh`;vers=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+InRa "> s.sh version: $VERSION"
 InRa "> d.sh version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
 	chmod +x $dsh
