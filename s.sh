@@ -1,8 +1,7 @@
 #!/bin/sh
-VERSION="20180730e"
+VERSION="20180730f"
 export SetIP="0.1.2.3";export Level=4;
-Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
-HomePage="https://github.com/S8D/AdBlock"
+Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
 u00="${Nha}/Darias.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -26,7 +25,7 @@ u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="htt
 u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
 #__________________________________________________________________________________________________
-SedBW="s/^[[:blank:]]*//; s/[[:blank:]]*$//; /^$/d; /^\s*$/d";
+SedBW="s|#.*$||; s|^[^.]+$||; /^$/d";
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -223,7 +222,7 @@ shift $((OPTIND-1))
 TIMERSTART=`date +%s`
 InRa "======================================================"
 InRa "|      AdBlock for DD-WRT/Android base on Linux      |"
-InRa "|      ${HomePage}                |"
+InRa "|      ${Nha}                 |"
 InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
@@ -416,7 +415,7 @@ Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Doma
 #__________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ];then
 	echo "Skip restart DNS server";else
-	InRa "> Restarting DNS server (dnsmasq)";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
+	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
