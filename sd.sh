@@ -248,7 +248,7 @@ dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*2\=//')";
 dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*3\=//')";
 dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*4\=//')";
 dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*00\=//')";
-dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*FN\=//')";
+dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*al\=//')";
 InRa "       .sh version: $PhienBan"
 InRa "       Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
