@@ -221,16 +221,25 @@ done
 shift $((OPTIND-1))
 #__________________________________________________________________________________________________
 TIMERSTART=`date +%s`
-GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
 InRa "======================================================"
 InRa "|      AdBlock for DD-WRT/Android base on Linux      |"
 InRa "|      ${Nha}                 |"
 InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
-InRa "|      s.sh version: $VERSION                                                                                                    "
-InRa "|      Sed version: $vers. Size: $(Size "$dsh")                                                                                       ";
 InRa "======================================================"
 InRa "             `date`"
+GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
+dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*\=//'); echo "SedX=$SedX"
+dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*\=//'); echo "Sed0=$Sed0"
+dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*\=//'); echo "Sed1=$Sed1"
+dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*\=//'); echo "Sed2=$Sed2"
+dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*\=//'); echo "Sed3=$Sed3"
+dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*\=//'); echo "Sed4=$Sed4"
+dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*\=//'); echo "SedY=$SedY"
+dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*\=//'); echo "Sed00=$Sed00"
+dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*\=//'); echo "Sed01=$Sed01"
+InRa "> s.sh version: $VERSION"
+InRa "> Sed  version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
 	chmod +x $dsh
 fi
