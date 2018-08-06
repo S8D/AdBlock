@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180806c"
+VERSION="20180806d"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -25,8 +25,6 @@ u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="htt
 u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
 #__________________________________________________________________________________________________
-SedBW="s|#.*$||; s|^[^.]+$||; /^$/d";
-alias SedFN="sed -r 's/\.$//; s|^[^.]+$||; /^$/d'"
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -242,7 +240,8 @@ dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*4\=//');
 dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*Y\=//');
 dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//');
 dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//');
-#echo "SedX=${SedX}";echo "Sed0=${Sed0}";echo "SedY=${SedY}"
+dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*BW\=//');
+dv=`grep -w -m 1 "SedFN" $dsh`;alias SedFN=$(echo $dv | sed 's/.*FN\=//');
 InRa "             s.sh version: $VERSION"
 InRa "             Sed  version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
