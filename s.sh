@@ -151,7 +151,7 @@ CapNhat ()
 {
 	upTam="${TMTam}/update"
 	InRa ">>> Checking for updates..."
-	if ping -q -c 1 -W 1 google.com >/dev/null; then
+	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${Nha}/$(basename "$0") > $upTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
@@ -259,7 +259,7 @@ if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	Bat
 fi
-if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
+if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
