@@ -66,10 +66,10 @@ if [ -z "$(which curl)" ]; then
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export CURL_CA_BUNDLE="${TMuc}/cacert.pem"
+export ScURL="${TMuc}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc} --cacert $CURL_CA_BUNDLE"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa ()
 {
