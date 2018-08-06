@@ -1,5 +1,6 @@
 #!/bin/sh
 VERSION="20180806g"
+PhienBan="20180806g"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -156,15 +157,15 @@ CapNhat ()
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				dv=`grep -w -m 1 "VERSION" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				dv=`grep -w -m 1 "PhienBan" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
-				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
+				OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
 				chmod 755 $upTam
 				mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
-				InRa ">>> Current version: $VERSION"
+				InRa ">>> Current version: $PhienBan"
 			fi
 		else
 			InRa ">>> Update failed. Try again."
@@ -178,7 +179,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
 		0    ) [0 ;;
 		1    ) [1 ;;
 		2    ) [2 ;;
@@ -211,7 +212,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			offline ) ONLINE=0 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
-			version ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )    break ;;
@@ -248,7 +249,7 @@ dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*3\=//')";
 dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*4\=//')";
 dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*00\=//')";
 dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*FN\=//')";
-InRa "       .sh version: $VERSION"
+InRa "       .sh version: $PhienBan"
 InRa "       Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
 	chmod +x $dsh
