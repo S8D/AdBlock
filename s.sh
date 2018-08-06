@@ -1,6 +1,6 @@
 #!/bin/sh
-VERSION="20180806g"
-PhienBan="20180806g"
+VERSION="20180806h"
+PhienBan="20180806h"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -232,23 +232,23 @@ InRa "|      Editor: Darias                                |"
 InRa "======================================================"
 InRa "       `date`"
 GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
-dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*X\=//');
-dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*0\=//');
-dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*1\=//');
-dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*2\=//');
-dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*3\=//');
-dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*4\=//');
-dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*Y\=//');
-dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//');
-dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//');
-dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*BW\=//');
-dv=`grep -w -m 1 "Cap0" $dsh`;alias Cap0="$(echo $dv | sed 's/.*0\=//')";
-dv=`grep -w -m 1 "Cap1" $dsh`;alias Cap1="$(echo $dv | sed 's/.*1\=//')";
-dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*2\=//')";
-dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*3\=//')";
-dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*4\=//')";
-dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*00\=//')";
-dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*al\=//')";
+dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*\=\|//');
+dv=`grep -w -m 1 "Cap0" $dsh`;alias Cap0="$(echo $dv | sed 's/.*\=\|//')";
+dv=`grep -w -m 1 "Cap1" $dsh`;alias Cap1="$(echo $dv | sed 's/.*\=\|//')";
+dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*\=\|//')";
+dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*\=\|//')";
+dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*\=\|//')";
+dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*\=\|//')";
+dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*\=\|//')";
 InRa "       .sh version: $PhienBan"
 InRa "       Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
