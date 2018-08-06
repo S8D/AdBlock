@@ -1,8 +1,9 @@
 #!/bin/sh
-VERSION="20180731b"
+VERSION="20180806g"
+PhienBan="20180806g"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
-d="http://gg.gg/d_";dName="d.sh";
+S3D="${Nha}/Sed.txt";
 u00="${Nha}/Lists/Domains.txt"
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
@@ -25,8 +26,6 @@ u86="http://gg.gg/u86_";u87="http://gg.gg/u87_";u88="http://gg.gg/u88_";u89="htt
 u91="http://gg.gg/u91_";u92="http://gg.gg/u92_";u93="http://gg.gg/u93_";u94="http://gg.gg/u94_";u95="http://gg.gg/u95_";
 u96="http://gg.gg/u96_";u97="http://gg.gg/u97_";u98="http://gg.gg/u98_";u99="http://gg.gg/u99_";u100="http://gg.gg/u100_";
 #__________________________________________________________________________________________________
-SedBW="s|#.*$||; s|^[^.]+$||; /^$/d";
-alias SedFN="sed -r 's/\.$//; s|^[^.]+$||; /^$/d'"
 export NOFB=0
 export ONLINE=1
 export QUIET=0
@@ -35,9 +34,13 @@ export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Lists;
+DL="${TMuc}/dl";
+if [ -f "${TMuc}/Location" ];then
+	mkdir -p ${DL};
+fi
 export Lv0="${TMTam}/lv0";export Lv00="${TMTam}/lv00";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
 export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
-export dsh="${TMuc}/${dName}"
+export dsh="${TMTam}/Sed"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
 export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
@@ -63,10 +66,10 @@ if [ -z "$(which curl)" ]; then
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export CURL_CA_BUNDLE="${TMuc}/cacert.pem"
+export ScURL="${TMuc}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc} --cacert $CURL_CA_BUNDLE"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa ()
 {
@@ -154,15 +157,15 @@ CapNhat ()
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				dv=`grep -w -m 1 "VERSION" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				dv=`grep -w -m 1 "PhienBan" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
-				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
+				OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
 				chmod 755 $upTam
 				mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
-				InRa ">>> Current version: $VERSION"
+				InRa ">>> Current version: $PhienBan"
 			fi
 		else
 			InRa ">>> Update failed. Try again."
@@ -176,7 +179,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $VERSION" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
 		0    ) [0 ;;
 		1    ) [1 ;;
 		2    ) [2 ;;
@@ -209,7 +212,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			offline ) ONLINE=0 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
-			version ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )    break ;;
@@ -227,10 +230,27 @@ InRa "|      ${Nha}                 |"
 InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
-InRa "             `date`"
-GetSSL ${d} > $dsh;dv=`grep -w -m 1 "dVersion" $dsh`;vers=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-InRa "> s.sh version: $VERSION"
-InRa "> d.sh version: $vers. Size: $(Size "$dsh")";
+InRa "       `date`"
+GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
+dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*X\=//');
+dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*0\=//');
+dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*1\=//');
+dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*2\=//');
+dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*3\=//');
+dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*4\=//');
+dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*Y\=//');
+dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//');
+dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//');
+dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*BW\=//');
+dv=`grep -w -m 1 "Cap0" $dsh`;alias Cap0="$(echo $dv | sed 's/.*0\=//')";
+dv=`grep -w -m 1 "Cap1" $dsh`;alias Cap1="$(echo $dv | sed 's/.*1\=//')";
+dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*2\=//')";
+dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*3\=//')";
+dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*4\=//')";
+dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*00\=//')";
+dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*al\=//')";
+InRa "       .sh version: $PhienBan"
+InRa "       Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
 	chmod +x $dsh
 fi
@@ -281,7 +301,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u17} > $tam;InRa "# Size of ${u17} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u18} > $tam;InRa "# Size of ${u18} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;
-	InRa "# Downloaded [0]: $(Size "$Lv0")";sh $dsh;
+	InRa "# Downloaded [0]: $(Size "$Lv0")";InRa "> Compacting [0] ....";
+	LC_ALL=C cat $Lv0 | Cap0 > $tam;InRa ">> Compacted [0]: $(Size "$tam")";cat $tam > $hTam;
+	if [ -f "${TMuc}/Location" ];then
+		cp $Lv0 ${DL}/_Lv0.txt; cp $tam ${DL}/Lv0.txt;
+	fi
 #__________________________________________________________________________________________________
 	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv00;
 	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv00;
@@ -293,7 +317,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;
-	InRa "# Downloaded [0.5]: $(Size "$Lv00")";sh $dsh;	
+	InRa "# Downloaded [0.5]: $(Size "$Lv00")";InRa "> Compacting [0.5] ....";
+	LC_ALL=C cat $Lv00 | Cap00 > $tam;InRa ">> Compacted [0.5]: $(Size "$tam")";cat $tam >> $hTam;
+	if [ -f "${TMuc}/Location" ];then
+		cp $Lv00 ${DL}/_Lv00.txt; cp $tam ${DL}/Lv00.txt;
+	fi	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking [1]"
@@ -326,7 +354,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u46} > $tam;InRa "# Size of ${u46} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u47} > $tam;InRa "# Size of ${u47} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u48} > $tam;InRa "# Size of ${u48} is: $(Size "$tam")";cat $tam >> $Lv1;
-		InRa "# Downloaded [1]: $(Size "$Lv1")";sh $dsh;
+		InRa "# Downloaded [1]: $(Size "$Lv1")";InRa "> Compacting [1] ....";
+		LC_ALL=C cat $Lv1 | Cap1 > $tam;InRa ">> Compacted [1]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv1 ${DL}/_Lv1.txt; cp $tam ${DL}/Lv1.txt;
+		fi
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
@@ -360,7 +392,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u75} > $tam;InRa "# Size of ${u75} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u76} > $tam;InRa "# Size of ${u76} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u77} > $tam;InRa "# Size of ${u77} is: $(Size "$tam")";cat $tam >> $Lv2;
-		InRa "# Downloaded [2]: $(Size "$Lv2")";sh $dsh;
+		InRa "# Downloaded [2]: $(Size "$Lv2")";InRa "> Compacting [2] ....";
+		LC_ALL=C cat $Lv2 | Cap2 > $tam;InRa ">> Compacted [2]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv2 ${DL}/_Lv2.txt; cp $tam ${DL}/Lv2.txt;
+		fi
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
@@ -371,22 +407,28 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u81} > $tam;InRa "# Size of ${u81} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u82} > $tam;InRa "# Size of ${u82} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u83} > $tam;InRa "# Size of ${u83} is: $(Size "$tam")";cat $tam >> $Lv3;
-		InRa "# Downloaded [3]: $(Size "$Lv3")";sh $dsh;
+		InRa "# Downloaded [3]: $(Size "$Lv3")";InRa "> Compacting [3] ....";
+		LC_ALL=C cat $Lv3 | Cap3 > $tam;InRa ">> Compacted [3]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv3 ${DL}/_Lv3.txt; cp $tam ${DL}/Lv3.txt;
+		fi
 	#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking [4]"
 		GetSSL ${u84} > $tam;InRa "# Size of ${u84} is: $(Size "$tam")";cat $tam > $Lv4;
 		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;
-		InRa "# Downloaded [4]: $(Size "$Lv4")";sh $dsh;
+		InRa "# Downloaded [4]: $(Size "$Lv4")";InRa "> Compacting [4] ....";
+		LC_ALL=C cat $Lv4 | Cap4 > $tam;InRa ">> Compacted [4]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv4 ${DL}/_Lv4.txt; cp $tam ${DL}/Lv4.txt;
+		fi
 	fi
 	if [ $NOFB = "f" ]; then
-		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
-		#cat $tam >> $hTam;
+		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
-		#cat $tam >> $hTam;
+		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
 else
@@ -405,8 +447,8 @@ fi
 #__________________________________________________________________________________________________
 InRa "> Add-Remove Black-White List";
 if [ -f "${TMuc}/Location" ];then
-	LC_ALL=C cat $hTam | SedFN | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' > $hChinh;else
-	LC_ALL=C cat $hTam | SedFN | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $hTam | Final > $hChinh;else
+	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 fi
 LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
