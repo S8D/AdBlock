@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180806a"
+VERSION="20180806b"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -35,6 +35,10 @@ export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Lists;
+DL="${TMuc}/dl";
+if [ -f "${TMuc}/Location" ];then
+	mkdir -p ${DL};
+fi
 export Lv0="${TMTam}/lv0";export Lv00="${TMTam}/lv00";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
 export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
 export dsh="${TMTam}/Sed"
@@ -229,15 +233,15 @@ InRa "|      Editor: Darias                                |"
 InRa "======================================================"
 InRa "             `date`"
 GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
-dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*X\=//'); echo "SedX=$SedX";
-dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*0\=//'); echo "Sed0=$Sed0";
-dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*1\=//'); echo "Sed1=$Sed1";
-dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*2\=//'); echo "Sed2=$Sed2";
-dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*3\=//'); echo "Sed3=$Sed3";
-dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*4\=//'); echo "Sed4=$Sed4";
-dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*Y\=//'); echo "SedY=$SedY";
-dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//'); echo "Sed00=$Sed00";
-dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//'); echo "Sed01=$Sed01";
+dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*X\=//');
+dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*0\=//');
+dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*1\=//');
+dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*2\=//');
+dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*3\=//');
+dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*4\=//');
+dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*Y\=//');
+dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//');
+dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//');
 InRa "> s.sh version: $VERSION"
 InRa "> Sed  version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
@@ -290,7 +294,12 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u17} > $tam;InRa "# Size of ${u17} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u18} > $tam;InRa "# Size of ${u18} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;
-	InRa "# Downloaded [0]: $(Size "$Lv0")";sh $dsh;
+	InRa "# Downloaded [0]: $(Size "$Lv0")";
+	InRa "> Compacting [0] ....";
+	LC_ALL=C cat $Lv0 | sed -r "${SedX}" | sed -r "${Sed0}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam;InRa ">> Compacted [0]: $(Size "$tam")";cat $tam > $hTam;
+	if [ -f "${TMuc}/Location" ];then
+		cp $Lv0 ${DL}/_Lv0.txt; cp $tam ${DL}/Lv0.txt;
+	fi
 #__________________________________________________________________________________________________
 	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv00;
 	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv00;
@@ -302,7 +311,12 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;
-	InRa "# Downloaded [0.5]: $(Size "$Lv00")";sh $dsh;	
+	InRa "# Downloaded [0.5]: $(Size "$Lv00")";
+	InRa "> Compacting [0.5] ....";
+	LC_ALL=C cat $Lv00 | tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed00}" | sed -r "${Sed01}" | sed -r "${Sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam;InRa ">> Compacted [0.5]: $(Size "$tam")";cat $tam >> $hTam;
+	if [ -f "${TMuc}/Location" ];then
+		cp $Lv00 ${DL}/_Lv00.txt; cp $tam ${DL}/Lv00.txt;
+	fi	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking [1]"
@@ -335,7 +349,12 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u46} > $tam;InRa "# Size of ${u46} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u47} > $tam;InRa "# Size of ${u47} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u48} > $tam;InRa "# Size of ${u48} is: $(Size "$tam")";cat $tam >> $Lv1;
-		InRa "# Downloaded [1]: $(Size "$Lv1")";sh $dsh;
+		InRa "# Downloaded [1]: $(Size "$Lv1")";
+		InRa "> Compacting [1] ....";
+		LC_ALL=C cat $Lv1 | sed -r "${SedX}" | sed -r "${Sed1}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam;InRa ">> Compacted [1]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv1 ${DL}/_Lv1.txt; cp $tam ${DL}/Lv1.txt;
+		fi
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
@@ -369,7 +388,12 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u75} > $tam;InRa "# Size of ${u75} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u76} > $tam;InRa "# Size of ${u76} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u77} > $tam;InRa "# Size of ${u77} is: $(Size "$tam")";cat $tam >> $Lv2;
-		InRa "# Downloaded [2]: $(Size "$Lv2")";sh $dsh;
+		InRa "# Downloaded [2]: $(Size "$Lv2")";
+		InRa "> Compacting [2] ....";
+		LC_ALL=C cat $Lv2 | sed -r "${SedX}" | sed -r "${Sed2}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam;InRa ">> Compacted [2]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv2 ${DL}/_Lv2.txt; cp $tam ${DL}/Lv2.txt;
+		fi
 	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
@@ -380,14 +404,24 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${u81} > $tam;InRa "# Size of ${u81} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u82} > $tam;InRa "# Size of ${u82} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u83} > $tam;InRa "# Size of ${u83} is: $(Size "$tam")";cat $tam >> $Lv3;
-		InRa "# Downloaded [3]: $(Size "$Lv3")";sh $dsh;
+		InRa "# Downloaded [3]: $(Size "$Lv3")";
+		InRa "> Compacting [3] ....";
+		LC_ALL=C cat $Lv3 | tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed3}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam;InRa ">> Compacted [3]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv3 ${DL}/_Lv3.txt; cp $tam ${DL}/Lv3.txt;
+		fi
 	#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking [4]"
 		GetSSL ${u84} > $tam;InRa "# Size of ${u84} is: $(Size "$tam")";cat $tam > $Lv4;
 		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;
-		InRa "# Downloaded [4]: $(Size "$Lv4")";sh $dsh;
+		InRa "# Downloaded [4]: $(Size "$Lv4")";
+		InRa "> Compacting [4] ....";
+		LC_ALL=C cat $Lv4 | tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' > $tam;InRa ">> Compacted [4]: $(Size "$tam")";cat $tam >> $hTam;
+		if [ -f "${TMuc}/Location" ];then
+			cp $Lv4 ${DL}/_Lv4.txt; cp $tam ${DL}/Lv4.txt;
+		fi
 	fi
 	if [ $NOFB = "f" ]; then
 		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
