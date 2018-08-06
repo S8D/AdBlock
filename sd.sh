@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180806e"
+VERSION="20180806f"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -229,7 +229,7 @@ InRa "|      ${Nha}                 |"
 InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
-InRa "             `date`"
+InRa "       `date`"
 GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
 dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*X\=//');
 dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*0\=//');
@@ -242,8 +242,8 @@ dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//');
 dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//');
 dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*BW\=//');
 dv=`grep -w -m 1 "SedFN" $dsh`;alias SedFN="$(echo $dv | sed 's/.*FN\=//')";
-InRa "             s.sh version: $VERSION"
-InRa "             Sed  version: $vers. Size: $(Size "$dsh")";
+InRa "       .sh version: $VERSION"
+InRa "       Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
 	chmod +x $dsh
 fi
