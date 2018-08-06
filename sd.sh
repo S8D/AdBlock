@@ -1,5 +1,5 @@
 #!/bin/sh
-VERSION="20180806d"
+VERSION="20180806e"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -241,7 +241,7 @@ dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*Y\=//');
 dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*00\=//');
 dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*01\=//');
 dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*BW\=//');
-dv=`grep -w -m 1 "SedFN" $dsh`;alias SedFN=$(echo $dv | sed 's/.*FN\=//');
+dv=`grep -w -m 1 "SedFN" $dsh`;alias SedFN="$(echo $dv | sed 's/.*FN\=//')";
 InRa "             s.sh version: $VERSION"
 InRa "             Sed  version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
@@ -418,12 +418,10 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		fi
 	fi
 	if [ $NOFB = "f" ]; then
-		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
-		#cat $tam >> $hTam;
+		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
-		#cat $tam >> $hTam;
+		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
 else
@@ -442,8 +440,8 @@ fi
 #__________________________________________________________________________________________________
 InRa "> Add-Remove Black-White List";
 if [ -f "${TMuc}/Location" ];then
-	LC_ALL=C cat $hTam | SedFN | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' > $hChinh;else
-	LC_ALL=C cat $hTam | SedFN | cat $tbl - | grep -Fvwf $twl | grep -Fvwf $dTam | awk '{if ($1 in a) next; a[$1]=$0; print}' | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $hTam | SedFN > $hChinh;else
+	LC_ALL=C cat $hTam | SedFN | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 fi
 LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
