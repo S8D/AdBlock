@@ -1,3 +1,4 @@
+#!/bin/sh
 address=/creativemedia.buzz/0.1.2.3
 address=/rajwap.xyz/0.1.2.3
 address=/blogswot.co.nz/0.1.2.3

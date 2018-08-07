@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180806i"
+PhienBan="20180807a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -241,7 +241,6 @@ dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*\=\=//');
 dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*\=\=//');
 dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*\=\=//');
 dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "SedBW" $dsh`;SedBW=$(echo $dv | sed 's/.*\=\=//');
 dv=`grep -w -m 1 "Cap0" $dsh`;alias Cap0="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap1" $dsh`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
@@ -249,6 +248,7 @@ dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "SedBW" $dsh`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
 InRa "       .sh version: $PhienBan"
 InRa "       Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
@@ -272,15 +272,15 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	fi
 	#__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
-	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
-	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
-	GetSSL ${Nha}/Lists/apple > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
+	GetSSL ${Nha}/Lists/Den.txt | SedBW > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
+	GetSSL ${Nha}/Lists/Trang.txt | SedBW > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
+	GetSSL ${Nha}/Lists/Apple.txt | SedBW > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
 	InRa "> Compacting Black/WhiteList Online"
-	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
-	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
+	LC_ALL=C cat $denOn > $tbl && cp $tbl $denOn
+	LC_ALL=C cat $trangOn > $twl && cp $twl $trangOn
 #__________________________________________________________________________________________________
 	InRa ">> Unlocking [0]"
-	GetSSL ${u00} > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
+	GetSSL ${u00} | SedBW > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
 #__________________________________________________________________________________________________
 	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
 	GetSSL ${u02} > $tam;InRa "# Size of ${u02} is: $(Size "$tam")";cat $tam >> $Lv0;
@@ -425,10 +425,10 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		fi
 	fi
 	if [ $NOFB = "f" ]; then
-		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";cat $tam >> $hTam;
+		GetSSL ${Nha}/Lists/FaceBook_Only.txt | SedBW > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";cat $tam >> $hTam;
+		GetSSL ${Nha}/Lists/FaceBook_All.txt | SedBW > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
 else
@@ -439,8 +439,8 @@ fi
 #__________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	InRa "> Compacting Black/WhiteList Offline"
-	LC_ALL=C cat $denOff | sed -r "${SedBW}" > tmpmybl && mv tmpmybl $denOff
-	LC_ALL=C cat $trangOff | sed -r "${SedBW}" > tmpmywl && mv tmpmywl $trangOff
+	LC_ALL=C cat $denOff | SedBW > tmpmybl && mv tmpmybl $denOff
+	LC_ALL=C cat $trangOff | SedBW > tmpmywl && mv tmpmywl $trangOff
 	cat $denOn | cat $denOff - > $tbl
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $twl
 fi

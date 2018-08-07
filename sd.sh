@@ -1,6 +1,6 @@
 #!/bin/sh
-VERSION="20180731b"
-PhienBan="20180731b"
+VERSION="201807++"
+PhienBan="20180807a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
@@ -253,9 +253,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	fi
 	#__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
-	GetSSL ${Nha}/Lists/den.on > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
-	GetSSL ${Nha}/Lists/trang.on > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
-	GetSSL ${Nha}/Lists/apple > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
+	GetSSL ${Nha}/Lists/Den.txt > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
+	GetSSL ${Nha}/Lists/Trang.txt > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
+	GetSSL ${Nha}/Lists/Apple.txt > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
 	InRa "> Compacting Black/WhiteList Online"
 	LC_ALL=C cat $denOn | sed -r "${SedBW}" > $tbl && cp $tbl $denOn
 	LC_ALL=C cat $trangOn | sed -r "${SedBW}" > $twl && cp $twl $trangOn
@@ -382,11 +382,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 		InRa "# Downloaded [4]: $(Size "$Lv4")";sh $dsh;
 	fi
 	if [ $NOFB = "f" ]; then
-		GetSSL ${Nha}/Lists/facebook.only > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
+		GetSSL ${Nha}/Lists/FaceBook_Only.txt > $tam;InRa "# Size of ${u85} is: $(Size "$tam")";
 		#cat $tam >> $hTam;
 	fi
 	if [ $NOFB = "F" ]; then
-		GetSSL ${Nha}/Lists/facebook.all > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
+		GetSSL ${Nha}/Lists/FaceBook_All.txt > $tam;InRa "# Size of ${u86} is: $(Size "$tam")";
 		#cat $tam >> $hTam;
 	fi
 #__________________________________________________________________________________________________
