@@ -1,5 +1,5 @@
 #!/bin/sh
-Version=20180808m
+Version=20180808n
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
@@ -14,12 +14,12 @@ Sed51==s|!.*$||; s/\|+//; s|\@.*$||; s|^127\.0.*||; s/^(\s+|\:\/+|\.|\*)+//; s|~
 Sed52==s/.*[^a-z0-9]+$//; s|.*\,.*||; s|.*\.$||; s/^[^.]+\.$//; s/\$.*//
 #__________________________________________________________________________________________________
 SedBW==sed -r 's|#.*$||; s|^[^.]+$||; /^$/d'
-Cap0==sed -r "${SedX}" | sed -r "${Sed0}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Cap1==sed -r "${SedX}" | sed -r "${Sed1}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Cap2==sed -r "${SedX}" | sed -r "${Sed2}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Cap3==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed3}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Cap4==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Cap5==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed51}" | sed -r "${Sed52}" | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Final==sed -r 's/\.$//; s|^[^.]+$||; /^$/d' | cat $tbl - | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cap0==sed -r "${SedX}" | sed -r "${Sed0}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cap1==sed -r "${SedX}" | sed -r "${Sed1}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cap2==sed -r "${SedX}" | sed -r "${Sed2}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cap3==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed3}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cap4==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cap5==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed51}" | sed -r "${Sed52}" | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Final==sed -r 's/\.$//; s|^[^.]+$||; /^$/d' | cat $tbl - | grep -Fvwf $twl | awk '{if ($1 in a) next; a[$1]=$0; print}'
 Cuoi==sed -r 's|.*\=\/||; s|\/.*$||' | grep -Fvwf $trangOn | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|'
 #Final==grep -Fvwf $twl | 
