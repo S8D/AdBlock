@@ -2,7 +2,7 @@
 VERSION="201808++"
 PhienBan="20180808i"
 export SetIP="0.1.2.3";export Level=4
-Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";S3D="${Nha}/Sed.txt";
+Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
 u11="http://gg.gg/u11_";u12="http://gg.gg/u12_";u13="http://gg.gg/u13_";u14="http://gg.gg/u14_";u15="http://gg.gg/u15_";
@@ -38,7 +38,7 @@ if [ -f "${TMuc}/Location" ];then
 fi
 export Lv0="${TMTam}/lv0";export Lv5="${TMTam}/Lv5";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
 export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
-export dsh="${TMTam}/Sed"
+export fSed="${TMTam}/Sed"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
 export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
@@ -235,30 +235,27 @@ InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"
-GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
-dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed1" $dsh`;Sed1=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed2" $dsh`;Sed2=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed3" $dsh`;Sed3=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed4" $dsh`;Sed4=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "SedY" $dsh`;SedY=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed00" $dsh`;Sed00=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed01" $dsh`;Sed01=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Cap0" $dsh`;alias Cap0="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap1" $dsh`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap5" $dsh`;alias Cap5="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cuoi" $dsh`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "SedBW" $dsh`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
+dv=`grep -w -m 1 "SedX" $fSed`;SedX=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed0" $fSed`;Sed0=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed1" $fSed`;Sed1=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed2" $fSed`;Sed2=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed3" $fSed`;Sed3=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed4" $fSed`;Sed4=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "SedY" $fSed`;SedY=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed00" $fSed`;Sed00=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Sed01" $fSed`;Sed01=$(echo $dv | sed 's/.*\=\=//');
+dv=`grep -w -m 1 "Cap0" $fSed`;alias Cap0="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cap1" $fSed`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cap2" $fSed`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cap3" $fSed`;alias Cap3="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cap4" $fSed`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cap5" $fSed`;alias Cap5="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Final" $fSed`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cuoi" $fSed`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
 InRa "   .sh version: $PhienBan"
-InRa "   Sed version: $vers. Size: $(Size "$dsh")";
-if [ -x $dsh ];then
-	chmod +x $dsh
-fi
+InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
