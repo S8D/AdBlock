@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808v"
+PhienBan="20180808w"
 export SetIP="0.1.2.3";export Level=4
 Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";S3D="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -159,7 +159,7 @@ CapNhat ()
 				InRa ">>> Update available: $vMoi"
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
-					cp $0 ${TMuc}/Data/$BanCu_$MaCu.sh;else
+					cp $0 ${TMuc}/Data/$MaCu_$BanCu.sh;else
 					cp $0 ${TMuc}/Data/$BanCu.sh;
 				fi				
 				chmod 755 $upTam;mv $upTam $0
