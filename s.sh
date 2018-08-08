@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808a"
+PhienBan="20180808b"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -225,12 +225,12 @@ shift $((OPTIND-1))
 #__________________________________________________________________________________________________
 BatDau=`date +%s`
 InRa "======================================="
-InRa "|      AdBlock for DD-WRT/Android      |"
-InRa "|      ${Nha}  |"
-InRa "|      Author: Manish Parashar        |"
-InRa "|      Editor: Darias                 |"
+InRa "|    AdBlock for DD-WRT/LiNux         |"
+InRa "|    ${Nha}    |"
+InRa "|    Author: Manish Parashar          |"
+InRa "|    Editor: Darias                   |"
 InRa "======================================="
-InRa "       `date`"
+InRa "   `date`"
 GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
 dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*\=\=//');
 dv=`grep -w -m 1 "Sed0" $dsh`;Sed0=$(echo $dv | sed 's/.*\=\=//');
@@ -249,8 +249,8 @@ dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "SedBW" $dsh`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-InRa "       .sh version: $PhienBan"
-InRa "       Sed version: $vers. Size: $(Size "$dsh")";
+InRa "   .sh version: $PhienBan"
+InRa "   Sed version: $vers. Size: $(Size "$dsh")";
 if [ -x $dsh ];then
 	chmod +x $dsh
 fi
