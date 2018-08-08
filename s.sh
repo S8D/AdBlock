@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808q"
+PhienBan="20180808r"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -157,11 +157,11 @@ CapNhat ()
 			MaCu=`md5sum $0 | cut -d' ' -f1`
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$MaCu" != "$MaMoi" ]; then
-				dv=`grep -w -m 1 "PhienBan" $upTam`;vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $vMoi"
-				cat $0 > ${TMuc}/Data/$0
-				chmod 755 $upTam
-				mv $upTam $0
+				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+				cat $0 > ${TMuc}/Data/$BanCu
+				chmod 755 $upTam;mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
 				InRa ">>> Current version: $PhienBan"
