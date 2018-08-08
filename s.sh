@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808k"
+PhienBan="20180808l"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -270,9 +270,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	InRa "# [0|1|2|3|4]: $Level"
 
-	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
+	if [ ! -s ${TMuc}/Data/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL --remote-name --time-cond ${TMuc}/Data/cacert.pem https://curl.haxx.se/ca/cacert.pem
+		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi
 	#__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
