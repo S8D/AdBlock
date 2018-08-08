@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808u"
+PhienBan="20180808v"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -160,7 +160,10 @@ CapNhat ()
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $vMoi"
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				cp $0 ${TMuc}/Data/$BanCu.sh
+				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
+					cp $0 ${TMuc}/Data/$BanCu_$MaCu.sh;else
+					cp $0 ${TMuc}/Data/$BanCu.sh;
+				fi				
 				chmod 755 $upTam;mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
