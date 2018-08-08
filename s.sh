@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808l"
+PhienBan="20180808m"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -38,7 +38,7 @@ DL="${TMuc}/dl";
 if [ -f "${TMuc}/Location" ];then
 	mkdir -p ${DL};
 fi
-export Lv0="${TMTam}/lv0";export Lv00="${TMTam}/lv00";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
+export Lv0="${TMTam}/lv0";export Lv5="${TMTam}/Lv5";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
 export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
 export dsh="${TMTam}/Sed"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
@@ -250,8 +250,9 @@ dv=`grep -w -m 1 "Cap1" $dsh`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap2" $dsh`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap3" $dsh`;alias Cap3="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Cap4" $dsh`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap00" $dsh`;alias Cap00="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cap5" $dsh`;alias Cap5="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "Final" $dsh`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "Cuoi" $dsh`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
 dv=`grep -w -m 1 "SedBW" $dsh`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
 InRa "   .sh version: $PhienBan"
 InRa "   Sed version: $vers. Size: $(Size "$dsh")";
@@ -281,10 +282,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${Nha}/Lists/Apple.txt | SedBW > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
 	LC_ALL=C cat $denOn > $tbl;LC_ALL=C cat $trangOn > $twl
 #__________________________________________________________________________________________________
-	InRa ">> Unlocking [0]"
-	GetSSL ${u00} | SedBW > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
+	GetSSL ${u00} | SedBW > $dTam;InRa "# Size of Domains is: $(Size "$tam")";cat $dTam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
 #__________________________________________________________________________________________________
-	Chay=`date +%s`
+	InRa ">> Unlocking [0]";Chay=`date +%s`
 	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
 	GetSSL ${u02} > $tam;InRa "# Size of ${u02} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $tam;InRa "# Size of ${u03} is: $(Size "$tam")";cat $tam >> $Lv0;
@@ -311,22 +311,22 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		cp $Lv0 ${DL}/_Lv0.txt; cp $tam ${DL}/Lv0.txt;
 	fi
 #__________________________________________________________________________________________________
-	Chay=`date +%s`
-	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv00;
-	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u92} > $tam;InRa "# Size of ${u92} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u93} > $tam;InRa "# Size of ${u93} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u94} > $tam;InRa "# Size of ${u94} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u95} > $tam;InRa "# Size of ${u95} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u96} > $tam;InRa "# Size of ${u96} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
-	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;DemGio
-	InRa "# Downloaded [0.5]: $(Size "$Lv00") in $Phut:$Giay minutes";InRa "> Compacting [0.5] ....";Chay=`date +%s`
-	LC_ALL=C cat $Lv00 | Cap00 > $tam;DemGio
+	InRa ">> Unlocking [0.5]";Chay=`date +%s`
+	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv5;
+	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u92} > $tam;InRa "# Size of ${u92} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u93} > $tam;InRa "# Size of ${u93} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u94} > $tam;InRa "# Size of ${u94} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u95} > $tam;InRa "# Size of ${u95} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u96} > $tam;InRa "# Size of ${u96} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv5;
+	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv5;DemGio
+	InRa "# Downloaded [0.5]: $(Size "$Lv5") in $Phut:$Giay minutes";InRa "> Compacting [0.5] ....";Chay=`date +%s`
+	LC_ALL=C cat $Lv5 | Cap5 > $tam;DemGio
 	InRa ">> Compacted [0.5]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;	
 	if [ -f "${TMuc}/Location" ];then
-		cp $Lv00 ${DL}/_Lv00.txt; cp $tam ${DL}/Lv00.txt;
+		cp $Lv5 ${DL}/_Lv5.txt; cp $tam ${DL}/Lv5.txt;
 	fi	
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
@@ -460,7 +460,7 @@ if [ -f "${TMuc}/Location" ];then
 	LC_ALL=C cat $hTam | Final > $hChinh;else
 	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 fi
-LC_ALL=C cat $dTam | grep -Fvwf $trangOn | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
+LC_ALL=C cat $dTam | Cuoi > $dChinh
 DemGio;InRa "> Processing time: $Phut:$Giay minutes"
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
 Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Domains $(Size "$dChinh")";

@@ -1,5 +1,5 @@
 #!/bin/sh
-Version=20180808l
+Version=20180808m
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
@@ -10,15 +10,16 @@ Sed2==s|:.*$||; s|\;.*$||; s|^127.0.0.1||; s|^\s+||; s|\s+$||; s|^0\.0\.0\.0||; 
 Sed3==s|^127.0.0.1||; s|^\s+||; s|\s+$||; s|^\-||; s|^\.||; s|:.*$||; s|\.$||; s|\?$||; s|^\_+||; s/\.com(en|stu|cate)[^.]*$/.com/; s/.*\.(1cn|4th)$//; s|^w.*orn$||; s|.*html$||; s|s.*pboy$||; s|ldomain$||; s|^hosts\-file\.net$||; s|^fb\.me$||; s|.*api\.fa.*ok\.com$||; s|^s3\.amazonaws\.com||
 Sed4==s|^127\.0.*||; s|^0\.0\.0\.0||; s|^\s+||; s|^\-+||; s|^🔗||; s|^\_+||; s|:.*$||; s|\s+$||; s|^\.||; s|\.$||; s|\/.*$||; s|\.v$||; s|\.w$||; s|\.z$||; s|\+$||; s|\.tl2$|tl|; s|^w.*orn$||; s|\.co14$|.co|; s|\.world15$|.world|; s|com\.do.*ld$|com|; s/\.comm$/.com/; s|.*\-offer$||; s|.*ocom$||; s|.*ilien$||; s/\.com(1|a|en|br|ca|stu)[^.]*$/.com/; s/.*[^a-z0-9]+$//; s|\$.*||; s|w.*ztop$||; s|dioch$|dio.ch|; s|s.*mait$||; s|^gg\.gg||; s|^g\.co$||
 SedY==s|.*chat\.fa.*ok\.com$||; s|.*xx\.fbcdn\.net$||; s|.*raph\.fa.*ok\.com$||; s|^[^.]+$||; /^$/d
-Sed00==s|!.*$||; s/\|+//; s|\@.*$||; s|^127\.0.*||; s/^(\s+|\:\/+|\.|\*)+//; s|~.*$||; s|\^.*$||; s|\/.*$||; s|\}.*$||; s|\?.*$||; s|.*\.php$||; s|^\-||; s|.*\-tag.$||; s/\.$//; s|:.*$||; s|.*\.js$||; s|\&.*$||; s|.*\*.*||; s/\.com(stu|cate)[^.]*$/.com/; s|yandex$|yandex.com|; s|\.page\-w.*||; s|^github\.com$||; s|^forum\.xda\-.*||; s|^t\.co$||; s|^stackoverflow\.com$||; s|.*api\.fa.*ok\.com$||; s|^s3\.amazonaws\.com||
-Sed01==s/.*[^a-z0-9]+$//; s|.*\,.*||; s|.*\.$||; s/^[^.]+\.$//; s/\$.*//
+Sed51==s|!.*$||; s/\|+//; s|\@.*$||; s|^127\.0.*||; s/^(\s+|\:\/+|\.|\*)+//; s|~.*$||; s|\^.*$||; s|\/.*$||; s|\}.*$||; s|\?.*$||; s|.*\.php$||; s|^\-||; s|.*\-tag.$||; s/\.$//; s|:.*$||; s|.*\.js$||; s|\&.*$||; s|.*\*.*||; s/\.com(stu|cate)[^.]*$/.com/; s|yandex$|yandex.com|; s|\.page\-w.*||; s|^github\.com$||; s|^forum\.xda\-.*||; s|^t\.co$||; s|^stackoverflow\.com$||; s|.*api\.fa.*ok\.com$||; s|^s3\.amazonaws\.com||
+Sed52==s/.*[^a-z0-9]+$//; s|.*\,.*||; s|.*\.$||; s/^[^.]+\.$//; s/\$.*//
 #__________________________________________________________________________________________________
 SedBW==sed -r 's|#.*$||; s|^[^.]+$||; /^$/d'
 Cap0==sed -r "${SedX}" | sed -r "${Sed0}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
-Cap00==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed00}" | sed -r "${Sed01}" | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
 Cap1==sed -r "${SedX}" | sed -r "${Sed1}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
 Cap2==sed -r "${SedX}" | sed -r "${Sed2}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
 Cap3==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed3}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
 Cap4==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r "${SedY}" | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
+Cap5==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed51}" | sed -r "${Sed52}" | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}' | grep -Fvwf $twl
 Final==sed -r 's/\.$//; s|^[^.]+$||; /^$/d' | cat $tbl - | awk '{if ($1 in a) next; a[$1]=$0; print}'
+Cuoi==sed -r 's|.*\=\/||; s|\/.*$||' | grep -Fvwf $trangOn | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|'
 #Final==grep -Fvwf $twl | 
