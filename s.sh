@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808m"
+PhienBan="20180808n"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -157,10 +157,10 @@ CapNhat ()
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				dv=`grep -w -m 1 "PhienBan" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-				InRa ">>> Update available: $NEWVER"
-				OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				cp $0 $0.$OLDVER
+				dv=`grep -w -m 1 "PhienBan" $upTam`;vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				InRa ">>> Update available: $vMoi"
+				#OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+				cp $0 ${TMuc}/Data/$0
 				chmod 755 $upTam
 				mv $upTam $0
 				InRa ">>> Updated to the latest version."
