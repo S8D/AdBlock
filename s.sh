@@ -159,7 +159,7 @@ CapNhat ()
 				InRa ">>> Update available: $vMoi"
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
-					cp $0 ${TMuc}/Data/$MaCu_$BanCu.sh;else
+					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${TMuc}/Data/$BanCu\_$mCu.sh;else
 					cp $0 ${TMuc}/Data/$BanCu.sh;
 				fi				
 				chmod 755 $upTam;mv $upTam $0
