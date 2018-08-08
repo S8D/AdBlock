@@ -47,10 +47,10 @@ export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/Data/den.on";export trangOn="${TMuc}/Data/trang.on";
 export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
 if [ ! -f $denOff ];then
-    echo -n "" > $denOff
+	echo -n "" > $denOff
 fi
 if [ ! -f $trangOff ];then
-    echo -n "" > $trangOff
+	echo -n "" > $trangOff
 fi
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
@@ -161,7 +161,7 @@ CapNhat ()
 				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
 					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${TMuc}/Data/$BanCu\_$mCu.sh;else
 					cp $0 ${TMuc}/Data/$BanCu.sh;
-				fi				
+				fi
 				chmod 755 $upTam;mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
@@ -219,10 +219,10 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
-			'' )    break ;;
-			* )     echo ">>> ERROR: unsupported option --$OPTARG" >&2; exit 2 ;;
+			'' )	break ;;
+			* )		echo ">>> ERROR: unsupported option --$OPTARG" >&2; exit 2 ;;
 		esac ;;
-  	  \? ) exit 2 ;;
+	\? ) exit 2 ;;
 	esac
 done
 shift $((OPTIND-1))
@@ -265,17 +265,15 @@ if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 	Bat
 fi
 if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
-
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	InRa "# [0|1|2|3|4]: $Level"
-
 	if [ ! -s ${TMuc}/Data/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi
-	#__________________________________________________________________________________________________
+#__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
 	GetSSL ${Nha}/Lists/Den.txt | SedBW > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
 	GetSSL ${Nha}/Lists/Trang.txt | SedBW > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
@@ -327,7 +325,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa ">> Compacted [0.5]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cp $Lv5 ${DL}/_Lv5.txt; cp $tam ${DL}/Lv5.txt;
-	fi	
+	fi
 #__________________________________________________________________________________________________
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking [1]";Chay=`date +%s`
@@ -421,7 +419,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv3 ${DL}/_Lv3.txt; cp $tam ${DL}/Lv3.txt;
 		fi
-	#__________________________________________________________________________________________________
+#__________________________________________________________________________________________________
 	fi
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking [4]";Chay=`date +%s`
