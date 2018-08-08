@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808e"
+PhienBan="20180808f"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -455,7 +455,7 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $twl
 fi
 #__________________________________________________________________________________________________
-InRa "> Add-Remove Black-White List";Chay=`date +%s`
+InRa "> Adding IP to List";Chay=`date +%s`
 if [ -f "${TMuc}/Location" ];then
 	LC_ALL=C cat $hTam | Final > $hChinh;else
 	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
