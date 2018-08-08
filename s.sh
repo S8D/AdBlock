@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808o"
+PhienBan="20180808p"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -154,12 +154,12 @@ CapNhat ()
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${Nha}/$(basename "$0") > $upTam
 		if [ 0 -eq $? ]; then
-			old_md5=`md5sum $0 | cut -d' ' -f1`
-			new_md5=`md5sum $upTam | cut -d' ' -f1`
-			if [ "$old_md5" != "$new_md5" ]; then
+			MaCu=`md5sum $0 | cut -d' ' -f1`
+			MaMoi=`md5sum $upTam | cut -d' ' -f1`
+			if [ "$MaCu" != "$MaMoi" ]; then
 				dv=`grep -w -m 1 "PhienBan" $upTam`;vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $vMoi"
-				cp $0 ${TMuc}/Data/$0
+				cat $0 > ${TMuc}/Data/$0
 				chmod 755 $upTam
 				mv $upTam $0
 				InRa ">>> Updated to the latest version."
