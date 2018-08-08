@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808d"
+PhienBan="20180808e"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -279,12 +279,10 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${Nha}/Lists/Den.txt | SedBW > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
 	GetSSL ${Nha}/Lists/Trang.txt | SedBW > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
 	GetSSL ${Nha}/Lists/Apple.txt | SedBW > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
-	InRa "> Compacting Black/WhiteList Online"
-	LC_ALL=C cat $denOn > $tbl && cp $tbl $denOn
-	LC_ALL=C cat $trangOn > $twl && cp $twl $trangOn
+	LC_ALL=C cat $denOn > $tbl;LC_ALL=C cat $trangOn > $twl
 #__________________________________________________________________________________________________
 	InRa ">> Unlocking [0]"
-	GetSSL ${u00} | SedBW > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' > $dTam
+	GetSSL ${u00} | SedBW > $tam;InRa "# Size of Domains is: $(Size "$tam")";cat $tam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
 #__________________________________________________________________________________________________
 	Chay=`date +%s`
 	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
@@ -462,7 +460,7 @@ if [ -f "${TMuc}/Location" ];then
 	LC_ALL=C cat $hTam | Final > $hChinh;else
 	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 fi
-LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
+LC_ALL=C cat $dTam | grep -Fvwf $trangOn | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
 DemGio;InRa "> Processing time: $Phut:$Giay minutes"
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
 Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Domains $(Size "$dChinh")";
