@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808j"
+PhienBan="20180808k"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -66,10 +66,10 @@ if [ -z "$(which curl)" ]; then
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export ScURL="https://curl.haxx.se/ca/cacert.pem"
+export ScURL="${TMuc}/Data/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data/ --cacert $ScURL"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa ()
 {
@@ -272,7 +272,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 
 	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
+		GetSSL --remote-name --time-cond ${TMuc}/Data/cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi
 	#__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
