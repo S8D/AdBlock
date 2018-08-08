@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180807a"
+PhienBan="20180808a"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -223,13 +223,13 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 done
 shift $((OPTIND-1))
 #__________________________________________________________________________________________________
-TIMERSTART=`date +%s`
-InRa "======================================================"
-InRa "|      AdBlock for DD-WRT/Android base on Linux      |"
-InRa "|      ${Nha}                 |"
-InRa "|      Author: Manish Parashar                       |"
-InRa "|      Editor: Darias                                |"
-InRa "======================================================"
+BatDau=`date +%s`
+InRa "======================================="
+InRa "|      AdBlock for DD-WRT/Android      |"
+InRa "|      ${Nha}  |"
+InRa "|      Author: Manish Parashar        |"
+InRa "|      Editor: Darias                 |"
+InRa "======================================="
 InRa "       `date`"
 GetSSL ${S3D} > $dsh;dv=`grep -w -m 1 "Version" $dsh`;vers=$(echo $dv | sed 's/.*\=//');
 dv=`grep -w -m 1 "SedX" $dsh`;SedX=$(echo $dv | sed 's/.*\=\=//');
@@ -301,8 +301,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${u17} > $tam;InRa "# Size of ${u17} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u18} > $tam;InRa "# Size of ${u18} is: $(Size "$tam")";cat $tam >> $Lv0;
 	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;
-	InRa "# Downloaded [0]: $(Size "$Lv0")";InRa "> Compacting [0] ....";
+	InRa "# Downloaded [0]: $(Size "$Lv0")";InRa "> Compacting [0] ....";Chay=`date +%s`
 	LC_ALL=C cat $Lv0 | Cap0 > $tam;InRa ">> Compacted [0]: $(Size "$tam")";cat $tam > $hTam;
+	Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 	if [ -f "${TMuc}/Location" ];then
 		cp $Lv0 ${DL}/_Lv0.txt; cp $tam ${DL}/Lv0.txt;
 	fi
@@ -317,8 +318,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv00;
 	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv00;
-	InRa "# Downloaded [0.5]: $(Size "$Lv00")";InRa "> Compacting [0.5] ....";
+	InRa "# Downloaded [0.5]: $(Size "$Lv00")";InRa "> Compacting [0.5] ....";Chay=`date +%s`
 	LC_ALL=C cat $Lv00 | Cap00 > $tam;InRa ">> Compacted [0.5]: $(Size "$tam")";cat $tam >> $hTam;
+	Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 	if [ -f "${TMuc}/Location" ];then
 		cp $Lv00 ${DL}/_Lv00.txt; cp $tam ${DL}/Lv00.txt;
 	fi	
@@ -354,8 +356,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${u46} > $tam;InRa "# Size of ${u46} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u47} > $tam;InRa "# Size of ${u47} is: $(Size "$tam")";cat $tam >> $Lv1;
 		GetSSL ${u48} > $tam;InRa "# Size of ${u48} is: $(Size "$tam")";cat $tam >> $Lv1;
-		InRa "# Downloaded [1]: $(Size "$Lv1")";InRa "> Compacting [1] ....";
+		InRa "# Downloaded [1]: $(Size "$Lv1")";InRa "> Compacting [1] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv1 | Cap1 > $tam;InRa ">> Compacted [1]: $(Size "$tam")";cat $tam >> $hTam;
+		Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv1 ${DL}/_Lv1.txt; cp $tam ${DL}/Lv1.txt;
 		fi
@@ -392,8 +395,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${u75} > $tam;InRa "# Size of ${u75} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u76} > $tam;InRa "# Size of ${u76} is: $(Size "$tam")";cat $tam >> $Lv2;
 		GetSSL ${u77} > $tam;InRa "# Size of ${u77} is: $(Size "$tam")";cat $tam >> $Lv2;
-		InRa "# Downloaded [2]: $(Size "$Lv2")";InRa "> Compacting [2] ....";
+		InRa "# Downloaded [2]: $(Size "$Lv2")";InRa "> Compacting [2] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv2 | Cap2 > $tam;InRa ">> Compacted [2]: $(Size "$tam")";cat $tam >> $hTam;
+		Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv2 ${DL}/_Lv2.txt; cp $tam ${DL}/Lv2.txt;
 		fi
@@ -407,8 +411,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${u81} > $tam;InRa "# Size of ${u81} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u82} > $tam;InRa "# Size of ${u82} is: $(Size "$tam")";cat $tam >> $Lv3;
 		GetSSL ${u83} > $tam;InRa "# Size of ${u83} is: $(Size "$tam")";cat $tam >> $Lv3;
-		InRa "# Downloaded [3]: $(Size "$Lv3")";InRa "> Compacting [3] ....";
+		InRa "# Downloaded [3]: $(Size "$Lv3")";InRa "> Compacting [3] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv3 | Cap3 > $tam;InRa ">> Compacted [3]: $(Size "$tam")";cat $tam >> $hTam;
+		Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv3 ${DL}/_Lv3.txt; cp $tam ${DL}/Lv3.txt;
 		fi
@@ -418,8 +423,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		InRa ">> Unlocking [4]"
 		GetSSL ${u84} > $tam;InRa "# Size of ${u84} is: $(Size "$tam")";cat $tam > $Lv4;
 		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;
-		InRa "# Downloaded [4]: $(Size "$Lv4")";InRa "> Compacting [4] ....";
+		InRa "# Downloaded [4]: $(Size "$Lv4")";InRa "> Compacting [4] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv4 | Cap4 > $tam;InRa ">> Compacted [4]: $(Size "$tam")";cat $tam >> $hTam;
+		Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv4 ${DL}/_Lv4.txt; cp $tam ${DL}/Lv4.txt;
 		fi
@@ -445,12 +451,13 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $twl
 fi
 #__________________________________________________________________________________________________
-InRa "> Add-Remove Black-White List";
+InRa "> Add-Remove Black-White List";Chay=`date +%s`
 if [ -f "${TMuc}/Location" ];then
 	LC_ALL=C cat $hTam | Final > $hChinh;else
 	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
 fi
 LC_ALL=C cat $dTam | grep -Fvwf $twl | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|' > $dChinh
+Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));InRa "# Processing time: $Phut:$Giay minutes"
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
 Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Domains $(Size "$dChinh")";
 #__________________________________________________________________________________________________
@@ -458,10 +465,10 @@ if [ -f "${TMuc}/Location" ];then
 	echo "Skip restart DNS server";else
 	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
 fi
-TIMERSTOP=`date +%s`
-RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
-RTSECONDS=$(( $((TIMERSTOP - TIMERSTART)) %60 ))
-InRa "# Total time: $RTMINUTES:$RTSECONDS minutes"
+KetThuc=`date +%s`
+Phut=$(( $((KetThuc - BatDau)) /60 ))
+Giay=$(( $((KetThuc - BatDau)) %60 ))
+InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
 logger ">>> $(basename "$0") finished"
 exit 0
