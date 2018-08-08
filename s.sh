@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808h"
+PhienBan="20180808i"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -469,9 +469,7 @@ if [ -f "${TMuc}/Location" ];then
 	echo "Skip restart DNS server";else
 	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
 fi
-KetThuc=`date +%s`
-Phut=$(( $((KetThuc - BatDau)) /60 ))
-Giay=$(( $((KetThuc - BatDau)) %60 ))
+KetThuc=`date +%s`;Phut=$(( $((KetThuc - BatDau)) /60 ));Giay=$(( $((KetThuc - BatDau)) %60 ))
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
 logger ">>> $(basename "$0") finished"
