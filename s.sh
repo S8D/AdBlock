@@ -272,10 +272,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	fi
 #__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
-	GetSSL ${Nha}/Lists/Den.txt | SedBW > $denOn;InRa "# Size of Black is: $(Size "$denOn")";
+	GetSSL ${Nha}/Lists/Den.txt | SedBW > $denOn;InRa "# Size of Black is: $(Size "$denOn")"; cp $denOn $tbl;
 	GetSSL ${Nha}/Lists/Trang.txt | SedBW > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
-	GetSSL ${Nha}/Lists/Apple.txt | SedBW > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn;
-	LC_ALL=C cat $denOn > $tbl;LC_ALL=C cat $trangOn > $twl
+	GetSSL ${Nha}/Lists/Apple.txt | SedBW > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn; cp $trangOn $twl;
 #__________________________________________________________________________________________________
 	GetSSL ${u00} | SedBW > $dTam;InRa "# Size of Domains is: $(Size "$tam")";cat $dTam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
 #__________________________________________________________________________________________________
