@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808f"
+PhienBan="20180808g"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -33,7 +33,7 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Lists;
+export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Data;
 DL="${TMuc}/dl";
 if [ -f "${TMuc}/Location" ];then
 	mkdir -p ${DL};
@@ -46,8 +46,8 @@ export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
 export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
-export denOn="${TMuc}/Lists/den.on";export trangOn="${TMuc}/Lists/trang.on";
-export denOff="${TMuc}/Lists/den.off";export trangOff="${TMuc}/Lists/trang.off";
+export denOn="${TMuc}/Data/den.on";export trangOn="${TMuc}/Data/trang.on";
+export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
 if [ ! -f $denOff ];then
     echo -n "" > $denOff
 fi
@@ -69,7 +69,7 @@ fi
 export ScURL="${TMuc}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc} --cacert $ScURL"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa ()
 {
