@@ -276,7 +276,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${Nha}/Lists/Trang.txt | SedBW > $tam;InRa "# Size of White is: $(Size "$tam")";cat $tam > $trangOn;
 	GetSSL ${Nha}/Lists/Apple.txt | SedBW > $tam;InRa "# Size of Apple is: $(Size "$tam")";cat $tam >> $trangOn; cp $trangOn $twl;
 #__________________________________________________________________________________________________
-	GetSSL ${u00} | SedBW > $dTam;InRa "# Size of Domains is: $(Size "$tam")";cat $dTam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
+	GetSSL ${u00} | SedBW > $dTam;InRa "# Size of Domains : $(Size "$tam")";cat $dTam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
 #__________________________________________________________________________________________________
 	InRa ">> Unlocking [0]";Chay=`date +%s`
 	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
