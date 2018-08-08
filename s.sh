@@ -308,7 +308,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;DemGio
 	InRa "# Downloaded [0]: $(Size "$Lv0") in $Phut:$Giay minutes";InRa "> Compacting [0] ....";Chay=`date +%s`
 	LC_ALL=C cat $Lv0 | Cap0 > $tam;DemGio
-	InRa ">> Compacted [0]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam > $hTam;	
+	InRa ">> Compacted [0]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam > $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cp $Lv0 ${DL}/_Lv0.txt; cp $tam ${DL}/Lv0.txt;
 	fi
@@ -326,7 +326,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv5;DemGio
 	InRa "# Downloaded [0.5]: $(Size "$Lv5") in $Phut:$Giay minutes";InRa "> Compacting [0.5] ....";Chay=`date +%s`
 	LC_ALL=C cat $Lv5 | Cap5 > $tam;DemGio
-	InRa ">> Compacted [0.5]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;	
+	InRa ">> Compacted [0.5]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
 	if [ -f "${TMuc}/Location" ];then
 		cp $Lv5 ${DL}/_Lv5.txt; cp $tam ${DL}/Lv5.txt;
 	fi	
@@ -431,7 +431,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;DemGio
 		InRa "# Downloaded [4]: $(Size "$Lv4") in $Phut:$Giay minutes";InRa "> Compacting [4] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv4 | Cap4 > $tam;DemGio
-		InRa ">> Compacted [4]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;		
+		InRa ">> Compacted [4]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;	
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv4 ${DL}/_Lv4.txt; cp $tam ${DL}/Lv4.txt;
 		fi
