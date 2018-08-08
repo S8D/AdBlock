@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808g"
+PhienBan="20180808h"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 S3D="${Nha}/Sed.txt";
@@ -45,7 +45,7 @@ export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
 export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
-export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
+export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/Data/den.on";export trangOn="${TMuc}/Data/trang.on";
 export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
 if [ ! -f $denOff ];then
