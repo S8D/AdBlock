@@ -159,7 +159,6 @@ CapNhat ()
 			if [ "$old_md5" != "$new_md5" ]; then
 				dv=`grep -w -m 1 "PhienBan" $upTam`;vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $vMoi"
-				#OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				cp $0 ${TMuc}/Data/$0
 				chmod 755 $upTam
 				mv $upTam $0
