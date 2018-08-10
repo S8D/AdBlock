@@ -258,6 +258,7 @@ image.uc.cn
 eastwind.lau4.uae.uc.cn
 sina.cn
 g.s.360.cn
+data.flvrrz.cpm
 phimyz.com
 avidolz.com
 as.innity.com
@@ -552,6 +553,7 @@ www.vidoevo.com
 client.midosoo.com
 analytics.query.yahoo.com
 www.yahoo.com
+m.yap.yahoo.com
 media-router-flurry7.prod.media.wg1.b.yahoo.com
 event.allnews.uodoo.com
 api.allnews.uodoo.com
@@ -830,6 +832,7 @@ sdk.adspruce.com
 gwallcheck.api-alliance.com
 fbwallcheck.api-alliance.com
 dm.bytedance.com
+infoevent.startappservice.com
 init.startappservice.com
 events.startappservice.com
 dts.startappservice.com
@@ -839,6 +842,7 @@ imp.startappservice.com
 startappservice.com
 data.mobilesystemservice.com
 mobilesystemservice.com
+by.uservoice.com
 s.youtube.com
 geo2.adobe.com
 ulogs.umengcloud.com
