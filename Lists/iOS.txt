@@ -473,6 +473,7 @@ rtb-csync.smartadserver.com
 csync.smartadserver.com
 delivery.adrecover.com
 platform.twitter.com
+ads-bidder-api.twitter.com
 twitter.com
 static.apester.com
 www.statcounter.com
@@ -712,6 +713,7 @@ cdn.onesignal.com
 onesignal.com
 vk.com
 user-actrk.com
+wins.tng.wdc.go2trk.com
 xl-trk.com
 code.ionicframework.com
 kaymopk.com
@@ -770,10 +772,6 @@ alog.umeng.com
 oc.umeng.com
 sec.umeng.com
 spankbang.com
-s.yimg.com
-s.ytimg.com
-i9.ytimg.com
-i2.ytimg.com
 script.crazyegg.com
 md-a-s.apptimize.com
 mapi.apptimize.com
@@ -781,8 +779,6 @@ brahe.apptimize.com
 md-a-c.apptimize.com
 pixel.quantserve.com
 secure.quantserve.com
-settings-ssl.xboxlive.com
-nexusrules.officeapps.live.com
 sb.voicefive.com
 secure.avangate.com
 q-mobi.go2affise.com
@@ -811,7 +807,6 @@ helpcmsecurity1.ksmobile.com
 helplauncher1.ksmobile.com
 helpcmsecurity0.ksmobile.com
 cert-test.sandbox.google.com
-android.clients.google.com
 suggestqueries.google.com
 googleapis.l.google.com
 googleadapis.l.google.com
@@ -862,17 +857,6 @@ a.algovid.com
 ap.smardroid.com
 lg.smardroid.com
 sc.smardroid.com
-gocurrency.goforandroid.com
-abtest.goforandroid.com
-adviap.goforandroid.com
-adlockscreen.goforandroid.com
-integralwall.goforandroid.com
-goappdl.goforandroid.com
-navigation.api.hk.goforandroid.com
-conf.api.hk.goforandroid.com
-adpushsdk.goforandroid.com
-version.api.goforandroid.com
-newstoredata.goforandroid.com
 servicer.mgid.com
 wsp.mgid.com
 imgg-cdn.mgid.com
@@ -912,6 +896,7 @@ js-agent.newrelic.com
 ssc.api.bbc.com
 r.nexac.com
 e.nexac.com
+mpx.mopub.com
 ads.mopub.com
 github.com
 www.pornhub.com
