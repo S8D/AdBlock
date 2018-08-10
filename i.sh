@@ -69,7 +69,7 @@ Giup ()
 {
 	echo ""
 	echo "USAGE:"
-	printf '\t'; echo "$(basename "$0") [-? | -h | --help] [-v | --version] [-1] [-2] [-b | --bl=<domain.name>] [-w | --wl=<domain.name>] ..."
+	printf '\t'; echo "$(basename "$0") [-? | -h | --help] [-v | --version] ..."
 	echo ""
 	echo "OPERATION:"
 	printf '\t'; echo -n "[-i | --ip=]"; printf '\t'; echo -n "ip.ad.dr.ss"; printf '\t'; echo "Send ads to this IP, default: $SetIP"
