@@ -48,7 +48,6 @@ Bat ()
 		InRa ">>> RESUMING PROTECTION"
 		mv $hDung $hChinh
 		rm -f $pauseflag
-		ReBoot
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -59,7 +58,6 @@ Tat ()
 	[ -f $hChinh ] && mv $hChinh $hDung
 	GetSSL ${Nha}/Lists/hosts > hChinh
 	echo "PAUSED" > $pauseflag
-	ReBoot
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
 	logger ">>> $(basename "$0") finished"
 	exit 0
