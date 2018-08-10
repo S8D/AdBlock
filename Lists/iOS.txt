@@ -2,7 +2,6 @@ rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
 x.cnt.my
-ssm1.internet.sony.tv
 phimxxx.tv
 vlxx.tv
 haysex.tv
@@ -212,12 +211,10 @@ res-zalo.zadn.vn
 log.sdk.zadn.vn
 zalo-ads-td.zadn.vn
 adtima-media-td.zadn.vn
-echip.com.vn
 adver.24h.com.vn
 thongke.24h.com.vn
 static.24h.com.vn
 adservice.google.com.vn
-nld.com.vn
 delivery.adnetwork.vn
 track.adnetwork.vn
 click.vn
@@ -229,11 +226,7 @@ click.accesstrade.vn
 static.accesstrade.vn
 sharefb.cnnd.vn
 myeva.vn
-thethaovanhoa.vn
 admicro1.vcmedia.vn
-qccoccocmedia.vn
-soha.vn
-kenh14.vn
 fp.fraudmetrix.cn
 analytics.oneplus.cn
 kv.stat.foreign.nearme.com.cn
