@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811d"
+PhienBan="20180811e"
 export SetIP="0.1.2.3";
 fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";
@@ -188,11 +188,12 @@ else
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 	exit 0
 fi
-Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+Counts=$(cat $fSed | wc -l | sed 's/^[ \t]*//');
 if [ Counts=0 ];then
 	InRa ">>> Process failed! Please try again."
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 fi
+cp $fSed $hChinh
 InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"

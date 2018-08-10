@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201808++"
-PhienBan="20180808i"
+PhienBan="20180811a"
 export SetIP="0.1.2.3";export Level=4
 Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -42,6 +42,7 @@ export fSed="${TMTam}/Sed"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
 export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
 export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
+export hT4m="${TMTam}/ht.tmp";export dT4m="${TMTam}/dt.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
 export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/Data/den.on";export trangOn="${TMuc}/Data/trang.on";
@@ -93,8 +94,7 @@ Bat ()
 		rm -f $pauseflag
 		ReBoot
 	fi
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 }
 Tat ()
 {
@@ -106,8 +106,7 @@ Tat ()
 	echo "PAUSED" > $pauseflag
 	ReBoot
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 }
 #__________________________________________________________________________________________________
 Giup ()
@@ -141,8 +140,7 @@ Giup ()
 	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 --bl=example1.com --wl=example2.com"
 	printf '\t'; echo "$(basename "$0") -3Fqs -b example1.com -w example2.com --wl=example3.com"
 	echo ""
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 }
 #__________________________________________________________________________________________________
 CapNhat ()
@@ -170,10 +168,8 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
-		rm -rf ${TMTam};
 	fi
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 }
 DemGio ()
 {
@@ -451,21 +447,25 @@ fi
 #__________________________________________________________________________________________________
 InRa "> Adding IP to List";Chay=`date +%s`
 if [ -f "${TMuc}/Location" ];then
-	LC_ALL=C cat $hTam | Final > $hChinh;else
-	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hChinh
+	LC_ALL=C cat $hTam | Final > $hT4m;else
+	LC_ALL=C cat $hTam | Final | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hT4m
 fi
-LC_ALL=C cat $dTam | Cuoi > $dChinh
+LC_ALL=C cat $dTam | Cuoi > $dT4m
 DemGio;InRa "> Processing time: $Phut:$Giay minutes"
-Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
-Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Domains $(Size "$dChinh")";
+hCounts=$(cat $hT4m | wc -l | sed 's/^[ \t]*//');dCounts=$(cat $dT4m | wc -l | sed 's/^[ \t]*//');
+if [ hCounts=0  ] || dCounts=0 ]; then
+	InRa ">>> Process failed! Please try again."
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+fi
+mv $hT4m $hChinh; mv $tbl $dChinh;
+InRa ">> Blocked: $hCounts Hosts $(Size "$hChinh")";InRa ">> Blocked: $dCounts Domains $(Size "$dChinh")";
 #__________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ];then
 	echo "Skip restart DNS server";else
-	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
+	InRa "> Restarting DNS server";ReBoot
 fi
 KetThuc=`date +%s`;Phut=$(( $((KetThuc - BatDau)) /60 ));Giay=$(( $((KetThuc - BatDau)) %60 ))
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
-logger ">>> $(basename "$0") finished"
-exit 0
+logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 # FIN
