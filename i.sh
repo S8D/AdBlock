@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811a"
+PhienBan="20180811b"
 export SetIP="0.1.2.3";
 fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";
@@ -186,6 +186,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
 else
 	InRa "# NETWORK: DOWN | MODE: OFFLINE"
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
+	exit 0
 fi
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio
 InRa "# Total time: $Phut:$Giay minutes"
