@@ -45,9 +45,7 @@ Size ()
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
-		InRa ">>> RESUMING PROTECTION"
-		mv $hDung $hChinh
-		rm -f $pauseflag
+		InRa ">>> RESUMING PROTECTION";mv $hDung $hChinh;rm -f $pauseflag;rm -rf ${TMTam};
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -59,6 +57,7 @@ Tat ()
 	GetSSL ${Nha}/Lists/hosts > $hChinh
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
+	rm -rf ${TMTam};
 	logger ">>> $(basename "$0") finished"
 	exit 0
 }
