@@ -1,8 +1,8 @@
 #!/bin/sh
-PhienBan="20180811f"
+PhienBan="20180811g"
 export SetIP="0.1.2.3";
 fName="hosts"
-Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";
+Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
 export ONLINE=1
 export QUIET=0
@@ -176,7 +176,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
-	GetSSL ${Nha}/Lists/iOS.txt > $tam;dv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $dv | sed 's/.*\=//');
+	GetSSL ${uHost} > $tam;dv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $dv | sed 's/.*\=//');
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
 	InRa "   .sh version: $PhienBan"
@@ -190,7 +190,10 @@ else
 fi
 Counts=$(cat $fSed | wc -l | sed 's/^[ \t]*//');
 if [ Counts=0 ];then
-	InRa ">>> Process failed! Please try again."
+	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+	InRa ">>> Process failed! Please try again."	
+	InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio;
+	InRa "# Total time: $Phut:$Giay minutes"
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 fi
 cp $fSed $hChinh
