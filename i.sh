@@ -48,7 +48,7 @@ Bat ()
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 		InRa ">>> RESUMING PROTECTION";mv $hDung $hChinh;rm -f $pauseflag;rm -rf ${TMTam};
 	fi
-	logger ">>> $(basename "$0") finished"
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 	exit 0
 }
 Tat ()
@@ -59,7 +59,7 @@ Tat ()
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
 	rm -rf ${TMTam};
-	logger ">>> $(basename "$0") finished"
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 	exit 0
 }
 #__________________________________________________________________________________________________
@@ -82,7 +82,7 @@ Giup ()
 	echo "EXAMPLES:"
 	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 "
 	echo ""
-	logger ">>> $(basename "$0") finished"
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 	exit 0
 }
 #__________________________________________________________________________________________________
@@ -111,10 +111,10 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
-		rm -rf ${TMTam};
-		else;InRa "# NETWORK: DOWN | Please try again"
+	else
+		InRa "# NETWORK: DOWN | Please try again"
 	fi
-	logger ">>> $(basename "$0") finished"
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 	exit 0
 }
 DemGio ()
@@ -186,9 +186,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
 else;InRa "# NETWORK: DOWN | MODE: OFFLINE"
 fi
-Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";rm -rf ${TMTam};DemGio
+Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
-logger ">>> $(basename "$0") finished"
+logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 exit 0
 # FIN
