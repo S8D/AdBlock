@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811j"
+PhienBan="20180811k"
 export SetIP="0.1.2.3";
 fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";uHost="${Nha}/Lists/iOS.txt"
@@ -10,7 +10,7 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Data;
-export fSed="${TMTam}/Sed"
+export fSed="${TMTam}/Sed";export fHost="${TMTam}/Host"
 export tam="${TMTam}/tam"
 export hChinh="/etc/${fName}";export hDung="${TMuc}/${fName}.zzz";
 if [ ! -f $hChinh ];then
@@ -178,17 +178,17 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 #__________________________________________________________________________________________________
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
+	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $fHost;
 	InRa "   .sh version: $PhienBan"
 	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
-	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
-	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $fSed;
-	InRa " Hosts version: $hvers. Size: $(Size "$fSed")";
+	InRa " Hosts version: $hvers. Size: $(Size "$fHost")";
 else
 	InRa "# NETWORK: DOWN | MODE: OFFLINE"
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
 	exit 0
 fi
-Counts=$(cat $fSed | wc -l | sed 's/^[ \t]*//');
+Counts=$(cat $fHost | wc -l | sed 's/^[ \t]*//');
 if [ Counts=0 ];then
 	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 	InRa ">>> Process failed! Please try again. <<<"	
@@ -196,7 +196,7 @@ if [ Counts=0 ];then
 	InRa "# Total time: $Phut:$Giay minutes"
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
 fi
-cp $fSed $hChinh
+cp $fHost $hChinh
 InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
