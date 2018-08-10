@@ -162,10 +162,6 @@ InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "     `date`"
-	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-	InRa "   .sh version: $PhienBan"
-	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
@@ -180,10 +176,13 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
-	InRa "> Downloading Hosts file"
-	GetSSL ${uHost} > $tam;dv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $dv | sed 's/.*\=//');
-	InRa " Hosts version: $hvers";
-	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $fSed;InRa "# Size of Hosts is: $(Size "$fSed")";
+	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+	InRa "   .sh version: $PhienBan"
+	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
+	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
+	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $fSed;
+	InRa " Hosts version: $hvers. Size: $(Size "$fSed")";
 else
 	InRa "# NETWORK: DOWN | MODE: OFFLINE"
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
