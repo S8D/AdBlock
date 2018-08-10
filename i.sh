@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811b"
+PhienBan="20180811c"
 export SetIP="0.1.2.3";
 fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";
@@ -180,10 +180,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
 	InRa "   .sh version: $PhienBan"
 	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
-	InRa "> Downloading Hosts file"
 	GetSSL ${Nha}/Lists/iOS.txt > $tam;dv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $dv | sed 's/.*\=//');
-	InRa " Hosts version: $hvers";
-	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
+	InRa " Hosts version: $hvers. Size: $(Size "$tam")";
+	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh
 else
 	InRa "# NETWORK: DOWN | MODE: OFFLINE"
 	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
