@@ -410,10 +410,6 @@ contineljs.com
 code.createjs.com
 m.optout.ziffdavis.com
 yui.yahooapis.com
-play.googleapis.com
-maps.googleapis.com
-imasdk.googleapis.com
-storage.googleapis.com
 instantmessaging-pa.googleapis.com
 auditrecording-pa.googleapis.com
 w.sharethis.com
