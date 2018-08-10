@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811k"
+PhienBan="20180811l"
 export SetIP="0.1.2.3"
 fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";uHost="${Nha}/Lists/iOS.txt"
@@ -189,7 +189,7 @@ else
 	exit 0
 fi
 Counts=$(cat $fHost | wc -l | sed 's/^[ \t]*//');
-if [ Counts=0 ];then
+if [ -z "$Counts" ];then
 	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 	InRa ">>> Process failed! Please try again. <<<"	
 	InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio;
