@@ -57,7 +57,7 @@ Tat ()
 {
 	InRa ">>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
-	echo "" > $hChinh
+	GetSSL ${Nha}/Lists/hosts > hChinh
 	echo "PAUSED" > $pauseflag
 	ReBoot
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
