@@ -713,17 +713,6 @@ user-actrk.com
 xl-trk.com
 code.ionicframework.com
 kaymopk.com
-staticxx.facebook.com
-edge-mqtt.facebook.com
-edge-chat.facebook.com
-star.c10r.facebook.com
-an.facebook.com
-b-api.facebook.com
-api.facebook.com
-mqtt-mini.facebook.com
-b-graph.facebook.com
-graph.facebook.com
-facebook.com
 cdn.viglink.com
 mepodownload.mediatek.com
 lepodownload.mediatek.com
