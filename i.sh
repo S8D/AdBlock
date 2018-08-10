@@ -161,7 +161,7 @@ InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
-InRa "   `date`"
+InRa "     `date`"
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
