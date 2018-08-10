@@ -189,7 +189,7 @@ else
 	exit 0
 fi
 Counts=$(cat $fHost | wc -l | sed 's/^[ \t]*//');
-if [ -z "$Counts" ];then
+if [ $Counts -eq 0 ];then
 	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 	InRa ">>> Process failed! Please try again. <<<"	
 	InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio;
