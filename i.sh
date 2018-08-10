@@ -1,7 +1,7 @@
 #!/bin/sh
-PhienBan="20180810d"
+PhienBan="20180808i"
 export SetIP="0.1.2.3";
-fName="hosts";
+fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";
 #__________________________________________________________________________________________________
 export ONLINE=1
@@ -160,6 +160,11 @@ InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
+InRa "   `date`"
+GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
+dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+InRa "   .sh version: $PhienBan"
+InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
@@ -174,16 +179,12 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
-	InRa "  `date`"
-	GetSSL ${Nha}/Lists/iOS.txt > $tam;dw=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $dw | sed 's/.*\=//');
-	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-	InRa "   .sh version: $PhienBan"
-	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
-	InRa " Hosts version: $hvers. Size $(Size "$hChinh")";
-	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;
+	InRa "> Downloading Hosts file"
+	GetSSL ${Nha}/Lists/iOS.txt > $tam;dv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $dv | sed 's/.*\=//');
+	InRa " Hosts version: $hvers";
+	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
 else
-	InRa "> Can not connect to server"
+	InRa "> Can not connect server"
 fi
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";rm -rf ${TMTam};DemGio
 InRa "# Total time: $Phut:$Giay minutes"
