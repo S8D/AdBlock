@@ -1,3 +1,4 @@
+#hVersion=20180810a
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
