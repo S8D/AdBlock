@@ -72,21 +72,17 @@ Giup ()
 	printf '\t'; echo "$(basename "$0") [-? | -h | --help] [-v | --version] [-1] [-2] [-b | --bl=<domain.name>] [-w | --wl=<domain.name>] ..."
 	echo ""
 	echo "OPERATION:"
-	printf '\t'; echo -n "[-b | --bl=]"; printf '\t'; echo -n "domain.name"; printf '\t'; echo "Add domain.name to denOff"
-	printf '\t'; echo -n "[-w | --wl=]"; printf '\t'; echo -n "domain.name"; printf '\t'; echo "Add domain.name to trangOff"
 	printf '\t'; echo -n "[-i | --ip=]"; printf '\t'; echo -n "ip.ad.dr.ss"; printf '\t'; echo "Send ads to this IP, default: $SetIP"
 	printf '\t'; echo -n "[-q | --quiet]"; printf '\t\t\t'; echo "Print outout to log file only"
 	printf '\t'; echo -n "[-p | --pause]"; printf '\t\t\t'; echo "Pause protection"
 	printf '\t'; echo -n "[-r | --resume]"; printf '\t\t\t'; echo "Resume protection"
 	printf '\t'; echo -n "[-s | --secure]"; printf '\t\t\t'; echo "Use cURL CA certs for secure file transfer"
-	printf '\t'; echo -n "[-o | --offline]"; printf '\t\t'; echo "Process local lists without downloading"
 	printf '\t'; echo -n "[-h | --help]"; printf '\t\t\t'; echo "Display this help screen and exit"
 	printf '\t'; echo -n "[-u | --update]"; printf '\t\t\t'; echo "Update $(basename "$0") to the latest version"
 	printf '\t'; echo -n "[-v | --version]"; printf '\t\t'; echo "Print $(basename "$0") version and exit"
 	echo ""
 	echo "EXAMPLES:"
-	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 --bl=example1.com --wl=example2.com"
-	printf '\t'; echo "$(basename "$0") -3Fqs -b example1.com -w example2.com --wl=example3.com"
+	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 "
 	echo ""
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -135,17 +131,10 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		p|P  ) Tat ;;
 		r|R  ) Bat ;;
 		s|S  ) SECURL=1 ;;
-		o|O  ) ONLINE=0 ;;
 		u|U  ) CapNhat ;;
-		b    ) echo "$OPTARG" >> $denOff ;;
-		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
-			bl=?*   ) ARG_BL="$LONG_OPTARG" ; echo $ARG_BL >> $denOff ;;
-			bl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
-			wl=?*   ) ARG_WL="$LONG_OPTARG" ; echo $ARG_WL >> $trangOff ;;
-			wl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			4    ) [4 ;;
@@ -153,11 +142,10 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			pause   ) Tat ;;
 			resume  ) Bat ;;
 			secure  ) SECURL=1 ;;
-			offline ) ONLINE=0 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
 			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
-			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
+			4* | quiet* | pause* | resume* | secure* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )	break ;;
 			* )		echo ">>> ERROR: unsupported option --$OPTARG" >&2; exit 2 ;;
@@ -194,8 +182,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
-	InRa "> Downloading hosts file"
-	GetSSL ${Nha}/Lists/iOS.txt | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Black is: $(Size "$hChinh")";
+	InRa "> Downloading Hosts file"
+	GetSSL ${Nha}/Lists/iOS.txt | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
 fi
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
 DemGio
