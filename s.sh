@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811b"
+PhienBan="20180811d"
 export SetIP="0.1.2.3";export Level=4
 Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -69,19 +69,12 @@ alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
 [ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
-InRa ()
-{
-	[ $QUIET -eq 0 ] && echo "$1"
-	echo "$1" >> $hLog
-}
-Size ()
-{
-	InRa "`du -h $1 | awk '{print $1}'`"
-}
-Xong ()
-{
-	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0
-}
+
+InRa () { [ $QUIET -eq 0 ] && echo "$1" ;	echo "$1" >> $hLog; }
+Size () { InRa "`du -h $1 | awk '{print $1}'`" }
+Xong () { 	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0; }
+DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
+DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 )); }
 
 ReBoot ()
 {
@@ -89,30 +82,26 @@ ReBoot ()
 	restart_dns &
 	logger ">>> $(basename "$0") restarted dnsmasq"
 }
+
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 		InRa ">>> RESUMING PROTECTION"
-		mv $hDung $hChinh
-		mv $dDung $dChinh
-		rm -f $pauseflag
-		ReBoot
+		mv $hDung $hChinh; mv $dDung $dChinh; rm -f $pauseflag; ReBoot
 	fi
 	Xong
 }
+
 Tat ()
 {
 	InRa ">>> WARNING: PAUSING PROTECTION"
-	[ -f $hChinh ] && mv $hChinh $hDung
-	[ -f $dChinh ] && mv $dChinh $dDung
-	echo "" > $hChinh
-	echo "" > $dChinh
-	echo "PAUSED" > $pauseflag
-	ReBoot
+	[ -f $hChinh ] && mv $hChinh $hDung; [ -f $dChinh ] && mv $dChinh $dDung
+	echo "" > $hChinh; echo "" > $dChinh
+	echo "PAUSED" > $pauseflag; ReBoot
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
 	Xong
 }
-#__________________________________________________________________________________________________
+
 Giup ()
 {
 	echo ""
@@ -146,38 +135,36 @@ Giup ()
 	echo ""
 	Xong
 }
-#__________________________________________________________________________________________________
+
 CapNhat ()
 {
-	upTam="${MTam}/update"
+	upTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $upTam
+		GetSSL http://gg.gg/ib_ > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$MaCu" != "$MaMoi" ]; then
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-				InRa ">>> Update available: $vMoi"
+				InRa ">>> Updating new version..."
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
-					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${TMuc}/Data/$BanCu\_$mCu.sh;else
-					cp $0 ${TMuc}/Data/$BanCu.sh;
+				if [ -f "${Data}/$BanCu.sh" ];then
+					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+					cp $0 ${Data}/$BanCu.sh;
 				fi
 				chmod 755 $upTam;mv $upTam $0
-				InRa ">>> Updated to the latest version."
+				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
-				InRa ">>> Current version: $PhienBan"
+				InRa ">>> $(basename "$0") version: $PhienBan"
 			fi
 		else
 			InRa ">>> Update failed. Try again."
 		fi
+	else
+		InRa "# NETWORK: DOWN | Please try again! ";
 	fi
 	Xong
-}
-DemGio ()
-{
-	Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));
 }
 #__________________________________________________________________________________________________
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do

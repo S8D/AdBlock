@@ -38,23 +38,11 @@ alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
 [ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
-InRa ()
-{
-	[ $QUIET -eq 0 ] && echo "$1"
-	echo "$1" >> $hLog
-}
-Size ()
-{
-	InRa "`du -h $1 | awk '{print $1}'`"
-}
-Xong ()
-{
-	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0
-}
-DemLine ()
-{
-	Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")";
-}
+InRa () { [ $QUIET -eq 0 ] && echo "$1" ;	echo "$1" >> $hLog; }
+Size () { InRa "`du -h $1 | awk '{print $1}'`" }
+Xong () { 	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0; }
+DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
+DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
@@ -110,7 +98,7 @@ CapNhat ()
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$MaCu" != "$MaMoi" ]; then
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-				InRa ">>> Updating new version"
+				InRa ">>> Updating new version..."
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				if [ -f "${Data}/$BanCu.sh" ];then
 					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
@@ -128,10 +116,6 @@ CapNhat ()
 		InRa "# NETWORK: DOWN | Please try again! ";
 	fi
 	Xong
-}
-DemGio ()
-{
-	Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 ));
 }
 #__________________________________________________________________________________________________
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
