@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811b"
+PhienBan="20180811c"
 export SetIP="0.1.2.3";fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -182,6 +182,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
+	InRa "# Downloading Hosts file"
 	if [ ! -s ${Data}/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
