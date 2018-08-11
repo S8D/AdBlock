@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811k"
+PhienBan="20180811m"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -176,7 +176,7 @@ shift $((OPTIND-1))
 #__________________________________________________________________________________________________
 Chay=`date +%s`
 InRa "======================================="
-InRa "|    AdBlock for iOS                  |"
+InRa "|    AdBlock for iOS / Linux          |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
@@ -184,7 +184,7 @@ InRa "======================================="
 InRa "   `date`"
 if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 else
 	InRa "# NETWORK: DOWN | Please try again! "; Xong;
 fi
@@ -204,21 +204,20 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 #__________________________________________________________________________________________________
 if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	InRa "> Compacting Black/WhiteList Offline"
-	LC_ALL=C cat $denOff | SedBW > tmpmybl && mv tmpmybl $denOff
-	LC_ALL=C cat $trangOff | SedBW > tmpmywl && mv tmpmywl $trangOff
-	cat $denOff - > $tbl
-	cat $trangOff - | grep -Fvwf $denOff > $twl
+	cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
+	cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl;
 fi
 #__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
-	cat $tam | SedBW | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
+	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;	
 	InRa "   $(basename "$0") version: $PhienBan"
 	InRa "   Sed version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
-		mv $hTam $hChinh; Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+		cat $hChinh | SedH >> hTam; cat $hTam | awk '{if ($1 in a) next; a[$1]=$0; print}' > $hChinh;
+		Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 		InRa "# Blocked $Counts | Size $(Size "$hChinh") | Version $hvers ";
 	fi
 	else

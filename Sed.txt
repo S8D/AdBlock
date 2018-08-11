@@ -1,5 +1,5 @@
 #!/bin/sh
-Version=20180808n
+Version=20180812a
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
@@ -22,3 +22,4 @@ Cap4==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed4}" | sed -r 
 Cap5==tr '[:upper:]' '[:lower:]' | sed -r "${SedX}" | sed -r "${Sed51}" | sed -r "${Sed52}" | sed 's|\$.*$||' | grep -o '^[^|]*' | awk '{if ($1 in a) next; a[$1]=$0; print}'
 Final==sed -r 's/\.$//; s|^[^.]+$||; /^$/d' | cat $tbl - | grep -Fvwf $twl | awk '{if ($1 in a) next; a[$1]=$0; print}'
 Cuoi==sed -r 's|.*\=\/||; s|\/.*$||' | grep -Fvwf $trangOn | sed -r 's|^|address\=\/|; s|$|\/0.1.2.3|'
+SedH==sed -r 's|#.*$||; s/.*[[:blank:]]+//; s/.*\t+//; s|^[^.]+$||; /^$/d'
