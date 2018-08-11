@@ -1,8 +1,8 @@
 #!/bin/sh
-PhienBan="20180808i"
+PhienBan="20180811a"
 export SetIP="0.1.2.3";
 fName="hosts"
-Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";
+Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
 export ONLINE=1
 export QUIET=0
@@ -180,7 +180,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	fi
 #__________________________________________________________________________________________________
 	InRa "> Downloading Hosts file"
-	GetSSL ${Nha}/Lists/iOS.txt | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
+	GetSSL ${uHost} | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;InRa "# Size of Hosts is: $(Size "$hChinh")";
 fi
 Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";rm -rf ${TMTam};DemGio
 InRa "# Total time: $Phut:$Giay minutes"
