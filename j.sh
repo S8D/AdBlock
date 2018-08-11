@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811f"
+PhienBan="20180811g"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -124,6 +124,8 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
+	else
+		InRa "# NETWORK: DOWN | Please try again! ";
 	fi
 	Xong
 }
@@ -174,8 +176,6 @@ InRa "======================================="
 InRa "   `date`"
 GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-InRa "   .sh version: $PhienBan"
-InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
@@ -190,20 +190,19 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
-	InRa "# Downloading Hosts file"
+	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
+	InRa "   .sh version: $PhienBan"
+	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
-		InRa ">>> Process failed! Please try again."
-		DemLine; Xong; else
-		mv $hTam $hChinh;
-		Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-		InRa "> Hosts version: $hvers | Blocked: $Counts Hosts | Size $(Size "$hChinh")";
+		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
+		mv $hTam $hChinh; Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
+		InRa "# Blocked $Counts | Size $(Size "$hChinh") | Version $hvers ";
 	fi
 	else
-		InRa "# NETWORK: DOWN | Please try again! "
-		DemLine; Xong;
+		InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong;
 fi
 DemGio
 InRa "# Total time: $Phut:$Giay minutes"
