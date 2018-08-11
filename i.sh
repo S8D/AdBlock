@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811m"
+PhienBan="20180811n"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -210,13 +210,13 @@ fi
 #__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
-	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;	
+	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;	
 	InRa "   $(basename "$0") version: $PhienBan"
-	InRa "   Sed version: $vers | Size: $(Size "$fSed")";
+	InRa "   Sed  version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
-		cat $hChinh | SedH >> hTam; cat $hTam | awk '{if ($1 in a) next; a[$1]=$0; print}' > $hChinh;
+		mv $hTam $hChinh;
 		Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 		InRa "# Blocked $Counts | Size $(Size "$hChinh") | Version $hvers ";
 	fi
