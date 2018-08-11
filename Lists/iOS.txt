@@ -1,4 +1,4 @@
-#hVersion=20180811a
+#hVersion=20180811b
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -71,11 +71,8 @@ gcdn.2mdn.net
 s0.2mdn.net
 cds.j3z9t3p6.hwcdn.net
 cs9.wac.phicdn.net
-scontent.xx.fbcdn.net
-video.xx.fbcdn.net
 sonar-iad.xx.fbcdn.net
 profile.ak.fbcdn.net
-fbcdn.net
 tags.crwdcntrl.net
 bcp.crwdcntrl.net
 ad.crwdcntrl.net
@@ -933,7 +930,6 @@ star.facebook.com
 star.c10r.facebook.com
 an.facebook.com
 pixel.facebook.com
-mqtt-mini.facebook.com
 cdn.viglink.com
 mepodownload.mediatek.com
 lepodownload.mediatek.com
