@@ -1,4 +1,4 @@
-#hVersion=20180811b
+#hVersion=20180811c
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -929,7 +929,6 @@ kaymopk.com
 star.facebook.com
 star.c10r.facebook.com
 an.facebook.com
-pixel.facebook.com
 cdn.viglink.com
 mepodownload.mediatek.com
 lepodownload.mediatek.com
