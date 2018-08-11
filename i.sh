@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811j"
+PhienBan="20180811k"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -136,7 +136,7 @@ CapNhat ()
 	Xong
 }
 #__________________________________________________________________________________________________
-while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
+while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
@@ -206,8 +206,8 @@ if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 	InRa "> Compacting Black/WhiteList Offline"
 	LC_ALL=C cat $denOff | SedBW > tmpmybl && mv tmpmybl $denOff
 	LC_ALL=C cat $trangOff | SedBW > tmpmywl && mv tmpmywl $trangOff
-	cat $denOn | cat $denOff - > $tbl
-	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $twl
+	cat $denOff - > $tbl
+	cat $trangOff - | grep -Fvwf $denOff > $twl
 fi
 #__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
