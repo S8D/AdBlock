@@ -79,6 +79,11 @@ Size ()
 {
 	InRa "`du -h $1 | awk '{print $1}'`"
 }
+Xong ()
+{
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+}
+
 ReBoot ()
 {
 	logger ">>> $(basename "$0") restarting dnsmasq"
@@ -94,7 +99,7 @@ Bat ()
 		rm -f $pauseflag
 		ReBoot
 	fi
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	Xong
 }
 Tat ()
 {
@@ -106,7 +111,7 @@ Tat ()
 	echo "PAUSED" > $pauseflag
 	ReBoot
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	Xong
 }
 #__________________________________________________________________________________________________
 Giup ()
@@ -140,7 +145,7 @@ Giup ()
 	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 --bl=example1.com --wl=example2.com"
 	printf '\t'; echo "$(basename "$0") -3Fqs -b example1.com -w example2.com --wl=example3.com"
 	echo ""
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	Xong
 }
 #__________________________________________________________________________________________________
 CapNhat ()
@@ -169,7 +174,7 @@ CapNhat ()
 			InRa ">>> Update failed. Try again."
 		fi
 	fi
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	Xong
 }
 DemGio ()
 {
@@ -179,7 +184,7 @@ DemGio ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $PhienBan" ; Xong ;;
 		0    ) [0 ;;
 		1    ) [1 ;;
 		2    ) [2 ;;
@@ -212,7 +217,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			offline ) ONLINE=0 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
-			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$PhienBan" ; Xong ;;
 			4* | quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )	break ;;
@@ -453,9 +458,9 @@ fi
 LC_ALL=C cat $dTam | Cuoi > $dT4m
 DemGio;InRa "> Processing time: $Phut:$Giay minutes"
 hCounts=$(cat $hT4m | wc -l | sed 's/^[ \t]*//');dCounts=$(cat $dT4m | wc -l | sed 's/^[ \t]*//');
-if [ hCounts=0  ] || dCounts=0 ]; then
+if [ hCounts -eq 0  ] || dCounts -eq 0 ]; then
 	InRa ">>> Process failed! Please try again."
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	Xong
 fi
 mv $hT4m $hChinh; mv $tbl $dChinh;
 InRa ">> Blocked: $hCounts Hosts $(Size "$hChinh")";InRa ">> Blocked: $dCounts Domains $(Size "$dChinh")";
@@ -467,5 +472,5 @@ fi
 KetThuc=`date +%s`;Phut=$(( $((KetThuc - BatDau)) /60 ));Giay=$(( $((KetThuc - BatDau)) %60 ))
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
-logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+Xong
 # FIN

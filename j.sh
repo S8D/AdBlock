@@ -47,6 +47,10 @@ Size ()
 {
 	InRa "`du -h $1 | awk '{print $1}'`"
 }
+Xong ()
+{
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+}
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
@@ -54,8 +58,7 @@ Bat ()
 		mv $hDung $hChinh
 		rm -f $pauseflag
 	fi
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	Xong
 }
 Tat ()
 {
@@ -67,8 +70,7 @@ Tat ()
 	fi
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	Xong
 }
 #__________________________________________________________________________________________________
 Giup ()
@@ -90,8 +92,7 @@ Giup ()
 	echo "EXAMPLES:"
 	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 "
 	echo ""
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	Xong
 }
 #__________________________________________________________________________________________________
 CapNhat ()
@@ -99,7 +100,8 @@ CapNhat ()
 	upTam="${TMTam}/update"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $upTam
+		#GetSSL ${Nha}/$(basename "$0") > $upTam;http://gg.gg/ib_
+		GetSSL http://gg.gg/ib_ > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
@@ -119,10 +121,8 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
-		rm -rf ${TMTam};
 	fi
-	logger ">>> $(basename "$0") finished"
-	exit 0
+	Xong
 }
 DemGio ()
 {
@@ -132,7 +132,7 @@ DemGio ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $PhienBan" ; Xong ;;
 		q|Q  ) QUIET=1 ;;
 		p|P  ) Tat ;;
 		r|R  ) Bat ;;
@@ -150,7 +150,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			secure  ) SECURL=1 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
-			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$PhienBan" ; Xong ;;
 			4* | quiet* | pause* | resume* | secure* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )	break ;;
@@ -192,9 +192,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hChinh;
 	InRa "> Hosts version: $hvers";
 fi
-Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";rm -rf ${TMTam};DemGio
+Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
-logger ">>> $(basename "$0") finished"
-exit 0
+Xong
 # FIN
