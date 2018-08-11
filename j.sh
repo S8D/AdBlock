@@ -73,7 +73,7 @@ Tat ()
 		GetSSL ${Nha}/Lists/hosts > ${Data}/Hosts && cp ${Data}/Hosts $hChinh;
 	fi
 	echo "PAUSED" > $pauseflag
-	InRa ">>> Type $(basename "$0") --resume to resume protection."
+	InRa ">>> Type $(basename "$0") -r or --resume to resume protection."
 	Xong
 }
 #__________________________________________________________________________________________________
@@ -110,16 +110,16 @@ CapNhat ()
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$MaCu" != "$MaMoi" ]; then
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-				InRa ">>> Update available: $vMoi"
+				InRa ">>> Updating new version"
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				if [ -f "${Data}/$BanCu.sh" ];then
 					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
 					cp $0 ${Data}/$BanCu.sh;
 				fi
 				chmod 755 $upTam;mv $upTam $0
-				InRa ">>> Updated to the latest version."
+				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
-				InRa ">>> Current version: $PhienBan"
+				InRa ">>> $(basename "$0") version: $PhienBan"
 			fi
 		else
 			InRa ">>> Update failed. Try again."
@@ -137,7 +137,7 @@ DemGio ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $PhienBan" ; Xong ;;
+		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
 		q|Q  ) QUIET=1 ;;
 		p|P  ) Tat ;;
 		r|R  ) Bat ;;
@@ -193,7 +193,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
-	InRa "   .sh version: $PhienBan"
+	InRa "   $(basename "$0") version: $PhienBan"
 	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
