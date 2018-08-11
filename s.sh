@@ -415,8 +415,8 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv3 ${DL}/_Lv3.txt; cp $tam ${DL}/Lv3.txt;
 		fi
-#__________________________________________________________________________________________________
 	fi
+#__________________________________________________________________________________________________
 	if [ $Level -eq 4 ]; then
 		InRa ">> Unlocking [4]";Chay=`date +%s`
 		GetSSL ${u84} > $tam;InRa "# Size of ${u84} is: $(Size "$tam")";cat $tam > $Lv4;
