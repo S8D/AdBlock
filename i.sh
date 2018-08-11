@@ -6,10 +6,18 @@ Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/
 export ONLINE=1
 export QUIET=0
 export SECURL=0
+export DISTRIB=0
 export DAYOFWEEK=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export Data="${TMuc}/Data";mkdir -p ${Data};
+export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
+if [ ! -f $tbl ];then
+	echo -n "" > $tbl
+fi
+if [ ! -f $twl ];then
+	echo -n "" > $twl
+fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 if [ -f "${TMuc}/Location" ];then
@@ -19,6 +27,13 @@ fi
 export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ];then
 	echo -n "" > $hChinh
+fi
+export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
+if [ ! -f $denOff ];then
+	echo -n "" > $denOff
+fi
+if [ ! -f $trangOff ];then
+	echo -n "" > $trangOff
 fi
 export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
 export SHELL=/bin/sh
@@ -72,6 +87,9 @@ Giup ()
 	printf '\t'; echo "$(basename "$0") [-? | -h | --help] [-v | --version] ..."
 	echo ""
 	echo "OPERATION:"
+	printf '\t'; echo -n "[-d | -D]"; printf '\t\t\t'; echo "Ignore denOff/trangOff entries"
+	printf '\t'; echo -n "[-b | --bl=]"; printf '\t'; echo -n "domain.name"; printf '\t'; echo "Add domain.name to denOff"
+	printf '\t'; echo -n "[-w | --wl=]"; printf '\t'; echo -n "domain.name"; printf '\t'; echo "Add domain.name to trangOff"
 	printf '\t'; echo -n "[-i | --ip=]"; printf '\t'; echo -n "ip.ad.dr.ss"; printf '\t'; echo "Send ads to this IP, default: $SetIP"
 	printf '\t'; echo -n "[-q | --quiet]"; printf '\t\t\t'; echo "Print outout to log file only"
 	printf '\t'; echo -n "[-p | --pause]"; printf '\t\t\t'; echo "Pause protection"
@@ -122,14 +140,21 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
+		d|D  ) DISTRIB=1 ;;
 		q|Q  ) QUIET=1 ;;
 		p|P  ) Tat ;;
 		r|R  ) Bat ;;
 		s|S  ) SECURL=1 ;;
 		u|U  ) CapNhat ;;
+		b    ) echo "$OPTARG" >> $denOff ;;
+		w    ) echo "$OPTARG" >> $trangOff ;;		
 		i    ) SetIP="$OPTARG" ;;
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
+			bl=?*   ) ARG_BL="$LONG_OPTARG" ; echo $ARG_BL >> $denOff ;;
+			bl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
+			wl=?*   ) ARG_WL="$LONG_OPTARG" ; echo $ARG_WL >> $trangOff ;;
+			wl*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			quiet   ) QUIET=1 ;;
@@ -157,8 +182,12 @@ InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"
+if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+else
+	InRa "# NETWORK: DOWN | Please try again! "; Xong;
+fi
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
@@ -173,9 +202,17 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
+if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
+	InRa "> Compacting Black/WhiteList Offline"
+	LC_ALL=C cat $denOff | SedBW > tmpmybl && mv tmpmybl $denOff
+	LC_ALL=C cat $trangOff | SedBW > tmpmywl && mv tmpmywl $trangOff
+	cat $denOn | cat $denOff - > $tbl
+	cat $trangOn | cat $trangOff - | grep -Fvwf $denOff > $twl
+fi
+#__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
-	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
+	cat $tam | SedBW | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
 	InRa "   $(basename "$0") version: $PhienBan"
 	InRa "   Sed version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
