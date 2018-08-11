@@ -1,4 +1,4 @@
-#hVersion=20180811c
+#hVersion=20180811d
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -376,7 +376,6 @@ gai3x.com
 js-sec.indexww.com
 st-n.ads2-adnow.com
 st-n.ads1-adnow.com
-stackoverflow.com
 bokepxv.com
 ads.exosrv.com
 syndication.exosrv.com
