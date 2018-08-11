@@ -1,6 +1,5 @@
 #!/bin/sh
-VERSION="201808++"
-PhienBan="20180811a"
+PhienBan="20180811b"
 export SetIP="0.1.2.3";export Level=4
 Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -457,13 +456,18 @@ if [ -f "${TMuc}/Location" ];then
 fi
 LC_ALL=C cat $dTam | Cuoi > $dT4m
 DemGio;InRa "> Processing time: $Phut:$Giay minutes"
-hCounts=$(cat $hT4m | wc -l | sed 's/^[ \t]*//');dCounts=$(cat $dT4m | wc -l | sed 's/^[ \t]*//');
-if [ hCounts -eq 0  ] || dCounts -eq 0 ]; then
+hCounts=$(cat $hT4m | wc -l | sed 's/^[ \t]*//'); dCounts=$(cat $dT4m | wc -l | sed 's/^[ \t]*//');
+if [ $dCounts -eq 0 ] || [ $dCounts -eq 0 ]; then
 	InRa ">>> Process failed! Please try again."
+	hCounts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); dCounts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');
+	InRa ">> Blocked: $hCounts Hosts $(Size "$hChinh")";
+	InRa ">> Blocked: $dCounts Domains $(Size "$dChinh")";
 	Xong
+	else
+		mv $hT4m $hChinh; mv $tbl $dChinh;
+		InRa ">> Blocked: $hCounts Hosts $(Size "$hChinh")";
+		InRa ">> Blocked: $dCounts Domains $(Size "$dChinh")";
 fi
-mv $hT4m $hChinh; mv $tbl $dChinh;
-InRa ">> Blocked: $hCounts Hosts $(Size "$hChinh")";InRa ">> Blocked: $dCounts Domains $(Size "$dChinh")";
 #__________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ];then
 	echo "Skip restart DNS server";else
