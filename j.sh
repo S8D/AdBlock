@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811h"
+PhienBan="20180811i"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -38,14 +38,11 @@ alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
 [ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
-InRa () { [ $QUIET -eq 0 ] && echo "$1" ;	echo "$1" >> $hLog; }
-Size () { InRa "`du -h $1 | awk '{print $1}'`" }
-Xong ()
-{
-	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0
-}
-DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
-DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 )); }
+InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
+Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
+Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
+DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
+DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
@@ -135,7 +132,6 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		case $OPTARG in
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
-			4    ) [4 ;;
 			quiet   ) QUIET=1 ;;
 			pause   ) Tat ;;
 			resume  ) Bat ;;
