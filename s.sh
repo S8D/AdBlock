@@ -30,19 +30,19 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Data;
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${TMuc}/Data;
 DL="${TMuc}/dl";
 if [ -f "${TMuc}/Location" ];then
 	mkdir -p ${DL};
 fi
-export Lv0="${TMTam}/lv0";export Lv5="${TMTam}/Lv5";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
-export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
-export fSed="${TMTam}/Sed"
+export Lv0="${MTam}/lv0";export Lv5="${MTam}/Lv5";export Lv1="${MTam}/lv1";export Lv2="${MTam}/lv2";
+export Lv3="${MTam}/lv3";export Lv4="${MTam}/lv4";
+export fSed="${MTam}/Sed"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
-export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
-export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
-export hT4m="${TMTam}/ht.tmp";export dT4m="${TMTam}/dt.tmp";
-export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
+export hTam="${MTam}/h.tmp";export tam="${MTam}/t.tmp";
+export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
+export hT4m="${MTam}/ht.tmp";export dT4m="${MTam}/dt.tmp";
+export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${MTam}/d.tmp";
 export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/Data/den.on";export trangOn="${TMuc}/Data/trang.on";
 export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
@@ -80,7 +80,7 @@ Size ()
 }
 Xong ()
 {
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0
 }
 
 ReBoot ()
@@ -149,7 +149,7 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	upTam="${TMTam}/update"
+	upTam="${MTam}/update"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL ${Nha}/$(basename "$0") > $upTam

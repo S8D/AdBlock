@@ -8,19 +8,19 @@ export QUIET=0
 export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export Data="${TMuc}/Data";mkdir -p ${Data};
-export fSed="${TMTam}/Sed";export fHost="${TMTam}/Host";
-export tam="${TMTam}/tam";export hTam="${TMTam}/ht.tmp";
+export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
+export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 if [ -f "${TMuc}/Location" ];then
 	export hChinh="${TMuc}/${fName}";else
 	export hChinh="/etc/${fName}";
 fi
-export hDung="${TMuc}/${fName}.zzz";
+export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ];then
 	echo -n "" > $hChinh
 fi
-export hLog="${Data}/h.log";export pauseflag="${TMuc}/PAUSED";
+export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -49,7 +49,7 @@ Size ()
 }
 Xong ()
 {
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0
 }
 DemLine ()
 {
@@ -101,7 +101,7 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	upTam="${TMTam}/u.sh"
+	upTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL http://gg.gg/ib_ > $upTam;
@@ -194,7 +194,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
-	if [ $dCounts -eq 0 ]; then
+	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."
 		DemLine; Xong; else
 		mv $hTam $hChinh;
