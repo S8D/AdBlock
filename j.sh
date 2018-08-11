@@ -178,7 +178,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedBW | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}'> $hTam;
 	InRa "   $(basename "$0") version: $PhienBan"
-	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
+	InRa "   Sed version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
