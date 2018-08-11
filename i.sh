@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811l"
+PhienBan="20180811m"
 export SetIP="0.1.2.3"
 fName="hosts"
 Nha="https://s8d.github.io/AdBlock";uSed="${Nha}/Sed.txt";uHost="${Nha}/Lists/iOS.txt"
@@ -9,14 +9,19 @@ export QUIET=0
 export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Data;
+export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};
+export Data="${TMuc}/Data";mkdir -p ${Data};
 export fSed="${TMTam}/Sed";export fHost="${TMTam}/Host"
 export tam="${TMTam}/tam"
-export hChinh="/etc/${fName}";export hDung="${TMuc}/${fName}.zzz";
+if [ -f "${TMuc}/Location" ];then
+	export hChinh="${TMuc}/${fName}";else
+	export hChinh="/etc/${fName}";
+fi
+export hDung="${TMuc}/${fName}.zzz";
 if [ ! -f $hChinh ];then
 	echo -n "" > $hChinh
 fi
-export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
+export hLog="${Data}/h.log";export pauseflag="${TMuc}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -29,10 +34,10 @@ if [ -z "$(which curl)" ]; then
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export ScURL="${TMuc}/Data/cacert.pem"
+export ScURL="${Data}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data --cacert $ScURL"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa ()
 {
@@ -43,24 +48,28 @@ Size ()
 {
 	InRa "`du -h $1 | awk '{print $1}'`"
 }
+KetThuc ()
+{
+	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+}
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
-		InRa ">>> RESUMING PROTECTION";mv $hDung $hChinh;rm -f $pauseflag;rm -rf ${TMTam};
+		InRa ">>> RESUMING PROTECTION";mv $hDung $hChinh;rm -f $pauseflag;
 	fi
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
-	exit 0
+	KetThuc
 }
 Tat ()
 {
 	InRa ">>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
-	GetSSL ${Nha}/Lists/hosts > $hChinh
+	if [ -f "${Data}/Hosts" ];then
+		cp ${Data}/Hosts $hChinh;else
+		GetSSL ${Nha}/Lists/hosts > ${Data}/Hosts && cp ${Data}/Hosts $hChinh;
+	fi
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
-	rm -rf ${TMTam};
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
-	exit 0
+	KetThuc
 }
 #__________________________________________________________________________________________________
 Giup ()
@@ -82,8 +91,7 @@ Giup ()
 	echo "EXAMPLES:"
 	printf '\t'; echo "$(basename "$0") -s2 --ip=172.31.255.254 "
 	echo ""
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
-	exit 0
+	KetThuc
 }
 #__________________________________________________________________________________________________
 CapNhat ()
@@ -99,9 +107,9 @@ CapNhat ()
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $vMoi"
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
-					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${TMuc}/Data/$BanCu\_$mCu.sh;else
-					cp $0 ${TMuc}/Data/$BanCu.sh;
+				if [ -f "${Data}/$BanCu.sh" ];then
+					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+					cp $0 ${Data}/$BanCu.sh;
 				fi
 				chmod 755 $upTam;mv $upTam $0
 				InRa ">>> Updated to the latest version."
@@ -114,8 +122,7 @@ CapNhat ()
 	else
 		InRa "# NETWORK: DOWN | Please try again"
 	fi
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
-	exit 0
+	KetThuc
 }
 DemGio ()
 {
@@ -125,7 +132,7 @@ DemGio ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $PhienBan" ; KetThuc ;;
 		q|Q  ) QUIET=1 ;;
 		p|P  ) Tat ;;
 		r|R  ) Bat ;;
@@ -143,7 +150,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			secure  ) SECURL=1 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
-			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$PhienBan" ; KetThuc ;;
 			4* | quiet* | pause* | resume* | secure* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )	break ;;
@@ -171,9 +178,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
-	if [ ! -s ${TMuc}/Data/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
+	if [ ! -s ${Data}/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
+		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
@@ -185,8 +192,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa " Hosts version: $hvers. Size: $(Size "$fHost")";
 else
 	InRa "# NETWORK: DOWN | MODE: OFFLINE"
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
-	exit 0
+	KetThuc
 fi
 Counts=$(cat $fHost | wc -l | sed 's/^[ \t]*//');
 if [ $Counts -eq 0 ];then
@@ -194,12 +200,11 @@ if [ $Counts -eq 0 ];then
 	InRa ">>> Process failed! Please try again. <<<"	
 	InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio;
 	InRa "# Total time: $Phut:$Giay minutes"
-	logger ">>> $(basename "$0") finished";rm -rf ${TMTam};exit 0
+	KetThuc
 fi
 cp $fHost $hChinh
 InRa "> Blocked: $Counts Hosts $(Size "$hChinh")";DemGio
 InRa "# Total time: $Phut:$Giay minutes"
 InRa "# DONE"
-logger ">>> $(basename "$0") finished";rm -rf ${TMTam};
-exit 0
+KetThuc
 # FIN

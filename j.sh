@@ -9,13 +9,19 @@ export QUIET=0
 export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Data;
-export fSed="${TMTam}/Sed"
-export hChinh="/etc/${fName}";export hDung="${TMuc}/${fName}.zzz";
+export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};
+export Data="${TMuc}/Data";mkdir -p ${Data};
+export fSed="${TMTam}/Sed";export fHost="${TMTam}/Host"
+export tam="${TMTam}/tam"
+if [ -f "${TMuc}/Location" ];then
+	export hChinh="${TMuc}/${fName}";else
+	export hChinh="/etc/${fName}";
+fi
+export hDung="${TMuc}/${fName}.zzz";
 if [ ! -f $hChinh ];then
 	echo -n "" > $hChinh
 fi
-export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
+export hLog="${Data}/h.log";export pauseflag="${TMuc}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -28,10 +34,10 @@ if [ -z "$(which curl)" ]; then
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export ScURL="${TMuc}/Data/cacert.pem"
+export ScURL="${Data}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data --cacert $ScURL"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa ()
 {
@@ -56,7 +62,10 @@ Tat ()
 {
 	InRa ">>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
-	GetSSL ${Nha}/Lists/hosts > $hChinh
+	if [ -f "${Data}/Hosts" ];then
+		cp ${Data}/Hosts $hChinh;else
+		GetSSL ${Nha}/Lists/hosts > ${Data}/Hosts && cp ${Data}/Hosts $hChinh;
+	fi
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") --resume to resume protection."
 	logger ">>> $(basename "$0") finished"
@@ -99,9 +108,9 @@ CapNhat ()
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $vMoi"
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				if [ -f "${TMuc}/Data/$BanCu.sh" ];then
-					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${TMuc}/Data/$BanCu\_$mCu.sh;else
-					cp $0 ${TMuc}/Data/$BanCu.sh;
+				if [ -f "${Data}/$BanCu.sh" ];then
+					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+					cp $0 ${Data}/$BanCu.sh;
 				fi
 				chmod 755 $upTam;mv $upTam $0
 				InRa ">>> Updated to the latest version."
@@ -174,9 +183,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
-	if [ ! -s ${TMuc}/Data/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
+	if [ ! -s ${Data}/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
+		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
 	InRa "> Downloading Hosts file"
