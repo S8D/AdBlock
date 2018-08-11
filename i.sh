@@ -1,7 +1,7 @@
 #!/bin/sh
-PhienBan="20180811c"
+PhienBan="20180811d"
 export SetIP="0.1.2.3";export Level=4
-Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/iOS.txt";uSed="${Nha}/Sed.txt";
+Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/iOS.txt"; uSed="${Nha}/Sed.txt";
 #__________________________________________________________________________________________________
 export NOFB=0
 export ONLINE=1
@@ -9,7 +9,7 @@ export QUIET=0
 export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
-export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
+export TMuc="$(cd "$(dirname "${0}")" && pwd)"
 export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Data;
 export fSed="${TMTam}/Sed"
 if [ -f "${TMuc}/Location" ];then
@@ -145,7 +145,7 @@ CapNhat ()
 	Xong
 }
 #__________________________________________________________________________________________________
-while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
+while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> Current version: $PhienBan" ; Xong ;;
