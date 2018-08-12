@@ -222,7 +222,7 @@ InRa "======================================="
 InRa "   `date`"
 if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa ">>> Checking for updates..."
-	GetSSL http://gg.gg/ib_ > $upTam;
+	GetSSL http://gg.gg/ab_ > $upTam;
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
 		MaMoi=`md5sum $upTam | cut -d' ' -f1`
