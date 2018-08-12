@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812p"
+PhienBan="20180812q"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -53,9 +53,10 @@ if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
 	apt-get install coreutils-bin
 	apt-get install coreutils
 fi
-if [ ! hash curl 2>/dev/null ]; then
+if [ ! hash curl 2>/dev/null ] || [ ! hash wget 2>/dev/null ]; then
 	echo " Please add source if install failed: http://gg.gg/CS_S "
-	echo ">>> Installing cURL"
+	echo ">>> Installing wGet+cURL"
+	apt-get install wget
 	apt-get install curl
 fi
 logger ">>> $(basename "$0") started"
