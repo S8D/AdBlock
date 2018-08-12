@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812c"
+PhienBan="20180812d"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -45,9 +45,12 @@ export PWD="${TMuc}"
 cd "${TMuc}"
 logger ">>> $(basename "$0") started"
 if [ -z "$(which curl)" ]; then
-	echo ">>> WARNING: cURL not found"
-	echo ">>> ERROR: ABORTING"
-	exit 1
+	echo ">>> Installing cURL"
+	apt-get install curl
+fi
+if [ -z "$(which ping)" ]; then
+	echo ">>> Installing iNetUtils"
+	apt-get install inetutils
 fi
 export ScURL="${Data}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
