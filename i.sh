@@ -25,7 +25,7 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else
 	export hChinh="/etc/${fName}";
 	if (( $EUID != 0 )); then
-		echo " Input password and run again. Default: alpine "
+		echo " Input pass and run again. Default: alpine "
 		G0='su'; $G0 root;
 	fi
 fi
