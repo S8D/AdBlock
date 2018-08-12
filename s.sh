@@ -1,7 +1,7 @@
 #!/bin/sh
-PhienBan="20180812a"
+PhienBan="20180812b"
 export SetIP="0.1.2.3";export Level=4
-Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";uSed="${Nha}/Sed.txt";
+Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
 u11="http://gg.gg/u11_";u12="http://gg.gg/u12_";u13="http://gg.gg/u13_";u14="http://gg.gg/u14_";u15="http://gg.gg/u15_";
