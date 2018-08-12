@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812t"
+PhienBan="20180812u"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -13,27 +13,27 @@ export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export Data="${TMuc}/Data";mkdir -p ${Data};
 export upTam="${MTam}/u.sh"
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
-if [ ! -f $tbl ];then
+if [ ! -f $tbl ]; then
 	echo -n "" > $tbl
 fi
-if [ ! -f $twl ];then
+if [ ! -f $twl ]; then
 	echo -n "" > $twl
 fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
-if [ -f "${TMuc}/Location" ];then
-	export hChinh="${TMuc}/${fName}";else
+if [ -f "${TMuc}/Location" ]; then
+	export hChinh="${TMuc}/${fName}"; else
 	export hChinh="/etc/${fName}";
 fi
 export hDung="${Data}/${fName}.zzz";
-if [ ! -f $hChinh ];then
+if [ ! -f $hChinh ]; then
 	echo -n "" > $hChinh
 fi
 export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
-if [ ! -f $denOff ];then
+if [ ! -f $denOff ]; then
 	echo -n "" > $denOff
 fi
-if [ ! -f $trangOff ];then
+if [ ! -f $trangOff ]; then
 	echo -n "" > $trangOff
 fi
 export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
@@ -44,7 +44,10 @@ export PWD="${TMuc}"
 #__________________________________________________________________________________________________
 if (( $EUID != 0 )); then
 	echo " Please input password. Default: alpine "
-    G0='su'; $G0 root
+	if [ -f "${TMuc}/Location" ]; then
+		G0='sudo'; $G0 -i; else
+		G0='su'; $G0 root;
+	fi
 fi
 cd "${TMuc}"
 if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
@@ -85,8 +88,8 @@ Tat ()
 {
 	InRa ">>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
-	if [ -f "${Data}/Hosts" ];then
-		cp ${Data}/Hosts $hChinh;else
+	if [ -f "${Data}/Hosts" ]; then
+		cp ${Data}/Hosts $hChinh; else
 		GetSSL ${Nha}/Lists/hosts > ${Data}/Hosts && cp ${Data}/Hosts $hChinh;
 	fi
 	echo "PAUSED" > $pauseflag
@@ -131,11 +134,11 @@ CapNhat ()
 				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Updating new version..."
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				if [ -f "${Data}/$BanCu.sh" ];then
-					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+				if [ -f "${Data}/$BanCu.sh" ]; then
+					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/$BanCu\_$mCu.sh; else
 					cp $0 ${Data}/$BanCu.sh;
 				fi
-				chmod 755 $upTam;mv $upTam $0
+				chmod 755 $upTam; mv $upTam $0
 				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
 				InRa ">>> $(basename "$0") version: $PhienBan"
@@ -160,7 +163,7 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		s|S  ) SECURL=1 ;;
 		u|U  ) CapNhat ;;
 		b    ) echo "$OPTARG" >> $denOff ;;
-		w    ) echo "$OPTARG" >> $trangOff ;;		
+		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
@@ -205,8 +208,8 @@ if [ $? -eq 0 ]; then
 			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 			InRa ">>> Updating new version..."
 			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-			if [ -f "${Data}/$BanCu.sh" ];then
-				mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+			if [ -f "${Data}/$BanCu.sh" ]; then
+				mCu=$(echo "$MaCu" | cut -c1-5); 	cp $0 ${Data}/$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/$BanCu.sh;
 			fi
 			chmod 755 $upTam;mv $upTam $0
@@ -232,7 +235,7 @@ if [ $ONLINE -eq 1 ] && [ $? -eq 0 ]; then
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	if [ ! -s ${Data}/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
+		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem
 	fi
 #__________________________________________________________________________________________________
 	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
@@ -243,8 +246,8 @@ if [ $ONLINE -eq 1 ] && [ $? -eq 0 ]; then
 #__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
-	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;	
-	InRa "   $(basename "$0") version: $PhienBan"
+	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
+	InRa "   $(basename "$0") version: $PhienBan";
 	InRa "   Sed  version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
