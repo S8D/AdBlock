@@ -248,7 +248,7 @@ fi
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-		InRa "Blocked $Counts | Size $(Size "$hChinh") | Version $hvers";
+		InRa " Blocked $Counts | Size $(Size "$hChinh") | Version $hvers";
 	fi
 	else
 		InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong
