@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812x"
+PhienBan="20180813a"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -28,6 +28,10 @@ if [ -f "${TMuc}/Location" ]; then
 		echo " Input pass and run again. Default: alpine "
 		G0='su'; $G0 root;
 	fi
+	if [ "$(whoami)" != "root" ] ; then
+    echo " Please login as root user and try again "
+    exit
+fi
 fi
 export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then
