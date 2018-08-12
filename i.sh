@@ -108,7 +108,7 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	InRa ">>> Checking for updates..."
+	InRa "# Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL http://gg.gg/ib_ > $upTam;
 		if [ 0 -eq $? ]; then
