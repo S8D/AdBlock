@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812n"
+PhienBan="20180812o"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -53,10 +53,8 @@ if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
 	apt-get install coreutils-bin
 	apt-get install coreutils
 fi
-if [ ! hash curl 2>/dev/null ] || [ ! hash ping 2>/dev/null ]; then
+if [ ! hash curl 2>/dev/null ]; then
 	echo " Please add source if install failed: http://gg.gg/CS_S "
-	echo ">>> Installing iNetUtils"
-	apt-get install inetutils
 	echo ">>> Installing cURL"
 	apt-get install curl
 fi
@@ -69,6 +67,7 @@ alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
 Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
+CheckNet () { echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1 ;}
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
@@ -120,8 +119,8 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	InRa ">>> Checking for updates..."
-	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
+	InRa ">>> Checking for updates..."; CheckNet
+	if [ $? -eq 0 ]; then
 		GetSSL ${Nha}/$(basename "$0") > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
@@ -193,8 +192,8 @@ InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
-InRa "   `date`"
-if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
+InRa "   `date`"; CheckNet
+if [ $? -eq 0 ]; then
 	InRa ">>> Checking for updates..."
 	GetSSL http://gg.gg/ib_ > $upTam;
 	if [ 0 -eq $? ]; then
@@ -224,7 +223,8 @@ if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	Bat
 fi
-if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
+CheckNet
+if [ $ONLINE -eq 1 ] && [ $? -eq 0 ]; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
