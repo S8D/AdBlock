@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812b"
+PhienBan="20180812c"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -200,11 +200,10 @@ if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 			InRa ">>> $(basename "$0") updated to $vMoi "
 			InRa ">>> Please run sh $(basename "$0") again"
 			Xong
-		else
-			GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-			dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 		fi
-	fi	
+	fi
+	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 else
 	InRa "# NETWORK: DOWN | Please try again! "; Xong;
 fi
