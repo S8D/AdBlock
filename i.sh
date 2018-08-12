@@ -106,7 +106,7 @@ Giup ()
 	echo -n "[-s | --secure]"; printf '\t'; echo "Use cURL CA certs for secure file transfer"
 	echo -n "[-h | --help]"; printf '\t'; echo "Display this help screen and exit"
 	echo -n "[-u | --update]"; printf '\t'; echo "Update $(basename "$0") to the latest version"
-	echo -n "[-v | --version]"; printf ' '; echo "Print $(basename "$0") version and exit"
+	echo -n "[-v | --version]"; printf ''; echo "Print $(basename "$0") version and exit"
 	echo ""
 	echo "EXAMPLES:"
 	echo "$(basename "$0") -s2 --ip=172.31.255.254 "
