@@ -233,11 +233,11 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
-if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-	InRa "> Compacting Black/WhiteList Offline"
-	cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
-	cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl;
-fi
+	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
+		InRa "> Compacting Black/WhiteList Offline"
+		cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
+		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl;
+	fi
 #__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
@@ -250,8 +250,8 @@ fi
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 		InRa " Blocked $Counts | Size $(Size "$hChinh") | Version $hvers";
 	fi
-	else
-		InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong
+else
+	InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong
 fi
 DemGio
 InRa "# Total time: $Phut:$Giay minutes"
