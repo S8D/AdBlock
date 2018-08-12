@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812v"
+PhienBan="20180812x"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -196,7 +196,7 @@ InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"; CheckNet
 if [ $? -eq 0 ]; then
-	InRa ">>> Checking for updates..."
+	InRa "...Checking for updates..."
 	GetSSL http://gg.gg/ib_ > $upTam;
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
