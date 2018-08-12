@@ -1,4 +1,4 @@
-#hVersion=20180811d
+#hVersion=20180812a
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -520,7 +520,6 @@ mobula.ssl2.duapps.com
 static.ads.apusapps.com
 feed.apusapps.com
 api.unlimapps.com
-beta.unlimapps.com
 otafsg-az.coloros.com
 i.sau.coloros.com
 i.sau.foreign.coloros.com
@@ -1116,7 +1115,6 @@ ad.flipboard.com
 app.adywind.com
 log.adywind.com
 scheme.adywind.com
-julio.xarold.com
 g.defold.com
 cdn.dynamicyield.com
 www.jd.com
@@ -1289,7 +1287,6 @@ cf.appdsp.mobi
 api.wp.haokan.mobi
 wv.inner-active.mobi
 m2m1.inner-active.mobi
-rpetri.ch
 protostats.bigo.sg
 support0.bigo.sg
 api.ipify.org
