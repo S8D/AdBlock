@@ -24,6 +24,10 @@ export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else
 	export hChinh="/etc/${fName}";
+	if (( $EUID != 0 )); then
+		echo " Input password and run again. Default: alpine "
+		G0='su'; $G0 root;
+	fi
 fi
 export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then
@@ -42,10 +46,6 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/j
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${TMuc}"
 #__________________________________________________________________________________________________
-if (( $EUID != 0 )); then
-	echo " Input password and run again. Default: alpine "
-	G0='su'; $G0 root;
-fi
 cd "${TMuc}"
 if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
 	echo " Please add source if install failed: http://gg.gg/CS_S "
