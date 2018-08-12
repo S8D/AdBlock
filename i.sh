@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812u"
+PhienBan="20180812v"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -43,11 +43,8 @@ export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib
 export PWD="${TMuc}"
 #__________________________________________________________________________________________________
 if (( $EUID != 0 )); then
-	echo " Please input password. Default: alpine "
-	if [ -f "${TMuc}/Location" ]; then
-		G0='sudo'; $G0 -i; else
-		G0='su'; $G0 root;
-	fi
+	echo " Input password and run again. Default: alpine "
+	G0='su'; $G0 root;
 fi
 cd "${TMuc}"
 if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
