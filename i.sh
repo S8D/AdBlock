@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812r"
+PhienBan="20180812s"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -42,7 +42,7 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/j
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${TMuc}"
 #__________________________________________________________________________________________________
-if [ "$EUID" -ne 0 ]; then
+if [[ $EUID -ne 0 ]]; then
   echo ">>> Please login as root user: su root"
   exit
 fi
