@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812d"
+PhienBan="20180812c"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -205,7 +205,7 @@ if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 else
-	InRa "# NETWORK: DOWN | Please try again! "; Xong;
+	InRa "# NETWORK: DOWN | Please try again! "; Xong
 fi
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
@@ -239,7 +239,7 @@ fi
 		InRa "# Blocked $Counts | Size $(Size "$hChinh") | Version $hvers ";
 	fi
 	else
-		InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong;
+		InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong
 fi
 DemGio
 InRa "# Total time: $Phut:$Giay minutes"

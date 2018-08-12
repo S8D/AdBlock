@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180811e"
+PhienBan="20180812a"
 export SetIP="0.1.2.3";export Level=4
 Nha="https://s8d.github.io/AdBlock";u00="${Nha}/Lists/Domains.txt";uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -37,7 +37,7 @@ if [ -f "${TMuc}/Location" ];then
 fi
 export Lv0="${MTam}/lv0";export Lv5="${MTam}/Lv5";export Lv1="${MTam}/lv1";export Lv2="${MTam}/lv2";
 export Lv3="${MTam}/lv3";export Lv4="${MTam}/lv4";
-export fSed="${MTam}/Sed"
+export fSed="${MTam}/Sed";export upTam="${MTam}/u.sh";
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
 export hTam="${MTam}/h.tmp";export tam="${MTam}/t.tmp";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
@@ -137,7 +137,6 @@ Giup ()
 
 CapNhat ()
 {
-	upTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL http://gg.gg/ab_ > $upTam;
@@ -221,27 +220,50 @@ InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"
-GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-dv=`grep -w -m 1 "SedX" $fSed`;SedX=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed0" $fSed`;Sed0=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed1" $fSed`;Sed1=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed2" $fSed`;Sed2=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed3" $fSed`;Sed3=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed4" $fSed`;Sed4=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "SedY" $fSed`;SedY=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed00" $fSed`;Sed00=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Sed01" $fSed`;Sed01=$(echo $dv | sed 's/.*\=\=//');
-dv=`grep -w -m 1 "Cap0" $fSed`;alias Cap0="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap1" $fSed`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap2" $fSed`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap3" $fSed`;alias Cap3="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap4" $fSed`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cap5" $fSed`;alias Cap5="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Final" $fSed`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "Cuoi" $fSed`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
-dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-InRa "   .sh version: $PhienBan"
-InRa "   Sed version: $vers. Size: $(Size "$fSed")";
+if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
+	InRa ">>> Checking for updates..."
+	GetSSL http://gg.gg/ib_ > $upTam;
+	if [ 0 -eq $? ]; then
+		MaCu=`md5sum $0 | cut -d' ' -f1`
+		MaMoi=`md5sum $upTam | cut -d' ' -f1`
+		if [ "$MaCu" != "$MaMoi" ]; then
+			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+			InRa ">>> Updating new version..."
+			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+			if [ -f "${Data}/$BanCu.sh" ];then
+				mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+				cp $0 ${Data}/$BanCu.sh;
+			fi
+			chmod 755 $upTam;mv $upTam $0
+			InRa ">>> $(basename "$0") updated to $vMoi "
+			InRa ">>> Please run sh $(basename "$0") again"
+			Xong;
+		fi
+	fi
+	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "SedX" $fSed`;SedX=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed0" $fSed`;Sed0=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed1" $fSed`;Sed1=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed2" $fSed`;Sed2=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed3" $fSed`;Sed3=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed4" $fSed`;Sed4=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "SedY" $fSed`;SedY=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed00" $fSed`;Sed00=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed01" $fSed`;Sed01=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Cap0" $fSed`;alias Cap0="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Cap1" $fSed`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Cap2" $fSed`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Cap3" $fSed`;alias Cap3="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Cap4" $fSed`;alias Cap4="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Cap5" $fSed`;alias Cap5="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Final" $fSed`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "Cuoi" $fSed`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
+	InRa "   .sh version: $PhienBan"
+	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
+else
+	InRa "# NETWORK: DOWN | Please try again! "; Xong;
+fi
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
