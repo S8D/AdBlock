@@ -42,6 +42,10 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/j
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${TMuc}"
 #__________________________________________________________________________________________________
+if [ "$EUID" -ne 0 ]; then
+  echo "Please login as root user before executing this script."
+  exit
+fi
 cd "${TMuc}"
 if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
 	echo " Please add source if install failed: http://gg.gg/CS_S "
