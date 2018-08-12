@@ -1,4 +1,4 @@
-#hVersion=20180812a
+#hVersion=20180812b
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -82,7 +82,6 @@ vast.streamrail.net
 app.wpsmail.net
 libs.lavanetwork.net
 pub.lavanetwork.net
-connect.facebook.net
 accounts.doubleclick.net
 2542116.fls.doubleclick.net
 partnerad.l.doubleclick.net
@@ -924,9 +923,6 @@ wins.tng.wdc.go2trk.com
 xl-trk.com
 code.ionicframework.com
 kaymopk.com
-star.facebook.com
-star.c10r.facebook.com
-an.facebook.com
 cdn.viglink.com
 mepodownload.mediatek.com
 lepodownload.mediatek.com
