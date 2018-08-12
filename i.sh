@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812o"
+PhienBan="20180812p"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -67,7 +67,7 @@ alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
 Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
-CheckNet () { echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1; }
+CheckNet () { wget -q --spider http://google.com; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
