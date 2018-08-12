@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812q"
+PhienBan="20180812r"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -69,6 +69,7 @@ InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
 Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
 CheckNet () { wget -q --spider http://google.com; }
+NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
@@ -143,7 +144,7 @@ CapNhat ()
 			InRa ">>> Update failed. Try again."
 		fi
 	else
-		InRa "# NETWORK: DOWN | Please try again! ";
+		NetDown
 	fi
 	Xong
 }
@@ -217,7 +218,7 @@ if [ $? -eq 0 ]; then
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 else
-	InRa "# NETWORK: DOWN | Please try again! "; Xong
+	NetDown; Xong
 fi
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
@@ -252,7 +253,7 @@ if [ $ONLINE -eq 1 ] && [ $? -eq 0 ]; then
 		InRa " Blocked $Counts | Size $(Size "$hChinh") | Version $hvers";
 	fi
 else
-	InRa "# NETWORK: DOWN | Please try again! "; DemLine; Xong
+	NetDown; DemLine; Xong
 fi
 DemGio
 InRa "# Total time: $Phut:$Giay minutes"
