@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812a"
+PhienBan="20180812b"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -183,8 +183,28 @@ InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"
 if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
-GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
+	InRa ">>> Checking for updates..."
+	GetSSL http://gg.gg/ib_ > $upTam;
+	if [ 0 -eq $? ]; then
+		MaCu=`md5sum $0 | cut -d' ' -f1`
+		MaMoi=`md5sum $upTam | cut -d' ' -f1`
+		if [ "$MaCu" != "$MaMoi" ]; then
+			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+			InRa ">>> Updating new version..."
+			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+			if [ -f "${Data}/$BanCu.sh" ];then
+				mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
+				cp $0 ${Data}/$BanCu.sh;
+			fi
+			chmod 755 $upTam;mv $upTam $0
+			InRa ">>> $(basename "$0") updated to $vMoi "
+			InRa ">>> Please run sh $(basename "$0") again"
+			Xong
+		else
+			GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
+			dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
+		fi
+	fi	
 else
 	InRa "# NETWORK: DOWN | Please try again! "; Xong;
 fi
