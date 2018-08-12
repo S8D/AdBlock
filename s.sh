@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812b"
+PhienBan="20180812c"
 export SetIP="0.1.2.3";export Level=4
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -139,7 +139,7 @@ CapNhat ()
 {
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
-		GetSSL http://gg.gg/ab_ > $upTam;
+		GetSSL ${Nha}/$(basename "$0") > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
