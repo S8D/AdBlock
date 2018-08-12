@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812d"
+PhienBan="20180812f"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -45,10 +45,12 @@ export PWD="${TMuc}"
 cd "${TMuc}"
 logger ">>> $(basename "$0") started"
 if [ -z "$(which curl)" ]; then
+	echo " Please add source if install failed: http://gg.gg/CS_S "
 	echo ">>> Installing cURL"
 	apt-get install curl
 fi
 if [ -z "$(which ping)" ]; then
+	echo " Please add source if install failed: http://gg.gg/CS_S "
 	echo ">>> Installing iNetUtils"
 	apt-get install inetutils
 fi
