@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180812c"
+PhienBan="20180812d"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -11,6 +11,7 @@ export DAYOFWEEK=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export Data="${TMuc}/Data";mkdir -p ${Data};
+export upTam="${MTam}/u.sh"
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ];then
 	echo -n "" > $tbl
@@ -107,7 +108,6 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	upTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 		GetSSL http://gg.gg/ib_ > $upTam;
