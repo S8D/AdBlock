@@ -1,4 +1,4 @@
-#hVersion=20180812b
+#hVersion=20180814a
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -329,6 +329,8 @@ eastwind.lau4.uae.uc.cn
 sina.cn
 g.s.360.cn
 data.flvrrz.cpm
+cdn-f.adsmoloco.com
+tr-asia.adsmoloco.com
 phimyz.com
 avidolz.com
 static.subiz.com
@@ -413,6 +415,7 @@ t.dtscout.com
 ocsp.usertrust.com
 cdp1.public-trust.com
 app.adjust.com
+view.adjust.com
 live.chartboost.com
 www.adultblogtoplist.com
 www.msftconnecttest.com
