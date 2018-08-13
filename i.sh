@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180813a"
+PhienBan="20180814a"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt"
 #__________________________________________________________________________________________________
@@ -221,6 +221,8 @@ if [ $? -eq 0 ]; then
 	fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao="$(echo $dv | sed 's/.*\=\=//')"; echo '$ThongBao'
+	dv=`grep -w -m 1 "ChangeLog" $fSed`;ChangeLog="$(echo $dv | sed 's/.*\=\=//')"; echo "$ChangeLog"
 else
 	NetDown; Xong
 fi
