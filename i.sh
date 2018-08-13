@@ -221,8 +221,8 @@ if [ $? -eq 0 ]; then
 	fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
-	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao="$(echo $dv | sed 's/.*\=\=//')"; echo '$ThongBao'
-	dv=`grep -w -m 1 "ChangeLog" $fSed`;ChangeLog="$(echo $dv | sed 's/.*\=\=//')"; echo "$ChangeLog"
+	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao=$(echo $dv | sed 's/.*\=//'); echo "$ThongBao"
+	dv=`grep -w -m 1 "ChangeLog" $fSed`;ChangeLog=$(echo $dv | sed 's/.*\=//'); echo "$ChangeLog"
 else
 	NetDown; Xong
 fi
