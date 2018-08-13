@@ -242,7 +242,7 @@ if [ $ONLINE -eq 1 ] && [ $? -eq 0 ]; then
 	fi
 #8__________________________________________________________________________________________________
 	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
-		InRa "> Compacting Black/WhiteList Offline"
+		InRa "> Compacting Black/WhiteList"
 		cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
 		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl;
 	fi
