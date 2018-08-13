@@ -1,7 +1,7 @@
 #!/bin/sh
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180731a"
+VERSION="20180731b"
 export BLITZ=3
 SedF1="s|#.*$||; s|<.*$||; s|^address\=\/||; s|0.0.0.0 ||; s|^127.0.0.1||; s|:.*$||; s|\/.*$||; s|\;.*$||; s|\s\s|\n|; s|\s|\n|; s|^0\.0\.0\.0||; s|\&.*$||; s|localhost$||; s|\.k$||; s|\.v$||; s|\.w$||; s|\.col.*rn$||; s|[[:blank:]]||; s|^[[:space:]]*||g"
 SedF2="s|^\_\_||; s|^\_||; s|^\-||; s|\?$||; s|^\.||; s|^[^.]+$||; /^$/d"
@@ -15,17 +15,17 @@ export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export SetIP="0.1.2.3"
 export TMuc="$(cd "$(dirname "${0}")" && pwd)"
-export T4m="${TMuc}/tmp"
-if [ -d "$T4m" ]
+export MTam="${TMuc}/tmp"
+if [ -d "$MTam" ]
 then
-	rm -rf ${T4m};echo "Creating: $T4m";mkdir ${T4m};
+	rm -rf ${MTam};echo "Creating: $MTam";mkdir ${MTam};
 else
-	echo "Creating: $T4m";mkdir ${T4m};
+	echo "Creating: $MTam";mkdir ${MTam};
 fi
-export mphosts="${TMuc}/h";export hNgu="${TMuc}/h.zzz";export tmphosts="${T4m}/h.tmp";
-export mpdomains="${TMuc}/d";export dNgu="${TMuc}/d.zzz";export tmpdomains="${T4m}/d.tmp";
-export tam="${T4m}/t.tmp";export nwl="${T4m}/wl.tmp";export nbl="${T4m}/bl.tmp";
-export mwl="${T4m}/mwl.tmp";export mbl="${T4m}/mbl.tmp";
+export mphosts="${TMuc}/h";export hNgu="${TMuc}/h.zzz";export tmphosts="${MTam}/h.tmp";
+export mpdomains="${TMuc}/d";export dNgu="${TMuc}/d.zzz";export tmpdomains="${MTam}/d.tmp";
+export tam="${MTam}/t.tmp";export nwl="${MTam}/wl.tmp";export nbl="${MTam}/bl.tmp";
+export mwl="${MTam}/mwl.tmp";export mbl="${MTam}/mbl.tmp";
 export pauseflag="${TMuc}/PAUSED";export base64wl="${TMuc}/base64wl";
 export blacklist="${TMuc}/Den.On";export whitelist="${TMuc}/Trang.On";
 export bloff="${TMuc}/Den.Off";export wloff="${TMuc}/Trang.Off";
@@ -125,10 +125,10 @@ Giup ()
 }
 CapNhat ()
 {
-	uTam="${T4m}/up.tmp"
+	uTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $uTam
+		GetSSL ${Nha}/Scripts/$(basename "$0") > $uTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $uTam | cut -d' ' -f1`
@@ -397,7 +397,7 @@ if [ -f "${TMuc}/Location" ]
 then
 	echo "Skip restart DNS server"
 else
-	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $T4m";rm -rf ${T4m};
+	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $MTam";rm -rf ${MTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))

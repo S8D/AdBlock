@@ -31,7 +31,7 @@ if [ -f "${TMuc}/Location" ]; then
 	if [ "$(whoami)" != "root" ] ; then
     echo " Please login as root user and try again "
     exit
-fi
+	fi
 fi
 export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then

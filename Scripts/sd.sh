@@ -1,6 +1,6 @@
 #!/bin/sh
 VERSION="201807++"
-PhienBan="20180807a"
+PhienBan="20180807b"
 export SetIP="0.1.2.3";export Level=4;
 Nha="https://s8d.github.io/AdBlock"
 d="http://gg.gg/d_";dName="d.sh";
@@ -35,14 +35,14 @@ export SECURL=0
 export DAYOFWEEK=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export TMTam="${TMuc}/tmp";mkdir -p ${TMTam};mkdir -p ${TMuc}/Lists;
-export Lv0="${TMTam}/lv0";export Lv00="${TMTam}/lv00";export Lv1="${TMTam}/lv1";export Lv2="${TMTam}/lv2";
-export Lv3="${TMTam}/lv3";export Lv4="${TMTam}/lv4";
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${TMuc}/Lists;
+export Lv0="${MTam}/lv0";export Lv00="${MTam}/lv00";export Lv1="${MTam}/lv1";export Lv2="${MTam}/lv2";
+export Lv3="${MTam}/lv3";export Lv4="${MTam}/lv4";
 export dsh="${TMuc}/${dName}"
 export hChinh="${TMuc}/h";export hDung="${TMuc}/h.zzz";
-export hTam="${TMTam}/h.tmp";export tam="${TMTam}/t.tmp";
-export tbl="${TMTam}/bl.tmp";export twl="${TMTam}/wl.tmp";
-export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${TMTam}/d.tmp";
+export hTam="${MTam}/h.tmp";export tam="${MTam}/t.tmp";
+export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
+export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${MTam}/d.tmp";
 export hLog="${TMuc}/h.log";export pauseflag="${TMuc}/PAUSED";
 export denOn="${TMuc}/Lists/den.on";export trangOn="${TMuc}/Lists/trang.on";
 export denOff="${TMuc}/Lists/den.off";export trangOff="${TMuc}/Lists/trang.off";
@@ -147,10 +147,10 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	upTam="${TMTam}/update"
+	upTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $upTam
+		GetSSL ${Nha}/Scripts/$(basename "$0") > $upTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $upTam | cut -d' ' -f1`
@@ -168,7 +168,7 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
-		rm -rf ${TMTam};
+		rm -rf ${MTam};
 	fi
 	logger ">>> $(basename "$0") finished"
 	exit 0
@@ -177,7 +177,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${TMTam}; exit 0 ;;
+		v    ) echo ">>> Current version: $PhienBan" ; logger ">>> $(basename "$0") finished" ;rm -rf ${MTam}; exit 0 ;;
 		0    ) [0 ;;
 		1    ) [1 ;;
 		2    ) [2 ;;
@@ -415,7 +415,7 @@ Counts=$(cat $dChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Doma
 #__________________________________________________________________________________________________
 if [ -f "${TMuc}/Location" ];then
 	echo "Skip restart DNS server";else
-	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $TMTam";rm -rf ${TMTam};
+	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $MTam";rm -rf ${MTam};
 fi
 TIMERSTOP=`date +%s`
 RTMINUTES=$(( $((TIMERSTOP - TIMERSTART)) /60 ))
