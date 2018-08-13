@@ -28,7 +28,7 @@ export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
-export DAYOFWEEK=$(date +"%u")
+export ThuMay=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${TMuc}/Data;
 DL="${TMuc}/dl";
@@ -274,7 +274,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	InRa "# [0|1|2|3|4]: $Level"
-	if [ ! -s ${TMuc}/Data/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
+	if [ ! -f ${TMuc}/Data/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
 	fi

@@ -32,7 +32,7 @@ export NOFB=0
 export ONLINE=1
 export QUIET=0
 export SECURL=0
-export DAYOFWEEK=$(date +"%u")
+export ThuMay=$(date +"%u")
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${TMuc}/Lists;
@@ -247,7 +247,7 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 google.com >/dev/null; then
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	InRa "# [0|1|2|3|4]: $Level"
 
-	if [ ! -s cacert.pem ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
+	if [ ! -f cacert.pem ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
 		GetSSL --remote-name --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
 	fi

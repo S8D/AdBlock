@@ -1,13 +1,13 @@
 #!/bin/sh
-PhienBan="20180814c"
+PhienBan="20180814d"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
-#__________________________________________________________________________________________________
+#1__________________________________________________________________________________________________
 export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
-export DAYOFWEEK=$(date +"%u")
+export ThuMay=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export Data="${TMuc}/Data";mkdir -p ${Data};
@@ -49,7 +49,7 @@ export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${TMuc}"
-#__________________________________________________________________________________________________
+#2__________________________________________________________________________________________________
 cd "${TMuc}"
 if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
 	echo " Please add source if install failed: http://gg.gg/CS_S "
@@ -97,7 +97,7 @@ Tat ()
 	InRa ">>> Type $(basename "$0") -r or --resume to resume protection."
 	Xong
 }
-#__________________________________________________________________________________________________
+#3__________________________________________________________________________________________________
 Giup ()
 {
 	echo ""
@@ -122,7 +122,7 @@ Giup ()
 	echo ""
 	Xong
 }
-#__________________________________________________________________________________________________
+#4__________________________________________________________________________________________________
 CapNhat ()
 {
 	InRa ">>> Checking for updates..."; CheckNet
@@ -152,7 +152,7 @@ CapNhat ()
 	fi
 	Xong
 }
-#__________________________________________________________________________________________________
+#5__________________________________________________________________________________________________
 while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
@@ -190,7 +190,7 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	esac
 done
 shift $((OPTIND-1))
-#__________________________________________________________________________________________________
+#6__________________________________________________________________________________________________
 Chay=`date +%s`
 InRa "======================================="
 InRa "|    AdBlock for iOS / Linux          |"
@@ -226,7 +226,7 @@ if [ $? -eq 0 ]; then
 else
 	NetDown; Xong
 fi
-#__________________________________________________________________________________________________
+#7__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	Bat
@@ -236,17 +236,17 @@ if [ $ONLINE -eq 1 ] && [ $? -eq 0 ]; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
-	if [ ! -s ${Data}/cacert.pem  ] || { [ "${DAYOFWEEK}" -eq 1 ] || [ "${DAYOFWEEK}" -eq 4 ]; }; then
+	if [ ! -f ${Data}/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem
 	fi
-#__________________________________________________________________________________________________
+#8__________________________________________________________________________________________________
 	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 		InRa "> Compacting Black/WhiteList Offline"
 		cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
 		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl;
 	fi
-#__________________________________________________________________________________________________
+#9__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
