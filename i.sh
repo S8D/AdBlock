@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814l"
+PhienBan="20180814m"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -35,7 +35,7 @@ if [ -f "${TMuc}/Location" ]; then
 fi
 export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
-export denOff="/a/Data/den.off";export trangOff="/a/Data/trang.off";
+export denOff="${Data}/den.off";export trangOff="${Data}/trang.off";
 if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
 if [ ! -f $trangOff ]; then echo -n "" > $trangOff; fi
 export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
