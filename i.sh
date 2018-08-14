@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814m"
+PhienBan="20180814n"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -130,8 +130,8 @@ CapNhat ()
 				InRa ">>> Updating new version..."
 				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				if [ -f "${Data}/$BanCu.sh" ]; then
-					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/$BanCu\_$mCu.sh; else
-					cp $0 ${Data}/$BanCu.sh;
+					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+					cp $0 ${Data}/i\_$BanCu.sh;
 				fi
 				chmod 755 $upTam; cp $upTam /a/$0; mv $upTam ${iMuc}/$0
 				InRa ">>> $(basename "$0") updated to $vMoi "
@@ -204,8 +204,8 @@ if curl g.co -k -s -f -o /dev/null; then
 			InRa ">>> Updating new version..."
 			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 			if [ -f "${Data}/$BanCu.sh" ]; then
-				mCu=$(echo "$MaCu" | cut -c1-5); 	cp $0 ${Data}/$BanCu\_$mCu.sh; else
-				cp $0 ${Data}/$BanCu.sh;
+				mCu=$(echo "$MaCu" | cut -c1-5); cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
 			chmod 755 $upTam; cp $upTam /a/$0; mv $upTam ${iMuc}/$0
 			InRa ">>> $(basename "$0") updated to $vMoi "
