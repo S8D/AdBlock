@@ -1,6 +1,6 @@
 #!/bin/sh
-Version=20180814c
-ThongBao=### Hiện tại mình chưa có ý tưởng phát triển thêm chức năng của scripts, còn bộ lọc nếu có vấn đề gì các bạn có thể liên hệ trực tiếp với mình qua
+Version=20180814d
+ThongBao=### Nếu chạy scritps bị lỗi các bạn cập nhật scritps bằng lệnh: curl -f -s -k -L gg.gg/iB\_ \> /a/i.sh  Rồi chạy scripts bằng lệnh: sh /a/i.sh
 ChangeLog=### fb.me/LucThanhPhu
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
