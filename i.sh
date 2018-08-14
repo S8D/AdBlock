@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815f"
+PhienBan="20180815g"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -212,7 +212,7 @@ if curl g.co -k -s -f -o /dev/null; then
 				mv $upTam ${aMuc}/$0;
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi "
-			InRa ">>> Starting $(basename "$0" $vMoi..."; $TenSR $ThamSo;
+			InRa ">>> Starting $vMoi..."; $TenSR $ThamSo;
 			Xong
 		fi
 	fi
