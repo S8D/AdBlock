@@ -14,7 +14,7 @@ export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
-if [ ! -f $twl ]; then echo -n "" > $twl; fi
+if [ ! -f $twl ]; then echo -n "github.com" > $twl; fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 
