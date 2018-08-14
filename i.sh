@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814y"
+PhienBan="20180814z"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -128,7 +128,7 @@ CapNhat ()
 				fi
 				chmod 755 $upTam;				
 				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-					if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
+					if [ ${TMuc} -ef ${aMuc} ] || [ ${TMuc} -ef ${iMuc} ]; then
 						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam};
 					fi
 					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
@@ -209,7 +209,7 @@ if curl g.co -k -s -f -o /dev/null; then
 			fi
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
+				if [ ${TMuc} -ef ${aMuc} ] || [ ${TMuc} -ef ${iMuc} ]; then
 					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 				fi
 				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
