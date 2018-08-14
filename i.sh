@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814p"
+PhienBan="20180814q"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -20,10 +20,11 @@ export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
-	export Data="/a/Data";mkdir -p ${Data};
+	export aMuc="/a";mkdir -p ${aMuc};
+	export Data="${aMuc}/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";
-	if [ "${TMuc}" != "/a" ] || [ "${TMuc}" != "${iMuc}" ]; then
-		rm -rf ${TMuc}/Data; mkdir -p "/a"; cp $0 /a/$0; cp $0 ${iMuc}/$0; rm -f *.sh; sh ${iMuc}/$0; exit;
+	if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
+		cp $0 ${aMuc}/$0; mv $0 ${iMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; sh ${iMuc}/$0; exit;
 	fi
 	if (( $EUID != 0 )); then
 		echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root;
@@ -133,7 +134,7 @@ CapNhat ()
 				fi
 				chmod 755 $upTam;
 				if [ -f "${TMuc}/Location" ]; then cp $upTam $0; else
-					cp $upTam /a/$0; mv $upTam ${iMuc}/$0;
+					cp $upTam ${aMuc}/$0; mv $upTam ${iMuc}/$0;
 				fi
 				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
@@ -210,7 +211,7 @@ if curl g.co -k -s -f -o /dev/null; then
 			fi
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then cp $upTam $0; else
-				cp $upTam /a/$0; mv $upTam ${iMuc}/$0;
+				cp $upTam ${aMuc}/$0; mv $upTam ${iMuc}/$0;
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi "
 			InRa ">>> Please run sh $(basename "$0") again"
