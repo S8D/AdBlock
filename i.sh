@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815e"
+PhienBan="20180815f"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -7,6 +7,7 @@ export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
+TenSR="$0"; ThamSo="$@";
 export ThuMay=$(date +"%u")
 Kiem() { ! type "$1" > /dev/null; };
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
@@ -211,7 +212,7 @@ if curl g.co -k -s -f -o /dev/null; then
 				mv $upTam ${aMuc}/$0;
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi "
-			InRa ">>> Please run sh $(basename "$0") again"
+			InRa ">>> Starting $(basename "$0" $vMoi..."; $TenSR $ThamSo;
 			Xong
 		fi
 	fi
