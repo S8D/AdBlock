@@ -8,7 +8,7 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 TenSR="$0"; ThamSo="$@";
-export ThuMay=$(date +"%u")
+export ThuMay=$(date +"%u");
 Kiem() { ! type "$1" > /dev/null; };
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
