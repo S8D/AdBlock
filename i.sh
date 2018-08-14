@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814s"
+PhienBan="20180814t"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -23,11 +23,12 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else
 	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
 	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
-	export aMuc="/a";cd /; mkdir -p ${aMuc}; cd "${aMuc}"
+	export aMuc="/a"; mkdir -p ${aMuc};
 	export Data="${aMuc}/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";
 	if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
-		cp $0 ${aMuc}/$0; mv $0 ${iMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; sh ${iMuc}/$0; exit;
+		if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
+		mv $0 ${aMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; sh ${iMuc}/$0; exit;
 	fi
 fi
 export hDung="${Data}/${fName}.zzz";
@@ -130,8 +131,9 @@ CapNhat ()
 					cp $0 ${Data}/i\_$BanCu.sh;
 				fi
 				chmod 755 $upTam;
-				if [ -f "${TMuc}/Location" ]; then cp $upTam $0; else
-					cp $upTam ${aMuc}/$0; mv $upTam ${iMuc}/$0;
+				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
+					if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
+					mv $upTam ${aMuc}/$0;
 				fi
 				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
@@ -207,8 +209,9 @@ if curl g.co -k -s -f -o /dev/null; then
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
 			chmod 755 $upTam;
-			if [ -f "${TMuc}/Location" ]; then cp $upTam $0; else
-				cp $upTam ${aMuc}/$0; mv $upTam ${iMuc}/$0;
+			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
+				if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
+				mv $upTam ${aMuc}/$0;
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi "
 			InRa ">>> Please run sh $(basename "$0") again"
