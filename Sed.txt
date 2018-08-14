@@ -1,6 +1,6 @@
 #!/bin/sh
 Version=20180815b
-ThongBao=### Đã fix lỗi mất file. Chạy lệnh dưới nếu bị lỗi.
+ThongBao=### Đã fix lỗi mất file. Đang fix lỗi logger .Chạy lệnh dưới nếu bị lỗi.
 ChangeLog=### curl -f -s -k -L gg.gg/iB_ > /a/i.sh
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
