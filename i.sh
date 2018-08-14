@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814r"
+PhienBan="20180814s"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -23,7 +23,7 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else
 	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
 	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
-	export aMuc="/a";mkdir -p ${aMuc};
+	export aMuc="/a";cd /; mkdir -p ${aMuc}; cd "${aMuc}"
 	export Data="${aMuc}/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";
 	if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
