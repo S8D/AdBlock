@@ -36,7 +36,7 @@ export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
-export PWD="${TMuc}"; cd "${TMuc}";
+export PWD="${TMuc}"; cd "${TMuc}"
 #2__________________________________________________________________________________________________
 if Kiem curl || Kiem logger || Kiem awk; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
