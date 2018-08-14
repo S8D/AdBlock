@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815c"
+PhienBan="20180815d"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -109,7 +109,7 @@ CapNhat ()
 {
 	InRa ">>> Checking for updates...";
 	if curl g.co -k -s -f -o /dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $upTam;
+		GetSSL tiny.cc/_i > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
@@ -123,7 +123,7 @@ CapNhat ()
 				fi
 				chmod 755 $upTam;				
 				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-					if ! [ ${TMuc} -ef ${aMuc} ] || ! [ ${TMuc} -ef ${iMuc} ]; then
+					if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 					fi
 					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
@@ -190,7 +190,7 @@ InRa "======================================="
 InRa "   `date`";
 if curl g.co -k -s -f -o /dev/null; then
 	InRa "...Checking for updates..."
-	GetSSL http://gg.gg/ib_ > $upTam;
+	GetSSL tiny.cc/i_ > $upTam;
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
 		MaMoi=`md5sum $upTam | cut -d' ' -f1`
@@ -204,7 +204,7 @@ if curl g.co -k -s -f -o /dev/null; then
 			fi
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${aMuc} ] || ! [ ${TMuc} -ef ${iMuc} ]; then
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 				fi
 				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
