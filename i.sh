@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815b"
+PhienBan="20180815c"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -14,7 +14,7 @@ export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
-if [ ! -f $twl ]; then echo -n "github.com" > $twl; fi
+if [ ! -f $twl ]; then echo -n "gg.gg" > $twl; fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 
@@ -31,7 +31,7 @@ export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
 export denOff="${Data}/den.off";export trangOff="${Data}/trang.off";
 if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
-if [ ! -f $trangOff ]; then echo -n "" > $trangOff; fi
+if [ ! -f $trangOff ]; then echo -n "g.co" > $trangOff; fi
 export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
