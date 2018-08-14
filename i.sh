@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814k"
+PhienBan="20180814l"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -10,7 +10,6 @@ export DISTRIB=0
 export ThuMay=$(date +"%u")
 Kiem() { ! type "$1" > /dev/null; };
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export Data="/a/Data";mkdir -p ${Data};
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
@@ -19,7 +18,9 @@ if [ ! -f $twl ]; then echo -n "" > $twl; fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 if [ -f "${TMuc}/Location" ]; then
+	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
+	export Data="/a/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";
 	if [ "${TMuc}" != "/a" ]; then rm -rf ${TMuc}/Data; mkdir -p /a; cp $0 /a/$0;
 		if [ "${TMuc}" != "${iMuc}" ]; then cp $0 ${iMuc}/$0; rm -f *.sh; fi
