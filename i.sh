@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814f"
+PhienBan="20180814g"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -8,10 +8,11 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 export ThuMay=$(date +"%u")
+Kiem() { ! type "$1" > /dev/null; };
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export Data="${TMuc}/Data";mkdir -p ${Data};
-export upTam="${MTam}/u.sh"
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};
+export upTam="${MTam}/u.sh";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then
 	echo -n "" > $tbl
@@ -48,20 +49,25 @@ export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
-export PWD="${TMuc}"
+export PWD="${TMuc}"; cd "${TMuc}"
 #2__________________________________________________________________________________________________
-cd "${TMuc}"
-if [ ! hash logger 2>/dev/null ] || [ ! hash awk 2>/dev/null ]; then
+if Kiem curl || Kiem logger || Kiem awk; then
 	echo " Please add source if install failed: http://gg.gg/CS_S "
-	echo ">>> Installing Core Utilities"
-	apt-get install coreutils-bin
-	apt-get install coreutils
-fi
-if [ ! hash curl 2>/dev/null ]; then
-	echo " Please add source if install failed: http://gg.gg/CS_S "
+	echo ">>> Update Source";apt-get update
+	if Kiem curl; then
 	echo ">>> Installing cURL"
 	apt-get install curl
+	fi
+	if Kiem logger; then
+	echo ">>> Installing logger"
+	apt-get install coreutils
+	fi
+	if Kiem awk; then
+	echo ">>> Installing awk"
+	apt-get install coreutils-bin
+	fi
 fi
+#_____________________________________________________
 logger ">>> $(basename "$0") started"
 export ScURL="${Data}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
