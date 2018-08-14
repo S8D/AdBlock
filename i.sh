@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815a"
+PhienBan="20180815b"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -19,10 +19,10 @@ export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 
 if [ -f "${TMuc}/Location" ]; then
-	export Data="${TMuc}/Data";mkdir -p ${Data};
-	export hChinh="${TMuc}/${fName}"; else
 	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
 	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
+	export Data="${TMuc}/Data";mkdir -p ${Data};
+	export hChinh="${TMuc}/${fName}"; else
 	export aMuc="/a"; mkdir -p ${aMuc};
 	export Data="${aMuc}/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";	
@@ -42,8 +42,8 @@ if Kiem curl || Kiem logger || Kiem awk; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
 	echo ">>> Update Source";apt-get update; printf '\n';
 	if Kiem curl; then echo ">>> Installing cURL"; apt-get install -y curl; fi
-	if Kiem Kiem logger || Kiem awk; then echo ">>> Installing Core Utilities";
-		for it in coreutils coreutils-bin gawk; do 	sudo apt-get install -y $it; done
+	if Kiem Kiem logger || Kiem awk || Kiem sed || Kiem grep; then echo ">>> Installing Core Utilities";
+		for it in coreutils coreutils-bin gawk sed grep; do 	sudo apt-get install -y $it; done
 	fi
 fi
 #_____________________________________________________
@@ -123,8 +123,8 @@ CapNhat ()
 				fi
 				chmod 755 $upTam;				
 				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-					if [ ${TMuc} -ef ${aMuc} ] || [ ${TMuc} -ef ${iMuc} ]; then
-						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam};
+					if ! [ ${TMuc} -ef ${aMuc} ] || ! [ ${TMuc} -ef ${iMuc} ]; then
+						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 					fi
 					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
 					mv $upTam ${aMuc}/$0;
@@ -204,7 +204,7 @@ if curl g.co -k -s -f -o /dev/null; then
 			fi
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if [ ${TMuc} -ef ${aMuc} ] || [ ${TMuc} -ef ${iMuc} ]; then
+				if ! [ ${TMuc} -ef ${aMuc} ] || ! [ ${TMuc} -ef ${iMuc} ]; then
 					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 				fi
 				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
