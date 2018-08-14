@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814i"
+PhienBan="20180814j"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -44,13 +44,16 @@ export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib
 export PWD="${TMuc}"; cd "${TMuc}"
 #2__________________________________________________________________________________________________
 if Kiem curl || Kiem logger || Kiem awk; then
-	echo " Please add source https://electrarepo64.coolstar.org "
-	echo ">>> Update Source";apt-get update
+	echo " Please add source https://electrarepo64.coolstar.org "; printf '\n';
+	echo ">>> Update Source";apt-get update; printf '\n';
 	if Kiem curl; then
-		echo ">>> Installing cURL"; apt-get install curl
+		echo ">>> Installing cURL"; apt-get install -y curl
 	fi
 	if Kiem Kiem logger || Kiem awk; then
-		echo ">>> Installing Core Utilities"; apt-get install coreutils && apt-get install coreutils-bin
+		echo ">>> Installing Core Utilities";
+		for it in coreutils coreutils-bin; do
+  			sudo apt-get install -y $it
+		done
 	fi
 fi
 #_____________________________________________________
