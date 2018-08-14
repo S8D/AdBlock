@@ -1,7 +1,7 @@
 #!/bin/sh
-Version=20180815a
-ThongBao=### Cập nhật thủ công: curl -f -s -k -L gg.gg/iB_ > /a/i.sh
-ChangeLog=### Đã fix lỗi mất file. Chạy sh i.sh -u để cập nhật
+Version=20180815b
+ThongBao=### Đã fix lỗi mất file. Chạy lệnh dưới nếu bị lỗi.
+ChangeLog=### curl -f -s -k -L gg.gg/iB_ > /a/i.sh
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
