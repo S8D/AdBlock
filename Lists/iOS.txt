@@ -1,4 +1,4 @@
-#hVersion=20180814b
+#hVersion=20180814c
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -1000,7 +1000,6 @@ oc.umeng.com
 sec.umeng.com
 spankbang.com
 s.yimg.com
-s.ytimg.com
 i9.ytimg.com
 i1.ytimg.com
 script.crazyegg.com
