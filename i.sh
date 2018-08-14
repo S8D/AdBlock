@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814o"
+PhienBan="20180814p"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -132,7 +132,10 @@ CapNhat ()
 					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 					cp $0 ${Data}/i\_$BanCu.sh;
 				fi
-				chmod 755 $upTam; cp $upTam /a/$0; mv $upTam ${iMuc}/$0
+				chmod 755 $upTam;
+				if [ -f "${TMuc}/Location" ]; then cp $upTam $0; else
+					cp $upTam /a/$0; mv $upTam ${iMuc}/$0;
+				fi
 				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
 				InRa ">>> $(basename "$0") version: $PhienBan"
@@ -206,7 +209,10 @@ if curl g.co -k -s -f -o /dev/null; then
 				mCu=$(echo "$MaCu" | cut -c1-5); cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
-			chmod 755 $upTam; cp $upTam /a/$0; mv $upTam ${iMuc}/$0
+			chmod 755 $upTam;
+			if [ -f "${TMuc}/Location" ]; then cp $upTam $0; else
+				cp $upTam /a/$0; mv $upTam ${iMuc}/$0;
+			fi
 			InRa ">>> $(basename "$0") updated to $vMoi "
 			InRa ">>> Please run sh $(basename "$0") again"
 			Xong
