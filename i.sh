@@ -22,8 +22,8 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else
 	export hChinh="/etc/${fName}";
 	if [ "${TMuc}" != "/a" ]; then rm -rf ${TMuc}/Data; mkdir -p /a; cp $0 /a/$0;
-		if [ "${TMuc}" != "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
-		rm -f *.sh; sh ${iMuc}/$0
+		if [ "${TMuc}" != "${iMuc}" ]; then cp $0 ${iMuc}/$0; rm -f *.sh; fi
+		sh ${iMuc}/$0;		
 	fi
 	if (( $EUID != 0 )); then
 		echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root;
