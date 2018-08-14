@@ -1,4 +1,4 @@
-#hVersion=20180815a
+#hVersion=20180815b
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -1175,7 +1175,6 @@ r.nexac.com
 e.nexac.com
 mpx.mopub.com
 ads.mopub.com
-github.com
 www.pornhub.com
 hubt.pornhub.com
 services.pornhub.com
