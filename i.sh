@@ -211,7 +211,7 @@ if curl g.co -k -s -f -o /dev/null; then
 				mv $upTam ${aMuc}/$0;
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi ";
-			InRa ">>> Starting $vMoi..."; $TenSR $ThamSo;
+			InRa ">>> Running $(basename "$0") $vMoi..."; $TenSR $ThamSo;
 			Xong
 		fi
 	fi
