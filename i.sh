@@ -58,10 +58,9 @@ if Kiem curl || Kiem logger || Kiem awk; then
 fi
 #_____________________________________________________
 logger ">>> $(basename "$0") started"
-export ScURL="${Data}/cacert.pem"
-alias GetHTT="curl -f -s -k -L"
-alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
+export ScFile="${Data}/cacert.pem"
+alias GetHTT="curl -f -s -k -L"; alias GetSSL="curl -f -s -k -L"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScFile"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
