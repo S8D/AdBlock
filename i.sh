@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814t"
+PhienBan="20180814u"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -28,7 +28,7 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="/etc/${fName}";
 	if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
 		if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
-		mv $0 ${aMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; sh ${iMuc}/$0; exit;
+		mv $0 ${aMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; sh ${aMuc}/$0; exit;
 	fi
 fi
 export hDung="${Data}/${fName}.zzz";
