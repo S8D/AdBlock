@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814v"
+PhienBan="20180814w"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -46,7 +46,7 @@ if Kiem curl || Kiem logger || Kiem awk; then
 	fi
 	if Kiem Kiem logger || Kiem awk; then
 		echo ">>> Installing Core Utilities";
-		for it in coreutils coreutils-bin; do
+		for it in coreutils coreutils-bin gawk; do
   			sudo apt-get install -y $it
 		done
 	fi
