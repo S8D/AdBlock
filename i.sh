@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814h"
+PhienBan="20180814i"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -10,41 +10,33 @@ export DISTRIB=0
 export ThuMay=$(date +"%u")
 Kiem() { ! type "$1" > /dev/null; };
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export Data="${TMuc}/Data";mkdir -p ${Data};
+export Data="/a/Data";mkdir -p ${Data};
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
-export upTam="${MTam}/u.sh";
+export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
-if [ ! -f $tbl ]; then
-	echo -n "" > $tbl
-fi
-if [ ! -f $twl ]; then
-	echo -n "" > $twl
-fi
+if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
+if [ ! -f $twl ]; then echo -n "" > $twl; fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else
 	export hChinh="/etc/${fName}";
+	if [ "${TMuc}" != "/a" ]; then rm -rf ${TMuc}/Data; mkdir -p /a; cp $0 /a/$0;
+		if [ "${TMuc}" != "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
+		rm -f *.sh; sh ${iMuc}/$0
+	fi
 	if (( $EUID != 0 )); then
-		echo " Input pass and run again. Default: alpine "
-		G0='su'; $G0 root;
+		echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root;
 	fi
 	if [ "$(whoami)" != "root" ] ; then
-    echo " Please login as root user and try again "
-    exit
+		echo " Please login as root user and try again "; exit;
 	fi
 fi
 export hDung="${Data}/${fName}.zzz";
-if [ ! -f $hChinh ]; then
-	echo -n "" > $hChinh
-fi
-export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
-if [ ! -f $denOff ]; then
-	echo -n "" > $denOff
-fi
-if [ ! -f $trangOff ]; then
-	echo -n "" > $trangOff
-fi
+if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
+export denOff="/a/Data/den.off";export trangOff="/a/Data/trang.off";
+if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
+if [ ! -f $trangOff ]; then echo -n "" > $trangOff; fi
 export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
@@ -137,7 +129,7 @@ CapNhat ()
 					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/$BanCu\_$mCu.sh; else
 					cp $0 ${Data}/$BanCu.sh;
 				fi
-				chmod 755 $upTam; mv $upTam $0
+				chmod 755 $upTam; cp $upTam /a/$0; mv $upTam ${iMuc}/$0
 				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
 				InRa ">>> $(basename "$0") version: $PhienBan"
@@ -211,7 +203,7 @@ if curl g.co -k -s -f -o /dev/null; then
 				mCu=$(echo "$MaCu" | cut -c1-5); 	cp $0 ${Data}/$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/$BanCu.sh;
 			fi
-			chmod 755 $upTam;mv $upTam $0
+			chmod 755 $upTam; cp $upTam /a/$0; mv $upTam ${iMuc}/$0
 			InRa ">>> $(basename "$0") updated to $vMoi "
 			InRa ">>> Please run sh $(basename "$0") again"
 			Xong
