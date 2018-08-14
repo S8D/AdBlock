@@ -1,4 +1,4 @@
-#hVersion=20180814a
+#hVersion=20180814b
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -1322,3 +1322,5 @@ stats.t-online.de
 p.t-online.de
 t-online.de
 premium-offers.space
+www.sublimetext.com
+license.sublimehq.com
