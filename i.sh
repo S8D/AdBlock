@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814u"
+PhienBan="20180814v"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -25,11 +25,7 @@ if [ -f "${TMuc}/Location" ]; then
 	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
 	export aMuc="/a"; mkdir -p ${aMuc};
 	export Data="${aMuc}/Data";mkdir -p ${Data};
-	export hChinh="/etc/${fName}";
-	if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
-		if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
-		mv $0 ${aMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; sh ${aMuc}/$0; exit;
-	fi
+	export hChinh="/etc/${fName}";	
 fi
 export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
@@ -130,9 +126,12 @@ CapNhat ()
 					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 					cp $0 ${Data}/i\_$BanCu.sh;
 				fi
-				chmod 755 $upTam;
+				chmod 755 $upTam;				
 				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-					if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
+					if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
+						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam};
+					fi
+					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
 					mv $upTam ${aMuc}/$0;
 				fi
 				InRa ">>> $(basename "$0") updated to $vMoi "
@@ -210,7 +209,10 @@ if curl g.co -k -s -f -o /dev/null; then
 			fi
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$0; fi
+				if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
+					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
+				fi
+				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
 				mv $upTam ${aMuc}/$0;
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi "
