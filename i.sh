@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815g"
+PhienBan="20180815h"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -7,9 +7,8 @@ export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
-TenSR="$0"; ThamSo="$@";
-export ThuMay=$(date +"%u");
 Kiem() { ! type "$1" > /dev/null; };
+TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
