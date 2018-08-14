@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814q"
+PhienBan="20180814r"
 export SetIP="0.1.2.3";fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -17,20 +17,17 @@ if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
 if [ ! -f $twl ]; then echo -n "" > $twl; fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
+
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
+	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
+	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
 	export aMuc="/a";mkdir -p ${aMuc};
 	export Data="${aMuc}/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";
 	if [ "${TMuc}" != "${aMuc}" ] || [ "${TMuc}" != "${iMuc}" ]; then
 		cp $0 ${aMuc}/$0; mv $0 ${iMuc}/$0; rm -f *.sh; rm -rf ${TMuc}/Data; sh ${iMuc}/$0; exit;
-	fi
-	if (( $EUID != 0 )); then
-		echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root;
-	fi
-	if [ "$(whoami)" != "root" ] ; then
-		echo " Please login as root user and try again "; exit;
 	fi
 fi
 export hDung="${Data}/${fName}.zzz";
