@@ -33,6 +33,7 @@ export ONLINE=1
 export QUIET=0
 export SECURL=0
 export ThuMay=$(date +"%u")
+export upTam="${MTam}/u.sh"	
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${TMuc}/Lists;
@@ -69,21 +70,11 @@ alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
 [ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc} --cacert $CURL_CA_BUNDLE"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
-InRa ()
-{
-	[ $QUIET -eq 0 ] && echo "$1"
-	echo "$1" >> $hLog
-}
-Size ()
-{
-	InRa "`du -h $1 | awk '{print $1}'`"
-}
-ReBoot ()
-{
-	logger ">>> $(basename "$0") restarting dnsmasq"
-	restart_dns &
-	logger ">>> $(basename "$0") restarted dnsmasq"
-}
+InRa () { [ $QUIET -eq 0 ] && echo "$1"; echo "$1" >> $hLog; }
+Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
+ReBoot () { logger ">>> $(basename "$0") restarting dnsmasq"; restart_dns &; logger ">>> $(basename "$0") restarted dnsmasq"; }
+Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
+NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
@@ -147,7 +138,6 @@ Giup ()
 #__________________________________________________________________________________________________
 CapNhat ()
 {
-	upTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates..."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
 		GetSSL ${Nha}/Scripts/$(basename "$0") > $upTam
@@ -229,6 +219,37 @@ InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
 InRa "             `date`"
+InRa "# PhienBan: $PhienBan"
+if curl g.co -k -s -f -o /dev/null; then
+	InRa "...Checking for updates..."
+	GetSSL ${Nha}/Scripts/$(basename "$0") > $upTam;
+	if [ 0 -eq $? ]; then
+		MaCu=`md5sum $0 | cut -d' ' -f1`
+		MaMoi=`md5sum $upTam | cut -d' ' -f1`
+		if [ "$MaCu" != "$MaMoi" ]; then
+			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+			InRa ">>> Updating new version..."
+			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+			if [ -f "${Data}/$BanCu.sh" ]; then
+				mCu=$(echo "$MaCu" | cut -c1-5); cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+				cp $0 ${Data}/i\_$BanCu.sh;
+			fi
+			chmod 755 $upTam;
+			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
+				fi
+				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
+				mv $upTam ${aMuc}/$0;
+			fi
+			InRa ">>> $(basename "$0") updated to $vMoi ";
+			InRa ">>> Running $(basename "$0") $vMoi..."; $TenSR $ThamSo;
+			Xong
+		fi
+	fi
+else
+	NetDown; Xong
+fi
 GetSSL ${d} > $dsh;dv=`grep -w -m 1 "dVersion" $dsh`;vers=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 InRa "> s.sh version: $PhienBan"
 InRa "> d.sh version: $vers. Size: $(Size "$dsh")";

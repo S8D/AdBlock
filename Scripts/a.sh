@@ -31,7 +31,7 @@ export mwl="${MTam}/mwl.tmp";export mbl="${MTam}/mbl.tmp";
 export pauseflag="${TMuc}/PAUSED";export base64wl="${TMuc}/base64wl";
 export blacklist="${TMuc}/Den.On";export whitelist="${TMuc}/Trang.On";
 export bloff="${TMuc}/Den.Off";export wloff="${TMuc}/Trang.Off";
-export MPLOG="${TMuc}/h.log"
+export MPLOG="${TMuc}/h.log";export upTam="${MTam}/u.sh";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -117,20 +117,19 @@ Giup ()
 }
 CapNhat ()
 {
-	uTam="${MTam}/u.sh"
 	InRa ">>> Checking for updates."
 	if ping -q -c 1 -W 1 google.com >/dev/null; then
-		GetSSL ${Nha}/Scripts/$(basename "$0") > $uTam
+		GetSSL ${Nha}/Scripts/$(basename "$0") > $upTam
 		if [ 0 -eq $? ]; then
 			old_md5=`md5sum $0 | cut -d' ' -f1`
-			new_md5=`md5sum $uTam | cut -d' ' -f1`
+			new_md5=`md5sum $upTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				dv=`grep -w -m 1 "PhienBan" $uTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				dv=`grep -w -m 1 "PhienBan" $upTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
 				OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
-				chmod 755 $uTam
-				mv $uTam $0
+				chmod 755 $upTam
+				mv $upTam $0
 				InRa ">>> Updated to the latest version."
 			else
 				InRa ">>> Current version: $PhienBan"
@@ -138,7 +137,7 @@ CapNhat ()
 		else
 			InRa ">>> Update failed. Try again."
 		fi
-		rm -f $uTam
+		rm -f $upTam
 	fi
 	logger ">>> $(basename "$0") updated"
 	logger ">>> $(basename "$0") finished"
@@ -200,7 +199,7 @@ InRa "             `date`"
 InRa "# PhienBan: $PhienBan"
 if curl g.co -k -s -f -o /dev/null; then
 	InRa "...Checking for updates..."
-	GetSSL tiny.cc/i_ > $upTam;
+	GetSSL ${Nha}/Scripts/$(basename "$0") > $upTam;
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
 		MaMoi=`md5sum $upTam | cut -d' ' -f1`
