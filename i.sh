@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816c"
+PhienBan="20180816d"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -112,7 +112,7 @@ CapNhat ()
 {
 	InRa ">>> Checking for updates...";
 	if curl g.co -k -s -f -o /dev/null; then
-		GetSSL tiny.cc/_i > $upTam;
+		GetSSL gg.gg/i_up > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
 			MaMoi=`md5sum $upTam | cut -d' ' -f1`
@@ -194,7 +194,7 @@ InRa "======================================="
 InRa "   `date`";
 if curl g.co -k -s -f -o /dev/null; then
 	InRa "...Checking for updates..."
-	GetSSL tiny.cc/i_ > $upTam;
+	GetSSL gg.gg/i_sh > $upTam;
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
 		MaMoi=`md5sum $upTam | cut -d' ' -f1`
