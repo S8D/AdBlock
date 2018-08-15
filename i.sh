@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815h"
+PhienBan="20180815i"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -8,6 +8,12 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
+if [ -f "${TMuc}/Location" ]; then
+	if (( $EUID != 0 )); then echo " Input pass and run again"; G0='sudo'; $G0 -i; fi
+	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi; else
+	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
+	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
+fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
@@ -19,8 +25,6 @@ export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 
 if [ -f "${TMuc}/Location" ]; then
-	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
-	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
 	export aMuc="/a"; mkdir -p ${aMuc};
@@ -187,7 +191,7 @@ InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
-InRa "   `date`";
+InRa "   `date`"; InRa "# Version: $PhienBan";
 if curl g.co -k -s -f -o /dev/null; then
 	InRa "...Checking for updates..."
 	GetSSL tiny.cc/i_ > $upTam;

@@ -1,7 +1,8 @@
 #!/bin/sh
 Nha="https://raw.githubusercontent.com/S8D/AdBlock/master"
 HomePage="https://github.com/S8D/AdBlock"
-VERSION="20180731b"
+PhienBan="20180815a"
+VERSION="2018++"
 export BLITZ=3
 SedF1="s|#.*$||; s|<.*$||; s|^address\=\/||; s|0.0.0.0 ||; s|^127.0.0.1||; s|:.*$||; s|\/.*$||; s|\;.*$||; s|\s\s|\n|; s|\s|\n|; s|^0\.0\.0\.0||; s|\&.*$||; s|localhost$||; s|\.k$||; s|\.v$||; s|\.w$||; s|\.col.*rn$||; s|[[:blank:]]||; s|^[[:space:]]*||g"
 SedF2="s|^\_\_||; s|^\_||; s|^\-||; s|\?$||; s|^\.||; s|^[^.]+$||; /^$/d"
@@ -12,6 +13,7 @@ export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DAYOFWEEK=$(date +"%u")
+export upTam="${MTam}/u.sh";
 export DISTRIB=0
 export SetIP="0.1.2.3"
 export TMuc="$(cd "$(dirname "${0}")" && pwd)"
@@ -50,22 +52,12 @@ alias GetSSL="curl -f -s -k"
 alias GetMHK="curl -f -s -A "Mozilla/5.0" -e http://forum.xda-developers.com/"
 alias SEDCLEAN="sed -r 's/^[[:blank:]]*//; s/[[:blank:]]*$//; s/^[[:punct:]]*//; s/[[:punct:]]*$//; /^$/d; /^\s*$/d'"
 alias GREPFILTER="grep -o '^[^#]*' | grep -vF -e \"::\" -e \";\" -e \"//\" -e \"http\" -e \"https\" -e \"@\" -e \"mailto\" | tr -cd '\000-\177'"
-InRa ()
-{
-	[ $QUIET -eq 0 ] && echo "$1"
-	echo "$1" >> $MPLOG
-}
-Size ()
-{
-	InRa "# Size of $1: `du -h $1 | awk '{print $1}'`"
-}
-ReBoot ()
-{
-	logger ">>> $(basename "$0") restarting dnsmasq"
-	restart_dns &
-	logger ">>> $(basename "$0") restarted dnsmasq"
-}
-Bat ()
+Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
+NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
+InRa () { [ $QUIET -eq 0 ] && echo "$1"; echo "$1" >> $MPLOG; }
+Size () { InRa "# Size of $1: `du -h $1 | awk '{print $1}'`"; }
+ReBoot () { logger ">>> $(basename "$0") restarting dnsmasq"; restart_dns &; logger ">>> $(basename "$0") restarted dnsmasq"; }
+Bat () 
 {
 	if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
 		InRa ">>> RESUMING PROTECTION"
@@ -133,15 +125,15 @@ CapNhat ()
 			old_md5=`md5sum $0 | cut -d' ' -f1`
 			new_md5=`md5sum $uTam | cut -d' ' -f1`
 			if [ "$old_md5" != "$new_md5" ]; then
-				dv=`grep -w -m 1 "VERSION" $uTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+				dv=`grep -w -m 1 "PhienBan" $uTam`;NEWVER=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
 				InRa ">>> Update available: $NEWVER"
-				OLDVER=`grep -w -m 1 "VERSION" $0 | cut -d \" -f2`
+				OLDVER=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 				cp $0 $0.$OLDVER
 				chmod 755 $uTam
 				mv $uTam $0
 				InRa ">>> Updated to the latest version."
 			else
-				InRa ">>> Current version: $VERSION"
+				InRa ">>> Current version: $PhienBan"
 			fi
 		else
 			InRa ">>> Update failed. Try again."
@@ -155,7 +147,7 @@ CapNhat ()
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 	case ${opt} in
 		h|\? ) Giup ;;
-		v    ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+		v    ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 		0    ) BLITZ=0 ;;
 		1    ) BLITZ=1 ;;
 		2    ) BLITZ=2 ;;
@@ -187,7 +179,7 @@ while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			offline ) ONLINE=0 ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
-			version ) echo "$VERSION" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
+			version ) echo "$PhienBan" ; logger ">>> $(basename "$0") finished" ; exit 0 ;;
 			quiet* | pause* | resume* | secure* | offline* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
 			'' )    break ;; # "--" terminates argument Downloading
@@ -205,7 +197,37 @@ InRa "|      Author: Manish Parashar                       |"
 InRa "|      Editor: Darias                                |"
 InRa "======================================================"
 InRa "             `date`"
-InRa "# VERSION: $VERSION"
+InRa "# PhienBan: $PhienBan"
+if curl g.co -k -s -f -o /dev/null; then
+	InRa "...Checking for updates..."
+	GetSSL tiny.cc/i_ > $upTam;
+	if [ 0 -eq $? ]; then
+		MaCu=`md5sum $0 | cut -d' ' -f1`
+		MaMoi=`md5sum $upTam | cut -d' ' -f1`
+		if [ "$MaCu" != "$MaMoi" ]; then
+			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+			InRa ">>> Updating new version..."
+			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+			if [ -f "${Data}/$BanCu.sh" ]; then
+				mCu=$(echo "$MaCu" | cut -c1-5); cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+				cp $0 ${Data}/i\_$BanCu.sh;
+			fi
+			chmod 755 $upTam;
+			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
+				fi
+				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
+				mv $upTam ${aMuc}/$0;
+			fi
+			InRa ">>> $(basename "$0") updated to $vMoi ";
+			InRa ">>> Running $(basename "$0") $vMoi..."; $TenSR $ThamSo;
+			Xong
+		fi
+	fi
+else
+	NetDown; Xong
+fi
 if [ -f $pauseflag ] && { [ -f $hNgu ] || [ -f $dNgu ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	Bat
@@ -393,10 +415,8 @@ LC_ALL=C cat $tmphosts | tr '[:upper:]' '[:lower:]' | sed -r "${SedF1}" | sed -r
 LC_ALL=C cat $tmpdomains | SEDCLEAN | grep -Fvwf $nwl | awk '{if ($1 in a) next; a[$1]=$0; print}' > $mpdomains
 hCount=$(cat $mphosts | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $hCount Hosts";Size $mphosts;
 dCount=$(cat $mpdomains | wc -l | sed 's/^[ \t]*//');InRa "# Blocked: $dCount Domain";Size $mpdomains;
-if [ -f "${TMuc}/Location" ]
-then
-	echo "Skip restart DNS server"
-else
+if [ -f "${TMuc}/Location" ]; then
+	echo "Skip restart DNS server"; else
 	InRa "> Restarting DNS server";ReBoot;InRa "> Deleting: $MTam";rm -rf ${MTam};
 fi
 TIMERSTOP=`date +%s`
