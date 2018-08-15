@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815i"
+PhienBan="20180815j"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -130,8 +130,8 @@ CapNhat ()
 					if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 					fi
-					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
-					mv $upTam ${aMuc}/$0;
+					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}; fi
+					mv $upTam ${aMuc};
 				fi
 				InRa ">>> $(basename "$0") updated to $vMoi "
 			else
@@ -211,8 +211,8 @@ if curl g.co -k -s -f -o /dev/null; then
 				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
 				fi
-				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$0; fi
-				mv $upTam ${aMuc}/$0;
+				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}; fi
+				mv $upTam ${aMuc};
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi ";
 			InRa ">>> Running $(basename "$0") $vMoi..."; $TenSR $ThamSo;
