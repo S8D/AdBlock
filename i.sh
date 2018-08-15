@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816d"
+PhienBan="20180816e"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -41,13 +41,11 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/j
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${TMuc}"; cd "${TMuc}"
 #2__________________________________________________________________________________________________
-if Kiem curl || Kiem logger || Kiem awk; then
+if Kiem Kiem curl || Kiem Kiem ping || Kiem Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
 	echo ">>> Update Source";apt-get update; printf '\n';
-	if Kiem curl; then echo ">>> Installing cURL"; apt-get install -y curl; fi
-	if Kiem Kiem logger || Kiem awk || Kiem sed || Kiem grep; then echo ">>> Installing Core Utilities";
-		for it in coreutils coreutils-bin gawk sed grep; do 	sudo apt-get install -y $it; done
-	fi
+	echo ">>> Installing Core Utilities";
+	for it in curl inetutils gawk coreutils coreutils-bin sed grep; do 	sudo apt-get install -y $it; done	
 fi
 #_____________________________________________________
 logger ">>> $(basename "$0") started"
@@ -57,6 +55,7 @@ alias GetHTT="curl -f -s -k -L"; alias GetSSL="curl -f -s -k -L"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
+CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null }
 Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
 NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
@@ -111,7 +110,7 @@ Giup ()
 CapNhat ()
 {
 	InRa ">>> Checking for updates...";
-	if curl g.co -k -s -f -o /dev/null; then
+	if CheckNet; then
 		GetSSL gg.gg/i_up > $upTam;
 		if [ 0 -eq $? ]; then
 			MaCu=`md5sum $0 | cut -d' ' -f1`
@@ -192,7 +191,7 @@ InRa "|    Editor: Darias                   |"
 InRa "|    Version: $PhienBan               |"
 InRa "======================================="
 InRa "   `date`";
-if curl g.co -k -s -f -o /dev/null; then
+if CheckNet; then
 	InRa "...Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam;
 	if [ 0 -eq $? ]; then
@@ -231,7 +230,7 @@ if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	Bat
 fi
-if [ $ONLINE -eq 1 ] && curl g.co -k -s -f -o /dev/null; then
+if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
