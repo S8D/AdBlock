@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816h"
+PhienBan="20180816i"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -8,6 +8,7 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
+DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;}
 Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi }
 if [ -f "${TMuc}/Location" ]; then
 	if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
@@ -31,8 +32,8 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="/etc/${fName}";
 	if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 		if ! [ ${TMuc} -ef ${aMuc} ]; then cp $0 ${aMuc}/$(basename "$0"); fi
-		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d "${iMuc}" ]; then cp $0 ${iMuc}/$(basename "$0"); fi; fi
-		rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
+		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cp $0 ${iMuc}/$(basename "$0"); fi; fi
+		DonRac; 
 	fi
 fi
 
@@ -132,9 +133,9 @@ CapNhat ()
 				chmod 755 $upTam;				
 				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
 					if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-						rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
+						DonRac; 
 					fi
-					if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
+					if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
 					mv $upTam ${aMuc}/$(basename "$0");
 				fi
 				InRa ">>> $(basename "$0") updated to $vMoi "
@@ -214,9 +215,9 @@ if CheckNet; then
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
 				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-					rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; 
+					DonRac; 
 				fi
-				if [ -d "${iMuc}" ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
+				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
 				mv $upTam ${aMuc}/$(basename "$0");
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi ";
