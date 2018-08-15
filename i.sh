@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815k"
+PhienBan="20180815i"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -9,7 +9,7 @@ export SECURL=0
 export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
 if [ -f "${TMuc}/Location" ]; then
-	if (( $EUID != 0 )); then echo " Input pass and run again"; G0='sudo'; $G0 -i; fi
+	if [[ $EUID -ne 0 ]]; then echo " Input pass and run again"; G0='sudo'; $G0 -i; fi
 	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi; else
 	if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; G0='su'; $G0 root; fi
 	if [ "$(whoami)" != "root" ] ; then echo " Password incorrect!!! Please try again "; exit; fi
