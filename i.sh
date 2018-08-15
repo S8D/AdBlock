@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180815l"
+PhienBan="20180815m"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -191,8 +191,9 @@ InRa "|    AdBlock for iOS / Linux          |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
+InRa "|    Version: $PhienBan                         ";
 InRa "======================================="
-InRa "   `date`"; InRa "# Version: $PhienBan";
+InRa "   `date`";
 if curl g.co -k -s -f -o /dev/null; then
 	InRa "...Checking for updates..."
 	GetSSL tiny.cc/i_ > $upTam;
