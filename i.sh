@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816a"
+PhienBan="20180816b"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -8,10 +8,10 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
-Pass2 () { if [ $USER != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi }
+Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi }
 if [ -f "${TMuc}/Location" ]; then
-	if [ $USER != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
-	if [ $USER != 'root' ]; then echo " Input pass and run again. Default : alpine"; G0='su'; $G0 root; fi; Pass2;
+	if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
+	if [ `whoami` != 'root' ]; then echo " Input pass and run again. Default : alpine"; G0='su'; $G0 root; fi; Pass2;
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
