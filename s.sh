@@ -225,7 +225,7 @@ InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"
 if CheckNet; then
-	InRa ">>> Checking for updates..."
+	InRa "... Checking for updates..."
 	GetSSL http://gg.gg/ab_ > $upTam;KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
