@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816e"
+PhienBan="20180816f"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -236,8 +236,8 @@ if CheckNet; then
 	dv=`grep -w -m 1 "Sed3" $fSed`;Sed3=$(echo $dv | sed 's/.*\=\=//');
 	dv=`grep -w -m 1 "Sed4" $fSed`;Sed4=$(echo $dv | sed 's/.*\=\=//');
 	dv=`grep -w -m 1 "SedY" $fSed`;SedY=$(echo $dv | sed 's/.*\=\=//');
-	dv=`grep -w -m 1 "Sed00" $fSed`;Sed00=$(echo $dv | sed 's/.*\=\=//');
-	dv=`grep -w -m 1 "Sed01" $fSed`;Sed01=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed51" $fSed`;Sed51=$(echo $dv | sed 's/.*\=\=//');
+	dv=`grep -w -m 1 "Sed52" $fSed`;Sed52=$(echo $dv | sed 's/.*\=\=//');
 	dv=`grep -w -m 1 "Cap0" $fSed`;alias Cap0="$(echo $dv | sed 's/.*\=\=//')";
 	dv=`grep -w -m 1 "Cap1" $fSed`;alias Cap1="$(echo $dv | sed 's/.*\=\=//')";
 	dv=`grep -w -m 1 "Cap2" $fSed`;alias Cap2="$(echo $dv | sed 's/.*\=\=//')";
