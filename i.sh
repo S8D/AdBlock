@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816o"
+PhienBan="20180816r"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -16,7 +16,7 @@ if [ -f "${TMuc}/Location" ]; then
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
-	read -n 1 -s -r -p "Press any key to continue"; echo ">>> Update Source";
+	read -n 1 -s -r -p "Press any key to continue"; printf '\n'; echo ">>> Update Source";
 	apt-get update; printf '\n'; echo ">>> Installing Core Utilities...";
 	for it in coreutils coreutils-bin sed grep curl inetutils gawk; do
 		if Kiem ${it}; then printf '\n'; echo "Press Y to Install"; apt-get install ${it}; fi
