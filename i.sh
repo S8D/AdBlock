@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816x"
+PhienBan="20180816y"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -7,6 +7,7 @@ export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
+export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;};
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
@@ -22,7 +23,6 @@ if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; t
 	if Kiem grep; then printf '\n'; echo "Press Y to Install grep"; apt-get install grep; fi
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
-export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
