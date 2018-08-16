@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816n"
+PhienBan="20180816o"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -15,10 +15,12 @@ if [ -f "${TMuc}/Location" ]; then
 	if [ `whoami` != 'root' ]; then echo " Input pass and run again. Default : alpine"; G0='su'; $G0 root; fi; Pass2;
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
-	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
-	echo ">>> Update Source";apt-get update; printf '\n';
-	echo ">>> Installing Core Utilities. Press Y to Install";
-	for it in coreutils coreutils-bin sed grep curl inetutils gawk; do apt-get install ${it}; done	
+	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
+	read -n 1 -s -r -p "Press any key to continue"; echo ">>> Update Source";
+	apt-get update; printf '\n'; echo ">>> Installing Core Utilities...";
+	for it in coreutils coreutils-bin sed grep curl inetutils gawk; do
+		if Kiem ${it}; then printf '\n'; echo "Press Y to Install"; apt-get install ${it}; fi
+	done
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
