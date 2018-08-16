@@ -224,7 +224,6 @@ InRa "|    AdBlock for DD-WRT/LiNux         |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
-InRa "|    Version: $PhienBan                "
 InRa "======================================="
 InRa "   `date`"
 if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
@@ -250,7 +249,7 @@ if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	dv=`grep -w -m 1 "Final" $fSed`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
 	dv=`grep -w -m 1 "Cuoi" $fSed`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
 	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
+	InRa ">>>  Sed version: $vers. Size: $(Size "$fSed")";
 else
 	InRa "# NETWORK: DOWN | Please try again! "; Xong;
 fi
