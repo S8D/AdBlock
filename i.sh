@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816s"
+PhienBan="20180816t"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -136,9 +136,9 @@ KiemTra ()
 				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
 				mv $upTam ${aMuc}/$(basename "$0");
 			fi
-			InRa ">>> $(basename "$0") updated to $vMoi "; upd=1
+			InRa ">>> $(basename "$0") updated to $vMoi ";export upd=1;
 		else
-			InRa ">>> $(basename "$0") version: $PhienBan"; upd=0
+			InRa ">>> $(basename "$0") version: $PhienBan";export upd=0;
 		fi
 	else
 		InRa ">>> Update failed. Try again."
