@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816v"
+PhienBan="20180816w"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -9,20 +9,17 @@ export SECURL=0
 export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;};
-Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi };
-if [ -f "${TMuc}/Location" ]; then
-	if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; 
-fi
-if ! [ -f "${TMuc}/Location" ]; then
-if [ `whoami` != 'root' ]; then echo " Input pass and run again. Default : alpine"; G0='su'; $G0 root; fi; Pass2;
+if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
+	echo " Input pass and run again. Default : alpine "; [ `whoami` = root ] || { su root "$0" "$@"; exit $?; };
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
-	read -n 1 -s -r -p "Press any key to continue"; printf '\n'; echo ">>> Update Source";
-	apt-get update; printf '\n'; echo ">>> Installing Core Utilities...";
-	for it in coreutils coreutils-bin sed grep curl inetutils gawk; do
-		if Kiem ${it}; then printf '\n'; echo "Press Y to Install"; apt-get install ${it}; fi
-	done
+	read -n 1 -s -r -p "Press any key to continue"; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
+	if Kiem curl; then printf '\n'; echo "Press Y to Install cURL"; apt-get install curl; fi
+	if Kiem ping || Kiem logger || ; then printf '\n'; echo "Press Y to Install ping+logger"; apt-get install inetutils; fi
+	if Kiem awk; then printf '\n'; echo "Press Y to Install awk"; apt-get install gawk; fi
+	if Kiem sed; then printf '\n'; echo "Press Y to Install sed"; apt-get install sed; fi
+	if Kiem grep; then printf '\n'; echo "Press Y to Install grep"; apt-get install grep; fi
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
