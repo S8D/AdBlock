@@ -16,7 +16,7 @@ if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; t
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
 	read -n 1 -s -r -p "Press any key to continue"; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
 	if Kiem curl; then printf '\n'; echo "Press Y to Install cURL"; apt-get install curl; fi
-	if Kiem ping || Kiem logger ; then printf '\n'; echo "Press Y to Install ping+logger"; apt-get install inetutils; fi
+	if Kiem ping || Kiem logger; then printf '\n'; echo "Press Y to Install ping+logger"; apt-get install inetutils; fi
 	if Kiem awk; then printf '\n'; echo "Press Y to Install awk"; apt-get install gawk; fi
 	if Kiem sed; then printf '\n'; echo "Press Y to Install sed"; apt-get install sed; fi
 	if Kiem grep; then printf '\n'; echo "Press Y to Install grep"; apt-get install grep; fi
