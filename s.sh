@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816b"
+PhienBan="20180816c"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -66,8 +66,7 @@ if [ -z "$(which curl)" ]; then
 	exit 1
 fi
 export ScURL="${Data}/cacert.pem"
-alias GetHTT="curl -f -s -k -L"
-alias GetSSL="curl -f -s -k -L"
+alias GetHTT="curl -f -s -k -L"; alias GetSSL="curl -f -s -k -L";
 [ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 
@@ -76,7 +75,8 @@ Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
 Xong () { 	logger ">>> $(basename "$0") finished";rm -rf ${MTam};exit 0; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 ));Giay=$(( $((Dung - Chay)) %60 )); }
-
+CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; }
+NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 ReBoot ()
 {
 	logger ">>> $(basename "$0") restarting dnsmasq"
@@ -226,7 +226,7 @@ InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "======================================="
 InRa "   `date`"
-if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
+if CheckNet; then
 	InRa ">>> Checking for updates..."
 	GetSSL http://gg.gg/ab_ > $upTam;KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; Xong; fi
@@ -251,19 +251,19 @@ if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
 	InRa ">>>  Sed version: $vers. Size: $(Size "$fSed")";
 else
-	InRa "# NETWORK: DOWN | Please try again! "; Xong;
+	NetDown; Xong;
 fi
 #__________________________________________________________________________________________________
 if [ -f $pauseflag ] && { [ -f $hDung ] || [ -f $dDung ]; }; then
 	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
 	Bat
 fi
-if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
+if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	InRa "# [0|1|2|3|4]: $Level"
-	if [ ! -f ${Data}/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
+	if ! [ -f ${Data}/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
