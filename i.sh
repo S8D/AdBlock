@@ -63,7 +63,7 @@ alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; }
-Xong () { 	logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
+Xong () { logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
 NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
