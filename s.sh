@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180817a"
+PhienBan="20180817b"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";

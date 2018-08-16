@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180817a"
+PhienBan="20180817b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
