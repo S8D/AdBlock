@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816i"
+PhienBan="20180816j"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -13,6 +13,12 @@ Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please t
 if [ -f "${TMuc}/Location" ]; then
 	if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
 	if [ `whoami` != 'root' ]; then echo " Input pass and run again. Default : alpine"; G0='su'; $G0 root; fi; Pass2;
+fi
+if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
+	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
+	echo ">>> Update Source";apt-get update; printf '\n';
+	echo ">>> Installing Core Utilities";
+	for it in curl inetutils gawk coreutils coreutils-bin sed grep; do 	sudo apt-get install -y $it; done	
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
@@ -48,13 +54,6 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/j
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
 export PWD="${TMuc}"; cd "${TMuc}"
 #2__________________________________________________________________________________________________
-if Kiem Kiem curl || Kiem Kiem ping || Kiem Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
-	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
-	echo ">>> Update Source";apt-get update; printf '\n';
-	echo ">>> Installing Core Utilities";
-	for it in curl inetutils gawk coreutils coreutils-bin sed grep; do 	sudo apt-get install -y $it; done	
-fi
-#_____________________________________________________
 logger ">>> $(basename "$0") started"
 export ScFile="${Data}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"; alias GetSSL="curl -f -s -k -L"
