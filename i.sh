@@ -10,7 +10,7 @@ export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;};
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
-	echo " Input password. Default : alpine "; [ `whoami` = root ] || { su root "$0" "$@"; exit $?; };
+	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
