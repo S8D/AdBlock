@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816u"
+PhienBan="20180816v"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -194,13 +194,13 @@ InRa "|    AdBlock for iOS / Linux          |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
-InRa "|    Version: $PhienBan               |"
+#InRa "|    Version: $PhienBan               |"
 InRa "======================================="
 InRa "   `date`";
 if CheckNet; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
-	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; fi	
+	if [ $upd -eq 1 ]; then upd=0; InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; fi	
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')"; printf '\n';
 	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao=$(echo $dv | sed 's/.*\=//'); echo "$ThongBao";
