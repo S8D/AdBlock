@@ -1,6 +1,6 @@
 #!/bin/sh
 PhienBan="20180814a"
-export SetIP="0.1.2.3";export Level=4
+export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
 u06="http://gg.gg/u06_";u07="http://gg.gg/u07_";u08="http://gg.gg/u08_";u09="http://gg.gg/u09_";u10="http://gg.gg/u10_";
@@ -30,11 +30,12 @@ export SECURL=0
 export DISTRIB=0
 export ThuMay=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${TMuc}/Data;
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${Data};
 DL="${TMuc}/dl";
 if [ -f "${TMuc}/Location" ];then
 	mkdir -p ${DL};
 fi
+export Data="${TMuc}/Data";mkdir -p ${Data};
 export Lv0="${MTam}/lv0";export Lv5="${MTam}/Lv5";export Lv1="${MTam}/lv1";export Lv2="${MTam}/lv2";
 export Lv3="${MTam}/lv3";export Lv4="${MTam}/lv4";
 export fSed="${MTam}/Sed";export upTam="${MTam}/u.sh";
@@ -43,9 +44,9 @@ export hTam="${MTam}/h.tmp";export tam="${MTam}/t.tmp";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 export hT4m="${MTam}/ht.tmp";export dT4m="${MTam}/dt.tmp";
 export dChinh="${TMuc}/d";export dDung="${TMuc}/d.zzz";export dTam="${MTam}/d.tmp";
-export hLog="${TMuc}/Data/h.log";export pauseflag="${TMuc}/PAUSED";
-export denOn="${TMuc}/Data/den.on";export trangOn="${TMuc}/Data/trang.on";
-export denOff="${TMuc}/Data/den.off";export trangOff="${TMuc}/Data/trang.off";
+export hLog="${Data}/h.log";export pauseflag="${TMuc}/PAUSED";
+export denOn="${Data}/den.on";export trangOn="${Data}/trang.on";
+export denOff="${Data}/den.off";export trangOff="${Data}/trang.off";
 if [ ! -f $denOff ];then
 	echo -n "" > $denOff
 fi
@@ -64,10 +65,10 @@ if [ -z "$(which curl)" ]; then
 	echo ">>> ERROR: ABORTING"
 	exit 1
 fi
-export ScURL="${TMuc}/Data/cacert.pem"
+export ScURL="${Data}/cacert.pem"
 alias GetHTT="curl -f -s -k -L"
 alias GetSSL="curl -f -s -k -L"
-[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${TMuc}/Data --cacert $ScURL"
+[ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScURL"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ;	echo "$1" >> $hLog; }
@@ -135,34 +136,39 @@ Giup ()
 	Xong
 }
 
-CapNhat ()
+KiemTra ()
 {
-	InRa ">>> Checking for updates..."
-	if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
-		GetSSL ${Nha}/$(basename "$0") > $upTam;
-		if [ 0 -eq $? ]; then
-			MaCu=`md5sum $0 | cut -d' ' -f1`
-			MaMoi=`md5sum $upTam | cut -d' ' -f1`
-			if [ "$MaCu" != "$MaMoi" ]; then
-				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-				InRa ">>> Updating new version..."
-				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				if [ -f "${Data}/$BanCu.sh" ];then
-					mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
-					cp $0 ${Data}/$BanCu.sh;
-				fi
-				chmod 755 $upTam;mv $upTam $0
-				InRa ">>> $(basename "$0") updated to $vMoi "
-			else
-				InRa ">>> $(basename "$0") version: $PhienBan"
+	if [ 0 -eq $? ]; then
+		MaCu=`md5sum $0 | cut -d' ' -f1`
+		MaMoi=`md5sum $upTam | cut -d' ' -f1`
+		if [ "$MaCu" != "$MaMoi" ]; then
+			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+			InRa ">>> Updating new version..."
+			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+			if [ -f "${Data}/$BanCu.sh" ]; then
+				mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
+			chmod 755 $upTam;				
+			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+					DonRac; 
+				fi
+				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
+				mv $upTam ${aMuc}/$(basename "$0");
+			fi
+			InRa ">>> $(basename "$0") updated to $vMoi ";export upd=1;
 		else
-			InRa ">>> Update failed. Try again."
+			InRa ">>> $(basename "$0") version: $PhienBan";export upd=0;
 		fi
 	else
-		InRa "# NETWORK: DOWN | Please try again! ";
-	fi
-	Xong
+		InRa ">>> Update failed. Try again."
+fi
+}
+CapNhat () 
+{
+	InRa ">>> Checking for updates...";
+	if CheckNet; then GetSSL ${Nha}/$(basename "$0") > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #__________________________________________________________________________________________________
 while getopts "h?v0123fFdDpPqQrRsSoOuUb:w:i:-:" opt; do
@@ -222,24 +228,8 @@ InRa "======================================="
 InRa "   `date`"
 if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa ">>> Checking for updates..."
-	GetSSL http://gg.gg/ab_ > $upTam;
-	if [ 0 -eq $? ]; then
-		MaCu=`md5sum $0 | cut -d' ' -f1`
-		MaMoi=`md5sum $upTam | cut -d' ' -f1`
-		if [ "$MaCu" != "$MaMoi" ]; then
-			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-			InRa ">>> Updating new version..."
-			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-			if [ -f "${Data}/$BanCu.sh" ];then
-				mCu=$(echo "$MaCu" | cut -c1-5);	cp $0 ${Data}/$BanCu\_$mCu.sh;else
-				cp $0 ${Data}/$BanCu.sh;
-			fi
-			chmod 755 $upTam;mv $upTam $0
-			InRa ">>> $(basename "$0") updated to $vMoi "
-			InRa ">>> Please run sh $(basename "$0") again"
-			Xong;
-		fi
-	fi
+	GetSSL http://gg.gg/ab_ > $upTam;KiemTra;
+	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedX" $fSed`;SedX=$(echo $dv | sed 's/.*\=\=//');
 	dv=`grep -w -m 1 "Sed0" $fSed`;Sed0=$(echo $dv | sed 's/.*\=\=//');
@@ -274,9 +264,9 @@ if [ $ONLINE -eq 1 ] && ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
 	InRa "# [0|1|2|3|4]: $Level"
-	if [ ! -f ${TMuc}/Data/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
+	if [ ! -f ${Data}/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL https://curl.haxx.se/ca/cacert.pem > ${TMuc}/Data/cacert.pem 
+		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
 	fi
 #__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
