@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816r"
+PhienBan="20180816s"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -115,41 +115,39 @@ Giup ()
 	Xong
 }
 #4__________________________________________________________________________________________________
-CapNhat ()
+KiemTra ()
 {
-	InRa ">>> Checking for updates...";
-	if CheckNet; then
-		GetSSL gg.gg/i_up > $upTam;
-		if [ 0 -eq $? ]; then
-			MaCu=`md5sum $0 | cut -d' ' -f1`
-			MaMoi=`md5sum $upTam | cut -d' ' -f1`
-			if [ "$MaCu" != "$MaMoi" ]; then
-				dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-				InRa ">>> Updating new version..."
-				BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-				if [ -f "${Data}/$BanCu.sh" ]; then
-					mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
-					cp $0 ${Data}/i\_$BanCu.sh;
-				fi
-				chmod 755 $upTam;				
-				if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-					if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-						DonRac; 
-					fi
-					if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
-					mv $upTam ${aMuc}/$(basename "$0");
-				fi
-				InRa ">>> $(basename "$0") updated to $vMoi "
-			else
-				InRa ">>> $(basename "$0") version: $PhienBan"
+	if [ 0 -eq $? ]; then
+		MaCu=`md5sum $0 | cut -d' ' -f1`
+		MaMoi=`md5sum $upTam | cut -d' ' -f1`
+		if [ "$MaCu" != "$MaMoi" ]; then
+			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
+			InRa ">>> Updating new version..."
+			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
+			if [ -f "${Data}/$BanCu.sh" ]; then
+				mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
+			chmod 755 $upTam;				
+			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+					DonRac; 
+				fi
+				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
+				mv $upTam ${aMuc}/$(basename "$0");
+			fi
+			InRa ">>> $(basename "$0") updated to $vMoi "; upd=1
 		else
-			InRa ">>> Update failed. Try again."
+			InRa ">>> $(basename "$0") version: $PhienBan"; upd=0
 		fi
 	else
-		NetDown
-	fi
-	Xong
+		InRa ">>> Update failed. Try again."
+fi
+}
+CapNhat () 
+{
+	InRa ">>> Checking for updates...";
+	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
 while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
@@ -201,31 +199,8 @@ InRa "======================================="
 InRa "   `date`";
 if CheckNet; then
 	InRa "...Checking for updates..."
-	GetSSL gg.gg/i_sh > $upTam;
-	if [ 0 -eq $? ]; then
-		MaCu=`md5sum $0 | cut -d' ' -f1`
-		MaMoi=`md5sum $upTam | cut -d' ' -f1`
-		if [ "$MaCu" != "$MaMoi" ]; then
-			dv=`grep -w -m 1 "PhienBan" $upTam`; vMoi=$(echo $dv | sed 's/.*\=\"//; s/\"$//');
-			InRa ">>> Updating new version..."
-			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
-			if [ -f "${Data}/$BanCu.sh" ]; then
-				mCu=$(echo "$MaCu" | cut -c1-5); cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
-				cp $0 ${Data}/i\_$BanCu.sh;
-			fi
-			chmod 755 $upTam;
-			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-					DonRac; 
-				fi
-				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
-				mv $upTam ${aMuc}/$(basename "$0");
-			fi
-			InRa ">>> $(basename "$0") updated to $vMoi ";
-			InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo;
-			Xong
-		fi
-	fi
+	GetSSL gg.gg/i_sh > $upTam; KiemTra;
+	if [ upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; fi	
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')"; printf '\n';
 	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao=$(echo $dv | sed 's/.*\=//'); echo "$ThongBao";
