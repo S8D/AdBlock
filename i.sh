@@ -11,7 +11,8 @@ Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;}
 Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi }
 if [ -f "${TMuc}/Location" ]; then
-	if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
+	#if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
+	echo " Running Linux"; else
 	if [ `whoami` != 'root' ]; then echo " Input pass and run again. Default : alpine"; G0='su'; $G0 root; fi; Pass2;
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
