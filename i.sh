@@ -195,7 +195,6 @@ InRa "|    AdBlock for iOS / Linux          |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
-#InRa "|    Version: $PhienBan               |"
 InRa "======================================="
 InRa "   `date`";
 if CheckNet; then
@@ -232,7 +231,6 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "# Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
-	#InRa "   $(basename "$0") version: $PhienBan";
 	InRa "   Sed  version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
