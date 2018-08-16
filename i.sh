@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816w"
+PhienBan="20180816x"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -10,7 +10,7 @@ export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;};
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
-	echo " Input pass and run again. Default : alpine "; [ `whoami` = root ] || { su root "$0" "$@"; exit $?; };
+	echo " Input password. Default : alpine "; [ `whoami` = root ] || { su root "$0" "$@"; exit $?; };
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
