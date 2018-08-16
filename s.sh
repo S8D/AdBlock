@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180814a"
+PhienBan="20180816a"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -30,7 +30,7 @@ export SECURL=0
 export DISTRIB=0
 export ThuMay=$(date +"%u")
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export MTam="${TMuc}/tmp";mkdir -p ${MTam};mkdir -p ${Data};
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 DL="${TMuc}/dl";
 if [ -f "${TMuc}/Location" ];then
 	mkdir -p ${DL};
@@ -224,6 +224,7 @@ InRa "|    AdBlock for DD-WRT/LiNux         |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
+InRa "|    Version: $PhienBan                "
 InRa "======================================="
 InRa "   `date`"
 if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
@@ -249,7 +250,6 @@ if ping -q -c 1 -W 1 ip.gg.gg >/dev/null; then
 	dv=`grep -w -m 1 "Final" $fSed`;alias Final="$(echo $dv | sed 's/.*\=\=//')";
 	dv=`grep -w -m 1 "Cuoi" $fSed`;alias Cuoi="$(echo $dv | sed 's/.*\=\=//')";
 	dv=`grep -w -m 1 "SedBW" $fSed`;alias SedBW="$(echo $dv | sed 's/.*\=\=//')";
-	InRa "   .sh version: $PhienBan"
 	InRa "   Sed version: $vers. Size: $(Size "$fSed")";
 else
 	InRa "# NETWORK: DOWN | Please try again! "; Xong;
