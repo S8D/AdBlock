@@ -1,6 +1,6 @@
 #!/bin/sh
-Version=20180816a
-ThongBao=### Đã fix lỗi mất file, lỗi logger. Nếu có bất cứ lỗi gì khác hoặc bộ lọc có vấn đề hãy liên hệ mình nhé
+Version=20180816b
+ThongBao=### Nếu có lỗi phát sinh hay còn hiện ads thì pm mình nhé
 ChangeLog=### fb.me/LucThanhPhu
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
