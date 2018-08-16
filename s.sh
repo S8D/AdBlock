@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816c"
+PhienBan="20180816d"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -149,11 +149,9 @@ KiemTra ()
 				mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
-			chmod 755 $upTam;				
+			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-					DonRac; 
-				fi
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then DonRac; fi
 				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
 				mv $upTam ${aMuc}/$(basename "$0");
 			fi
@@ -165,7 +163,7 @@ KiemTra ()
 		InRa ">>> Update failed. Try again."
 fi
 }
-CapNhat () 
+CapNhat ()
 {
 	InRa ">>> Checking for updates...";
 	if CheckNet; then GetSSL ${Nha}/$(basename "$0") > $upTam; KiemTra; else NetDown; fi; Xong
@@ -265,7 +263,7 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "# [0|1|2|3|4]: $Level"
 	if ! [ -f ${Data}/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
 		InRa "> Downloading cURL certificates"
-		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem 
+		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem
 	fi
 #__________________________________________________________________________________________________
 	InRa "> Downloading Black/WhiteList Online"
@@ -420,7 +418,7 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 		GetSSL ${u100} > $tam;InRa "# Size of ${u100} is: $(Size "$tam")";cat $tam >> $Lv4;DemGio
 		InRa "# Downloaded [4]: $(Size "$Lv4") in $Phut:$Giay minutes";InRa "> Compacting [4] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv4 | Cap4 > $tam;DemGio
-		InRa ">> Compacted [4]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;	
+		InRa ">> Compacted [4]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
 		if [ -f "${TMuc}/Location" ];then
 			cp $Lv4 ${DL}/_Lv4.txt; cp $tam ${DL}/Lv4.txt;
 		fi

@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816y"
+PhienBan="20180816z"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -40,7 +40,7 @@ if [ -f "${TMuc}/Location" ]; then
 	if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 		if ! [ ${TMuc} -ef ${aMuc} ]; then cp $0 ${aMuc}/$(basename "$0"); fi
 		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cp $0 ${iMuc}/$(basename "$0"); fi; fi
-		DonRac; 
+		DonRac;
 	fi
 fi
 
@@ -127,11 +127,9 @@ KiemTra ()
 				mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
-			chmod 755 $upTam;				
+			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-					DonRac; 
-				fi
+				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then DonRac; fi
 				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
 				mv $upTam ${aMuc}/$(basename "$0");
 			fi
@@ -143,7 +141,7 @@ KiemTra ()
 		InRa ">>> Update failed. Try again."
 fi
 }
-CapNhat () 
+CapNhat ()
 {
 	InRa ">>> Checking for updates...";
 	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
@@ -197,7 +195,7 @@ InRa "   `date`";
 if CheckNet; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
-	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; Xong; fi	
+	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')"; printf '\n';
 	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao=$(echo $dv | sed 's/.*\=//'); echo "$ThongBao";
