@@ -8,8 +8,8 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 Kiem() { ! type "$1" > /dev/null; };
-DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;}
-Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi }
+DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;};
+Pass2 () { if [ `whoami` != 'root' ]; then echo " Password incorrect!!! Please try again "; exit; fi };
 if [ -f "${TMuc}/Location" ]; then
 	#if [ `whoami` != 'root' ]; then echo " Input Password Linux"; G0='sudo'; $G0 -i; fi; Pass2; else
 	echo " Running Linux"; else
