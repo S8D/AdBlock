@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816d"
+PhienBan="20180816e"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -274,25 +274,10 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	GetSSL ${u00} | SedBW > $dTam;InRa "# Size of Domains : $(Size "$tam")";cat $dTam | sed -r 's|.*\=\/||; s|\/.*$||' >> $twl
 #__________________________________________________________________________________________________
 	InRa ">> Unlocking [0]";Chay=`date +%s`
-	GetSSL ${u01} > $tam;InRa "# Size of ${u01} is: $(Size "$tam")";cat $tam > $Lv0;
-	GetSSL ${u02} > $tam;InRa "# Size of ${u02} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $tam;InRa "# Size of ${u03} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u04} > $tam;InRa "# Size of ${u04} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u05} > $tam;InRa "# Size of ${u05} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u06} > $tam;InRa "# Size of ${u06} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u07} > $tam;InRa "# Size of ${u07} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u08} > $tam;InRa "# Size of ${u08} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u09} > $tam;InRa "# Size of ${u09} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u10} > $tam;InRa "# Size of ${u10} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u11} > $tam;InRa "# Size of ${u11} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u12} > $tam;InRa "# Size of ${u12} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u13} > $tam;InRa "# Size of ${u13} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u14} > $tam;InRa "# Size of ${u14} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u15} > $tam;InRa "# Size of ${u15} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u16} > $tam;InRa "# Size of ${u16} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u17} > $tam;InRa "# Size of ${u17} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u18} > $tam;InRa "# Size of ${u18} is: $(Size "$tam")";cat $tam >> $Lv0;
-	GetSSL ${u19} > $tam;InRa "# Size of ${u19} is: $(Size "$tam")";cat $tam >> $Lv0;DemGio
+	GetSSL -d mimetype=plaintext -d hostformat=dnsmasq ${u03} > $tam;InRa "# Size of ${u03} is: $(Size "$tam")";cat $tam > $Lv0;
+	for it in ${u01} ${u02} ${u04} ${u05} ${u06} ${u07} ${u08} ${u09} ${u10} ${u11} ${u12} ${u13} ${u14} ${u15} ${u16} ${u17} ${u18} ${u19} ; do
+		GetSSL $it > $tam;InRa "# Size of ${it} is: $(Size "$tam")";cat $tam >> $Lv0;
+	done;DemGio
 	InRa "# Downloaded [0]: $(Size "$Lv0") in $Phut:$Giay minutes";InRa "> Compacting [0] ....";Chay=`date +%s`
 	LC_ALL=C cat $Lv0 | Cap0 > $tam;DemGio
 	InRa ">> Compacted [0]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam > $hTam;
@@ -302,15 +287,9 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 #__________________________________________________________________________________________________
 	InRa ">> Unlocking [0.5]";Chay=`date +%s`
 	GetSSL ${u90} > $tam;InRa "# Size of ${u90} is: $(Size "$tam")";cat $tam > $Lv5;
-	GetSSL ${u91} > $tam;InRa "# Size of ${u91} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u92} > $tam;InRa "# Size of ${u92} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u93} > $tam;InRa "# Size of ${u93} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u94} > $tam;InRa "# Size of ${u94} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u95} > $tam;InRa "# Size of ${u95} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u96} > $tam;InRa "# Size of ${u96} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u97} > $tam;InRa "# Size of ${u97} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u98} > $tam;InRa "# Size of ${u98} is: $(Size "$tam")";cat $tam >> $Lv5;
-	GetSSL ${u99} > $tam;InRa "# Size of ${u99} is: $(Size "$tam")";cat $tam >> $Lv5;DemGio
+	for it in ${u91} ${u92} ${u93} ${u94} ${u95} ${u96} ${u97} ${u98} ${u99} ; do
+		GetSSL $it > $tam;InRa "# Size of ${it} is: $(Size "$tam")";cat $tam >> $Lv5;
+	done;DemGio
 	InRa "# Downloaded [0.5]: $(Size "$Lv5") in $Phut:$Giay minutes";InRa "> Compacting [0.5] ....";Chay=`date +%s`
 	LC_ALL=C cat $Lv5 | Cap5 > $tam;DemGio
 	InRa ">> Compacted [0.5]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
@@ -321,34 +300,9 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	if [ $Level -ge 1 ]; then
 		InRa ">> Unlocking [1]";Chay=`date +%s`
 		GetSSL ${u20} > $tam;InRa "# Size of ${u20} is: $(Size "$tam")";cat $tam > $Lv1;
-		GetSSL ${u21} > $tam;InRa "# Size of ${u21} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u22} > $tam;InRa "# Size of ${u22} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u23} > $tam;InRa "# Size of ${u23} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u24} > $tam;InRa "# Size of ${u24} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u25} > $tam;InRa "# Size of ${u25} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u26} > $tam;InRa "# Size of ${u26} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u27} > $tam;InRa "# Size of ${u27} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u28} > $tam;InRa "# Size of ${u28} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u29} > $tam;InRa "# Size of ${u29} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u30} > $tam;InRa "# Size of ${u30} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u31} > $tam;InRa "# Size of ${u31} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u32} > $tam;InRa "# Size of ${u32} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u33} > $tam;InRa "# Size of ${u33} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u34} > $tam;InRa "# Size of ${u34} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u35} > $tam;InRa "# Size of ${u35} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u36} > $tam;InRa "# Size of ${u36} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u37} > $tam;InRa "# Size of ${u37} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u38} > $tam;InRa "# Size of ${u38} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u39} > $tam;InRa "# Size of ${u39} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u40} > $tam;InRa "# Size of ${u40} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u41} > $tam;InRa "# Size of ${u41} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u42} > $tam;InRa "# Size of ${u42} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u43} > $tam;InRa "# Size of ${u43} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u44} > $tam;InRa "# Size of ${u44} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u45} > $tam;InRa "# Size of ${u45} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u46} > $tam;InRa "# Size of ${u46} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u47} > $tam;InRa "# Size of ${u47} is: $(Size "$tam")";cat $tam >> $Lv1;
-		GetSSL ${u48} > $tam;InRa "# Size of ${u48} is: $(Size "$tam")";cat $tam >> $Lv1;DemGio
+		for it in ${u21} ${u22} ${u23} ${u24} ${u25} ${u26} ${u27} ${u28} ${u29} ${u30} ${u31} ${u32} ${u33} ${u34} ${u35} ${u36} ${u37} ${u38} ${u39} ${u40} ${u41} ${u42} ${u43} ${u44} ${u45} ${u46} ${u47} ${u48} ; do
+			GetSSL $it > $tam;InRa "# Size of ${it} is: $(Size "$tam")";cat $tam >> $Lv1;
+		done;DemGio
 		InRa "# Downloaded [1]: $(Size "$Lv1") in $Phut:$Giay minutes";InRa "> Compacting [1] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv1 | Cap1 > $tam;DemGio
 		InRa ">> Compacted [1]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
@@ -359,35 +313,11 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 #__________________________________________________________________________________________________
 	if [ $Level -ge 2 ]; then
 		InRa ">> Unlocking [2]";Chay=`date +%s`
-		GetSSL ${u49} > $tam;InRa "# Size of ${u49} is: $(Size "$tam")";cat $tam > $Lv2;
-		GetSSL ${u50} > $tam;InRa "# Size of ${u50} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u51} > $tam;InRa "# Size of ${u51} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u52} > $tam;InRa "# Size of ${u52} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u53} > $tam;InRa "# Size of ${u53} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u54} > $tam;InRa "# Size of ${u54} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u55} > $tam;InRa "# Size of ${u55} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetHTT ${u56} > $tam;InRa "# Size of ${u56} is: $(Size "$tam")";cat $tam >> $Lv2;
+		GetHTT ${u56} > $tam;InRa "# Size of ${u56} is: $(Size "$tam")";cat $tam > $Lv2;
 		GetHTT ${u57} > $tam;InRa "# Size of ${u57} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u58} > $tam;InRa "# Size of ${u58} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u59} > $tam;InRa "# Size of ${u59} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u60} > $tam;InRa "# Size of ${u60} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u61} > $tam;InRa "# Size of ${u61} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u62} > $tam;InRa "# Size of ${u62} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u63} > $tam;InRa "# Size of ${u63} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u64} > $tam;InRa "# Size of ${u64} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u65} > $tam;InRa "# Size of ${u65} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u66} > $tam;InRa "# Size of ${u66} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u67} > $tam;InRa "# Size of ${u67} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u68} > $tam;InRa "# Size of ${u68} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u69} > $tam;InRa "# Size of ${u69} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u70} > $tam;InRa "# Size of ${u70} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u71} > $tam;InRa "# Size of ${u71} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u72} > $tam;InRa "# Size of ${u72} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u73} > $tam;InRa "# Size of ${u73} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u74} > $tam;InRa "# Size of ${u74} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u75} > $tam;InRa "# Size of ${u75} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u76} > $tam;InRa "# Size of ${u76} is: $(Size "$tam")";cat $tam >> $Lv2;
-		GetSSL ${u77} > $tam;InRa "# Size of ${u77} is: $(Size "$tam")";cat $tam >> $Lv2;DemGio
+		for it in ${u49} ${u50} ${u51} ${u52} ${u53} ${u54} ${u55} ${u58} ${u59} ${u60} ${u61} ${u62} ${u63} ${u64} ${u65} ${u66} ${u67} ${u68} ${u69} ${u70} ${u71} ${u72} ${u73} ${u74} ${u75} ${u76} ${u77} ; do
+			GetSSL $it > $tam;InRa "# Size of ${it} is: $(Size "$tam")";cat $tam >> $Lv2;
+		done; DemGio
 		InRa "# Downloaded [2]: $(Size "$Lv2") in $Phut:$Giay minutes";InRa "> Compacting [2] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv2 | Cap2 > $tam;DemGio
 		InRa ">> Compacted [2]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
@@ -398,12 +328,10 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 #__________________________________________________________________________________________________
 	if [ $Level -ge 3 ]; then
 		InRa ">> Unlocking [3]";Chay=`date +%s`
-		GetSSL ${u78} > $tam;InRa "# Size of ${u78} is: $(Size "$tam")";cat $tam > $Lv3;
-		GetSSL ${u79} > $tam;InRa "# Size of ${u79} is: $(Size "$tam")";cat $tam >> $Lv3;
-		GetMHK ${u80} > $tam;InRa "# Size of mahakala.is/hosts is: $(Size "$tam")";cat $tam >> $Lv3;
-		GetSSL ${u81} > $tam;InRa "# Size of ${u81} is: $(Size "$tam")";cat $tam >> $Lv3;
-		GetSSL ${u82} > $tam;InRa "# Size of ${u82} is: $(Size "$tam")";cat $tam >> $Lv3;
-		GetSSL ${u83} > $tam;InRa "# Size of ${u83} is: $(Size "$tam")";cat $tam >> $Lv3;DemGio
+		GetMHK ${u80} > $tam;InRa "# Size of mahakala.is/hosts is: $(Size "$tam")";cat $tam > $Lv3;
+		for it in ${u78} ${u79} ${u81} ${u82} ${u83} ; do
+			GetSSL $it > $tam;InRa "# Size of ${it} is: $(Size "$tam")";cat $tam >> $Lv3;
+		done;DemGio
 		InRa "# Downloaded [3]: $(Size "$Lv3") in $Phut:$Giay minutes";InRa "> Compacting [3] ....";Chay=`date +%s`
 		LC_ALL=C cat $Lv3 | Cap3 > $tam;DemGio
 		InRa ">> Compacted [3]: $(Size "$tam") in $Phut:$Giay minutes";cat $tam >> $hTam;
