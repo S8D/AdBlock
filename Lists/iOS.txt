@@ -1,4 +1,4 @@
-#hVersion=20180815b
+#hVersion=20180816a
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -124,7 +124,6 @@ telemetry.appex.bing.net
 inference.location.live.net
 cdn.onenote.net
 c.go-mpulse.net
-hosts-file.net
 apkquery.ksmobile.net
 ws.ksmobile.net
 ups.ksmobile.net
