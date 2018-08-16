@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180816m"
+PhienBan="20180816n"
 export SetIP="0.1.2.3"; fName="hosts";
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -17,8 +17,8 @@ fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia "; printf '\n';
 	echo ">>> Update Source";apt-get update; printf '\n';
-	echo ">>> Installing Core Utilities";
-	for it in coreutils coreutils-bin sed grep curl inetutils gawk; do apt-get install -y ${it}; done	
+	echo ">>> Installing Core Utilities. Press Y to Install";
+	for it in coreutils coreutils-bin sed grep curl inetutils gawk; do apt-get install ${it}; done	
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
