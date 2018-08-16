@@ -198,7 +198,7 @@ InRa "|    Version: $PhienBan               |"
 InRa "======================================="
 InRa "   `date`";
 if CheckNet; then
-	InRa "...Checking for updates..."
+	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; fi	
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
