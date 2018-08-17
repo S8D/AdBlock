@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180817d"
+PhienBan="20180817e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -8,23 +8,20 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
+export MTam="${TMuc}/tmp";mkdir -p ${MTam};
+alias GetSSL="curl -f -s -k -L";
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
-if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
-	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
-	NhanFim; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
-	if Kiem curl; then printf '\n'; echo "Press Y to Install cURL"; NhanFim; apt-get install curl; fi
-	if Kiem ping || Kiem logger; then printf '\n'; echo "Press Y to Install ping+logger"; NhanFim; apt-get install inetutils; fi
-	if Kiem awk; then printf '\n'; echo "Press Y to Install awk"; NhanFim; apt-get install gawk; fi
-	if Kiem sed; then printf '\n'; echo "Press Y to Install sed"; NhanFim; apt-get install sed; fi
-	if Kiem grep; then printf '\n'; echo "Press Y to Install grep"; NhanFim; apt-get install grep; fi
-fi
+if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
+if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
+if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
+if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
+if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
-export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
@@ -59,7 +56,7 @@ export PWD="${TMuc}"; cd "${TMuc}"
 #2__________________________________________________________________________________________________
 logger ">>> $(basename "$0") started"
 export ScFile="${Data}/cacert.pem"
-alias GetHTT="curl -f -s -k -L"; alias GetSSL="curl -f -s -k -L"
+alias GetHTT="curl -f -s -k -L";
 [ $SECURL -eq 1 ] && unalias GetSSL && alias GetSSL="curl -f -s --capath ${Data} --cacert $ScFile"
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
