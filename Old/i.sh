@@ -18,11 +18,6 @@ if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dp
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
-#gg.gg/_cu
-#gg.gg/_in
-#gg.gg/_ga
-#gg.gg/_se
-#gg.gg/_gr
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
 	NhanFim; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
