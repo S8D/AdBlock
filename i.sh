@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180817b"
+PhienBan="20180817c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -9,18 +9,19 @@ export SECURL=0
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 Kiem() { ! type "$1" > /dev/null; };
-DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam} ;};
+DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
+NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
 if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
 	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
-	read -n 1 -s -r -p "Press any key to continue"; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
-	if Kiem curl; then printf '\n'; echo "Press Y to Install cURL"; read -n 1 -s -r -p "Press any key to continue"; apt-get install curl; fi
-	if Kiem ping || Kiem logger; then printf '\n'; echo "Press Y to Install ping+logger"; read -n 1 -s -r -p "Press any key to continue"; apt-get install inetutils; fi
-	if Kiem awk; then printf '\n'; echo "Press Y to Install awk"; read -n 1 -s -r -p "Press any key to continue"; apt-get install gawk; fi
-	if Kiem sed; then printf '\n'; echo "Press Y to Install sed"; read -n 1 -s -r -p "Press any key to continue"; apt-get install sed; fi
-	if Kiem grep; then printf '\n'; echo "Press Y to Install grep"; read -n 1 -s -r -p "Press any key to continue"; apt-get install grep; fi
+	NhanFim; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
+	if Kiem curl; then printf '\n'; echo "Press Y to Install cURL"; NhanFim; apt-get install curl; fi
+	if Kiem ping || Kiem logger; then printf '\n'; echo "Press Y to Install ping+logger"; NhanFim; apt-get install inetutils; fi
+	if Kiem awk; then printf '\n'; echo "Press Y to Install awk"; NhanFim; apt-get install gawk; fi
+	if Kiem sed; then printf '\n'; echo "Press Y to Install sed"; NhanFim; apt-get install sed; fi
+	if Kiem grep; then printf '\n'; echo "Press Y to Install grep"; NhanFim; apt-get install grep; fi
 fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
