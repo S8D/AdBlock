@@ -13,7 +13,7 @@ NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
-OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; echo "Your iOS is $OSbuild";
+OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
 if [ $iOS -lt 10 ]; then
 	GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0;
 fi
