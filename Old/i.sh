@@ -13,6 +13,12 @@ NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
+OSver="10 11 12"; OSbuild=$(sw_vers -productVersion); dam=${OSbuild%%.*}
+for stuff in $OSver; do
+	if [ "$stuff" == "$dam" ]; then echo "iOS version: $dam"; else
+		echo "iOS $dam do not support yet"; exit
+	fi
+done
 if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
