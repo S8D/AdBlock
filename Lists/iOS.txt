@@ -1,4 +1,4 @@
-#hVersion=20180818a
+#hVersion=20180818b
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -98,7 +98,7 @@ ad.doubleclick.net
 static.doubleclick.net
 sdk.open.talk.getui.net
 uniad.phimmoi.net
-phimmoi.net
+ads.phimnhanh.com
 cachchoi.net
 mini5.opera-mini.net
 global-max-1.opera-mini.net
