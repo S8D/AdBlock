@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180818c"
+PhienBan="20180819a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -18,6 +18,7 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 fi
 OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
 if [ $iOS -lt 10 ]; then
+	if Kiem curl; then GetSSL gg.gg/c_u > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 	GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0;
 fi
 if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
@@ -85,7 +86,7 @@ Tat ()
 	[ -f $hChinh ] && mv $hChinh $hDung
 	if [ -f "${Data}/Hosts" ]; then
 		cp ${Data}/Hosts $hChinh; else
-		GetSSL ${Nha}/Lists/hosts > ${Data}/Hosts && cp ${Data}/Hosts $hChinh;
+		GetSSL ${Nha}/Lists/Hosts.txt > ${Data}/Hosts.txt && cp ${Data}/Hosts $hChinh;
 	fi
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") -r or --resume to resume protection."

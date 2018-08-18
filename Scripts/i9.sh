@@ -1,6 +1,6 @@
 #!/bin/sh
 # iOS 9
-PhienBan="20180818e"
+PhienBan="20180819a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -19,6 +19,7 @@ if [ $iOS -ge 10 ]; then
 	GetSSL gg.gg/iB_ > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0;
 fi
 #2______________________________________________________________________________________
+if Kiem curl; then GetSSL gg.gg/c_u > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
@@ -79,7 +80,7 @@ Tat ()
 	[ -f $hChinh ] && mv $hChinh $hDung
 	if [ -f "${Data}/Hosts" ]; then
 		cp ${Data}/Hosts $hChinh; else
-		GetSSL ${Nha}/Lists/hosts > ${Data}/Hosts && cp ${Data}/Hosts $hChinh;
+		GetSSL ${Nha}/Lists/Hosts.txt > ${Data}/Hosts.txt && cp ${Data}/Hosts $hChinh;
 	fi
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") -r or --resume to resume protection."
