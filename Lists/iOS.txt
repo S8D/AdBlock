@@ -1,4 +1,4 @@
-#hVersion=20180818c
+#hVersion=20180818d
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -204,6 +204,9 @@ cdn.polyfill.io
 wurfl.io
 sis.jpush.io
 api.branch.io
+build-cdn.liftoff.io
+cdn.liftoff.io
+haggler-flurry002-eu-c-ec2.liftoff.io
 haggler-doubleclick068-ap-ne1-ec2.liftoff.io
 haggler-doubleclick020-ap-ne1-ec2.liftoff.io
 cdn.onthe.io
@@ -780,6 +783,7 @@ ad.turn.com
 presentation-hkg1.turn.com
 phimsexporn.com
 track.magictavern.com
+fls-fe.amazon.com
 analytics.valuepotion.com
 logger-06.vty.dailymotion.com
 dmxleo.dailymotion.com
@@ -915,6 +919,7 @@ aax-us-east.amazon-adsystem.com
 mads.amazon-adsystem.com
 s.amazon-adsystem.com
 aax-fe-sin.amazon-adsystem.com
+aax-fe.amazon-adsystem.com
 c.amazon-adsystem.com
 z-na.amazon-adsystem.com
 heodem.com
@@ -1016,6 +1021,7 @@ oc.umeng.com
 sec.umeng.com
 spankbang.com
 s.yimg.com
+i.ytimg.com
 i9.ytimg.com
 i1.ytimg.com
 script.crazyegg.com
@@ -1116,6 +1122,7 @@ mobilesystemservice.com
 by.uservoice.com
 display.ugc.bazaarvoice.com
 s.youtube.com
+api.cercube.com
 stats.adobe.com
 geo2.adobe.com
 mon.toutiaocloud.com
