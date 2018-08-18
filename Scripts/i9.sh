@@ -188,7 +188,7 @@ echo "|    ${Nha}    |"
 echo "|    Author: Manish Parashar          |"
 echo "|    Editor: Darias                   |"
 echo "|    Status: Beta                     |"
-InRa "|    iOS version: $OSbuild                 |"
+echo "|    iOS version: $OSbuild                 |"
 echo "======================================="
 echo "   `date`";
 if CheckNet; then
