@@ -1,4 +1,4 @@
-#hVersion=20180818b
+#hVersion=20180818c
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -83,6 +83,7 @@ vast.streamrail.net
 app.wpsmail.net
 libs.lavanetwork.net
 pub.lavanetwork.net
+delivery1.lavanetwork.net
 accounts.doubleclick.net
 2542116.fls.doubleclick.net
 partnerad.l.doubleclick.net
@@ -98,7 +99,6 @@ ad.doubleclick.net
 static.doubleclick.net
 sdk.open.talk.getui.net
 uniad.phimmoi.net
-ads.phimnhanh.com
 cachchoi.net
 mini5.opera-mini.net
 global-max-1.opera-mini.net
@@ -391,6 +391,7 @@ eadsrv.com
 go.oclasrv.com
 go.pub2srv.com
 ads.aerserv.com
+n176adserv.com
 www.vjav.com
 vjav.com
 push.meitu.com
@@ -985,6 +986,7 @@ tags.bluekai.com
 keonhacai.com
 sdk.open.talk.gepush.com
 tophinh.com
+ads.phimnhanh.com
 sb.scorecardresearch.com
 b.scorecardresearch.com
 pl.ventunotech.com
