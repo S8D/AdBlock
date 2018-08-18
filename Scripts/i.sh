@@ -1,5 +1,6 @@
 #!/bin/sh
-PhienBan="20180817i"
+# iOS 9
+PhienBan="20180818a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -15,22 +16,12 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 fi
 OSver="10 11 12"; OSbuild=$(sw_vers -productVersion); dam=${OSbuild%%.*}
 for stuff in $OSver; do
-	if [ "$stuff" != "$dam" ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
+	if [ "$stuff" == "$dam" ]; then GetSSL gg.gg/i_sh > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 done
 if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
-if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
-if Kiem curl || Kiem ping || Kiem logger || Kiem awk || Kiem sed || Kiem grep; then
-	echo " Please add source https://electrarepo64.coolstar.org to Cydia ";
-	NhanFim; printf '\n'; echo ">>> Update Source";	apt-get update; printf '\n';
-	if Kiem curl; then printf '\n'; apt-get -y install curl; fi
-	if Kiem ping || Kiem logger; then printf '\n'; apt-get -y install inetutils; fi
-	if Kiem awk; then printf '\n'; apt-get -y install gawk; fi
-	if Kiem sed; then printf '\n'; apt-get -y install sed; fi
-	if Kiem grep; then printf '\n'; apt-get -y install grep; fi
-fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
@@ -88,7 +79,7 @@ fi
 }
 #5__________________________________________________________________________________________________
 InRa "======================================="
-InRa "|    AdBlock for iOS / Linux          |"
+InRa "|    AdBlock for iOS <=9              |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
