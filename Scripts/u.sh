@@ -1,3 +1,4 @@
+#!/bin/sh
 # UnJailBreak iOS
 PhienBan="20180814a"
 Nha="https://s8d.github.io/AdBlock"
