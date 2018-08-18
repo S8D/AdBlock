@@ -1,4 +1,4 @@
-#hVersion=20180816a
+#hVersion=20180818a
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -15,6 +15,7 @@ a.teads.tv
 phimdem.tv
 heodam.tv
 phimsexonline.tv
+cdn1.blueseed.tv
 jav.guru
 mc.yandex.ru
 mail.ru
@@ -96,6 +97,7 @@ googleads4.g.doubleclick.net
 ad.doubleclick.net
 static.doubleclick.net
 sdk.open.talk.getui.net
+uniad.phimmoi.net
 phimmoi.net
 cachchoi.net
 mini5.opera-mini.net
@@ -232,6 +234,7 @@ violet.vn
 apinas.nct.vn
 stc.nct.vn
 au.ants.vn
+d.ants.vn
 a.ants.vn
 ants.vn
 zplayer.trk.zapps.vn
@@ -261,6 +264,7 @@ res-zalo.zadn.vn
 log.sdk.zadn.vn
 zalo-ads-td.zadn.vn
 adtima-media-td.zadn.vn
+delivery.m.ambientplatform.vn
 echip.com.vn
 dantri.com.vn
 adver.24h.com.vn
@@ -287,6 +291,8 @@ a20.cnnd.vn
 log.vietnamnetad.vn
 tracking.vietnamnetad.vn
 img.vietnamnetad.vn
+zone.uniad.vn
+uniad.vn
 myeva.vn
 thethaovanhoa.vn
 static.adtima.vn
@@ -328,12 +334,11 @@ eastwind.lau4.uae.uc.cn
 sina.cn
 g.s.360.cn
 data.flvrrz.cpm
-cdn-f.adsmoloco.com
-tr-asia.adsmoloco.com
 phimyz.com
 avidolz.com
 static.subiz.com
 as.innity.com
+avn.innity.com
 avd.innity.com
 ads.flurry.com
 proton.flurry.com
@@ -408,13 +413,14 @@ moradu.com
 debadu.com
 iphonefaq.us.intellitxt.com
 k.intellitxt.com
+www.sublimetext.com
 cdn.appnext.com
 global.appnext.com
 t.dtscout.com
 ocsp.usertrust.com
 cdp1.public-trust.com
-app.adjust.com
 view.adjust.com
+app.adjust.com
 live.chartboost.com
 www.adultblogtoplist.com
 www.msftconnecttest.com
@@ -680,6 +686,7 @@ pingma.qq.com
 dldir1.qq.com
 dlied1.qq.com
 phimsexhq.com
+license.sublimehq.com
 d.moceanwp.com
 stats.wp.com
 pixel.wp.com
@@ -717,6 +724,8 @@ www.k8wap.com
 restapi.amap.com
 abroad.apilocate.amap.com
 www.vidoevo.com
+imgg-cdn.steepto.com
+cdn.steepto.com
 app-ab19.marketo.com
 client.midosoo.com
 analytics.query.yahoo.com
@@ -739,6 +748,8 @@ bidder.criteo.com
 geoip.nekudo.com
 hdjs.hiido.com
 mlog.hiido.com
+cdn-f.adsmoloco.com
+tr-asia.adsmoloco.com
 api.weibo.com
 mon.toutiao.com
 dm.toutiao.com
@@ -871,6 +882,8 @@ ced-ns.sascdn.com
 ced.sascdn.com
 tags.tiqcdn.com
 s.clickiocdn.com
+client.newsuncdn.com
+uniad.newsuncdn.com
 nbsdk-baichuan.alicdn.com
 g.alicdn.com
 snap.licdn.com
@@ -892,6 +905,7 @@ dispatcher.c360dn.com
 n-cdn.areyouahuman.com
 assets.adobedtm.com
 www.jotform.com
+tag.gammaplatform.com
 ads.servebom.com
 v2.zopim.com
 khuphim.com
@@ -979,6 +993,9 @@ web.ventunotech.com
 api.push.go2reach.com
 truyenhot24h.com
 img1.blogblog.com
+d.blueserving.com
+lab.blueserving.com
+blueserving.com
 sdk.beeketing.com
 adspaces.ero-advertising.com
 sdk.adtiming.com
@@ -1291,6 +1308,7 @@ ocsp.int-x3.letsencrypt.org
 cdn.ampproject.org
 open.thumbshots.org
 direct.adsrvr.org
+match.adsrvr.org
 sinfb.adsrvr.org
 us.ynuf.aliapp.org
 hshh.org
@@ -1317,5 +1335,3 @@ stats.t-online.de
 p.t-online.de
 t-online.de
 premium-offers.space
-www.sublimetext.com
-license.sublimehq.com
