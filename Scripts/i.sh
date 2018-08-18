@@ -18,6 +18,8 @@ OSver="10 11 12"; OSbuild=$(sw_vers -productVersion); dam=${OSbuild%%.*}
 for stuff in $OSver; do
 	if [ "$stuff" == "$dam" ]; then GetSSL gg.gg/i_sh > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 done
+echo "Rebuilding for iOS 9"; exit 0
+#______________________________________________________________________________________
 if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
