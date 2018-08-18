@@ -1,6 +1,6 @@
 #!/bin/sh
 # iOS 9
-PhienBan="20180818d"
+PhienBan="20180818e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -183,11 +183,12 @@ done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
 echo "======================================="
-echo "|    AdBlock for iOS <=9              |"
+echo "|    AdBlock for iOS 9                |"
 echo "|    ${Nha}    |"
 echo "|    Author: Manish Parashar          |"
 echo "|    Editor: Darias                   |"
 echo "|    Status: Beta                     |"
+InRa "|    iOS version: $OSbuild                 |"
 echo "======================================="
 echo "   `date`";
 if CheckNet; then

@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180818b"
+PhienBan="20180818c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -16,7 +16,7 @@ NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
-OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; echo "Your iOS is $OSbuild";
+OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
 if [ $iOS -lt 10 ]; then
 	GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0;
 fi
@@ -193,6 +193,7 @@ InRa "|    AdBlock for iOS / Linux          |"
 InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
+InRa "|    iOS version: $OSbuild              |"
 InRa "======================================="
 InRa "   `date`";
 if CheckNet; then

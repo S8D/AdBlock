@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180818a"
+PhienBan="20180818b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -93,6 +93,7 @@ InRa "|    ${Nha}    |"
 InRa "|    Author: Manish Parashar          |"
 InRa "|    Editor: Darias                   |"
 InRa "|    Version: $PhienBan               |"
+InRa "|    iOS version: $OSbuild              |"
 InRa "======================================="
 InRa "   `date`";
 if CheckNet; then
