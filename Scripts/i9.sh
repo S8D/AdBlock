@@ -1,6 +1,6 @@
 #!/bin/sh
 # iOS 9
-PhienBan="20180818b"
+PhienBan="20180818d"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -14,10 +14,10 @@ NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
-OSver="10 11 12"; OSbuild=$(sw_vers -productVersion); dam=${OSbuild%%.*}
-for stuff in $OSver; do
-	if [ "$stuff" == "$dam" ]; then GetSSL gg.gg/i_sh > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
-done
+OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; echo "Your iOS is $OSbuild";
+if [ $iOS -ge 10 ]; then
+	GetSSL gg.gg/iB_ > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0;
+fi
 #2______________________________________________________________________________________
 if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
