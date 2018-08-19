@@ -15,10 +15,7 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
 OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; echo "Your iOS is $OSbuild";
-if [ $iOS -ge 10 ]; then
-	GetSSL gg.gg/iB_ > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0;
-fi
-#2______________________________________________________________________________________
+if [ $iOS -ge 10 ]; then GetSSL gg.gg/iB_ > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 if Kiem curl; then GetSSL gg.gg/c_u > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
