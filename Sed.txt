@@ -1,5 +1,5 @@
 #!/bin/sh
-Version=20180819b
+Version=20180821a
 ThongBao=### Hiện tại mình không có thời gian nên tạm ngừng hỗ trợ ạ.
 ChangeLog=### Nếu bị lỗi AppStore thì gõ lệnh: su root rồi gõ sh i.sh -w mesu.apple.com
 #__________________________________________________________________________________________________
