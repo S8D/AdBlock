@@ -1,6 +1,6 @@
 #!/bin/sh
 Version=20180819b
-ThongBao=### Việc chặn ads trên web sẽ hạn chế hơn so với chặn ads trong app
+ThongBao=### Hiện tại mình không có thời gian nên tạm ngừng hỗ trợ ạ.
 ChangeLog=### Nếu bị lỗi AppStore thì gõ lệnh: su root rồi gõ sh i.sh -w mesu.apple.com
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
