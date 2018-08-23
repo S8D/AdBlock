@@ -1,5 +1,6 @@
 #hVersion=20180823f
 
+log.api.zaloapp.com
 org.zaloapp.ads.zdn.vn
 s.click.aliexpress.com
 res.cloudmobi.net
