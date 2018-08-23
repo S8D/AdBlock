@@ -91,7 +91,7 @@ Tat ()
 		GetSSL ${Nha}/Lists/Hosts.txt > ${Data}/Hosts.txt && cp ${Data}/Hosts $hChinh;
 	fi
 	echo "PAUSED" > $pauseflag
-	InRa ">>> Type $(basename "$0") -r or --resume to resume protection."
+	InRa ">>> Type $(basename "$0") -r to resume protection."
 	Xong
 }
 #3__________________________________________________________________________________________________
