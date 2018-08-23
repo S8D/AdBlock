@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180823a"
+PhienBan="20180823b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -82,9 +82,9 @@ Bat ()
 Tat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
-	InRa "# HOSTS IS PAUSING"; 	Xong
+	InRa "# HOSTS IS PAUSING"; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
 	fi
-	InRa ">>> WARNING: PAUSING PROTECTION"
+	InRa ">>> PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
 	if [ -f "${Data}/Hosts" ]; then
 		cp ${Data}/Hosts $hChinh; else
