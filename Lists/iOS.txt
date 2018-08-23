@@ -1,35 +1,6 @@
 #hVersion=20180824a
 
-cdn-adn-https.rayjump.com
-hits.informer.com
-services.doublerew.net
-islandmob.com
-play.leadzutw.com
-islandmob-com-pl89g1ago.stackpathdns.com
-aweme.snssdk.com
-ib.snssdk.com
-lf.snssdk.com
-gecko.snssdk.com
 120.138.74.135
-log.api.zaloapp.com
-org.zaloapp.ads.zdn.vn
-s.click.aliexpress.com
-res.cloudmobi.net
-rts.ssl2.duapps.com
-setting.rayjump.com
-track.clickhubs.com
-trk.appthis.io
-trk.glispa.com
-wmadv.go2cloud.org
-ulogs.umeng.com
-track.mct.moblin.com
-sr.symcd.com
-personaly.click
-net.rayjump.com
-mobula.ssl2.duapps.com
-play.leadzu.com
-rd.glispa.com
-static.qiuduanribao.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -145,6 +116,7 @@ api2.batmobi.net
 adx.hasmobi.net
 adre.hasmobi.net
 strategy.lmobi.net
+res.cloudmobi.net
 logger.cloudmobi.net
 api.cloudmobi.net
 sexgai.net
@@ -215,6 +187,7 @@ geoinfo.i2w.io
 tracking.i2w.io
 api.segment.io
 www.5rocks.io
+trk.appthis.io
 ipinfo.io
 ecdn.firstimpression.io
 track.tenjin.io
@@ -417,6 +390,7 @@ ads.aerserv.com
 n176adserv.com
 www.vjav.com
 vjav.com
+play.leadzu.com
 push.meitu.com
 rabbit.tg.meitu.com
 adui.tg.meitu.com
@@ -515,6 +489,7 @@ disqus.com
 api.data.beautyplus.com
 www.histats.com
 s10.histats.com
+s.click.aliexpress.com
 cdn.bootcss.com
 www.stakers.com
 pasta.pw.duapps.com
@@ -610,6 +585,7 @@ certify.alexametrics.com
 certify-js.alexametrics.com
 cookie-matching.mediarithmics.com
 subtrack.clickhubs.com
+track.clickhubs.com
 a.optmstr.com
 hh-btr.com
 freeonlinephotoeditor.com
@@ -799,6 +775,7 @@ stage-a.applovin.com
 prod-a.applovin.com
 a.applovin.com
 res1.applovin.com
+track.mct.moblin.com
 cm.cloudin.com
 platform.linkedin.com
 amplify.outbrain.com
@@ -1172,6 +1149,8 @@ api.recsys.opera.com
 thumbnails.opera.com
 get.geo.opera.com
 xml.opera.com
+trk.glispa.com
+rd.glispa.com
 go.mobisla.com
 images.taboola.com
 api-s2s.taboola.com
