@@ -1,4 +1,14 @@
 #hVersion=20180818d
+cdn-adn-https.rayjump.com
+hits.informer.com
+services.doublerew.net
+islandmob.com
+play.leadzutw.com
+islandmob-com-pl89g1ago.stackpathdns.com
+aweme.snssdk.com
+ib.snssdk.com
+lf.snssdk.com
+gecko.snssdk.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
