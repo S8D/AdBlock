@@ -1,4 +1,4 @@
-#hVersion=20180818d
+#hVersion=20180823a
 cdn-adn-https.rayjump.com
 hits.informer.com
 services.doublerew.net
@@ -459,7 +459,6 @@ googlehosted.l.googleusercontent.com
 ci3.googleusercontent.com
 cdn-settings.segment.com
 cdn.segment.com
-app-measurement.com
 cx.atdmt.com
 ad.atdmt.com
 wzrkt.com
@@ -1322,7 +1321,6 @@ api.ipify.org
 st.adxxx.org
 n.adxxx.org
 c.sharethis.mgr.consensu.org
-ocsp.int-x3.letsencrypt.org
 cdn.ampproject.org
 open.thumbshots.org
 direct.adsrvr.org
