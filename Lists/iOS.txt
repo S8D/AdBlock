@@ -1,5 +1,16 @@
-#hVersion=20180823f
+#hVersion=20180824a
 
+cdn-adn-https.rayjump.com
+hits.informer.com
+services.doublerew.net
+islandmob.com
+play.leadzutw.com
+islandmob-com-pl89g1ago.stackpathdns.com
+aweme.snssdk.com
+ib.snssdk.com
+lf.snssdk.com
+gecko.snssdk.com
+120.138.74.135
 log.api.zaloapp.com
 org.zaloapp.ads.zdn.vn
 s.click.aliexpress.com
