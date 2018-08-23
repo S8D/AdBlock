@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180819a"
+PhienBan="20180823a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -70,15 +70,20 @@ DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
 {
-	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
+	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then 
 		InRa ">>> RESUMING PROTECTION"
 		mv $hDung $hChinh
 		rm -f $pauseflag
+	else
+		InRa "# HOSTS IS ENDABLED";
 	fi
 	Xong
 }
 Tat ()
 {
+	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
+	InRa "# HOSTS IS PAUSING"; 	Xong
+	fi
 	InRa ">>> WARNING: PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
 	if [ -f "${Data}/Hosts" ]; then
