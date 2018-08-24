@@ -1,7 +1,10 @@
-#hVersion=20180824b
+#hVersion=20180824c
 
 120.138.74.138
 120.138.74.135
+120.138.74.171
+120.138.74.154
+120.138.74.138
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
