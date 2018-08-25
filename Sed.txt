@@ -1,6 +1,6 @@
 #!/bin/sh
 Version=20180823a
-ThongBao=### Fixed Google Maps
+ThongBao=### Fixed Google Maps. NhacCuaTui chứa ads trên server chính nên nếu chặn ads thì sẽ không dùng được.
 ChangeLog=### Nếu bị lỗi AppStore thì gõ lệnh: su root rồi gõ sh i.sh -w mesu.apple.com
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
