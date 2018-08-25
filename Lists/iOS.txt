@@ -5,7 +5,7 @@
 120.138.74.171
 120.138.74.154
 120.138.74.172
-graph.nhaccuatui.com
+app-measurement.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
