@@ -1,10 +1,11 @@
-#hVersion=20180824d
+#hVersion=20180825a
 
 120.138.74.138
 120.138.74.135
 120.138.74.171
 120.138.74.154
 120.138.74.172
+graph.nhaccuatui.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
