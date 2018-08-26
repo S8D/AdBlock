@@ -1,10 +1,14 @@
-#hVersion=20180826a
+#hVersion=20180826b
 
 120.138.74.138
 120.138.74.135
 120.138.74.171
 120.138.74.154
 120.138.74.172
+n.pc1ads.com
+native.propellerads.com
+device-provisioning.googleapis.com
+apt.alfhaily.me
 app-measurement.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
