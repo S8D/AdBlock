@@ -1,4 +1,7 @@
 #!/bin/sh
+apps.mzstatic.com
+xp.apple.com
+itunes.apple.com
 www.yourepo.com
 cydia.zodttd.com
 tigisoftware.com
