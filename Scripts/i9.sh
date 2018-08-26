@@ -1,6 +1,6 @@
 #!/bin/sh
 # iOS 9
-PhienBan="20180819a"
+PhienBan="20180826a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -16,11 +16,13 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 fi
 OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; echo "Your iOS is $OSbuild";
 if [ $iOS -ge 10 ]; then GetSSL gg.gg/iB_ > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
-if Kiem curl; then GetSSL gg.gg/c_u > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
-if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
-if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
-if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
-if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
+if [ $OS -ne arm64 ]; then
+	if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
+	if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
+	if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
+	if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
+	if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
+fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
