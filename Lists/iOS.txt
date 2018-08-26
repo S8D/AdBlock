@@ -1,4 +1,4 @@
-#hVersion=20180825a
+#hVersion=20180826a
 
 120.138.74.138
 120.138.74.135
@@ -55,7 +55,6 @@ d3al52d8cojds7.cloudfront.net
 d2fbkzyicji7c4.cloudfront.net
 p.typekit.net
 use.typekit.net
-3p.ampproject.net
 phimmat.net
 ping.chartbeat.net
 shavar.prod.mozaws.net
@@ -1229,7 +1228,6 @@ api.ipify.org
 st.adxxx.org
 n.adxxx.org
 c.sharethis.mgr.consensu.org
-cdn.ampproject.org
 open.thumbshots.org
 direct.adsrvr.org
 match.adsrvr.org
