@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180826a"
+PhienBan="20180826b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -70,7 +70,7 @@ DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
 {
-	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then 
+	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 		InRa ">>> RESUMING PROTECTION"
 		mv $hDung $hChinh
 		rm -f $pauseflag
@@ -223,12 +223,12 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem
 	fi
-	GetSSL ${Nha}/Lists/Trang.txt | SedH > $tam;InRa "# Size of WhiteList is: $(Size "$tam")";cat $tam > $trangOn;	
+	GetSSL ${Nha}/Lists/Trang.txt | SedH > $tam;InRa "# Size of WhiteList is: $(Size "$tam")";cat $tam > $trangOn;
 #8__________________________________________________________________________________________________
 	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 		InRa "> Compacting Black/WhiteList"
 		cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
-		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff | grep -Fvwf $trangOn > $twl;
+		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl; cat $trangOn >> $twl;
 	fi
 #9__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
