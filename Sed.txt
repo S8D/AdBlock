@@ -1,6 +1,6 @@
 #!/bin/sh
 Version=20180826b
-ThongBao=### Đã thêm Whitelist online. Tạm nhưng chặn bằng lệnh su root rồi sh /a/i.sh -p nếu muốn chặn tiếp thì -r
+ThongBao=### Fixed App Admin. Đã thêm Whitelist online. Tạm nhưng chặn bằng lệnh su root rồi chạy lệnh sh /a/i.sh -p nếu muốn chặn tiếp thì -r
 ChangeLog=### Nếu bị lỗi AppStore thì gõ lệnh: su root rồi gõ sh /a/i.sh -w mesu.apple.com
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
