@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180823c"
+PhienBan="20180826a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -30,7 +30,7 @@ if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
 if [ ! -f $twl ]; then echo -n "gg.gg" > $twl; fi
 export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
-
+export trangOn="${Data}/trang.on";
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
@@ -223,11 +223,12 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem
 	fi
+	GetSSL ${Nha}/Lists/Trang.txt | SedH > $tam;InRa "# Size of WhiteList is: $(Size "$tam")";cat $tam > $trangOn;	
 #8__________________________________________________________________________________________________
 	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 		InRa "> Compacting Black/WhiteList"
 		cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
-		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl;
+		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff | grep -Fvwf $trangOn > $twl;
 	fi
 #9__________________________________________________________________________________________________
 	InRa "# Downloading Hosts file";
