@@ -14,13 +14,13 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
 OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64";
-if [ $OS == $x64 ]; then bit="64 bit";
+if [ $OS == $x64 ]; then bit="64bit";
 	if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 	if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 	if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 	if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 	if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
-	else bit="32 bit";
+	else bit="32bit";
 		if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 		if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 		if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
@@ -89,7 +89,7 @@ InRa "|   AdBlock for iOS / Linux        |"
 InRa "|   ${Nha}  |"
 InRa "|   Author: Manish Parashar        |"
 InRa "|   Editor: Darias                 |"
-InRa "|   iOS version: $OSbuild $bit    |"
+InRa "|   iOS version: $OSbuild $bit      |"
 InRa "===================================="
 InRa "   `date`";
 if CheckNet; then
