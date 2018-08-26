@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180826b"
+PhienBan="20180826c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -13,14 +13,14 @@ NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
-OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64"
-if [ $OS == $x64 ]; then
+OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64";
+if [ $OS == $x64 ]; then bit="64 bit";
 	if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 	if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 	if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 	if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 	if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
-	else
+	else bit="32 bit";
 		if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 		if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 		if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
@@ -84,14 +84,13 @@ KiemTra ()
 fi
 }
 #5__________________________________________________________________________________________________
-InRa "======================================="
-InRa "|    AdBlock for iOS / Linux          |"
-InRa "|    ${Nha}    |"
-InRa "|    Author: Manish Parashar          |"
-InRa "|    Editor: Darias                   |"
-InRa "|    Version: $PhienBan               |"
-InRa "|    iOS version: $OSbuild              |"
-InRa "======================================="
+InRa "===================================="
+InRa "|   AdBlock for iOS / Linux        |"
+InRa "|   ${Nha}  |"
+InRa "|   Author: Manish Parashar        |"
+InRa "|   Editor: Darias                 |"
+InRa "|   iOS version: $OSbuild $bit    |"
+InRa "===================================="
 InRa "   `date`";
 if CheckNet; then
 	InRa "... Checking for updates..."
