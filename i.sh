@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180826b"
+PhienBan="20180826c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -191,13 +191,13 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
-InRa "======================================="
-InRa "|    AdBlock for iOS / Linux          |"
-InRa "|    ${Nha}    |"
-InRa "|    Author: Manish Parashar          |"
-InRa "|    Editor: Darias                   |"
-InRa "|    iOS version: $OSbuild              |"
-InRa "======================================="
+InRa "===================================="
+InRa "|   AdBlock for iOS / Linux        |"
+InRa "|   ${Nha}  |"
+InRa "|   Author: Manish Parashar        |"
+InRa "|   Editor: Darias                 |"
+InRa "|   iOS version: $OSbuild            |"
+InRa "===================================="
 InRa "   `date`";
 if CheckNet; then
 	InRa "... Checking for updates..."
