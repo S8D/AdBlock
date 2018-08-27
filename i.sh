@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180826f"
+PhienBan="20180827b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -13,17 +13,20 @@ alias GetSSL="curl -f -s -k -L";
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
+CheckRoot ()
+{
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root "$0" "$@"; exit $?; };
 fi
+}
 OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64";
-if [ $OS == $x64 ]; then bit="64bit";
+if [ $OS == $x64 ]; then bit="64bit"; CheckRoot
 	if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 	if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 	if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 	if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 	if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
-	else bit="32bit";
+	else bit="32bit"; CheckRoot
 		if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 		if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 		if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
@@ -78,6 +81,7 @@ DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
 {
+	CheckRoot
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 		InRa ">>> RESUMING PROTECTION"
 		mv $hDung $hChinh
@@ -89,6 +93,7 @@ Bat ()
 }
 Tat ()
 {
+	CheckRoot
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# HOSTS IS PAUSING"; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
 	fi
@@ -130,6 +135,7 @@ Giup ()
 #4__________________________________________________________________________________________________
 KiemTra ()
 {
+	CheckRoot
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
 		MaMoi=`md5sum $upTam | cut -d' ' -f1`
@@ -199,13 +205,13 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
-InRa "===================================="
-InRa "|   AdBlock for iOS / Linux        |"
-InRa "|   ${Nha}  |"
-InRa "|   Author: Manish Parashar        |"
-InRa "|   Editor: Darias                 |"
-InRa "|   iOS version: $OSbuild $bit      |"
-InRa "===================================="
+InRa "==================================="
+InRa "|  AdBlock for iOS / Linux        |"
+InRa "|  $ƠNha}  |"
+InRa "|  Author: Manish Parashar        |"
+InRa "|  Editor: Darias                 |"
+InRa "|  iOS version: $OSbuild $bit      |"
+InRa "==================================="
 InRa "   `date`";
 if CheckNet; then
 	InRa "... Checking for updates..."
@@ -239,10 +245,10 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl; cat $trangOn >> $twl;
 	fi
 #9__________________________________________________________________________________________________
-	InRa "# Downloading Hosts file";
+	InRa "> Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
-	InRa "   Sed  version: $vers | Size: $(Size "$fSed")";
+	InRa "# Sed  version: $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
