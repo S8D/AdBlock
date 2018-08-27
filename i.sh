@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180827f"
+PhienBan="20180827g"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -247,12 +247,12 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "> Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
-	InRa "# Sed  version: $vers | Size: $(Size "$fSed")";
+	InRa "# Sed   $vers | Size: $(Size "$fSed")";
 	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-		InRa " Blocked $Counts | Size $(Size "$hChinh") | Version $hvers";
+		InRa "# Hosts $hvers | Size $(Size "$hChinh") | Blocked $Counts";
 	fi
 else
 	NetDown; DemLine; Xong
