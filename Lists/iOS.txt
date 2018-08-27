@@ -1,4 +1,4 @@
-#hVersion=20180827e
+#hVersion=20180827f
 
 ds-vn.serving-sys.com
 z.moatads.com
@@ -156,7 +156,6 @@ rsload.net
 xxxvc.net
 cdn.nsstatic.net
 g.ezoic.net
-cydia.saurik.com.cdngc.net
 bbg.sc.omtrdc.net
 nikkei.d1.sc.omtrdc.net
 secure.widget.cloud.opta.net
