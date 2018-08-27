@@ -1,10 +1,5 @@
-#hVersion=20180827a
+#hVersion=20180827b
 
-120.138.74.138
-120.138.74.135
-120.138.74.171
-120.138.74.154
-120.138.74.172
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -689,7 +684,6 @@ p1.pstatp.com
 p0.pstatp.com
 js.genieessp.com
 match.rundsp.com
-collectra.herokuapp.com
 log.api.zaloapp.com
 stc.za.zaloapp.com
 zaloapp.com
