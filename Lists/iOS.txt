@@ -1,5 +1,16 @@
-#hVersion=20180827d
+#hVersion=20180827e
 
+ds-vn.serving-sys.com
+z.moatads.com
+sdkm.w.inmobi.com
+analytics.mopub.com
+aax-fe-sin.amazon-adsystem.com
+ads.nexage.com
+dt.adsafeprotected.com
+hk-rtb.nexage.com
+pixel.adsafeprotected.com
+static.adsafeprotected.com
+mobile.adsafeprotected.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
