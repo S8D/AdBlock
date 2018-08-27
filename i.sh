@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180827e"
+PhienBan="20180827f"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -34,7 +34,6 @@ if [ $OS == $x64 ]; then bit="64bit"; CheckRoot
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
-export ThuMay=$(date +"%u");
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
@@ -233,7 +232,7 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
-	if [ ! -f ${Data}/cacert.pem  ] || { [ "${ThuMay}" -eq 1 ] || [ "${ThuMay}" -eq 4 ]; }; then
+	if [ ! -f ${Data}/cacert.pem  ] || [ $SECURL -eq 1 ]; then
 		InRa "> Downloading cURL certificates"
 		GetSSL https://curl.haxx.se/ca/cacert.pem > ${Data}/cacert.pem
 	fi
