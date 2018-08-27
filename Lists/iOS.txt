@@ -1,6 +1,5 @@
-#hVersion=20180827c
+#hVersion=20180827d
 
-m.yap.yahoo.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
