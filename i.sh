@@ -257,8 +257,5 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 else
 	NetDown; DemLine; Xong
 fi
-DemGio
-InRa "# Total time: $Phut:$Giay minutes"
-InRa "# DONE"
-Xong
+DemGio; InRa "# Total time: $Phut:$Giay minutes"; InRa "# DONE"; Xong
 # FIN
