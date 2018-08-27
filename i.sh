@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180827d"
+PhienBan="20180827e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -34,7 +34,7 @@ if [ $OS == $x64 ]; then bit="64bit"; CheckRoot
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
-export ThuMay=$(date +"%u"); #TenSR="$0"; ThamSo="$@";
+export ThuMay=$(date +"%u");
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
@@ -216,7 +216,7 @@ InRa "   `date`";
 if CheckNet; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
-	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi #$TenSR $ThamSo
+	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')"; printf '\n';
 	dv=`grep -w -m 1 "ThongBao" $fSed`;ThongBao=$(echo $dv | sed 's/.*\=//'); echo "$ThongBao";
