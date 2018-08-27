@@ -1,17 +1,10 @@
-#hVersion=20180826b
+#hVersion=20180827a
 
 120.138.74.138
 120.138.74.135
 120.138.74.171
 120.138.74.154
 120.138.74.172
-m.yap.yahoo.com
-f0u4d.com
-n.pc1ads.com
-native.propellerads.com
-device-provisioning.googleapis.com
-apt.alfhaily.me
-app-measurement.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -453,6 +446,7 @@ googlehosted.l.googleusercontent.com
 ci3.googleusercontent.com
 cdn-settings.segment.com
 cdn.segment.com
+app-measurement.com
 cx.atdmt.com
 ad.atdmt.com
 wzrkt.com
@@ -541,6 +535,7 @@ m.optout.ziffdavis.com
 yui.yahooapis.com
 imasdk.googleapis.com
 mobilecrashreporting.googleapis.com
+device-provisioning.googleapis.com
 instantmessaging-pa.googleapis.com
 auditrecording-pa.googleapis.com
 w.sharethis.com
@@ -574,6 +569,7 @@ yt.moatads.com
 yts.moatads.com
 pixel.moatads.com
 disqusads.com
+native.propellerads.com
 api.c.avazunativeads.com
 www.hotdogsandads.com
 rv-gateway.supersonicads.com
@@ -583,6 +579,7 @@ init.supersonicads.com
 outcome.supersonicads.com
 ua.supersonicads.com
 st-n.pc1ads.com
+n.pc1ads.com
 serving.dfnb-ads.com
 reports.crashlytics.com
 settings.crashlytics.com
@@ -1083,6 +1080,7 @@ l.betrad.com
 track.wattpad.com
 tapestry.tapad.com
 pixel.tapad.com
+f0u4d.com
 stats.unity3d.com
 config.unityads.unity3d.com
 api.uca.cloud.unity3d.com
@@ -1252,6 +1250,7 @@ ofa-sub.osp.opera.software
 c.adsco.re
 adsco.re
 pushservice.one
+apt.alfhaily.me
 xemsex.me
 api.kiip.me
 sp.zalo.me
