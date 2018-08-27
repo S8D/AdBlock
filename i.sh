@@ -252,7 +252,7 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
-		InRa "# Blocked $Counts | Size $(Size "$hChinh") | Hosts $hvers";
+		InRa "# Blocked  $Counts | Size $(Size "$hChinh") | Hosts $hvers";
 	fi
 else
 	NetDown; DemLine; Xong
