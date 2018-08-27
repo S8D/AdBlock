@@ -808,7 +808,6 @@ xkms.xbolive.com
 xninja.xyz
 xnu.science
 xsts.auth.xboxlive.com
-yahoo.com
 yan.vn
 yazeedot.github.io
 youtu.be
