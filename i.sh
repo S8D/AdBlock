@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180827b"
+PhienBan="20180827c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -207,7 +207,7 @@ shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
 InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
-InRa "|  $ƠNha}  |"
+InRa "|  ${Nha}  |"
 InRa "|  Author: Manish Parashar        |"
 InRa "|  Editor: Darias                 |"
 InRa "|  iOS version: $OSbuild $bit      |"
