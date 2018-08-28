@@ -1,5 +1,16 @@
-#hVersion=20180827b
+#hVersion=20180827f
 
+ds-vn.serving-sys.com
+z.moatads.com
+sdkm.w.inmobi.com
+analytics.mopub.com
+aax-fe-sin.amazon-adsystem.com
+ads.nexage.com
+dt.adsafeprotected.com
+hk-rtb.nexage.com
+pixel.adsafeprotected.com
+static.adsafeprotected.com
+mobile.adsafeprotected.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -145,7 +156,6 @@ rsload.net
 xxxvc.net
 cdn.nsstatic.net
 g.ezoic.net
-cydia.saurik.com.cdngc.net
 bbg.sc.omtrdc.net
 nikkei.d1.sc.omtrdc.net
 secure.widget.cloud.opta.net
