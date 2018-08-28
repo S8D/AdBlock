@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180828f"
+PhienBan="20180828g"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -38,9 +38,6 @@ export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
 if [ ! -f $twl ]; then echo -n "gg.gg" > $twl; fi
-export fSed="${MTam}/Sed";export fHost="${MTam}/Host";
-export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
-export trangOn="${Data}/trang.on";
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
@@ -54,8 +51,9 @@ if [ -f "${TMuc}/Location" ]; then
 		DonRac;
 	fi
 fi
-
-export hDung="${Data}/${fName}.zzz";
+export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
+export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
+export trangOn="${Data}/trang.on";export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
 export denOff="${Data}/den.off";export trangOff="${Data}/trang.off";
 if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
@@ -96,9 +94,9 @@ Tat ()
 	fi
 	InRa ">>> PAUSING PROTECTION"
 	[ -f $hChinh ] && mv $hChinh $hDung
-	if [ -f "${Data}/Hosts" ]; then
-		cp ${Data}/Hosts $hChinh; else
-		GetSSL ${Nha}/Lists/Hosts.txt > ${Data}/Hosts.txt && cp ${Data}/Hosts $hChinh;
+	if [ -f $fHost ]; then
+		cp $fHost $hChinh; else
+		GetSSL ${Nha}/Lists/Hosts.txt > $fHost && cp $fHost $hChinh;
 	fi
 	echo "PAUSED" > $pauseflag
 	InRa ">>> Type $(basename "$0") -r to resume protection."
