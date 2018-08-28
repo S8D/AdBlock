@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180829a"
+PhienBan="20180829b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -58,7 +58,7 @@ if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
 export denOff="${Data}/den.off";export trangOff="${Data}/trang.off";
 if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
 if [ ! -f $trangOff ]; then echo -n "g.co" > $trangOff; fi
-export hLog="${Data}/h.log";export pauseflag="${Data}/PAUSED";
+export hLog="${Data}/h.log";export DungLai="${Data}/Dung";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
@@ -80,27 +80,25 @@ Cydia () { InRa "Fix Cydia"; GetSSL gg.gg/cy_ > $upTam; chmod 755 $upTam; sh $up
 UnJB () { InRa "UnJailBreak"; GetSSL gg.gg/_u > $upTam; chmod 755 $upTam; sh $upTam; }
 Bat ()
 {
-	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
+	if [ -f $DungLai ] && { [ -f $hDung ]; }; then
 		InRa ">>> RESUMING PROTECTION"
 		mv $hDung $hChinh
-		rm -f $pauseflag
+		rm -f $DungLai
 	else
-		InRa "# HOSTS IS ENDABLED";
+		InRa "# AdBlock ENDABLED";
 	fi
 	Xong
 }
 Tat ()
 {
-	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
-	InRa "# HOSTS IS PAUSING"; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
+	if [ -f $DungLai ] && { [ -f $hDung ]; }; then
+	InRa "# AdBlock DISABLED"; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
 	fi
-	InRa ">>> PAUSING PROTECTION"
-	[ -f $hChinh ] && mv $hChinh $hDung
-	if [ -f $fHost ]; then
-		cp $fHost $hChinh; else
+	InRa ">>> DISABLING AdBlock"; [ -f $hChinh ] && mv $hChinh $hDung
+	if [ -f $fHost ]; then 	cp $fHost $hChinh; else
 		GetSSL ${Nha}/Lists/Hosts.txt > $fHost && cp $fHost $hChinh;
 	fi
-	echo "PAUSED" > $pauseflag
+	echo "PAUSED" > $DungLai
 	InRa ">>> Type $(basename "$0") -r to resume protection."
 	Xong
 }
@@ -227,9 +225,8 @@ else
 	NetDown; Xong
 fi
 #7__________________________________________________________________________________________________
-if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
-	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"
-	Bat
+if [ -f $DungLai ] && { [ -f $hDung ]; }; then
+	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat;
 fi
 if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
@@ -250,8 +247,7 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	InRa "> Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
-	InRa "# Sed $vers | Size: $(Size "$fSed")";
-	Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
+	InRa "# Sed $vers | Size: $(Size "$fSed")"; Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
