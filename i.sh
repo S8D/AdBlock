@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180828c"
+PhienBan="20180828d"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -80,7 +80,6 @@ DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
 Bat ()
 {
-	CheckRoot
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 		InRa ">>> RESUMING PROTECTION"
 		mv $hDung $hChinh
@@ -92,7 +91,6 @@ Bat ()
 }
 Tat ()
 {
-	CheckRoot
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
 	InRa "# HOSTS IS PAUSING"; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
 	fi
@@ -134,7 +132,6 @@ Giup ()
 #4__________________________________________________________________________________________________
 KiemTra ()
 {
-	CheckRoot
 	if [ 0 -eq $? ]; then
 		MaCu=`md5sum $0 | cut -d' ' -f1`
 		MaMoi=`md5sum $upTam | cut -d' ' -f1`
@@ -172,10 +169,10 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
 		d|D  ) DISTRIB=1 ;;
 		q|Q  ) QUIET=1 ;;
-		p|P  ) Tat ;;
-		r|R  ) Bat ;;
+		p|P  ) CheckRoot; Tat ;;
+		r|R  ) CheckRoot; Bat ;;
 		s|S  ) SECURL=1 ;;
-		u|U  ) CapNhat ;;
+		u|U  ) CheckRoot; CapNhat ;;
 		b    ) echo "$OPTARG" >> $denOff ;;
 		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
@@ -188,11 +185,11 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			quiet   ) QUIET=1 ;;
-			pause   ) Tat ;;
-			resume  ) Bat ;;
+			pause   ) CheckRoot; Tat ;;
+			resume  ) CheckRoot; Bat ;;
 			secure  ) SECURL=1 ;;
 			help    ) Giup ;;
-			update  ) CapNhat ;;
+			update  ) CheckRoot; CapNhat ;;
 			version ) echo "$PhienBan" ; Xong ;;
 			4* | quiet* | pause* | resume* | secure* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
