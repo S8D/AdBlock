@@ -1,8 +1,8 @@
 #!/bin/sh
-Version=20180828a
+Version=20180829a
 TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: su root rồi gõ: sh /a/i.sh -w mesu.apple.com 
 TBao2=### Lệnh sh /a/i.sh với tham số: -p để dừng chặn -r để chặn tiếp. -h để xem thêm tham số
-TBao3=### Chuẩn bị thêm chức năng sửa lỗi Cydia và UnJailBreak
+TBao3=### Thêm chức năng sửa lỗi Cydia ( -c ) và UnJailBreak ( -z )
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |

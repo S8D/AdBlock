@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180828g"
+PhienBan="20180829a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -76,6 +76,8 @@ Xong () { logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
 NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
 DemGio () { Dung=`date +%s`;Phut=$(( $((Dung - Chay)) /60 )); Giay=$(( $((Dung - Chay)) %60 )); }
+Cydia () { InRa "Fix Cydia"; GetSSL gg.gg/cy_ > $upTam; chmod 755 $upTam; sh $upTam; }
+UnJB () { InRa "UnJailBreak"; GetSSL gg.gg/_u > $upTam; chmod 755 $upTam; sh $upTam; }
 Bat ()
 {
 	if [ -f $pauseflag ] && { [ -f $hDung ]; }; then
@@ -121,6 +123,8 @@ Giup ()
 	echo -n "[-h | --help]"; printf '\t'; echo "Display this help screen and exit"
 	echo -n "[-u | --update]"; printf '\t'; echo "Update $(basename "$0") to the latest version"
 	echo -n "[-v | --version]"; printf ' '; echo "Print $(basename "$0") version and exit"
+	echo -n "[-c]"; printf '\t'; echo "Fix Cydia"
+	echo -n "[-z]"; printf '\t'; echo "UnJailBreak"
 	echo ""
 	echo "EXAMPLES:"
 	echo "$(basename "$0") -s2 --ip=172.31.255.254 "
@@ -161,7 +165,7 @@ CapNhat ()
 	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
-while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do CheckRoot;
+while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
@@ -174,6 +178,8 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do CheckRoot;
 		b    ) echo "$OPTARG" >> $denOff ;;
 		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
+		c    ) Cydia ;;
+		z    ) UnJB ;;
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
 			bl=?*   ) ARG_BL="$LONG_OPTARG" ; echo $ARG_BL >> $denOff ;;
