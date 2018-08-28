@@ -666,7 +666,6 @@ accounts.youtube.com
 s.youtube.com
 uploads.gdata.youtube.com
 gdata.youtube.com
-youtube.com
 p60-caldav.icloud.com
 caldav.icloud.com
 p60-contacts.icloud.com
