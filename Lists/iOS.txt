@@ -1,16 +1,5 @@
-#hVersion=20180827f
+#hVersion=20180828a
 
-ds-vn.serving-sys.com
-z.moatads.com
-sdkm.w.inmobi.com
-analytics.mopub.com
-aax-fe-sin.amazon-adsystem.com
-ads.nexage.com
-dt.adsafeprotected.com
-hk-rtb.nexage.com
-pixel.adsafeprotected.com
-static.adsafeprotected.com
-mobile.adsafeprotected.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -483,6 +472,7 @@ app-analytics.snapchat.com
 static.chartbeat.com
 cfa.2mdnsys.com
 bs.serving-sys.com
+ds-vn.serving-sys.com
 acdn.adnxs.com
 m.adnxs.com
 secure.adnxs.com
@@ -1016,6 +1006,7 @@ ads.api.vungle.com
 www.youtube-nocookie.com
 m.addthisedge.com
 ads.nexage.com
+hk-rtb.nexage.com
 www.snapengage.com
 mvconf.cloud.360safe.com
 mup.amp.mcafee.com
@@ -1072,6 +1063,7 @@ websexhd.com
 dt.adsafeprotected.com
 cdn.adsafeprotected.com
 pixel.adsafeprotected.com
+mobile.adsafeprotected.com
 static.adsafeprotected.com
 adprotected.com
 api.placed.com
@@ -1120,6 +1112,7 @@ r.nexac.com
 e.nexac.com
 mpx.mopub.com
 ads.mopub.com
+analytics.mopub.com
 www.pornhub.com
 hubt.pornhub.com
 services.pornhub.com
