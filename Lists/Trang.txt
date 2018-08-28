@@ -573,6 +573,8 @@ cydia.heaveniphone.com
 login.microsoftonline.com
 microsoftonline.com
 iphoneame.com
+se-edge.itunes.apple.com
+apptrailers.itunes.apple.com
 itunes.apple.com
 xp.apple.com
 cydia.ilove-apple.com
