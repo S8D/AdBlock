@@ -1,4 +1,4 @@
-#hVersion=20180828a
+#hVersion=20180828b
 
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
@@ -1225,7 +1225,6 @@ wv.inner-active.mobi
 m2m1.inner-active.mobi
 protostats.bigo.sg
 support0.bigo.sg
-api.ipify.org
 st.adxxx.org
 n.adxxx.org
 c.sharethis.mgr.consensu.org

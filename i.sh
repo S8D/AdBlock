@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180828b"
+PhienBan="20180828c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -9,7 +9,7 @@ export SECURL=0
 export DISTRIB=0
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
-alias GetSSL="curl -f -s -k -L";
+alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
@@ -212,6 +212,7 @@ InRa "|  Editor: Darias                 |"
 InRa "|  iOS version: $OSbuild $bit      |"
 InRa "==================================="
 InRa "   `date`";
+InRa "   $ip";
 if CheckNet; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
