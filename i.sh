@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180828e"
+PhienBan="20180828f"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -19,14 +19,14 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 fi
 }
-OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64";
-if [ $OS == $x64 ]; then bit="64bit"; CheckRoot
+OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64"; CheckRoot
+if [ $OS == $x64 ]; then bit="64bit";
 	if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 	if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 	if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 	if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 	if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
-	else bit="32bit"; CheckRoot
+	else bit="32bit";
 		if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 		if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 		if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
@@ -163,16 +163,16 @@ CapNhat ()
 	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
-while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
+while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do CheckRoot; 
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
 		d|D  ) DISTRIB=1 ;;
 		q|Q  ) QUIET=1 ;;
-		p|P  ) CheckRoot; Tat ;;
-		r|R  ) CheckRoot; Bat ;;
+		p|P  ) Tat ;;
+		r|R  ) Bat ;;
 		s|S  ) SECURL=1 ;;
-		u|U  ) CheckRoot; CapNhat ;;
+		u|U  ) CapNhat ;;
 		b    ) echo "$OPTARG" >> $denOff ;;
 		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
@@ -185,11 +185,11 @@ while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do
 			ip=?*   ) ARG_IP="$LONG_OPTARG" ; SetIP=$ARG_IP ;;
 			ip*     ) echo ">>> ERROR: no arguments for --$OPTARG option" >&2; exit 2 ;;
 			quiet   ) QUIET=1 ;;
-			pause   ) CheckRoot; Tat ;;
-			resume  ) CheckRoot; Bat ;;
+			pause   ) Tat ;;
+			resume  ) Bat ;;
 			secure  ) SECURL=1 ;;
 			help    ) Giup ;;
-			update  ) CheckRoot; CapNhat ;;
+			update  ) CapNhat ;;
 			version ) echo "$PhienBan" ; Xong ;;
 			4* | quiet* | pause* | resume* | secure* | help* | update* | version* )
 					echo ">>> ERROR: no arguments allowed for --$OPTARG option" >&2; exit 2 ;;
