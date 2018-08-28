@@ -163,7 +163,7 @@ CapNhat ()
 	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
-while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do CheckRoot; 
+while getopts "h?vdDpPqQrRsSoOuUb:w:i:-:" opt; do CheckRoot;
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
