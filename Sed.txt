@@ -1,8 +1,9 @@
 #!/bin/sh
-Version=20180829b
-TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: su root rồi gõ: sh /a/i.sh -w mesu.apple.com 
-TBao2=### Lệnh sh /a/i.sh hay sh i.sh hay ./i.sh
+Version=20180829c
+TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: sh /a/i.sh -w mesu.apple.com 
+TBao2=### Lệnh chạy scripts sh /a/i.sh hay sh i.sh hay ./i.sh
 TBao3=### Tham số: -p để dừng chặn. -r để chặn tiếp. -h để xem thêm tham số khác.
+TBao4=### Nếu xuất hiện ads trong app hay app lỗi do dùng scripts thì pm mình nhé! Mình sẽ hỗ trợ ngay khi có thể ^^!
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
