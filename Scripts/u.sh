@@ -1,5 +1,6 @@
 #!/bin/sh
 # UnJailBreak iOS
+# Source: https://github.com/KirovAir/delectra/raw/master/unjailbreak.sh
 PhienBan="20180814a"
 Nha="https://s8d.github.io/AdBlock"
 TMuc=""$(cd "$(dirname "${0}")" && pwd)""
