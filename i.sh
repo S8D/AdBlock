@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180829d"
+PhienBan="20180829e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -13,7 +13,6 @@ alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
 Kiem() { ! type "$1" > /dev/null; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
-Root () { if (( $EUID != 0 )); then echo " Input pass and run again. Default: alpine "; su root; exit $?; fi; }
 CheckRoot ()
 {
 if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
@@ -164,7 +163,7 @@ CapNhat ()
 	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
-while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do Root;
+while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 	case ${opt} in
 		h|\? ) Giup ;;
 		v    ) echo ">>> $(basename "$0") version: $PhienBan" ; Xong ;;
