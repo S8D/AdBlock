@@ -7,7 +7,7 @@ MTam="${TMuc}/tmp";mkdir -p ${MTam};
 Data="${TMuc}/Data";mkdir -p ${Data};
 upTam="${MTam}/u.sh";
 alias GetSSL="curl -f -s -k -L"
-CheckNet () { wget -q --spider http://google.com; }
+CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; }
 NetDown () { echo "# NETWORK: DOWN | Please try again! "; }
 Xong () { rm -rf ${MTam}; exit 0; }
 CheckNet
