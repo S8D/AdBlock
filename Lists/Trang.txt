@@ -695,7 +695,6 @@ is1-ssl.mzstatic.com
 a5.mzstatic.com
 a3.mzstatic.com
 a2.mzstatic.com
-mzstatic.com
 redditstatic.com
 a0.awsstatic.com
 www.gstatic.com
