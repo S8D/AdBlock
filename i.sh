@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180830c"
+PhienBan="20180830d"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -46,7 +46,7 @@ if [ -f "${TMuc}/Location" ]; then
 	if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 		if ! [ ${TMuc} -ef ${aMuc} ]; then cp $0 ${aMuc}/$(basename "$0"); fi
 		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cp $0 ${iMuc}/$(basename "$0"); fi; fi
-		DonRac; if [ -f /a/i.sh ]; then sh /a/i.sh; fi; exit 0;
+		DonRac; if [ -f ${aMuc}/$(basename "$0") ]; then echo "Please run sh ${aMuc}/$(basename "$0") "; sh ${aMuc}/$(basename "$0"); fi; exit 0;
 	fi
 fi
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
