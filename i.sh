@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180829e"
+PhienBan="20180830a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -36,8 +36,6 @@ fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
-if [ ! -f $tbl ]; then echo -n "" > $tbl; fi
-if [ ! -f $twl ]; then echo -n "gg.gg" > $twl; fi
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
@@ -57,7 +55,7 @@ export trangOn="${Data}/trang.on";export hDung="${Data}/${fName}.zzz";
 if [ ! -f $hChinh ]; then echo -n "" > $hChinh; fi
 export denOff="${Data}/den.off";export trangOff="${Data}/trang.off";
 if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
-if [ ! -f $trangOff ]; then echo -n "g.co" > $trangOff; fi
+if [ ! -f $trangOff ]; then echo -n "" > $trangOff; fi
 export hLog="${Data}/h.log";export DungLai="${Data}/Dung";
 export SHELL=/bin/sh
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
@@ -241,12 +239,13 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 #8__________________________________________________________________________________________________
 	if [ $DISTRIB -eq 0 ] && { [ -s "$denOff" ] || [ -s "$trangOff" ]; }; then
 		InRa "> Compacting Black/WhiteList"
-		cat $denOff | SedH > blTam && mv blTam $denOff; cat $denOff > $tbl;
-		cat $trangOff | SedH > wlTam && mv wlTam $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl; cat $trangOn >> $twl;
+		cat $denOff | SedH > $tbl && mv $tbl $denOff; cat $denOff > $tbl;
+		cat $trangOff | SedH > $twl && mv $twl $trangOff; cat $trangOff | grep -Fvwf $denOff > $twl; cat $trangOn >> $twl;
 	fi
 #9__________________________________________________________________________________________________
 	InRa "> Downloading Hosts file";
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
+	if [ ! -f $tbl ]; then echo -n "" > $tbl; fi; if [ ! -f $twl ]; then echo -n "" > $twl; fi
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
 	InRa "# Sed $vers | Size: $(Size "$fSed")"; Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
