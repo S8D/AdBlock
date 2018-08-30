@@ -139,7 +139,7 @@ KiemTra ()
 			InRa ">>> Updating new version..."
 			BanCu=`grep -w -m 1 "PhienBan" $0 | cut -d \" -f2`
 			if [ -f "${Data}/$BanCu.sh" ]; then
-				mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
+				mCu=$(echo "$MaCu" | cut -c1-5); cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
 			chmod 755 $upTam;
