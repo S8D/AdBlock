@@ -9,6 +9,8 @@ ip.gg.gg
 gg.gg
 m.me
 t.me
+itunes.apple.com
+mzstatic.com
 xninja.xyz
 www.bit.ly
 bit.ly
@@ -573,10 +575,6 @@ cydia.heaveniphone.com
 login.microsoftonline.com
 microsoftonline.com
 iphoneame.com
-se-edge.itunes.apple.com
-apptrailers.itunes.apple.com
-itunes.apple.com
-xp.apple.com
 cydia.ilove-apple.com
 us1.freess.kkboxmobile.com
 play.google.com
