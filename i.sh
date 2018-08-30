@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180830d"
+PhienBan="20180830e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -39,7 +39,7 @@ export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
 	export hChinh="${TMuc}/${fName}"; else
-	export aMuc="/a"; mkdir -p ${aMuc};
+	export aMuc="/1"; mkdir -p ${aMuc};
 	export Data="${aMuc}/Data";mkdir -p ${Data};
 	export hChinh="/etc/${fName}";
 	if [ ${TMuc} -ef ${aMuc} ]; then if [ -d ${iMuc} ]; then cp $0 ${iMuc}/$(basename "$0"); fi; fi
