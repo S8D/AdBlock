@@ -1,5 +1,20 @@
-#hVersion=20180828b
+#hVersion=20180830a
 
+b.scorecardresearch.com
+cm.send.microadinc.com
+cm.gammaplatform.com
+d3.hadarone.com
+delivery.m.ambientplatform.vn
+match.adsrvr.org
+tag.gammaplatform.com
+pub.lavanetwork.net
+pixel.tapad.com
+tracking.yomedia.vn
+ib.adnxs.com
+media.yomedia.vn
+delivery.yomedia.vn
+secure.adnxs.com
+c.rigelink.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
