@@ -221,7 +221,7 @@ if [ $net -eq 1 ]; then
 	if [ $SoBao -ge 3 ]; then dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3"; fi
 	if [ $SoBao -ge 4 ]; then dv=`grep -w -m 1 "TBao4" $fSed`;TBao4=$(echo $dv | sed 's/.*\=//'); echo "$TBao4"; fi
 	if [ $SoBao -ge 5 ]; then dv=`grep -w -m 1 "TBao5" $fSed`;TBao5=$(echo $dv | sed 's/.*\=//'); echo "$TBao5"; fi
-	printf '\n'; else; NetDown; Xong
+	printf '\n'; else NetDown; Xong
 fi
 #7__________________________________________________________________________________________________
 if [ $net -eq 1 ]; then
