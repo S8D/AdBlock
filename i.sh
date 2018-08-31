@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831h"
+PhienBan="20180831i"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -91,13 +91,13 @@ Bat ()
 Tat ()
 {
 	if [ -f $DungLai ] && { [ -f $hDung ]; }; then
-	InRa "# AdBlock DISABLED"; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
+	InRa "# AdBlock DISABLED"; InRa ">>> Type sh $(basename "$0") -r to resume protection."; Xong
 	fi
 	InRa ">>> DISABLING AdBlock"; [ -f $hChinh ] && mv $hChinh $hDung
 	if [ -f $fHost ]; then 	cp $fHost $hChinh; else
 		GetSSL ${Nha}/Lists/Hosts.txt > $fHost && cp $fHost $hChinh;
 	fi
-	echo "PAUSED" > $DungLai; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
+	echo "PAUSED" > $DungLai; InRa ">>> Type sh $(basename "$0") -r to resume protection."; Xong
 }
 if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
 #3__________________________________________________________________________________________________
