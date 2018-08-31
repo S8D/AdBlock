@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831c"
+PhienBan="20180831d"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -7,6 +7,7 @@ Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
+export aMuc="/q"
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
@@ -41,10 +42,8 @@ export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
-	export hChinh="${TMuc}/${fName}"; else
-	export aMuc="/1"; mkdir -p ${aMuc};
-	export Data="${aMuc}/Data";mkdir -p ${Data};
-	export hChinh="/etc/${fName}";
+	export hChinh="${TMuc}/${fName}"; else mkdir -p ${aMuc};
+	export Data="${aMuc}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
 	if [ ${TMuc} -ef ${aMuc} ]; then if [ -d ${iMuc} ]; then cp $0 ${iMuc}/$(basename "$0"); fi; fi
 	if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 		if ! [ ${TMuc} -ef ${aMuc} ]; then cp $0 ${aMuc}/$(basename "$0"); fi
