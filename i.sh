@@ -1,9 +1,8 @@
 #!/bin/sh
-PhienBan="20180831d"
+PhienBan="20180831e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
-#export ONLINE=1
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
@@ -209,8 +208,7 @@ InRa "|  Author: Manish Parashar        |"
 InRa "|  Editor: Darias                 |"
 InRa "|  iOS version: $OSbuild $bit      |"
 InRa "==================================="
-InRa "   `date`";
-InRa "   Your IP Address: $ip";
+InRa "   `date`"; InRa "   Your IP Address: $ip"; InRa "   Please run sh ${aMuc}/$(basename "$0") "
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
@@ -225,7 +223,6 @@ else
 	NetDown; Xong
 fi
 #7__________________________________________________________________________________________________
-#if [ $ONLINE -eq 1 ] && CheckNet; then
 if [ $net -eq 1 ]; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
