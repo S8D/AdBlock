@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831g"
+PhienBan="20180831h"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -208,19 +208,20 @@ InRa "|  Author: Manish Parashar        |"
 InRa "|  ReBuild: Darias                |"
 InRa "|  iOS version: $OSbuild $bit      |"
 InRa "==================================="
-InRa "   `date`"; InRa "   Your IP Address: $ip"; InRa "Type sh ${aMuc}/$(basename "$0") or sh i.sh or ./i.sh to run scripts"
+InRa "   `date`"; InRa "   Your IP Address: $ip";
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
-	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')"; printf '\n';
-	dv=`grep -w -m 1 "TBao1" $fSed`;TBao1=$(echo $dv | sed 's/.*\=//'); echo "$TBao1";
-	dv=`grep -w -m 1 "TBao2" $fSed`;TBao2=$(echo $dv | sed 's/.*\=//'); echo "$TBao2";
-	dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3";
-	dv=`grep -w -m 1 "TBao4" $fSed`;TBao4=$(echo $dv | sed 's/.*\=//'); echo "$TBao4"; printf '\n';
-else
-	NetDown; Xong
+	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
+	dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
+	if [ $SoBao -ge 1 ]; then dv=`grep -w -m 1 "TBao1" $fSed`;TBao1=$(echo $dv | sed 's/.*\=//'); echo "$TBao1"; fi
+	if [ $SoBao -ge 2 ]; then dv=`grep -w -m 1 "TBao2" $fSed`;TBao2=$(echo $dv | sed 's/.*\=//'); echo "$TBao2"; fi
+	if [ $SoBao -ge 3 ]; then dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3"; fi
+	if [ $SoBao -ge 4 ]; then dv=`grep -w -m 1 "TBao4" $fSed`;TBao4=$(echo $dv | sed 's/.*\=//'); echo "$TBao4"; fi
+	if [ $SoBao -ge 5 ]; then dv=`grep -w -m 1 "TBao5" $fSed`;TBao5=$(echo $dv | sed 's/.*\=//'); echo "$TBao5"; fi
+	printf '\n'; else; NetDown; Xong
 fi
 #7__________________________________________________________________________________________________
 if [ $net -eq 1 ]; then

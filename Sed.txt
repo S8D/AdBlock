@@ -1,9 +1,11 @@
 #!/bin/sh
-Version=20180831d
+Version=20180831e
+SoBao=3
 TBao1=### Gõ sh i.sh -h để xem thêm tham số khác.
 TBao2=### Tham số: -p để dừng chặn. -r để chặn tiếp.
-TBao3= 
-TBao4=### Liên hệ hỗ trợ: m.me/LucThanhPhu
+TBao3=### Liên hệ hỗ trợ: m.me/LucThanhPhu 
+TBao4=### 4
+TBao5=### 5
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
