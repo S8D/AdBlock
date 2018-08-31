@@ -1,6 +1,6 @@
 #!/bin/sh
 Version=20180831f
-SoBao=5
+SoBao=3
 TBao1=### Gõ sh i.sh -h để xem thêm tham số khác.
 TBao2=### Tham số: -p để dừng chặn. -r để chặn tiếp.
 TBao3=### Liên hệ hỗ trợ: m.me/LucThanhPhu 
