@@ -98,9 +98,7 @@ Tat ()
 	if [ -f $fHost ]; then 	cp $fHost $hChinh; else
 		GetSSL ${Nha}/Lists/Hosts.txt > $fHost && cp $fHost $hChinh;
 	fi
-	echo "PAUSED" > $DungLai
-	InRa ">>> Type $(basename "$0") -r to resume protection."
-	Xong
+	echo "PAUSED" > $DungLai; InRa ">>> Type $(basename "$0") -r to resume protection."; Xong
 }
 if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
 #3__________________________________________________________________________________________________
