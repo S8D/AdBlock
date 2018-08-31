@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180830e"
+PhienBan="20180831a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -80,7 +80,7 @@ UnJB () { InRa "UnJailBreak"; GetSSL gg.gg/_u > $upTam; chmod 755 $upTam; sh $up
 Bat ()
 {
 	if [ -f $DungLai ] && { [ -f $hDung ]; }; then
-		InRa ">>> RESUMING PROTECTION"
+		InRa ">>> ENDABLING AdBlock"
 		mv $hDung $hChinh
 		rm -f $DungLai
 	else
@@ -248,7 +248,7 @@ if [ $ONLINE -eq 1 ] && CheckNet; then
 	GetSSL ${uHost} > $tam;hv=`grep -w -m 1 "#hVersion" $tam`;hvers=$(echo $hv | sed 's/.*\=//');
 	if [ ! -f $tbl ]; then echo -n "" > $tbl; fi; if [ ! -f $twl ]; then echo -n "" > $twl; fi
 	cat $tam | SedH | cat $tbl - | grep -Fvwf $twl | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' > $hTam;
-	InRa "# Sed $vers | Size: $(Size "$fSed")"; Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
+	InRa "# Sed $vers | Size $(Size "$fSed")"; Counts=$(cat $hTam | wc -l | sed 's/^[ \t]*//');
 	if [ $Counts -eq 0 ]; then
 		InRa ">>> Process failed! Please try again."; DemLine; Xong; else
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
