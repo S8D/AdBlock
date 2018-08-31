@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831a"
+PhienBan="20180831b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -33,6 +33,7 @@ if [ $OS == $x64 ]; then bit="64bit";
 		if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 fi
+if [ ping -q -c 1 -W 1 g.co >/dev/null; ]; then net=1; else net=0; fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
@@ -70,7 +71,7 @@ alias GetHTT="curl -f -s -k -L";
 alias GetMHK="curl -f -s -A -L "Mozilla/5.0" -e http://forum.xda-developers.com/"
 InRa () { [ $QUIET -eq 0 ] && echo "$1" ; echo "$1" >> $hLog; }
 Size () { InRa "`du -h $1 | awk '{print $1}'`"; }
-CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; }
+#CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; }
 Xong () { logger ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
 NetDown () { InRa "# NETWORK: DOWN | Please try again! "; }
 DemLine () { Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//'); InRa ">> Blocked: $Counts Hosts $(Size "$hChinh")"; }
@@ -101,6 +102,7 @@ Tat ()
 	InRa ">>> Type $(basename "$0") -r to resume protection."
 	Xong
 }
+if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
 #3__________________________________________________________________________________________________
 Giup ()
 {
@@ -159,7 +161,7 @@ fi
 CapNhat ()
 {
 	InRa ">>> Checking for updates...";
-	if CheckNet; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
+	if [ $net -eq 1 ]; then GetSSL gg.gg/i_up > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
 while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
@@ -211,7 +213,7 @@ InRa "|  iOS version: $OSbuild $bit      |"
 InRa "==================================="
 InRa "   `date`";
 InRa "   Your IP Address: $ip";
-if CheckNet; then
+if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
@@ -225,10 +227,8 @@ else
 	NetDown; Xong
 fi
 #7__________________________________________________________________________________________________
-if [ -f $DungLai ] && { [ -f $hDung ]; }; then
-	InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat;
-fi
-if [ $ONLINE -eq 1 ] && CheckNet; then
+#if [ $ONLINE -eq 1 ] && CheckNet; then
+if [ $net -eq 1 ]; then
 	InRa "# NETWORK: UP | MODE: ONLINE"
 	InRa "# IP ADDRESS FOR ADS: $SetIP"
 	InRa "# SECURE [0=NO | 1=YES]: $SECURL"
