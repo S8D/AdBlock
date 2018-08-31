@@ -1,9 +1,9 @@
 #!/bin/sh
-Version=20180831a
+Version=20180831b
 TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: sh /1/i.sh -w mesu.apple.com
 TBao2=### Lệnh chạy scripts sh /1/i.sh hay sh i.sh hay ./i.sh
 TBao3=### Tham số: -p để dừng chặn. -r để chặn tiếp. -h để xem thêm tham số khác.
-TBao4=### Nếu xuất hiện ads trong app hay app lỗi do dùng scripts thì pm mình nhé! m.me/LucThanhPhu
+TBao4=### Liên hệ hỗ trợ: m.me/LucThanhPhu
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
