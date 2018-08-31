@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831f"
+PhienBan="20180831g"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -205,7 +205,7 @@ InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
 InRa "|  Author: Manish Parashar        |"
-InRa "|  Editor: Darias                 |"
+InRa "|  ReBuild: Darias                |"
 InRa "|  iOS version: $OSbuild $bit      |"
 InRa "==================================="
 InRa "   `date`"; InRa "   Your IP Address: $ip"; InRa "Type sh ${aMuc}/$(basename "$0") or sh i.sh or ./i.sh to run scripts"
