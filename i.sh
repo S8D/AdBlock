@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831i"
+PhienBan="20180831j"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -158,7 +158,7 @@ fi
 CapNhat ()
 {
 	InRa ">>> Checking for updates...";
-	if [ -f "${TMuc}/sd" ]; then url="${Nha}/$0"; else url="gg.gg/i_up"; fi
+	if [ -f "${aMuc}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
 	if [ $net -eq 1 ]; then GetSSL $url > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
@@ -212,7 +212,7 @@ InRa "==================================="
 InRa "   `date`"; InRa "   Your IP Address: $ip";
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
-	if [ -f "${TMuc}/sd" ]; then url="${Nha}/$0"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
+	if [ -f "${aMuc}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
