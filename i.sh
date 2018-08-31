@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831j"
+PhienBan="20180831k"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -216,13 +216,13 @@ if [ $net -eq 1 ]; then
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
-	dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
+	if [ ! -f "${aMuc}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
 	if [ $SoBao -ge 1 ]; then dv=`grep -w -m 1 "TBao1" $fSed`;TBao1=$(echo $dv | sed 's/.*\=//'); echo "$TBao1"; fi
 	if [ $SoBao -ge 2 ]; then dv=`grep -w -m 1 "TBao2" $fSed`;TBao2=$(echo $dv | sed 's/.*\=//'); echo "$TBao2"; fi
 	if [ $SoBao -ge 3 ]; then dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3"; fi
 	if [ $SoBao -ge 4 ]; then dv=`grep -w -m 1 "TBao4" $fSed`;TBao4=$(echo $dv | sed 's/.*\=//'); echo "$TBao4"; fi
 	if [ $SoBao -ge 5 ]; then dv=`grep -w -m 1 "TBao5" $fSed`;TBao5=$(echo $dv | sed 's/.*\=//'); echo "$TBao5"; fi
-	printf '\n'; else NetDown; Xong;
+	printf '\n'; else NetDown; Xong; fi
 fi
 #7__________________________________________________________________________________________________
 if [ $net -eq 1 ]; then
