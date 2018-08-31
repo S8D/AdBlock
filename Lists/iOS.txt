@@ -1,20 +1,5 @@
-#hVersion=20180830a
+#hVersion=20180831a
 
-b.scorecardresearch.com
-cm.send.microadinc.com
-cm.gammaplatform.com
-d3.hadarone.com
-delivery.m.ambientplatform.vn
-match.adsrvr.org
-tag.gammaplatform.com
-pub.lavanetwork.net
-pixel.tapad.com
-tracking.yomedia.vn
-ib.adnxs.com
-media.yomedia.vn
-delivery.yomedia.vn
-secure.adnxs.com
-c.rigelink.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -303,6 +288,8 @@ uniad.vn
 myeva.vn
 thethaovanhoa.vn
 static.adtima.vn
+delivery.yomedia.vn
+tracking.yomedia.vn
 media.yomedia.vn
 admicro1.vcmedia.vn
 qccoccocmedia.vn
@@ -850,6 +837,7 @@ dispatcher.c360dn.com
 n-cdn.areyouahuman.com
 assets.adobedtm.com
 www.jotform.com
+cm.gammaplatform.com
 tag.gammaplatform.com
 ads.servebom.com
 v2.zopim.com
@@ -884,6 +872,7 @@ xl-trk.com
 code.ionicframework.com
 kaymopk.com
 cdn.viglink.com
+c.rigelink.com
 mepodownload.mediatek.com
 lepodownload.mediatek.com
 mgepodownload.mediatek.com
@@ -1115,6 +1104,7 @@ cdn.comedia.coccoc.com
 coccoc.com
 cdn.livechatinc.com
 secure.livechatinc.com
+cm.send.microadinc.com
 xn--oogle-wmc.com
 csi.gstatic.com
 gss0.bdstatic.com
