@@ -1,8 +1,8 @@
 #!/bin/sh
-Version=20180831c
-TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: sh /q/i.sh -w mesu.apple.com
-TBao2=### Lệnh chạy scripts sh /q/i.sh hay sh i.sh hay ./i.sh
-TBao3=### Tham số: -p để dừng chặn. -r để chặn tiếp. -h để xem thêm tham số khác.
+Version=20180831d
+TBao1=### Gõ sh i.sh -h để xem thêm tham số khác.
+TBao2=### Tham số: -p để dừng chặn. -r để chặn tiếp.
+TBao3= 
 TBao4=### Liên hệ hỗ trợ: m.me/LucThanhPhu
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";

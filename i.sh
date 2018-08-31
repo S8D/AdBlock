@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180831e"
+PhienBan="20180831f"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -208,7 +208,7 @@ InRa "|  Author: Manish Parashar        |"
 InRa "|  Editor: Darias                 |"
 InRa "|  iOS version: $OSbuild $bit      |"
 InRa "==================================="
-InRa "   `date`"; InRa "   Your IP Address: $ip"; InRa "   Please run sh ${aMuc}/$(basename "$0") "
+InRa "   `date`"; InRa "   Your IP Address: $ip"; InRa "Type sh ${aMuc}/$(basename "$0") or sh i.sh or ./i.sh to run scripts"
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
 	GetSSL gg.gg/i_sh > $upTam; KiemTra;
