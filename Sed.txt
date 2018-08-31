@@ -1,7 +1,7 @@
 #!/bin/sh
-Version=20180829d
-TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: sh /a/i.sh -w mesu.apple.com
-TBao2=### Lệnh chạy scripts sh /a/i.sh hay sh i.sh hay ./i.sh
+Version=20180831a
+TBao1=### Nếu bị lỗi AppStore thì gõ lệnh: sh ${aMuc}/i.sh -w mesu.apple.com
+TBao2=### Lệnh chạy scripts sh ${aMuc}/i.sh hay sh i.sh hay ./i.sh
 TBao3=### Tham số: -p để dừng chặn. -r để chặn tiếp. -h để xem thêm tham số khác.
 TBao4=### Nếu xuất hiện ads trong app hay app lỗi do dùng scripts thì pm mình nhé! m.me/LucThanhPhu
 #__________________________________________________________________________________________________
