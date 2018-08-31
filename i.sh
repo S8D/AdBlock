@@ -251,8 +251,7 @@ if [ $net -eq 1 ]; then
 		mv $hTam $hChinh;Counts=$(cat $hChinh | wc -l | sed 's/^[ \t]*//');
 		InRa "# Blocked  $Counts | Size $(Size "$hChinh") | Hosts $hvers";
 	fi
-else
-	NetDown; DemLine; Xong
+else NetDown; DemLine; Xong
 fi
 DemGio; InRa "# Total time: $Phut:$Giay minutes"; InRa "# DONE"; Xong
 # FIN
