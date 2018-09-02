@@ -1,5 +1,11 @@
-#hVersion=20180902b
+#hVersion=20180902c
 
+hh-btr.com
+cdn.siteswithcontent.com
+personaly.click
+tut-64.com
+luckypushh.com
+talk4anyone.com
 wsp.adskeeper.co.uk
 xlog.snssdk.com
 xlog.byteoversea.com
