@@ -1,5 +1,20 @@
-#hVersion=20180831a
+#hVersion=20180902a
 
+xlog.snssdk.com
+xlog.byteoversea.com
+mon.snssdk.com
+log.byteoversea.com
+ib.snssdk.com
+i.byteoversea.com
+gecko.snssdk.com
+dm16.byteoversea.com
+aweme.snssdk.com
+verify.snssdk.com
+api.amemv.com
+dm.toutiao.com
+p3.pstatp.com
+p9.pstatp.com
+dm.bytedance.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
