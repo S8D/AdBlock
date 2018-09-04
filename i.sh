@@ -6,7 +6,7 @@ Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
-export aMuc="/q"
+export TMChinh="/q"
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
@@ -41,16 +41,17 @@ export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
-	export hChinh="${TMuc}/${fName}"; else mkdir -p ${aMuc};
-	export Data="${aMuc}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
-	if [ ${TMuc} -ef ${aMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); fi; fi
-	if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-		if [ -f ${TMuc}/sd ]; then cat ${TMuc}/sd > ${aMuc}/sd; fi
-		if ! [ ${TMuc} -ef ${aMuc} ]; then cat $0 > ${aMuc}/$(basename "$0"); fi
+	export hChinh="${TMuc}/${fName}"; else mkdir -p ${TMChinh};
+	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
+	if [ ${TMuc} -ef ${TMChinh} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); fi; fi
+	if ! [ ${TMuc} -ef ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+		if [ -f ${TMuc}/sd ]; then cat ${TMuc}/sd > ${TMChinh}/sd; fi
+		if ! [ ${TMuc} -ef ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); fi
 		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); fi; fi
-		DonRac; if [ -f ${aMuc}/$(basename "$0") ]; then printf '\n'; 
-		echo ">>> Please run sh ${aMuc}/$(basename "$0") "; NhanFim; printf '\n'; sh ${aMuc}/$(basename "$0"); fi; exit 0;
+		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
+		echo ">>> Please run sh ${TMChinh}/$(basename "$0") "; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); fi; exit 0;
 	fi
+	#if ! [ ${TMuc} -ef ${TMChinh} ] then sh ${TMChinh}/$(basename "$0"); fi; exit 0;
 fi
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
@@ -143,9 +144,9 @@ KiemTra ()
 			fi
 			chmod 755 $upTam;
 			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then DonRac; fi
+				if ! [ ${TMuc} -ef ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then DonRac; fi
 				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
-				mv $upTam ${aMuc}/$(basename "$0");
+				mv $upTam ${TMChinh}/$(basename "$0");
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi ";export upd=1;
 		else
@@ -158,7 +159,7 @@ fi
 CapNhat ()
 {
 	InRa ">>> Checking for updates...";
-	if [ -f "${aMuc}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
+	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
 	if [ $net -eq 1 ]; then GetSSL $url > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
@@ -213,11 +214,11 @@ InRa "   `date`"; InRa "   Your IP Address: $ip";
 if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
-	if [ -f "${aMuc}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
+	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
-	if [ ! -f "${aMuc}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
+	if [ ! -f "${TMChinh}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
 		if [ $SoBao -ge 1 ]; then dv=`grep -w -m 1 "TBao1" $fSed`;TBao1=$(echo $dv | sed 's/.*\=//'); echo "$TBao1"; fi
 		if [ $SoBao -ge 2 ]; then dv=`grep -w -m 1 "TBao2" $fSed`;TBao2=$(echo $dv | sed 's/.*\=//'); echo "$TBao2"; fi
 		if [ $SoBao -ge 3 ]; then dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3"; fi
