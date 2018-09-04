@@ -49,7 +49,7 @@ if [ -f "${TMuc}/Location" ]; then
 		if ! [ ${TMuc} -ef ${aMuc} ]; then cat $0 > ${aMuc}/$(basename "$0"); fi
 		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); fi; fi
 		DonRac; if [ -f ${aMuc}/$(basename "$0") ]; then printf '\n'; 
-		echo ">>> Please run sh ${aMuc}/$(basename "$0") "; printf '\n'; sh ${aMuc}/$(basename "$0"); fi; exit 0;
+		echo ">>> Please run sh ${aMuc}/$(basename "$0") "; NhanFim; printf '\n'; sh ${aMuc}/$(basename "$0"); fi; exit 0;
 	fi
 fi
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
