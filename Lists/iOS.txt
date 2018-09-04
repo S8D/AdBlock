@@ -1,27 +1,5 @@
-#hVersion=20180902c
+#hVersion=20180904a
 
-hh-btr.com
-cdn.siteswithcontent.com
-personaly.click
-tut-64.com
-luckypushh.com
-talk4anyone.com
-wsp.adskeeper.co.uk
-xlog.snssdk.com
-xlog.byteoversea.com
-mon.snssdk.com
-log.byteoversea.com
-ib.snssdk.com
-i.byteoversea.com
-gecko.snssdk.com
-dm16.byteoversea.com
-aweme.snssdk.com
-verify.snssdk.com
-api.amemv.com
-dm.toutiao.com
-p3.pstatp.com
-p9.pstatp.com
-dm.bytedance.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
@@ -409,6 +387,7 @@ go.oclasrv.com
 go.pub2srv.com
 ads.aerserv.com
 n176adserv.com
+api.amemv.com
 www.vjav.com
 vjav.com
 play.leadzu.com
@@ -462,6 +441,7 @@ ic.tynt.com
 opensharecount.com
 googlehosted.l.googleusercontent.com
 ci3.googleusercontent.com
+cdn.siteswithcontent.com
 cdn-settings.segment.com
 cdn.segment.com
 app-measurement.com
@@ -898,6 +878,7 @@ c.rigelink.com
 mepodownload.mediatek.com
 lepodownload.mediatek.com
 mgepodownload.mediatek.com
+verify.snssdk.com
 iu.snssdk.com
 is.snssdk.com
 gecko.snssdk.com
@@ -947,6 +928,7 @@ keonhacai.com
 sdk.open.talk.gepush.com
 tophinh.com
 ads.phimnhanh.com
+luckypushh.com
 sb.scorecardresearch.com
 b.scorecardresearch.com
 pl.ventunotech.com
@@ -998,6 +980,7 @@ q-mobi.go2affise.com
 cdn.livefyre.com
 mpsnare.iesnare.com
 cdnjs.cloudflare.com
+talk4anyone.com
 d3.hadarone.com
 d2.hadarone.com
 d1.hadarone.com
@@ -1226,6 +1209,7 @@ api.bee7.com
 jvz5.com
 get35.com
 img06.en25.com
+tut-64.com
 jf71qh5v14.com
 u.uc123.com
 beacons.gvt2.com
@@ -1241,6 +1225,7 @@ i.camera360.com
 applog.camera360.com
 store.camera360.com
 slt.hit.gemius.pl
+wsp.adskeeper.co.uk
 mybbc-analytics.files.bbci.co.uk
 r.bbci.co.uk
 static.bbci.co.uk
