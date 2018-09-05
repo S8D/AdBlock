@@ -1,4 +1,4 @@
-#hVersion=20180904a
+#hVersion=20180905a
 
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
@@ -507,7 +507,6 @@ mblapi.ssl2.duapps.com
 mobula.ssl2.duapps.com
 static.ads.apusapps.com
 feed.apusapps.com
-api.unlimapps.com
 otafsg-az.coloros.com
 i.sau.coloros.com
 i.sau.foreign.coloros.com
