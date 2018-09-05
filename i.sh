@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180905c"
+PhienBan="20180905d"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -11,7 +11,8 @@ export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
 Kiem() { ! type "$1" > /dev/null; };
-CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; }
+CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
+XoaCu () { rm -rf /a; rm -rf /q; rm -rf /1; };
 DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 CheckRoot ()
@@ -53,6 +54,7 @@ if [ -f "${TMuc}/Location" ]; then
 	fi
 	#if ! [ ${TMuc} -ef ${TMChinh} ] then sh ${TMChinh}/$(basename "$0"); fi; exit 0;
 fi
+if ! [ ${TMuc} -ef ${TMChinh} ]; then XoaCu; sh ${TMChinh}/$(basename "$0"); fi; exit 0;
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 export trangOn="${Data}/trang.on";export hDung="${Data}/${fName}.zzz";
