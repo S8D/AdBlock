@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180906a"
+PhienBan="20180906b"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -27,10 +27,10 @@ if [ -f "${TMuc}/Location" ]; then
 	export hChinh="${TMuc}/${fName}"; else mkdir -p ${TMChinh};
 	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
 	if [ ${TMuc} -ef ${TMChinh} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
-	if ! [ ${TMuc} -ef ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+	if [ ${TMuc} != ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
 		if [ -f ${TMuc}/sd ]; then cat ${TMuc}/sd > ${TMChinh}/sd; fi
-		if ! [ ${TMuc} -ef ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
-		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
+		if [ ${TMuc} != ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
+		if [ ${TMuc} != ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
 		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
