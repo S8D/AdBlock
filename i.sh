@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180906d"
+PhienBan="20180906e"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -7,6 +7,7 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 export TMChinh="/i"
+export TMPhu="/var/mobile"
 export TMChay=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMChay}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
@@ -27,7 +28,7 @@ if [ -f "${TMChay}/Location" ]; then
 	export hChinh="${TMChay}/${fName}"; else mkdir -p ${TMChinh};
 	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
 	if [ ${TMChay} == ${TMChinh} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
-	if [[ ${TMChay} != ${TMChinh} ]] && [[ ${TMChay} != ${TMPhu} ]]; then
+	if [ ${TMChay} != ${TMChinh} ] && [ ${TMChay} != ${TMPhu} ]; then
 		if [ -f ${TMChay}/sd ]; then cat ${TMChay}/sd > ${TMChinh}/sd; fi
 		if [ ${TMChay} != ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
 		if [ ${TMChay} != ${TMPhu} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
@@ -52,7 +53,7 @@ if [ $OS == $x64 ]; then bit="64bit";
 fi
 if CheckNet; then net=1; else net=0; fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
-export upTam="${MTam}/u.sh";export TMPhu="/var/mobile";
+export upTam="${MTam}/u.sh";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
