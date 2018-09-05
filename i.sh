@@ -21,7 +21,23 @@ if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 fi
 }
-OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; OS=`uname -p`; x64="arm64"; CheckRoot
+CheckRoot
+if [ -f "${TMuc}/Location" ]; then
+	export Data="${TMuc}/Data";mkdir -p ${Data};
+	export hChinh="${TMuc}/${fName}"; else mkdir -p ${TMChinh};
+	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
+	if [ ${TMuc} -ef ${TMChinh} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
+	if ! [ ${TMuc} -ef ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
+		if [ -f ${TMuc}/sd ]; then cat ${TMuc}/sd > ${TMChinh}/sd; fi
+		if ! [ ${TMuc} -ef ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
+		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
+		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
+		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+	fi
+	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
+fi
+OS=`uname -p`; x64="arm64";
 if [ $OS == $x64 ]; then bit="64bit";
 	if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 	if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
@@ -40,20 +56,6 @@ if CheckNet; then net=1; else net=0; fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
-if [ -f "${TMuc}/Location" ]; then
-	export Data="${TMuc}/Data";mkdir -p ${Data};
-	export hChinh="${TMuc}/${fName}"; else mkdir -p ${TMChinh};
-	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
-	if [ ${TMuc} -ef ${TMChinh} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
-	if ! [ ${TMuc} -ef ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-		if [ -f ${TMuc}/sd ]; then cat ${TMuc}/sd > ${TMChinh}/sd; fi
-		if ! [ ${TMuc} -ef ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
-		if ! [ ${TMuc} -ef ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
-		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
-		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
-	fi
-	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
-fi
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 export trangOn="${Data}/trang.on";export hDung="${Data}/${fName}.zzz";
