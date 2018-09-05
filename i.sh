@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180906b"
+PhienBan="20180906c"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -7,30 +7,30 @@ export QUIET=0
 export SECURL=0
 export DISTRIB=0
 export TMChinh="/i"
-export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
-export MTam="${TMuc}/tmp";mkdir -p ${MTam};
+export TMChay=""$(cd "$(dirname "${0}")" && pwd)""
+export MTam="${TMChay}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
 Kiem() { ! type "$1" > /dev/null; };
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 XoaCu () { rm -rf /a; rm -rf /q; rm -rf /1; };
-DonRac () { rm -f *.sh; rm -rf ${TMuc}/Data; rm -rf ${MTam}; };
+DonRac () { rm -f *.sh; rm -rf ${TMChay}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 CheckRoot ()
 {
-if [ -f "${TMuc}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
+if [ -f "${TMChay}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 fi
 }
 CheckRoot
-if [ -f "${TMuc}/Location" ]; then
-	export Data="${TMuc}/Data";mkdir -p ${Data}; OSbuild="LiNux"
-	export hChinh="${TMuc}/${fName}"; else mkdir -p ${TMChinh};
+if [ -f "${TMChay}/Location" ]; then
+	export Data="${TMChay}/Data";mkdir -p ${Data}; OSbuild="LiNux"
+	export hChinh="${TMChay}/${fName}"; else mkdir -p ${TMChinh};
 	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
-	if [ ${TMuc} -ef ${TMChinh} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
-	if [ ${TMuc} != ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then
-		if [ -f ${TMuc}/sd ]; then cat ${TMuc}/sd > ${TMChinh}/sd; fi
-		if [ ${TMuc} != ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
-		if [ ${TMuc} != ${iMuc} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
+	if [ ${TMChay} == ${TMChinh} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
+	if [ ${TMChay} != ${TMChinh} ] && [ ${TMChay} != ${TMPhu} ]; then
+		if [ -f ${TMChay}/sd ]; then cat ${TMChay}/sd > ${TMChinh}/sd; fi
+		if [ ${TMChay} != ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
+		if [ ${TMChay} != ${TMPhu} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
 		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
@@ -52,7 +52,7 @@ if [ $OS == $x64 ]; then bit="64bit";
 fi
 if CheckNet; then net=1; else net=0; fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
-export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
+export upTam="${MTam}/u.sh";export TMPhu="/var/mobile";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
@@ -63,9 +63,9 @@ if [ ! -f $denOff ]; then echo -n "" > $denOff; fi
 if [ ! -f $trangOff ]; then echo -n "" > $trangOff; fi
 export hLog="${Data}/h.log";export DungLai="${Data}/Dung";
 export SHELL=/bin/sh
-export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMChay}"
 export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
-export PWD="${TMuc}"; cd "${TMuc}"
+export PWD="${TMChay}"; cd "${TMChay}"
 #2__________________________________________________________________________________________________
 logger ">>> $(basename "$0") started"
 export ScFile="${Data}/cacert.pem"
@@ -145,9 +145,9 @@ KiemTra ()
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
 			chmod 755 $upTam;
-			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${TMChinh} ] && ! [ ${TMuc} -ef ${iMuc} ]; then DonRac; fi
-				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
+			if [ -f "${TMChay}/Location" ]; then mv $upTam $0; else
+				if ! [ ${TMChay} -ef ${TMChinh} ] && ! [ ${TMChay} -ef ${TMPhu} ]; then DonRac; fi
+				if [ -d ${TMPhu} ]; then cp $upTam ${TMPhu}/$(basename "$0"); fi
 				mv $upTam ${TMChinh}/$(basename "$0");
 			fi
 			InRa ">>> $(basename "$0") updated to $vMoi ";export upd=1;
@@ -209,7 +209,7 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
-if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+if [ ${TMChay} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
