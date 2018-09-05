@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180906j"
+PhienBan="20180906k"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -210,7 +210,7 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
-if [ ${TMChay} != ${TMChinh} ]; then XoaCu; InRa "> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+if [ ! -f "$PC" ]; then if [ ${TMChay} != ${TMChinh} ]; then XoaCu; InRa "> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi; fi
 InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
