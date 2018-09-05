@@ -161,7 +161,7 @@ fi
 CapNhat ()
 {
 	InRa ">>> Checking for updates...";
-	if [ -f "${TMChinh}/sd" ] || [ -f "${TMChay}/Location" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
+	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
 	if [ $net -eq 1 ]; then GetSSL $url > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
@@ -220,11 +220,11 @@ InRa "   `date`"; InRa "   Your IP Address: $ip";
 if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
-	if [ -f "${TMChinh}/sd" ] || [ -f "${TMChay}/Location" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
+	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
-	if [ ! -f "${TMChinh}/sd" ] || [ ! -f "${TMChay}/Location" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
+	if [ ! -f "${TMChinh}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
 		if [ $SoBao -ge 1 ]; then dv=`grep -w -m 1 "TBao1" $fSed`;TBao1=$(echo $dv | sed 's/.*\=//'); echo "$TBao1"; fi
 		if [ $SoBao -ge 2 ]; then dv=`grep -w -m 1 "TBao2" $fSed`;TBao2=$(echo $dv | sed 's/.*\=//'); echo "$TBao2"; fi
 		if [ $SoBao -ge 3 ]; then dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3"; fi
