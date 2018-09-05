@@ -222,7 +222,7 @@ if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
 	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
-	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 	if [ ! -f "${TMChinh}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
