@@ -21,7 +21,7 @@ if [ -f "${TMChay}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; ex
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 fi
 }
-CheckRoot
+CheckRoot;
 if [ -f "${TMChay}/Location" ]; then
 	export Data="${TMChay}/Data";mkdir -p ${Data}; OSbuild="LiNux"
 	export hChinh="${TMChay}/${fName}"; else mkdir -p ${TMChinh};
