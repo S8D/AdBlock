@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180905e"
+PhienBan="20180905f"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -54,7 +54,7 @@ if [ -f "${TMuc}/Location" ]; then
 	fi
 	#if ! [ ${TMuc} -ef ${TMChinh} ] then sh ${TMChinh}/$(basename "$0"); fi; exit 0;
 fi
-if ! [ ${TMuc} -ef ${TMChinh} ]; then XoaCu; echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; sh ${TMChinh}/$(basename "$0"); fi; exit 0;
+if [ ${TMuc} != ${TMChinh} ]; then XoaCu; echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; sh ${TMChinh}/$(basename "$0"); fi; exit 0;
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
 export trangOn="${Data}/trang.on";export hDung="${Data}/${fName}.zzz";
