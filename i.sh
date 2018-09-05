@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180905i"
+PhienBan="20180906a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -34,7 +34,6 @@ if [ -f "${TMuc}/Location" ]; then
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
 		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
-	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; echo ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
 fi
 OS=`uname -p`; x64="arm64";
@@ -210,6 +209,7 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
+if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
