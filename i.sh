@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180906e"
+PhienBan="20180906f"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -35,7 +35,8 @@ if [ -f "${TMChay}/Location" ]; then
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
 		echo "> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
-	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
+	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
+	if [ ${TMChay} != ${TMChinh} ]; then XoaCu; echo "> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 fi
 OS=`uname -p`; x64="arm64";
 if [ $OS == $x64 ]; then bit="64bit";
@@ -52,7 +53,6 @@ if [ $OS == $x64 ]; then bit="64bit";
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 fi
 if CheckNet; then net=1; else net=0; fi
-if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 export upTam="${MTam}/u.sh";
 export tbl="${MTam}/bl.tmp";export twl="${MTam}/wl.tmp";
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
@@ -210,7 +210,6 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
-if [ ${TMChay} != ${TMChinh} ]; then XoaCu; InRa "> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
