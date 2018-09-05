@@ -5,7 +5,7 @@ TBao1=### Gõ sh i.sh -h để xem thêm tham số khác.
 TBao2=### Tham số: -p để dừng chặn. -r để chặn tiếp.
 TBao3=### Nếu gặp bất cứ lỗi nào liên quan đến scripts xin liên hệ mình
 TBao4=### Hỗ trợ: m.me/LucThanhPhu 
-TBao5=### Load trang chậm do trang chờ tải ads xong mới load tiếp nội dung nên hơi khó xơi...
+TBao5=### Load trang chậm do trang chờ tải ads xong mới load tiếp nội dung nên hơi khó xơi...Mình chỉ test các trang gợi ý trên Chrome
 #__________________________________________________________________________________________________
 #SubDM="|zrus\.org$|zz\.mu$";
 #grep -vE "(${SubDM})" |
