@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180817b"
+PhienBan="20180905a"
 export SetIP="0.1.2.3";export Level=4;export TenSR="$0";export ThamSo="$@";
 Nha="https://s8d.github.io/AdBlock"; u00="${Nha}/Lists/Domains.txt"; uSed="${Nha}/Sed.txt";
 u01="http://gg.gg/u01_";u02="http://gg.gg/u02_";u03="http://gg.gg/u03_";u04="http://gg.gg/u04_";u05="http://gg.gg/u05_";
@@ -149,13 +149,7 @@ KiemTra ()
 				mCu=$(echo "$MaCu" | cut -c1-5);	 cp $0 ${Data}/i\_$BanCu\_$mCu.sh; else
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
-			chmod 755 $upTam;
-			if [ -f "${TMuc}/Location" ]; then mv $upTam $0; else
-				if ! [ ${TMuc} -ef ${aMuc} ] && ! [ ${TMuc} -ef ${iMuc} ]; then DonRac; fi
-				if [ -d ${iMuc} ]; then cp $upTam ${iMuc}/$(basename "$0"); fi
-				mv $upTam ${aMuc}/$(basename "$0");
-			fi
-			InRa ">>> $(basename "$0") updated to $vMoi ";export upd=1;
+			chmod 755 $upTam; mv $upTam $0; InRa ">>> $(basename "$0") updated to $vMoi ";export upd=1;
 		else
 			InRa ">>> $(basename "$0") version: $PhienBan";export upd=0;
 		fi
