@@ -23,7 +23,7 @@ fi
 }
 CheckRoot
 if [ -f "${TMuc}/Location" ]; then
-	export Data="${TMuc}/Data";mkdir -p ${Data};
+	export Data="${TMuc}/Data";mkdir -p ${Data}; OSbuild="LiNux"
 	export hChinh="${TMuc}/${fName}"; else mkdir -p ${TMChinh};
 	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
 	if [ ${TMuc} -ef ${TMChinh} ]; then if [ -d ${iMuc} ]; then cat $0 > ${iMuc}/$(basename "$0"); chmod 755 ${iMuc}/$(basename "$0"); fi; fi
@@ -34,7 +34,7 @@ if [ -f "${TMuc}/Location" ]; then
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
 		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
-	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; echo ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
 fi
 OS=`uname -p`; x64="arm64";
@@ -51,7 +51,6 @@ if [ $OS == $x64 ]; then bit="64bit";
 		if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 fi
-
 if CheckNet; then net=1; else net=0; fi
 if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 export upTam="${MTam}/u.sh";export iMuc="/var/mobile";
