@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180905h"
+PhienBan="20180905i"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -52,6 +52,7 @@ if [ -f "${TMuc}/Location" ]; then
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
 		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
+	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 fi
 export fSed="${MTam}/Sed";export fHost="${Data}/Host.txt";
 export tam="${MTam}/t.tmp";export hTam="${MTam}/h.tmp";
@@ -221,7 +222,6 @@ if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
 	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
-	if [ ${TMuc} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
 	if [ ! -f "${TMChinh}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
