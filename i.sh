@@ -33,7 +33,7 @@ if [ -f "${TMChay}/Location" ]; then
 		if [ ${TMChay} != ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
 		if [ ${TMChay} != ${TMPhu} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
-		echo ">>> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+		echo "> Type sh ${TMChinh}/$(basename "$0") to run AdBlock"; NhanFim; printf '\n'; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 	fi
 	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*};
 fi
@@ -210,7 +210,7 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 done
 shift $((OPTIND-1))
 #6__________________________________________________________________________________________________
-if [ ${TMChay} != ${TMChinh} ]; then XoaCu; InRa ">>> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
+if [ ${TMChay} != ${TMChinh} ]; then XoaCu; InRa "> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
 InRa "==================================="
 InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
