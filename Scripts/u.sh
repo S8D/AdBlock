@@ -1,9 +1,10 @@
 #!/bin/sh
 # UnJailBreak iOS
 # Source: https://github.com/KirovAir/delectra/raw/master/unjailbreak.sh
-PhienBan="20180814a"
+PhienBan="20180905a"
 Nha="https://s8d.github.io/AdBlock"
 TMuc=""$(cd "$(dirname "${0}")" && pwd)""
+[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 MTam="${TMuc}/tmp";mkdir -p ${MTam};
 Data="${TMuc}/Data";mkdir -p ${Data};
 upTam="${MTam}/u.sh";
@@ -37,15 +38,6 @@ else
 	NetDown; Xong
 fi
 #__________________________________
-if (( $EUID != 0 )); then
-		echo " Input pass and run again. Default: alpine "
-		G0='su'; $G0 root;
-	fi
-	if [ "$(whoami)" != "root" ] ; then
-    echo " Please login as root user and try again "
-    exit
-fi
-
 echo "Electra uninstaller by KirovAir for Electra 1.0.x"
 echo "Editor: Darias"
 echo "This has ONLY been tested on a few devices and might kill your JB."

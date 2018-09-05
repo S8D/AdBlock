@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180826c"
+PhienBan="20180905a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -27,7 +27,8 @@ if [ $OS == $x64 ]; then bit="64bit";
 		if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 fi
-if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
+if [ $iOS -eq 9 ]; then echo "Your iOS is: $OSbuild"; GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
+if [ $iOS -lt 9 ]; then echo "This scripts only support iOS greater equal 9"; exit 0; fi
 TenSR="$0"; ThamSo="$@";export ThuMay=$(date +"%u");
 if [ -f "${TMuc}/Location" ]; then
 	export Data="${TMuc}/Data";mkdir -p ${Data};
@@ -84,17 +85,17 @@ KiemTra ()
 fi
 }
 #5__________________________________________________________________________________________________
-InRa "===================================="
-InRa "|   AdBlock for iOS / Linux        |"
-InRa "|   ${Nha}  |"
-InRa "|   Author: Manish Parashar        |"
-InRa "|   Editor: Darias                 |"
-InRa "|   iOS version: $OSbuild $bit      |"
-InRa "===================================="
-InRa "   `date`";
+InRa "==================================="
+InRa "|  AdBlock for iOS / Linux        |"
+InRa "|  ${Nha}  |"
+InRa "|  Author: Manish Parashar        |"
+InRa "|  ReBuild: Darias                |"
+InRa "|  iOS version: $OSbuild $bit      |"
+InRa "==================================="
+InRa "   `date`"; InRa "   Your IP Address: $ip";
 if CheckNet; then
 	InRa "... Checking for updates..."
-	GetSSL gg.gg/i_sh > $upTam; KiemTra;
+	GetSSL gg.gg/i_sh > $upTam; KiemTra; echo "To run scripts type: sh i.sh"; NhanFim;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $TenSR $ThamSo; Xong; fi
 else
 	NetDown; Xong

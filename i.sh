@@ -1,12 +1,12 @@
 #!/bin/sh
-PhienBan="20180904a"
+PhienBan="20180905a"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
 export QUIET=0
 export SECURL=0
 export DISTRIB=0
-export TMChinh="/q"
+export TMChinh="/i"
 export TMuc=""$(cd "$(dirname "${0}")" && pwd)""
 export MTam="${TMuc}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
@@ -117,11 +117,12 @@ Giup ()
 	echo -n "[-p | --pause]"; printf '\t'; echo "Pause protection"
 	echo -n "[-r | --resume]"; printf '\t'; echo "Resume protection"
 	echo -n "[-s | --secure]"; printf '\t'; echo "Use cURL CA certs for secure file transfer"
+	echo -n "[-S | --show]"; printf '\t'; echo "Show BlackList and WhiteList"
 	echo -n "[-h | --help]"; printf '\t'; echo "Display this help screen and exit"
 	echo -n "[-u | --update]"; printf '\t'; echo "Update $(basename "$0") to the latest version"
 	echo -n "[-v | --version]"; printf ' '; echo "Print $(basename "$0") version and exit"
-	echo -n "[-c]"; printf '\t'; echo "Fix Cydia"
-	echo -n "[-z]"; printf '\t'; echo "UnJailBreak"
+	echo -n "[-c | --cydia]"; printf '\t'; echo "Fix Cydia"
+	echo -n "[-z | --unjb]"; printf '\t'; echo "UnJailBreak"
 	echo ""
 	echo "EXAMPLES:"
 	echo "$(basename "$0") -s2 --ip=172.31.255.254 "
@@ -171,13 +172,14 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 		q|Q  ) QUIET=1 ;;
 		p|P  ) Tat ;;
 		r|R  ) Bat ;;
-		s|S  ) SECURL=1 ;;
+		s  ) SECURL=1 ;;
 		u|U  ) CapNhat ;;
 		b    ) echo "$OPTARG" >> $denOff ;;
 		w    ) echo "$OPTARG" >> $trangOff ;;
 		i    ) SetIP="$OPTARG" ;;
 		c    ) Cydia ;;
 		z    ) UnJB ;;
+		S    ) ShowBW ;;
 		-    ) LONG_OPTARG="${OPTARG#*=}"
 		case $OPTARG in
 			bl=?*   ) ARG_BL="$LONG_OPTARG" ; echo $ARG_BL >> $denOff ;;
@@ -190,6 +192,9 @@ while getopts "h?vdDpPqQrRsSoOuUbcz:w:i:-:" opt; do CheckRoot;
 			pause   ) Tat ;;
 			resume  ) Bat ;;
 			secure  ) SECURL=1 ;;
+			show    ) ShowBW ;;
+			cydia   ) Cydia ;;
+			unjb    ) UnJB ;;
 			help    ) Giup ;;
 			update  ) CapNhat ;;
 			version ) echo "$PhienBan" ; Xong ;;
