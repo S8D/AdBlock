@@ -26,7 +26,7 @@ fi
 }
 OS=`uname -p`; x64="arm64";CheckRoot;
 if [ -f "$PC" ]; then
-	export Data="${TMChay}/Data";mkdir -p ${Data}; OSbuild="LiNux"
+	export Data="${TMChay}/Data";mkdir -p ${Data};
 	export hChinh="${TMChay}/${fName}"; else mkdir -p ${TMChinh};
 	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
 	if [ ${TMChay} == ${TMChinh} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
@@ -216,7 +216,7 @@ InRa "|  AdBlock for iOS / Linux        |"
 InRa "|  ${Nha}  |"
 InRa "|  Author: Manish Parashar        |"
 InRa "|  ReBuild: Darias                |"
-InRa "|  iOS version: $OSbuild $bit      |"
+if [ ! -f "$PC" ]; then InRa "|  iOS version: $OSbuild $bit      |"; fi
 InRa "==================================="
 InRa "   `date`"; InRa "   Your IP Address: $ip";
 if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
