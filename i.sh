@@ -9,6 +9,8 @@ export DISTRIB=0
 export TMChinh="/i"
 export TMPhu="/var/mobile"
 export TMChay=""$(cd "$(dirname "${0}")" && pwd)""
+export PC="${TMChay}/Location"
+export Mobile="${TMChinh}/sd"
 export MTam="${TMChay}/tmp";mkdir -p ${MTam};
 alias GetSSL="curl -f -s -k -L"; ip=$(curl -s api.ipify.org)
 Kiem() { ! type "$1" > /dev/null; };
@@ -18,18 +20,18 @@ DonRac () { rm -f *.sh; rm -rf ${TMChay}/Data; rm -rf ${MTam}; };
 NhanFim () { read -n 1 -s -r -p "Press any key to continue"; };
 CheckRoot ()
 {
-if [ -f "${TMChay}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
+if [ -f "$PC" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }; else
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 fi
 }
 OS=`uname -p`; x64="arm64";CheckRoot;
-if [ -f "${TMChay}/Location" ]; then
+if [ -f "$PC" ]; then
 	export Data="${TMChay}/Data";mkdir -p ${Data}; OSbuild="LiNux"
 	export hChinh="${TMChay}/${fName}"; else mkdir -p ${TMChinh};
 	export Data="${TMChinh}/Data";mkdir -p ${Data}; export hChinh="/etc/${fName}";
 	if [ ${TMChay} == ${TMChinh} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
 	if [ ${TMChay} != ${TMChinh} ] && [ ${TMChay} != ${TMPhu} ]; then
-		if [ -f ${TMChay}/sd ]; then cat ${TMChay}/sd > ${TMChinh}/sd; fi
+		if [ -f ${TMChay}/sd ]; then cat ${TMChay}/sd > $Mobile; fi
 		if [ ${TMChay} != ${TMChinh} ]; then cat $0 > ${TMChinh}/$(basename "$0"); chmod 755 ${TMChinh}/$(basename "$0"); fi
 		if [ ${TMChay} != ${TMPhu} ]; then if [ -d ${TMPhu} ]; then cat $0 > ${TMPhu}/$(basename "$0"); chmod 755 ${TMPhu}/$(basename "$0"); fi; fi
 		DonRac; if [ -f ${TMChinh}/$(basename "$0") ]; then printf '\n'; 
@@ -145,7 +147,7 @@ KiemTra ()
 				cp $0 ${Data}/i\_$BanCu.sh;
 			fi
 			chmod 755 $upTam;
-			if [ -f "${TMChay}/Location" ]; then mv $upTam $0; else
+			if [ -f "$PC" ]; then mv $upTam $0; else
 				if ! [ ${TMChay} -ef ${TMChinh} ] && ! [ ${TMChay} -ef ${TMPhu} ]; then DonRac; fi
 				if [ -d ${TMPhu} ]; then cp $upTam ${TMPhu}/$(basename "$0"); fi
 				mv $upTam ${TMChinh}/$(basename "$0");
@@ -161,7 +163,7 @@ fi
 CapNhat ()
 {
 	InRa ">>> Checking for updates...";
-	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
+	if [ -f "$Mobile" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_up"; fi
 	if [ $net -eq 1 ]; then GetSSL $url > $upTam; KiemTra; else NetDown; fi; Xong
 }
 #5__________________________________________________________________________________________________
@@ -220,11 +222,11 @@ InRa "   `date`"; InRa "   Your IP Address: $ip";
 if [ -f $DungLai ] && { [ -f $hDung ]; }; then InRa "# USER FORGOT TO RESUME PROTECTION AFTER PAUSING"; Bat; fi
 if [ $net -eq 1 ]; then
 	InRa "... Checking for updates..."
-	if [ -f "${TMChinh}/sd" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
+	if [ -f "$Mobile" ]; then url="${Nha}/$(basename "$0")"; else url="gg.gg/i_sh"; fi; GetSSL $url > $upTam; KiemTra;
 	if [ $upd -eq 1 ]; then InRa ">>> Starting $(basename "$0") $vMoi..."; $0 $@; Xong; fi
 	GetSSL ${uSed} > $fSed;dv=`grep -w -m 1 "Version" $fSed`;vers=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "SedH" $fSed`;alias SedH="$(echo $dv | sed 's/.*\=\=//')";
-	if [ ! -f "${TMChinh}/sd" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
+	if [ ! -f "$Mobile" ]; then dv=`grep -w -m 1 "SoBao" $fSed`;SoBao=$(echo $dv | sed 's/.*\=//'); printf '\n';
 		if [ $SoBao -ge 1 ]; then dv=`grep -w -m 1 "TBao1" $fSed`;TBao1=$(echo $dv | sed 's/.*\=//'); echo "$TBao1"; fi
 		if [ $SoBao -ge 2 ]; then dv=`grep -w -m 1 "TBao2" $fSed`;TBao2=$(echo $dv | sed 's/.*\=//'); echo "$TBao2"; fi
 		if [ $SoBao -ge 3 ]; then dv=`grep -w -m 1 "TBao3" $fSed`;TBao3=$(echo $dv | sed 's/.*\=//'); echo "$TBao3"; fi
