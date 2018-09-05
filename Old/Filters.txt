@@ -1,20 +1,20 @@
 [Adblock Plus 2.0]
-! Version: 2018.08.04.01
+! Version: 20180905a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
-!-------------------------------------=><=-------------------------------------
+!1------------------------------------=><=-------------------------------------
 ||facebook.com/plugins/$domain=~facebook.com
 ||facebook.com/*/plugins/$domain=~facebook.com
 ||facebook.com/tr/*.*
 ||facebook.com/impression.php
 ||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
-!-------------------------------------=><=-------------------------------------
+!2------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
-!------------------------------------------------------------------------------
+!3-----------------------------------------------------------------------------
 !facebook.com##._2zam._5v6d._5rzs
 !facebook.com###pagelet_canvas_nav_content
 vubey.yt##.footer-section
