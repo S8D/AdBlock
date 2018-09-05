@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20180906h"
+PhienBan="20180906i"
 export SetIP="0.1.2.3"; fName="hosts"; Chay=`date +%s`
 Nha="https://s8d.github.io/AdBlock"; uSed="${Nha}/Sed.txt"; uHost="${Nha}/Lists/iOS.txt";
 #1__________________________________________________________________________________________________
@@ -22,7 +22,7 @@ if [ -f "${TMChay}/Location" ]; then [ `whoami` = root ] || { sudo "$0" "$@"; ex
 	[ `whoami` = root ] || { echo " Input password. Default : alpine "; su root $0 $@; exit $?; };
 fi
 }
-CheckRoot;
+OS=`uname -p`; x64="arm64";CheckRoot;
 if [ -f "${TMChay}/Location" ]; then
 	export Data="${TMChay}/Data";mkdir -p ${Data}; OSbuild="LiNux"
 	export hChinh="${TMChay}/${fName}"; else mkdir -p ${TMChinh};
@@ -37,20 +37,19 @@ if [ -f "${TMChay}/Location" ]; then
 	fi
 	OSbuild=$(sw_vers -productVersion); iOS=${OSbuild%%.*}; if [ $iOS -lt 10 ]; then GetSSL gg.gg/i_9 > ${MTam}/i.sh && sh ${MTam}/i.sh; exit 0; fi
 	if [ ${TMChay} != ${TMChinh} ]; then XoaCu; echo "> Type sh ${TMChinh}/$(basename "$0") or sh i.sh to run AdBlock"; sh ${TMChinh}/$(basename "$0"); exit 0; fi
-fi
-OS=`uname -p`; x64="arm64";
-if [ $OS == $x64 ]; then bit="64bit";
-	if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
-	if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
-	if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
-	if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
-	if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
+	if [ $OS == $x64 ]; then bit="64bit";
+		if Kiem curl; then GetSSL gg.gg/_cu > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
+		if Kiem ping || Kiem logger; then GetSSL gg.gg/_in > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
+		if Kiem awk; then GetSSL gg.gg/_ga > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
+		if Kiem sed; then GetSSL gg.gg/_se > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
+		if Kiem grep; then GetSSL gg.gg/_gr > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
 	else bit="32bit";
 		if Kiem curl; then GetSSL gg.gg/cu_ > ${MTam}/curl.deb && dpkg -i ${MTam}/curl.deb; fi
 		if Kiem ping || Kiem logger; then GetSSL gg.gg/in_ > ${MTam}/inetutils.deb && dpkg -i ${MTam}/inetutils.deb; fi
 		if Kiem awk; then GetSSL gg.gg/ga_ > ${MTam}/gawk.deb && dpkg -i ${MTam}/gawk.deb; fi
 		if Kiem sed; then GetSSL gg.gg/se_ > ${MTam}/sed.deb && dpkg -i ${MTam}/sed.deb; fi
 		if Kiem grep; then GetSSL gg.gg/gr_ > ${MTam}/grep.deb && dpkg -i ${MTam}/grep.deb; fi
+	fi
 fi
 if CheckNet; then net=1; else net=0; fi
 export upTam="${MTam}/u.sh";
