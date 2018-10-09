@@ -1,1 +1,13 @@
-
+.byteoversea.
+.snssdk.
+.crashlytics.
+.umeng.
+.umengcloud.
+.toutiao.
+.amemv.
+.isnssdk.
+.pstatp.
+.appsflyer.
+||graph.facebook.com$app=com.ss.android.ugc.trill
+.qq.com
+.bytedance.
