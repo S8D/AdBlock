@@ -11,3 +11,7 @@
 ||graph.facebook.com$app=com.ss.android.ugc.trill
 .qq.com
 .bytedance.
+||api.tiktokv.com/cloudpush/callback^
+||api.tiktokv.com/service/1^
+||api.tiktokv.com/service/settings^
+||api.tiktokv.com/2^
