@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20181017a
+! Version: 20181017b
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
