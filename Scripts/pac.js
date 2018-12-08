@@ -1,680 +1,661 @@
-var noadsver = "20181208b";
+var noadsver = "$Id: no-ads.pac,v 6.3 2017/09/28 17:08:39 loverso Exp loverso $";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
-if (typeof(navigator) != "undefined"
-	&& navigator.appVersion.indexOf("Mac") != -1) {
-    blackhole = "PROXY 0.0.0.0:3421";
+if (typeof (navigator) != "undefined" &&
+	navigator.appVersion.indexOf("Mac") != -1) {
+	blackhole = "PROXY 0.0.0.0:3421";
 }
 var localproxy = normal;
 var socksproxy = normal;
 var bypass = normal;
-var re_banner  = /[/]([^/]*?)(advert|adimage|adframe|adserv|admentor|adview|viewad|banner|popunder|media\/subtract)s?/i;
+var re_banner = /[/]([^/]*?)(advert|adimage|adframe|adserv|admentor|adview|viewad|banner|popunder|media\/subtract)s?/i;
 var re_banner_white = /(load|feature=banner|upload_popup|popupplayer|popupmenu\.css|loginpopup|bannerbomb|popup\.lala\.com\/|css)/i;
 var re_banner2 = /[/](?!no-ads)([^/]*?([^0-9/][^-/]))?(\b|[_])(ad[s]?)(\b|[_0-9])/i;
 var re_adhost = /\b((new)?ad(?!(venture|vantage|am|mission|visor|alur|iumx|ult|vizia|obe|min|sl|d|olly|vance))|ads\b|adserv|pop(?!ular|corn|e)|click(?!redblue|andbuy|.reference)|cash(?!back)|banner|bans)/i;
 var re_crud = /www\.\w+\.com\/image-\d+-\d+$/;
 var re_whitelist_domains = /(^|\.)(adorama\.com|adafruit\..*|advogato\.org|adirondack\..*|kintera\.org|sprintpcs\.com|adp\.com|lego\.com|dell\.com|mozdev\.org|mozilla\.org|fidelity\.com|tirerack\.com|titantv\.com|lala\.com|sprint\.com|nextel\.com|verizon\.com|vupload\.facebook\.com|rit\.edu|mididb\.com|sony\.tv|market\.android\.com|weeklyad\.staples\.com|(code|plus|www|mail|apis|drive|docs)\.google\.com|googleadservices\.com|gmail\.com|gstatic\.com|thetvdb\.com|bits\te.wikimedia\.org|css\.slickdealscdn\.com|newegg\.com|androiddrawer\.com|addons\.cdn\.mozilla\.net|wsj\.com|massdrop\.com|cloudfront\.net|ad.*\.rackcdn\.com|bankofamerica\.com\|office\.com|smarttiles\.click|solaredge\.com|smartthings\.com)$/i;
 var isActive = 1;
-function FindProxyForURL(url, host)
-{
-    if (shExpMatch(host, "no-ads.int")) {
-        if (shExpMatch(url, "*/on*")) {
-	    isActive = 1;
-	} else if (shExpMatch(url, "*/off*")) {
-	    isActive = 0;
-	} else if (shExpMatch(url, "*no-ads.int/")) {
-	    alert("no-ads is "+(isActive ? "enabled" : "disabled")+".\n" + url);
-	} else {
-	    alert("no-ads unknown option.\n" + url);
-	}
-	return blackhole;
-    }
-    if (!isActive) {
-	return bypass;
-    }
-    url = url.toLowerCase();
-    host = host.toLowerCase();
-    if (0
-    ) {
-	return localproxy;
-    }
-    if (0
-    ) {
-	return socksproxy;
-    }
-    if (0
-	|| re_whitelist_domains.test(host)
-	|| shExpMatch(url, "*.apple.com/switch/ads/*")
-	|| (host == "adf.ly"
-	    && shExpMatch(url, "*/http:/*"))
-	|| (host == "cdn.adf.ly"
-	    && shExpMatch(url, "*js"))
-	|| (host == "images.rottentomatoescdn.com"
-	    && shExpMatch(url, "*/scripts?"))
-	|| ((   _dnsDomainIs(host, "wunderground.com")
-	     || _dnsDomainIs(host, "wund.com")
-	    )
-	    && (   shExpMatch(url, "*/cgi-bin/banner/ban/wxbanner*")
-		|| shExpMatch(url, "*/weathersticker/*")
-		|| shExpMatch(url, "*/cgi-bin/satbanner*")
-	    )
-	   )
-    ) {
-	return normal;
-    }
-    if (0
-	|| shExpMatch(url, "*/favicon.*")
-	|| shExpMatch(url, "*/animated_favicon*")
-	|| (re_banner.test(url) && !re_banner_white.test(url))
-	|| re_banner2.test(url)
-	|| re_adhost.test(host)
 
-	|| _dnsDomainIs(host, "addthis.com")
-	|| _dnsDomainIs(host, "adjust.com")
-	|| _dnsDomainIs(host, "admicro1.vcmedia.vn")
-	|| _dnsDomainIs(host, "adminplayer.sohatv.vn")
-	|| _dnsDomainIs(host, "adnetwork.vn")
-	|| _dnsDomainIs(host, "adsco.re")
-	|| _dnsDomainIs(host, "adservice.google.com")
-	|| _dnsDomainIs(host, "adservice.google.com.vn")
-	|| _dnsDomainIs(host, "adsrvr.org")
-	|| _dnsDomainIs(host, "adtima.vn")
-	|| _dnsDomainIs(host, "adtimaserver.vn")
-	|| _dnsDomainIs(host, "aerserv.com")
-	|| _dnsDomainIs(host, "alexametrics.com")
-	|| _dnsDomainIs(host, "alibaba.tanx.com")
-	|| _dnsDomainIs(host, "alibabadns.com")
-	|| _dnsDomainIs(host, "amazon-adsystem.com")
-	|| _dnsDomainIs(host, "ambientplatform.vn")
-	|| _dnsDomainIs(host, "amemv.com")
-	|| _dnsDomainIs(host, "anthill.vn")
-	|| _dnsDomainIs(host, "ants.vn")
-	|| _dnsDomainIs(host, "app-measurement.com")
-	|| _dnsDomainIs(host, "appier.net")
-	|| _dnsDomainIs(host, "appldnld.apple.com")
-	|| _dnsDomainIs(host, "apple-dns.net")
-	|| _dnsDomainIs(host, "apple.com")
-	|| _dnsDomainIs(host, "applovin.com")
-	|| _dnsDomainIs(host, "applvn.com")
-	|| _dnsDomainIs(host, "appnext.com")
-	|| _dnsDomainIs(host, "appsflyer.com")
-	|| _dnsDomainIs(host, "baidu.com")
-	|| _dnsDomainIs(host, "blueseed.tv")
-	|| _dnsDomainIs(host, "blueserving.com")
-	|| _dnsDomainIs(host, "byteoversea.com")
-	|| _dnsDomainIs(host, "byteoversea.com.edgekey.net")
-	|| _dnsDomainIs(host, "byteoversea.net")
-	|| _dnsDomainIs(host, "catch.gift")
-	|| _dnsDomainIs(host, "cloudmobi.net")
-	|| _dnsDomainIs(host, "crashlytics.com")
-	|| _dnsDomainIs(host, "criteo.com")
-	|| _dnsDomainIs(host, "criteo.net")
-	|| _dnsDomainIs(host, "doubleclick.net")
-	|| _dnsDomainIs(host, "eclick.vn")
-	|| _dnsDomainIs(host, "elb097307-934924932.us-east-1.elb.amazonaws.com")
-	|| _dnsDomainIs(host, "events-endpoint-455714294.us-east-1.elb.amazonaws.com")
-	|| _dnsDomainIs(host, "events-endpoint-e-899663497.us-east-1.elb.amazonaws.com")
-	|| _dnsDomainIs(host, "fastly.net")
-	|| _dnsDomainIs(host, "go2cloud.org")
-	|| _dnsDomainIs(host, "google-analytics.com")
-	|| _dnsDomainIs(host, "googleadservices.com")
-	|| _dnsDomainIs(host, "googlesyndication.com")
-	|| _dnsDomainIs(host, "googletagmanager.com")
-	|| _dnsDomainIs(host, "googletagservices.com")
-	|| _dnsDomainIs(host, "gowadogo.com")
-	|| _dnsDomainIs(host, "hadarone.com")
-	|| _dnsDomainIs(host, "hotjar.com")
-	|| _dnsDomainIs(host, "icloud.com")
-	|| _dnsDomainIs(host, "islandmob.com")
-	|| _dnsDomainIs(host, "kunlunca.com")
-	|| _dnsDomainIs(host, "kunluncan.com")
-	|| _dnsDomainIs(host, "kunlungr.com")
-	|| _dnsDomainIs(host, "lavanetwork.net")
-	|| _dnsDomainIs(host, "leadzu.com")
-	|| _dnsDomainIs(host, "leadzutw.com")
-	|| _dnsDomainIs(host, "liftoff.io")
-	|| _dnsDomainIs(host, "llnwd.net")
-	|| _dnsDomainIs(host, "log.baomoi.com")
-	|| _dnsDomainIs(host, "loggerelb-845367233.ap-southeast-1.elb.amazonaws.com")
-	|| _dnsDomainIs(host, "logw311.ati-host.net")
-	|| _dnsDomainIs(host, "mbid.io")
-	|| _dnsDomainIs(host, "mesu-cdn.apple.com.akadns.net")
-	|| _dnsDomainIs(host, "mesu.apple.com")
-	|| _dnsDomainIs(host, "mesu.g.aaplimg.com")
-	|| _dnsDomainIs(host, "microadinc.com")
-	|| _dnsDomainIs(host, "moatads.com")
-	|| _dnsDomainIs(host, "moblin.com")
-	|| _dnsDomainIs(host, "mobusi.com")
-	|| _dnsDomainIs(host, "mopub.com")
-	|| _dnsDomainIs(host, "ocsp.apple.com")
-	|| _dnsDomainIs(host, "personaly.click")
-	|| _dnsDomainIs(host, "platform.twitter.com")
-	|| _dnsDomainIs(host, "popads.net")
-	|| _dnsDomainIs(host, "production-adserver-666328397.us-east-1.elb.amazonaws.com")
-	|| _dnsDomainIs(host, "pstatp.com")
-	|| _dnsDomainIs(host, "query.yahoo.com")
-	|| _dnsDomainIs(host, "scontent.xx.fbcdn.net")
-	|| _dnsDomainIs(host, "scorecardresearch.com")
-	|| _dnsDomainIs(host, "serving-sys.com")
-	|| _dnsDomainIs(host, "snssdk.com")
-	|| _dnsDomainIs(host, "startappservice.com")
-	|| _dnsDomainIs(host, "syndication.twitter.com")
-	|| _dnsDomainIs(host, "tapad.com")
-	|| _dnsDomainIs(host, "umeng.com")
-	|| _dnsDomainIs(host, "unlimapps.com")
-	|| _dnsDomainIs(host, "valuepotion.com")
-	|| _dnsDomainIs(host, "www-google-analytics.l.google.com")
-	|| _dnsDomainIs(host, "www-googletagmanager.l.google.com")
-	|| _dnsDomainIs(host, "ymtrack6.co")
-	|| _dnsDomainIs(host, "ymtracking.com")
-	|| _dnsDomainIs(host, "yomedia.vn")
-	|| _dnsDomainIs(host, "zadn.vn")
-	|| _dnsDomainIs(host, "dxprljqoay4rt.cloudfront.net")
-	|| _dnsDomainIs(host, "geniusdisplay.com")
-	|| _dnsDomainIs(host, "lucklayed.info")
-	|| _dnsDomainIs(host, "performanceonclick.com")
-	|| _dnsDomainIs(host, "udarem.com")
-	|| _dnsDomainIs(host, "doubleclick.com")
-	|| _dnsDomainIs(host, "doubleclick.net")
-	|| _dnsDomainIs(host, "rpts.net")
-	|| _dnsDomainIs(host, "2mdn.net")
-	|| _dnsDomainIs(host, "2mdn.com")
-	|| _dnsDomainIs(host, "chartbeat.net")
-	|| _dnsDomainIs(host, "chitika.net")
-	|| _dnsDomainIs(host, "globaltrack.com")
-	|| _dnsDomainIs(host, "burstnet.com")
-	|| _dnsDomainIs(host, "adbureau.net")
-	|| _dnsDomainIs(host, "targetnet.com")
-	|| _dnsDomainIs(host, "humanclick.com")
-	|| _dnsDomainIs(host, "linkexchange.com")
-	|| _dnsDomainIs(host, "fastclick.com")
-	|| _dnsDomainIs(host, "fastclick.net")
-	|| shExpMatch(host, "205.180.85.*")
-	|| _dnsDomainIs(host, "admonitor.com")
-	|| _dnsDomainIs(host, "focalink.com")
-	|| _dnsDomainIs(host, "websponsors.com")
-	|| _dnsDomainIs(host, "advertising.com")
-	|| _dnsDomainIs(host, "cybereps.com")
-	|| _dnsDomainIs(host, "postmasterdirect.com")
-	|| _dnsDomainIs(host, "mediaplex.com")
-	|| _dnsDomainIs(host, "adtegrity.com")
-	|| _dnsDomainIs(host, "bannerbank.ru")
-	|| _dnsDomainIs(host, "bannerspace.com")
-	|| _dnsDomainIs(host, "theadstop.com")
-	|| _dnsDomainIs(host, "l90.com")
-	|| _dnsDomainIs(host, "webconnect.net")
-	|| _dnsDomainIs(host, "avenuea.com")
-	|| _dnsDomainIs(host, "flycast.com")
-	|| _dnsDomainIs(host, "engage.com")
-	|| _dnsDomainIs(host, "imgis.com")
-	|| _dnsDomainIs(host, "datais.com")
-	|| _dnsDomainIs(host, "link4ads.com")
-	|| _dnsDomainIs(host, "247media.com")
-	|| _dnsDomainIs(host, "hightrafficads.com")
-	|| _dnsDomainIs(host, "tribalfusion.com")
-	|| _dnsDomainIs(host, "rightserve.net")
-	|| _dnsDomainIs(host, "admaximize.com")
-	|| _dnsDomainIs(host, "valueclick.com")
-	|| _dnsDomainIs(host, "adlibris.se")
-	|| _dnsDomainIs(host, "vibrantmedia.com")
-	|| _dnsDomainIs(host, "coremetrics.com")
-	|| _dnsDomainIs(host, "vx2.cc")
-	|| _dnsDomainIs(host, "webpower.com")
-	|| _dnsDomainIs(host, "everyone.net")
-	|| _dnsDomainIs(host, "zedo.com")
-	|| _dnsDomainIs(host, "bigbangmedia.com")
-	|| _dnsDomainIs(host, "ad-annex.com")
-	|| _dnsDomainIs(host, "iwdirect.com")
-	|| _dnsDomainIs(host, "adlink.de")
-	|| _dnsDomainIs(host, "bidclix.net")
-	|| _dnsDomainIs(host, "webclients.net")
-	|| _dnsDomainIs(host, "linkcounter.com")
-	|| _dnsDomainIs(host, "sitetracker.com")
-	|| _dnsDomainIs(host, "adtrix.com")
-	|| _dnsDomainIs(host, "netshelter.net")
-	|| _dnsDomainIs(host, "rn11.com")
-	|| _dnsDomainIs(host, "ru4.com")
-	|| _dnsDomainIs(host, "rightmedia.net")
-	|| _dnsDomainIs(host, "casalemedia.com")
-	|| _dnsDomainIs(host, "casalemedia.com")
-	|| _dnsDomainIs(host, "quantserve.com")
-	|| _dnsDomainIs(host, "quantcast.com")
-	|| _dnsDomainIs(host, "crwdcntrl.net")
-	|| _dnsDomainIs(host, "scorecardresearch.net")
-	|| _dnsDomainIs(host, "pubmatic.net")
-	|| _dnsDomainIs(host, "yumenetworks.com")
-	|| _dnsDomainIs(host, "brilig.com")
-	|| _dnsDomainIs(host, "perfb.com")
-	|| _dnsDomainIs(host, "blogads.com")
-	|| _dnsDomainIs(host, "fetchback.com")
-	|| _dnsDomainIs(host, "creatives.badongo.com")
-	|| _dnsDomainIs(host, "pmsrvr.com")
-	|| _dnsDomainIs(host, "trafficmack.com")
-	|| _dnsDomainIs(host, "commission-junction.com")
-	|| _dnsDomainIs(host, "qkimg.net")
-	|| _dnsDomainIs(host, "bluestreak.com")
-	|| _dnsDomainIs(host, "virtumundo.com")
-	|| _dnsDomainIs(host, "treeloot.com")
-	|| _dnsDomainIs(host, "memberprize.com")
-	|| _dnsDomainIs(host, "internetfuel.net")
-	|| _dnsDomainIs(host, "internetfuel.com")
-	|| _dnsDomainIs(host, "peoplecaster.com")
-	|| _dnsDomainIs(host, "cupidsdatabase.com")
-	|| _dnsDomainIs(host, "automotive-times.com")
-	|| _dnsDomainIs(host, "healthy-lifetimes.com")
-	|| _dnsDomainIs(host, "us-world-business.com")
-	|| _dnsDomainIs(host, "internet-2-web.com")
-	|| _dnsDomainIs(host, "my-job-careers.com")
-	|| _dnsDomainIs(host, "freeonline.com")
-	|| _dnsDomainIs(host, "exitfuel.com")
-	|| _dnsDomainIs(host, "netbroadcaster.com")
-	|| _dnsDomainIs(host, "spaceports.com")
-	|| _dnsDomainIs(host, "mircx.com")
-	|| _dnsDomainIs(host, "exitchat.com")
-	|| _dnsDomainIs(host, "atdmt.com")
-	|| _dnsDomainIs(host, "partner2profit.com")
-	|| _dnsDomainIs(host, "centrport.net")
-	|| _dnsDomainIs(host, "centrport.com")
-	|| _dnsDomainIs(host, "rampidads.com")
-	|| _dnsDomainIs(host, "dt07.net")
-	|| _dnsDomainIs(host, "criteo.com")
-	|| _dnsDomainIs(host, "bidswitch.com")
-	|| _dnsDomainIs(host, "commonwealth.riddler.com")
-	|| _dnsDomainIs(host, "banner.freeservers.com")
-	|| _dnsDomainIs(host, "usads.futurenet.com")
-	|| _dnsDomainIs(host, "banners.egroups.com")
-	|| _dnsDomainIs(host, "ngadclient.hearme.com")
-	|| _dnsDomainIs(host, "affiliates.allposters.com")
-	|| _dnsDomainIs(host, "adincl.go2net.com")
-	|| _dnsDomainIs(host, "webads.bizservers.com")
-	|| _dnsDomainIs(host, "addserv.com")
-	|| _dnsDomainIs(host, "falkag.net")
-	|| _dnsDomainIs(host, "buysellads.com")
-	|| _dnsDomainIs(host, "dtscout.com")
-	|| _dnsDomainIs(host, "tynt.com")
-	|| (host == "promote.pair.com")
-	|| _dnsDomainIs(host, "interclick.com")
-	|| _dnsDomainIs(host, "travelscream.com")
-	|| (_dnsDomainIs(host, "mktw.net")
-	    && !shExpMatch(url, "*/css/*"))
-	|| _dnsDomainIs(host, "cjt1.net")
-	|| _dnsDomainIs(host, "bns1.net")
-	|| _dnsDomainIs(host, "image.ugo.com")
-	|| _dnsDomainIs(host, "mediamgr.ugo.com")
-	|| _dnsDomainIs(host, "zonecms.com")
-	|| _dnsDomainIs(host, "zoneld.com")
-	|| _dnsDomainIs(host, "atwola.com")
-	|| _dnsDomainIs(host, "toolbar.aol.com")
-	|| _dnsDomainIs(host, "adsdk.com")
-	|| (_dnsDomainIs(host, "overstock.com")
-	    && shExpMatch(url, "*/linkshare/*"))
-	|| (_dnsDomainIs(host, "supermediastore.com")
-	    && shExpMatch(url, "*/lib/supermediastore/*"))
-	|| (_dnsDomainIs(host, "shop4tech.com")
-	    && shExpMatch(url, "*/assets/*"))
-	|| (_dnsDomainIs(host, "softwareandstuff.com")
-	    && shExpMatch(url, "*/media/*"))
-	|| (_dnsDomainIs(host, "buy.com")
-	    && shExpMatch(url, "*/affiliate/*"))
-	|| (_dnsDomainIs(host, "pdaphonehome.com")
-	    && (shExpMatch(url, "*/pocketpcmagbest.gif")
-		|| shExpMatch(url, "*/link-msmobiles.gif")))
-	|| (_dnsDomainIs(host, "ppc4you.com")
-	    && shExpMatch(url, "*/ppc_top_sites.gif"))
-	|| (_dnsDomainIs(host, "freewarepalm.com")
-	    && shExpMatch(url, "*/sponsors/*"))
-	|| _dnsDomainIs(host, "travelscream.com")
-	|| _dnsDomainIs(host, "traveldeals.com")
-	|| _dnsDomainIs(host, "traveldeals.wunderground.com")
-	|| _dnsDomainIs(host, "as5000.com")
-	|| (_dnsDomainIs(host, "mc.dailymotion.com")
-	    && shExpMatch(url, "*/masscast/*"))
-	|| (host == "downloads.thespringbox.com")
-	|| _dnsDomainIs(host, "outbrain.com")
-	|| _dnsDomainIs(host, "marketgid.com")
-	|| _dnsDomainIs(host, "mgid.com")
-	|| _dnsDomainIs(host, "rtbsystem.com")
-	|| _dnsDomainIs(host, "directrev.com")
-	|| _dnsDomainIs(host, "az708531.vo.msecnd.net")
-	|| _dnsDomainIs(host, "remotead.cnet.com")
-	|| _dnsDomainIs(host, "1st-dating.com")
-	|| _dnsDomainIs(host, "mousebucks.com")
-	|| _dnsDomainIs(host, "yourfreedvds.com")
-	|| _dnsDomainIs(host, "popupsavings.com")
-	|| _dnsDomainIs(host, "popupmoney.com")
-	|| _dnsDomainIs(host, "popuptraffic.com")
-	|| _dnsDomainIs(host, "popupnation.com")
-	|| _dnsDomainIs(host, "infostart.com")
-	|| _dnsDomainIs(host, "opupad.net")
-	|| _dnsDomainIs(host, "usapromotravel.com")
-	|| _dnsDomainIs(host, "goclick.com")
-	|| _dnsDomainIs(host, "trafficwave.net")
-	|| _dnsDomainIs(host, "popupad.net")
-	|| _dnsDomainIs(host, "paypopup.com")
-	|| _dnsDomainIs(host, "trafficstars.com")
-	|| _dnsDomainIs(host, "onclkds.com")
-	|| _dnsDomainIs(host, "vipcpms.com")
-	|| _dnsDomainIs(host, "putags.com")
-	|| _dnsDomainIs(host, "greenreaper.com")
-	|| _dnsDomainIs(host, "spewey.com")
-	|| _dnsDomainIs(host, "englishharbour.com")
-	|| _dnsDomainIs(host, "casino-trade.com")
-	|| _dnsDomainIs(host, "got2goshop.com")
-	|| _dnsDomainIs(host, "addynamix.com")
-	|| _dnsDomainIs(host, "trafficmp.com")
-	|| _dnsDomainIs(host, "makingmoneyfromhome.net")
-	|| _dnsDomainIs(host, "leadcart.com")
-	|| _dnsDomainIs(host, "euros4click.de")
-	|| _dnsDomainIs(host, "power-mark.com")
-	|| _dnsDomainIs(host, "webtrendslive.com")
-	|| _dnsDomainIs(host, "wtlive.com")
-	|| _dnsDomainIs(host, "imrworldwide.com")
-	|| shExpMatch(host, "66.40.16.*")
-	|| _dnsDomainIs(host, "web-stat.com")
-	|| _dnsDomainIs(host, "superstats.com")
-	|| _dnsDomainIs(host, "allhits.ru")
-	|| _dnsDomainIs(host, "list.ru")
-	|| _dnsDomainIs(host, "counted.com")
-	|| _dnsDomainIs(host, "rankyou.com")
-	|| _dnsDomainIs(host, "clickcash.com")
-	|| _dnsDomainIs(host, "clickbank.com")
-	|| _dnsDomainIs(host, "paycounter.com")
-	|| _dnsDomainIs(host, "cashcount.com")
-	|| _dnsDomainIs(host, "clickedyclick.com")
-	|| _dnsDomainIs(host, "clickxchange.com")
-	|| _dnsDomainIs(host, "sitestats.com")
-	|| _dnsDomainIs(host, "site-stats.com")
-	|| _dnsDomainIs(host, "hitbox.com")
-	|| _dnsDomainIs(host, "exitdirect.com")
-	|| _dnsDomainIs(host, "realtracker.com")
-	|| _dnsDomainIs(host, "etracking.com")
-	|| _dnsDomainIs(host, "livestat.com")
-	|| _dnsDomainIs(host, "spylog.com")
-	|| _dnsDomainIs(host, "freestats.com")
-	|| _dnsDomainIs(host, "addfreestats.com")
-	|| _dnsDomainIs(host, "topclicks.net")
-	|| _dnsDomainIs(host, "mystat.pl")
-	|| _dnsDomainIs(host, "hitz4you.de")
-	|| _dnsDomainIs(host, "hitslink.com")
-	|| _dnsDomainIs(host, "thecounter.com")
-	|| _dnsDomainIs(host, "roiservice.com")
-	|| _dnsDomainIs(host, "overture.com")
-	|| _dnsDomainIs(host, "xiti.com")
-	|| _dnsDomainIs(host, "cj.com")
-	|| _dnsDomainIs(host, "anrdoezrs.net")
-	|| _dnsDomainIs(host, "hey.it")
-	|| _dnsDomainIs(host, "ppctracking.net")
-	|| _dnsDomainIs(host, "darkcounter.com")
-	|| _dnsDomainIs(host, "2o7.com")
-	|| _dnsDomainIs(host, "2o7.net")
-	|| _dnsDomainIs(host, "gostats.com")
-	|| _dnsDomainIs(host, "everstats.com")
-	|| _dnsDomainIs(host, "onestat.com")
-	|| _dnsDomainIs(host, "statcounter.com")
-	|| _dnsDomainIs(host, "trafic.ro")
-	|| _dnsDomainIs(host, "exitexchange.com")
-	|| _dnsDomainIs(host, "clicktorrent.info")
-	|| _dnsDomainIs(host, "ventimedia.com")
-	|| _dnsDomainIs(host, "flashmediaportal.com")
-	|| _dnsDomainIs(host, "clictrackr.com")
-	|| _dnsDomainIs(host, "revivestar.com")
-	|| _dnsDomainIs(host, "clickability.com")
-	|| _dnsDomainIs(host, "savethis.com")
-	|| _dnsDomainIs(host, "extremetracking.com")
-	|| _dnsDomainIs(host, "extreme-dm.com")
-	|| _dnsDomainIs(host, "pop6.com")
-	|| _dnsDomainIs(host, "medleyads.com")
-	|| _dnsDomainIs(host, "news6insider.com")
-	|| _dnsDomainIs(host, "cw.cm")
-	|| _dnsDomainIs(host, "co.cc")
-	|| _dnsDomainIs(host, "hideus.in")
-	|| _dnsDomainIs(host, "addthis.com")
-	|| _dnsDomainIs(host, "popadscdn.net")
-	|| _dnsDomainIs(host, "netster.com")
-	|| _dnsDomainIs(host, "searchmarketing.com")
-	|| _dnsDomainIs(host, "friendgreetings.com")
-	|| _dnsDomainIs(host, "permissionedmedia.com")
-	|| _dnsDomainIs(host, "searchbarcash.com")
-	|| _dnsDomainIs(host, "shipboardserviceberrysiltstone.info")
-	|| _dnsDomainIs(host, "how2update4u.com")
-	|| _dnsDomainIs(host, "travelwednesday.com")
-	|| _dnsDomainIs(host, "masterclassfoods.com")
-	|| _dnsDomainIs(host, "liveadexchanger.com")
-	|| _dnsDomainIs(host, "betterads.co")
-	|| _dnsDomainIs(host, "livegoal.net")
-	|| _dnsDomainIs(host, "techsupport-verizon.com")
-	|| _dnsDomainIs(host, "avstats.com")
-	|| _dnsDomainIs(host, "zoomerang.com")
-	|| _dnsDomainIs(host, "quizrocket.com")
-	|| (_dnsDomainIs(host, "amazonaws.com")
-	    && shExpMatch(url, "*/udm_img/mid*"))
-	|| _dnsDomainIs(host, "aceshigh.com")
-	|| _dnsDomainIs(host, "idealcasino.net")
-	|| _dnsDomainIs(host, "casinobar.net")
-	|| _dnsDomainIs(host, "casinoionair.com")
-	|| (_dnsDomainIs(host, "go2net.com")
-	    && shExpMatch(url, "*adclick*"))
-	|| _dnsDomainIs(host, "licensed-collectibles.com")
-	|| _dnsDomainIs(host, "webdesignprofessional.com")
-	|| _dnsDomainIs(host, "gator.com")
-	|| ((_dnsDomainIs(host, "pics.ebay.com")
-	     || _dnsDomainIs(host, "pics.ebaystatic.com"))
-	    && shExpMatch(url, "*/pics/mops/*/*[0-9]x[0-9]*"))
-	|| (_dnsDomainIs(host, "ebayobjects.com")
-	    && shExpMatch(url, "*search/keywords*"))
-	|| _dnsDomainIs(host, "admarketplace.com")
-	|| _dnsDomainIs(host, "admarketplace.net")
-	|| (_dnsDomainIs(host, "ezboard.com")
-	    && shExpMatch(url, "*/bravenet/*"))
-	|| (_dnsDomainIs(host, "bravenet.com")
-	    && (   shExpMatch(host, "*counter*")
-		|| shExpMatch(url, "*/jsbanner*")
-	        || shExpMatch(url, "*/bravenet/*")
-	    )
-	)
-	|| ((   _dnsDomainIs(host,"geo.yahoo.com")
-	     || _dnsDomainIs(host,"geocities.com"))
-	    && (
-		   shExpMatch(url,"*/toto?s*")
-		|| shExpMatch(url, "*geocities.com/js_source*")
-		|| _dnsDomainIs(host, "visit.geocities.com")
-	    )
-	)
-	|| (_dnsDomainIs(host,"yimg.com")
-	    && !(   shExpMatch(url,"*yimg.com/a/i/*")
-		 || shExpMatch(url,"*yimg.com/a/lib/*")
-		 || shExpMatch(url,"*yimg.com/a/combo*"))
-	    && (   shExpMatch(url,"*yimg.com/a/*")
-		|| shExpMatch(url,"*yimg.com/*/adv/*")
-		|| shExpMatch(url,"*yimg.com/*/promotions/*")
-	    )
-	)
-	|| _dnsDomainIs(host,"qz3.net")
-	|| _dnsDomainIs(host,"eyewonder.com")
-	|| _dnsDomainIs(host,"buzzcity.com")
-	|| (_dnsDomainIs(host,"fortunecity.com")
-	    && (    shExpMatch(url,"*/js/adscript*")
-		 || shExpMatch(url,"*/js/fctrack*")
-	    )
-	)
-	|| (_dnsDomainIs(host, "zdnet.com")
-	    && (   _dnsDomainIs(host, "ads3.zdnet.com")
-		|| host == "gserv.zdnet.com"
-		|| shExpMatch(url, "*/texis/cs/ad.html")
-		|| shExpMatch(url, "*/adverts")
-	     )
-	)
-	|| (host == "dw.com.com" || host == "mads.com.com")
-	|| (_dnsDomainIs(host, "com.com")
-	    && (   host == "dw.com.com"
-		|| host == "mads.com.com"
-	     )
-	)
-	|| (_dnsDomainIs(host, "nytimes.com")
-	    && shExpMatch(url,"*/adx/*"))
-	|| _dnsDomainIs(host, "unicast.net")
-	|| _dnsDomainIs(host, "reporting.net")
-	|| _dnsDomainIs(host, "affliate.net")
-	|| (_dnsDomainIs(host, "akamai.net")
-	    && shExpMatch(url, "*.affiliate.net/*"))
-	|| (_dnsDomainIs(host, "infospace.com")
-	    && shExpMatch(url, "*/goshopping/*"))
-	|| _dnsDomainIs(host, "webmarket.com")
-	|| _dnsDomainIs(host, "shopping.dogpile.com")
-	|| _dnsDomainIs(host, "information.gopher.com")
-	|| (_dnsDomainIs(host, "about.com")
-	    && (0
-	    || shExpMatch(url, "*/sprinks/*")
-	    || shExpMatch(url, "*about.com/0/js/*")
-	    || shExpMatch(url, "*about.com/f/p/*")
-	    )
-	)
-	|| (_dnsDomainIs(host, "dell.com")
-	    && shExpMatch(url, "*/images/affiliates/*")
-	)
-	|| (_dnsDomainIs(host, "ifilm.com")
-	    && (shExpMatch(url, "*/partners/*")
-	        || shExpMatch(url, "*/redirect*")
-	    )
-	)
-	|| ((_dnsDomainIs(host, "tomshardware.com")
-	     || shExpMatch(host, "216.92.21.*"))
-	    && (   shExpMatch(url, "*/cgi-bin/banner*")
-	        || shExpMatch(url, "*/cgi-bin/bd.m*")
-	        || shExpMatch(url, "*/images/banner/*")
-	    )
-	)
-	|| shExpMatch(url, "*mapsonus.com/ad.images*")
-	|| _dnsDomainIs(host, "adfu.blockstackers.com")
-	|| (_dnsDomainIs(host, "slashdot.org")
-	    && (
-	           shExpMatch(url, "*/slashdot/pc.gif*")
-		|| shExpMatch(url, "*/pagecount.gif*")
-		|| shExpMatch(url, "*/adlog.pl*")
-	    )
-        )
-	|| _dnsDomainIs(host, "googlesyndication.com")
-	|| (_dnsDomainIs(host, "aintitcool.com")
-	    && (
-	           shExpMatch(url, "*/newline/*")
-		|| shExpMatch(url, "*/drillteammedia/*")
-		|| shExpMatch(url, "*/foxsearchlight/*")
-		|| shExpMatch(url, "*/media/aol*")
-		|| shExpMatch(url, "*swf")
-	    )
-	)
-	|| (_dnsDomainIs(host, "staples.com")
-	    && shExpMatch(url, "*/pixeltracker/*"))
-	|| _dnsDomainIs(host, "pt.crossmediaservices.com")
-	|| (_dnsDomainIs(host, "officemax.com")
-	    && shExpMatch(url, "*/affart/*"))
-	|| (host == "hera.hardocp.com")
-	|| shExpMatch(url,"*/onlineads/*")
-	|| (_dnsDomainIs(host, "fatwallet.com")
-	    && shExpMatch(url,"*/js/*"))
-	|| _dnsDomainIs(host, "promo.search.com")
-	|| (_dnsDomainIs(host, "imdb.com")
-	    && (   shExpMatch(url, "*/photos/cmsicons/*")
-	        || shExpMatch(url, "*/icons/*/celeb/*")
-	        || shExpMatch(url, "*.swf")
-	    )
-	)
-	|| _dnsDomainIs(host, "kliptracker.com")
-	|| _dnsDomainIs(host, "klipmart.com")
-	|| host == "avpa.javalobby.org"
-	|| host == "spinbox.techtracker.com"
-	|| host == "rcm.amazon.com"
-	|| (_dnsDomainIs(host, "megaupload.com") && (
-		   shExpMatch(url, "*/aff*.php")
-		|| shExpMatch(url, "*/mrads/*")
-	    )
-	)
-	|| _dnsDomainIs(host, "megaflirt.com")
-	|| _dnsDomainIs(host, "ifriends.com")
-	|| ((_dnsDomainIs(host, "gamecopyworld.com")
-	     || _dnsDomainIs(host, "linkworld.com")
-	     || _dnsDomainIs(host, "filetarget.com")
-	    )&& (
-		   shExpMatch(url, "*/ii/*")
-		|| shExpMatch(url, "*/@_eve*")
-	    )
-	)
-	|| _dnsDomainIs(host, "lookoutmovies.com")
-	|| _dnsDomainIs(host, "tube-player.com")
-	|| re_crud.test(url)
-	|| _dnsDomainIs(host, "taboola.com")
-	|| _dnsDomainIs(host, "taboolasyndication.com")
-	|| _dnsDomainIs(host, "disqus.com")
-	|| _dnsDomainIs(host, "revcontent.com")
-	|| (_dnsDomainIs(host, "register.com")
-	    && (shExpMatch(url,"*.js")
-		|| shExpMatch(host, "searchtheweb*")
-		|| shExpMatch(host, "futuresite*")
-	    )
-	)
-	|| _dnsDomainIs(host, "oingo.com")
-	|| _dnsDomainIs(host, "namingsolutions.com")
-	|| _dnsDomainIs(host, "coremetrics.com")
-	|| _dnsDomainIs(host, "firehunt.com")
-	|| _dnsDomainIs(host, "appliedsemantics.com")
-	|| (host == "216.216.246.31")
-	|| (host == "216.66.21.35")
-	|| _dnsDomainIs(host, "avsads.com")
-	|| _dnsDomainIs(host, "search411.com")
-	|| (_dnsDomainIs(host, "palmgear.com")
-	    && (   shExpMatch(url, "*/adsales/*")
-		|| shExpMatch(url, "*/emailblast*")
-	    )
-	)
-	|| _dnsDomainIs(host, "prreleases.net")
-	|| _dnsDomainIs(host, "porntrack.com")
-	|| _dnsDomainIs(host, "sexe-portail.com")
-	|| _dnsDomainIs(host, "sextracker.com")
-	|| _dnsDomainIs(host, "sexspy.com")
-	|| _dnsDomainIs(host, "offshoreclicks.com")
-	|| _dnsDomainIs(host, "exxxit.com")
-	|| _dnsDomainIs(host, "private-dailer.biz")
-	|| shExpMatch(url, "*retestrak.nl/misc/reet.gif")
-	|| shExpMatch(url, "*dontstayin.com/*.swf")
-	|| shExpMatch(url, "*pornotube.com/textads*")
-	|| _dnsDomainIs(host, "xratedbucks.com")
-	|| _dnsDomainIs(host, "hornymatches.com")
-	|| _dnsDomainIs(host, "hornymatches.com")
-	|| _dnsDomainIs(host, "etology.com")
-	|| _dnsDomainIs(host, "streamray.com")
-	|| _dnsDomainIs(host, "awempire.com")
-	|| _dnsDomainIs(host, "promos.fling.com")
-	|| _dnsDomainIs(host, "pussygreen.com")
-	|| _dnsDomainIs(host, "livejasmin.com")
-	|| _dnsDomainIs(host, "imlive.com")
-	|| _dnsDomainIs(host, "ihookup.com")
-	|| (_dnsDomainIs(host, "shufuni.com")
-	    && (   shExpMatch(url, "*images/activepage*")
-	    )
-	)
-    ) {
-	return blackhole;
-    } else {
-	return normal;
-    }
+function FindProxyForURL(url, host) {
+	if (DuoiDM(host, "no-ads.int")) {
+		if (DuoiDM(url, "*/on*")) {
+			isActive = 1;
+		} else if (DuoiDM(url, "*/off*")) {
+			isActive = 0;
+		} else if (DuoiDM(url, "*no-ads.int/")) {
+			alert("no-ads is " + (isActive ? "enabled" : "disabled") + ".\n" + url);
+		} else {
+			alert("no-ads unknown option.\n" + url);
+		}
+		return blackhole;
+	}
+	if (!isActive) {
+		return bypass;
+	}
+	url = url.toLowerCase();
+	host = host.toLowerCase();
+	if (0) {
+		return localproxy;
+	}
+	if (0) {
+		return socksproxy;
+	}
+	if (0 ||
+		re_whitelist_domains.test(host) ||
+		DuoiDM(url, "*.apple.com/switch/ads/*") ||
+		(host == "adf.ly" &&
+			DuoiDM(url, "*/http:/*")) ||
+		(host == "cdn.adf.ly" &&
+			DuoiDM(url, "*js")) ||
+		(host == "images.rottentomatoescdn.com" &&
+			DuoiDM(url, "*/scripts?")) ||
+		((DauDM(host, "wunderground.com") ||
+				DauDM(host, "wund.com")
+			) &&
+			(DuoiDM(url, "*/cgi-bin/banner/ban/wxbanner*") ||
+				DuoiDM(url, "*/weathersticker/*") ||
+				DuoiDM(url, "*/cgi-bin/satbanner*")
+			)
+		)
+	) {
+		return normal;
+	}
+	if (0 ||
+		DuoiDM(url, "*/favicon.*") ||
+		DuoiDM(url, "*/animated_favicon*") ||
+		(re_banner.test(url) && !re_banner_white.test(url)) ||
+		re_banner2.test(url) ||
+		re_adhost.test(host) ||
+		DauDM(host, "addthis.com") ||
+		DauDM(host, "adjust.com") ||
+		DauDM(host, "admicro1.vcmedia.vn") ||
+		DauDM(host, "adminplayer.sohatv.vn") ||
+		DauDM(host, "adnetwork.vn") ||
+		DauDM(host, "adsco.re") ||
+		DauDM(host, "adservice.google.com") ||
+		DauDM(host, "adservice.google.com.vn") ||
+		DauDM(host, "adsrvr.org") ||
+		DauDM(host, "adtima.vn") ||
+		DauDM(host, "adtimaserver.vn") ||
+		DauDM(host, "aerserv.com") ||
+		DauDM(host, "alexametrics.com") ||
+		DauDM(host, "alibaba.tanx.com") ||
+		DauDM(host, "alibabadns.com") ||
+		DauDM(host, "amazon-adsystem.com") ||
+		DauDM(host, "ambientplatform.vn") ||
+		DauDM(host, "amemv.com") ||
+		DauDM(host, "anthill.vn") ||
+		DauDM(host, "ants.vn") ||
+		DauDM(host, "app-measurement.com") ||
+		DauDM(host, "appier.net") ||
+		DauDM(host, "appldnld.apple.com") ||
+		DauDM(host, "apple-dns.net") ||
+		DauDM(host, "apple.com") ||
+		DauDM(host, "applovin.com") ||
+		DauDM(host, "applvn.com") ||
+		DauDM(host, "appnext.com") ||
+		DauDM(host, "appsflyer.com") ||
+		DauDM(host, "baidu.com") ||
+		DauDM(host, "blueseed.tv") ||
+		DauDM(host, "blueserving.com") ||
+		DauDM(host, "byteoversea.com") ||
+		DauDM(host, "byteoversea.com.edgekey.net") ||
+		DauDM(host, "byteoversea.net") ||
+		DauDM(host, "catch.gift") ||
+		DauDM(host, "cloudmobi.net") ||
+		DauDM(host, "crashlytics.com") ||
+		DauDM(host, "criteo.com") ||
+		DauDM(host, "criteo.net") ||
+		DauDM(host, "doubleclick.net") ||
+		DauDM(host, "dxprljqoay4rt.cloudfront.net") ||
+		DauDM(host, "eclick.vn") ||
+		DauDM(host, "elb097307-934924932.us-east-1.elb.amazonaws.com") ||
+		DauDM(host, "events-endpoint-455714294.us-east-1.elb.amazonaws.com") ||
+		DauDM(host, "events-endpoint-e-899663497.us-east-1.elb.amazonaws.com") ||
+		DauDM(host, "fastly.net") ||
+		DauDM(host, "geniusdisplay.com") ||
+		DauDM(host, "go2cloud.org") ||
+		DauDM(host, "google-analytics.com") ||
+		DauDM(host, "googleadservices.com") ||
+		DauDM(host, "googlesyndication.com") ||
+		DauDM(host, "googletagmanager.com") ||
+		DauDM(host, "googletagservices.com") ||
+		DauDM(host, "gowadogo.com") ||
+		DauDM(host, "hadarone.com") ||
+		DauDM(host, "hotjar.com") ||
+		DauDM(host, "icloud.com") ||
+		DauDM(host, "islandmob.com") ||
+		DauDM(host, "kunlunca.com") ||
+		DauDM(host, "kunluncan.com") ||
+		DauDM(host, "kunlungr.com") ||
+		DauDM(host, "lavanetwork.net") ||
+		DauDM(host, "leadzu.com") ||
+		DauDM(host, "leadzutw.com") ||
+		DauDM(host, "liftoff.io") ||
+		DauDM(host, "llnwd.net") ||
+		DauDM(host, "log.baomoi.com") ||
+		DauDM(host, "loggerelb-845367233.ap-southeast-1.elb.amazonaws.com") ||
+		DauDM(host, "logw311.ati-host.net") ||
+		DauDM(host, "lucklayed.info") ||
+		DauDM(host, "mbid.io") ||
+		DauDM(host, "mesu-cdn.apple.com.akadns.net") ||
+		DauDM(host, "mesu.apple.com") ||
+		DauDM(host, "mesu.g.aaplimg.com") ||
+		DauDM(host, "microadinc.com") ||
+		DauDM(host, "moatads.com") ||
+		DauDM(host, "moblin.com") ||
+		DauDM(host, "mobusi.com") ||
+		DauDM(host, "mopub.com") ||
+		DauDM(host, "ocsp.apple.com") ||
+		DauDM(host, "performanceonclick.com") ||
+		DauDM(host, "personaly.click") ||
+		DauDM(host, "platform.twitter.com") ||
+		DauDM(host, "popads.net") ||
+		DauDM(host, "production-adserver-666328397.us-east-1.elb.amazonaws.com") ||
+		DauDM(host, "pstatp.com") ||
+		DauDM(host, "query.yahoo.com") ||
+		DauDM(host, "scontent.xx.fbcdn.net") ||
+		DauDM(host, "scorecardresearch.com") ||
+		DauDM(host, "serving-sys.com") ||
+		DauDM(host, "snssdk.com") ||
+		DauDM(host, "startappservice.com") ||
+		DauDM(host, "syndication.twitter.com") ||
+		DauDM(host, "tapad.com") ||
+		DauDM(host, "udarem.com") ||
+		DauDM(host, "umeng.com") ||
+		DauDM(host, "unlimapps.com") ||
+		DauDM(host, "valuepotion.com") ||
+		DauDM(host, "www-google-analytics.l.google.com") ||
+		DauDM(host, "www-googletagmanager.l.google.com") ||
+		DauDM(host, "ymtrack6.co") ||
+		DauDM(host, "ymtracking.com") ||
+		DauDM(host, "yomedia.vn") ||
+		DauDM(host, "zadn.vn") ||
+		DauDM(host, "doubleclick.com") ||
+		DauDM(host, "doubleclick.net") ||
+		DauDM(host, "rpts.net") ||
+		DauDM(host, "2mdn.net") ||
+		DauDM(host, "2mdn.com") ||
+		DauDM(host, "chartbeat.net") ||
+		DauDM(host, "chitika.net") ||
+		DauDM(host, "globaltrack.com") ||
+		DauDM(host, "burstnet.com") ||
+		DauDM(host, "adbureau.net") ||
+		DauDM(host, "targetnet.com") ||
+		DauDM(host, "humanclick.com") ||
+		DauDM(host, "linkexchange.com") ||
+		DauDM(host, "fastclick.com") ||
+		DauDM(host, "fastclick.net") ||
+		DuoiDM(host, "205.180.85.*") ||
+		DauDM(host, "admonitor.com") ||
+		DauDM(host, "focalink.com") ||
+		DauDM(host, "websponsors.com") ||
+		DauDM(host, "advertising.com") ||
+		DauDM(host, "cybereps.com") ||
+		DauDM(host, "postmasterdirect.com") ||
+		DauDM(host, "mediaplex.com") ||
+		DauDM(host, "adtegrity.com") ||
+		DauDM(host, "bannerbank.ru") ||
+		DauDM(host, "bannerspace.com") ||
+		DauDM(host, "theadstop.com") ||
+		DauDM(host, "l90.com") ||
+		DauDM(host, "webconnect.net") ||
+		DauDM(host, "avenuea.com") ||
+		DauDM(host, "flycast.com") ||
+		DauDM(host, "engage.com") ||
+		DauDM(host, "imgis.com") ||
+		DauDM(host, "datais.com") ||
+		DauDM(host, "link4ads.com") ||
+		DauDM(host, "247media.com") ||
+		DauDM(host, "hightrafficads.com") ||
+		DauDM(host, "tribalfusion.com") ||
+		DauDM(host, "rightserve.net") ||
+		DauDM(host, "admaximize.com") ||
+		DauDM(host, "valueclick.com") ||
+		DauDM(host, "adlibris.se") ||
+		DauDM(host, "vibrantmedia.com") ||
+		DauDM(host, "coremetrics.com") ||
+		DauDM(host, "vx2.cc") ||
+		DauDM(host, "webpower.com") ||
+		DauDM(host, "everyone.net") ||
+		DauDM(host, "zedo.com") ||
+		DauDM(host, "bigbangmedia.com") ||
+		DauDM(host, "ad-annex.com") ||
+		DauDM(host, "iwdirect.com") ||
+		DauDM(host, "adlink.de") ||
+		DauDM(host, "bidclix.net") ||
+		DauDM(host, "webclients.net") ||
+		DauDM(host, "linkcounter.com") ||
+		DauDM(host, "sitetracker.com") ||
+		DauDM(host, "adtrix.com") ||
+		DauDM(host, "netshelter.net") ||
+		DauDM(host, "rn11.com") ||
+		DauDM(host, "ru4.com") ||
+		DauDM(host, "rightmedia.net") ||
+		DauDM(host, "casalemedia.com") ||
+		DauDM(host, "casalemedia.com") ||
+		DauDM(host, "quantserve.com") ||
+		DauDM(host, "quantcast.com") ||
+		DauDM(host, "crwdcntrl.net") ||
+		DauDM(host, "scorecardresearch.net") ||
+		DauDM(host, "pubmatic.net") ||
+		DauDM(host, "yumenetworks.com") ||
+		DauDM(host, "brilig.com") ||
+		DauDM(host, "perfb.com") ||
+		DauDM(host, "blogads.com") ||
+		DauDM(host, "fetchback.com") ||
+		DauDM(host, "creatives.badongo.com") ||
+		DauDM(host, "pmsrvr.com") ||
+		DauDM(host, "trafficmack.com") ||
+		DauDM(host, "commission-junction.com") ||
+		DauDM(host, "qkimg.net") ||
+		DauDM(host, "bluestreak.com") ||
+		DauDM(host, "virtumundo.com") ||
+		DauDM(host, "treeloot.com") ||
+		DauDM(host, "memberprize.com") ||
+		DauDM(host, "internetfuel.net") ||
+		DauDM(host, "internetfuel.com") ||
+		DauDM(host, "peoplecaster.com") ||
+		DauDM(host, "cupidsdatabase.com") ||
+		DauDM(host, "automotive-times.com") ||
+		DauDM(host, "healthy-lifetimes.com") ||
+		DauDM(host, "us-world-business.com") ||
+		DauDM(host, "internet-2-web.com") ||
+		DauDM(host, "my-job-careers.com") ||
+		DauDM(host, "freeonline.com") ||
+		DauDM(host, "exitfuel.com") ||
+		DauDM(host, "netbroadcaster.com") ||
+		DauDM(host, "spaceports.com") ||
+		DauDM(host, "mircx.com") ||
+		DauDM(host, "exitchat.com") ||
+		DauDM(host, "atdmt.com") ||
+		DauDM(host, "partner2profit.com") ||
+		DauDM(host, "centrport.net") ||
+		DauDM(host, "centrport.com") ||
+		DauDM(host, "rampidads.com") ||
+		DauDM(host, "dt07.net") ||
+		DauDM(host, "criteo.com") ||
+		DauDM(host, "bidswitch.com") ||
+		DauDM(host, "commonwealth.riddler.com") ||
+		DauDM(host, "banner.freeservers.com") ||
+		DauDM(host, "usads.futurenet.com") ||
+		DauDM(host, "banners.egroups.com") ||
+		DauDM(host, "ngadclient.hearme.com") ||
+		DauDM(host, "affiliates.allposters.com") ||
+		DauDM(host, "adincl.go2net.com") ||
+		DauDM(host, "webads.bizservers.com") ||
+		DauDM(host, "addserv.com") ||
+		DauDM(host, "falkag.net") ||
+		DauDM(host, "buysellads.com") ||
+		DauDM(host, "dtscout.com") ||
+		DauDM(host, "tynt.com") ||
+		(host == "promote.pair.com") ||
+		DauDM(host, "interclick.com") ||
+		DauDM(host, "travelscream.com") ||
+		(DauDM(host, "mktw.net") &&
+			!DuoiDM(url, "*/css/*")) ||
+		DauDM(host, "cjt1.net") ||
+		DauDM(host, "bns1.net") ||
+		DauDM(host, "image.ugo.com") ||
+		DauDM(host, "mediamgr.ugo.com") ||
+		DauDM(host, "zonecms.com") ||
+		DauDM(host, "zoneld.com") ||
+		DauDM(host, "atwola.com") ||
+		DauDM(host, "toolbar.aol.com") ||
+		DauDM(host, "adsdk.com") ||
+		(DauDM(host, "overstock.com") &&
+			DuoiDM(url, "*/linkshare/*")) ||
+		(DauDM(host, "supermediastore.com") &&
+			DuoiDM(url, "*/lib/supermediastore/*")) ||
+		(DauDM(host, "shop4tech.com") &&
+			DuoiDM(url, "*/assets/*")) ||
+		(DauDM(host, "softwareandstuff.com") &&
+			DuoiDM(url, "*/media/*")) ||
+		(DauDM(host, "buy.com") &&
+			DuoiDM(url, "*/affiliate/*")) ||
+		(DauDM(host, "pdaphonehome.com") &&
+			(DuoiDM(url, "*/pocketpcmagbest.gif") ||
+				DuoiDM(url, "*/link-msmobiles.gif"))) ||
+		(DauDM(host, "ppc4you.com") &&
+			DuoiDM(url, "*/ppc_top_sites.gif")) ||
+		(DauDM(host, "freewarepalm.com") &&
+			DuoiDM(url, "*/sponsors/*")) ||
+		DauDM(host, "travelscream.com") ||
+		DauDM(host, "traveldeals.com") ||
+		DauDM(host, "traveldeals.wunderground.com") ||
+		DauDM(host, "as5000.com") ||
+		(DauDM(host, "mc.dailymotion.com") &&
+			DuoiDM(url, "*/masscast/*")) ||
+		(host == "downloads.thespringbox.com") ||
+		DauDM(host, "outbrain.com") ||
+		DauDM(host, "marketgid.com") ||
+		DauDM(host, "mgid.com") ||
+		DauDM(host, "rtbsystem.com") ||
+		DauDM(host, "directrev.com") ||
+		DauDM(host, "az708531.vo.msecnd.net") ||
+		DauDM(host, "remotead.cnet.com") ||
+		DauDM(host, "1st-dating.com") ||
+		DauDM(host, "mousebucks.com") ||
+		DauDM(host, "yourfreedvds.com") ||
+		DauDM(host, "popupsavings.com") ||
+		DauDM(host, "popupmoney.com") ||
+		DauDM(host, "popuptraffic.com") ||
+		DauDM(host, "popupnation.com") ||
+		DauDM(host, "infostart.com") ||
+		DauDM(host, "opupad.net") ||
+		DauDM(host, "usapromotravel.com") ||
+		DauDM(host, "goclick.com") ||
+		DauDM(host, "trafficwave.net") ||
+		DauDM(host, "popupad.net") ||
+		DauDM(host, "paypopup.com") ||
+		DauDM(host, "trafficstars.com") ||
+		DauDM(host, "onclkds.com") ||
+		DauDM(host, "vipcpms.com") ||
+		DauDM(host, "putags.com") ||
+		DauDM(host, "greenreaper.com") ||
+		DauDM(host, "spewey.com") ||
+		DauDM(host, "englishharbour.com") ||
+		DauDM(host, "casino-trade.com") ||
+		DauDM(host, "got2goshop.com") ||
+		DauDM(host, "addynamix.com") ||
+		DauDM(host, "trafficmp.com") ||
+		DauDM(host, "makingmoneyfromhome.net") ||
+		DauDM(host, "leadcart.com") ||
+		DauDM(host, "euros4click.de") ||
+		DauDM(host, "power-mark.com") ||
+		DauDM(host, "webtrendslive.com") ||
+		DauDM(host, "wtlive.com") ||
+		DauDM(host, "imrworldwide.com") ||
+		DuoiDM(host, "66.40.16.*") ||
+		DauDM(host, "web-stat.com") ||
+		DauDM(host, "superstats.com") ||
+		DauDM(host, "allhits.ru") ||
+		DauDM(host, "list.ru") ||
+		DauDM(host, "counted.com") ||
+		DauDM(host, "rankyou.com") ||
+		DauDM(host, "clickcash.com") ||
+		DauDM(host, "clickbank.com") ||
+		DauDM(host, "paycounter.com") ||
+		DauDM(host, "cashcount.com") ||
+		DauDM(host, "clickedyclick.com") ||
+		DauDM(host, "clickxchange.com") ||
+		DauDM(host, "sitestats.com") ||
+		DauDM(host, "site-stats.com") ||
+		DauDM(host, "hitbox.com") ||
+		DauDM(host, "exitdirect.com") ||
+		DauDM(host, "realtracker.com") ||
+		DauDM(host, "etracking.com") ||
+		DauDM(host, "livestat.com") ||
+		DauDM(host, "spylog.com") ||
+		DauDM(host, "freestats.com") ||
+		DauDM(host, "addfreestats.com") ||
+		DauDM(host, "topclicks.net") ||
+		DauDM(host, "mystat.pl") ||
+		DauDM(host, "hitz4you.de") ||
+		DauDM(host, "hitslink.com") ||
+		DauDM(host, "thecounter.com") ||
+		DauDM(host, "roiservice.com") ||
+		DauDM(host, "overture.com") ||
+		DauDM(host, "xiti.com") ||
+		DauDM(host, "cj.com") ||
+		DauDM(host, "anrdoezrs.net") ||
+		DauDM(host, "hey.it") ||
+		DauDM(host, "ppctracking.net") ||
+		DauDM(host, "darkcounter.com") ||
+		DauDM(host, "2o7.com") ||
+		DauDM(host, "2o7.net") ||
+		DauDM(host, "gostats.com") ||
+		DauDM(host, "everstats.com") ||
+		DauDM(host, "onestat.com") ||
+		DauDM(host, "statcounter.com") ||
+		DauDM(host, "trafic.ro") ||
+		DauDM(host, "exitexchange.com") ||
+		DauDM(host, "clicktorrent.info") ||
+		DauDM(host, "ventimedia.com") ||
+		DauDM(host, "flashmediaportal.com") ||
+		DauDM(host, "clictrackr.com") ||
+		DauDM(host, "revivestar.com") ||
+		DauDM(host, "clickability.com") ||
+		DauDM(host, "savethis.com") ||
+		DauDM(host, "extremetracking.com") ||
+		DauDM(host, "extreme-dm.com") ||
+		DauDM(host, "pop6.com") ||
+		DauDM(host, "medleyads.com") ||
+		DauDM(host, "news6insider.com") ||
+		DauDM(host, "cw.cm") ||
+		DauDM(host, "co.cc") ||
+		DauDM(host, "hideus.in") ||
+		DauDM(host, "addthis.com") ||
+		DauDM(host, "popadscdn.net") ||
+		DauDM(host, "netster.com") ||
+		DauDM(host, "searchmarketing.com") ||
+		DauDM(host, "friendgreetings.com") ||
+		DauDM(host, "permissionedmedia.com") ||
+		DauDM(host, "searchbarcash.com") ||
+		DauDM(host, "shipboardserviceberrysiltstone.info") ||
+		DauDM(host, "how2update4u.com") ||
+		DauDM(host, "travelwednesday.com") ||
+		DauDM(host, "masterclassfoods.com") ||
+		DauDM(host, "liveadexchanger.com") ||
+		DauDM(host, "betterads.co") ||
+		DauDM(host, "livegoal.net") ||
+		DauDM(host, "techsupport-verizon.com") ||
+		DauDM(host, "avstats.com") ||
+		DauDM(host, "zoomerang.com") ||
+		DauDM(host, "quizrocket.com") ||
+		(DauDM(host, "amazonaws.com") &&
+			DuoiDM(url, "*/udm_img/mid*")) ||
+		DauDM(host, "aceshigh.com") ||
+		DauDM(host, "idealcasino.net") ||
+		DauDM(host, "casinobar.net") ||
+		DauDM(host, "casinoionair.com") ||
+		(DauDM(host, "go2net.com") &&
+			DuoiDM(url, "*adclick*")) ||
+		DauDM(host, "licensed-collectibles.com") ||
+		DauDM(host, "webdesignprofessional.com") ||
+		DauDM(host, "gator.com") ||
+		((DauDM(host, "pics.ebay.com") ||
+				DauDM(host, "pics.ebaystatic.com")) &&
+			DuoiDM(url, "*/pics/mops/*/*[0-9]x[0-9]*")) ||
+		(DauDM(host, "ebayobjects.com") &&
+			DuoiDM(url, "*search/keywords*")) ||
+		DauDM(host, "admarketplace.com") ||
+		DauDM(host, "admarketplace.net") ||
+		(DauDM(host, "ezboard.com") &&
+			DuoiDM(url, "*/bravenet/*")) ||
+		(DauDM(host, "bravenet.com") &&
+			(DuoiDM(host, "*counter*") ||
+				DuoiDM(url, "*/jsbanner*") ||
+				DuoiDM(url, "*/bravenet/*"))
+		) ||
+		((DauDM(host, "geo.yahoo.com") ||
+				DauDM(host, "geocities.com")) &&
+			(
+				DuoiDM(url, "*/toto?s*") ||
+				DuoiDM(url, "*geocities.com/js_source*") ||
+				DauDM(host, "visit.geocities.com"))
+		) ||
+		(DauDM(host, "yimg.com") &&
+			!(DuoiDM(url, "*yimg.com/a/i/*") ||
+				DuoiDM(url, "*yimg.com/a/lib/*") ||
+				DuoiDM(url, "*yimg.com/a/combo*")) &&
+			(DuoiDM(url, "*yimg.com/a/*") ||
+				DuoiDM(url, "*yimg.com/*/adv/*") ||
+				DuoiDM(url, "*yimg.com/*/promotions/*"))
+		) ||
+		DauDM(host, "qz3.net") ||
+		DauDM(host, "eyewonder.com") ||
+		DauDM(host, "buzzcity.com") ||
+		(DauDM(host, "fortunecity.com") &&
+			(DuoiDM(url, "*/js/adscript*") ||
+				DuoiDM(url, "*/js/fctrack*"))
+		) ||
+		(DauDM(host, "zdnet.com") &&
+			(DauDM(host, "ads3.zdnet.com") ||
+				host == "gserv.zdnet.com" ||
+				DuoiDM(url, "*/texis/cs/ad.html") ||
+				DuoiDM(url, "*/adverts"))
+		) ||
+		(host == "dw.com.com" || host == "mads.com.com") ||
+		(DauDM(host, "com.com") &&
+			(host == "dw.com.com" ||
+				host == "mads.com.com")) ||
+		(DauDM(host, "nytimes.com") &&
+			DuoiDM(url, "*/adx/*")
+		) ||
+		DauDM(host, "unicast.net") ||
+		DauDM(host, "reporting.net") ||
+		DauDM(host, "affliate.net") ||
+		(DauDM(host, "akamai.net") &&
+			DuoiDM(url, "*.affiliate.net/*")) ||
+		(DauDM(host, "infospace.com") &&
+			DuoiDM(url, "*/goshopping/*")) ||
+		DauDM(host, "webmarket.com") ||
+		DauDM(host, "shopping.dogpile.com") ||
+		DauDM(host, "information.gopher.com") ||
+		(DauDM(host, "about.com") &&
+			(0 ||
+				DuoiDM(url, "*/sprinks/*") ||
+				DuoiDM(url, "*about.com/0/js/*") ||
+				DuoiDM(url, "*about.com/f/p/*"))
+		) ||
+		(DauDM(host, "dell.com") &&
+			DuoiDM(url, "*/images/affiliates/*")
+		) ||
+		(DauDM(host, "ifilm.com") &&
+			(DuoiDM(url, "*/partners/*") ||
+				DuoiDM(url, "*/redirect*"))
+		) ||
+		((DauDM(host, "tomshardware.com") ||
+				DuoiDM(host, "216.92.21.*")) &&
+			(DuoiDM(url, "*/cgi-bin/banner*") ||
+				DuoiDM(url, "*/cgi-bin/bd.m*") ||
+				DuoiDM(url, "*/images/banner/*"))
+		) ||
+		DuoiDM(url, "*mapsonus.com/ad.images*") ||
+		DauDM(host, "adfu.blockstackers.com") ||
+		(DauDM(host, "slashdot.org") &&
+			(
+				DuoiDM(url, "*/slashdot/pc.gif*") ||
+				DuoiDM(url, "*/pagecount.gif*") ||
+				DuoiDM(url, "*/adlog.pl*"))
+		) ||
+		DauDM(host, "googlesyndication.com") ||
+		(DauDM(host, "aintitcool.com") &&
+			(
+				DuoiDM(url, "*/newline/*") ||
+				DuoiDM(url, "*/drillteammedia/*") ||
+				DuoiDM(url, "*/foxsearchlight/*") ||
+				DuoiDM(url, "*/media/aol*") ||
+				DuoiDM(url, "*swf"))
+		) ||
+		(DauDM(host, "staples.com") &&
+			DuoiDM(url, "*/pixeltracker/*")
+		) ||
+		DauDM(host, "pt.crossmediaservices.com") ||
+		(DauDM(host, "officemax.com") &&
+			DuoiDM(url, "*/affart/*")) ||
+		(host == "hera.hardocp.com") ||
+		DuoiDM(url, "*/onlineads/*") ||
+		(DauDM(host, "fatwallet.com") &&
+			DuoiDM(url, "*/js/*")) ||
+		DauDM(host, "promo.search.com") ||
+		(DauDM(host, "imdb.com") &&
+			(DuoiDM(url, "*/photos/cmsicons/*") ||
+				DuoiDM(url, "*/icons/*/celeb/*") ||
+				DuoiDM(url, "*.swf"))
+		) ||
+		DauDM(host, "kliptracker.com") ||
+		DauDM(host, "klipmart.com") ||
+		host == "avpa.javalobby.org" ||
+		host == "spinbox.techtracker.com" ||
+		host == "rcm.amazon.com" ||
+		(DauDM(host, "megaupload.com") && (
+			DuoiDM(url, "*/aff*.php") ||
+			DuoiDM(url, "*/mrads/*")
+		)) ||
+		DauDM(host, "megaflirt.com") ||
+		DauDM(host, "ifriends.com") ||
+		((DauDM(host, "gamecopyworld.com") ||
+			DauDM(host, "linkworld.com") ||
+			DauDM(host, "filetarget.com")) && (
+			DuoiDM(url, "*/ii/*") ||
+			DuoiDM(url, "*/@_eve*")
+		)) ||
+		DauDM(host, "lookoutmovies.com") ||
+		DauDM(host, "tube-player.com") ||
+		re_crud.test(url) ||
+		DauDM(host, "taboola.com") ||
+		DauDM(host, "taboolasyndication.com") ||
+		DauDM(host, "disqus.com") ||
+		DauDM(host, "revcontent.com") ||
+		(DauDM(host, "register.com") &&
+			(DuoiDM(url, "*.js") ||
+				DuoiDM(host, "searchtheweb*") ||
+				DuoiDM(host, "futuresite*"))
+		) ||
+		DauDM(host, "oingo.com") ||
+		DauDM(host, "namingsolutions.com") ||
+		DauDM(host, "coremetrics.com") ||
+		DauDM(host, "firehunt.com") ||
+		DauDM(host, "appliedsemantics.com") ||
+		(host == "216.216.246.31") ||
+		(host == "216.66.21.35") ||
+		DauDM(host, "avsads.com") ||
+		DauDM(host, "search411.com") ||
+		(DauDM(host, "palmgear.com") &&
+			(DuoiDM(url, "*/adsales/*") ||
+				DuoiDM(url, "*/emailblast*"))
+		) ||
+		DauDM(host, "prreleases.net") ||
+		DauDM(host, "porntrack.com") ||
+		DauDM(host, "sexe-portail.com") ||
+		DauDM(host, "sextracker.com") ||
+		DauDM(host, "sexspy.com") ||
+		DauDM(host, "offshoreclicks.com") ||
+		DauDM(host, "exxxit.com") ||
+		DauDM(host, "private-dailer.biz") ||
+		DuoiDM(url, "*retestrak.nl/misc/reet.gif") ||
+		DuoiDM(url, "*dontstayin.com/*.swf") ||
+		DuoiDM(url, "*pornotube.com/textads*") ||
+		DauDM(host, "xratedbucks.com") ||
+		DauDM(host, "hornymatches.com") ||
+		DauDM(host, "hornymatches.com") ||
+		DauDM(host, "etology.com") ||
+		DauDM(host, "streamray.com") ||
+		DauDM(host, "awempire.com") ||
+		DauDM(host, "promos.fling.com") ||
+		DauDM(host, "pussygreen.com") ||
+		DauDM(host, "livejasmin.com") ||
+		DauDM(host, "imlive.com") ||
+		DauDM(host, "ihookup.com") ||
+		(DauDM(host, "shufuni.com") &&
+			(DuoiDM(url, "*images/activepage*"))
+		)
+	) {
+		return blackhole;
+	} else {
+		return normal;
+	}
 }
 if (0) {
 	alert("no-ads.pac: LOADED:\n" +
-		"	version:	"+noadsver+"\n" +
-		"	blackhole:	"+blackhole+"\n" +
-		"	normal:		"+normal+"\n" +
-		"	localproxy:	"+localproxy+"\n" +
-		"	bypass:		"+bypass+"\n"
+		"	version:	" + noadsver + "\n" +
+		"	blackhole:	" + blackhole + "\n" +
+		"	normal:		" + normal + "\n" +
+		"	localproxy:	" + localproxy + "\n" +
+		"	bypass:		" + bypass + "\n"
 	);
 }
-function alertmatch(str)
-{
+
+function alertmatch(str) {
 	alert(str);
 	return 1;
 }
-function _dnsDomainIs(host, domain) {
-    if (host.length > domain.length) {
-	return (host.substring(host.length - domain.length - 1) == "."+domain);
-    }
-    return (host == domain);
+
+function DauDM(host, domain) {
+	if (host.length > domain.length) {
+		return (host.substring(host.length - domain.length - 1) == "." + domain);
+	}
+	return (host == domain);
 }
