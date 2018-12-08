@@ -1,4 +1,4 @@
-var noadsver = "20181208g";
+var noadsver = "20181208h";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
 if (typeof(navigator) != "undefined"
@@ -136,13 +136,11 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host,"rpts.net")
 	|| _dnsDomainIs(host,"hello.myfonts.net")
 	|| _dnsDomainIs(host,"webclients.net")
-	|| _dnsDomainIs(host,"vnexpress.net")
 	|| _dnsDomainIs(host,"anrdoezrs.net")
 	|| _dnsDomainIs(host,"topclicks.net")
 	|| _dnsDomainIs(host,"prreleases.net")
 	|| _dnsDomainIs(host,"japanesebeauties.net")
-	|| _dnsDomainIs(host,"serve.popads.net")
-	|| _dnsDomainIs(host,"c1.popads.net")
+	|| _dnsDomainIs(host,"popads.net")
 	|| _dnsDomainIs(host,"ggimg.tapas.net")
 	|| _dnsDomainIs(host,"nrc.tapas.net")
 	|| _dnsDomainIs(host,"cdn.jsdelivr.net")
@@ -352,8 +350,6 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host,"adtima-media-td.zadn.vn")
 	|| _dnsDomainIs(host,"adtima-static.zadn.vn")
 	|| _dnsDomainIs(host,"delivery.m.ambientplatform.vn")
-	|| _dnsDomainIs(host,"echip.com.vn")
-	|| _dnsDomainIs(host,"dantri.com.vn")
 	|| _dnsDomainIs(host,"adver.24h.com.vn")
 	|| _dnsDomainIs(host,"thongke.24h.com.vn")
 	|| _dnsDomainIs(host,"adservice.google.com.vn")
