@@ -1,4 +1,4 @@
-var noadsver = "20181208f";
+var noadsver = "20181208g";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
 if (typeof(navigator) != "undefined"
@@ -13,7 +13,7 @@ var re_banner_white = /(load|feature=banner|upload_popup|popupplayer|popupmenu\.
 var re_banner2 = /[/](?!no-ads)([^/]*?([^0-9/][^-/]))?(\b|[_])(ad[s]?)(\b|[_0-9])/i;
 var re_adhost = /\b((new)?ad(?!(venture|vantage|am|mission|visor|alur|iumx|ult|vizia|obe|min|sl|d|olly|vance))|ads\b|adserv|pop(?!ular|corn|e)|click(?!redblue|andbuy|.reference)|cash(?!back)|banner|bans)/i;
 var re_crud = /www\.\w+\.com\/image-\d+-\d+$/;
-var re_whitelist_domains = /(^|\.)(adorama\.com|adafruit\..*|advogato\.org|adirondack\..*|kintera\.org|sprintpcs\.com|adp\.com|lego\.com|dell\.com|mozdev\.org|mozilla\.org|fidelity\.com|tirerack\.com|titantv\.com|lala\.com|sprint\.com|nextel\.com|verizon\.com|vupload\.facebook\.com|rit\.edu|mididb\.com|sony\.tv|market\.android\.com|weeklyad\.staples\.com|(code|plus|www|mail|apis|drive|docs)\.google\.com|googleadservices\.com|gmail\.com|gstatic\.com|thetvdb\.com|bits\te.wikimedia\.org|css\.slickdealscdn\.com|newegg\.com|androiddrawer\.com|addons\.cdn\.mozilla\.net|wsj\.com|massdrop\.com|cloudfront\.net|ad.*\.rackcdn\.com|bankofamerica\.com\|office\.com|smarttiles\.click|solaredge\.com|smartthings\.com)$/i;
+var re_whitelist_domains = /(^|\.)(adorama\.com|adafruit\..*|advogato\.org|adirondack\..*|kintera\.org|sprintpcs\.com|adp\.com|lego\.com|dell\.com|mozdev\.org|mozilla\.org|fidelity\.com|tirerack\.com|titantv\.com|lala\.com|sprint\.com|nextel\.com|verizon\.com|vupload\.facebook\.com|rit\.edu|mididb\.com|sony\.tv|market\.android\.com|weeklyad\.staples\.com|(code|plus|www|mail|apis|drive|docs)\.google\.com|gmail\.com|gstatic\.com|thetvdb\.com|bits\te.wikimedia\.org|css\.slickdealscdn\.com|newegg\.com|androiddrawer\.com|addons\.cdn\.mozilla\.net|wsj\.com|massdrop\.com|cloudfront\.net|ad.*\.rackcdn\.com|bankofamerica\.com\|office\.com|smarttiles\.click|solaredge\.com|smartthings\.com)$/i;
 var isActive = 1;
 function FindProxyForURL(url, host)
 {
@@ -178,19 +178,6 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host,"pub.lavanetwork.net")
 	|| _dnsDomainIs(host,"delivery1.lavanetwork.net")
 	|| _dnsDomainIs(host,"fastclick.net")
-	|| _dnsDomainIs(host,"accounts.doubleclick.net")
-	|| _dnsDomainIs(host,"2542116.fls.doubleclick.net")
-	|| _dnsDomainIs(host,"partnerad.l.doubleclick.net")
-	|| _dnsDomainIs(host,"pagead46.l.doubleclick.net")
-	|| _dnsDomainIs(host,"stats.g.doubleclick.net")
-	|| _dnsDomainIs(host,"googleads.g.doubleclick.net")
-	|| _dnsDomainIs(host,"securepubads.g.doubleclick.net")
-	|| _dnsDomainIs(host,"pubads.g.doubleclick.net")
-	|| _dnsDomainIs(host,"cm.g.doubleclick.net")
-	|| _dnsDomainIs(host,"adclick.g.doubleclick.net")
-	|| _dnsDomainIs(host,"googleads4.g.doubleclick.net")
-	|| _dnsDomainIs(host,"ad.doubleclick.net")
-	|| _dnsDomainIs(host,"static.doubleclick.net")
 	|| _dnsDomainIs(host,"doubleclick.net")
 	|| _dnsDomainIs(host,"sdk.open.talk.getui.net")
 	|| _dnsDomainIs(host,"uniad.phimmoi.net")
