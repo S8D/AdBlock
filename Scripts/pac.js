@@ -1,4 +1,4 @@
-var noadsver = "20181208e";
+var noadsver = "20181208f";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
 if (typeof(navigator) != "undefined"
@@ -509,15 +509,11 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host,"iphonefaq.us.intellitxt.com")
 	|| _dnsDomainIs(host,"k.intellitxt.com")
 	|| _dnsDomainIs(host,"sublimetext.com")
-	|| _dnsDomainIs(host,"cdn.appnext.com")
-	|| _dnsDomainIs(host,"global.appnext.com")
 	|| _dnsDomainIs(host,"appnext.com")
-	|| _dnsDomainIs(host,"t.dtscout.com")
 	|| _dnsDomainIs(host,"dtscout.com")
 	|| _dnsDomainIs(host,"ocsp.usertrust.com")
 	|| _dnsDomainIs(host,"cdp1.public-trust.com")
-	|| _dnsDomainIs(host,"view.adjust.com")
-	|| _dnsDomainIs(host,"app.adjust.com")
+	|| _dnsDomainIs(host,"adjust.com")
 	|| _dnsDomainIs(host,"live.chartboost.com")
 	|| _dnsDomainIs(host,"adultblogtoplist.com")
 	|| _dnsDomainIs(host,"msftconnecttest.com")
