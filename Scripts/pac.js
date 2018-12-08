@@ -1,4 +1,4 @@
-var noadsver = "20181208l";
+var noadsver = "20181208m";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
 if (typeof(navigator) != "undefined"
@@ -118,6 +118,7 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host, "admarketplace.net")
 	|| _dnsDomainIs(host, "llnwd.net")
 	|| _dnsDomainIs(host, "az708531.vo.msecnd.net")
+	|| _dnsDomainIs(host, "polyad.net")
 	|| _dnsDomainIs(host, "popupad.net")
 	|| _dnsDomainIs(host, "opupad.net")
 	|| _dnsDomainIs(host, "pubmatic.net")
@@ -139,6 +140,10 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host, "adminplayer.sohatv.vn")
 	|| _dnsDomainIs(host, "ants.vn")
 	|| _dnsDomainIs(host, "adtimaserver.vn")
+	|| _dnsDomainIs(host, "admicro.vn")
+	|| _dnsDomainIs(host, "amcdn.vn")
+	|| _dnsDomainIs(host, "adtima-media-td.zadn.vn")
+	|| _dnsDomainIs(host, "adtima-static.zadn.vn")
 	|| _dnsDomainIs(host, "zadn.vn")
 	|| _dnsDomainIs(host, "ambientplatform.vn")
 	|| _dnsDomainIs(host, "adservice.google.com.vn")
@@ -146,6 +151,7 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host, "adnetwork.vn")
 	|| _dnsDomainIs(host, "eclick.vn")
 	|| _dnsDomainIs(host, "click.vn")
+	|| _dnsDomainIs(host, "kinghub.vn")
 	|| _dnsDomainIs(host, "adtima.vn")
 	|| _dnsDomainIs(host, "yomedia.vn")
 	|| _dnsDomainIs(host, "admicro1.vcmedia.vn")
