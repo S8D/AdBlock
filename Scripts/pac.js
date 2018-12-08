@@ -1,4 +1,3 @@
-
 var noadsver = "20181208l";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
