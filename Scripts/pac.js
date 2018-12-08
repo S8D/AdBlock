@@ -1,4 +1,4 @@
-var noadsver = "20181208m";
+var noadsver = "20181208n";
 var normal = "DIRECT";
 var blackhole = "PROXY 255.255.255.0:3421";
 if (typeof(navigator) != "undefined"
@@ -69,6 +69,11 @@ function FindProxyForURL(url, host)
 	|| re_banner2.test(url)
 	|| re_adhost.test(host)
 
+	|| _dnsDomainIs(host, "dxprljqoay4rt.cloudfront.net")
+	|| _dnsDomainIs(host, "geniusdisplay.com")
+	|| _dnsDomainIs(host, "lucklayed.info")
+	|| _dnsDomainIs(host, "performanceonclick.com")
+	|| _dnsDomainIs(host, "udarem.com")
 	|| _dnsDomainIs(host, "blueseed.tv")
 	|| _dnsDomainIs(host, "list.ru")
 	|| _dnsDomainIs(host, "allhits.ru")
