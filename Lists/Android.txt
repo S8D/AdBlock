@@ -1,4 +1,4 @@
-#20181030a
+#20181209a
 
 127.0.0.1 app.adjust.com
 127.0.0.1 e.crashlytics.com
@@ -146,7 +146,6 @@
 127.0.0.1 ping.chartbeat.net
 127.0.0.1 shavar.prod.mozaws.net
 127.0.0.1 hello.myfonts.net
-127.0.0.1 vnexpress.net
 127.0.0.1 www.japanesebeauties.net
 127.0.0.1 serve.popads.net
 127.0.0.1 c1.popads.net
@@ -307,11 +306,9 @@
 127.0.0.1 image.ibb.co
 127.0.0.1 clk.verblife-2.co
 127.0.0.1 cafebiz.vn
-127.0.0.1 vneconomy.vn
 127.0.0.1 afamily.vn
 127.0.0.1 adfox.vn
 127.0.0.1 guu.vn
-127.0.0.1 violet.vn
 127.0.0.1 apinas.nct.vn
 127.0.0.1 stc.nct.vn
 127.0.0.1 au.ants.vn
@@ -334,7 +331,6 @@
 127.0.0.1 w160.link.talk.zdn.vn
 127.0.0.1 store-stc.zdn.vn
 127.0.0.1 oa-stc.zdn.vn
-127.0.0.1 static.mp3.zdn.vn
 127.0.0.1 static.amcdn.vn
 127.0.0.1 amcdn.vn
 127.0.0.1 res-zalo.zadn.vn
@@ -342,10 +338,7 @@
 127.0.0.1 zalo-ads-td.zadn.vn
 127.0.0.1 adtima-media-td.zadn.vn
 127.0.0.1 delivery.m.ambientplatform.vn
-127.0.0.1 echip.com.vn
-127.0.0.1 dantri.com.vn
 127.0.0.1 adver.24h.com.vn
-127.0.0.1 static.24h.com.vn
 127.0.0.1 adservice.google.com.vn
 127.0.0.1 delivery.adnetwork.vn
 127.0.0.1 track.adnetwork.vn
