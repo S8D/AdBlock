@@ -1,4 +1,4 @@
-#20181209a
+#20181210b
 
 127.0.0.1 app.adjust.com
 127.0.0.1 e.crashlytics.com
@@ -1326,7 +1326,6 @@
 127.0.0.1 static-znews.zadn.vn
 127.0.0.1 znews-photo.zadn.vn
 127.0.0.1 znews-photo-td.zadn.vn
-127.0.0.1 znews-static.zadn.vn
 127.0.0.1 hb.gammaplatform.com
 127.0.0.1 c-api-bit.shopeemobile.com
 127.0.0.1 sentry.shopeemobile.com
