@@ -909,7 +909,7 @@ function FindProxyForURL(url, host)
 	|| _dnsDomainIs(host, "zadn.vn")
 	|| _dnsDomainIs(host, "perfb.com")
 	|| _dnsDomainIs(host, "blogads.com")
-
+	|| _dnsDomainIs(host, "polyad.net")
 	|| _dnsDomainIs(host, "fetchback.com")
 	|| _dnsDomainIs(host, "creatives.badongo.com")
 	|| _dnsDomainIs(host, "pmsrvr.com")
