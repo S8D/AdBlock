@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20181213a
+! Version: 20181221a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -17,6 +17,7 @@
 !3-----------------------------------------------------------------------------
 !facebook.com##._2zam._5v6d._5rzs
 !facebook.com###pagelet_canvas_nav_content
+###cookie-pop
 ###mainNav
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
@@ -36,6 +37,41 @@
 123link.pw##.copyright-container
 123link.pw##.text-left
 123link.pw##footer
+megaurl.club##.adsbygoogle
+megaurl.club##.copyright-container
+megaurl.club##.navbar, .navbar-default
+megaurl.club##.text-left
+megaurl.in##.adsbygoogle
+megaurl.in##.copyright-container
+megaurl.in##.navbar, .navbar-default
+megaurl.in##.text-left
+megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:nth-child(2)
+megaurl.top##.adsbygoogle
+megaurl.top##.copyright-container
+megaurl.top##.navbar, .navbar-default
+megaurl.top##.text-left
+ouo.io##.about
+ouo.io##.footer-copy
+ouo.io##.join-now
+ouo.io##header
+ouo.press##.about
+ouo.press##.blog-post
+ouo.press##.footer-copy
+ouo.press##.join-now
+ouo.press##.navbar.navbar-default.navbar-top
+ouo.press##header
+wi.cr###mainNav
+wi.cr##.adsbygoogle
+wi.cr##.copyright-container
+wi.cr##.text-left
+lopte.pro###link-view > font
+lopte.pro##.box-main > h4
+lopte.pro##div.col-md-12:nth-of-type(2) > .banner-captcha.banner
+lopte.pro##div.col-md-12:nth-of-type(2) > div:nth-of-type(2)
+lopte.pro##div:nth-of-type(11)
+lopte.pro##div:nth-of-type(7)
+lopte.pro##font
+
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
 @@$important,document,~extension$domain=1.1.1.1|2.2.2.1|2.2.2.2|2.2.2.3|2.2.2.4|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr|mshare.io
@@ -92,6 +128,7 @@ allsolu4u.vn###headerProxy
 allsolu4u.vn###logoBlock
 allsolu4u.vn###widget-16
 bkshare.com###itro_opaco
+blogginggyanbox.com##h4
 blogtietkiem.com##div.et_bloom_popup.et_bloom_optin.et_bloom_resize.et_bloom_optin_8.et_bloom_auto_popup.et_bloom_trigger_bottom.et_bloom_visible.et_bloom_animated
 camnangnhatban.com###ppsPopupBgOverlay
 canhme.com###masthead
@@ -244,6 +281,9 @@ leech.thoaimedia.com###tb1 > tbody > tr:first-child > td:first-child > div.cfmon
 leech.thoaimedia.com##center:nth-child(3)
 lehait.net##div.k8f91e-container.k8f91e-2.k8f91e-hide:nth-child(5)
 lehait.net##div.kda06f-container.kda06f-2.kda06f-hide:nth-child(5)
+licklink.net###mainNav
+licklink.net##.box-main > .row > div:nth-of-type(4)
+licklink.net##footer
 linksvip.net###box_most_download > .portlet-content
 linksvip.net###boxlogin > div.portlet:nth-of-type(2)
 linksvip.net###footer
@@ -270,19 +310,6 @@ mackie100projects.altervista.org##.av-credit-link
 mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
-megaurl.club##.adsbygoogle
-megaurl.club##.copyright-container
-megaurl.club##.navbar, .navbar-default
-megaurl.club##.text-left
-megaurl.in##.adsbygoogle
-megaurl.in##.copyright-container
-megaurl.in##.navbar, .navbar-default
-megaurl.in##.text-left
-megaurl.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:nth-child(2)
-megaurl.top##.adsbygoogle
-megaurl.top##.copyright-container
-megaurl.top##.navbar, .navbar-default
-megaurl.top##.text-left
 mina.mazii.net###myShare
 mina.mazii.net##div.modal-backdrop.fade.in
 mobifone.vn###home-slider > div.owl-wrapper-outer
@@ -295,6 +322,8 @@ mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
 mshare.io##.col-md-5
 mshare.io##.copyright-info
+mshare.io##.in.fade.modal
+mshare.io##.in.fade.modal-backdrop
 mshare.io##.text-left.info-page
 news.zing.vn###highlight
 news.zing.vn##div.page-wrapper:nth-child(8) > article.the-article.type-text.zing.read.loaded:nth-child(2) > section.main:first-child > p.the-article-tags:nth-child(7)
@@ -303,21 +332,18 @@ nhaccuatui.com###coverImageflashPlayer
 nhaccuatui.com###right_support_online
 nhaccuatui.com##.cfooter
 nhaccuatui.com##.footer
+notepad4t.pro###messagebox
+notepad4t.pro##.cc-color-override-688238583.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
+notepad4t.pro##.fb-livechat
+notepad4t.pro##.footer.row
+notepad4t.pro##.panel-body > .col-md-12
+notepad4t.pro##div.col-md-3:nth-of-type(2)
+notepad4t.pro##div.col-md-3:nth-of-type(3)
 nyaa.se##.ad_b345
 nyaa.se##.ad_b346
 nyaa.se##.ad_b347
 nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
-ouo.io##.about
-ouo.io##.footer-copy
-ouo.io##.join-now
-ouo.io##header
-ouo.press##.about
-ouo.press##.blog-post
-ouo.press##.footer-copy
-ouo.press##.join-now
-ouo.press##.navbar.navbar-default.navbar-top
-ouo.press##header
 pan.baidu.com###unzip-vip-intro
 pan.baidu.com##.module-canvas
 paylink.pro###cookie-pop
@@ -359,6 +385,10 @@ sfiles.org###header
 sfiles.org##.section
 sfiles.org##div:nth-of-type(7)
 sfiles.org##footer
+share4you.pro##.features
+share4you.top##.features
+shareurl.pro###showfile > div.col-md-12:nth-of-type(1)
+shareurl.pro##.center
 shink.in###bs-example-navbar-collapse-1
 shink.in##.col-md-6.col-md-offset-3
 shink.in##.collapse.navbar-collapse
@@ -516,10 +546,6 @@ we25.vn##.footer
 websosanh.vn###anchorComment
 websosanh.vn###footer
 websosanh.vn###right-wrap
-wi.cr###mainNav
-wi.cr##.adsbygoogle
-wi.cr##.copyright-container
-wi.cr##.text-left
 win10.vn###arlinablock
 win10.vn###better-ads-2
 win10.vn###better-ads-3
