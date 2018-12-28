@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20181228b
+! Version: 20181228c
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -7,13 +7,13 @@
 ! ChangeLog: ...
 !1------------------------------------=><=-------------------------------------
 ###cookie-pop
-###footer$domain=123link.pro|123link.pw|businessnewscurrent.online|cloudyfiles.me|codevn.net|douploads.com|downmienphi.com|downmienphi.net|file-upload.com|fnote.me|forum.xda-developers.com|getintopc.com|gg.gg|idsly.cc|ios.codevn.net|leech.ninja|licklink.net|linksvip.net|lopte.pro|megaurl.link|paylink.pro|premiumleech.eu|quantrimang.com|sfiles.org|share4you.pro|shareyou.pro|shrinkearn.com|sinhvienit.net|taive.in|thuviensoft.net|upfile.vn|upload.ac|upload4earn.org|uploadocean.com|uploadproper.com|uplod.org|vienthongtayninh.vn|vn-zoom.com|websosanh.vn|www.4file.net|www.file-upload.com|www.mediafire.com|xemlink.net
 ###mainNav
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
 ##.text-left
 *.fsdn.com/con/js/min/sf.js?*
+123link.pro,123link.pw,businessnewscurrent.online,cloudyfiles.me,codevn.net,douploads.com,downmienphi.com,downmienphi.net,file-upload.com,fnote.me,forum.xda-developers.com,getintopc.com,gg.gg,idsly.cc,ios.codevn.net,leech.ninja,licklink.net,linksvip.net,lopte.pro,megaurl.link,paylink.pro,premiumleech.eu,quantrimang.com,sfiles.org,share4you.pro,shareyou.pro,shrinkearn.com,sinhvienit.net,taive.in,thuviensoft.net,upfile.vn,upload.ac,upload4earn.org,uploadocean.com,uploadproper.com,uplod.org,vienthongtayninh.vn,vn-zoom.com,websosanh.vn,www.4file.net,www.file-upload.com,www.mediafire.com,xemlink.net###footer
 !2------------------------------------=><=-------------------------------------
 .info-page
 .pricing-features
