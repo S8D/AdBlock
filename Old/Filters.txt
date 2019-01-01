@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190101b
+! Version: 20190101c
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -15,6 +15,12 @@
 !2------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !3-----------------------------------------------------------------------------
+boost.ink##.card_desc
+boost.ink##.card_top
+shareurl.pro##.container > div.col-md-12:nth-of-type(1)
+shareurl.pro##.panel-body > div:nth-of-type(1)
+shareurl.pro##.panel-body > div:nth-of-type(2)
+||shareurl.pro/public/themes/z-Responsive/assets/img/header.jpg$image
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 ###cookie-pop
