@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190101a
+! Version: 20190101b
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -708,19 +708,6 @@ vitinhvuhoang.com###sbox-overlay
 vitinhvuhoang.com###sbox-window
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
-vn-zoom.com###contentMain > div.bodyWrapper > div.body_wrapper:nth-child(2) > center:nth-child(8)
-vn-zoom.com###footerMain
-vn-zoom.com###header
-vn-zoom.com###toolbar_bottom
-vn-zoom.com##.clearfix
-vn-zoom.com##.floatcontainer.doc_header
-vn-zoom.com##.options_block_container
-vn-zoom.com##.z2-zads-zone
-vn-zoom.com##blink
-vn-zoom.com##div[style="float:left;width:49%;padding-right:2px"]
-vn-zoom.com##div[style="float:right;width:49%;padding-left:2px"]
-vn-zoom.com##td:nth-of-type(1) > center:nth-of-type(2)
-vn-zoom.com##td[width="300"][valign="top"]
 vnexpress.net###wrapper_footer
 vnexpress.net##.p_header
 vnz-leech.com##div.container-full:nth-of-type(1)
@@ -839,6 +826,11 @@ xemlink.net##p:nth-of-type(6)
 xemlink.net##p:nth-of-type(7)
 xemlink.net##p:nth-of-type(8)
 xemlink.net##p:nth-of-type(9)
+xemlink.net###link-view > div:nth-of-type(3)
+xemlink.net###link-view > p
+xemlink.net##.banner-728x90.banner
+xemlink.net##.box-main > div:nth-of-type(3)
+xemlink.net##div:nth-of-type(7)
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
 youtube.com###masthead-ad
