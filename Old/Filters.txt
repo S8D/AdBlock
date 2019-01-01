@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190101c
+! Version: 20190101d
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -15,12 +15,6 @@
 !2------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
 !3-----------------------------------------------------------------------------
-boost.ink##.card_desc
-boost.ink##.card_top
-shareurl.pro##.container > div.col-md-12:nth-of-type(1)
-shareurl.pro##.panel-body > div:nth-of-type(1)
-shareurl.pro##.panel-body > div:nth-of-type(2)
-||shareurl.pro/public/themes/z-Responsive/assets/img/header.jpg$image
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 ###cookie-pop
@@ -122,7 +116,9 @@ apk4free.net##.sd-sharing-enabled.sharedaddy
 bkshare.com###itro_opaco
 blogginggyanbox.com##h4
 blogtietkiem.com##div.et_bloom_popup.et_bloom_optin.et_bloom_resize.et_bloom_optin_8.et_bloom_auto_popup.et_bloom_trigger_bottom.et_bloom_visible.et_bloom_animated
+boost.ink##.card_desc
 boost.ink##.card_share
+boost.ink##.card_top
 boost.ink##.locker_footer
 boost.ink##.site_slimheader
 businessnewscurrent.online###container > div:nth-of-type(1)
@@ -309,6 +305,8 @@ ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-
 ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
 ios.codevn.net##footer:nth-child(18)
 iphonecake.com##div.container:nth-child(2) > div.ui-app-detail:nth-child(2) > div.row > div.col-md-9.right-side:last-child > div.ui-grid-right > a.ui-download:nth-child(3)
+ipsw.me##.alert-info.alert.col-md-12
+ipsw.me##.cc_container--open.cc_container.cc_banner
 karanpc.com###post-18253 > div.entry:first-child > center:first-child
 kenh14.vn###kenh14-footer-wrapper
 kenhtao.net##.adsbygoogle
@@ -525,6 +523,9 @@ share4you.top##.features
 shareurl.pro###showfile > div.col-md-12:nth-of-type(1)
 shareurl.pro##.center
 shareurl.pro##.center > div
+shareurl.pro##.container > div.col-md-12:nth-of-type(1)
+shareurl.pro##.panel-body > div:nth-of-type(1)
+shareurl.pro##.panel-body > div:nth-of-type(2)
 shareyou.pro###cookie-pop
 shareyou.pro###link-view > p
 shareyou.pro###mainNav
@@ -621,6 +622,7 @@ trainghiemso.vn###mvp-foot-bot-wrap
 trainghiemso.vn##.attachment-, .size-, .wp-post-image
 tranducit.com##.popScroll
 trithucvn.net###post-sidebar
+tsssaver.1conan.com##.cc-color-override-688238583.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
 tudienabc.com###container > div.row:nth-child(4)
 tuhoconline.net##.clearfix.footer-socket-wrapper
 tuhoconline.net##.footer-widgets-wrapper
@@ -714,6 +716,12 @@ vitinhvuhoang.com###sbox-overlay
 vitinhvuhoang.com###sbox-window
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
+vn-zoom.org###footer
+vn-zoom.org##.p-body-inner > center:nth-of-type(1)
+vn-zoom.org##.p-body-inner > center:nth-of-type(2)
+vn-zoom.org##.p-body-sidebar > center:nth-of-type(1)
+vn-zoom.org##.p-body-sidebar > center:nth-of-type(2)
+vn-zoom.org##center:nth-of-type(3)
 vnexpress.net###wrapper_footer
 vnexpress.net##.p_header
 vnz-leech.com##div.container-full:nth-of-type(1)
@@ -810,7 +818,11 @@ www110.zippyshare.com###lrbox > div.slickbox:nth-child(5) > div.center:first-chi
 www110.zippyshare.com##.smalltab
 xemlink.net###cookie-pop
 xemlink.net###link-view > center
+xemlink.net###link-view > div:nth-of-type(3)
+xemlink.net###link-view > p
 xemlink.net###mainNav
+xemlink.net##.banner-728x90.banner
+xemlink.net##.box-main > div:nth-of-type(3)
 xemlink.net##.box-main > h3
 xemlink.net##.box-main > p:nth-of-type(1)
 xemlink.net##.page-header
@@ -818,6 +830,7 @@ xemlink.net##article:nth-of-type(1)
 xemlink.net##article:nth-of-type(2)
 xemlink.net##center:nth-of-type(3) > .adsbygoogle
 xemlink.net##div:nth-of-type(6)
+xemlink.net##div:nth-of-type(7)
 xemlink.net##footer
 xemlink.net##h2
 xemlink.net##p:nth-of-type(10)
@@ -832,11 +845,6 @@ xemlink.net##p:nth-of-type(6)
 xemlink.net##p:nth-of-type(7)
 xemlink.net##p:nth-of-type(8)
 xemlink.net##p:nth-of-type(9)
-xemlink.net###link-view > div:nth-of-type(3)
-xemlink.net###link-view > p
-xemlink.net##.banner-728x90.banner
-xemlink.net##.box-main > div:nth-of-type(3)
-xemlink.net##div:nth-of-type(7)
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
 youtube.com###masthead-ad
@@ -1006,6 +1014,7 @@ youtube.com##*.video-ads
 ||scorecardresearch.com^
 ||secafe.vn/ads/*
 ||shalleda.*^
+||shareurl.pro/public/themes/z-Responsive/assets/img/header.jpg$image
 ||shink.in/imagenes/logo.png
 ||shink.in/img/downloadad.png
 ||source.unsplash.com/category/objects/800x600$image
