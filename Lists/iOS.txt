@@ -1,5 +1,11 @@
-#hVersion=20190131a
+#hVersion=20190131b
 
+ocsp.apple.com
+ppq.apple.com
+appldnld.apple.com
+iadc.qwape.com
+iadsk.apple.com
+mesu.apple.com
 api.adthor.com
 ads.mopub.com
 rpc-php.trafficfactory.biz
