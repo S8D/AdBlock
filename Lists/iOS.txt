@@ -1,5 +1,7 @@
-#hVersion=20180905a
+#hVersion=20190131a
 
+api.adthor.com
+ads.mopub.com
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
