@@ -1,4 +1,4 @@
-#hVersion=20190131c
+#hVersion=20190201a
 
 11bet.com
 240.zaloapp.ads.zdn.vn
@@ -703,7 +703,6 @@ mini5-1.opera-mini.net
 mini5.opera-mini.net
 mirrors.aliyun.com
 mlog.hiido.com
-mobile-gtalk.l.google.com
 mobile.adsafeprotected.com
 mobileads.msn.com
 mobilecrashreporting.googleapis.com
