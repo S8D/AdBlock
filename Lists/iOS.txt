@@ -1,5 +1,14 @@
 #hVersion=20190208c
 
+adtima-static.zadn.vn
+click.advertnative.com
+hbopenbid.pubmatic.com
+i-shop.vnecdn.net
+my.vnexpress.net
+oauth.vietid.net
+shop.vnexpress.net
+thongke.baotintuc.vn
+usi-saas.vnexpress.net
 rpc-php.trafficfactory.biz
 media.trafficfactory.biz
 www.flvto.biz
