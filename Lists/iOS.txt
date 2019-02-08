@@ -1,4 +1,4 @@
-#hVersion=20190208a
+#hVersion=20190208b
 
 a.appbaqend.com
 ambi-logger-1660653628.us-west-2.elb.amazonaws.com
@@ -7,7 +7,6 @@ apptap-interactions.elasticbeanstalk.com
 c.sdkclick.com
 cdn2.inner-active.mobi
 e673.dsce9.akamaiedge.net
-exam.pl
 globalcdnweb.qiniu.com.w.kunlunar.com
 gum.criteo.com
 hash18.admedx.com
