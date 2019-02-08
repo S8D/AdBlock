@@ -1,5 +1,8 @@
-#hVersion=20190208c
+#hVersion=20190208d
 
+inter1ads.com
+my.rtmark.net
+tharbadir.com
 adtima-static.zadn.vn
 click.advertnative.com
 hbopenbid.pubmatic.com
