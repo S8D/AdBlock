@@ -1,5 +1,20 @@
-#hVersion=20190210a
+#hVersion=20190218a
 
+t.eclick.vn
+s.eclick.vn
+imgraovat.vnecdn.net
+logsbin.tintucdantri.vn
+stc.za.zaloapp.com
+hc.viam.com.vn
+ims.mediacdn.vn
+mingid.mediacdn.vn
+boxpr.aiservice.vn
+topr-srv.vietnamnet.vn
+i.vietnamnet.vn
+surv-srv.vietnamnet.vn
+quangcao.tuoitre.vn
+l-saas.vnecdn.net
+id.vietnamnet.vn
 ad1.nend.net
 ad2.nend.net
 applog.musical.ly
