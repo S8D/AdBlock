@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190224a
+! Version: 20190224b
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -14,34 +14,7 @@
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !2------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
-!
-chiasesuutam.com###mailmunch-inner-overlay-169048a3444b97c
-chiasesuutam.com###mailmunch-overlay-169048a3444b97c
-chiasesuutam.com###mailmunch-popover-169048a3444b97c
-distrowatch.com##.News1 > table:nth-of-type(2)
-distrowatch.com##body > table:nth-of-type(3)
-distrowatch.com##p
-distrowatch.com##table.News:nth-of-type(1) > tbody > tr:nth-of-type(2) > .News
-distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
-hackthue.com##.clearfix.pu-bnrow
-hackthue.com##.pu-footer
-hvdic.thivien.net##.notification
-osdn.net###cookie-bar
-pan.baidu.com###activateGuidePopupOuter
-pan.baidu.com###web-right-view
-pan.baidu.com###web-single-bottom
-upfile.vn##.Download > ins.adsbygoogle:nth-of-type(1)
-upfile.vn##.Wrapper > div:nth-of-type(1)
-upfile.vn##ins.adsbygoogle:nth-of-type(2)
-www.speedtest.net##div.u-c.pure-u-1-4:nth-of-type(4)
-www.wanyx.com##.clearfix.AdArea
-||hackthue.com/assets/images/bgmain.jpg$image
-||www.youtube.com/embed/2otFjO94BO4$subdocument
-||www.youtube.com/embed/g2C-vWK-Ujo$subdocument
-||www.youtube.com/embed/Ic0oV78BMdw$subdocument
-||www.youtube.com/embed/ObHDMnwndrI$subdocument
-||www.youtube.com/embed/yrW0oyMNzfU$subdocument
-3-----------------------------------------------------------------------------
+!3-----------------------------------------------------------------------------
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 ###cookie-pop
@@ -167,6 +140,9 @@ chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child > div.f-c:nth-child(2) > ul
+chiasesuutam.com###mailmunch-inner-overlay-169048a3444b97c
+chiasesuutam.com###mailmunch-overlay-169048a3444b97c
+chiasesuutam.com###mailmunch-popover-169048a3444b97c
 clk.sh###cookie-pop
 clk.sh##h4
 clk.sh##p:nth-of-type(1)
@@ -213,6 +189,11 @@ dienmayviet.com.vn###banner
 dienmayviet.com.vn###divAdRight
 dinhhieu.vn###floating_banner_left
 dinhhieu.vn###floating_banner_right
+distrowatch.com##.News1 > table:nth-of-type(2)
+distrowatch.com##body > table:nth-of-type(3)
+distrowatch.com##p
+distrowatch.com##table.News:nth-of-type(1) > tbody > tr:nth-of-type(2) > .News
+distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 dongnaigsm.vn###headerMover > header:last-child
 dongnaigsm.vn###headerProxy
@@ -314,12 +295,15 @@ getlinkpro.net##div.boxed:nth-child(4) > footer.flat-footer.flat-reset:nth-child
 gg.gg###footer
 goo.gl/GNBOVM$domain=thuviensoft.net
 goo.gl/i5gr3Z$domain=thuviensoft.net
+hackthue.com##.clearfix.pu-bnrow
+hackthue.com##.pu-footer
 harblaze.com##.text-center.container
 hardreset.info###modal-facebook
 hdvietnam.com###sidebar_container
 hdvietnam.com###topbillboard
 hdvietnam.com###yamaha_ads_1
 hdvietnam.com###yamaha_ads_2
+hvdic.thivien.net##.notification
 i.imgur.com/A4Kwg6k.png$domain=uploadocean.com
 icutit.ca##.banner-336x280.banner
 idsly.cc###cookie-pop
@@ -466,6 +450,7 @@ nyaa.se##.ad_b346
 nyaa.se##.ad_b347
 nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
+osdn.net###cookie-bar
 ouo.io##.about
 ouo.io##.footer-copy
 ouo.io##.join-now
@@ -476,7 +461,10 @@ ouo.press##.footer-copy
 ouo.press##.join-now
 ouo.press##.navbar.navbar-default.navbar-top
 ouo.press##header
+pan.baidu.com###activateGuidePopupOuter
 pan.baidu.com###unzip-vip-intro
+pan.baidu.com###web-right-view
+pan.baidu.com###web-single-bottom
 pan.baidu.com##.module-canvas
 paylink.pro###cookie-pop
 paylink.pro###link-view > div:nth-of-type(3)
@@ -662,8 +650,11 @@ unlockapk.com##.footer--dark.footer
 unlockapk.com##.nav
 upfile.vn###Footer
 upfile.vn###Header
+upfile.vn##.Download > ins.adsbygoogle:nth-of-type(1)
 upfile.vn##.NormalButton
+upfile.vn##.Wrapper > div:nth-of-type(1)
 upfile.vn##[href="https://tienso.net"]
+upfile.vn##ins.adsbygoogle:nth-of-type(2)
 upfile.vn##p
 upload.ac##.col-md-8 > .row > .clearfix
 upload.ac##.col-xs-10.col-sm-6
@@ -837,9 +828,11 @@ www.solidfiles.com###header
 www.solidfiles.com##.premium-promo.box
 www.solidfiles.com##.social
 www.solidfiles.com##.top-section
+www.speedtest.net##div.u-c.pure-u-1-4:nth-of-type(4)
 www.teamos-hkrg.com##.dark.floatingItem
 www.teamos-hkrg.com##.wn_description
 www.thegioididong.com##.iframe
+www.wanyx.com##.clearfix.AdArea
 www110.zippyshare.com###bottom
 www110.zippyshare.com###lrbox > div.slickbox:nth-child(5) > div.center:first-child
 www110.zippyshare.com##.smalltab
@@ -999,6 +992,7 @@ youtube.com##*.video-ads
 ||gigaonclick.*^
 ||google*.*/*_204
 ||google.*.*/pagead^
+||hackthue.com/assets/images/bgmain.jpg$image
 ||hh-btr.*^
 ||hitcounter.*^
 ||i.imgur.com$domain=jetleech.com
@@ -1058,6 +1052,11 @@ youtube.com##*.video-ads
 ||velocecdn.com
 ||vkool.net/js/abp.js
 ||www.google.com/appserve/security-bugs/log/youtube
+||www.youtube.com/embed/2otFjO94BO4$subdocument
+||www.youtube.com/embed/g2C-vWK-Ujo$subdocument
+||www.youtube.com/embed/Ic0oV78BMdw$subdocument
+||www.youtube.com/embed/ObHDMnwndrI$subdocument
+||www.youtube.com/embed/yrW0oyMNzfU$subdocument
 ||ylx-1.com
 ||youtube.com/*_204?
 ||youtube.com/ad_companion^
