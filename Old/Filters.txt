@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190101d
+! Version: 20190224a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -14,7 +14,34 @@
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 !2------------------------------------=><=-------------------------------------
 !Anti PopAds->>>>https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
-!3-----------------------------------------------------------------------------
+!
+chiasesuutam.com###mailmunch-inner-overlay-169048a3444b97c
+chiasesuutam.com###mailmunch-overlay-169048a3444b97c
+chiasesuutam.com###mailmunch-popover-169048a3444b97c
+distrowatch.com##.News1 > table:nth-of-type(2)
+distrowatch.com##body > table:nth-of-type(3)
+distrowatch.com##p
+distrowatch.com##table.News:nth-of-type(1) > tbody > tr:nth-of-type(2) > .News
+distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
+hackthue.com##.clearfix.pu-bnrow
+hackthue.com##.pu-footer
+hvdic.thivien.net##.notification
+osdn.net###cookie-bar
+pan.baidu.com###activateGuidePopupOuter
+pan.baidu.com###web-right-view
+pan.baidu.com###web-single-bottom
+upfile.vn##.Download > ins.adsbygoogle:nth-of-type(1)
+upfile.vn##.Wrapper > div:nth-of-type(1)
+upfile.vn##ins.adsbygoogle:nth-of-type(2)
+www.speedtest.net##div.u-c.pure-u-1-4:nth-of-type(4)
+www.wanyx.com##.clearfix.AdArea
+||hackthue.com/assets/images/bgmain.jpg$image
+||www.youtube.com/embed/2otFjO94BO4$subdocument
+||www.youtube.com/embed/g2C-vWK-Ujo$subdocument
+||www.youtube.com/embed/Ic0oV78BMdw$subdocument
+||www.youtube.com/embed/ObHDMnwndrI$subdocument
+||www.youtube.com/embed/yrW0oyMNzfU$subdocument
+3-----------------------------------------------------------------------------
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 ###cookie-pop
