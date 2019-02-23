@@ -1,0 +1,17 @@
+[Adblock Plus 2.0]
+! Version: 20190224a
+! Title: Darias: Gg.gG/PG_
+! Expires: 1 days
+! Homepage: Gg.gG/PG_
+! Licence: Gg.gG/PG_
+! ChangeLog: ...
+!1------------------------------------=><=-------------------------------------
+||pingma.qq.com:80/mstat/report^$important
+||guanjia.qq.com/tapi/gamedownload.php^$important
+||masterconn.qq.com^$important
+||android.bugly.qq.com/rqd/async^$important
+||vmp.qq.com^
+||cloud.gsdk.proximabeta.com:18081^$important
+||*.qq.com:8080/analytics$important
+/iedsafe/Client/android/*/*/tss_base.dat$important
+/iedsafe/Client/android/*/*/mrpcs.data$important
