@@ -4,6 +4,7 @@ e-vcdn.anthill.vn
 raovat.vietnamnet.vn
 aj1559.online
 log.infonet.vn
+api.kinghub.vn
 #____________Apple_________________
 mesu.apple.com
 ppq.apple.com
