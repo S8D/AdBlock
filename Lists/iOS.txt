@@ -1,4 +1,4 @@
-#hVersion=20190312a
+#hVersion=20190312b
 #____________Update________________
 e-vcdn.anthill.vn
 raovat.vietnamnet.vn
@@ -6,6 +6,13 @@ aj1559.online
 log.infonet.vn
 api.kinghub.vn
 ads.home.vn
+e4478.a.akamaiedge.net
+za.zalo.me
+za.zaloapp.com
+log.api.zaloapp.com
+#stc.za.zaloapp.com
+#zaloapp.com
+collector.githubapp.com
 #____________Apple_________________
 mesu.apple.com
 ppq.apple.com
@@ -387,7 +394,7 @@ t.eclick.vn
 s.eclick.vn
 static.eclick.vn
 click.vn
-logsbin.tintucdantri.vn
+#logsbin.tintucdantri.vn
 serving.ad.org.vn
 log.news.zing.vn
 zlog.mp3.zing.vn
@@ -804,10 +811,6 @@ p1.pstatp.com
 p0.pstatp.com
 js.genieessp.com
 match.rundsp.com
-log.api.zaloapp.com
-stc.za.zaloapp.com
-zaloapp.com
-collector.githubapp.com
 xxlargepop.com
 net.rayjump.com
 detect.rayjump.com
