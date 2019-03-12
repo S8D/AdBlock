@@ -1,10 +1,11 @@
-#hVersion=20190311b
+#hVersion=20190312a
 #____________Update________________
 e-vcdn.anthill.vn
 raovat.vietnamnet.vn
 aj1559.online
 log.infonet.vn
 api.kinghub.vn
+ads.home.vn
 #____________Apple_________________
 mesu.apple.com
 ppq.apple.com
@@ -35,10 +36,10 @@ pagead2.googlesyndication.com
 cert-test.sandbox.google.com
 suggestqueries.google.com
 video-stats.l.google.com
-googleadapis.l.google.com
+#googleadapis.l.google.com
 suggestqueries.l.google.com
 www-google-analytics.l.google.com
-gstaticadssl.l.google.com
+#gstaticadssl.l.google.com
 mobile-gtalk.l.google.com
 id.l.google.com
 www3.l.google.com
