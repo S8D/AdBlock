@@ -39,16 +39,6 @@
       <Action type="Direct" />
     </Rule>
     <Rule enabled="true">
-      <Name>PP 127</Name>
-      <Applications>1.2.7_00.exe; 1.2.7_01.exe; 1.2.7_02.exe; 1.2.7_03.exe; 1.2.7_04.exe; 1.2.7_05.exe; 1.2.7_06.exe; 1.2.7_07.exe; 1.2.7_08.exe; 1.2.7_09.exe; 1.2.7_10.exe; 1.2.7_11.exe; 1.2.7_12.exe; 1.2.7_13.exe; 1.2.7_14.exe; 1.2.7_15.exe; 1.2.7_16.exe; 1.2.7_17.exe; 1.2.7_18.exe; 1.2.7_19.exe</Applications>
-      <Action type="Proxy">100</Action>
-    </Rule>
-    <Rule enabled="true">
-      <Name>PP 129</Name>
-      <Applications>1.2.9_Danger_00.exe; 1.2.9_Danger_01.exe; 1.2.9_Danger_02.exe; 1.2.9_Danger_03.exe; 1.2.9_Danger_04.exe; 1.2.9_Danger_05.exe; 1.2.9_Danger_06.exe; 1.2.9_Danger_07.exe; 1.2.9_Danger_08.exe; 1.2.9_Danger_09.exe; 1.2.9_Danger_10.exe; 1.2.9_Danger_11.exe; 1.2.9_Danger_12.exe; 1.2.9_Danger_13.exe; 1.2.9_Danger_14.exe; 1.2.9_Danger_15.exe; 1.2.9_Danger_16.exe; 1.2.9_Danger_17.exe; 1.2.9_Danger_18.exe; 1.2.9_Danger_19.exe</Applications>
-      <Action type="Proxy">100</Action>
-    </Rule>
-    <Rule enabled="true">
       <Name>PaoPao</Name>
       <Targets>144.48.125.176</Targets>
       <Action type="Proxy">100</Action>
