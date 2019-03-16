@@ -45,7 +45,7 @@
     </Rule>
     <Rule enabled="true">
       <Name>Pubg</Name>
-      <Targets>oth.eve.mdt.qq.com; report.syzs.qq.com; pingma.qq.com; tencentgames.helpshift.com; idc.receiver.tdm.qq.com; vmp.qq.com</Targets>
+      <Targets>clientreport.gfm.qq.com; hk.api.unipay.qq.com; hk.clientreport.gfm.qq.com; idc.receiver.tdm.qq.com; oth.eve.mdt.qq.com; pingma.qq.com; report.syzs.qq.com; tencentgames.helpshift.com; vmp.qq.com</Targets>
       <Action type="Block" />
     </Rule>
     <Rule enabled="true">
