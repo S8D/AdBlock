@@ -314,8 +314,6 @@ getlinkpro.net##div.boxed:nth-child(4) > footer.flat-footer.flat-reset:nth-child
 gg.gg###footer
 goo.gl/GNBOVM$domain=thuviensoft.net
 goo.gl/i5gr3Z$domain=thuviensoft.net
-hackthue.com##.clearfix.pu-bnrow
-hackthue.com##.pu-footer
 harblaze.com##.text-center.container
 hardreset.info###modal-facebook
 hdvietnam.com###sidebar_container
@@ -1041,7 +1039,6 @@ youtube.com##*.video-ads
 ||gigaonclick.*^
 ||google*.*/*_204
 ||google.*.*/pagead^
-||hackthue.com/assets/images/bgmain.jpg$image
 ||hh-btr.*^
 ||hitcounter.*^
 ||i.imgur.com$domain=jetleech.com
