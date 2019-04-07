@@ -1,4 +1,4 @@
-#hVersion=20190312b
+#hVersion=20190407a
 #____________Update________________
 e-vcdn.anthill.vn
 raovat.vietnamnet.vn
@@ -1379,7 +1379,6 @@ ofa-sub.osp.opera.software
 c.adsco.re
 adsco.re
 pushservice.one
-apt.alfhaily.me
 api.kiip.me
 sp.zalo.me
 stc.oa.zalo.me
