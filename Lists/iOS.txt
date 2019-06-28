@@ -1,5 +1,7 @@
-#hVersion=20190407a
+#hVersion=20190628a
 #____________Update________________
+a771.dscq.akamai.net
+a279.dscq.akamai.net
 e-vcdn.anthill.vn
 raovat.vietnamnet.vn
 aj1559.online
