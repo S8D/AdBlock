@@ -1,5 +1,6 @@
-#hVersion=20190628a
+#hVersion=20190705a
 #____________Update________________
+s-usc1c-nss-234.firebaseio.com
 a771.dscq.akamai.net
 a279.dscq.akamai.net
 e-vcdn.anthill.vn
