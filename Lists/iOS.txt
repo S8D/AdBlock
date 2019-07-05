@@ -1,5 +1,6 @@
-#hVersion=20190705a
+#hVersion=20190705b
 #____________Update________________
+jdict.firebaseio.com
 s-usc1c-nss-234.firebaseio.com
 a771.dscq.akamai.net
 a279.dscq.akamai.net
