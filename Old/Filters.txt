@@ -18,7 +18,47 @@
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
+||masterconn.qq.com/q.cgi$important
+*/report/*$important,app=AndroidEmulator.exe
+support.malwarebytes.com###cookie-consent-overlay
+support.malwarebytes.com###cookie-consent-alert
+||android.bugly.qq.com/rqd/async^$important
+123link.ghego.site##div.ads-block-warning.dark:nth-child(17)
+123link.ghego.site##div.ads-block-warning.dark:last-child
+123link.ghego.site##div.ads-block-warning.dark:nth-child(18)
+doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.blog-item:first-child
+doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > center:last-child
+doxeaz10.site###link-view > p:nth-child(2)
+doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.row:nth-child(2) > center:nth-child(3) > a:first-child
+doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > h4:nth-child(2)
+doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:nth-child(9) > a:last-child
+s2w.me##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.banner.banner-captcha:first-child
+getlinkaz.com###page > div.g1-row.g1-row-layout-page.g1-hb-row.g1-hb-row-normal.g1-hb-row-b.g1-hb-row-2.g1-hb-boxed.g1-hb-sticky-off.g1-hb-shadow-off:nth-child(2)
+getlinkaz.com###page > div.g1-sticky-top-wrapper.g1-hb-row-3.g1-loaded:nth-child(3)
+getlinkaz.com###post-1464 > header.g1-row.g1-row-layout-page.page-header.page-header-01.g1-dark:first-child
+getlinkaz.com###post-1464 > div.g1-row.g1-row-layout-page.g1-row-padding-m.entry-body-row:last-child > div.alert.alert-warning:first-child
+getlinkaz.com###primary > div.alert.alert-info:first-child
+getlinkaz.com###primary > div.alert.alert-warning:nth-child(2)
+getlinkaz.com###primary > div.vc_row.wpb_row.vc_row-fluid:nth-child(11)
+getlinkaz.com###page > div.g1-row.g1-row-layout-page.g1-prefooter.g1-prefooter-4cols:nth-child(8)
+getlinkaz.com###page > div.g1-row.g1-row-layout-page.g1-footer:nth-child(10)
+getlinkaz.com###primary > div.entry-content:nth-child(10)
+hackthue.com###zb-overlay-1182790
+hackthue.com##div:nth-child(35)
+hackthue.com###zb-753e3 > div.zb-sp-trigger.ztb-right.ztb-left-button:first-child
+||oth.update.mdt.qq.com:8080/beacon/vercheck$important,app=AndroidEmulator.exe
+*/*.xml$important,app=AndroidEmulator.exe
+newsjizz.in###taxonomy-list_1-0
+ukshare.net###colophon > div:last-child
+ukshare.net###colophon
+ukshare.net###secondary
+ukshare.net###comments
+ukshare.net###post-709 > div.related-post.border-style.recent-post:last-child
+||tiengnhat.minder.vn/wp-content/uploads/2018/10/*
+||tiengnhat.minder.vn/wp-content/uploads/2017/11/*
+tiengnhat.minder.vn###check-also-box
 ||web.avjie.com^$popup,third-party,domain=ads.adk2.com|pu.plugrush.com|d308fee8.linkbucks.com|cdn.adk2.com
+!5_____________________________________________________________________________________
 ###cookie-pop
 ###mainNav
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
