@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190403a
+! Version: 20190720a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -18,6 +18,7 @@
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
+||web.avjie.com^$popup,third-party,domain=ads.adk2.com|pu.plugrush.com|d308fee8.linkbucks.com|cdn.adk2.com
 ###cookie-pop
 ###mainNav
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
