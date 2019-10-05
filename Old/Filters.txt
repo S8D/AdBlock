@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20191005c
+! Version: 20191005d
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -277,7 +277,6 @@ www.uploadship.com##tr:nth-of-type(9)
 @@||signup.opendns.com^$important,document,~extension
 @@||uplod.it^$elemhide
 @@||urlex.org^$important,document,~extension
-@@||websosanh.vn^$important,document,~extension
 @@||www.asus.com^$important,document,~extension
 @@||www.broadcom.com^$important,document,~extension
 @@||www.chiemtaimobile.vn^$important,document,~extension
@@ -999,7 +998,6 @@ vyctravel.com###wrap-page > footer:nth-child(15) > div.wrap-foottour.hidden-xs:f
 we25.vn##.footer
 websosanh.vn###anchorComment
 websosanh.vn###footer
-websosanh.vn###right-wrap
 wi.cr###mainNav
 wi.cr##.adsbygoogle
 wi.cr##.copyright-container
