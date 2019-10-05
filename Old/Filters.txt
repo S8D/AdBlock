@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20190925a
+! Version: 20191005a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -18,9 +18,22 @@
 !facebook.com###pagelet_canvas_nav_content
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
-$popup,third-party,domain=web.avjie.com|mixloads.com
-*/*.xml$important,app=AndroidEmulator.exe
-*/report/*$important,app=AndroidEmulator.exe
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+uploadrar.com##header
+uploadrar.com##footer
+uploadrar.com##.menufooter
+uploadrar.com###footer2
+uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
+uploadrar.com##.sharefile > ul
+uploadrar.com##.banner2
+uploadrar.com##.banner3
+uploadrar.com##div.download0page:nth-of-type(1)
+uploadrar.com##div.download0page:nth-of-type(4)
+uploadrar.com##.desc
+uploadrar.com###lastnews
+uploadrar.com##.blockpage > .title
+uploadrar.com###gdpr-cookie-notice
+openload.co###footer
 123link.ghego.site##div.ads-block-warning.dark:last-child
 123link.ghego.site##div.ads-block-warning.dark:nth-child(17)
 123link.ghego.site##div.ads-block-warning.dark:nth-child(18)
