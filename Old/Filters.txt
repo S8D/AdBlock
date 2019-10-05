@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20191005b
+! Version: 20191005c
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -19,42 +19,10 @@
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
-uploadev.org##footer
-uploadev.org###footer2
-uploadev.org###gdpr-cookie-notice
-uploadev.org##header
-uploadev.org##.offersprim
-uploadev.org##.offersfree > .text-center > li:nth-of-type(1)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(2)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(3)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(4)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(5)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(6)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(7)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(8)
-uploadev.org##.offersfree > .text-center > li:nth-of-type(9)
-uploadev.org##.offersfree > .text-center > .dtime
-uploadev.org###news_last
-uploadev.org##.aboutuplouad
-uploadev.org##.col2
-uploadrar.com##header
-uploadrar.com##footer
-uploadrar.com##.menufooter
-uploadrar.com###footer2
-uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
-uploadrar.com##.sharefile > ul
-uploadrar.com##.banner2
-uploadrar.com##.banner3
-uploadrar.com##div.download0page:nth-of-type(1)
-uploadrar.com##div.download0page:nth-of-type(4)
-uploadrar.com##.desc
-uploadrar.com###lastnews
-uploadrar.com##.blockpage > .title
-uploadrar.com###gdpr-cookie-notice
-openload.co###footer
 123link.ghego.site##div.ads-block-warning.dark:last-child
 123link.ghego.site##div.ads-block-warning.dark:nth-child(17)
 123link.ghego.site##div.ads-block-warning.dark:nth-child(18)
+downmienphi.com###fanback
 doxeaz10.site###link-view > p:nth-child(2)
 doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > center:last-child
 doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.blog-item:first-child
@@ -68,6 +36,17 @@ dropapk.to##div.text-center.col-md-4:nth-of-type(2)
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
 dropapk.to##footer
+ez4linkss.com###cookie-pop
+ez4linkss.com###link-view > p
+ez4linkss.com###mainNav
+ez4linkss.com##.text-left
+ez4linkss.com##div.col-md-12:nth-of-type(2) > .banner-captcha.banner
+ez4linkss.com##footer
+ez4linkss.com##h3:nth-of-type(1)
+ez4linkss.com##h3:nth-of-type(2)
+ez4linkss.com##h4
+ez4linkss.com##p:nth-of-type(1)
+ez4linkss.com##p:nth-of-type(2)
 files.pw##.alert-danger.alert
 files.pw##.alert-info.alert
 files.pw##.copyrightsag
@@ -82,6 +61,12 @@ files.pw##div.adscenter2:nth-of-type(3)
 files.pw##div.row:nth-of-type(4)
 files.pw##h4.maintitag:nth-of-type(2)
 files.pw##h4.maintitag:nth-of-type(3)
+free4pc.icu##.menu
+free4pc.icu##.right
+free4pc.icu##body > div:nth-of-type(1)
+free4pc.icu##body > div:nth-of-type(3)
+free4pc.icu##h1
+free4pc.icu##h2
 getlinkaz.com###page > div.g1-row.g1-row-layout-page.g1-footer:nth-child(10)
 getlinkaz.com###page > div.g1-row.g1-row-layout-page.g1-hb-row.g1-hb-row-normal.g1-hb-row-b.g1-hb-row-2.g1-hb-boxed.g1-hb-sticky-off.g1-hb-shadow-off:nth-child(2)
 getlinkaz.com###page > div.g1-row.g1-row-layout-page.g1-prefooter.g1-prefooter-4cols:nth-child(8)
@@ -95,6 +80,13 @@ getlinkaz.com###primary > div.vc_row.wpb_row.vc_row-fluid:nth-child(11)
 hackthue.com###zb-753e3 > div.zb-sp-trigger.ztb-right.ztb-left-button:first-child
 hackthue.com###zb-overlay-1182790
 hackthue.com##div:nth-child(35)
+link.karanpc.com##.content > p:nth-of-type(1)
+link.karanpc.com##.footer
+link.karanpc.com##.navbar
+link.karanpc.com##h4
+link.karanpc.com##p:nth-of-type(2)
+link.karanpc.com##p:nth-of-type(3)
+link.karanpc.com##p:nth-of-type(4)
 mixloads.com##.bg-white.py-5.payment_methods
 mixloads.com##.navbar-expand-lg.navbar
 mixloads.com##.py-4.bg-white.features__section > .container > .row > .col-md-12
@@ -102,10 +94,41 @@ mixloads.com##div.text-center.col-md-4:nth-of-type(2)
 mixloads.com##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
 mixloads.com##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
 mixloads.com##footer
+mshare.io###header
+mshare.io###push-notification-button
+mshare.io##.col-md-5
+mshare.io##.file-info.download > div:nth-of-type(3)
+mshare.io##.pricing-grids.text-center.col-md-7 > .text-left.info-page
+mshare.io##.site-footer
+mshare.io##b
+mshare.io##tr:nth-of-type(4)
+mshare.io##tr:nth-of-type(5)
 newsjizz.in###taxonomy-list_1-0
+openload.co###footer
 s2w.me##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.banner.banner-captcha:first-child
+semawur.com##.btn-info.btn
+semawur.com##.col-lg-8.col-md-12 > div:nth-of-type(1)
+semawur.com##.main-footer
+semawur.com##.main-header
+semawur.com##.mt-30
+semawur.com##.mtb-15.list-li-mr-20
+semawur.com##h3.box-title:nth-of-type(1)
+semawur.com##h3.box-title:nth-of-type(2)
+semawur.com##h4
+semawur.com##header
+semawur.com##p:nth-of-type(1)
+semawur.com##p:nth-of-type(2)
 support.malwarebytes.com###cookie-consent-alert
 support.malwarebytes.com###cookie-consent-overlay
+taiwebs.com###fanback
+taiwebs.com###fancybox-overlay
+taiwebs.com###fancybox-wrap
+taiwebs.com###mainHeader
+taiwebs.com##.alt-message-box
+taiwebs.com##.footer
+taiwebs.com##.spoiler
+taiwebs.com##.thumbnail
+taiwebs.com##.top14
 tiengnhat.minder.vn###check-also-box
 ukshare.net###colophon
 ukshare.net###colophon > div:last-child
@@ -115,6 +138,38 @@ ukshare.net###secondary
 upload.ac##.pt20.col-md-4
 upload.ac##.row > .hidden-xs.text-center.boxa
 upload.ac##.row > .hidden-xs.text-center.boxa > center
+uploadev.org###footer2
+uploadev.org###gdpr-cookie-notice
+uploadev.org###news_last
+uploadev.org##.aboutuplouad
+uploadev.org##.col2
+uploadev.org##.offersfree > .text-center > .dtime
+uploadev.org##.offersfree > .text-center > li:nth-of-type(1)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(2)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(3)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(4)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(5)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(6)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(7)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(8)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(9)
+uploadev.org##.offersprim
+uploadev.org##footer
+uploadev.org##header
+uploadrar.com###footer2
+uploadrar.com###gdpr-cookie-notice
+uploadrar.com###lastnews
+uploadrar.com##.banner2
+uploadrar.com##.banner3
+uploadrar.com##.blockpage > .title
+uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
+uploadrar.com##.desc
+uploadrar.com##.menufooter
+uploadrar.com##.sharefile > ul
+uploadrar.com##div.download0page:nth-of-type(1)
+uploadrar.com##div.download0page:nth-of-type(4)
+uploadrar.com##footer
+uploadrar.com##header
 www.file-up.org###boxes
 www.file-up.org##.default-ttl
 www.file-up.org##.leftcol
