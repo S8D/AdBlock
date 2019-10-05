@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20191005a
+! Version: 20191005b
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -19,6 +19,24 @@
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+uploadev.org##footer
+uploadev.org###footer2
+uploadev.org###gdpr-cookie-notice
+uploadev.org##header
+uploadev.org##.offersprim
+uploadev.org##.offersfree > .text-center > li:nth-of-type(1)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(2)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(3)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(4)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(5)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(6)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(7)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(8)
+uploadev.org##.offersfree > .text-center > li:nth-of-type(9)
+uploadev.org##.offersfree > .text-center > .dtime
+uploadev.org###news_last
+uploadev.org##.aboutuplouad
+uploadev.org##.col2
 uploadrar.com##header
 uploadrar.com##footer
 uploadrar.com##.menufooter
