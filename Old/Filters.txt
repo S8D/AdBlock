@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20191005d
+! Version: 20191017a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -36,6 +36,8 @@ dropapk.to##div.text-center.col-md-4:nth-of-type(2)
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
 dropapk.to##footer
+eyes-health.win##[href="https://sylwenys.pw/i6rlquMjowCx3Q0/12654"]
+eyes-health.win##[href="https://travelcram.com"]
 ez4linkss.com###cookie-pop
 ez4linkss.com###link-view > p
 ez4linkss.com###mainNav
@@ -80,6 +82,11 @@ getlinkaz.com###primary > div.vc_row.wpb_row.vc_row-fluid:nth-child(11)
 hackthue.com###zb-753e3 > div.zb-sp-trigger.ztb-right.ztb-left-button:first-child
 hackthue.com###zb-overlay-1182790
 hackthue.com##div:nth-child(35)
+hoctiengnhatkaoruri.wordpress.com###colophon
+hoctiengnhatkaoruri.wordpress.com###eu-cookie-law > form
+hoctiengnhatkaoruri.wordpress.com###secondary
+hoctiengnhatkaoruri.wordpress.com##.site-branding
+hoctiengnhatkaoruri.wordpress.com##.widget_eu_cookie_law_widget.widget
 link.karanpc.com##.content > p:nth-of-type(1)
 link.karanpc.com##.footer
 link.karanpc.com##.navbar
@@ -87,6 +94,10 @@ link.karanpc.com##h4
 link.karanpc.com##p:nth-of-type(2)
 link.karanpc.com##p:nth-of-type(3)
 link.karanpc.com##p:nth-of-type(4)
+linksvip.net##.alert-success.alert
+linksvip.net##.col-md-4 > div.portlet:nth-of-type(2) > .portlet-header > h3
+linksvip.net##div.alert-danger.alert:nth-of-type(10)
+linksvip.net##div.portlet:nth-of-type(4)
 mixloads.com##.bg-white.py-5.payment_methods
 mixloads.com##.navbar-expand-lg.navbar
 mixloads.com##.py-4.bg-white.features__section > .container > .row > .col-md-12
@@ -105,6 +116,8 @@ mshare.io##tr:nth-of-type(4)
 mshare.io##tr:nth-of-type(5)
 newsjizz.in###taxonomy-list_1-0
 openload.co###footer
+rsload.net##.clearfix.video-box.full-text.short-text > center
+rsload.net##.full > center
 s2w.me##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.banner.banner-captcha:first-child
 semawur.com##.btn-info.btn
 semawur.com##.col-lg-8.col-md-12 > div:nth-of-type(1)
@@ -130,6 +143,10 @@ taiwebs.com##.spoiler
 taiwebs.com##.thumbnail
 taiwebs.com##.top14
 tiengnhat.minder.vn###check-also-box
+tipsalert.xyz###link-view > p
+tipsalert.xyz##[href="http://sundhopen.site/irYVmWipkXnzo9/12656"]
+tipsalert.xyz##[href="https://travelcram.com"]
+tipsalert.xyz##h4
 ukshare.net###colophon
 ukshare.net###colophon > div:last-child
 ukshare.net###comments
@@ -170,6 +187,8 @@ uploadrar.com##div.download0page:nth-of-type(1)
 uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##footer
 uploadrar.com##header
+wikiall.org##p:nth-of-type(1)
+wikiall.org##p:nth-of-type(2)
 www.file-up.org###boxes
 www.file-up.org##.default-ttl
 www.file-up.org##.leftcol
@@ -213,6 +232,7 @@ www.uploadship.com##tr:nth-of-type(6)
 www.uploadship.com##tr:nth-of-type(7)
 www.uploadship.com##tr:nth-of-type(8)
 www.uploadship.com##tr:nth-of-type(9)
+www.weblio.jp###adPcBnrWrp
 ||android.bugly.qq.com/rqd/async^$important
 ||masterconn.qq.com/q.cgi$important
 ||oth.update.mdt.qq.com:8080/beacon/vercheck$important,app=AndroidEmulator.exe
