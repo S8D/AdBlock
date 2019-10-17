@@ -19,6 +19,14 @@
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+hoctiengnhatkaoruri.wordpress.com###actionbar
+hoctiengnhatkaoruri.wordpress.com###colophon
+hoctiengnhatkaoruri.wordpress.com###eu-cookie-law > form
+hoctiengnhatkaoruri.wordpress.com###jp-post-flair
+hoctiengnhatkaoruri.wordpress.com##.site-branding
+www.it-swarm.net##.adn
+www.it-swarm.net##div.adn-ar:nth-of-type(2) > .adnet.gat
+||hoctiengnhatkaoruri.files.wordpress.com/2015/02/background-sakura.jpg$image
 123link.ghego.site##div.ads-block-warning.dark:last-child
 123link.ghego.site##div.ads-block-warning.dark:nth-child(17)
 123link.ghego.site##div.ads-block-warning.dark:nth-child(18)
