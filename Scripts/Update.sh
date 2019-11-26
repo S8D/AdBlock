@@ -2,8 +2,7 @@ mkdir -p /usr/local/sbin && cat > /usr/local/sbin/Update.sh << \EOF
 
 #!/bin/ash
 opkg update && opkg upgrade netifd
-opkg list-installed | grep -qw luci-ssl || opkg install luci-ssl
-/etc/init.d/uhttpd restart
+opkg list-installed | grep -qw luci-ssl || opkg install luci-ssl && /etc/init.d/uhttpd restart
 PACKAGES="$(opkg list-upgradable |awk '{print $1}')"
 if [ -n "${PACKAGES}" ]; then
   opkg upgrade ${PACKAGES}
