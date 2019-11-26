@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20191017b
+! Version: 20191126a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -19,6 +19,28 @@
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+arduino.vn##.region-header.region.header__region
+dnschecker.org###cookie-box
+wiki.dd-wrt.com##.cookieinfo
+www.cloudflare.com###dns-info
+www.cloudflare.com###dnssec-info
+www.cloudflare.com###sni-info
+www.cloudflare.com###tls-info
+www.cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
+www.cloudflare.com##.js-adroll-track-click
+www.cloudflare.com##.main-footer.cms-mainfooter
+www.cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
+www.linksysinfo.org##.js-bottomFixTarget.u-bottomFixer
+www.memrise.com##.cc-color-override--1887361321.cc-bottom.cc-theme-corporate.cc-type-info.cc-banner.cc-window
+www.tanoshiijapanese.com###cnfooter
+www.vnjpclub.com###ampz_inline_bottom
+www.vnjpclub.com###rt-footer-surround
+forums.voz.vn##body > .container > div.row:nth-of-type(1)
+forums.voz.vn###div-gpt-ad-1573896700833-0
+forums.voz.vn###div-gpt-ad-1573550402477-0
+forums.voz.vn###div-gpt-ad-1573550438941-0
+forums.voz.vn###div-gpt-ad-1573550478887-0
+forums.voz.vn##body > .container > div.row:nth-of-type(8)
 hoctiengnhatkaoruri.wordpress.com###actionbar
 hoctiengnhatkaoruri.wordpress.com###colophon
 hoctiengnhatkaoruri.wordpress.com###eu-cookie-law > form
