@@ -14,7 +14,7 @@ alias GetSSL="curl -f -s -k -L";
 if [ ! -f $ThongBao ]; then echo -n "" > $ThongBao; fi
 if [ ! -f $NoiQuy ]; then echo -n "" > $NoiQuy; fi
 ThuMay=$(date +"%u");
-#4__________________________________________________________________________________________________
+#2__________________________________________________________________________________________________
 CheckNet () { curl g.co -k -s -f -o /dev/null; }
 Xong () { echo ">>> $(basename "$0") finished"; rm -rf ${MTam}; exit 0; }
 NetDown () { echo "# NETWORK: DOWN | Please try again! "; }
@@ -45,7 +45,10 @@ CapNhat ()
 	InRa ">>> Checking for updates...";
 	if CheckNet; then GetSSL gg.gg/t_sh > $upTam; KiemTra; else NetDown; fi; Xong
 }
-#5__________________________________________________________________________________________________
+export SHELL=/bin/sh
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin:/jffs/sbin:/jffs/bin:/jffs/usr/sbin:/jffs/usr/bin:/mmc/sbin:/mmc/bin:/mmc/usr/sbin:/mmc/usr/bin:/opt/sbin:/opt/bin:/opt/usr/sbin:/opt/usr/bin:"${TMuc}"
+export LD_LIBRARY_PATH=/lib:/usr/lib:/jffs/lib:/jffs/usr/lib:/jffs/usr/local/lib:/mmc/lib:/mmc/usr/lib:/opt/lib:/opt/usr/lib
+#3__________________________________________________________________________________________________
 echo "===================================="
 echo "|   Cập nhật thông báo            |"
 echo "|   Editor: Darias                |"
