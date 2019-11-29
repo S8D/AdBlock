@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20191126a
+! Version: 20191130a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -19,6 +19,93 @@
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+ckk.ai###cookie-pop
+ckk.ai###link-view > p
+ckk.ai###mainNav
+ckk.ai##.text-left
+ckk.ai##footer
+ckk.ai##h3:nth-of-type(1)
+ckk.ai##h3:nth-of-type(2)
+ckk.ai##h3:nth-of-type(3)
+ckk.ai##h4
+ckk.ai##p:nth-of-type(1)
+ckk.ai##p:nth-of-type(2)
+ckk.ai##p:nth-of-type(3)
+cutpaid.com###link-view > p
+cutpaid.com###mainNav
+cutpaid.com##.text-left
+cutpaid.com##footer
+downmienphi.net##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
+downmienphi.net##.mb-3.mt-3.col-md-12
+downmienphi.net##.mb-5.text-primary
+downmienphi.net##.sv-nav.navbar-dark.navbar-expand-md.navbar
+downmienphi.net##.text-center.col-md-12
+downmienphi.net##footer
+forums.voz.vn###div-gpt-ad-1573550402477-0
+forums.voz.vn###div-gpt-ad-1573550438941-0
+forums.voz.vn###div-gpt-ad-1573550478887-0
+forums.voz.vn###div-gpt-ad-1573896700833-0
+forums.voz.vn###neo_logobar
+forums.voz.vn##body > .container > div.row:nth-of-type(1)
+forums.voz.vn##body > .container > div.row:nth-of-type(8)
+forums.voz.vn##div.row:nth-of-type(14)
+forums.voz.vn##table:nth-of-type(5)
+kimanhblog.com###pum-11269
+learningfromtrip.info###colophon
+learningfromtrip.info###masthead
+learningfromtrip.info###secondary
+learningfromtrip.info##.entry-header
+learningfromtrip.info##.recent-post.border-style.related-post
+learningfromtrip.info##.single-post-wrapper > .rating-area
+maclife.vn##.\39 NPE62lv
+megaurl.in##[href="https://downfile.site"]
+megaurl.in##nav:nth-of-type(2)
+metechy.co###cookie-pop
+metechy.co###mainNav
+metechy.co##.text-left
+metechy.co##footer
+multifilemirror.com##.darken-2.blue-grey.page-footer
+mxlinux.org###webarx-cookie-notice
+oko.sh###cookie-pop
+oko.sh###link-view > p
+oko.sh###mainNav
+oko.sh##.text-left
+oko.sh##footer
+oko.sh##h4
+openwrt.org##.cookielaw-bottom.cookielaw-banner
+pointfshare.com###footer
+pointfshare.com##.likebox-fb
+softwaresblue.com###spin_download
+softwaresblue.com##.content_text
+softwaresblue.com##.footerPolicy
+softwaresblue.com##.header-top
+tiny.do###cookie-pop
+tiny.do###mainNav
+tiny.do##.box-main > .banner-captcha.banner
+tiny.do##.pls-captcha
+tiny.do##.text-left
+tiny.do##div.col-md-12:nth-of-type(2) > .btn-captcha.btn-primary.btn
+tiny.do##footer
+tiny.do##h4
+tmearn.com###link-view > p
+tmearn.com###mainNav
+tmearn.com##.text-left
+tmearn.com##footer
+tmearn.com##h4
+topbank.vn###SiteLeft
+topbank.vn###SiteRight
+vn-zoom.org##.p-body-sidebar > ins.adsbygoogle:nth-of-type(1)
+vn-zoom.org##ins.adsbygoogle:nth-of-type(2)
+vn-zoom.org##ins.adsbygoogle:nth-of-type(3)
+www.cleancss.com###ezmobfooter
+www.fshare.vn##.bannerinfooter
+www.hdvietnam.com###logoBlock
+www.hdvietnam.com###youtube
+www.hdvietnam.com##footer.pageWidth
+www.smallnetbuilder.com###cadre_alert_cookies
+www.vandyke.com###gdpr-alert
+www.vandyke.com###gdpr-cover
+||scloud.ws/templates/fon.jpg$image
 arduino.vn##.region-header.region.header__region
 dnschecker.org###cookie-box
 wiki.dd-wrt.com##.cookieinfo
