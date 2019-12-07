@@ -1,3 +1,10 @@
+#_____20191207a
+*.arpa
+*.d.f.ip6.arpa
+*.in-addr.arpa
+*.lan
+*.cn
+*.baidu.com
 ###########################
 #        Blacklist        #
 ###########################
@@ -16,13 +23,6 @@
 ## Time-based rules
 # *.youtube.*  @time-to-sleep
 # facebook.com @work
-##________________
-*.d.f.ip6.arpa
-*.in-addr.arpa
-*.arpa
-*.lan
-*.cn
-*.baidu.com
 ##________________
 ad.*
 ads.*
