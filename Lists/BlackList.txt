@@ -1,5 +1,4 @@
 #_____20191207b
-## 
 *.arpa
 *.d.f.ip6.arpa
 *.in-addr.arpa
