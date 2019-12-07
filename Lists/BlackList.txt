@@ -1,4 +1,12 @@
-#_____20191207l
+#_____20191207m
+*.rayjump.com
+graph.fbpigeon.com
+*.adsplay.*
+*.88-f.net
+*.ibytedtos.com
+*.flurry.com
+*.bytedance.com
+*.pstatp.com
 *.admicro.*
 *.miui.com
 xlog.tiktokv.com
