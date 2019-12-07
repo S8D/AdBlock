@@ -1,8 +1,8 @@
-#_____20191207a
+#_____20191207b
+## 
 *.arpa
 *.d.f.ip6.arpa
 *.in-addr.arpa
-*.lan
 *.cn
 *.baidu.com
 ###########################
@@ -23,7 +23,7 @@
 ## Time-based rules
 # *.youtube.*  @time-to-sleep
 # facebook.com @work
-##________________
+
 ad.*
 ads.*
 banner.*
@@ -46,6 +46,7 @@ eth0.me
 *.invalid
 *.bind
 *.lan
+*.home
 *.internal
 *.intranet
 *.private
