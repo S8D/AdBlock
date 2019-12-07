@@ -1,4 +1,11 @@
-#_____20191207j
+#_____20191207k
+xlog.tiktokv.com
+vads.net.vn
+*.vietnamnetad.vn
+*.crazyegg.com
+thongke.24h.com.vn
+*.adnxs.com
+sb.scorecardresearch.com
 *.blueseed.*
 aj1010.online
 adservice.google.*
