@@ -14,12 +14,13 @@
 ## *sex*         | matches any name containing that substring
 ## ads[0-9]*     | matches "ads" followed by one or more digits
 ## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
+## Time-based rules
+# *.youtube.*  @time-to-sleep
+# facebook.com @work
 ##________________
-*.com.lan
-*.net.lan
-*.vn.lan
-*.cn.lan
-*.us.lan
+*.d.f.ip6.arpa
+*.in-addr.arpa
+*.lan
 *.cn
 *.baidu.com
 ##________________
@@ -54,8 +55,3 @@ eth0.me
 *.16.172.in-addr.arpa
 *.168.192.in-addr.arpa
 *.254.169.in-addr.arpa
-*.d.f.ip6.arpa
-*.in-addr.arpa
-## Time-based rules
-# *.youtube.*  @time-to-sleep
-# facebook.com @work
