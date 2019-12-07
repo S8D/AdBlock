@@ -1,6 +1,7 @@
-#_____20191207f
+#_____20191207g
 *.adjust.com
-mobilecrashreporting.googleapis.com
+mobilecrashreporting.*
+app-measurement.*
 *.mixpanel.com
 *.appsflyer.com
 *.branch.io
