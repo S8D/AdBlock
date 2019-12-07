@@ -1,4 +1,14 @@
-#_____20191207i
+#_____20191207j
+*.blueseed.*
+aj1010.online
+adservice.google.*
+*.sgsnssdk.*
+*.byteoversea.*
+mon.musical.*
+log.tiktokv.com
+*nhacai*
+*cado*
+*.advertnative.*
 *.ksmobile.*
 *ads*.zadn.vn
 log.api.zaloapp.*
