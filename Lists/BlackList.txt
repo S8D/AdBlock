@@ -1,4 +1,10 @@
-#_____20191207h
+#_____20191207i
+*ads*.zadn.vn
+log.api.zaloapp.*
+log.baomoi.com
+*.criteo.com
+*.heytapmobi.com
+*.adtimaserver.*
 clck.yandex.ru
 *.webvisor.com
 qos-talk.123c.vn
@@ -7,6 +13,7 @@ beacons*.gvt*.com
 beacons.*.gvt*.com
 beacons*.*.gvt*.com
 *.adjust.com
+*.googleadservices.*
 mobilecrashreporting.*
 app-measurement.*
 *.mixpanel.com
@@ -25,6 +32,7 @@ app-measurement.*
 oppo.com.*
 *.oppo.custhelp.com
 *.oppo*.custhelp.com
+oppomobile.*
 *.oppomobile.*
 *.baidu.com
 *.arpa
@@ -32,6 +40,9 @@ oppo.com.*
 #_____3X
 *xvideos*
 dam69.*
+heo69.*
+heo3x.*
+top3x.*
 *sex*
 ##____________
 eth0.me
