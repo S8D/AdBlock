@@ -1,4 +1,10 @@
-#_____20191207c
+#_____20191207d
+*.oppo.com
+oppo.com.*
+*.oppo.custhelp.com
+*.oppo*.custhelp.com
+*.oppomobile.*
+*.oppomobile.*
 *.baidu.com
 *.arpa
 *.cn
