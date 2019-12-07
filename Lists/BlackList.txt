@@ -1,4 +1,5 @@
 #_____20191207i
+*.ksmobile.*
 *ads*.zadn.vn
 log.api.zaloapp.*
 log.baomoi.com
