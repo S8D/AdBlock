@@ -1,4 +1,11 @@
-#_____20191207g
+#_____20191207h
+clck.yandex.ru
+*.webvisor.com
+qos-talk.123c.vn
+beacons.gvt*.com
+beacons*.gvt*.com
+beacons.*.gvt*.com
+beacons*.*.gvt*.com
 *.adjust.com
 mobilecrashreporting.*
 app-measurement.*
@@ -19,10 +26,13 @@ oppo.com.*
 *.oppo.custhelp.com
 *.oppo*.custhelp.com
 *.oppomobile.*
-*.oppomobile.*
 *.baidu.com
 *.arpa
 *.cn
+#_____3X
+*xvideos*
+dam69.*
+*sex*
 ##____________
 eth0.me
 ad.*
