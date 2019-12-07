@@ -1,4 +1,14 @@
-#_____20191207e
+#_____20191207f
+*.adjust.com
+mobilecrashreporting.googleapis.com
+*.mixpanel.com
+*.appsflyer.com
+*.branch.io
+*.amplitude.com
+*.braze.com
+*.tiqcdn.com
+*.googlesyndication.com
+*.segment.io
 *.google-analytics.com
 *.crashlytics.com
 *.googletagmanager.com
@@ -12,6 +22,7 @@ oppo.com.*
 *.baidu.com
 *.arpa
 *.cn
+##____________
 eth0.me
 ad.*
 tag.*
