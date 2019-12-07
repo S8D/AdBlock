@@ -19,6 +19,7 @@
 ##________________
 *.d.f.ip6.arpa
 *.in-addr.arpa
+*.arpa
 *.lan
 *.cn
 *.baidu.com
