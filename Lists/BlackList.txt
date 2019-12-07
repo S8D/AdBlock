@@ -14,7 +14,14 @@
 ## *sex*         | matches any name containing that substring
 ## ads[0-9]*     | matches "ads" followed by one or more digits
 ## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
+##________________
+*.com.lan
+*.net.lan
+*.vn.lan
+*.cn.lan
+*.us.lan
 
+##________________
 ad.*
 ads.*
 banner.*
@@ -52,8 +59,3 @@ eth0.me
 
 # *.youtube.*  @time-to-sleep
 # facebook.com @work
-*.com.lan
-*.net.lan
-*.vn.lan
-*.cn.lan
-*.us.lan
