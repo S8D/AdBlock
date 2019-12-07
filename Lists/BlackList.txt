@@ -1,4 +1,8 @@
-#_____20191207d
+#_____20191207e
+*.google-analytics.com
+*.crashlytics.com
+*.googletagmanager.com
+*.doubleclick.net
 *.oppo.com
 oppo.com.*
 *.oppo.custhelp.com
