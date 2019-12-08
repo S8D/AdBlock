@@ -1,4 +1,14 @@
-#_____20191208f
+#_____20191208g
+*.sascdn.com
+*.addthisedge.com
+*.addthis.com
+*.genieessp.com
+*.anthill.vn
+log.kienthuc.net.vn
+*.goforandroid.com
+uniad.phimmoi.net
+tags.bluekai.com
+*.tenmax.io
 *.88-f.net
 *.admicro.vn
 *.adnetwork.vn
