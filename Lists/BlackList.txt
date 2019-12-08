@@ -1,4 +1,6 @@
-#_____20191208g
+#PhienBan___20191208h
+*.ut.taobao.com
+sp.zalo.me
 *.sascdn.com
 *.addthisedge.com
 *.addthis.com
