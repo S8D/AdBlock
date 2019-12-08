@@ -1,4 +1,7 @@
 #_____20191208a
+*.inmobi.com
+*.vietid.net
+*.onthe.io
 *.adobedtm.com
 log4x.nixcdn.com
 *.cedexis.com
@@ -29,7 +32,7 @@ graph.fbpigeon.com
 *.adsplay.*
 *.88-f.net
 *.ibytedtos.com
-*.flurry.com
+data.flurry.com
 *.bytedance.com
 *.pstatp.com
 *.admicro.vn
@@ -44,9 +47,9 @@ sb.scorecardresearch.com
 *.blueseed.tv
 aj1010.online
 adservice.google.*
-*.sgsnssdk.*
-*.byteoversea.*
-mon.musical.*
+mon.sgsnssdk.com
+*.byteoversea.com
+mon.musical.ly
 log.tiktokv.com
 *nhacai*
 *cado*
@@ -92,7 +95,7 @@ oppomobile.*
 *.oppomobile.*
 *.baidu.com
 *.cn
-
+*.tclclouds.com
 *.arpa
 #*.d.f.ip6.arpa
 #*.in-addr.arpa
