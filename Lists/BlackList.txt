@@ -1,5 +1,7 @@
-#PhienBan___20191209a
+#PhienBan___20191209b
 #*.isnssdk.com
+an.facebook.com
+graph.accountkit.com
 *.update.fbsbx.com
 *.ambientplatform
 *.lavanetwork.net
