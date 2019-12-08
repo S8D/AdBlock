@@ -1,4 +1,12 @@
-#PhienBan___20191208h
+#PhienBan___20191208i
+#*.isnssdk.com
+*.coronalabs.com
+*.unity3d.com
+c.trazk.com
+*.mmstat.com
+*.symcd.com
+*.appcloudbox.net
+*.applovin.com
 *.ut.taobao.com
 sp.zalo.me
 *.sascdn.com
@@ -118,7 +126,10 @@ log.api.zaloapp.*
 log.baomoi.com
 log.tiktokv.com
 log.zingmp3.vn
+apinas.nct.vn
 log4x.nixcdn.com
+stc-nas.nixcdn.com
+lrc.nct.nixcdn.com
 logsbin.dantri.com.vn
 logv2*
 logyxz.com
