@@ -1,4 +1,14 @@
-#_____20191208c
+#_____20191208d
+logyxz.com
+track*
+sohu.com
+*.adnetwork.vn
+*.kinghub.vn
+logsbin.dantri.com.vn
+cdncomment.dantri.com.vn
+apicomment.dantri.com.vn
+*.aliapp.org
+*trackking*
 *report*
 *logging*
 logv2*
@@ -68,6 +78,7 @@ mon.sgsnssdk.com
 mon.musical.ly
 log.tiktokv.com
 *nhacai*
+*cacuoc*
 *cado*
 *adver*
 *.ksmobile.*
@@ -112,6 +123,7 @@ oppomobile.*
 *.arpa
 
 #_____3X
+*adxxx*
 vlxx.*
 sexhayvl.*
 ditvl.*
@@ -124,6 +136,10 @@ thiendia.*
 lauxanh.*
 *lauxanh.*
 jav*.*
+*lamtinh*
+*tinhduc*
+*fuck*
+*porn*
 *gaigoi*
 gaidam.*
 *xvideos*
