@@ -1,5 +1,6 @@
-#PhienBan___20191208j
+#PhienBan___20191209a
 #*.isnssdk.com
+*.update.fbsbx.com
 *.ambientplatform
 *.lavanetwork.net
 *.polyad.net
