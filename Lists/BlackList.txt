@@ -1,5 +1,8 @@
-#PhienBan___20191208i
+#PhienBan___20191208j
 #*.isnssdk.com
+*.ambientplatform
+*.lavanetwork.net
+*.polyad.net
 *.coronalabs.com
 *.unity3d.com
 c.trazk.com
@@ -101,7 +104,7 @@ ad.*
 ads.*
 adservice.googl*
 adtima*
-aj1010.online
+aj1*.online
 api*.tiktokv.com
 api.amplitude.com
 apicomment.dantri.com.vn
