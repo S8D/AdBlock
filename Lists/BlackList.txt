@@ -1,4 +1,4 @@
-#_____20191208e
+#_____20191208f
 *.88-f.net
 *.admicro.vn
 *.adnetwork.vn
@@ -28,6 +28,7 @@
 *.google-analytics.com
 *.googlesyndication.com
 *.heytapmobi.com
+*.hicloud.com
 *.hoood.info
 *.ibytedtos.com
 *.inmobi.com
@@ -37,6 +38,7 @@
 *.ksmobile.*
 *.ladipage.com
 *.logging.nextsmarty.com
+*.mgid.com
 *.miui.com
 *.mixpanel.com
 *.moatads.com
@@ -53,6 +55,7 @@
 *.picsart.com
 *.pstatp.com
 *.rayjump.com
+*.sdk.zadn.vn
 *.segment.*
 *.sohu.com
 *.tclclouds.com
@@ -72,11 +75,11 @@
 *nhacai*
 *report*
 *report.m.taobao.com
+*snssdk*
 *trackking*
-track*
-tracker.*
 ad.*
 ads.*
+adservice.googl*
 adtima*
 aj1010.online
 api*.tiktokv.com
@@ -109,7 +112,6 @@ logv2*
 logyxz.com
 mobilecrashreporting.googleapis.com
 mon.musical.ly
-mon.sgsnssdk.com
 mon.tiktokv.com
 oppo.com.*
 oppomobile.*
@@ -122,12 +124,15 @@ sharefb.cnnd.vn
 sohu.com
 tag.*
 thongke.24h.com.vn
+track*
+tracker.*
 trogiang.vuihoc.vn
 webcast*.tiktokv.com
 www.googleadservices.com
 www.googletagmanager.com
+www.googletagservices.com
 xlog.tiktokv.com
-
+zplayer.trk.zapps.vn
 #_____3X
 *adxxx*
 *fuck*
