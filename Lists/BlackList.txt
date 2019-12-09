@@ -1,4 +1,4 @@
-#PhienBan___20191209d
+#PhienBan___20191209e
 #*.isnssdk.com
 *.useinsider.com
 *ads*.zadn.vn
@@ -84,10 +84,7 @@ tags.bluekai.com
 *.onelink.me
 *.oneplus.net
 *.onthe.io
-*.oppo*.custhelp.com
-*.oppo.com
-*.oppo.custhelp.com
-*.oppomobile.*
+*oppo*
 *.p.jwpcdn.com
 *.picsart.com
 *.pstatp.com
@@ -173,6 +170,7 @@ www.googletagmanager.com
 www.googletagservices.com
 xlog.tiktokv.com
 zplayer.trk.zapps.vn
+
 #_____3X
 *adxxx*
 *fuck*
