@@ -1,5 +1,7 @@
-#PhienBan___20191209b
+#PhienBan___20191209c
 #*.isnssdk.com
+*coccoc*
+*opera*
 an.facebook.com
 graph.accountkit.com
 *.update.fbsbx.com
