@@ -1,5 +1,14 @@
-#PhienBan___20191209c
+#PhienBan___20191209d
 #*.isnssdk.com
+*.useinsider.com
+*ads*.zadn.vn
+startup.mobile.yandex.net
+*.appboy.com
+appboy*.com
+graph.instagram.com
+*.adx1.com
+*.jd.com
+*.casalemedia.com
 *coccoc*
 *opera*
 an.facebook.com
