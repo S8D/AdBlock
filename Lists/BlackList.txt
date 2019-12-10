@@ -1,4 +1,4 @@
-#PhienBan___20191211a
+#PhienBan___20191211b
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,10 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*log.*amazon*
+*.systemlog.me
+*.hiido.com
+*.adj.st
 *.jpush.io
 *.pubmatic.com
 demo-ads.vietnamnetjsc.vn
