@@ -113,7 +113,9 @@ tags.bluekai.com
 *snssdk*
 *trackking*
 ad.*
+ads*
 ads.*
+*.ads*
 adservice.googl*
 adtima*
 aj1*.online
