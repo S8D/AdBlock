@@ -1,4 +1,4 @@
-#PhienBan___20191210d
+#PhienBan___20191210e
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,10 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+proximabeta.com
+netcoresmartech.com
+log.snow.me
+suggestqueries.google.com
 *fb88*
 *.telemetry.microsoft.com
 *.useinsider.com
@@ -60,7 +64,6 @@ tags.bluekai.com
 *.adobedtm.com
 *.adtima*
 *.aliapp.org
-*.aliapp.org
 *.applvn.com
 *.appnext.com
 *.appsflyer.com
@@ -91,7 +94,6 @@ tags.bluekai.com
 *.kinghub.vn
 *.ksmobile.*
 *.ladipage.com
-*.logging.nextsmarty.com
 *.mgid.com
 *.miui.com
 *.mixpanel.com
@@ -125,14 +127,13 @@ tags.bluekai.com
 *logging*
 *nhacai*
 *report*
-*report.m.taobao.com
 *snssdk*
 *trackking*
 ad.*
 ads*
 ads.*
 *.ads*
-adservice.googl*
+adservice*
 adtima*
 aj1*.online
 api*.tiktokv.com
@@ -142,10 +143,7 @@ app-measurement.com
 app.adjust.com
 banner.*
 banners.*
-beacons*.*.gvt*.com
-beacons*.gvt*.com
-beacons.*.gvt*.com
-beacons.gvt*.com
+beacons*
 cdncomment.dantri.com.vn
 clck.yandex.ru
 data.flurry.com
