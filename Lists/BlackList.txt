@@ -1,5 +1,6 @@
-#PhienBan___20191210a
+#PhienBan___20191210b
 #*.isnssdk.com
+*fb88*
 *.telemetry.microsoft.com
 *.useinsider.com
 *ads*.zadn.vn
