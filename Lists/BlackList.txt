@@ -1,9 +1,21 @@
-#PhienBan___20191210b
-#*.isnssdk.com
+#PhienBan___20191210c
+#___Zalo
+log*zalo*
+discovery*zalo*
+polyfill.io
+shop*zalo*
+zpg.zdn.vn
+jp.zaloapp.com
+*ads*.zadn.vn
+sp.zalo.me
+qos-talk.123c.vn
+zplayer.trk.zapps.vn
+log*zing*
+
+#___TongHop
 *fb88*
 *.telemetry.microsoft.com
 *.useinsider.com
-*ads*.zadn.vn
 startup.mobile.yandex.net
 *.appboy.com
 appboy*.com
@@ -27,7 +39,6 @@ c.trazk.com
 *.appcloudbox.net
 *.applovin.com
 *.ut.taobao.com
-sp.zalo.me
 *.sascdn.com
 *.addthisedge.com
 *.addthis.com
@@ -140,10 +151,8 @@ fknox*.fptshop.com.vn
 graph.fbpigeon.com
 jbovn.com
 jwpltx.com
-log.api.zaloapp.*
 log.baomoi.com
 log.tiktokv.com
-log.zingmp3.vn
 apinas.nct.vn
 log4x.nixcdn.com
 stc-nas.nixcdn.com
@@ -156,7 +165,6 @@ mon.musical.ly
 mon.tiktokv.com
 oppo.com.*
 oppomobile.*
-qos-talk.123c.vn
 s.youtube.com
 sb.scorecardresearch.com
 segment*
@@ -173,7 +181,6 @@ www.googleadservices.com
 www.googletagmanager.com
 www.googletagservices.com
 xlog.tiktokv.com
-zplayer.trk.zapps.vn
 
 #_____3X
 *xnxx*
