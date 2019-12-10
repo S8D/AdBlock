@@ -1,16 +1,20 @@
-#PhienBan___20191210c
+#PhienBan___20191210d
 #___Zalo
-log*zalo*
-discovery*zalo*
 polyfill.io
 shop*zalo*
-zpg.zdn.vn
 jp.zaloapp.com
-*ads*.zadn.vn
 sp.zalo.me
 qos-talk.123c.vn
 zplayer.trk.zapps.vn
 log*zing*
+*zpg.zdn.vn
+store*.zdn.vn
+store*zalo
+*game*.zdn.vn
+*page*zalo
+log*zalo*
+discovery*zalo*
+*ads*.zadn.vn
 
 #___TongHop
 *fb88*
