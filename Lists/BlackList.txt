@@ -1,5 +1,6 @@
-#PhienBan___20191209e
+#PhienBan___20191210a
 #*.isnssdk.com
+*.telemetry.microsoft.com
 *.useinsider.com
 *ads*.zadn.vn
 startup.mobile.yandex.net
@@ -172,6 +173,7 @@ xlog.tiktokv.com
 zplayer.trk.zapps.vn
 
 #_____3X
+*xnxx*
 *adxxx*
 *fuck*
 *gaigoi*
