@@ -1,4 +1,4 @@
-#PhienBan___20191210e
+#PhienBan___20191210f
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,8 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+demo-ads.vietnamnetjsc.vn
+*ladipage*
 proximabeta.com
 netcoresmartech.com
 log.snow.me
@@ -93,7 +95,6 @@ tags.bluekai.com
 *.izatcloud.net
 *.kinghub.vn
 *.ksmobile.*
-*.ladipage.com
 *.mgid.com
 *.miui.com
 *.mixpanel.com
