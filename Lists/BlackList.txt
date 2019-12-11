@@ -20,6 +20,7 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*.supersonicads*
 *.iadsdk.apple.com
 *.app.link
 *.test-app.link
