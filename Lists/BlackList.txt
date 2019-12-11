@@ -1,4 +1,4 @@
-#PhienBan___20191211f
+#PhienBan___20191211g
 *vpn*
 *betternet*
 *unlock*
@@ -21,6 +21,7 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*.iadsdk.apple.com
 *.app.link
 *.test-app.link
 *.adjust.com
