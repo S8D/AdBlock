@@ -1,4 +1,4 @@
-#PhienBan___20191211d
+#PhienBan___20191211e
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,9 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*.app.link
+*.test-app.link
+*.adjust.com
 analytics.hostyour.video
 sdk.hostyour.video
 syndication.twitter.com
