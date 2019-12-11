@@ -1,4 +1,4 @@
-#PhienBan___20191211b
+#PhienBan___20191211c
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,12 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*.eclick.vn
+*.adtrue.com
+*.ae888.com
+*.trafficfactory.biz
+*.haokan.mobi
+jsonip.com
 *log.*amazon*
 *.systemlog.me
 *.hiido.com
