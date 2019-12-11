@@ -1,7 +1,6 @@
-#PhienBan___20191211g
+#PhienBan___20191212a
 *vpn*
 *betternet*
-*unlock*
 *proxy*
 #___Zalo
 polyfill.io
