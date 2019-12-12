@@ -1,7 +1,4 @@
-#PhienBan___20191212a
-*vpn*
-*betternet*
-*proxy*
+#PhienBan___20191212b
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -20,6 +17,15 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*vpn*
+*betternet*
+*proxy*evidon.com
+*.ants.vn
+*.getblueshift.com
+*.newrelic.com
+d31qbv1cthcecs.cloudfront.net
+*.evidon.com
+mobile.pipe.aria.microsoft.com
 *.supersonicads*
 *.iadsdk.apple.com
 *.app.link
