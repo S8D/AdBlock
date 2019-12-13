@@ -1,4 +1,4 @@
-#PhienBan___20191213c
+#PhienBan___20191213d
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,10 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*huawei*
+onesignal.com
+app-analytics.snapchat.com
+*download.mediatek.com
 *id.google.com
 geomobileservices-pa.googleapis.com
 *device*.googleapis.com
