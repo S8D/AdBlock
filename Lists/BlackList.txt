@@ -1,4 +1,4 @@
-#PhienBan___20191212b
+#PhienBan___20191213a
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,16 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+*.uc123.com
+*.uodoo.com
+*.vmate.in
+*bacaberita.com
+*.ucfly.com
+*.uoocool.com
+*xiaomi*
+*.gop1.co
+*supersonicad*
+*.aliyuncs.com
 *vpn*
 *betternet*
 *proxy*evidon.com
