@@ -1,4 +1,4 @@
-#PhienBan___20191213a
+#PhienBan___20191213b
 #___Zalo
 polyfill.io
 shop*zalo*
@@ -17,6 +17,10 @@ discovery*zalo*
 *ads*.zadn.vn
 
 #___TongHop
+device-provisioning.googleapis.com
+*location*
+id.google.com
+*.amap.com
 *.uc123.com
 *.uodoo.com
 *.vmate.in
