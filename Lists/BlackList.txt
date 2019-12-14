@@ -1,5 +1,5 @@
 #PhienBan___20191214a
-#___Zalo
+#___Zalo_________
 store*zalo
 *page*zalo
 polyfill.io
@@ -16,8 +16,7 @@ shop*zalo*
 log*zalo*
 log*zing*
 
-#___TongHop
-
+#___TongHop_________
 *proxy*
 *report*
 *betternet*
@@ -241,7 +240,7 @@ oppomobile.*
 ad.*
 *.ucweb.*
 
-#_____3X
+#___3X_________
 *adxxx*
 *xnxx*
 *sex*
@@ -268,7 +267,7 @@ heo69.*
 dam69.*
 jav*.*
 
-##____________
+#___Local_________
 *.localhost
 *.test
 *.intranet
