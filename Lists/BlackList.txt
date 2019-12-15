@@ -1,4 +1,4 @@
-#PhienBan___20191214a
+#PhienBan___20191215a
 #___Zalo_________
 store*zalo
 *page*zalo
@@ -17,6 +17,8 @@ log*zalo*
 log*zing*
 
 #___TongHop_________
+*.googlezip.net
+datasaver.googleapis.com
 *proxy*
 *report*
 *betternet*
@@ -165,7 +167,7 @@ onesignal.com
 c.trazk.com
 *.ehawk.com
 an.facebook.com
-*download.mediatek.com
+*epodownload.mediatek.com
 *.miui.com
 *.msftncsi.com
 log.baomoi.com
