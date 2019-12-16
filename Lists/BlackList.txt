@@ -1,4 +1,4 @@
-#PhienBan___20191216a
+#PhienBan___20191216b
 #___Zalo_________
 store*zalo
 *page*zalo
@@ -17,6 +17,7 @@ log*zalo*
 log*zing*
 
 #___TongHop_________
+imasdk.googleapis.com
 oepodownload.mediatek.com
 mgepodownload.mediatek.com
 commercialvalue.org
