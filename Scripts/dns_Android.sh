@@ -1,6 +1,7 @@
 #!/bin/bash
 TM="/data/media/0/dnscrypt-proxy"
 Log="${TM}/Update.log"
+[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 if [ ! -f "$Log" ]; then echo > $Log; fi;
 cd $TM
 echo "Đang kiểm tra phiên bản DNSCrypt-Proxy"
