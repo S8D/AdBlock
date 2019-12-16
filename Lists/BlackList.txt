@@ -1,4 +1,4 @@
-#PhienBan___20191215a
+#PhienBan___20191216a
 #___Zalo_________
 store*zalo
 *page*zalo
@@ -17,6 +17,13 @@ log*zalo*
 log*zing*
 
 #___TongHop_________
+oepodownload.mediatek.com
+mgepodownload.mediatek.com
+commercialvalue.org
+cdnondemand.org
+*.maribacaberita.com
+*.yukbacaberita.com
+*.y5en.com
 *.googlezip.net
 datasaver.googleapis.com
 *proxy*
@@ -167,7 +174,6 @@ onesignal.com
 c.trazk.com
 *.ehawk.com
 an.facebook.com
-*epodownload.mediatek.com
 *.miui.com
 *.msftncsi.com
 log.baomoi.com
@@ -198,7 +204,6 @@ s.youtube.com
 *.pubmatic.com
 *.newrelic.com
 *.mopub.com
-*caberita.com
 proximabeta.com
 *.casalemedia.com
 *.byteoversea.com
