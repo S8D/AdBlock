@@ -1,4 +1,4 @@
-#PhienBan___20191216c
+#PhienBan___20191216d
 #___Zalo_________
 store*zalo
 *page*zalo
@@ -18,6 +18,16 @@ log*zing*
 
 #___TongHop_________
 xdrig.com
+siteswithcontent.com
+ime.cootek.com
+admedia.com
+kargo.com
+s3xified.com
+pubmine.com
+dmca.com
+steepto.com
+lentainform.com
+mobilesystemservice.com
 imasdk.googleapis.com
 oepodownload.mediatek.com
 mgepodownload.mediatek.com
