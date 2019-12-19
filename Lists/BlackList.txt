@@ -1,4 +1,4 @@
-#PhienBan___20191216e
+#PhienBan___20191219a
 #___Zalo_________
 store*zalo
 *page*zalo
@@ -19,6 +19,7 @@ log*zing*
 res-*.zadn.vn
 
 #___TongHop_________
+adc.quantrimang.com
 xdrig.com
 siteswithcontent.com
 ime.cootek.com
