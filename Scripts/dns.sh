@@ -1,13 +1,12 @@
 #!/bin/bash
-PhienBan=20191221a
-TM="/data/media/0/dnscrypt-proxy"
+PhienBan=20191221b
+TM="/sdcard/dnscrypt-proxy"
 FileTam="${TM}/tam"
 Update="gg.gg/dns_"
 Log="${TM}/Update.log"
 File="${TM}/DNSCrypt.zip"
 [ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 if [ ! -f "$Log" ]; then echo > $Log; fi;
-cd $TM
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; fi
 if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; fi
@@ -69,7 +68,7 @@ else echo "$(date +"%F %a %T") - Không có Internet!!! Đang thoát..."; exit; 
 if [[ -f "$File" ]]; then
 	echo "$(date +"%F %a %T") - Đang giải nén DNSCrypt-Proxy"
 	rm -r ${TM}/${ThuMucNen}/
-	unzip ${TM}/DNSCrypt.zip; chmod +x ${TM}/${ThuMucNen}/dnscrypt-proxy
+	unzip $File; chmod +x ${TM}/${ThuMucNen}/dnscrypt-proxy
 	pkill -HUP dnscrypt-proxy
 	echo "$(date +"%F %a %T") - Đang cập nhật DNSCrypt-Proxy"
 	mv $TM/${ThuMucNen}/dnscrypt-proxy /system/bin/dnscrypt-proxy
