@@ -4,3 +4,4 @@ TM="/data/media/0/dnscrypt-proxy"
 echo "$(date +"%F %a %T") - Đang cập nhật Bộ lọc"
 curl -s -L -o ${TM}/_Den.txt gg.gg/bl_
 echo "$(date +"%F %a %T") - Đã cập nhật Bộ lọc"
+cat ${TM}/Den.txt | grep .*PhienBan
