@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan=20191221d
+PhienBan=20191221e
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; TMGoc="/root/dns"; fi
 if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; TMGoc="/root/dns"; fi
@@ -12,39 +12,9 @@ Log="${TMGoc}/Update.log"
 File="${TMGoc}/DNSCrypt.zip"
 if [ ! -f "$Log" ]; then echo > $Log; fi;
 #___1____________________________________________________________________________________________
-CheckNet() {
-	Servers="\
-	https://g.co \
-	https://t.co \
-	https://m.co \
-	"
-	processes="0"
-	pids=""
-
-	for Server in $Servers; do
-		curl --silent --head "$Server" > /dev/null &
-		pids="$pids $!"
-		processes=$(($processes + 1))
-	done
-
-	while [ $processes -gt 0 ]; do
-		for pid in $pids; do
-			if ! ps | grep "^[[:blank:]]*$pid[[:blank:]]" > /dev/null; then
-				processes=$(($processes - 1))
-				pids=$(echo "$pids" | sed --regexp-extended "s/(^| )$pid($| )/ /g")
-				if wait $pid; then
-					kill -TERM $pids > /dev/null 2>&1 || true
-					wait $pids
-					return 0
-				fi
-			fi
-		done
-		sleep 0.1
-	done
-	return 1
-}
-#___2____________________________________________________________________________________________
-if CheckNet; then echo "$(date +"%F %a %T") - Đang kiểm tra phiên bản $(basename "$0")"; curl -s -L -o $FileTam $Update
+IP=$(curl -s 'http://checkip.dyndns.org' | sed 's/.*Current IP Address: \([0-9\.]*\).*/\1/g')
+if [ "$IP" != "" ] && [ "$IP" != "0.0.0.0" ]; then
+	echo "$(date +"%F %a %T") - Đang kiểm tra phiên bản $(basename "$0")"; curl -s -L -o $FileTam $Update
 	PhienBanMoi=$(cat ${FileTam} | grep .*PhienBan | sed 's/.*\=//'); echo "$PhienBanMoi"
 	if [ $PhienBanMoi == $PhienBan ]; then
 		echo "$(date +"%F %a %T") - Đang kiểm tra phiên bản DNSCrypt-Proxy"
