@@ -1,16 +1,16 @@
 #!/bin/bash
-PhienBan=20191221c
-[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
-if [ ! -f "$Log" ]; then echo > $Log; fi;
+PhienBan=20191221d
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; TMGoc="/root/dns"; fi
 if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; TMGoc="/root/dns"; fi
-if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; TMGoc="/sdcard/dnscrypt-proxy"; fi
+if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; TMGoc="/sdcard/dnscrypt-proxy";
+[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; }; fi
 mkdir -p ${TMGoc};
 FileTam="${TMGoc}/tam"
 Update="gg.gg/dns_"
 Log="${TMGoc}/Update.log"
 File="${TMGoc}/DNSCrypt.zip"
+if [ ! -f "$Log" ]; then echo > $Log; fi;
 #___1____________________________________________________________________________________________
 CheckNet() {
 	Servers="\
