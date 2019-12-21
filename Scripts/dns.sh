@@ -1,16 +1,16 @@
 #!/bin/bash
-PhienBan=20191221b
-TM="/sdcard/dnscrypt-proxy"
-FileTam="${TM}/tam"
-Update="gg.gg/dns_"
-Log="${TM}/Update.log"
-File="${TM}/DNSCrypt.zip"
+PhienBan=20191221c
 [ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 if [ ! -f "$Log" ]; then echo > $Log; fi;
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
-if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; fi
-if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; fi
-if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; fi
+if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; TMGoc="/root/dns"; fi
+if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; TMGoc="/root/dns"; fi
+if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; TMGoc="/sdcard/dnscrypt-proxy"; fi
+mkdir -p ${TMGoc};
+FileTam="${TMGoc}/tam"
+Update="gg.gg/dns_"
+Log="${TMGoc}/Update.log"
+File="${TMGoc}/DNSCrypt.zip"
 #___1____________________________________________________________________________________________
 CheckNet() {
 	Servers="\
@@ -61,18 +61,18 @@ if CheckNet; then echo "$(date +"%F %a %T") - Đang kiểm tra phiên bản $(ba
 			| grep $TenFile \
 			| cut -d '"' -f 4)
 			curl -s -L -o $File $LinkTai; fi
-	else chmod +x $FileTam; cp $0 ${TM}/$0\_$PhienBan.sh; mv $FileTam $(basename "$0")
+	else chmod +x $FileTam; cp $0 ${TMGoc}/$0\_$PhienBan.sh; mv $FileTam $(basename "$0")
 		echo ">>> Starting $(basename "$0") $PhienBanMoi..."; $0 $@; exit; fi
 else echo "$(date +"%F %a %T") - Không có Internet!!! Đang thoát..."; exit; fi
 #___3____________________________________________________________________________________________
 if [[ -f "$File" ]]; then
 	echo "$(date +"%F %a %T") - Đang giải nén DNSCrypt-Proxy"
-	rm -r ${TM}/${ThuMucNen}/
-	unzip $File; chmod +x ${TM}/${ThuMucNen}/dnscrypt-proxy
+	rm -r ${TMGoc}/${ThuMucNen}/
+	unzip $File; chmod +x ${TMGoc}/${ThuMucNen}/dnscrypt-proxy
 	pkill -HUP dnscrypt-proxy
 	echo "$(date +"%F %a %T") - Đang cập nhật DNSCrypt-Proxy"
-	mv $TM/${ThuMucNen}/dnscrypt-proxy /system/bin/dnscrypt-proxy
-	rm -r ${TM}/*.zip; rm -r ${TM}/*.minisig; rm -r ${TM}/${ThuMucNen}/; rm -r $FileTam
+	mv $TMGoc/${ThuMucNen}/dnscrypt-proxy /system/bin/dnscrypt-proxy
+	rm -r ${TMGoc}/*.zip; rm -r ${TMGoc}/*.minisig; rm -r ${TMGoc}/${ThuMucNen}/; rm -r $FileTam
 	echo "$(date +"%F %a %T") - DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
 	echo "$(date +"%F %a %T") - DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"; else
 	echo "$(date +"%F %a %T") - Không tìm thấy $File!!! Đang thoát..."; exit
