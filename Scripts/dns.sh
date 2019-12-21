@@ -1,7 +1,7 @@
 #!/bin/bash
 PhienBan="20191221i"
-Update="gg.gg/_dns"
-Time=$(date +"%F %a %T")
+Update="gg.gg/_dns";
+Time=$(date +"%F %a %T");
 TMGoc=$(pwd -P); TMTam="${TMGoc}\Tam"; mkdir -p ${TMTam}; FileTam="${TMTam}/tam";
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64";
 if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; 
