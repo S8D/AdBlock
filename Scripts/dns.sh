@@ -1,16 +1,17 @@
 #!/bin/bash
-PhienBan="20191221h"
-Time=$(date +"%F %a %T")
-OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
-if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; TMGoc="/root/dns"; GiaiNen="tar -xzf"; File="${TMGoc}/DNSCrypt.tar.gz"; fi
-if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; TMGoc="/root/dns"; GiaiNen="tar -xzf"; File="${TMGoc}/DNSCrypt.tar.gz"; fi
-if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; 
-	TMGoc="/sdcard/dnscrypt-proxy"; GiaiNen="unzip"; File="${TMGoc}/DNSCrypt.zip";
-	[ `whoami` = root ] || { echo "$Time - Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; }; fi
-mkdir -p ${TMGoc}
-FileTam="${TMGoc}/tam"
+PhienBan="20191221i"
 Update="gg.gg/_dns"
-Log="${TMGoc}/Update.log"
+Time=$(date +"%F %a %T")
+TMGoc=$(pwd -P); TMTam="${TMGoc}\Tam"; mkdir -p ${TMTam}; FileTam="${TMTam}/tam";
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64";
+if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; 
+	TMDNS="/root/dns"; GiaiNen="tar -xzf"; File="${TMTam}/DNSCrypt.tar.gz"; TMChay="/usr/sbin"; fi
+if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; 
+	TMDNS="/root/dns"; GiaiNen="tar -xzf"; File="${TMTam}/DNSCrypt.tar.gz"; TMChay="/usr/sbin"; fi
+if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; 
+	TMDNS="/sdcard/dnscrypt-proxy"; GiaiNen="unzip"; File="${TMTam}/DNSCrypt.zip"; TMChay="/system/bin";
+	[ `whoami` = root ] || { echo "$Time - Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; }; fi
+mkdir -p ${TMDNS}; Log="${TMDNS}/Update.log";
 if [ ! -f "$Log" ]; then echo > $Log; fi
 #___1____________________________________________________________________________________________
 IP=$(curl -s 'http://checkip.dyndns.org' | sed 's/.*Current IP Address: \([0-9\.]*\).*/\1/g')
@@ -41,12 +42,11 @@ fi
 #___3____________________________________________________________________________________________
 if [[ -f "$File" ]]; then
 	echo "$Time - Đang giải nén DNSCrypt-Proxy";
-	rm -r ${TMGoc}/${ThuMucNen}/;
-	$GiaiNen $File; chmod +x ${TMGoc}/${ThuMucNen}/dnscrypt-proxy;
+	$GiaiNen $File; chmod +x ${TMTam}/${ThuMucNen}/dnscrypt-proxy;
 	pkill -HUP dnscrypt-proxy;
 	echo "$Time - Đang cập nhật DNSCrypt-Proxy";
-	mv $TMGoc/${ThuMucNen}/dnscrypt-proxy /system/bin/dnscrypt-proxy;
-	rm -r ${TMGoc}/*.zip; rm -r ${TMGoc}/*.minisig; rm -r ${TMGoc}/${ThuMucNen}/; rm -r $FileTam;
+	mv ${TMTam}/${ThuMucNen}/dnscrypt-proxy ${TMChay}/dnscrypt-proxy;
+	rm -rf ${TMTam}
 	echo "$Time - DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log;
 	echo "$Time - DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"; else
 	echo "$Time - Không tìm thấy $File!!! Đang thoát..."; exit;
