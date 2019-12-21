@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan=20191221f
+PhienBan=20191221g
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; TMGoc="/root/dns"; fi
 if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; TMGoc="/root/dns"; fi
@@ -18,7 +18,7 @@ if [ "$IP" != "" ] && [ "$IP" != "0.0.0.0" ]; then
 	PhienBanMoi=$(cat ${FileTam} | grep .*PhienBan | sed 's/.*\=//'); echo "$PhienBanMoi"
 	if [ $PhienBanMoi == $PhienBan ]; then
 		echo "$(date +"%F %a %T") - Đang kiểm tra phiên bản DNSCrypt-Proxy"
-		PhienBanOn=$(curl -s "https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest" | awk -F '"' '/tag_name/{print $4}')
+		PhienBanOn=$(curl -s "gg.gg/dns_" | awk -F '"' '/tag_name/{print $4}')
 		PhienBanOff=$(dnscrypt-proxy --version)
 		echo "OS: $OS | FileName: dnscrypt-proxy-$TenFile-$PhienBanOn | Local: $ThuMucNen"
 		if [ $PhienBanOn == $PhienBanOff ]; then
@@ -28,8 +28,8 @@ if [ "$IP" != "" ] && [ "$IP" != "0.0.0.0" ]; then
 			echo "$(date +"%F %a %T") - Đang tải DNSCrypt-Proxy"
 			LinkTai=$(curl -s gg.gg/dns_ | grep browser_download_url.*zip | grep $TenFile | cut -d '"' -f 4)
 			curl -s -L -o $File $LinkTai; fi
-	else chmod +x $FileTam; cp $0 ${TMGoc}/$0\_$PhienBan.sh; mv $FileTam $(basename "$0")
-		echo ">>> Starting $(basename "$0") $PhienBanMoi..."; $0 $@; exit; fi
+	else chmod +x $FileTam; cp $0 ${TMGoc}/$0\_$PhienBan.sh; mv $FileTam $(basename "$0");
+		echo "$(date +"%F %a %T") - Starting $(basename "$0") $PhienBanMoi..."; sh $0; exit; fi
 else echo "$(date +"%F %a %T") - Không có Internet!!! Đang thoát..."; exit; fi
 #___3____________________________________________________________________________________________
 if [[ -f "$File" ]]; then
