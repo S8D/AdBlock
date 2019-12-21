@@ -1,5 +1,7 @@
-#PhienBan___20191222a
+#PhienBan___20191221b
 #___TongHop_________
+yomedia.vn
+cachefly.net
 *.cn
 *proxy*
 *report*
@@ -215,15 +217,17 @@ banners.*
 ads.*
 banner.*
 tracker.*
-*.criteo.*
+criteo.*
+oppo.com.*
 tag.*
-*.ksmobile.*
+ksmobile.*
+oppomobile.*
 ad.*
 ucweb.*
 
 #___Google_________
 suggestqueries.google.com
-*id.google.com
+*id.google.*
 imasdk.googleapis.com
 googlezip.net
 datasaver.googleapis.com
