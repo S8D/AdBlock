@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan=20191221e
+PhienBan=20191221f
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; TMGoc="/root/dns"; fi
 if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; TMGoc="/root/dns"; fi
@@ -26,10 +26,7 @@ if [ "$IP" != "" ] && [ "$IP" != "0.0.0.0" ]; then
 			echo "DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất"; exit; else
 			echo "Đang cập nhật DNSCrypt-Proxy $PhienBanOff lên phiên bản $PhienBanOn"
 			echo "$(date +"%F %a %T") - Đang tải DNSCrypt-Proxy"
-			LinkTai=$(curl -s https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest \
-			| grep browser_download_url.*zip \
-			| grep $TenFile \
-			| cut -d '"' -f 4)
+			LinkTai=$(curl -s gg.gg/dns_ | grep browser_download_url.*zip | grep $TenFile | cut -d '"' -f 4)
 			curl -s -L -o $File $LinkTai; fi
 	else chmod +x $FileTam; cp $0 ${TMGoc}/$0\_$PhienBan.sh; mv $FileTam $(basename "$0")
 		echo ">>> Starting $(basename "$0") $PhienBanMoi..."; $0 $@; exit; fi
