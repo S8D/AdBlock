@@ -1,4 +1,4 @@
-#PhienBan___20191221a
+#PhienBan___20191222a
 #___TongHop_________
 *.cn
 *proxy*
@@ -215,11 +215,9 @@ banners.*
 ads.*
 banner.*
 tracker.*
-criteo.*
-oppo.com.*
+*.criteo.*
 tag.*
-ksmobile.*
-oppomobile.*
+*.ksmobile.*
 ad.*
 ucweb.*
 
