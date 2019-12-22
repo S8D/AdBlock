@@ -1,5 +1,5 @@
 *** Hãy cư xử tử tế để nhận được điều tử tế! ***
-<br>**Nếu bạn không vô được mạng, hãy chuyển qua lại giữa các trạm WiFi: ThanhFu và ThanhPhu
+<br>**Nếu bạn không vô được mạng, hãy chuyển qua lại giữa các trạm WiFi: ThanhFu và ThanhPhu hoặc XOÁ/QUÊN trạm wifi ThanhFu/ThanhPhu rồi nhập pass lại. Vì có thể khi đổi máy chủ nên điện thoại/laptop còn lưu cấu hình cũ nên không đăng nhập được.
 <br>*Trạm ThanhFu phát sóng WiFi 2G, xa hơn, mạnh hơn, hỗ trợ thiết bị cũ nhưng TỐC ĐỘ CHẬM hơn. Còn trạm ThanhPhu phát sóng WiFi 5G thì ngược lại nhé!
 <br>*Nếu trường hợp vẫn không vào được mạng các bạn nên xoá/quên WiFi và nhập lại mật khẩu.
 <br>=====================================
