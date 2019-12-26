@@ -1,5 +1,6 @@
-#PhienBan___20191221b
+#PhienBan___20191226a
 #___TongHop_________
+xtracloud.net
 yomedia.vn
 cachefly.net
 *.cn
@@ -204,6 +205,7 @@ systemlog.me
 zphunutoday.club
 *.arpa
 segment*
+segment.*
 beacons*
 supersonicads*
 ads*
@@ -212,18 +214,15 @@ track*
 firebasedynamic*
 logv2*
 xunyou.*
-segment.*
 banners.*
 ads.*
 banner.*
 tracker.*
-criteo.*
-oppo.com.*
+*.criteo.*
 tag.*
-ksmobile.*
-oppomobile.*
+*.ksmobile.*
 ad.*
-ucweb.*
+*.ucweb.*
 
 #___Google_________
 suggestqueries.google.com
