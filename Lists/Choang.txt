@@ -8,7 +8,7 @@
 # This has to be enabled with the `cloaking_rules` parameter in the main
 # configuration file
 
-www.noddos.io				s8d.github.io
+#www.noddos.io				s8d.github.io
 www.google.*				forcesafesearch.google.com
 www.bing.com				strict.bing.com
 yandex.ru					familysearch.yandex.ru
