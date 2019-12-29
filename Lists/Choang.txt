@@ -1,6 +1,6 @@
 #PhienBan___20191229a
-xxhd.tv			g.co
-xxphe.com			g.co
+xxhd.tv                g.co
+xxphe.com         g.co
 ################################
 #        Cloaking rules        #
 ################################
