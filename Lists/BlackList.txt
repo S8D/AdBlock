@@ -1,5 +1,6 @@
-#PhienBan___20191229b
+#PhienBan___20191229c
 #___TongHop_________
+umeng.co
 logsea.aseugame.com
 log.aseugame.com
 adsplay.xyz
@@ -330,6 +331,8 @@ thiendia.*
 heo69.*
 dam69.*
 jav*.*
+xxphe.com
+xxhd.tv
 
 #___Local_________
 *.localhost
