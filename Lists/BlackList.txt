@@ -340,8 +340,8 @@ thiendia.*
 heo69.*
 dam69.*
 jav*.*
-xxphe.com
-xxhd.tv
+#xxphe.com
+#xxhd.tv
 
 #___Local_________
 *.localhost
