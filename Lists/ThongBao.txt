@@ -1,12 +1,8 @@
 *** Hãy cư xử tử tế để nhận được điều tử tế! ***
-<br>•••••Sau khi nâng cấp. Tốc độ mạng đã được cải thiện đáng kể. Dưới đây là tốc độ test mạng.
-<br>•••••Down/up đến máy chủ Singapore lần lượt là: 257Mbps / 238Mbps tức khoản 31Mb/s.
-<br>•••••https://www.speedtest.net/result/8895658805
-<br>•••••https://www.speedtest.net/result/8895658805.png
-<br>•••••Tuy nhiên server phải đủ mạnh để gánh tải nên mình sẽ theo tiếp tục dõi độ chịu tải máy chủ (cục bộ).
-<br>•••••Hiện tại nhà mạng đang bóp băng thông như mọi năm nên sau tết nguyên đán tốc độ truy cập mạng mới bình thường trở lại. Các bạn thông cảm nhé✓
-<br>**Nếu bạn không vô được mạng, hãy chuyển qua lại giữa các trạm WiFi: ThanhFu và ThanhPhu hoặc XOÁ/QUÊN trạm wifi ThanhFu/ThanhPhu rồi nhập pass lại. Vì có thể khi đổi máy chủ nên điện thoại/laptop còn lưu cấu hình cũ nên không đăng nhập được.
-<br>*Trạm ThanhFu phát sóng WiFi 2G, xa hơn, mạnh hơn, hỗ trợ thiết bị cũ nhưng TỐC ĐỘ CHẬM hơn. Còn trạm ThanhPhu phát sóng WiFi 5G thì ngược lại nhé!
-<br>*Nếu trường hợp vẫn không vào được mạng các bạn nên xoá/quên WiFi và nhập lại mật khẩu.
+<br>••••• Sau khi cân nhắc tôi quyết định hạ băng thông xuống 100Mbps (12,5Mb/s) để phần cứng an toàn hơn.
+<br>••••• https://www.speedtest.net/result/8897026908.png
+<br>** Nếu bạn không vô được mạng, hãy chuyển qua lại giữa các trạm WiFi: ThanhFu và ThanhPhu hoặc XOÁ/QUÊN trạm wifi ThanhFu/ThanhPhu rồi nhập pass lại. Vì có thể khi đổi máy chủ nên điện thoại/laptop còn lưu cấu hình cũ nên không đăng nhập được.
+<br>* Trạm ThanhFu phát sóng WiFi 2G, xa hơn, mạnh hơn, hỗ trợ thiết bị cũ nhưng TỐC ĐỘ CHẬM hơn. Còn trạm ThanhPhu phát sóng WiFi 5G thì ngược lại nhé!
+<br>* Nếu trường hợp vẫn không vào được mạng các bạn nên xoá/quên WiFi và nhập lại mật khẩu.
 <br>=====================================
 <br>Nếu có vấn đề về truy cập mạng vui lòng liên hệ Zalo: SayRad (dùng 3G liên hệ^^)
