@@ -1,5 +1,14 @@
-#PhienBan___20191229c
+#PhienBan___201912230a
+#___Apple___________
+xp.apple.com
+mesu.apple.com
+ocsp.apple.com
+metrics.icloud.com
+mesu.g.aaplimg.com
 #___TongHop_________
+tongdun.net
+avcdn.net
+avast.com
 umeng.co
 logsea.aseugame.com
 log.aseugame.com
@@ -209,7 +218,7 @@ log.baomoi.com
 heytapmobi.com
 inmobi.com
 tags.bluekai.com
-sb.scorecardresearch.com
+scorecardresearch.com
 netcoresmartech.com
 umeng.com
 crazyegg.com
