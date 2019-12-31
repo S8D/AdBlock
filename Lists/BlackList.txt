@@ -1,4 +1,4 @@
-#PhienBan___201912230a
+#PhienBan___201912231a
 #___Apple___________
 xp.apple.com
 mesu.apple.com
@@ -6,6 +6,18 @@ ocsp.apple.com
 metrics.icloud.com
 mesu.g.aaplimg.com
 #___TongHop_________
+log.avlyun.com
+ads.mp.mydas.mobi
+auxml.com
+ds-aksb-a.akamaihd.net
+sdfp-sg.tiktokv.com
+byteoversea.net
+hotjar.com
+hotjar.io
+sbobet.com
+com3456.com
+cdnnetworks.net
+sbobet-info.com
 tongdun.net
 avcdn.net
 avast.com
