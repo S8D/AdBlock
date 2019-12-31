@@ -1,4 +1,4 @@
-#PhienBan___201912231a
+#PhienBan___201912231b
 #___Apple___________
 xp.apple.com
 mesu.apple.com
@@ -6,6 +6,10 @@ ocsp.apple.com
 metrics.icloud.com
 mesu.g.aaplimg.com
 #___TongHop_________
+namgeomethi.info
+join-sbo.com
+aleapeact.club
+gamblingtherapy.org
 log.avlyun.com
 ads.mp.mydas.mobi
 auxml.com
