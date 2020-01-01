@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200101a"
+PhienBan="20200101b"
 TM="/root/dns"
 Log="/www/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
 cd $TM
@@ -22,9 +22,10 @@ curl -s -L -o $TM/DNSCrypt.zip $DownURL
 echo "$(date +"%F %a %T") - Đang giải nén DNSCrypt-Proxy"
 rm -r ${TM}/${giainen}/
 unzip ${TM}/DNSCrypt.zip; chmod +x ${TM}/${giainen}/dnscrypt-proxy
-pkill -HUP dns
+/etc/init.d/dns stop
 echo "$(date +"%F %a %T") - Đang cập nhật DNSCrypt-Proxy"
 mv ${TM}/${giainen}/dnscrypt-proxy /usr/sbin/dns
+/etc/init.d/dns start
 rm -rf ${TM}/${giainen}
 echo "$(date +"%F %a %T") - DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
 echo "$(date +"%F %a %T") - DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"
