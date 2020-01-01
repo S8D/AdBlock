@@ -1,53 +1,44 @@
 #!/bin/bash
-PhienBan="20191221i"
-Update="gg.gg/_dns";
+PhienBan="20200101h"
 Time=$(date +"%F %a %T");
-TMGoc=$(pwd -P); TMTam="${TMGoc}\Tam"; mkdir -p ${TMTam}; FileTam="${TMTam}/tam";
-OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64";
-if [ $OS == $x64 ]; then TenFile="linux_x86_64"; ThuMucNen="linux-x86_64"; 
-	TMDNS="/root/dns"; GiaiNen="tar -xzf"; File="${TMTam}/DNSCrypt.tar.gz"; TMChay="/usr/sbin"; fi
-if [ $OS == $arm ]; then TenFile="linux_arm-"; ThuMucNen="linux-arm"; 
-	TMDNS="/root/dns"; GiaiNen="tar -xzf"; File="${TMTam}/DNSCrypt.tar.gz"; TMChay="/usr/sbin"; fi
-if [ $OS == $Android ]; then TenFile="android_arm64"; ThuMucNen="android-arm64"; 
-	TMDNS="/sdcard/dnscrypt-proxy"; GiaiNen="unzip"; File="${TMTam}/DNSCrypt.zip"; TMChay="/system/bin";
-	[ `whoami` = root ] || { echo "$Time - Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; }; fi
-mkdir -p ${TMDNS}; Log="${TMDNS}/Update.log";
-if [ ! -f "$Log" ]; then echo > $Log; fi
-#___1____________________________________________________________________________________________
-IP=$(curl -s 'http://checkip.dyndns.org' | sed 's/.*Current IP Address: \([0-9\.]*\).*/\1/g')
-if [ "$IP" != "" ] && [ "$IP" != "0.0.0.0" ]; then
-	echo "$Time - Đang kiểm tra phiên bản $(basename "$0")"; curl -s -L -o $FileTam $Update;
-	PhienBanMoi=$(cat ${FileTam} | grep PhienBan\= | sed 's/.*\=\"//' | sed 's/\".*//');
-	echo "$Time - $(basename "$0") $PhienBanMoi";
-	if [ $PhienBanMoi == $PhienBan ]; then
-		echo "$Time - Đang kiểm tra phiên bản DNSCrypt-Proxy";
-		PhienBanOn=$(curl -s "gg.gg/dns_" | awk -F '"' '/tag_name/{print $4}');
-		PhienBanOff=$(dnscrypt-proxy --version)
-		echo "OS: $OS | FileName: dnscrypt-proxy-$TenFile-$PhienBanOn | Local: $ThuMucNen";
-		if [ $PhienBanOn == $PhienBanOff ]; then
-			echo "$Time - DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất" >> $Log;
-			echo "$Time - DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất"; exit;
-		else
-			echo "$Time - Đang cập nhật DNSCrypt-Proxy $PhienBanOff lên phiên bản $PhienBanOn";
-			echo "$Time - Đang tải DNSCrypt-Proxy";
-			LinkTai=$(curl -s gg.gg/dns_ | grep browser_download_url.*zip | grep $TenFile | cut -d '"' -f 4);
-			curl -s -L -o $File $LinkTai;
-		fi
-	else
-		chmod +x $FileTam; cp $0 ${TMGoc}/$0\_$PhienBan.sh; mv $FileTam $(basename "$0");
-		echo "$Time - Starting $(basename "$0") $PhienBanMoi..."; sh $0; exit;
-	fi
-else echo "$Time - Không có Internet!!! Đang thoát..."; exit;
-fi
-#___3____________________________________________________________________________________________
-if [[ -f "$File" ]]; then
-	echo "$Time - Đang giải nén DNSCrypt-Proxy";
-	$GiaiNen $File; chmod +x ${TMTam}/${ThuMucNen}/dnscrypt-proxy;
-	pkill -HUP dnscrypt-proxy;
-	echo "$Time - Đang cập nhật DNSCrypt-Proxy";
-	mv ${TMTam}/${ThuMucNen}/dnscrypt-proxy ${TMChay}/dnscrypt-proxy;
-	rm -rf ${TMTam}
-	echo "$Time - DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log;
-	echo "$Time - DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"; else
-	echo "$Time - Không tìm thấy $File!!! Đang thoát..."; exit;
+echo "Phiên bản dns.sh đang chạy: $PhienBan"
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
+if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root/dns"; TMLog="/www"; fi
+if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root/dns"; TMLog="/www"; fi
+if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard/dns"; TMLog="${TM}"; fi
+echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
+Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
+upTam="${TM}/tam"
+
+CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
+if CheckNet; then net=1; else net=0; fi
+if [ $net -eq 1 ]; then
+		PhienBanMoi=$(curl -s -L "gg.gg/_dns" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+if [ $PhienBanMoi == $PhienBan ]; then echo "$Time - $(basename "$0") $PhienBan là phiên bản mới nhất";
+else echo "$Time - Đang cập nhật $(basename "$0") $PhienBan lên phiên bản $PhienBanMoi";
+cp $(basename "$0") ${TM}/$PhienBan\_$(basename "$0")
+curl -s -L -o $upTam gg.gg/_dns; mv 
+mv $upTam ${TM}/$(basename "$0")
+echo "$Time - Khởi chạy $(basename "$0") $PhienBanMoi..."; $0 $@; exit 1; fi; fi
+#___________________________________________________________________________________________________________________________________________________
+if [ $net -eq 1 ]; then echo "$Time - Đang kiểm tra phiên bản DNSCrypt-Proxy" ; else echo "$(date +"%F %a %T") - Kiểm tra lại Internet"; exit; fi
+PhienBanOn=$(curl -s -L "gg.gg/dns_" | awk -F '"' '/tag_name/{print $4}')
+PhienBanOff=$(dns --version)
+if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time - DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất" >> $Log;
+echo "$Time DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất"; exit 1; else
+echo "$Time Đang cập nhật DNSCrypt-Proxy $PhienBanOff lên phiên bản $PhienBanOn"
+echo "$Time - Đang tải DNSCrypt-Proxy"
+DownURL=$(curl -s -L gg.gg/dns_ | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+curl -s -L -o $TM/DNSCrypt.$duoi $DownURL
+echo "$Time - Đang giải nén DNSCrypt-Proxy"
+rm -r ${TM}/${ThuMuc}/
+$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
+if [ $OS == $x64 ] | [ $OS == $arm ]; then /etc/init.d/dns stop; dns="/usr/sbin/dns"; fi
+if [ $OS == $Android ]; then pkill -HUP dns; dns="/system/bin/dns"; fi
+echo "$Time - Đang cập nhật DNSCrypt-Proxy"
+mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+if [ $OS == $x64 ] | [ $OS == $arm ]; then /etc/init.d/dns start; fi
+rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi
+echo "$Time - DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
+echo "$Time - DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"
 fi
