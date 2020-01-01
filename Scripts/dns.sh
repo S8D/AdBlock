@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200102e"
+PhienBan="20200102f"
 Time=$(date +"%F %a %T");
 echo "$(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
@@ -8,7 +8,7 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard"; TMLog="${TM}/dns"; [ `whoami` = root ] || { su root -c 'sh ${TM}/$0'; exit 1; }; fi
 echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
-upTam="${TM}/tam"
+upTam="${TM}/dns/tam"; rm -f $upTam
 echo "$Time - Đang kiểm tra phiên bản $(basename "$0")"
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
@@ -16,7 +16,7 @@ if [ $net -eq 1 ]; then PhienBanMoi=$(curl -s -L "gg.gg/_dns" | grep PhienBan\= 
 if [ $PhienBanMoi == $PhienBan ]; then echo "$Time - $(basename "$0") $PhienBan là phiên bản mới nhất";
 else echo "$Time - Đang cập nhật $(basename "$0") $PhienBan lên phiên bản $PhienBanMoi";
 cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
-curl -s -L -o $upTam gg.gg/_dns; chmod +x $upTam; mv $upTam ${TM}/$0
+curl -s -L -o $upTam gg.gg/_dns; chmod+x $upTam; mv $upTam ${TM}/$0
 echo "$Time - Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$0; exit 1; fi; fi
 #___________________________________________________________________________________________________________________________________________________
 if [ $net -eq 1 ]; then echo "$Time - Đang kiểm tra phiên bản DNSCrypt-Proxy" ; else echo "$(date +"%F %a %T") - Kiểm tra lại Internet"; exit; fi
