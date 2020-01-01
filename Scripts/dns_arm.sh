@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200101b"
+PhienBan="20200101d"
 TM="/root/dns"
 Log="/www/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
 cd $TM
@@ -17,11 +17,11 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; giainen="linux-arm"; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; giainen="android-arm64"; fi
 echo "OS: $OS | URL: $linktai | Local: $giainen"
 echo "$(date +"%F %a %T") - Đang tải DNSCrypt-Proxy"
-DownURL=$(curl -s -L gg.gg/dns_ | grep browser_download_url.*zip | grep $linktai | cut -d '"' -f 4)
-curl -s -L -o $TM/DNSCrypt.zip $DownURL
+DownURL=$(curl -s -L gg.gg/dns_ | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
+curl -s -L -o $TM/DNSCrypt.tar.gz $DownURL
 echo "$(date +"%F %a %T") - Đang giải nén DNSCrypt-Proxy"
 rm -r ${TM}/${giainen}/
-unzip ${TM}/DNSCrypt.zip; chmod +x ${TM}/${giainen}/dnscrypt-proxy
+tar -C ${TM} -xvf ${TM}/DNSCrypt.tar.gz; chmod +x ${TM}/${giainen}/dnscrypt-proxy
 /etc/init.d/dns stop
 echo "$(date +"%F %a %T") - Đang cập nhật DNSCrypt-Proxy"
 mv ${TM}/${giainen}/dnscrypt-proxy /usr/sbin/dns
