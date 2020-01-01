@@ -10,7 +10,7 @@ if [ -n "${Goi}" ]; then
   opkg upgrade ${Goi}
   if [ "$?" -eq 0 ]; then
     echo "$(date +"%F %a %T") - Cập nhật thành công" \
->> $Log
+>> $Log; echo "$(date +"%F %a %T") - Cập nhật thành công! Đang khởi động lại!!!"
     exec reboot
   else
     echo "$(date +"%F %a %T") - Cập nhật thất bại" >> $Log
