@@ -16,7 +16,7 @@ if [ $net -eq 1 ]; then PhienBanMoi=$(curl -s -L "gg.gg/_dns" | grep PhienBan\= 
 if [ $PhienBanMoi == $PhienBan ]; then echo "$Time - $(basename "$0") $PhienBan là phiên bản mới nhất";
 else echo "$Time - Đang cập nhật $(basename "$0") $PhienBan lên phiên bản $PhienBanMoi";
 cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
-curl -s -L -o $upTam gg.gg/_dns; chmod+x $upTam; mv $upTam ${TM}/$0
+curl -s -L -o $upTam gg.gg/_dns; chmod +x $upTam; mv $upTam ${TM}/$0
 echo "$Time - Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$0; exit 1; fi; fi
 #___________________________________________________________________________________________________________________________________________________
 if [ $net -eq 1 ]; then echo "$Time - Đang kiểm tra phiên bản DNSCrypt-Proxy" ; else echo "$(date +"%F %a %T") - Kiểm tra lại Internet"; exit; fi
