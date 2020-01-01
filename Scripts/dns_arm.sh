@@ -1,8 +1,8 @@
 #!/bin/bash
-PhienBan="20200101d"
+PhienBan="20200101e"
 TM="/root/dns"
 Log="/www/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
-cd $TM
+echo "Phiên bản kịch bản đang chạy: $PhienBan"
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
 if [ $net -eq 1 ]; then echo "$(date +"%F %a %T") - Đang kiểm tra phiên bản DNSCrypt-Proxy" ; else echo "$(date +"%F %a %T") - Kiểm tra lại Internet"; exit; fi
