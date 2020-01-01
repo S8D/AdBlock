@@ -1,7 +1,7 @@
 #!/bin/bash
-PhienBan="20200101h"
+PhienBan="20200101i"
 Time=$(date +"%F %a %T");
-echo "Phiên bản dns.sh đang chạy: $PhienBan"
+echo "$(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root/dns"; TMLog="/www"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root/dns"; TMLog="/www"; fi
@@ -9,7 +9,7 @@ if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; du
 echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
 upTam="${TM}/tam"
-
+echo "$Time - Đang kiểm tra phiên bản $(basename "$0")"
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
 if [ $net -eq 1 ]; then
