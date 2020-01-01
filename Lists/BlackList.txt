@@ -1,4 +1,4 @@
-#PhienBan___201912231b
+#PhienBan___20200102a
 #___Apple___________
 xp.apple.com
 mesu.apple.com
@@ -6,6 +6,19 @@ ocsp.apple.com
 metrics.icloud.com
 mesu.g.aaplimg.com
 #___TongHop_________
+bidswitch.net
+openx.net
+media.net
+rubiconproject.com
+sonobi.com
+switchadhub.com
+amazon-adsystem.com
+teads.tv
+appmetrica.yandex.net
+sharethis.com
+adoptimize.info
+ads.mp.mydas.mobi
+log.sggp.org.vn
 namgeomethi.info
 join-sbo.com
 aleapeact.club
