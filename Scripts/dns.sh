@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200101k"
+PhienBan="20200101l"
 Time=$(date +"%F %a %T");
 echo "$(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
