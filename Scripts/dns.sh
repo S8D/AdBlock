@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200101l"
+PhienBan="20200101m"
 Time=$(date +"%F %a %T");
 echo "$(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
@@ -12,8 +12,7 @@ upTam="${TM}/tam"
 echo "$Time - Đang kiểm tra phiên bản $(basename "$0")"
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
-if [ $net -eq 1 ]; then
-		PhienBanMoi=$(curl -s -L "gg.gg/_dns" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+if [ $net -eq 1 ]; then PhienBanMoi=$(curl -s -L "gg.gg/_dns" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 if [ $PhienBanMoi == $PhienBan ]; then echo "$Time - $(basename "$0") $PhienBan là phiên bản mới nhất";
 else echo "$Time - Đang cập nhật $(basename "$0") $PhienBan lên phiên bản $PhienBanMoi";
 cp $(basename "$0") ${TM}/$PhienBan\_$(basename "$0")
@@ -32,11 +31,11 @@ curl -s -L -o $TM/DNSCrypt.$duoi $DownURL
 echo "$Time - Đang giải nén DNSCrypt-Proxy"
 rm -r ${TM}/${ThuMuc}/
 $giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
-if [ $OS == $x64 ] | [ $OS == $arm ]; then /etc/init.d/dns stop; dns="/usr/sbin/dns"; fi
+if [ $OS == $x64 ] || [ $OS == $arm ]; then /etc/init.d/dns stop; dns="/usr/sbin/dns"; fi
 if [ $OS == $Android ]; then pkill -HUP dns; dns="/system/bin/dns"; fi
 echo "$Time - Đang cập nhật DNSCrypt-Proxy"
 mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
-if [ $OS == $x64 ] | [ $OS == $arm ]; then /etc/init.d/dns start; fi
+if [ $OS == $x64 ] || [ $OS == $arm ]; then /etc/init.d/dns start; fi
 rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi
 echo "$Time - DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
 echo "$Time - DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"
