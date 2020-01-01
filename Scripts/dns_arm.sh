@@ -1,10 +1,10 @@
 #!/bin/bash
-PhienBan="20200101f"
+PhienBan="20200101g"
 echo "Phiên bản dns.sh đang chạy: $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root/dns"; TMLog="/www"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root/dns"; TMLog="/www"; fi
-if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard"; TMLog="${TM}/dns"; fi
+if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard/dns"; TMLog="${TM}"; fi
 echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
