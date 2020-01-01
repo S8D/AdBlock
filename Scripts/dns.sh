@@ -1,11 +1,11 @@
 #!/bin/bash
-PhienBan="20200102b"
+PhienBan="20200102c"
 Time=$(date +"%F %a %T");
 echo "$(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
-if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard"; TMLog="${TM}/dns"; fi
+if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard"; TMLog="${TM}/dns"; [ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su $0; exit $?; }; fi
 echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
 upTam="${TM}/tam"
