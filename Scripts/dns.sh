@@ -1,9 +1,9 @@
 #!/bin/bash
-PhienBan="20200102n"
+PhienBan="20200102o"
 GetTime=$(date +"%F %a %T");
 #Time="$GetTime -"
 Time="#"
-echo "$(basename "$0") phiên bản $PhienBan"
+echo "$Time $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
