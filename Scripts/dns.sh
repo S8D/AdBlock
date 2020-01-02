@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200102p"
+PhienBan="20200102q"
 #GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 Time="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
@@ -15,17 +15,17 @@ echo "$Time Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
 if [ $net -eq 1 ]; then PhienBanMoi=$(curl -s -L "gg.gg/_dns" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-if [ $PhienBanMoi == $PhienBan ]; then echo "$Time $(basename "$0") $PhienBan là phiên bản mới nhất";
-else echo "$Time Đang cập nhật $(basename "$0") $PhienBan lên phiên bản $PhienBanMoi...";
+if [ $PhienBanMoi == $PhienBan ]; then echo "$Time $(basename "$0") $PhienBan là bản mới nhất!";
+else echo "$Time Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
 curl -s -L -o $upTam gg.gg/_dns; chmod +x $upTam; mv $upTam ${TM}/$0
 echo "$Time Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
 if [ $net -eq 1 ]; then echo "$Time Đang kiểm tra cập nhật DNSCrypt-Proxy..." ; else echo "$Time Kiểm tra lại Internet"; exit; fi
 PhienBanOn=$(curl -s -L "gg.gg/dns_" | awk -F '"' '/tag_name/{print $4}')
 PhienBanOff=$(dns --version)
-if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất" >> $Log;
-echo "$Time DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất"; exit 1; else
-echo "$Time Đang cập nhật DNSCrypt-Proxy $PhienBanOff lên phiên bản $PhienBanOn..."
+if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là phiên bản mới nhất!" >> $Log;
+echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
+echo "$Time Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 echo "$Time Đang tải DNSCrypt-Proxy..."
 DownURL=$(curl -s -L gg.gg/dns_ | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
 curl -s -L -o $TM/DNSCrypt.$duoi $DownURL
@@ -39,5 +39,5 @@ mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
 if [ $OS == $x64 ] || [ $OS == $arm ]; then /etc/init.d/dns start; fi
 rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi
 echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
-echo "$Time DNSCrypt-Proxy đã được cập nhật lên phiên bản $PhienBanOn"
+echo "$Time DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
 fi
