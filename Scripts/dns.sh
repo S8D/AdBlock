@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200104i"
+PhienBan="20200104j"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
@@ -54,12 +54,12 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
-			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam gg.gg/dns_dv; fi
-			chmod +x $upTam; mv $upTam $DVdns; $DVdns stop; fi
+			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam gg.gg/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
+			$DVdns stop; fi
 		if [ $OS == $Android ]; then $TatDNSAndroi; fi
 		
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns		
+		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 			[ ! -d "${TM}/dns" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy..."; mkdir -p ${TM}/dns;
 			curl -s -L -o ${TM}/dns.tar.gz gg.gg/ch_; tar -C ${TM}/dns -zxvf ${TM}/dns.tar.gz; rm -f ${TM}/dns.tar.gz; }
