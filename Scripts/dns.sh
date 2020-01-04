@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200104h"
+PhienBan="20200104i"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
@@ -16,7 +16,7 @@ if [ $OS == $Android ]; then
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 #echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
 
-Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; upTam="${TM}/dns/tam"; rm -f $upTam;
+Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; mkdir -p ${TM}/dns; upTam="${TM}/dns/tam"; rm -f $upTam;
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; }; 
@@ -54,7 +54,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
-			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam tiny.cc/dns_dv; fi
+			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam gg.gg/dns_dv; fi
 			chmod +x $upTam; mv $upTam $DVdns; $DVdns stop; dns="/usr/sbin/dns"; fi
 		if [ $OS == $Android ]; then $TatDNSAndroi; dns="/system/bin/dns"; fi
 		
