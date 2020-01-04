@@ -4,13 +4,13 @@ GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
-if [ $OS == $x64 ]; then 
+if [ $OS == $x64 ]; then dns="/usr/sbin/dns"; 
 	TM="/root"; TMLog="/www"; linktai="linux_x86_64"; ThuMuc="linux-x86_64";
 	duoi="tar.gz"; giainen="tar -C ${TM} -zxvf"; fi
-if [ $OS == $arm ]; then 
+if [ $OS == $arm ]; then dns="/usr/sbin/dns"; 
 	TM="/root"; TMLog="/www"; linktai="linux_arm-"; ThuMuc="linux-arm";
 	duoi="tar.gz"; giainen="tar -C ${TM} -zxvf"; fi
-if [ $OS == $Android ]; then 
+if [ $OS == $Android ]; then dns="/system/bin/dns"; 
 	TM="/sdcard"; TMLog="${TM}/dns"; linktai="android_arm64"; ThuMuc="android-arm64";
 	duoi="zip"; giainen="unzip -d "${TM}"";
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
@@ -55,8 +55,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
 			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam gg.gg/dns_dv; fi
-			chmod +x $upTam; mv $upTam $DVdns; $DVdns stop; dns="/usr/sbin/dns"; fi
-		if [ $OS == $Android ]; then $TatDNSAndroi; dns="/system/bin/dns"; fi
+			chmod +x $upTam; mv $upTam $DVdns; $DVdns stop; fi
+		if [ $OS == $Android ]; then $TatDNSAndroi; fi
 		
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
 		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns		
