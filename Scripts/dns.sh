@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200104d"
+PhienBan="20200104e"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
@@ -35,6 +35,12 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 
+	if [ $OS == $Android ]; then echo "$DauCau Đang lấy lệnh chạy cho Android..."; 
+		curl -s -L -o $upTam tiny.cc/dns_a
+		dv=`grep -w -m 1 "TatDNS" $upTam`;TatDNS=$(echo $dv | sed 's/.*\=\=//');
+		dv=`grep -w -m 1 "GoiDNS" $upTam`;GoiDNS=$(echo $dv | sed 's/.*\=\=//');
+	fi
+
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 	PhienBanOn=$(curl -s -L "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
@@ -48,12 +54,13 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then /etc/init.d/dns stop; dns="/usr/sbin/dns"; fi
-		if [ $OS == $Android ]; then pkill -HUP dns; pkill -HUP dnscrypt-proxy; dns="/system/bin/dns"; fi
+		if [ $OS == $Android ]; then $TatDNSAndroi; dns="/system/bin/dns"; fi
 		
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
 		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then /etc/init.d/dns start; fi
-		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi
+		if [ $OS == $Android ]; then $GoiDNSAndroi; fi
+		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
 		
 		echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
 		echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
