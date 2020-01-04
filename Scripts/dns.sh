@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200104g"
+PhienBan="20200104h"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
@@ -54,8 +54,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
-			if [ ! -f "$DVdns" ]; then curl -s -L -o $DVdns tiny.cc/dns_dv; fi
-			$DVdns stop; dns="/usr/sbin/dns"; fi
+			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam tiny.cc/dns_dv; fi
+			chmod +x $upTam; mv $upTam $DVdns; $DVdns stop; dns="/usr/sbin/dns"; fi
 		if [ $OS == $Android ]; then $TatDNSAndroi; dns="/system/bin/dns"; fi
 		
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
