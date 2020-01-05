@@ -1,2 +1,2 @@
-TatDNS==pkill -HUP dns; pkill -HUP dnscrypt-proxy;
+TatDNS==rm -rf $dns;
 GoiDNS==echo " "
