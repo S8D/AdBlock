@@ -1,8 +1,8 @@
 *** Hãy cư xử tử tế để nhận được điều tử tế! ***
-<br>••••• Sau khi cân nhắc tôi quyết định hạ băng thông xuống 100Mbps (12,5Mb/s) để phần cứng an toàn hơn.
-<br>••••• https://www.speedtest.net/result/8897026908.png
+<br>••••• Băng thông hiện tại 100Mbps (12,5Mb/s)
+<br>••••• 20191229 Server VN https://www.speedtest.net/result/8897026908.png
+<br>••••• 20200106 Server SG https://www.speedtest.net/result/8918893018.png
+<br>••••• 20200106 Server VN https://www.speedtest.net/result/8918894752.png
 <br>** Nếu bạn không vô được mạng, hãy chuyển qua lại giữa các trạm WiFi: ThanhFu và ThanhPhu hoặc XOÁ/QUÊN trạm wifi ThanhFu/ThanhPhu rồi nhập pass lại. Vì có thể khi đổi máy chủ nên điện thoại/laptop còn lưu cấu hình cũ nên không đăng nhập được.
 <br>* Trạm ThanhFu phát sóng WiFi 2G, xa hơn, mạnh hơn, hỗ trợ thiết bị cũ nhưng TỐC ĐỘ CHẬM hơn. Còn trạm ThanhPhu phát sóng WiFi 5G thì ngược lại nhé!
 <br>* Nếu trường hợp vẫn không vào được mạng các bạn nên xoá/quên WiFi và nhập lại mật khẩu.
-<br>=====================================
-<br>Nếu có vấn đề về truy cập mạng vui lòng liên hệ Zalo: SayRad (dùng 3G liên hệ^^)
