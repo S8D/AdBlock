@@ -1,7 +1,11 @@
 #!/bin/bash
-PhienBan="20200106a"
+PhienBan="20200106b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
+
+dl1="curl -s -L -o"; dl2="curl -s -L"
+which curl &>/dev/null; [ $? -eq 0 ] || { dl="wget -q -L -o"; dl2="wget -q -L";}
+
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then dns="/usr/sbin/dns";
@@ -26,34 +30,34 @@ if CheckGG; then UpLink="gg.gg/_dns"; DownLink="gg.gg/dns_"; net="1"; else
 		if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
-	PhienBanMoi=$(curl -s -L "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 	if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!";
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 		cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
-		curl -s -L -o $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
+		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 
 	if [ $OS == $Android ]; then echo "$DauCau Đang lấy lệnh chạy cho Android...";
-		curl -s -L -o $upTam tiny.cc/dns_a
+		$dl1 $upTam tiny.cc/dns_a
 		dv=`grep -w -m 1 "TatDNS" $upTam`;TatDNS=$(echo $dv | sed 's/.*\=\=//');
 		dv=`grep -w -m 1 "GoiDNS" $upTam`;GoiDNS=$(echo $dv | sed 's/.*\=\=//'); fi
 
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
-	PhienBanOn=$(curl -s -L "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
+	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
 	if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
 		echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 		echo "$DauCau Đang tải DNSCrypt-Proxy..."
-		DownURL=$(curl -s -L $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
-		curl -s -L -o $TM/DNSCrypt.$duoi $DownURL
+		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
-			if [ ! -f "$DVdns" ]; then curl -s -L -o $upTam gg.gg/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
+			if [ ! -f "$DVdns" ]; then $dl1 $upTam gg.gg/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
 			$DVdns stop; fi
 		if [ $OS == $Android ]; then $TatDNS; fi
 
@@ -61,11 +65,11 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then
 			[ ! -d "${TM}/dns" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy..."; mkdir -p ${TM}/dns;
-			curl -s -L -o ${TM}/dns.tar.gz gg.gg/ch_; tar -C ${TM}/dns -zxvf ${TM}/dns.tar.gz; rm -f ${TM}/dns.tar.gz; }
+			$dl1 ${TM}/dns.tar.gz gg.gg/ch_; tar -C ${TM}/dns -zxvf ${TM}/dns.tar.gz; rm -f ${TM}/dns.tar.gz; }
 			$DVdns start; fi
 		if [ $OS == $Android ]; then $GoiDNS;
 			[ ! -d "${TM}/dns" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy..."; mkdir -p ${TM}/dns;
-			curl -s -L -o ${TM}/dns.zip gg.gg/_ch; unzip -d "${TM}/dns" ${TM}/dns.zip; rm -f ${TM}/dns.zip; }; fi
+			$dl1 ${TM}/dns.zip gg.gg/_ch; unzip -d "${TM}/dns" ${TM}/dns.zip; rm -f ${TM}/dns.zip; }; fi
 		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
 
 		echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
