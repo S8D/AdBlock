@@ -1,7 +1,8 @@
-#PhienBan___20191229b
-xxhd.tv　　　　　　　　　　　　　g.co
-xxphe.com　　　　　　　　　　　　g.co
-*.baidu.com　　　　　　　　　　　g.co
+#PhienBan___20200108a
+londep.proxxhd.tv　　　g.co
+xxhd.tv　　　　　　　　g.co
+xxphe.com　　　　　　g.co
+*.baidu.com　　　　　　g.co
 
 #__________________________________________________________________________
 
