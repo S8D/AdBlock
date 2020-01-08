@@ -1,22 +1,10 @@
-#PhienBan___20200108b
+#PhienBan___20200108a
 #___TongHop_________
-taboola.com
-myqcloud.com
-qcloud.com
-publpush.com
-pushstack.co
-thenpushme.info
-burningpush.info
-mi.com
-pushimg.com
-etryi.pro
-rounsh.com
 split.io
 userstats.shopee.vn
 terrapsps.com
 instantresp.com
 faidoud.com
-londep.pro
 saas.dana.id
 servicelayer.king.com
 alosoft.vn
@@ -422,6 +410,7 @@ dam69.*
 jav*.*
 #xxphe.com
 #xxhd.tv
+#londep.pro
 
 #___Local_________
 *.localhost
