@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112z"
+PhienBan="20200112aa"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -17,7 +17,9 @@ upTam="${TM}/tam"; rm -f $upTam;
 
 NangCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
+  DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
+  #curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
+  cd /opt; curl -s -L -o /opt/dns.tar.gz $DownURL; 
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ; 
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
@@ -29,7 +31,7 @@ NangCap () {
 NangCap2 () {
 
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
-  DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+  DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
   
