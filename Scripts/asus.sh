@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112o"
+PhienBan="20200112p"
 #DNSCRYPT_VER=2.0.36-beta.1
 DNSCRYPT_VER=2.0.36
 
@@ -893,7 +893,7 @@ cleanup
 
 menu () {
   echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
-  echo -e "  0) Hạ cấp DNSCrypt-Proxy 2.0.36-Beta 1"
+  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
   echo -e "  3) Cấu hình DNSCrypt-Proxy"
@@ -903,9 +903,9 @@ menu () {
   echo -e "  7) Gỡ (P)RNG"
   echo -e "  8) Cài swap file"
   echo -e "  9) Gỡ hết"
-  echo -e "  n) Nâng cấp phiên bản mới nhất"
+  echo -e "  n) Nâng cấp DNSCrypt-Proxy lên phiên bản mới nhất"
   echo -e "  q) Thoát"
-  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 q n
+  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 n q
   case $CHOSEN in
     0)
       echo -e "$INFO Thao tác này sẽ hạ cấp DNSCrypt-Proxy phiên bản $PhienBanOff"
