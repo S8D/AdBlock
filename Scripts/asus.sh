@@ -4,7 +4,7 @@ PhienBan="20200112ae"
 DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
-TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; 
+TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS;
 TMdns="/jffs/dnscrypt"
 dns="${TMdns}/dnscrypt-proxy"
 CauHinh="${TMdns}/dnscrypt-proxy.toml"
@@ -19,13 +19,13 @@ upTam="${TM}/tam"; rm -f $upTam;
 NangCap () {
   echo "$DauCau Đang chạy hàm Nâng cấp 1..."
   echo "$DauCau Đang tải DNSCrypt-Proxy"; cd /opt;
-  #DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4); curl -s -L -o /opt/dns.tar.gz $DownURL; 
-  curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
+  #DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4); curl -s -L -o /opt/dns.tar.gz $DownURL;
+  curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
-  tar -zxvf dns.tar.gz ; 
+  tar -zxvf dns.tar.gz ;
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
-  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
-  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
+  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy;
+  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy;
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
 }
 
@@ -35,7 +35,7 @@ NangCap2 () {
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
-  
+
   tar -zxvf $TM/dns.tar.gz
 
   if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!!" ; rm -f ${TM}/dns.tar.gz; fi
@@ -71,7 +71,7 @@ PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBan
 if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
-  
+
   NangCap
 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
@@ -354,12 +354,12 @@ end_op_message () {
 
 NangCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
-  tar -zxvf dns.tar.gz ; 
+  tar -zxvf dns.tar.gz ;
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
-  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
-  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
+  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy;
+  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy;
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
@@ -371,15 +371,15 @@ NangCap () {
 
 HaCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1; 
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
-  tar -zxvf dns.tar.gz ; 
+  tar -zxvf dns.tar.gz ;
   echo "$DauCau Đang hạ cấp DNSCrypt-Proxy"
-  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
-  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
-  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy; 
+  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy;
+  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy;
+  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
-  echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"  
+  echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"
   if [ $? -ne 0 ]; then
     end_op_message
     return
@@ -923,7 +923,7 @@ cleanup
 
 menu () {
   echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
-  PhienBanOff=$(${dns} --version); if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then 
+  PhienBanOff=$(${dns} --version); if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then
   echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"; fi
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
