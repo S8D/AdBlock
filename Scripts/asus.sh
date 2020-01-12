@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112i"
+PhienBan="20200112j"
 DNSCRYPT_VER=2.0.36-beta.1
 #DNSCRYPT_VER=2.0.36
 
@@ -42,16 +42,17 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
-  $dl1 $TM/DNSCrypt.tar.gz $DownURL
+  $dl1 $TM/dns.tar.gz $DownURL
   
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf $TM/$ThuMuc
-  tar xzv -C $TM -f ${TM}/DNSCrypt.tar.gz;
+  tar xzv -C ${TM} -f ${TM}/dns.tar.gz; sleep 1;
+  if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!! Đang thoát!" ; exit 1; fi
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
   chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
   mv $TM/$ThuMuc/dnscrypt-proxy $dns
   chmod 755 $dns
 
-  rm -rf $TM/$ThuMuc; rm -f $TM/DNSCrypt.tar.gz; rm -f $upTam;
+  rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam;
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
@@ -877,67 +878,66 @@ menu () {
   echo -e "  8) Cài swap file"
   echo -e "  9) Gỡ hết"
   echo -e "  q) Thoát"
-  read_input_num "Please enter the number designates your selection:" 1 9 q
+  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 1 9 q
   case $CHOSEN in
     1)
-      echo -e "$INFO This operation will install dnscrypt-proxy and related files (<6MB)"
-      echo -e "$INFO to jffs, no other data will be changed."
-      echo -e "$INFO Also some start scripts will be installed/modified as required."
+      echo -e "$INFO Cần dung lượng tối thiểu 8Mb để cài DNSCrypt-Proxy."
+      echo -e "$INFO Không thay đổi dữ liệu khác trên /jffs."
+      echo -e "$INFO Các kịch bản cần thiết cũng sẽ được cài."
       echo
-      read_yesno "Do you want to install dnscrypt-proxy to /jffs?" && inst_dnscrypt || menu
+      read_yesno "Bạn có muốn cài DNSCrypt-Proxy vào /jffs?" && inst_dnscrypt || menu
       ;;
     2)
-      echo -e "$INFO This operation will uninstall dnscrypt-proxy and related files"
-      echo -e "$INFO from jffs, no other data will be changed."
-      echo -e "$INFO Also some start scripts will be modified as required."
+      echo -e "$INFO Lựa chọn này sẽ gỡ DNSCrypt-Proxy."
+      echo -e "$INFO Không thay đổi dữ liệu khác trên /jffs."
+      echo -e "$INFO Và xoá luôn kịch bản đã cài."
       echo
-      read_yesno "Do you want to uninstall dnscrypt-proxy from /jffs?" && uninst_dnscrypt || menu
+      read_yesno "Bạn có muốn gỡ DNSCrypt-Proxy khỏi /jffs?" && uninst_dnscrypt || menu
       ;;
     3)
-      echo -e "$INFO This operation allows you to configure dnscrypt-proxy"
+      echo -e "$INFO Cấu hình lại DNSCrypt-Proxy"
       echo
-      read_yesno "Do you want to proceed?" && setup_dnscrypt reconfig || menu
+      read_yesno "Bạn có muốn thực hiện?" && setup_dnscrypt reconfig || menu
       ;;
     4)
-      echo -e "$INFO This operation allows you to set your router"
-      echo -e "$INFO timezone for background services and processes"
+      echo -e "$INFO Việc này sẽ cài muối giờ cho router"
       echo
-      read_yesno "Do you want to proceed?" && set_timezone || menu
+      read_yesno "Bạn có muốn thực hiện?" && set_timezone || menu
       ;;
     5)
-      echo -e "$INFO This operation allows you to unset your router"
-      echo -e "$INFO timezone for background services and processes"
+      echo -e "$INFO Việc này sẽ Gỡ muối giờ đã cho router"
       echo
-      read_yesno "Do you want to proceed?" && unset_timezone || menu
+      read_yesno "Bạn có muốn thực hiện?" && unset_timezone || menu
       ;;
     6)
-      echo -e "$INFO This operation will install a (P)RNG (<0.5MB)"
-      echo -e "$INFO to jffs, no other data will be changed."
-      echo -e "$INFO Also some start scripts will be installed/modified as required."
+      echo -e "$INFO Lựa chọn này sẽ cài (P)RNG (<0.5MB)"
+      echo -e "$INFO vào jffs, không thay đổi dữ liệu khác."
+      echo -e "$INFO Cũng như thay đổi kịch bản tương ứng."
       echo
-      read_yesno "Do you want to install (P)RNG to /jffs?" && inst_random || menu
+      read_yesno "Bạn có muốn cài (P)RNG vào /jffs?" && inst_random || menu
       ;;
     7)
-      echo -e "$INFO This operation will uninstall (P)RNG"
-      echo -e "$INFO from jffs, no other data will be changed."
-      echo -e "$INFO Also some start scripts will be installed/modified as required."
+      echo -e "$INFO Lựa chọn này sẽ gỡ (P)RNG"
+      echo -e "$INFO từ jffs, không thay đổi dữ liệu khác."
+      echo -e "$INFO Cũng như thay đổi kịch bản tương ứng."
       echo
-      read_yesno "Do you want to uninstall (P)RNG from /jffs?" && uninst_random || menu
+      read_yesno "Bạn có muốn gỡ (P)RNG từ /jffs?" && uninst_random || menu
       ;;
     8)
-      echo -e "$INFO This operation will install a swap file for your device"
-      echo -e "$INFO You need an external USB storage to host this file"
+      echo -e "$INFO Lựa chọn này sẽ cài file swap vào router"
+      echo -e "$INFO Bạn cần chọn thiết bị gắn ngoài để lưu file swap"
+      echo -e "$INFO Bạn cần tối thiểu 500Mb để lưu file swap"
       echo
-      read_yesno "Do you want to install a swap file (512MB on ext filesystem partition)?" && check_swap || menu
+      read_yesno "Bạn có muốn cài file swap?" && check_swap || menu
       ;;
     9)
-      echo -e "$INFO This operation will cleanup everything installed by this script (except swap)"
+      echo -e "$INFO Lựa chọn này sẽ gỡ file swap khỏi router"
       echo
-      read_yesno "Do you want to continue?" && uninst_all || menu
+      read_yesno "Bạn có muốn thực hiện?" && uninst_all || menu
       ;;
     q|Q)
-      echo -e "$INFO Operations have been applied if any has been made"
-      echo -e "$INFO In case of anomaly, please reboot your router!"
+      echo -e "$INFO Thoát kịch bản"
+      echo -e "$INFO Nếu cần thiết, hãy khởi động lại router!"
       ;;
   esac
 }
