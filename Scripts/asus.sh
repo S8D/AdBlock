@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112p"
+PhienBan="20200112o"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
@@ -21,15 +21,7 @@ if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan 
   cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
   curl -s -L -o $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
   echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
-#__________________________________________________________________________________________________________________
-function Nhay {
-  label=$1
-  cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
-  eval "$cmd"
-  exit
-}
-start=${1:-"start"}; Nhay $start
-#__________________________________________________________________________________________________________________
+
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }
 CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
@@ -56,7 +48,6 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
 fi
 
-start:
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran`n"
 #________________________________________________________________________________________
 #asus="/jffs/asus"
