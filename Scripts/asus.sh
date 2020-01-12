@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112af"
+PhienBan="20200112ag"
 #DNSCRYPT_VER=2.0.36
 DNSCRYPT_VER=2.0.36-beta.1
 
@@ -363,10 +363,7 @@ NangCap () {
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
-  if [ $? -ne 0 ]; then
-    end_op_message
-    return
-  fi
+  end_op_message
 }
 
 HaCap () {
@@ -380,10 +377,7 @@ HaCap () {
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"
-  if [ $? -ne 0 ]; then
-    end_op_message
-    return
-  fi
+  end_op_message
 }
 
 inst_dnscrypt () {
@@ -923,8 +917,9 @@ cleanup
 
 menu () {
   echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
-  PhienBanOff=$(${dns} --version); if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then
-  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"; fi
+  if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then
+  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"; else
+  echo -e "  0) Nâng cấp DNSCrypt-Proxy lên $PhienBanOn"; fi
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
   echo -e "  3) Cấu hình DNSCrypt-Proxy"
@@ -936,13 +931,18 @@ menu () {
   echo -e "  9) Gỡ hết"
   echo -e "  n) Nâng cấp DNSCrypt-Proxy lên phiên bản mới nhất"
   echo -e "  q) Thoát"
-  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 n q
+  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 q
   case $CHOSEN in
     0)
+      if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then
       echo -e "$INFO Thao tác này sẽ hạ cấp DNSCrypt-Proxy phiên bản $PhienBanOff"
       echo -e "$INFO về phiên bản 2.0.36-Beta 1."
       echo
-      read_yesno "Bạn có muốn hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1?" && HaCap || menu
+      read_yesno "Bạn có muốn hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1?" && HaCap else
+      echo -e "$INFO Thao tác này sẽ nâng cấp DNSCrypt-Proxy phiên bản $PhienBanOff"
+      echo -e "$INFO lên phiên bản $PhienBanOn"
+      echo
+      read_yesno "Bạn có muốn nâng cấp DNSCrypt-Proxy lên $PhienBanOn?" && NangCap; fi; || menu
       ;;
     1)
       echo -e "$INFO Cần dung lượng tối thiểu 8Mb để cài DNSCrypt-Proxy."
@@ -998,11 +998,6 @@ menu () {
       echo -e "$INFO Lựa chọn này sẽ gỡ file swap khỏi router"
       echo
       read_yesno "Bạn có muốn thực hiện?" && uninst_all || menu
-      ;;
-    n|N)
-      echo -e "$INFO Thao tác này sẽ nâng cấp DNSCrypt-Proxy phiên bản $PhienBanOn"
-      echo
-      read_yesno "Bạn có muốn nâng cấp DNSCrypt-Proxy lên phiên bản $PhienBanOn?" && NangCap || menu
       ;;
     q|Q)
       echo -e "$INFO Thoát kịch bản"
