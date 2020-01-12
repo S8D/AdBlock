@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112an"
+PhienBan="20200112ao"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -385,7 +385,7 @@ HaCap () {
 
 CaiCauHinh () {
   echo "$DauCau Đang tải file cấu hình"
-  curl -s -L -o $TMdns/CauHinh.toml
+  curl -s -L -o $TMdns/CauHinh.toml gg.gg/_CauHinh
   echo "$DauCau Đang sao lưu cấu hình hiện tại"
   cp $CauHinh $TMdns/SaoLuu.toml
   echo "$DauCau Đang cài cấu hình mới"
