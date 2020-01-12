@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ba"
+PhienBan="20200112bb"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
@@ -26,7 +26,7 @@ NangCap1 () {
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
   chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy;
   mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy;
-  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
+  chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
 }
 
 NangCap2 () {
@@ -42,9 +42,7 @@ NangCap2 () {
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
   chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
   mv $TM/$ThuMuc/dnscrypt-proxy $dns
-  chmod 755 $dns
-
-  rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam;
+  chmod 755 $dns  
 }
 
 echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
@@ -73,7 +71,8 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 
   NangCap1
-
+  rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam; rm -f ${TM}/*.minisig; 
+  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
