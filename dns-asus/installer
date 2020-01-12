@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112a"
+PhienBan="20200112b"
 #GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 Time="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
@@ -22,7 +22,7 @@ curl -s -L -o $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
 echo "$Time Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
 
 #________________________________________________________________________________________
-PhienBanDNS=2.0.36
+DNSCRYPT_VER=2.0.36
 
 BOLD="\033[1m"
 NORM="\033[0m"
@@ -31,31 +31,32 @@ ERROR="$BOLD *** Error: $NORM"
 WARNING="$BOLD * Warning: $NORM"
 INPUT="$BOLD => $NORM"
 
-#readonly TMChinh=/jffs/dns; mkdir -p $TMChinh
-#readonly fCauHinh=$TMChinh/.config
-#readonly FileCauHinh=$TMChinh/CauHinh.toml
-#readonly CauHinhSaoLuu=$TMChinh/CauHinh.toml.bak
-#readonly CauHinhLoi=$TMChinh/CauHinh.toml.err
-#readonly CauHinhGoc=$TMChinh/CauHinhGoc.toml
-TMChinh=/jffs/dns; mkdir -p $TMChinh
-fCauHinh=$TMChinh/.config
-FileCauHinh=$TMChinh/CauHinh.toml
-CauHinhSaoLuu=$TMChinh/CauHinh.toml.bak
-CauHinhLoi=$TMChinh/CauHinh.toml.err
-CauHinhGoc=$TMChinh/CauHinhGoc.toml
+TARG_DIR=/jffs/dnscrypt
+CONF_FILE=$TARG_DIR/.config
+TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
+TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
+TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
+TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
+
+#readonly TARG_DIR=/jffs/dnscrypt
+#readonly CONF_FILE=$TARG_DIR/.config
+#readonly TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
+#readonly TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
+#readonly TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
+#readonly TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
 
 _quote() {
   echo $1 | sed 's/[]\/()$*.^|[]/\\&/g'
 }
 
 check_dnscrypt_toml () {
-  [ ! -f $FileCauHinh ] && return
-  echo -e "$INFO Checking DNSCrypt-Proxy configuration..."
-  $TMChinh/dns -check -config $FileCauHinh
+  [ ! -f $TOML_FILE ] && return
+  echo -e "$INFO Checking dnscrypt-proxy configuration..."
+  $TARG_DIR/dnscrypt-proxy -check -config $TOML_FILE
   if [ $? -ne 0 ]; then
-    echo -e "$INFO Move invalid configuration file to $CauHinhLoi"
+    echo -e "$INFO Move invalid configuration file to $TOML_ERR"
     echo -e "$INFO Operation will continue with clean config file"
-    mv $FileCauHinh $CauHinhLoi
+    mv $TOML_FILE $TOML_ERR
     return 1
   fi
 }
@@ -81,10 +82,10 @@ check_jffs_enabled () {
 }
 
 check_opendns () {
-  if [ "`grep '^server_names = .*cisco.*' $FileCauHinh`" ]; then
-    if [ -f $fCauHinh ]; then
-      local OPENDNS_USER=`awk -F'=' '/OPENDNS_USER/ {print $2}' $fCauHinh`
-      local OPENDNS_PASSWORD=`awk -F'=' '/OPENDNS_PASSWORD/ {print $2}' $fCauHinh`
+  if [ "`grep '^server_names = .*cisco.*' $TOML_FILE`" ]; then
+    if [ -f $CONF_FILE ]; then
+      local OPENDNS_USER=`awk -F'=' '/OPENDNS_USER/ {print $2}' $CONF_FILE`
+      local OPENDNS_PASSWORD=`awk -F'=' '/OPENDNS_PASSWORD/ {print $2}' $CONF_FILE`
       if [ "$OPENDNS_USER" ] && [ "$OPENDNS_PASSWORD" ]; then
         echo -e "$INFO Found OpenDNS account ${BOLD}${OPENDNS_USER}"
         echo -e "$INFO What do you want to do:"
@@ -179,8 +180,8 @@ choose_dnscrypt_server_manual () {
     local RESOLVERS
     toml_gvars_prep dnscrypt_servers true doh_servers true require_dnssec false require_nolog false require_nofilter false
     echo -e "$INFO Available DNS servers: "
-    INDEX=`awk -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT)' $TMChinh/public-resolvers.md | wc -l`
-    awk -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT) {printf "  "; printf ++i") "$2": "; getline; getline; print}' $TMChinh/public-resolvers.md
+    INDEX=`awk -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT)' $TARG_DIR/public-resolvers.md | wc -l`
+    awk -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT) {printf "  "; printf ++i") "$2": "; getline; getline; print}' $TARG_DIR/public-resolvers.md
     read_input_num "Please choose DNS server" 1 $INDEX
   else
     read_input_num "Please choose next DNS server or press n to stop" 1 $INDEX n
@@ -191,7 +192,7 @@ choose_dnscrypt_server_manual () {
   fi
 
   local ITEM
-  ITEM=`awk -v INDEX=$CHOSEN -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT) {i++} i==INDEX {print $2;exit}' $TMChinh/public-resolvers.md`
+  ITEM=`awk -v INDEX=$CHOSEN -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT) {i++} i==INDEX {print $2;exit}' $TARG_DIR/public-resolvers.md`
   if [ "`echo $RESOLVERS | grep -F $ITEM`" ]; then
     echo -e "$INFO $ITEM is already set"
   else
@@ -206,7 +207,7 @@ choose_dnscrypt_server_manual () {
 }
 
 cleanup () {
-  rm -f $TMChinh/dnscrypt-fw-rules $TMChinh/dnscrypt-start $TMChinh/dnsmasq-dnscrypt-reconfig $TMChinh/fake-hwclock* $TMChinh/init-start $TMChinh/services-stop
+  rm -f $TARG_DIR/dnscrypt-fw-rules $TARG_DIR/dnscrypt-start $TARG_DIR/dnsmasq-dnscrypt-reconfig $TARG_DIR/fake-hwclock* $TARG_DIR/init-start $TARG_DIR/services-stop
 }
 
 create_dir () {
@@ -228,10 +229,10 @@ del_between_magic () {
 }
 
 del_conf () {
-  [ ! -f $fCauHinh ] && return
+  [ ! -f $CONF_FILE ] && return
   local KEY
   for KEY in "$@"; do
-    sed -i "/^$KEY=.*$/d" $fCauHinh
+    sed -i "/^$KEY=.*$/d" $CONF_FILE
   done
 }
 
@@ -243,12 +244,12 @@ del_jffs_script () {
   if [ "$2" ]; then
     local OP=${2:0:1}
     if [ "$OP" == "!" ]; then
-      LINE_NUM=`grep -n -F "[ -x $TMChinh/" $TARG|grep -v "$(_quote $2)"|cut -d':' -f1`
+      LINE_NUM=`grep -n -F "[ -x $TARG_DIR/" $TARG|grep -v "$(_quote $2)"|cut -d':' -f1`
     else
-      LINE_NUM=`grep -n -F "[ -x $TMChinh/" $TARG|grep "$(_quote $2)"|cut -d':' -f1`
+      LINE_NUM=`grep -n -F "[ -x $TARG_DIR/" $TARG|grep "$(_quote $2)"|cut -d':' -f1`
     fi
   else
-    LINE_NUM=`grep -n -F "[ -x $TMChinh/" $TARG|cut -d':' -f1`
+    LINE_NUM=`grep -n -F "[ -x $TARG_DIR/" $TARG|cut -d':' -f1`
   fi
   [ -z $LINE_NUM ] && return
   sed -i "${LINE_NUM}d" $TARG
@@ -300,31 +301,31 @@ end_op_message () {
 }
 
 inst_dnscrypt () {
-  local DNSCRYPT_TAR=dnscrypt-proxy-${DNSCRYPT_ARCH}-${PhienBanDNS}.tar.gz
+  local DNSCRYPT_TAR=dnscrypt-proxy-${DNSCRYPT_ARCH}-${DNSCRYPT_VER}.tar.gz
   local RESOLVERS_URL_PREFIX="https://download.dnscrypt.info/resolvers-list/v2/"
-  create_dir $TMChinh
+  create_dir $TARG_DIR
   if [ $? -ne 0 ]; then
     end_op_message
     return
   fi
 
-  download_file $TMChinh 755 $URL_GEN/manager
-  download_file $TMChinh 644 https://github.com/jedisct1/dns/releases/download/${PhienBanDNS}/${DNSCRYPT_TAR} \
+  download_file $TARG_DIR 755 $URL_GEN/manager
+  download_file $TARG_DIR 644 https://github.com/jedisct1/dnscrypt-proxy/releases/download/${DNSCRYPT_VER}/${DNSCRYPT_TAR} \
     $RESOLVERS_URL_PREFIX/public-resolvers.md \
     $RESOLVERS_URL_PREFIX/public-resolvers.md.minisig \
     $RESOLVERS_URL_PREFIX/relays.md \
     $RESOLVERS_URL_PREFIX/relays.md.minisig
-  chown nobody:nobody $TMChinh/public-resolvers.md $TMChinh/public-resolvers.md.minisig $TMChinh/relays.md $TMChinh/relays.md.minisig
-  tar xzv -C $TMChinh -f $TMChinh/$DNSCRYPT_TAR
+  chown nobody:nobody $TARG_DIR/public-resolvers.md $TARG_DIR/public-resolvers.md.minisig $TARG_DIR/relays.md $TARG_DIR/relays.md.minisig
+  tar xzv -C $TARG_DIR -f $TARG_DIR/$DNSCRYPT_TAR
   if [ $? -ne 0 ]; then
-    echo -e "$ERROR Unable to download DNSCrypt-Proxy package for your router"
+    echo -e "$ERROR Unable to download dnscrypt-proxy package for your router"
     end_op_message
     return
   fi
-  chown `nvram get http_username`:root $TMChinh/$DNSCRYPT_ARCH_TAR/*
-  mv $TMChinh/$DNSCRYPT_ARCH_TAR/* $TMChinh
-  rm -r $TMChinh/$DNSCRYPT_ARCH_TAR $TMChinh/$DNSCRYPT_TAR
-  chmod 755 $TMChinh/dns
+  chown `nvram get http_username`:root $TARG_DIR/$DNSCRYPT_ARCH_TAR/*
+  mv $TARG_DIR/$DNSCRYPT_ARCH_TAR/* $TARG_DIR
+  rm -r $TARG_DIR/$DNSCRYPT_ARCH_TAR $TARG_DIR/$DNSCRYPT_TAR
+  chmod 755 $TARG_DIR/dnscrypt-proxy
 
   del_jffs_script /jffs/scripts/wan-start dnscrypt-start
   write_manager_script /jffs/scripts/dnsmasq.postconf dnsmasq
@@ -336,11 +337,11 @@ inst_dnscrypt () {
     return
   fi
 
-  echo -e "$INFO Staring DNSCrypt-Proxy..."
-  $TMChinh/manager dnscrypt-start
+  echo -e "$INFO Staring dnscrypt-proxy..."
+  $TARG_DIR/manager dnscrypt-start
   sleep 1
-  if [ -z "`pidof dns`" ]; then
-    echo -e "$ERROR Couldn't start DNSCrypt-Proxy"
+  if [ -z "`pidof dnscrypt-proxy`" ]; then
+    echo -e "$ERROR Couldn't start dnscrypt-proxy"
     echo -e "$ERROR Please send WebUI System Log to dev"
     end_op_message
     return
@@ -348,7 +349,7 @@ inst_dnscrypt () {
   service restart_dnsmasq
   manager_monitor_restart
 
-  echo -e "$INFO For DNSCrypt-Proxy version 2 to work reliably, you might also want to:"
+  echo -e "$INFO For dnscrypt-proxy version 2 to work reliably, you might also want to:"
   echo -e "$INFO  - Add swap"
   echo -e "$INFO  - Add a RNG"
   echo -e "$INFO  - Set your timezone"
@@ -366,7 +367,7 @@ manager_monitor_restart () {
       fi
     done
   fi
-  $TMChinh/manager monitor-start
+  $TARG_DIR/manager monitor-start
 }
 
 opendns_authen () {
@@ -395,7 +396,7 @@ opendns_authen () {
 }
 
 inst_random () {
-  create_dir $TMChinh
+  create_dir $TARG_DIR
 
   echo -e "$INFO Install a (P)RNG for better cryptographic operations"
   echo -e "$INFO Available random number generator providers:"
@@ -406,21 +407,21 @@ inst_random () {
   read_input_num "Please enter the number designates your selection" 1 2
   case $CHOSEN in
     1)
-      rm -f $TMChinh/rngd $TMChinh/stty
+      rm -f $TARG_DIR/rngd $TARG_DIR/stty
       killall -q -9 haveged
-      download_file $TMChinh 755 $URL_ARCH/haveged $URL_GEN/manager
+      download_file $TARG_DIR 755 $URL_ARCH/haveged $URL_GEN/manager
       write_conf RAN_PRV haveged
-      $TMChinh/haveged -w1024 -v1
+      $TARG_DIR/haveged -w1024 -v1
       ;;
     2)
       local RNG_DEV
-      rm -f $TMChinh/haveged
+      rm -f $TARG_DIR/haveged
       killall -q -9 rngd
-      download_file $TMChinh 755 $URL_ARCH/rngd $URL_ARCH/stty $URL_GEN/manager
+      download_file $TARG_DIR 755 $URL_ARCH/rngd $URL_ARCH/stty $URL_GEN/manager
       inst_ran_dev || return
       write_conf RAN_PRV rngd
-      $TMChinh/stty raw -echo -ixoff -F /dev/$RNG_DEV speed 115200
-      $TMChinh/rngd -r /dev/$RNG_DEV
+      $TARG_DIR/stty raw -echo -ixoff -F /dev/$RNG_DEV speed 115200
+      $TARG_DIR/rngd -r /dev/$RNG_DEV
       ;;
   esac
 
@@ -545,19 +546,19 @@ read_yesno () {
 }
 
 setup_dnscrypt () {
-  if [ ! -f $CauHinhGoc ] || [ ! -f $TMChinh/dns ]; then
-    echo -e "$ERROR DNSCrypt-Proxy is not installed. Aborting..."
+  if [ ! -f $TOML_ORI ] || [ ! -f $TARG_DIR/dnscrypt-proxy ]; then
+    echo -e "$ERROR dnscrypt-proxy is not installed. Aborting..."
     return
   fi
 
-  echo -e "$INFO Configuring DNSCrypt-Proxy..."
+  echo -e "$INFO Configuring dnscrypt-proxy..."
   setup_dnscrypt_impl "$@"
   local RET=$?
   check_opendns
   if [ "$1" == "reconfig" ]; then
     if [ $RET -eq 0 ]; then
-      echo -e "$INFO Restarting DNSCrypt-Proxy with new config..."
-      $TMChinh/manager dnscrypt-start
+      echo -e "$INFO Restarting dnscrypt-proxy with new config..."
+      $TARG_DIR/manager dnscrypt-start
       end_op_message 0
     else
       end_op_message 0
@@ -566,23 +567,23 @@ setup_dnscrypt () {
 }
 
 setup_dnscrypt_impl () {
-  if [ -z $1 ] && [ -f $FileCauHinh ]; then
+  if [ -z $1 ] && [ -f $TOML_FILE ]; then
     check_dnscrypt_toml
     if [ $? -ne 0 ]; then
       setup_dnscrypt_impl x
       return
     fi
-    echo -e "$INFO Found previous DNSCrypt-Proxy config file"
+    echo -e "$INFO Found previous dnscrypt-proxy config file"
     read_yesno "Do you want to use this file without reconfiguring?" && echo -e "$INFO Use previous settings file" || setup_dnscrypt_impl x
   else
-    if [ -f $FileCauHinh ]; then
+    if [ -f $TOML_FILE ]; then
       if [ "$1" == "reconfig" ]; then
         check_dnscrypt_toml
         if [ $? -ne 0 ]; then
           setup_dnscrypt_impl x
           return
         fi
-        echo -e "$INFO Found previous DNSCrypt-Proxy config file"
+        echo -e "$INFO Found previous dnscrypt-proxy config file"
       fi
       echo -e "$INFO How do you want to reconfigure:"
       echo -e "$INFO   1) Start from previous settings file"
@@ -594,28 +595,28 @@ setup_dnscrypt_impl () {
           ;;
         2)
           echo -e "$INFO Backing up previous settings file..."
-          mv $FileCauHinh $CauHinhSaoLuu
-          cp -f $CauHinhGoc $FileCauHinh
+          mv $TOML_FILE $TOML_BAK
+          cp -f $TOML_ORI $TOML_FILE
           ;;
       esac
     else
-      cp -f $CauHinhGoc $FileCauHinh
+      cp -f $TOML_ORI $TOML_FILE
     fi
     local GVARS_ARGS
     read_yesno "Do you want to redirect all DNS resolutions on your network through this proxy?" && write_manager_script /jffs/scripts/firewall-start fw-rules || del_jffs_script /jffs/scripts/firewall-start
     choose_dnscrypt_server
 
-    echo -e "$INFO Set a DNS server for initializing DNSCrypt-Proxy"
+    echo -e "$INFO Set a DNS server for initializing dnscrypt-proxy"
     echo -e "$INFO and router services (e.g. ntp) at boot"
     read_input_dns "Default is" 8.8.8.8
     read_input_num "Set log level, default is 2, 0 is the most verbose" 0 6
     toml_gvars_prep fallback_resolver "\'$DNS_SERVER:53\'" log_level $CHOSEN ignore_system_dns true listen_addresses "[\'127.0.0.1:65053\']" cache false cert_ignore_timestamp true user_name "\'nobody\'" max_clients 25000 keepalive 120 netprobe_timeout 120 netprobe_address "\'$DNS_SERVER:53\'"
-    echo -e "$INFO Writing DNSCrypt-Proxy configuration..."
+    echo -e "$INFO Writing dnscrypt-proxy configuration..."
     eval toml_gvars_write $GVARS_ARGS
     check_dnscrypt_toml
     if [ $? -ne 0 ]; then
-      echo -e "$INFO Writing DNSCrypt-Proxy configuration failed"
-      echo -e "$INFO Please send $CauHinhLoi file and screen log of "
+      echo -e "$INFO Writing dnscrypt-proxy configuration failed"
+      echo -e "$INFO Please send $TOML_ERR file and screen log of "
       echo -e "$INFO all operations you have made to this script dev"
       return 1
     fi
@@ -626,7 +627,7 @@ set_timezone () {
   local TMP=/root
   local TZ_DATA=tzdata-2018c-1-any.pkg.tar.bz2
 
-  download_file $TMChinh 755 $URL_GEN/manager
+  download_file $TARG_DIR 755 $URL_GEN/manager
   download_file $TMP 644 $URL_GEN/$TZ_DATA
   local INDEX=`tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | wc -l`
   echo -e "$INFO Available timezones/locations:"
@@ -635,7 +636,7 @@ set_timezone () {
   local TZ_FILE="`tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=$CHOSEN '{++i}i==INDEX{print $0}'`"
   echo -e "$INFO `basename $TZ_FILE` selected"
   tar xjf $TMP/$TZ_DATA -C $TMP usr/share/zoneinfo/posix
-  mv "$TMP/$TZ_FILE" $TMChinh/localtime
+  mv "$TMP/$TZ_FILE" $TARG_DIR/localtime
   if [ $? -ne 0 ]; then
     echo -e "$ERROR Unable to set your timezone file"
     end_op_message
@@ -644,16 +645,16 @@ set_timezone () {
 
   write_manager_script /jffs/scripts/init-start init-start
   write_manager_script /jffs/scripts/services-stop services-stop
-  ln -sf $TMChinh/localtime /etc/localtime
-  [ "`pidof dns`" ] && $TMChinh/manager dnscrypt-start
+  ln -sf $TARG_DIR/localtime /etc/localtime
+  [ "`pidof dnscrypt-proxy`" ] && $TARG_DIR/manager dnscrypt-start
   rm -r $TMP/$TZ_DATA $TMP/usr
   end_op_message 0
 }
 
 toml_gvar_disable () {
   local VAR=$1
-  local IDX_NX_GVAR=`awk '/^\[.*\]$/ {print NR;exit}' $FileCauHinh`
-  sed -i "1,$IDX_NX_GVAR{s/\(^$VAR = .*\)/# \1/}" $FileCauHinh
+  local IDX_NX_GVAR=`awk '/^\[.*\]$/ {print NR;exit}' $TOML_FILE`
+  sed -i "1,$IDX_NX_GVAR{s/\(^$VAR = .*\)/# \1/}" $TOML_FILE
 }
 
 toml_gvars_prep () {
@@ -661,8 +662,8 @@ toml_gvars_prep () {
 }
 
 toml_gvars_write () {
-  local IDX_NX_GVAR=`awk '/\[.+\]/ && !/(#| = )/ {print NR;exit}' $FileCauHinh`
-  local IDX_GLB_INS=`awk -v VAR="#.*Global settings.*" '($0 ~ VAR) {while (getline) {if ($0 ~ "^$") break} print NR;exit}' $FileCauHinh`
+  local IDX_NX_GVAR=`awk '/\[.+\]/ && !/(#| = )/ {print NR;exit}' $TOML_FILE`
+  local IDX_GLB_INS=`awk -v VAR="#.*Global settings.*" '($0 ~ VAR) {while (getline) {if ($0 ~ "^$") break} print NR;exit}' $TOML_FILE`
   local VAR
   local VALUE
   local TO
@@ -673,12 +674,12 @@ toml_gvars_write () {
     VAR=$1; shift
     VALUE=$1; shift
     TO=$(_quote "$VAR = $VALUE")
-    INDEX=`awk -v IDX=$IDX_NX_GVAR -v VAR="^$VAR = " '($0 ~ VAR) && (NR < IDX) {print NR; exit}' $FileCauHinh`
+    INDEX=`awk -v IDX=$IDX_NX_GVAR -v VAR="^$VAR = " '($0 ~ VAR) && (NR < IDX) {print NR; exit}' $TOML_FILE`
     if [ "$INDEX" ]; then
       SED_CMD="${INDEX}{s/.*/${TO}/};${SED_CMD}"
       continue
     fi
-    INDEX=`awk -v IDX=$IDX_NX_GVAR -v VAR="#.*$VAR = " '($0 ~ VAR) && (NR < IDX) {print NR; exit}' $FileCauHinh`
+    INDEX=`awk -v IDX=$IDX_NX_GVAR -v VAR="#.*$VAR = " '($0 ~ VAR) && (NR < IDX) {print NR; exit}' $TOML_FILE`
     if [ "$INDEX" ]; then
       SED_CMD="${INDEX}{s/.*/${TO}/};${SED_CMD}"
       continue
@@ -687,18 +688,18 @@ toml_gvars_write () {
     HAS_GLB_INS=1
   done
   [ "$HAS_GLB_INS" ] && SED_CMD="${SED_CMD}/}"
-  sed -i "${SED_CMD%;}" $FileCauHinh
+  sed -i "${SED_CMD%;}" $TOML_FILE
 }
 
 uninst_all () {
-  rm -rf $TMChinh
+  rm -rf $TARG_DIR
   del_jffs_script /jffs/scripts/dnsmasq.postconf
   del_jffs_script /jffs/scripts/init-start
   del_jffs_script /jffs/scripts/firewall-start
   del_jffs_script /jffs/scripts/services-stop
   del_jffs_script /jffs/scripts/wan-start
   service restart_dnsmasq
-  killall -q -9 haveged rngd dns
+  killall -q -9 haveged rngd dnscrypt-proxy
   local MAN_PID="`pidof manager`"
   local PID
   if [ "$MAN_PID" ]; then
@@ -713,12 +714,12 @@ uninst_all () {
 }
 
 uninst_dnscrypt () {
-  echo -e "$INFO Uninstalling DNSCrypt-Proxy..."
-  rm -f $TMChinh/dns $TMChinh/nonroot
+  echo -e "$INFO Uninstalling dnscrypt-proxy..."
+  rm -f $TARG_DIR/dnscrypt-proxy $TARG_DIR/nonroot
   del_jffs_script /jffs/scripts/dnsmasq.postconf
   del_jffs_script /jffs/scripts/firewall-start
   del_jffs_script /jffs/scripts/wan-start
-  killall -q dns
+  killall -q dnscrypt-proxy
   service restart_dnsmasq
   echo -e "$INFO Some configuration files are not removed in case you want to reinstall"
   end_op_message 0
@@ -726,31 +727,31 @@ uninst_dnscrypt () {
 
 uninst_random () {
   echo -e "$INFO Uninstalling (P)RNG..."
-  rm -f $TMChinh/haveged $TMChinh/rngd $TMChinh/stty
+  rm -f $TARG_DIR/haveged $TARG_DIR/rngd $TARG_DIR/stty
   killall -q -9 haveged rngd
   del_conf RAN_PRV RNG_DEV
-  [ ! -f $TMChinh/localtime ] && [ ! -f $TMChinh/dns ] && del_jffs_script /jffs/scripts/init-start; del_jffs_script /jffs/scripts/services-stop
+  [ ! -f $TARG_DIR/localtime ] && [ ! -f $TARG_DIR/dnscrypt-proxy ] && del_jffs_script /jffs/scripts/init-start; del_jffs_script /jffs/scripts/services-stop
   end_op_message 0
 }
 
 unset_timezone () {
-  rm -f $TMChinh/localtime
-  [ -z "`grep \"^RAN_PRV=.*$\" $TMChinh/.config`" ] && [ ! -f $TMChinh/dns ] && del_jffs_script /jffs/scripts/init-start; del_jffs_script /jffs/scripts/services-stop
+  rm -f $TARG_DIR/localtime
+  [ -z "`grep \"^RAN_PRV=.*$\" $TARG_DIR/.config`" ] && [ ! -f $TARG_DIR/dnscrypt-proxy ] && del_jffs_script /jffs/scripts/init-start; del_jffs_script /jffs/scripts/services-stop
   end_op_message 0
 }
 
 write_conf () {
   local VAR=$1
   local VALUE="$2"
-  [ -f $TMChinh/.opendns-auth ] && mv $TMChinh/.opendns-auth $fCauHinh && chmod 644 $fCauHinh
-  if [ ! -f $fCauHinh ]; then
-    touch $fCauHinh && chmod 644 $fCauHinh
+  [ -f $TARG_DIR/.opendns-auth ] && mv $TARG_DIR/.opendns-auth $CONF_FILE && chmod 644 $CONF_FILE
+  if [ ! -f $CONF_FILE ]; then
+    touch $CONF_FILE && chmod 644 $CONF_FILE
   fi
-  if [ "`grep $VAR $fCauHinh`" ]; then
+  if [ "`grep $VAR $CONF_FILE`" ]; then
     VALUE=$(_quote "$VALUE")
-    sed -i "/^$VAR=/s/=.*/=$VALUE/" $fCauHinh
+    sed -i "/^$VAR=/s/=.*/=$VALUE/" $CONF_FILE
   else
-    echo "$VAR=$VALUE" >> $fCauHinh
+    echo "$VAR=$VALUE" >> $CONF_FILE
   fi
 }
 
@@ -777,7 +778,7 @@ write_manager_script () {
   local TARG=$1
   local OP=$2
   local FILENAME="`basename \"$TARG\"`"
-  local COMMAND=$TMChinh/manager
+  local COMMAND=$TARG_DIR/manager
 
   if [ ! -f $TARG ]; then
     echo -e "$INFO Creating $FILENAME file"
@@ -801,8 +802,8 @@ write_manager_script () {
 }
 
 [ $1 ] && BRANCH=$1 || BRANCH=master
-URL_GEN=https://raw.githubusercontent.com/s8d/AdBlock/dns-asus/$BRANCH/gen
-URL_ARCH=https://github.com/s8d/AdBlock/dns-asus/raw/$BRANCH
+URL_GEN=https://raw.githubusercontent.com/thuantran/dnscrypt-asuswrt-installer/$BRANCH/gen
+URL_ARCH=https://github.com/thuantran/dnscrypt-asuswrt-installer/raw/$BRANCH
 
 case $(uname -m) in
   armv7l)
@@ -836,9 +837,9 @@ cleanup
 
 menu () {
   echo -e "$INFO Choose what you want to do:"
-  echo -e "  1) Install/Update DNSCrypt-Proxy"
-  echo -e "  2) Uninstall DNSCrypt-Proxy"
-  echo -e "  3) Configure DNSCrypt-Proxy"
+  echo -e "  1) Install/Update dnscrypt-proxy"
+  echo -e "  2) Uninstall dnscrypt-proxy"
+  echo -e "  3) Configure dnscrypt-proxy"
   echo -e "  4) Set timezone"
   echo -e "  5) Unset timezone"
   echo -e "  6) Install (P)RNG"
@@ -849,21 +850,21 @@ menu () {
   read_input_num "Please enter the number designates your selection:" 1 9 q
   case $CHOSEN in
     1)
-      echo -e "$INFO This operation will install DNSCrypt-Proxy and related files (<6MB)"
+      echo -e "$INFO This operation will install dnscrypt-proxy and related files (<6MB)"
       echo -e "$INFO to jffs, no other data will be changed."
       echo -e "$INFO Also some start scripts will be installed/modified as required."
       echo
-      read_yesno "Do you want to install DNSCrypt-Proxy to /jffs?" && inst_dnscrypt || menu
+      read_yesno "Do you want to install dnscrypt-proxy to /jffs?" && inst_dnscrypt || menu
       ;;
     2)
-      echo -e "$INFO This operation will uninstall DNSCrypt-Proxy and related files"
+      echo -e "$INFO This operation will uninstall dnscrypt-proxy and related files"
       echo -e "$INFO from jffs, no other data will be changed."
       echo -e "$INFO Also some start scripts will be modified as required."
       echo
-      read_yesno "Do you want to uninstall DNSCrypt-Proxy from /jffs?" && uninst_dnscrypt || menu
+      read_yesno "Do you want to uninstall dnscrypt-proxy from /jffs?" && uninst_dnscrypt || menu
       ;;
     3)
-      echo -e "$INFO This operation allows you to configure DNSCrypt-Proxy"
+      echo -e "$INFO This operation allows you to configure dnscrypt-proxy"
       echo
       read_yesno "Do you want to proceed?" && setup_dnscrypt reconfig || menu
       ;;
