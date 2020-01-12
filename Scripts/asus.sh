@@ -48,5 +48,5 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
 fi
 
-echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran`n"
+echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
 #________________________________________________________________________________________
