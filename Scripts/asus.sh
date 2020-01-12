@@ -1,6 +1,7 @@
 #!/bin/bash
-PhienBan="20200112d"
-DNSCRYPT_VER=2.0.36-beta.1
+PhienBan="20200112e"
+#DNSCRYPT_VER=2.0.36-beta.1
+DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
@@ -51,9 +52,8 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
-    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; else
-    echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; exit 1; fi
-  $dns --config $CauHinh
+    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
+    echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 fi
 
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
