@@ -5,15 +5,6 @@ DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
-function Nhay {
-  label=$1
-  cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
-  eval "$cmd"
-  exit
-}
-
-start=${1:-"start"}; Nhay $start
-
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; 
   giainen="tar -C ${TM} -xvf"; TM="/jffs"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; else
@@ -30,7 +21,15 @@ if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan 
   cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
   curl -s -L -o $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
   echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
-
+#__________________________________________________________________________________________________________________
+function Nhay {
+  label=$1
+  cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
+  eval "$cmd"
+  exit
+}
+start=${1:-"start"}; Nhay $start
+#__________________________________________________________________________________________________________________
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }
 CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
