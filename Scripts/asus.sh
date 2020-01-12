@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112j"
+PhienBan="20200112k"
 DNSCRYPT_VER=2.0.36-beta.1
 #DNSCRYPT_VER=2.0.36
 
@@ -44,8 +44,10 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL
   
-  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf $TM/$ThuMuc
-  tar xzv -C ${TM} -f ${TM}/dns.tar.gz; sleep 1;
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
+  #tar xzv -C ${TM} -f ${TM}/dns.tar.gz
+  tar -czvf ${TM}/dns.tar.gz ${TM}
+
   if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!! Đang thoát!" ; exit 1; fi
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
   chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
