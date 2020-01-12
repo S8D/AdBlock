@@ -1,11 +1,13 @@
 #!/bin/bash
-PhienBan="20200112b"
+PhienBan="20200112c"
 #GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 Time="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
+cd /root; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
+cd /opt; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
-if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/opt"; TMLog="${TM}/dns"; mkdir -p $TMLog; fi
+if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/jffs"; TMLog="${TM}/dns"; mkdir -p $TMLog; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; duoi="zip"; giainen="unzip -d "${TM}""; TM="/sdcard"; TMLog="${TM}/dns"; 
 [ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 #echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
