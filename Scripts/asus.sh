@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ao"
+PhienBan="20200112ap"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -366,6 +366,7 @@ NangCap () {
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
   $TARG_DIR/manager dnscrypt-start
   end_op_message
+  menu
 }
 
 HaCap () {
@@ -381,6 +382,7 @@ HaCap () {
   echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"
   $TARG_DIR/manager dnscrypt-start
   end_op_message
+  menu
 }
 
 CaiCauHinh () {
@@ -393,6 +395,7 @@ CaiCauHinh () {
   echo "$DauCau Đang kiểm tra cấu hình mới"
   check_dnscrypt_toml
   $TARG_DIR/manager dnscrypt-start
+  menu
 }
 
 inst_dnscrypt () {
