@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112q"
+PhienBan="20200112w"
 #DNSCRYPT_VER=2.0.36-beta.1
 DNSCRYPT_VER=2.0.36
 
@@ -15,6 +15,24 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; else
   echo "$DauCau Scripts chưa hỗ trợ nền tảng đang chạy"; exit 1; fi
 Log="${tmDNS}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 upTam="${TM}/tam"; rm -f $upTam;
+
+NangCap2 () {
+  
+  echo "$DauCau Đang tải DNSCrypt-Proxy..."
+  DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+  $dl1 $TM/dns.tar.gz $DownURL
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
+  
+  tar -zxvf $TM/dns.tar.gz
+
+  if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!!" ; rm -f ${TM}/dns.tar.gz; fi
+  echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
+  chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
+  mv $TM/$ThuMuc/dnscrypt-proxy $dns
+  chmod 755 $dns
+
+  rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam;
+}
 
 echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
@@ -40,20 +58,7 @@ PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBan
 if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
-  echo "$DauCau Đang tải DNSCrypt-Proxy..."
-  DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
-  $dl1 $TM/dns.tar.gz $DownURL
-  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
-  
-  tar -zxvf $TM/dns.tar.gz
-
-  if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!!" ; rm -f ${TM}/dns.tar.gz; fi
-  echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-  chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
-  mv $TM/$ThuMuc/dnscrypt-proxy $dns
-  chmod 755 $dns
-
-  rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam;
+  NangCap
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
@@ -333,11 +338,17 @@ end_op_message () {
 }
 
 NangCap () {
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; tar -zxvf dns.tar.gz ; 
+  echo "$DauCau Đang tải DNSCrypt-Proxy"
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
+  echo "$DauCau Đang Giải nén DNSCrypt-Proxy"
+  tar -zxvf dns.tar.gz ; 
+  echo "$DauCau Đang Giải nâng cấp DNSCrypt-Proxy"
   chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
   mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
-  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy; 
-  ./d --version
+  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
+  PhienBanOff=$(${dns} --version)
+  echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
+  /jffs/dnscrypt/dnscrypt-proxy --version
   if [ $? -ne 0 ]; then
     end_op_message
     return
@@ -345,11 +356,16 @@ NangCap () {
 }
 
 HaCap () {
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1; tar -zxvf dns.tar.gz ; 
+  echo "$DauCau Đang tải DNSCrypt-Proxy"
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1; 
+  echo "$DauCau Đang Giải nén DNSCrypt-Proxy"
+  tar -zxvf dns.tar.gz ; 
+  echo "$DauCau Đang Giải hạ cấp DNSCrypt-Proxy"
   chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
   mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy; 
-  ./d --version
+  PhienBanOff=$(${dns} --version)
+  echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"  
   if [ $? -ne 0 ]; then
     end_op_message
     return
