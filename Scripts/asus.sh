@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112f"
+PhienBan="20200112e"
 DNSCRYPT_VER=2.0.36-beta.1
 #DNSCRYPT_VER=2.0.36
 
