@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ah"
+PhienBan="20200112ai"
 #DNSCRYPT_VER=2.0.36
 DNSCRYPT_VER=2.0.36-beta.1
 
@@ -934,7 +934,7 @@ menu () {
   read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 q
   case $CHOSEN in
     0)
-      if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then {
+      if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then 
       echo -e "$INFO Thao tác này sẽ hạ cấp DNSCrypt-Proxy phiên bản $PhienBanOff"
       echo -e "$INFO về phiên bản 2.0.36-Beta 1."
       echo
@@ -942,7 +942,8 @@ menu () {
       echo -e "$INFO Thao tác này sẽ nâng cấp DNSCrypt-Proxy phiên bản $PhienBanOff"
       echo -e "$INFO lên phiên bản $PhienBanOn"
       echo
-      read_yesno "Bạn có muốn nâng cấp DNSCrypt-Proxy lên $PhienBanOn?" && NangCap; fi; }; || menu
+      read_yesno "Bạn có muốn nâng cấp DNSCrypt-Proxy lên $PhienBanOn?" && NangCap; fi;
+      menu
       ;;
     1)
       echo -e "$INFO Cần dung lượng tối thiểu 8Mb để cài DNSCrypt-Proxy."
