@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ad"
+PhienBan="20200112ae"
 #DNSCRYPT_VER=2.0.36
 DNSCRYPT_VER=2.0.36-beta.1
 
@@ -363,7 +363,6 @@ NangCap () {
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
-  /jffs/dnscrypt/dnscrypt-proxy --version
   if [ $? -ne 0 ]; then
     end_op_message
     return
