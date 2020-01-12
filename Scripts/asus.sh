@@ -1,7 +1,6 @@
 #!/bin/bash
-PhienBan="20200112aw"
+PhienBan="20200112ax"
 DNSCRYPT_VER=2.0.36
-NangCap="NangCap2"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
 TMdns="/jffs/dnscrypt"
@@ -73,7 +72,7 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 
-  NangCap
+  NangCap2
 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
