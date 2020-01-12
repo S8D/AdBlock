@@ -1,11 +1,12 @@
 #!/bin/bash
-PhienBan="20200112e"
+PhienBan="20200112f"
 #DNSCRYPT_VER=2.0.36-beta.1
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
+TMdns="/jffs/dnscrypt"
 CauHinh="/jffs/dnscrypt/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
@@ -47,12 +48,41 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   tar xzv -C $TM -f $TM/DNSCrypt.tar.gz ; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
   
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-  killall -q -9 dnscrypt-proxy;
-  mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+  if [ $? -ne 0 ]; then
+    echo -e "$ERROR Unable to download dnscrypt-proxy package for your router"
+    end_op_message
+    return
+  fi
+  chown `nvram get http_username`:root ${TM}/${ThuMuc}/*
+  
+  mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; chmod +x $dns
+
+  del_jffs_script /jffs/scripts/wan-start dnscrypt-start
+  write_manager_script /jffs/scripts/dnsmasq.postconf dnsmasq
+  write_manager_script /jffs/scripts/init-start init-start
+  write_manager_script /jffs/scripts/wan-start wan-start
+  setup_dnscrypt
+  if [ $? -ne 0 ]; then
+    end_op_message
+    return
+  fi
+
+  echo -e "$INFO Staring dnscrypt-proxy..."
+  $TARG_DIR/manager dnscrypt-start
+  sleep 1
+  if [ -z "`pidof dnscrypt-proxy`" ]; then
+    echo -e "$ERROR Couldn't start dnscrypt-proxy"
+    echo -e "$ERROR Please send WebUI System Log to dev"
+    end_op_message
+    return
+  fi
+  service restart_dnsmasq
+  manager_monitor_restart
+
   rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
-    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
+    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; else
     echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 fi
 
