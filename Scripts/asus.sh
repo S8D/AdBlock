@@ -53,7 +53,7 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
-    echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
+    echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 fi
 
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
