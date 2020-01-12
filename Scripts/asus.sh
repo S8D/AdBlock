@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112aa"
+PhienBan="20200112ab"
 #DNSCRYPT_VER=2.0.36
 DNSCRYPT_VER=2.0.36-beta.1
 
@@ -17,10 +17,10 @@ Log="${tmDNS}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 upTam="${TM}/tam"; rm -f $upTam;
 
 NangCap () {
-  echo "$DauCau Đang tải DNSCrypt-Proxy"
-  DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
-  #curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
-  cd /opt; curl -s -L -o /opt/dns.tar.gz $DownURL; 
+  echo "$DauCau Đang chạy hàm Nâng cấp 1..."
+  echo "$DauCau Đang tải DNSCrypt-Proxy"; cd /opt;
+  #DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4); curl -s -L -o /opt/dns.tar.gz $DownURL; 
+  curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ; 
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
@@ -30,7 +30,7 @@ NangCap () {
 }
 
 NangCap2 () {
-
+  echo "$DauCau Đang chạy hàm Nâng cấp 2..."
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL
@@ -71,7 +71,9 @@ PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBan
 if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
-  NangCap
+  
+  NangCap2
+
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
