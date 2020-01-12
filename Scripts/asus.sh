@@ -1,8 +1,10 @@
 #!/bin/bash
-PhienBan="20200112f"
+PhienBan="20200112g"
 #GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 Time="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
+dns="/jffs/dnscrypt/dnscrypt-proxy"
+
 echo "$Time $(basename "$0") Đang tạo ShortCut"
 cd /root; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
 cd /opt; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
@@ -24,7 +26,38 @@ cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
 curl -s -L -o $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
 echo "$Time Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
 
+echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
+CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
+
+if CheckGG; then UpLink="gg.gg/_dns"; DownLink="gg.gg/dns_"; net="1"; else
+  if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; net="2"; else
+    if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
+
+if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
+  PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
+  PhienBanOff=$(${dns} --version)
+  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
+    echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
+    echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
+    echo "$DauCau Đang tải DNSCrypt-Proxy..."
+    DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+    $dl1 $TM/DNSCrypt.$duoi $DownURL
+
+    echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
+    $giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
+
+    echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
+    mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+    rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
+
+    echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
+    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
+  fi
+fi
+echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
 #________________________________________________________________________________________
+#!/bin/sh
+
 DNSCRYPT_VER=2.0.36
 
 BOLD="\033[1m"
@@ -34,19 +67,12 @@ ERROR="$BOLD *** Error: $NORM"
 WARNING="$BOLD * Warning: $NORM"
 INPUT="$BOLD => $NORM"
 
-TARG_DIR=/jffs/dnscrypt
-CONF_FILE=$TARG_DIR/.config
-TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
-TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
-TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
-TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
-
-#readonly TARG_DIR=/jffs/dnscrypt
-#readonly CONF_FILE=$TARG_DIR/.config
-#readonly TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
-#readonly TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
-#readonly TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
-#readonly TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
+readonly TARG_DIR=/jffs/dnscrypt
+readonly CONF_FILE=$TARG_DIR/.config
+readonly TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
+readonly TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
+readonly TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
+readonly TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
 
 _quote() {
   echo $1 | sed 's/[]\/()$*.^|[]/\\&/g'
