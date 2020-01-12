@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ab"
+PhienBan="20200112ac"
 #DNSCRYPT_VER=2.0.36
 DNSCRYPT_VER=2.0.36-beta.1
 
@@ -924,7 +924,8 @@ cleanup
 
 menu () {
   echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
-  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"
+  PhienBanOff=$(${dns} --version); if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then 
+  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"; fi
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
   echo -e "  3) Cấu hình DNSCrypt-Proxy"
