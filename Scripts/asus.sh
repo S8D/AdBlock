@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112y"
+PhienBan="20200112z"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -368,9 +368,9 @@ NangCap () {
 HaCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
   cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1; 
-  echo "$DauCau Đang Giải nén DNSCrypt-Proxy"
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ; 
-  echo "$DauCau Đang Giải hạ cấp DNSCrypt-Proxy"
+  echo "$DauCau Đang hạ cấp DNSCrypt-Proxy"
   chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
   mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy; 
