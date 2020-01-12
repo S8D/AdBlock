@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112am"
+PhienBan="20200112an"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -9,6 +9,8 @@ dns="${TMdns}/dnscrypt-proxy"
 CauHinh="${TMdns}/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
+rm -f /jffs/dnscrypt/*.gz; rm -rf /jffs/dnscrypt/linux-arm
+rm -f /jffs/*.gz; rm -rf /jffs/linux-arm
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; else
   echo "$DauCau Scripts chưa hỗ trợ nền tảng đang chạy"; exit 1; fi
