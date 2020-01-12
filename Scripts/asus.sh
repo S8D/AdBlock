@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112l"
+PhienBan="20200112m"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
@@ -31,26 +31,21 @@ if CheckGG; then UpLink="gg.gg/_dns"; DownLink="gg.gg/dns_"; net="1"; else
     if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/dns.sh";
       DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
 
-if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
-  PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
-  PhienBanOff=$(${dns} --version)
-  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
-    echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
-    echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
-    echo "$DauCau Đang tải DNSCrypt-Proxy..."
-    DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
-    $dl1 $TM/DNSCrypt.$duoi $DownURL
-
-    echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
-    $giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
-
-    echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-    mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
-    rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
-
-    echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
-    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
-  fi
+echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
+PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
+if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
+  echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
+  echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
+  echo "$DauCau Đang tải DNSCrypt-Proxy..."
+  DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+  $dl1 $TM/DNSCrypt.$duoi $DownURL
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
+  $giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
+  echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
+  mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+  rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
+  echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
+  echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
 fi
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran`n"
 #________________________________________________________________________________________
