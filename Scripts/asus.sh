@@ -34,11 +34,11 @@ NangCap2 () {
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*.gz | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL;
+
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
-
   tar -zxvf $TM/dns.tar.gz -C $TM
-
   if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!!" ; rm -f ${TM}/dns.tar.gz; fi
+  
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
   chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
   mv $TM/$ThuMuc/dnscrypt-proxy $dns
