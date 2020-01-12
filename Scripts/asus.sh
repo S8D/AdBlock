@@ -1,5 +1,7 @@
 #!/bin/bash
-PhienBan="20200112w"
+PhienBan="20200112x"
+DNSCRYPT_VER=2.0.36-beta.1
+
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
@@ -50,7 +52,6 @@ fi
 
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
 #________________________________________________________________________________________
-DNSCRYPT_VER=2.0.36
 
 BOLD="\033[1m"
 NORM="\033[0m"
