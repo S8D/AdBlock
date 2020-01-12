@@ -1,7 +1,7 @@
 #!/bin/bash
-PhienBan="20200112l"
-#GetTime=$(date +"%F %a %T"); Time="$GetTime -"
-Time="#"
+PhienBan="20200112n"
+GetTime=$(date +"%F %a %T"); Time="$GetTime -"
+DauCau="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -50,7 +50,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Pro
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
   fi
 fi
-echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
+echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran`n"
 #________________________________________________________________________________________
 #asus="/jffs/asus"
 #if [ ! -f "$asus" ]; then curl -s -L -o $asus gg.gg/dns_a; chmod +x $asus; fi; sh $asus
