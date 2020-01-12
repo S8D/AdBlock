@@ -1,6 +1,7 @@
 #!/bin/bash
 PhienBan="20200112aa"
-DNSCRYPT_VER=2.0.36
+#DNSCRYPT_VER=2.0.36
+DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; 
