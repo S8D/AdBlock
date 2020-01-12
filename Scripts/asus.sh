@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112al"
+PhienBan="20200112am"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -362,6 +362,7 @@ NangCap () {
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
+  $TARG_DIR/manager dnscrypt-start
   end_op_message
 }
 
@@ -376,7 +377,20 @@ HaCap () {
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"
+  $TARG_DIR/manager dnscrypt-start
   end_op_message
+}
+
+CaiCauHinh () {
+  echo "$DauCau Đang tải file cấu hình"
+  curl -s -L -o $TMdns/CauHinh.toml
+  echo "$DauCau Đang sao lưu cấu hình hiện tại"
+  cp $CauHinh $TMdns/SaoLuu.toml
+  echo "$DauCau Đang cài cấu hình mới"
+  mv $TMdns/CauHinh.toml $CauHinh
+  echo "$DauCau Đang kiểm tra cấu hình mới"
+  check_dnscrypt_toml
+  $TARG_DIR/manager dnscrypt-start
 }
 
 inst_dnscrypt () {
@@ -922,14 +936,15 @@ menu () {
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
   echo -e "  3) Cấu hình DNSCrypt-Proxy"
-  echo -e "  4) Đặt muối giờ"
-  echo -e "  5) Gỡ muối giờ"
+  echo -e "  4) Đặt múi giờ"
+  echo -e "  5) Gỡ múi giờ"
   echo -e "  6) Cài (P)RNG"
   echo -e "  7) Gỡ (P)RNG"
   echo -e "  8) Cài swap file"
   echo -e "  9) Gỡ hết"
+  echo -e "  c) Cài Cấu hình DNSCrypt-Proxy"
   echo -e "  q) Thoát"
-  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 q
+  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 c q
   case $CHOSEN in
     0)
       if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then 
@@ -997,6 +1012,11 @@ menu () {
       echo -e "$INFO Lựa chọn này sẽ gỡ file swap khỏi router"
       echo
       read_yesno "Bạn có muốn thực hiện?" && uninst_all || menu
+      ;;
+    c|C)
+      echo -e "$INFO Cài cấu hình DNSCrypt-Proxy"
+      echo
+      read_yesno "Bạn có muốn thực hiện?" && CaiCauHinh || menu
       ;;
     q|Q)
       echo -e "$INFO Thoát kịch bản"
