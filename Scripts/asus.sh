@@ -1,13 +1,13 @@
 #!/bin/bash
-PhienBan="20200112m"
+PhienBan="20200112n"
 DNSCRYPT_VER=2.0.36-beta.1
 #DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
-TM="/jffs"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; 
-dns="/jffs/dnscrypt/dnscrypt-proxy"
+TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; 
 TMdns="/jffs/dnscrypt"
-CauHinh="/jffs/dnscrypt/dnscrypt-proxy.toml"
+dns="${TMdns}/dnscrypt-proxy"
+CauHinh="${TMdns}/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
@@ -43,9 +43,9 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL
-  cd $TM
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
-  tar -zxvf dns.tar.gz
+  
+  tar -zxvf $TM/dns.tar.gz
 
   if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!! Đang thoát!" ; rm -f ${TM}/dns.tar.gz; exit 1; fi
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
@@ -330,6 +330,30 @@ end_op_message () {
   echo
   echo
   menu
+}
+
+NangCap () {
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; tar -zxvf dns.tar.gz ; 
+  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
+  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
+  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy; 
+  ./d --version
+  if [ $? -ne 0 ]; then
+    end_op_message
+    return
+  fi
+}
+
+HaCap () {
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1; tar -zxvf dns.tar.gz ; 
+  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
+  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
+  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy; 
+  ./d --version
+  if [ $? -ne 0 ]; then
+    end_op_message
+    return
+  fi
 }
 
 inst_dnscrypt () {
@@ -869,6 +893,7 @@ cleanup
 
 menu () {
   echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
+  echo -e "  0) Hạ cấp DNSCrypt-Proxy 2.0.36-Beta 1"
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
   echo -e "  3) Cấu hình DNSCrypt-Proxy"
@@ -878,9 +903,16 @@ menu () {
   echo -e "  7) Gỡ (P)RNG"
   echo -e "  8) Cài swap file"
   echo -e "  9) Gỡ hết"
+  echo -e "  n) Nâng cấp phiên bản mới nhất"
   echo -e "  q) Thoát"
-  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 1 9 q
+  read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 q n
   case $CHOSEN in
+    0)
+      echo -e "$INFO Thao tác này sẽ hạ cấp DNSCrypt-Proxy phiên bản $PhienBanOff"
+      echo -e "$INFO về phiên bản 2.0.36-Beta 1."
+      echo
+      read_yesno "Bạn có muốn hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1?" && HaCap || menu
+      ;;
     1)
       echo -e "$INFO Cần dung lượng tối thiểu 8Mb để cài DNSCrypt-Proxy."
       echo -e "$INFO Không thay đổi dữ liệu khác trên /jffs."
@@ -935,6 +967,11 @@ menu () {
       echo -e "$INFO Lựa chọn này sẽ gỡ file swap khỏi router"
       echo
       read_yesno "Bạn có muốn thực hiện?" && uninst_all || menu
+      ;;
+    n)
+      echo -e "$INFO Thao tác này sẽ nâng cấp DNSCrypt-Proxy phiên bản $PhienBanOn"
+      echo
+      read_yesno "Bạn có muốn nâng cấp DNSCrypt-Proxy lên phiên bản $PhienBanOn?" && NangCap || menu
       ;;
     q|Q)
       echo -e "$INFO Thoát kịch bản"
