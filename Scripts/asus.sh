@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112g"
+PhienBan="20200112i"
 DNSCRYPT_VER=2.0.36-beta.1
 #DNSCRYPT_VER=2.0.36
 
@@ -45,7 +45,7 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   $dl1 $TM/DNSCrypt.tar.gz $DownURL
   
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf $TM/$ThuMuc
-  tar xzv -C $TM -f $TM/DNSCrypt.tar.gz;
+  tar xzv -C $TM -f ${TM}/DNSCrypt.tar.gz;
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
   chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
   mv $TM/$ThuMuc/dnscrypt-proxy $dns
@@ -81,11 +81,11 @@ _quote() {
 
 check_dnscrypt_toml () {
   [ ! -f $TOML_FILE ] && return
-  echo -e "$INFO Checking dnscrypt-proxy configuration..."
+  echo -e "$INFO Đang kiểm tra file cấu hình..."
   $TARG_DIR/dnscrypt-proxy -check -config $TOML_FILE
   if [ $? -ne 0 ]; then
-    echo -e "$INFO Move invalid configuration file to $TOML_ERR"
-    echo -e "$INFO Operation will continue with clean config file"
+    echo -e "$INFO Dời cấu hình lỗi vào $TOML_ERR"
+    echo -e "$INFO Dùng cấu hình sạch"
     mv $TOML_FILE $TOML_ERR
     return 1
   fi
@@ -93,8 +93,8 @@ check_dnscrypt_toml () {
 
 check_jffs_enabled () {
   if [ "`nvram get jffs2_format`" == "1" ]; then
-    echo -e "$ERROR JFFS partition is scheduled to be reformatted"
-    echo -e "$ERROR Please reboot to format or disable that setting and try again. Exiting..."
+    echo -e "$ERROR Phân vùng sẽ JFFS được định dạng sau khi khởi động lại"
+    echo -e "$ERROR Đang thoát..."
     exit 1
   fi
 
@@ -102,12 +102,12 @@ check_jffs_enabled () {
   local JFFS2_SCRIPTS=`nvram get jffs2_scripts`
 
   if [ $JFFS2_ENABLED -ne 1 ] || [ $JFFS2_SCRIPTS -ne 1 ]; then
-    echo -e "$INFO JFFS custom scripts and configs are not enabled. Enabling them"
+    echo -e "$INFO JFFS chưa được sử dụng. Đang áp dụng..."
     nvram set jffs2_enable=1
     nvram set jffs2_scripts=1
     nvram commit
   else
-    echo -e "$INFO JFFS custom scripts and configs are already enabled"
+    echo -e "$INFO JFFS đã được sử dụng"
   fi
 }
 
@@ -148,7 +148,7 @@ check_opendns () {
 check_swap () {
   local SWAP_SIZE=`awk '/SwapTotal/ {print $2}' /proc/meminfo`
   if [ $SWAP_SIZE -gt 0 ]; then
-    echo -e "$INFO Swap file is already setup"
+    echo -e "$INFO Swap đã được cài"
     end_op_message 0
     return
   fi
@@ -158,14 +158,14 @@ check_swap () {
 
 choose_dnscrypt_server () {
   local USE_IPV6
-  read_yesno "Do you want to use DNS server over IPv6 (yes only if your connection has IPv6)?" && USE_IPV6=true || USE_IPV6=false
+  read_yesno "Bạn có muốn dùng máy chủ DNS IPv6" && USE_IPV6=true || USE_IPV6=false
   toml_gvars_prep ipv6_servers $USE_IPV6
-  echo -e "$INFO Choose DNS resolving load balancing strategy:"
+  echo -e "$INFO Chọn kiểu phân giải DNS:"
   echo -e "  1) p2 (default)"
   echo -e "  2) ph"
   echo -e "  3) fastest"
   echo -e "  4) random"
-  read_input_num "Select your mode" 1 4
+  read_input_num "Chọn chế độ:" 1 4
   case $CHOSEN in
     1)
       toml_gvars_prep lb_strategy "\'p2\'"
@@ -180,10 +180,10 @@ choose_dnscrypt_server () {
       toml_gvars_prep lb_strategy "\'random\'"
       ;;
   esac
-  echo -e "$INFO Choose how your DNS servers are selected:"
-  echo -e "  1) Automatically"
-  echo -e "  2) Manually"
-  read_input_num "Select your mode" 1 2
+  echo -e "$INFO Cách thức chọn máy chủ DNS:"
+  echo -e "  1) Tự động"
+  echo -e "  2) Thủ công"
+  read_input_num "Chọn chế độ" 1 2
   case $CHOSEN in
     1)
       choose_dnscrypt_server_auto
@@ -196,11 +196,11 @@ choose_dnscrypt_server () {
 
 choose_dnscrypt_server_auto () {
   toml_gvar_disable server_names
-  read_yesno "Use servers support the DNSCrypt protocol" && toml_gvars_prep dnscrypt_servers true || toml_gvars_prep dnscrypt_servers false
-  read_yesno "Use servers support the DNS-over-HTTPS protocol" && toml_gvars_prep doh_servers true || toml_gvars_prep doh_servers false
-  read_yesno "Use only servers support DNSSEC" && toml_gvars_prep require_dnssec true || toml_gvars_prep require_dnssec false
-  read_yesno "Use only servers that do not log user's queries" && toml_gvars_prep require_nolog true || toml_gvars_prep require_nolog false
-  read_yesno "Use only servers that do not filter result" && toml_gvars_prep require_nofilter true || toml_gvars_prep require_nofilter false
+  read_yesno "Dùng máy chủ hỗ trợ giao thức DNSCrypt" && toml_gvars_prep dnscrypt_servers true || toml_gvars_prep dnscrypt_servers false
+  read_yesno "Dùng máy chủ hỗ trợ giao thức DNS-over-HTTPS" && toml_gvars_prep doh_servers true || toml_gvars_prep doh_servers false
+  read_yesno "Chỉ dùng máy chủ hỗ trợ DNSSEC" && toml_gvars_prep require_dnssec true || toml_gvars_prep require_dnssec false
+  read_yesno "Chỉ dùng máy chủ KHÔNG lưu truy vấn" && toml_gvars_prep require_nolog true || toml_gvars_prep require_nolog false
+  read_yesno "Chỉ dùng máy chủ KHÔNG lọc kết quả" && toml_gvars_prep require_nofilter true || toml_gvars_prep require_nofilter false
 }
 
 choose_dnscrypt_server_manual () {
@@ -209,12 +209,12 @@ choose_dnscrypt_server_manual () {
     [ "$USE_IPV6" == "true" ] && USE_IPV6="NOMATCH" || USE_IPV6="ipv6"
     local RESOLVERS
     toml_gvars_prep dnscrypt_servers true doh_servers true require_dnssec false require_nolog false require_nofilter false
-    echo -e "$INFO Available DNS servers: "
+    echo -e "$INFO Máy chủ DNS khả dụng: "
     INDEX=`awk -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT)' $TARG_DIR/public-resolvers.md | wc -l`
     awk -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT) {printf "  "; printf ++i") "$2": "; getline; getline; print}' $TARG_DIR/public-resolvers.md
-    read_input_num "Please choose DNS server" 1 $INDEX
+    read_input_num "Chọn máy chủ DNS" 1 $INDEX
   else
-    read_input_num "Please choose next DNS server or press n to stop" 1 $INDEX n
+    read_input_num "Chọn máy chủ DNS tiếp hoặc nhấn n để dừng" 1 $INDEX n
     if [ $? -eq 1 ]; then
       toml_gvars_prep server_names "\"$RESOLVERS\""
       return
@@ -224,7 +224,7 @@ choose_dnscrypt_server_manual () {
   local ITEM
   ITEM=`awk -v INDEX=$CHOSEN -v PATT="$USE_IPV6" '/^## / && ($0 !~ PATT) {i++} i==INDEX {print $2;exit}' $TARG_DIR/public-resolvers.md`
   if [ "`echo $RESOLVERS | grep -F $ITEM`" ]; then
-    echo -e "$INFO $ITEM is already set"
+    echo -e "$INFO $ITEM đã được cài"
   else
     if [ "$RESOLVERS" ]; then
       RESOLVERS="${RESOLVERS%?}, '$ITEM']"
@@ -243,7 +243,7 @@ cleanup () {
 create_dir () {
   mkdir -p "$1"
   if [ $? -ne 0 ]; then
-    echo -e "$ERROR Unable to create $1!"
+    echo -e "$ERROR Không thể tạo $1!"
     return 1
   fi
 }
@@ -303,11 +303,11 @@ download_file () {
     MD5SUM_OLD="`[ -f $TARG/$FILENAME ] && md5sum $TARG/$FILENAME | cut -d' ' -f1`"
     MD5SUM_CURR="`curl -L -k -s \"${URL}.md5sum\"`"
     if [ `echo -n $MD5SUM_CURR | wc -c` -eq 32 ] && [ "$MD5SUM_CURR" ==  "$MD5SUM_OLD" ]; then
-      echo -e "$INFO $FILENAME is up to date. Skipping..."
+      echo -e "$INFO $FILENAME được cập nhật. Đang bỏ qua..."
     else
       local COUNT=0
       while [ $COUNT -lt 3 ]; do
-        echo -e "$INFO Downloading $FILENAME"
+        echo -e "$INFO Đang tải $FILENAME..."
         curl -L -k -s "$URL" -o $TARG/$FILENAME
         if [ $? -eq 0 ]; then
           chmod $PERM $TARG/$FILENAME
@@ -316,14 +316,14 @@ download_file () {
         COUNT=$((COUNT+1))
       done
       if [ $COUNT -eq 3 ]; then
-        echo -e "$ERROR Unable to download ${BOLD}${URL}${NORM}"
+        echo -e "$ERROR Không thể tải ${BOLD}${URL}${NORM}"
       fi
     fi
   done
 }
 
 end_op_message () {
-  [ "$1" == "0" ] && echo -e "$INFO Operation completed. You can quit or continue"
+  [ "$1" == "0" ] && echo -e "$INFO Đã chạy xong. Bạn muốn thoát hoặc chạy tiếp?"
   echo =====================================================
   echo
   echo
@@ -866,17 +866,17 @@ check_jffs_enabled
 cleanup
 
 menu () {
-  echo -e "$INFO Choose what you want to do:"
-  echo -e "  1) Install/Update dnscrypt-proxy"
-  echo -e "  2) Uninstall dnscrypt-proxy"
-  echo -e "  3) Configure dnscrypt-proxy"
-  echo -e "  4) Set timezone"
-  echo -e "  5) Unset timezone"
-  echo -e "  6) Install (P)RNG"
-  echo -e "  7) Uninstall (P)RNG"
-  echo -e "  8) Install swap file"
-  echo -e "  9) Uninstall ALL"
-  echo -e "  q) Quit"
+  echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
+  echo -e "  1) Cài mới DNSCrypt-Proxy"
+  echo -e "  2) Gỡ DNSCrypt-Proxy"
+  echo -e "  3) Cấu hình DNSCrypt-Proxy"
+  echo -e "  4) Đặt muối giờ"
+  echo -e "  5) Gỡ muối giờ"
+  echo -e "  6) Cài (P)RNG"
+  echo -e "  7) Gỡ (P)RNG"
+  echo -e "  8) Cài swap file"
+  echo -e "  9) Gỡ hết"
+  echo -e "  q) Thoát"
   read_input_num "Please enter the number designates your selection:" 1 9 q
   case $CHOSEN in
     1)
