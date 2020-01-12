@@ -52,7 +52,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Pro
 fi
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
 #________________________________________________________________________________________
-asus="/jffs/asus"
+#asus="/jffs/asus"
 #if [ ! -f "$asus" ]; then curl -s -L -o $asus gg.gg/dns_a; chmod +x $asus; fi; sh $asus
 DNSCRYPT_VER=2.0.36
 
