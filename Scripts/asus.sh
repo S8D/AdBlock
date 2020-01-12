@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112b"
+PhienBan="20200112c"
 DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
@@ -46,12 +46,13 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   tar xzv -C $TM -f $TM/DNSCrypt.tar.gz ; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
   
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-  killall -q dnscrypt-proxy; mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+  killall -q -9 dnscrypt-proxy;
+  mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
   rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
-  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time Cập nhật DNSCrypt-Proxy thất bại!!!"; else
-    echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
-    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; fi
+  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log;
+    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; else
+    echo "$Time Cập nhật DNSCrypt-Proxy thất bại!!!"; exit 1; fi
   $dns --config $CauHinh
 fi
 
