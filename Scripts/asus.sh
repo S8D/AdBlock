@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112p"
+PhienBan="20200112q"
 #DNSCRYPT_VER=2.0.36-beta.1
 DNSCRYPT_VER=2.0.36
 
@@ -968,7 +968,7 @@ menu () {
       echo
       read_yesno "Bạn có muốn thực hiện?" && uninst_all || menu
       ;;
-    n)
+    n|N)
       echo -e "$INFO Thao tác này sẽ nâng cấp DNSCrypt-Proxy phiên bản $PhienBanOn"
       echo
       read_yesno "Bạn có muốn nâng cấp DNSCrypt-Proxy lên phiên bản $PhienBanOn?" && NangCap || menu
