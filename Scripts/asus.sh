@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112aj"
+PhienBan="20200112al"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -71,7 +71,7 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 
-  #NangCap
+  NangCap
 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
@@ -397,7 +397,7 @@ inst_dnscrypt () {
   chown nobody:nobody $TARG_DIR/public-resolvers.md $TARG_DIR/public-resolvers.md.minisig $TARG_DIR/relays.md $TARG_DIR/relays.md.minisig
   tar xzv -C $TARG_DIR -f $TARG_DIR/$DNSCRYPT_TAR
   if [ $? -ne 0 ]; then
-    echo -e "$ERROR Unable to download dnscrypt-proxy package for your router"
+    echo -e "$ERROR Không thể tải DNSCrypt-Proxy"
     end_op_message
     return
   fi
@@ -416,22 +416,22 @@ inst_dnscrypt () {
     return
   fi
 
-  echo -e "$INFO Staring dnscrypt-proxy..."
+  echo -e "$INFO Đang chạy DNSCrypt-Proxy..."
   $TARG_DIR/manager dnscrypt-start
   sleep 1
   if [ -z "`pidof dnscrypt-proxy`" ]; then
-    echo -e "$ERROR Couldn't start dnscrypt-proxy"
-    echo -e "$ERROR Please send WebUI System Log to dev"
+    echo -e "$ERROR Không thể chạy DNSCrypt-Proxy"
+    echo -e "$ERROR Xem WebUI > System Log để biết thêm"
     end_op_message
     return
   fi
   service restart_dnsmasq
   manager_monitor_restart
 
-  echo -e "$INFO For dnscrypt-proxy version 2 to work reliably, you might also want to:"
-  echo -e "$INFO  - Add swap"
-  echo -e "$INFO  - Add a RNG"
-  echo -e "$INFO  - Set your timezone"
+  echo -e "$INFO DNSCrypt-Proxy đã được cài xong, bạn có muốn cài thêm:"
+  echo -e "$INFO  - Cài swap"
+  echo -e "$INFO  - Cài RNG"
+  echo -e "$INFO  - Cài múi giờ"
   end_op_message 0
 }
 
@@ -543,20 +543,20 @@ inst_swap () {
   local SWAP_SIZE=524288
   local USB_COUNT=`df | awk -v SWS=$(($SWAP_SIZE * 2)) '/\/tmp\/mnt\// {if ($4 > SWS){print $6}}' | wc -l`
   if [ $USB_COUNT -lt 1 ]; then
-    echo -e "$ERROR Unable to find any external USB storage"
-    echo -e "$ERROR Or no suitable external USB storage found"
-    echo -e "$ERROR Please connect a USB storage with at least"
-    echo -e "$ERROR $(($SWAP_SIZE * 2 / 1024))MB of free space"
+    echo -e "$ERROR Không tìm thấy thiết bị gắn ngoài"
+    echo -e "$ERROR swap sẽ không hoạt động nếu không có USB"
+    echo -e "$ERROR Cắm USB vào router"
+    echo -e "$ERROR Còn trống $(($SWAP_SIZE * 2 / 1024))MB"
     end_op_message
     return
   fi
 
-  echo -e "$INFO Available partition to install swap file:$NORM"
+  echo -e "$INFO Phân vùng đã được cài file swap:$NORM"
   df | awk -v SWS=$(($SWAP_SIZE * 2)) '/\/tmp\/mnt\// {if ($4 > SWS){++i; print "  " i ") " $6 " (" $4/1024 "MB free)"}}'
-  read_input_num "Please select the partition to install swap file" 1 $USB_COUNT
+  read_input_num "Chọn phân vùng để cài file swap" 1 $USB_COUNT
   local MOUNT=`df | awk -v IDX=$CHOSEN -v SWS=$(($SWAP_SIZE * 2)) '/\/tmp\/mnt\// {if ($4 > SWS){++i; if (i==IDX){print $6}}}'`
 
-  echo -e "$INFO Please wait..."
+  echo -e "$INFO Chờ xí..."
   dd if=/dev/zero of="$MOUNT/swap" bs=1024 count=$SWAP_SIZE
   local MOUNT_FS=`df -T "$MOUNT"|awk 'FNR==2 {print $2}'`
   [ ${MOUNT_FS%?} == "ext" ] && chmod 600 "$MOUNT/swap"
@@ -569,7 +569,7 @@ inst_swap () {
     write_command_script /jffs/scripts/unmount '[ -f "$1/swap" ] && swapoff "$1/swap"'
     end_op_message 0
   else
-    echo -e "$ERROR Unable to create swap. Get the command log to dev"
+    echo -e "$ERROR Không thể tạo file swap. Đọc log để biết thêm"
     end_op_message
   fi
 }
@@ -579,7 +579,7 @@ read_input_dns () {
   read DNS_SERVER
   [ -z $DNS_SERVER ] && DNS_SERVER=$2
   if [ "`echo $DNS_SERVER | awk -F'.' 'NF != 4 || $1 < 0 || $1 > 255 || $2 < 0 || $2 > 255 || $3 < 0 || $3 > 255 || $4 < 0 || $4 > 255 {print}'`" ]; then
-    echo -e "$ERROR Invalid DNS server address entered"
+    echo -e "$ERROR Bạn nhập sai địa chỉ máy chủ rồi!!!"
     read_input_dns "$@"
   fi
 }
@@ -595,12 +595,12 @@ read_input_num () {
     return 1
   fi
   if [ -z "`echo $CHOSEN | grep -E '^[0-9]+$'`" ]; then
-    echo -e "$ERROR Invalid character entered! Retrying..."
+    echo -e "$ERROR Bạn nhập sai rồi! Đang thử lại..."
     read_input_num "$@"
     return
   fi
   if [ $CHOSEN -lt $2 ] || [ $CHOSEN -gt $3 ] ; then
-    echo -e "$ERROR Chosen number is not in range! Retrying..."
+    echo -e "$ERROR Giá trị nhập vào hơi lớn! Đang thử lại..."
     read_input_num "$@"
     return
   fi
@@ -618,7 +618,7 @@ read_yesno () {
       return 1
       ;;
     *)
-      echo -e "$ERROR Invalid input!"
+      echo -e "$ERROR Nhập giá trị sai!"
       read_yesno "$@"
       ;;
   esac
@@ -626,17 +626,17 @@ read_yesno () {
 
 setup_dnscrypt () {
   if [ ! -f $TOML_ORI ] || [ ! -f $TARG_DIR/dnscrypt-proxy ]; then
-    echo -e "$ERROR dnscrypt-proxy is not installed. Aborting..."
+    echo -e "$ERROR DNSCrypt-Proxy không được cài đặt. Đang dừng..."
     return
   fi
 
-  echo -e "$INFO Configuring dnscrypt-proxy..."
+  echo -e "$INFO Đang cấu hình DNSCrypt-Proxy..."
   setup_dnscrypt_impl "$@"
   local RET=$?
   check_opendns
   if [ "$1" == "reconfig" ]; then
     if [ $RET -eq 0 ]; then
-      echo -e "$INFO Restarting dnscrypt-proxy with new config..."
+      echo -e "$INFO Đang khởi động lại DNSCrypt-Proxy với file cấu hình mới..."
       $TARG_DIR/manager dnscrypt-start
       end_op_message 0
     else
@@ -652,8 +652,8 @@ setup_dnscrypt_impl () {
       setup_dnscrypt_impl x
       return
     fi
-    echo -e "$INFO Found previous dnscrypt-proxy config file"
-    read_yesno "Do you want to use this file without reconfiguring?" && echo -e "$INFO Use previous settings file" || setup_dnscrypt_impl x
+    echo -e "$INFO Tìm thấy file cấu hình cũ"
+    read_yesno "Bạn có muốn dùng file cấu hình cũ?" && echo -e "$INFO Dùng file cấu hình cũ" || setup_dnscrypt_impl x
   else
     if [ -f $TOML_FILE ]; then
       if [ "$1" == "reconfig" ]; then
@@ -662,18 +662,18 @@ setup_dnscrypt_impl () {
           setup_dnscrypt_impl x
           return
         fi
-        echo -e "$INFO Found previous dnscrypt-proxy config file"
+        echo -e "$INFO Tìm thấy file cấu hình cũ"
       fi
-      echo -e "$INFO How do you want to reconfigure:"
-      echo -e "$INFO   1) Start from previous settings file"
-      echo -e "$INFO   2) Start from default config"
-      read_input_num "Your selection" 1 2
+      echo -e "$INFO Bạn muốn làm gì với nó:"
+      echo -e "$INFO   1) Dùng file cấu hình cũ"
+      echo -e "$INFO   2) Dùng file cấu hình mặc định"
+      read_input_num "Lựa chọn của bạn là:" 1 2
       case $CHOSEN in
         1)
-          echo -e "$INFO Use previous settings file"
+          echo -e "$INFO Dùng file cấu hình cũ"
           ;;
         2)
-          echo -e "$INFO Backing up previous settings file..."
+          echo -e "$INFO Đang sao lưu cấu hình..."
           mv $TOML_FILE $TOML_BAK
           cp -f $TOML_ORI $TOML_FILE
           ;;
@@ -682,19 +682,19 @@ setup_dnscrypt_impl () {
       cp -f $TOML_ORI $TOML_FILE
     fi
     local GVARS_ARGS
-    read_yesno "Do you want to redirect all DNS resolutions on your network through this proxy?" && write_manager_script /jffs/scripts/firewall-start fw-rules || del_jffs_script /jffs/scripts/firewall-start
+    read_yesno "Bạn có muốn cài mọi truy vấn thông qua DNSCrypt-Proxy?" && write_manager_script /jffs/scripts/firewall-start fw-rules || del_jffs_script /jffs/scripts/firewall-start
     choose_dnscrypt_server
 
-    echo -e "$INFO Set a DNS server for initializing dnscrypt-proxy"
-    echo -e "$INFO and router services (e.g. ntp) at boot"
-    read_input_dns "Default is" 8.8.4.4
-    read_input_num "Set log level, default is 2, 0 is the most verbose" 0 6
+    echo -e "$INFO Cài máy chủ DNS mặc định cho DNSCrypt-Proxy"
+    echo -e "$INFO DNSCrypt-Proxy sẽ dùng máy chủ này khi khởi động"
+    read_input_dns "Mặc định là" 8.8.4.4
+    read_input_num "Cài cấp độ log. Mặc định là 2, 0 ghi nhiều nhất" 0 6
     toml_gvars_prep fallback_resolver "\'$DNS_SERVER:53\'" log_level $CHOSEN ignore_system_dns true listen_addresses "[\'127.0.0.1:65053\']" cache false cert_ignore_timestamp true user_name "\'nobody\'" max_clients 25000 keepalive 120 netprobe_timeout 120 netprobe_address "\'$DNS_SERVER:53\'"
-    echo -e "$INFO Writing dnscrypt-proxy configuration..."
+    echo -e "$INFO Đang cấu hình DNSCrypt-Proxy..."
     eval toml_gvars_write $GVARS_ARGS
     check_dnscrypt_toml
     if [ $? -ne 0 ]; then
-      echo -e "$INFO Writing dnscrypt-proxy configuration failed"
+      echo -e "$INFO Cấu hình DNSCrypt-Proxy thất bại!!!"
       echo -e "$INFO Please send $TOML_ERR file and screen log of "
       echo -e "$INFO all operations you have made to this script dev"
       return 1
@@ -709,15 +709,15 @@ set_timezone () {
   download_file $TARG_DIR 755 $URL_GEN/manager
   download_file $TMP 644 $URL_GEN/$TZ_DATA
   local INDEX=`tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | wc -l`
-  echo -e "$INFO Available timezones/locations:"
+  echo -e "$INFO Múi giờ khả dụng:"
   tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=0 -F'/' '!/\/$/ {++INDEX;printf "  " INDEX") ";for (i=5; i<NF; i++)  printf $i "/"; print $NF}'
-  read_input_num "Select your timezone/location" 1 $INDEX
+  read_input_num "Chọn múi giờ của bạn" 1 $INDEX
   local TZ_FILE="`tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=$CHOSEN '{++i}i==INDEX{print $0}'`"
   echo -e "$INFO `basename $TZ_FILE` selected"
   tar xjf $TMP/$TZ_DATA -C $TMP usr/share/zoneinfo/posix
   mv "$TMP/$TZ_FILE" $TARG_DIR/localtime
   if [ $? -ne 0 ]; then
-    echo -e "$ERROR Unable to set your timezone file"
+    echo -e "$ERROR Không thể cài múi giờ"
     end_op_message
     return
   fi
@@ -793,19 +793,19 @@ uninst_all () {
 }
 
 uninst_dnscrypt () {
-  echo -e "$INFO Uninstalling dnscrypt-proxy..."
+  echo -e "$INFO Đang gỡ DNSCrypt-Proxy..."
   rm -f $TARG_DIR/dnscrypt-proxy $TARG_DIR/nonroot
   del_jffs_script /jffs/scripts/dnsmasq.postconf
   del_jffs_script /jffs/scripts/firewall-start
   del_jffs_script /jffs/scripts/wan-start
   killall -q dnscrypt-proxy
   service restart_dnsmasq
-  echo -e "$INFO Some configuration files are not removed in case you want to reinstall"
+  echo -e "$INFO Một vài file cấu hình phát sinh có thể chưa được gỡ hết"
   end_op_message 0
 }
 
 uninst_random () {
-  echo -e "$INFO Uninstalling (P)RNG..."
+  echo -e "$INFO Đang gỡ (P)RNG..."
   rm -f $TARG_DIR/haveged $TARG_DIR/rngd $TARG_DIR/stty
   killall -q -9 haveged rngd
   del_conf RAN_PRV RNG_DEV
@@ -840,15 +840,15 @@ write_command_script () {
   local FILENAME="`basename \"$TARG\"`"
 
   if [ ! -f $TARG ]; then
-    echo -e "$INFO Creating $FILENAME file"
+    echo -e "$INFO Đang tạo file $FILENAME"
     echo "#!/bin/sh" > $TARG
   fi
   chmod 755 $TARG
 
   if [ `grep -c -F "$COMMAND" $TARG` -gt 0 ]; then
-    echo -e "$INFO $FILENAME file already configured"
+    echo -e "$INFO $FILENAME đã được cấu hình"
   else
-    echo -e "$INFO Configure $FILENAME file"
+    echo -e "$INFO Đang cấu hình file $FILENAME"
     echo "$COMMAND" >> $TARG
   fi
 }
@@ -860,16 +860,16 @@ write_manager_script () {
   local COMMAND=$TARG_DIR/manager
 
   if [ ! -f $TARG ]; then
-    echo -e "$INFO Creating $FILENAME file"
+    echo -e "$INFO Đang tạo file $FILENAME"
     echo "#!/bin/sh" > $TARG
   fi
   chmod 755 $TARG $COMMAND
   del_between_magic $TARG dnscrypt-asuswrt-installer
 
   if [ `grep -c -F "[ -x $COMMAND ] && $COMMAND $OP" $TARG` -gt 0 ]; then
-    echo -e "$INFO $FILENAME file already configured"
+    echo -e "$INFO $FILENAME đã được cấu hình"
   else
-    echo -e "$INFO Configure $FILENAME file"
+    echo -e "$INFO Đang cấu hình file $FILENAME"
     if [ "`grep \"^$COMMAND\" $TARG`" ]; then
       sed -i "s~^$COMMAND~[ -x $COMMAND ] \&\& $COMMAND $OP~" $TARG
     else
@@ -889,13 +889,13 @@ case $(uname -m) in
     URL_ARCH=$URL_ARCH/armv7
     DNSCRYPT_ARCH=linux_arm
     DNSCRYPT_ARCH_TAR=linux-arm
-    echo -e "$INFO Detected ARMv7 architecture."
+    echo -e "$INFO Đang dùng kiến trúc ARMv7."
     ;;
   aarch64)
     URL_ARCH=$URL_ARCH/armv8
     DNSCRYPT_ARCH=linux_arm64
     DNSCRYPT_ARCH_TAR=linux-arm64
-    echo -e "$INFO Detected ARMv8 architecture."
+    echo -e "$INFO Đang dùng kiến trúc ARMv8."
     ;;
   # mips)
     # URL_ARCH=$URL_ARCH/mips
@@ -906,7 +906,7 @@ case $(uname -m) in
     # echo -e "$WARNING USE AT YOUR OWN RISK"
     # ;;
   *)
-    echo "This is unsupported platform, sorry."
+    echo "Xin lỗi nhé, kịch bản hiện tại chưa hỗ trợ nền tảng của bạn."
     exit 1
     ;;
 esac
