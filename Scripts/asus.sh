@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112w"
+PhienBan="20200112x"
 #DNSCRYPT_VER=2.0.36-beta.1
 DNSCRYPT_VER=2.0.36
 
@@ -16,8 +16,19 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; else
 Log="${tmDNS}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 upTam="${TM}/tam"; rm -f $upTam;
 
+NangCap () {
+  echo "$DauCau Đang tải DNSCrypt-Proxy"
+  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
+  echo "$DauCau Đang Giải nén DNSCrypt-Proxy"
+  tar -zxvf dns.tar.gz ; 
+  echo "$DauCau Đang Giải nâng cấp DNSCrypt-Proxy"
+  chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
+  mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
+  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
+}
+
 NangCap2 () {
-  
+
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/dns.tar.gz $DownURL
