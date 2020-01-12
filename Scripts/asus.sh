@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112f"
+PhienBan="20200112g"
 DNSCRYPT_VER=2.0.36-beta.1
 #DNSCRYPT_VER=2.0.36
 
@@ -44,13 +44,14 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
   $dl1 $TM/DNSCrypt.tar.gz $DownURL
   
-  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
-  tar xzv -C $TM -f $TM/DNSCrypt.tar.gz ; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy  
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf $TM/$ThuMuc
+  tar xzv -C $TM -f $TM/DNSCrypt.tar.gz;
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
   chown `nvram get http_username`:root ${TM}/${ThuMuc}/dnscrypt-proxy
-  mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+  mv $TM/$ThuMuc/dnscrypt-proxy $dns
+  chmod 755 $dns
 
-  rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
+  rm -rf $TM/$ThuMuc; rm -f $TM/DNSCrypt.tar.gz; rm -f $upTam;
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
     echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
