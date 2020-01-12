@@ -1,10 +1,10 @@
 #!/bin/bash
-PhienBan="20200112d"
+PhienBan="20200112e"
 #GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 Time="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
-cd /root; rm -f d; rm -rf dns; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
-cd /opt; rm -f d; rm -rf dns; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
+cd /root; rm -i s; rm -i dns; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
+cd /opt; rm -i s; rm -i dns; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/jffs"; TMLog="${TM}/dns"; mkdir -p $TMLog; fi
