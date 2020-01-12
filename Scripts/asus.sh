@@ -1,10 +1,11 @@
 #!/bin/bash
-PhienBan="20200112y"
+PhienBan="20200112z"
 DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
+CauHinh="/jffs/dnscrypt/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
@@ -21,7 +22,7 @@ if [ $net -eq 1 ]; then PhienBanMoi=$(${dl2} "gg.gg/_asus" | grep PhienBan\= | s
 if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
   cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
-  $dl1 $upTam gg.gg/_asus; chmod +x $upTam; killall -q dnscrypt-proxy; mv $upTam ${TM}/$0
+  $dl1 $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
   echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
@@ -44,10 +45,13 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
   $giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-  mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
+  killall -q dnscrypt-proxy; mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
   rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
-  echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
-  echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
+  PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
+  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time Cập nhật DNSCrypt-Proxy thất bại!!!"; else
+    echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
+    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; fi
+  $dns --config $CauHinh
 fi
 
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
