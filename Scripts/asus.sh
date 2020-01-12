@@ -1,6 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ai"
-#DNSCRYPT_VER=2.0.36
+PhienBan="20200112af"
 DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -929,7 +928,6 @@ menu () {
   echo -e "  7) Gỡ (P)RNG"
   echo -e "  8) Cài swap file"
   echo -e "  9) Gỡ hết"
-  echo -e "  n) Nâng cấp DNSCrypt-Proxy lên phiên bản mới nhất"
   echo -e "  q) Thoát"
   read_input_num "Nhấn phím tương ứng với yêu cầu của bạn:" 0 9 q
   case $CHOSEN in
