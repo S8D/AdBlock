@@ -6,9 +6,6 @@ Time="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
 asus="/jffs/asus"
 dl1="curl -s -L -o"; dl2="curl -s -L"
-echo "$Time $(basename "$0") Đang tạo ShortCut"
-if [ ! -f "/root/dns" ]; then cd /root; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns; fi
-if [ ! -f "/opt/dns" ]; then cd /opt; ln -s /jffs/dnscrypt/dnscrypt-proxy d; ln -s /jffs/dnscrypt/ dns; fi
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; duoi="tar.gz"; giainen="tar -C ${TM} -xvf"; TM="/root"; TMLog="/www"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; 
@@ -39,7 +36,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Pro
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
   PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
-    echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
+    echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
     echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
     echo "$DauCau Đang tải DNSCrypt-Proxy..."
     DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
