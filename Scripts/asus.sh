@@ -1,17 +1,17 @@
 #!/bin/bash
-PhienBan="20200112n"
+PhienBan="20200112p"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
-function Nhay
-{
-    label=$1
-    cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
-    eval "$cmd"
-    exit
+function Nhay {
+  label=$1
+  cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
+  eval "$cmd"
+  exit
 }
+
 start=${1:-"start"}; Nhay $start
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
