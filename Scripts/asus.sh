@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112o"
+PhienBan="20200112p"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
@@ -50,5 +50,3 @@ fi
 
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran`n"
 #________________________________________________________________________________________
-#asus="/jffs/asus"
-#if [ ! -f "$asus" ]; then curl -s -L -o $asus gg.gg/dns_a; chmod +x $asus; fi; sh $asus
