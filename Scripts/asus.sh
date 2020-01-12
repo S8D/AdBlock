@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112q"
+PhienBan="20200112w"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
@@ -15,11 +15,11 @@ upTam="${TM}/tam"; rm -f $upTam;
 echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
-if [ $net -eq 1 ]; then PhienBanMoi=$(curl -s -L "gg.gg/_asus" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+if [ $net -eq 1 ]; then PhienBanMoi=$(${dl2} "gg.gg/_asus" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
   cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
-  curl -s -L -o $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
+  $dl1 $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
   echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
