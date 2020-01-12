@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112az"
+PhienBan="20200112ba"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
@@ -728,13 +728,13 @@ set_timezone () {
 
   download_file $TARG_DIR 755 $URL_GEN/manager
   download_file $TMP 644 $URL_GEN/$TZ_DATA
-  local INDEX=`tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | wc -l`
+  local INDEX=`tar -jf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | wc -l`
   echo -e "$INFO Múi giờ khả dụng:"
-  tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=0 -F'/' '!/\/$/ {++INDEX;printf "  " INDEX") ";for (i=5; i<NF; i++)  printf $i "/"; print $NF}'
+  tar -jf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=0 -F'/' '!/\/$/ {++INDEX;printf "  " INDEX") ";for (i=5; i<NF; i++)  printf $i "/"; print $NF}'
   read_input_num "Chọn múi giờ" 1 $INDEX
-  local TZ_FILE="`tar tjf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=$CHOSEN '{++i}i==INDEX{print $0}'`"
+  local TZ_FILE="`tar -jf $TMP/$TZ_DATA | awk -F'/' '!/\/$/ && !/PaxHeader/ && /\/posix\//' | sort | awk -v INDEX=$CHOSEN '{++i}i==INDEX{print $0}'`"
   echo -e "$INFO `basename $TZ_FILE` được chọn"
-  tar xjf $TMP/$TZ_DATA -C $TMP usr/share/zoneinfo/posix
+  tar -jf $TMP/$TZ_DATA -C $TMP usr/share/zoneinfo/posix
   mv "$TMP/$TZ_FILE" $TARG_DIR/localtime
   if [ $? -ne 0 ]; then
     echo -e "$ERROR Không thể cài múi giờ!!!"
