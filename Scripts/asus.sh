@@ -34,7 +34,7 @@ if CheckGG; then UpLink="gg.gg/_dns"; DownLink="gg.gg/dns_"; net="1"; else
 echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
 if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
-  echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; Nhay start; else
+  echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
