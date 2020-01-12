@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112x"
+PhienBan="20200112y"
 DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
@@ -21,7 +21,7 @@ if [ $net -eq 1 ]; then PhienBanMoi=$(${dl2} "gg.gg/_asus" | grep PhienBan\= | s
 if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
   cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
-  $dl1 $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
+  $dl1 $upTam gg.gg/_asus; chmod +x $upTam; killall -q dnscrypt-proxy; mv $upTam ${TM}/$0
   echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
@@ -630,7 +630,7 @@ setup_dnscrypt_impl () {
 
     echo -e "$INFO Set a DNS server for initializing dnscrypt-proxy"
     echo -e "$INFO and router services (e.g. ntp) at boot"
-    read_input_dns "Default is" 8.8.8.8
+    read_input_dns "Default is" 8.8.4.4
     read_input_num "Set log level, default is 2, 0 is the most verbose" 0 6
     toml_gvars_prep fallback_resolver "\'$DNS_SERVER:53\'" log_level $CHOSEN ignore_system_dns true listen_addresses "[\'127.0.0.1:65053\']" cache false cert_ignore_timestamp true user_name "\'nobody\'" max_clients 25000 keepalive 120 netprobe_timeout 120 netprobe_address "\'$DNS_SERVER:53\'"
     echo -e "$INFO Writing dnscrypt-proxy configuration..."
