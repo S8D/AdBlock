@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112ap"
+PhienBan="20200112aq"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -33,8 +33,9 @@ NangCap () {
 NangCap2 () {
   echo "$DauCau Đang chạy hàm Nâng cấp 2..."
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
-  DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4)
-  $dl1 $TM/dns.tar.gz $DownURL
+  DownURL=$(${dl2} $DownLink | grep browser_download_url.*.gz | grep $linktai | cut -d '"' -f 4)
+  echo "URL: $DownURL"
+  $dl1 $TM/dns.tar.gz gg.gg/dnsc_;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
 
   tar -zxvf $TM/dns.tar.gz
@@ -73,7 +74,7 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 
-  NangCap
+  NangCap2
 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
@@ -365,7 +366,7 @@ NangCap () {
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
   $TARG_DIR/manager dnscrypt-start
-  end_op_message
+  echo "$DauCau"
   menu
 }
 
@@ -381,7 +382,7 @@ HaCap () {
   PhienBanOff=$(${dns} --version)
   echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"
   $TARG_DIR/manager dnscrypt-start
-  end_op_message
+  echo "$DauCau"
   menu
 }
 
@@ -395,6 +396,8 @@ CaiCauHinh () {
   echo "$DauCau Đang kiểm tra cấu hình mới"
   check_dnscrypt_toml
   $TARG_DIR/manager dnscrypt-start
+  echo "$DauCau Đã cập nhật cấu hình mới"
+  echo "$DauCau"
   menu
 }
 
