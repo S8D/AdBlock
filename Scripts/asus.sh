@@ -1,14 +1,14 @@
 #!/bin/bash
-PhienBan="20200112aq"
+PhienBan="20200112aw"
 DNSCRYPT_VER=2.0.36
-
+NangCap="NangCap2"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS;
 TMdns="/jffs/dnscrypt"
 dns="${TMdns}/dnscrypt-proxy"
 CauHinh="${TMdns}/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
-
+rm -f ${TM}/*.minisig
 rm -f /jffs/dnscrypt/*.gz; rm -rf /jffs/dnscrypt/linux-arm
 rm -f /jffs/*.gz; rm -rf /jffs/linux-arm
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
@@ -17,7 +17,7 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; else
 Log="${tmDNS}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 upTam="${TM}/tam"; rm -f $upTam;
 
-NangCap () {
+NangCap1 () {
   echo "$DauCau Đang chạy hàm Nâng cấp 1..."
   echo "$DauCau Đang tải DNSCrypt-Proxy"; cd /opt;
   #DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4); curl -s -L -o /opt/dns.tar.gz $DownURL;
@@ -34,11 +34,10 @@ NangCap2 () {
   echo "$DauCau Đang chạy hàm Nâng cấp 2..."
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*.gz | grep $linktai | cut -d '"' -f 4)
-  echo "URL: $DownURL"
-  $dl1 $TM/dns.tar.gz gg.gg/dnsc_;
+  $dl1 $TM/dns.tar.gz $DownURL;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy..."
 
-  tar -zxvf $TM/dns.tar.gz
+  tar -zxvf $TM/dns.tar.gz -C $TM
 
   if [ ! -f "$TM/$ThuMuc/dnscrypt-proxy" ]; then echo "$DauCau Giải nén DNSCrypt-Proxy thất bại!!!" ; rm -f ${TM}/dns.tar.gz; fi
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
@@ -74,7 +73,7 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 
-  NangCap2
+  NangCap
 
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
