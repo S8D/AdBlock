@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112z"
+PhienBan="20200112a"
 DNSCRYPT_VER=2.0.36-beta.1
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
@@ -9,8 +9,8 @@ CauHinh="/jffs/dnscrypt/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
-if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; 
-  giainen="tar -C ${TM} -xvf"; TM="/jffs"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; else
+if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz";  
+  giainen="tar xzv -C ${TM} -f"; TM="/jffs"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; else
   echo "$DauCau Scripts chưa hỗ trợ nền tảng đang chạy"; exit 1; fi
 Log="${tmDNS}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 upTam="${TM}/tam"; rm -f $upTam;
