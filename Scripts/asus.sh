@@ -1,6 +1,5 @@
 #!/bin/bash
-PhienBan="20200112x"
-#DNSCRYPT_VER=2.0.36-beta.1
+PhienBan="20200112y"
 DNSCRYPT_VER=2.0.36
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
@@ -19,9 +18,9 @@ upTam="${TM}/tam"; rm -f $upTam;
 NangCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
   cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
-  echo "$DauCau Đang Giải nén DNSCrypt-Proxy"
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ; 
-  echo "$DauCau Đang Giải nâng cấp DNSCrypt-Proxy"
+  echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
   chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
   mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
@@ -351,9 +350,9 @@ end_op_message () {
 NangCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
   cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_; 
-  echo "$DauCau Đang Giải nén DNSCrypt-Proxy"
+  echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ; 
-  echo "$DauCau Đang Giải nâng cấp DNSCrypt-Proxy"
+  echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
   chown `nvram get http_username`:root /opt/linux-arm/dnscrypt-proxy; 
   mv /opt/linux-arm/dnscrypt-proxy /jffs/dnscrypt/dnscrypt-proxy; 
   rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; chmod 755 /jffs/dnscrypt/dnscrypt-proxy;
