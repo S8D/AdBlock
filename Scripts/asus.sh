@@ -1,9 +1,18 @@
 #!/bin/bash
-PhienBan="20200112m"
+PhienBan="20200112n"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 dns="/jffs/dnscrypt/dnscrypt-proxy"
 dl1="curl -s -L -o"; dl2="curl -s -L"
+
+function Nhay
+{
+    label=$1
+    cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
+    eval "$cmd"
+    exit
+}
+start=${1:-"start"}; Nhay $start
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; duoi="tar.gz"; 
@@ -34,7 +43,7 @@ if CheckGG; then UpLink="gg.gg/_dns"; DownLink="gg.gg/dns_"; net="1"; else
 echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
 if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
-  echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
+  echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; Nhay start; else
   echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
   echo "$DauCau Đang tải DNSCrypt-Proxy..."
   DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
@@ -47,6 +56,8 @@ if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn 
   echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
   echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
 fi
+
+start:
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran`n"
 #________________________________________________________________________________________
 #asus="/jffs/asus"
