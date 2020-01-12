@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112i"
+PhienBan="20200112j"
 #GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 Time="#"
 #echo "$Time $(basename "$0") phiên bản $PhienBan"
@@ -17,7 +17,7 @@ if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; du
 [ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 #echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
-upTam="${TM}/dns/tam"; rm -f $upTam
+upTam="${TM}/tam"; rm -f $upTam;
 echo "$Time Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
 if CheckNet; then net=1; else net=0; fi
