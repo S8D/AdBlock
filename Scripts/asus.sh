@@ -1,20 +1,9 @@
 #!/bin/bash
-PhienBan="20200113ak"
+PhienBan="20200113al"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
 TMdns="/jffs/dnscrypt"
-echo "$DauCau Đang kiểm tra log"
-lTruyVan="${TMdns}/TruyVan.log"; if [ ! -f "$lTruyVan" ] then echo '' > $lTruyVan; fi;
-lDen="${TMdns}/Den.log"; if [ ! -f "$lDen" ] then echo '' > $lDen; fi;
-lTrang="${TMdns}/Trang.log"; if [ ! -f "$lTrang" ] then echo '' > $lTrang; fi;
-lipDen="${TMdns}/ipDen.log"; if [ ! -f "$lipDen" ] then echo '' > $lipDen; fi;
-lNX="${TMdns}/NX.log"; if [ ! -f "$lNX" ] then echo '' > $lNX; fi;
-tChoang="${TMdns}/Choang.txt"; if [ ! -f "$tChoang" ] then echo '' > $tChoang; fi;
-tChuyen="${TMdns}/Chuyen.txt"; if [ ! -f "$tChuyen" ] then echo '' > $tChuyen; fi;
-tDen="${TMdns}/Den.txt"; if [ ! -f "$tDen" ] then echo '' > $tDen; fi;
-tipDen="${TMdns}/ipDen.txt"; if [ ! -f "$tipDen" ] then echo '' > $tipDen; fi;
-tTrang="${TMdns}/Trang.txt"; if [ ! -f "$tTrang" ] then echo '' > $tTrang; fi;
 dns="${TMdns}/dnscrypt-proxy"
 CauHinh="${TMdns}/dnscrypt-proxy.toml"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -397,6 +386,17 @@ HaCap () {
 }
 
 CaiCauHinh () {
+  echo "$DauCau Đang kiểm tra log"
+  lTruyVan="${TMdns}/TruyVan.log"; if [ ! -f "$lTruyVan" ]; then echo '' > $lTruyVan; fi;
+  lDen="${TMdns}/Den.log"; if [ ! -f "$lDen" ]; then echo '' > $lDen; fi;
+  lTrang="${TMdns}/Trang.log"; if [ ! -f "$lTrang" ]; then echo '' > $lTrang; fi;
+  lipDen="${TMdns}/ipDen.log"; if [ ! -f "$lipDen" ]; then echo '' > $lipDen; fi;
+  lNX="${TMdns}/NX.log"; if [ ! -f "$lNX" ]; then echo '' > $lNX; fi;
+  tChoang="${TMdns}/Choang.txt"; if [ ! -f "$tChoang" ]; then echo '' > $tChoang; fi;
+  tChuyen="${TMdns}/Chuyen.txt"; if [ ! -f "$tChuyen" ]; then echo '' > $tChuyen; fi;
+  tDen="${TMdns}/Den.txt"; if [ ! -f "$tDen" ]; then echo '' > $tDen; fi;
+  tipDen="${TMdns}/ipDen.txt"; if [ ! -f "$tipDen" ]; then echo '' > $tipDen; fi;
+  tTrang="${TMdns}/Trang.txt"; if [ ! -f "$tTrang" ]; then echo '' > $tTrang; fi;
   echo "$DauCau Đang tải file cấu hình"
   curl -s -L -o $TMdns/CauHinh.toml gg.gg/_CauHinh
   echo "$DauCau Đang sao lưu cấu hình hiện tại"
