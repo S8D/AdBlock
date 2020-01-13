@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200113af"
+PhienBan="20200113ag"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
@@ -387,25 +387,27 @@ HaCap () {
 
 CaiCauHinh () {
   echo "$DauCau Đang kiểm tra và tạo log"
-  lTruyVan="${TMdns}/TruyVan.log"
-  lDen="${TMdns}/Den.log"
-  lipDen="${TMdns}/ipDen.log"
-  lNX="${TMdns}/NX.log"
-  tChoang="${TMdns}/Choang.txt"
-  tChuyen="${TMdns}/Chuyen.txt"
-  tDen="${TMdns}/Den.txt"
-  tipDen="${TMdns}/ipDen.txt"
-  tTrang="${TMdns}/Trang.txt"
-  if [ ! -f "$lTruyVan" ] then echo '' > $lTruyVan; fi;
-  if [ ! -f "$lDen" ] then echo '' > $lDen; fi;
-  if [ ! -f "$lTrang" ] then echo '' > $lTrang; fi;
-  if [ ! -f "$lipDen" ] then echo '' > $lipDen; fi;
-  if [ ! -f "$lNX" ] then echo '' > $lNX; fi;
-  if [ ! -f "$tChoang" ] then echo '' > $tChoang; fi;
-  if [ ! -f "$tChuyen" ] then echo '' > $tChuyen; fi;
-  if [ ! -f "$tDen" ] then echo '' > $tDen; fi;
-  if [ ! -f "$tipDen" ] then echo '' > $tipDen; fi;
-  if [ ! -f "$tTrang" ] then echo '' > $tTrang; fi;
+  lTruyVan="${TMdns}/TruyVan.log"; if [ ! -f "$lTruyVan" ] then
+    echo '' > $lTruyVan; fi;
+  lDen="${TMdns}/Den.log"; if [ ! -f "$lDen" ] then
+    echo '' > $lDen; fi;
+  lTrang="${TMdns}/Trang.log"; if [ ! -f "$lTrang" ] then
+    echo '' > $lTrang; fi;
+  lipDen="${TMdns}/ipDen.log"; if [ ! -f "$lipDen" ] then
+    echo '' > $lipDen; fi;
+  lNX="${TMdns}/NX.log"; if [ ! -f "$lNX" ] then
+    echo '' > $lNX; fi;
+  tChoang="${TMdns}/Choang.txt"; if [ ! -f "$tChoang" ] then
+    echo '' > $tChoang; fi;
+  tChuyen="${TMdns}/Chuyen.txt"; if [ ! -f "$tChuyen" ] then
+     echo '' > $tChuyen; fi;
+  tDen="${TMdns}/Den.txt"; if [ ! -f "$tDen" ] then
+     echo '' > $tDen; fi;
+  tipDen="${TMdns}/ipDen.txt"; if [ ! -f "$tipDen" ] then
+     echo '' > $tipDen; fi;
+  tTrang="${TMdns}/Trang.txt"; if [ ! -f "$tTrang" ] then
+     echo '' > $tTrang; fi;
+  
   echo "$DauCau Đang tải file cấu hình"
   curl -s -L -o $TMdns/CauHinh.toml gg.gg/_CauHinh
   echo "$DauCau Đang sao lưu cấu hình hiện tại"
@@ -960,7 +962,7 @@ cleanup
 menu () {
   echo -e "$INFO Nhấn phím để thực hiện tuỳ chọn bên dưới:"
   if [ ! $PhienBanOff == 2.0.36-beta.1 ]; then
-  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36-Beta 1"; else
+  echo -e "  0) Hạ cấp DNSCrypt-Proxy về 2.0.36 Beta 1"; else
   echo -e "  0) Nâng cấp DNSCrypt-Proxy lên $PhienBanOn"; fi
   echo -e "  1) Cài mới DNSCrypt-Proxy"
   echo -e "  2) Gỡ DNSCrypt-Proxy"
@@ -1007,12 +1009,12 @@ menu () {
       read_yesno "Bạn có muốn thực hiện?" && setup_dnscrypt reconfig || menu
       ;;
     4)
-      echo -e "$INFO Việc này sẽ cài muối giờ cho router"
+      echo -e "$INFO Việc này sẽ cài múi giờ cho router"
       echo
       read_yesno "Bạn có muốn thực hiện?" && set_timezone || menu
       ;;
     5)
-      echo -e "$INFO Việc này sẽ Gỡ muối giờ đã cho router"
+      echo -e "$INFO Việc này sẽ Gỡ múi giờ đã cho router"
       echo
       read_yesno "Bạn có muốn thực hiện?" && unset_timezone || menu
       ;;
