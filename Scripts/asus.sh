@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200112be"
+PhienBan="20200113aa"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
@@ -364,6 +364,7 @@ NangCap () {
   echo "$DauCau DNSCrypt-Proxy đã được nâng cấp lên $PhienBanOff"
   $TARG_DIR/manager dnscrypt-start
   echo "$DauCau"
+  end_op_message
   menu
 }
 
@@ -380,10 +381,22 @@ HaCap () {
   echo "$DauCau DNSCrypt-Proxy đã được hạ cấp xuống $PhienBanOff"
   $TARG_DIR/manager dnscrypt-start
   echo "$DauCau"
+  end_op_message
   menu
 }
 
 CaiCauHinh () {
+  echo "$DauCau Đang kiểm tra và tạo log"
+  if [ ! -f "${TMdns}/TruyVan.log" ] then echo '' > ${TMdns}/TruyVan.log; fi
+  if [ ! -f "${TMdns}/Den.log" ] then echo '' > ${TMdns}/Den.log; fi
+  if [ ! -f "${TMdns}/Trang.log" ] then echo '' > ${TMdns}/Trang.log; fi
+  if [ ! -f "${TMdns}/ipDen.log" ] then echo '' > ${TMdns}/ipDen.log; fi
+  if [ ! -f "${TMdns}/NX.log" ] then echo '' > ${TMdns}/NX.log; fi
+  if [ ! -f "${TMdns}/Choang.txt" ] then echo '' > ${TMdns}/Choang.txt; fi
+  if [ ! -f "${TMdns}/Chuyen.txt" ] then echo '' > ${TMdns}/Chuyen.txt; fi
+  if [ ! -f "${TMdns}/Den.txt" ] then echo '' > ${TMdns}/Den.txt; fi
+  if [ ! -f "${TMdns}/ipDen.txt" ] then echo '' > ${TMdns}/ipDen.txt; fi
+  if [ ! -f "${TMdns}/Trang.txt" ] then echo '' > ${TMdns}/Trang.txt; fi
   echo "$DauCau Đang tải file cấu hình"
   curl -s -L -o $TMdns/CauHinh.toml gg.gg/_CauHinh
   echo "$DauCau Đang sao lưu cấu hình hiện tại"
@@ -395,6 +408,7 @@ CaiCauHinh () {
   $TARG_DIR/manager dnscrypt-start
   echo "$DauCau Đã cập nhật cấu hình mới"
   echo "$DauCau"
+  end_op_message
   menu
 }
 
