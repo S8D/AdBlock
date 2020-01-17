@@ -1,5 +1,6 @@
-#PhienBan___2020013a
+#PhienBan___2020017a
 #___TongHop_________
+dm-event.net
 api.foursquare.com
 imtmp.net
 tusdk.com
@@ -413,6 +414,7 @@ log*zing*
 res-*.zadn.vn
 
 #___3X_________
+*chich*
 *adxxx*
 *xnxx*
 *sex*
@@ -438,6 +440,7 @@ thiendia.*
 heo69.*
 dam69.*
 jav*.*
+*jav.*
 #xxphe.com
 #xxhd.tv
 #londep.pro
