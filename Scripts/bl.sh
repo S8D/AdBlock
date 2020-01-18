@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200118c"
+PhienBan="20200118d"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -90,7 +90,6 @@ if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 	echo "$DauCau Đang cập nhật Bộ lọc"
 	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
-	/etc/init.d/dns restart
 fi
 
 echo "$DauCau Đã cập nhật Bộ lọc"
