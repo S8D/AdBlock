@@ -1,4 +1,4 @@
-#PhienBan___2020017a
+#PhienBan___2020018a
 #___TongHop_________
 dm-event.net
 api.foursquare.com
@@ -10,8 +10,6 @@ papermobi.com
 mahimeta.com
 an.dongphim.net
 adcaffe.com
-pms.mb.qq.com
-weixin.qq.com
 s.kenh14.vn
 izismile.com
 an.xemvtv.net
@@ -104,7 +102,7 @@ avast.com
 umeng.co
 logsea.aseugame.com
 log.aseugame.com
-adsplay.xyz
+adsplay.*
 mepuzz.com
 bilsyndication.com
 exosrv.com
@@ -149,7 +147,6 @@ support0.bigo.sg
 xtracloud.net
 yomedia.vn
 cachefly.net
-*.cn
 *proxy*
 *report*
 *betternet*
@@ -250,7 +247,6 @@ gecko*.tiktokv.com
 dm*.tiktokv.com
 api*.tiktokv.com
 sohu.com
-baidu.com
 appnext.com
 app.adjust.com
 adjust.com
@@ -315,9 +311,6 @@ umeng.com
 crazyegg.com
 braze.com
 adtrue.com
-smoot.apple.com
-iadsdk.apple.com
-*adsdk.apple.com
 addthisedge.com
 api.amplitude.com
 bytedance.com
@@ -358,7 +351,6 @@ ads*
 track*
 firebasedynamic*
 logv2*
-xunyou.*
 banners.*
 ads.*
 banner.*
@@ -367,14 +359,26 @@ tracker.*
 tag.*
 *.ksmobile.*
 ad.*
-*.ucweb.*
+
+#___TQ___________
+#*.cn
+#xunyou.*
+#*.ucweb.*
+#baidu.com
+#pms.mb.qq.com
+#weixin.qq.com
+#51y5.net
 
 #___Apple___________
+*metrics.apple.com
 xp.apple.com
 mesu.apple.com
 ocsp.apple.com
 metrics.icloud.com
 mesu.g.aaplimg.com
+smoot.apple.com
+iadsdk.apple.com
+*adsdk.apple.com
 
 #___Google_________
 suggestqueries.google.com
@@ -434,7 +438,7 @@ phim3x.*
 soc3x.*
 gaidam.*
 sexhayvl.*
-ditvl.*
+#ditvl.*
 3xhd.*
 thiendia.*
 heo69.*
@@ -464,6 +468,8 @@ stats.*
 creatives.*
 oas.*
 oascentral.*
+
+#__________________________________________________________________________
 
 ###########################
 #        Blacklist        #
