@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200118e"
+PhienBan="20200118f"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -65,16 +65,15 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then
 			[ ! -f "${tmDNS}/TruyVan.log" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 			$dl1 ${tmDNS}/dns.tar.gz gg.gg/ch_; tar -C $tmDNS -zxvf ${tmDNS}/dns.tar.gz; rm -f ${tmDNS}/dns.tar.gz; }
-			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; $DVdns start; fi
+			$DVdns start; fi
 		if [ $OS == $Android ]; then $GoiDNS;
 			[ ! -f "${tmDNS}/TruyVan.log" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.zip gg.gg/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; rm -f ${tmDNS}/dns.zip; }; 
-			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; 
-			$dns --config $CauHinh -check; $dns --config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; fi
+			$dl1 ${tmDNS}/dns.zip gg.gg/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; rm -f ${tmDNS}/dns.zip; }; fi
 		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
-    		echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; else
+    		echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; echo "$DauCau Đang gọi DNSCrypt-Proxy...";
+    		$dns --config $CauHinh -check; $dns --config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; else
     		echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!" >> $Log;
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 	fi
