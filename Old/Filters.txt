@@ -1,10 +1,11 @@
 [Adblock Plus 2.0]
-! Version: 20200118d
+! Version: 20200118e
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
+
 !___YouTube________________________________________
 youtube.com###masthead-ad
 youtube.com##*.video-ads
@@ -37,6 +38,12 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
 /banners/click/*
 /fingerprint2.min.js^
 /tracking.ashx?
+www.techinferno.com###elGuestTerms
+||ad.chogiare.vn^
+androidfacting.blogspot.com##[href="//zukxd6fkxqn.com/1780508.html"]
+||i.imgur.com/u6iyMx4.png$image
+yeuphimmoi.com##.balloon-block
+quantrimang.com###mrc419
 2bay.org###boder1
 2bay.org###boder2
 4file.net###header
@@ -200,13 +207,16 @@ downmienphi.com###fanback
 downmienphi.com###index_middle > div.container.dad > div.mainContainer:nth-child(3) > div.mainContent > div.innerContent:nth-child(5) > div.interested:nth-child(7)
 downmienphi.com##footer:nth-child(4)
 downmienphi.net##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
+downmienphi.net##.title
+downmienphi.net##header:nth-child(3)
 downmienphi.net##.mb-3.mt-3.col-md-12
 downmienphi.net##.mb-5.text-primary
 downmienphi.net##.sv-nav.navbar-dark.navbar-expand-md.navbar
 downmienphi.net##.text-center.col-md-12
+downmienphi.net##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
+downmienphi.net##.alert-warning.alert
 downmienphi.net##footer
 downmienphi.net##footer:nth-child(5)
-downmienphi.net##header:nth-child(3)
 doxeaz10.site###link-view > p:nth-child(2)
 doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > center:last-child
 doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.blog-item:first-child
@@ -906,6 +916,8 @@ vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody
 vietnamnet.vn###Box-FixFB
 vietnamnet.vn##.BoxFix
 vietnamnet.vn##.Main-Footer.p-t-20
+||vipshare.co/img/*$image
+vipshare.co##.title.text-center
 vipshare.co##.adsx468
 vipshare.co##.footer
 vipshare.co##.navbar-fixed-top.navbar-info.navbar
@@ -1012,6 +1024,7 @@ ckk.ai##h4
 ckk.ai##p:nth-of-type(1)
 ckk.ai##p:nth-of-type(2)
 ckk.ai##p:nth-of-type(3)
+ckk.ai##[href="https://sylwenys.pw/i6rlquMjowCx3Q0/12654"]
 ckk.ai##footer
 
 
@@ -1034,6 +1047,10 @@ ez4linkss.com##p:nth-of-type(2)
 ez4linkss.com##footer
 
 licklink.net###cookie-pop
+||licklink.net/img/*$image
+licklink.net##div:nth-of-type(3) > p
+licklink.net##.text-center.form-group > p
+licklink.net##h4
 licklink.net###link-view > div.form-group.text-center:nth-child(6) > p:first-child
 licklink.net###mainNav
 licklink.net##.banner-336x280.banner

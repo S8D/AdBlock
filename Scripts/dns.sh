@@ -1,11 +1,9 @@
 #!/bin/bash
-PhienBan="20200106b"
+PhienBan="20200118a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
-which curl &>/dev/null; [ $? -eq 0 ] || { dl="wget -q -L -o"; dl2="wget -q -L";}
-
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then dns="/usr/sbin/dns";
@@ -18,9 +16,8 @@ if [ $OS == $Android ]; then dns="/system/bin/dns";
 	TM="/sdcard"; TMLog="${TM}/dns"; linktai="android_arm64"; ThuMuc="android-arm64";
 	duoi="zip"; giainen="unzip -d "${TM}"";
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
-#echo "OS: $OS | URL: $linktai | Local: $TM | Folder: $ThuMuc | Extract: $giainen | Filetype: $duoi"
-
-Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; mkdir -p ${TM}/dns; upTam="${TM}/dns/tam"; rm -f $upTam;
+Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; 
+tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
@@ -34,7 +31,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!";
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
-		cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
+		cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
 		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
@@ -58,18 +55,19 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		$giainen ${TM}/DNSCrypt.$duoi; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
 			if [ ! -f "$DVdns" ]; then $dl1 $upTam gg.gg/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
-			$DVdns stop; fi
-		if [ $OS == $Android ]; then $TatDNS; fi
+			echo "$DauCau Đang dừng DNSCrypt-Proxy..."; $DVdns stop; fi
+		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; $TatDNS; fi
 
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
 		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then
-			[ ! -d "${TM}/dns" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy..."; mkdir -p ${TM}/dns;
-			$dl1 ${TM}/dns.tar.gz gg.gg/ch_; tar -C ${TM}/dns -zxvf ${TM}/dns.tar.gz; rm -f ${TM}/dns.tar.gz; }
-			$DVdns start; fi
+			[ ! -f "${tmDNS}/TruyVan.log" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
+			$dl1 ${tmDNS}/dns.tar.gz gg.gg/ch_; tar -C $tmDNS -zxvf ${tmDNS}/dns.tar.gz; rm -f ${tmDNS}/dns.tar.gz; }
+			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; $DVdns start; fi
 		if [ $OS == $Android ]; then $GoiDNS;
-			[ ! -d "${TM}/dns" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy..."; mkdir -p ${TM}/dns;
-			$dl1 ${TM}/dns.zip gg.gg/_ch; unzip -d "${TM}/dns" ${TM}/dns.zip; rm -f ${TM}/dns.zip; }; fi
+			[ ! -f "${tmDNS}/TruyVan.log" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
+			$dl1 ${tmDNS}/dns.zip gg.gg/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; rm -f ${tmDNS}/dns.zip; }; 
+			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; $GoiDNS; fi
 		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
 
 		echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
