@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200118b
+! Version: 20200118c
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -19,6 +19,28 @@
 !facebook.com##._2zam._5v6d._5rzs
 !4_____________________________________________________________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+! 18/1/2020 https://www.tiengnhatpro.net
+www.tiengnhatpro.net##footer
+www.tiengnhatpro.net##header
+www.tiengnhatpro.net##.separator
+www.vnjpclub.com###rt-sidebar-a
+bikae.net###colophon
+bikae.net###secondary
+bikae.net##.under-article-ads
+bikae.net##.adslot_3.adsbygoogle
+bikae.net##.bottom.entry-sns-data
+bikae.net##.has-table.article-author
+bikae.net##p:nth-of-type(0) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(1) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(2) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(3) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(4) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(5) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(6) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(7) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(8) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(9) > .adslot_1.adsbygoogle
+bikae.net##p:nth-of-type(10) > .adslot_1.adsbygoogle
 www.howtogeek.com##.email-overlay
 www.howtogeek.com##.overlay-wrapper
 tiny.cc##.cc_container--open.cc_container.cc_banner
