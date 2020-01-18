@@ -1,9 +1,9 @@
 #!/bin/bash
-PhienBan="20200118c"
+PhienBan="20200118d"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
-dl1 () { curl -s -L -o; }; dl2 () {curl -s -L; }
+dl1="curl -s -L -o"; dl2="curl -s -L"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then dns="/usr/sbin/dns";
