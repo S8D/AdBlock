@@ -1,10 +1,9 @@
 #!/bin/sh
-PhienBan="20200118b"
+PhienBan="20200118c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
-which curl &>/dev/null; [ $? -eq 0 ] || { dl="wget -q -L -o"; dl2="wget -q -L";}
 
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
@@ -83,14 +82,14 @@ if [ $OS == $x64 ] || [ $OS == $arm ]; then
 	}
 	
 	echo "$DauCau Đang cập nhật Bộ lọc"
-	curl -f -s -L --cacert $cer  $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy
+	curl -f -s -L --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy
 	/etc/init.d/dns restart	
 fi
 
 if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 	echo "$DauCau Đang cập nhật Bộ lọc"
-	curl -s -L $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
+	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
 	/etc/init.d/dns restart
 fi
 
