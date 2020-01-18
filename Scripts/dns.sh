@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200118h"
+PhienBan="20200118i"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -55,7 +55,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
 		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; 
-			while ! [ `pgrep -x dns` ] ; do
+			while ! [ `pgrep -x dns; pkill dns` ] ; do
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi		
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
 			[ ! -f "${tmDNS}/TruyVan.log" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
