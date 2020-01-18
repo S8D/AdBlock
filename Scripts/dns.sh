@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200118d"
+PhienBan="20200118e"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -18,6 +18,7 @@ if [ $OS == $Android ]; then dns="/system/bin/dns";
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; 
 tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
+CauHinh="${tmDNS}/CauHinh.toml"
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
@@ -36,10 +37,10 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 
-	if [ $OS == $Android ]; then echo "$DauCau Đang lấy lệnh chạy cho Android...";
-		$dl1 $upTam tiny.cc/dns_a
-		dv=`grep -w -m 1 "TatDNS" $upTam`;TatDNS=$(echo $dv | sed 's/.*\=\=//');
-		dv=`grep -w -m 1 "GoiDNS" $upTam`;GoiDNS=$(echo $dv | sed 's/.*\=\=//'); fi
+	#if [ $OS == $Android ]; then echo "$DauCau Đang lấy lệnh chạy cho Android...";
+	#	$dl1 $upTam tiny.cc/dns_a
+	#	dv=`grep -w -m 1 "TatDNS" $upTam`;TatDNS=$(echo $dv | sed 's/.*\=\=//');
+	#	dv=`grep -w -m 1 "GoiDNS" $upTam`;GoiDNS=$(echo $dv | sed 's/.*\=\=//'); fi
 
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
@@ -56,7 +57,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then DVdns="/etc/init.d/dns"
 			if [ ! -f "$DVdns" ]; then $dl1 $upTam gg.gg/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
 			echo "$DauCau Đang dừng DNSCrypt-Proxy..."; $DVdns stop; fi
-		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; $TatDNS; fi
+		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; 
+			pgrep dns; pkill dns; pgrep dns; pkill dns; pgrep dns; pkill dns; pgrep dns; fi
 
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
 		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
@@ -67,7 +69,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		if [ $OS == $Android ]; then $GoiDNS;
 			[ ! -f "${tmDNS}/TruyVan.log" ] && { echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 			$dl1 ${tmDNS}/dns.zip gg.gg/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; rm -f ${tmDNS}/dns.zip; }; 
-			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; $GoiDNS; fi
+			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; 
+			$dns --config $CauHinh -check; $dns --config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; fi
 		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
