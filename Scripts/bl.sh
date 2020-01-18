@@ -1,39 +1,103 @@
 #!/bin/sh
+PhienBan="20200118a"
+GetTime=$(date +"%F %a %T"); Time="$GetTime -"
+DauCau="#"
+
+dl1="curl -s -L -o"; dl2="curl -s -L"
+which curl &>/dev/null; [ $? -eq 0 ] || { dl="wget -q -L -o"; dl2="wget -q -L";}
+
+#echo "$DauCau $(basename "$0") phiên bản $PhienBan"
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
+if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; TMLog="/www";
+	cer="/etc/ssl/certs/ca-certificates.crt";
+	NoiQuy="/etc/nodogsplash/htdocs/NoiQuy.txt";
+	ThongBao="/etc/nodogsplash/htdocs/ThongBao.txt";
+fi
+
+if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
+	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
+fi
+
+tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
+Den="${tmDNS}/Den.txt"; if [ ! -f "$Den" ]; then echo '' > $Den; fi; 
+ipDen="${tmDNS}/ipDen.txt"; if [ ! -f "$ipDen" ]; then echo '' > $ipDen; fi; 
+Trang="${tmDNS}/Trang.txt"; if [ ! -f "$Trang" ]; then echo '' > $Trang; fi; 
+Choang="${tmDNS}/Choang.txt"; if [ ! -f "$Choang" ]; then echo '' > $Choang; fi; 
+Chuyen="${tmDNS}/Chuyen.txt"; if [ ! -f "$Chuyen" ]; then echo '' > $Chuyen; fi; 
+CauHinh="${tmDNS}/CauHinh.toml"; if [ ! -f "$CauHinh" ]; then echo '' > $CauHinh; fi; 
+Log="${TMLog}/NhatKy.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi; 
+
+echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
+CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
+
+if CheckGG; then UpLink="gg.gg/_bl"; 
+	uDen="gg.gg/_Den";
+	uipDen="gg.gg/_ipDen";
+	uTrang="gg.gg/_Trang";
+	uChoang="gg.gg/_Choang";
+	uChuyen="gg.gg/_Chuyen";
+	uNoiQuy="gg.gg/_NoiQuy";
+	uThongBao="gg.gg/_ThongBao";
+	net="1"; else
+	if CheckTN; then UpLink="https://tiny.cc/-b"; 
+		uDen="https://tiny.cc/-Den";
+		uipDen="https://tiny.cc/-ipDen";
+		uTrang="https://tiny.cc/-Trang";
+		uChoang="https://tiny.cc/-Choang";
+		uChuyen="https://tiny.cc/-Chuyen";
+		uNoiQuy="https://tiny.cc/-NoiQuy";
+		uThongBao="https://tiny.cc/-ThongBao";
+		net="2"; else
+		if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/bl.sh"; 
+			uDen="https://s8d.github.io/AdBlock/Lists/0_Den.txt";
+			uipDen="https://s8d.github.io/AdBlock/Lists/0_ipDen.txt";
+			uTrang="https://s8d.github.io/AdBlock/Lists/0_Trang.txt";
+			uChoang="https://s8d.github.io/AdBlock/Lists/0_Choang.txt";
+			uChuyen="https://s8d.github.io/AdBlock/Lists/0_Chuyen.txt";
+			uNoiQuy="https://s8d.github.io/AdBlock/Lists/0_NoiQuy.txt";
+			uThongBao="https://s8d.github.io/AdBlock/Lists/0_ThongBao.txt";
+			net="3"; else net=0; fi; fi; fi
+
+if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
+	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+	if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!";
+		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
+	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
+		cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
+		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
+		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
+		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
+fi
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 	opkg list-installed | grep -qw luci-ssl || {
-	echo "$(date +"%F %a %T") - Đang cài SSL"
+	echo "$DauCau Đang cài SSL"
 	opkg update;
 	opkg install luci-ssl
 	}
 	opkg list-installed | grep -qw curl || {
-	echo "$(date +"%F %a %T") - Đang cài cURL"
+	echo "$DauCau Đang cài cURL"
 	opkg update;
 	opkg install curl
 	}
-	cer="/etc/ssl/certs/ca-certificates.crt"
-	Den="/root/dns/Den.txt"
-	Choang="/root/dns/Choang.txt"
-	NoiQuy="/etc/nodogsplash/htdocs/NoiQuy.txt"
-	ThongBao="/etc/nodogsplash/htdocs/ThongBao.txt"
-	echo "$(date +"%F %a %T") - Đang cập nhật Thông Báo + Bộ lọc"
-	curl -f -s -L --cacert $cer gg.gg/_ThongBao gg.gg/_NoiQuy gg.gg/_bl gg.gg/Choang -o $ThongBao -o $NoiQuy -o $Den -o $Choang
-	/etc/init.d/dns restart
-	echo "$(date +"%F %a %T") - Đã cập nhật Thông Báo"
-	vDen=$(cat /root/dns/Den.txt | grep .*PhienBan\_ | sed 's/.*\_//');
-	vChoang=$(cat /root/dns/Choang.txt | grep .*PhienBan\_ | sed 's/.*\_//');
+	
+	echo "$DauCau Đang cập nhật Bộ lọc"
+	curl -f -s -L --cacert $cer  $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy
+	/etc/init.d/dns restart	
 fi
 
 if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
-	Den="/sdcard/dns/Den.txt"
-	Choang="/sdcard/dns/Choang.txt"
-	curl -s -L gg.gg/_bl gg.gg/Choang -o $Den -o $Choang
+	echo "$DauCau Đang cập nhật Bộ lọc"
+	curl -s -L $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
 	/etc/init.d/dns restart
-	echo "$(date +"%F %a %T") - Đã cập nhật Thông Báo"
-	vDen=$(cat /sdcard/dns/Den.txt | grep .*PhienBan\_ | sed 's/.*\_//');
-	vChoang=$(cat /sdcard/dns/Choang.txt | grep .*PhienBan\_ | sed 's/.*\_//');
 fi
 
-echo "$(date +"%F %a %T") - Bộ lọc: $vDen | Choàng: $vChoang"
+echo "$DauCau Đã cập nhật Bộ lọc"
+vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
+vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
+vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
+vChoang=$(cat $Choang | grep .*PhienBan\_ | sed 's/.*\_//');
+vChuyen=$(cat $Chuyen | grep .*PhienBan\_ | sed 's/.*\_//');
+echo "$DauCau - Đen: $vDen | ipDen: $vipDen | Trang: $vTrang | Choàng: $vChoang | Chuyen: $vChuyen"
