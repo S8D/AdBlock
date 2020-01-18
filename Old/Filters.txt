@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200118a
+! Version: 20200118b
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
@@ -22,13 +22,6 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
 www.howtogeek.com##.email-overlay
 www.howtogeek.com##.overlay-wrapper
 tiny.cc##.cc_container--open.cc_container.cc_banner
-bikae.net##p:nth-of-type(3)
-bikae.net##.top-banner-ads
-bikae.net###colophon
-bikae.net##.bottom.entry-sns-data
-bikae.net##.has-table.article-author
-bikae.net##.under-article-ads
-bikae.net###text-2
 ckk.ai###cookie-pop
 ckk.ai###link-view > p
 ckk.ai###mainNav
