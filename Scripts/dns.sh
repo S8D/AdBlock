@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200118f"
+PhienBan="20200118g"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -58,7 +58,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			if [ ! -f "$DVdns" ]; then $dl1 $upTam gg.gg/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
 			echo "$DauCau Đang dừng DNSCrypt-Proxy..."; $DVdns stop; fi
 		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; 
-			pgrep dns; pkill dns; pgrep dns; pkill dns; pgrep dns; pkill dns; pgrep dns; fi
+			pgrep dns; pkill dns; pgrep dns; pkill dns; pgrep dns; pkill dns; pgrep dns; pkill dns; fi
 
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
 		mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns
