@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200118a"
+PhienBan="20200118b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -69,8 +69,10 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			$dl1 ${tmDNS}/dns.zip gg.gg/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; rm -f ${tmDNS}/dns.zip; }; 
 			echo "$DauCau Đang gọi DNSCrypt-Proxy..."; $GoiDNS; fi
 		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
-
-		echo "$Time DNSCrypt-Proxy được cập nhật lên $PhienBanOn" >> $Log
-		echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
+		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
+  		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
+    		echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; else
+    		echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!" >> $Log;
+    		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 	fi
 else echo "$DauCau Không có kết nối Internet"; exit; fi
