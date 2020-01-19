@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200119a"
+PhienBan="20200119b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -58,7 +58,7 @@ if CheckGG; then UpLink="gg.gg/_bl";
 			net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
-	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); sleep 3;
 	if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!";
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
