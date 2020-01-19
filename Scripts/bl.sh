@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200119b"
+PhienBan="20200119c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -29,24 +29,24 @@ Log="${TMLog}/NhatKy.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
 
-if CheckGG; then UpLink="gg.gg/_bl"; 
-	uDen="gg.gg/_Den";
-	uipDen="gg.gg/_ipDen";
-	uTrang="gg.gg/_Trang";
-	uChoang="gg.gg/_Choang";
-	uChuyen="gg.gg/_Chuyen";
-	uNoiQuy="gg.gg/_NoiQuy";
-	uThongBao="gg.gg/_ThongBao";
+if CheckTN; then UpLink="https://tiny.cc/-b"; 
+	uDen="https://tiny.cc/-Den";
+	uipDen="https://tiny.cc/-ipDen";
+	uTrang="https://tiny.cc/-Trang";
+	uChoang="https://tiny.cc/-Choang";
+	uChuyen="https://tiny.cc/-Chuyen";
+	uNoiQuy="https://tiny.cc/-NoiQuy";
+	uThongBao="https://tiny.cc/-ThongBao";
 	net="1"; else
-	if CheckTN; then UpLink="https://tiny.cc/-b"; 
-		uDen="https://tiny.cc/-Den";
-		uipDen="https://tiny.cc/-ipDen";
-		uTrang="https://tiny.cc/-Trang";
-		uChoang="https://tiny.cc/-Choang";
-		uChuyen="https://tiny.cc/-Chuyen";
-		uNoiQuy="https://tiny.cc/-NoiQuy";
-		uThongBao="https://tiny.cc/-ThongBao";
-		net="2"; else
+	if CheckGG; then UpLink="gg.gg/_bl"; 
+		uDen="gg.gg/_Den";
+		uipDen="gg.gg/_ipDen";
+		uTrang="gg.gg/_Trang";
+		uChoang="gg.gg/_Choang";
+		uChuyen="gg.gg/_Chuyen";
+		uNoiQuy="gg.gg/_NoiQuy";
+		uThongBao="gg.gg/_ThongBao";
+		net="2"; else	
 		if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/bl.sh"; 
 			uDen="https://s8d.github.io/AdBlock/Lists/0_Den.txt";
 			uipDen="https://s8d.github.io/AdBlock/Lists/0_ipDen.txt";
@@ -58,7 +58,7 @@ if CheckGG; then UpLink="gg.gg/_bl";
 			net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
-	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); sleep 3;
+	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 	if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!";
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
