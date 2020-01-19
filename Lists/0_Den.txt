@@ -1,4 +1,4 @@
-#PhienBan___2020018a
+#PhienBan___2020020a
 #___TongHop_________
 dm-event.net
 api.foursquare.com
@@ -186,7 +186,6 @@ commercialvalue.org
 cdnondemand.org
 maribacaberita.com
 yukbacaberita.com
-y5en.com
 trafficfactory.biz
 mon.musical.ly
 blueseed.tv
@@ -205,7 +204,6 @@ izatcloud.net
 vietid.net
 polyad.net
 tenmax.io
-jpush.io
 branch.io
 hoood.info
 analytics.hostyour.video
@@ -234,7 +232,6 @@ ambientplatform
 logyxz.com
 subiz.com
 data.flurry.com
-appboy.com
 ucfly.com
 jwpltx.com
 update.fbsbx.com
@@ -246,7 +243,6 @@ webcast*.tiktokv.com
 gecko*.tiktokv.com
 dm*.tiktokv.com
 api*.tiktokv.com
-sohu.com
 appnext.com
 app.adjust.com
 adjust.com
@@ -302,7 +298,6 @@ an.facebook.com
 miui.com
 msftncsi.com
 log.baomoi.com
-heytapmobi.com
 inmobi.com
 tags.bluekai.com
 scorecardresearch.com
@@ -333,7 +328,6 @@ adx1.com
 appboy*.com
 app.link
 test-app.link
-haokan.mobi
 inner-active.mobi
 aliapp.org
 aj1*.online
@@ -361,6 +355,13 @@ tag.*
 ad.*
 
 #___TQ___________
+#appboy.com
+y5en.com
+analytics.wuta-cam.com
+#jpush.io
+#sohu.com
+#haokan.mobi
+#heytapmobi.com
 #*.cn
 #xunyou.*
 #*.ucweb.*

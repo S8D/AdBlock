@@ -1,22 +1,27 @@
-#PhienBan___2020018a
-#___3X_________
-sexmoi.net		g.co
-sexhay69.net	g.co
-sexngon.tv		g.co
-londep.pro		g.co
-xxhd.tv			g.co
-xxphe.com		g.co
-ditvl.net		g.co
-javphe.com		g.co
-javphim.net		g.co
+#PhienBan___2020020a
+#___3X__________________
+sexmoi.net			g.co
+sexhay69.net		g.co
+sexngon.tv			g.co
+londep.pro			g.co
+xxhd.tv				g.co
+xxphe.com			g.co
+ditvl.net			g.co
+javphe.com			g.co
+javphim.net			g.co
 
-#___TQ___________
-*.cn			g.co
-xunyou.*		g.co
-*.baidu.com		g.co
-pms.mb.qq.com	g.co
-weixin.qq.com	g.co
-51y5.net		g.co
+#___TQ__________________
+*.appboy.com		g.co
+*.jpush.io			g.co
+*.heytapmobi.com	g.co
+*.haokan.mobi		g.co
+*.sohu.com			g.co
+*.cn				g.co
+xunyou.*			g.co
+*.baidu.com			g.co
+pms.mb.qq.com		g.co
+weixin.qq.com		g.co
+51y5.net			g.co
 
 #__________________________________________________________________________
 
