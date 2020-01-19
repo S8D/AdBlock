@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200118d"
+PhienBan="20200119a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -92,7 +92,7 @@ if [ $OS == $Android ]; then
 	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
 fi
 
-echo "$DauCau Đã cập nhật Bộ lọc"
+echo "$DauCau Phiên bản Bộ lọc:"
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
 vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
 vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
