@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200119a"
+PhienBan="20200119b"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
@@ -20,7 +20,7 @@ NangCap1 () {
   echo "$DauCau Đang chạy hàm Nâng cấp 1..."
   echo "$DauCau Đang tải DNSCrypt-Proxy"; cd /opt;
   #DownURL=$(${dl2} $DownLink | grep browser_download_url.*tar.gz | grep $linktai | cut -d '"' -f 4); curl -s -L -o /opt/dns.tar.gz $DownURL;
-  curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_;
+  curl -s -L -o /opt/dns.tar.gz uli.vn/dns_;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ;
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
@@ -44,12 +44,16 @@ NangCap2 () {
   mv $TM/$ThuMuc/dnscrypt-proxy $dns
   chmod 755 $dns  
 }
+
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }
-CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
-if CheckTN; then UpLink="https://tiny.cc/-asus"; DownLink="https://tiny.cc/dns_"; net="1"; else
-  if CheckGG; then UpLink="gg.gg/_asus"; DownLink="gg.gg/dns_"; net="2"; else  
-    if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/asus.sh";
+#CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
+CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
+CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
+
+if CheckUL; then UpLink="uli.vn/a"; DownLink="uli.vn/dns"; net="2"; else
+  if CheckTN; then UpLink="https://tiny.cc/-asus"; DownLink="https://tiny.cc/dns_"; net="2"; else
+    if CheckGH; then UpLink="https://s8d.github.io/AdBlock/Scripts/asus.sh";
       DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
@@ -349,7 +353,7 @@ end_op_message () {
 
 NangCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dnsc_;
+  cd /opt; curl -s -L -o /opt/dns.tar.gz uli.vn/dns_;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ;
   echo "$DauCau Đang nâng cấp DNSCrypt-Proxy"
@@ -366,7 +370,7 @@ NangCap () {
 
 HaCap () {
   echo "$DauCau Đang tải DNSCrypt-Proxy"
-  cd /opt; curl -s -L -o /opt/dns.tar.gz gg.gg/dns_2036b1;
+  cd /opt; curl -s -L -o /opt/dns.tar.gz uli.vn/2036b1;
   echo "$DauCau Đang giải nén DNSCrypt-Proxy"
   tar -zxvf dns.tar.gz ;
   echo "$DauCau Đang hạ cấp DNSCrypt-Proxy"
@@ -394,7 +398,7 @@ CaiCauHinh () {
   tipDen="${TMdns}/ipDen.txt"; if [ ! -f "$tipDen" ]; then echo '' > $tipDen; fi;
   tTrang="${TMdns}/Trang.txt"; if [ ! -f "$tTrang" ]; then echo '' > $tTrang; fi;
   echo "$DauCau Đang tải file cấu hình"
-  curl -s -L -o $TMdns/CauHinh.toml gg.gg/_CauHinh
+  curl -s -L -o $TMdns/CauHinh.toml uli.vn/CauHinh
   echo "$DauCau Đang sao lưu cấu hình hiện tại"
   cp $CauHinh $TMdns/SaoLuu.toml
   echo "$DauCau Đang cài cấu hình mới"

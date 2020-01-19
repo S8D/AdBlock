@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200119c"
+PhienBan="20200119d"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -27,27 +27,41 @@ CauHinh="${tmDNS}/CauHinh.toml"; if [ ! -f "$CauHinh" ]; then echo '' > $CauHinh
 Log="${TMLog}/NhatKy.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi; 
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
+#CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
+CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
+CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
 
-if CheckTN; then UpLink="https://tiny.cc/-b"; 
-	uDen="https://tiny.cc/-Den";
-	uipDen="https://tiny.cc/-ipDen";
-	uTrang="https://tiny.cc/-Trang";
-	uChoang="https://tiny.cc/-Choang";
-	uChuyen="https://tiny.cc/-Chuyen";
-	uNoiQuy="https://tiny.cc/-NoiQuy";
-	uThongBao="https://tiny.cc/-ThongBao";
+if CheckUL; then 
+	UpLink="uli.vn/bl";
+	uDen="uli.vn/Den";
+	uipDen="uli.vn/ipDen";
+	uTrang="uli.vn/Trang";
+	uChoang="uli.vn/Choang";
+	uChuyen="uli.vn/Chuyen";
+	uNoiQuy="uli.vn/NoiQuy";
+	uThongBao="uli.vn/ThongBao";
+#_________________________________
+#	UpLink="gg.gg/_bl";
+#	uDen="gg.gg/_Den";
+#	uipDen="gg.gg/_ipDen";
+#	uTrang="gg.gg/_Trang";
+#	uChoang="gg.gg/_Choang";
+#	uChuyen="gg.gg/_Chuyen";
+#	uNoiQuy="gg.gg/_NoiQuy";
+#	uThongBao="gg.gg/_ThongBao";
+#_________________________________
 	net="1"; else
-	if CheckGG; then UpLink="gg.gg/_bl"; 
-		uDen="gg.gg/_Den";
-		uipDen="gg.gg/_ipDen";
-		uTrang="gg.gg/_Trang";
-		uChoang="gg.gg/_Choang";
-		uChuyen="gg.gg/_Chuyen";
-		uNoiQuy="gg.gg/_NoiQuy";
-		uThongBao="gg.gg/_ThongBao";
-		net="2"; else	
-		if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/bl.sh"; 
+	if CheckTN; then UpLink="https://tiny.cc/-b"; 
+		uDen="https://tiny.cc/-Den";
+		uipDen="https://tiny.cc/-ipDen";
+		uTrang="https://tiny.cc/-Trang";
+		uChoang="https://tiny.cc/-Choang";
+		uChuyen="https://tiny.cc/-Chuyen";
+		uNoiQuy="https://tiny.cc/-NoiQuy";
+		uThongBao="https://tiny.cc/-ThongBao";
+		net="2"; else
+		if CheckGH; then UpLink="https://s8d.github.io/AdBlock/Scripts/bl.sh"; 
 			uDen="https://s8d.github.io/AdBlock/Lists/0_Den.txt";
 			uipDen="https://s8d.github.io/AdBlock/Lists/0_ipDen.txt";
 			uTrang="https://s8d.github.io/AdBlock/Lists/0_Trang.txt";
