@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200113al"
+PhienBan="20200119a"
 DNSCRYPT_VER=2.0.36
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 TM="/opt"; tmDNS="${TM}/dns"; mkdir -p $tmDNS; cd $TM
@@ -44,40 +44,36 @@ NangCap2 () {
   mv $TM/$ThuMuc/dnscrypt-proxy $dns
   chmod 755 $dns  
 }
-
-echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
-CheckNet () { ping -q -c 1 -W 1 g.co >/dev/null; };
-if CheckNet; then net=1; else net=0; fi
-if [ $net -eq 1 ]; then PhienBanMoi=$(${dl2} "gg.gg/_asus" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!"; else
-  echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
-  cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
-  $dl1 $upTam gg.gg/_asus; chmod +x $upTam; mv $upTam ${TM}/$0
-  echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi; fi
-
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }
 CheckGL () { ping -q -c 1 -W 1 g.co >/dev/null; };
-
-if CheckGG; then UpLink="gg.gg/_dns"; DownLink="gg.gg/dns_"; net="1"; else
-  if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; net="2"; else
-    if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/dns.sh";
+if CheckTN; then UpLink="https://tiny.cc/-asus"; DownLink="https://tiny.cc/dns_"; net="1"; else
+  if CheckGG; then UpLink="gg.gg/_asus"; DownLink="gg.gg/dns_"; net="2"; else  
+    if CheckGL; then UpLink="https://s8d.github.io/AdBlock/Scripts/asus.sh";
       DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
 
-echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
-PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
-if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
-  echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
-  echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
+if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
+  PhienBanMoi=$(${dl2} "$UpLink" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+  if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!"; else
+    echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
+    cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
+    $dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
+    echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 
-  NangCap1
-  rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam; rm -f ${TM}/*.minisig; 
-  rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; 
+  echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
   PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
-  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
-    echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
-    echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
-fi
+  if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
+    echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; else
+    echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
+
+    NangCap1
+    rm -rf $TM/$ThuMuc; rm -f $TM/dns.tar.gz; rm -f $upTam; rm -f ${TM}/*.minisig; 
+    rm -f /opt/dns.tar.gz; rm -rf /opt/linux-arm; 
+    PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
+    if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
+      echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; $dns --config $CauHinh; else
+      echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi; fi
+else echo "$DauCau Không có kết nối Internet"; exit; fi
 
 echo "$DauCau Chạy Cài đặt DNSCrypt-Proxy của ThuanTran"
 #________________________________________________________________________________________
