@@ -1,4 +1,4 @@
-#PhienBan___2020021b
+#PhienBan___2020021c
 #___Tổng-Hợp_________________
 *.360safe.com				ad.ago.vn
 *.88-f.net					ad.ago.vn
@@ -212,6 +212,9 @@
 *.zphunutoday.club			ad.ago.vn
 *.vienthammynevada.com		ad.ago.vn
 *.opus-static.net			ad.ago.vn
+
+#___Google_________
+*.google-analytics.com		ad.ago.vn
 
 #___3X_______________________
 ditvl.net					3x.ago.vn
