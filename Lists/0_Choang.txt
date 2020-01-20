@@ -1,4 +1,4 @@
-#PhienBan___2020020b
+#PhienBan___2020020c
 #___3X__________________
 sexmoi.net			3x.ago.vn
 sexhay69.net		3x.ago.vn
@@ -11,19 +11,19 @@ javphe.com			3x.ago.vn
 javphim.net			3x.ago.vn
 
 #___TQ__________________
-*.sina.cn			thanhfu.ago.vn
-*.google.cn			thanhfu.ago.vn
-*.appboy.com		thanhfu.ago.vn
-*.jpush.io			thanhfu.ago.vn
-*.heytapmobi.com	thanhfu.ago.vn
-*.haokan.mobi		thanhfu.ago.vn
-*.sohu.com			thanhfu.ago.vn
-*.cn				thanhfu.ago.vn
-xunyou.*			thanhfu.ago.vn
-*.baidu.com			thanhfu.ago.vn
-pms.mb.qq.com		thanhfu.ago.vn
-weixin.qq.com		thanhfu.ago.vn
-51y5.net			thanhfu.ago.vn
+*.sina.cn			cn.ago.vn
+*.google.cn			cn.ago.vn
+*.appboy.com		cn.ago.vn
+*.jpush.io			cn.ago.vn
+*.heytapmobi.com	cn.ago.vn
+*.haokan.mobi		cn.ago.vn
+*.sohu.com			cn.ago.vn
+*.cn				cn.ago.vn
+xunyou.*			cn.ago.vn
+*.baidu.com			cn.ago.vn
+pms.mb.qq.com		cn.ago.vn
+weixin.qq.com		cn.ago.vn
+51y5.net			cn.ago.vn
 
 #__________________________________________________________________________
 
@@ -39,7 +39,7 @@ weixin.qq.com		thanhfu.ago.vn
 
 #www.noddos.io　　　　　　　　　s8d.github.io
 www.google.*　　　　　　　　　　forcesafesearch.google.com
-www.binthanhfu.ago.vnm　　　　　　　　　　strict.binthanhfu.ago.vnm
+www.bincn.ago.vnm　　　　　　　　　　strict.bincn.ago.vnm
 yandex.ru　　　　　　　　　　　　familysearch.yandex.ru
 duckduckgo.com　　　　　　　　　safe.duckduckgo.com
 #www.youtube.com　　　　　　　　restrictmoderate.youtube.com
