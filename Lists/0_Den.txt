@@ -1,5 +1,6 @@
-#PhienBan___2020020d
+#PhienBan___2020020e
 #___TongHop_________
+adkmob.com
 *comment.dantri.com.vn
 *load.mediatek.com
 360safe.com
@@ -396,10 +397,10 @@ geomobileservices-pa.googleapis.com
 *device*.googleapis.com
 googletagservices.com
 googleadservices.com
-#google-analytics.com
+google-analytics.com
 googletagmanager.com
 googlesyndication.com
-#doubleclick.net
+doubleclick.net
 adservice*
 
 #___Zalo_________

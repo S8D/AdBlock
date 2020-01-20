@@ -1,9 +1,10 @@
-#PhienBan___2020021d
+#PhienBan___2020021e
 #___Tổng-Hợp_________________
 *.tachio.com.vn				ad.ago.vn
+*.bing.com					ad.ago.vn
+*.yahoo.com					ad.ago.vn
 
 #___Google_________
-*.google-analytics.com		ad.ago.vn
 
 #___3X_______________________
 ditvl.net					3x.ago.vn
@@ -18,6 +19,7 @@ xxphe.com					3x.ago.vn
 *.adx1.com					ad.ago.vn
 
 #___TQ_______________________
+*.duba.net					ad.ago.vn
 *.360.cn					ad.ago.vn
 *.xiaomi.net				ad.ago.vn
 *.ksmobile.net				ad.ago.vn
@@ -58,7 +60,7 @@ xunyou.*					cn.ago.vn
 
 #www.noddos.io				s8d.github.io
 www.google.*				forcesafesearch.google.com
-www.bing.com				strict.bing.com
+#www.bing.com				strict.bing.com
 yandex.ru					familysearch.yandex.ru
 duckduckgo.com				safe.duckduckgo.com
 #www.youtube.com			restrictmoderate.youtube.com
