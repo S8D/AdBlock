@@ -1,4 +1,4 @@
-#PhienBan___2020021a
+#PhienBan___2020021b
 #___Tổng-Hợp_________________
 *.360safe.com				ad.ago.vn
 *.88-f.net					ad.ago.vn
@@ -51,9 +51,6 @@
 *.branch.io					ad.ago.vn
 *.braze.com					ad.ago.vn
 *.burningpush.info			ad.ago.vn
-*.bytedance.com				ad.ago.vn
-*.byteoversea.com			ad.ago.vn
-*.byteoversea.net			ad.ago.vn
 *.cacafly.net				ad.ago.vn
 *.cachefly.net				ad.ago.vn
 *.casalemedia.com			ad.ago.vn
@@ -215,6 +212,8 @@
 *.yomedia.vn				ad.ago.vn
 *.zphunutoday.club			ad.ago.vn
 *.vienthammynevada.com		ad.ago.vn
+*.opus-static.net			ad.ago.vn
+
 #___3X_______________________
 ditvl.net					3x.ago.vn
 javphe.com					3x.ago.vn
@@ -227,6 +226,12 @@ xxhd.tv						3x.ago.vn
 xxphe.com					3x.ago.vn
 
 #___TQ_______________________
+*.360.cn					ad.ago.vn
+*.xiaomi.net				ad.ago.vn
+*.ksmobile.net				ad.ago.vn
+*.bytedance.com				ad.ago.vn
+*.byteoversea.com			ad.ago.vn
+*.byteoversea.net			ad.ago.vn
 *.51y5.net					cn.ago.vn
 *.appboy.com				cn.ago.vn
 *.baidu.com					cn.ago.vn
@@ -240,7 +245,7 @@ xxphe.com					3x.ago.vn
 *.y5en.com					cn.ago.vn
 *.cn						cn.ago.vn
 pms.mb.qq.com				cn.ago.vn
-weixin.qq.com				cn.ago.vn
+*.weixin.qq.com				cn.ago.vn
 xunyou.*					cn.ago.vn
 *.mozadong.com				cn.ago.vn
 *.qcloud.com				ad.ago.vn
