@@ -1,4 +1,4 @@
-#PhienBan___2020020d
+#PhienBan___2020020e
 #___Tổng-Hợp_________________
 *.360safe.com				ad.ago.vn
 *.88-f.net					ad.ago.vn
@@ -254,26 +254,26 @@ xunyou.*					cn.ago.vn
 # This has to be enabled with the `cloaking_rules` parameter in the main
 # configuration file
 
-#www.noddos.io　　　　　　　　　s8d.github.io
-www.google.*　　　　　　　　　　forcesafesearch.google.com
-www.bincn.ago.vnm　　　　　　　　　　strict.bincn.ago.vnm
-yandex.ru　　　　　　　　　　　　familysearch.yandex.ru
-duckduckgo.com　　　　　　　　　safe.duckduckgo.com
-#www.youtube.com　　　　　　　　restrictmoderate.youtube.com
-#m.youtube.com　　　　　　　　　restrictmoderate.youtube.com
-#youtubei.googleapis.com　　　　restrictmoderate.youtube.com
-#youtube.googleapis.com　　　　restrictmoderate.youtube.com
-#www.youtube-nocookie.com　　　restrictmoderate.youtube.com
+#www.noddos.io				s8d.github.io
+www.google.*				forcesafesearch.google.com
+www.bing.com				strict.bincn.ago.vnm
+yandex.ru					familysearch.yandex.ru
+duckduckgo.com				safe.duckduckgo.com
+#www.youtube.com			restrictmoderate.youtube.com
+#m.youtube.com				restrictmoderate.youtube.com
+#youtubei.googleapis.com	restrictmoderate.youtube.com
+#youtube.googleapis.com		restrictmoderate.youtube.com
+#www.youtube-nocookie.com	restrictmoderate.youtube.com
 
 # Multiple IP entries for the same name are supported.
 # In the following example, the same name maps both to IPv4 and IPv6 addresses:
 
-localhost　　　　　　　　　　　　127.0.0.1
-localhost　　　　　　　　　　　　::1
+localhost					127.0.0.1
+localhost					::1
 
 # For load-balancing, multiple IP addresses of the same class can also be
 # provided using the same format, one <pattern> <ip> pair per line.
 
-# ads.*　　　　　　　　　　　　192.168.100.1
-# ads.*　　　　　　　　　　　　192.168.100.2
-# ads.*　　　　　　　　　　　　::1
+# ads.*						192.168.100.1
+# ads.*						192.168.100.2
+# ads.*						::1
