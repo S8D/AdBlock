@@ -1,27 +1,29 @@
-#PhienBan___2020020a
+#PhienBan___2020020b
 #___3X__________________
-sexmoi.net			g.co
-sexhay69.net		g.co
-sexngon.tv			g.co
-londep.pro			g.co
-xxhd.tv				g.co
-xxphe.com			g.co
-ditvl.net			g.co
-javphe.com			g.co
-javphim.net			g.co
+sexmoi.net			3x.ago.vn
+sexhay69.net		3x.ago.vn
+sexngon.tv			3x.ago.vn
+londep.pro			3x.ago.vn
+xxhd.tv				3x.ago.vn
+xxphe.com			3x.ago.vn
+ditvl.net			3x.ago.vn
+javphe.com			3x.ago.vn
+javphim.net			3x.ago.vn
 
 #___TQ__________________
-*.appboy.com		g.co
-*.jpush.io			g.co
-*.heytapmobi.com	g.co
-*.haokan.mobi		g.co
-*.sohu.com			g.co
-*.cn				g.co
-xunyou.*			g.co
-*.baidu.com			g.co
-pms.mb.qq.com		g.co
-weixin.qq.com		g.co
-51y5.net			g.co
+*.sina.cn			thanhfu.ago.vn
+*.google.cn			thanhfu.ago.vn
+*.appboy.com		thanhfu.ago.vn
+*.jpush.io			thanhfu.ago.vn
+*.heytapmobi.com	thanhfu.ago.vn
+*.haokan.mobi		thanhfu.ago.vn
+*.sohu.com			thanhfu.ago.vn
+*.cn				thanhfu.ago.vn
+xunyou.*			thanhfu.ago.vn
+*.baidu.com			thanhfu.ago.vn
+pms.mb.qq.com		thanhfu.ago.vn
+weixin.qq.com		thanhfu.ago.vn
+51y5.net			thanhfu.ago.vn
 
 #__________________________________________________________________________
 
@@ -37,7 +39,7 @@ weixin.qq.com		g.co
 
 #www.noddos.io　　　　　　　　　s8d.github.io
 www.google.*　　　　　　　　　　forcesafesearch.google.com
-www.bing.com　　　　　　　　　　strict.bing.com
+www.binthanhfu.ago.vnm　　　　　　　　　　strict.binthanhfu.ago.vnm
 yandex.ru　　　　　　　　　　　　familysearch.yandex.ru
 duckduckgo.com　　　　　　　　　safe.duckduckgo.com
 #www.youtube.com　　　　　　　　restrictmoderate.youtube.com
