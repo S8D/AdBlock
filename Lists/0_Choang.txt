@@ -16,7 +16,6 @@
 *.adoptimize.info			ad.ago.vn
 *.ads-twitter.com			ad.ago.vn
 *.adtrue.com				ad.ago.vn
-*.adx1.com					ad.ago.vn
 *.ae888.com					ad.ago.vn
 *.aleapeact.club			ad.ago.vn
 *.alexametrics.com			ad.ago.vn
@@ -224,6 +223,7 @@ sexmoi.net					3x.ago.vn
 sexngon.tv					3x.ago.vn
 xxhd.tv						3x.ago.vn
 xxphe.com					3x.ago.vn
+*.adx1.com					ad.ago.vn
 
 #___TQ_______________________
 *.360.cn					ad.ago.vn
