@@ -1,6 +1,12 @@
-#PhienBan___2020020e
+#PhienBan___2020021a
 #___TongHop_________
 adkmob.com
+accesstrade.vn
+joymemory.com
+failover.zingmp3.vn
+lsosad.com
+lsttnews.com
+ssiloc.com
 *comment.dantri.com.vn
 *load.mediatek.com
 360safe.com
@@ -360,6 +366,7 @@ track*
 tracker.*
 
 #___TQ___________
+info.3g.qq.com
 #appboy.com
 #y5en.com
 analytics.wuta-cam.com
