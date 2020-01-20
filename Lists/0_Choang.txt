@@ -1,4 +1,4 @@
-#PhienBan___2020020e
+#PhienBan___2020021a
 #___Tổng-Hợp_________________
 *.360safe.com				ad.ago.vn
 *.88-f.net					ad.ago.vn
@@ -160,8 +160,6 @@
 *.pusher.com				ad.ago.vn
 *.pushimg.com				ad.ago.vn
 *.pushstack.co				ad.ago.vn
-*.qcloud.com				ad.ago.vn
-*.qingcdn.com				ad.ago.vn
 *.rayjump.com				ad.ago.vn
 *.rounsh.com				ad.ago.vn
 *.rubiconproject.com		ad.ago.vn
@@ -196,8 +194,10 @@
 *.toutiaocloud.net			ad.ago.vn
 *.tusdk.com					ad.ago.vn
 *.uc123.com					ad.ago.vn
+*.uc.cn						ad.ago.vn
 *.ucfly.com					ad.ago.vn
 *.ucweb.com					ad.ago.vn
+*.umeng.cloud				ad.ago.vn
 *.umeng.co					ad.ago.vn
 *.umeng.com					ad.ago.vn
 *.umengcloud.com			ad.ago.vn
@@ -214,7 +214,7 @@
 *.xunyou.mobi				ad.ago.vn
 *.yomedia.vn				ad.ago.vn
 *.zphunutoday.club			ad.ago.vn
-
+*.vienthammynevada.com		ad.ago.vn
 #___3X_______________________
 ditvl.net					3x.ago.vn
 javphe.com					3x.ago.vn
@@ -233,6 +233,7 @@ xxphe.com					3x.ago.vn
 *.google.cn					cn.ago.vn
 *.haokan.mobi				cn.ago.vn
 *.heytapmobi.com			cn.ago.vn
+*.oppo.com					cn.ago.vn
 *.jpush.io					cn.ago.vn
 *.sina.cn					cn.ago.vn
 *.sohu.com					cn.ago.vn
@@ -241,6 +242,12 @@ xxphe.com					3x.ago.vn
 pms.mb.qq.com				cn.ago.vn
 weixin.qq.com				cn.ago.vn
 xunyou.*					cn.ago.vn
+*.mozadong.com				cn.ago.vn
+*.qcloud.com				ad.ago.vn
+*.qingcdn.com				ad.ago.vn
+*.zhhainiao.com				ad.ago.vn
+
+*.tachio.com.vn				cn.ago.vn
 
 #__________________________________________________________________________
 
