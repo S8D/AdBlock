@@ -1,5 +1,12 @@
-#PhienBan___2020021a
+#PhienBan___2020029a
 #___TongHop_________
+ziffdavis.com
+peethobo.com
+getresponse.com
+go.masoffer.net
+fast.accesstrade.com.vn
+cdn.zopim.com
+embed.tawk.to
 adkmob.com
 accesstrade.vn
 joymemory.com
@@ -463,6 +470,7 @@ jav*.*
 #londep.pro
 
 #___Local_________
+*._tcp.xmpp.linksyssmartwifi.com
 *.localhost
 *.test
 *.intranet
