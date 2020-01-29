@@ -1,32 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 20200118e
+! Version: 20200129a
 ! Title: Darias: Gg.gG/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Gg.gG/a_
 ! ChangeLog: ...
-
-!___YouTube________________________________________
-youtube.com###masthead-ad
-youtube.com##*.video-ads
-||www.google.com/appserve/security-bugs/log/youtube
-||youtube.com/embed/2otFjO94BO4$subdocument
-||youtube.com/embed/g2C-vWK-Ujo$subdocument
-||youtube.com/embed/Ic0oV78BMdw$subdocument
-||youtube.com/embed/ObHDMnwndrI$subdocument
-||youtube.com/embed/yrW0oyMNzfU$subdocument
-||youtube.com/*_204?
-||youtube.com/ad_companion^
-||youtube.com/annotations_invideo^
-||youtube.com/api/stats/ads^
-||youtube.com/api/stats/qoe^
-||youtube.com/embed/*$domain=www.fshare.vn|abc.com
-||youtube.com/get_endscreen^
-||youtube.com/get_midroll_info?
-||youtube.com/pagead^
-||youtube.com/ptracking?
-||youtube.com/youtubei/*/log_*?
-||youtube.com/youtubei/*/log_*??
 
 !___Tổng-Hợp_______________________________________
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
@@ -38,12 +16,6 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
 /banners/click/*
 /fingerprint2.min.js^
 /tracking.ashx?
-www.techinferno.com###elGuestTerms
-||ad.chogiare.vn^
-androidfacting.blogspot.com##[href="//zukxd6fkxqn.com/1780508.html"]
-||i.imgur.com/u6iyMx4.png$image
-yeuphimmoi.com##.balloon-block
-quantrimang.com###mrc419
 2bay.org###boder1
 2bay.org###boder2
 4file.net###header
@@ -51,6 +23,7 @@ quantrimang.com###mrc419
 4file.net##div:nth-of-type(2) > table > tbody > tr > td
 4file.net##footer
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
+@@speedtest.vnix.vn/sizing/count.php
 a2zapk.com##.Tags
 a2zapk.com##div.ArticleLand:nth-of-type(4)
 a2zapk.com##div.ArticleLand:nth-of-type(5)
@@ -69,7 +42,9 @@ allsolu4u.vn###logoBlock
 allsolu4u.vn###widget-16
 androidauthority.com##.gcap-version-5.gcap-popup-with-avatar.gcap-logo-rounded.gcap-layout-popup.gcap-iLkZQ.gcap.email-only.gcap-shown
 androidauthority.com##.gcap-version-5.gcap-popuptext.gcap-layout-popup.gcap-KyBef.gcap.email-only.gcap-shown
+androidfacting.blogspot.com##[href="//zukxd6fkxqn.com/1780508.html"]
 androidfilehost.com###CybotCookiebotDialog
+androidfilehost.com##.footer
 anotepad.com##.footer
 apk4free.net###like-post-wrapper-105810064-117994-5bd026017ed5a
 apk4free.net##.code-block-4.code-block
@@ -147,6 +122,10 @@ cnet.com##.entered.dock.inviewElement
 codevn.net###footer
 codevn.net###header
 codevn.net##.codevnFooter
+community.netgear.com##.lia-in.lia-dialog-titleless.lia-panel-dialog-modal-valuesurvey.lia-panel-dialog-modal-simple.lia-panel-dialog.lia-content.ui-corner-all.ui-widget-content.ui-widget.ui-dialog
+community.netgear.com##.ui-widget-overlay
+computerassistance.co.uk##.cp-clear.cp-info-bar-wrapper
+computerassistance.co.uk##.cp-jugaad-container.cp_id_4a68a.cp-modal-popup-container.cp-module
 crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:last-child
 crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:nth-child(3)
 cydia.vn###tag_cloud-4
@@ -174,6 +153,7 @@ distrowatch.com##body > table:nth-of-type(3)
 distrowatch.com##p
 distrowatch.com##table.News:nth-of-type(1) > tbody > tr:nth-of-type(2) > .News
 distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
+div.box-main:first-child > h4:nth-child(5)
 dll-files.com##.overlay
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 dnschecker.org###cookie-box
@@ -206,17 +186,16 @@ downmienphi.com###fan-exit
 downmienphi.com###fanback
 downmienphi.com###index_middle > div.container.dad > div.mainContainer:nth-child(3) > div.mainContent > div.innerContent:nth-child(5) > div.interested:nth-child(7)
 downmienphi.com##footer:nth-child(4)
+downmienphi.net##.alert-warning.alert
 downmienphi.net##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
-downmienphi.net##.title
-downmienphi.net##header:nth-child(3)
 downmienphi.net##.mb-3.mt-3.col-md-12
 downmienphi.net##.mb-5.text-primary
 downmienphi.net##.sv-nav.navbar-dark.navbar-expand-md.navbar
 downmienphi.net##.text-center.col-md-12
-downmienphi.net##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
-downmienphi.net##.alert-warning.alert
+downmienphi.net##.title
 downmienphi.net##footer
 downmienphi.net##footer:nth-child(5)
+downmienphi.net##header:nth-child(3)
 doxeaz10.site###link-view > p:nth-child(2)
 doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > center:last-child
 doxeaz10.site##div.container:nth-child(8) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.blog-item:first-child
@@ -293,6 +272,7 @@ files.pw##h4.maintitag:nth-of-type(3)
 filetrip.net###templatemo_footer_wrapper
 filetrip.net##p
 fnote.me##footer
+forum.dd-wrt.com##.cookieinfo
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
@@ -304,6 +284,7 @@ forums.voz.vn###neo_logobar
 forums.voz.vn##body > .container > div.row:nth-of-type(1)
 forums.voz.vn##body > .container > div.row:nth-of-type(8)
 forums.voz.vn##div.row:nth-of-type(14)
+forums.voz.vn##else > form:nth-of-type(1)
 forums.voz.vn##table:nth-of-type(5)
 fpt.center###thread_info
 fptsieutoc.com###de_adblock
@@ -475,7 +456,6 @@ linku.us##.main-footer
 linku.us##.navbar-static-top.navbar
 linku.us##[src="https://idsly.bid/download3.png"]
 linku.us##h4
-div.box-main:first-child > h4:nth-child(5)
 macintosh.vn###dg-container
 mackie100projects.altervista.org###copyright
 mackie100projects.altervista.org###et-bio-author
@@ -586,7 +566,10 @@ premiumleech.eu###header
 premiumleech.eu###social
 premiumleech.eu##.related-news
 quantrimang.com###_shad_3
+quantrimang.com###adsposttop
+quantrimang.com###adsviewbottom
 quantrimang.com###footer
+quantrimang.com###mrc419
 quantrimang.com##.modal-body
 quantrimang.com##.outclose
 quantrimang.com##.underlay
@@ -768,6 +751,8 @@ ukshare.net###colophon > div:last-child
 ukshare.net###comments
 ukshare.net###post-709 > div.related-post.border-style.recent-post:last-child
 ukshare.net###secondary
+uli.vn##.login-logo
+uli.vn##.logo-image.navbar-brand
 unlockapk.com##.footer--dark.footer
 unlockapk.com##.nav
 upfile.vn###Footer
@@ -916,11 +901,10 @@ vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody
 vietnamnet.vn###Box-FixFB
 vietnamnet.vn##.BoxFix
 vietnamnet.vn##.Main-Footer.p-t-20
-||vipshare.co/img/*$image
-vipshare.co##.title.text-center
 vipshare.co##.adsx468
 vipshare.co##.footer
 vipshare.co##.navbar-fixed-top.navbar-info.navbar
+vipshare.co##.title.text-center
 vipshare.co##.Vipshare
 vitinhvuhoang.com###sbox-overlay
 vitinhvuhoang.com###sbox-window
@@ -947,6 +931,9 @@ vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 vubey.yt##.footer-section
+vuighe.tv###footer
+vuighe.tv##.class_quangcao_benphai
+vuighe.tv##.only-pc.tagcloud.block
 vyctravel.com###wrap-page > footer:nth-child(12)
 vyctravel.com###wrap-page > footer:nth-child(15) > div.wrap-foottour.hidden-xs:first-child > div.foottour
 wanyx.com##.clearfix.AdArea
@@ -963,22 +950,34 @@ win10.vn###better-ads-3
 win10.vn###boxzilla-1929
 win10.vn###boxzilla-overlay
 win10.vn###comments
+win10.vn###ignielAdBlock
 win10.vn###main-nav
 win10.vn###sidebar
 win10.vn###theme-footer
 win10.vn##.bsac-float-center.bsac-column-1.bsac-align-center.bsac-clearfix.bsac
 win10.vn##.copy-footer
+win10.vn##.cp-clear.cp-info-bar-wrapper
 win10.vn##.header-content
 win10.vn##.header-inner
 win10.vn##.light-text.footer-widgets
 win10.vn##.post-inner
 win10.vn##.style-3.clearfix.bottom-share.single-post-share.post-share
 win10.vn##.use-pretty-tabs.hidden-xs.topbar-style-1.topbar
+www.nokia.com##.nokia_cookie-wrapper
+www.techinferno.com###elGuestTerms
 www110.zippyshare.com###bottom
 www110.zippyshare.com###lrbox > div.slickbox:nth-child(5) > div.center:first-child
 www110.zippyshare.com##.smalltab
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
+yeuphimmoi.com##.balloon-block
+||ad.chogiare.vn^
+||androidfilehost.com/assets/images/cloud-bg-new.png$image
+||i.imgur.com/u6iyMx4.png$image
+||lixi88.info^
+||vipshare.co/img/*$image
+||vuighe.tv/images/*.gif^
+||vuighe.tv/players/ads/^
 
 !___Rút-Gọn________________________________________
 
@@ -1299,6 +1298,28 @@ facebook.com##._760w._74-1
 ||facebook.com/plugins/$domain=~facebook.com
 ||facebook.com/tr/*.*
 @@connect.facebook.net/vi_VN/sdk.js^$domain=luanxt.tk
+
+!___YouTube________________________________________
+youtube.com###masthead-ad
+youtube.com##*.video-ads
+||www.google.com/appserve/security-bugs/log/youtube
+||youtube.com/embed/2otFjO94BO4$subdocument
+||youtube.com/embed/g2C-vWK-Ujo$subdocument
+||youtube.com/embed/Ic0oV78BMdw$subdocument
+||youtube.com/embed/ObHDMnwndrI$subdocument
+||youtube.com/embed/yrW0oyMNzfU$subdocument
+||youtube.com/*_204?
+||youtube.com/ad_companion^
+||youtube.com/annotations_invideo^
+||youtube.com/api/stats/ads^
+||youtube.com/api/stats/qoe^
+||youtube.com/embed/*$domain=www.fshare.vn|abc.com
+||youtube.com/get_endscreen^
+||youtube.com/get_midroll_info?
+||youtube.com/pagead^
+||youtube.com/ptracking?
+||youtube.com/youtubei/*/log_*?
+||youtube.com/youtubei/*/log_*??
 
 !___Ngoại-Lệ_______________________________________
 @@$important,document,~extension$domain=1.1.1.1|2.2.2.1|2.2.2.2|2.2.2.3|2.2.2.4|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
