@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20200129a
-! Title: Darias: Gg.gG/a_
+! Version: 20200129b
+! Title: Gg.gG/a_ | uli.vn/a_
 ! Expires: 1 days
-! Homepage: Gg.gG/a_
-! Licence: Gg.gG/a_
+! Homepage: Gg.gG/a_ | uli.vn/a_
+! Licence: Darias
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
@@ -25,6 +25,7 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
 @@speedtest.vnix.vn/sizing/count.php
 a2zapk.com##.Tags
+a2zapk.com##.WebF
 a2zapk.com##div.ArticleLand:nth-of-type(4)
 a2zapk.com##div.ArticleLand:nth-of-type(5)
 a2zapk.com##div.NewBlock:nth-of-type(1)
@@ -514,7 +515,11 @@ mxlinux.org###webarx-cookie-notice
 myopenrouter.com###sliding-popup
 news.zing.vn###highlight
 news.zing.vn##div.page-wrapper:nth-child(8) > article.the-article.type-text.zing.read.loaded:nth-child(2) > section.main:first-child > p.the-article-tags:nth-child(7)
+newsjizz.in###content > div:nth-of-type(1)
 newsjizz.in###taxonomy-list_1-0
+newsjizz.in##.WebF
+newsjizz.in##body > div:nth-of-type(3)
+newsjizz.in##div.ArticleLand:nth-of-type(3)
 nhaccuatui.com###box_playing_id > div.adsZoneMp3:first-child
 nhaccuatui.com###coverImageflashPlayer
 nhaccuatui.com###right_support_online
@@ -755,6 +760,14 @@ uli.vn##.login-logo
 uli.vn##.logo-image.navbar-brand
 unlockapk.com##.footer--dark.footer
 unlockapk.com##.nav
+up-load.io###gdpr-cookie-notice
+up-load.io##.buyPremium.alert-success.alert
+up-load.io##.col-md-8
+up-load.io##.footer-sub
+up-load.io##.navbar-fixed-top.navbar-inverse.navbar
+up-load.io##.text-center.col-md-8
+up-load.io##center > center
+up-load.io##footer
 upfile.vn###Footer
 upfile.vn###Header
 upfile.vn##.Download > ins.adsbygoogle:nth-of-type(1)
@@ -763,6 +776,7 @@ upfile.vn##.Wrapper > div:nth-of-type(1)
 upfile.vn##[href="https://tienso.net"]
 upfile.vn##ins.adsbygoogle:nth-of-type(2)
 upfile.vn##p
+upload.ac##.col-md-12 > .row > div:nth-of-type(2)
 upload.ac##.col-md-8 > .row > .clearfix
 upload.ac##.col-xs-10.col-sm-6
 upload.ac##.col-xs-10.col-sm-7
@@ -783,6 +797,15 @@ upload4earn.org##header
 upload4earn.org##input:nth-of-type(7)
 upload4earn.org##li:nth-of-type(5) > span
 upload4earn.org##nav
+uploaded.net###foot
+uploaded.net###head
+uploaded.net##.aB.feature
+uploaded.net##td:nth-of-type(6)
+uploaded.net##tr.feature:nth-of-type(11)
+uploaded.net##tr.feature:nth-of-type(13)
+uploaded.net##tr.feature:nth-of-type(5)
+uploaded.net##tr.feature:nth-of-type(7)
+uploaded.net##tr.feature:nth-of-type(9)
 uploadev.org###footer2
 uploadev.org###gdpr-cookie-notice
 uploadev.org###news_last
