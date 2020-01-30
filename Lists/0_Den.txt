@@ -1,7 +1,8 @@
-#PhienBan___2020030b
+#PhienBan___2020030c
 #___TongHop_________
 comment.nld.com.vn
 comment.dantri.com.vn
+code.ionicframework.com
 demo-ads.vietnamnetjsc.vn
 360in.com
 assets.dspunion.com
@@ -409,6 +410,7 @@ analytics.wuta-cam.com
 #51y5.net
 
 #___Apple___________
+securemetrics.apple.com
 *metrics.apple.com
 xp.apple.com
 mesu.apple.com

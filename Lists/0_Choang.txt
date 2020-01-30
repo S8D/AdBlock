@@ -1,5 +1,6 @@
-#PhienBan___2020030b
+#PhienBan___2020030c
 #___Tổng-Hợp_________________
+*.cookieinfoscript.com		ad.ago.vn
 *.byet.org					ad.ago.vn
 *.ifastnet.com				ad.ago.vn
 *.mob.com					ad.ago.vn
