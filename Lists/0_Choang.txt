@@ -1,5 +1,8 @@
-#PhienBan___2020030a
+#PhienBan___2020030b
 #___Tổng-Hợp_________________
+*.byet.org					ad.ago.vn
+*.ifastnet.com				ad.ago.vn
+*.mob.com					ad.ago.vn
 *.codemylife.info			ad.ago.vn
 *.burningpush.info			ad.ago.vn
 *.thenpushme.info			ad.ago.vn
