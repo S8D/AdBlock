@@ -1,5 +1,16 @@
-#PhienBan___2020029a
+#PhienBan___2020030a
 #___TongHop_________
+assets.dspunion.com
+k8dream.com
+kmail.com
+vivoglobal.com
+mppmnetwork.com
+k8luck.com
+x.o-s.io
+logsea.aseugame.com
+thongke.baotintuc.vn
+urbanairship.com
+networksdk.ssacdn.com
 ziffdavis.com
 peethobo.com
 getresponse.com
@@ -373,6 +384,10 @@ track*
 tracker.*
 
 #___TQ___________
+rjfun.com
+sgsnssdk.com
+snssdk.com
+pingma.qq.com
 info.3g.qq.com
 #appboy.com
 #y5en.com
@@ -401,6 +416,7 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Google_________
+csi.gstatic.com
 suggestqueries.google.com
 *id.google.*
 imasdk.googleapis.com
@@ -449,20 +465,15 @@ res-*.zadn.vn
 *lamtinh*
 *tinhduc*
 *lauxanh*
-vlxx.*
-vlphimsex.*
-cu3x.*
-top3x.*
-heo3x.*
-phim3x.*
-soc3x.*
-gaidam.*
-sexhayvl.*
+#vlphimsex.*
+#cu3x.*
+#top3x.*
+#heo3x.*
+#phim3x.*
+#gaidam.*
 #ditvl.*
-3xhd.*
-thiendia.*
-heo69.*
-dam69.*
+#3xhd.*
+#heo69.*
 jav*.*
 *jav.*
 #xxphe.com
