@@ -1,5 +1,14 @@
-#PhienBan___2020030c
+#PhienBan___2020030d
 #___TongHop_________
+smartadserver.com
+consensu.org
+glishais.net
+propellerclick.com
+tharbadir.com
+pushrase.com
+myfastcdn.com
+adcolony.com
+metrics.sdkbox.com
 comment.nld.com.vn
 comment.dantri.com.vn
 code.ionicframework.com
@@ -27,6 +36,7 @@ adkmob.com
 accesstrade.vn
 joymemory.com
 failover.zingmp3.vn
+failover.zaloapp.com
 lsosad.com
 lsttnews.com
 ssiloc.com
@@ -389,6 +399,7 @@ track*
 tracker.*
 
 #___TQ___________
+android.bugly.qq.com
 rjfun.com
 sgsnssdk.com
 snssdk.com

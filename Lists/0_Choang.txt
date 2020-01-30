@@ -1,4 +1,4 @@
-#PhienBan___2020030c
+#PhienBan___2020030d
 #___Tổng-Hợp_________________
 *.cookieinfoscript.com		ad.ago.vn
 *.byet.org					ad.ago.vn
@@ -37,7 +37,6 @@
 *.mary-ambler.xyz			ad.ago.vn
 *.appcenter.ms				ad.ago.vn
 *.logapi.mvmasters.com		ad.ago.vn
-*.failover.zingmp3.vn		ad.ago.vn
 *.avlyun.com				ad.ago.vn
 *.biquyettuthiennhien.com	ad.ago.vn
 *.pregmombeyeu.com			ad.ago.vn
