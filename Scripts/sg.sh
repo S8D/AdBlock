@@ -1,4 +1,5 @@
 #!/bin/bash
+PhienBan="20200130a"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then if [ -d /www/cgi-bin ]; then sp="/usr/sbin/sp"; else sp="/sbin/sp"; fi
 if [ ! -f "$sp" ]; then curl -sLo $sp uli.vn/_sp ;fi; fi
