@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131b"
+PhienBan="20200131c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -85,11 +85,11 @@ KiemDHCP () {
 KiemCauHinh () {
 	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 			if [ ! -f "$DVdns" ]; then $dl1 $upTam uli.vn/dv; chmod +x $upTam; mv $upTam $DVdns; fi
-			if [ ! -f "${tmDNS}/TruyVan.log" ] then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
+			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 			$dl1 ${tmDNS}/dns.tar.gz uli.vn/ch;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
 
 	if [ $OS == $Android ]; then if [ $OS == $Android ]; then 
-			if [ ! -f "${tmDNS}/TruyVan.log" ] then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
+			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 			$dl1 ${tmDNS}/dns.zip uli.vn/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
 }
 
