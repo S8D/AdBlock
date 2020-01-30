@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200119c"
+PhienBan="20200130a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -20,11 +20,72 @@ Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi;
 tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
 CauHinh="${tmDNS}/CauHinh.toml"
 
+KiemMasq () {
+	ipmasq=$(cat /etc/dnsmasq.conf | grep server\=\/3\.4\.)
+	if [ -z "$ipmasq" ]; then
+		echo '' >> /etc/dnsmasq.conf
+		echo '# DNSCrypt' >> /etc/dnsmasq.conf
+		echo 'server=/lan/' >> /etc/dnsmasq.conf
+		echo 'server=/private/' >> /etc/dnsmasq.conf
+		echo 'server=/internal/' >> /etc/dnsmasq.conf
+		echo 'server=/intranet/' >> /etc/dnsmasq.conf
+		echo 'server=/workgroup/' >> /etc/dnsmasq.conf
+		echo 'server=/d.f.ip6.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/10.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/2.2.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/3.4.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/16.172.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/168.192.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/254.169.in-addr.arpa/' >> /etc/dnsmasq.conf
+	fi
+}
+
+KiemFW () {
+	fw="/etc/config/firewall"; fwl=$(cat ${fw} | grep "src\_dport \'53\'")
+	if [ -z "$fwl" ]; then echo -e '
+config redirect
+\toption name 'NextDNS_53'
+\toption src 'lan'
+\toption proto 'tcp udp'
+\toption src_dport '53'
+\toption dest_port '53'
+\toption target 'DNAT'
+
+config redirect
+\toption name 'NextDNS_853'
+\toption src 'lan'
+\toption proto 'tcp udp'
+\toption src_dport '853'
+\toption dest_port '853'
+\toption target 'DNAT'
+
+config redirect
+\toption name 'NextDNS_5353'
+\toption src 'lan'
+\toption proto 'tcp udp'
+\toption src_dport '5353'
+\toption dest_port '5353'
+\toption target 'DNAT'
+' | cat - $fw | tee $fw;
+	fi
+}
+
+KiemDHCP () {
+	dhcp="/etc/config/dhcp"; dhc=$(cat ${dhcp} | grep "option noresolv \'1\'"); echo "$dhc"
+	if [ -z "$dhc" ]; then dhcp="/run/media/darias/SSD/0_Router/www/dhcp"; 
+		thay="dnsmasq\n\toption noresolv \'1\'\n\toption localuse \'1\'\n\toption boguspriv \'1\'\n\tlist server \'127.0.0.53\'";
+		sed -i 's/dnsmasq/'"$thay"'/g' $dhcp
+		/etc/init.d/dnsmasq restart; logread -l 100 | grep dnsmasq | grep nameserver | sed 's/.*nameserver //'
+	fi
+}
+
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
 CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
 CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
+
+if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemFW; KiemMasq; fi
 
 if CheckUL; then UpLink="uli.vn/d"; DownLink="uli.vn/dns"; net="1"; else	
 	if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; net="2"; else	
