@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200130c"
+PhienBan="20200130d"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ]; then if [ -d /www/cgi-bin ]; then sp="/usr/sbin/sp"; echo "OS: $OS | OpenWRT"; 
 else sp="/sbin/sp"; echo "OS: $OS"; fi; if [ ! -f "$sp" ]; then 
@@ -12,5 +12,6 @@ else sp="/opt/sbin/sp"; echo "OS: $OS"; fi; if [ ! -f "$sp" ]; then
 if [ $OS == $Android ]; then sp="/system/xbin/sp"; echo "OS: $OS"; 
 	if [ ! -f "$sp" ]; then echo "Đang tải SpeedTest"; curl -sLo $sp uli.vn/sp- ;fi; fi
 
+if [ ! -f "$sp" ]; then echo "Không tìm thấy SpeedTest!!!"; exit; fi
 echo "Kiểm tra tốc độ mạng tới máy chủ Việt Nam"
 sp -B -s 6106
