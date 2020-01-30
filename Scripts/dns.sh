@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131f"
+PhienBan="20200131g"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -131,7 +131,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		if [ $OS == $Android ]; then unzip -d "${TM}" ${TM}/DNSCrypt.zip
 			while ! [ `pgrep -x dns; pkill dns` ] ; do mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
 
-		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
+		#if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
 		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 				
 		
