@@ -1,7 +1,11 @@
 #!/bin/bash
+PhienBan="20200130a"
 chen1="/jffs/scripts/chenUSB"; mkdir -p /jffs/scripts
 if [ ! -f "$chen1" ]; then cat << EOF > $chen1
+#!/bin/bash
 mkdir -p  /tmp/opt; mount /dev/sda1 /tmp/opt
+cd /root; ln -s /opt/d d; ln -s /opt/s s; ln -s /opt/v v
+
 EOF
 fi
 nvram set script_chenUSB="/jffs/scripts/chenUSB"
