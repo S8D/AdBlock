@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131d"
+PhienBan="20200131e"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -7,13 +7,12 @@ dl1="curl -s -L -o"; dl2="curl -s -L"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 
 if [ $OS == $x64 ] || [ $OS == $arm ]; then 
-	TM="/root"; TMLog="/www"; dns="/usr/sbin/dns"; cd $TM; duoi="tar.gz"; giainen="tar xzvf"; DVdns="/etc/init.d/dns"; fi
+	TM="/root"; TMLog="/www"; dns="/usr/sbin/dns"; cd $TM; DVdns="/etc/init.d/dns"; duoi="tar.gz"; fi
 
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
-if [ $OS == $Android ]; then dns="/system/bin/dns";
-	TM="/sdcard"; TMLog="${TM}/dns"; linktai="android_arm64"; ThuMuc="android-arm64";
-	duoi="zip"; giainen="unzip -d "${TM}"";
+if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; 
+	TM="/sdcard"; TMLog="${TM}/dns"; dns="/system/bin/dns"; duoi="zip"; 
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; 
@@ -126,15 +125,15 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; 
-		$giainen ${TM}/DNSCrypt.$duoi; 
+		if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+			tar xzvf ${TM}/DNSCrypt.tar.gz; $DVdns stop; mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
+
+		if [ $OS == $Android ]; then unzip -d "${TM}" ${TM}/DNSCrypt.zip
+			while ! [ `pgrep -x dns; pkill dns` ] ; do mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
+
 		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
 		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
-		
-		echo "$DauCau Đang cập nhật DNSCrypt-Proxy..."
-		if [ $OS == $x64 ] || [ $OS == $arm ]; then $DVdns stop; mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
-		
-		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; 
-			while ! [ `pgrep -x dns; pkill dns` ] ; do mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
+				
 		
 		DonDep;
 
