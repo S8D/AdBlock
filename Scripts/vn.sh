@@ -5,4 +5,4 @@ if [ $OS == $arm ]; then if [ -d /www/cgi-bin ]; then sp="/usr/sbin"; else sp="/
 if [ ! -f "$sp" ]; then curl -sLo $sp uli.vn/sp_ ;fi; fi
 if [ $OS == $Android ]; then sp="/sbin/sp"; if [ ! -f "$sp" ]; then curl -sLo $sp uli.vn/sp- ;fi; fi
 echo "Kiểm tra tốc độ mạng tới máy chủ Việt Nam"
-sp -B -s 6107
+sp -B -s 6106
