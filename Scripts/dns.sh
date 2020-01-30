@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131c"
+PhienBan="20200131d"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -88,7 +88,7 @@ KiemCauHinh () {
 			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 			$dl1 ${tmDNS}/dns.tar.gz uli.vn/ch;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
 
-	if [ $OS == $Android ]; then if [ $OS == $Android ]; then 
+	if [ $OS == $Android ]; then 
 			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 			$dl1 ${tmDNS}/dns.zip uli.vn/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
 }
