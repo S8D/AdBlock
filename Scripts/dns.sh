@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131a"
+PhienBan="20200131b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -17,8 +17,12 @@ if [ $OS == $Android ]; then dns="/system/bin/dns";
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; 
-tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
+tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; 
 CauHinh="${tmDNS}/CauHinh.toml"
+
+DonDep () {
+	rm -f $upTam; rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam; rm -f ${tmDNS}/dns.tar.gz; rm -f ${tmDNS}/dns.zip
+}
 
 KiemMasq () {
 	ipmasq=$(cat /etc/dnsmasq.conf | grep server\=\/3\.4\.)
@@ -82,18 +86,18 @@ KiemCauHinh () {
 	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 			if [ ! -f "$DVdns" ]; then $dl1 $upTam uli.vn/dv; chmod +x $upTam; mv $upTam $DVdns; fi
 			if [ ! -f "${tmDNS}/TruyVan.log" ] then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.tar.gz uli.vn/ch;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; rm -f ${tmDNS}/dns.tar.gz; fi; fi
+			$dl1 ${tmDNS}/dns.tar.gz uli.vn/ch;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
 
 	if [ $OS == $Android ]; then if [ $OS == $Android ]; then 
 			if [ ! -f "${tmDNS}/TruyVan.log" ] then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.zip uli.vn/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; rm -f ${tmDNS}/dns.zip; fi; fi
+			$dl1 ${tmDNS}/dns.zip uli.vn/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
 }
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-#CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
 CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
 CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
+DonDep;
 
 if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemFW; KiemMasq; fi
 
@@ -121,7 +125,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
 		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
-		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; rm -rf ${TM}/${ThuMuc}
+		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; 
 		$giainen ${TM}/DNSCrypt.$duoi; 
 		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
 		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
@@ -132,7 +136,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		if [ $OS == $Android ]; then echo "$DauCau Đang dừng DNSCrypt-Proxy..."; 
 			while ! [ `pgrep -x dns; pkill dns` ] ; do mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
 		
-		rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam;
+		DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
