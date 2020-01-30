@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131e"
+PhienBan="20200131f"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -121,12 +121,12 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 		echo "$DauCau Đang tải DNSCrypt-Proxy..."
-		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | cut -d '"' -f 4)
+		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | sed 's/.*minisig//' | cut -d '"' -f 4);
 		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; 
-		if [ $OS == $x64 ] || [ $OS == $arm ]; then 
-			tar xzvf ${TM}/DNSCrypt.tar.gz; $DVdns stop; mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
+		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM
+			tar -xzvf DNSCrypt.tar.gz; $DVdns stop; mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
 		if [ $OS == $Android ]; then unzip -d "${TM}" ${TM}/DNSCrypt.zip
 			while ! [ `pgrep -x dns; pkill dns` ] ; do mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
