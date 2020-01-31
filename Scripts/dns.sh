@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131i"
+PhienBan="20200131j"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -125,17 +125,19 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; 
-		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM
-			tar -xzvf DNSCrypt.$duoi; $DVdns stop; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
+		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
+			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+			$DVdns stop; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 			mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
-		if [ $OS == $Android ]; then unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
+		if [ $OS == $Android ]; then cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
+			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
 			while ! [ `pgrep -x dns; pkill dns` ] ; do chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 				mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
-
-		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi; DonDep;
+		
+		DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
