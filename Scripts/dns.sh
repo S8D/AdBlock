@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131h"
+PhienBan="20200131i"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
