@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131k"
+PhienBan="20200201a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -74,7 +74,7 @@ config redirect
 
 KiemDHCP () {
 	dhcp="/etc/config/dhcp"; dhc=$(cat ${dhcp} | grep "option noresolv \'1\'"); 
-	if [ -z "$dhc" ]; then dhcp="/run/media/darias/SSD/0_Router/www/dhcp"; 
+	if [ -z "$dhc" ]; then dhcp="/etc/config/dhcp"; 
 		thay="dnsmasq\n\toption noresolv \'1\'\n\toption localuse \'1\'\n\toption boguspriv \'1\'\n\tlist server \'127.0.0.53\'";
 		sed -i 's/dnsmasq/'"$thay"'/g' $dhcp
 		/etc/init.d/dnsmasq restart; logread -l 100 | grep dnsmasq | grep nameserver | sed 's/.*nameserver //'
