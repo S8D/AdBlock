@@ -135,9 +135,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 				mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
 
-		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
-		
-		DonDep;
+		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi; DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
