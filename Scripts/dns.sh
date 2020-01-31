@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200201b"
+PhienBan="20200201c"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -43,7 +43,7 @@ KiemMasq () {
 }
 
 KiemFW () {
-	fw="/etc/config/firewall"; fwl=$(cat ${fw} | grep "src\_dport \'53\'")
+	fw="/etc/config/firewall"; fwl=$(cat ${fw} | grep NextDNS)
 	if [ -z "$fwl" ]; then echo -e '
 config redirect
 \toption name 'NextDNS_53'
@@ -72,7 +72,7 @@ config redirect
 }
 
 KiemDHCP () {
-	dhcp="/etc/config/dhcp"; dhc=$(cat ${dhcp} | grep "option noresolv \'1\'"); 
+	dhcp="/etc/config/dhcp"; dhc=$(cat ${dhcp} | grep "option noresolv"); 
 	if [ -z "$dhc" ]; then dhcp="/etc/config/dhcp"; 
 		thay="dnsmasq\n\toption noresolv \'1\'\n\toption localuse \'1\'\n\toption boguspriv \'1\'\n\tlist server \'127.0.0.53\'";
 		sed -i 's/dnsmasq/'"$thay"'/g' $dhcp
