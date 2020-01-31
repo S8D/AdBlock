@@ -1,8 +1,7 @@
 #!/bin/bash
 PhienBan="20200201a"
-GetTime=$(date +"%F %a %T"); Time="$GetTime -"
-DauCau="#"
 
+GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 
