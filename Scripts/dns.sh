@@ -126,18 +126,16 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 
 		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; 
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM
-			tar -xzvf DNSCrypt.$duoi; $DVdns stop; 
+			tar -xzvf DNSCrypt.$duoi; $DVdns stop; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 			mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
 		if [ $OS == $Android ]; then unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
-			while ! [ `pgrep -x dns; pkill dns` ] ; do 
+			while ! [ `pgrep -x dns; pkill dns` ] ; do chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 				mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
 
-		#if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
-		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
-				
+		if [ ! -f ${TM}/${ThuMuc}/dnscrypt-proxy ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; exit; fi
 		
 		DonDep;
 
