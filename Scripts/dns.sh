@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200131j"
+PhienBan="20200131k"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -124,15 +124,15 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | sed 's/.*minisig//' | cut -d '"' -f 4);
 		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
-		echo "$DauCau Đang giải nén DNSCrypt-Proxy..."; 
+		echo -e "$DauCau Đang giải nén DNSCrypt-Proxy...\n"; 
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
-			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
 			$DVdns stop; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 			mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
 		if [ $OS == $Android ]; then cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
-			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo "$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
 			while ! [ `pgrep -x dns; pkill dns` ] ; do chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 				mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
@@ -141,7 +141,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
-    		echo "$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; echo "$DauCau Đang gọi DNSCrypt-Proxy...";
+    		echo -e "\n$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; echo "$DauCau Cấu hình lại DNSCrypt-Proxy...";
     		$dns --config $CauHinh -check; $dns --config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; else
     		echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!" >> $Log;
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
