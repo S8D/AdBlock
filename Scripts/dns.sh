@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200201a"
+PhienBan="20200201b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -94,10 +94,7 @@ KiemCauHinh () {
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
-DonDep;
-
-if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemFW; KiemMasq; fi
+CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; }; DonDep;
 
 if CheckUL; then UpLink="uli.vn/d"; DownLink="uli.vn/dns"; net="1"; else	
 	if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; net="2"; else	
@@ -113,6 +110,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemFW; KiemMasq; fi
+	
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
@@ -134,9 +133,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
 			while ! [ `pgrep -x dns; pkill dns` ] ; do chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 				mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
-				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi
-		
-		DonDep;
+				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi; DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
