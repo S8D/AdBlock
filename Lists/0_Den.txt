@@ -1,5 +1,13 @@
-#PhienBan___2020030e
+#PhienBan___20200201a
 #___TongHop_________
+cookieinfoscript.com
+nuri.net
+nuri.net.gateway
+wbidder.online
+special-offers.online
+push-signals.online
+easytomessage.com
+vungle.com
 vungtv.com
 vamprog.site
 allarmate.club
@@ -403,6 +411,8 @@ track*
 tracker.*
 
 #___TQ___________
+ludashi.com
+yy.com
 android.bugly.qq.com
 rjfun.com
 sgsnssdk.com
