@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200202b"
+PhienBan="20200202d"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -99,6 +99,14 @@ CapNhatAR () {
 	cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
 }
 
+CapNhatAR2 () {
+	echo "\n$DauCau Đang tải cấu hình Module Magisk"
+	mkdir ${TM}/$ThuMuc
+	curl -sL#o ${TM}/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" ${TM}/dns.zip
+	if [ ! -f ${TM}/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+	cd ${TM}/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
+}
+
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
@@ -139,12 +147,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
-		if [ $OS == $Android ]; then echo "\n$DauCau Đang tải cấu hình Module Magisk"
-			mkdir ${TM}/$ThuMuc
-			curl -sL#o ${TM}/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" ${TM}/dns.zip
-			if [ ! -f ${TM}/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
-			cd ${TM}/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
-			 fi; DonDep;
+		if [ $OS == $Android ]; then CapNhatAR; fi; DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
