@@ -1,4 +1,22 @@
-#PhienBan___2020030d
+#PhienBan___20200202a
+#___CoBac___________
+*.five88.net				cd.ago.vn
+*.w88yes.com				cd.ago.vn
+*.88-f.net					cd.ago.vn
+*.ae888.com					cd.ago.vn
+*.ae888vn.com				cd.ago.vn
+*.138gd.biz					cd.ago.vn
+*.vegas09.com				cd.ago.vn
+*.tylemacao.com				cd.ago.vn
+*.keo365.com				cd.ago.vn
+*.hoiana777.com				cd.ago.vn
+*.8live.fun					cd.ago.vn
+*.tachio.com.vn				cd.ago.vn
+*.888casino.com				cd.ago.vn
+*.keonhacai.com				cd.ago.vn
+*.thegioicacuocbongda.com	cd.ago.vn
+*.keocacuoc.net				cd.ago.vn
+
 #___Tổng-Hợp_________________
 *.cookieinfoscript.com		ad.ago.vn
 *.byet.org					ad.ago.vn
@@ -22,9 +40,6 @@
 *.ofhappinyer.com			ad.ago.vn
 *.offerimage.com			ad.ago.vn
 *.terttalkinhitin.pro		ad.ago.vn
-*.keonhacai.com				ad.ago.vn
-*.thegioicacuocbongda.com	ad.ago.vn
-*.keocacuoc.net				ad.ago.vn
 *.toutiaocloud.com			ad.ago.vn
 *.jucysh.com				ad.ago.vn
 *.joymemory.com				ad.ago.vn
@@ -49,10 +64,8 @@
 *.bnc.lt					ad.ago.vn
 *.kochava.com				ad.ago.vn
 *.viam.com.vn				ad.ago.vn
-*.tachio.com.vn				ad.ago.vn
 *.bing.com					ad.ago.vn
 *.yahoo.com					ad.ago.vn
-*.888casino.com				ad.ago.vn
 #___Google_________
 
 #___3X_______________________
@@ -208,8 +221,10 @@ xunyou.*					cn.ago.vn
 #www.noddos.io				s8d.github.io
 www.google.*				forcesafesearch.google.com
 #www.bing.com				strict.bing.com
+*.bing.com					forcesafesearch.google.com
 yandex.ru					familysearch.yandex.ru
-duckduckgo.com				safe.duckduckgo.com
+#duckduckgo.com				safe.duckduckgo.com
+duckduckgo.com				forcesafesearch.google.com
 #www.youtube.com			restrictmoderate.youtube.com
 #m.youtube.com				restrictmoderate.youtube.com
 #youtubei.googleapis.com	restrictmoderate.youtube.com

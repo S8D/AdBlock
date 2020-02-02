@@ -1,5 +1,23 @@
-#PhienBan___20200201a
+#PhienBan___20200202a
 #___TongHop_________
+amazinelistrun.pro
+smaato.net
+liftoff.io
+debet.com
+admicro*.vcmedia.vn
+papertrailapp.com
+cyneburg-yam.com
+amazinelistrun.pro
+telemetry.swe.quicinc.com
+nbryb.com
+pixelsrvdmn.com
+amegaphored.pro
+vvpcdke43x.com
+ugyplysh.com
+gimwms.com
+nativesp.pro
+lulachu.com
+loginfra.com
 cookieinfoscript.com
 nuri.net
 nuri.net.gateway
@@ -55,7 +73,6 @@ ssiloc.com
 *comment.dantri.com.vn
 *load.mediatek.com
 360safe.com
-88-f.net
 acs.m.taobao.com
 ad.mail.ru
 ad.org.vn
@@ -78,7 +95,6 @@ ads.mp.mydas.mobi
 adsplay.*
 adtrue.com
 adx1.com
-ae888.com
 aj1*.online
 aleapeact.club
 alexametrics.com
@@ -412,8 +428,13 @@ tracker.*
 
 #___TQ___________
 ludashi.com
+ipstatp.com
+wshareit.com
 yy.com
-android.bugly.qq.com
+bugly.qq.com
+cfg.imtt.qq.com
+oth.*.mdt.qq.com
+android.*.qq.com
 rjfun.com
 sgsnssdk.com
 snssdk.com
@@ -465,10 +486,12 @@ doubleclick.net
 adservice*
 
 #___Zalo_________
+px.za.zaloapp.com
 stc.za.zaloapp.com
 store*zalo
 *page*zalo
 polyfill.io
+zplayer-trk.zdn.vn
 zplayer.trk.zapps.vn
 *zpg.zdn.vn
 store*.zdn.vn
