@@ -1,6 +1,7 @@
-#PhienBan___20200202b
+#PhienBan___20200202c
 #___TongHop_________
 waust.at
+whoami.akamai.net
 startappservice.com
 amazinelistrun.pro
 smaato.net
@@ -429,6 +430,10 @@ track*
 tracker.*
 
 #___TQ___________
+uwx1.xyz
+v21xy.com
+gltxy.xyz
+wpsmail.net
 ludashi.com
 ipstatp.com
 wshareit.com
