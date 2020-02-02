@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200202d"
+PhienBan="20200202e"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -12,7 +12,10 @@ if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; 
 	TM="/sdcard"; TMLog="${TM}/dns"; dns="/system/bin/dns"; duoi="zip"; 
-	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
+	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; 
+	iptables -t nat -A OUTPUT -p tcp ! -d 1.0.0.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
+ 	iptables -t nat -A OUTPUT -p udp ! -d 1.0.0.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
+fi
 
 Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; 
 tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; 
