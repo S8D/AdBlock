@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200202a"
+PhienBan="20200202b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -120,7 +120,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 		echo "$DauCau Đang tải DNSCrypt-Proxy..."
 		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | sed 's/.*minisig//' | cut -d '"' -f 4);
-		$dl1 $TM/DNSCrypt.$duoi $DownURL
+		$dl1 $TM/DNSCrypt.$duoi -# $DownURL
 
 		echo -e "$DauCau Đang giải nén DNSCrypt-Proxy...\n"; 
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
