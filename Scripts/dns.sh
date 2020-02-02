@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200201c"
+PhienBan="20200202a"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -130,10 +130,10 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
 		if [ $OS == $Android ]; then cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
-			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
-			while ! [ `pgrep -x dns; pkill dns` ] ; do chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
-				mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
-				mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns && sleep 15; done; fi; DonDep;
+			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then 
+				echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+			chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
+			cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns; fi; DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
