@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200202b"
+PhienBan="20200202c"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -91,6 +91,14 @@ KiemCauHinh () {
 			$dl1 ${tmDNS}/dns.zip uli.vn/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
 }
 
+CapNhatAR () {
+	cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
+	if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then 
+	echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+	chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
+	cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
+}
+
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
@@ -120,7 +128,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 		echo "$DauCau Đang tải DNSCrypt-Proxy..."
 		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | sed 's/.*minisig//' | cut -d '"' -f 4);
-		$dl1 $TM/DNSCrypt.$duoi -# $DownURL
+		$dl1 $TM/DNSCrypt.$duoi $DownURL
 
 		echo -e "$DauCau Đang giải nén DNSCrypt-Proxy...\n"; 
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
@@ -129,11 +137,12 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
 			mv ${TM}/${ThuMuc}/dnscrypt-proxy $dns; $DVdns start; fi
 
-		if [ $OS == $Android ]; then cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
-			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then 
-				echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
-			chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
-			cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns; fi; DonDep;
+		if [ $OS == $Android ]; then echo "\n$DauCau Đang tải cấu hình Module Magisk"
+			mkdir ${TM}/$ThuMuc
+			$dl1 ${TM}/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" ${TM}/dns.zip
+			if [ ! -f ${TM}/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+			cd ${TM}/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
+			 fi; DonDep;
 
 		PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
   		if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
