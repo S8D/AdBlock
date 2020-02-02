@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200202c"
+PhienBan="20200202b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -128,7 +128,9 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
 		echo "$DauCau Đang tải DNSCrypt-Proxy..."
 		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | sed 's/.*minisig//' | cut -d '"' -f 4);
-		$dl1 $TM/DNSCrypt.$duoi $DownURL
+		
+		if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+		$dl1 $TM/DNSCrypt.$duoi $DownURL; fi
 
 		echo -e "$DauCau Đang giải nén DNSCrypt-Proxy...\n"; 
 		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
@@ -139,7 +141,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 
 		if [ $OS == $Android ]; then echo "\n$DauCau Đang tải cấu hình Module Magisk"
 			mkdir ${TM}/$ThuMuc
-			$dl1 ${TM}/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" ${TM}/dns.zip
+			curl -sL#o ${TM}/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" ${TM}/dns.zip
 			if [ ! -f ${TM}/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
 			cd ${TM}/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
 			 fi; DonDep;
