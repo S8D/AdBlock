@@ -1,4 +1,4 @@
-#PhienBan___20200202a
+#PhienBan___20200202b
 #___CoBac___________
 *.five88.net				cd.ago.vn
 *.w88yes.com				cd.ago.vn
@@ -69,6 +69,7 @@
 #___Google_________
 
 #___3X_______________________
+*.aevn.net					3x.ago.vn
 *.sxvideo.hd.com			3x.ago.vn
 vlxx.*						3x.ago.vn
 soc3x.*						3x.ago.vn
