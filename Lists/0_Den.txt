@@ -1,8 +1,13 @@
-#PhienBan___20200203a
+#PhienBan___20200203b
 #___VPN______________
 warp.plus
 
 #___TongHop_________
+tapjoy.com
+laban.vn
+midasplayer.com
+ushareit.com
+branch.fun
 touchtype-fluency.com
 waust.at
 whoami.akamai.net
@@ -133,7 +138,7 @@ applovin.com
 applvn.com
 appmetrica.yandex.net
 appnext.com
-appsflyer.com
+appsflyer.*
 appsflyersdk.com
 aralego.com
 asianmedia.com
@@ -442,6 +447,10 @@ ludashi.com
 ipstatp.com
 wshareit.com
 yy.com
+ng-vn-notice.gameitop.com
+idcconfig.gcloud.qq.com
+down.qq.com
+control.mna.qq.com
 bugly.qq.com
 cfg.imtt.qq.com
 oth.*.mdt.qq.com
@@ -479,6 +488,7 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Google_________
+offlinepages-pa.googleapis.com
 footprints-pa.googleapis.com
 myphonenumbers-pa.googleapis.com
 csi.gstatic.com
