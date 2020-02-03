@@ -1,8 +1,15 @@
-#PhienBan___20200203b
+#PhienBan___20200203c
 #___VPN______________
 warp.plus
 
 #___TongHop_________
+rqmob.com
+n.zing.vn
+explus.vn
+tradingview.com
+autoads.asia
+*.histats.*
+*.amung.*
 tapjoy.com
 laban.vn
 midasplayer.com
@@ -138,8 +145,8 @@ applovin.com
 applvn.com
 appmetrica.yandex.net
 appnext.com
-appsflyer.*
-appsflyersdk.com
+*.appsflyer.*
+*.appsflyersdk.*
 aralego.com
 asianmedia.com
 atdmt.com
@@ -439,6 +446,7 @@ track*
 tracker.*
 
 #___TQ___________
+163.com
 uwx1.xyz
 v21xy.com
 gltxy.xyz
@@ -488,6 +496,7 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Google_________
+marketingplatform.google.com
 offlinepages-pa.googleapis.com
 footprints-pa.googleapis.com
 myphonenumbers-pa.googleapis.com
