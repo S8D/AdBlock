@@ -1,5 +1,9 @@
-#PhienBan___20200202c
+#PhienBan___20200203a
+#___VPN______________
+warp.plus
+
 #___TongHop_________
+touchtype-fluency.com
 waust.at
 whoami.akamai.net
 startappservice.com
@@ -475,6 +479,8 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Google_________
+footprints-pa.googleapis.com
+myphonenumbers-pa.googleapis.com
 csi.gstatic.com
 suggestqueries.google.com
 *id.google.*
