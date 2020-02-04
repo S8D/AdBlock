@@ -1,4 +1,4 @@
-#PhienBan___20200202b
+#PhienBan___20200204a
 #___CoBac___________
 *.five88.net				cd.ago.vn
 *.w88yes.com				cd.ago.vn
@@ -175,37 +175,38 @@ dam69.*						3x.ago.vn
 *.adx1.com					ad.ago.vn
 
 #___TQ_______________________
-*.miui.com					cn.ago.vn
-*.xiaomi.com				cn.ago.vn
-*.xiaoji.com				cn.ago.vn
-*.hao123.com				cn.ago.vn
-*.jd.com					cn.ago.vn
-*.duba.net					cn.ago.vn
-*.360.cn					cn.ago.vn
-*.xiaomi.net				cn.ago.vn
-*.ksmobile.net				cn.ago.vn
-*.bytedance.com				cn.ago.vn
-*.byteoversea.com			cn.ago.vn
-*.byteoversea.net			cn.ago.vn
-*.51y5.net					cn.ago.vn
-*.appboy.com				cn.ago.vn
-*.baidu.com					cn.ago.vn
-*.google.cn					cn.ago.vn
+*.ucweb.*					cn.ago.vn
+*.xunyou.*					cn.ago.vn
 *.haokan.mobi				cn.ago.vn
-*.heytapmobi.com			cn.ago.vn
-*.oppo.com					cn.ago.vn
-*.jpush.io					cn.ago.vn
-*.sina.cn					cn.ago.vn
-*.sohu.com					cn.ago.vn
-*.y5en.com					cn.ago.vn
-*.cn						cn.ago.vn
-pms.mb.qq.com				cn.ago.vn
-*.weixin.qq.com				cn.ago.vn
-xunyou.*					cn.ago.vn
+*.hao123.com				cn.ago.vn
+*.byteoversea.com			cn.ago.vn
+*.jd.com					cn.ago.vn
+*.qcloud.com				cn.ago.vn
+*.bytedance.com				cn.ago.vn
 *.mozadong.com				cn.ago.vn
-*.qcloud.com				ad.ago.vn
-*.qingcdn.com				ad.ago.vn
-*.zhhainiao.com				ad.ago.vn
+*.heytapmobi.com			cn.ago.vn
+*.xiaoji.com				cn.ago.vn
+*.xiaomi.com				cn.ago.vn
+*.miui.com					cn.ago.vn
+*.qingcdn.com				cn.ago.vn
+*.y5en.com					cn.ago.vn
+*.zhhainiao.com				cn.ago.vn
+*.oppo.com					cn.ago.vn
+*.pms.mb.qq.com				cn.ago.vn
+*.weixin.qq.com				cn.ago.vn
+*.baidu.com					cn.ago.vn
+*.sohu.com					cn.ago.vn
+*.appboy.com				cn.ago.vn
+*.cn						cn.ago.vn
+*.360.cn					cn.ago.vn
+*.sina.cn					cn.ago.vn
+*.google.cn					cn.ago.vn
+*.jpush.io					cn.ago.vn
+*.51y5.net					cn.ago.vn
+*.duba.net					cn.ago.vn
+*.byteoversea.net			cn.ago.vn
+*.ksmobile.net				cn.ago.vn
+*.xiaomi.net				cn.ago.vn
 
 #__________________________________________________________________________
 
