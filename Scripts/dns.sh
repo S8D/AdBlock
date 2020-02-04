@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200202e"
+PhienBan="20200204a"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -13,6 +13,7 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; 
 	TM="/sdcard"; TMLog="${TM}/dns"; dns="/system/bin/dns"; duoi="zip"; 
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; 
+	echo "Cài DNSCrypt-Proxy làm trình phân giải tên miền mặc định"
 	iptables -t nat -A OUTPUT -p tcp ! -d 1.0.0.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
  	iptables -t nat -A OUTPUT -p udp ! -d 1.0.0.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
 fi
