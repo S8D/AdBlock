@@ -1,9 +1,10 @@
 #!/bin/sh
 PhienBan="20190204e"
-DauCau="#"
+
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64";
 if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; fi; 
 if [ $OS == $Android ]; then TM="/sdcard"; fi;
+DauCau="#"
 tmDNS="${TM}/dns";
 Den="${tmDNS}/Den.txt";
 ipDen="${tmDNS}/ipDen.txt";
