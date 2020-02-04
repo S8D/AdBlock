@@ -15,4 +15,4 @@ vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
 vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChoang=$(cat $Choang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChuyen=$(cat $Chuyen | grep .*PhienBan\_ | sed 's/.*\_//');
-echo -e "$DauCau Phiên bản Bộ lọc:\n Đen:\t$vDen\n Choàng:\t$vChoang\n Chuyển:\t$vChuyen\n ipDen:\t$vipDen\n Trắng:\t$vTrang"
+echo -e "$DauCau Phiên bản Bộ lọc: $PhienBan\n Đen:\t$vDen\n Choàng:\t$vChoang\n Chuyển:\t$vChuyen\n ipDen:\t$vipDen\n Trắng:\t$vTrang"
