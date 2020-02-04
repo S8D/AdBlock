@@ -1,4 +1,6 @@
 #!/bin/sh
+PhienBan="20190204a"
+DauCau="#"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64";
 if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; fi; 
 if [ $OS == $Android ]; then TM="/sdcard"; fi;
@@ -8,7 +10,7 @@ ipDen="${tmDNS}/ipDen.txt";
 Trang="${tmDNS}/Trang.txt";
 Choang="${tmDNS}/Choang.txt";
 Chuyen="${tmDNS}/Chuyen.txt";
-echo "$DauCau Phiên bản Bộ lọc:";
+echo "$DauCau $PhienBan | OS: $OS | Phiên bản Bộ lọc:";
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
 vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
 vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
