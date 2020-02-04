@@ -10,10 +10,9 @@ ipDen="${tmDNS}/ipDen.txt";
 Trang="${tmDNS}/Trang.txt";
 Choang="${tmDNS}/Choang.txt";
 Chuyen="${tmDNS}/Chuyen.txt";
-echo "$DauCau $PhienBan | OS: $OS | Phiên bản Bộ lọc:";
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
 vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
 vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChoang=$(cat $Choang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChuyen=$(cat $Chuyen | grep .*PhienBan\_ | sed 's/.*\_//');
-echo "$DauCau Đen: $vDen | Choàng: $vChoang | Chuyển: $vChuyen | ipDen: $vipDen | Trắng: $vTrang"
+echo -e "$DauCau Phiên bản Bộ lọc:\n Đen: $vDen | Choàng: $vChoang | Chuyển: $vChuyen | ipDen: $vipDen | Trắng: $vTrang"

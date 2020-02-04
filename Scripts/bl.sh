@@ -107,10 +107,9 @@ if [ $OS == $Android ]; then
 	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
 fi
 
-echo "$DauCau Phiên bản Bộ lọc:"
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
 vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
 vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChoang=$(cat $Choang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChuyen=$(cat $Chuyen | grep .*PhienBan\_ | sed 's/.*\_//');
-echo "$DauCau Đen: $vDen | Choàng: $vChoang | Chuyển: $vChuyen | ipDen: $vipDen | Trắng: $vTrang"
+echo -e "$DauCau Phiên bản Bộ lọc: \nĐen: $vDen | Choàng: $vChoang | Chuyển: $vChuyen | ipDen: $vipDen | Trắng: $vTrang"
