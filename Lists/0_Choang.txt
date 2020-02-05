@@ -1,4 +1,4 @@
-#PhienBan___20200205a
+#PhienBan___20200205b
 #___CoBac___________
 *.five88.net				cd.ago.vn
 *.w88yes.com				cd.ago.vn
@@ -225,6 +225,7 @@ dam69.*						3x.ago.vn
 #www.noddos.io				s8d.github.io
 www.google.*				forcesafesearch.google.com
 #www.bing.com				strict.bing.com
+*.yandex.com				forcesafesearch.google.com
 *.bing.com					forcesafesearch.google.com
 yandex.ru					familysearch.yandex.ru
 #duckduckgo.com				safe.duckduckgo.com
