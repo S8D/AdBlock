@@ -1,8 +1,12 @@
-#PhienBan___20200205b
+#PhienBan___20200206a
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+dbankcloud.com
+log.toss.vn
+mypham22againchinhhang.site
+22again.net
 quangcao.tuoitre.vn
 indexww.com
 typekit.net
@@ -481,6 +485,7 @@ iadsdk.apple.com
 
 #___Google_________
 doubleclickbygoogle.com
+firebaseinappmessaging.googleapis.com
 firebaseperusertopics-pa.googleapis.com
 marketingplatform.google.com
 offlinepages-pa.googleapis.com
