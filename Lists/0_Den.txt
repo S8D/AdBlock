@@ -1,8 +1,31 @@
-#PhienBan___20200205a
+#PhienBan___20200205b
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+quangcao.tuoitre.vn
+indexww.com
+typekit.net
+klsdee.com
+geo*.adobe.com
+instabug.com
+tynt.com
+users-api.com
+starbolt.io
+browserr.top
+buysellads.com
+daum.net
+licenses.adobe.com
+sentry.io
+truste.com
+stripe.network
+1rx.io
+icsoft.vn
+frog.wix.com
+ads*-adnow.com
+adbro.me
+unrulymedia.com
+ciksolre.net
 remove.video
 alosoft.vn
 allarmate.club
@@ -386,6 +409,8 @@ trafficfactory.biz
 fbcn.xyz
 
 #___TQ___________
+wup.imtt.qq.com
+log.tbs.qq.com
 163.com
 jd.com
 umengcloud.com
@@ -455,6 +480,7 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Google_________
+doubleclickbygoogle.com
 firebaseperusertopics-pa.googleapis.com
 marketingplatform.google.com
 offlinepages-pa.googleapis.com
