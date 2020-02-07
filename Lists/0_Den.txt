@@ -3,6 +3,9 @@
 warp.plus
 
 #___Tổng-Hợp_________
+quantserve.com
+vortex.data.microsoft.com
+demopage.me
 dbankcloud.com
 log.toss.vn
 mypham22againchinhhang.site
@@ -413,6 +416,9 @@ trafficfactory.biz
 fbcn.xyz
 
 #___TQ___________
+capi.voice.gcloud.qq.com
+qosidc.gcloud.qq.com
+speed.ino.qq.com
 wup.imtt.qq.com
 log.tbs.qq.com
 163.com
