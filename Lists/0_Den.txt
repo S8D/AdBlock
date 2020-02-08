@@ -1,8 +1,9 @@
-#PhienBan___20200208a
+#PhienBan___20200208b
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+press-here-to-continue.com
 d1fc8wv8zag5ca.cloudfront.net
 d1hn8mrtxasu7m.cloudfront.net
 d1lxhc4jvstzrp.cloudfront.net
@@ -23,9 +24,9 @@ djtflbt20bdde.cloudfront.net
 dnn506yrbagrg.cloudfront.net
 dsh7ky7308k4b.cloudfront.net
 dzpu6za66svjl.cloudfront.net
-acs-m.lazada.vn
+acs-m.lazada.*
 checkout-m.lazada.vn
-jmacs-m.lazada.vn
+orange-dc.lazada.com
 member-m.lazada.vn
 member.lazada.vn
 msgacs-m.lazada.vn
