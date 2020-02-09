@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200204b"
+PhienBan="20200209a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -9,8 +9,8 @@ dl1="curl -s -L -o"; dl2="curl -s -L"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; TMLog="/www";
 	cer="/etc/ssl/certs/ca-certificates.crt";
-	NoiQuy="/etc/nodogsplash/htdocs/NoiQuy.txt";
-	ThongBao="/etc/nodogsplash/htdocs/ThongBao.txt";
+	NoiQuy="/root/nds/NoiQuy.txt";
+	ThongBao="/root/nds/ThongBao.txt";
 fi
 
 if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
