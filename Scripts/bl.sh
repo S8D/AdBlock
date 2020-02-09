@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200209a"
+PhienBan="20200209b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -15,7 +15,7 @@ fi
 
 if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
-fi
+fi; cd $TM
 
 tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
 Den="${tmDNS}/Den.txt"; if [ ! -f "$Den" ]; then echo '' > $Den; fi; 
