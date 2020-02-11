@@ -1,8 +1,12 @@
-#PhienBan___20200208b
+#PhienBan___20200211a
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+bebi.com
+genieesspv.jp
+seal.godaddy.com
+moengage.com
 press-here-to-continue.com
 d1fc8wv8zag5ca.cloudfront.net
 d1hn8mrtxasu7m.cloudfront.net
@@ -202,11 +206,7 @@ propellerclick.com
 k8luck.com
 tusdk.com
 meitusdk.com
-*load.mediatek.com
-mgepodownload.mediatek.com
-ogepodownload.mediatek.com
-mepodownload.mediatek.com
-oepodownload.mediatek.com
+*download.mediatek.com
 hqsuntek.com
 ime.cootek.com
 an.facebook.com
@@ -287,7 +287,6 @@ webvisor.com
 coronalabs.com
 mediarithmics.com
 alexametrics.com
-gameanalytics.com
 crashlytics.com
 aliyuncs.com
 moatads.com
@@ -623,6 +622,7 @@ jav*.*
 
 #___DaTenMien_________
 analytics.*
+*analytics.*
 *.amung.*
 *.appsflyer*.*
 *.appsflyer.*
