@@ -1,8 +1,15 @@
-#PhienBan___20200212c
+#PhienBan___20200212d
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+bizible.com
+netdna-ssl.com
+analytics.brave.com
+instabug.com
+eupgroup.net
+ohbayersbur.pro
+quantcount.com
 ohmchoicechi.online
 ideliv.net
 evadavdsp.pro
