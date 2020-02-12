@@ -1,8 +1,11 @@
-#PhienBan___20200212d
+#PhienBan___20200212e
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+ds.ssw.live.com
+nexus.officeapps.live.com
+nexusrules.officeapps.live.com
 bizible.com
 netdna-ssl.com
 analytics.brave.com
