@@ -1,8 +1,14 @@
-#PhienBan___20200212e
+#PhienBan___20200213a
 #___VPN______________
 warp.plus
 
 #___Tổng-Hợp_________
+statcounter.com
+mc.yandex.ru
+aniview.com
+selectmedia.asia
+ads3-adnow.com
+trending.vn
 ds.ssw.live.com
 nexus.officeapps.live.com
 nexusrules.officeapps.live.com
