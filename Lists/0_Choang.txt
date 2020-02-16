@@ -1,5 +1,6 @@
-#PhienBan___20200216a
+#PhienBan___20200216b
 #___CoBac___________
+*.vipborrow.com					cd.ago.vn
 *taixiu*.*					cd.ago.vn
 *.five88.net				cd.ago.vn
 *.w88yes.com				cd.ago.vn
