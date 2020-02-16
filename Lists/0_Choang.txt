@@ -1,6 +1,6 @@
-#PhienBan___20200216b
+#PhienBan___20200216c
 #___CoBac___________
-*.vipborrow.com					cd.ago.vn
+*.vipborrow.com				cd.ago.vn
 *taixiu*.*					cd.ago.vn
 *.five88.net				cd.ago.vn
 *.w88yes.com				cd.ago.vn
@@ -68,11 +68,133 @@
 *.viam.com.vn				ad.ago.vn
 *.bing.com					ad.ago.vn
 *.yahoo.com					ad.ago.vn
+
 #___Google_________
+*.baidu.com					forcesafesearch.google.com
+*.google.cn					forcesafesearch.google.com
+
+*.bing.com					forcesafesearch.google.com
+*.yandex.ru					forcesafesearch.google.com
+*.yandex.com				forcesafesearch.google.com
+www.google.*				forcesafesearch.google.com
+*.duckduckgo.com			forcesafesearch.google.com
 
 #___3X_______________________
-phimsec.pro					3x.ago.vn
-kichdam.tv					3x.ago.vn
+*.agenttube.pro				3x.ago.vn
+*.agentxxx.pro				3x.ago.vn
+*.bbporntube.pro			3x.ago.vn
+*.bbw-porn.mobi				3x.ago.vn
+*.beegsexy.pro				3x.ago.vn
+*.bigtitsgf.com				3x.ago.vn
+*.bionestraff.pro			3x.ago.vn
+*.brazzer.su				3x.ago.vn
+*.chickspout.com			3x.ago.vn
+*.daporno.pro				3x.ago.vn
+*.detubeporn.pro			3x.ago.vn
+*.dickporn.pro				3x.ago.vn
+*.eroticporno.mobi			3x.ago.vn
+*.eroticsex.pro				3x.ago.vn
+*.erotictube.pro			3x.ago.vn
+*.esfuckporn.pro			3x.ago.vn
+*.eversexy.pro				3x.ago.vn
+*.extremeporno.pro			3x.ago.vn
+*.extremesex.pro			3x.ago.vn
+*.fapfucksex.pro			3x.ago.vn
+*.freepirno.pro				3x.ago.vn
+*.freepoorn.pro				3x.ago.vn
+*.freeprono.pro				3x.ago.vn
+*.frepor.mobi				3x.ago.vn
+*.fuckbah.pro				3x.ago.vn
+*.fuckbeeg.pro				3x.ago.vn
+*.fuckbest.pro				3x.ago.vn
+*.fuckshd.pro				3x.ago.vn
+*.fucktvsex.mobi			3x.ago.vn
+*.fucktvsex.pro				3x.ago.vn
+*.fuckxxnx.pro				3x.ago.vn
+*.hdxxx.su					3x.ago.vn
+*.hdxxxclips.com			3x.ago.vn
+*.hornycase.com				3x.ago.vn
+*.hottiesporn.pro			3x.ago.vn
+*.indian-porno.mobi			3x.ago.vn
+*.ixxxclips.com				3x.ago.vn
+*.japan-porn.mobi			3x.ago.vn
+*.lessite.pro				3x.ago.vn
+*.mfuckporn.pro				3x.ago.vn
+*.mfucks.pro				3x.ago.vn
+*.milfs-tube.mobi			3x.ago.vn
+*.mporntube.pro				3x.ago.vn
+*.o333o.com					3x.ago.vn
+*.painfullanal.com			3x.ago.vn
+*.pornagent.pro				3x.ago.vn
+*.pornart.pro				3x.ago.vn
+*.pornever.pro				3x.ago.vn
+*.porngone.pro				3x.ago.vn
+*.pornhqtv.pro				3x.ago.vn
+*.pornnipples.pro			3x.ago.vn
+*.pornoshd.pro				3x.ago.vn
+*.pornproposal.pro			3x.ago.vn
+*.pornswx.pro				3x.ago.vn
+*.portube.pro				3x.ago.vn
+*.queenporno.pro			3x.ago.vn
+*.queensex.pro				3x.ago.vn
+*.red-movies.com			3x.ago.vn
+*.seporno.pro				3x.ago.vn
+*.setubes.pro				3x.ago.vn
+*.sexagent.pro				3x.ago.vn
+*.sexart.pro				3x.ago.vn
+*.sexpain.pro				3x.ago.vn
+*.sexxxtv.mobi				3x.ago.vn
+*.slutanal.com				3x.ago.vn
+*.bionestraff.pro			3x.ago.vn
+*.tube188.com				3x.ago.vn
+*.tube2017.com				3x.ago.vn
+*.tubedupe.com				3x.ago.vn
+*.tubepain.pro				3x.ago.vn
+*.tubeshd.pro				3x.ago.vn
+*.tvpornos.pro				3x.ago.vn
+*.tvtubes.pro				3x.ago.vn
+*.twink-porn.pro			3x.ago.vn
+*.videoxvideos.pro			3x.ago.vn
+*.videoxxx.mobi				3x.ago.vn
+*.vidfuck.pro				3x.ago.vn
+*.vidoexxnx.pro				3x.ago.vn
+*.vipsporns.pro				3x.ago.vn
+*.wowfuck.pro				3x.ago.vn
+*.x-videos.su				3x.ago.vn
+*.xartporn.pro				3x.ago.vn
+*.xmasfuck.pro				3x.ago.vn
+*.xvideostv.pro				3x.ago.vn
+*.xxlporn.mobi				3x.ago.vn
+*.xxnxcom.pro				3x.ago.vn
+*.xxnxcpm.mobi				3x.ago.vn
+*.xxx.net					3x.ago.vn
+*.xxx2019.pro				3x.ago.vn
+*.xxxbanjo.com				3x.ago.vn
+*.xxxfrance.pro				3x.ago.vn
+*.xxxhothub.com				3x.ago.vn
+*.xxxhqtv.pro				3x.ago.vn
+*.xxxhubvideos.com			3x.ago.vn
+*.xxxluxury.com				3x.ago.vn
+*.xxxmanga.mobi				3x.ago.vn
+*.xxxmas.pro				3x.ago.vn
+*.yogafuck.pro				3x.ago.vn
+*.yogaporno.pro				3x.ago.vn
+*.yogasexy.mobi				3x.ago.vn
+*.your-porns.mobi			3x.ago.vn
+*.yummyporn.mobi			3x.ago.vn
+*.yummyporn.pro				3x.ago.vn
+*.yummytube.pro				3x.ago.vn
+*.yummyxxx.pro				3x.ago.vn
+*.zeldaporn.mobi			3x.ago.vn
+*.zeldatube.pro				3x.ago.vn
+*.zeldaxxx.pro				3x.ago.vn
+*.zencdn.net				3x.ago.vn
+*.zumbaporno.mobi			3x.ago.vn
+*.zumbatube.pro				3x.ago.vn
+*.zumbaxxx.pro				3x.ago.vn
+*.zzbabes.com				3x.ago.vn
+*.phimsec.pro				3x.ago.vn
+*.kichdam.tv				3x.ago.vn
 *.aevn.net					3x.ago.vn
 *.sxvideo.hd.com			3x.ago.vn
 vlxx.*						3x.ago.vn
@@ -196,15 +318,11 @@ dam69.*						3x.ago.vn
 *.y5en.com					cn.ago.vn
 *.zhhainiao.com				cn.ago.vn
 *.oppo.com					cn.ago.vn
-*.pms.mb.qq.com				cn.ago.vn
-*.weixin.qq.com				cn.ago.vn
-*.baidu.com					forcesafesearch.google.com
 *.sohu.com					cn.ago.vn
 *.appboy.com				cn.ago.vn
 *.cn						cn.ago.vn
 *.360.cn					cn.ago.vn
 *.sina.cn					cn.ago.vn
-*.google.cn					forcesafesearch.google.com
 *.jpush.io					cn.ago.vn
 *.51y5.net					cn.ago.vn
 *.duba.net					cn.ago.vn
@@ -225,18 +343,15 @@ dam69.*						3x.ago.vn
 # configuration file
 
 #www.noddos.io				s8d.github.io
-www.google.*				forcesafesearch.google.com
 #www.bing.com				strict.bing.com
-*.yandex.com				forcesafesearch.google.com
-*.bing.com					forcesafesearch.google.com
-yandex.ru					familysearch.yandex.ru
 #duckduckgo.com				safe.duckduckgo.com
-duckduckgo.com				forcesafesearch.google.com
+#yandex.ru					familysearch.yandex.ru
 #www.youtube.com			restrictmoderate.youtube.com
 #m.youtube.com				restrictmoderate.youtube.com
 #youtubei.googleapis.com	restrictmoderate.youtube.com
 #youtube.googleapis.com		restrictmoderate.youtube.com
 #www.youtube-nocookie.com	restrictmoderate.youtube.com
+
 
 # Multiple IP entries for the same name are supported.
 # In the following example, the same name maps both to IPv4 and IPv6 addresses:
