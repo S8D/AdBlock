@@ -1,8 +1,24 @@
-#PhienBan___20200216a
+#PhienBan___20200216b
 #___VPN______________
 warp.plus
-
+samsungmax.com
+dualstack.*.amazonaws.com
 #___Tổng-Hợp_________
+clevernet.vn
+collector.githubapp.com
+gtm.oasisfeng.com
+polldaddy.com
+nametests.com
+cmcm.com
+vortex.data.microsoft.com
+premiumyva.appspot.com
+enjoycpi.com
+go2affise.com
+cpi-offers.com
+android-security.info
+android-center.online
+popcash.net
+ekr.zdassets.com
 lonkem.com
 adbrix.io
 l*.mediatek.com
@@ -539,6 +555,8 @@ trafficfactory.biz
 fbcn.xyz
 
 #___TQ___________
+1plus.io
+apoll.m.taobao.com
 qiangbe.com
 err.taobao.com
 wdy33.com
@@ -616,6 +634,7 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Google_________
+footprints-pa.googleapis.com
 appsitemsuggest-pa.googleapis.com
 doubleclickbygoogle.com
 firebaseinappmessaging.googleapis.com
@@ -664,6 +683,7 @@ log*zing*
 res-*.zadn.vn
 
 #___3X_________
+zencdn.net
 daporno.pro
 www.pornnipples.pro
 www.xartporn.pro
