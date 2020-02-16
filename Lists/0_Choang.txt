@@ -1,4 +1,4 @@
-#PhienBan___20200205c
+#PhienBan___20200216a
 #___CoBac___________
 *taixiu*.*					cd.ago.vn
 *.five88.net				cd.ago.vn
@@ -183,7 +183,7 @@ dam69.*						3x.ago.vn
 *.haokan.mobi				cn.ago.vn
 *.hao123.com				cn.ago.vn
 *.byteoversea.com			cn.ago.vn
-*.jd.com					cn.ago.vn
+*.jd.com					kakaku.com
 *.qcloud.com				cn.ago.vn
 *.bytedance.com				cn.ago.vn
 *.mozadong.com				cn.ago.vn
@@ -197,13 +197,13 @@ dam69.*						3x.ago.vn
 *.oppo.com					cn.ago.vn
 *.pms.mb.qq.com				cn.ago.vn
 *.weixin.qq.com				cn.ago.vn
-*.baidu.com					cn.ago.vn
+*.baidu.com					forcesafesearch.google.com
 *.sohu.com					cn.ago.vn
 *.appboy.com				cn.ago.vn
 *.cn						cn.ago.vn
 *.360.cn					cn.ago.vn
 *.sina.cn					cn.ago.vn
-*.google.cn					cn.ago.vn
+*.google.cn					forcesafesearch.google.com
 *.jpush.io					cn.ago.vn
 *.51y5.net					cn.ago.vn
 *.duba.net					cn.ago.vn
