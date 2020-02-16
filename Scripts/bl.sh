@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200209b"
+PhienBan="20200216a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -105,6 +105,7 @@ if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 	echo "$DauCau Đang cập nhật Bộ lọc"
 	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
+killall dns; killall dns
 fi
 
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
