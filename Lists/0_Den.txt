@@ -1,4 +1,4 @@
-#PhienBan___20200216d
+#PhienBan___20200216e
 
 #___VPN______________
 warp.plus
@@ -6,6 +6,16 @@ samsungmax.com
 dualstack.*.amazonaws.com
 
 #___Tổng-Hợp_________
+microad.net
+hsforms.net
+hs-scripts.com
+embed.sendtonews.com
+thefastpush.com
+adskeeper.co.uk
+belugaboost.com
+goplre.pro
+metosk.com
+monorail-edge.shopifysvc.com
 api.data.beautyplus.com
 getsitecontrol.com
 chartboost.com
@@ -552,6 +562,7 @@ trafficfactory.biz
 fbcn.xyz
 
 #___TQ___________
+ustickers.faceu.mobi
 wdy33.com
 163.com
 jd.com
@@ -636,6 +647,7 @@ ieonline.microsoft.com
 telemetry.microsoft.com
 events.data.microsoft.com
 vortex.data.microsoft.com
+client.wns.windows.com
 settings-win.data.microsoft.com
 
 #___Google_________
