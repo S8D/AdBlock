@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200216a"
+PhienBan="20200216b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -113,4 +113,4 @@ vipDen=$(cat $ipDen | grep .*PhienBan\_ | sed 's/.*\_//');
 vTrang=$(cat $Trang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChoang=$(cat $Choang | grep .*PhienBan\_ | sed 's/.*\_//');
 vChuyen=$(cat $Chuyen | grep .*PhienBan\_ | sed 's/.*\_//');
-echo -e "$DauCau Phiên bản Bộ lọc: $PhienBan\n Đen:    $vDen\n Choàng: $vChoang\n Chuyển: $vChuyen\n ipDen:  $vipDen\n Trắng:  $vTrang";
+echo -e "$DauCau Phiên bản Bộ lọc: $PhienBan\n$DauCau Đen:    $vDen\n$DauCau Choàng: $vChoang\n$DauCau Chuyển: $vChuyen\n$DauCau ipDen:  $vipDen\n$DauCau Trắng:  $vTrang";
