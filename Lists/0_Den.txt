@@ -1,4 +1,4 @@
-#PhienBan___20200216e
+#PhienBan___20200217a
 
 #___VPN______________
 warp.plus
@@ -6,6 +6,8 @@ samsungmax.com
 dualstack.*.amazonaws.com
 
 #___Tổng-Hợp_________
+nr-data.net
+safedk.com
 microad.net
 hsforms.net
 hs-scripts.com
