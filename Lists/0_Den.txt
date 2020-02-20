@@ -1,4 +1,4 @@
-#PhienBan___20200217a
+#PhienBan___20200220a
 
 #___VPN______________
 warp.plus
@@ -6,7 +6,27 @@ samsungmax.com
 dualstack.*.amazonaws.com
 
 #___Tổng-Hợp_________
+alexajstrack.com
+static.chartbeat.com
+extreme-ip-lookup.com
+aoredi.com
+presage.io
+sbbanner.com
+dfnb-ads.com
+shortpixel.ai
+ensighten.com
+aaxads.com
+trackpush.com
+steadfastsystem.com
+msecnd.net
+qcarsdk.com
+growingio.com
+registeridm.com
+d1hi41nc56pmug.cloudfront.net
+promo-bc.com
+bongacams.com
 nr-data.net
+sg-push.m-rtb.com
 safedk.com
 microad.net
 hsforms.net
@@ -34,7 +54,6 @@ zphunutoday.club
 mehhueboy.club
 aniashboy.club
 saas.dana.id
-umeng.cloud
 demopage.me
 systemlog.me
 onelink.me
@@ -59,7 +78,6 @@ aimrawwas.site
 awehobrasp.live
 private-show.live
 cdnondemand.org
-beijing-time.org
 commercialvalue.org
 gmpg.org
 hshh.org
@@ -71,7 +89,6 @@ support0.bigo.sg
 protostats.bigo.sg
 inner-active.mobi
 ads.mp.mydas.mobi
-xunyou.mobi
 page.link
 app.link
 test-app.link
@@ -88,7 +105,6 @@ dmca.com
 vienthammynevada.com
 orange-dc.lazada.com
 exponea.com
-byteoversea.com
 oakpyxyea.com
 onclickmega.com
 admedia.com
@@ -107,7 +123,6 @@ ucweb.com
 contextweb.com
 adkmob.com
 rqmob.com
-sg-push.m-rtb.com
 switchadhub.com
 mopub.com
 nbryb.com
@@ -126,14 +141,12 @@ faidoud.com
 dbankcloud.com
 geo*.adobe.com
 licenses.adobe.com
-s.youtube.com
 mobilesystemservice.com
 startappservice.com
 api.amplitude.com
 klsdee.com
 appcloud.mcafee.com
 amp.mcafee.com
-360safe.com
 adcaffe.com
 moengage.com
 easytomessage.com
@@ -165,8 +178,6 @@ crazyegg.com
 xdrig.com
 pushimg.com
 adc.quantrimang.com
-gtm.oasisfeng.com
-umeng.com
 servicelayer.king.com
 instabug.com
 netcoresmartech.com
@@ -250,9 +261,6 @@ mobileapi.usebutton.com
 log.avlyun.com
 applvn.com
 jbovn.com
-acs.m.taobao.com
-ut.taobao.com
-toutiao.com
 peethobo.com
 join-sbo.com
 hiido.com
@@ -381,7 +389,6 @@ subiz.com
 madsimz.com
 logyxz.com
 mepuzz.com
-uc.cn
 vmate.in
 branch.fun
 failover.zingmp3.vn
@@ -471,12 +478,11 @@ nativesp.pro
 ohbayersbur.pro
 clcknads.pro
 8weoaapw0hfvy6nz.pro
-embed.tawk.to
+tawk.to
 fout.jp
 genieesspv.jp
 browserr.top
 waust.at
-byteoversea.net
 media.net
 algolia.net
 omtrdc.net
@@ -485,7 +491,6 @@ polyad.net
 ds-aksb-a.akamaihd.net
 vietid.net
 xtracloud.net
-toutiaocloud.net
 izatcloud.net
 ciksolre.net
 go-mpulse.net
@@ -494,7 +499,6 @@ popcash.net
 whoami.akamai.net
 uniad.phimmoi.net
 nuri.net
-doubleclick.net
 lavanetwork.net
 an.dongphim.net
 daum.net
@@ -510,7 +514,6 @@ abmr.net
 glishais.net
 cdnnetworks.net
 shop.vnexpress.net
-oneplus.net
 typekit.net
 dm-event.net
 d2k03kvdk5cku0.cloudfront.net
@@ -564,6 +567,23 @@ trafficfactory.biz
 fbcn.xyz
 
 #___TQ___________
+byteoversea.net
+oneplus.net
+toutiaocloud.net
+acs.m.taobao.com
+ut.taobao.com
+toutiao.com
+gtm.oasisfeng.com
+umeng.com
+360safe.com
+byteoversea.com
+xunyou.mobi
+beijing-time.org
+umeng.cloud
+uc.cn
+ib.tiktokv.com
+cnzz.com
+c360dn.com
 ustickers.faceu.mobi
 wdy33.com
 163.com
@@ -620,9 +640,9 @@ yy.com
 wpsmail.net
 uwx1.xyz
 gltxy.xyz
-#*.ucweb.*
+*.ucweb.*
 #xunyou.*
-#haokan.mobi
+haokan.mobi
 #heytapmobi.com
 #y5en.com
 #baidu.com
@@ -651,9 +671,21 @@ events.data.microsoft.com
 vortex.data.microsoft.com
 client.wns.windows.com
 settings-win.data.microsoft.com
+c.msn.com
+vortex.data.msn.com
+winphone.wns.windows.com
+client.wns.windows.com
 
 #___Google_________
+doubleclick.net
 *id.google.*
+s.youtube.com
+plus.url.google.com
+gmodules.com
+gg.google.com
+mail-ads.google.com
+afs.googleusercontent.com
+dialercallinfolookup-pa.googleapis.com
 csi.gstatic.com
 gstaticadssl.l.google.com
 marketingplatform.google.com
@@ -701,6 +733,7 @@ log*zing*
 res-*.zadn.vn
 
 #___3X_________
+kichduc.cc
 *chich*
 *adxxx*
 *xnxx*
