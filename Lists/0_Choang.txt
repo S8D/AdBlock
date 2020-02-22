@@ -1,4 +1,4 @@
-#PhienBan___20200216c
+#PhienBan___20200222a
 #___CoBac___________
 *.vipborrow.com				cd.ago.vn
 *taixiu*.*					cd.ago.vn
@@ -62,7 +62,6 @@
 *.khangcotdonvn				ad.ago.vn
 *.dyndns.org				ad.ago.vn
 *.pluso.ru					ad.ago.vn
-*.appcenter.ms				ad.ago.vn
 *.bnc.lt					ad.ago.vn
 *.kochava.com				ad.ago.vn
 *.viam.com.vn				ad.ago.vn
@@ -72,7 +71,6 @@
 #___Google_________
 *.baidu.com					forcesafesearch.google.com
 *.google.cn					forcesafesearch.google.com
-
 *.bing.com					forcesafesearch.google.com
 *.yandex.ru					forcesafesearch.google.com
 *.yandex.com				forcesafesearch.google.com
@@ -145,7 +143,6 @@ www.google.*				forcesafesearch.google.com
 *.sexpain.pro				3x.ago.vn
 *.sexxxtv.mobi				3x.ago.vn
 *.slutanal.com				3x.ago.vn
-*.bionestraff.pro			3x.ago.vn
 *.tube188.com				3x.ago.vn
 *.tube2017.com				3x.ago.vn
 *.tubedupe.com				3x.ago.vn
@@ -290,12 +287,8 @@ dam69.*						3x.ago.vn
 *.phevcl.com				3x.ago.vn
 *.lendinh.net				3x.ago.vn
 *.ditvl.net					3x.ago.vn
-*.javphe.com				3x.ago.vn
 *.javphim.net				3x.ago.vn
 *.londep.pro				3x.ago.vn
-*.sexhay69.net				3x.ago.vn
-*.sexmoi.net				3x.ago.vn
-*.sexngon.tv				3x.ago.vn
 *.xxhd.tv					3x.ago.vn
 *.xxphe.com					3x.ago.vn
 *.adx1.com					ad.ago.vn
