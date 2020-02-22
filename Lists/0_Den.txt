@@ -1,10 +1,13 @@
-#PhienBan___20200222a
+#PhienBan___20200222b
 
 #___VPN______________
 warp.plus
 samsungmax.com
 dualstack.*.amazonaws.com
 
+#___Hosts_________
+suspendeddomain.org
+suspended-website.com
 #___Tổng-Hợp_________
 fbcn.xyz
 trafficfactory.biz
