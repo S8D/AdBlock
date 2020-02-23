@@ -11,12 +11,18 @@ ERROR="$BOLD *** Error: $NORM"
 WARNING="$BOLD * Warning: $NORM"
 INPUT="$BOLD => $NORM"
 
-readonly TARG_DIR=/jffs/dnscrypt
-readonly CONF_FILE=$TARG_DIR/.config
-readonly TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
-readonly TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
-readonly TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
-readonly TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
+TARG_DIR=/jffs/dnscrypt
+CONF_FILE=$TARG_DIR/.config
+TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
+TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
+TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
+TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
+#readonly TARG_DIR=/jffs/dnscrypt
+#readonly CONF_FILE=$TARG_DIR/.config
+#readonly TOML_FILE=$TARG_DIR/dnscrypt-proxy.toml
+#readonly TOML_BAK=$TARG_DIR/dnscrypt-proxy.toml.bak
+#readonly TOML_ERR=$TARG_DIR/dnscrypt-proxy.toml.err
+#readonly TOML_ORI=$TARG_DIR/example-dnscrypt-proxy.toml
 
 _quote() {
   echo $1 | sed 's/[]\/()$*.^|[]/\\&/g'
