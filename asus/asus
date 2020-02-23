@@ -11,6 +11,7 @@ ERROR="$BOLD *** Error: $NORM"
 WARNING="$BOLD * Warning: $NORM"
 INPUT="$BOLD => $NORM"
 
+TM="/opt/dns"
 TMdns=/jffs/dns
 mkdir -p $TMdns; mkdir -p /jffs/scripts
 CauHinh=/opt/dns/CauHinh.toml
@@ -302,6 +303,7 @@ check_version () {
     RURL="https://raw.githubusercontent.com/S8D/AdBlock/asus/master/asus"
     LINSTALL="v$(cat "${TMdns}/asus" | grep -m1 "^DI_VERSION=" | grep -oE '[0-9]{1,2}([.][0-9]{1,2})([.][0-9]{1,2})')"
     RMNSTALL="v$(curl -sL "$RURL" | grep -m1 "^DI_VERSION=" | grep -oE '[0-9]{1,2}([.][0-9]{1,2})([.][0-9]{1,2})')"
+    if [ ! -f "${TMdns}/asus" ]; then cp ${TM}/$0 $TMdns/asus; fi
     MD5SUM_L="$(md5sum ${TMdns}/asus | cut -d' ' -f1)"
     MD5SUM_R="$(curl -fsL "$RURL" | md5sum | awk '{print $1}')"
       
@@ -678,7 +680,7 @@ inst_dnscrypt () {
     download_file $TMdns 755 $RURL
   else
     echo -e "$INFO Downloading New Installer. Re-run option 1 to get any remaining updates.."
-    download_file $TMdns 755 $RURL
+    download_file $TMdns 755 $RURL; cp $TMdns/asus ${TM}/$0
     exec $TMdns/asus && exit
   fi
   download_file $TMdns 755 $URL_GEN/manager
