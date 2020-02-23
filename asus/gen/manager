@@ -1,5 +1,6 @@
 #!/bin/sh
 TMdns=/jffs/dns
+CauHinh="/opt/dns/CauHinh.toml"
 
 [ -f $TMdns/.config ] && . $TMdns/.config
 
@@ -46,7 +47,7 @@ init_hwrng () {
 }
 
 start_dnscrypt () {
-  DNSCRYPT_START="$TMdns/dns -syslog -config $TMdns/CauHinh.toml"
+  DNSCRYPT_START="$TMdns/dns -syslog -config $CauHinh"
   killall -q dns
   logger "Start dnscrypt-proxy"
   cd $TMdns

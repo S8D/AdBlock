@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DI_VERSION="v2.1.1"
+DI_VERSION="v2020.02.23a"
 LATEST_URL="https://api.github.com/repos/jedisct1/dnscrypt-proxy/releases/latest"
 DNSCRYPT_VER="$(curl -sL "$LATEST_URL" | grep "tag_name" | head -1 | cut -d \" -f 4)"
 
@@ -13,8 +13,9 @@ INPUT="$BOLD => $NORM"
 
 TMdns=/jffs/dns
 mkdir -p $TMdns; mkdir -p /jffs/scripts
+CauHinh=/opt/dns/CauHinh.toml
 CONF_FILE=$TMdns/.config
-TOML_FILE=$TMdns/CauHinh.toml
+TOML_FILE=$CauHinh
 TOML_BAK=$TMdns/CauHinh.toml.bak
 TOML_ERR=$TMdns/CauHinh.toml.err
 TOML_ORI=$TMdns/dns.toml

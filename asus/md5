@@ -1,0 +1,3 @@
+#!/bin/sh
+md5sum asus | cut -d' ' -f1 > asus.md5sum
+md5sum gen/manager | cut -d' ' -f1 > gen/manager.md5sum
