@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DI_VERSION="v2020.02.23a"
+DI_VERSION="v2020.02.23b"
 LATEST_URL="https://api.github.com/repos/jedisct1/dnscrypt-proxy/releases/latest"
 DNSCRYPT_VER="$(curl -sL "$LATEST_URL" | grep "tag_name" | head -1 | cut -d \" -f 4)"
 
@@ -704,6 +704,7 @@ inst_dnscrypt () {
        chown `nvram get http_username`:root $TMdns/$DNSCRYPT_ARCH_TAR/*
        mv $TMdns/$DNSCRYPT_ARCH_TAR/* $TMdns
        rm -r $TMdns/$DNSCRYPT_ARCH_TAR $TMdns/$DNSCRYPT_TAR
+       if [ ! -f "$TMdns/dnscrypt-proxy" ]; then echo "$ERROR Extract failed!!! Exiting"; exit; fi;
        mv $TMdns/dnscrypt-proxy $TMdns/dns
        chmod 755 $TMdns/dns
     else
@@ -720,6 +721,7 @@ inst_dnscrypt () {
     chown `nvram get http_username`:root $TMdns/$DNSCRYPT_ARCH_TAR/*
     mv $TMdns/$DNSCRYPT_ARCH_TAR/* $TMdns
     rm -r $TMdns/$DNSCRYPT_ARCH_TAR $TMdns/$DNSCRYPT_TAR
+    if [ ! -f "$TMdns/dnscrypt-proxy" ]; then echo "$ERROR Extract failed!!! Exiting"; exit; fi;
     mv $TMdns/dnscrypt-proxy $TMdns/dns
     chmod 755 $TMdns/dns
   fi
@@ -1399,6 +1401,7 @@ check_jffs_enabled
 cleanup
 
 menu () {
+  echo -e "$INFO asus: $DI_VERSION| DNS: $LVERSION"
   echo -e "$INFO Choose what you want to do:"
   echo -e "  1) Install/Update dnscrypt-proxy"
   echo -e "  2) Uninstall dnscrypt-proxy"
