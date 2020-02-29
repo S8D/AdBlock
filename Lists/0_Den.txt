@@ -1,4 +1,4 @@
-#PhienBan___20200229a
+#PhienBan___20200229b
 #___VPN______________
 warp.plus
 samsungmax.com
@@ -9,6 +9,7 @@ suspendeddomain.org
 suspended-website.com
 
 #___Tổng-Hợp_________
+aptashant.club
 upsellit.com
 footprintdns.com
 fbcn.xyz
