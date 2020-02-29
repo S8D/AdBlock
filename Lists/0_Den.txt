@@ -1,5 +1,4 @@
 #PhienBan___20200229a
-
 #___VPN______________
 warp.plus
 samsungmax.com
@@ -8,6 +7,7 @@ dualstack.*.amazonaws.com
 #___Hosts_________
 suspendeddomain.org
 suspended-website.com
+
 #___Tổng-Hợp_________
 upsellit.com
 footprintdns.com
