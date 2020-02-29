@@ -1,4 +1,4 @@
-#PhienBan___20200222b
+#PhienBan___20200229a
 
 #___VPN______________
 warp.plus
@@ -9,6 +9,8 @@ dualstack.*.amazonaws.com
 suspendeddomain.org
 suspended-website.com
 #___Tổng-Hợp_________
+upsellit.com
+footprintdns.com
 fbcn.xyz
 trafficfactory.biz
 mon.musical.ly
@@ -594,6 +596,7 @@ selectmedia.asia
 acs-m.lazada.*
 
 #___TQ___________
+tendawifi.com
 byteoversea.net
 oneplus.net
 toutiaocloud.net
@@ -691,6 +694,7 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___MicroSoft_________
+msedge.net
 aria.microsoft.com
 ieonline.microsoft.com
 telemetry.microsoft.com
