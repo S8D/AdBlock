@@ -30,7 +30,7 @@ owncutone.com
 3585656d9351553f.com
 mathtag.com
 idsync.rlcdn.com
-*-accesspoint-*.ap.spotify.com
+#*-accesspoint-*.ap.spotify.com
 audio-fa.scdn.co
 rathertrihe.info
 feboni.info
