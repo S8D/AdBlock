@@ -1,4 +1,4 @@
-#PhienBan___20200301a
+#PhienBan___20200301b
 #___VPN______________
 warp.plus
 samsungmax.com
@@ -9,6 +9,13 @@ suspendeddomain.org
 suspended-website.com
 
 #___Tổng-Hợp_________
+webapi.dantri.com.vn
+addthiscdn.com
+pixel.wp.com
+topr-srv.vietnamnet.vn
+i.vietnamnet.vn
+id.vietnamnet.vn
+chapaca.com
 curarmbin.club
 errnaphim.site
 cdn.digitalpush.org
@@ -23,7 +30,7 @@ owncutone.com
 3585656d9351553f.com
 mathtag.com
 idsync.rlcdn.com
-gae*-accesspoint-*.ap.spotify.com
+*-accesspoint-*.ap.spotify.com
 audio-fa.scdn.co
 rathertrihe.info
 feboni.info
