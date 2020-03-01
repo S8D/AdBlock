@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200301a
+! Version: 20200301b
 ! Title: Gg.gG/a_ | uli.vn/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_ | uli.vn/a_
@@ -10,7 +10,32 @@
 vi.aliexpress.com##.opened.next-overlay-wrapper
 websosanh.vn###zone-web_compare_right1 > .xds-banner
 websosanh.vn###zone-web_header_right
-
+||pushbullet.com
+||aptashant.club
+a2zapk.com###galax2
+a2zapk.com##div.ArticleLand:nth-of-type(6)
+unlockapk.com##body > div:nth-of-type(3)
+unlockapk.com###content > div:nth-of-type(1)
+unlockapk.com##.WebF
+intoupload.net##footer
+intoupload.net###socialmedia
+intoupload.net###intro
+intoupload.net###footer2
+intoupload.net##.banneradshome
+intoupload.net##.content > table
+intoupload.net##.title
+intoupload.net##.txt
+intoupload.net##.col-lg-5.col-md-5.col-sm-12.col-xs-12
+intoupload.net##.fa-cloud-download.fa
+speed-down.org###container > div > div:nth-of-type(1)
+speed-down.org###container > div > div:nth-of-type(2)
+speed-down.org##div.container:nth-of-type(3)
+speed-down.org##div.container:nth-of-type(4)
+speed-down.org##div.container:nth-of-type(6)
+speed-down.org##footer
+speed-down.org##.navbar-fixed-top.navbar-inverse.navbar
+speed-down.org###container > div > h2
+speed-down.org##input.btn-info.btn:nth-of-type(6)
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
