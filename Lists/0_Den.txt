@@ -1,4 +1,4 @@
-#PhienBan___20200229b
+#PhienBan___20200301a
 #___VPN______________
 warp.plus
 samsungmax.com
@@ -9,6 +9,29 @@ suspendeddomain.org
 suspended-website.com
 
 #___Tổng-Hợp_________
+curarmbin.club
+errnaphim.site
+cdn.digitalpush.org
+optiads.org
+propu.sh
+pheegoab.click
+mookie1.com
+b60228e270e363f6.com
+7667bab1751ff777.com
+cdn.livechatinc.com
+owncutone.com
+3585656d9351553f.com
+mathtag.com
+idsync.rlcdn.com
+gae*-accesspoint-*.ap.spotify.com
+audio-fa.scdn.co
+rathertrihe.info
+feboni.info
+audio*-ak-spotify-com.akamaized.net
+stickyid-a.akamaihd.net
+i-shop.vnecdn.net
+audio-sp-*.spotifycdn.net
+dpm.demdex.net
 aptashant.club
 upsellit.com
 footprintdns.com
