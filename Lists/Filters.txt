@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200129c
+! Version: 20200301a
 ! Title: Gg.gG/a_ | uli.vn/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_ | uli.vn/a_
@@ -14,7 +14,7 @@ websosanh.vn###zone-web_header_right
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com
 *.fsdn.com/con/js/min/sf.js?*
 /adsense/*
 /banners/click/*
