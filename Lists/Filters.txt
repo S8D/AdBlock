@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200301b
+! Version: 20200304a
 ! Title: Gg.gG/a_ | uli.vn/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_ | uli.vn/a_
@@ -7,6 +7,13 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+a2zupload.com###content > div:nth-of-type(1)
+a2zupload.com##body > div:nth-of-type(3)
+a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
+up-load.io##ol
+up-load.io##li > center > li
+up-load.io##.share
+a2zupload.com###alert
 vi.aliexpress.com##.opened.next-overlay-wrapper
 websosanh.vn###zone-web_compare_right1 > .xds-banner
 websosanh.vn###zone-web_header_right
