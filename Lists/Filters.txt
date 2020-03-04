@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200304a
+! Version: 20200304b
 ! Title: Gg.gG/a_ | uli.vn/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_ | uli.vn/a_
@@ -46,7 +46,7 @@ speed-down.org##input.btn-info.btn:nth-of-type(6)
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to
 *.fsdn.com/con/js/min/sf.js?*
 /adsense/*
 /banners/click/*
