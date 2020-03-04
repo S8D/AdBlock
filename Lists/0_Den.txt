@@ -1,4 +1,4 @@
-#PhienBan___20200301b
+#PhienBan___20200304a
 #___VPN______________
 warp.plus
 samsungmax.com
@@ -7,8 +7,15 @@ dualstack.*.amazonaws.com
 #___Hosts_________
 suspendeddomain.org
 suspended-website.com
+platform-lookaside.fbsbx.com
 
 #___Tổng-Hợp_________
+adpushup.com
+instant.page
+iubenda.com
+adjust-net.jp
+prebid.org
+admob.com
 webapi.dantri.com.vn
 addthiscdn.com
 pixel.wp.com
