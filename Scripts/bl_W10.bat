@@ -1,0 +1,7 @@
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://uli.vn/Den', '%cd%\Den.txt') }"
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://uli.vn/ipDen', '%cd%\ipDen.txt') }"
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://uli.vn/Chuyen', '%cd%\Chuyen.txt') }"
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://uli.vn/Choang', '%cd%\Choang.txt') }"
+powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://uli.vn/Trang', '%cd%\Trang.txt') }"
+powershell -command "restart-service dnscrypt-proxy -force"
+powershell -command "restart-service DNSCrypt -force"
