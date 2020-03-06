@@ -1,17 +1,9 @@
-#PhienBan___20200306b
+#PhienBan___20200306c
 #___@@_____________22
 #accesstrade.vn
 #accesstrade.com.vn
 
 #___Shopping_______22
-#c.lazada.vn
-my-m.lazada.vn
-acs-m.lazada.*
-member.lazada.vn
-msgacs-m.lazada.vn
-member-m.lazada.vn
-checkout-m.lazada.vn
-orange-dc.lazada.com
 
 #___Tổng-Hợp_______22
 adpushup.com
