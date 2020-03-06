@@ -1,4 +1,8 @@
-#PhienBan___20200304a
+#PhienBan___20200306a
+#___@@_______________
+#accesstrade.vn
+#accesstrade.com.vn
+
 #___VPN______________
 warp.plus
 samsungmax.com
@@ -7,7 +11,10 @@ dualstack.*.amazonaws.com
 #___Hosts_________
 suspendeddomain.org
 suspended-website.com
+
+#___Facebook_________
 platform-lookaside.fbsbx.com
+an.facebook.com
 
 #___Tổng-Hợp_________
 adpushup.com
@@ -200,7 +207,6 @@ fknox*.fptshop.com.vn
 comment.dantri.com.vn
 logsbin.dantri.com.vn
 thongke.24h.com.vn
-fast.accesstrade.com.vn
 comment.nld.com.vn
 anthill.vn
 adnetwork.vn
@@ -212,7 +218,6 @@ n.zing.vn
 trending.vn
 quangcao.tuoitre.vn
 userstats.shopee.vn
-accesstrade.vn
 sharefb.cnnd.vn
 vietnamnetad.vn
 uniad.vn
@@ -438,7 +443,6 @@ ehawk.com
 metosk.com
 mppmnetwork.com
 code.ionicframework.com
-an.facebook.com
 viglink.com
 deqik.com
 ime.cootek.com
