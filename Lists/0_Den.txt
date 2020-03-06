@@ -1,22 +1,19 @@
-#PhienBan___20200306a
-#___@@_______________
+#PhienBan___20200306b
+#___@@_____________22
 #accesstrade.vn
 #accesstrade.com.vn
 
-#___VPN______________
-warp.plus
-samsungmax.com
-dualstack.*.amazonaws.com
+#___Shopping_______22
+#c.lazada.vn
+my-m.lazada.vn
+acs-m.lazada.*
+member.lazada.vn
+msgacs-m.lazada.vn
+member-m.lazada.vn
+checkout-m.lazada.vn
+orange-dc.lazada.com
 
-#___Hosts_________
-suspendeddomain.org
-suspended-website.com
-
-#___Facebook_________
-platform-lookaside.fbsbx.com
-an.facebook.com
-
-#___Tổng-Hợp_________
+#___Tổng-Hợp_______22
 adpushup.com
 instant.page
 iubenda.com
@@ -228,12 +225,6 @@ kinghub.vn
 tvnotice.kg.garena.vn
 yomedia.vn
 admicro*.vcmedia.vn
-member.lazada.vn
-my-m.lazada.vn
-checkout-m.lazada.vn
-msgacs-m.lazada.vn
-member-m.lazada.vn
-c.lazada.vn
 s.kenh14.vn
 failover.zingmp3.vn
 branch.fun
@@ -567,7 +558,7 @@ admedia.com
 onclickmega.com
 oakpyxyea.com
 exponea.com
-orange-dc.lazada.com
+
 vienthammynevada.com
 dmca.com
 com3456.com
@@ -635,9 +626,8 @@ arkbuyarm.club
 artantash.club
 allarmate.club
 selectmedia.asia
-acs-m.lazada.*
 
-#___TQ___________
+#___TQ_____________22
 tendawifi.com
 byteoversea.net
 oneplus.net
@@ -723,7 +713,7 @@ haokan.mobi
 #51y5.net
 #appboy.com
 
-#___Apple___________
+#___Apple__________22
 securemetrics.apple.com
 *metrics.apple.com
 xp.apple.com
@@ -735,7 +725,7 @@ smoot.apple.com
 iadsdk.apple.com
 *adsdk.apple.com
 
-#___MicroSoft_________
+#___MicroSoft______22
 msedge.net
 aria.microsoft.com
 ieonline.microsoft.com
@@ -749,7 +739,7 @@ vortex.data.msn.com
 winphone.wns.windows.com
 client.wns.windows.com
 
-#___Google_________
+#___Google_________22
 doubleclick.net
 *id.google.*
 s.youtube.com
@@ -783,7 +773,20 @@ datasaver.googleapis.com
 googlezip.net
 adservice*
 
-#___Zalo_________
+#___VPN____________22
+warp.plus
+samsungmax.com
+dualstack.*.amazonaws.com
+
+#___Hosts__________22
+suspendeddomain.org
+suspended-website.com
+
+#___Facebook_______22
+platform-lookaside.fbsbx.com
+an.facebook.com
+
+#___Zalo___________22
 px.za.zaloapp.com
 stc.za.zaloapp.com
 store*zalo
@@ -805,7 +808,7 @@ log*zing*
 360game.vn
 res-*.zadn.vn
 
-#___3X_________
+#___3X_____________22
 kichduc.cc
 *chich*
 *adxxx*
@@ -833,7 +836,7 @@ jav*.*
 #xxhd.tv
 #londep.pro
 
-#___DaTenMien_________
+#___DaTenMien______22
 analytics.*
 *analytics.*
 *.amung.*
@@ -901,7 +904,6 @@ stats.*
 creatives.*
 oas.*
 oascentral.*
-
 
 #__________________________________________________________________________
 
