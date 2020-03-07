@@ -1,4 +1,4 @@
-#PhienBan___20200308a
+#PhienBan___20200308b
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -101,6 +101,7 @@ appmetrica.yandex.net
 adx.xemvtv.net
 an.xemvtv.net
 ideliv.net
+dna8twue3dlxq.cloudfront.net
 d26b395fwzu5fz.cloudfront.net
 d5nxst8fruw4z.cloudfront.net
 d2r1yp2w7bby2u.cloudfront.net
