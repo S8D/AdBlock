@@ -1,4 +1,4 @@
-#PhienBan___20200308b
+#PhienBan___20200308c
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -298,7 +298,6 @@ premiumyva.appspot.com
 tynt.com
 quantcount.com
 opensharecount.com
-pmcontent.com
 siteswithcontent.com
 segment.com
 app-measurement.com
@@ -648,7 +647,7 @@ selectmedia.asia
 #___@@_____________22
 #accesstrade.vn
 #accesstrade.com.vn
-
+#pmcontent.com
 #___Shopping_______22
 acs-m.lazada.vn
 orange-dc.lazada.com
