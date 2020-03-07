@@ -1,11 +1,39 @@
-#PhienBan___20200306c
-#___@@_____________22
-#accesstrade.vn
-#accesstrade.com.vn
-
-#___Shopping_______22
+#PhienBan___20200308a
+#___Apple__________22
+mesu.apple.com
+securemetrics.apple.com
+*metrics.apple.com
+xp.apple.com
+mesu.apple.com
+ocsp.apple.com
+metrics.icloud.com
+mesu.g.aaplimg.com
+smoot.apple.com
+iadsdk.apple.com
+*adsdk.apple.com
 
 #___Tổng-Hợp_______22
+stat.headlines.pw
+appmetrica.yandex.net
+interncache-atn.fbcdn.net
+app.wpsmail.net
+adbrix.io
+api.megacool.co
+adtimaserver.vn
+adtima*.zadn.vn
+as1.abigames.com.vn
+static.mepuzz.com
+v.lsttnews.com
+addthis.com
+ns.exitgames.com
+graph.fbpigeon.com
+deqik.com
+log.baomoi.com
+dl.teamobi.com
+oppomobile.com
+new-user-data-api.fungames-forfree.com
+conf.lsosad.com
+gameboost.cafe24.com
 adpushup.com
 instant.page
 iubenda.com
@@ -345,7 +373,6 @@ uptopopunder.com
 useinsider.com
 hotjar.com
 banalbjar.com
-otheve.beacon.qq.com
 extreme-ip-lookup.com
 pstatp.com
 genieessp.com
@@ -362,7 +389,6 @@ steepto.com
 yotpo.com
 uodoo.com
 growingio.com
-vietnamworks-message.firebaseio.com
 kargo.com
 iibingo.com
 aralego.com
@@ -550,7 +576,6 @@ admedia.com
 onclickmega.com
 oakpyxyea.com
 exponea.com
-
 vienthammynevada.com
 dmca.com
 com3456.com
@@ -619,6 +644,15 @@ artantash.club
 allarmate.club
 selectmedia.asia
 
+#___@@_____________22
+#accesstrade.vn
+#accesstrade.com.vn
+
+#___Shopping_______22
+acs-m.lazada.vn
+orange-dc.lazada.com
+acs-m.lazada.sg
+
 #___TQ_____________22
 tendawifi.com
 byteoversea.net
@@ -659,6 +693,8 @@ apoll.m.taobao.com
 err.taobao.com
 ng-vn-notice.gameitop.com
 ipstatp.com
+hk.api.unipay.qq.com
+otheve.beacon.qq.com
 android.*.qq.com
 control.*.qq.com
 pingma.qq.com
@@ -705,18 +741,6 @@ haokan.mobi
 #51y5.net
 #appboy.com
 
-#___Apple__________22
-securemetrics.apple.com
-*metrics.apple.com
-xp.apple.com
-mesu.apple.com
-ocsp.apple.com
-metrics.icloud.com
-mesu.g.aaplimg.com
-smoot.apple.com
-iadsdk.apple.com
-*adsdk.apple.com
-
 #___MicroSoft______22
 msedge.net
 aria.microsoft.com
@@ -732,6 +756,15 @@ winphone.wns.windows.com
 client.wns.windows.com
 
 #___Google_________22
+imasdk.googleapis.com
+device-provisioning.googleapis.com
+chromefeedcontentsuggestions-pa.googleapis.com
+googletagservices.com
+firstisland-597a8-d6edf.firebaseio.com
+firstisland-597a8-b648e.firebaseio.com
+galaxyattack-de0bd.firebaseio.com
+firstisland-597a8.firebaseio.com
+vietnamworks-message.firebaseio.com
 doubleclick.net
 *id.google.*
 s.youtube.com
@@ -769,6 +802,8 @@ adservice*
 warp.plus
 samsungmax.com
 dualstack.*.amazonaws.com
+api-a.op-mobile.opera.com
+ofa-sub.osp.opera.software
 
 #___Hosts__________22
 suspendeddomain.org
@@ -778,7 +813,10 @@ suspended-website.com
 platform-lookaside.fbsbx.com
 an.facebook.com
 
-#___Zalo___________22
+#___VinaGau__________22
+stc.za.zaloapp.com
+sp.zalo.me
+log.zingmp3.vn
 px.za.zaloapp.com
 stc.za.zaloapp.com
 store*zalo
