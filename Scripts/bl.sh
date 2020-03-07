@@ -1,16 +1,16 @@
 #!/bin/sh
-PhienBan="20200216b"
+PhienBan="20200307a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
-
+nds="/root/nds"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; TMLog="/www";
-	cer="/etc/ssl/certs/ca-certificates.crt";
-	NoiQuy="/root/nds/NoiQuy.txt";
-	ThongBao="/root/nds/ThongBao.txt";
+	cer="/etc/ssl/certs/ca-certificates.crt"; mkdir -p $nds
+	NoiQuy="$nds/NoiQuy.txt";
+	ThongBao="$nds/ThongBao.txt";
 fi
 
 if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
