@@ -1,4 +1,4 @@
-#PhienBan___20200308d
+#PhienBan___20200308e
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,19 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+appnxt.net
+unidesk.alicdn.com
+975nqoq7.info
+hbefpugz.club
+redads.biz
+go1news.biz
+jscount.com
+pushsender.com
+velocitycdn.com
+madplypie.club
+lumisterol.com
+premixture.com
+winworker.club
 geo[0-9].ggpht.com
 shavar.services.mozilla.com
 adhigh.net
