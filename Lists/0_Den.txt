@@ -1,4 +1,4 @@
-#PhienBan___20200308c
+#PhienBan___20200308d
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,10 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+geo[0-9].ggpht.com
+shavar.services.mozilla.com
+adhigh.net
+otf.msn.com
 stat.headlines.pw
 appmetrica.yandex.net
 interncache-atn.fbcdn.net
