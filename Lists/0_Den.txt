@@ -1,4 +1,4 @@
-#PhienBan___20200309a
+#PhienBan___20200310a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,17 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+serving-sys.com
+defold.com
+cashbigo.com
+smopy.com
+syndicpop.com
+nativepu.sh
+xl-trk.com
+user-api.com
+fcksys.work
+pagedemo.me
+breaktime.com.tw
 adkmob.jp
 blueserving.com
 hadarone.com
@@ -683,6 +694,7 @@ acs-m.lazada.sg
 
 #___TQ_____________22
 sogou.com
+othstr.beacon.qq.com
 heytapmobile.com
 map.qq.com
 3g.qq.com
@@ -872,6 +884,7 @@ log*zing*
 res-*.zadn.vn
 
 #___3X_____________22
+pic69.net
 hotmovs.com
 kichduc.cc
 *chich*
