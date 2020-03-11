@@ -1,4 +1,4 @@
-#PhienBan___20200311a
+#PhienBan___20200312a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,12 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+lodder6.biz
+vulcan-phi.com
+znewswork.com
+zahkit.pro
+hbplatform.com
+webithr.com
 *.lazada.*
 cheap-ads.net
 wurfl.io
@@ -787,6 +793,7 @@ mon.tiktokv.com
 frontier.tiktokv.com
 ynuf.alipay.com
 v21xy.com
+ip.taobao.com
 yy.com
 *.cn
 1plus.io
@@ -902,6 +909,7 @@ log*zing*
 res-*.zadn.vn
 
 #___3X_____________22
+xxx18.casa
 pic69.net
 hotmovs.com
 kichduc.cc
