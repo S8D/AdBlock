@@ -1,4 +1,4 @@
-#PhienBan___20200310c
+#PhienBan___20200311a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,9 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+*.lazada.*
+cheap-ads.net
+wurfl.io
 adsmoloco.com
 weather*.zadn.vn
 cookiebot.com
