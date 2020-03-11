@@ -1,4 +1,4 @@
-#PhienBan___20200310b
+#PhienBan___20200310c
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,13 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+adsmoloco.com
+weather*.zadn.vn
+cookiebot.com
+adsplay.xyz
+wzrkt.com
+traffic.calldorado.com
+cuebiq.com
 adop.cc
 cdn.spotxcdn.com
 mybluemix.net
