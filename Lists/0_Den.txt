@@ -1,4 +1,4 @@
-#PhienBan___20200313a
+#PhienBan___20200313b
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -722,6 +722,9 @@ orange-dc.lazada.com
 acs-m.lazada.sg
 
 #___TQ_____________22
+irisgw.com
+irisdt.com
+youme.im
 幸福的路径.com
 iowiuhwer37asdan.net
 prdasbbwla1.com
