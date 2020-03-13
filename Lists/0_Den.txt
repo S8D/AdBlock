@@ -1,4 +1,4 @@
-#PhienBan___20200312c
+#PhienBan___20200313a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,10 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+log000.goo.ne.jp
+yads.c.yimg.jp
+adcdn.goo.ne.jp
+gew[0-9]-accesspoint-b-*.ap.spotify.com
 push.vietgiaitri.com
 push.baomoi.com
 lodder6.biz
