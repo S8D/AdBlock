@@ -1,4 +1,4 @@
-#PhienBan___20200313b
+#PhienBan___20200314a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,20 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+a.vdo.ai
+yoads.network
+api.leanplum.com
+gallery.mailchimp.com
+fastboot.mobi
+flurry.com
+adtiming.com
+newsredir.com
+ad-brix.com
+apptimize.com
+lofv.xyz
+fixsirrod.site
+ivymobile.com
+allmeganews.com
 log000.goo.ne.jp
 yads.c.yimg.jp
 adcdn.goo.ne.jp
