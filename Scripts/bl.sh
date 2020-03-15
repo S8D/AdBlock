@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200315b"
+PhienBan="20200315c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -36,7 +36,7 @@ if CheckUL; then
 	UpLink="bom.to/_bl";
 	uDen="bom.to/Den";
 	uipDen="bom.to/ipDen";
-	uTrang="bom.to/Trang";
+	uTrang="bom.to/trang";
 	uChoang="bom.to/Choang";
 	uChuyen="bom.to/Chuyen";
 	uNoiQuy="bom.to/NoiQuy";
