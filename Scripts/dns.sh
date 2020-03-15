@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200204b"
+PhienBan="20200315a"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -82,13 +82,13 @@ KiemDHCP () {
 
 KiemCauHinh () {
 	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
-			if [ ! -f "$DVdns" ]; then $dl1 $upTam uli.vn/dv; chmod +x $upTam; mv $upTam $DVdns; fi
+			if [ ! -f "$DVdns" ]; then $dl1 $upTam bom.to/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
 			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.tar.gz uli.vn/ch;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
+			$dl1 ${tmDNS}/dns.tar.gz bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
 
 	if [ $OS == $Android ]; then 
 			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.zip uli.vn/_ch; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
+			$dl1 ${tmDNS}/dns.zip bom.to/CauHinh_Android; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
 }
 
 CapNhatAR () {
@@ -108,13 +108,13 @@ CapNhatAR2 () {
 }
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
+CheckUL () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; }; DonDep;
+CheckGH () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;
 
-if CheckUL; then UpLink="uli.vn/d"; DownLink="uli.vn/dns"; net="1"; else	
+if CheckUL; then UpLink="bom.to/dns"; DownLink="bom.to/dns_"; net="1"; else	
 	if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; net="2"; else	
-		if CheckGH; then UpLink="https://s8d.github.io/AdBlock/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
+		if CheckGH; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
@@ -126,7 +126,9 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemFW; KiemMasq; fi
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemMasq; 
+		#KiemFW; 
+	fi
 	
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')

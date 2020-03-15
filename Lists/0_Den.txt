@@ -1,4 +1,4 @@
-#PhienBan___20200314a
+#PhienBan___20200315a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -97,7 +97,6 @@ adhigh.net
 otf.msn.com
 stat.headlines.pw
 appmetrica.yandex.net
-interncache-atn.fbcdn.net
 app.wpsmail.net
 adbrix.io
 api.megacool.co
@@ -108,7 +107,6 @@ static.mepuzz.com
 v.lsttnews.com
 addthis.com
 ns.exitgames.com
-graph.fbpigeon.com
 deqik.com
 log.baomoi.com
 dl.teamobi.com
@@ -485,7 +483,6 @@ log.avlyun.com
 mobileapi.usebutton.com
 bilsyndication.com
 assets.dspunion.com
-graph.fbpigeon.com
 evidon.com
 pixelsrvdmn.com
 applovin.com
@@ -908,8 +905,10 @@ suspendeddomain.org
 suspended-website.com
 
 #___Facebook_______22
-platform-lookaside.fbsbx.com
-an.facebook.com
+#platform-lookaside.fbsbx.com
+#an.facebook.com
+#interncache-atn.fbcdn.net
+#graph.fbpigeon.com
 
 #___VinaGau__________22
 stc.za.zaloapp.com

@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200307a"
+PhienBan="20200315a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -28,19 +28,19 @@ Log="${TMLog}/NhatKy.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
-CheckUL () { ping -q -c 1 -W 1 uli.vn >/dev/null; }; 
+CheckUL () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckGH () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
+CheckGH () { ping -q -c 1 -W 1 github.com >/dev/null; };
 
 if CheckUL; then 
-	UpLink="uli.vn/bl";
-	uDen="uli.vn/Den";
-	uipDen="uli.vn/ipDen";
-	uTrang="uli.vn/Trang";
-	uChoang="uli.vn/Choang";
-	uChuyen="uli.vn/Chuyen";
-	uNoiQuy="uli.vn/NoiQuy";
-	uThongBao="uli.vn/ThongBao";
+	UpLink="bom.to/bl";
+	uDen="bom.to/Den";
+	uipDen="bom.to/ipDen";
+	uTrang="bom.to/Trang";
+	uChoang="bom.to/Choang";
+	uChuyen="bom.to/Chuyen";
+	uNoiQuy="bom.to/NoiQuy";
+	uThongBao="bom.to/ThongBao";
 #_________________________________
 #	UpLink="gg.gg/_bl";
 #	uDen="gg.gg/_Den";
@@ -61,14 +61,14 @@ if CheckUL; then
 		uNoiQuy="https://tiny.cc/-NoiQuy";
 		uThongBao="https://tiny.cc/-ThongBao";
 		net="2"; else
-		if CheckGH; then UpLink="https://s8d.github.io/AdBlock/Scripts/bl.sh"; 
-			uDen="https://s8d.github.io/AdBlock/Lists/0_Den.txt";
-			uipDen="https://s8d.github.io/AdBlock/Lists/0_ipDen.txt";
-			uTrang="https://s8d.github.io/AdBlock/Lists/0_Trang.txt";
-			uChoang="https://s8d.github.io/AdBlock/Lists/0_Choang.txt";
-			uChuyen="https://s8d.github.io/AdBlock/Lists/0_Chuyen.txt";
-			uNoiQuy="https://s8d.github.io/AdBlock/Lists/0_NoiQuy.txt";
-			uThongBao="https://s8d.github.io/AdBlock/Lists/0_ThongBao.txt";
+		if CheckGH; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"; 
+			uDen="https://github.com/S8D/AdBlock/raw/master/Lists/0_Den.txt";
+			uipDen="https://github.com/S8D/AdBlock/raw/master/Lists/0_ipDen.txt";
+			uTrang="https://github.com/S8D/AdBlock/raw/master/Lists/0_Trang.txt";
+			uChoang="https://github.com/S8D/AdBlock/raw/master/Lists/0_Choang.txt";
+			uChuyen="https://github.com/S8D/AdBlock/raw/master/Lists/0_Chuyen.txt";
+			uNoiQuy="https://github.com/S8D/AdBlock/raw/master/Lists/0_NoiQuy.txt";
+			uThongBao="https://github.com/S8D/AdBlock/raw/master/Lists/0_ThongBao.txt";
 			net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
