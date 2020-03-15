@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200315a"
+PhienBan="20200315b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -33,7 +33,7 @@ CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; };
 CheckGH () { ping -q -c 1 -W 1 github.com >/dev/null; };
 
 if CheckUL; then 
-	UpLink="bom.to/bl";
+	UpLink="bom.to/_bl";
 	uDen="bom.to/Den";
 	uipDen="bom.to/ipDen";
 	uTrang="bom.to/Trang";
