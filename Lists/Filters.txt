@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Version: 20200312a
-! Title: Gg.gG/a_ | uli.vn/a_
+! Version: 20200317a
+! Title: bom.to/loc
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_ | uli.vn/a_
 ! Licence: Darias
