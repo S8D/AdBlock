@@ -1,4 +1,3 @@
-@echo off
 powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://bom.to/Den', '%cd%\Den.txt') }"
 powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://bom.to/ipDen', '%cd%\ipDen.txt') }"
 powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://bom.to/Chuyen', '%cd%\Chuyen.txt') }"
