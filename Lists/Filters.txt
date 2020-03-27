@@ -1,60 +1,12 @@
 [Adblock Plus 2.0]
-! Version: 20200317a
-! Title: bom.to/loc
+! Version: 20200327a
+! Title: bom.to/loc | gg.gg/a_
 ! Expires: 1 days
 ! Homepage: Gg.gG/a_
 ! Licence: Darias
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
-uploadev.org##.text-left
-dropgalaxy.com###gdpr-cookie-notice
-dropgalaxy.com##.footer
-dropgalaxy.com##.py-3.col-md-12
-dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
-dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
-dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
-dropgalaxy.com##.mb-4.m-0.sharetabs > ul
-dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
-dropgalaxy.com##.text-primary
-dropgalaxy.com##.mb-3.alert-danger.alert
-a2zupload.com###content > div:nth-of-type(1)
-a2zupload.com##body > div:nth-of-type(3)
-a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
-up-load.io##ol
-up-load.io##li > center > li
-up-load.io##.share
-a2zupload.com###alert
-vi.aliexpress.com##.opened.next-overlay-wrapper
-websosanh.vn###zone-web_compare_right1 > .xds-banner
-websosanh.vn###zone-web_header_right
-||pushbullet.com
-||aptashant.club
-a2zapk.com###galax2
-a2zapk.com##div.ArticleLand:nth-of-type(6)
-unlockapk.com##body > div:nth-of-type(3)
-unlockapk.com###content > div:nth-of-type(1)
-unlockapk.com##.WebF
-intoupload.net##footer
-intoupload.net###socialmedia
-intoupload.net###intro
-intoupload.net###footer2
-intoupload.net##.banneradshome
-intoupload.net##.content > table
-intoupload.net##.title
-intoupload.net##.txt
-intoupload.net##.col-lg-5.col-md-5.col-sm-12.col-xs-12
-intoupload.net##.fa-cloud-download.fa
-speed-down.org###container > div > div:nth-of-type(1)
-speed-down.org###container > div > div:nth-of-type(2)
-speed-down.org##div.container:nth-of-type(3)
-speed-down.org##div.container:nth-of-type(4)
-speed-down.org##div.container:nth-of-type(6)
-speed-down.org##footer
-speed-down.org##.navbar-fixed-top.navbar-inverse.navbar
-speed-down.org###container > div > h2
-speed-down.org##input.btn-info.btn:nth-of-type(6)
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
@@ -72,10 +24,13 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 4file.net##footer
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
 @@speedtest.vnix.vn/sizing/count.php
+a2zapk.com###galax2
 a2zapk.com##.Tags
 a2zapk.com##.WebF
+a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
 a2zapk.com##div.ArticleLand:nth-of-type(4)
 a2zapk.com##div.ArticleLand:nth-of-type(5)
+a2zapk.com##div.ArticleLand:nth-of-type(6)
 a2zapk.com##div.NewBlock:nth-of-type(1)
 adayroi.com###vinfooter
 adayroi.com##.slogan-container
@@ -271,6 +226,17 @@ dropapk.to##div.text-center.col-md-4:nth-of-type(2)
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
 dropapk.to##footer
+dropgalaxy.com###gdpr-cookie-notice
+dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
+dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
+dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+dropgalaxy.com##.footer
+dropgalaxy.com##.mb-3.alert-danger.alert
+dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
+dropgalaxy.com##.mb-4.m-0.sharetabs > ul
+dropgalaxy.com##.py-3.col-md-12
+dropgalaxy.com##.text-primary
+dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
 earnflies.com##.blog-item
 earshot1.com##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > h4:nth-child(2)
 elitepvpers.com###notices > .tborder
@@ -433,6 +399,16 @@ hvdic.thivien.net##.notification
 i.imgur.com/A4Kwg6k.png$domain=uploadocean.com
 icutit.ca##.banner-336x280.banner
 ijailbreak.com###om-fqy5jwodan-canvas
+intoupload.net###footer2
+intoupload.net###intro
+intoupload.net###socialmedia
+intoupload.net##.banneradshome
+intoupload.net##.col-lg-5.col-md-5.col-sm-12.col-xs-12
+intoupload.net##.content > table
+intoupload.net##.fa-cloud-download.fa
+intoupload.net##.title
+intoupload.net##.txt
+intoupload.net##footer
 ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
 ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
 ios.codevn.net##footer:nth-child(18)
@@ -705,6 +681,15 @@ sonyfan.vn###wrapper > .inner-wrapper > .footer-bottom
 sosanhgia.com###newsletter-ebox
 sosanhgia.com###page-overlay
 sosanhgia.com###promotion-popup
+speed-down.org###container > div > div:nth-of-type(1)
+speed-down.org###container > div > div:nth-of-type(2)
+speed-down.org###container > div > h2
+speed-down.org##.navbar-fixed-top.navbar-inverse.navbar
+speed-down.org##div.container:nth-of-type(3)
+speed-down.org##div.container:nth-of-type(4)
+speed-down.org##div.container:nth-of-type(6)
+speed-down.org##footer
+speed-down.org##input.btn-info.btn:nth-of-type(6)
 speed4up.com###copyright
 speed4up.com###navigation-sticky-wrapper
 speed4up.com##.heading-1
@@ -806,16 +791,22 @@ ukshare.net###post-709 > div.related-post.border-style.recent-post:last-child
 ukshare.net###secondary
 uli.vn##.login-logo
 uli.vn##.logo-image.navbar-brand
+unlockapk.com###content > div:nth-of-type(1)
 unlockapk.com##.footer--dark.footer
 unlockapk.com##.nav
+unlockapk.com##.WebF
+unlockapk.com##body > div:nth-of-type(3)
 up-load.io###gdpr-cookie-notice
 up-load.io##.buyPremium.alert-success.alert
 up-load.io##.col-md-8
 up-load.io##.footer-sub
 up-load.io##.navbar-fixed-top.navbar-inverse.navbar
+up-load.io##.share
 up-load.io##.text-center.col-md-8
 up-load.io##center > center
 up-load.io##footer
+up-load.io##li > center > li
+up-load.io##ol
 upfile.vn###Footer
 upfile.vn###Header
 upfile.vn##.Download > ins.adsbygoogle:nth-of-type(1)
@@ -870,6 +861,7 @@ uploadev.org##.offersfree > .text-center > li:nth-of-type(7)
 uploadev.org##.offersfree > .text-center > li:nth-of-type(8)
 uploadev.org##.offersfree > .text-center > li:nth-of-type(9)
 uploadev.org##.offersprim
+uploadev.org##.text-left
 uploadev.org##footer
 uploadev.org##header
 uploadocean.com###header
@@ -966,6 +958,7 @@ userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; po
 userscloud.com##li.col-md-6:nth-of-type(2)
 vandyke.com###gdpr-alert
 vandyke.com###gdpr-cover
+vi.aliexpress.com##.opened.next-overlay-wrapper
 vienthongtayninh.vn###footer
 viesoftware.blogspot.com###Header1_headerimg
 vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody > tr:last-child
@@ -981,15 +974,6 @@ vitinhvuhoang.com###sbox-overlay
 vitinhvuhoang.com###sbox-window
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
-vn-zoom.org###footer
-vn-zoom.org##.p-body-inner > center:nth-of-type(1)
-vn-zoom.org##.p-body-inner > center:nth-of-type(2)
-vn-zoom.org##.p-body-sidebar > center:nth-of-type(1)
-vn-zoom.org##.p-body-sidebar > center:nth-of-type(2)
-vn-zoom.org##.p-body-sidebar > ins.adsbygoogle:nth-of-type(1)
-vn-zoom.org##center:nth-of-type(3)
-vn-zoom.org##ins.adsbygoogle:nth-of-type(2)
-vn-zoom.org##ins.adsbygoogle:nth-of-type(3)
 vnexpress.net###wrapper_footer
 vnexpress.net##.p_header
 vnjpclub.com###ampz_inline_bottom
@@ -1012,6 +996,8 @@ we25.vn##.footer
 weblio.jp###adPcBnrWrp
 websosanh.vn###anchorComment
 websosanh.vn###footer
+websosanh.vn###zone-web_compare_right1 > .xds-banner
+websosanh.vn###zone-web_header_right
 wiki.dd-wrt.com##.cookieinfo
 wikiall.org##p:nth-of-type(1)
 wikiall.org##p:nth-of-type(2)
@@ -1044,8 +1030,10 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 yeuphimmoi.com##.balloon-block
 ||ad.chogiare.vn^
 ||androidfilehost.com/assets/images/cloud-bg-new.png$image
+||aptashant.club
 ||i.imgur.com/u6iyMx4.png$image
 ||lixi88.info^
+||pushbullet.com
 ||vipshare.co/img/*$image
 ||vuighe.tv/images/*.gif^
 ||vuighe.tv/players/ads/^
