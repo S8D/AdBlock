@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20200327a
-! Title: bom.to/loc | gg.gg/a_
+! Version: 20200327b
+! Title: bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
-! Homepage: Gg.gG/a_
+! Homepage: gg.gg/a_ | tiny.cc/_a
 ! Licence: Darias
 ! ChangeLog: ...
 
@@ -28,10 +28,15 @@ a2zapk.com###galax2
 a2zapk.com##.Tags
 a2zapk.com##.WebF
 a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
+a2zapk.com##div.ArticleLand:nth-of-type(3) > b
 a2zapk.com##div.ArticleLand:nth-of-type(4)
 a2zapk.com##div.ArticleLand:nth-of-type(5)
 a2zapk.com##div.ArticleLand:nth-of-type(6)
 a2zapk.com##div.NewBlock:nth-of-type(1)
+a2zupload.com###alert
+a2zupload.com###content > div:nth-of-type(1)
+a2zupload.com###taxonomy-list_1-0
+a2zupload.com##.WebF
 adayroi.com###vinfooter
 adayroi.com##.slogan-container
 ads.zaloapp.com###msgModal
@@ -105,6 +110,7 @@ cellphones.com.vn###ematic_background_overlay
 chiasefile.net##.bottom.shareit
 chiasefile.net##.header-inner
 chiasenhac.vn###csnplayerads > div.jw-controls.jw-reset:last-child > div.jw-controlbar.jw-background-color.jw-reset:last-child
+chiasenhac.vn###right1_banner
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
 chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child > div.f-c:nth-child(2) > ul
 chiasenhac.vn##section.wrapper_content:nth-child(2) > div.box_space:nth-child(3)
@@ -295,7 +301,10 @@ forums.voz.vn###div-gpt-ad-1573550402477-0
 forums.voz.vn###div-gpt-ad-1573550438941-0
 forums.voz.vn###div-gpt-ad-1573550478887-0
 forums.voz.vn###div-gpt-ad-1573896700833-0
+forums.voz.vn###div-gpt-ad-1576299739520-0
 forums.voz.vn###neo_logobar
+forums.voz.vn##.footer-distributed
+forums.voz.vn##.responsible
 forums.voz.vn##body > .container > div.row:nth-of-type(1)
 forums.voz.vn##body > .container > div.row:nth-of-type(8)
 forums.voz.vn##div.row:nth-of-type(14)
@@ -1020,8 +1029,17 @@ win10.vn##.light-text.footer-widgets
 win10.vn##.post-inner
 win10.vn##.style-3.clearfix.bottom-share.single-post-share.post-share
 win10.vn##.use-pretty-tabs.hidden-xs.topbar-style-1.topbar
+www.dongphim.net##.luna.ht-footer
+www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 www.nokia.com##.nokia_cookie-wrapper
 www.techinferno.com###elGuestTerms
+www.uploadship.com###footer2
+www.uploadship.com##.page-box
+www.uploadship.com##.pricing > .row
+www.uploadship.com##.pricing > .text-center
+www.uploadship.com##body > center:nth-of-type(1)
+www.uploadship.com##div.col-lg-6.col-md-6.col-sm-12.col-xs-12:nth-of-type(1)
+www.uploadship.com##div.col-lg-6.col-md-6.col-sm-12.col-xs-12:nth-of-type(2)
 www110.zippyshare.com###bottom
 www110.zippyshare.com###lrbox > div.slickbox:nth-child(5) > div.center:first-child
 www110.zippyshare.com##.smalltab
@@ -1033,11 +1051,16 @@ yeuphimmoi.com##.balloon-block
 ||aptashant.club
 ||i.imgur.com/u6iyMx4.png$image
 ||lixi88.info^
+||media.dongphim.net/media/image/id/*200x$image
+||media.dongphim.net/media/image/id/*640x$image
 ||pushbullet.com
+||static.dongphim.net/images/chuot.jpeg$image
 ||vipshare.co/img/*$image
 ||vuighe.tv/images/*.gif^
 ||vuighe.tv/players/ads/^
 
+!#########################################################################################################
+!#########################################################################################################
 !___Rút-Gọn________________________________________
 
 123link.carpartsviet31.site###cookie-pop
@@ -1070,6 +1093,12 @@ yeuphimmoi.com##.balloon-block
 123link.vip###cookie-pop
 123link.vip##div.ads-block-warning.dark:nth-child(20)
 123link.vip##footer
+
+www.123link.biz###link-view > p
+www.123link.biz###mainNav
+www.123link.biz##.text-left
+www.123link.biz##body > div:nth-of-type(3)
+www.123link.biz##footer
 
 ckk.ai###cookie-pop
 ckk.ai###link-view > p
