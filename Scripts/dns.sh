@@ -28,6 +28,7 @@ KiemMasq () {
 		echo '' >> /etc/dnsmasq.conf
 		echo '# DNSCrypt' >> /etc/dnsmasq.conf
 		echo 'server=/lan/' >> /etc/dnsmasq.conf
+		echo 'server=/luc/' >> /etc/dnsmasq.conf
 		echo 'server=/private/' >> /etc/dnsmasq.conf
 		echo 'server=/internal/' >> /etc/dnsmasq.conf
 		echo 'server=/intranet/' >> /etc/dnsmasq.conf
@@ -36,9 +37,9 @@ KiemMasq () {
 		echo 'server=/10.in-addr.arpa/' >> /etc/dnsmasq.conf
 		echo 'server=/2.2.in-addr.arpa/' >> /etc/dnsmasq.conf
 		echo 'server=/3.4.in-addr.arpa/' >> /etc/dnsmasq.conf
-		echo 'server=/16.172.in-addr.arpa/' >> /etc/dnsmasq.conf
-		echo 'server=/168.192.in-addr.arpa/' >> /etc/dnsmasq.conf
-		echo 'server=/254.169.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/172.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/192.in-addr.arpa/' >> /etc/dnsmasq.conf
+		echo 'server=/169.in-addr.arpa/' >> /etc/dnsmasq.conf
 	fi
 }
 
