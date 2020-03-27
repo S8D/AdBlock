@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327h"
+PhienBan="20200327j"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -43,39 +43,16 @@ KiemMasq () {
 }
 
 KiemFW () {
+	textFW="config redirect\n\toption name \'NextDNS_53\'\n\toption src \'lan\'\n\toption proto \'tcp udp\'\n\toption src_dport \'53\'\n\toption dest_port \'53\'\n\toption target \'DNAT\'\n\nconfig redirect\n\toption name \'NextDNS_853\'\n\toption src \'lan\'\n\toption proto \'tcp udp\'\n\toption src_dport \'853\'\n\toption dest_port \'853\'\n\toption target \'DNAT\'\n\nconfig redirect\n\toption name \'NextDNS_5353\'\n\toption src \'lan\'\n\toption proto \'tcp udp\'\n\toption src_dport \'5353\'\n\toption dest_port \'5353\'\n\toption target \'DNAT\'\n\n"
 	fw="/etc/config/firewall"; fwl=$(cat ${fw} | grep NextDNS)
-	if [ -z "$fwl" ]; then echo -e '
-config redirect
-\toption name 'NextDNS_53'
-\toption src 'lan'
-\toption proto 'tcp udp'
-\toption src_dport '53'
-\toption dest_port '53'
-\toption target 'DNAT'
-
-config redirect
-\toption name 'NextDNS_853'
-\toption src 'lan'
-\toption proto 'tcp udp'
-\toption src_dport '853'
-\toption dest_port '853'
-\toption target 'DNAT'
-
-config redirect
-\toption name 'NextDNS_5353'
-\toption src 'lan'
-\toption proto 'tcp udp'
-\toption src_dport '5353'
-\toption dest_port '5353'
-\toption target 'DNAT'
-' | cat - $fw | tee $fw; fi
-}
+	if [ -z "$fwl" ]; then 
+		sed -i '1s/^/'"$textFW"'/' $fw
 
 KiemDHCP () {
+	textDHCP="dnsmasq\n\toption noresolv \'1\'\n\toption localuse \'1\'\n\toption boguspriv \'1\'\n\tlist server \'127.0.0.53\'";
 	dhcp="/etc/config/dhcp"; dhc=$(cat ${dhcp} | grep "option noresolv"); 
-	if [ -z "$dhc" ]; then dhcp="/etc/config/dhcp"; 
-		thay="dnsmasq\n\toption noresolv \'1\'\n\toption localuse \'1\'\n\toption boguspriv \'1\'\n\tlist server \'127.0.0.53\'";
-		sed -i 's/dnsmasq/'"$thay"'/g' $dhcp
+	if [ -z "$dhc" ]; then dhcp="/etc/config/dhcp"; 		
+		sed -i 's/dnsmasq/'"$textDHCP"'/g' $dhcp
 		/etc/init.d/dnsmasq restart; logread -l 100 | grep dnsmasq | grep nameserver | sed 's/.*nameserver //'
 	fi
 }
@@ -131,7 +108,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
 
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Kiểm tra Dịch vụ DNSCrypt..."
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Đang kiểm tra Dịch vụ DNSCrypt..."
 		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Dịch vụ DNSCrypt đã được cập nhật"; 
@@ -163,7 +140,5 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 	fi
 
-if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemMasq; KiemCauHinh; KiemDHCP
-		#KiemFW; 
-	fi
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemMasq; KiemCauHinh; KiemDHCP; KiemFW; fi
 else echo "$DauCau Không có mạng!!! Thoát ra"; exit; fi
