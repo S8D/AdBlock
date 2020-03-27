@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327c"
+PhienBan="20200327d"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -111,13 +111,15 @@ CapNhatAR2 () {
 }
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckUL () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
-CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckGH () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;
+CheckNet_1 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
+CheckNet_2 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckNet_3 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;
 
-if CheckUL; then UpLink="https://bom.to/dns"; DownLink="https://bom.to/dns_"; uDV="https://bom.to/dns_dv"; net="1"; else	
-	if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; uDV="https://tiny.cc/dns_dv"; net="2"; else	
-		if CheckGH; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; uDV="https://github.com/S8D/AdBlock/raw/master/Scripts/dns_dv"; net="3"; else net=0; fi; fi; fi
+if CheckNet_1; then UpLink="https://bom.to/dns"; DownLink="https://bom.to/dns_"; uDV="https://bom.to/dns_dv"; net="1"; else	
+	if CheckNet_2; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; uDV="https://tiny.cc/dns_dv"; net="2"; else	
+		if CheckNet_3; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"; 
+			DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; 
+			uDV="https://github.com/S8D/AdBlock/raw/master/Scripts/dns_dv"; net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
