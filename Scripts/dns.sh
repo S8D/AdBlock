@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327f"
+PhienBan="20200327g"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -81,11 +81,7 @@ KiemDHCP () {
 }
 
 KiemCauHinh () {
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Kiểm tra Dịch vụ DNSCrypt..."
-		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Dịch vụ DNSCrypt đã được cập nhật"; 
-		else $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 		#if [ ! -f "$DVdns" ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
 		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 		$dl1 ${tmDNS}/dns.tar.gz https://bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
@@ -134,6 +130,13 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
+
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Kiểm tra Dịch vụ DNSCrypt..."
+		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Dịch vụ DNSCrypt đã được cập nhật"; 
+		else $dl1 $upTam $uDV; chmod +x $upTam; mv $upTam $DVdns; fi			
+
 	if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
 		echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
 		echo "$DauCau Đang cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn..."
@@ -159,8 +162,6 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
     		echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!" >> $Log;
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 	fi
-
-KiemCauHinh; 
 
 if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemMasq; KiemCauHinh; KiemDHCP
 		#KiemFW; 
