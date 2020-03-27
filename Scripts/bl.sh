@@ -1,10 +1,10 @@
 #!/bin/sh
-PhienBan="20200327a"
+PhienBan="20200327c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
-nds="/root/nds"
+nds="/sd/nds"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; TMLog="/www";
@@ -28,19 +28,19 @@ Log="${TMLog}/NhatKy.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi;
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
-CheckUL () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
-CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckGH () { ping -q -c 1 -W 1 github.com >/dev/null; };
+CheckNet_1 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
+CheckNet_2 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckNet_3 () { ping -q -c 1 -W 1 github.com >/dev/null; };
 
-if CheckUL; then 
-	UpLink="bom.to/_bl";
-	uDen="bom.to/Den";
-	uipDen="bom.to/ipDen";
-	uTrang="bom.to/trang";
-	uChoang="bom.to/Choang";
-	uChuyen="bom.to/Chuyen";
-	uNoiQuy="bom.to/NoiQuy";
-	uThongBao="bom.to/ThongBao";
+if CheckNet_1; then 
+	UpLink="https://bom.to/_bl";
+	uDen="https://bom.to/Den";
+	uipDen="https://bom.to/ipDen";
+	uTrang="https://bom.to/trang";
+	uChoang="https://bom.to/Choang";
+	uChuyen="https://bom.to/Chuyen";
+	uNoiQuy="https://bom.to/NoiQuy";
+	uThongBao="https://bom.to/ThongBao";
 #_________________________________
 #	UpLink="gg.gg/_bl";
 #	uDen="gg.gg/_Den";
@@ -52,7 +52,7 @@ if CheckUL; then
 #	uThongBao="gg.gg/_ThongBao";
 #_________________________________
 	net="1"; else
-	if CheckTN; then UpLink="https://tiny.cc/-b"; 
+	if CheckNet_2; then UpLink="https://tiny.cc/-b"; 
 		uDen="https://tiny.cc/-Den";
 		uipDen="https://tiny.cc/-ipDen";
 		uTrang="https://tiny.cc/-Trang";
@@ -61,7 +61,7 @@ if CheckUL; then
 		uNoiQuy="https://tiny.cc/-NoiQuy";
 		uThongBao="https://tiny.cc/-ThongBao";
 		net="2"; else
-		if CheckGH; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"; 
+		if CheckNet_3; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"; 
 			uDen="https://github.com/S8D/AdBlock/raw/master/Lists/0_Den.txt";
 			uipDen="https://github.com/S8D/AdBlock/raw/master/Lists/0_ipDen.txt";
 			uTrang="https://github.com/S8D/AdBlock/raw/master/Lists/0_Trang.txt";
@@ -96,8 +96,8 @@ if [ $OS == $x64 ] || [ $OS == $arm ]; then
 	}
 	
 	echo "$DauCau Đang cập nhật Bộ lọc"
-	if [ $net -eq 1 ]; then curl -f -s -L $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
-	if [ $net -ge 2 ]; then curl -f -s -L --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi	
+	#if [ $net -eq 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
+	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
 	if [ -f "$nds" ]; then /etc/init.d/dns restart; fi
 fi
 
