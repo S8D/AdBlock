@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327e"
+PhienBan="20200327f"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -160,7 +160,9 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 	fi
 
-if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemMasq; KiemCauHinh; KiemDHCP; 
+KiemCauHinh; 
+
+if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemMasq; KiemCauHinh; KiemDHCP
 		#KiemFW; 
 	fi
 else echo "$DauCau Không có mạng!!! Thoát ra"; exit; fi
