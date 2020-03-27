@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-
+PhienBan="20200327a"
 USE_PROCD=1
 
 # starts before dnsmasq starts
@@ -8,7 +8,9 @@ START=18
 STOP=89
 
 Chay=/usr/sbin/dns
-CauHinh=/root/dns/CauHinh.toml
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
+if [ $OS == $x64 ]; then CauHinh=/root/dns/CauHinh.toml; fi
+if [ $OS == $arm ]; then CauHinh=/sd/dns/CauHinh.toml; fi
 
 start_service() {
         procd_open_instance

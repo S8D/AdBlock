@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327b"
+PhienBan="20200327c"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -81,14 +81,17 @@ KiemDHCP () {
 }
 
 KiemCauHinh () {
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
-			if [ ! -f "$DVdns" ]; then $dl1 $upTam bom.to/dns_dv; chmod +x $upTam; mv $upTam $DVdns; fi
-			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.tar.gz bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Kiểm tra Dịch vụ DNSCrypt..."
+		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+		if [ $PhienBanDVMoi != PhienBanDV ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
+		#if [ ! -f "$DVdns" ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
+		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
+		$dl1 ${tmDNS}/dns.tar.gz https://bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
 
 	if [ $OS == $Android ]; then 
-			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.zip bom.to/CauHinh_Android; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
+		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
+		$dl1 ${tmDNS}/dns.zip bom.to/CauHinh_Android; unzip -d "$tmDNS" ${tmDNS}/dns.zip; fi; fi
 }
 
 CapNhatAR () {
@@ -112,9 +115,9 @@ CheckUL () { ping -q -c 1 -W 1 bom.to >/dev/null; };
 CheckTN () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
 CheckGH () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;
 
-if CheckUL; then UpLink="bom.to/dns"; DownLink="bom.to/dns_"; net="1"; else	
-	if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; net="2"; else	
-		if CheckGH; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; net="3"; else net=0; fi; fi; fi
+if CheckUL; then UpLink="https://bom.to/dns"; DownLink="https://bom.to/dns_"; uDV="https://bom.to/dns_dv"; net="1"; else	
+	if CheckTN; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; uDV="https://tiny.cc/dns_dv"; net="2"; else	
+		if CheckGH; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"; DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; uDV="https://github.com/S8D/AdBlock/raw/master/Scripts/dns_dv"; net="3"; else net=0; fi; fi; fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
