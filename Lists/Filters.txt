@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200327b
+! Version: 20200327c
 ! Title: bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -23,7 +23,6 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 4file.net##div:nth-of-type(2) > table > tbody > tr > td
 4file.net##footer
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
-@@speedtest.vnix.vn/sizing/count.php
 a2zapk.com###galax2
 a2zapk.com##.Tags
 a2zapk.com##.WebF
@@ -512,6 +511,17 @@ mediafire.com##.sidebar
 mediafire.com##.socialFBContainer
 mega-debrit.com###Downloader > div.row:first-child
 mega-debrit.com##div.jumbotron.text-center:nth-child(4)
+mega4up.com###app-header
+mega4up.com###gdpr-cookie-notice
+mega4up.com##.app-footer
+mega4up.com##.col-xl-8
+mega4up.com##.compare_table.row
+mega4up.com##.mb-3.row > .col-md-1
+mega4up.com##.mb-4.card > .card
+mega4up.com##.section-title > .title
+mega4up.com##.text-center.py-3.footer-copyright
+mega4up.com##div.col-md-4:nth-of-type(2)
+mega4up.com##div.col-md-4:nth-of-type(3)
 memrise.com##.cc-color-override--1887361321.cc-bottom.cc-theme-corporate.cc-type-info.cc-banner.cc-window
 mina.mazii.net###myShare
 mina.mazii.net##div.modal-backdrop.fade.in
@@ -1034,12 +1044,33 @@ www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 www.nokia.com##.nokia_cookie-wrapper
 www.techinferno.com###elGuestTerms
 www.uploadship.com###footer2
+www.uploadship.com##.FI
 www.uploadship.com##.page-box
+www.uploadship.com##.pages
 www.uploadship.com##.pricing > .row
 www.uploadship.com##.pricing > .text-center
+www.uploadship.com##.pricing > center:nth-of-type(1)
+www.uploadship.com##.pricing > center:nth-of-type(4)
+www.uploadship.com##.scrollup
+www.uploadship.com##.table-striped.table-bordered.table.ppdRateTable
+www.uploadship.com##.upl.col-sm-12
+www.uploadship.com##.usndsl
 www.uploadship.com##body > center:nth-of-type(1)
+www.uploadship.com##center:nth-of-type(3) > .rates-ppd.ppdr-pps.ppdr
+www.uploadship.com##center:nth-of-type(3) > center
 www.uploadship.com##div.col-lg-6.col-md-6.col-sm-12.col-xs-12:nth-of-type(1)
 www.uploadship.com##div.col-lg-6.col-md-6.col-sm-12.col-xs-12:nth-of-type(2)
+www.uploadship.com##div.file-box:nth-of-type(10)
+www.uploadship.com##div.file-box:nth-of-type(11)
+www.uploadship.com##div.file-box:nth-of-type(6)
+www.uploadship.com##div.file-box:nth-of-type(9)
+www.uploadship.com##div.row:nth-of-type(12)
+www.uploadship.com##div.row:nth-of-type(13)
+www.uploadship.com##div.row:nth-of-type(3) > .file-box
+www.uploadship.com##div.row:nth-of-type(8)
+www.uploadship.com##div:nth-of-type(7) > .table-striped.table-bordered.table
+www.uploadship.com##div:nth-of-type(7) > div.file-box:nth-of-type(1)
+www.uploadship.com##h2
 www110.zippyshare.com###bottom
 www110.zippyshare.com###lrbox > div.slickbox:nth-child(5) > div.center:first-child
 www110.zippyshare.com##.smalltab
@@ -1414,6 +1445,7 @@ youtube.com##*.video-ads
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr|mshare.io
 @@/js/show_ads.js^$domain=shink.in
 @@_social_icons.
+@@speedtest.vnix.vn/sizing/count.php
 @@||192.168.0.1^$important,document,~extension
 @@||192.168.1.1^$important,document,~extension
 @@||4.3.2.1^$important,document,~extension
