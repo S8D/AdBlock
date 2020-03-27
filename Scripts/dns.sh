@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327m"
+PhienBan="20200327n"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -109,11 +109,11 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
 
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Đang kiểm tra Dịch vụ DNSCrypt..."
+	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Dịch vụ DNSCrypt đã được cập nhật"; 
-		else $dl1 $upTam $uDV; chmod +x $upTam; mv $upTam $DVdns; fi; fi
+		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Đang chạy Dịch vụ DNSCrypt $PhienBanDV"
+		else $dl1 $upTam $uDV; chmod +x $upTam; mv $upTam $DVdns; echo "$DauCau Dịch vụ DNSCrypt đã được cập nhật lên $PhienBanDV"; fi; fi
 
 	if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
 		echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
