@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200327c"
+PhienBan="20200327d"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -39,7 +39,7 @@ if CheckNet_1; then
 	uTrang="https://bom.to/trang";
 	uChoang="https://bom.to/Choang";
 	uChuyen="https://bom.to/Chuyen";
-	uNoiQuy="https://bom.to/NoiQuy";
+	uNoiQuy="https://bom.to/noiwy";
 	uThongBao="https://bom.to/ThongBao";
 #_________________________________
 #	UpLink="gg.gg/_bl";
@@ -82,7 +82,6 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 fi
 
-OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
 if [ $OS == $x64 ] || [ $OS == $arm ]; then 
 	opkg list-installed | grep -qw luci-ssl || {
 	echo "$DauCau Đang cài SSL"
