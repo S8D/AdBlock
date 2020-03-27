@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200315d"
+PhienBan="20200327a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -98,7 +98,7 @@ if [ $OS == $x64 ] || [ $OS == $arm ]; then
 	echo "$DauCau Đang cập nhật Bộ lọc"
 	if [ $net -eq 1 ]; then curl -f -s -L $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
 	if [ $net -ge 2 ]; then curl -f -s -L --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi	
-	/etc/init.d/dns restart	
+	if [ -f "$nds" ]; then /etc/init.d/dns restart; fi
 fi
 
 if [ $OS == $Android ]; then

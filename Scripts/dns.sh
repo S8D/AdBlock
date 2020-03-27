@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200315a"
+PhienBan="20200327a"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -125,11 +125,6 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
-
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemMasq; 
-		#KiemFW; 
-	fi
-	
 	echo "$DauCau Đang kiểm tra cập nhật DNSCrypt-Proxy...";
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
@@ -157,5 +152,9 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
     		$dns --config $CauHinh -check; $dns --config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; else
     		echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!" >> $Log;
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
+	fi
+
+if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemDHCP; KiemMasq; 
+		#KiemFW; 
 	fi
 else echo "$DauCau Không có mạng!!! Thoát ra"; exit; fi
