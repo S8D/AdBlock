@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327l"
+PhienBan="20200327m"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -47,6 +47,7 @@ KiemFW () {
 	textFW="config redirect\n\toption name \'NextDNS_53\'\n\toption src \'lan\'\n\toption proto \'tcp udp\'\n\toption src_dport \'53\'\n\toption dest_port \'53\'\n\toption target \'DNAT\'\n\nconfig redirect\n\toption name \'NextDNS_853\'\n\toption src \'lan\'\n\toption proto \'tcp udp\'\n\toption src_dport \'853\'\n\toption dest_port \'853\'\n\toption target \'DNAT\'\n\nconfig redirect\n\toption name \'NextDNS_5353\'\n\toption src \'lan\'\n\toption proto \'tcp udp\'\n\toption src_dport \'5353\'\n\toption dest_port \'5353\'\n\toption target \'DNAT\'\n\n";
 	fw="/etc/config/firewall"; fwl=$(cat ${fw} | grep NextDNS);
 	if [ -z "$fwl" ]; then sed -i '1s/^/'"$textFW"'/' $fw; fi
+}
 
 KiemDHCP () {
 	textDHCP="dnsmasq\n\toption noresolv \'1\'\n\toption localuse \'1\'\n\toption boguspriv \'1\'\n\tlist server \'127.0.0.53\'";
