@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200327d"
+PhienBan="20200327e"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -84,7 +84,8 @@ KiemCauHinh () {
 	if [ $OS == $x64 ] || [ $OS == $arm ]; then echo "$DauCau Kiểm tra Dịch vụ DNSCrypt..."
 		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-		if [ $PhienBanDVMoi != PhienBanDV ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
+		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Dịch vụ DNSCrypt đã được cập nhật"; 
+		else $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
 		#if [ ! -f "$DVdns" ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
 		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 		$dl1 ${tmDNS}/dns.tar.gz https://bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
