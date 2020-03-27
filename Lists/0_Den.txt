@@ -1,4 +1,4 @@
-#PhienBan___20200315a
+#PhienBan___20200328a
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,9 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+accesstrade.vn
+zopim.com
+doubleverify.com
 a.vdo.ai
 yoads.network
 api.leanplum.com
@@ -1022,6 +1025,7 @@ tracker.*
 *.workgroup
 *.onion
 *.lan
+*.luc
 *.internal
 *.local
 *.private
