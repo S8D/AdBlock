@@ -1,4 +1,4 @@
-#PhienBan___20200328a
+#PhienBan___20200328b
 #___Apple__________22
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,16 @@ iadsdk.apple.com
 *adsdk.apple.com
 
 #___Tổng-Hợp_______22
+liadm.com
+crwdcntrl.net
+adform.net
+dt-secure.videohub.tv
+shareaholic.com
+survata.com
+dtscdn.com
+areyouahuman.com
+mailerlite.com
+areyouahuman.com
 accesstrade.vn
 zopim.com
 doubleverify.com
@@ -909,9 +919,9 @@ suspended-website.com
 
 #___Facebook_______22
 #platform-lookaside.fbsbx.com
-#an.facebook.com
+an.facebook.com
 #interncache-atn.fbcdn.net
-#graph.fbpigeon.com
+graph.fbpigeon.com
 
 #___VinaGau__________22
 stc.za.zaloapp.com
