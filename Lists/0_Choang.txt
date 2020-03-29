@@ -1,5 +1,7 @@
-#PhienBan___20200222a
-#___CoBac___________
+#PhienBan___20200328a
+time-a.timefreq.bldrdoc.gov	time2.google.com
+
+#___CoBac_____________________________________________
 *.vipborrow.com				cd.ago.vn
 *taixiu*.*					cd.ago.vn
 *.five88.net				cd.ago.vn
@@ -19,7 +21,7 @@
 *.thegioicacuocbongda.com	cd.ago.vn
 *.keocacuoc.net				cd.ago.vn
 
-#___Tổng-Hợp_________________
+#___Tổng-Hợp__________________________________________
 *.cookieinfoscript.com		ad.ago.vn
 *.byet.org					ad.ago.vn
 *.ifastnet.com				ad.ago.vn
@@ -68,7 +70,7 @@
 *.bing.com					ad.ago.vn
 *.yahoo.com					ad.ago.vn
 
-#___Google_________
+#___Search____________________________________________
 *.baidu.com					forcesafesearch.google.com
 *.google.cn					forcesafesearch.google.com
 *.bing.com					forcesafesearch.google.com
@@ -77,7 +79,7 @@
 www.google.*				forcesafesearch.google.com
 *.duckduckgo.com			forcesafesearch.google.com
 
-#___3X_______________________
+#___3X________________________________________________
 *.agenttube.pro				3x.ago.vn
 *.agentxxx.pro				3x.ago.vn
 *.bbporntube.pro			3x.ago.vn
@@ -293,7 +295,7 @@ dam69.*						3x.ago.vn
 *.xxphe.com					3x.ago.vn
 *.adx1.com					ad.ago.vn
 
-#___TQ_______________________
+#___TQ________________________________________________
 *.ucweb.*					cn.ago.vn
 *.xunyou.*					cn.ago.vn
 *.haokan.mobi				cn.ago.vn
