@@ -1,20 +1,21 @@
 #!/bin/bash
-PhienBan="20200327n"
+PhienBan="20200331a"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
-OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 
-if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 	TM="/root"; TMLog="/www"; dns="/usr/sbin/dns"; cd $TM; DVdns="/etc/init.d/dns"; duoi="tar.gz"; fi
 
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
+if [ $OS == $mips ]; then linktai="linux_mipsle-"; ThuMuc="linux-mipsle"; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; 
 	TM="/sdcard"; TMLog="${TM}/dns"; dns="/system/bin/dns"; duoi="zip"; 
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; fi
 
-Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo > $Log; fi; 
+Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi; 
 tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; 
 CauHinh="${tmDNS}/CauHinh.toml"
 
@@ -59,7 +60,7 @@ KiemDHCP () {
 }
 
 KiemCauHinh () {
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+	if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 		#if [ ! -f "$DVdns" ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVdns; fi
 		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
 		$dl1 ${tmDNS}/dns.tar.gz https://bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz; fi; fi
@@ -109,7 +110,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}')
 	PhienBanOff=$(dns --version)
 
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+	if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 		PhienBanDV=$(cat ${DVdns} | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		PhienBanDVMoi=$(${dl2} "${uDV}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanDVMoi == PhienBanDV ]; then echo "$DauCau Đang chạy Dịch vụ DNSCrypt $PhienBanDV"
@@ -121,11 +122,11 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Đang tải DNSCrypt-Proxy..."
 		DownURL=$(${dl2} $DownLink | grep browser_download_url.*$duoi | grep $linktai | sed 's/.*minisig//' | cut -d '"' -f 4);
 		
-		if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 		$dl1 $TM/DNSCrypt.$duoi $DownURL; fi
 
 		echo -e "$DauCau Đang giải nén DNSCrypt-Proxy...\n"; 
-		if [ $OS == $x64 ] || [ $OS == $arm ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
+		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then cd $TM; tar -xzvf DNSCrypt.$duoi; 
 			if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
 			$DVdns stop; chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy
 			mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
@@ -141,5 +142,5 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
     		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"; fi
 	fi
 
-	if [ $OS == $x64 ] || [ $OS == $arm ]; then KiemMasq; KiemCauHinh; KiemDHCP; KiemFW; fi;
+	if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then KiemMasq; KiemCauHinh; KiemDHCP; KiemFW; fi;
 else echo "$DauCau Không có mạng!!! Thoát ra"; exit; fi;
