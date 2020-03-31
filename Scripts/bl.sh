@@ -1,13 +1,13 @@
 #!/bin/sh
-PhienBan="20200327d"
+PhienBan="20200331a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
 nds="/sd/nds"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
-OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"
-if [ $OS == $x64 ] || [ $OS == $arm ]; then TM="/root"; TMLog="/www";
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
+if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then TM="/root"; TMLog="/www";
 	cer="/etc/ssl/certs/ca-certificates.crt"; mkdir -p $nds
 	NoiQuy="$nds/NoiQuy.txt";
 	ThongBao="$nds/ThongBao.txt";
@@ -82,7 +82,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 fi
 
-if [ $OS == $x64 ] || [ $OS == $arm ]; then 
+if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 	opkg list-installed | grep -qw luci-ssl || {
 	echo "$DauCau Đang cài SSL"
 	opkg update;
