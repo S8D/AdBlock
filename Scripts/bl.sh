@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200404b"
+PhienBan="20200404c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -29,8 +29,7 @@ Chuyen="${tmDNS}/Chuyen.txt"; if [ ! -f "$Chuyen" ]; then echo '' > $Chuyen; fi;
 CauHinh="${tmDNS}/CauHinh.toml"; if [ ! -f "$CauHinh" ]; then echo '' > $CauHinh; fi; 
 Log="${TMLog}/NhatKy.log"; 
 if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then if [ ! -f "$Log" ]; then sudo echo '' > $Log; fi; fi;
-if [ ! -f "$Log" ]; then echo '' > $Log; fi
-
+if [ ! -f "$Log" ]; then echo '' > $Log; fi; fi
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
