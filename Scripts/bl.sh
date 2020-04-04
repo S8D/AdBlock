@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200331a"
+PhienBan="20200404a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -7,11 +7,14 @@ dl1="curl -s -L -o"; dl2="curl -s -L"
 nds="/sd/nds"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
-if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then TM="/root"; TMLog="/www";
+if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
+	TM="/root"; TMLog="/www";
 	cer="/etc/ssl/certs/ca-certificates.crt"; mkdir -p $nds
 	NoiQuy="$nds/NoiQuy.txt";
 	ThongBao="$nds/ThongBao.txt";
-fi
+fi; fi
+
+if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then TM="/config/"; TMLog="${TM}/dns"; fi; fi
 
 if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
@@ -82,7 +85,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
 fi
 
-if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
+if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
 	opkg list-installed | grep -qw luci-ssl || {
 	echo "$DauCau Đang cài SSL"
 	opkg update;
@@ -97,8 +100,12 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then
 	echo "$DauCau Đang cập nhật Bộ lọc"
 	#if [ $net -eq 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
 	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
-	if [ -f "$nds" ]; then /etc/init.d/dns restart; fi
+	if [ -f "$nds" ]; then /etc/init.d/dns restart; fi; fi
 fi
+
+if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc"
+	if [ $net -ge 1 ]; then curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
+fi; fi
 
 if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
