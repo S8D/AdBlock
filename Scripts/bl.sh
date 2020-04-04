@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200404c"
+PhienBan="20200404d"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -14,7 +14,7 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cg
 	ThongBao="$nds/ThongBao.txt";
 fi; fi
 
-if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then TM="/config/"; TMLog="${TM}/dns"; fi; fi
+if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then TM="/config"; TMLog="${TM}/dns"; fi; fi
 
 if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
@@ -28,8 +28,9 @@ Choang="${tmDNS}/Choang.txt"; if [ ! -f "$Choang" ]; then echo '' > $Choang; fi;
 Chuyen="${tmDNS}/Chuyen.txt"; if [ ! -f "$Chuyen" ]; then echo '' > $Chuyen; fi; 
 CauHinh="${tmDNS}/CauHinh.toml"; if [ ! -f "$CauHinh" ]; then echo '' > $CauHinh; fi; 
 Log="${TMLog}/NhatKy.log"; 
-if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then if [ ! -f "$Log" ]; then sudo echo '' > $Log; fi; fi;
-if [ ! -f "$Log" ]; then echo '' > $Log; fi; fi
+if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then 
+	if [ ! -f "$Log" ]; then sudo echo '' > $Log; fi; else
+	if [ ! -f "$Log" ]; then echo '' > $Log; fi; fi; fi
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
@@ -79,7 +80,8 @@ if CheckNet_1; then
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 	if [ $PhienBanMoi == $PhienBan ]; then echo "$DauCau $(basename "$0") $PhienBan là bản mới nhất!";
-		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
+		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then sudo echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log; else
+		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log; fi; fi
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 		cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
 		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
@@ -107,6 +109,7 @@ fi
 
 if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc"
 	if [ $net -ge 1 ]; then sudo curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
+	sudo ${tmDNS}/dns  -service stop; sudo ${tmDNS}/dns  -service start
 fi; fi
 
 if [ $OS == $Android ]; then
