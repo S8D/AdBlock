@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200404d"
+PhienBan="20200404e"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -83,10 +83,18 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then sudo echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log; else
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log; fi; fi
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
-		cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
-		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
-		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
-		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1; fi;
+		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then 
+			sudo cp $0 ${TM}/dns/$PhienBan\_$(basename "$0"); 
+			sudo $dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
+			sudo echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log; 
+			sudo sh ${TM}/$(basename "$0"); 
+		else
+			cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
+			$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
+			echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
+			echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; 
+			sh ${TM}/$(basename "$0"); fi; fi
+	exit 1; fi;
 fi
 
 if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
