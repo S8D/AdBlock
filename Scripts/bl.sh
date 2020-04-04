@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200404a"
+PhienBan="20200404b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -27,7 +27,10 @@ Trang="${tmDNS}/Trang.txt"; if [ ! -f "$Trang" ]; then echo '' > $Trang; fi;
 Choang="${tmDNS}/Choang.txt"; if [ ! -f "$Choang" ]; then echo '' > $Choang; fi; 
 Chuyen="${tmDNS}/Chuyen.txt"; if [ ! -f "$Chuyen" ]; then echo '' > $Chuyen; fi; 
 CauHinh="${tmDNS}/CauHinh.toml"; if [ ! -f "$CauHinh" ]; then echo '' > $CauHinh; fi; 
-Log="${TMLog}/NhatKy.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi; 
+Log="${TMLog}/NhatKy.log"; 
+if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then if [ ! -f "$Log" ]; then sudo echo '' > $Log; fi; fi;
+if [ ! -f "$Log" ]; then echo '' > $Log; fi
+
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
@@ -104,7 +107,7 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cg
 fi
 
 if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc"
-	if [ $net -ge 1 ]; then curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
+	if [ $net -ge 1 ]; then sudo curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
 fi; fi
 
 if [ $OS == $Android ]; then
