@@ -1,7 +1,9 @@
-#PhienBan___20200328a
+#PhienBan___20200405a
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
+*.11bet.win					cd.ago.vn
+*.x8.club						cd.ago.vn
 *.vipborrow.com				cd.ago.vn
 *taixiu*.*					cd.ago.vn
 *.five88.net				cd.ago.vn
@@ -80,6 +82,8 @@ www.google.*				forcesafesearch.google.com
 *.duckduckgo.com			forcesafesearch.google.com
 
 #___3X________________________________________________
+*.8teenxxx.com				3x.ago.vn
+*.blued.com					3x.ago.vn
 *.agenttube.pro				3x.ago.vn
 *.agentxxx.pro				3x.ago.vn
 *.bbporntube.pro			3x.ago.vn
