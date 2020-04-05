@@ -1,7 +1,7 @@
 @set @_cmd=1 /*
 @echo off
 setlocal EnableExtensions
-set "PhienBan=20200405a"
+set "PhienBan=20200405b"
 title DNSCrypt-Proxy %PhienBan%
 
 rem ============================================================================
@@ -22,11 +22,25 @@ rem ============================================================================
 :admin
 pushd "%~dp0"
 set "TM=%cd%"
+set "ST=C:\Windows\System32"
 cls
-echo.
+
+if exist %ST%\curl.exe (
+	echo .
+) else (
+	xcopy .\curl\*.* "%ST%" /h/i/c/k/e/r/y
+)
+
 echo Dang tai Scripts Windows 7 dung cURL ...
 curl -sLko %TM%/bl7.bat https://bom.to/bl7
 popd
+
+if exist %ST%\nircmd.exe (
+	echo .
+) else (
+	xcopy .\cmd\*.* "%ST%" /h/i/c/k/e/r/y
+)
+
 nircmd exec hide "%TM%/bl7.bat"
 for /F "tokens=3,*" %%A in ('netsh interface show interface ^| find "Connected"') do (netsh int ipv4 set dns name="%%B" static 127.0.0.1 primary validate=no && netsh int ipv6 set dns name="%%B" static ::1 primary validate=no)
 ipconfig /flushdns
