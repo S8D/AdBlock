@@ -1,4 +1,4 @@
-#PhienBan___20200405a
+#PhienBan___20200406a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,9 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+sodium.slp.pos.here.com
+rollbar.com
+log.tienphong.vn
 adsplay.xyz
 lofv.xyz
 fstats.xyz
