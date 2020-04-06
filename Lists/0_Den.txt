@@ -1,4 +1,4 @@
-#PhienBan___20200406a
+#PhienBan___20200406b
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -835,6 +835,19 @@ acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
+#*.cn
+#uc.cn
+#51y5.net
+#appboy.com
+#baidu.com
+#heytapmobi.com
+#jpush.io
+#sohu.com
+#xunyou.*
+#y5en.com
+*.ucweb.*
+*huawei*
+*oppo*
 gltxy.xyz
 uwx1.xyz
 oneplus.net
@@ -842,16 +855,11 @@ iowiuhwer37asdan.net
 wpsmail.net
 toutiaocloud.net
 byteoversea.net
-#51y5.net
 1plus.io
-#jpush.io
-uc.cn
-*.cn
 幸福的路径.com
 cnzz.com
 yy.com
 v21xy.com
-#appboy.com
 ynuf.alipay.com
 irisgw.com
 frontier.tiktokv.com
@@ -867,8 +875,6 @@ api*.tiktokv.com
 meitu.com
 sogou.com
 yuku.com
-#sohu.com
-#baidu.com
 wshareit.com
 irisdt.com
 bugly.qq.com
@@ -903,14 +909,12 @@ acs.m.taobao.com
 apoll.m.taobao.com
 zhenrongbao.com
 rjfun.com
-#y5en.com
 c360dn.com
 analytics.wuta-cam.com
 sgsnssdk.com
 snssdk.com
 ludashi.com
 tendawifi.com
-#heytapmobi.com
 umeng.com
 gtm.oasisfeng.com
 heytapmobile.com
@@ -935,10 +939,6 @@ ustickers.faceu.mobi
 haokan.mobi
 beijing-time.org
 umeng.cloud
-*oppo*
-*huawei*
-#xunyou.*
-*.ucweb.*
 
 #___MicroSoft__________________________________________________________________
 msedge.net

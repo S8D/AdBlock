@@ -1,4 +1,4 @@
-#PhienBan___20200405a
+#PhienBan___20200406a
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
@@ -300,6 +300,9 @@ dam69.*						3x.ago.vn
 *.adx1.com					ad.ago.vn
 
 #___TQ________________________________________________
+*.cn						cn.ago.vn
+#*.360.cn					cn.ago.vn
+#*.sina.cn					cn.ago.vn
 *.ucweb.*					cn.ago.vn
 *.xunyou.*					cn.ago.vn
 *.haokan.mobi				cn.ago.vn
@@ -319,9 +322,6 @@ dam69.*						3x.ago.vn
 *.oppo.com					cn.ago.vn
 *.sohu.com					cn.ago.vn
 *.appboy.com				cn.ago.vn
-*.cn						cn.ago.vn
-*.360.cn					cn.ago.vn
-*.sina.cn					cn.ago.vn
 *.jpush.io					cn.ago.vn
 *.51y5.net					cn.ago.vn
 *.duba.net					cn.ago.vn
