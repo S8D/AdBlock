@@ -1,7 +1,7 @@
 @set @_cmd=1 /*
 @echo off
 setlocal EnableExtensions
-set "PhienBan=20200405b"
+set "PhienBan=20200406a"
 title DNSCrypt-Proxy %PhienBan%
 
 rem ============================================================================
@@ -26,7 +26,7 @@ set "ST=C:\Windows\System32"
 cls
 
 if exist %ST%\curl.exe (
-	echo .
+	echo.
 ) else (
 	xcopy .\curl\*.* "%ST%" /h/i/c/k/e/r/y
 )
@@ -36,7 +36,7 @@ curl -sLko %TM%/bl7.bat https://bom.to/bl7
 popd
 
 if exist %ST%\nircmd.exe (
-	echo .
+	echo.
 ) else (
 	xcopy .\cmd\*.* "%ST%" /h/i/c/k/e/r/y
 )
