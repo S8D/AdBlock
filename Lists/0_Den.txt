@@ -1,4 +1,4 @@
-#PhienBan___20200407a
+#PhienBan___20200407b
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -834,7 +834,7 @@ acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
-#*.cn
+*.cn
 #uc.cn
 #51y5.net
 #appboy.com
@@ -847,7 +847,6 @@ acs-m.lazada.sg
 *.ucweb.*
 *huawei*
 *oppo*
-sinajs.cn
 gltxy.xyz
 uwx1.xyz
 oneplus.net

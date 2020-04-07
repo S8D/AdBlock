@@ -1,4 +1,4 @@
-#PhienBan___20200406a
+#PhienBan___20200407a
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
@@ -300,7 +300,7 @@ dam69.*						3x.ago.vn
 *.adx1.com					ad.ago.vn
 
 #___TQ________________________________________________
-*.cn						cn.ago.vn
+#*.cn						cn.ago.vn
 #*.360.cn					cn.ago.vn
 #*.sina.cn					cn.ago.vn
 *.ucweb.*					cn.ago.vn
