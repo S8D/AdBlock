@@ -848,6 +848,7 @@ acs-m.lazada.sg
 *.ucweb.*
 *huawei*
 *oppo*
+sinajs.cn
 gltxy.xyz
 uwx1.xyz
 oneplus.net
