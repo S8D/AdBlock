@@ -1,4 +1,4 @@
-#PhienBan___20200406b
+#PhienBan___20200407a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -263,7 +263,6 @@ yomedia.vn
 admicro*.vcmedia.vn
 s.kenh14.vn
 branch.fun
-dropgalaxy.in
 vmate.in
 prf.hn
 static.mepuzz.com
