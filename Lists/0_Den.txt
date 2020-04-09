@@ -1,4 +1,4 @@
-#PhienBan___20200407b
+#PhienBan___20200409a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,9 +13,8 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
-sodium.slp.pos.here.com
-rollbar.com
-log.tienphong.vn
+geoplugin.net
+tracemyip.org
 adsplay.xyz
 lofv.xyz
 fstats.xyz
@@ -25,6 +24,8 @@ mhj765.xyz
 trafficfactory.biz
 go1news.biz
 redads.biz
+goodbase.biz
+terrout7.biz
 lodder6.biz
 mon.musical.ly
 illicium.web.money
@@ -163,7 +164,9 @@ zahkit.pro
 clcknads.pro
 ohbayersbur.pro
 nativesp.pro
+nativesp.pro
 evadavdsp.pro
+dopto.pro
 amazinelistrun.pro
 etryi.pro
 goplre.pro
@@ -189,6 +192,7 @@ presage.io
 googleads.github.io
 optad360.io
 android-security.info
+checkandgo.info
 feboni.info
 namgeomethi.info
 burningpush.info
@@ -201,6 +205,7 @@ clipbongda.info
 analytics.hostyour.video
 sdk.hostyour.video
 remove.video
+znly.co
 jads.co
 quicksilver.scdn.co
 audio-fa.scdn.co
@@ -209,6 +214,7 @@ pushstack.co
 mailmunch.co
 umeng.co
 gop1.co
+adfly.vn
 alosoft.vn
 icsoft.vn
 clevernet.vn
@@ -246,6 +252,7 @@ adnetwork.vn
 eclick.vn
 log.sggp.org.vn
 ad.org.vn
+log.tienphong.vn
 vdong.vn
 trending.vn
 quangcao.tuoitre.vn
@@ -283,6 +290,7 @@ smopy.com
 tapjoy.com
 adcolony.com
 addtoany.com
+znly.com
 ucfly.com
 mopushy.com
 adeventtracker.spotify.com
@@ -410,6 +418,7 @@ alexametrics.com
 mediarithmics.com
 coronalabs.com
 opmnstr.com
+agafurretor.com
 webvisor.com
 platform.tumblr.com
 newsredir.com
@@ -434,6 +443,7 @@ useinsider.com
 hotjar.com
 banalbjar.com
 tunnelbear.com
+rollbar.com
 cuebiq.com
 pixel.wp.com
 extreme-ip-lookup.com
@@ -627,6 +637,7 @@ g2afse.com
 pushrase.com
 premixture.com
 curriculture.com
+sodium.slp.pos.here.com
 api.foursquare.com
 owncutone.com
 hadarone.com
@@ -788,6 +799,7 @@ special-offers.online
 push-signals.online
 android-center.online
 wbidder.online
+pushapi.online
 ohmchoicechi.online
 artandand.online
 aj1*.online
@@ -796,6 +808,7 @@ adbro.me
 pagedemo.me
 onelink.me
 systemlog.me
+demopage.me
 demopage.me
 instant.page
 mirando.de
@@ -816,8 +829,10 @@ aleapeact.club
 winworker.club
 curarmbin.club
 arkbuyarm.club
+reclick.club
 artantash.club
 allarmate.club
+videobase.club
 boyaidare.club
 madplypie.club
 selectmedia.asia
@@ -847,6 +862,7 @@ acs-m.lazada.sg
 *.ucweb.*
 *huawei*
 *oppo*
+meiqia.com
 gltxy.xyz
 uwx1.xyz
 oneplus.net
