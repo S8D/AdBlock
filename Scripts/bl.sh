@@ -1,10 +1,11 @@
 #!/bin/sh
-PhienBan="20200404e"
+PhienBan="20200411a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
 nds="/sd/nds"
+DV="/etc/init.d/dns"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
@@ -112,7 +113,9 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cg
 	echo "$DauCau Đang cập nhật Bộ lọc"
 	#if [ $net -eq 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
 	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
-	if [ -f "$nds" ]; then /etc/init.d/dns restart; fi; fi
+	if [ -f "$nds" ]; then 
+		if [ $OS == $x64 ] || [ $OS == $arm ]; then $DV restart; fi
+		if [ $OS == $mips ]; then $DV chaylai; fi; fi
 fi
 
 if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc"
