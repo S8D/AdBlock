@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200411d"
+PhienBan="20200411e"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -11,13 +11,29 @@ if [ $OS == $mips ]; then linktai="linux_mipsle-"; ThuMuc="linux-mipsle"; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; 
 	TM="/sdcard"; TMLog="${TM}/dns"; dns="/system/bin/dns"; duoi="zip"; 
 	tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; 
+	Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi
+	CauHinh="${tmDNS}/CauHinh.toml"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; 
 fi
 
 DonDep () {
 	rm -rf $TM/$ThuMuc; rm -f $upTam $TM/DNSCrypt.$duoi $upTam $tmDNS/dns.tar.gz $tmDNS/dns.zip
 }	
-
+CapNhatAR () {
+	cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
+	if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then
+		echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit
+	fi
+	chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem ${tmDNS}
+	cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
+}	
+CapNhatAR2 () {
+	echo "\n$DauCau Đang tải cấu hình Module Magisk"
+	mkdir $TM/$ThuMuc
+	curl -sLo $TM/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" $TM/dns.zip
+	if [ ! -f $TM/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+	cd $TM/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
+}
 
 if [ -d "/www/cgi-bin" ]; then
 	if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
@@ -80,22 +96,6 @@ if [ -d "/www/cgi-bin" ]; then
 		fi
 	}	
 
-	CapNhatAR () {
-		cd $TM; unzip -d "${TM}" ${TM}/DNSCrypt.$duoi
-		if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then
-			echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit
-		fi
-		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem ${tmDNS}
-		cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
-	}	
-
-	CapNhatAR2 () {
-		echo "\n$DauCau Đang tải cấu hình Module Magisk"
-		mkdir $TM/$ThuMuc
-		curl -sLo $TM/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" $TM/dns.zip
-		if [ ! -f $TM/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
-		cd $TM/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
-	}
 
 #else ...
 # Non OpenWRT
