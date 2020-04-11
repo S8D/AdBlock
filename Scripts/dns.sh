@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200411c"
+PhienBan="20200411d"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -14,6 +14,11 @@ if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64";
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; 
 fi
 
+DonDep () {
+	rm -rf $TM/$ThuMuc; rm -f $upTam $TM/DNSCrypt.$duoi $upTam $tmDNS/dns.tar.gz $tmDNS/dns.zip
+}	
+
+
 if [ -d "/www/cgi-bin" ]; then
 	if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 		if [ -d "/sd" ]; then TM="/sd"; fi
@@ -25,10 +30,6 @@ if [ -d "/www/cgi-bin" ]; then
 	Log="${TMLog}/Update.log"; if [ ! -f "$Log" ]; then echo '' > $Log; fi; 
 	tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; 
 	CauHinh="${tmDNS}/CauHinh.toml"
-
-	DonDep () {
-		rm -rf $TM/$ThuMuc; rm -f $upTam $TM/DNSCrypt.$duoi $upTam $tmDNS/dns.tar.gz $tmDNS/dns.zip
-	}	
 
 	KiemMasq () {
 		ipmasq=$(cat /etc/dnsmasq.conf | grep server\=\/3\.4\.)
@@ -84,8 +85,8 @@ if [ -d "/www/cgi-bin" ]; then
 		if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then
 			echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit
 		fi
-		chmod +x $TM/$ThuMuc/dnscrypt-proxy; mv $TM/$ThuMuc/localhost.pem $tmDNS
-		cp -af $TM/$ThuMuc/dnscrypt-proxy $dns;
+		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem ${tmDNS}
+		cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
 	}	
 
 	CapNhatAR2 () {
@@ -119,7 +120,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 		cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
-		$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
+		$dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1
 	fi
