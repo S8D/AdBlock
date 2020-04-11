@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200411a"
+PhienBan="20200411b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -26,7 +26,7 @@ if [ -d "/www/cgi-bin" ]; then
 	CauHinh="${tmDNS}/CauHinh.toml"
 
 	DonDep () {
-		rm -f $upTam; rm -rf ${TM}/${ThuMuc}; rm -f ${TM}/DNSCrypt.$duoi; rm -f $upTam; rm -f ${tmDNS}/dns.tar.gz; rm -f ${tmDNS}/dns.zip
+		rm -rf $TM/$ThuMuc; rm -f $upTam $TM/DNSCrypt.$duoi $upTam $tmDNS/dns.tar.gz $tmDNS/dns.zip
 	}	
 
 	KiemMasq () {
@@ -68,12 +68,12 @@ if [ -d "/www/cgi-bin" ]; then
 	KiemCauHinh () {
 		#if [ ! -f "$DVu" ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVu; fi
 		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 ${tmDNS}/dns.tar.gz https://bom.to/CauHinh_OpenWRT;cd $tmDNS; tar xzvf ${tmDNS}/dns.tar.gz
+			$dl1 $tmDNS/dns.tar.gz https://bom.to/CauHinh_OpenWRT; cd $tmDNS; tar xzvf $tmDNS/dns.tar.gz
 		fi
 
 		if [ $OS == $Android ]; then 
 			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-				$dl1 ${tmDNS}/dns.zip bom.to/CauHinh_Android; unzip -d "$tmDNS" ${tmDNS}/dns.zip
+				$dl1 $tmDNS/dns.zip bom.to/CauHinh_Android; unzip -d "$tmDNS" $tmDNS/dns.zip
 			fi
 		fi
 	}	
@@ -83,16 +83,16 @@ if [ -d "/www/cgi-bin" ]; then
 		if [ ! -f ${TM}/${ThuMuc}/example-dnscrypt-proxy.toml ]; then
 			echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit
 		fi
-		chmod +x ${TM}/${ThuMuc}/dnscrypt-proxy; mv ${TM}/${ThuMuc}/localhost.pem $tmDNS
-		cp -af ${TM}/${ThuMuc}/dnscrypt-proxy $dns;
+		chmod +x $TM/$ThuMuc/dnscrypt-proxy; mv $TM/$ThuMuc/localhost.pem $tmDNS
+		cp -af $TM/$ThuMuc/dnscrypt-proxy $dns;
 	}	
 
 	CapNhatAR2 () {
 		echo "\n$DauCau Đang tải cấu hình Module Magisk"
-		mkdir ${TM}/$ThuMuc
-		curl -sL#o ${TM}/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" ${TM}/dns.zip
-		if [ ! -f ${TM}/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
-		cd ${TM}/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
+		mkdir $TM/$ThuMuc
+		curl -sLo $TM/dns.zip uli.vn/ar; unzip -d "${TM}/${ThuMuc}" $TM/dns.zip
+		if [ ! -f $TM/${ThuMuc}/module.prop ]; then echo -e "\n$DauCau Giải nén thất bại!!! Thoát ra!"; DonDep; exit; fi
+		cd $TM/$ThuMuc; sh customize.sh post-fs-data.sh service.sh; rm -rf ${TM}/dns.zip
 	}
 
 #else ...
