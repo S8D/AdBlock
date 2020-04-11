@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200411b"
+PhienBan="20200411c"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -10,6 +10,7 @@ if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
 if [ $OS == $mips ]; then linktai="linux_mipsle-"; ThuMuc="linux-mipsle"; fi
 if [ $OS == $Android ]; then linktai="android_arm64"; ThuMuc="android-arm64"; 
 	TM="/sdcard"; TMLog="${TM}/dns"; dns="/system/bin/dns"; duoi="zip"; 
+	tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; 
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }; 
 fi
 
@@ -156,8 +157,9 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	if [ $OS == $Android ]; then CapNhatAR; fi; DonDep;
 	PhienBanOn=$(${dl2} "${DownLink}" | awk -F '"' '/tag_name/{print $4}'); PhienBanOff=$(${dns} --version)
 	if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy đã được cập nhật lên $PhienBanOn" >> $Log;
-		echo -e "\n$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"; echo "$DauCau Cấu hình lại DNSCrypt-Proxy...";
-		$dns --config $CauHinh -check; $dns --config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; else
+		echo -e "\n$DauCau DNSCrypt-Proxy đã được cập nhật lên v.$PhienBanOn"
+		echo "$DauCau Cấu hình lại DNSCrypt-Proxy...";
+		$dns -config $CauHinh -check; $dns -config $CauHinh; $dns -resolve g.co; $dns -resolve t.co; $dns -resolve m.me; else
 		echo "$Time Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!" >> $Log;
 		echo "$DauCau Cập nhật DNSCrypt-Proxy v.$PhienBanOff lên v.$PhienBanOn thất bại!!!"
 	fi
