@@ -1,4 +1,4 @@
-#PhienBan___20200409a
+#PhienBan___20200412a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,19 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+uwin71.com
+secb2b.com
+everesttech.net
+ads.linkedin.com
+impactradius-event.com
+mscom.demdex.net
+clicktale.net
+platform88798.com
+iovation.com
+enhuoyea11.net
+tipcuoc88.com
+nhatvip-shopify.com
+taiv8.com
 geoplugin.net
 tracemyip.org
 adsplay.xyz
@@ -967,6 +980,7 @@ settings-win.data.microsoft.com
 c.msn.com
 vortex.data.msn.com
 winphone.wns.windows.com
+activity.windows.com
 
 #___Google_____________________________________________________________________
 googlezip.net
