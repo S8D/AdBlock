@@ -1,4 +1,4 @@
-#PhienBan___20200407a
+#PhienBan___20200412a
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
@@ -204,7 +204,9 @@ vlxx.*						3x.ago.vn
 soc3x.*						3x.ago.vn
 sexhayvl.*					3x.ago.vn
 dam69.*						3x.ago.vn
-*.thiendia.*				3x.ago.vn
+*.thiendia.com				3x.ago.vn
+*.thiendia.us				3x.ago.vn
+*.thiendia.me				3x.ago.vn
 *.phimsexonlines.com		3x.ago.vn
 *.phimsexvip.mobi			3x.ago.vn
 *.sexngon.net				3x.ago.vn
