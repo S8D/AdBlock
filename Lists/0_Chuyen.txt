@@ -1,5 +1,12 @@
-#PhienBan___20200118a
+#PhienBan___20200414a
 #___TongHop_________
+2.21.43.166	  	laz-g-cdn.alicdn.com
+2.21.43.166	  	laz-img-cdn.alicdn.com
+59.56.79.48	  	www.right.com.cn
+115.28.230.105	www.gocloud.cn
+111.206.37.70	  pan.baidu.com
+140.249.34.53	  pcs.baidu.com
+111.202.114.27	pcsdata.baidu.com
 
 #__________________________________________________________________________
 
