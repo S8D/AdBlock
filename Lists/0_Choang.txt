@@ -1,9 +1,9 @@
-#PhienBan___20200412a
+#PhienBan___20200412b
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
 *.11bet.win					cd.ago.vn
-*.x8.club						cd.ago.vn
+*.x8.club					cd.ago.vn
 *.vipborrow.com				cd.ago.vn
 *taixiu*.*					cd.ago.vn
 *.five88.net				cd.ago.vn
