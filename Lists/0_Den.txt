@@ -1,4 +1,4 @@
-#PhienBan___20200416b
+#PhienBan___20200416c
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,11 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+asewlfjqwlflkew.com
+bugsnag.com
+kochava.com
+inpagepush.com
+aimaptair.club
 adsplay.xyz
 lofv.xyz
 platformbot.xyz
