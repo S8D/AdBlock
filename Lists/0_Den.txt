@@ -1,4 +1,4 @@
-#PhienBan___20200416a
+#PhienBan___20200416b
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -84,6 +84,7 @@ d25xkbr68qqtcn.cloudfront.net
 d2wy8f7a9ursnm.cloudfront.net
 d1hn8mrtxasu7m.cloudfront.net
 dzpu6za66svjl.cloudfront.net
+d2nxq2uap88usk.cloudfront.net
 d9etzk30b05yg.cloudfront.net
 d1hi41nc56pmug.cloudfront.net
 dnn506yrbagrg.cloudfront.net
@@ -111,6 +112,7 @@ abmr.net
 wcs.naver.net
 appier.net
 go.masoffer.net
+eupgroup.net
 eupgroup.net
 imtmp.net
 qc.nhatvip.net
@@ -146,6 +148,7 @@ clicktale.net
 cdn.krxd.net
 izatcloud.net
 xtracloud.net
+px-cloud.net
 msecnd.net
 vietid.net
 pxlgnpgecom-a.akamaihd.net
@@ -314,6 +317,7 @@ adcolony.com
 addtoany.com
 znly.com
 ucfly.com
+optimizely.com
 mopushy.com
 adeventtracker.spotify.com
 #*-accesspoint-*.ap.spotify.com
@@ -455,6 +459,7 @@ alexametrics.com
 mediarithmics.com
 coronalabs.com
 opmnstr.com
+optmstr.com
 onvictinitor.com
 agafurretor.com
 webvisor.com
@@ -520,6 +525,7 @@ iibingo.com
 cashbigo.com
 aralego.com
 sbobet-info.com
+gurganerosteo.com
 sekindo.com
 hiido.com
 traffic.calldorado.com
@@ -654,6 +660,7 @@ consent.cmp.oath.com
 oath.com
 ugyplysh.com
 plugrush.com
+pocrowpush.com
 thefastpush.com
 airpush.com
 publpush.com
@@ -681,9 +688,6 @@ mathtag.com
 apptimize.com
 braze.com
 quantserve.com
-ds.ssw.live.com
-nexus.officeapps.live.com
-nexusrules.officeapps.live.com
 voicefive.com
 analytics.brave.com
 adtrue.com
@@ -1038,26 +1042,28 @@ beijing-time.org
 umeng.cloud
 
 #___MicroSoft__________________________________________________________________
-msedge.net
-share.microsoft.com
 a-msedge.net
-microsoftedgewelcome.microsoft.com
-aria.microsoft.com
-ieonline.microsoft.com
+msedge.net
 telemetry.microsoft.com
-events.data.microsoft.com
+dds.microsoft.com
+share.microsoft.com
+ieonline.microsoft.com
+microsoftedgewelcome.microsoft.com
 vortex.data.microsoft.com
-client.wns.windows.com
+events.data.microsoft.com
 settings-win.data.microsoft.com
+aria.microsoft.com
+activity.windows.com
+client.wns.windows.com
+winphone.wns.windows.com
 c.msn.com
 vortex.data.msn.com
-winphone.wns.windows.com
-activity.windows.com
-dds.microsoft.com
+ds.ssw.live.com
+nexus.officeapps.live.com
+nexusrules.officeapps.live.com
 
 #___Google_____________________________________________________________________
 googlezip.net
-fundingchoicesmessages.google.com
 doubleclick.net
 afs.googleusercontent.com
 datasaver.googleapis.com
@@ -1087,6 +1093,7 @@ firstisland-597a8.firebaseio.com
 googlesyndication.com
 doubleclickbygoogle.com
 suggestqueries.google.com
+fundingchoicesmessages.google.com
 mail-ads.google.com
 marketingplatform.google.com
 plus.url.google.com
