@@ -1,4 +1,4 @@
-#PhienBan___20200416c
+#PhienBan___20200417a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,23 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+wirelessregistry.com
+crm.zenguard.biz
+cdn.transifex.com
+unoadsrv.com
+extads.gameloft.com
+contineljs.com
+sohucs.com
+vn-platform.bidgear.com
+adpopcorn.com
+rlcdn.com
+getfeedback.com
+inpagepush.com
+ssl.qhimg.com
+realtime-bid.com
+backblazeb2.com
+gemius.pl
+aimaptair.club
 asewlfjqwlflkew.com
 bugsnag.com
 kochava.com
