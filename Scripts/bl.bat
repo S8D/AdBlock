@@ -1,7 +1,7 @@
 @set @_cmd=1 /*
 @echo off
 setlocal EnableExtensions
-set "PhienBan=20200406a"
+set "PhienBan=20200419a"
 title DNSCrypt-Proxy %PhienBan%
 
 rem ============================================================================
@@ -27,24 +27,38 @@ cls
 
 if exist %ST%\curl.exe (
 	echo.
+	echo Dang tai Scripts bang cURL ...
+	curl -sLko %TM%/tai.bat https://bom.to/tai
+	goto :chay
 ) else (
 	xcopy .\curl\*.* "%ST%" /h/i/c/k/e/r/y
 )
 
-echo Dang tai Scripts Windows 7 dung cURL ...
-curl -sLko %TM%/bl7.bat https://bom.to/bl7
-popd
+if exist %ST%\wget.exe (
+	echo.
+	echo Dang tai Scripts bang wGet ...
+	wget -q --no-check-certificate https://bom.to/tai -O "C:\ProgramData\DNS\tai.bat"
+	goto :chay
+)
 
+if exist %ST%\powershell.exe (
+	echo.
+	echo Dang tai Scripts bang PowerShell ...
+	powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://bom.to/tai', '%cd%\tai.bat') }"
+	goto :chay
+)
+
+:chay
 if exist %ST%\nircmd.exe (
 	echo.
+	nircmd exec hide "%TM%/tai.bat"
 ) else (
 	xcopy .\cmd\*.* "%ST%" /h/i/c/k/e/r/y
 )
 
-nircmd exec hide "%TM%/bl7.bat"
 for /F "tokens=3,*" %%A in ('netsh interface show interface ^| find "Connected"') do (netsh int ipv4 set dns name="%%B" static 127.0.0.1 primary validate=no && netsh int ipv6 set dns name="%%B" static ::1 primary validate=no)
 ipconfig /flushdns
-
+popd
 :end
 rem set /p =Press [Enter] to exit . . .
 exit /b */
