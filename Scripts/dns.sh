@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200419f"
+PhienBan="20200419g"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -29,20 +29,6 @@ CauHinh_2="https://bom.to/CauHinh_Android"
 CauHinh_3="http://tiny.cc/cauhinh"
 CauHinh_4="https://drive.google.com/uc?id=16WhjQ2aRjkbXy4w1dVpACpGLS4TqN6UU&export=download"
 
-echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckNet_4 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
-CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
-CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckNet_1 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
-if CheckNet_1; then UpLink="${dns1}"; DownLink="${dns_1}"; uDV="${dns_dv1}"; uCauHinh="${CauHinh1}"; aCauHinh="${CauHinh_1}"; net="1"; else
-	if CheckNet_2; then UpLink="${dns2}"; DownLink="${dns_2}"; uDV="${dns_dv2}"; uCauHinh="${CauHinh2}"; aCauHinh="${CauHinh_2}"; net="2"; else
-		if CheckNet_3; then UpLink="${dns3}"; DownLink="${dns_3}"; uDV="${dns_dv3}"; uCauHinh="${CauHinh3}"; aCauHinh="${CauHinh_3}"; net="3"; else	
-			if CheckNet_4; then UpLink="${dns4}"; DownLink="${dns_4}"; uDV="${dns_dv4}"; uCauHinh="${CauHinh4}"; aCauHinh="${CauHinh_4}"; net="4"; else net=0; 
-			fi
-		fi
-	fi
-fi
-
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
@@ -58,6 +44,21 @@ fi
 DonDep () {
 	rm -rf $TM/$ThuMuc; rm -f $upTam $TM/DNSCrypt.$duoi $upTam $tmDNS/dns.tar.gz $tmDNS/dns.zip
 }	
+
+echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
+CheckNet_4 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
+CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
+CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckNet_1 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
+if CheckNet_1; then UpLink="${dns1}"; DownLink="${dns_1}"; uDV="${dns_dv1}"; uCauHinh="${CauHinh1}"; aCauHinh="${CauHinh_1}"; net="1"; else
+	if CheckNet_2; then UpLink="${dns2}"; DownLink="${dns_2}"; uDV="${dns_dv2}"; uCauHinh="${CauHinh2}"; aCauHinh="${CauHinh_2}"; net="2"; else
+		if CheckNet_3; then UpLink="${dns3}"; DownLink="${dns_3}"; uDV="${dns_dv3}"; uCauHinh="${CauHinh3}"; aCauHinh="${CauHinh_3}"; net="3"; else	
+			if CheckNet_4; then UpLink="${dns4}"; DownLink="${dns_4}"; uDV="${dns_dv4}"; uCauHinh="${CauHinh4}"; aCauHinh="${CauHinh_4}"; net="4"; else net=0; 
+			fi
+		fi
+	fi
+fi
+
 KiemARD () {
 	if [ $PhienBanOn == $PhienBanOff ]; then echo "$Time DNSCrypt-Proxy $PhienBanOn là bản mới nhất!" >> $Log;
 		echo "$DauCau DNSCrypt-Proxy $PhienBanOn là bản mới nhất!"; exit 1; else
