@@ -1,7 +1,7 @@
 @set @_cmd=1 /*
 @echo off
 setlocal EnableExtensions
-set "PhienBan=20200419a"
+set "PhienBan=20200419b"
 title DNSCrypt-Proxy %PhienBan%
 
 rem ============================================================================
@@ -54,6 +54,18 @@ if exist %ST%\nircmd.exe (
 	nircmd exec hide "%TM%/tai.bat"
 ) else (
 	xcopy .\cmd\*.* "%ST%" /h/i/c/k/e/r/y
+)
+
+if exist %TM%\bl7.bat (
+	del %TM%\bl7.bat
+)
+
+if exist %TM%\w10.bat (
+	del %TM%\w10.bat
+)
+
+if exist %TM%\b10.bat (
+	del %TM%\b10.bat
 )
 
 for /F "tokens=3,*" %%A in ('netsh interface show interface ^| find "Connected"') do (netsh int ipv4 set dns name="%%B" static 127.0.0.1 primary validate=no && netsh int ipv6 set dns name="%%B" static ::1 primary validate=no)

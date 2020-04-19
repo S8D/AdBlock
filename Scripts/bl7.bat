@@ -1,7 +1,7 @@
 @set @_cmd=1 /*
 @echo off
 setlocal EnableExtensions
-set "PhienBan=20200405a"
+set "PhienBan=20200419a"
 title DNSCrypt-Proxy %PhienBan%
 
 rem ============================================================================
@@ -23,27 +23,38 @@ rem ============================================================================
 pushd "%~dp0"
 set "TM=%cd%"
 cls
-echo.
-echo Dang tai bo loc DNSCrypt-Proxy ...
-echo.
-echo Dang tai Trang.txt ...
-curl -sLko %TM%/Trang.txt https://bom.to/trang
-echo Dang tai Den.txt ...
-curl -sLko %TM%/Den.txt https://bom.to/Den
-echo Dang tai ipDen.txt ...
-curl -sLko %TM%/ipDen.txt https://bom.to/ipDen
-echo Dang tai Chuyen.txt ...
-curl -sLko %TM%/Chuyen.txt https://bom.to/Chuyen
-echo Dang tai Choang.txt ...
-curl -sLko %TM%/Choang.txt https://bom.to/Choang
 
-echo Dang khoi dong lai DNSCrypt-Proxy ...
-echo.
-dns.exe -service stop
-dns.exe -service start
-popd
-echo.
-echo Cam on ban da dung DNSCrypt-Proxy.
+if exist %ST%\curl.exe (
+	echo.
+	echo Dang tai Scripts bang cURL ...
+	curl -sLko %TM%/bl.bat https://bom.to/bl_
+	goto :chay
+) else (
+	xcopy .\curl\*.* "%ST%" /h/i/c/k/e/r/y
+)
+
+if exist %ST%\wget.exe (
+	echo.
+	echo Dang tai Scripts bang wGet ...
+	wget -q --no-check-certificate https://bom.to/bl_ -O "C:\ProgramData\DNS\bl.bat"
+	goto :chay
+)
+
+if exist %ST%\powershell.exe (
+	echo.
+	echo Dang tai Scripts bang PowerShell ...
+	powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://bom.to/bl_', '%cd%\bl.bat') }"
+	goto :chay
+)
+
+:chay
+if exist %ST%\nircmd.exe (
+	echo.
+	nircmd exec hide "%TM%/bl.bat"
+) else (
+	xcopy .\cmd\*.* "%ST%" /h/i/c/k/e/r/y
+)
+
 
 :end
 rem set /p =Press [Enter] to exit . . .
