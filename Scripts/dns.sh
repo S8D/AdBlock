@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200419c"
+PhienBan="20200419d"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -26,10 +26,10 @@ CauHinh4="https://drive.google.com/uc?id=1uGJ26RQjY2G-zsbjbu_OPjMd42W-_7NN&expor
 4CauHinh="https://drive.google.com/uc?id=16WhjQ2aRjkbXy4w1dVpACpGLS4TqN6UU&export=download"
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckNet_1 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
+CheckNet_4 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
 CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
 CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
+CheckNet_1 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
 if CheckNet_1; then UpLink="${dns1}"; DownLink="${1dns}"; uDV="${dns_dv1}"; uCauHinh="${CauHinh1}"; aCauHinh="${1CauHinh}"; net="1"; else
 	if CheckNet_2; then UpLink="${dns2}"; DownLink="${2dns}"; uDV="${dns_dv2}"; uCauHinh="${CauHinh2}"; aCauHinh="${2CauHinh}"; net="2"; else
 		if CheckNet_3; then UpLink="${dns3}"; DownLink="${3dns}"; uDV="${dns_dv3}"; uCauHinh="${CauHinh3}"; aCauHinh="${3CauHinh}"; net="3"; else	
