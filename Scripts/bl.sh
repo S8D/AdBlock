@@ -1,9 +1,49 @@
 #!/bin/sh
-PhienBan="20200411c"
+PhienBan="20200419a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
+
+bl1="https://sum.vn/_bl"
+bl2="https://bom.to/_bl"
+bl3="https://tiny.cc/-bl"
+bl4="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"
+
+Trang1="https://sum.vn/Trang_"
+Trang2="https://bom.to/trang"
+Trang3="https://tiny.cc/-Trang"
+Trang4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Trang.txt"
+
+Den1="https://sum.vn/Den_"
+Den2="https://bom.to/Den"
+Den3="https://tiny.cc/-Den"
+Den4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Den.txt"
+
+ipDen1="https://sum.vn/ipDen_"
+ipDen2="https://bom.to/ipDen"
+ipDen3="https://tiny.cc/-ipDen"
+ipDen4="https://github.com/S8D/AdBlock/raw/master/Lists/0_ipDen.txt"
+
+Choang1="https://sum.vn/Choang_"
+Choang2="https://bom.to/Choang"
+Choang3="https://tiny.cc/-Choang"
+Choang4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Choang.txt"
+
+Chuyen1="https://sum.vn/Chuyen_"
+Chuyen2="https://bom.to/Chuyen"
+Chuyen3="https://tiny.cc/-Chuyen"
+Chuyen4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Chuyen.txt"
+
+ThongBao1="https://sum.vn/ThongBao"
+ThongBao2="https://bom.to/ThongBao"
+ThongBao3="https://tiny.cc/-ThongBao"
+ThongBao4="https://github.com/S8D/AdBlock/raw/master/Lists/0_ThongBao.txt"
+NoiQuy1="https://sum.vn/NoiQuy_"
+NoiQuy2="https://bom.to/noiwy"
+NoiQuy3="https://tiny.cc/-NoiQuy"
+NoiQuy4="https://github.com/S8D/AdBlock/raw/master/Lists/0_NoiQuy.txt"
+
 nds="/sd/nds"
 DV="/etc/init.d/dns"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
@@ -35,19 +75,6 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ ! -d "/www/
 
 echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #CheckGG () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
-CheckNet_1 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
-CheckNet_2 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckNet_3 () { ping -q -c 1 -W 1 github.com >/dev/null; };
-
-if CheckNet_1; then 
-	UpLink="https://bom.to/_bl";
-	uDen="https://bom.to/Den";
-	uipDen="https://bom.to/ipDen";
-	uTrang="https://bom.to/trang";
-	uChoang="https://bom.to/Choang";
-	uChuyen="https://bom.to/Chuyen";
-	uNoiQuy="https://bom.to/noiwy";
-	uThongBao="https://bom.to/ThongBao";
 #_________________________________
 #	UpLink="gg.gg/_bl";
 #	uDen="gg.gg/_Den";
@@ -58,25 +85,19 @@ if CheckNet_1; then
 #	uNoiQuy="gg.gg/_NoiQuy";
 #	uThongBao="gg.gg/_ThongBao";
 #_________________________________
-	net="1"; else
-	if CheckNet_2; then UpLink="https://tiny.cc/-b"; 
-		uDen="https://tiny.cc/-Den";
-		uipDen="https://tiny.cc/-ipDen";
-		uTrang="https://tiny.cc/-Trang";
-		uChoang="https://tiny.cc/-Choang";
-		uChuyen="https://tiny.cc/-Chuyen";
-		uNoiQuy="https://tiny.cc/-NoiQuy";
-		uThongBao="https://tiny.cc/-ThongBao";
-		net="2"; else
-		if CheckNet_3; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"; 
-			uDen="https://github.com/S8D/AdBlock/raw/master/Lists/0_Den.txt";
-			uipDen="https://github.com/S8D/AdBlock/raw/master/Lists/0_ipDen.txt";
-			uTrang="https://github.com/S8D/AdBlock/raw/master/Lists/0_Trang.txt";
-			uChoang="https://github.com/S8D/AdBlock/raw/master/Lists/0_Choang.txt";
-			uChuyen="https://github.com/S8D/AdBlock/raw/master/Lists/0_Chuyen.txt";
-			uNoiQuy="https://github.com/S8D/AdBlock/raw/master/Lists/0_NoiQuy.txt";
-			uThongBao="https://github.com/S8D/AdBlock/raw/master/Lists/0_ThongBao.txt";
-			net="3"; else net=0; fi; fi; fi
+
+CheckNet_1 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
+CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
+CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; };
+
+if CheckNet_1; then UpLink="$bl1"; uTrang="$Trang1"; uDen="$Den1"; uipDen="$ipDen1"; uChoang="$Choang1"; uChuyen="$Chuyen1"; uThongBao="$ThongBao1"; uNoiQuy="$NoiQuy1"; net="1"; else
+	if CheckNet_2; then UpLink="$bl2"; uTrang="$Trang2"; uDen="$Den2"; uipDen="$ipDen2"; uChoang="$Choang2"; uChuyen="$Chuyen2"; uThongBao="$ThongBao2"; uNoiQuy="$NoiQuy2"; net="1"; else
+		if CheckNet_3; then UpLink="$bl3"; uTrang="$Trang3"; uDen="$Den3"; uipDen="$ipDen3"; uChoang="$Choang3"; uChuyen="$Chuyen3"; uThongBao="$ThongBao3"; uNoiQuy="$NoiQuy3"; net="1"; else
+			if CheckNet_4; then UpLink="$bl4"; uTrang="$Trang4"; uDen="$Den4"; uipDen="$ipDen4"; uChoang="$Choang4"; uChuyen="$Chuyen4"; uThongBao="$ThongBao4"; uNoiQuy="$NoiQuy4"; net="1"; else net="0"; fi
+		fi
+	fi
+fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');

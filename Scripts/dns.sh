@@ -1,10 +1,46 @@
 #!/bin/bash
-PhienBan="20200419a"
+PhienBan="20200419b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
-OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 
+dns1="https://sum.vn/dns"
+dns2="https://bom.to/dns"
+dns3="https://tiny.cc/_dns"
+dns4="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"
+1dns="https://sum.vn/dns_"
+2dns="https://bom.to/dns_"
+3dns="https://tiny.cc/dns_"
+4dns="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"
+dns_dv1="https://sum.vn/dns_dv"
+dns_dv2="https://bom.to/dns_dv"
+dns_dv3="https://tiny.cc/dns_dv"
+dns_dv4="https://github.com/S8D/AdBlock/raw/master/Scripts/dns_dv"
+CauHinh1="https://sum.vn/CauHinh"
+CauHinh2="https://bom.to/CauHinh_OpenWRT"
+CauHinh3="http://tiny.cc/CauHinh"
+CauHinh4="https://drive.google.com/uc?id=1uGJ26RQjY2G-zsbjbu_OPjMd42W-_7NN&export=download"
+1CauHinh="https://sum.vn/CauHinh_"
+2CauHinh="https://bom.to/CauHinh_Android"
+3CauHinh="http://tiny.cc/cauhinh"
+4CauHinh="https://drive.google.com/uc?id=16WhjQ2aRjkbXy4w1dVpACpGLS4TqN6UU&export=download"
+
+echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
+CheckNet_1 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
+CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
+CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
+if CheckNet_1; then UpLink="$dns1"; DownLink="$1dns"; uDV="$dns_dv1"; uCauHinh="$CauHinh1"; aCauHinh="$1CauHinh"; net="1"; else
+	if CheckNet_2; then UpLink="$dns2"; DownLink="$2dns"; uDV="$dns_dv2"; uCauHinh="$CauHinh2"; aCauHinh="$2CauHinh"; net="2"; else
+		if CheckNet_3; then UpLink="$dns3"; DownLink="$3dns"; uDV="$dns_dv3"; uCauHinh="$CauHinh3"; aCauHinh="$3CauHinh"; net="3"; else	
+			if CheckNet_4; then UpLink="$dns4"; DownLink="$4dns"; uDV="$dns_dv4"; uCauHinh="$CauHinh4"; aCauHinh="$4CauHinh"; net="4"; else net=0; 
+			fi
+		fi
+	fi
+fi
+
+
+OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; fi
 if [ $OS == $arm ]; then linktai="linux_arm-"; ThuMuc="linux-arm"; fi
 if [ $OS == $mips ]; then linktai="linux_mipsle-"; ThuMuc="linux-mipsle"; fi
@@ -85,12 +121,12 @@ if [ -d "/www/cgi-bin" ]; then
 	KiemCauHinh () {
 		#if [ ! -f "$DVu" ]; then $dl1 $upTam uDV; chmod +x $upTam; mv $upTam $DVu; fi
 		if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-			$dl1 $tmDNS/dns.tar.gz https://bom.to/CauHinh_OpenWRT; cd $tmDNS; tar xzvf $tmDNS/dns.tar.gz
+			$dl1 $tmDNS/dns.tar.gz $uCauHinh; cd $tmDNS; tar xzvf $tmDNS/dns.tar.gz
 		fi
 
 		if [ $OS == $Android ]; then 
 			if [ ! -f "${tmDNS}/TruyVan.log" ]; then echo "$DauCau Đang tải file cấu hình DNSCrypt-Proxy...";
-				$dl1 $tmDNS/dns.zip bom.to/CauHinh_Android; unzip -d "$tmDNS" $tmDNS/dns.zip
+				$dl1 $tmDNS/dns.zip $aCauHinh; unzip -d "$tmDNS" $tmDNS/dns.zip
 			fi
 		fi
 	}	
@@ -100,18 +136,6 @@ if [ -d "/www/cgi-bin" ]; then
 # Non OpenWRT
 fi
 
-echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
-CheckNet_1 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
-CheckNet_2 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckNet_3 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
-if CheckNet_1; then UpLink="https://bom.to/dns"; DownLink="https://bom.to/dns_"; uDV="https://bom.to/dns_dv"; net="1"; else	
-	if CheckNet_2; then UpLink="https://tiny.cc/_dns"; DownLink="https://tiny.cc/dns_"; uDV="https://tiny.cc/dns_dv"; net="2"; else	
-		if CheckNet_3; then UpLink="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"; 
-			DownLink="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"; 
-			uDV="https://github.com/S8D/AdBlock/raw/master/Scripts/dns_dv"; net="3"; else net=0; 
-		fi
-	fi
-fi
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
 	PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');

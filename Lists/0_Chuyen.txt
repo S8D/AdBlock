@@ -1,17 +1,33 @@
-#PhienBan___20200416a
-#___TongHop_________
+#PhienBan___20200419a
+#___TongHop________________________________________________________________
+
+#___SubLime________________________________________________________________
+127.0.0.1		45.55.255.55
+127.0.0.1		45.55.41.223
+127.0.0.1		telemetry.sublimehq.com
+127.0.0.1		license.sublimehq.com
+127.0.0.1		www.sublimetext.com
+127.0.0.1		sublimetext.com
+127.0.0.1		sublimehq.com
+0.0.0.0			license.sublimehq.com
+0.0.0.0			45.55.255.55
+0.0.0.0			45.55.41.223
+
+#___TQ_____________________________________________________________________
+39.107.127.7	aisoa.cn
+106.11.93.6		s.taobao.com
+111.206.37.70	pan.baidu.com
+203.119.175.212	aq.taobao.com
+140.249.34.53	pcs.baidu.com
+115.28.230.105	www.gocloud.cn
+111.202.114.45	eyun.baidu.com
+203.119.169.75	pass.tmall.com
+59.56.79.48		www.right.com.cn
+203.119.175.212	login.taobao.com
+111.202.114.27	pcsdata.baidu.com
 2.21.43.166		laz-g-cdn.alicdn.com
 2.21.43.166		laz-img-cdn.alicdn.com
-59.56.79.48		www.right.com.cn
-115.28.230.105	www.gocloud.cn
-111.206.37.70	pan.baidu.com
-140.249.34.53	pcs.baidu.com
-111.202.114.27	pcsdata.baidu.com
-106.11.93.6		s.taobao.com
-203.119.175.212	login.taobao.com
-203.119.169.75	pass.tmall.com
-203.119.175.212	aq.taobao.com
-39.107.127.7	aisoa.cn
+
 #__________________________________________________________________________
 
 ##################################
