@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Version: 20200327c
-! Title: bit.ly/loc_ | bom.to/loc | gg.gg/a_ | tiny.cc/_a
+! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
 ! Licence: Darias
