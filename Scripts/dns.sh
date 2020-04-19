@@ -1,26 +1,30 @@
 #!/bin/bash
-PhienBan="20200419d"
+PhienBan="20200419e"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
-dns1="https://sum.vn/dns"
+dns1="https://bit.ly/dns_sh"
 dns2="https://bom.to/dns"
 dns3="https://tiny.cc/_dns"
 dns4="https://github.com/S8D/AdBlock/raw/master/Scripts/dns.sh"
-1dns="https://sum.vn/dns_"
+
+1dns="https://bit.ly/dNs_"
 2dns="https://bom.to/dns_"
 3dns="https://tiny.cc/dns_"
 4dns="https://api.github.com/repos/DNSCrypt/dnscrypt-proxy/releases/latest"
-dns_dv1="https://sum.vn/dns_dv"
+
+dns_dv1="https://bit.ly/dns_dv"
 dns_dv2="https://bom.to/dns_dv"
 dns_dv3="https://tiny.cc/dns_dv"
 dns_dv4="https://github.com/S8D/AdBlock/raw/master/Scripts/dns_dv"
-CauHinh1="https://sum.vn/CauHinh"
+
+CauHinh1="http://gg.gg/CauHinh"
 CauHinh2="https://bom.to/CauHinh_OpenWRT"
 CauHinh3="http://tiny.cc/CauHinh"
 CauHinh4="https://drive.google.com/uc?id=1uGJ26RQjY2G-zsbjbu_OPjMd42W-_7NN&export=download"
-1CauHinh="https://sum.vn/CauHinh_"
+
+1CauHinh="http://gg.gg/CauHinh_"
 2CauHinh="https://bom.to/CauHinh_Android"
 3CauHinh="http://tiny.cc/cauhinh"
 4CauHinh="https://drive.google.com/uc?id=16WhjQ2aRjkbXy4w1dVpACpGLS4TqN6UU&export=download"

@@ -1,45 +1,46 @@
 #!/bin/sh
-PhienBan="20200419c"
+PhienBan="20200419e"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
 dl1="curl -s -L -o"; dl2="curl -s -L"
 
-bl1="https://sum.vn/_bl"
+bl1="https://bit.ly/bl_sh"
 bl2="https://bom.to/_bl"
 bl3="https://tiny.cc/-bl"
 bl4="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"
 
-Trang1="https://sum.vn/Trang_"
+Trang1="https://bit.ly/_Trang"
 Trang2="https://bom.to/trang"
 Trang3="https://tiny.cc/-Trang"
 Trang4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Trang.txt"
 
-Den1="https://sum.vn/Den_"
+Den1="https://bit.ly/_Den"
 Den2="https://bom.to/Den"
 Den3="https://tiny.cc/-Den"
 Den4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Den.txt"
 
-ipDen1="https://sum.vn/ipDen_"
+ipDen1="https://bit.ly/_ipDen"
 ipDen2="https://bom.to/ipDen"
 ipDen3="https://tiny.cc/-ipDen"
 ipDen4="https://github.com/S8D/AdBlock/raw/master/Lists/0_ipDen.txt"
 
-Choang1="https://sum.vn/Choang_"
+Choang1="https://bit.ly/_Choang"
 Choang2="https://bom.to/Choang"
 Choang3="https://tiny.cc/-Choang"
 Choang4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Choang.txt"
 
-Chuyen1="https://sum.vn/Chuyen_"
+Chuyen1="https://bit.ly/_Chuyen"
 Chuyen2="https://bom.to/Chuyen"
 Chuyen3="https://tiny.cc/-Chuyen"
 Chuyen4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Chuyen.txt"
 
-ThongBao1="https://sum.vn/ThongBao"
+ThongBao1="https://bit.ly/_ThongBao"
 ThongBao2="https://bom.to/ThongBao"
 ThongBao3="https://tiny.cc/-ThongBao"
 ThongBao4="https://github.com/S8D/AdBlock/raw/master/Lists/0_ThongBao.txt"
-NoiQuy1="https://sum.vn/NoiQuy_"
+
+NoiQuy1="https://bit.ly/_NoiQuy"
 NoiQuy2="https://bom.to/noiwy"
 NoiQuy3="https://tiny.cc/-NoiQuy"
 NoiQuy4="https://github.com/S8D/AdBlock/raw/master/Lists/0_NoiQuy.txt"
@@ -86,15 +87,15 @@ echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #	uThongBao="gg.gg/_ThongBao";
 #_________________________________
 
-CheckNet_4 () { ping -q -c 1 -W 1 sum.vn >/dev/null; }; 
+CheckNet_1 () { ping -q -c 1 -W 1 bit.ly >/dev/null; }; 
 CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
 CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
-CheckNet_1 () { ping -q -c 1 -W 1 github.com >/dev/null; };
+CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; };
 
-if CheckNet_4; then UpLink="${bl1}"; uTrang="${Trang1}"; uDen="${Den1}"; uipDen="${ipDen1}"; uChoang="${Choang1}"; uChuyen="${Chuyen1}"; uThongBao="${ThongBao1}"; uNoiQuy="${NoiQuy1}"; net="1"; else
+if CheckNet_1; then UpLink="${bl1}"; uTrang="${Trang1}"; uDen="${Den1}"; uipDen="${ipDen1}"; uChoang="${Choang1}"; uChuyen="${Chuyen1}"; uThongBao="${ThongBao1}"; uNoiQuy="${NoiQuy1}"; net="1"; else
 	if CheckNet_2; then UpLink="${bl2}"; uTrang="${Trang2}"; uDen="${Den2}"; uipDen="${ipDen2}"; uChoang="${Choang2}"; uChuyen="${Chuyen2}"; uThongBao="${ThongBao2}"; uNoiQuy="${NoiQuy2}"; net="1"; else
 		if CheckNet_3; then UpLink="${bl3}"; uTrang="${Trang3}"; uDen="${Den3}"; uipDen="${ipDen3}"; uChoang="${Choang3}"; uChuyen="${Chuyen3}"; uThongBao="${ThongBao3}"; uNoiQuy="${NoiQuy3}"; net="1"; else
-			if CheckNet_1; then UpLink="${bl4}"; uTrang="${Trang4}"; uDen="${Den4}"; uipDen="${ipDen4}"; uChoang="${Choang4}"; uChuyen="${Chuyen4}"; uThongBao="${ThongBao4}"; uNoiQuy="${NoiQuy4}"; net="1"; else net="0"; fi
+			if CheckNet_4; then UpLink="${bl4}"; uTrang="${Trang4}"; uDen="${Den4}"; uipDen="${ipDen4}"; uChoang="${Choang4}"; uChuyen="${Chuyen4}"; uThongBao="${ThongBao4}"; uNoiQuy="${NoiQuy4}"; net="1"; else net="0"; fi
 		fi
 	fi
 fi
