@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="20200419b"
+PhienBan="20200419c"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -s -L -o"; dl2="curl -s -L"
@@ -30,15 +30,14 @@ CheckNet_1 () { ping -q -c 1 -W 1 sum.vn >/dev/null; };
 CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
 CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
 CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; }; DonDep;	
-if CheckNet_1; then UpLink="$dns1"; DownLink="$1dns"; uDV="$dns_dv1"; uCauHinh="$CauHinh1"; aCauHinh="$1CauHinh"; net="1"; else
-	if CheckNet_2; then UpLink="$dns2"; DownLink="$2dns"; uDV="$dns_dv2"; uCauHinh="$CauHinh2"; aCauHinh="$2CauHinh"; net="2"; else
-		if CheckNet_3; then UpLink="$dns3"; DownLink="$3dns"; uDV="$dns_dv3"; uCauHinh="$CauHinh3"; aCauHinh="$3CauHinh"; net="3"; else	
-			if CheckNet_4; then UpLink="$dns4"; DownLink="$4dns"; uDV="$dns_dv4"; uCauHinh="$CauHinh4"; aCauHinh="$4CauHinh"; net="4"; else net=0; 
+if CheckNet_1; then UpLink="${dns1}"; DownLink="${1dns}"; uDV="${dns_dv1}"; uCauHinh="${CauHinh1}"; aCauHinh="${1CauHinh}"; net="1"; else
+	if CheckNet_2; then UpLink="${dns2}"; DownLink="${2dns}"; uDV="${dns_dv2}"; uCauHinh="${CauHinh2}"; aCauHinh="${2CauHinh}"; net="2"; else
+		if CheckNet_3; then UpLink="${dns3}"; DownLink="${3dns}"; uDV="${dns_dv3}"; uCauHinh="${CauHinh3}"; aCauHinh="${3CauHinh}"; net="3"; else	
+			if CheckNet_4; then UpLink="${dns4}"; DownLink="${4dns}"; uDV="${dns_dv4}"; uCauHinh="${CauHinh4}"; aCauHinh="${4CauHinh}"; net="4"; else net=0; 
 			fi
 		fi
 	fi
 fi
-
 
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 if [ $OS == $x64 ]; then linktai="linux_x86_64"; ThuMuc="linux-x86_64"; fi

@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200419a"
+PhienBan="20200419b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -91,10 +91,10 @@ CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; };
 CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
 CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; };
 
-if CheckNet_1; then UpLink="$bl1"; uTrang="$Trang1"; uDen="$Den1"; uipDen="$ipDen1"; uChoang="$Choang1"; uChuyen="$Chuyen1"; uThongBao="$ThongBao1"; uNoiQuy="$NoiQuy1"; net="1"; else
-	if CheckNet_2; then UpLink="$bl2"; uTrang="$Trang2"; uDen="$Den2"; uipDen="$ipDen2"; uChoang="$Choang2"; uChuyen="$Chuyen2"; uThongBao="$ThongBao2"; uNoiQuy="$NoiQuy2"; net="1"; else
-		if CheckNet_3; then UpLink="$bl3"; uTrang="$Trang3"; uDen="$Den3"; uipDen="$ipDen3"; uChoang="$Choang3"; uChuyen="$Chuyen3"; uThongBao="$ThongBao3"; uNoiQuy="$NoiQuy3"; net="1"; else
-			if CheckNet_4; then UpLink="$bl4"; uTrang="$Trang4"; uDen="$Den4"; uipDen="$ipDen4"; uChoang="$Choang4"; uChuyen="$Chuyen4"; uThongBao="$ThongBao4"; uNoiQuy="$NoiQuy4"; net="1"; else net="0"; fi
+if CheckNet_1; then UpLink="${bl1}"; uTrang="${Trang1}"; uDen="${Den1}"; uipDen="${ipDen1}"; uChoang="${Choang1}"; uChuyen="${Chuyen1}"; uThongBao="${ThongBao1}"; uNoiQuy="${NoiQuy1}"; net="1"; else
+	if CheckNet_2; then UpLink="${bl2}"; uTrang="${Trang2}"; uDen="${Den2}"; uipDen="${ipDen2}"; uChoang="${Choang2}"; uChuyen="${Chuyen2}"; uThongBao="${ThongBao2}"; uNoiQuy="${NoiQuy2}"; net="1"; else
+		if CheckNet_3; then UpLink="${bl3}"; uTrang="${Trang3}"; uDen="${Den3}"; uipDen="${ipDen3}"; uChoang="${Choang3}"; uChuyen="${Chuyen3}"; uThongBao="${ThongBao3}"; uNoiQuy="${NoiQuy3}"; net="1"; else
+			if CheckNet_4; then UpLink="${bl4}"; uTrang="${Trang4}"; uDen="${Den4}"; uipDen="${ipDen4}"; uChoang="${Choang4}"; uChuyen="${Chuyen4}"; uThongBao="${ThongBao4}"; uNoiQuy="${NoiQuy4}"; net="1"; else net="0"; fi
 		fi
 	fi
 fi
