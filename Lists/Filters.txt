@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200327c
+! Version: 20200420a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -22,6 +22,7 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 4file.net##.extend_premium
 4file.net##div:nth-of-type(2) > table > tbody > tr > td
 4file.net##footer
+4pda.ru##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
 a2zapk.com###galax2
 a2zapk.com##.Tags
@@ -83,6 +84,14 @@ bikae.net##p:nth-of-type(9) > .adslot_1.adsbygoogle
 bkshare.com###itro_opaco
 blogginggyanbox.com##h4
 blogtietkiem.com##div.et_bloom_popup.et_bloom_optin.et_bloom_resize.et_bloom_optin_8.et_bloom_auto_popup.et_bloom_trigger_bottom.et_bloom_visible.et_bloom_animated
+blogvnpt.blogspot.com###ads-blog
+blogvnpt.blogspot.com###Image1
+blogvnpt.blogspot.com###lower
+blogvnpt.blogspot.com###sidebar\(2\)
+blogvnpt.blogspot.com###ty_footer
+blogvnpt.blogspot.com##.header-wrap
+blogvnpt.blogspot.com##.post-footer
+blogvnpt.blogspot.com##.post-header > .ads-posting
 boost.ink##.card_desc
 boost.ink##.card_share
 boost.ink##.card_top
@@ -153,6 +162,8 @@ datafilehost.com##.navbar, .navbar-inverse, .navbar-fixed-top
 datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:first-child > a:nth-child(8) > h4
 datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:last-child
 datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
+demo-blogvnpt.blogspot.com###footer-wrapper
+demo-blogvnpt.blogspot.com##.tl-midheader
 dienmayviet.com.vn###banner
 dienmayviet.com.vn###divAdRight
 dinhhieu.vn###floating_banner_left
@@ -249,6 +260,7 @@ elitepvpers.com###tickerwrapper
 elitepvpers.com##div.cwcontentad:nth-of-type(10)
 eyes-health.win##[href="https://sylwenys.pw/i6rlquMjowCx3Q0/12654"]
 eyes-health.win##[href="https://travelcram.com"]
+fibervnn.vn###ja-col2
 file-up.org###boxes
 file-up.org##.default-ttl
 file-up.org##.leftcol
@@ -289,6 +301,9 @@ files.pw##div.adscenter2:nth-of-type(3)
 files.pw##div.row:nth-of-type(4)
 files.pw##h4.maintitag:nth-of-type(2)
 files.pw##h4.maintitag:nth-of-type(3)
+files.pw##ins.adsbyadop:nth-of-type(1)
+files.pw##ins.adsbyadop:nth-of-type(2)
+files.pw##ins.adsbyadop:nth-of-type(3)
 filetrip.net###templatemo_footer_wrapper
 filetrip.net##p
 fnote.me##footer
@@ -302,6 +317,7 @@ forums.voz.vn###div-gpt-ad-1573550478887-0
 forums.voz.vn###div-gpt-ad-1573896700833-0
 forums.voz.vn###div-gpt-ad-1576299739520-0
 forums.voz.vn###neo_logobar
+forums.voz.vn###post_message_156800212 > div > table > tbody > tr > .alt2 > div:nth-of-type(2) > [src="https://i.imgur.com/xJSkDDD.jpg"]
 forums.voz.vn##.footer-distributed
 forums.voz.vn##.responsible
 forums.voz.vn##body > .container > div.row:nth-of-type(1)
@@ -425,6 +441,7 @@ ipsw.me##.alert-info.alert.col-md-12
 ipsw.me##.cc_container--open.cc_container.cc_banner
 it-swarm.net##.adn
 it-swarm.net##div.adn-ar:nth-of-type(2) > .adnet.gat
+kantan.vn###learn-on-dekiru
 karanpc.com###post-18253 > div.entry:first-child > center:first-child
 kenh14.vn###kenh14-footer-wrapper
 kenhtao.net##.adsbygoogle
@@ -432,6 +449,8 @@ kenhtao.net##.desktop-ad
 kenhtao.net##.footer-social
 kenhtao.net##.social-section
 kenhtao.net##.wrap-footer
+khangthinh.net.vn###divAdLeft
+khangthinh.net.vn###divAdRight
 kichnguon.com##.mfp-content
 kichnguon.com##.mfp-wrap, .mfp-close-btn-in, .mfp-auto-cursor, .mfp-ready
 kimanhblog.com###pum-11269
@@ -509,6 +528,7 @@ mediafire.com##.dlInfo-Body
 mediafire.com##.header
 mediafire.com##.sidebar
 mediafire.com##.socialFBContainer
+mee.vn##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 mega-debrit.com###Downloader > div.row:first-child
 mega-debrit.com##div.jumbotron.text-center:nth-child(4)
 mega4up.com###app-header
@@ -553,6 +573,11 @@ mshare.io##.text-left.info-page
 mshare.io##b
 mshare.io##tr:nth-of-type(4)
 mshare.io##tr:nth-of-type(5)
+mshares.co##.col-md-5
+mshares.co##.pricing-grids.text-center.col-md-7 > .text-left.info-page
+mshares.co##.site-footer
+mshares.net##div.col-md-4:nth-of-type(1)
+mshares.net##div.col-md-4:nth-of-type(3)
 multifilemirror.com##.darken-2.blue-grey.page-footer
 mxlinux.org###webarx-cookie-notice
 myopenrouter.com###sliding-popup
@@ -563,6 +588,10 @@ newsjizz.in###taxonomy-list_1-0
 newsjizz.in##.WebF
 newsjizz.in##body > div:nth-of-type(3)
 newsjizz.in##div.ArticleLand:nth-of-type(3)
+next.voz.vn###div-gpt-ad-1585374150797-0
+next.voz.vn###footer
+next.voz.vn##.blockMessage--none.blockMessage
+next.voz.vn##.thread_view__bottom.adsbygoogle
 nhaccuatui.com###box_playing_id > div.adsZoneMp3:first-child
 nhaccuatui.com###coverImageflashPlayer
 nhaccuatui.com###right_support_online
@@ -627,6 +656,7 @@ romshared.com###content > div.pageWidth > div.pageContent > table:nth-child(4)
 rsload.net##.clearfix.video-box.full-text.short-text > center
 rsload.net##.full > center
 rsload.net/images5/51rsload5895.png$domain=rsload.net
+rutgon.cc##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 s.ytimg.com/yts/jsbin/*/www-pagead-id.js
 s2w.me##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.banner.banner-captcha:first-child
 samsungvn.com###adsgoogle-top
@@ -720,6 +750,8 @@ speed4up.com##div:nth-of-type(3) > div:nth-of-type(3)
 speed4up.com##th.col-md-3:nth-of-type(3)
 speedtest.net###_evh-link
 speedtest.net##div.u-c.pure-u-1-4:nth-of-type(4)
+sum.vn##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
+sum.vn##.extension-browser
 support.kaspersky.com###gdprbar
 support.kaspersky.com###gdprbarfiller
 support.malwarebytes.com###cookie-consent-alert
@@ -782,6 +814,8 @@ tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSide
 tinhte.vn###uix_wrapper > footer:last-child
 tinhte.vn###widget-6
 tinhte.vn##.adWidget, .adWidget-gpt, .ad-17, .slot-7
+tinhte.vn##.main.jsx-3830886351
+tinhte.vn##.snd.jsx-1230538473
 tiny.cc##.cc_container--open.cc_container.cc_banner
 tip.download.com.vn###ouibounce-modal
 tipsalert.xyz###link-view > p
@@ -991,13 +1025,30 @@ vipshare.co##.title.text-center
 vipshare.co##.Vipshare
 vitinhvuhoang.com###sbox-overlay
 vitinhvuhoang.com###sbox-window
+vmaniac.com###navcell5
+vmaniac.com##body > div:nth-of-type(4)
+vmaniac.com##center
+vmaniac.com##div.zopim:nth-of-type(1)
+vmaniac.com##div:nth-of-type(2)
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
+vn-z.vn###footer
+vn-z.vn##.p-body-inner > center:nth-of-type(1)
+vn-z.vn##.p-body-sidebar > ins.adsbygoogle:nth-of-type(1)
+vn-z.vn##.sidebar > ins.adsbygoogle:nth-of-type(1)
+vn-z.vn##center:nth-of-type(2) > .adsbygoogle
+vn-z.vn##ins.adsbygoogle:nth-of-type(2)
 vnexpress.net###wrapper_footer
 vnexpress.net##.p_header
 vnjpclub.com###ampz_inline_bottom
 vnjpclub.com###rt-footer-surround
 vnjpclub.com###rt-sidebar-a
+vnpt-technology.vn##.clearfix.footer-1.footer
+vnreview.vn###appComment
+vnreview.vn###detailMID2
+vnreview.vn###p_p_id_showadv_WAR_ReviewPortletportlet_INSTANCE_LaO5_
+vnreview.vn##.mod_web.footer
+vnz-leech.com###banner
 vnz-leech.com##div.container-full:nth-of-type(1)
 vnz-leech.com##div.container-full:nth-of-type(3)
 vozforums.com###neo_logobar
@@ -1039,9 +1090,25 @@ win10.vn##.light-text.footer-widgets
 win10.vn##.post-inner
 win10.vn##.style-3.clearfix.bottom-share.single-post-share.post-share
 win10.vn##.use-pretty-tabs.hidden-xs.topbar-style-1.topbar
+www.alc.co.jp###footer
+www.alc.co.jp##[href="https://ec.alc.co.jp/lp_n/product/nm/"]
+www.anphatpc.com.vn##[src="/media/banner/23_Mar5dcd3113d0b8061f3e27478ed46c8371.png"]
+www.cyberciti.biz###colophon
+www.cyberciti.biz###custom_html-4
+www.cyberciti.biz###text-384338398
+www.cyberciti.biz##center > div:nth-of-type(2)
 www.dongphim.net##.luna.ht-footer
+www.draytek.com.tw##footer
 www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 www.nokia.com##.nokia_cookie-wrapper
+www.snbforums.com###div-gpt-ad-300-inline1
+www.snbforums.com###div-gpt-ad-300-inline2
+www.snbforums.com###div-gpt-ad-300-inline3
+www.snbforums.com##.leaderboard_snbad
+www.snbforums.com##.Notices.FloatingContainer
+www.snbforums.com##div.widget-container.widget-group-no-name.section:nth-of-type(2)
+www.snbforums.com##div.widget-container.widget-group-no-name.section:nth-of-type(4)
+www.snbforums.com##footer
 www.techinferno.com###elGuestTerms
 www.uploadship.com###footer2
 www.uploadship.com##.FI
@@ -1077,10 +1144,13 @@ www110.zippyshare.com##.smalltab
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
 yeuphimmoi.com##.balloon-block
+||2.pik.vn/20202525ec29-cc24-46c4-90fe-8f19bb2a1ff3.jpg$image
+||2.pik.vn/2020e2bb8f26-44ca-4026-8e33-a23acb68972b.jpg$image
 ||ad.chogiare.vn^
 ||androidfilehost.com/assets/images/cloud-bg-new.png$image
 ||aptashant.club
 ||i.imgur.com/u6iyMx4.png$image
+||i.imgur.com/xJSkDDD.jpg$image
 ||lixi88.info^
 ||media.dongphim.net/media/image/id/*200x$image
 ||media.dongphim.net/media/image/id/*640x$image
@@ -1089,6 +1159,11 @@ yeuphimmoi.com##.balloon-block
 ||vipshare.co/img/*$image
 ||vuighe.tv/images/*.gif^
 ||vuighe.tv/players/ads/^
+||www.anphatpc.com.vn/media/banner/*$image
+||www.anphatpc.com.vn/media/lib/500x654-vanchuyen2.jpg$image
+
+
+
 
 !#########################################################################################################
 !#########################################################################################################
