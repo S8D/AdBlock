@@ -1,4 +1,4 @@
-#PhienBan___20200412b
+#PhienBan___20200420a
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
@@ -24,6 +24,7 @@ time-a.timefreq.bldrdoc.gov	time2.google.com
 *.keocacuoc.net				cd.ago.vn
 
 #___Tổng-Hợp__________________________________________
+vozforum.org				forums.voz.vn
 *.cookieinfoscript.com		ad.ago.vn
 *.byet.org					ad.ago.vn
 *.ifastnet.com				ad.ago.vn
