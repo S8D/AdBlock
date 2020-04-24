@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200424a"
+PhienBan="20200424b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -50,7 +50,7 @@ DV="/etc/init.d/dns"
 #echo "$DauCau $(basename "$0") phiên bản $PhienBan"
 OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
-	TM="/root"; TMLog="/www";
+	TM="/sd"; TMLog="/www";
 	cer="/etc/ssl/certs/ca-certificates.crt"; mkdir -p $nds
 	NoiQuy="$nds/NoiQuy.txt";
 	ThongBao="$nds/ThongBao.txt";
@@ -62,7 +62,7 @@ if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
 fi; cd $TM
 
-tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
+tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="/tmp/tam"; rm -f $upTam;
 Den="${tmDNS}/Den.txt"; if [ ! -f "$Den" ]; then echo '' > $Den; fi; 
 ipDen="${tmDNS}/ipDen.txt"; if [ ! -f "$ipDen" ]; then echo '' > $ipDen; fi; 
 Trang="${tmDNS}/Trang.txt"; if [ ! -f "$Trang" ]; then echo '' > $Trang; fi; 
