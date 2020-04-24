@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="20200419h"
+PhienBan="20200424a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -56,7 +56,7 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cg
 	ThongBao="$nds/ThongBao.txt";
 fi; fi
 
-if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then TM="/config"; TMLog="${TM}/dns"; fi; fi
+if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then TM="/config/sd"; TMLog="${TM}/dns"; fi; fi
 
 if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
