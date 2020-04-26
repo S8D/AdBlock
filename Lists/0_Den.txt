@@ -1,4 +1,4 @@
-#PhienBan___20200421a
+#PhienBan___20200426a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,32 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+smutr.com
+ebetoni.com
+meowpushnot.com
+rtnews.pro
+donglogs.com
+ads[0-9]-adnow.com
+skimresources.com
+tapdb.net
+qiyukf.com
+news-host.pw
+l9bjkkhaycw6f8f4.soundcloud.com
+fls-na.amazon.com
+prfwpclck.com
+congphim.org
+customerevents.netflix.com
+ichnaea.netflix.com
+zz.bdstatic.com
+pubnative.info
+outlookabsorb.com
+static.olark.com
+go.pardot.com
+js.intercomcdn.com
+widget.intercom.io
+ocsp-responder.com
+gate.hockeyapp.net
+lottery.headlines.pw
 adsplay.xyz
 lofv.xyz
 platformbot.xyz
@@ -378,8 +404,6 @@ update.fbsbx.com
 vvpcdke43x.com
 ax1x.com
 indexww.com
-ads3-adnow.com
-ads*-adnow.com
 clc.stackoverflow.com
 obefjbb4mykw.com
 asewlfjqwlflkew.com
@@ -1410,6 +1434,11 @@ acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
+bksoup.v.qq.com
+qqlive.qq.com
+soup.v.qq.com
+mtrace.qq.com
+btrace.qq.com
 sohucs.com
 qhimg.com
 meizu.com
@@ -1524,6 +1553,7 @@ beijing-time.org
 umeng.cloud
 
 #___MicroSoft__________________________________________________________________
+consumer.entitlement.skype.com
 outlookmobile-office365-tas.msedge.net
 ieonlinews.microsoft.com
 iris.microsoft.com
