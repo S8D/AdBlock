@@ -1,4 +1,4 @@
-#PhienBan___20200426a
+#PhienBan___20200426b
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,21 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+adi.vcmedia.vn
+afamily[0-9].vcmedia.vn
+mobileapptracking.com
+apxadtracking.net
+d32hwlnfiv2gyn.cloudfront.net
+parsely.com
+ugdturner.com
+agility.cnn.com
+adx.snipermob.com
+flagcounter.com
+duapps.com
+doglobal.net
+viatepigan.com
+reevaipi.com
+snnd.co
 smutr.com
 ebetoni.com
 meowpushnot.com
@@ -965,7 +980,6 @@ i18n-*.faceu.mobi
 fastboot.mobi
 ads.mp.mydas.mobi
 inner-active.mobi
-baomoi.tts.zalo.ai
 a.vdo.ai
 shortpixel.ai
 propu.sh
@@ -1645,6 +1659,8 @@ fbcdn2.com
 interncache-*.fbcdn.net
 
 #___VinaGau______________________________________________________________________
+baomoi.tts.zalo.ai
+events.zaloapp.com
 store*zalo
 *page*zalo
 polyfill.io
