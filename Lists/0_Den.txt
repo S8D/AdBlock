@@ -1,4 +1,4 @@
-#PhienBan___20200426b
+#PhienBan___20200427a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,51 +13,11 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
-adi.vcmedia.vn
-afamily[0-9].vcmedia.vn
-mobileapptracking.com
-apxadtracking.net
-d32hwlnfiv2gyn.cloudfront.net
-parsely.com
-ugdturner.com
-agility.cnn.com
-adx.snipermob.com
-flagcounter.com
-duapps.com
-doglobal.net
-viatepigan.com
-reevaipi.com
-snnd.co
-smutr.com
-ebetoni.com
-meowpushnot.com
-rtnews.pro
-donglogs.com
-ads[0-9]-adnow.com
-skimresources.com
-tapdb.net
-qiyukf.com
-news-host.pw
-l9bjkkhaycw6f8f4.soundcloud.com
-fls-na.amazon.com
-prfwpclck.com
-congphim.org
-customerevents.netflix.com
-ichnaea.netflix.com
-zz.bdstatic.com
-pubnative.info
-outlookabsorb.com
-static.olark.com
-go.pardot.com
-js.intercomcdn.com
-widget.intercom.io
-ocsp-responder.com
-gate.hockeyapp.net
-lottery.headlines.pw
 adsplay.xyz
 lofv.xyz
 platformbot.xyz
 fstats.xyz
+adx.media3s.xyz
 fbcn.xyz
 983jdh.xyz
 mhj765.xyz
@@ -73,10 +33,13 @@ mon.musical.ly
 illicium.web.money
 nuri.net.gateway
 breaktime.com.tw
+news-host.pw
+lottery.headlines.pw
 nstat.headlines.pw
 stat.headlines.pw
 offerwall.headlines.pw
 beiven.pw
+presbanise.pw
 teads.tv
 blueseed.tv
 dt-secure.videohub.tv
@@ -102,6 +65,7 @@ cachefly.net
 cacafly.net
 moatads.com.edgekey.net
 adsplay.net
+perimeterx.net
 appcloudbox.net
 openx.net
 mybluemix.net
@@ -125,6 +89,7 @@ dc5k8fg5ioc8s.cloudfront.net
 dna8twue3dlxq.cloudfront.net
 d2zv5rkii46miq.cloudfront.net
 d1lxhc4jvstzrp.cloudfront.net
+d32hwlnfiv2gyn.cloudfront.net
 d3alqb8vzo7fun.cloudfront.net
 d1qggq1at2gusn.cloudfront.net
 d24n15hnbwhuhn.cloudfront.net
@@ -155,6 +120,7 @@ footprint.net
 dm-event.net
 typekit.net
 shop.vnexpress.net
+logperf.vnexpress.net
 wixapps.net
 hsforms.net
 cdnnetworks.net
@@ -167,6 +133,7 @@ wcs.naver.net
 appier.net
 go.masoffer.net
 eupgroup.net
+gate.hockeyapp.net
 imtmp.net
 qc.nhatvip.net
 smaato.net
@@ -186,6 +153,7 @@ pingdom.net
 an.dongphim.net
 crwdcntrl.net
 app.wpsmail.net
+doglobal.net
 lavanetwork.net
 rtmark.net
 nuri.net
@@ -197,6 +165,8 @@ popcash.net
 adhigh.net
 bidswitch.net
 everesttech.net
+ads24h.net
+apxadtracking.net
 go-mpulse.net
 ciksolre.net
 clicktale.net
@@ -219,6 +189,7 @@ ezoic.net
 omtrdc.net
 pm.w55c.net
 chengaib.net
+tapdb.net
 nr-data.net
 algolia.net
 lpsnmedia.net
@@ -244,6 +215,7 @@ adkmob.jp
 tawk.to
 8weoaapw0hfvy6nz.pro
 zahkit.pro
+rtnews.pro
 clcknads.pro
 ohbayersbur.pro
 nativesp.pro
@@ -260,12 +232,14 @@ tenmax.io
 adport.io
 starbolt.io
 split.io
+mobotoolpush.moboapps.io
 o-s.io
 assets.juicer.io
 hotjar.io
 pendo.io
 raygun.io
 districtm.io
+widget.intercom.io
 wurfl.io
 tlnk.io
 branch.io
@@ -281,10 +255,12 @@ feboni.info
 namgeomethi.info
 burningpush.info
 adoptimize.info
+pubnative.info
 thenpushme.info
 rathertrihe.info
 hoood.info
 policityseriod.info
+sarahaha.info
 clipbongda.info
 975nqoq7.info
 analytics.hostyour.video
@@ -300,6 +276,7 @@ api.megacool.co
 pushstack.co
 mailmunch.co
 umeng.co
+snnd.co
 gop1.co
 adfly.vn
 alosoft.vn
@@ -363,6 +340,8 @@ trogiang.vuihoc.vn
 kinghub.vn
 tvnotice.kg.garena.vn
 yomedia.vn
+adi.vcmedia.vn
+afamily[0-9].vcmedia.vn
 admicro*.vcmedia.vn
 one88.vn
 s.kenh14.vn
@@ -414,11 +393,14 @@ openx.com
 wkanx.com
 frog.wix.com
 ad-brix.com
+customerevents.netflix.com
+ichnaea.netflix.com
 cdn.transifex.com
 update.fbsbx.com
 vvpcdke43x.com
 ax1x.com
 indexww.com
+ads[0-9]-adnow.com
 clc.stackoverflow.com
 obefjbb4mykw.com
 asewlfjqwlflkew.com
@@ -428,6 +410,7 @@ vungtv.com
 jwpsrv.com
 exosrv.com
 unoadsrv.com
+nativeserv.com
 adxadserv.com
 lekaiyou.com
 lulachu.com
@@ -449,6 +432,8 @@ cookieinfoscript.com
 wowjogsot.com
 adasiatagmanager.appspot.com
 premiumyva.appspot.com
+meowpushnot.com
+go.pardot.com
 cookiebot.com
 tynt.com
 quantcount.com
@@ -529,11 +514,13 @@ ziffdavis.com
 sharethis.com
 addthis.com
 webpushs.com
+donglogs.com
 count.cnblogs.com
 adasiaholdings.com
 ns.exitgames.com
 kumobiles.com
 spectrum.gettyimages.com
+skimresources.com
 gravityrd-services.com
 tclclouds.com
 aaxads.com
@@ -548,8 +535,10 @@ crashlytics.com
 alexametrics.com
 mediarithmics.com
 coronalabs.com
+smutr.com
 opmnstr.com
 optmstr.com
+surfcountor.com
 onvictinitor.com
 agafurretor.com
 cryptonator.com
@@ -567,12 +556,14 @@ syndication.twitter.com
 ads-twitter.com
 static.apester.com
 statcounter.com
+flagcounter.com
 ugdturner.com
 sbbanner.com
 metrika-informer.com
 getbeamer.com
 applifier.com
 pusher.com
+*-launcher.com
 uptopopunder.com
 ocsp-responder.com
 pushsender.com
@@ -641,6 +632,7 @@ otf.msn.com
 dlfvgndsdfsn.com
 adpopcorn.com
 sail-horizon.com
+fls-na.amazon.com
 assoc-amazon.com
 mobileapi.usebutton.com
 dmxleo.dailymotion.com
@@ -676,6 +668,7 @@ tiqcdn.com
 p.jwpcdn.com
 netdna.bootstrapcdn.com
 clickiocdn.com
+js.intercomcdn.com
 idsync.rlcdn.com
 rlcdn.com
 unidesk.alicdn.com
@@ -733,6 +726,7 @@ xl-trk.com
 mppmnetwork.com
 znewswork.com
 code.ionicframework.com
+static.olark.com
 viglink.com
 deqik.com
 ime.cootek.com
@@ -746,6 +740,7 @@ tusdk.com
 qcarsdk.com
 safedk.com
 k8luck.com
+prfwpclck.com
 waptrick.com
 propellerclick.com
 exoclick.com
@@ -762,6 +757,7 @@ users-api.com
 user-api.com
 push.baomoi.com
 log.baomoi.com
+ebetoni.com
 pushnami.com
 mi.com
 vulcan-phi.com
@@ -797,6 +793,7 @@ appsliving.com
 logger.suibyuming.com
 adtiming.com
 sedoparking.com
+mobileapptracking.com
 servicelayer.king.com
 adc.quantrimang.com
 captcha.gtimg.com
@@ -807,6 +804,7 @@ fqtag.com
 vlitag.com
 mathtag.com
 bugsnag.com
+qiyukf.com
 3585656d9351553f.com
 apptimize.com
 braze.com
@@ -872,6 +870,7 @@ dynatrace.com
 licenses.adobe.com
 geo*.adobe.com
 dbankcloud.com
+l9bjkkhaycw6f8f4.soundcloud.com
 faidoud.com
 flipboard.com
 maxmind.com
@@ -899,6 +898,7 @@ cdn.livechatinc.com
 microadinc.com
 telemetry.swe.quicinc.com
 adsymptotic.com
+zz.bdstatic.com
 pubmatic.com
 logs.supersonic.com
 shareaholic.com
@@ -908,6 +908,8 @@ nbryb.com
 mopub.com
 switchadhub.com
 sg-push.m-rtb.com
+outlookabsorb.com
+adx.snipermob.com
 rqmob.com
 adkmob.com
 admob.com
@@ -997,6 +999,7 @@ optiads.org
 adsrvr.org
 aliapp.org
 tracemyip.org
+congphim.org
 13i.org
 cdn.digitalpush.org
 hshh.org
@@ -1012,6 +1015,7 @@ awehobrasp.live
 trahes.site
 aimrawwas.site
 acker.site
+letheyemo.site
 ashamparm.site
 errnaphim.site
 ampallall.site
@@ -1024,6 +1028,7 @@ fixsirrod.site
 fagmomqua.site
 push.house
 peachdamwhiffs.store
+joyekepus.online
 special-offers.online
 push-signals.online
 android-center.online
@@ -1032,6 +1037,7 @@ pushapi.online
 ohmchoicechi.online
 artandand.online
 aj1*.online
+lp.zo.game
 log.snow.me
 adbro.me
 pagedemo.me
@@ -1063,10 +1069,12 @@ curarmbin.club
 arkbuyarm.club
 reclick.club
 artantash.club
+offgashah.club
 allarmate.club
 videobase.club
 boyaidare.club
 madplypie.club
+funwarcab.club
 ad-m.asia
 selectmedia.asia
 
@@ -1362,7 +1370,6 @@ api.mixpanel.com
 decide.mixpanel.com
 switchboard.mixpanel.com
 mixpanel.com
-star-z-mini.c10r.facebook.com
 pixel.admobclick.com
 api.admob.xiaomi.com
 core.insightexpressai.com
@@ -1648,6 +1655,8 @@ suspendeddomain.org
 suspended-website.com
 
 #___Facebook___________________________________________________________________
+pixel.facebook.com
+star-z-mini.c10r.facebook.com
 platform-lookaside.fbsbx.com
 connect.facebook.net
 #platform-lookaside.fbsbx.com
