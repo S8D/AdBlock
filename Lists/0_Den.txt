@@ -1,4 +1,4 @@
-#PhienBan___20200427a
+#PhienBan___20200429a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,20 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+blog.livedoor.jp
+fast.wistia.net
+fast.wistia.com
+pangu8.com
+fyber.com
+apester.com
+widget.manychat.com
+webpick-cdn.s3.amazonaws.com
+pxlad.io
+optimonk.com
+jobthread.com
+splkmobile.com
+mingid.vcmedia.vn
+k14.vcmedia.vn
 adsplay.xyz
 lofv.xyz
 platformbot.xyz
@@ -1455,6 +1469,8 @@ acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
+cdn.wetest.qq.com
+cloudctrl.gcloud.qq.com
 bksoup.v.qq.com
 qqlive.qq.com
 soup.v.qq.com
