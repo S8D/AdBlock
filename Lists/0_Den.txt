@@ -1,4 +1,4 @@
-#PhienBan___20200512a
+#PhienBan___20200519a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,15 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+yy9s51b2u05z.com
+s2.easylist-to.xyz
+log.anninhthudo.vn
+topflownews.com
+mycliplister.com
+eum.instana.io
+speedcurve.com
+endpoint.prod.us-west-2.forester.a2z.com
+widget.intercom.io
 sudo.cnnd.vn
 afamilys.cnnd.vn
 embed.dugout.com
