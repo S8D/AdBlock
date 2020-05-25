@@ -1,4 +1,4 @@
-#PhienBan___20200522a
+#PhienBan___20200525a
 #___RutGon_________________________________________________________________
 gg.gg
 bom.to
@@ -13,7 +13,8 @@ lazada.vn
 eye4.cn
 proxy.vnztech.tk
 ssl.p.jwpcdn.com
-
+msecnd.net
+samsungdm.com
 #___Spotify________________________________________________________________
 104.199.65.11
 developer.spotify.map.fastly.net
