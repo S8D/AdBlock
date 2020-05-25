@@ -1,4 +1,4 @@
-#PhienBan___20200519a
+#PhienBan___20200525a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -312,7 +312,6 @@ cdn.krxd.net
 izatcloud.net
 xtracloud.net
 px-cloud.net
-msecnd.net
 vietid.net
 pxlgnpgecom-a.akamaihd.net
 stickyid-a.akamaihd.net
