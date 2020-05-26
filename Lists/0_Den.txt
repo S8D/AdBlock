@@ -1,4 +1,4 @@
-#PhienBan___20200526a
+#PhienBan___20200526b
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,11 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+novanet.vn
+increaserev.com
+apicomment.dantri.com.vn
+unreshiramor.com
+dc.motphim.co
 demdex.net
 bjshcw.com
 adxoo.com
