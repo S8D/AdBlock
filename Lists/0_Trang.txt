@@ -1,4 +1,4 @@
-#PhienBan___20200525a
+#PhienBan___20200530a
 #___RutGon_________________________________________________________________
 gg.gg
 bom.to
@@ -6,6 +6,12 @@ ago.vn
 tiny.cc
 
 #___TongHop________________________________________________________________
+mirrors.bfsu.edu.cn
+mirrors.hust.edu.cn
+mirrors.ustc.edu.cn
+mirror-hk.koddos.net
+mirrors.layeronline.com
+mirrors.tuna.tsinghua.edu.cn
 adsbypasser.github.io
 norton.com
 symantec.com
