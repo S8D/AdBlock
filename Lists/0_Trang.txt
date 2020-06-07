@@ -1,4 +1,4 @@
-#PhienBan___20200530a
+#PhienBan___20200607a
 #___RutGon_________________________________________________________________
 gg.gg
 bom.to
@@ -6,6 +6,7 @@ ago.vn
 tiny.cc
 
 #___TongHop________________________________________________________________
+nextdns.io
 mirrors.bfsu.edu.cn
 mirrors.hust.edu.cn
 mirrors.ustc.edu.cn
