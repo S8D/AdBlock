@@ -1,5 +1,6 @@
 *** Hãy cư xử tử tế để nhận được điều tử tế! ***
-<br>## Nếu WiFi có vấn đề bạn có thể tắt WiFi rồi mở lại hoặc xoá tên WiFi rồi nhập lại mật khẩu là được.
+<br>## Để Zalo gọn hơn các bạn có thể sao lưu tin nhắn rồi xoá data Zalo, sau đó đăng nhập lại Zalo và phục hồi lại tin nhắn.
+<br>## Nếu WiFi có vấn đề bạn có thể tắt WiFi rồi mở lại hoặc xoá WiFi rồi nhập lại mật khẩu là được.
 <br>## Tên WiFi ThanhPhu dùng sóng 5Ghz nên sẽ phát gần nhưng tốc độ nhanh hơn.
 <br>## Tên WiFi ThanhFu dùng sóng 2.4Ghz nên sẽ phát xa hơn nhưng tốc độ chậm hơn.
 <br>__________________________________________________________________________
