@@ -1,4 +1,4 @@
-#PhienBan___20200610a
+#PhienBan___20200612a
 
 #___@@_________________________________________________________________________
 @@||m.youtube.com^
@@ -17,7 +17,7 @@
 ||smoot.apple.com^
 ||mesu.apple.com^
 ||mesu.g.aaplimg.com^
-||apple-dns.net^
+@@||apple-dns.net^
 
 #___Tổng-Hợp___________________________________________________________________
 ||selectmedia.asia^
