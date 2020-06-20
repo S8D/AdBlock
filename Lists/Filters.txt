@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200420b
+! Version: 20200620a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,10 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+voz.vn###header
+voz.vn###footer
+voz.vn##.blockMessage--none.blockMessage
+vn-z.vn##.blockMessage--none.blockMessage
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
