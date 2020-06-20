@@ -1,4 +1,4 @@
-#PhienBan___20200516a
+#PhienBan___20200607a
 #___RutGon_________________________________________________________________
 gg.gg
 bom.to
@@ -6,13 +6,22 @@ ago.vn
 tiny.cc
 
 #___TongHop________________________________________________________________
+nextdns.io
+mirrors.bfsu.edu.cn
+mirrors.hust.edu.cn
+mirrors.ustc.edu.cn
+mirror-hk.koddos.net
+mirrors.layeronline.com
+mirrors.tuna.tsinghua.edu.cn
 adsbypasser.github.io
 norton.com
 symantec.com
 lazada.vn
 eye4.cn
 proxy.vnztech.tk
-
+ssl.p.jwpcdn.com
+msecnd.net
+samsungdm.com
 #___Spotify________________________________________________________________
 104.199.65.11
 developer.spotify.map.fastly.net
