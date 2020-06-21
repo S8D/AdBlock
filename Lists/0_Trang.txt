@@ -1,9 +1,16 @@
-#PhienBan___20200607a
+#PhienBan___20200621a
 #___RutGon_________________________________________________________________
 gg.gg
+bit.ly
 bom.to
 ago.vn
 tiny.cc
+us.to
+duckdns.org
+mydns.jp
+0j0.jp
+dynu.com
+dynu.net
 
 #___TongHop________________________________________________________________
 nextdns.io
