@@ -1,4 +1,4 @@
-#PhienBan___20200607a
+#PhienBan___20200621a
 #___Apple______________________________________________________________________
 ||mesu.apple.com^
 ||securemetrics.apple.com^
@@ -13,6 +13,20 @@
 ||idiagnostics.apple.com^
 
 #___Tổng-Hợp___________________________________________________________________
+||coltagainst.pro^
+||wastesshimssat.world^
+||stripe.network^
+||pendo.io^
+||boi9osyg1uwtyafn.com^
+||zwyr157wwiu6eior.com^
+||amessagewithabottle.com^
+||nanorep.com^
+||counter.opensuse.org^
+||qualified.com^
+||shareaholic.net^
+||fuse.forbes.com^
+||omappapi.com^
+||geojs.io^
 ||novanet.vn^
 ||increaserev.com^
 ||apicomment.dantri.com.vn^
@@ -2518,6 +2532,8 @@ acs-m.lazada.sg
 
 #___TQ_________________________________________________________________________
 ||cdn.wetest.qq.com^
+||api21-core-va.toktokv.com^
+||mon.tiktokv.com^
 ||cloudctrl.gcloud.qq.com^
 ||bksoup.v.qq.com^
 ||qqlive.qq.com^
@@ -2882,6 +2898,7 @@ acs-m.lazada.sg
 ||*id.google.*^
 ||adservice*^
 ||csi.gstatic.com^
+||imasdk.googleapis.com^
 ||s.youtube.com^
 ||gg.google.com^
 ||gstaticadssl.l.google.com^
