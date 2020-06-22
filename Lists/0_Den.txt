@@ -1,4 +1,4 @@
-#PhienBan___20200622d
+#PhienBan___20200622e
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -14,6 +14,8 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+appcenter.ms
+sentry-cdn.com
 ztevents.zaloapp.com
 adsplay.xyz
 lofv.xyz
@@ -1359,6 +1361,7 @@ acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
+tc.qq.com
 uc123.com
 163.com
 gltxy.xyz
