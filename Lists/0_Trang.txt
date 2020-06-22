@@ -1,4 +1,4 @@
-#PhienBan___20200622c
+#PhienBan___20200622d
 
 #___VPN____________________________________________________________________
 icanhazip.com
@@ -8,7 +8,54 @@ ltlxvxjjmvhn.me
 ns8469rfvth42.xyz
 judua3rtinpst0s.xyz
 zwyr157wwiu6eior.com
-judua3rtinpst0s.xyz
+#___IP_____________________________________________________________________
+check-host.net
+checkip.azurewebsites.net
+checkip.net
+checkip.feste-ip.net
+iplocation.net
+ipleak.net
+checkip.dns.he.net
+ipinfo.io
+ipinfo.info
+ip-check.info
+checkip.vn
+vipcom.vn
+checkip.com.vn
+check-ip.aws.a2z.com
+checkip.kaspersky.com
+checkip.synology.com
+checkip.dynu.com
+checkip.amazonaws.com
+checkip.dyndns.com
+checkmyip.com
+myip.com
+infobyip.com
+kiemtraip.com
+check2ip.com
+get-site-ip.com
+iplocation.com
+ip2location.com
+ipchicken.com
+ecomsiam.com
+ipvanish.com
+test-ipv6.com
+check.torproject.org
+checkip.dyndns.org
+checkip.org
+checkip.me
+checkip.cc
+
+#___DDNS___________________________________________________________________
+0j0.jp
+afraid.org
+duckdns.org
+dynu.com
+giize.com
+k.vu
+mydns.jp
+us.to
+dynu.net
 
 #___Linux__________________________________________________________________
 mirrors.pair.com
@@ -21,21 +68,16 @@ mirror-hk.koddos.net
 mirrors.layeronline.com
 mirrors.tuna.tsinghua.edu.cn
 
-
 #___RutGon_________________________________________________________________
 gg.gg
 bit.ly
 bom.to
 ago.vn
 tiny.cc
-us.to
-duckdns.org
-mydns.jp
-0j0.jp
-dynu.com
-dynu.net
 
 #___TongHop________________________________________________________________
+c.speedtest.net
+connectivitycheck.platform.hicloud.com
 nextdns.io
 adsbypasser.github.io
 norton.com
@@ -46,11 +88,11 @@ proxy.vnztech.tk
 ssl.p.jwpcdn.com
 msecnd.net
 samsungdm.com
-
 storage.googleapis.com
 graph.facebook.com
 login.live.com
 redirector.gvt1.com
+
 
 ###########################
 #        Whitelist        #
