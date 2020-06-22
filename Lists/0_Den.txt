@@ -1,4 +1,4 @@
-#PhienBan___20200622b
+#PhienBan___20200622c
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -304,8 +304,6 @@ ipinfo.io
 pendo.io
 raygun.io
 districtm.io
-widget.intercom.io
-nexus-websocket-a.intercom.io
 intercom.io
 wurfl.io
 tlnk.io
@@ -757,7 +755,7 @@ jsonip.com
 combine.urbanairship.com
 urbanairship.com
 collector-medium.lightstep.com
-cdn-eu1-1.nanorep.com
+nanorep.com
 med.heyzap.com
 tarawerap.com
 amap.com
@@ -1334,6 +1332,19 @@ selectmedia.asia
 pixel.*
 tracking.*
 admob.*
+wastesshimssat.world
+geojs.io
+amessagewithabottle.com
+truvidplayer.com
+trx.gitlab.net
+qualified.com
+counter.opensuse.org
+diags.unc0ver.com
+ada.support
+help-zalo.firebaseio.com
+onclickalgo.com
+onclickperformance.com
+onclickgenius.com
 
 #___@@_________________________________________________________________________
 #accesstrade.vn
@@ -1568,6 +1579,7 @@ samsungmax.com
 dualstack.*.amazonaws.com
 api-a.op-mobile.opera.com
 ofa-sub.osp.opera.software
+brave-browser-apt-release.s3.brave.com
 
 #___Hosts______________________________________________________________________
 suspendeddomain.org
