@@ -1,4 +1,4 @@
-#PhienBan___20200622d
+#PhienBan___20200622e
 
 #___VPN____________________________________________________________________
 icanhazip.com
@@ -16,9 +16,11 @@ checkip.feste-ip.net
 iplocation.net
 ipleak.net
 checkip.dns.he.net
+ip.3322.net
 ipinfo.io
 ipinfo.info
 ip-check.info
+ipv4.nsupdate.info
 checkip.vn
 vipcom.vn
 checkip.com.vn
@@ -26,24 +28,34 @@ check-ip.aws.a2z.com
 checkip.kaspersky.com
 checkip.synology.com
 checkip.dynu.com
+ip.dnsexit.com
 checkip.amazonaws.com
+myip.dtdns.com
 checkip.dyndns.com
+ipv4.wtfismyip.com
 checkmyip.com
 myip.com
 infobyip.com
+ip.changeip.com
 kiemtraip.com
 check2ip.com
+ip1.dynupdate.no-ip.com
 get-site-ip.com
+echo.tzo.com
+checkip.zerigo.com
 iplocation.com
 ip2location.com
 ipchicken.com
 ecomsiam.com
 ipvanish.com
+myip.dnsomatic.com
 test-ipv6.com
 check.torproject.org
 checkip.dyndns.org
 checkip.org
+members.3322.org
 checkip.me
+checkip.two-dns.de
 checkip.cc
 
 #___DDNS___________________________________________________________________
