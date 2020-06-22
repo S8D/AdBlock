@@ -1,4 +1,4 @@
-#PhienBan___20200526b
+#PhienBan___20200622a
 #___Apple______________________________________________________________________
 mesu.apple.com
 securemetrics.apple.com
@@ -13,6 +13,12 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+boi9osyg1uwtyafn.com
+zwyr157wwiu6eior.com
+genesis.malwarebytes.com
+app-ab01.marketo.com
+omappapi.com
+vtvapi3.cnnd.vn
 novanet.vn
 increaserev.com
 apicomment.dantri.com.vn
@@ -1749,6 +1755,7 @@ www.qq.com
 uu.qq.com
 qiyi.com
 umeng.cloud
+api21-core-va.toktokv.com
 
 #___MicroSoft__________________________________________________________________
 metaservices.microsoft.com
