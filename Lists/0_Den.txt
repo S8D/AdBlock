@@ -1,4 +1,4 @@
-#PhienBan___20200622c
+#PhienBan___20200622d
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -14,6 +14,7 @@ iadsdk.apple.com
 idiagnostics.apple.com
 
 #___Tổng-Hợp___________________________________________________________________
+ztevents.zaloapp.com
 adsplay.xyz
 lofv.xyz
 platformbot.xyz
@@ -1524,6 +1525,7 @@ consumer.entitlement.skype.com
 c.microsoft.com 
 
 #___Google_____________________________________________________________________
+geller-pa.googleapis.com
 googlesyndication.com
 googlezip.net
 doublecklick.net
