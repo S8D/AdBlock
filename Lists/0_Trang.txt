@@ -1,4 +1,7 @@
-#PhienBan___20200621a
+#PhienBan___20200622a
+#___VPN____________________________________________________________________
+nordvpn.com
+
 #___RutGon_________________________________________________________________
 gg.gg
 bit.ly
@@ -29,6 +32,7 @@ proxy.vnztech.tk
 ssl.p.jwpcdn.com
 msecnd.net
 samsungdm.com
+
 #___Spotify________________________________________________________________
 104.199.65.11
 developer.spotify.map.fastly.net
