@@ -1,4 +1,4 @@
-#PhienBan___20200622b
+#PhienBan___20200622c
 
 #___VPN____________________________________________________________________
 icanhazip.com
@@ -14,6 +14,13 @@ judua3rtinpst0s.xyz
 mirrors.pair.com
 debian.proxad.net
 adfinis-sygroup.ch
+mirrors.bfsu.edu.cn
+mirrors.hust.edu.cn
+mirrors.ustc.edu.cn
+mirror-hk.koddos.net
+mirrors.layeronline.com
+mirrors.tuna.tsinghua.edu.cn
+
 
 #___RutGon_________________________________________________________________
 gg.gg
@@ -30,12 +37,6 @@ dynu.net
 
 #___TongHop________________________________________________________________
 nextdns.io
-mirrors.bfsu.edu.cn
-mirrors.hust.edu.cn
-mirrors.ustc.edu.cn
-mirror-hk.koddos.net
-mirrors.layeronline.com
-mirrors.tuna.tsinghua.edu.cn
 adsbypasser.github.io
 norton.com
 symantec.com
@@ -45,7 +46,6 @@ proxy.vnztech.tk
 ssl.p.jwpcdn.com
 msecnd.net
 samsungdm.com
-
 
 storage.googleapis.com
 graph.facebook.com
