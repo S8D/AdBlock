@@ -1,10 +1,12 @@
 ! Title: Đen
-! Version: 20200624a
+! Version: 20200710a
 ! Expires: 1 day
 ! Homepage: https://bit.ly/Den_
 ! License: Darias
 
 #___Apple______________________________________________________________________
+||iphonesubmissions.apple.com^
+||pancake.apple.com^
 ||mesu.apple.com^
 ||securemetrics.apple.com^
 ||*metrics.apple.com^
@@ -18,9 +20,12 @@
 ||idiagnostics.apple.com^
 
 #___Tổng-Hợp___________________________________________________________________
+||sinaapp.com^
+||vanilla.futurecdn.net^
+||images.weserv.nl^
+||banglaixe-1723a.firebaseio.com^
 ||appcenter.ms^
 ||sentry-cdn.com^
-||ztevents.zaloapp.com^
 ||adsplay.xyz^
 ||lofv.xyz^
 ||platformbot.xyz^
@@ -1348,7 +1353,6 @@
 ||counter.opensuse.org^
 ||diags.unc0ver.com^
 ||ada.support^
-||help-zalo.firebaseio.com^
 ||onclickalgo.com^
 ||onclickperformance.com^
 ||onclickgenius.com^
@@ -1364,6 +1368,10 @@
 ||acs-m.lazada.sg^
 
 #___TQ_________________________________________________________________________
+||static-u.faceu.mobi^
+||mon-va.tiktokv.com^
+||p16-tiktokcdn-com.akamaized.net^
+||ibyteimg.com^
 ||tc.qq.com^
 ||uc123.com^
 ||163.com^
@@ -1531,6 +1539,8 @@
 ||c.microsoft.com ^
 
 #___Google_____________________________________________________________________
+||dns.google.com^
+||dns.google^
 ||geller-pa.googleapis.com^
 ||googlesyndication.com^
 ||googlezip.net^
@@ -1588,6 +1598,8 @@
 ||api-a.op-mobile.opera.com^
 ||ofa-sub.osp.opera.software^
 ||brave-browser-apt-release.s3.brave.com^
+||laptop-updates.brave.com^
+||mozilla.cloudflare-dns.com^
 
 #___Hosts______________________________________________________________________
 ||suspendeddomain.org^
@@ -1612,6 +1624,8 @@ interncache-atn.fbcdn.net^
 ||events.zaloapp.com^
 ||store*zalo^
 ||*page*zalo^
+||ztevents.zaloapp.com^
+||help-zalo.firebaseio.com^
 ||polyfill.io^
 ||zplayer.trk.zapps.vn^
 ||zplayer-trk.zdn.vn^
