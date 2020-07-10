@@ -1,4 +1,24 @@
-#PhienBan___20200710a
+#PhienBan___20200710b
+#___TongHop________________________________________________________________
+ec4ns.ptpt52.com
+gstatic.com
+c.speedtest.net
+samsappsbn.vo.llnwd.net
+connectivitycheck.platform.hicloud.com
+nextdns.io
+adsbypasser.github.io
+norton.com
+symantec.com
+lazada.vn
+eye4.cn
+proxy.vnztech.tk
+ssl.p.jwpcdn.com
+msecnd.net
+samsungdm.com
+storage.googleapis.com
+graph.facebook.com
+login.live.com
+redirector.gvt1.com
 
 #___VPN____________________________________________________________________
 nordcdn.com
@@ -104,27 +124,15 @@ bom.to
 ago.vn
 tiny.cc
 
-#___TongHop________________________________________________________________
-ec4ns.ptpt52.com
-gstatic.com
-c.speedtest.net
-samsappsbn.vo.llnwd.net
-connectivitycheck.platform.hicloud.com
-nextdns.io
-adsbypasser.github.io
-norton.com
-symantec.com
-lazada.vn
-eye4.cn
-proxy.vnztech.tk
-ssl.p.jwpcdn.com
-msecnd.net
-samsungdm.com
-storage.googleapis.com
-graph.facebook.com
-login.live.com
-redirector.gvt1.com
-
+#___Norton_________________________________________________________________________
+cs942.wpc.chicdn.net
+cs964.wpc.chicdn.net
+cs965.wpc.chicdn.net
+lb.apr-5a45f.edgecastdns.net
+liveupdate.5A45F.edgecastdns.net
+liveupdate.norton.com
+liveupdate.symantecliveupdate.com
+symantecliveupdate.5A45F.edgecastdns.net
 
 ###########################
 #        Whitelist        #
