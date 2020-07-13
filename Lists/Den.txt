@@ -1,5 +1,5 @@
 ! Title: Đen
-! Version: 20200710a
+! Version: 20200713a
 ! Expires: 1 day
 ! Homepage: https://bit.ly/Den_
 ! License: Darias
@@ -20,6 +20,26 @@
 ||idiagnostics.apple.com^
 
 #___Tổng-Hợp___________________________________________________________________
+||tiktokv.com^
+||p16-va-default.akamaized.net^$important
+||p16-tiktokcdn-com.akamaized.net^$important
+||ibyteimg.com^$important
+||teredo.ipv6.microsoft.com^
+||meneyecyes.com^
+||nmfmzkpe.com^
+||xfrlucpy.com^
+||hfubczub.com^
+||tiktokcdn-in.com^
+||hengya.xyz^
+||v2020b.xyz^
+||n0909.com^
+||*.win^
+||bong90.club^
+||thienvadia.com^
+||taiv8.net^
+||uwin71.com
+||heytapdownload.com^
+#
 ||sinaapp.com^
 ||vanilla.futurecdn.net^
 ||images.weserv.nl^
@@ -1610,10 +1630,10 @@
 ||star-z-mini.c10r.facebook.com^
 ||platform-lookaside.fbsbx.com^
 ||connect.facebook.net^
-platform-lookaside.fbsbx.com^
+||platform-lookaside.fbsbx.com^
 ||an.facebook.com^
 ||crashlogs.whatsapp.net^
-interncache-atn.fbcdn.net^
+||interncache-atn.fbcdn.net^
 ||graph.fbpigeon.com^
 ||fbcdn2.com^
 ||interncache-*.fbcdn.net^
@@ -1629,7 +1649,7 @@ interncache-atn.fbcdn.net^
 ||polyfill.io^
 ||zplayer.trk.zapps.vn^
 ||zplayer-trk.zdn.vn^
-||*zpg.zdn.vn^
+#||*zpg.zdn.vn^
 ||store*.zdn.vn^
 ||*game*.zdn.vn^
 ||*ads*.zadn.vn^
