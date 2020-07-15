@@ -1,5 +1,5 @@
 ! Title: Đen
-! Version: 20200713a
+! Version: 20200715a
 ! Expires: 1 day
 ! Homepage: https://bit.ly/Den_
 ! License: Darias
@@ -39,7 +39,14 @@
 ||taiv8.net^
 ||uwin71.com
 ||heytapdownload.com^
+||xjp-jmacs.m.taobao.com^
+||cstat.apple.com^
+
 #
+||bnc.lt^
+||ufpcdn.com^
+||appmetr.com^
+||cmdump.upload.duba.net^
 ||sinaapp.com^
 ||vanilla.futurecdn.net^
 ||images.weserv.nl^
@@ -1649,7 +1656,6 @@
 ||polyfill.io^
 ||zplayer.trk.zapps.vn^
 ||zplayer-trk.zdn.vn^
-#||*zpg.zdn.vn^
 ||store*.zdn.vn^
 ||*game*.zdn.vn^
 ||*ads*.zadn.vn^
