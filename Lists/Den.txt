@@ -1,5 +1,5 @@
 ! Title: Đen
-! Version: 20200725c
+! Version: 20200725d
 ! Expires: 1 day
 ! Homepage: https://bit.ly/Den_
 ! License: Darias
@@ -11,6 +11,8 @@
 @@||duckdns.org^
 @@||us.to^
 @@||afraid.org^
+@@||vpn.mozilla.org^
+@@||nordvpn.com^
 
 #___Tổng-Hợp___________________________________________________________________
 ||adsplay.xyz^
@@ -1401,6 +1403,7 @@
 ||admob.*^
 
 #___TQ_________________________________________________________________________
+||heytapimg.com^
 ||gltxy.xyz^
 ||uwx1.xyz^
 ||qy.net^
