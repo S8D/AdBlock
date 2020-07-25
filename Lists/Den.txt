@@ -1,5 +1,5 @@
 ! Title: Đen
-! Version: 20200725a
+! Version: 20200725c
 ! Expires: 1 day
 ! Homepage: https://bit.ly/Den_
 ! License: Darias
@@ -13,19 +13,6 @@
 @@||afraid.org^
 
 #___Tổng-Hợp___________________________________________________________________
-||adcel.co^
-||postlnk.com^
-||louchees.net^
-||skkybrought.pro^
-||swayshosshun.icu^
-||dfgbalon.com^
-||martyappear.pro^
-||predictivdisplay.com^
-||i.mxplayer.j2inter.com^
-||clmbtech.com^
-||beeketing.com^
-||gamersterritory.com^
-||topwwnews.com^
 ||adsplay.xyz^
 ||fmax.xyz^
 ||lofv.xyz^
@@ -86,10 +73,15 @@
 ||ad.mail.ru^
 ||top*.mail.ru^
 ||radikal.ru^
+||atomictrivia.ru^
+||differentia.ru^
 ||ria.ru^
+||888r771r2.ru^
+||76236osm1.ru^
 ||top100.ru^
 ||163-172-209-161.rev.poneytelecom.eu^
 ||bepolite.eu^
+||swayshosshun.icu^
 ||adj.st^
 ||admessage.support^
 ||ada.support^
@@ -176,6 +168,7 @@
 ||comscorenetworks.net^
 ||glishais.net^
 ||pixfs.net^
+||louchees.net^
 ||popads.net^
 ||cheap-ads.net^
 ||abmr.net^
@@ -217,6 +210,7 @@
 ||doglobal.net^
 ||lavanetwork.net^
 ||rtmark.net^
+||offerstrack.net^
 ||nuri.net^
 ||uniad.phimmoi.net^
 ||revsci.net^
@@ -233,6 +227,7 @@
 ||popcash.net^
 ||adhigh.net^
 ||bidswitch.net^
+||dartsearch.net^
 ||everesttech.net^
 ||ads24h.net^
 ||apxadtracking.net^
@@ -275,7 +270,6 @@
 ||media.net^
 ||lpsnmedia.net^
 ||adworkmedia.net^
-||cmdump.upload.duba.net^
 ||2o7.net^
 ||with2.net^
 ||enhuoyea11.net^
@@ -289,9 +283,11 @@
 ||tawk.to^
 ||8weoaapw0hfvy6nz.pro^
 ||zahkit.pro^
+||skkybrought.pro^
 ||rtnews.pro^
 ||clcknads.pro^
 ||ohbayersbur.pro^
+||martyappear.pro^
 ||nativesp.pro^
 ||evadavdsp.pro^
 ||dopto.pro^
@@ -328,6 +324,7 @@
 ||pxlad.io^
 ||cointraffic.io^
 ||googleads.github.io^
+||aidata.io^
 ||eum.instana.io^
 ||optad360.io^
 ||android-security.info^
@@ -368,6 +365,7 @@
 ||dc.motphim.co^
 ||xhr.invl.co^
 ||api.megacool.co^
+||adcel.co^
 ||pushstack.co^
 ||ipapi.co^
 ||mailmunch.co^
@@ -473,6 +471,7 @@
 ||ajtctiiiaz.com^
 ||yy9s51b2u05z.com^
 ||endpoint.prod.us-west-2.forester.a2z.com^
+||reasonsecurity.com^
 ||innity.com^
 ||appvirality.com^
 ||wirelessregistry.com^
@@ -481,6 +480,7 @@
 ||ads.flurry.com^
 ||data.flurry.com^
 ||fullstory.com^
+||gamersterritory.com^
 ||joymemory.com^
 ||smopy.com^
 ||xfrlucpy.com^
@@ -500,6 +500,7 @@
 ||polldaddy.com^
 ||touchtype-fluency.com^
 ||amdc.alipay.com^
+||predictivdisplay.com^
 ||dmvbdfblevxvx.com^
 ||jwpltx.com^
 ||glotgrx.com^
@@ -511,6 +512,7 @@
 ||static.zotabox.com^
 ||openx.com^
 ||wkanx.com^
+||lenzmx.com^
 ||frog.wix.com^
 ||ad-brix.com^
 ||customerevents.netflix.com^
@@ -540,6 +542,7 @@
 ||adxadserv.com^
 ||increaserev.com^
 ||www.increaserev.com^
+||pajuwu.com^
 ||lekaiyou.com^
 ||austin.logs.roku.com^
 ||lulachu.com^
@@ -604,6 +607,7 @@
 ||revenuecat.com^
 ||serving-sys.com^
 ||adnxs.com^
+||topwwnews.com^
 ||topflownews.com^
 ||lsttnews.com^
 ||v.lsttnews.com^
@@ -679,6 +683,7 @@
 ||spectrum.gettyimages.com^
 ||skimresources.com^
 ||gravityrd-services.com^
+||wikia-services.com^
 ||mob1ledev1ces.com^
 ||tclclouds.com^
 ||sdfjjd.globatds.com^
@@ -707,7 +712,6 @@
 ||cryptonator.com^
 ||webvisor.com^
 ||unreshiramor.com^
-||zwyr157wwiu6eior.com^
 ||platform.tumblr.com^
 ||newsredir.com^
 ||tharbadir.com^
@@ -726,6 +730,7 @@
 ||static.apester.com^
 ||statcounter.com^
 ||flagcounter.com^
+||i.mxplayer.j2inter.com^
 ||bidvertiser.com^
 ||ugdturner.com^
 ||sbbanner.com^
@@ -786,6 +791,7 @@
 ||med.heyzap.com^
 ||tarawerap.com^
 ||amap.com^
+||segurazo.com^
 ||steepto.com^
 ||app-ab01.marketo.com^
 ||cookiepro.com^
@@ -795,6 +801,7 @@
 ||adxoo.com^
 ||dntcl.qualaroo.com^
 ||statics.woozooo.com^
+||c2shb.ssp.yahoo.com^
 ||media-router-flurry7.prod.media.wg1.b.yahoo.com^
 ||uodoo.com^
 ||pippio.com^
@@ -824,7 +831,7 @@
 ||coysotown.com^
 ||jbovn.com^
 ||applvn.com^
-||log.avlyun.com^
+||avlyun.com^
 ||aliyun.com^
 ||pubyun.com^
 ||content.bitsontherun.com^
@@ -838,6 +845,7 @@
 ||unagi-na.amazon.com^
 ||assoc-amazon.com^
 ||mobileapi.usebutton.com^
+||dfgbalon.com^
 ||dmxleo.dailymotion.com^
 ||imagesrv.adition.com^
 ||ad3.adfarm1.adition.com^
@@ -909,6 +917,7 @@
 ||lentainform.com^
 ||license.piriform.com^
 ||beonixom.com^
+||applovefrom.com^
 ||zopim.com^
 ||steadfastsystem.com^
 ||amazon-adsystem.com^
@@ -937,6 +946,7 @@
 ||mixpanel.com^
 ||tswmel.com^
 ||sphdigital.com^
+||simonsignal.com^
 ||onesignal.com^
 ||vivoglobal.com^
 ||c.trazk.com^
@@ -950,6 +960,7 @@
 ||cdnpark.com^
 ||olark.com^
 ||optimonk.com^
+||postlnk.com^
 ||viglink.com^
 ||deqik.com^
 ||ime.cootek.com^
@@ -1017,6 +1028,7 @@
 ||purch.com^
 ||scorecardresearch.com^
 ||netcoresmartech.com^
+||clmbtech.com^
 ||9purdfe9xg.com^
 ||instabug.com^
 ||blogblog.com^
@@ -1025,6 +1037,7 @@
 ||blueserving.com^
 ||appsliving.com^
 ||thewhizmarketing.com^
+||beeketing.com^
 ||advertising.com^
 ||cdn.bigmining.com^
 ||logger.suibyuming.com^
@@ -1343,6 +1356,7 @@
 ||pagedemo.me^
 ||onelink.me^
 ||systemlog.me^
+||loopme.me^
 ||demopage.me^
 ||instant.page^
 ||audiencemanager.de^
@@ -1357,6 +1371,7 @@
 ||hbefpugz.club^
 ||aniashboy.club^
 ||mehhueboy.club^
+||yogamoingay.club^
 ||zphunutoday.club^
 ||yeprimlax.club^
 ||aptashant.club^
@@ -1386,8 +1401,6 @@
 ||admob.*^
 
 #___TQ_________________________________________________________________________
-||zenmxapps.com^
-||zz.bdstatic.com^
 ||gltxy.xyz^
 ||uwx1.xyz^
 ||qy.net^
@@ -1395,12 +1408,10 @@
 ||iowiuhwer37asdan.net^
 ||wpsmail.net^
 ||toutiaocloud.net^
-||tiktokcdn-in.com^
-||toktokv.com^
-||tiktokv.com^
 ||p16-va-default.akamaized.net^
 ||*tiktok*.akamaized.net^
 ||byteoversea.net^
+||duba.net^
 ||51y5.net^
 ||1plus.io^
 ||jpush.io^
@@ -1412,7 +1423,10 @@
 ||v21xy.com^
 ||appboy.com^
 ||ynuf.alipay.com^
+||ktplay.com^
 ||irisgw.com^
+||toktokv.com^
+||tiktokv.com^
 ||meizu.com^
 ||meitu.com^
 ||sogou.com^
@@ -1421,6 +1435,7 @@
 ||baidu.com^
 ||wshareit.com^
 ||irisdt.com^
+||zenmxapps.com^
 ||alibabadns.com^
 ||sohucs.com^
 ||y.qq.com^
@@ -1473,6 +1488,7 @@
 ||amdc.m.taobao.com^
 ||zhenrongbao.com^
 ||rjfun.com^
+||tiktokcdn-in.com^
 ||y5en.com^
 ||danuoyi.alicdn.com^
 ||c360dn.com^
@@ -1503,6 +1519,7 @@
 ||jd.com^
 ||heytapdownload.com^
 ||cpro.baidustatic.com^
+||zz.bdstatic.com^
 ||meiqia.com^
 ||byteoversea.com^
 ||163.com^
@@ -1529,6 +1546,7 @@
 ||snippetdata.api.swiftkey.com^
 ||telemetry.microsoft.com^
 ||fpt.microsoft.com^
+||ws.microsoft.com^
 ||ieonlinews.microsoft.com^
 ||iris.microsoft.com^
 ||metaservices.microsoft.com^
@@ -1552,20 +1570,18 @@
 ||arc.msn.com^
 ||srtb.msn.com^
 ||vortex.data.msn.com^
+||xboxlive.com^
 ||ds.ssw.live.com^
 ||nexus.officeapps.live.com^
 ||nexusrules.officeapps.live.com^
 ||consumer.entitlement.skype.com^
 
 #___Google_____________________________________________________________________
-||dns.google.com^
-||dns.google^
-||geller-pa.googleapis.com^
-||googlesyndication.com^
 ||googlezip.net^
 ||doublecklick.net^
 ||doubleclick.net^
 ||afs.googleusercontent.com^
+||*.bc.googleusercontent.com^
 ||datasaver.googleapis.com^
 ||imasdk.googleapis.com^
 ||mobilecrashreporting.googleapis.com^
@@ -1578,6 +1594,7 @@
 ||offlinepages-pa.googleapis.com^
 ||geomobileservices-pa.googleapis.com^
 ||firebaseperusertopics-pa.googleapis.com^
+||geller-pa.googleapis.com^
 ||dialercallinfolookup-pa.googleapis.com^
 ||*device*.googleapis.com^
 ||gmodules.com^
@@ -1591,8 +1608,10 @@
 ||galaxyattack-de0bd.firebaseio.com^
 ||firstisland-597a8.firebaseio.com^
 ||googlesyndication.com^
+||i2.ytimg.com^
 ||googleoptimize.com^
 ||doubleclickbygoogle.com^
+||dns.google.com^
 ||suggestqueries.google.com^
 ||fundingchoicesmessages.google.com^
 ||mail-ads.google.com^
@@ -1606,9 +1625,9 @@
 ||adservice.google.com^
 ||s.youtube.com^
 ||csi.gstatic.com^
+||dns.google^
 ||adservice*^
 ||*id.google.*^
-||*.bc.googleusercontent.com^
 
 #___JP_________________________________________________________________________
 ||static.mixi.jp^
@@ -1688,9 +1707,10 @@
 
 #___CaDo-CoBac-TinDung_________________________________________________________
 ||taiv8.net^
-||uwin71.com
+||uwin71.com^
 ||*.win^
 ||bong90.club^
+||bongdalu.com^
 
 #___VinaGau______________________________________________________________________
 ||px.za.zalo.me^
