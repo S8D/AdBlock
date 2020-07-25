@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200620a
+! Version: 20200725a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,10 +7,6 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
-voz.vn###header
-voz.vn###footer
-voz.vn##.blockMessage--none.blockMessage
-vn-z.vn##.blockMessage--none.blockMessage
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
@@ -19,7 +15,11 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 /adsense/*
 /banners/click/*
 /fingerprint2.min.js^
+/themes/Gargoyle/images/gargoyle-logo.png$image
 /tracking.ashx?
+2.2.2.1##svg
+2.2.2.11###fancyFooter
+2.2.2.11##.promo
 2bay.org###boder1
 2bay.org###boder2
 4file.net###header
@@ -28,6 +28,7 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 4file.net##footer
 4pda.ru##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
+@||ssl.p.jwpcdn.com
 a2zapk.com###galax2
 a2zapk.com##.Tags
 a2zapk.com##.WebF
@@ -41,6 +42,7 @@ a2zupload.com###alert
 a2zupload.com###content > div:nth-of-type(1)
 a2zupload.com###taxonomy-list_1-0
 a2zupload.com##.WebF
+accounts.crowdin.com##.cc-color-override-1528406573.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 adayroi.com###vinfooter
 adayroi.com##.slogan-container
 ads.zaloapp.com###msgModal
@@ -58,6 +60,7 @@ androidauthority.com##.gcap-version-5.gcap-popuptext.gcap-layout-popup.gcap-KyBe
 androidfacting.blogspot.com##[href="//zukxd6fkxqn.com/1780508.html"]
 androidfilehost.com###CybotCookiebotDialog
 androidfilehost.com##.footer
+anonyviet.com##.redirect-message > div:nth-of-type(1) > .adsadsia
 anotepad.com##.footer
 apk4free.net###like-post-wrapper-105810064-117994-5bd026017ed5a
 apk4free.net##.code-block-4.code-block
@@ -85,6 +88,7 @@ bikae.net##p:nth-of-type(6) > .adslot_1.adsbygoogle
 bikae.net##p:nth-of-type(7) > .adslot_1.adsbygoogle
 bikae.net##p:nth-of-type(8) > .adslot_1.adsbygoogle
 bikae.net##p:nth-of-type(9) > .adslot_1.adsbygoogle
+bitly.com###banner-cookie
 bkshare.com###itro_opaco
 blogginggyanbox.com##h4
 blogtietkiem.com##div.et_bloom_popup.et_bloom_optin.et_bloom_resize.et_bloom_optin_8.et_bloom_auto_popup.et_bloom_trigger_bottom.et_bloom_visible.et_bloom_animated
@@ -172,6 +176,7 @@ dienmayviet.com.vn###banner
 dienmayviet.com.vn###divAdRight
 dinhhieu.vn###floating_banner_left
 dinhhieu.vn###floating_banner_right
+discordapp.com###app-mount > div:nth-of-type(2)
 distrowatch.com##.News1 > table:nth-of-type(2)
 distrowatch.com##body > table:nth-of-type(3)
 distrowatch.com##p
@@ -264,6 +269,11 @@ elitepvpers.com###tickerwrapper
 elitepvpers.com##div.cwcontentad:nth-of-type(10)
 eyes-health.win##[href="https://sylwenys.pw/i6rlquMjowCx3Q0/12654"]
 eyes-health.win##[href="https://travelcram.com"]
+fancoiphim.net###center > div:nth-of-type(3)
+fancoiphim.net###center > div:nth-of-type(4)
+fancoiphim.net###encompass > div:nth-of-type(1)
+fancoiphim.net###encompass > div:nth-of-type(4)
+fancoiphim.net###tu_khoa_tag
 fibervnn.vn###ja-col2
 file-up.org###boxes
 file-up.org##.default-ttl
@@ -524,6 +534,7 @@ mackie100projects.altervista.org##.post-thumbnail
 mackie100projects.altervista.org##div[style="background: rgb(0, 0, 0); color: rgb(204, 204, 204); max-width: 720px; z-index: 9999999; opacity: 1; visibility: visible;"]
 mackie100projects.altervista.org##div[style="z-index: 999999; background: rgb(0, 0, 0); display: block;"]
 maclife.vn##.\39 NPE62lv
+mazii.net##app-notify
 mediafire.com###footer
 mediafire.com###header
 mediafire.com##.description
@@ -614,6 +625,7 @@ nyaa.se##.ad_b346
 nyaa.se##.ad_b347
 nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
+o.voz.vn##div.row:nth-of-type(1)
 openload.co###footer
 openwrt.org##.cookielaw-bottom.cookielaw-banner
 osdn.net###cookie-bar
@@ -724,6 +736,10 @@ softwaresblue.com###spin_download
 softwaresblue.com##.content_text
 softwaresblue.com##.footerPolicy
 softwaresblue.com##.header-top
+softwaresde.com###pixcel
+softwaresde.com###spin_download
+softwaresde.com##.content_text > p:nth-of-type(1)
+softwaresde.com##.footerPolicy
 solidfiles.com###header
 solidfiles.com##.premium-promo.box
 solidfiles.com##.social
@@ -795,6 +811,8 @@ tanoshiijapanese.com###cnfooter
 teamos-hkrg.com##.dark.floatingItem
 teamos-hkrg.com##.js-notices.notices--isMulti.notices--block.notices
 teamos-hkrg.com##.wn_description
+temp-mail.org##.hidden-xs-sm-md-lg.align-content-right.col
+temp-mail.org##.section-top-qr > .container > .row > div.hidden-xs-sm-md-lg.col:nth-of-type(1)
 thaivisa.com###blockermyModal
 thaivisa.com###ipsLayout_sidebar
 thanhnien.vn##.site-footer__info
@@ -1019,9 +1037,12 @@ vi.aliexpress.com##.opened.next-overlay-wrapper
 vienthongtayninh.vn###footer
 viesoftware.blogspot.com###Header1_headerimg
 vietfones.vn###header > table.vfs_banner.vfs_hide_on_mobile:nth-child(2) > tbody > tr:last-child
+vietnamjp.com##.entry-footer
+vietnamjp.com##.freshwp-copyrights-outer-container
 vietnamnet.vn###Box-FixFB
 vietnamnet.vn##.BoxFix
 vietnamnet.vn##.Main-Footer.p-t-20
+viettuans.vn##footer
 vipshare.co##.adsx468
 vipshare.co##.footer
 vipshare.co##.navbar-fixed-top.navbar-info.navbar
@@ -1037,10 +1058,14 @@ vmaniac.com##div:nth-of-type(2)
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
 vn-mg5.mail.yahoo.com##.viewingpane
 vn-z.vn###footer
+vn-z.vn##.blockMessage--none.blockMessage
+vn-z.vn##.js-bottomFixTarget.u-bottomFixer
+vn-z.vn##.js-notices.notices--scrolling.notices
 vn-z.vn##.p-body-inner > center:nth-of-type(1)
 vn-z.vn##.p-body-sidebar > ins.adsbygoogle:nth-of-type(1)
 vn-z.vn##.sidebar > ins.adsbygoogle:nth-of-type(1)
 vn-z.vn##center:nth-of-type(2) > .adsbygoogle
+vn-z.vn##ins.adsbygoogle
 vn-z.vn##ins.adsbygoogle:nth-of-type(2)
 vnexpress.net###wrapper_footer
 vnexpress.net##.p_header
@@ -1055,6 +1080,12 @@ vnreview.vn##.mod_web.footer
 vnz-leech.com###banner
 vnz-leech.com##div.container-full:nth-of-type(1)
 vnz-leech.com##div.container-full:nth-of-type(3)
+voz.vn###div-gpt-ad-1585282468498-0
+voz.vn###div-gpt-ad-1585374150797-0
+voz.vn###footer
+voz.vn###header
+voz.vn##.blockMessage--none.blockMessage
+voz.vn##.thread_view__bottom.adsbygoogle
 vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
@@ -1104,7 +1135,16 @@ www.cyberciti.biz##center > div:nth-of-type(2)
 www.dongphim.net##.luna.ht-footer
 www.draytek.com.tw##footer
 www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
+www.filesend.jp###footer
+www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(1)
+www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(2)
+www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(3)
+www.fshare.vn##.thumbnail-ic-fc.material-icons
+www.gargoyle-router.com###outer_logo
+www.howtogeek.com##.email-overlay
+www.howtogeek.com##.overlay-wrapper
 www.nokia.com##.nokia_cookie-wrapper
+www.nsaneforums.com###ipsLayout_footer
 www.snbforums.com###div-gpt-ad-300-inline1
 www.snbforums.com###div-gpt-ad-300-inline2
 www.snbforums.com###div-gpt-ad-300-inline3
@@ -1148,6 +1188,7 @@ www110.zippyshare.com##.smalltab
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
 yeuphimmoi.com##.balloon-block
+||2.2.2.11/img/fancyFooter.png$image
 ||2.pik.vn/20202525ec29-cc24-46c4-90fe-8f19bb2a1ff3.jpg$image
 ||2.pik.vn/2020e2bb8f26-44ca-4026-8e33-a23acb68972b.jpg$image
 ||ad.chogiare.vn^
@@ -1155,16 +1196,19 @@ yeuphimmoi.com##.balloon-block
 ||aptashant.club
 ||i.imgur.com/u6iyMx4.png$image
 ||i.imgur.com/xJSkDDD.jpg$image
+||itmogeaskli12.live^
 ||lixi88.info^
 ||media.dongphim.net/media/image/id/*200x$image
 ||media.dongphim.net/media/image/id/*640x$image
 ||pushbullet.com
 ||static.dongphim.net/images/chuot.jpeg$image
+||viettuans.vn/media/banner/*$image
 ||vipshare.co/img/*$image
 ||vuighe.tv/images/*.gif^
 ||vuighe.tv/players/ads/^
 ||www.anphatpc.com.vn/media/banner/*$image
 ||www.anphatpc.com.vn/media/lib/500x654-vanchuyen2.jpg$image
+||www.filesend.jp/img/file.png$image
 
 
 
