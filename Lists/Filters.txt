@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200725a
+! Version: 20200822a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -325,20 +325,6 @@ forum.dd-wrt.com##.cookieinfo
 forum.xda-developers.com###footer
 forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
 forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
-forums.voz.vn###div-gpt-ad-1573550402477-0
-forums.voz.vn###div-gpt-ad-1573550438941-0
-forums.voz.vn###div-gpt-ad-1573550478887-0
-forums.voz.vn###div-gpt-ad-1573896700833-0
-forums.voz.vn###div-gpt-ad-1576299739520-0
-forums.voz.vn###neo_logobar
-forums.voz.vn###post_message_156800212 > div > table > tbody > tr > .alt2 > div:nth-of-type(2) > [src="https://i.imgur.com/xJSkDDD.jpg"]
-forums.voz.vn##.footer-distributed
-forums.voz.vn##.responsible
-forums.voz.vn##body > .container > div.row:nth-of-type(1)
-forums.voz.vn##body > .container > div.row:nth-of-type(8)
-forums.voz.vn##div.row:nth-of-type(14)
-forums.voz.vn##else > form:nth-of-type(1)
-forums.voz.vn##table:nth-of-type(5)
 fpt.center###thread_info
 fptsieutoc.com###de_adblock
 fptsieutoc.com##.bgmodal
@@ -603,10 +589,6 @@ newsjizz.in###taxonomy-list_1-0
 newsjizz.in##.WebF
 newsjizz.in##body > div:nth-of-type(3)
 newsjizz.in##div.ArticleLand:nth-of-type(3)
-next.voz.vn###div-gpt-ad-1585374150797-0
-next.voz.vn###footer
-next.voz.vn##.blockMessage--none.blockMessage
-next.voz.vn##.thread_view__bottom.adsbygoogle
 nhaccuatui.com###box_playing_id > div.adsZoneMp3:first-child
 nhaccuatui.com###coverImageflashPlayer
 nhaccuatui.com###right_support_online
@@ -625,7 +607,6 @@ nyaa.se##.ad_b346
 nyaa.se##.ad_b347
 nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
-o.voz.vn##div.row:nth-of-type(1)
 openload.co###footer
 openwrt.org##.cookielaw-bottom.cookielaw-banner
 osdn.net###cookie-bar
@@ -1080,6 +1061,13 @@ vnreview.vn##.mod_web.footer
 vnz-leech.com###banner
 vnz-leech.com##div.container-full:nth-of-type(1)
 vnz-leech.com##div.container-full:nth-of-type(3)
+voz.vn##.p-body-sidebar
+voz.vn###div-gpt-ad-1594315183557-0
+voz.vn###div-gpt-ad-1594404262667-0
+voz.vn###div-gpt-ad-1594467721317-0
+voz.vn###div-gpt-ad-1594489728424-0
+voz.vn###div-gpt-ad-1594489774592-0
+voz.vn###div-gpt-ad-1594489799286-0
 voz.vn###div-gpt-ad-1585282468498-0
 voz.vn###div-gpt-ad-1585374150797-0
 voz.vn###footer
