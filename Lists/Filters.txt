@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 20200822a
+! Version: 20200902a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,41 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+chiasenhac.vn##.box_space
+chiasenhac.vn##.detail_lyric_1.mb-4.card > div:nth-of-type(1)
+chiasenhac.vn###footer
+chiasenhac.vn###list_comment_body
+chiasenhac.vn##.form-comment-0.box_form_comment
+chiasenhac.vn###post_comment
+h30434.www3.hp.com##.optanon-alert-box-wrapper
+h30434.www3.hp.com##.lia-quilt-column-icons.lia-quilt-column-single.lia-quilt-column-24.lia-quilt-column > .lia-quilt-column-alley-single.lia-quilt-column-alley
+vnexpress.net##.pin-comment.sidebar-1
+vnexpress.net##.box-category__list-news > .sidebar-2
+vnexpress.net###supper_masthead
+1fichier.com##.ui-front.ui-widget-content.ui-widget.ui-corner-all.ui-dialog
+1fichier.com###cookie_box
+||img.1fichier.com/ui/ui-bg_diagonals-thick_20_666666_40x40.png$image
+1fichier.com##.ui-front.ui-widget-overlay
+1fichier.com##.ct_warn
+1fichier.com###footer
+www.gigabyte.com###policy-div
+temp-mail.org##.topStickyBanner
+temp-mail.org##div.col-lg-12.col-md-12.col-ms-12.col-xs-12:nth-of-type(2)
+temp-mail.org##.page-footer
+temp-mail.org##.mid-intro-text
+temp-mail.org##.temp-emailbox-text
+temp-mail.org##.main-header
+temp-mail.org##.mail-form-box.main-page-content-inner > p:nth-of-type(2)
+temp-mail.org##.mail-form-box.main-page-content-inner > p:nth-of-type(1)
+voz.vn###div-gpt-ad-1585123925672-0
+voz.vn###div-gpt-ad-1585125824987-0
+voz.vn###div-gpt-ad-1585126204480-0
+animetvn.tv##.play_comment
+animetvn.tv##.home-main-right
+animetvn.tv##.footer
+animetvn.tv###menubentrai
+nhattao.com##.mainContent > .funbox.section
+nhattao.com##footer
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
