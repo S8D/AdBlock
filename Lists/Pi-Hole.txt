@@ -1,4 +1,4 @@
-#PhienBan___200917e
+#PhienBan___200917a
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -437,7 +437,6 @@ yomedia.vn
 genknews.vcmedia.vn
 adi.vcmedia.vn
 mingid.vcmedia.vn
-afamily[0-9].vcmedia.vn
 k14.vcmedia.vn
 one88.vn
 s.kenh14.vn
@@ -562,7 +561,6 @@ upsellit.com
 accountkit.com
 lijit.com
 ushareit.com
-geo[0-9].ggpht.com
 dw-online.ksosoft.com
 extads.gameloft.com
 3lift.com
@@ -1351,7 +1349,6 @@ byteoversea.net
 1plus.io
 jpush.io
 uc.cn
-幸福的路径.com
 cnzz.com
 yy.com
 v21xy.com
