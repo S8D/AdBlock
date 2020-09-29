@@ -1,5 +1,6 @@
-#PhienBan___20200710b
+#PhienBan___200929a
 #___TongHop________________________________________________________________
+jip-entry.secure.force.com
 ec4ns.ptpt52.com
 gstatic.com
 c.speedtest.net
