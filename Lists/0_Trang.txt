@@ -1,4 +1,4 @@
-#PhienBan___200929a
+#PhienBan___200929b
 #___TongHop________________________________________________________________
 jip-entry.secure.force.com
 ec4ns.ptpt52.com
@@ -108,15 +108,21 @@ us.to
 dynu.net
 
 #___Linux__________________________________________________________________
-mirrors.pair.com
-debian.proxad.net
 adfinis-sygroup.ch
-mirrors.bfsu.edu.cn
-mirrors.hust.edu.cn
-mirrors.ustc.edu.cn
+debian.proxad.net
+download.nus.edu.sg
+ftp.nara.wide.ad.jp
 mirror-hk.koddos.net
+mirrors.bfsu.edu.cn
+mirrors.cqu.edu.cn
+mirrors.huaweicloud.com
+mirrors.hust.edu.cn
 mirrors.layeronline.com
+mirrors.lzu.edu.cn
+mirrors.pair.com
 mirrors.tuna.tsinghua.edu.cn
+mirrors.ustc.edu.cn
+mirrors.zju.edu.cn
 
 #___RutGon_________________________________________________________________
 gg.gg
