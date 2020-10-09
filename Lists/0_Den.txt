@@ -17,7 +17,6 @@ idiagnostics.apple.com
 cdnasset.dantri.com.vn
 appcenter.ms
 sentry-cdn.com
-ztevents.zaloapp.com
 adsplay.xyz
 lofv.xyz
 platformbot.xyz
@@ -1625,6 +1624,8 @@ failover.zingmp3.vn
 log.zingmp3.vn
 failover.zaloapp.com
 jp.zaloapp.com
+ztevents.zaloapp.com
+centralized.zaloapp.com
 setting.api.zaloapp.com
 getpage.api.zaloapp.com
 px.za.zaloapp.com
