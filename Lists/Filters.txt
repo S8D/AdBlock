@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 201005a
+! Version: 201013a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,25 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+
+@@/js/ads.js^$domain=tmp.dropgalaxy.in
+dropgalaxy.com###modalpop
+dropgalaxy.com###UmlBRgvDIeornKmhTGblUrujz
+dropgalaxy.com###wCEaVElYlWoOjqfCmTPKnWPPh
+giaxe.2banh.vn##.js_lb_overlay.lb_overlay
+giaxe.2banh.vn##.window_popup
+opengapps.org##.mdl-mini-footer
+userstyles.org###footer
+userstyles.org##.NotificationLine
+voz.vn###js-XFUniqueId33 > .avatar-u334424-m
+voz.vn###js-XFUniqueId59 > .avatar-u334424-m
+voz.vn###js-XFUniqueId60 > .avatar-u1447805-m
+voz.vn###js-XFUniqueId63 > .avatar-u334424-m
+www.yubico.com###footer
+www.yubico.com##.cookie-pop.jsx-1211635571
+www.yubico.com##.wt-cli-cookie-bar-container
+||camo.voz.tech/ce5dba43a4681eab6ce96d59f5e7be789c611b82/68747470733a2f2f692e696d6775722e636f6d2f6e4d3130497a4c2e706e67/$image
+
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
