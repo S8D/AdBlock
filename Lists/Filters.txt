@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 201110b
+! Version: 201110c
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -12,6 +12,7 @@ voz.vn###div-gpt-ad-1585125824987-0
 voz.vn###div-gpt-ad-1585126204480-0
 voz.vn###div-gpt-ad-1585282468498-0
 voz.vn###div-gpt-ad-1585374150797-0
+voz.vn###div-gpt-ad-1594315151905-0
 voz.vn###div-gpt-ad-1594315183557-0
 voz.vn###div-gpt-ad-1594404262667-0
 voz.vn###div-gpt-ad-1594467721317-0
@@ -39,6 +40,7 @@ vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/02e4473d2f1006985b1138c75e7d8ede7fcd4609/68747470733a2f2f692e696d6775722e636f6d2f4a45576f49646c2e706e67/$image
 ||camo.voz.tech/0633a7c0516fcb287a79a5cd569f7b613df2ddeb/68747470733a2f2f692e696d6775722e636f6d2f3575624761576d2e706e67/$image
+||camo.voz.tech/08212b079fee6fbfbae87a120537ae01f21bb88a/68747470733a2f2f692e696d6775722e636f6d2f4d6a66657a5a422e706e67/$image
 ||camo.voz.tech/12520834d738b2f16529d96b1089e8c6c48adcdc/68747470733a2f2f692e696d6775722e636f6d2f76686d513172512e706e67/$image
 ||camo.voz.tech/144048dba7eb7fa18e30ff67664d24598914df40/68747470733a2f2f692e696d6775722e636f6d2f786a497a5347392e706e67/$image
 ||camo.voz.tech/170a10d4c3d7d9649c888a880014226afb48fe1b/68747470733a2f2f692e696d6775722e636f6d2f766e336c4545652e676966/$image
@@ -46,6 +48,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/18c50c7652fa97b8f35602b6a8337c1e59881ffc/68747470733a2f2f692e696d6775722e636f6d2f34676d4f414d422e706e67/$image
 ||camo.voz.tech/1d362630d34ef23de3742c49e7cd3f2612f45875/68747470733a2f2f692e696d6775722e636f6d2f6a616e4465784d2e6a7067/$image
 ||camo.voz.tech/1df617e595877fa823dc5d1b27f7cf9fc48499dd/68747470733a2f2f692e696d6775722e636f6d2f55526f6970724f2e706e67/$image
+||camo.voz.tech/1f1f8338ae4813669e071a09d037e5936699dab5/68747470733a2f2f692e696d6775722e636f6d2f576632395268672e706e67/$image
 ||camo.voz.tech/23df58c618ee86e727b337f05628cd14c2908ef3/687474703a2f2f692e696d6775722e636f6d2f75586e716750422e676966/$image
 ||camo.voz.tech/243931500269699ffa1ecad0c998009590c0bd30/687474703a2f2f692e696d6775722e636f6d2f4d4531744a42302e676966/$image
 ||camo.voz.tech/2f61db5c10ffe0d507e1abfdbd488559444cd5d3/68747470733a2f2f692e696d6775722e636f6d2f75586e716750422e706e67/$image
@@ -55,7 +58,6 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/4049443780d24256e19e210cbc51607908d5433d/68747470733a2f2f692e696d6775722e636f6d2f5a36366f5572352e676966/$image
 ||camo.voz.tech/411f22088ab13a5945994f432d44c7a530ef7a4f/68747470733a2f2f692e696d6775722e636f6d2f794242657773742e706e67/$image
 ||camo.voz.tech/458ad61c05591da8a12dc498ff14309e1ff94446/68747470733a2f2f692e696d6775722e636f6d2f703253305931542e706e67/$image
-||camo.voz.tech/47e7a146b97d0c6cccfe71f25b2277c0ce86b002/68747470733a2f2f692e696d6775722e636f6d2f367152514b31692e706e67/$image
 ||camo.voz.tech/47e7a146b97d0c6cccfe71f25b2277c0ce86b002/68747470733a2f2f692e696d6775722e636f6d2f367152514b31692e706e67/$image
 ||camo.voz.tech/498bf5b07fba6d6aad1716d532e80d4aefebe71f/68747470733a2f2f692e696d6775722e636f6d2f465937653655312e706e67/$image
 ||camo.voz.tech/4a0c1fd92cf3d0193f583c7f03264407c251dfb7/68747470733a2f2f692e696d6775722e636f6d2f466673715252562e706e67/$image
@@ -70,15 +72,18 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/54e0526393a2eed7a48b953227a6bc5632c1b4a0/68747470733a2f2f692e696d6775722e636f6d2f344d49797979712e676966/$image
 ||camo.voz.tech/56b83ad771b5931c10e8505f243055adc3a1de25/687474703a2f2f692e696d6775722e636f6d2f554b6943694b682e676966/$image
 ||camo.voz.tech/5befa309654a375afe9482c2334336cc526616bf/68747470733a2f2f692e696d6775722e636f6d2f30464650416a4d2e706e67/$image
+||camo.voz.tech/6100a819c572aa224bf0d9eb86ae85d460540b96/68747470733a2f2f692e696d6775722e636f6d2f643167774b61772e706e67/$image
 ||camo.voz.tech/613b034f680df8d211257e5d3708cd44b59a74f0/68747470733a2f2f692e696d6775722e636f6d2f426c59753243722e706e67/$image
 ||camo.voz.tech/623a11013952fc1fd52ab30f224f59d49cf30cb2/68747470733a2f2f692e696d6775722e636f6d2f5276396362767a2e706e67/$image
 ||camo.voz.tech/62dcabb6dfc0468ede7d69debb578693b1341f57/68747470733a2f2f692e696d6775722e636f6d2f75713164676e6b2e706e67/$image
 ||camo.voz.tech/64087bbc0264e00b031cbfbf80d8c4de4e2ce6dc/68747470733a2f2f692e696d6775722e636f6d2f3177693636466a2e676966/$image
 ||camo.voz.tech/66a8c2222e40eefb365223e309ada9db4f9d0285/68747470733a2f2f692e696d6775722e636f6d2f4b41556467486f2e706e67/$image
+||camo.voz.tech/689bdb3df137a9a37e303f375c52268307f6ae3c/68747470733a2f2f692e696d6775722e636f6d2f6842386e6d78352e706e67/$image
 ||camo.voz.tech/6959944e8d2043ead662fbc8ff5ef5e00a538427/68747470733a2f2f692e696d6775722e636f6d2f394e4e355355792e706e67/$image
 ||camo.voz.tech/6970ceb54f557bc533fca6b452dee4f7d8904c9d/68747470733a2f2f692e696d6775722e636f6d2f7435496364425a2e706e67/$image
 ||camo.voz.tech/70a9709f582d2691ebb35ef9e0ceda66b0db0744/68747470733a2f2f692e696d6775722e636f6d2f7a75516a3851322e676966/$image
 ||camo.voz.tech/7a0e4c043aa036d5f65b37b5f6e3c12849a7bb25/68747470733a2f2f692e696d6775722e636f6d2f4a476471677a592e706e67/$image
+||camo.voz.tech/7fa6d946803abfc45ad43bf8b169f03ffb480133/68747470733a2f2f692e696d6775722e636f6d2f624762703461502e676966/$image
 ||camo.voz.tech/85276b6cdb3390059dafa6554ede31e5a6cd29e7/68747470733a2f2f692e696d6775722e636f6d2f636447766667672e706e67/$image
 ||camo.voz.tech/86eaea3d6e90ab7e61e1d38c0a7fa19e6109b4e4/68747470733a2f2f692e696d6775722e636f6d2f6f7343704373692e706e67/$image
 ||camo.voz.tech/87b88d5d1ae32a611926f058f841dc1e57037721/68747470733a2f2f692e696d6775722e636f6d2f6a6d4542436b792e676966/$image
@@ -90,6 +95,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/9206158e5dcf4ac84cb1e2f5bcb8108f24c33444/68747470733a2f2f692e696d6775722e636f6d2f4737794c6f58712e706e67/$image
 ||camo.voz.tech/95bfd04bd60985cb130933bcc7f9a27237e91999/68747470733a2f2f692e696d6775722e636f6d2f4731757a3948432e706e67/$image
 ||camo.voz.tech/9adfed38de9a6c5d578a5b774a3cb39dc47a25c4/68747470733a2f2f692e696d6775722e636f6d2f33716555666e512e706e67/$image
+||camo.voz.tech/a0ca0324c9e38043482c16b9569a3a2b6ef6d67e/68747470733a2f2f692e696d6775722e636f6d2f5630393253354b2e676966/$image
 ||camo.voz.tech/a149fdb97e580980375c82c242daa39b703bab5c/68747470733a2f2f692e696d6775722e636f6d2f34524a4433674f2e706e67/$image
 ||camo.voz.tech/a44b518d6e1fa6ac572f5bce45076c9aa2847a16/68747470733a2f2f692e696d6775722e636f6d2f37506c4b694f342e706e67/$image
 ||camo.voz.tech/a49bceb06eea30466aad9bbdacbae039d06928b0/68747470733a2f2f692e696d6775722e636f6d2f715a563231355a2e706e67/$image
@@ -104,9 +110,9 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/cc60cd8e8363914a94481d488266aa961aded82e/68747470733a2f2f692e696d6775722e636f6d2f384c73497368582e706e67/$image
 ||camo.voz.tech/ce5dba43a4681eab6ce96d59f5e7be789c611b82/68747470733a2f2f692e696d6775722e636f6d2f6e4d3130497a4c2e706e67/$image
 ||camo.voz.tech/d03627cf6751e5d0040d1a364549408079fe6d1b/68747470733a2f2f692e696d6775722e636f6d2f4759413378354a2e676966/$image
-||camo.voz.tech/d03627cf6751e5d0040d1a364549408079fe6d1b/68747470733a2f2f692e696d6775722e636f6d2f4759413378354a2e676966/$image
 ||camo.voz.tech/d1a965124ab170b7762bc3160763792378dc0cb3/687474703a2f2f692e696d6775722e636f6d2f34676d4f414d422e676966/$image
 ||camo.voz.tech/d2e62fb335673fd5a39de8f19804aa2f0ce690e2/68747470733a2f2f692e696d6775722e636f6d2f516367306f71772e6a7067/$image
+||camo.voz.tech/d322ea0c76f1b6a13b7f9ffc3550e3361ddb9214/68747470733a2f2f692e696d6775722e636f6d2f68316b52754d632e6a7067/$image
 ||camo.voz.tech/d73cdb7927f969fdb595021575298f24217a4c0b/68747470733a2f2f692e696d6775722e636f6d2f587630427454522e706e67/$image
 ||camo.voz.tech/e253ade5b8289b8ee5dfaa7e98998e79a556b3d4/68747470733a2f2f692e696d6775722e636f6d2f6b493461396c482e6a7067/$image
 ||camo.voz.tech/e4283810a4abb26a4491b1bac39564e8e79b5e59/68747470733a2f2f692e696d6775722e636f6d2f767245534753592e706e67/$image
@@ -124,11 +130,14 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/fe1c7bad127b6c067ca6125e685b2555e3c090aa/68747470733a2f2f692e696d6775722e636f6d2f6a5849527754642e706e67/$image
 ||camo.voz.tech/fea4494acc721f8c64b3241d5de572f2b71b7066/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
 ||secure.gravatar.com/avatar/4f3ab752025ef146ecd2f2cb911e5161?s=*$image
+||voz.vn/attachments/*.190397/$image
+||voz.vn/attachments/*.218479/$image
+||voz.vn/attachments/*.218481/$image
+||voz.vn/attachments/*.218489/$image
 ||voz.vn/attachments/*.244943/$image
+||voz.vn/attachments/*.245465/$image
 ||voz.vn/attachments/*.253854/$image
 ||voz.vn/attachments/*.259405/$image
-||voz.vn/attachments/*.190397/$image
-||voz.vn/attachments/8-ybbewst-png.245465/$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
 ||voz.vn/data/avatars/*.jpg?1583916304$image
 ||voz.vn/data/avatars/*.jpg?1583939566$image
@@ -140,6 +149,8 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1584944652$image
 ||voz.vn/data/avatars/*.jpg?1585120395$image
 ||voz.vn/data/avatars/*.jpg?1585666647$image
+||voz.vn/data/avatars/*.jpg?1587238032$image
+||voz.vn/data/avatars/*.jpg?1593083961$image
 ||voz.vn/data/avatars/*.jpg?1593439309$image
 ||voz.vn/data/avatars/*.jpg?1594500240$image
 ||voz.vn/data/avatars/*.jpg?1594512745$image
@@ -147,21 +158,20 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1598096039$image
 ||voz.vn/data/avatars/*.jpg?1599925958$image
 ||voz.vn/data/avatars/*.jpg?1600612535$image
+||voz.vn/data/avatars/*.jpg?1601120425$image
 ||voz.vn/data/avatars/*.jpg?1601375238$image
+||voz.vn/data/avatars/*.jpg?1602507930$image
 ||voz.vn/data/avatars/*.jpg?1602678332$image
 ||voz.vn/data/avatars/*.jpg?1603190823$image
+||voz.vn/data/avatars/*.jpg?1603250889$image
+||voz.vn/data/avatars/*.jpg?1603254072$image
 ||voz.vn/data/avatars/*.jpg?1603263097$image
 ||voz.vn/data/avatars/*.jpg?1603344032$image
 ||voz.vn/data/avatars/*.jpg?1603381714$image
-||voz.vn/data/avatars/*.jpg?1604257541$image
-||voz.vn/data/avatars/*.jpg?1603250889$image
-||voz.vn/data/avatars/*.jpg?1601120425$image
-||voz.vn/data/avatars/*.jpg?1593083961$image
 ||voz.vn/data/avatars/*.jpg?1603694246$image
-
+||voz.vn/data/avatars/*.jpg?1604257541$image
 
 !___Tổng-Hợp_______________________________________
-
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
@@ -652,6 +662,12 @@ intoupload.net##footer
 ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
 ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
 ios.codevn.net##footer:nth-child(18)
+iosddl.net##.cc-color-override-688238583.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
+iosddl.net##.cc-message
+iosddl.net##.cc_container--open.cc_container.cc_banner
+iosddl.net##.cc_message
+iosgods.com##.ipsJS_hide.ipsPad_half
+iosgods.com##.ipsLayout_container > .ipsGrid_collapsePhone.ipsGrid
 iphonecake.com##div.container:nth-child(2) > div.ui-app-detail:nth-child(2) > div.row > div.col-md-9.right-side:last-child > div.ui-grid-right > a.ui-download:nth-child(3)
 ipsw.me##.alert-info.alert.col-md-12
 ipsw.me##.cc_container--open.cc_container.cc_banner
@@ -869,6 +885,7 @@ pan.baidu.com##.module-canvas
 phanmemtop.net###colophon
 phanmemtop.net###masthead
 phanmemtop.net##.entry-footer
+phanquocthai.wordpress.com##.widget_eu_cookie_law_widget.widget
 phimxxx.tv###sidebar
 phongvu.vn###popupBannerSlider
 phucanh.vn###backgroundPopup
@@ -960,6 +977,7 @@ sinhvienit.net##.link_box
 sinhvienit.net##.threadinfohead
 sitecuatui.com###sidebar
 smallnetbuilder.com###cadre_alert_cookies
+smartfactoryvn.com##.et_bloom_animated.et_bloom_visible.et_bloom_auto_close.et_bloom_scroll.et_bloom_trigger_idle.et_bloom_auto_popup.et_bloom_optin_1.et_bloom_resize.et_bloom_optin.et_bloom_popup
 snapcraft.io##.cookie-policy
 softwaresblue.com###spin_download
 softwaresblue.com##.content_text
@@ -1317,6 +1335,7 @@ viettelpost.com.vn##.fusion-page-title-bar-left.fusion-page-title-bar-none.fusio
 viettelpost.com.vn##.site-pre-footer
 viettuans.vn###vnp_chat
 viettuans.vn###vnp_eyechat
+viettuans.vn###vnp_phone
 viettuans.vn##div#vnp_phone:nth-of-type(8)
 viettuans.vn##div#vnp_phone:nth-of-type(9)
 viettuans.vn##div.zopim:nth-of-type(1)
@@ -1432,9 +1451,12 @@ www.filesend.jp###footer
 www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(1)
 www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(2)
 www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(3)
+www.forum.vnpro.org##.msgbox
 www.fshare.vn##.thumbnail-ic-fc.material-icons
 www.gargoyle-router.com###outer_logo
 www.gigabyte.com###policy-div
+www.hanoicomputer.vn##.pb-3.pr-3.pt-3.pl-3.flex-row.d-flex
+www.hanoicomputer.vn##.widget-preview--action-text
 www.hdvietnam.com##.hdvn_head
 www.hdvietnam.com##.sidebar
 www.howtogeek.com##.email-overlay
@@ -1450,6 +1472,8 @@ www.nokia.com##.bg-nokia-blue.nokia-cookies-wrapper
 www.nokia.com##.nokia_cookie-wrapper
 www.nsaneforums.com###ipsLayout_footer
 www.raspberrypi.org##.c-cookie-banner
+www.raspberrypi.org##.c-cookie-banner__container
+www.raspberrypi.org##.c-cookie-banner__content
 www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._3Ig_EsWWVLquWs2yBBQjec._1DK52RbaamLOWw5UPaht_S
 www.rfi.fr##.m-interstitial__ad
 www.sendo.vn##.panelContent_3c89
@@ -1540,7 +1564,6 @@ yeuphimmoi.com##.balloon-block
 ||www.filesend.jp/img/file.png$image
 ||www.hdvietnam.com/data/avatars/m/230/230984.jpg?1588409526$image
 ||www.hdvietnam.com/data/avatars/s/230/230984.jpg?1588409526$image
-
 
 
 !#########################################################################################################
