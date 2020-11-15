@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 201115a
+! Version: 201115b
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -1265,17 +1265,48 @@ uploadproper.com##div.ads_small:nth-of-type(3)
 uploadproper.com##div.ads_small:nth-of-type(4)
 uploadproper.com##footer
 uploadproper.com##input:nth-of-type(7)
+douploads.net###gdpr-cookie-notice
+douploads.net###news_last
+douploads.net##.btn-danger.btn-lg.btn-block.btn
+douploads.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
+douploads.net##.footer
+douploads.net##.mb-5.text-primary
+douploads.net##.mt-5.col-md-8
+douploads.net##.py-3.col-md-12
+douploads.net##.text-primary
+douploads.net##center
+dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
+dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+dropgalaxy.com##.footer
+dropgalaxy.com##.mb-3.alert-danger.alert
+dropgalaxy.com##.modalpop
+dropgalaxy.com##.mt-5.col-md-8
+dropgalaxy.com##.text-primary
+rapidgator.net##.descr
+rapidgator.net##.footer
+rapidgator.net##.header
+uploaded.net###foot
+uploaded.net###head
+uploaded.net###headmenu
+uploaded.net##.aB.feature
+uploaded.net##.aT > .aT
+uploaded.net##tr.feature
 uploadrar.com###footer2
 uploadrar.com###gdpr-cookie-notice
 uploadrar.com###lastnews
+uploadrar.com###news_last
 uploadrar.com##.banner2
 uploadrar.com##.banner3
 uploadrar.com##.blockpage > .title
+uploadrar.com##.btn-lg.btn-success.btn
 uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
+uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 uploadrar.com##.desc
+uploadrar.com##.fileoption > ul
+uploadrar.com##.icofont-zipped
 uploadrar.com##.menufooter
 uploadrar.com##.sharefile > ul
-uploadrar.com##div.download0page:nth-of-type(1)
+uploadrar.com##.txt
 uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##footer
 uploadrar.com##header
