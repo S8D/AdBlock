@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 201115b
+! Version: 201129a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -38,32 +38,65 @@ vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
+||camo.voz.tech/00f119c87f5e0f84a43ffc0207070a1ddabc089c/68747470733a2f2f692e696d6775722e636f6d2f337a78655841522e676966/$image
 ||camo.voz.tech/02e4473d2f1006985b1138c75e7d8ede7fcd4609/68747470733a2f2f692e696d6775722e636f6d2f4a45576f49646c2e706e67/$image
+||camo.voz.tech/0370ac243ed45852ae427b80567482ee69842de6/68747470733a2f2f692e696d6775722e636f6d2f79417561386f642e706e67/$image
 ||camo.voz.tech/0633a7c0516fcb287a79a5cd569f7b613df2ddeb/68747470733a2f2f692e696d6775722e636f6d2f3575624761576d2e706e67/$image
+||camo.voz.tech/074ea033808524dba934a50631febc86b4d6bfc1/68747470733a2f2f692e696d6775722e636f6d2f5a445937774b672e706e67/$image
 ||camo.voz.tech/08212b079fee6fbfbae87a120537ae01f21bb88a/68747470733a2f2f692e696d6775722e636f6d2f4d6a66657a5a422e706e67/$image
+||camo.voz.tech/086fceda960e5622af12f551a7fd48f740ba462a/68747470733a2f2f692e696d6775722e636f6d2f614d3978484f792e706e67/$image
+||camo.voz.tech/08aac5d987f1de292de1643c6e863c1d850cb884/68747470733a2f2f692e696d6775722e636f6d2f73686a634536782e706e67/$image
 ||camo.voz.tech/0c07460a4f51d3f302f5181bef68c07e59c6eee2/68747470733a2f2f692e696d6775722e636f6d2f755739384254462e6a7067/$image
 ||camo.voz.tech/0d5653036937a6f2a86fc5757c55ef9617238ae1/68747470733a2f2f692e696d6775722e636f6d2f345547536154702e706e67/$image
+||camo.voz.tech/0e069cea79ee7b32afbb9350cdbb96aab566e969/68747470733a2f2f692e696d6775722e636f6d2f79625a6142675a2e676966/$image
+||camo.voz.tech/103632150672013f11d17e559a6e35a12cb834cb/68747470733a2f2f692e696d6775722e636f6d2f42613838566b322e676966/$image
+||camo.voz.tech/11d9992138f9c57ad8365c6222de89e2fa8de034/68747470733a2f2f692e696d6775722e636f6d2f71436a4249574e2e676966/$image
 ||camo.voz.tech/12520834d738b2f16529d96b1089e8c6c48adcdc/68747470733a2f2f692e696d6775722e636f6d2f76686d513172512e706e67/$image
 ||camo.voz.tech/144048dba7eb7fa18e30ff67664d24598914df40/68747470733a2f2f692e696d6775722e636f6d2f786a497a5347392e706e67/$image
+||camo.voz.tech/152830c8d1cc5f31ed7db3cddd80401553b734b5/68747470733a2f2f692e696d6775722e636f6d2f317845756f30322e676966/$image
 ||camo.voz.tech/170a10d4c3d7d9649c888a880014226afb48fe1b/68747470733a2f2f692e696d6775722e636f6d2f766e336c4545652e676966/$image
+||camo.voz.tech/172d5b97ab2ea92b5ec26dca0ec290cfd5e94e23/68747470733a2f2f692e696d6775722e636f6d2f7a4f4c3332714f2e6a7067/$image
+||camo.voz.tech/1733e383b11cc87cfc865903beb8cc2525ba67ce/68747470733a2f2f692e696d6775722e636f6d2f677954503144502e676966/$image
+||camo.voz.tech/17e2c034fc851b01b57cb549083db54966d325bc/68747470733a2f2f692e696d6775722e636f6d2f374a706c4247592e706e67/$image
 ||camo.voz.tech/18b3c409a423fa9ecfbe905d2cb49c641ffb99cc/68747470733a2f2f692e696d6775722e636f6d2f7a464e755a54412e706e67/$image
 ||camo.voz.tech/18c50c7652fa97b8f35602b6a8337c1e59881ffc/68747470733a2f2f692e696d6775722e636f6d2f34676d4f414d422e706e67/$image
+||camo.voz.tech/18f03bf0987058625ea8d25d88d2473be0896b6d/68747470733a2f2f692e696d6775722e636f6d2f344f45504d73562e676966/$image
 ||camo.voz.tech/1d362630d34ef23de3742c49e7cd3f2612f45875/68747470733a2f2f692e696d6775722e636f6d2f6a616e4465784d2e6a7067/$image
 ||camo.voz.tech/1df617e595877fa823dc5d1b27f7cf9fc48499dd/68747470733a2f2f692e696d6775722e636f6d2f55526f6970724f2e706e67/$image
 ||camo.voz.tech/1f1f8338ae4813669e071a09d037e5936699dab5/68747470733a2f2f692e696d6775722e636f6d2f576632395268672e706e67/$image
+||camo.voz.tech/20d19f846e1f7e2970fadabd28ee86bfa5c8051b/68747470733a2f2f692e696d6775722e636f6d2f454232525555362e676966/$image
+||camo.voz.tech/2379bed87fbd3ebc094ad3de9539220fc139fc1b/68747470733a2f2f692e696d6775722e636f6d2f43654267586c732e706e67/$image
 ||camo.voz.tech/23df58c618ee86e727b337f05628cd14c2908ef3/687474703a2f2f692e696d6775722e636f6d2f75586e716750422e676966/$image
 ||camo.voz.tech/243931500269699ffa1ecad0c998009590c0bd30/687474703a2f2f692e696d6775722e636f6d2f4d4531744a42302e676966/$image
+||camo.voz.tech/243ebe0017c8d8715ba9d71e88dbbb4d9a6c95fe/68747470733a2f2f692e696d6775722e636f6d2f3244344a73446c2e706e67/$image
+||camo.voz.tech/27c16596842fdc0719cc31892cf33c6bce5c0c45/68747470733a2f2f692e696d6775722e636f6d2f4d4d474863786b2e676966/$image
+||camo.voz.tech/28bec94dfe1a476925e29656e2d094dd1f08903f/68747470733a2f2f692e696d6775722e636f6d2f47756332354f472e676966/$image
+||camo.voz.tech/2910d759e844bfc0e2b0d81c44ed432c21f6839e/68747470733a2f2f692e696d6775722e636f6d2f3370345546304a2e676966/$image
+||camo.voz.tech/2e66b7692b6c5c7c3e46abce370189b01d33c2b9/68747470733a2f2f692e696d6775722e636f6d2f6e50496e756b722e706e67/$image
+||camo.voz.tech/2ee5e3be31dddebdafa7dcb543a007fc351bb517/68747470733a2f2f692e696d6775722e636f6d2f674b6e395930792e706e67/$image
 ||camo.voz.tech/2f61db5c10ffe0d507e1abfdbd488559444cd5d3/68747470733a2f2f692e696d6775722e636f6d2f75586e716750422e706e67/$image
+||camo.voz.tech/313cc90c3530f80ae22cf0276382c78c58ad52c8/68747470733a2f2f692e696d6775722e636f6d2f693738433273392e676966/$image
 ||camo.voz.tech/31b2009d630607a16f4b7ded416b48d70bb7c219/68747470733a2f2f692e696d6775722e636f6d2f63564c383148322e676966/$image
+||camo.voz.tech/33996c5dbcb369978ee4366f23baec3213a15ba7/68747470733a2f2f692e696d6775722e636f6d2f53694a5a6d50482e706e67/$image
 ||camo.voz.tech/3537e1b5f8be46afe7e79aded1b382640ba2dfad/68747470733a2f2f692e696d6775722e636f6d2f485234573644552e706e67/$image
+||camo.voz.tech/35483a2d9b473d9eeb142db422e158b352486985/68747470733a2f2f692e696d6775722e636f6d2f794157356433732e676966/$image
+||camo.voz.tech/3796518943c9a035fdf42c607662e92427ae181d/68747470733a2f2f692e696d6775722e636f6d2f7a59654e614c642e706e67/$image
 ||camo.voz.tech/3ba67b3b9ce1e8f609f5776eef10e66539e8252b/68747470733a2f2f692e696d6775722e636f6d2f676858704a72492e706e67/$image
+||camo.voz.tech/3bd4180e96b6bc1dee7b728c0db08311f953454d/68747470733a2f2f692e696d6775722e636f6d2f567664464d55432e676966/$image
 ||camo.voz.tech/4049443780d24256e19e210cbc51607908d5433d/68747470733a2f2f692e696d6775722e636f6d2f5a36366f5572352e676966/$image
+||camo.voz.tech/40e49d855b41db43cf41484c6ac6a3ed49e60493/68747470733a2f2f692e696d6775722e636f6d2f6c6875566c636d2e706e67/$image
 ||camo.voz.tech/411f22088ab13a5945994f432d44c7a530ef7a4f/68747470733a2f2f692e696d6775722e636f6d2f794242657773742e706e67/$image
+||camo.voz.tech/4123922a35acaf8179781d436d9c676e36e621ef/68747470733a2f2f692e696d6775722e636f6d2f7745716c626f422e706e67/$image
+||camo.voz.tech/4320cb37a449b008a680a7c079aff106b215220a/687474703a2f2f692e696d6775722e636f6d2f6767756d65556c2e676966/$image
 ||camo.voz.tech/444003532cc3bcc654502343c12779011d7b5efa/68747470733a2f2f692e696d6775722e636f6d2f615765536c77302e676966/$image
 ||camo.voz.tech/458ad61c05591da8a12dc498ff14309e1ff94446/68747470733a2f2f692e696d6775722e636f6d2f703253305931542e706e67/$image
+||camo.voz.tech/45cc467b0c2bf791a1381f7d3d1039c10aa1e174/68747470733a2f2f692e696d6775722e636f6d2f616458636968782e706e67/$image
+||camo.voz.tech/465987436bfe4dcd49c5fdce7b98e41251f34a20/68747470733a2f2f692e696d6775722e636f6d2f53446850684d502e676966/$image
 ||camo.voz.tech/47e7a146b97d0c6cccfe71f25b2277c0ce86b002/68747470733a2f2f692e696d6775722e636f6d2f367152514b31692e706e67/$image
 ||camo.voz.tech/498bf5b07fba6d6aad1716d532e80d4aefebe71f/68747470733a2f2f692e696d6775722e636f6d2f465937653655312e706e67/$image
 ||camo.voz.tech/4a0c1fd92cf3d0193f583c7f03264407c251dfb7/68747470733a2f2f692e696d6775722e636f6d2f466673715252562e706e67/$image
+||camo.voz.tech/4bea61f8a40b6f6621ed38fe6aac79c455919dab/68747470733a2f2f692e696d6775722e636f6d2f4a434674704a6f2e706e67/$image
+||camo.voz.tech/4c6180fa4ac98137ea915c10c384e8b9cf7e130e/68747470733a2f2f692e696d6775722e636f6d2f4536626c7a49682e676966/$image
 ||camo.voz.tech/4cedc39b76ee5624f37457ed27eb4e2e3c504af7/68747470733a2f2f692e696d6775722e636f6d2f664a516e69784c2e676966/$image
 ||camo.voz.tech/4d335eaa3abb95ad077794d03fdd6bdd6e6f8604/68747470733a2f2f692e696d6775722e636f6d2f467150534650662e676966/$image
 ||camo.voz.tech/508dbe9732ba3e0f4bb9e745014d2585ea8f20f3/68747470733a2f2f692e696d6775722e636f6d2f753430777341682e706e67/$image
@@ -73,64 +106,113 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/534cdb4bb3a82571a62d4a526dc3b20171845b8e/68747470733a2f2f692e696d6775722e636f6d2f577a35317a75442e706e67/$image
 ||camo.voz.tech/54ae1ef979cfe743ff157e791887243c970bbf7d/68747470733a2f2f692e696d6775722e636f6d2f744676765768792e6a7067/$image
 ||camo.voz.tech/54e0526393a2eed7a48b953227a6bc5632c1b4a0/68747470733a2f2f692e696d6775722e636f6d2f344d49797979712e676966/$image
+||camo.voz.tech/56400f72d069e205769a466a0f611a4b524d4fa6/68747470733a2f2f692e696d6775722e636f6d2f756d4f387063592e706e67/$image
 ||camo.voz.tech/56b83ad771b5931c10e8505f243055adc3a1de25/687474703a2f2f692e696d6775722e636f6d2f554b6943694b682e676966/$image
 ||camo.voz.tech/5befa309654a375afe9482c2334336cc526616bf/68747470733a2f2f692e696d6775722e636f6d2f30464650416a4d2e706e67/$image
+||camo.voz.tech/5c1501e77aa5ee7ccd89b371a571ca93f55fddc7/68747470733a2f2f692e696d6775722e636f6d2f6f574e537849672e706e67/$image
+||camo.voz.tech/5e2ff8e94c0d02378da29d6fc091355a5216bef8/68747470733a2f2f692e696d6775722e636f6d2f777279764453482e706e67/$image
 ||camo.voz.tech/6100a819c572aa224bf0d9eb86ae85d460540b96/68747470733a2f2f692e696d6775722e636f6d2f643167774b61772e706e67/$image
 ||camo.voz.tech/613b034f680df8d211257e5d3708cd44b59a74f0/68747470733a2f2f692e696d6775722e636f6d2f426c59753243722e706e67/$image
 ||camo.voz.tech/623a11013952fc1fd52ab30f224f59d49cf30cb2/68747470733a2f2f692e696d6775722e636f6d2f5276396362767a2e706e67/$image
+||camo.voz.tech/6251b68f375df9c075594f242037ef8838e76563/68747470733a2f2f692e696d6775722e636f6d2f706141326f38592e706e67/$image
 ||camo.voz.tech/62dcabb6dfc0468ede7d69debb578693b1341f57/68747470733a2f2f692e696d6775722e636f6d2f75713164676e6b2e706e67/$image
 ||camo.voz.tech/64087bbc0264e00b031cbfbf80d8c4de4e2ce6dc/68747470733a2f2f692e696d6775722e636f6d2f3177693636466a2e676966/$image
+||camo.voz.tech/65023026a88c77b306db65e3849a9db1ca220702/68747470733a2f2f692e696d6775722e636f6d2f374a4f34526b4a2e706e67/$image
 ||camo.voz.tech/66a8c2222e40eefb365223e309ada9db4f9d0285/68747470733a2f2f692e696d6775722e636f6d2f4b41556467486f2e706e67/$image
+||camo.voz.tech/6742aaebc162dc1ba49aaddb9741eb5ef20dc836/68747470733a2f2f692e696d6775722e636f6d2f366634595870512e676966/$image
 ||camo.voz.tech/689bdb3df137a9a37e303f375c52268307f6ae3c/68747470733a2f2f692e696d6775722e636f6d2f6842386e6d78352e706e67/$image
+||camo.voz.tech/692fa40955e10147b7659746155e19bb790b73e3/68747470733a2f2f692e696d6775722e636f6d2f7a535149334e662e706e67/$image
 ||camo.voz.tech/6959944e8d2043ead662fbc8ff5ef5e00a538427/68747470733a2f2f692e696d6775722e636f6d2f394e4e355355792e706e67/$image
 ||camo.voz.tech/6970ceb54f557bc533fca6b452dee4f7d8904c9d/68747470733a2f2f692e696d6775722e636f6d2f7435496364425a2e706e67/$image
+||camo.voz.tech/6c0cc2b12051cf85b9a4ee8c4ff8dd4f3c7ed3ad/68747470733a2f2f692e696d6775722e636f6d2f5447613445724c2e706e67/$image
 ||camo.voz.tech/6dda54bfae428333f2388ecc93f3c26913178db8/68747470733a2f2f692e696d6775722e636f6d2f46524e6f61306f2e676966/$image
 ||camo.voz.tech/70a9709f582d2691ebb35ef9e0ceda66b0db0744/68747470733a2f2f692e696d6775722e636f6d2f7a75516a3851322e676966/$image
+||camo.voz.tech/70dbc617206bddd7c6b3c190193b875649ca9e30/68747470733a2f2f692e696d6775722e636f6d2f727a436a7854682e6a7067/$image
+||camo.voz.tech/713275f3e5d16081023daea5d957fa9c55c4e262/687474703a2f2f692e696d6775722e636f6d2f78434f396368642e676966/$image
+||camo.voz.tech/74766ce6c14a7e126185a7366694858ae9b729e8/68747470733a2f2f692e696d6775722e636f6d2f50613343396b452e706e67/$image
+||camo.voz.tech/74777d4b460c9c3f1d64fb4d4eaf44b3f75566da/68747470733a2f2f692e696d6775722e636f6d2f363274555a49652e676966/$image
 ||camo.voz.tech/7a0e4c043aa036d5f65b37b5f6e3c12849a7bb25/68747470733a2f2f692e696d6775722e636f6d2f4a476471677a592e706e67/$image
+||camo.voz.tech/7b3f21298f12680e31343d31fd721e37137e66d4/68747470733a2f2f692e696d6775722e636f6d2f4a4371383862632e706e67/$image
+||camo.voz.tech/7cbd70fc16df9eed6178189b54d8e0fe66bda8da/68747470733a2f2f692e696d6775722e636f6d2f573671344964512e706e67/$image
+||camo.voz.tech/7d1fc53ff54d0eb0cea3a904566aeb1aac17fc64/68747470733a2f2f692e696d6775722e636f6d2f524b70377a576e2e706e67/$image
+||camo.voz.tech/7e5f27e5a998124e8ac69245fc346d31f06d4be4/68747470733a2f2f692e696d6775722e636f6d2f51774a305630562e706e67/$image
 ||camo.voz.tech/7fa6d946803abfc45ad43bf8b169f03ffb480133/68747470733a2f2f692e696d6775722e636f6d2f624762703461502e676966/$image
+||camo.voz.tech/82144372e9637c6f6f0b607116aafcc3bf74559f/68747470733a2f2f692e696d6775722e636f6d2f677654776e56382e676966/$image
+||camo.voz.tech/829f1054afa2f4b39bd1813e3624762b424f6357/68747470733a2f2f692e696d6775722e636f6d2f49504d4d3363442e676966/$image
+||camo.voz.tech/846d28d97f5943fdd318d95665628525c9bfeeaf/68747470733a2f2f692e696d6775722e636f6d2f673858586a38752e676966/$image
 ||camo.voz.tech/85276b6cdb3390059dafa6554ede31e5a6cd29e7/68747470733a2f2f692e696d6775722e636f6d2f636447766667672e706e67/$image
 ||camo.voz.tech/86eaea3d6e90ab7e61e1d38c0a7fa19e6109b4e4/68747470733a2f2f692e696d6775722e636f6d2f6f7343704373692e706e67/$image
 ||camo.voz.tech/87b88d5d1ae32a611926f058f841dc1e57037721/68747470733a2f2f692e696d6775722e636f6d2f6a6d4542436b792e676966/$image
+||camo.voz.tech/8a65dd3bbdcec3ac3430f1b75e46b29b83d2e615/68747470733a2f2f692e696d6775722e636f6d2f4b34486364354e2e706e67/$image
 ||camo.voz.tech/8c6697a3c0016ddf89c7ac5a8a0b8a3142db6ccd/68747470733a2f2f692e696d6775722e636f6d2f7631666d4d44642e676966/$image
 ||camo.voz.tech/8e9195d8e8e5f33222fa7a667371614d2457e2e9/68747470733a2f2f692e696d6775722e636f6d2f426467695737522e706e67/$image
+||camo.voz.tech/8ed1dabe26cc44f9f323102db4b8976c010cc2be/68747470733a2f2f692e696d6775722e636f6d2f696e58513861472e676966/$image
+||camo.voz.tech/8f1828ed944045cd7eca99bb6a19f281c39208d6/68747470733a2f2f692e696d6775722e636f6d2f6972476f59725a2e676966/$image
 ||camo.voz.tech/9009483382a95e73459c36121958a429f9425814/68747470733a2f2f692e696d6775722e636f6d2f3671346d4f6d342e706e67/$image
 ||camo.voz.tech/9013902b1b5e3e6b5ee37fdadc10c875fa471820/68747470733a2f2f692e696d6775722e636f6d2f753337323065342e706e67/$image
 ||camo.voz.tech/90b794f7e7b638b59ea61e590440f1adc0c96bf7/68747470733a2f2f692e696d6775722e636f6d2f4b5630584749412e676966/$image
 ||camo.voz.tech/9206158e5dcf4ac84cb1e2f5bcb8108f24c33444/68747470733a2f2f692e696d6775722e636f6d2f4737794c6f58712e706e67/$image
+||camo.voz.tech/93a2c8fab0a08dd14d610ff7d4585fc19c0adeff/68747470733a2f2f692e696d6775722e636f6d2f395a434a5265482e706e67/$image
 ||camo.voz.tech/95bfd04bd60985cb130933bcc7f9a27237e91999/68747470733a2f2f692e696d6775722e636f6d2f4731757a3948432e706e67/$image
+||camo.voz.tech/99b32218e774a4dc4c269935ed8213529431952b/68747470733a2f2f692e696d6775722e636f6d2f6265616b5769792e706e67/$image
+||camo.voz.tech/9ad0170c0111d2ebddcf1aa2bf19dacd5abb8b22/68747470733a2f2f692e696d6775722e636f6d2f724e457a5a51432e676966/$image
 ||camo.voz.tech/9adfed38de9a6c5d578a5b774a3cb39dc47a25c4/68747470733a2f2f692e696d6775722e636f6d2f33716555666e512e706e67/$image
+||camo.voz.tech/9c2e18d8259cd5494e562e8cb41f6d8ad0793128/68747470733a2f2f692e696d6775722e636f6d2f78434f396368642e706e67/$image
+||camo.voz.tech/9cc0850260181bb97d35d38dbc5f32188eddd89f/68747470733a2f2f692e696d6775722e636f6d2f5a42746e436b6b2e706e67/$image
+||camo.voz.tech/9d5eb17955450ee9cf0ec3c6c2e605b873356650/68747470733a2f2f692e696d6775722e636f6d2f5761776d41774d2e706e67/$image
+||camo.voz.tech/9e4363a5b7db570849ba98798886aea3e53c8f76/68747470733a2f2f692e696d6775722e636f6d2f51387347634c4f2e706e67/$image
+||camo.voz.tech/9f11048be349d77c481be1f3da383b471177e936/68747470733a2f2f692e696d6775722e636f6d2f666e49465246442e706e67/$image
 ||camo.voz.tech/a0ca0324c9e38043482c16b9569a3a2b6ef6d67e/68747470733a2f2f692e696d6775722e636f6d2f5630393253354b2e676966/$image
 ||camo.voz.tech/a149fdb97e580980375c82c242daa39b703bab5c/68747470733a2f2f692e696d6775722e636f6d2f34524a4433674f2e706e67/$image
+||camo.voz.tech/a3c02da78e22ecb20170ecb2fb649072912e7bf6/68747470733a2f2f692e696d6775722e636f6d2f547a43675061492e6a7067/$image
 ||camo.voz.tech/a44b518d6e1fa6ac572f5bce45076c9aa2847a16/68747470733a2f2f692e696d6775722e636f6d2f37506c4b694f342e706e67/$image
 ||camo.voz.tech/a49bceb06eea30466aad9bbdacbae039d06928b0/68747470733a2f2f692e696d6775722e636f6d2f715a563231355a2e706e67/$image
 ||camo.voz.tech/a78b6a2b1ff041de53d52676ae5dec797ce43f18/68747470733a2f2f692e696d6775722e636f6d2f31796439346c522e706e67/$image
+||camo.voz.tech/a86263608283c84a741e770e825c304661bc9a2e/68747470733a2f2f692e696d6775722e636f6d2f6e6d76495948652e706e67/$image
 ||camo.voz.tech/aa8dca42d5d7c33d779905323c1c252cfdae4aa9/68747470733a2f2f692e696d6775722e636f6d2f703055746d53762e706e67/$image
 ||camo.voz.tech/b1ff1c99460dccd9af3f1f2f0d4fe436e656cde2/68747470733a2f2f692e696d6775722e636f6d2f4b45357469376c2e706e67/$image
 ||camo.voz.tech/b658dddd1d166b5f86898585077567e160590cc6/68747470733a2f2f692e696d6775722e636f6d2f4563563550504c2e706e67/$image
+||camo.voz.tech/bb70e82a3e302ae997758324aed4ee7bafa67074/68747470733a2f2f692e696d6775722e636f6d2f506d395950314f2e706e67/$image
 ||camo.voz.tech/bd03976fceaa6f1c1275c81a47e5dda8de8cd2d9/68747470733a2f2f692e696d6775722e636f6d2f394442567138412e706e67/$image
 ||camo.voz.tech/bf072fbdf7911acf2243b01882ba7a3b126e4682/68747470733a2f2f692e696d6775722e636f6d2f4d4531744a42302e706e67/$image
+||camo.voz.tech/c009b17f23aac382d731e6ca3be7794e0e8f9707/68747470733a2f2f692e696d6775722e636f6d2f664450763439532e706e67/$image
+||camo.voz.tech/c0a9c430a6592105792e62afb72a329643c79c8e/68747470733a2f2f692e696d6775722e636f6d2f76493033586d582e706e67/$image
+||camo.voz.tech/c1dd81c47dede488c15ce0879eba93449e9d7223/68747470733a2f2f692e696d6775722e636f6d2f77466264446b752e706e67/$image
+||camo.voz.tech/c2ef4313efad8dc14c32ddc1ff10e01750caa42a/68747470733a2f2f692e696d6775722e636f6d2f487232744f6b492e706e67/$image
+||camo.voz.tech/c78cc828848cdf7cfeb4e9ff663387e61f649054/68747470733a2f2f692e696d6775722e636f6d2f4132585737734e2e706e67/$image
 ||camo.voz.tech/c9e6311a3aed6478805f133f226782207586e556/68747470733a2f2f692e696d6775722e636f6d2f38307a4a4277332e676966/$image
 ||camo.voz.tech/ca4fc14215471a32c652d1b0bd976044162a43d8/68747470733a2f2f692e696d6775722e636f6d2f7a43584f4e4d312e676966/$image
+||camo.voz.tech/ca6e3229efc155999aabe4d2f0d4561357852d4e/68747470733a2f2f692e696d6775722e636f6d2f6d656f715170412e706e67/$image
 ||camo.voz.tech/caa8d294a0e47f0a33e91d9b730c6ac9c10ee277/68747470733a2f2f692e696d6775722e636f6d2f6444634a43464e2e706e67/$image
+||camo.voz.tech/cbda8231c5c091670da748300078d85883972fe7/68747470733a2f2f692e696d6775722e636f6d2f6d75526d586b672e706e67/$image
 ||camo.voz.tech/cc60cd8e8363914a94481d488266aa961aded82e/68747470733a2f2f692e696d6775722e636f6d2f384c73497368582e706e67/$image
 ||camo.voz.tech/ce5dba43a4681eab6ce96d59f5e7be789c611b82/68747470733a2f2f692e696d6775722e636f6d2f6e4d3130497a4c2e706e67/$image
 ||camo.voz.tech/d03627cf6751e5d0040d1a364549408079fe6d1b/68747470733a2f2f692e696d6775722e636f6d2f4759413378354a2e676966/$image
 ||camo.voz.tech/d1a965124ab170b7762bc3160763792378dc0cb3/687474703a2f2f692e696d6775722e636f6d2f34676d4f414d422e676966/$image
 ||camo.voz.tech/d2e62fb335673fd5a39de8f19804aa2f0ce690e2/68747470733a2f2f692e696d6775722e636f6d2f516367306f71772e6a7067/$image
 ||camo.voz.tech/d322ea0c76f1b6a13b7f9ffc3550e3361ddb9214/68747470733a2f2f692e696d6775722e636f6d2f68316b52754d632e6a7067/$image
+||camo.voz.tech/d4c88b55dab9cfbf899417b49d9c9dcab6cabc25/687474703a2f2f692e696d6775722e636f6d2f4a45576f49646c2e676966/$image
 ||camo.voz.tech/d73cdb7927f969fdb595021575298f24217a4c0b/68747470733a2f2f692e696d6775722e636f6d2f587630427454522e706e67/$image
+||camo.voz.tech/d76332e8a8fea24d3f711a36cc9f76879e07398d/68747470733a2f2f692e696d6775722e636f6d2f583779376573452e706e67/$image
+||camo.voz.tech/d99a0780d4cccbf491475a1d4354a9fb8a7558ff/68747470733a2f2f692e696d6775722e636f6d2f4e584c6a4376632e706e67/$image
+||camo.voz.tech/ddfa60a877482f0993c4c5550dcefb918f9555d7/68747470733a2f2f692e696d6775722e636f6d2f72686c78704a692e706e673f31/$image
 ||camo.voz.tech/e253ade5b8289b8ee5dfaa7e98998e79a556b3d4/68747470733a2f2f692e696d6775722e636f6d2f6b493461396c482e6a7067/$image
 ||camo.voz.tech/e4283810a4abb26a4491b1bac39564e8e79b5e59/68747470733a2f2f692e696d6775722e636f6d2f767245534753592e706e67/$image
+||camo.voz.tech/e9f76851ced60d989dccbe4090d02fb3ae9c956c/68747470733a2f2f692e696d6775722e636f6d2f6d46686a4432372e676966/$image
 ||camo.voz.tech/eb684e9561f5b832ed96b9759a9c897b4487ed10/68747470733a2f2f692e696d6775722e636f6d2f4c5454326355522e706e67/$image
 ||camo.voz.tech/ebe097e8fb3dfcdaac69beec210346a5a781d7bc/68747470733a2f2f692e696d6775722e636f6d2f636745394d6b492e676966/$image
+||camo.voz.tech/ed5584aa026f32e214410cec6906d2277d5ec56b/68747470733a2f2f692e696d6775722e636f6d2f476b59645869452e676966/$image
 ||camo.voz.tech/ed927b6a0d7249df7e03b300fe5b146ddcbce272/68747470733a2f2f692e696d6775722e636f6d2f6a624a6a6d54692e706e67/$image
 ||camo.voz.tech/ee0bd68d4993d6afd3fa399aa322d0ecc70f14f9/68747470733a2f2f692e696d6775722e636f6d2f333230505171392e706e67/$image
 ||camo.voz.tech/efb20a7f9a334f7487cdd6070f8a2e1f3a5ddd08/68747470733a2f2f692e696d6775722e636f6d2f757a51623279742e706e67/$image
 ||camo.voz.tech/f123a51612709e212e93533439fa3092d75207d2/68747470733a2f2f692e696d6775722e636f6d2f3279396e7063552e706e67/$image
+||camo.voz.tech/f178ae2017d6ccf02750f7d409c13cc9d8f055bd/68747470733a2f2f692e696d6775722e636f6d2f76766c4269477a2e706e67/$image
 ||camo.voz.tech/f623aa186ecf07ffc7eda35e7ad1d4228a84c7cd/68747470733a2f2f692e696d6775722e636f6d2f31425739576a342e706e67/$image
 ||camo.voz.tech/f737483545a5eb6b3f05483538ff5969531f166c/68747470733a2f2f692e696d6775722e636f6d2f4f47306c7358762e706e67/$image
 ||camo.voz.tech/f7cecd3c3c74f72e88f9d8647335aafca06e107d/68747470733a2f2f692e696d6775722e636f6d2f686e656366677a2e676966/$image
+||camo.voz.tech/fb37bc847271b5fcb162727c456a7d85facbb80d/68747470733a2f2f692e696d6775722e636f6d2f317265794c71382e706e67/$image
 ||camo.voz.tech/fcb682e393124e07bdeb1f2a17be5e514898be86/68747470733a2f2f692e696d6775722e636f6d2f486932726b687a2e676966/$image
+||camo.voz.tech/fcc6cb335ff2a50a86e6db5019749a5de4cac1f0/68747470733a2f2f692e696d6775722e636f6d2f4d7637354757332e676966/$image
 ||camo.voz.tech/fdb97237d6d9b89fde68d968a0facb1a2eeb3048/68747470733a2f2f692e696d6775722e636f6d2f734a30395a76762e676966/$image
 ||camo.voz.tech/fe1c7bad127b6c067ca6125e685b2555e3c090aa/68747470733a2f2f692e696d6775722e636f6d2f6a5849527754642e706e67/$image
 ||camo.voz.tech/fea4494acc721f8c64b3241d5de572f2b71b7066/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
@@ -144,78 +226,67 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/attachments/*.253854/$image
 ||voz.vn/attachments/*.259405/$image
 ||voz.vn/attachments/*.282843/$image
+||voz.vn/attachments/*.288436/$image
+||voz.vn/data/avatars/*.jpg?1583769468$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
+||voz.vn/data/avatars/*.jpg?1583852384$image
+||voz.vn/data/avatars/*.jpg?1583898120$image
 ||voz.vn/data/avatars/*.jpg?1583916304$image
+||voz.vn/data/avatars/*.jpg?1583916620$image
 ||voz.vn/data/avatars/*.jpg?1583939566$image
+||voz.vn/data/avatars/*.jpg?1584165875$image
 ||voz.vn/data/avatars/*.jpg?1584170364$image
+||voz.vn/data/avatars/*.jpg?1584256609$image
 ||voz.vn/data/avatars/*.jpg?1584266087$image
+||voz.vn/data/avatars/*.jpg?1584321821$image
 ||voz.vn/data/avatars/*.jpg?1584322499$image
 ||voz.vn/data/avatars/*.jpg?1584352674$image
+||voz.vn/data/avatars/*.jpg?1584451201$image
 ||voz.vn/data/avatars/*.jpg?1584549291$image
+||voz.vn/data/avatars/*.jpg?1584707702$image
+||voz.vn/data/avatars/*.jpg?1584928152$image
 ||voz.vn/data/avatars/*.jpg?1584944652$image
 ||voz.vn/data/avatars/*.jpg?1585120395$image
 ||voz.vn/data/avatars/*.jpg?1585666647$image
+||voz.vn/data/avatars/*.jpg?1585997570$image
 ||voz.vn/data/avatars/*.jpg?1587238032$image
+||voz.vn/data/avatars/*.jpg?1588156820$image
+||voz.vn/data/avatars/*.jpg?1592457432$image
 ||voz.vn/data/avatars/*.jpg?1593083961$image
 ||voz.vn/data/avatars/*.jpg?1593439309$image
 ||voz.vn/data/avatars/*.jpg?1594500240$image
 ||voz.vn/data/avatars/*.jpg?1594512745$image
 ||voz.vn/data/avatars/*.jpg?1594821857$image
 ||voz.vn/data/avatars/*.jpg?1598096039$image
+||voz.vn/data/avatars/*.jpg?1598409629$image
 ||voz.vn/data/avatars/*.jpg?1599925958$image
 ||voz.vn/data/avatars/*.jpg?1600612535$image
+||voz.vn/data/avatars/*.jpg?1600837310$image
 ||voz.vn/data/avatars/*.jpg?1601120425$image
 ||voz.vn/data/avatars/*.jpg?1601375238$image
 ||voz.vn/data/avatars/*.jpg?1602507930$image
 ||voz.vn/data/avatars/*.jpg?1602678332$image
 ||voz.vn/data/avatars/*.jpg?1602763633$image
+||voz.vn/data/avatars/*.jpg?1603160384$image
+||voz.vn/data/avatars/*.jpg?1603182867$image
+||voz.vn/data/avatars/*.jpg?1603183089$image
+||voz.vn/data/avatars/*.jpg?1603188420$image
 ||voz.vn/data/avatars/*.jpg?1603190823$image
+||voz.vn/data/avatars/*.jpg?1603250539$image
 ||voz.vn/data/avatars/*.jpg?1603250889$image
 ||voz.vn/data/avatars/*.jpg?1603254072$image
+||voz.vn/data/avatars/*.jpg?1603256733$image
+||voz.vn/data/avatars/*.jpg?1603258007$image
 ||voz.vn/data/avatars/*.jpg?1603263097$image
 ||voz.vn/data/avatars/*.jpg?1603344032$image
 ||voz.vn/data/avatars/*.jpg?1603381714$image
 ||voz.vn/data/avatars/*.jpg?1603694246$image
+||voz.vn/data/avatars/*.jpg?1603986301$image
 ||voz.vn/data/avatars/*.jpg?1604257541$image
+||voz.vn/data/avatars/*.jpg?1605239012$image
+||voz.vn/data/avatars/*.jpg?1605711549$image
 
 !___Tổng-Hợp_______________________________________
-dl.taive.work###fbox-background
-jtexpress.vn##.banner
-jtexpress.vn##.fp-auto-height.section.pt-4.font-small.page-footer
-linkcc.pro###cookie-pop
-linkcc.pro###fbox-background
-linkcc.pro##.banner-468x60.banner
-linkcc.pro##.banner-728x90.banner
-linkcc.pro##.box-main > div > [href^="//oufauthy.net/afu.php"]
-linkcc.pro##.navbar-default.navbar
-linkcc.pro##.text-left
-linkcc.pro##footer
-linkcc.pro##h4
-open.spotify.com##._54af59bf42b44701f2393fc90cbc58cc-scss
-thichvn.com##.active.mdp-deblocker-blackout
-thichvn.com##.mdp-deblocker-wrapper
-valid.x86.fr###main__footer
-valid.x86.fr###main__header > .main-wrapper
-valid.x86.fr###main__legals
-valid.x86.fr###social_share > .block_content
-valid.x86.fr##.cc_container--open.cc_container.cc_banner
-vozforum.org###M403005ScriptRootC906261
-vozforum.org##.blockMessage--none.blockMessage
-vozforum.org##.js-bottomFixTarget.u-bottomFixer
-vozforum.org##.noticeScrollContainer.lSSlideOuter
-vozforum.org##.p-footer
-vozforum.org##.p-header
-vozforum.org##.top_important
-www.best-inc.vn##.bex12-cont > div:nth-of-type(1)
-www.best-inc.vn##.bex23-container
-www.facebook.com##.aghb5jc5.h676nmdw.bi6gxh9e.oi9244e8.aov4n071.g5gj957u.buofh1pr.o387gat7.hpfvmrgz.qmfd67dx.du4w35lb.l9j0dhe7.rq0escxv
-www.nhaccuatui.com##.popup-newversion
-www.ntdvn.com###footer
-www.ntdvn.com##.main_logo
-www.ntdvn.com##.side_ad_top
-www.ntdvn.com##.top_ad
-||macoupon.net^
-||omgt3.com^
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
@@ -226,6 +297,7 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 /fingerprint2.min.js^
 /themes/Gargoyle/images/gargoyle-logo.png$image
 /tracking.ashx?
+123job.vn##.current.blocker.jquery-modal
 1fichier.com###cookie_box
 1fichier.com###footer
 1fichier.com##.ct_warn
@@ -294,6 +366,7 @@ apk4free.net##.copyrights
 apk4free.net##.header-container.container
 apk4free.net##.sd-sharing-enabled.sharedaddy
 arduino.vn##.region-header.region.header__region
+askubuntu.com##.z-banner.r0.l0.b0.ps-fixed.ff-sans.p8
 autoitvn.com###g207
 beta.chiasenhac.vn###csnplayerads
 bianhot.site##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
@@ -352,6 +425,12 @@ businessnewscurrent.online###container > div:nth-of-type(4)
 businessnewscurrent.online###footer
 businessnewscurrent.online###header
 businessnewscurrent.online##div:nth-of-type(12)
+cadao.me###darkness
+cadao.me###mainHeader
+cadao.me###siteFooter
+cadao.me###tagCloud
+cadao.me##.introjs-helperLayer
+cadao.me##.introjs-overlay
 cambiendoapsuat.vn###logo
 cambiendoapsuat.vn##li > [href="#"]
 camnangnhatban.com###ppsPopupBgOverlay
@@ -398,6 +477,8 @@ community.netgear.com##.lia-in.lia-dialog-titleless.lia-panel-dialog-modal-value
 community.netgear.com##.ui-widget-overlay
 computerassistance.co.uk##.cp-clear.cp-info-bar-wrapper
 computerassistance.co.uk##.cp-jugaad-container.cp_id_4a68a.cp-modal-popup-container.cp-module
+creativesfeed.com##.spu-bg
+creativesfeed.com##.spu-total-.spu-centered.spu-box
 crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:last-child
 crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:nth-child(3)
 cydia.vn###tag_cloud-4
@@ -424,7 +505,6 @@ dinhhieu.vn###floating_banner_left
 dinhhieu.vn###floating_banner_right
 discord.com###members-654509605447139328-0 > .layout-2DM8Md > .avatar-3uk_u9
 discord.com##.height36-36OHCc.size14-3iUx6q.notice-2FJMB4.noticeDefault-362Ko2
-discord.com##div.clickable-1JJAn8.container-2Pjhx-.member-3-YXUe:nth-of-type(2) > .layout-2DM8Md > .avatar-3uk_u9 > .wrapper-3t9DeA
 discordapp.com###app-mount > div:nth-of-type(2)
 distrowatch.com##.News1 > table:nth-of-type(2)
 distrowatch.com##body > table:nth-of-type(3)
@@ -432,6 +512,7 @@ distrowatch.com##p
 distrowatch.com##table.News:nth-of-type(1) > tbody > tr:nth-of-type(2) > .News
 distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
 div.box-main:first-child > h4:nth-child(5)
+dl.taive.work###fbox-background
 dll-files.com##.overlay
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 dnschecker.org###cookie-box
@@ -459,6 +540,16 @@ douploads.com##header
 douploads.com##header:first-child
 douploads.com##td:nth-of-type(4)
 douploads.com/images/StartDownload.gif$domain=douploads.com
+douploads.net###gdpr-cookie-notice
+douploads.net###news_last
+douploads.net##.btn-danger.btn-lg.btn-block.btn
+douploads.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
+douploads.net##.footer
+douploads.net##.mb-5.text-primary
+douploads.net##.mt-5.col-md-8
+douploads.net##.py-3.col-md-12
+douploads.net##.text-primary
+douploads.net##center
 download.com.vn###ouibounce-modal
 downloadly.ir##div.base-box:nth-of-type(2) > .mom-e3lanat-wrap > .mom-e3lanat > .mom-e3lanat-inner > .mom-e3lan > .e3lan-code
 downloadly.ir##h2 > .mom-e3lanat-wrap
@@ -513,6 +604,8 @@ dropgalaxy.com##.footer
 dropgalaxy.com##.mb-3.alert-danger.alert
 dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
 dropgalaxy.com##.mb-4.m-0.sharetabs > ul
+dropgalaxy.com##.modalpop
+dropgalaxy.com##.mt-5.col-md-8
 dropgalaxy.com##.py-3.col-md-12
 dropgalaxy.com##.text-primary
 dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
@@ -645,6 +738,7 @@ getlinkpro.net##.col.s3
 getlinkpro.net##.nav-wrapper
 getlinkpro.net##.page-footer
 getlinkpro.net##div.boxed:nth-child(4) > footer.flat-footer.flat-reset:nth-child(4) > div.flat-footer-top
+getvideo.at##.section
 gg.gg###footer
 giaxe.2banh.vn##.js_lb_overlay.lb_overlay
 giaxe.2banh.vn##.window_popup
@@ -729,6 +823,8 @@ jlptvietnam.com##.adtester-container-113.adtester-container.banner-1.ezoic-ad
 jlptvietnam.com##.adtester-container-115.adtester-container.large-leaderboard-2.ezoic-ad
 jlptvietnam.com##tr:nth-of-type(20)
 jtexpress.vn###homepage-popup
+jtexpress.vn##.banner
+jtexpress.vn##.fp-auto-height.section.pt-4.font-small.page-footer
 jtexpress.vn##.show.modal-backdrop
 kantan.vn###learn-on-dekiru
 karanpc.com###post-18253 > div.entry:first-child > center:first-child
@@ -772,6 +868,17 @@ link.karanpc.com##h4
 link.karanpc.com##p:nth-of-type(2)
 link.karanpc.com##p:nth-of-type(3)
 link.karanpc.com##p:nth-of-type(4)
+linkcc.pro###cookie-pop
+linkcc.pro###fbox-background
+linkcc.pro##.banner-468x60.banner
+linkcc.pro##.banner-728x90.banner
+linkcc.pro##.box-main > div > [href^="//oufauthy.net/afu.php"]
+linkcc.pro##.navbar-default.navbar
+linkcc.pro##.text-left
+linkcc.pro##footer
+linkcc.pro##h4
+linkneverdie.net##.show.fade.modal
+linkneverdie.net##.show.fade.modal-backdrop
 linksvip.net###box_most_download > .portlet-content
 linksvip.net###boxlogin > div.portlet:nth-of-type(2)
 linksvip.net###footer
@@ -906,6 +1013,7 @@ nyaa.se##.ad_bl345
 nyaa.se##.ad_bl346
 onetech.vn##.floating.shareit
 onetech.vn##.hrContactShareWrap
+open.spotify.com##._54af59bf42b44701f2393fc90cbc58cc-scss
 opengapps.org##.mdl-mini-footer
 openload.co###footer
 openwrt.org##.cookielaw-bottom.cookielaw-banner
@@ -953,6 +1061,9 @@ quantrimang.com##.sidebar > .adbox
 quantrimang.com##.underlay
 ramleague.net###exposeMask
 ramleague.net##.errorOverlay
+rapidgator.net##.descr
+rapidgator.net##.footer
+rapidgator.net##.header
 romshared.com###content > div.pageWidth > div.pageContent > table:nth-child(4)
 rsload.net##.clearfix.video-box.full-text.short-text > center
 rsload.net##.full > center
@@ -1119,6 +1230,8 @@ thaivisa.com###blockermyModal
 thaivisa.com###ipsLayout_sidebar
 thanhnien.vn##.site-footer__info
 thegioididong.com##.iframe
+thichvn.com##.active.mdp-deblocker-blackout
+thichvn.com##.mdp-deblocker-wrapper
 thuviensoft.net##.extraFooter
 thuviensoft.net##footer
 tiengnhat.minder.vn###check-also-box
@@ -1134,6 +1247,15 @@ tiki.vn###top-bar-container
 tiki.vn###wrap-remind-for-gift
 tiki.vn##.footer-adwords-seo
 tiki.vn##.footer-cpy-right
+timviecngay.top###main > div.ads
+timviecngay.top###sidebar-right > .ads
+timviecngay.top###sidebar-right > div > .ads
+timviecngay.top##.box-white.job-info > .ads
+timviecngay.top##.box-white.job-relationship > div > div.ads
+timviecngay.top##.col-md-12 > .ads
+timviecngay.top##.col-md-12 > .ads-sidebar-left
+timviecngay.top##.col-md-12 > .ads-sidebar-right > div.ads
+timviecngay.top##div.container > .ads
 timvu.vn###heateor_ss_browser_popup_bg
 timvu.vn###the_champ_sharing_more_providers
 tinhte.vn###content > div.pageWidth > div.pageContent > div.mainContainer_noSidebar > div.mainContent > div.section.funbox:nth-child(7)
@@ -1164,6 +1286,7 @@ tuhoconline.net##h5:nth-of-type(2)||tuhoconline.net/wp-content/uploads/*
 tuhoconline.net##h5:nth-of-type(3)
 tuhoconline.net##h5:nth-of-type(4)
 twitter.com##div.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
+ubuntu.com##.cookie-policy
 ukshare.net###colophon
 ukshare.net###colophon > div:last-child
 ukshare.net###comments
@@ -1218,8 +1341,11 @@ upload4earn.org##li:nth-of-type(5) > span
 upload4earn.org##nav
 uploaded.net###foot
 uploaded.net###head
+uploaded.net###headmenu
 uploaded.net##.aB.feature
+uploaded.net##.aT > .aT
 uploaded.net##td:nth-of-type(6)
+uploaded.net##tr.feature
 uploaded.net##tr.feature:nth-of-type(11)
 uploaded.net##tr.feature:nth-of-type(13)
 uploaded.net##tr.feature:nth-of-type(5)
@@ -1265,32 +1391,6 @@ uploadproper.com##div.ads_small:nth-of-type(3)
 uploadproper.com##div.ads_small:nth-of-type(4)
 uploadproper.com##footer
 uploadproper.com##input:nth-of-type(7)
-douploads.net###gdpr-cookie-notice
-douploads.net###news_last
-douploads.net##.btn-danger.btn-lg.btn-block.btn
-douploads.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
-douploads.net##.footer
-douploads.net##.mb-5.text-primary
-douploads.net##.mt-5.col-md-8
-douploads.net##.py-3.col-md-12
-douploads.net##.text-primary
-douploads.net##center
-dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
-dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-dropgalaxy.com##.footer
-dropgalaxy.com##.mb-3.alert-danger.alert
-dropgalaxy.com##.modalpop
-dropgalaxy.com##.mt-5.col-md-8
-dropgalaxy.com##.text-primary
-rapidgator.net##.descr
-rapidgator.net##.footer
-rapidgator.net##.header
-uploaded.net###foot
-uploaded.net###head
-uploaded.net###headmenu
-uploaded.net##.aB.feature
-uploaded.net##.aT > .aT
-uploaded.net##tr.feature
 uploadrar.com###footer2
 uploadrar.com###gdpr-cookie-notice
 uploadrar.com###lastnews
@@ -1384,6 +1484,11 @@ userstyles.org##.relative_div > [src="/ui/images/icons/android-robot.svg"]
 userstyles.org##div.us-stylecard--short:nth-of-type(12)
 userstyles.org##div.us-stylecard--short:nth-of-type(3)
 userstyles.org##div.us-stylecard--short:nth-of-type(5)
+valid.x86.fr###main__footer
+valid.x86.fr###main__header > .main-wrapper
+valid.x86.fr###main__legals
+valid.x86.fr###social_share > .block_content
+valid.x86.fr##.cc_container--open.cc_container.cc_banner
 vandyke.com###gdpr-alert
 vandyke.com###gdpr-cover
 vetmang.net##[href="https://vetmang.net/phim-sex-viet-nam/"] > [src="https://pbs.twimg.com/media/EZ1v54gVAAEtlsi?format=png"]
@@ -1391,6 +1496,8 @@ vi.aliexpress.com##.opened.next-overlay-wrapper
 vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/04c4a77902b94e2dac0333527313db43_1603901268711?__poplayer_position_sign=PC_SEO_Search_Ui_Product_List&__prefix=&__poplayer_preserve_uuid=27722&wh_weex=true&parentSpmB=12057483"]
 vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/9ab458bc1f2b4b6885d4ece4e757d6a7_1598857100700?__poplayer_position_sign=pc_homepage&__prefix=&__poplayer_preserve_uuid=24317&wh_weex=true&parentSpmB=home"]
 vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/fb2d6e3f827645e7a3f3877c63fd6e97_1603898826576?__poplayer_position_sign=PC_SEO_Search_Ui_Product_List&__prefix=&__poplayer_preserve_uuid=27721&wh_weex=true&parentSpmB=12057483"]
+viblo.asia##.fixedBottombar.fixed-bottom-bar
+vieclam.tuoitre.vn###CBbyeiq
 vienthonghoangthach.com##[href="https://vienthonghoangthach.com/camera-ip-wifi-360-kn-h21pw-kbone-cua-kbvision.html"]
 vienthonghoangthach.com##[src="https://vienthonghoangthach.com/upload/images/khuy%E1%BA%BFn%20m%C3%A3i.jpg"]
 vienthongtayninh.vn###footer
@@ -1415,6 +1522,10 @@ viettuans.vn##div#vnp_phone:nth-of-type(8)
 viettuans.vn##div#vnp_phone:nth-of-type(9)
 viettuans.vn##div.zopim:nth-of-type(1)
 viettuans.vn##footer
+vinabiz.org##.page-footer
+vinabiz.org##.ui-sortable.sortable-grid.col-sm-4 > div#wid-id-12.jarviswidget-sortable.jarviswidget > header
+vinabiz.org##[href="http://hoadon.vinabiz.org/"]
+vinabiz.org##div#Wid-Content-Home-Right-Category.jarviswidget-sortable.jarviswidget-color-red.jarviswidget
 vipshare.co##.adsx468
 vipshare.co##.footer
 vipshare.co##.navbar-fixed-top.navbar-info.navbar
@@ -1446,6 +1557,8 @@ vn-z.vn##ins.adsbygoogle:nth-of-type(2)
 vnexpress.net###supper_masthead
 vnexpress.net###wrapper_footer
 vnexpress.net##.box-category__list-news > .sidebar-2
+vnexpress.net##.col-sticky.sidebar-2
+vnexpress.net##.inner-box-business.width_common
 vnexpress.net##.p_header
 vnexpress.net##.pin-comment.sidebar-1
 vnjpclub.com###ampz_inline_bottom
@@ -1459,6 +1572,13 @@ vnreview.vn##.mod_web.footer
 vnz-leech.com###banner
 vnz-leech.com##div.container-full:nth-of-type(1)
 vnz-leech.com##div.container-full:nth-of-type(3)
+vozforum.org###M403005ScriptRootC906261
+vozforum.org##.blockMessage--none.blockMessage
+vozforum.org##.js-bottomFixTarget.u-bottomFixer
+vozforum.org##.noticeScrollContainer.lSSlideOuter
+vozforum.org##.p-footer
+vozforum.org##.p-header
+vozforum.org##.top_important
 vubey.yt##.footer-section
 vuighe.tv###footer
 vuighe.tv##.class_quangcao_benphai
@@ -1508,17 +1628,23 @@ www.alc.co.jp##[href="https://ec.alc.co.jp/lp_n/product/nm/"]
 www.aliexpress.com##.opened.next-overlay-wrapper
 www.amd.com###cookieCompliance
 www.anphatpc.com.vn##[src="/media/banner/23_Mar5dcd3113d0b8061f3e27478ed46c8371.png"]
+www.armitx.com##.mailmunch-overlay
+www.armitx.com##.mailmunch-popover
 www.asus.com###cookie-policy-info
 www.axiomtek.com##.cookies_bar
 www.bbc.com##.fDRnKv.Banner-m3awbo-1
 www.bbc.com##.fOqUqv.Wrapper-sc-7g3fro-0
+www.best-inc.vn##.bex12-cont > div:nth-of-type(1)
+www.best-inc.vn##.bex23-container
 www.cpu-monkey.com##.werb_top1.werb
 www.cyberciti.biz###colophon
 www.cyberciti.biz###custom_html-4
 www.cyberciti.biz###text-384338398
 www.cyberciti.biz##center > div:nth-of-type(2)
+www.dfi.com##.first-browse
 www.dongphim.net##.luna.ht-footer
 www.draytek.com.tw##footer
+www.facebook.com##.aghb5jc5.h676nmdw.bi6gxh9e.oi9244e8.aov4n071.g5gj957u.buofh1pr.o387gat7.hpfvmrgz.qmfd67dx.du4w35lb.l9j0dhe7.rq0escxv
 www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 www.file-upload.com##.antivirus
 www.file-upload.com##.blocktxt
@@ -1530,6 +1656,12 @@ www.forum.vnpro.org##.msgbox
 www.fshare.vn##.thumbnail-ic-fc.material-icons
 www.gargoyle-router.com###outer_logo
 www.gigabyte.com###policy-div
+www.grimmstories.com##.cc_container--open.cc_container.cc_banner
+www.grimmstories.com##.footer
+www.grimmstories.com##.footerlinks
+www.grimmstories.com##.headerunder
+www.grimmstories.com##.inside > form
+www.grimmstories.com##.menuholder > .adsbygoogle
 www.hanoicomputer.vn##.pb-3.pr-3.pt-3.pl-3.flex-row.d-flex
 www.hanoicomputer.vn##.widget-preview--action-text
 www.hdvietnam.com##.hdvn_head
@@ -1543,9 +1675,16 @@ www.linux-magazine.com###ContentRight
 www.linuxbabe.com###pum-19301
 www.msi.com###ccc
 www.mydns.jp##body > table > tbody > tr:nth-of-type(2)
+www.nhaccuatui.com##.popup-newversion
 www.nokia.com##.bg-nokia-blue.nokia-cookies-wrapper
 www.nokia.com##.nokia_cookie-wrapper
 www.nsaneforums.com###ipsLayout_footer
+www.ntdvn.com###footer
+www.ntdvn.com##.main_logo
+www.ntdvn.com##.side_ad_top
+www.ntdvn.com##.top_ad
+www.pti.com.vn##.active > .data-block
+www.pti.com.vn##.scroll-fixed.header
 www.raspberrypi.org##.c-cookie-banner
 www.raspberrypi.org##.c-cookie-banner__container
 www.raspberrypi.org##.c-cookie-banner__content
@@ -1620,9 +1759,11 @@ yeuphimmoi.com##.balloon-block
 ||img.1fichier.com/ui/ui-bg_diagonals-thick_20_666666_40x40.png$image
 ||itmogeaskli12.live^
 ||lixi88.info^
+||macoupon.net^
 ||media.dongphim.net/media/image/id/*200x$image
 ||media.dongphim.net/media/image/id/*640x$image
 ||ogs.google.com.sg/widget/callout$subdocument
+||omgt3.com^
 ||pushbullet.com
 ||scloud.ws/application/frontend/skin/valley/themes/fon.jpg$image
 ||static.dongphim.net/images/chuot.jpeg$image
@@ -1632,13 +1773,13 @@ yeuphimmoi.com##.balloon-block
 ||userstyles.org/ui/images/280x294.png$image
 ||viettuans.vn/media/banner/*$image
 ||vipshare.co/img/*$image
+||vn-z.vn/data/avatars/*.jpg?1605497958$image
 ||vuighe.tv/images/*.gif^
 ||vuighe.tv/players/ads/^
 ||www.anphatpc.com.vn/media/banner/*$image
 ||www.anphatpc.com.vn/media/lib/500x654-vanchuyen2.jpg$image
 ||www.filesend.jp/img/file.png$image
-||www.hdvietnam.com/data/avatars/m/230/230984.jpg?1588409526$image
-||www.hdvietnam.com/data/avatars/s/230/230984.jpg?1588409526$image
+||www.hdvietnam.com/data/avatars/*.jpg?1588409526$image
 
 
 !#########################################################################################################
