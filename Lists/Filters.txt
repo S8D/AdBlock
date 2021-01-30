@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 201129a
+! Version: 210130a
 ! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -287,6 +287,13 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1605711549$image
 
 !___Tổng-Hợp_______________________________________
+@@||wolf.animetvn.com
+@@||dood.animetvn.com
+@@||ok.animetvn.com
+www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
+www.cloudflare.com##.main-footer
+www.96boards.org###gdpr-cookie-message
+vi.aliexpress.com##.top-banner-container
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
@@ -303,7 +310,6 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 1fichier.com##.ct_warn
 1fichier.com##.ui-front.ui-widget-content.ui-widget.ui-corner-all.ui-dialog
 1fichier.com##.ui-front.ui-widget-overlay
-2.2.2.1##svg
 2.2.2.11###fancyFooter
 2.2.2.11##.promo
 2bay.org###boder1
