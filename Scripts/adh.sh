@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210210a"
+PhienBan="210210b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -sLo"; dl2="curl -sL"
