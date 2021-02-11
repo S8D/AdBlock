@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210211a"
+PhienBan="210211b"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -sLo"; dl2="curl -sL"
@@ -46,7 +46,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 		cp $0 ${tmDNS}/$PhienBan\_$(basename "$0")
-		$dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0
+		#$dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0
+		$dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv $upTam $0
 		echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 		echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); exit 1
 	fi
