@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210210b"
+PhienBan="210211a"
 
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"; DauCau="#"
 dl1="curl -sLo"; dl2="curl -sL"
@@ -36,7 +36,8 @@ if CheckNet_1; then
 fi
 
 GetVersion () {
-	if [ $(adh --version | sed 's/.*channel //; s/\,.*//') == release ]; then PhienBanOff=$(adh --version | sed 's/.*version //; s/\,.*//'); else PhienBanOff=$(adh --version | sed 's/.*version v//; s/\,.*//'); fi
+	#if [ $(adh --version | sed 's/.*channel //; s/\,.*//') == release ]; then PhienBanOff=$(adh --version | sed 's/.*version //; s/\,.*//'); else PhienBanOff=$(adh --version | sed 's/.*version v//; s/\,.*//'); fi
+	PhienBanOff=$(adh --version | sed 's/.*version //; s/\,.*//; s/v//')
 }
 
 if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
