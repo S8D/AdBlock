@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Version: 210130a
-! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a
+! Version: 210613a
+! Title: bit.ly/_qc | bom.to/loc | gg.gg/a_ | tiny.cc/_a | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
 ! Licence: Darias
@@ -20,6 +20,7 @@ voz.vn###div-gpt-ad-1594489728424-0
 voz.vn###div-gpt-ad-1594489774592-0
 voz.vn###div-gpt-ad-1594489799286-0
 voz.vn###footer
+voz.vn##.p-footer
 voz.vn###header
 voz.vn###js-post-2165099 > .message-inner > .message-cell--main.message-cell > .js-quickEditTarget.message-main > .js-messageContent.message-content > .js-lbContainer.lbContainer.message-userContent > .js-selectToQuote.message-body > .bbWrapper
 voz.vn###js-post-2165130 > .message-inner > .message-cell--main.message-cell > .js-quickEditTarget.message-main > .js-messageContent.message-content > .js-lbContainer.lbContainer.message-userContent > .js-selectToQuote.message-body > .bbWrapper
@@ -38,6 +39,11 @@ vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
+||camo.voz.tech/3b77f046cdc697699285e8d0cebb8a00479a21c6/68747470733a2f2f692e696d6775722e636f6d2f7a4d757435386e2e706e67/$image
+||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
+||camo.voz.tech/7e0617acdb443da043c972b58012de32d3ea3e2a/68747470733a2f2f692e696d6775722e636f6d2f46756b755673692e6a7067/$image
+||camo.voz.tech/7f4907c304feb8ec83f1710cfc790a348b29255c/68747470733a2f2f692e696d6775722e636f6d2f58763976754c712e6a7067/$image
+||camo.voz.tech/e129193dc46e421b379c99f1d394e8a3363c2a64/68747470733a2f2f692e696d6775722e636f6d2f4d7456446e64632e706e67/$image
 ||camo.voz.tech/00f119c87f5e0f84a43ffc0207070a1ddabc089c/68747470733a2f2f692e696d6775722e636f6d2f337a78655841522e676966/$image
 ||camo.voz.tech/02e4473d2f1006985b1138c75e7d8ede7fcd4609/68747470733a2f2f692e696d6775722e636f6d2f4a45576f49646c2e706e67/$image
 ||camo.voz.tech/0370ac243ed45852ae427b80567482ee69842de6/68747470733a2f2f692e696d6775722e636f6d2f79417561386f642e706e67/$image
@@ -287,6 +293,17 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1605711549$image
 
 !___Tổng-Hợp_______________________________________
+extremecloudiq.com##.grid_7_2.rightColumn
+kolombox.com###dlbtn_big
+kolombox.com###dlbtn_big2
+kolombox.com##.buyPremium.alert-success.alert
+kolombox.com##.footer-sub
+kolombox.com##.navbar-fixed-top.navbar-inverse.navbar
+kolombox.com##footer
+login.teamviewer.com##.optanon-alert-box-wrapper
+manuals.plus##.featured-image.site-header
+rsload.net##[href="https://go.click2bit.net/r/f2de0c6878a1bf4828d3f3c92767b08b"]
+www.snbforums.com##.js-bottomFixTarget.u-bottomFixer
 @@||wolf.animetvn.com
 @@||dood.animetvn.com
 @@||ok.animetvn.com
