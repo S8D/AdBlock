@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 210722a
+! Version: 210722b
 ! Title: mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,13 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+
+! 2021-07-22 https://userupload.in
+userupload.in##.position-absolute.p-4.footer
+userupload.in##.mb-4.aboutFile.col-md-12.col-lg-6
+userupload.in##.navbar-expand-lg.navbar
+userupload.in##span:nth-of-type(4)
+
 ! 2021-07-20 https://tusfiles.com
 tusfiles.com##.cc-color-override--1360619034.cc-right.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
 
@@ -1865,6 +1872,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/attachments/*.259405/$image
 ||voz.vn/attachments/*.282843/$image
 ||voz.vn/attachments/*.288436/$image
+||voz.vn/data/avatars/*.jpg?1614358570$image
 ||voz.vn/data/avatars/*.jpg?1583769468$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
 ||voz.vn/data/avatars/*.jpg?1583852384$image
