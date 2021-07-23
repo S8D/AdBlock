@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 210722b
+! Version: 210723a
 ! Title: mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -8,11 +8,42 @@
 
 !___Tổng-Hợp_______________________________________
 
-! 2021-07-22 https://userupload.in
-userupload.in##.position-absolute.p-4.footer
-userupload.in##.mb-4.aboutFile.col-md-12.col-lg-6
-userupload.in##.navbar-expand-lg.navbar
-userupload.in##span:nth-of-type(4)
+! 2021-07-02 https://4pda.to
+4pda.ru##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
+4pda.to###logostrip
+4pda.to##[href="https://4pda.to/2021/07/03/3691968/"]
+
+! 2021-07-03 https://fileever.net
+fileever.net###commonId > .col-lg-10.download-box-buttons.col-md-12 > .high-speed-download-button.download-box-button.col-sm-12.col-md-6.col-lg-6
+fileever.net###content > .lft.col-12
+fileever.net###footer
+fileever.net###header
+fileever.net###payments
+fileever.net##.cnthldr > .lft.col-12
+fileever.net##.report
+
+! 2021-07-07 https://hexupload.net
+hexupload.net###iis06o2gfvb1f9o07nea
+hexupload.net###payment-icons
+hexupload.net###secure
+hexupload.net##.btn-danger.btn
+hexupload.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
+hexupload.net##.paybox
+hexupload.net##.position-absolute.p-5.footer
+hexupload.net##.premium-page.py-5.container > font
+hexupload.net##.sharetabs
+hexupload.net##center:nth-of-type(1) > [href="/premium.html"]
+hexupload.net##td:nth-of-type(3)
+hexupload.net##th:nth-of-type(3)
+hexupload.net##tr:nth-of-type(10)
+hexupload.net##tr:nth-of-type(2)
+hexupload.net##tr:nth-of-type(3)
+hexupload.net##tr:nth-of-type(4)
+hexupload.net##tr:nth-of-type(5)
+hexupload.net##tr:nth-of-type(6)
+hexupload.net##tr:nth-of-type(7)
+hexupload.net##tr:nth-of-type(8)
+hexupload.net##tr:nth-of-type(9)
 
 ! 2021-07-20 https://tusfiles.com
 tusfiles.com##.cc-color-override--1360619034.cc-right.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
@@ -69,15 +100,46 @@ bayfiles.com##.text-center.col-md-6.col-xs-12
 rapidgator.net##th:nth-of-type(3)
 rapidgator.net##td:nth-of-type(3)
 
-! 2021-07-20 https://katfile.com
-katfile.com##div.col-sm-4:nth-of-type(3)
+! 2021-07-07 https://katfile.com
 katfile.com###sharebuttons
-katfile.com##footer
-katfile.com##.navbar-static-top.navbar-default.navbar
+katfile.com##.free > li > span
 katfile.com##.hidden-xs.col-sm-4
+katfile.com##.navbar-static-top.navbar-default.navbar
 katfile.com##.style3
+katfile.com##[src="/images/n.png"]
+katfile.com##div.col-sm-4:nth-of-type(3)
+katfile.com##footer
 katfile.com##span.sp:nth-of-type(1)
 katfile.com##span.sp:nth-of-type(2)
+
+! 2021-07-08 https://kptools.net
+kptools.net##.adsslot_gY7RplIyz2.adsbygoogle
+kptools.net##.entry-header
+kptools.net##.footer-holder
+kptools.net##.jeg_share_top_container
+kptools.net##.jnews_module_461_1_60e789fa70a10.jeg_ad_module.jeg_ad
+kptools.net##.jnews_module_461_4_60e789fa71106.jeg_ad_module.jeg_ad
+kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(1)
+kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(3)
+kptools.net##div.vc_row-fluid.vc_inner.wpb_row.vc_row.row > .vc_col-sm-12.vc_column_container.wpb_column
+
+! 2021-07-11 https://chedrive.com
+chedrive.com###footer2
+chedrive.com###gdpr-cookie-notice
+chedrive.com##.banner1
+chedrive.com##.banner2
+chedrive.com##.banner3
+chedrive.com##.menufooter
+chedrive.com##.report
+chedrive.com##.sharefile
+chedrive.com##.txt
+chedrive.com##footer
+chedrive.com##header
+
+! 2021-07-08 https://khiphach.vn
+khiphach.vn###sg-popup-content-wrapper-11167
+khiphach.vn##.sgpb-popup-overlay.sgpb-popup-overlay-11167.sgpb-theme-1-overlay
+khiphach.vn##.sgpb-popup-dialog-main-div-wrapper
 
 ! 2021-07-20 https://up-load.io
 up-load.io###gdpr-cookie-notice
@@ -145,10 +207,17 @@ uploadev.org##li:nth-of-type(1)
 uploadev.org##.capcha > p
 uploadev.org##.desc1
 
+! 2021-07-22 https://userupload.in
+userupload.in##.mb-4.aboutFile.col-md-12.col-lg-6
+userupload.in##.navbar-expand-lg.navbar
+userupload.in##.position-absolute.p-4.footer
+userupload.in##span:nth-of-type(4)
+
 ! 2021-07-20 https://userupload.net
-userupload.net##.position-absolute.p-4.footer
-userupload.net##.navbar-expand-lg.navbar
 userupload.net##.mb-4.aboutFile.col-md-12.col-lg-6
+userupload.net##.navbar-expand-lg.navbar
+userupload.net##.position-absolute.p-4.footer
+userupload.net##span:nth-of-type(4)
 
 ! 2021-07-08 https://www.msn.com
 www.msn.com##.novig.stb-flex
@@ -181,6 +250,54 @@ daviesmediadesign.com##.et_bloom_animated.et_bloom_visible.et_bloom_auto_close.e
 daviesmediadesign.com##.et_social_mobile_on.et_social_sidebar_flip.et_social_rectangle.et_social_animated.et_social_slideright.et_social_visible_sidebar.et_social_sidebar_networks
 daviesmediadesign.com###sidebar
 
+! 2021-07-11 https://vuighe.net
+vuighe.net##.banner-300x250
+vuighe.tv###footer
+vuighe.tv##.class_quangcao_benphai
+vuighe.tv##.only-pc.tagcloud.block
+||vuighe.tv/images/*.gif^
+||vuighe.tv/players/ads/^
+
+! 2021-07-12 https://vnpt.com.vn
+vnpt.com.vn##.footer
+vnpt.com.vn##.sub-footer
+vnpt.com.vn##.apps
+
+! 2021-06-08 https://xem.li
+xem.li##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
+
+! 2021-06-26 https://discord.com
+discord.com###members-654509605447139328-0 > .layout-2DM8Md > .avatar-3uk_u9
+discord.com##.height36-36OHCc.size14-3iUx6q.notice-2FJMB4.noticeDefault-362Ko2
+discord.com##div.layerContainer-yqaFcK:nth-of-type(6)
+discordapp.com###app-mount > div:nth-of-type(2)
+
+! 2021-06-26 https://best-soft.net
+best-soft.net##[href="https://bit.ly/3jcjrpH"]
+
+! 2021-07-03 https://techyneed.com
+techyneed.com##[href="https://t.me/a2zapkchannel"]
+
+! 2021-07-04 https://keepsaveit.com
+keepsaveit.com##.share-buttons-left
+
+! 2021-07-07 https://forum.freaktab.com
+forum.freaktab.com##.axd-container.axd-widget.default-widget.canvas-widget.js-module.b-module
+
+! 2021-07-12 https://vi.aliexpress.com
+vi.aliexpress.com##.opened.next-overlay-wrapper
+vi.aliexpress.com##.product-main-wrap
+vi.aliexpress.com##.top-banner-container
+vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/04c4a77902b94e2dac0333527313db43_1603901268711?__poplayer_position_sign=PC_SEO_Search_Ui_Product_List&__prefix=&__poplayer_preserve_uuid=27722&wh_weex=true&parentSpmB=12057483"]
+vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/9ab458bc1f2b4b6885d4ece4e757d6a7_1598857100700?__poplayer_position_sign=pc_homepage&__prefix=&__poplayer_preserve_uuid=24317&wh_weex=true&parentSpmB=home"]
+vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/fb2d6e3f827645e7a3f3877c63fd6e97_1603898826576?__poplayer_position_sign=PC_SEO_Search_Ui_Product_List&__prefix=&__poplayer_preserve_uuid=27721&wh_weex=true&parentSpmB=12057483"]
+www.aliexpress.com##.opened.next-overlay-wrapper
+
+! 2021-07-21 https://www.bbc.com
+www.bbc.com##.e1nbsi9l0.css-n7zdg2
+www.bbc.com##.fDRnKv.Banner-m3awbo-1
+www.bbc.com##.fOqUqv.Wrapper-sc-7g3fro-0
+
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
@@ -208,7 +325,6 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 4kmovie.site###modal-watch
 4kmovie.site##.modal-dialog-centered.modal-dialog
 4kmovie.site##.show.fade.modal-backdrop
-4pda.ru##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
 @@/js/ads.js^$domain=tmp.dropgalaxy.in
 @@||animetvn.com/cdn-cgi/apps/body
@@ -399,9 +515,6 @@ dienmayviet.com.vn###banner
 dienmayviet.com.vn###divAdRight
 dinhhieu.vn###floating_banner_left
 dinhhieu.vn###floating_banner_right
-discord.com###members-654509605447139328-0 > .layout-2DM8Md > .avatar-3uk_u9
-discord.com##.height36-36OHCc.size14-3iUx6q.notice-2FJMB4.noticeDefault-362Ko2
-discordapp.com###app-mount > div:nth-of-type(2)
 distrowatch.com##.News1 > table:nth-of-type(2)
 distrowatch.com##body > table:nth-of-type(3)
 distrowatch.com##p
@@ -1353,11 +1466,6 @@ valid.x86.fr##.cc_container--open.cc_container.cc_banner
 vandyke.com###gdpr-alert
 vandyke.com###gdpr-cover
 vetmang.net##[href="https://vetmang.net/phim-sex-viet-nam/"] > [src="https://pbs.twimg.com/media/EZ1v54gVAAEtlsi?format=png"]
-vi.aliexpress.com##.opened.next-overlay-wrapper
-vi.aliexpress.com##.top-banner-container
-vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/04c4a77902b94e2dac0333527313db43_1603901268711?__poplayer_position_sign=PC_SEO_Search_Ui_Product_List&__prefix=&__poplayer_preserve_uuid=27722&wh_weex=true&parentSpmB=12057483"]
-vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/9ab458bc1f2b4b6885d4ece4e757d6a7_1598857100700?__poplayer_position_sign=pc_homepage&__prefix=&__poplayer_preserve_uuid=24317&wh_weex=true&parentSpmB=home"]
-vi.aliexpress.com##[src="https://campaign.aliexpress.com/wow/gcp/fb2d6e3f827645e7a3f3877c63fd6e97_1603898826576?__poplayer_position_sign=PC_SEO_Search_Ui_Product_List&__prefix=&__poplayer_preserve_uuid=27721&wh_weex=true&parentSpmB=12057483"]
 viblo.asia##.fixedBottombar.fixed-bottom-bar
 vieclam.tuoitre.vn###CBbyeiq
 vienthonghoangthach.com##[href="https://vienthonghoangthach.com/camera-ip-wifi-360-kn-h21pw-kbone-cua-kbvision.html"]
@@ -1442,9 +1550,6 @@ vozforum.org##.p-footer
 vozforum.org##.p-header
 vozforum.org##.top_important
 vubey.yt##.footer-section
-vuighe.tv###footer
-vuighe.tv##.class_quangcao_benphai
-vuighe.tv##.only-pc.tagcloud.block
 vyctravel.com###wrap-page > footer:nth-child(12)
 vyctravel.com###wrap-page > footer:nth-child(15) > div.wrap-foottour.hidden-xs:first-child > div.foottour
 wanyx.com##.clearfix.AdArea
@@ -1488,15 +1593,12 @@ win10.vn##.use-pretty-tabs.hidden-xs.topbar-style-1.topbar
 www.96boards.org###gdpr-cookie-message
 www.alc.co.jp###footer
 www.alc.co.jp##[href="https://ec.alc.co.jp/lp_n/product/nm/"]
-www.aliexpress.com##.opened.next-overlay-wrapper
 www.amd.com###cookieCompliance
 www.anphatpc.com.vn##[src="/media/banner/23_Mar5dcd3113d0b8061f3e27478ed46c8371.png"]
 www.armitx.com##.mailmunch-overlay
 www.armitx.com##.mailmunch-popover
 www.asus.com###cookie-policy-info
 www.axiomtek.com##.cookies_bar
-www.bbc.com##.fDRnKv.Banner-m3awbo-1
-www.bbc.com##.fOqUqv.Wrapper-sc-7g3fro-0
 www.best-inc.vn##.bex12-cont > div:nth-of-type(1)
 www.best-inc.vn##.bex23-container
 www.cloudflare.com##.main-footer
@@ -1509,7 +1611,6 @@ www.cyberciti.biz##center > div:nth-of-type(2)
 www.dfi.com##.first-browse
 www.dongphim.net##.luna.ht-footer
 www.draytek.com.tw##footer
-www.facebook.com##.aghb5jc5.h676nmdw.bi6gxh9e.oi9244e8.aov4n071.g5gj957u.buofh1pr.o387gat7.hpfvmrgz.qmfd67dx.du4w35lb.l9j0dhe7.rq0escxv
 www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 www.filesend.jp###footer
 www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(1)
@@ -1608,6 +1709,8 @@ xemphimz.plus##.Toastify__toast-container--bottom-right.Toastify__toast-containe
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
 yeuphimmoi.com##.balloon-block
+||ds-assets.cdn.devapps.ru/*.jpg
+||tawk.to^
 ||2.2.2.11/img/fancyFooter.png$image
 ||2.pik.vn/20202525ec29-cc24-46c4-90fe-8f19bb2a1ff3.jpg$image
 ||2.pik.vn/2020e2bb8f26-44ca-4026-8e33-a23acb68972b.jpg$image
@@ -1635,8 +1738,6 @@ yeuphimmoi.com##.balloon-block
 ||viettuans.vn/media/banner/*$image
 ||vipshare.co/img/*$image
 ||vn-z.vn/data/avatars/*.jpg?1605497958$image
-||vuighe.tv/images/*.gif^
-||vuighe.tv/players/ads/^
 ||www.anphatpc.com.vn/media/banner/*$image
 ||www.anphatpc.com.vn/media/lib/500x654-vanchuyen2.jpg$image
 ||www.filesend.jp/img/file.png$image
@@ -1644,6 +1745,8 @@ yeuphimmoi.com##.balloon-block
 
 !#########################################################################################################
 !___vOz____________________________________________
+vn-z.vn##.message-footer > .tagList--thread-39585.tagList
+vn-z.vn##.thread-actionFooter
 voz.vn###div-gpt-ad-1585123925672-0
 voz.vn###div-gpt-ad-1585125824987-0
 voz.vn###div-gpt-ad-1585126204480-0
@@ -1657,7 +1760,6 @@ voz.vn###div-gpt-ad-1594489728424-0
 voz.vn###div-gpt-ad-1594489774592-0
 voz.vn###div-gpt-ad-1594489799286-0
 voz.vn###footer
-voz.vn##.p-footer
 voz.vn###header
 voz.vn###js-post-2165099 > .message-inner > .message-cell--main.message-cell > .js-quickEditTarget.message-main > .js-messageContent.message-content > .js-lbContainer.lbContainer.message-userContent > .js-selectToQuote.message-body > .bbWrapper
 voz.vn###js-post-2165130 > .message-inner > .message-cell--main.message-cell > .js-quickEditTarget.message-main > .js-messageContent.message-content > .js-lbContainer.lbContainer.message-userContent > .js-selectToQuote.message-body > .bbWrapper
@@ -1671,18 +1773,12 @@ voz.vn##.avatar-u994862-m
 voz.vn##.blockMessage--none.blockMessage
 voz.vn##.js-bottomFixTarget.u-bottomFixer
 voz.vn##.p-body-sidebar
+voz.vn##.p-footer
 voz.vn##.thread_view__bottom.adsbygoogle
 vozforums.com###neo_logobar
 vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
 vozforums.com##div[style="line-height:80px; "]
-||camo.voz.tech/1bd83835f3c751c3f47a5bb4b408711b79ebdb32/68747470733a2f2f692e696d6775722e636f6d2f35483378546d4f2e676966/$image
-||camo.voz.tech/1bd83835f3c751c3f47a5bb4b408711b79ebdb32/68747470733a2f2f692e696d6775722e636f6d2f35483378546d4f2e676966/$image
-||camo.voz.tech/3b77f046cdc697699285e8d0cebb8a00479a21c6/68747470733a2f2f692e696d6775722e636f6d2f7a4d757435386e2e706e67/$image
-||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
-||camo.voz.tech/7e0617acdb443da043c972b58012de32d3ea3e2a/68747470733a2f2f692e696d6775722e636f6d2f46756b755673692e6a7067/$image
-||camo.voz.tech/7f4907c304feb8ec83f1710cfc790a348b29255c/68747470733a2f2f692e696d6775722e636f6d2f58763976754c712e6a7067/$image
-||camo.voz.tech/e129193dc46e421b379c99f1d394e8a3363c2a64/68747470733a2f2f692e696d6775722e636f6d2f4d7456446e64632e706e67/$image
 ||camo.voz.tech/00f119c87f5e0f84a43ffc0207070a1ddabc089c/68747470733a2f2f692e696d6775722e636f6d2f337a78655841522e676966/$image
 ||camo.voz.tech/02e4473d2f1006985b1138c75e7d8ede7fcd4609/68747470733a2f2f692e696d6775722e636f6d2f4a45576f49646c2e706e67/$image
 ||camo.voz.tech/0370ac243ed45852ae427b80567482ee69842de6/68747470733a2f2f692e696d6775722e636f6d2f79417561386f642e706e67/$image
@@ -1694,6 +1790,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/0c07460a4f51d3f302f5181bef68c07e59c6eee2/68747470733a2f2f692e696d6775722e636f6d2f755739384254462e6a7067/$image
 ||camo.voz.tech/0d5653036937a6f2a86fc5757c55ef9617238ae1/68747470733a2f2f692e696d6775722e636f6d2f345547536154702e706e67/$image
 ||camo.voz.tech/0e069cea79ee7b32afbb9350cdbb96aab566e969/68747470733a2f2f692e696d6775722e636f6d2f79625a6142675a2e676966/$image
+||camo.voz.tech/0e9652930597fa40e0baa5a919f39b7b379be711/68747470733a2f2f692e696d6775722e636f6d2f4259434f704e542e706e67/$image
 ||camo.voz.tech/103632150672013f11d17e559a6e35a12cb834cb/68747470733a2f2f692e696d6775722e636f6d2f42613838566b322e676966/$image
 ||camo.voz.tech/11d9992138f9c57ad8365c6222de89e2fa8de034/68747470733a2f2f692e696d6775722e636f6d2f71436a4249574e2e676966/$image
 ||camo.voz.tech/12520834d738b2f16529d96b1089e8c6c48adcdc/68747470733a2f2f692e696d6775722e636f6d2f76686d513172512e706e67/$image
@@ -1706,6 +1803,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/18b3c409a423fa9ecfbe905d2cb49c641ffb99cc/68747470733a2f2f692e696d6775722e636f6d2f7a464e755a54412e706e67/$image
 ||camo.voz.tech/18c50c7652fa97b8f35602b6a8337c1e59881ffc/68747470733a2f2f692e696d6775722e636f6d2f34676d4f414d422e706e67/$image
 ||camo.voz.tech/18f03bf0987058625ea8d25d88d2473be0896b6d/68747470733a2f2f692e696d6775722e636f6d2f344f45504d73562e676966/$image
+||camo.voz.tech/1bd83835f3c751c3f47a5bb4b408711b79ebdb32/68747470733a2f2f692e696d6775722e636f6d2f35483378546d4f2e676966/$image
 ||camo.voz.tech/1d362630d34ef23de3742c49e7cd3f2612f45875/68747470733a2f2f692e696d6775722e636f6d2f6a616e4465784d2e6a7067/$image
 ||camo.voz.tech/1df617e595877fa823dc5d1b27f7cf9fc48499dd/68747470733a2f2f692e696d6775722e636f6d2f55526f6970724f2e706e67/$image
 ||camo.voz.tech/1f1f8338ae4813669e071a09d037e5936699dab5/68747470733a2f2f692e696d6775722e636f6d2f576632395268672e706e67/$image
@@ -1720,12 +1818,14 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/2e66b7692b6c5c7c3e46abce370189b01d33c2b9/68747470733a2f2f692e696d6775722e636f6d2f6e50496e756b722e706e67/$image
 ||camo.voz.tech/2ee5e3be31dddebdafa7dcb543a007fc351bb517/68747470733a2f2f692e696d6775722e636f6d2f674b6e395930792e706e67/$image
 ||camo.voz.tech/2f61db5c10ffe0d507e1abfdbd488559444cd5d3/68747470733a2f2f692e696d6775722e636f6d2f75586e716750422e706e67/$image
+||camo.voz.tech/304c494a7cc4869b911012bb091607ec154c7364/68747470733a2f2f692e696d6775722e636f6d2f6d4b6166674c572e706e67/$image
 ||camo.voz.tech/313cc90c3530f80ae22cf0276382c78c58ad52c8/68747470733a2f2f692e696d6775722e636f6d2f693738433273392e676966/$image
 ||camo.voz.tech/31b2009d630607a16f4b7ded416b48d70bb7c219/68747470733a2f2f692e696d6775722e636f6d2f63564c383148322e676966/$image
 ||camo.voz.tech/33996c5dbcb369978ee4366f23baec3213a15ba7/68747470733a2f2f692e696d6775722e636f6d2f53694a5a6d50482e706e67/$image
 ||camo.voz.tech/3537e1b5f8be46afe7e79aded1b382640ba2dfad/68747470733a2f2f692e696d6775722e636f6d2f485234573644552e706e67/$image
 ||camo.voz.tech/35483a2d9b473d9eeb142db422e158b352486985/68747470733a2f2f692e696d6775722e636f6d2f794157356433732e676966/$image
 ||camo.voz.tech/3796518943c9a035fdf42c607662e92427ae181d/68747470733a2f2f692e696d6775722e636f6d2f7a59654e614c642e706e67/$image
+||camo.voz.tech/3b77f046cdc697699285e8d0cebb8a00479a21c6/68747470733a2f2f692e696d6775722e636f6d2f7a4d757435386e2e706e67/$image
 ||camo.voz.tech/3ba67b3b9ce1e8f609f5776eef10e66539e8252b/68747470733a2f2f692e696d6775722e636f6d2f676858704a72492e706e67/$image
 ||camo.voz.tech/3bd4180e96b6bc1dee7b728c0db08311f953454d/68747470733a2f2f692e696d6775722e636f6d2f567664464d55432e676966/$image
 ||camo.voz.tech/4049443780d24256e19e210cbc51607908d5433d/68747470733a2f2f692e696d6775722e636f6d2f5a36366f5572352e676966/$image
@@ -1776,11 +1876,14 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/713275f3e5d16081023daea5d957fa9c55c4e262/687474703a2f2f692e696d6775722e636f6d2f78434f396368642e676966/$image
 ||camo.voz.tech/74766ce6c14a7e126185a7366694858ae9b729e8/68747470733a2f2f692e696d6775722e636f6d2f50613343396b452e706e67/$image
 ||camo.voz.tech/74777d4b460c9c3f1d64fb4d4eaf44b3f75566da/68747470733a2f2f692e696d6775722e636f6d2f363274555a49652e676966/$image
+||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
 ||camo.voz.tech/7a0e4c043aa036d5f65b37b5f6e3c12849a7bb25/68747470733a2f2f692e696d6775722e636f6d2f4a476471677a592e706e67/$image
 ||camo.voz.tech/7b3f21298f12680e31343d31fd721e37137e66d4/68747470733a2f2f692e696d6775722e636f6d2f4a4371383862632e706e67/$image
 ||camo.voz.tech/7cbd70fc16df9eed6178189b54d8e0fe66bda8da/68747470733a2f2f692e696d6775722e636f6d2f573671344964512e706e67/$image
 ||camo.voz.tech/7d1fc53ff54d0eb0cea3a904566aeb1aac17fc64/68747470733a2f2f692e696d6775722e636f6d2f524b70377a576e2e706e67/$image
+||camo.voz.tech/7e0617acdb443da043c972b58012de32d3ea3e2a/68747470733a2f2f692e696d6775722e636f6d2f46756b755673692e6a7067/$image
 ||camo.voz.tech/7e5f27e5a998124e8ac69245fc346d31f06d4be4/68747470733a2f2f692e696d6775722e636f6d2f51774a305630562e706e67/$image
+||camo.voz.tech/7f4907c304feb8ec83f1710cfc790a348b29255c/68747470733a2f2f692e696d6775722e636f6d2f58763976754c712e6a7067/$image
 ||camo.voz.tech/7fa6d946803abfc45ad43bf8b169f03ffb480133/68747470733a2f2f692e696d6775722e636f6d2f624762703461502e676966/$image
 ||camo.voz.tech/82144372e9637c6f6f0b607116aafcc3bf74559f/68747470733a2f2f692e696d6775722e636f6d2f677654776e56382e676966/$image
 ||camo.voz.tech/829f1054afa2f4b39bd1813e3624762b424f6357/68747470733a2f2f692e696d6775722e636f6d2f49504d4d3363442e676966/$image
@@ -1805,6 +1908,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/9c2e18d8259cd5494e562e8cb41f6d8ad0793128/68747470733a2f2f692e696d6775722e636f6d2f78434f396368642e706e67/$image
 ||camo.voz.tech/9cc0850260181bb97d35d38dbc5f32188eddd89f/68747470733a2f2f692e696d6775722e636f6d2f5a42746e436b6b2e706e67/$image
 ||camo.voz.tech/9d5eb17955450ee9cf0ec3c6c2e605b873356650/68747470733a2f2f692e696d6775722e636f6d2f5761776d41774d2e706e67/$image
+||camo.voz.tech/9e1b642aa69ef7c689263ae8da44c9f26cadef88/68747470733a2f2f692e696d6775722e636f6d2f594873356636482e706e67/$image
 ||camo.voz.tech/9e4363a5b7db570849ba98798886aea3e53c8f76/68747470733a2f2f692e696d6775722e636f6d2f51387347634c4f2e706e67/$image
 ||camo.voz.tech/9f11048be349d77c481be1f3da383b471177e936/68747470733a2f2f692e696d6775722e636f6d2f666e49465246442e706e67/$image
 ||camo.voz.tech/a0ca0324c9e38043482c16b9569a3a2b6ef6d67e/68747470733a2f2f692e696d6775722e636f6d2f5630393253354b2e676966/$image
@@ -1823,6 +1927,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/c009b17f23aac382d731e6ca3be7794e0e8f9707/68747470733a2f2f692e696d6775722e636f6d2f664450763439532e706e67/$image
 ||camo.voz.tech/c0a9c430a6592105792e62afb72a329643c79c8e/68747470733a2f2f692e696d6775722e636f6d2f76493033586d582e706e67/$image
 ||camo.voz.tech/c1dd81c47dede488c15ce0879eba93449e9d7223/68747470733a2f2f692e696d6775722e636f6d2f77466264446b752e706e67/$image
+||camo.voz.tech/c23399b55d8e760ad85b0ca4e4b232dc499fae17/687474703a2f2f692e696d6775722e636f6d2f7a464e755a54412e676966/$image
 ||camo.voz.tech/c2ef4313efad8dc14c32ddc1ff10e01750caa42a/68747470733a2f2f692e696d6775722e636f6d2f487232744f6b492e706e67/$image
 ||camo.voz.tech/c78cc828848cdf7cfeb4e9ff663387e61f649054/68747470733a2f2f692e696d6775722e636f6d2f4132585737734e2e706e67/$image
 ||camo.voz.tech/c9e6311a3aed6478805f133f226782207586e556/68747470733a2f2f692e696d6775722e636f6d2f38307a4a4277332e676966/$image
@@ -1841,6 +1946,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/d76332e8a8fea24d3f711a36cc9f76879e07398d/68747470733a2f2f692e696d6775722e636f6d2f583779376573452e706e67/$image
 ||camo.voz.tech/d99a0780d4cccbf491475a1d4354a9fb8a7558ff/68747470733a2f2f692e696d6775722e636f6d2f4e584c6a4376632e706e67/$image
 ||camo.voz.tech/ddfa60a877482f0993c4c5550dcefb918f9555d7/68747470733a2f2f692e696d6775722e636f6d2f72686c78704a692e706e673f31/$image
+||camo.voz.tech/e129193dc46e421b379c99f1d394e8a3363c2a64/68747470733a2f2f692e696d6775722e636f6d2f4d7456446e64632e706e67/$image
 ||camo.voz.tech/e253ade5b8289b8ee5dfaa7e98998e79a556b3d4/68747470733a2f2f692e696d6775722e636f6d2f6b493461396c482e6a7067/$image
 ||camo.voz.tech/e4283810a4abb26a4491b1bac39564e8e79b5e59/68747470733a2f2f692e696d6775722e636f6d2f767245534753592e706e67/$image
 ||camo.voz.tech/e9f76851ced60d989dccbe4090d02fb3ae9c956c/68747470733a2f2f692e696d6775722e636f6d2f6d46686a4432372e676966/$image
@@ -1872,7 +1978,6 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/attachments/*.259405/$image
 ||voz.vn/attachments/*.282843/$image
 ||voz.vn/attachments/*.288436/$image
-||voz.vn/data/avatars/*.jpg?1614358570$image
 ||voz.vn/data/avatars/*.jpg?1583769468$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
 ||voz.vn/data/avatars/*.jpg?1583852384$image
@@ -1931,6 +2036,20 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1604257541$image
 ||voz.vn/data/avatars/*.jpg?1605239012$image
 ||voz.vn/data/avatars/*.jpg?1605711549$image
+||voz.vn/data/avatars/*.jpg?1614358570$image
+||voz.vn/data/avatars/*/1104616.jpg$image
+||voz.vn/data/avatars/*/1141234.jpg$image
+||voz.vn/data/avatars/*/1344368.jpg$image
+||voz.vn/data/avatars/*/1383069.jpg$image
+||voz.vn/data/avatars/*/1489781.jpg$image
+||voz.vn/data/avatars/*/1493801.jpg$image
+||voz.vn/data/avatars/*/1684054.jpg$image
+||voz.vn/data/avatars/*/1685910.jpg$image
+||voz.vn/data/avatars/*/1691717.jpg$image
+||voz.vn/data/avatars/*/1719588.jpg$image
+||voz.vn/data/avatars/*/1727913.jpg$image
+||voz.vn/data/avatars/*/22911.jpg$image
+||voz.vn/data/avatars/*/23665.jpg$image
 
 !#########################################################################################################
 !___Rút-Gọn________________________________________
@@ -2244,6 +2363,9 @@ cyahealth.com##h3 > div:nth-of-type(3)
 cyahealth.com##footer
 
 !___FaceBook_______________________________________
+||www.facebook.com/ajax/bnzai
+m.facebook.com##._5i-y
+www.facebook.com##.aghb5jc5.h676nmdw.bi6gxh9e.oi9244e8.aov4n071.g5gj957u.buofh1pr.o387gat7.hpfvmrgz.qmfd67dx.du4w35lb.l9j0dhe7.rq0escxv
 
 !___YouTube________________________________________
 youtube.com###masthead-ad
