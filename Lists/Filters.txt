@@ -262,6 +262,7 @@ mega4up.com##.col-xl-8
 mega4up.com##.card-body > .mb-3.row
 mega4up.com##.container > .mb-3.row
 mega4up.com##h5
+mega4up.com##.compare_table.row
 
 ! 2021-07-11 https://vuighe.net
 vuighe.net##.banner-300x250
