@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 210724a
+! Version: 210724b
 ! Title: mily.vn/ads | xem.li/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -249,6 +249,19 @@ neei.info##.dbt_footer
 daviesmediadesign.com##.et_bloom_animated.et_bloom_visible.et_bloom_auto_close.et_bloom_trigger_idle.et_bloom_trigger_bottom.et_bloom_auto_popup.et_bloom_optin_2.et_bloom_flyin_right.et_bloom_resize.et_bloom_optin.et_bloom_flyin
 daviesmediadesign.com##.et_social_mobile_on.et_social_sidebar_flip.et_social_rectangle.et_social_animated.et_social_slideright.et_social_visible_sidebar.et_social_sidebar_networks
 daviesmediadesign.com###sidebar
+
+! 2021-07-24 https://mega4up.com
+mega4up.com##.app-header
+mega4up.com##.app-footer
+mega4up.com##.text-center.py-3.footer-copyright
+mega4up.com##div.col-md-4:nth-of-type(1)
+mega4up.com##div.col-md-4:nth-of-type(3)
+mega4up.com##.no-gutters.mt-5.single-post.row
+mega4up.com##.mb-3.list-group-flush.list-group
+mega4up.com##.col-xl-8
+mega4up.com##.card-body > .mb-3.row
+mega4up.com##.container > .mb-3.row
+mega4up.com##h5
 
 ! 2021-07-11 https://vuighe.net
 vuighe.net##.banner-300x250
@@ -1027,18 +1040,6 @@ mediafire.com##.socialFBContainer
 mee.vn##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 mega-debrit.com###Downloader > div.row:first-child
 mega-debrit.com##div.jumbotron.text-center:nth-child(4)
-mega4up.com###app-header
-mega4up.com###gdpr-cookie-notice
-mega4up.com###ytdz
-mega4up.com##.app-footer
-mega4up.com##.col-xl-8
-mega4up.com##.compare_table.row
-mega4up.com##.mb-3.row > .col-md-1
-mega4up.com##.mb-4.card > .card
-mega4up.com##.section-title > .title
-mega4up.com##.text-center.py-3.footer-copyright
-mega4up.com##div.col-md-4:nth-of-type(2)
-mega4up.com##div.col-md-4:nth-of-type(3)
 memrise.com##.cc-color-override--1887361321.cc-bottom.cc-theme-corporate.cc-type-info.cc-banner.cc-window
 microk8s.io##.cookie-policy
 mina.mazii.net###myShare
