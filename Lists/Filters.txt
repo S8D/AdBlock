@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 210723a
+! Version: 210724a
 ! Title: mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -297,6 +297,115 @@ www.aliexpress.com##.opened.next-overlay-wrapper
 www.bbc.com##.e1nbsi9l0.css-n7zdg2
 www.bbc.com##.fDRnKv.Banner-m3awbo-1
 www.bbc.com##.fOqUqv.Wrapper-sc-7g3fro-0
+
+! 2021-02-11 https://dekiru.vn
+kantan.vn###learn-on-dekiru
+dekiru.vn##.modal-container
+dekiru.vn###email-subscription-form
+dekiru.vn##.active.lg.right.arcontactus-message.arcontactus-widget
+dekiru.vn###footer
+dekiru.vn##div.item-new-relation-dkr:nth-of-type(1)
+
+! 2021-04-29 https://techssting.com
+techssting.com##.align-items-center.flex-wrap.d-flex.mt-5.fileInfo
+techssting.com##.btn-danger.btn-lg.btn-block.btn
+techssting.com##.btn-info.btn-sm.btn-block.btn
+techssting.com##.copy.btn-outline-primary.btn
+techssting.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+techssting.com##.footer
+techssting.com##.mb-4.m-0.sharetabs > ul > li
+techssting.com##.mb-5.text-primary
+techssting.com##.modalpop
+techssting.com##.py-3.col-md-12
+techssting.com##.py-3.col-md-12 > ul > li
+techssting.com##.text-primary
+
+! 2021-05-18 https://dropgalaxy.com
+dropgalaxy.com###gdpr-cookie-notice
+dropgalaxy.com###modalpop
+dropgalaxy.com###UmlBRgvDIeornKmhTGblUrujz
+dropgalaxy.com###wCEaVElYlWoOjqfCmTPKnWPPh
+dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
+dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
+dropgalaxy.com##.features
+dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+dropgalaxy.com##.footer
+dropgalaxy.com##.mb-1.pr-5.btn-block.btn-danger.btn
+dropgalaxy.com##.mb-3.alert-danger.alert
+dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
+dropgalaxy.com##.mb-4.m-0.sharetabs > ul
+dropgalaxy.com##.modalpop
+dropgalaxy.com##.mt-5.col-md-8
+dropgalaxy.com##.pro.features
+dropgalaxy.com##.py-3.col-md-12
+dropgalaxy.com##.text-primary
+dropgalaxy.com##.whatFor.features
+dropgalaxy.com##div.col-md-3:nth-of-type(2)
+dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
+
+! 2021-01-15 https://populist.press
+populist.press##.hustle-optin--default.hustle-optin
+populist.press##.hustle-optin-mask.hustle-popup-mask
+populist.press##.hustle-animation-stopped.hustle-show.hustle-scroll-forbidden.module_id_3.hustle_module_id_3.hustle-palette--5fda23f12e1a09_97772220.hustle-popup.hustle-ui
+
+! 2021-02-10 https://maytinhlion.com
+maytinhlion.com##.footer-wrapper
+
+! 2021-03-04 https://anydesk.com
+anydesk.com##.any-cookieBar-messageMobile
+anydesk.com##.faster.slideInUp.animated.any-cookieBar
+
+! 2021-03-04 https://www.uvnc.com
+www.uvnc.com##[src^="data:image/png;base64,"]
+www.uvnc.com###y910
+www.uvnc.com###c450
+www.uvnc.com###h855
+www.uvnc.com###cef3
+
+! 2021-03-08 https://vn.cytron.io
+vn.cytron.io##.ht-tms--float-bottom.ht-tms--float-left.ht-tms--float
+
+! 2021-03-12 https://hellobacsi.com
+hellobacsi.com##.lead-modal__header
+hellobacsi.com##.le-newbuilder-overlay.lead-modal__body
+
+! 2021-03-13 https://www.samsung.com
+www.samsung.com##.cookie-bar__desc--ellipsis.cookie-bar__desc
+
+! 2021-03-27 https://xemphim.club
+xemphim.club##.common_notificationRequest__iIwFj.notification.container
+xemphim.club##.Toastify
+xemphim.club##.has-text-centered.is-info.notification
+
+! 2021-04-29 https://dongphuoctayninh.com
+dongphuoctayninh.com##.d-block
+
+! 2021-05-20 https://www.hnammobile.com
+www.hnammobile.com###popup-banner
+
+! 2021-05-28 https://extremecloudiq.com
+extremecloudiq.com##.grid_7_2.rightColumn
+
+! 2021-05-28 https://jaanmusic.in
+jaanmusic.in###alert
+
+! 2021-05-28 https://tokhaiyte.vn
+tokhaiyte.vn##.report-sticky
+
+! 2021-05-29 https://mozous.com
+mozous.com###primary > div > a.mb-3.btn-block.btn-secondary.btn
+
+! 2021-05-30 https://dnsleaktest.com
+dnsleaktest.com##li:nth-of-type(2)
+dnsleaktest.com##li:nth-of-type(3)
+dnsleaktest.com##li:nth-of-type(1)
+dnsleaktest.com##p
+
+! 2021-07-21 https://www.ods.vn
+www.ods.vn##.banner-khaosat
+www.ods.vn##.sticky-bottom1
+www.ods.vn##.qrcode
+www.ods.vn##.fl-page > .call-now
 
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
@@ -602,22 +711,6 @@ dropapk.to##div.text-center.col-md-4:nth-of-type(2)
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
 dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
 dropapk.to##footer
-dropgalaxy.com###gdpr-cookie-notice
-dropgalaxy.com###modalpop
-dropgalaxy.com###UmlBRgvDIeornKmhTGblUrujz
-dropgalaxy.com###wCEaVElYlWoOjqfCmTPKnWPPh
-dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
-dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
-dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-dropgalaxy.com##.footer
-dropgalaxy.com##.mb-3.alert-danger.alert
-dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
-dropgalaxy.com##.mb-4.m-0.sharetabs > ul
-dropgalaxy.com##.modalpop
-dropgalaxy.com##.mt-5.col-md-8
-dropgalaxy.com##.py-3.col-md-12
-dropgalaxy.com##.text-primary
-dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
 earnflies.com##.blog-item
 earshot1.com##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > h4:nth-child(2)
 elitepvpers.com###notices > .tborder
@@ -824,7 +917,6 @@ jtexpress.vn###homepage-popup
 jtexpress.vn##.banner
 jtexpress.vn##.fp-auto-height.section.pt-4.font-small.page-footer
 jtexpress.vn##.show.modal-backdrop
-kantan.vn###learn-on-dekiru
 karanpc.com###post-18253 > div.entry:first-child > center:first-child
 kenh14.vn###kenh14-footer-wrapper
 kenhtao.net##.adsbygoogle
@@ -1967,6 +2059,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/fdb97237d6d9b89fde68d968a0facb1a2eeb3048/68747470733a2f2f692e696d6775722e636f6d2f734a30395a76762e676966/$image
 ||camo.voz.tech/fe1c7bad127b6c067ca6125e685b2555e3c090aa/68747470733a2f2f692e696d6775722e636f6d2f6a5849527754642e706e67/$image
 ||camo.voz.tech/fea4494acc721f8c64b3241d5de572f2b71b7066/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
+||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
 ||secure.gravatar.com/avatar/4f3ab752025ef146ecd2f2cb911e5161?s=*$image
 ||voz.vn/attachments/*.190397/$image
 ||voz.vn/attachments/*.218479/$image
@@ -1978,6 +2071,8 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/attachments/*.259405/$image
 ||voz.vn/attachments/*.282843/$image
 ||voz.vn/attachments/*.288436/$image
+||voz.vn/data/avatars/*.jpg?1603250539$image
+||voz.vn/data/avatars/*.jpg?1608781207$image
 ||voz.vn/data/avatars/*.jpg?1583769468$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
 ||voz.vn/data/avatars/*.jpg?1583852384$image
