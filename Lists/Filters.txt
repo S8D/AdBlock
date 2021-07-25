@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 210724b
+! Version: 210725a
 ! Title: mily.vn/ads | xem.li/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,32 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+
+! 2021-07-25 https://www.upload-4ever.com
+www.upload-4ever.com##header
+www.upload-4ever.com##.pl-5.pr-5.appCookieNotice.hide
+www.upload-4ever.com##.pt-0.lighten-5.blue-grey.page-footer
+www.upload-4ever.com##.mb-5.text-center.content-section.col-sm-12
+www.upload-4ever.com##.appHeader
+www.upload-4ever.com##.text-center.col-12 > .my-5
+www.upload-4ever.com##.my-4
+www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
+www.upload-4ever.com##.text-center.p-5.border.col-12 .my-5
+
+! 2021-07-25 https://rapidgator.net
+rapidgator.net##.footer > .in
+rapidgator.net##.header
+rapidgator.net##.descr
+rapidgator.net##tr:nth-of-type(2)
+rapidgator.net##tr:nth-of-type(4)
+rapidgator.net##tr:nth-of-type(5)
+rapidgator.net##tr:nth-of-type(6)
+rapidgator.net##tr:nth-of-type(7)
+rapidgator.net##tr:nth-of-type(8)
+rapidgator.net##tr:nth-of-type(9)
+rapidgator.net##tr:nth-of-type(10)
+rapidgator.net###copy
+rapidgator.net##.table_header
 
 ! 2021-07-02 https://4pda.to
 4pda.ru##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
