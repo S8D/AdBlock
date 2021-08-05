@@ -1,4 +1,4 @@
-#PhienBan___200917a
+#PhienBan___210805a
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -123,7 +123,6 @@ d2wy8f7a9ursnm.cloudfront.net
 d1hn8mrtxasu7m.cloudfront.net
 d3ud741uvs727m.cloudfront.net
 dzpu6za66svjl.cloudfront.net
-d2nxq2uap88usk.cloudfront.net
 d3q33rbmdkxzj.cloudfront.net
 d9etzk30b05yg.cloudfront.net
 d1hi41nc56pmug.cloudfront.net
