@@ -1,4 +1,4 @@
-#PhienBan___210805a
+#PhienBan___210812a
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -1518,20 +1518,22 @@ galaxyattack-de0bd.firebaseio.com
 firstisland-597a8.firebaseio.com
 googlesyndication.com
 googleoptimize.com
-doubleclickbygoogle.com
-suggestqueries.google.com
-fundingchoicesmessages.google.com
-mail-ads.google.com
-analytics.google.com
-marketingplatform.google.com
-plus.url.google.com
-s0-2mdn-net.l.google.com
-gstaticadssl.l.google.com
-pagead-googlehosted.l.google.com
-gg.google.com
-adservice.google.com
 s.youtube.com
 csi.gstatic.com
+fgoogle.com
+www.fgoogle.com
+smartlock.google.com
+ampcid.google.com
+crashlytics2.l.google.com
+video-stats.video.google.com
+ygoogle.com
+www.ygoogle.com
+domains4google.com
+www.domains4google.com
+adservices.google.com
+news-server-drm-google.com
+drive.google.com.it-barcelona.com
+www-google-analytics.l.google.com
 
 #___VPN________________________________________________________________________
 warp.plus
