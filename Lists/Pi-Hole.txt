@@ -1,4 +1,4 @@
-#PhienBan___210812a
+#PhienBan___210812b
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -1520,20 +1520,6 @@ googlesyndication.com
 googleoptimize.com
 s.youtube.com
 csi.gstatic.com
-fgoogle.com
-www.fgoogle.com
-smartlock.google.com
-ampcid.google.com
-crashlytics2.l.google.com
-video-stats.video.google.com
-ygoogle.com
-www.ygoogle.com
-domains4google.com
-www.domains4google.com
-adservices.google.com
-news-server-drm-google.com
-drive.google.com.it-barcelona.com
-www-google-analytics.l.google.com
 
 #___VPN________________________________________________________________________
 warp.plus
