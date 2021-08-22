@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 210725a
+! Version: 210822a
 ! Title: mily.vn/ads | xem.li/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,36 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-08-21 https://www.cyberciti.biz
+www.cyberciti.biz##body > center
+www.cyberciti.biz###custom_html-9
+www.cyberciti.biz###custom_html-10
+www.cyberciti.biz##.amp-wp-f0edf6c
+www.cyberciti.biz###colophon
+www.cyberciti.biz###custom_html-4
+www.cyberciti.biz###text-384338398
+www.cyberciti.biz##center > div:nth-of-type(2)
+
+! 2021-08-22 https://browserleaks.com
+browserleaks.com##.orientationchange.adsbygoogle
+browserleaks.com##footer
+browserleaks.com###comments
+browserleaks.com##p:nth-of-type(1)
+||browserleaks.com/img/logo.png$image
+browserleaks.com###bg_hand
+||browserleaks.com/img/logo*g?v=32108433$image
+||browserleaks.com/img/logo.png$image
+
+! 2021-08-22 https://ipleak.net
+ipleak.net##tr:nth-of-type(8)
+ipleak.net###footer
+ipleak.net###docs
+ipleak.net##.pb
+ipleak.net##div.docs_center:nth-of-type(1)
+ipleak.net###footer_margin
+
+! 2021-08-22 https://hidessh.com
+hidessh.com###qdb7
 
 ! 2021-07-25 https://www.upload-4ever.com
 www.upload-4ever.com##header
@@ -1724,10 +1754,6 @@ www.best-inc.vn##.bex23-container
 www.cloudflare.com##.main-footer
 www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 www.cpu-monkey.com##.werb_top1.werb
-www.cyberciti.biz###colophon
-www.cyberciti.biz###custom_html-4
-www.cyberciti.biz###text-384338398
-www.cyberciti.biz##center > div:nth-of-type(2)
 www.dfi.com##.first-browse
 www.dongphim.net##.luna.ht-footer
 www.draytek.com.tw##footer
@@ -2173,6 +2199,11 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*/1727913.jpg$image
 ||voz.vn/data/avatars/*/22911.jpg$image
 ||voz.vn/data/avatars/*/23665.jpg$image
+||voz.vn/data/avatars/*/1209149.jpg$image
+||voz.vn/data/avatars/*/1566813.jpg$image
+||voz.vn/data/avatars/*/130590.jpg$image
+||voz.vn/data/avatars/*/1029278.jpg$image
+
 
 !#########################################################################################################
 !___Rút-Gọn________________________________________
