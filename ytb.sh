@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824k"
+PhienBan="210824l"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="300"
@@ -76,7 +76,7 @@ function CheckDocker() {
 }
 
 
-function Makeservice () {
+function TaoDichVu () {
     cd $TMDichVu && touch $ytb
     cat > $ytb <<-EOF
 [Unit]
@@ -88,7 +88,7 @@ ExecStop=$PRINTWD/$YTTen dung
 [Install]
 WantedBy=multi-user.target
 	EOF
-
+sudo chmod 664 $TMDichVu/$ytb
 }
 
 
@@ -197,7 +197,7 @@ function Cai() {
         if [ ! -f $TMDichVu/$ytb ]; then
             echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
             echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
-            Makeservice
+            TaoDichVu
             echo -e "${TgOK} Dịch vụ đã được cài.";
 
             ConfigureEnv
@@ -212,7 +212,7 @@ function Cai() {
         else
             echo -e "${TgCB} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
             echo -ne "${TgTT} Cài đặt lại Dịch vụ..."; echo ''
-            Makeservice
+            TaoDichVu
             systemctl daemon-reload
             systemctl restart ytb 1> /dev/null 2>&1
             echo -e "${TgOK} Cài đặt lại Hoàn tất."
@@ -360,7 +360,7 @@ function CapNhat() {
             echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
-            $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
+            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
             echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
             echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; 
             if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
