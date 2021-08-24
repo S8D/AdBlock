@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824u"
+PhienBan="210824v"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -56,7 +56,6 @@ function Banner () {
     echo -e "Your IP Address: ${MauXanh}$ip${MauXam}";
     echo -e "${TgTT} Nhật Ký: ${MauXanh}${YTLog}${MauXam}"
     echo -e "${TgTT} Dữ liệu PiHole: ${MauXanh}${PiData}${MauXam}"
-    echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
     echo ""
 }
 
@@ -137,7 +136,8 @@ function Database() {
 function Cai() {
     CheckUser #We check if the root user is executing the script
     CheckDocker #We check if the script is being executed on a Docker Container
-
+    
+    echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
     function ConfigureEnv() {
         echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
         Database "create"
@@ -178,7 +178,7 @@ function Cai() {
             #echo -ne "${TgTT} Đang cập nhật dữ liệu"
             while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
             echo ''; echo -e "${TgOK} Cập nhật dữ liệu Hoàn tất."
-            echo -e "${TgOK} $SoLuong tên miền đã được thêm."
+            echo -e "${TgOK} ${MauXanh}$SoLuong ${MauXam}tên miền đã được thêm."
             echo "${ThoiGian} $SoLuong tên miền đã được thêm." >> $YTLog
         else
             echo -e "${TgCB} Không có tên miền nào được thêm."
