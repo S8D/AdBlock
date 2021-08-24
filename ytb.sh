@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824c"
+PhienBan="210824d"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
@@ -55,9 +55,9 @@ function Banner () {
     echo -e "==================================="
     echo -e "${MauXam}`date`";
     echo -e "Your IP Address: ${MauXanh}$ip${MauXam}";
-    echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
     echo -e "${TgTT} Nhật Ký: ${MauXanh}${YTLog}${MauXam}"
     echo -e "${TgTT} Dữ liệu PiHole: ${MauXanh}${PiData}${MauXam}"
+    echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
     echo ""
 }
 
@@ -340,30 +340,31 @@ function Go() {
 
 
 function CapNhat() {
-    echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
+    echo "${TgTT} Đang kiểm tra máy chủ cập nhật..."
     CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; }; 
     CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
     if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
-    if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
+    if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
         PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-        if [ $PhienBanMoi == $PhienBan ]; then echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!";
-            echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
-        else echo "${TgTT} Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi..."; mkdir -p $TM/old
+        if [ $PhienBanMoi == $PhienBan ]; then echo "${TgTT} ${MauDo}$(basename "$0") $PhienBan là bản mới nhất!";
+            echo "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
+        else echo "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
             $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
-            echo "${TgOK} $(basename "$0") được cập nhật lên $PhienBanMoi!" >> $YTLog
-            echo "${TgOK} Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); 
+            echo "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
+            echo "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; sh ${TM}/$(basename "$0"); 
             systemctl restart ytb 1> /dev/null 2>&1; exit 1; fi
     else echo "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit
     fi
 }
 
 case "$1" in
-    "cai"   ) Banner; CheckPiHole; Cai 	;;
-    "chay"     ) Chay 			;;
-    "up"     ) CapNhat           ;;
-    "dung"      ) Dung 				;;
-    "go" ) Go			;;
-    *           ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: ./$YTTen [ cai | chay | up | dung | go ]" ;;
+    "cai"  ) Banner; Cai 	;;
+    "chay" ) Chay           ;;
+    "up"   ) CapNhat        ;;
+    "kt"   ) CheckPiHole    ;;
+    "dung" ) Dung 			;;
+    "go"   ) Go			    ;;
+    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: ./$YTTen [ cai | chay | up | kt | dung | go ]" ;;
 esac
 echo ''
