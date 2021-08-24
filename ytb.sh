@@ -1,7 +1,8 @@
 #!/bin/bash
-# Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824a"
 
+# Script chặn quảng cáo của YouTube bằng Pi-Hole
+
+PhienBan="210824b"
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
 ThoiGianNgu="300"
@@ -236,6 +237,7 @@ function Cai() {
             echo -ne "${TgTT} Cài đặt lại Dịch vụ...";
             Makeservice
             systemctl daemon-reload
+            systemctl restart ytb 1> /dev/null 2>&1
             echo -e "${TgOK} Cài đặt lại Hoàn tất."
         fi
     fi
@@ -252,7 +254,7 @@ function Chay() {
 
     if [ -z ${GROUPID} ]; then
         echo -e "${TgNG} Không thấy group ID của Chặn quảng cáo YouTube trong Dữ liệu."
-        echo -e "${TgTT} Vui lòng chạy lại $YTTen với tham số: cai."
+        echo -e "${TgTT} Vui lòng chạy lại $YTTen với tham số: cai"
         exit 1;
     fi
 
@@ -339,16 +341,20 @@ function Go() {
 
 
 function CapNhat() {
-    if [ $net -ge 1 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
+    echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
+    CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; }; 
+    CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
+    if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
+    if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
     PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-    if [ $PhienBanMoi == $PhienBan ]; then echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!";
-        echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
-    else echo "${TgTT} Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi..."; mkdir -p $TM/old
-        cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
-        $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
-        echo "${TgOK} $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $YTLog
-        echo "${TgOK} Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); 
-        systemctl restart ytb 1> /dev/null 2>&1; exit 1
+        if [ $PhienBanMoi == $PhienBan ]; then echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!";
+            echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
+        else echo "${TgTT} Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi..."; mkdir -p $TM/old
+            cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
+            $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
+            echo "${TgOK} $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $YTLog
+            echo "${TgOK} Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); 
+            systemctl restart ytb 1> /dev/null 2>&1; exit 1; fi
     fi
 }
 
