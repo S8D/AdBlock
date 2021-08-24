@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824g"
+PhienBan="210824h"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
@@ -234,7 +234,7 @@ function Cai() {
             echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
         else
             echo -e "${TgCB} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
-            echo -ne "${TgTT} Cài đặt lại Dịch vụ...";
+            echo -ne "${TgTT} Cài đặt lại Dịch vụ..."; echo ''
             Makeservice
             systemctl daemon-reload
             systemctl restart ytb 1> /dev/null 2>&1
@@ -353,9 +353,10 @@ function CapNhat() {
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
             $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
             echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
-            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; #sh ${TM}/$(basename "$0"); 
-            systemctl restart ytb 1> /dev/null 2>&1; exit 1; fi
-    else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit
+            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; 
+            if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
+            sh ${TM}/$(basename "$0"); exit 0; fi
+    else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
     fi
 }
 
