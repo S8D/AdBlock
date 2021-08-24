@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824f"
+PhienBan="210824g"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
@@ -97,18 +97,21 @@ function CheckPiHole() {
     piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
     PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
     sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
-    sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)    
+    sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
+    echo -e "${TgTT} Đang kiểm tra cấu hình PiHole..."
+    if [ ! $piv -ge 5 ]; then 
+        echo -e "${TgNG} ${MauXam}${YTTen}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!" 
+        echo -e "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
+        echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}"; 
+        read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
+    fi
     if [[ "${PiCfg}" != "${PiCfh}" ]]; then
         echo -e "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
-        echo -e "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; fi
+        echo -e "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
+    fi
     if [ -z ${sslcfg} ]; then
         echo -e "${TgNG} PiHole chưa được cấu hình ssl!!!"
-        echo -e "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"
-    fi
-    if [ ! $piv -ge 5 ]; then echo -e "${TgNG} ${MauXam}${YTTen}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!" 
-        echo -e "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
-        echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}"; read -p "${TgNG} Nhấn phím bất kỳ để thoát."
-        exit 1
+        echo -e "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
     fi
 }
 
