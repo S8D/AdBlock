@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824r"
+PhienBan="210824s"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="300"
@@ -377,6 +377,6 @@ case "$1" in
     "kt"   ) CheckPiHole    ;;
     "dung" ) Dung 			;;
     "go"   ) Go			    ;;
-    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: \n${TgTT} ./$YTTen [ cai | chay | up | kt | dung | go ]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$(basename "$0")${MauXam}." ;;
+    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: \n${TgTT} ${MauDo}./$YTTen ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$(basename "$0")${MauXam}." ;;
 esac
 echo ''
