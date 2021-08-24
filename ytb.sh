@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824e"
+PhienBan="210824f"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
@@ -344,13 +344,13 @@ function CapNhat() {
     if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
     if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
         PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-        if [ $PhienBanMoi == $PhienBan ]; then echo -e "${TgTT} ${MauDo}$(basename "$0") $PhienBan là bản mới nhất!";
+        if [ $PhienBanMoi == $PhienBan ]; then echo -e "${TgTT} ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
             echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
             $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
             echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
-            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; sh ${TM}/$(basename "$0"); 
+            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; #sh ${TM}/$(basename "$0"); 
             systemctl restart ytb 1> /dev/null 2>&1; exit 1; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit
     fi
