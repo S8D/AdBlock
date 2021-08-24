@@ -1,9 +1,9 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824j"
+PhienBan="210824k"
 
 UpLink="https://xem.li/ytb"
-ThoiGianKiemTra="180"
+ThoiGianKiemTra="300"
 ThoiGianNgu="300"
 Nha="https://s8d.github.io/AdBlock"
 pbcu="https://xem.li/ytbo"
@@ -121,7 +121,7 @@ function Database() {
             GROUPID=$(sqlite3 "${PiData}"  "SELECT id FROM 'group' WHERE name = 'YouTubeAdsBlock';" 2>>  $YTLog )
             ;;
         "checkDomain")
-            CHECK_NEW_DOMAIN=$(sqlite3 "${PiData}"  """SELECT domain FROM domainlist WHERE comment = 'YouTube AdsBlock' AND domain = '${DOMAIN}';""" 2>>  $YTLog)
+            KTTenMien=$(sqlite3 "${PiData}"  """SELECT domain FROM domainlist WHERE comment = 'YouTube AdsBlock' AND domain = '${DOMAIN}';""" 2>>  $YTLog)
             ;;
         "delete")
             echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}tên miền con từ ${MauXanh}${PiData}${MauXam}"
@@ -170,7 +170,7 @@ function Cai() {
             echo "${ThoiGian} Tìm thấy $SoLuong tên miền..." >> $YTLog
             for YTD in $ALL_DOMAINS; do
                 Database "checkDomain" "${YTD}"
-                if [[ -z ${CHECK_NEW_DOMAIN} ]]; then Database "insertDomain" "${YTD}"; fi
+                if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
             done
             Database "update"
             pihole updateGravity > ${ChanLog} 2>&1 &
@@ -185,7 +185,7 @@ function Cai() {
         fi
 
         echo -ne "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm..."; sleep 1; echo ''
-        rm --force ${TMTam}/PiHole.log*
+        rm --force ${TMTam}/pihole.log*
         echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
     }
 
@@ -241,19 +241,19 @@ function Chay() {
         echo -e "${TgTT} Đang kiểm tra ${MauXanh}$PiLog${MauXam}..."
         echo "${ThoiGian} Đang kiểm tra ${PiLog}..." >> $YTLog
 
-        YT_DOMAINS=$(cat ${PiLog} | egrep --only-matching "${PATTERN}" | sort | uniq)
-        NEW_DOMAINS=
-        CHECK_NEW_DOMAIN=
+        TenMien=$(cat ${PiLog} | egrep --only-matching "${PATTERN}" | sort | uniq)
+        TenMienMoi=
+        KTTenMien=
 
-        for YTD in $YT_DOMAINS; do
+        for YTD in $TenMien; do
             Database "checkDomain" "${YTD}"
-            if [[ -z ${CHECK_NEW_DOMAIN} ]]; then
-                NEW_DOMAINS="$NEW_DOMAINS $YTD"
+            if [[ -z ${KTTenMien} ]]; then
+                TenMienMoi="$TenMienMoi $YTD"
                 Database "insertDomain" "${YTD}"
             fi
         done
 
-        if [ -z "$NEW_DOMAINS" ]; then
+        if [ -z "$TenMienMoi" ]; then
             echo -e "${TgTT} Không có tên miền nào được thêm."
             echo "${ThoiGian} Không có tên miền nào được thêm." >> $YTLog
         else
@@ -307,8 +307,8 @@ function Go() {
 
         if [ -f ${TMDichVu}/ytadsblocker ]; then
             echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
-            systemctl stop ytb 1> /dev/null 2>&1
-            systemctl disable ytb 1> /dev/null 2>&1
+            systemctl stop ytadsblocker 1> /dev/null 2>&1
+            systemctl disable ytadsblocker 1> /dev/null 2>&1
             rm --force ${TMDichVu}/ytadsblocker;
         fi
 
