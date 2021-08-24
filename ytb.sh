@@ -1,8 +1,9 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824s"
+PhienBan="210824t"
 
-UpLink="https://xem.li/ytb"
+#UpLink="https://xem.li/ytb"
+UpLink="https://xem.li/yt"
 ThoiGianKiemTra="300"
 ThoiGianNgu="300"
 Nha="https://s8d.github.io/AdBlock"
