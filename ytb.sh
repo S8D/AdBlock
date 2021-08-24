@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824d"
+PhienBan="210824e"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
@@ -28,15 +28,13 @@ ROOT_UID=0
 ChanThuong='r([0-9]{1,2})[^-].*\.googlevideo\.com'
 ChanManh='r([0-9]{1,2}).*\.googlevideo\.com'
 
-# The followings vars are used in order to give some color to
-# the different outputs of the script.
+# Cài đặt màu sắc
 MauDo="\e[31m"
 MauVang="\e[33m"
 MauXanh="\e[32m"
 MauXam="\e[0m"
 
-# The followings vars are used to point out the different
-# results of the process executed by the script
+# Đánh dấu màu
 TgTT=$(echo -e "[i]") # [i] Information
 TgCB=$(echo -e "[${MauVang}w${MauXam}]") # [w] Warning
 TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
@@ -340,21 +338,21 @@ function Go() {
 
 
 function CapNhat() {
-    echo "${TgTT} Đang kiểm tra máy chủ cập nhật..."
+    echo -e "${TgTT} Đang kiểm tra máy chủ cập nhật..."
     CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; }; 
     CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
     if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
     if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
         PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-        if [ $PhienBanMoi == $PhienBan ]; then echo "${TgTT} ${MauDo}$(basename "$0") $PhienBan là bản mới nhất!";
-            echo "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
-        else echo "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
+        if [ $PhienBanMoi == $PhienBan ]; then echo -e "${TgTT} ${MauDo}$(basename "$0") $PhienBan là bản mới nhất!";
+            echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
+        else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
             $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
-            echo "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
-            echo "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; sh ${TM}/$(basename "$0"); 
+            echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
+            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; sh ${TM}/$(basename "$0"); 
             systemctl restart ytb 1> /dev/null 2>&1; exit 1; fi
-    else echo "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit
+    else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit
     fi
 }
 
