@@ -1,8 +1,7 @@
 #!/bin/bash
-
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
+PhienBan="210824c"
 
-PhienBan="210824b"
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="180"
 ThoiGianNgu="300"
@@ -49,7 +48,7 @@ set -e
 function Banner () {
     echo -e "${MauDo}==================================="
     echo -e "|  ${MauXam}YouTube Ads AdBlock for PiHole ${MauDo}|"
-    echo -e "|  ${MauXam}        Phiên bản: ${MauXanh}${PhienBan}         ${MauDo}|"
+    echo -e "|  ${MauXam}    Phiên bản: ${MauXanh}${PhienBan}         ${MauDo}|"
     echo -e "|  ${MauXanh}${Nha}  ${MauDo}|"
     echo -e "|  ${MauXam}Tác giả: ${MauXanh}deividgdt             ${MauDo}|"
     echo -e "|  ${MauXam}Chỉnh sửa: ${MauXanh}Darias              ${MauDo}|"
@@ -346,23 +345,25 @@ function CapNhat() {
     CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
     if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
     if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật $(basename "$0") $PhienBan..."
-    PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+        PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
         if [ $PhienBanMoi == $PhienBan ]; then echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!";
             echo "${TgTT} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
         else echo "${TgTT} Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
             $dl1 ${upTam} $UpLink; chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
-            echo "${TgOK} $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $YTLog
+            echo "${TgOK} $(basename "$0") được cập nhật lên $PhienBanMoi!" >> $YTLog
             echo "${TgOK} Khởi chạy $(basename "$0") $PhienBanMoi..."; sh ${TM}/$(basename "$0"); 
             systemctl restart ytb 1> /dev/null 2>&1; exit 1; fi
+    else echo "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit
     fi
 }
 
 case "$1" in
     "cai"   ) Banner; CheckPiHole; Cai 	;;
     "chay"     ) Chay 			;;
+    "up"     ) CapNhat           ;;
     "dung"      ) Dung 				;;
     "go" ) Go			;;
-    *           ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: ./$YTTen [ cai | chay | dung | go ]" ;;
+    *           ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: ./$YTTen [ cai | chay | up | dung | go ]" ;;
 esac
 echo ''
