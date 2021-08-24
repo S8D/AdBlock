@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824p"
+PhienBan="210824q"
 
 UpLink="https://xem.li/ytb"
 ThoiGianKiemTra="300"
@@ -54,14 +54,7 @@ function Banner () {
     echo -e "${MauXam}`date`";
     echo -e "Your IP Address: ${MauXanh}$ip${MauXam}";
     echo -e "${TgTT} Nhật Ký: ${MauXanh}${YTLog}${MauXam}"
-    echo -e "${TgTT} Dữ liệu PiHole: ${MauXanh}${PiData}${MauXam}"; echo ''
-    echo -e "${TgTT} Chức năng tham số: sh ${MauDo}$(basename "$0") ${MauXanh}cai | chay | up | kt | dung | go${MauXam}"
-    echo -e "${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$(basename "$0")${MauXam}."
-    echo -e "${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$(basename "$0")${MauXam}."
-    echo -e "${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$(basename "$0")${MauXam}."
-    echo -e "${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích."
-    echo -e "${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$(basename "$0")${MauXam}."
-    echo -e "${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$(basename "$0")${MauXam}."
+    echo -e "${TgTT} Dữ liệu PiHole: ${MauXanh}${PiData}${MauXam}"
     echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
     echo ""
 }
@@ -384,6 +377,6 @@ case "$1" in
     "kt"   ) CheckPiHole    ;;
     "dung" ) Dung 			;;
     "go"   ) Go			    ;;
-    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: ./$YTTen [ cai | chay | up | kt | dung | go ]" ;;
+    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Vui lòng sử dụng tham số sau: ./$YTTen [ cai | chay | up | kt | dung | go ]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$(basename "$0")${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$(basename "$0")${MauXam}." ;;
 esac
 echo ''
