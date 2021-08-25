@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825m"
+PhienBan="210825n"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -140,7 +140,6 @@ function Database() {
 }
 
 function TimTenMien() {
-    echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
     CheckConfig
     echo -e "${TgTT} Đang tìm tên miền con trong PiHole..."; sleep 1
     cp $TMPi/pihole.log* $TMTam
@@ -193,6 +192,8 @@ EOF
 
 function CaiDichVu () {
     if [ ! -f $TMDichVu/$TenDV ]; then
+        echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
+        Database "create";
         echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
         echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
         TaoDichVu
@@ -201,7 +202,6 @@ function CaiDichVu () {
         echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
         systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
         echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
-        TimTenMien
         echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
         echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
     else
@@ -210,32 +210,30 @@ function CaiDichVu () {
         TaoDichVu
         systemctl daemon-reload
         systemctl restart ytb 1> /dev/null 2>&1
-        TimTenMien
         echo -e "${TgOK} Cài đặt lại Hoàn tất."
     fi
 }
 
 function Cai() {
-    CheckUser #We check if the root user is executing the script
-    CheckDocker #We check if the script is being executed on a Docker Container
+    CheckUser
+    CheckDocker
 
     echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
-    Database "create";
-
     if [[ "${DOCKER}" == "y" ]]; then
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
         TimTenMien
         echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$YTTen { chay & || dung & }"
-    fi; CaiDichVu
+    fi
+    CaiDichVu
+    TimTenMien
 }
 
 function Chay() {
-    CheckUser #We check if the root user is executing the script
+    CheckUser
     CheckConfig
     Banner
     echo -e "${TgOK} Chặn quảng cáo YouTube đã chạy"
     echo "${ThoiGian} Chặn quảng cáo YouTube đã chạy" >> $YTLog
-
     Database "getGroupId"
 
     if [ -z ${GROUPID} ]; then
@@ -245,6 +243,7 @@ function Chay() {
     fi
 
     TimTenMien
+
     while true; do
         echo -e "${TgTT} Đang kiểm tra ${MauXanh}$PiLog${MauXam}..."
         echo "${ThoiGian} Đang kiểm tra ${PiLog}..." >> $YTLog
@@ -269,6 +268,7 @@ function Chay() {
             echo -e "${TgTT} Đã cập nhật tên miền quảng cáo."
             echo "${ThoiGian} Đã cập nhật tên miền quảng cáo." >> $YTLog
         fi
+
         echo -e "${TgTT} Sau ${MauVang}$ThoiGianNgu giây ${MauXam}sẽ kiểm tra tiếp."
         COUNT=$(($COUNT + 1))
         sleep $ThoiGianNgu;
@@ -290,13 +290,14 @@ function Dung() {
 }
 
 function Go() {
-    CheckDocker #We check if the script is being executed on a Docker Container
-    CheckUser #We check if the root user is executing the script
+    CheckDocker
+    CheckUser
 
     echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
     Database "delete"
     pihole updateGravity > ${ChanLog} 2>&1 &
     echo -ne "${TgTT} Đang cập nhật lại dữ liệu"
+
     while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
     echo ''; echo -ne "${TgOK} Cập nhật dữ liệu Hoàn tất."; echo ''
 
