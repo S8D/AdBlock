@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824x"
+PhienBan="210824y"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -239,7 +239,24 @@ function Chay() {
         exit 1;
     fi
 
-    TimTenMien
+    echo "${ThoiGian} Đang tìm tên miền con trong Nhật Ký..." >> $YTLog
+        ALL_DOMAINS=$(cat $PiLog | egrep --only-matching "${PATTERN}" | sort | uniq)
+
+        if [ ! -z "${ALL_DOMAINS}" ]; then
+            SoLuong=$(cat $PiLog | egrep --only-matching "${PATTERN}" | sort | uniq | wc --lines)
+            echo -e "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền...";
+            echo "${ThoiGian} Tìm thấy $SoLuong tên miền..." >> $YTLog
+            for YTD in $ALL_DOMAINS; do
+                Database "checkDomain" "${YTD}"
+                if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
+            done
+            Database "update"
+            echo -e "${TgOK} ${MauXanh}$SoLuong ${MauXam}tên miền đã được thêm."
+            echo "${ThoiGian} $SoLuong tên miền đã được thêm." >> $YTLog
+        else
+            echo -e "${TgCB} Không có tên miền nào được thêm."
+            echo "${ThoiGian} Không có tên miền đã được thêm." >> $YTLog
+        fi
 
     while true; do
         echo -e "${TgTT} Đang kiểm tra ${MauXanh}$PiLog${MauXam}..."
