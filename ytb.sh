@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825g"
+PhienBan="210825h"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -99,8 +99,8 @@ function CheckConfig () {
 }
 
 function TaoDichVu () {
-    cd $TMDichVu && touch $ytb
-    cat > $ytb <<-EOF
+    cd $TMDichVu && touch $TenDV
+    cat > $TenDV <<-EOF
 [Unit]
 Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
 After=network.target
@@ -110,7 +110,11 @@ ExecStop=$PRINTWD/$YTTen dung
 [Install]
 WantedBy=multi-user.target
 	EOF
-sudo chmod 664 $TMDichVu/$ytb
+    sudo chmod 664 $TMDichVu/$TenDV
+    echo -e "${TgOK} Dịch vụ đã được cài."
+    echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
+    systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
+    echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
 }
 
 function Database() {
@@ -189,6 +193,25 @@ function TimTenMien() {
     echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
 }
 
+function DichVu () {
+    if [ ! -f $TMDichVu/$TenDV ]; then
+        echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
+        echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
+        TaoDichVu
+        TimTenMien
+        echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
+        echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
+    else
+        echo -e "${TgCB} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
+        echo -ne "${TgTT} Cài đặt lại Dịch vụ..."; echo ''
+        TaoDichVu
+        systemctl daemon-reload
+        systemctl restart ytb 1> /dev/null 2>&1
+        TimTenMien
+        echo -e "${TgOK} Cài đặt lại Hoàn tất."
+    fi
+}
+
 function Cai() {
     CheckUser #We check if the root user is executing the script
     CheckDocker #We check if the script is being executed on a Docker Container
@@ -200,28 +223,7 @@ function Cai() {
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
         TimTenMien
         echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$YTTen { chay & || dung & }"
-    else
-        if [ ! -f $TMDichVu/$ytb ]; then
-            echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
-            echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
-            TaoDichVu
-            echo -e "${TgOK} Dịch vụ đã được cài."; TimTenMien
-            echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
-            echo ""
-            echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau: systemctl start ytb"; sleep 1
-            echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
-            systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
-            echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
-            echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
-        else
-            echo -e "${TgCB} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
-            echo -ne "${TgTT} Cài đặt lại Dịch vụ..."; echo ''
-            TaoDichVu
-            systemctl daemon-reload
-            systemctl restart ytb 1> /dev/null 2>&1
-            echo -e "${TgOK} Cài đặt lại Hoàn tất."; exit 1
-        fi
-    fi; TimTenMien
+    fi; DichVu
 }
 
 function Chay() {
@@ -362,7 +364,7 @@ function CapNhat() {
             $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$(basename "$0")
             echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
             echo -e "${TgOK} Khởi động lại dịch vụ ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}...";
-            if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
+            if [ -f $TMDichVu/$TenDV ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
             #sh ${TM}/$(basename "$0");
         exit 0; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
