@@ -1,10 +1,10 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824v"
+PhienBan="210824w"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
-ThoiGianKiemTra="300"
+ThoiGianKiemTra="2"
 ThoiGianNgu="300"
 Nha="https://s8d.github.io/AdBlock"
 pbcu="https://xem.li/ytbo"
@@ -20,7 +20,7 @@ ChanLog="/var/log/pihole-updateGravity.log"
 PiData="/etc/pihole/gravity.db"
 TMDichVu="/lib/systemd/system"
 ytb="ytb.service"
-YTTen=$(basename $0)
+TenFile=$(basename $0)
 PRINTWD=$(pwd)
 TMTam="/tmp/ytb"; mkdir -p $TMTam
 upTam="${TM}/tam"
@@ -62,7 +62,7 @@ function Banner () {
 
 function CheckUser() {
     if [[ "$(id -u $(whoami))" != "${ROOT_UID}" ]]; then
-        echo -e "${TgNG} $(whoami) Vui lòng chạy $YTTen với quyền root."
+        echo -e "${TgNG} $(whoami) Vui lòng chạy $TenFile với quyền root."
         exit 1;
     fi
 }
@@ -83,8 +83,8 @@ function TaoDichVu () {
 Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
 After=network.target
 [Service]
-ExecStart=$PRINTWD/$YTTen chay
-ExecStop=$PRINTWD/$YTTen dung
+ExecStart=$PRINTWD/$TenFile chay
+ExecStop=$PRINTWD/$TenFile dung
 [Install]
 WantedBy=multi-user.target
 	EOF
@@ -131,32 +131,8 @@ function Database() {
     esac
 }
 
-
-
-function Cai() {
-    CheckUser #We check if the root user is executing the script
-    CheckDocker #We check if the script is being executed on a Docker Container
-    
-    echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
-    function ConfigureEnv() {
-        echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
-        Database "create"
-        echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
-        echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
-        read -p " " answer
-        case $answer in
-            Y|y)
-                PATTERN=${ChanManh}
-                ;;
-            N|n)
-                PATTERN=${ChanThuong}
-                ;;
-            *)
-                PATTERN=${ChanThuong}
-                ;;
-        esac
-
-        echo -e "${TgTT} Đang tìm tên miền con trong PiHole..."; sleep 1
+function TimTenMien () {
+	echo -e "${TgTT} Đang tìm tên miền con trong PiHole..."; sleep 1
         cp $TMPi/pihole.log* $TMTam
         for GZIPFILE in $(ls $TMTam/pihole.log*gz > /dev/null 2>&1); do
             gunzip $GZIPFILE;
@@ -188,15 +164,41 @@ function Cai() {
         echo -ne "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm..."; sleep 1; echo ''
         rm --force ${TMTam}/pihole.log*
         echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
+}
+
+function Cai() {
+    CheckUser #We check if the root user is executing the script
+    CheckDocker #We check if the script is being executed on a Docker Container
+    
+    echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
+    function ConfigureEnv() {
+        echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
+        Database "create"
+        echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
+        echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
+        read -p " " answer
+        case $answer in
+            Y|y)
+                PATTERN=${ChanManh}
+                ;;
+            N|n)
+                PATTERN=${ChanThuong}
+                ;;
+            *)
+                PATTERN=${ChanThuong}
+                ;;
+        esac
+        TimTenMien
+        
     }
 
     if [[ "${DOCKER}" == "y" ]]; then
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
         ConfigureEnv
-        echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$YTTen { chay & || dung & }"
+        echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$TenFile { chay & || dung & }"
     else
         if [ ! -f $TMDichVu/$ytb ]; then
-            echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
+            echo -e "${TgTT} Nếu bạn di chuyển $TenFile sang nơi khác, vui lòng chạy: ${MauDo}sh $TenFile cai${MauXam}";
             echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
             TaoDichVu
             echo -e "${TgOK} Dịch vụ đã được cài.";
@@ -225,18 +227,18 @@ function Cai() {
 function Chay() {
     CheckUser #We check if the root user is executing the script
 
-    echo -e "${TgOK} Chặn quảng cáo YouTube đã chạy"
+    echo -e "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy"
     echo "${ThoiGian} Chặn quảng cáo YouTube đã chạy" >> $YTLog
 
     Database "getGroupId"
 
     if [ -z ${GROUPID} ]; then
         echo -e "${TgNG} Không thấy group ID của Chặn quảng cáo YouTube trong Dữ liệu."
-        echo -e "${TgTT} Vui lòng chạy lại $YTTen với tham số: cai"
+        echo -e "${TgTT} Vui lòng chạy ${MauDo}$TenFile ${MauXanh}cai${MauXam}"
         exit 1;
     fi
 
-
+    TimTenMien
 
     while true; do
         echo -e "${TgTT} Đang kiểm tra ${MauXanh}$PiLog${MauXam}..."
@@ -334,7 +336,7 @@ function CheckPiHole() {
     sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
     echo -e "${TgTT} Đang kiểm tra cấu hình PiHole..."
     if [ ! $piv -ge 5 ]; then 
-        echo -e "${TgNG} ${MauXam}${YTTen}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!" 
+        echo -e "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!" 
         echo -e "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
         echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}"; 
         read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
@@ -355,17 +357,17 @@ function CapNhat() {
     CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; }; 
     CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
     if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
-    if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
+    if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
         PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-        if [ $PhienBanMoi == $PhienBan ]; then echo -e "${TgTT} ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
-            echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
-        else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
-            cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
+        if [ $PhienBanMoi == $PhienBan ]; then echo -e "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
+            echo -e "${TgOK} $TenFile $PhienBan là bản mới nhất!"  >> $YTLog
+        else echo -e "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
+            cp $0 ${TM}/old/$PhienBan\_$TenFile
             $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
-            echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
-            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; 
+            echo -e "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
+            echo -e "${TgOK} Khởi chạy ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}..."; 
             if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
-            #sh ${TM}/$(basename "$0"); 
+            #sh ${TM}/$TenFile; 
         exit 0; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
     fi
@@ -378,6 +380,7 @@ case "$1" in
     "kt"   ) CheckPiHole    ;;
     "dung" ) Dung 			;;
     "go"   ) Go			    ;;
-    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$YTTen ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$YTTen ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$YTTen${MauXam}." ;;
+    *      ) echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$TenFile${MauXam}." ;;
 esac
 echo ''
+
