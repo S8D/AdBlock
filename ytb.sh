@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824w"
+PhienBan="210824x"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -150,10 +150,6 @@ function TimTenMien () {
                 if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
             done
             Database "update"
-            pihole updateGravity > ${ChanLog} 2>&1 &
-            #echo -ne "${TgTT} Đang cập nhật dữ liệu"
-            while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
-            echo ''; echo -e "${TgOK} Cập nhật dữ liệu Hoàn tất."
             echo -e "${TgOK} ${MauXanh}$SoLuong ${MauXam}tên miền đã được thêm."
             echo "${ThoiGian} $SoLuong tên miền đã được thêm." >> $YTLog
         else
@@ -189,6 +185,11 @@ function Cai() {
                 ;;
         esac
         TimTenMien
+        echo -ne "${TgTT} Đang cập nhật dữ liệu"
+        pihole updateGravity > ${ChanLog} 2>&1 &            
+        while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
+        echo ''; echo -e "${TgOK} Cập nhật dữ liệu Hoàn tất."
+            
         
     }
 
@@ -367,7 +368,7 @@ function CapNhat() {
             echo -e "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
             echo -e "${TgOK} Khởi chạy ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}..."; 
             if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
-            #sh ${TM}/$TenFile; 
+            sh ${TM}/$TenFile up;
         exit 0; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
     fi
