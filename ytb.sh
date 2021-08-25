@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825a"
+PhienBan="210825b"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -19,7 +19,7 @@ PiLog="/var/log/pihole.log"
 ChanLog="/var/log/pihole-updateGravity.log"
 PiData="/etc/pihole/gravity.db"
 TMDichVu="/lib/systemd/system"
-ytb="ytb.service"
+TenDV="ytb.service"
 TenFile=$(basename $0)
 TMTam="/tmp/ytb"; mkdir -p $TMTam
 upTam="${TM}/tam"
@@ -76,8 +76,8 @@ function CheckDocker() {
 
 
 function TaoDichVu () {
-    cd $TMDichVu && touch $ytb
-    cat > $ytb <<-EOF
+    cd $TMDichVu && touch $TenDV
+    cat > $TenDV <<-EOF
 [Unit]
 Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
 After=network.target
@@ -86,8 +86,7 @@ ExecStart=$TM/$TenFile chay
 ExecStop=$TM/$TenFile dung
 [Install]
 WantedBy=multi-user.target
-    EOF
-sudo chmod 664 $TMDichVu/$ytb
+EOF
 }
 
 
@@ -197,10 +196,10 @@ function Cai() {
         ConfigureEnv
         echo -e "${TgCB} Hãy dùng lệnh: bash $TM/$TenFile { chay & || dung & }"
     else
-        if [ ! -f $TMDichVu/$ytb ]; then
+        if [ ! -f $TMDichVu/$TenDV ]; then
             echo -e "${TgTT} Nếu bạn di chuyển $TenFile sang nơi khác, vui lòng chạy: ${MauDo}sh $TenFile cai${MauXam}";
             echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
-            TaoDichVu
+            TaoDichVu; sudo chmod 664 $TMDichVu/$TenDV
             echo -e "${TgOK} Dịch vụ đã được cài.";
 
             ConfigureEnv
@@ -320,9 +319,9 @@ function Go() {
         systemctl disable ytb 1> /dev/null 2>&1
         systemctl daemon-reload
 
-        if [ -f ${TMDichVu}/${ytb} ]; then
+        if [ -f ${TMDichVu}/${TenDV} ]; then
             echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
-            rm --force ${TMDichVu}/${ytb};
+            rm --force ${TMDichVu}/${TenDV};
         fi
 
         if [ -f ${TMDichVu}/ytadsblocker ]; then
@@ -383,7 +382,7 @@ function CapNhat() {
             $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$TenFile
             echo -e "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
             echo -e "${TgOK} Khởi chạy ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-            if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
+            if [ -f $TMDichVu/$TenDV ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
             sh ${TM}/$TenFile up;
         exit 0; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
