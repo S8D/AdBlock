@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825j"
+PhienBan="210825k"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -187,12 +187,7 @@ ExecStart=$PRINTWD/$YTTen chay
 ExecStop=$PRINTWD/$YTTen dung
 [Install]
 WantedBy=multi-user.target
-    EOF
-    sudo chmod 664 $TMDichVu/$TenDV
-    echo -e "${TgOK} Dịch vụ đã được cài."
-    echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
-    systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
-    echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
+EOF
 }
 
 
@@ -201,6 +196,11 @@ function CaiDichVu () {
         echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
         echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
         TaoDichVu
+        sudo chmod 664 $TMDichVu/$TenDV
+        echo -e "${TgOK} Dịch vụ đã được cài."
+        echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
+        systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
+        echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
         TimTenMien
         echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
         echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
