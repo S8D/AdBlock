@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825a"
+PhienBan="210825b"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -156,6 +156,42 @@ function Database() {
     esac
 }
 
+function TimTenMien() {
+    echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
+    CheckConfig
+    echo -e "${TgTT} Đang tìm tên miền con trong PiHole..."; sleep 1
+    cp $TMPi/pihole.log* $TMTam
+    for GZIPFILE in $(ls $TMTam/pihole.log*gz > /dev/null 2>&1); do
+        gunzip $GZIPFILE;
+    done
+
+    echo "${ThoiGian} Đang tìm tên miền con trong Nhật Ký..." >> $YTLog
+    ALL_DOMAINS=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq)
+
+    if [ ! -z "${ALL_DOMAINS}" ]; then
+        SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
+        echo -e "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền...";
+        echo "${ThoiGian} Tìm thấy $SoLuong tên miền..." >> $YTLog
+        for YTD in $ALL_DOMAINS; do
+            Database "checkDomain" "${YTD}"
+            if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
+        done
+        Database "update"
+        pihole updateGravity > ${ChanLog} 2>&1 &
+        #echo -ne "${TgTT} Đang cập nhật dữ liệu"
+        while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
+        echo ''; echo -e "${TgOK} Cập nhật dữ liệu Hoàn tất."
+        echo -e "${TgOK} ${MauXanh}$SoLuong ${MauXam}tên miền đã được thêm."
+        echo "${ThoiGian} $SoLuong tên miền đã được thêm." >> $YTLog
+    else
+        echo -e "${TgCB} Không có tên miền nào được thêm."
+        echo "${ThoiGian} Không có tên miền đã được thêm." >> $YTLog
+    fi
+
+    echo -ne "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm..."; sleep 1; echo ''
+    rm --force ${TMTam}/pihole.log*
+    echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
+}
 
 
 function Cai() {
@@ -163,61 +199,23 @@ function Cai() {
     CheckDocker #We check if the script is being executed on a Docker Container
     
     echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
-    function ConfigureEnv() {
-        echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
-        Database "create"; CheckConfig
-        echo -e "${TgTT} Đang tìm tên miền con trong PiHole..."; sleep 1
-        cp $TMPi/pihole.log* $TMTam
-        for GZIPFILE in $(ls $TMTam/pihole.log*gz > /dev/null 2>&1); do
-            gunzip $GZIPFILE;
-        done
-
-        echo "${ThoiGian} Đang tìm tên miền con trong Nhật Ký..." >> $YTLog
-        ALL_DOMAINS=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq)
-
-        if [ ! -z "${ALL_DOMAINS}" ]; then
-            SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
-            echo -e "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền...";
-            echo "${ThoiGian} Tìm thấy $SoLuong tên miền..." >> $YTLog
-            for YTD in $ALL_DOMAINS; do
-                Database "checkDomain" "${YTD}"
-                if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
-            done
-            Database "update"
-            pihole updateGravity > ${ChanLog} 2>&1 &
-            #echo -ne "${TgTT} Đang cập nhật dữ liệu"
-            while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
-            echo ''; echo -e "${TgOK} Cập nhật dữ liệu Hoàn tất."
-            echo -e "${TgOK} ${MauXanh}$SoLuong ${MauXam}tên miền đã được thêm."
-            echo "${ThoiGian} $SoLuong tên miền đã được thêm." >> $YTLog
-        else
-            echo -e "${TgCB} Không có tên miền nào được thêm."
-            echo "${ThoiGian} Không có tên miền đã được thêm." >> $YTLog
-        fi
-
-        echo -ne "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm..."; sleep 1; echo ''
-        rm --force ${TMTam}/pihole.log*
-        echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
-    }
+    Database "create"; TimTenMien
 
     if [[ "${DOCKER}" == "y" ]]; then
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
-        ConfigureEnv
+        TimTenMien
         echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$YTTen { chay & || dung & }"
     else
         if [ ! -f $TMDichVu/$ytb ]; then
             echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
             echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
             TaoDichVu
-            echo -e "${TgOK} Dịch vụ đã được cài.";
-
-            ConfigureEnv
-
+            echo -e "${TgOK} Dịch vụ đã được cài."; TimTenMien
             echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
             echo ""
             echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau: systemctl start ytb"; sleep 1
             echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
-            systemctl enable ytb 1> /dev/null 2>&1
+            systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
             echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
             echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
         else
@@ -247,8 +245,7 @@ function Chay() {
         exit 1;
     fi
 
-
-
+    TimTenMien
     while true; do
         echo -e "${TgTT} Đang kiểm tra ${MauXanh}$PiLog${MauXam}..."
         echo "${ThoiGian} Đang kiểm tra ${PiLog}..." >> $YTLog
