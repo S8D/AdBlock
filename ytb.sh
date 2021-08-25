@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825f"
+PhienBan="210825g"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -23,7 +23,6 @@ YTTen=$(basename $0)
 PRINTWD=$(pwd)
 TMTam="/tmp/ytb"; mkdir -p $TMTam
 upTam="${TM}/tam"
-
 
 # Cài đặt màu sắc
 MauDo="\e[31m"
@@ -55,7 +54,6 @@ function Banner () {
     echo ""
 }
 
-
 function CheckUser() {
     ROOT_UID=0
     if [[ "$(id -u $(whoami))" != "${ROOT_UID}" ]]; then
@@ -63,7 +61,6 @@ function CheckUser() {
         exit 1;
     fi
 }
-
 
 function CheckDocker() {
     DOCKER_PIHOLE="/etc/docker-pi-hole-version"
@@ -115,7 +112,6 @@ WantedBy=multi-user.target
 	EOF
 sudo chmod 664 $TMDichVu/$ytb
 }
-
 
 function Database() {
     local OPTION=$1
@@ -193,13 +189,12 @@ function TimTenMien() {
     echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
 }
 
-
 function Cai() {
     CheckUser #We check if the root user is executing the script
     CheckDocker #We check if the script is being executed on a Docker Container
-    
+
     echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
-    Database "create"; 
+    Database "create";
 
     if [[ "${DOCKER}" == "y" ]]; then
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
@@ -229,8 +224,7 @@ function Cai() {
     fi; TimTenMien
 }
 
-
-function Chay() {    
+function Chay() {
     CheckUser #We check if the root user is executing the script
     CheckConfig
     Banner
@@ -283,14 +277,12 @@ function Chay() {
     done
 }
 
-
 function Dung() {
     echo -ne "${TgTT} Dừng chặn quảng cáo YouTube"; echo ''
     echo "${ThoiGian} Chặn quảng cáo YouTube đã dừng" >> $YTLog
     #kill -9 `pgrep ytb`
     killall ytb
 }
-
 
 function Go() {
     CheckDocker #We check if the script is being executed on a Docker Container
@@ -332,7 +324,6 @@ function Go() {
     killall ytb
 }
 
-
 function CheckPiHole() {
     PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
     PiCfh="BLOCKINGMODE"
@@ -341,10 +332,10 @@ function CheckPiHole() {
     sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
     sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
     echo -e "${TgTT} Đang kiểm tra cấu hình PiHole..."
-    if [ ! $piv -ge 5 ]; then 
-        echo -e "${TgNG} ${MauXam}${YTTen}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!" 
+    if [ ! $piv -ge 5 ]; then
+        echo -e "${TgNG} ${MauXam}${YTTen}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
         echo -e "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
-        echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}"; 
+        echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
         read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
     fi
     if [[ "${PiCfg}" != "${PiCfh}" ]]; then
@@ -357,10 +348,9 @@ function CheckPiHole() {
     fi
 }
 
-
 function CapNhat() {
     echo -e "${TgTT} Đang kiểm tra máy chủ cập nhật..."
-    CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; }; 
+    CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; };
     CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
     if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
     if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
@@ -369,11 +359,11 @@ function CapNhat() {
             echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
-            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$YTTen        
+            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$(basename "$0")
             echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
-            echo -e "${TgOK} Khởi động lại dịch vụ ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; 
-            if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
-            #sh ${TM}/$(basename "$0"); 
+            echo -e "${TgOK} Khởi động lại dịch vụ ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}...";
+            if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
+            #sh ${TM}/$(basename "$0");
         exit 0; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
     fi
