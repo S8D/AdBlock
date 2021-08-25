@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825l"
+PhienBan="210825m"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -356,9 +356,10 @@ function CheckPiHole() {
 function CapNhat() {
     echo -e "${TgTT} Đang kiểm tra máy chủ cập nhật..."
     CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; };
-    CheckNet_2 () { ping -q -c 1 -W 1 s8d.github.io >/dev/null; };
-    if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; fi; else net=0; fi
-    if [ $net -ge 2 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
+    CheckNet_2 () { ping -q -c 1 -W 1 github.com >/dev/null; };
+    CheckNet_3 () { ping -q -c 1 -W 1 raw.githubusercontent.com >/dev/null; };
+    if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; if CheckNet_3; then net="3"; else net=0; fi; fi; else net=0; fi
+    if [ $net -ge 3 ]; then echo -e "${TgTT} Đang kiểm tra cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan${MauXam}..."
         PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
         if [ $PhienBanMoi == $PhienBan ]; then echo -e "${TgTT} ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
             echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
