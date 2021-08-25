@@ -1,17 +1,16 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824v"
+PhienBan="210825a"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
-ThoiGianKiemTra="300"
-ThoiGianNgu="300"
 Nha="https://s8d.github.io/AdBlock"
 pbcu="https://xem.li/ytbo"
 ip=$(curl -s api.ipify.org)
 dl1="curl -sLo"; dl2="curl -sL"
 mkdir -p /sd; echo ''
 TM="/sd/ytb"; mkdir -p $TM
+CauHinh="${TM}/cauhinh"
 YTLog="${TM}/NhatKy.log"
 ThoiGian=$(date "+%F %T")
 TMPi="/var/log"
@@ -24,10 +23,7 @@ YTTen=$(basename $0)
 PRINTWD=$(pwd)
 TMTam="/tmp/ytb"; mkdir -p $TMTam
 upTam="${TM}/tam"
-DOCKER_PIHOLE="/etc/docker-pi-hole-version"
-ROOT_UID=0
-ChanThuong='r([0-9]{1,2})[^-].*\.googlevideo\.com'
-ChanManh='r([0-9]{1,2}).*\.googlevideo\.com'
+
 
 # Cài đặt màu sắc
 MauDo="\e[31m"
@@ -61,6 +57,7 @@ function Banner () {
 
 
 function CheckUser() {
+    ROOT_UID=0
     if [[ "$(id -u $(whoami))" != "${ROOT_UID}" ]]; then
         echo -e "${TgNG} $(whoami) Vui lòng chạy $YTTen với quyền root."
         exit 1;
@@ -69,12 +66,40 @@ function CheckUser() {
 
 
 function CheckDocker() {
+    DOCKER_PIHOLE="/etc/docker-pi-hole-version"
     if [ -f "${DOCKER_PIHOLE}" ]; then
         echo -e "${TgTT} Phát hiện Docker."
         DOCKER="y"
     fi
 }
 
+function CheckConfig () {
+    if [ ! -f "${CauHinh}" ]; then echo '' > $CauHinh
+        ChanThuong='r([0-9]{1,2})[^-].*\.googlevideo\.com'
+        ChanManh='r([0-9]{1,2}).*\.googlevideo\.com'
+        echo -e 'ThoiGianKiemTra=300' >> $CauHinh
+        echo -e 'ThoiGianNgu=300' >> $CauHinh
+        echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
+        echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
+        read -p " " answer
+        case $answer in
+            Y|y)
+            CapDo=${ChanManh}
+            ;;
+            N|n)
+            CapDo=${ChanThuong}
+            ;;
+            *)
+            CapDo=${ChanThuong}
+            ;;
+        esac
+        echo -e "CapDo=${CapDo}" >> $CauHinh
+    else
+        dv=`grep -w -m 1 "CapDo" $CauHinh`;CapDo=$(echo $dv | sed 's/.*\=//');
+        dv=`grep -w -m 1 "ThoiGianKiemTra" $CauHinh`;ThoiGianKiemTra=$(echo $dv | sed 's/.*\=//');
+        dv=`grep -w -m 1 "ThoiGianNgu" $CauHinh`;ThoiGianNgu=$(echo $dv | sed 's/.*\=//');
+    fi
+}
 
 function TaoDichVu () {
     cd $TMDichVu && touch $ytb
@@ -140,22 +165,7 @@ function Cai() {
     echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
     function ConfigureEnv() {
         echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
-        Database "create"
-        echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
-        echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
-        read -p " " answer
-        case $answer in
-            Y|y)
-                PATTERN=${ChanManh}
-                ;;
-            N|n)
-                PATTERN=${ChanThuong}
-                ;;
-            *)
-                PATTERN=${ChanThuong}
-                ;;
-        esac
-
+        Database "create"; CheckConfig
         echo -e "${TgTT} Đang tìm tên miền con trong PiHole..."; sleep 1
         cp $TMPi/pihole.log* $TMTam
         for GZIPFILE in $(ls $TMTam/pihole.log*gz > /dev/null 2>&1); do
@@ -163,10 +173,10 @@ function Cai() {
         done
 
         echo "${ThoiGian} Đang tìm tên miền con trong Nhật Ký..." >> $YTLog
-        ALL_DOMAINS=$(cat $TMTam/pihole.log* | egrep --only-matching "${PATTERN}" | sort | uniq)
+        ALL_DOMAINS=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq)
 
         if [ ! -z "${ALL_DOMAINS}" ]; then
-            SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${PATTERN}" | sort | uniq | wc --lines)
+            SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
             echo -e "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền...";
             echo "${ThoiGian} Tìm thấy $SoLuong tên miền..." >> $YTLog
             for YTD in $ALL_DOMAINS; do
@@ -223,6 +233,7 @@ function Cai() {
 
 
 function Chay() {
+    CheckConfig
     CheckUser #We check if the root user is executing the script
 
     echo -e "${TgOK} Chặn quảng cáo YouTube đã chạy"
@@ -242,7 +253,7 @@ function Chay() {
         echo -e "${TgTT} Đang kiểm tra ${MauXanh}$PiLog${MauXam}..."
         echo "${ThoiGian} Đang kiểm tra ${PiLog}..." >> $YTLog
 
-        TenMien=$(cat ${PiLog} | egrep --only-matching "${PATTERN}" | sort | uniq)
+        TenMien=$(cat ${PiLog} | egrep --only-matching "${CapDo}" | sort | uniq)
         TenMienMoi=
         KTTenMien=
 
