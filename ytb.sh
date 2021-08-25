@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825k"
+PhienBan="210825l"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -18,7 +18,7 @@ PiLog="/var/log/pihole.log"
 ChanLog="/var/log/pihole-updateGravity.log"
 PiData="/etc/pihole/gravity.db"
 TMDichVu="/lib/systemd/system"
-ytb="ytb.service"
+TenDV="ytb.service"
 YTTen=$(basename $0)
 PRINTWD=$(pwd)
 TMTam="/tmp/ytb"; mkdir -p $TMTam
