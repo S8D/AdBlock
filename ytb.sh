@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825p"
+PhienBan="210825q"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -294,13 +294,6 @@ function Go() {
     CheckUser
 
     echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
-    Database "delete"
-    pihole updateGravity > ${ChanLog} 2>&1 &
-    echo -ne "${TgTT} Đang cập nhật lại dữ liệu"
-
-    while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
-    echo ''; echo -ne "${TgOK} Cập nhật dữ liệu Hoàn tất."; echo ''
-
     if [[ ! ${DOCKER} ]]; then Dung
         echo -e "${TgTT} Đang ${MauDo}vô hiệu hóa ${MauXam}Dịch vụ..."
         systemctl stop ytb 1> /dev/null 2>&1
@@ -329,7 +322,12 @@ function Go() {
 
     echo -e "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
     #kill -9 `pgrep ytb`
-    killall ytb
+    killall ytb    
+    Database "delete"
+    pihole updateGravity > ${ChanLog} 2>&1 &
+    echo -ne "${TgTT} Đang cập nhật lại dữ liệu"
+    while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
+    echo ''; echo -ne "${TgOK} Cập nhật dữ liệu Hoàn tất."; echo ''
 }
 
 function CheckPiHole() {
