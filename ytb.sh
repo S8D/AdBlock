@@ -381,7 +381,7 @@ function CapNhat() {
             echo -e "${TgOK} $TenFile $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$TenFile
-            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
+            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$TenFile        
             echo -e "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
             echo -e "${TgOK} Khởi chạy ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}..."; 
             if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
