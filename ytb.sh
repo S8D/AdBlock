@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825e"
+PhienBan="210825f"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -199,7 +199,7 @@ function Cai() {
     CheckDocker #We check if the script is being executed on a Docker Container
     
     echo -e "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
-    Database "create"; TimTenMien
+    Database "create"; 
 
     if [[ "${DOCKER}" == "y" ]]; then
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
@@ -224,9 +224,9 @@ function Cai() {
             TaoDichVu
             systemctl daemon-reload
             systemctl restart ytb 1> /dev/null 2>&1
-            echo -e "${TgOK} Cài đặt lại Hoàn tất."
+            echo -e "${TgOK} Cài đặt lại Hoàn tất."; exit 1
         fi
-    fi
+    fi; TimTenMien
 }
 
 
