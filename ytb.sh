@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825c"
+PhienBan="210825d"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -77,7 +77,7 @@ function CheckConfig () {
     if [ ! -f "${CauHinh}" ]; then echo '' > $CauHinh
         ChanThuong='r([0-9]{1,2})[^-].*\.googlevideo\.com'
         ChanManh='r([0-9]{1,2}).*\.googlevideo\.com'
-        echo -e 'ThoiGianKiemTra=300' >> $CauHinh
+        echo -e 'ThoiGianCapNhat=2' >> $CauHinh
         echo -e 'ThoiGianNgu=300' >> $CauHinh
         echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
         echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
@@ -96,7 +96,7 @@ function CheckConfig () {
         echo -e "CapDo=${CapDo}" >> $CauHinh
     else
         dv=`grep -w -m 1 "CapDo" $CauHinh`;CapDo=$(echo $dv | sed 's/.*\=//');
-        dv=`grep -w -m 1 "ThoiGianKiemTra" $CauHinh`;ThoiGianKiemTra=$(echo $dv | sed 's/.*\=//');
+        dv=`grep -w -m 1 "ThoiGianCapNhat" $CauHinh`;ThoiGianCapNhat=$(echo $dv | sed 's/.*\=//');
         dv=`grep -w -m 1 "ThoiGianNgu" $CauHinh`;ThoiGianNgu=$(echo $dv | sed 's/.*\=//');
     fi
 }
@@ -274,7 +274,7 @@ function Chay() {
         COUNT=$(($COUNT + 1))
         sleep $ThoiGianNgu;
 
-        if [[ $COUNT -eq ${ThoiGianKiemTra} ]]; then
+        if [[ $COUNT -eq ${ThoiGianCapNhat} ]]; then
             CapNhat
             COUNT=0
         else
