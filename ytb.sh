@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825o"
+PhienBan="210825p"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -189,7 +189,6 @@ WantedBy=multi-user.target
 EOF
 }
 
-
 function CaiDichVu () {
     if [ ! -f $TMDichVu/$TenDV ]; then
         echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
@@ -286,7 +285,7 @@ function Dung() {
     echo -ne "${TgTT} Dừng chặn quảng cáo YouTube"; echo ''
     echo "${ThoiGian} Chặn quảng cáo YouTube đã dừng" >> $YTLog
     service ytb stop
-    kill -9 `pgrep ytb`    
+    #kill -9 `pgrep ytb`
     killall ytb
 }
 
@@ -302,16 +301,16 @@ function Go() {
     while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
     echo ''; echo -ne "${TgOK} Cập nhật dữ liệu Hoàn tất."; echo ''
 
-    if [[ ! ${DOCKER} ]]; then Dung        
+    if [[ ! ${DOCKER} ]]; then Dung
         echo -e "${TgTT} Đang ${MauDo}vô hiệu hóa ${MauXam}Dịch vụ..."
         systemctl stop ytb 1> /dev/null 2>&1
         systemctl disable ytb 1> /dev/null 2>&1
         systemctl daemon-reload
 
-        if [ -f ${TMDichVu}/${ytb} ]; then
+        if [ -f ${TMDichVu}/${TenDV} ]; then
             echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
-            rm --force ${TMDichVu}/${ytb};
-            rm -rf ${TMDichVu}/${ytb};
+            rm --force ${TMDichVu}/${TenDV};
+            rm -rf ${TMDichVu}/${TenDV};
         fi
 
         if [ -f ${TMDichVu}/ytadsblocker ]; then
@@ -329,7 +328,7 @@ function Go() {
     fi
 
     echo -e "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
-    kill -9 `pgrep ytb`
+    #kill -9 `pgrep ytb`
     killall ytb
 }
 
@@ -369,15 +368,15 @@ function CapNhat() {
             echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
-            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; 
+            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
             PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
             if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$(basename "$0")
-            echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog;
+                echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog;
             else echo -e "${TgNG} $(basename "$0") cập nhật thất bại!!!"  >> $YTLog; exit 1; fi
             echo -e "${TgOK} Khởi động lại dịch vụ ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}...";
             if [ -f $TMDichVu/$TenDV ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
-            sh ${TM}/$(basename "$0") up;
-        exit 0; fi
+            sh ${TM}/$(basename "$0") up; exit 0;
+        fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
     fi
 }
