@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825d"
+PhienBan="210825e"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -369,9 +369,9 @@ function CapNhat() {
             echo -e "${TgOK} $(basename "$0") $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$(basename "$0") ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$(basename "$0")
-            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
+            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$YTTen        
             echo -e "${TgOK} ${MauDo}$(basename "$0") được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
-            echo -e "${TgOK} Khởi chạy ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; 
+            echo -e "${TgOK} Khởi động lại dịch vụ ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}..."; 
             if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
             #sh ${TM}/$(basename "$0"); 
         exit 0; fi
