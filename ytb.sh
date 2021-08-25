@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825n"
+PhienBan="210825o"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -19,7 +19,7 @@ ChanLog="/var/log/pihole-updateGravity.log"
 PiData="/etc/pihole/gravity.db"
 TMDichVu="/lib/systemd/system"
 TenDV="ytb.service"
-YTTen=$(basename $0)
+TenFile=$(basename $0)
 PRINTWD=$(pwd)
 TMTam="/tmp/ytb"; mkdir -p $TMTam
 upTam="${TM}/tam"
@@ -57,7 +57,7 @@ function Banner () {
 function CheckUser() {
     ROOT_UID=0
     if [[ "$(id -u $(whoami))" != "${ROOT_UID}" ]]; then
-        echo -e "${TgNG} $(whoami) Vui lòng chạy $YTTen với quyền root."
+        echo -e "${TgNG} $(whoami) Vui lòng chạy $TenFile với quyền root."
         exit 1;
     fi
 }
@@ -182,8 +182,8 @@ function TaoDichVu () {
 Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
 After=network.target
 [Service]
-ExecStart=$PRINTWD/$YTTen chay
-ExecStop=$PRINTWD/$YTTen dung
+ExecStart=$PRINTWD/$TenFile chay
+ExecStop=$PRINTWD/$TenFile dung
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -194,7 +194,7 @@ function CaiDichVu () {
     if [ ! -f $TMDichVu/$TenDV ]; then
         echo -e "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
         Database "create";
-        echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
+        echo -e "${TgTT} Nếu bạn di chuyển $TenFile sang nơi khác, vui lòng chạy: ${MauDo}sh $TenFile cai${MauXam}";
         echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
         TaoDichVu
         sudo chmod 664 $TMDichVu/$TenDV
@@ -202,6 +202,7 @@ function CaiDichVu () {
         echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
         systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
         echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
+        TimTenMien
         echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
         echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
     else
@@ -222,10 +223,9 @@ function Cai() {
     if [[ "${DOCKER}" == "y" ]]; then
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
         TimTenMien
-        echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$YTTen { chay & || dung & }"
+        echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$TenFile { chay & || dung & }"
     fi
     CaiDichVu
-    TimTenMien
 }
 
 function Chay() {
@@ -238,7 +238,7 @@ function Chay() {
 
     if [ -z ${GROUPID} ]; then
         echo -e "${TgNG} Không thấy group ID của Chặn quảng cáo YouTube trong Dữ liệu."
-        echo -e "${TgTT} Vui lòng chạy lại $YTTen với tham số: cai"
+        echo -e "${TgTT} Vui lòng chạy lại $TenFile với tham số: cai"
         exit 1;
     fi
 
@@ -285,7 +285,8 @@ function Chay() {
 function Dung() {
     echo -ne "${TgTT} Dừng chặn quảng cáo YouTube"; echo ''
     echo "${ThoiGian} Chặn quảng cáo YouTube đã dừng" >> $YTLog
-    #kill -9 `pgrep ytb`
+    service ytb stop
+    kill -9 `pgrep ytb`    
     killall ytb
 }
 
@@ -301,7 +302,7 @@ function Go() {
     while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
     echo ''; echo -ne "${TgOK} Cập nhật dữ liệu Hoàn tất."; echo ''
 
-    if [[ ! ${DOCKER} ]]; then
+    if [[ ! ${DOCKER} ]]; then Dung        
         echo -e "${TgTT} Đang ${MauDo}vô hiệu hóa ${MauXam}Dịch vụ..."
         systemctl stop ytb 1> /dev/null 2>&1
         systemctl disable ytb 1> /dev/null 2>&1
@@ -310,6 +311,7 @@ function Go() {
         if [ -f ${TMDichVu}/${ytb} ]; then
             echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
             rm --force ${TMDichVu}/${ytb};
+            rm -rf ${TMDichVu}/${ytb};
         fi
 
         if [ -f ${TMDichVu}/ytadsblocker ]; then
@@ -317,6 +319,7 @@ function Go() {
             systemctl stop ytadsblocker 1> /dev/null 2>&1
             systemctl disable ytadsblocker 1> /dev/null 2>&1
             rm --force ${TMDichVu}/ytadsblocker;
+            rm -rf ${TMDichVu}/ytadsblocker;
         fi
 
         if [ -f ${YTLog} ]; then
@@ -326,7 +329,7 @@ function Go() {
     fi
 
     echo -e "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
-    #kill -9 `pgrep ytb`
+    kill -9 `pgrep ytb`
     killall ytb
 }
 
@@ -339,7 +342,7 @@ function CheckPiHole() {
     sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
     echo -e "${TgTT} Đang kiểm tra cấu hình PiHole..."
     if [ ! $piv -ge 5 ]; then
-        echo -e "${TgNG} ${MauXam}${YTTen}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
+        echo -e "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
         echo -e "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
         echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
         read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
@@ -373,7 +376,7 @@ function CapNhat() {
             else echo -e "${TgNG} $(basename "$0") cập nhật thất bại!!!"  >> $YTLog; exit 1; fi
             echo -e "${TgOK} Khởi động lại dịch vụ ${MauDo}$(basename "$0") ${MauXanh}$PhienBanMoi${MauXam}...";
             if [ -f $TMDichVu/$TenDV ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
-            #sh ${TM}/$(basename "$0");
+            sh ${TM}/$(basename "$0") up;
         exit 0; fi
     else echo -e "${TgNG} Không có mạng!!! Thoát ra" >> $YTLog; exit 1
     fi
@@ -386,6 +389,6 @@ case "$1" in
     "kt"   ) CheckPiHole    ;;
     "dung" ) Dung 			;;
     "go"   ) Go			    ;;
-    *      ) Banner; echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$YTTen ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$YTTen ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$YTTen${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$YTTen${MauXam}." ;;
+    *      ) Banner; echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$TenFile${MauXam}." ;;
 esac
 echo ''
