@@ -1,10 +1,10 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210824y"
+PhienBan="210824z"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
-ThoiGianKiemTra="2"
+ThoiGianKiemTra="1"
 ThoiGianNgu="300"
 Nha="https://s8d.github.io/AdBlock"
 pbcu="https://xem.li/ytbo"
@@ -83,8 +83,8 @@ function TaoDichVu () {
 Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
 After=network.target
 [Service]
-ExecStart=$PRINTWD/$TenFile chay
-ExecStop=$PRINTWD/$TenFile dung
+ExecStart=$TM/$TenFile chay
+ExecStop=$TM/$TenFile dung
 [Install]
 WantedBy=multi-user.target
 	EOF
@@ -210,7 +210,7 @@ function Cai() {
             echo ""
             echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau: systemctl start ytb"; sleep 1
             echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
-            systemctl enable ytb 1> /dev/null 2>&1
+            systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
             echo -e "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
             echo "${ThoiGian} Chặn quảng cáo YouTube đã được cài đặt thành công!" >> $YTLog
         else
@@ -287,7 +287,7 @@ function Chay() {
         sleep $ThoiGianNgu;
 
         if [[ $COUNT -eq ${ThoiGianKiemTra} ]]; then
-            CapNhat
+            CapNhat; if [ -f ${TM}/re ]; then ${TM}/re; fi
             COUNT=0
         else
             continue;
@@ -310,9 +310,9 @@ function Go() {
 
     echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
     Database "delete"
-    pihole updateGravity > ${ChanLog} 2>&1 &
+#    pihole updateGravity > ${ChanLog} 2>&1 &
     echo -ne "${TgTT} Đang cập nhật lại dữ liệu"
-    while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
+#    while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
     echo ''; echo -ne "${TgOK} Cập nhật dữ liệu Hoàn tất."; echo ''
 
     if [[ ! ${DOCKER} ]]; then
@@ -381,7 +381,7 @@ function CapNhat() {
             echo -e "${TgOK} $TenFile $PhienBan là bản mới nhất!"  >> $YTLog
         else echo -e "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
             cp $0 ${TM}/old/$PhienBan\_$TenFile
-            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$TenFile        
+            $dl1 ${upTam} $UpLink; sudo chmod +x ${upTam}; mv ${upTam} ${TM}/$0        
             echo -e "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!" >> $YTLog
             echo -e "${TgOK} Khởi chạy ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}..."; 
             if [ -f $TMDichVu/$ytb ]; then systemctl restart ytb 1> /dev/null 2>&1; fi; 
