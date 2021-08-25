@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210825i"
+PhienBan="210825j"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -41,7 +41,7 @@ set -e
 
 function Banner () {
     echo -e "${MauDo}==================================="
-    echo -e "|  ${MauXam}YouTube Ads AdBlock for PiHole ${MauDo}|"
+    echo -e "|  ${MauXanh}YouTube Ads AdBlock for PiHole ${MauDo}|"
     echo -e "|  ${MauXam}    Phiên bản: ${MauXanh}${PhienBan}         ${MauDo}|"
     echo -e "|  ${MauXanh}${Nha}  ${MauDo}|"
     echo -e "|  ${MauXam}Tác giả: ${MauXanh}deividgdt             ${MauDo}|"
@@ -98,34 +98,17 @@ function CheckConfig () {
     fi
 }
 
-function TaoDichVu () {
-    cd $TMDichVu && touch $TenDV
-    cat > $TenDV <<-EOF
-[Unit]
-Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
-After=network.target
-[Service]
-ExecStart=$PRINTWD/$YTTen chay
-ExecStop=$PRINTWD/$YTTen dung
-[Install]
-WantedBy=multi-user.target
-	EOF
-    sudo chmod 664 $TMDichVu/$TenDV
-    echo -e "${TgOK} Dịch vụ đã được cài."
-    echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
-    systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
-    echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
-}
-
 function Database() {
     local OPTION=$1
     local DOMAIN="$2"
 
     case $OPTION in
         "create")
+            echo -e "${TgTT} Đang tạo nhóm ID..."
             LASTGROUPID=$(sqlite3 "${PiData}" "SELECT MAX(id) FROM 'group';" 2>>  $YTLog )
             GROUPID=$((${LASTGROUPID} + 1))
             sqlite3 "${PiData}" "INSERT INTO 'group' (id, name, description) VALUES (${GROUPID}, 'YouTubeAdsBlock', 'YouTube AdsBlock');" 2>> $YTLog
+            echo -e "${TgOK} Đang tạo nhóm ID Hoàn tất!"
             ;;
         "insertDomain")
             if [[ $DOMAIN == *.googlevideo.com ]]; then
@@ -193,7 +176,27 @@ function TimTenMien() {
     echo -ne "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
 }
 
-function DichVu () {
+function TaoDichVu () {
+    cd $TMDichVu && touch $TenDV
+    cat > $TenDV <<-EOF
+[Unit]
+Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
+After=network.target
+[Service]
+ExecStart=$PRINTWD/$YTTen chay
+ExecStop=$PRINTWD/$YTTen dung
+[Install]
+WantedBy=multi-user.target
+    EOF
+    sudo chmod 664 $TMDichVu/$TenDV
+    echo -e "${TgOK} Dịch vụ đã được cài."
+    echo -ne "${TgTT} Đang bật Dịch vụ."; sleep 1; echo ''
+    systemctl enable ytb 1> /dev/null 2>&1; systemctl start ytb 1> /dev/null 2>&1
+    echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1; echo ''
+}
+
+
+function CaiDichVu () {
     if [ ! -f $TMDichVu/$TenDV ]; then
         echo -e "${TgTT} Nếu bạn di chuyển $YTTen sang nơi khác, vui lòng chạy: ${MauDo}sh $YTTen cai${MauXam}";
         echo -ne "${TgTT} Đang cài Dịch vụ..."; sleep 1; echo ''
@@ -223,7 +226,7 @@ function Cai() {
         echo -e "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
         TimTenMien
         echo -e "${TgCB} Hãy dùng lệnh: bash $PRINTWD/$YTTen { chay & || dung & }"
-    fi; DichVu
+    fi; CaiDichVu
 }
 
 function Chay() {
