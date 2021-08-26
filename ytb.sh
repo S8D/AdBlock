@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827a"
+PhienBan="210827b"
 CapNhatCauHinh="1"
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -26,7 +26,6 @@ PiData="/etc/pihole/gravity.db"
 TMDichVu="/lib/systemd/system"
 TenDV="ytb.service"
 TenFile=$(basename $0)
-
 
 # Cài đặt màu sắc
 MauDo="\e[31m"
@@ -233,7 +232,7 @@ function CaiDichVu () {
 		InRa "${TgOK} Dịch vụ đã được cài."
 		InRa "${TgTT} Đang bật Dịch vụ."; sleep 1
 		systemctl enable ytb 1> /dev/null 2>&1
-		echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t systemctl start ytb"; sleep 1
+		echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t ${MauVang}systemctl start ytb${MauXam}"; sleep 1
 	else
 		InRa "${TgCB} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
 		InRa "${TgTT} Cài đặt lại Dịch vụ..."; echo ''
@@ -249,7 +248,7 @@ function Cai() {
 	CheckUser
 	CheckDocker
 
-	InRa "${TgTT} Đang bắt đầu cài Chặn quảng cáo YouTube..."
+	InRa "${TgTT} Đang bắt đầu cài ${MauVang}Chặn quảng cáo YouTube${MauXam}..."
 	if [[ "${DOCKER}" == "y" ]]; then
 		InRa "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
 		QuetFull
@@ -259,7 +258,7 @@ function Cai() {
 	Database "create";
 	CaiDichVu
 	QuetFull
-	InRa "${TgOK} Đang gọi Dịch vụ"
+	InRa "${TgOK} Đang gọi Dịch vụ."
 	systemctl start ytb 1> /dev/null 2>&1
 	InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
 }
@@ -319,7 +318,7 @@ function Go() {
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
 	Database "delete"
-	if [ ! -f $TM/re ]; then
+	if [ ! -f $TM/cfg ]; then
 	pihole updateGravity > ${PiLogGravity} 2>&1 &
 	echo -ne "${TgTT} Đang cập nhật lại Dữ liệu"
 	while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
