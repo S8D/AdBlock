@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827c"
+PhienBan="210827d"
 CapNhatCauHinh="1"
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -304,15 +304,16 @@ function Dung() {
 
 function ChayLai () {
 	TM="/sd/ytb"; mkdir -p $TM
-	if [ ! -f $TM/chay ]; then
-		sudo echo "systemctl restart ytb" > ${TM}/chay;
-		sudo chmod +x ${TM}/chay
-	fi
 	if [ ! -f $TM/cai ]; then
 		sudo echo "TM="/sd/ytb"; curl -sLo $TM/yt https://xem.li/yt; sudo chmod +x ${TM}/yt; sudo sh ${TM}/yt go; sudo sh ${TM}/yt cai" > ${TM}/cai
 		sudo chmod +x ${TM}/cai
 	fi
-	sudo ${TM}/chaylai; sleep 1
+
+	if [ ! -f $TM/chay ]; then
+		sudo echo "systemctl restart ytb" > ${TM}/chay
+		sudo chmod +x ${TM}/chay
+	fi
+	sudo ${TM}/chay; sleep 1
 }
 
 function Go() {
