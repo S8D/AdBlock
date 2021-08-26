@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826c"
+PhienBan="210826d"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -384,7 +384,7 @@ function CapNhat() {
 			else InRa "${TgNG} $TenFile cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			if [ -f $TMDichVu/$TenDV ]; then ChayLai fi;
-			sh ${TM}/$TenFile up; exit 0;
+			#sh ${TM}/$TenFile up; exit 0;
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
 	fi
