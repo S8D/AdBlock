@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827d"
+PhienBan="210827e"
 CapNhatCauHinh="1"
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -369,17 +369,17 @@ function CheckPiHole() {
 		InRa "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
 		read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
 	else
-		InRa "${TgOK} ${MauDo}${TenFile}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}$pivful${MauXam}"
+		InRa "${TgOK} ${MauDo}${TenFile} ${MauXanh}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}$pivful${MauXam}"
 	fi
 
 	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}PiHole${MauXam}"
 	PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
 	PiCfh="BLOCKINGMODE"
-	if [[ "${PiCfg}" != "${PiCfh}" ]]; then
+	if [[ "${PiCfg}" == "${PiCfh}" ]]; then
+		InRa "${TgOK} PiHole đã bật ${MauXanh}BlockingMode${MauXam}"
+	else
 		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
 		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
-	else
-		InRa "${TgOK} PiHole đã bật ${MauXanh}BlockingMode${MauXam}"
 	fi
 
 	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}SSL${MauXam}"
