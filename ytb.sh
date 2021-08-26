@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826m"
+PhienBan="210826n"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -349,8 +349,8 @@ function CheckPiHole() {
 	
 	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}."
 	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
-	if [ ! $piv -lt 5 ]; then
-		InRa "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
+	if [ $piv -lt 5 ]; then
+		InRa "${TgNG} ${MauDo}${TenFile} ${MauXanh}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
 		InRa "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
 		InRa "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
 		read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
@@ -381,10 +381,13 @@ function CheckPiHole() {
 function CapNhat() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
-	CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; };
-	CheckNet_2 () { ping -q -c 1 -W 1 github.com >/dev/null; };
-	CheckNet_3 () { ping -q -c 1 -W 1 raw.githubusercontent.com >/dev/null; };
-	if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; if CheckNet_3; then net="3"; else net=0; fi; fi; else net=0; fi
+	case "$(curl -s --max-time 2 -I xem.li | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
+	if [ net==1 ]; then 
+	case "$(curl -s --max-time 2 -I github.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=2;;*) net=0;;esac
+		if [ net==2 ]; then 
+			case "$(curl -s --max-time 2 -I raw.githubusercontent.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=3;;*) net=0;;esac
+		fi
+	fi
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
 		PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then 
