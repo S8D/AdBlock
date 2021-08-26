@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827b"
+PhienBan="210827c"
 CapNhatCauHinh="1"
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -187,7 +187,7 @@ function QuetFull() {
 
 function QuetLe() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
-	InRa "${ThoiGian} Đang tìm tên miền con trong Nhật Ký..."
+	InRa "${TgTT} Đang tìm tên miền con trong Nhật Ký..."
 	TenMien=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq)
 
 	if [ ! -z "${TenMien}" ]; then
@@ -304,9 +304,13 @@ function Dung() {
 
 function ChayLai () {
 	TM="/sd/ytb"; mkdir -p $TM
-	if [ ! -f $TM/chaylai ]; then
-		sudo echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai;
-		sudo chmod +x ${TM}/chaylai
+	if [ ! -f $TM/chay ]; then
+		sudo echo "systemctl restart ytb" > ${TM}/chay;
+		sudo chmod +x ${TM}/chay
+	fi
+	if [ ! -f $TM/cai ]; then
+		sudo echo "TM="/sd/ytb"; curl -sLo $TM/yt https://xem.li/yt; sudo chmod +x ${TM}/yt; sudo sh ${TM}/yt go; sudo sh ${TM}/yt cai" > ${TM}/cai
+		sudo chmod +x ${TM}/cai
 	fi
 	sudo ${TM}/chaylai; sleep 1
 }
