@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826d"
+PhienBan="210826e"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -373,9 +373,10 @@ function CapNhat() {
 	if CheckNet_1; then net="1"; if CheckNet_2; then net="2"; else net=0; if CheckNet_3; then net="3"; else net=0; fi; fi; else net=0; fi
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
 		PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-		if [ $PhienBanMoi == $PhienBan ]; then InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
-			InRa "${TgOK} $TenFile $PhienBan là bản mới nhất!"
-		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; mkdir -p $TM/old
+		if [ $PhienBanMoi == $PhienBan ]; then 
+            InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
+		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; 
+            mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
 			$dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
@@ -383,7 +384,7 @@ function CapNhat() {
 				InRa "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} $TenFile cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			if [ -f $TMDichVu/$TenDV ]; then ChayLai fi;
+			if [ -f $TMDichVu/$TenDV ]; then ChayLai; fi;
 			#sh ${TM}/$TenFile up; exit 0;
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
