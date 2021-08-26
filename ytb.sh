@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826a"
+PhienBan="210826b"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -259,7 +259,7 @@ function Chay() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
 	CheckUser
 	Banner
-	InRa "${TgOK} Chặn quảng cáo YouTube đã chạy"
+	InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy..."
 	Database "getGroupId"
 
 	if [ -z ${GROUPID} ]; then
@@ -270,7 +270,7 @@ function Chay() {
 
 	while true; do
 		QuetFull
-		InRa "${TgTT} Sau ${MauVang}$ThoiGianNgu giây ${MauXam}sẽ kiểm tra tiếp."
+		InRa "${TgTT} Sau ${MauVang}$ThoiGianNgu giây ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ kiểm tra tiếp."
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
 
