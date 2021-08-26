@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826b"
+PhienBan="210826c"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -270,7 +270,7 @@ function Chay() {
 
 	while true; do
 		QuetFull
-		InRa "${TgTT} Sau ${MauVang}$ThoiGianNgu giây ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ kiểm tra tiếp."
+		InRa "${TgTT} Sau ${MauVang}$ThoiGianNgu giây ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét Ads tiếp."
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
 
@@ -291,6 +291,13 @@ function Dung() {
 	service ytb stop
 	#kill -9 `pgrep ytb`
 	killall ytb
+}
+
+function ChayLai () {
+    if [ ! -f $TM/re ]; then 
+        echo "systemctl restart ytb 1> /dev/null 2>&1"; sudo chmod +x $TM/re
+    fi
+    sudo $TM/re; sleep 1
 }
 
 function Go() {
@@ -376,7 +383,7 @@ function CapNhat() {
 				InRa "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} $TenFile cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			if [ -f $TMDichVu/$TenDV ]; then systemctl restart ytb 1> /dev/null 2>&1; fi;
+			if [ -f $TMDichVu/$TenDV ]; then ChayLai fi;
 			sh ${TM}/$TenFile up; exit 0;
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
