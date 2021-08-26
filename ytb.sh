@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826k"
+PhienBan="210826l"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -344,13 +344,11 @@ function Go() {
 
 function CheckPiHole() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
-	PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
-	PiCfh="BLOCKINGMODE"
-	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
 	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
 	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
-	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
+	
 	InRa "${TgTT} Kiểm tra phiên bản PiHole..."
+	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
 	if [ ! $piv -ge 5 ]; then
 		InRa "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
 		InRa "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
@@ -359,14 +357,19 @@ function CheckPiHole() {
 	else
 		InRa "${TgOK} ${MauDo}${TenFile}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}piv${MauXam}!"
 	fi
+
 	InRa "${TgTT} Kiểm tra cấu hình PiHole..."
+	PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
+	PiCfh="BLOCKINGMODE"
 	if [[ "${PiCfg}" != "${PiCfh}" ]]; then
 		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
 		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
 	else
 		InRa "${TgOK} PiHole đã bật ${MauXanh}BLOCKINGMODE^^${MauXam}"
 	fi
+
 	InRa "${TgTT} Kiểm tra cấu hình SSL..."
+	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)	
 	if [ -z ${sslcfg} ]; then
 		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
 		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
