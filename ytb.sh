@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826i"
+PhienBan="210826j"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -349,26 +349,28 @@ function CheckPiHole() {
 	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
 	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
 	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
-	echo -e "${TgTT} Đang kiểm tra cấu hình PiHole..."
+	InRa "${TgTT} Kiểm tra phiên bản PiHole..."
 	if [ ! $piv -ge 5 ]; then
-		echo -e "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
-		echo -e "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
-		echo -e "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
+		InRa "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
+		InRa "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
+		InRa "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
 		read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
 	else
-		echo -e "${TgOK} ${MauDo}${TenFile}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}piv${MauXam}!"
+		InRa "${TgOK} ${MauDo}${TenFile}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}piv${MauXam}!"
 	fi
+	InRa "${TgTT} Kiểm tra cấu hình PiHole..."
 	if [[ "${PiCfg}" != "${PiCfh}" ]]; then
-		echo -e "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
-		echo -e "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
+		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
+		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
 	else
-		echo -e "${TgOK} PiHole đã bật ${MauXanh}BLOCKINGMODE!${MauXam}"
+		InRa "${TgOK} PiHole đã bật ${MauXanh}BLOCKINGMODE^^${MauXam}"
 	fi
+	InRa "${TgTT} Kiểm tra cấu hình SSL..."
 	if [ -z ${sslcfg} ]; then
-		echo -e "${TgNG} PiHole chưa được cấu hình ssl!!!"
-		echo -e "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
+		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
+		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
 	else
-		echo -e "${TgOK} PiHole đã bật ${MauXanh}SSL${MauXam}"
+		InRa "${TgOK} PiHole đã bật ${MauXanh}SSL${MauXam}"
 	fi
 }
 
