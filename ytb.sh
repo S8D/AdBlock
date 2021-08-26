@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826p"
+PhienBan="210827a"
 CapNhatCauHinh="1"
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -41,7 +41,7 @@ TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
 TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
 function InRa () { [ $QUIET -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
-if [ ! -f "${CauHinh}" ]; then 
+if [ ! -f "${CauHinh}" ]; then
 	InRa "${TgTT} Tạo file cấu hình..."
 	echo '' > $CauHinh
 	echo -e 'PhienBanCfg=1' >> $CauHinh
@@ -69,6 +69,7 @@ else
 	dv=`grep -w -m 1 "QuetNhanh" $CauHinh`;QuetNhanh=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "ChanManh" $CauHinh`;ChanManh=$(echo $dv | sed 's/.*\=//');
 	dv=`grep -w -m 1 "CapDo" $CauHinh`;CapDo=$(echo $dv | sed 's/.*\=//');
+	if [[ $QuetNhanh == 1 ]]; then CheDoQuet="Quét Nhanh"; else CheDoQuet="Quét Toàn bộ"; fi
 	if [[ -z $CapDo ]]; then rm -rf $CauHinh; fi
 fi
 
@@ -91,7 +92,7 @@ function Banner () {
 	echo -e "==================================="
 	echo -e "${MauXam}`date`";
 	echo -e "Your IP Address: ${MauXanh}$ip${MauXam}";
-	echo -e "${TgTT} Cấu hình: ${MauXanh}${CauHinh}${MauXam}"
+	echo -e "${TgTT} Quét định kỳ: ${MauXanh}${CheDoQuet}${MauXam}"
 	echo -e "${TgTT} Nhật Ký: ${MauXanh}${YTLog}${MauXam}"
 	echo -e "${TgTT} Dữ liệu PiHole: ${MauXanh}${PiData}${MauXam}"
 	echo ""
@@ -206,10 +207,6 @@ function QuetLe() {
 	else
 		InRa "${TgCB} Không có tên miền nào được thêm."
 	fi
-
-	InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm...";
-	rm rf $TMTam
-	InRa "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
 }
 
 function TaoDichVu () {
@@ -281,7 +278,8 @@ function Chay() {
 	fi
 
 	while true; do
-		if [[ $QuetNhanh == 1 ]]; then QuetLe; else QuetFull; fi		
+		if [[ $QuetNhanh == 1 ]]; then QuetLe; else QuetFull; fi
+		echo -e "${TgTT} Quét định kỳ: ${MauXanh}${CheDoQuet}${MauXam}"
 		InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét tiếp sau: ${MauVang}$ThoiGianNgu giây${MauXam}"
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
@@ -307,8 +305,8 @@ function Dung() {
 
 function ChayLai () {
 	TM="/sd/ytb"; mkdir -p $TM
-	if [ ! -f $TM/chaylai ]; then 
-		sudo echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai; 
+	if [ ! -f $TM/chaylai ]; then
+		sudo echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai;
 		sudo chmod +x ${TM}/chaylai
 	fi
 	sudo ${TM}/chaylai; sleep 1
@@ -321,7 +319,7 @@ function Go() {
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
 	Database "delete"
-	if [ ! -f $TM/re ]; then 
+	if [ ! -f $TM/re ]; then
 	pihole updateGravity > ${PiLogGravity} 2>&1 &
 	echo -ne "${TgTT} Đang cập nhật lại Dữ liệu"
 	while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
@@ -357,7 +355,7 @@ function CheckPiHole() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
 	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
 	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
-	
+
 	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}"
 	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
 	pivful=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//')
@@ -381,7 +379,7 @@ function CheckPiHole() {
 	fi
 
 	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}SSL${MauXam}"
-	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)	
+	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
 	if [ -z ${sslcfg} ]; then
 		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
 		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
@@ -394,17 +392,17 @@ function CapNhat() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
 	case "$(curl -s --max-time 2 -I xem.li | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
-	if [ $net == 1 ]; then 
+	if [ $net == 1 ]; then
 	case "$(curl -s --max-time 2 -I github.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=2;;*) net=0;;esac
-		if [ $net == 2 ]; then 
+		if [ $net == 2 ]; then
 			case "$(curl -s --max-time 2 -I raw.githubusercontent.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=3;;*) net=0;;esac
 		fi
 	fi
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
 		PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
-		if [ $PhienBanMoi == $PhienBan ]; then 
+		if [ $PhienBanMoi == $PhienBan ]; then
 		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
-		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; 
+		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
 		    mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
 			$dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
