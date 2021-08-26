@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826e"
+PhienBan="210826f"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -116,7 +116,8 @@ function Database() {
 			;;
 		"insertDomain")
 			if [[ $DOMAIN == *.googlevideo.com ]]; then
-				InRa "${TgTT} Đang thêm tên miền: $DOMAIN";
+                ThemTenMien=$(cat $DOMAIN | sed 's/.googlevideo.com//')
+				InRa "${TgTT} Đang thêm tên miền: $ThemTenMien";
 				sqlite3 "${PiData}"  """INSERT OR IGNORE INTO domainlist (type, domain, comment) VALUES (1, '${DOMAIN}', 'YouTube AdsBlock');""" 2>>  $YTLog;
 			else
 				InRa "${TgNG} Tên miền: $DOMAIN ${MauDo}không ${MauXam}được thêm vì khác định dạng!!!"
@@ -154,7 +155,6 @@ function QuetFull() {
 		SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền...";
 		for YTD in $TenMien; do
-            InRa "${TgTT} Đang kiểm tra tên miền trong Dữ liệu..."
 			Database "checkDomain" "${YTD}"
 			if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
 		done
