@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826l"
+PhienBan="210826m"
 
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
@@ -297,7 +297,7 @@ function Dung() {
 function ChayLai () {
 	TM="/sd/ytb"; mkdir -p $TM
     if [ ! -f $TM/chaylai ]; then 
-        echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai; 
+        sudo echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai; 
         sudo chmod +x ${TM}/chaylai
     fi
     sudo ${TM}/chaylai; sleep 1
@@ -347,9 +347,9 @@ function CheckPiHole() {
 	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
 	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
 	
-	InRa "${TgTT} Kiểm tra phiên bản PiHole..."
+	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}."
 	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
-	if [ ! $piv -ge 5 ]; then
+	if [ ! $piv -lt 5 ]; then
 		InRa "${TgNG} ${MauXam}${TenFile}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
 		InRa "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
 		InRa "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
@@ -358,7 +358,7 @@ function CheckPiHole() {
 		InRa "${TgOK} ${MauDo}${TenFile}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}piv${MauXam}!"
 	fi
 
-	InRa "${TgTT} Kiểm tra cấu hình PiHole..."
+	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}PiHole${MauXam}."
 	PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
 	PiCfh="BLOCKINGMODE"
 	if [[ "${PiCfg}" != "${PiCfh}" ]]; then
@@ -368,7 +368,7 @@ function CheckPiHole() {
 		InRa "${TgOK} PiHole đã bật ${MauXanh}BLOCKINGMODE^^${MauXam}"
 	fi
 
-	InRa "${TgTT} Kiểm tra cấu hình SSL..."
+	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}SSL${MauXam}."
 	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)	
 	if [ -z ${sslcfg} ]; then
 		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
