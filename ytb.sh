@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210826o"
-
+PhienBan="210826p"
+CapNhatCauHinh="1"
 #UpLink="https://xem.li/ytb"
 UpLink="https://xem.li/yt"
 Nha="https://s8d.github.io/AdBlock"
@@ -27,8 +27,6 @@ TMDichVu="/lib/systemd/system"
 TenDV="ytb.service"
 TenFile=$(basename $0)
 
-ChanThuong='r([0-9]{1,2})[^-].*\.googlevideo\.com'
-ChanManh='r([0-9]{1,2}).*\.googlevideo\.com'
 
 # Cài đặt màu sắc
 MauDo="\e[31m"
@@ -41,35 +39,47 @@ TgTT=$(echo -e "[i]") # [i] Information
 TgCB=$(echo -e "[${MauVang}w${MauXam}]") # [w] Warning
 TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
 TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
+function InRa () { [ $QUIET -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
-if [ ! -f "${CauHinh}" ]; then echo '' > $CauHinh
-    echo -e 'ThoiGianCapNhat=2' >> $CauHinh
-    echo -e 'ThoiGianNgu=300' >> $CauHinh
-    echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
-    echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
-    read -p " " answer
-    case $answer in
-        Y|y)
-        CapDo=${ChanManh}
-        ;;
-        N|n)
-        CapDo=${ChanThuong}
-        ;;
-        *)
-        CapDo=${ChanThuong}
-        ;;
-    esac
-    echo -e "CapDo=${CapDo}" >> $CauHinh
+if [ ! -f "${CauHinh}" ]; then 
+	InRa "${TgTT} Tạo file cấu hình..."
+	echo '' > $CauHinh
+	echo -e 'PhienBanCfg=1' >> $CauHinh
+	echo -e 'ThoiGianCapNhat=2' >> $CauHinh
+	echo -e 'ThoiGianNgu=300' >> $CauHinh
+	echo "ChanThuong=r([0-9]{1,2})[^-].*\.googlevideo\.com" >> $CauHinh
+	echo "ChanManh=r([0-9]{1,2}).*\.googlevideo\.com" >> $CauHinh
+	ChanThuong="r([0-9]{1,2})[^-].*\.googlevideo\.com"
+	ChanManh="r([0-9]{1,2}).*\.googlevideo\.com"
+	echo -e "${TgTT} Bạn có muốn kích hoạt chế độ ${MauVang}Chặn mạnh tay ${MauXam}không?"
+	echo -e "${TgTT} Có thể YouTube sẽ hoạt động không mượt đấy nhé! (${MauVang}Y${MauXam}/${MauXanh}N${MauXam}):"
+	read -p " " answer
+	case $answer in Y|y) CapDo=${ChanManh};; N|n) CapDo=${ChanThuong};; *) CapDo=${ChanThuong};; esac
+	echo -e "CapDo=${CapDo}" >> $CauHinh
+	echo -e "${TgTT} Chế độ quét Ads định kỳ ${MauXanh}Quét nhanh (N)${MauXam} hay ${MauVang}Quét toàn bộ (F)${MauXam}"
+	read -p " " answer
+	case $answer in N|n) QuetNhanh=1;; F|f) QuetNhanh=0;; *) QuetNhanh=1;; esac
+	echo -e "QuetNhanh=${QuetNhanh}" >> $CauHinh
+	InRa "${TgOK} Tạo file cấu hình Hoàn Tất!"
 else
-    dv=`grep -w -m 1 "CapDo" $CauHinh`;CapDo=$(echo $dv | sed 's/.*\=//');
-    dv=`grep -w -m 1 "ThoiGianCapNhat" $CauHinh`;ThoiGianCapNhat=$(echo $dv | sed 's/.*\=//');
-    dv=`grep -w -m 1 "ThoiGianNgu" $CauHinh`;ThoiGianNgu=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "ThoiGianCapNhat" $CauHinh`;ThoiGianCapNhat=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "PhienBanCfg" $CauHinh`;PhienBanCfg=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "ThoiGianNgu" $CauHinh`;ThoiGianNgu=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "ChanThuong" $CauHinh`;ChanThuong=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "QuetNhanh" $CauHinh`;QuetNhanh=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "ChanManh" $CauHinh`;ChanManh=$(echo $dv | sed 's/.*\=//');
+	dv=`grep -w -m 1 "CapDo" $CauHinh`;CapDo=$(echo $dv | sed 's/.*\=//');
+	if [[ -z $CapDo ]]; then rm -rf $CauHinh; fi
+fi
+
+if [ ${CapNhatCauHinh} == 1 ]; then
+	dv=`grep -w -m 1 "PhienBanCfg" $CauHinh`;PhienBanCfg=$(echo $dv | sed 's/.*\=//')
+	if [ ${CapNhatCauHinh} != ${PhienBanCfg} ]; then rm -rf $CauHinh
+	InRa "${TgCB} Chạy lại ${MauDo}$TenFile${MauXam} để cập nhật Cấu hình"; exit 1; fi
 fi
 
 #If any command shows out an error code, the script ends
 set -e
-
-function InRa () { [ $QUIET -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
 function Banner () {
 	echo -e "${MauDo}==================================="
@@ -81,6 +91,7 @@ function Banner () {
 	echo -e "==================================="
 	echo -e "${MauXam}`date`";
 	echo -e "Your IP Address: ${MauXanh}$ip${MauXam}";
+	echo -e "${TgTT} Cấu hình: ${MauXanh}${CauHinh}${MauXam}"
 	echo -e "${TgTT} Nhật Ký: ${MauXanh}${YTLog}${MauXam}"
 	echo -e "${TgTT} Dữ liệu PiHole: ${MauXanh}${PiData}${MauXam}"
 	echo ""
@@ -117,7 +128,7 @@ function Database() {
 		"insertDomain")
 			if [[ $DOMAIN == *.googlevideo.com ]]; then
 				DemTenMien=$(($DemTenMien + 1))
-                ThemTenMien=$(echo ${DOMAIN} | sed 's/.googlevideo.com//')
+				ThemTenMien=$(echo ${DOMAIN} | sed 's/.googlevideo.com//')
 				InRa "${TgTT} Đang thêm $DemTenMien/$SoLuong: $ThemTenMien";
 				sqlite3 "${PiData}"  """INSERT OR IGNORE INTO domainlist (type, domain, comment) VALUES (1, '${DOMAIN}', 'YouTube AdsBlock');""" 2>>  $YTLog;
 			else
@@ -174,7 +185,7 @@ function QuetFull() {
 	InRa "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
 }
 
-function QuetLite() {
+function QuetLe() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
 	InRa "${ThoiGian} Đang tìm tên miền con trong Nhật Ký..."
 	TenMien=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq)
@@ -251,8 +262,8 @@ function Cai() {
 	Database "create";
 	CaiDichVu
 	QuetFull
-    InRa "${TgOK} Đang gọi Dịch vụ"
-    systemctl start ytb 1> /dev/null 2>&1
+	InRa "${TgOK} Đang gọi Dịch vụ"
+	systemctl start ytb 1> /dev/null 2>&1
 	InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
 }
 
@@ -270,7 +281,7 @@ function Chay() {
 	fi
 
 	while true; do
-		QuetFull
+		if [[ $QuetNhanh == 1 ]]; then QuetLe; else QuetFull; fi		
 		InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét tiếp sau: ${MauVang}$ThoiGianNgu giây${MauXam}"
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
@@ -296,11 +307,11 @@ function Dung() {
 
 function ChayLai () {
 	TM="/sd/ytb"; mkdir -p $TM
-    if [ ! -f $TM/chaylai ]; then 
-        sudo echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai; 
-        sudo chmod +x ${TM}/chaylai
-    fi
-    sudo ${TM}/chaylai; sleep 1
+	if [ ! -f $TM/chaylai ]; then 
+		sudo echo "systemctl restart ytb 1> /dev/null 2>&1" > ${TM}/chaylai; 
+		sudo chmod +x ${TM}/chaylai
+	fi
+	sudo ${TM}/chaylai; sleep 1
 }
 
 function Go() {
@@ -310,7 +321,7 @@ function Go() {
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
 	Database "delete"
-    if [ ! -f $TM/re ]; then 
+	if [ ! -f $TM/re ]; then 
 	pihole updateGravity > ${PiLogGravity} 2>&1 &
 	echo -ne "${TgTT} Đang cập nhật lại Dữ liệu"
 	while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
@@ -347,7 +358,7 @@ function CheckPiHole() {
 	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
 	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
 	
-	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}."
+	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}"
 	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
 	pivful=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//')
 	if [ $piv -lt 5 ]; then
@@ -383,18 +394,18 @@ function CapNhat() {
 	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
 	case "$(curl -s --max-time 2 -I xem.li | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
-	if [ net==1 ]; then 
+	if [ $net == 1 ]; then 
 	case "$(curl -s --max-time 2 -I github.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=2;;*) net=0;;esac
-		if [ net==2 ]; then 
+		if [ $net == 2 ]; then 
 			case "$(curl -s --max-time 2 -I raw.githubusercontent.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=3;;*) net=0;;esac
 		fi
 	fi
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
 		PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then 
-            InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
+		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
 		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}..."; 
-            mkdir -p $TM/old
+		    mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
 			$dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
@@ -415,7 +426,7 @@ case "$1" in
 	"up"	) CapNhat		;;
 	"kt"	) CheckPiHole	;;
 	"dung"	) Dung			;;
-	"go"	) Go				;;
+	"go"	) Go			;;
 	*		) Banner; echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam} | Cài đặt ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}	| Cập nhật ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}	| Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}	| Gỡ cài đặt ${MauDo}$TenFile${MauXam}." ;;
 esac
 echo ''
