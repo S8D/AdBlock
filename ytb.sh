@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828i"
+PhienBan="210828j"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -317,14 +317,14 @@ function ChayLai () {
 }
 
 function GoiLaiYT () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ phụ trợ chặn quảng cáo YouTube";
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube${MauXam}...";
 	sudo systemctl stop yt
 	sudo systemctl start yt
 	sleep 3
 	DangChay=$(systemctl status yt | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
-	else InRa "${TgNG} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy..."
-		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube..."
+	else InRa "${TgNG} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy${MauXam}..."
+		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
 		sudo systemctl restart yt
 	fi
 }
