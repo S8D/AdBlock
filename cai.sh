@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828i"
+PhienBan="210828j"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -8,7 +8,7 @@ PhienBan="210828i"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 ThoiGian=$(date "+%F %T")
-TGNgu="3600"
+TGNgu="360"
 TGCapNhat="1"
 ip=$(curl -s api.ipify.org)
 dl1="curl -sLo"; dl2="curl -sL"
