@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828e"
+PhienBan="210828f"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
