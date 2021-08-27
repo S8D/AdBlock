@@ -1,7 +1,8 @@
 #!/bin/bash
-PhienBan="210827d"
+PhienBan="210827f"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
+ThoiGian=$(date "+%F %T")
 TGNgu="3600"
 TGCapNhat="1"
 ip=$(curl -s api.ipify.org)
@@ -47,7 +48,6 @@ EOF
 }
 
 function CaiYT () {
-	ThoiGian=$(date "+%F %T")
 	if [ ! -f $TM/yt ]; then
 		cd ${TM}; $dl1 yt $UpYT
 		sudo chmod +x yt; ./yt go; ./yt cai
@@ -56,13 +56,13 @@ fi
 }
 
 function Chay () {
-	ThoiGian=$(date "+%F %T")
 	while true; do
 		DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
 		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube đang chạy"
 		else InRa "${TgTT} ${ThoiGian}"
 			if [ -f $TMDichVu/$TenDV ]; then 
-			InRa "${TgNG} Đang gọi Dịch vụ chặn quảng cáo YouTube"; sudo systemctl start ytb
+			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ chặn quảng cáo YouTube"; 
+			sudo systemctl start ytb
 			else CaiYT; fi
 		fi
 		COUNT=$(($COUNT + 1))
