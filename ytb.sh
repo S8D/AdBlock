@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828d"
+PhienBan="210828e"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -317,7 +317,7 @@ function ChayLai () {
 }
 
 function GoiLaiYT () {
-	InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ phụ trợ chặn quảng cáo YouTube"; 
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ phụ trợ chặn quảng cáo YouTube"; 
 	sudo systemctl stop yt
 	sudo systemctl start yt
 }
