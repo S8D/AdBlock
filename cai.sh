@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210827h"
+PhienBan="210827i"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 ThoiGian=$(date "+%F %T")
@@ -60,7 +60,7 @@ fi
 function Chay () {
 	while true; do
 		DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
-		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube đang chạy"
+		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy"
 		else InRa "${TgTT} ${ThoiGian}"
 			if [ -f $TMDichVu/$TenDV ]; then 
 			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ chặn quảng cáo YouTube"; 
@@ -82,7 +82,7 @@ function Chay () {
 
 function GoiYT () {
 	DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube đang chạy"
+	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy"
 	else InRa "${TgTT} ${ThoiGian}"
 		if [ -f $TMDichVu/$TenDV ]; then 
 		InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ chặn quảng cáo YouTube"; 
