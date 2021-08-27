@@ -1,9 +1,9 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827e"
+PhienBan="210827f"
 CapNhatCauHinh="1"
-#UpLink="https://xem.li/ytb"
-UpLink="https://xem.li/yt"
+UpLink="https://xem.li/ytb"
+UpYT="https://xem.li/yt"
 Nha="https://s8d.github.io/AdBlock"
 pbcu="https://xem.li/ytbo"
 ip=$(curl -s api.ipify.org)
@@ -129,7 +129,7 @@ function Database() {
 			if [[ $DOMAIN == *.googlevideo.com ]]; then
 				DemTenMien=$(($DemTenMien + 1))
 				ThemTenMien=$(echo ${DOMAIN} | sed 's/.googlevideo.com//')
-				InRa "${TgTT} Đang thêm $DemTenMien/$SoLuong: $ThemTenMien";
+				InRa "${TgTT} Đang thêm $DemTenMien/$ThucTe: $ThemTenMien";
 				sqlite3 "${PiData}"  """INSERT OR IGNORE INTO domainlist (type, domain, comment) VALUES (1, '${DOMAIN}', 'YouTube AdsBlock');""" 2>>  $YTLog;
 			else
 				InRa "${TgNG} Tên miền: $DOMAIN ${MauDo}không ${MauXam}được thêm vì khác định dạng!!!"
@@ -153,7 +153,8 @@ function Database() {
 }
 
 function QuetFull() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	ThoiGian=$(date "+%F %T")
+	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Đang tổng hợp Nhật ký PiHole..."; sleep 1
 	cp $PiTM/pihole.log* $TMTam
 	for GZIPFILE in $(ls $TMTam/pihole.log*gz > /dev/null 2>&1); do
@@ -168,7 +169,8 @@ function QuetFull() {
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; DemTenMien=0
 		for YTD in $TenMien; do
 			Database "checkDomain" "${YTD}"
-			if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
+			if [[ -z ${KTTenMien} ]]; then ThucTe=$(echo "$KTTenMien" | wc -l)
+				Database "insertDomain" "${YTD}"; fi
 		done
 		Database "update"
 		pihole updateGravity > ${PiLogGravity} 2>&1 &
@@ -186,7 +188,8 @@ function QuetFull() {
 }
 
 function QuetLe() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	ThoiGian=$(date "+%F %T")
+	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Đang tìm tên miền con trong Nhật Ký..."
 	TenMien=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq)
 
@@ -195,7 +198,8 @@ function QuetLe() {
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; COUNT=0;
 		for YTD in $TenMien; do
 			Database "checkDomain" "${YTD}"
-			if [[ -z ${KTTenMien} ]]; then Database "insertDomain" "${YTD}"; fi
+			if [[ -z ${KTTenMien} ]]; then ThucTe=$(echo "$KTTenMien" | wc -l)
+				Database "insertDomain" "${YTD}"; fi
 		done
 		Database "update"
 		pihole updateGravity > ${PiLogGravity} 2>&1 &
@@ -223,7 +227,7 @@ EOF
 }
 
 function CaiDichVu () {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	if [ ! -f $TMDichVu/$TenDV ]; then
 		InRa "${TgTT} Nếu bạn di chuyển $TenFile sang nơi khác, vui lòng chạy: ${MauDo}sh $TenFile ${MauXanh}cai${MauXam}";
 		InRa "${TgTT} Đang cài Dịch vụ..."; sleep 1
@@ -244,7 +248,7 @@ function CaiDichVu () {
 }
 
 function Cai() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	CheckUser
 	CheckDocker
 
@@ -264,7 +268,7 @@ function Cai() {
 }
 
 function Chay() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	CheckUser
 	Banner
 	InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy..."
@@ -293,7 +297,7 @@ function Chay() {
 }
 
 function Dung() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Dừng chặn quảng cáo YouTube";
 	systemctl stop ytb 1> /dev/null 2>&1
 	InRa "${TgNG} Chặn quảng cáo YouTube đã dừng"
@@ -303,21 +307,14 @@ function Dung() {
 }
 
 function ChayLai () {
-	TM="/sd/ytb"; mkdir -p $TM
-	if [ ! -f $TM/cai ]; then
-		sudo echo "TM="/sd/ytb"; curl -sLo $TM/yt https://xem.li/yt; sudo chmod +x ${TM}/yt; sudo sh ${TM}/yt go; sudo sh ${TM}/yt cai" > ${TM}/cai
-		sudo chmod +x ${TM}/cai
-	fi
-
-	if [ ! -f $TM/chay ]; then
-		sudo echo "systemctl restart ytb" > ${TM}/chay
-		sudo chmod +x ${TM}/chay
-	fi
-	sudo ${TM}/chay; sleep 1
+	if [ ! -f $TM/cai ]; then $dl1 ${TM}/cai $UpLink; sudo chmod +x ${TM}/cai; fi
+	dv=`grep -w -m 1 "PhienBan" $$TM/cai`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
+	if [ -z ${PhienBanCai} ]; then rm -rf $TM/cai; $dl1 ${TM}/cai $UpLink; sudo chmod +x ${TM}/cai; fi
+	sh ${TM}/cai
 }
 
 function Go() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	CheckDocker
 	CheckUser
 
@@ -356,7 +353,7 @@ function Go() {
 }
 
 function CheckPiHole() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
 	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
 
@@ -393,7 +390,7 @@ function CheckPiHole() {
 }
 
 function CapNhat() {
-	echo -e "${TgTT} ${ThoiGian}" >> $YTLog
+	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
 	case "$(curl -s --max-time 2 -I xem.li | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
 	if [ $net == 1 ]; then
@@ -403,13 +400,13 @@ function CapNhat() {
 		fi
 	fi
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
-		PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
+		PhienBanMoi=$(${dl2} "${UpYT}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then
 		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
 		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
 		    mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
-			$dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
+			$dl1 ${upTam} $UpYT; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
@@ -428,6 +425,7 @@ case "$1" in
 	"up"	) CapNhat		;;
 	"kt"	) CheckPiHole	;;
 	"dung"	) Dung			;;
+	"cl"	) ChayLai		;;
 	"go"	) Go			;;
 	*		) Banner; echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam} | Cài đặt ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}	| Cập nhật ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}	| Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}	| Gỡ cài đặt ${MauDo}$TenFile${MauXam}." ;;
 esac
