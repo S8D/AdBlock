@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827h"
+PhienBan="210827i"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -24,6 +24,8 @@ PiLogGravity="/var/log/pihole-updateGravity.log"
 PiData="/etc/pihole/gravity.db"
 
 TMDichVu="/lib/systemd/system"
+TenYTB="yt.service"
+CaiDV=${TM}/cai
 TenDV="ytb.service"
 TenFile=$(basename $0)
 
@@ -311,7 +313,7 @@ function ChayLai () {
 	if [ ! -f ${CaiDV} ]; then $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
 	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
 	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
-	./cai
+	./cai; exit 0
 }
 
 function Go() {
@@ -413,7 +415,7 @@ function CapNhat() {
 				InRa "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} $TenFile cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			if [ -f $TMDichVu/$TenDV ]; then ChayLai; fi;
+			if [ -f $TMDichVu/$TenYTB ]; then ChayLai; else sh $CaiDV; fi
 			#sh ${TM}/$TenFile up; exit 0;
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
