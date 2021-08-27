@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828g"
+PhienBan="210828h"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -425,7 +425,7 @@ function CapNhat() {
 			$dl1 ${upTam} $UpYT; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
-				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
+				InRa "${TgOK} ${MauDo}$TenFile ${MauVang}được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			if [ ! -f $TMDichVu/$TenYTB ]; then ChayLai ;exit 0; else cd $TM; ./cai cl; exit 0; fi
