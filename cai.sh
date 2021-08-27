@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210827c"
+PhienBan="210827d"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 TGNgu="3600"
@@ -79,7 +79,7 @@ function Chay () {
 }
 
 function Dung () {
-	exit 1
+	systemctl stop yt
 }
 
 function CapNhat() {
@@ -118,4 +118,11 @@ if [ ! -f $TMDichVu/$TenYTB ]; then
 	sudo systemctl start yt
 fi
 
-sudo systemctl restart ytb
+case "$1" in
+	"chay"	) Chay			;;
+	"up"	) CapNhat		;;
+	"dung"	) Dung			;;
+	"go"	) Go			;;
+	*		) sudo systemctl restart ytb ;;
+esac
+echo ''
