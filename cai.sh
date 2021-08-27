@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210827g"
+PhienBan="210827h"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 ThoiGian=$(date "+%F %T")
@@ -10,6 +10,8 @@ dl1="curl -sLo"; dl2="curl -sL"
 mkdir -p /sd
 TM="/sd/ytb"; mkdir -p $TM; cd ${TM}
 CauHinh="${TM}/cauhinh"
+TMTam="/tmp/ytb"; mkdir -p $TMTam
+upTam="${TM}/tam"
 YTLog="${TM}/NhatKy.log"
 QUIET="0"
 
