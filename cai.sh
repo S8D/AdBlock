@@ -1,12 +1,12 @@
 #!/bin/bash
-PhienBan="210827b"
+PhienBan="210827c"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 TGNgu="3600"
 TGCapNhat="1"
 ip=$(curl -s api.ipify.org)
 dl1="curl -sLo"; dl2="curl -sL"
-mkdir p- /sd
+mkdir -p /sd
 TM="/sd/ytb"; mkdir -p $TM; cd ${TM}
 CauHinh="${TM}/cauhinh"
 YTLog="${TM}/NhatKy.log"
