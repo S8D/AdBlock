@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827g"
+PhienBan="210827h"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -202,10 +202,10 @@ function QuetLe() {
 				Database "insertDomain" "${YTD}"; fi
 		done
 		Database "update"
-		pihole updateGravity > ${PiLogGravity} 2>&1 &
-		InRa "${TgTT} Đang cập nhật Dữ liệu"
-		while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
-		echo ''; InRa "${TgOK} Cập nhật Dữ liệu Hoàn tất."
+		#pihole updateGravity > ${PiLogGravity} 2>&1 &
+		#InRa "${TgTT} Đang cập nhật Dữ liệu"
+		#while [ ! -z "$(ps -fea | grep updateGravit[y])" ]; do echo -n "."; sleep 1; done
+		#echo ''; InRa "${TgOK} Cập nhật Dữ liệu Hoàn tất."
 		InRa "${TgOK} ${MauXanh}$SoLuong ${MauXam}tên miền đã được thêm."
 	else
 		InRa "${TgCB} Không có tên miền nào được thêm."
@@ -307,10 +307,11 @@ function Dung() {
 }
 
 function ChayLai () {
-	if [ ! -f $TM/cai ]; then $dl1 ${TM}/cai $UpLink; sudo chmod +x ${TM}/cai; fi
-	dv=`grep -w -m 1 "PhienBan" $TM/cai`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
-	if [ -z ${PhienBanCai} ]; then rm -rf $TM/cai; $dl1 ${TM}/cai $UpLink; sudo chmod +x ${TM}/cai; fi
-	sh ${TM}/cai
+	TM="/sd/ytb"; CaiDV=${TM}/cai; cd $TM
+	if [ ! -f ${CaiDV} ]; then $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
+	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
+	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
+	./cai
 }
 
 function Go() {
