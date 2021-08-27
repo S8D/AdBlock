@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828c"
+PhienBan="210828d"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -131,7 +131,7 @@ function Database() {
 			if [[ $DOMAIN == *.googlevideo.com ]]; then
 				DemTenMien=$(($DemTenMien + 1))
 				ThemTenMien=$(echo ${DOMAIN} | sed 's/.googlevideo.com//')
-				InRa "${TgTT} Đang thêm $DemTenMien/$ThucTe: $ThemTenMien";
+				InRa "${TgTT} Đang thêm $DemTenMien/$SoLuong: $ThemTenMien";
 				sqlite3 "${PiData}"  """INSERT OR IGNORE INTO domainlist (type, domain, comment) VALUES (1, '${DOMAIN}', 'YouTube AdsBlock');""" 2>>  $YTLog;
 			else
 				InRa "${TgNG} Tên miền: $DOMAIN ${MauDo}không ${MauXam}được thêm vì khác định dạng!!!"
@@ -171,7 +171,7 @@ function QuetFull() {
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; DemTenMien=0
 		for YTD in $TenMien; do
 			Database "checkDomain" "${YTD}"
-			if [[ -z ${KTTenMien} ]]; then ThucTe=$(echo "$KTTenMien" | wc -l)
+			if [[ -z ${KTTenMien} ]]; then 
 				Database "insertDomain" "${YTD}"; fi
 		done
 		Database "update"
@@ -200,7 +200,7 @@ function QuetLe() {
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; COUNT=0;
 		for YTD in $TenMien; do
 			Database "checkDomain" "${YTD}"
-			if [[ -z ${KTTenMien} ]]; then ThucTe=$(echo "$KTTenMien" | wc -l)
+			if [[ -z ${KTTenMien} ]]; then 
 				Database "insertDomain" "${YTD}"; fi
 		done
 		Database "update"
@@ -314,6 +314,12 @@ function ChayLai () {
 	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
 	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
 	sh $CaiDV; exit 0
+}
+
+function GoiLaiYT () {
+	InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ phụ trợ chặn quảng cáo YouTube"; 
+	sudo systemctl stop yt
+	sudo systemctl start yt
 }
 
 function Go() {
@@ -431,6 +437,7 @@ case "$1" in
 	"full"	) QuetFull		;;
 	"lite"	) QuetLe		;;
 	"cl"	) ChayLai		;;
+	"gl"	) GoiLaiYT		;;
 	"go"	) Go			;;
 	*		) Banner; echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam} | Cài đặt ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}	| Cập nhật ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}	| Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}	| Gỡ cài đặt ${MauDo}$TenFile${MauXam}." ;;
 esac
