@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210827i"
+PhienBan="210828a"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 ThoiGian=$(date "+%F %T")
@@ -90,6 +90,12 @@ function GoiYT () {
 	fi
 }
 
+function GoiLaiYT () {
+	InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ chặn quảng cáo YouTube"; 
+	sudo systemctl stop ytb
+	sudo systemctl start ytb
+}
+
 function Dung () {
 	systemctl stop yt
 }
@@ -134,6 +140,7 @@ case "$1" in
 	"chay"	) Chay			;;
 	"up"	) CapNhat		;;
 	"dung"	) Dung			;;
+	"cl"	) GoiLaiYT		;;
 	"go"	) Go			;;
 	*		) GoiYT			;;
 esac
