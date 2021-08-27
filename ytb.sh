@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828e"
+PhienBan="210828f"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -317,9 +317,16 @@ function ChayLai () {
 }
 
 function GoiLaiYT () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ phụ trợ chặn quảng cáo YouTube"; 
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ phụ trợ chặn quảng cáo YouTube";
 	sudo systemctl stop yt
 	sudo systemctl start yt
+	sleep 3
+	DangChay=$(systemctl status yt | grep Active | sed 's/).*//; s/.*(//')
+	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
+	else InRa "${TgNG} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy..."
+		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube..."
+		sudo systemctl restart yt
+	fi
 }
 
 function Go() {
@@ -418,7 +425,7 @@ function CapNhat() {
 			$dl1 ${upTam} $UpYT; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
-				InRa "${TgOK} ${MauDo}$TenFile được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
+				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} $TenFile cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			if [ ! -f $TMDichVu/$TenYTB ]; then ChayLai ;exit 0; else cd $TM; ./cai cl; exit 0; fi
