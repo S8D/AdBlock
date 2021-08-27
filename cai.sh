@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828h"
+PhienBan="210828i"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -65,10 +65,10 @@ fi
 function Chay () {
 	while true; do
 		DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
-		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy"
+		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy..."
 		else InRa "${TgTT} ${ThoiGian}"
 			if [ -f $TMDichVu/$TenDV ]; then 
-			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ chặn quảng cáo YouTube"; 
+			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}"; 
 			sudo systemctl start ytb
 			else CaiYT; fi
 		fi
@@ -87,23 +87,23 @@ function Chay () {
 
 function GoiYT () {
 	DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy"
+	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauVang}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy..."
 	else InRa "${TgTT} ${ThoiGian}"
 		if [ -f $TMDichVu/$TenDV ]; then 
-		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ chặn quảng cáo YouTube"; 
+		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."; 
 		sudo systemctl start ytb; fi
 	fi
 }
 
 function GoiLaiYT () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ chặn quảng cáo YouTube"
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
 	sudo systemctl stop ytb
 	sudo systemctl start ytb
 	sleep 3
 	DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
-	else InRa "${TgNG} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy..."
-		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube..."
+	else InRa "${TgNG} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy${MauXam}..."
+		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
 		sudo systemctl restart ytb
 	fi
 }
