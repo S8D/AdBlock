@@ -1,5 +1,10 @@
 #!/bin/bash
-PhienBan="210828b"
+PhienBan="210828c"
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 ThoiGian=$(date "+%F %T")
