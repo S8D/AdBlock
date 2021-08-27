@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210827f"
+PhienBan="210827g"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 ThoiGian=$(date "+%F %T")
@@ -78,6 +78,16 @@ function Chay () {
 
 }
 
+function GoiYT () {
+	DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
+	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ phụ trợ chặn quảng cáo YouTube đang chạy"
+	else InRa "${TgTT} ${ThoiGian}"
+		if [ -f $TMDichVu/$TenDV ]; then 
+		InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ chặn quảng cáo YouTube"; 
+		sudo systemctl start ytb; fi
+	fi
+}
+
 function Dung () {
 	systemctl stop yt
 }
@@ -123,6 +133,6 @@ case "$1" in
 	"up"	) CapNhat		;;
 	"dung"	) Dung			;;
 	"go"	) Go			;;
-	*		) sudo systemctl restart ytb ;;
+	*		) GoiYT			;;
 esac
 echo ''
