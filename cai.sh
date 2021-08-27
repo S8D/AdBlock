@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210827a"
+PhienBan="210827b"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
 TGNgu="3600"
@@ -118,4 +118,4 @@ if [ ! -f $TMDichVu/$TenYTB ]; then
 	sudo systemctl start yt
 fi
 
-sudo systemctl start ytb
+sudo systemctl restart ytb
