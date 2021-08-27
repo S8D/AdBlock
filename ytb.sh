@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210827i"
+PhienBan="210827j"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -313,7 +313,7 @@ function ChayLai () {
 	if [ ! -f ${CaiDV} ]; then $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
 	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
 	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; $dl1 ${CaiDV} $UpLink; sudo chmod +x ${CaiDV}; fi
-	./cai; exit 0
+	sh $CaiDV; exit 0
 }
 
 function Go() {
