@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828j"
+PhienBan="210828k"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -65,7 +65,7 @@ fi
 function Chay () {
 	while true; do
 		DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
-		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy..."
+		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauVang}$PhienBan${MauXam} đang chạy..."
 		else InRa "${TgTT} ${ThoiGian}"
 			if [ -f $TMDichVu/$TenDV ]; then 
 			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}"; 
