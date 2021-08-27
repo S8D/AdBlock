@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828d"
+PhienBan="210828e"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -96,9 +96,16 @@ function GoiYT () {
 }
 
 function GoiLaiYT () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ chặn quảng cáo YouTube"; 
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ chặn quảng cáo YouTube"
 	sudo systemctl stop ytb
 	sudo systemctl start ytb
+	sleep 3
+	DangChay=$(systemctl status ytb | grep Active | sed 's/).*//; s/.*(//')
+	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
+	else InRa "${TgNG} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy..."
+		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube..."
+		sudo systemctl restart ytb
+	fi
 }
 
 function Dung () {
