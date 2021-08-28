@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828l"
+PhienBan="210828m"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -324,9 +324,10 @@ function Chay() {
 		if [[ $QuetNhanh == 1 ]]; then QuetLe; else QuetFull; fi
 		if [ ! -f $TMDichVu/$TenYTB ]; then ChayLai; fi
 		DangChay=$(systemctl status yt | grep Active | sed 's/).*//; s/.*(//')
-		if [[ $DangChay == "running" ]]; then InRa "${TgOK} "; else sudo systemctl start yt; fi
+		if [[ $DangChay != "running" ]]; then sudo systemctl start yt; fi
 		echo -e "${TgTT} Quét định kỳ: ${MauXanh}${CheDoQuet}${MauXam}"
 		InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét tiếp sau: ${MauVang}$ThoiGianNgu giây${MauXam}"
+		InRa "${TgTT}"
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
 
@@ -448,15 +449,17 @@ function CapNhat() {
 
 function GiupDo () {
 	echo -e "${TgNG} Tham số truyền cho ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: 
-	${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]
-	\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam} | Cài đặt ${MauDo}$TenFile${MauXam}.
-	${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.
-	${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.
-	${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.
-	${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.
-	${TgTT} ${MauXanh}full${MauXam} | Quét ${MauXanh}toàn bộ ${MauXam}Nhật ký.
-	${TgTT} ${MauXanh}lite${MauXam} | Chỉ quét quét Nhật ký${MauXanh} hôm nay${MauXam}.
-	${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$TenFile${MauXam}."
+${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}full ${MauXam}| ${MauXanh}lite ${MauXam}| ${MauXanh}go ${MauXam}]
+${TgTT}	 ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$TenFile${MauXam}.
+${TgTT}	 ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.
+${TgTT}	 ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.
+${TgTT}	 ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.
+${TgTT}	 ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.
+${TgTT}	 ${MauXanh}full${MauXam} | Quét ${MauXanh}toàn bộ ${MauXam}Nhật ký.
+${TgTT}	 ${MauXanh}lite${MauXam} | Chỉ quét quét Nhật ký${MauXanh} hôm nay${MauXam}.
+${TgTT}	 ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$TenFile${MauXam}.
+${TgTT}
+${TgTT} Ngoài ra bạn có thể chỉnh sửa cấu hình trong file ${MauVang}$TM${MauXanh}cauhinh${MauXam}"
 }
 
 case "$1" in
