@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828n"
+PhienBan="210828o"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -419,6 +419,8 @@ function Go() {
 
 function CapNhat() {
 	InRa "${TgTT} ${ThoiGian}"
+	DangChay=$(systemctl status yt | grep Active | sed 's/).*//; s/.*(//')
+	if [[ $DangChay != "running" ]]; then sudo systemctl start yt; fi
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
 	case "$(curl -s --max-time 2 -I xem.li | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
 	if [ $net == 1 ]; then
