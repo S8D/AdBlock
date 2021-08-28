@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828m"
+PhienBan="210828n"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -132,7 +132,7 @@ function CapNhat() {
 			$dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
-				InRa "${TgOK} ${MauDo}$TenFile ${MauVang}được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
+				InRa "${TgOK} ${MauDo}$TenFile được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			cd $TM; ./yt gl;
