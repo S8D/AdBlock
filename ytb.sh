@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828j"
+PhienBan="210828k"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -112,6 +112,43 @@ function CheckDocker() {
 	if [ -f "${DOCKER_PIHOLE}" ]; then
 		echo -e "${TgTT} Phát hiện Docker."
 		DOCKER="y"
+	fi
+}
+
+function CheckPiHole() {
+	InRa "${TgTT} ${ThoiGian}"
+	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
+	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
+
+	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}"
+	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
+	pivful=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//')
+	if [ $piv -lt 5 ]; then
+		InRa "${TgNG} ${MauDo}${TenFile} ${MauXanh}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
+		InRa "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
+		InRa "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
+		read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
+	else
+		InRa "${TgOK} ${MauDo}${TenFile} ${MauXanh}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}$pivful${MauXam}"
+	fi
+
+	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}PiHole${MauXam}"
+	PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
+	PiCfh="BLOCKINGMODE"
+	if [[ "${PiCfg}" == "${PiCfh}" ]]; then
+		InRa "${TgOK} PiHole đã bật ${MauXanh}BlockingMode${MauXam}"
+	else
+		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
+		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
+	fi
+
+	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}SSL${MauXam}"
+	sslcfg=$(cat /etc/lighttpd/*.conf | grep 443 | sed 's/.*://; s/".*//')
+	if [ -z ${sslcfg} ]; then
+		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
+		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
+	else
+		InRa "${TgOK} PiHole đã bật ${MauXanh}SSL${MauXam}"
 	fi
 }
 
@@ -253,7 +290,7 @@ function Cai() {
 	InRa "${TgTT} ${ThoiGian}"
 	CheckUser
 	CheckDocker
-
+	CheckPiHole
 	InRa "${TgTT} Đang bắt đầu cài ${MauVang}Chặn quảng cáo YouTube${MauXam}..."
 	if [[ "${DOCKER}" == "y" ]]; then
 		InRa "${TgCB} Chặn quảng cáo YouTube phải được chạy/dừng thủ công"
@@ -263,6 +300,7 @@ function Cai() {
 	InRa "${TgTT} Cấu hình Dữ liệu: ${MauXanh}$PiData ${MauXam}..."; sleep 1
 	Database "create";
 	CaiDichVu
+	ChayLai
 	QuetFull
 	InRa "${TgOK} Đang gọi Dịch vụ."
 	systemctl start ytb 1> /dev/null 2>&1
@@ -349,7 +387,15 @@ function Go() {
 		InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
 		rm -rf $TMDichVu/$TenDV
 
-		if [ -f ${TMDichVu}/ytadsblocker ]; then
+		if [ -f ${TMDichVu}/yt ]; then
+			echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
+			systemctl stop yt 1> /dev/null 2>&1
+			systemctl disable yt 1> /dev/null 2>&1
+			rm --force ${TMDichVu}/yt;
+			rm -rf ${TMDichVu}/yt ${TM}/cai;
+		fi
+
+		if [ -f ${TMDichVu}/ytadsblocker ]; then bash <(curl -sL gg.gg/_ytb) uninstall
 			echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
 			systemctl stop ytadsblocker 1> /dev/null 2>&1
 			systemctl disable ytadsblocker 1> /dev/null 2>&1
@@ -366,43 +412,6 @@ function Go() {
 	InRa "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
 	#kill -9 `pgrep ytb`
 	killall ytb
-}
-
-function CheckPiHole() {
-	InRa "${TgTT} ${ThoiGian}"
-	PiCfgu="https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking"
-	sslu="https://tecadmin.net/configure-ssl-in-lighttpd-server/"
-
-	InRa "${TgTT} Kiểm tra phiên bản ${MauXanh}PiHole${MauXam}"
-	piv=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//; s/\..*//')
-	pivful=$(pihole -v | grep hole | sed -e 's/.*s v//; s/ (.*//')
-	if [ $piv -lt 5 ]; then
-		InRa "${TgNG} ${MauDo}${TenFile} ${MauXanh}${PhienBan} ${MauXam}chỉ tương thích với ${MauDo}PiHole 5.x trở lên${MauXam}!!!"
-		InRa "${TgTT} Hoặc chạy phiên bản ${MauXanh}legacy${MauXam} cho ${MauDo}PiHole 5.x trở xuống${MauXam}!!!"
-		InRa "${TgTT} Tải phiên bản ${MauXanh}legacy${MauXam} tại: ${MauXanh}${pbcu}${MauXam}";
-		read -p "${TgNG} Nhấn phím bất kỳ để thoát."; exit 1
-	else
-		InRa "${TgOK} ${MauDo}${TenFile} ${MauXanh}${PhienBan} ${MauXam}tương thích với ${MauDo}PiHole ${MauXanh}$pivful${MauXam}"
-	fi
-
-	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}PiHole${MauXam}"
-	PiCfg=$(cat /etc/pihole/pihole-FTL.conf | grep IP-NODATA-AAAA | sed -e 's/\=.*//')
-	PiCfh="BLOCKINGMODE"
-	if [[ "${PiCfg}" == "${PiCfh}" ]]; then
-		InRa "${TgOK} PiHole đã bật ${MauXanh}BlockingMode${MauXam}"
-	else
-		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
-		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
-	fi
-
-	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}SSL${MauXam}"
-	sslcfg=$(cat /etc/lighttpd/lighttpd.conf | grep 443)
-	if [ -z ${sslcfg} ]; then
-		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
-		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
-	else
-		InRa "${TgOK} PiHole đã bật ${MauXanh}SSL${MauXam}"
-	fi
 }
 
 function CapNhat() {
@@ -429,10 +438,22 @@ function CapNhat() {
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			if [ ! -f $TMDichVu/$TenYTB ]; then ChayLai ;exit 0; else cd $TM; ./cai cl; exit 0; fi
-			#sh ${TM}/$TenFile up; exit 0;
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
 	fi
+}
+
+function GiupDo () {
+	echo -e "${TgNG} Tham số truyền cho ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: 
+	${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]
+	\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam} | Cài đặt ${MauDo}$TenFile${MauXam}.
+	${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.
+	${TgTT} ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.
+	${TgTT} ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.
+	${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.
+	${TgTT} ${MauXanh}full${MauXam} | Quét ${MauXanh}toàn bộ ${MauXam}Nhật ký.
+	${TgTT} ${MauXanh}lite${MauXam} | Chỉ quét quét Nhật ký${MauXanh} hôm nay${MauXam}.
+	${TgTT} ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$TenFile${MauXam}."
 }
 
 case "$1" in
@@ -446,6 +467,6 @@ case "$1" in
 	"cl"	) ChayLai		;;
 	"gl"	) GoiLaiYT		;;
 	"go"	) Go			;;
-	*		) Banner; echo -e "${TgNG} Tham số không phù hợp.\n${TgTT} Tham số của ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau: \n${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]\n${TgTT} Chức năng tham số:\n${TgTT} ${MauXanh}cai${MauXam} | Cài đặt ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}up${MauXam}	| Cập nhật ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}kt${MauXam}	| Kiểm tra tương thích.\n${TgTT} ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.\n${TgTT} ${MauXanh}go${MauXam}	| Gỡ cài đặt ${MauDo}$TenFile${MauXam}." ;;
+	*		) Banner;GiupDo ;;
 esac
 echo ''
