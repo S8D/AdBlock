@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828l"
+PhienBan="210828m"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -126,7 +126,7 @@ function CapNhat() {
 		PhienBanMoi=$(${dl2} "${UpLink}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then
 		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
-		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
+		else InRa "${TgCB} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
 		    mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
 			$dl1 ${upTam} $UpLink; sudo chmod +x ${upTam};
