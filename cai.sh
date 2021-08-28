@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210828k"
+PhienBan="210828l"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -135,7 +135,6 @@ function CapNhat() {
 				InRa "${TgOK} ${MauDo}$TenFile ${MauVang}được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			#sh ${TM}/$TenFile up; 
 			cd $TM; ./yt gl;
 			exit 0;
 		fi
