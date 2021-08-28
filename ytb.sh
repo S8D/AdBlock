@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828m"
+PhienBan="210828n"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -316,8 +316,7 @@ function Chay() {
 
 	if [ -z ${GROUPID} ]; then
 		InRa "${TgNG} Không thấy group ID của Chặn quảng cáo YouTube trong Dữ liệu."
-		InRa "${TgTT} Vui lòng chạy lại $TenFile với tham số: cai"
-		exit 1;
+		Database "create"
 	fi
 
 	while true; do
@@ -432,13 +431,13 @@ function CapNhat() {
 		PhienBanMoi=$(${dl2} "${UpYT}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then
 		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
-		else InRa "${TgTT} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
+		else InRa "${TgCB} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
 		    mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
 			$dl1 ${upTam} $UpYT; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
-				InRa "${TgOK} ${MauDo}$TenFile ${MauVang}được cập nhật lên ${MauXanh}$PhienBanMoi${MauXam}!"
+				InRa "${TgOK} ${MauDo}$TenFile được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			if [ ! -f $TMDichVu/$TenYTB ]; then ChayLai ;exit 0; else cd $TM; ./cai cl; exit 0; fi
@@ -455,11 +454,11 @@ ${TgTT}	 ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.
 ${TgTT}	 ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.
 ${TgTT}	 ${MauXanh}kt${MauXam}   | Kiểm tra tương thích.
 ${TgTT}	 ${MauXanh}dung${MauXam} | Dừng ${MauDo}$TenFile${MauXam}.
-${TgTT}	 ${MauXanh}full${MauXam} | Quét ${MauXanh}toàn bộ ${MauXam}Nhật ký.
-${TgTT}	 ${MauXanh}lite${MauXam} | Chỉ quét quét Nhật ký${MauXanh} hôm nay${MauXam}.
+${TgTT}	 ${MauXanh}full${MauXam} | Quét ${MauVang}toàn bộ ${MauXam}Nhật ký.
+${TgTT}	 ${MauXanh}lite${MauXam} | Chỉ quét quét Nhật ký${MauVang} hôm nay${MauXam}.
 ${TgTT}	 ${MauXanh}go${MauXam}   | Gỡ cài đặt ${MauDo}$TenFile${MauXam}.
 ${TgTT}
-${TgTT} Ngoài ra bạn có thể chỉnh sửa cấu hình trong file ${MauVang}$TM${MauXanh}cauhinh${MauXam}"
+${TgTT} Ngoài ra bạn có thể chỉnh sửa cấu hình trong file ${MauVang}$TM/${MauXanh}cauhinh${MauXam}"
 }
 
 case "$1" in
