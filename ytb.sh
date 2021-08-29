@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210828o"
+PhienBan="210828p"
 CapNhatCauHinh="1"
 UpLink="https://xem.li/ytb"
 UpYT="https://xem.li/yt"
@@ -138,8 +138,8 @@ function CheckPiHole() {
 	if [[ "${PiCfg}" == "${PiCfh}" ]]; then
 		InRa "${TgOK} PiHole đã bật ${MauXanh}BlockingMode${MauXam}"
 	else
-		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
-		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
+		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!!\nViệc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
+		InRa "${TgNG} Vui lòng tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
 	fi
 
 	InRa "${TgTT} Kiểm tra cấu hình ${MauXanh}SSL${MauXam}"
