@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210831d"
+PhienBan="210831e"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -99,7 +99,7 @@ function GoiYT () {
 }
 
 function GoiLaiYT () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang chạy lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
 	sudo systemctl stop $TenYTB
 	sudo systemctl start $TenYTB
 	sleep 3
