@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831g"
+PhienBan="210831h"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -203,7 +203,7 @@ function Quet () {
 
 	if [[ -f "${TMTam}/pihole.log" ]]; then
 		InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm...";
-		rm --force ${TMTam}/pihole.log*
+		rm -rf $TMTam
 		InRa "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
 	fi
 }
@@ -391,6 +391,7 @@ function CapNhat() {
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
+				rm -rf $upTam
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi			
 			if [ -f $TMDichVu/$TenDV ]; then 
 				InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
