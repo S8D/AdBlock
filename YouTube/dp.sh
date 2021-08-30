@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210831f"
+PhienBan="210831g"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -115,6 +115,10 @@ function Dung () {
 	systemctl stop $TenDuPhong
 }
 
+function Go () {
+	${TM}/$TenYTB go
+}
+
 function CapNhat() {
 	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
@@ -157,7 +161,7 @@ case "$1" in
 	"up"	) CapNhat		;;
 	"dung"	) Dung			;;
 	"cl"	) GoiLaiYT		;;
-	"go"	) ${TM}/$TenYTB go			;;
+	"go"	) Go			;;
 	*		) GoiYT			;;
 esac
 echo ''
