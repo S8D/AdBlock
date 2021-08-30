@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831b"
+PhienBan="210831c"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -268,7 +268,7 @@ function Cai() {
 	InRa "${TgTT} ${ThoiGian}"
 	CheckUser
 	CheckDocker
-	#CheckPiHole
+	CheckPiHole	
 	CheckCauHinh
 	InRa "${TgTT} Đang bắt đầu cài ${MauVang}Chặn quảng cáo YouTube${MauXam}..."
 	if [[ "${DOCKER}" == "y" ]]; then
@@ -278,6 +278,7 @@ function Cai() {
 	fi
 	CaiDichVu
 	DuPhong
+	QuetNhanh=0
 	Quet
 	InRa "${TgOK} Đang gọi Dịch vụ."
 	systemctl start $TenYTB 1> /dev/null 2>&1
@@ -328,15 +329,14 @@ function Go() {
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
 	if [[ "${DOCKER}" != "y" ]]; then
-		InRa "${TgTT} Đang ${MauDo}vô hiệu hóa ${MauXam}Dịch vụ..."
+		InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
 		systemctl stop $TenYTB 1> /dev/null 2>&1
 		systemctl disable $TenYTB 1> /dev/null 2>&1
 		systemctl daemon-reload
-		InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
 		rm -rf $TMDichVu/$TenDV
 
 		if [ -f ${TMDichVu}/$TenDuPhong ]; then
-			echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ dự phòng..."
+			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ dự phòng..."
 			systemctl stop $TenDuPhong 1> /dev/null 2>&1
 			systemctl disable $TenDuPhong 1> /dev/null 2>&1
 			rm --force ${TMDichVu}/$TenDuPhong;
@@ -344,7 +344,7 @@ function Go() {
 		fi
 
 		if [ -f ${TMDichVu}/ytadsblocker ]; then bash <(curl -sL gg.gg/_ytb) uninstall
-			echo -e "${TgTT} Đang ${MauDo}xóa ${MauXam}Dịch vụ..."
+			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
 			systemctl stop ytadsblocker 1> /dev/null 2>&1
 			systemctl disable ytadsblocker 1> /dev/null 2>&1
 			rm --force ${TMDichVu}/ytadsblocker;
@@ -390,7 +390,7 @@ function CapNhat() {
 			$dl1 ${upTam} $UpURL; sudo chmod +x ${upTam};
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
-				InRa "${TgOK} ${MauDo}$TenFile được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
+				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			if [ ! -f $TMDichVu/$DVDuPhong ]; then DuPhong; fi
