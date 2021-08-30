@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831f"
+PhienBan="210831g"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -15,8 +15,8 @@ mkdir -p /sd; echo ''
 TM="/sd/ytb"; mkdir -p $TM
 CauHinh="${TM}/cauhinh"
 YTLog="${TM}/NhatKy.log"
-TMTam="/tmp/ytb"; mkdir -p $TMTam
-upTam="${TM}/tam"
+TMTam="${TM}/tam"; mkdir -p $TMTam
+upTam="${TM}/tmp"
 QUIET="0"
 ThoiGian=$(date "+%F %T")
 
@@ -177,7 +177,7 @@ function Quet () {
 		SoLuong=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
 	else
 		InRa "${TgTT} Đang tổng hợp Nhật ký PiHole..."; sleep 1
-		cp $PiTM/pihole.log* $TMTam
+		cp ${PiTM}/pihole.lo* $TMTam
 		gunzip $TMTam/*.gz
 		DSTenMien=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq)
 		SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
@@ -329,7 +329,7 @@ function Go() {
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
 	if [[ "${DOCKER}" != "y" ]]; then
-		InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
+		InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ chặn quảng cáo YouTube..."
 		systemctl stop $TenYTB 1> /dev/null 2>&1
 		systemctl disable $TenYTB 1> /dev/null 2>&1
 		systemctl daemon-reload
