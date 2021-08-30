@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210831e"
+PhienBan="210831f"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -16,7 +16,7 @@ mkdir -p /sd
 TM="/sd/ytb"; mkdir -p $TM; cd ${TM}
 CauHinh="${TM}/cauhinh"
 TMTam="/tmp/ytb"; mkdir -p $TMTam
-upTam="${TM}/tam"
+upTam="${TM}/tmp"
 YTLog="${TM}/NhatKy.log"
 QUIET="0"
 
