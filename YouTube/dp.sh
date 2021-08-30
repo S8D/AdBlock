@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210831a"
+PhienBan="210831b"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -49,8 +49,8 @@ function DichVu () {
 Description=Dịch vụ phụ trợ chặn quảng cáo YouTube
 After=network.target
 [Service]
-ExecStart=$TM/cai chay
-ExecStop=$TM/cai dung
+ExecStart=$TM/${TenDuPhong} chay
+ExecStop=$TM/${TenDuPhong} dung
 [Install]
 WantedBy=multi-user.target
 
@@ -118,7 +118,7 @@ function Dung () {
 function CapNhat() {
 	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
-	case "$(curl -s --max-time 2 -I xem.li | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
+	case "$(curl -s --max-time 2 -I bom.to | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
 	if [ $net == 1 ]; then
 	case "$(curl -s --max-time 2 -I github.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=2;;*) net=0;;esac
 		if [ $net == 2 ]; then
