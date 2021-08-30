@@ -1,0 +1,8 @@
+PhienBanCfg=210831
+SetIP=8.8.8.8
+QuetNhanh=1
+ThoiGianCapNhat=2
+ThoiGianNgu=300
+ChanThuong=r([0-9]{1,2})[^-].*\.googlevideo\.com
+ChanManh=r([0-9]{1,2}).*\.googlevideo\.com
+CapDo=r([0-9]{1,2})[^-].*\.googlevideo\.com
