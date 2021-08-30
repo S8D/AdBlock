@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831e"
+PhienBan="210831f"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -188,7 +188,7 @@ function Quet () {
 		for TenMien in $DSTenMien; do ThemTenMien=$(echo ${TenMien} | sed 's/.googlevideo.com//')
 			cat $Chuyen | sed 's/.*(\t| )+//' > $upTam
 			if [[ $TenMien == *.googlevideo.com ]]; then DemTenMien=$(($DemTenMien + 1))
-				InRa "${TgTT} Đang thêm ${MauVang}$DemTenMien${MauXam}/${MauXanh}$SoLuong${MauXam}: ${MauXanh}$ThemTenMien"${MauXam};
+				InRa "${TgTT} Đang thêm ${MauVang}$DemTenMien${MauXam}/${MauXanh}$SoLuong${MauXam}: ${MauXanh}$ThemTenMien${MauXam}";
 				echo $TenMien | grep -Fvwf $upTam | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
 			else
 			InRa "${TgNG} Tên miền $TenMien ${MauDo}không ${MauXam}được thêm vì sai định dạng!!!"
@@ -335,13 +335,13 @@ function Go() {
 		systemctl daemon-reload
 		rm -rf $TMDichVu/$TenDV
 
-		if [ -f ${TMDichVu}/$TenDuPhong ]; then
+		#if [ -f ${TMDichVu}/$TenDuPhong ]; then
 			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ dự phòng..."
 			systemctl stop $TenDuPhong 1> /dev/null 2>&1
 			systemctl disable $TenDuPhong 1> /dev/null 2>&1
 			rm --force ${TMDichVu}/$TenDuPhong;
 			rm -rf ${TMDichVu}/$TenDuPhong ${TM}/$TenDuPhong;
-		fi
+		#fi
 
 		if [ -f ${TMDichVu}/ytadsblocker ]; then bash <(curl -sL gg.gg/_ytb) uninstall
 			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
@@ -361,7 +361,7 @@ function Go() {
 			rm -rf $TMTam
 		fi
 	fi
-
+	systemctl daemon-reload
 	InRa "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
 	sed -i '/googlevideo/d' $Chuyen
 	sed -e 's/\n+/\n/' $Chuyen; echo ''
@@ -391,10 +391,13 @@ function CapNhat() {
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
-			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
-			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			if [ ! -f $TMDichVu/$DVDuPhong ]; then DuPhong; fi
-			cd $TM; ./$TenDuPhong cl; exit 0
+			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi			
+			if [ -f $TMDichVu/$TenDV ]; then 
+				InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
+				if [ ! -f $TMDichVu/$DVDuPhong ]; then DuPhong; fi
+				cd $TM; ./$TenDuPhong cl; exit 0
+			fi
+			
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
 	fi
