@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210831g"
+PhienBan="210831h"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -102,7 +102,7 @@ function GoiLaiYT () {
 	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
 	sudo systemctl stop $TenYTB
 	sudo systemctl start $TenYTB
-	sleep 3
+	sleep 5
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
 	else InRa "${TgNG} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy${MauXam}..."
