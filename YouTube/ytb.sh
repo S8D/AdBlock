@@ -405,7 +405,7 @@ function CapNhat() {
 
 function GiupDo () {
 	echo -e "${TgNG} Tham số truyền cho ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam} như sau:
-${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}full ${MauXam}| ${MauXanh}lite ${MauXam}| ${MauXanh}go ${MauXam}]
+${TgTT} ${MauDo}./$TenFile ${MauXam}[ ${MauXanh}cai ${MauXam}| ${MauXanh}chay ${MauXam}| ${MauXanh}up ${MauXam}| ${MauXanh}kt ${MauXam}| ${MauXanh}dung ${MauXam}| ${MauXanh}go ${MauXam}]
 ${TgTT}	 ${MauXanh}cai${MauXam}  | Cài đặt ${MauDo}$TenFile${MauXam}.
 ${TgTT}	 ${MauXanh}chay${MauXam} | Chạy ${MauDo}$TenFile${MauXam}.
 ${TgTT}	 ${MauXanh}up${MauXam}   | Cập nhật ${MauDo}$TenFile${MauXam}.
@@ -428,3 +428,4 @@ case "$1" in
 	*		) Banner;GiupDo ;;
 esac
 echo ''
+# Script chặn quảng cáo của YouTube bằng Pi-Hole
