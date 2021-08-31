@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831k"
+PhienBan="210831l"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -255,8 +255,8 @@ function CaiDichVu () {
 		systemctl enable $TenYTB 1> /dev/null 2>&1
 		echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t ${MauVang}systemctl start $TenYTB${MauXam}"; echo ''
 	else
-		InRa "${TgCB} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
-		InRa "${TgTT} Cài đặt lại Dịch vụ..."; echo ''
+		InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
+		InRa "${TgCB} Cài đặt lại Dịch vụ..."; echo ''
 		TaoDichVu
 		systemctl daemon-reload
 		systemctl restart $TenYTB 1> /dev/null 2>&1
@@ -328,9 +328,9 @@ function Go() {
 	CheckUser
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam}..."
-	if [[ "${DOCKER}" != "y" ]]; then
-		InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam}..."
+	if [[ "${DOCKER}" != "y" ]]; then		
 		for TenDichVu in $DVDuPhong $TenDV; do
+			InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
 			systemctl stop $TenDichVu
 			systemctl disable $TenDichVu
 			rm -rf ${TMDichVu}/$TenDichVu
