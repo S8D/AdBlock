@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831h"
+PhienBan="210831i"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -153,7 +153,7 @@ function CheckPiHole() {
 	if [[ "${PiCfg}" == "${PiCfh}" ]]; then
 		InRa "${TgOK} PiHole đã bật ${MauXanh}BlockingMode${MauXam}"
 	else
-		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!! Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
+		InRa "${TgNG} Cấu hình PiHole chưa tương thích!!!\n${TgNG} Việc cấu hình PiHole tương thích sẽ chặn quảng cáo hiệu quả hơn."
 		InRa "${TgNG} Tham khảo cấu hình tại:\n ${PiCfgu}"; exit 1
 	fi
 
@@ -176,8 +176,8 @@ function Quet () {
 		DSTenMien=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq)
 		SoLuong=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
 	else
-		InRa "${TgTT} Đang tổng hợp Nhật ký PiHole..."; sleep 1
-		cp ${PiTM}/pihole.lo* $TMTam
+		InRa "${TgTT} Đang tổng hợp Nhật ký PiHole..."
+		yes | cp -rf ${PiTM}/pihole.lo* ${TMTam}
 		gunzip $TMTam/*.gz
 		DSTenMien=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq)
 		SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
@@ -201,11 +201,11 @@ function Quet () {
 		InRa "${TgCB} Không có tên miền nào được thêm."
 	fi
 
-	if [[ -f "${TMTam}/pihole.log" ]]; then
-		InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm...";
-		rm -rf $TMTam
-		InRa "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
-	fi
+	#if [[ -f "${TMTam}/pihole.log" ]]; then
+	#	InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm...";
+	#	rm -rf $TMTam
+	#	InRa "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
+	#fi
 }
 
 function TaoDichVu () {
@@ -327,21 +327,19 @@ function Go() {
 	CheckDocker
 	CheckUser
 
-	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube..."
+	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam}..."
 	if [[ "${DOCKER}" != "y" ]]; then
-		InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ chặn quảng cáo YouTube..."
-		systemctl stop $TenYTB 1> /dev/null 2>&1
-		systemctl disable $TenYTB 1> /dev/null 2>&1
+		InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam}..."
+		for TenDichVu in $DVDuPhong $TenDV; do
+			systemctl stop $TenDichVu
+			systemctl disable $TenDichVu
+			rm -rf /etc/systemd/system/$TenDichVu
+			rm -rf /etc/systemd/system/$TenDichVu
+			rm -rf /usr/lib/systemd/system/$TenDichVu 
+			rm -rf /usr/lib/systemd/system/$TenDichVu
+		done
 		systemctl daemon-reload
-		rm -rf $TMDichVu/$TenDV
-
-		#if [ -f ${TMDichVu}/$TenDuPhong ]; then
-			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ dự phòng..."
-			systemctl stop $TenDuPhong 1> /dev/null 2>&1
-			systemctl disable $TenDuPhong 1> /dev/null 2>&1
-			rm --force ${TMDichVu}/$TenDuPhong;
-			rm -rf ${TMDichVu}/$TenDuPhong ${TM}/$TenDuPhong;
-		#fi
+		systemctl reset-failed
 
 		if [ -f ${TMDichVu}/ytadsblocker ]; then bash <(curl -sL gg.gg/_ytb) uninstall
 			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
@@ -361,7 +359,7 @@ function Go() {
 			rm -rf $TMTam
 		fi
 	fi
-	systemctl daemon-reload
+	rm -rf $TMTam $upTam
 	InRa "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
 	sed -i '/googlevideo/d' $Chuyen
 	sed -e 's/\n+/\n/' $Chuyen; echo ''
