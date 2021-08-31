@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831l"
+PhienBan="210831m"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -16,7 +16,7 @@ TM="/sd/ytb"; mkdir -p $TM
 CauHinh="${TM}/cauhinh"
 YTLog="${TM}/NhatKy.log"
 TMTam="${TM}/tam"; mkdir -p $TMTam
-upTam="${TM}/tmp"
+Tam="${TM}/tmp"
 QUIET="0"
 ThoiGian=$(date "+%F %T")
 
@@ -186,14 +186,15 @@ function Quet () {
 	if [ ! -z "${DSTenMien}" ]; then
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; DemTenMien=0
 		for TenMien in $DSTenMien; do ThemTenMien=$(echo ${TenMien} | sed 's/.googlevideo.com//')
-			cat $Chuyen | grep googlevideo | sed 's/.*(\t| )+//' > $upTam
+			cat $Chuyen | grep googlevideo | sed 's/.*(\t| )+//' > $Tam
 			if [[ $TenMien == *.googlevideo.com ]]; then DemTenMien=$(($DemTenMien + 1))
 				InRa "${TgTT} Đang thêm ${MauVang}$DemTenMien${MauXam}/${MauXanh}$SoLuong${MauXam}: ${MauXanh}$ThemTenMien${MauXam}";
-				echo $TenMien | grep -Fvwf $upTam | sort | uniq | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
+				echo $TenMien | grep -Fvwf $Tam | sort | uniq | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
 			else
 			InRa "${TgNG} Tên miền $TenMien ${MauDo}không ${MauXam}được thêm vì sai định dạng!!!"
 			fi
 		done
+		cat $Chuyen | sort | uniq > $Tam; mv $Tam $Chuyen
 		TongSo=$(cat $Chuyen | grep googlevideo | sed 's/.*(\t| )+//' | wc --lines)
 		InRa "${TgOK} Số lượng tên miền đã thêm: ${MauXanh}$DemTenMien${MauXam}."
 		InRa "${TgOK} Tổng số tên miền đang chặn: ${MauVang}$TongSo${MauXam}."
@@ -360,7 +361,7 @@ function Go() {
 			rm -rf $TMTam
 		fi
 	fi
-	rm -rf $TMTam $upTam
+	rm -rf $TMTam $Tam
 	InRa "${TgOK} Tắt chặn quảng cáo YouTube"; echo ''
 	sed -i '/googlevideo/d' $Chuyen
 	sed -e 's/\n+/\n/' $Chuyen; echo ''
@@ -384,13 +385,13 @@ function CapNhat() {
 		if [ $PhienBanMoi == $PhienBan ]; then
 		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
 		else InRa "${TgCB} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
-		    mkdir -p $TM/old; rm -rf $upTam $TMTam
+		    mkdir -p $TM/old; rm -rf $Tam $TMTam
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
-			$dl1 ${upTam} $UpURL; sudo chmod +x ${upTam};
-			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
-			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
+			$dl1 ${Tam} $UpURL; sudo chmod +x ${Tam};
+			PhienBanUp=$(cat $Tam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
+			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${Tam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
-				rm -rf $upTam
+				rm -rf $Tam
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi			
 			if [ -f $TMDichVu/$TenDV ]; then 
 				InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
