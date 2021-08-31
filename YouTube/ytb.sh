@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831i"
+PhienBan="210831j"
 CapNhatCauHinh="1"
 DuPhongURL="https://bom.to/_dp"
 UpURL="https://bom.to/_yt"
@@ -186,10 +186,10 @@ function Quet () {
 	if [ ! -z "${DSTenMien}" ]; then
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; DemTenMien=0
 		for TenMien in $DSTenMien; do ThemTenMien=$(echo ${TenMien} | sed 's/.googlevideo.com//')
-			cat $Chuyen | sed 's/.*(\t| )+//' > $upTam
+			cat $Chuyen | grep googlevideo | sed 's/.*(\t| )+//' > $upTam
 			if [[ $TenMien == *.googlevideo.com ]]; then DemTenMien=$(($DemTenMien + 1))
 				InRa "${TgTT} Đang thêm ${MauVang}$DemTenMien${MauXam}/${MauXanh}$SoLuong${MauXam}: ${MauXanh}$ThemTenMien${MauXam}";
-				echo $TenMien | grep -Fvwf $upTam | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
+				echo $TenMien | grep -Fvwf $upTam | sort | uniq | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
 			else
 			InRa "${TgNG} Tên miền $TenMien ${MauDo}không ${MauXam}được thêm vì sai định dạng!!!"
 			fi
@@ -333,9 +333,10 @@ function Go() {
 		for TenDichVu in $DVDuPhong $TenDV; do
 			systemctl stop $TenDichVu
 			systemctl disable $TenDichVu
+			rm -rf ${TMDichVu}/$TenDichVu
 			rm -rf /etc/systemd/system/$TenDichVu
 			rm -rf /etc/systemd/system/$TenDichVu
-			rm -rf /usr/lib/systemd/system/$TenDichVu 
+			rm -rf /usr/lib/systemd/system/$TenDichVu
 			rm -rf /usr/lib/systemd/system/$TenDichVu
 		done
 		systemctl daemon-reload
