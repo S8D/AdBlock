@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906a"
+PhienBan="210906b"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -68,11 +68,16 @@ fi
 function Chay () {
 	while true; do
 		DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-		if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauVang}$PhienBan${MauXam} đang chạy..."
-		else InRa "${TgTT} ${ThoiGian}"
+		if [[ $DangChay == "running" ]]; then 
+			InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauVang}$PhienBan${MauXam} đang chạy..."
+			InRa "${TgTT} ${ThoiGian}"
+			InRa "${TgTT}"
+		else 
 			if [ -f $TMDichVu/$TenDV ]; then 
 			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}"; 
 			sudo systemctl start $TenYTB
+			InRa "${TgTT} ${ThoiGian}"
+			InRa "${TgTT}"
 			else CaiYT; fi
 		fi
 		COUNT=$(($COUNT + 1))
@@ -90,11 +95,13 @@ function Chay () {
 
 function GoiYT () {
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauVang}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy..."
-	else InRa "${TgTT} ${ThoiGian}"
+	if [[ $DangChay == "running" ]]; then 
+		InRa "${TgOK} Dịch vụ ${MauVang}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy..."; 
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
+	else 
 		if [ -f $TMDichVu/$TenDV ]; then 
 		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."; 
-		sudo systemctl start $TenYTB; fi
+		sudo systemctl start $TenYTB; InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"; fi
 	fi
 }
 
@@ -105,9 +112,11 @@ function GoiLaiYT () {
 	sleep 5
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	else InRa "${TgNG} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy${MauXam}..."
-		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
+		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."; 
 		sudo systemctl restart $TenYTB
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	fi
 }
 

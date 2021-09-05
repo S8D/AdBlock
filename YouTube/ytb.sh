@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906b"
+PhienBan="210906c"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -239,10 +239,13 @@ function GoiDuPhong () {
 	sudo systemctl start $TenDuPhong
 	sleep 3
 	DangChay=$(systemctl status $TenDuPhong | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
+	if [[ $DangChay == "running" ]]; then 
+		InRa "${TgOK} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	else InRa "${TgNG} Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy${MauXam}..."
 		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauVang}phụ trợ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
 		sudo systemctl restart $TenDuPhong
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	fi
 }
 
@@ -301,8 +304,7 @@ function Chay() {
 		if [[ $DangChay != "running" ]]; then sudo systemctl start $TenDuPhong; fi
 		echo -e "${TgTT} Quét định kỳ: ${MauXanh}${CheDoQuet}${MauXam}"
 		InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét tiếp sau: ${MauVang}$ThoiGianNgu giây${MauXam}"
-		InRa "${TgTT} ${ThoiGian}"
-		InRa "${TgTT}"
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
 
