@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906f"
+PhienBan="210906g"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -153,7 +153,7 @@ function CapNhat() {
 			PhienBanUp=$(cat $upTam | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
-			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
+			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật ${MauDo}thất bại${MauXam}!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 			cd $TM; ./$TenFileYTB gdp; exit 0;
 		fi
