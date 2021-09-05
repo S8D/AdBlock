@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906h"
+PhienBan="210906i"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -381,8 +381,8 @@ function CapNhat() {
 	InRa "${TgTT} ${ThoiGian}"
 	DangChay=$(systemctl status $TenDP | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay != "running" ]]; then sudo systemctl start $TenDP; fi
-	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."
-	case "$(curl -s --max-time 2 -I bom.to | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
+	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."; MayChu=$(echo $UpURL | sed 's/.*\/\///; s/\/.*//')
+	case "$(curl -s --max-time 2 -I ${MayChu} | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
 	if [ $net == 1 ]; then
 	case "$(curl -s --max-time 2 -I github.com | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=2;;*) net=0;;esac
 		if [ $net == 2 ]; then
