@@ -1,9 +1,9 @@
 #!/bin/bash
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
-PhienBan="210831m"
+PhienBan="210906a"
 CapNhatCauHinh="1"
-DuPhongURL="https://bom.to/_dp"
-UpURL="https://bom.to/_yt"
+UpURL="https://lienket.vn/yt"
+DuPhongURL="https://lienket.vn/dp"
 Nha="https://s8d.github.io/AdBlock"
 pbcu="https://xem.li/ytbo"
 ip=$(curl -s api.ipify.org)
