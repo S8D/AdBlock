@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906c"
+PhienBan="210906e"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -21,13 +21,17 @@ YTLog="${TM}/NhatKy.log"
 QUIET="0"
 
 TMDichVu="/lib/systemd/system"
-TenDuPhong="dp"
+TenDP="dp"
 TenYTB="ytb"
-DVDuPhong="${TenDuPhong}.service"
-CaiDV=${TM}/$TenDuPhong
-TenDV="${TenYTB}.service"
+DichVuDP="${TenDP}.service"
+CaiDV=${TM}/$TenDP
+DichVuYTB="${TenYTB}.service"
 TenFile=$(basename $0)
 
+if [ -f $TMDichVu/$DichVuYTB ]; then
+TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//')
+PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
+fi
 
 # Cài đặt màu sắc
 MauDo="\e[31m"
@@ -43,14 +47,14 @@ TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
 function InRa () { [ $QUIET -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
 function DichVu () {
-	cd ${TMDichVu} && touch $DVDuPhong
-	cat > $DVDuPhong <<-EOF
+	cd ${TMDichVu} && touch $DichVuDP
+	cat > $DichVuDP <<-EOF
 [Unit]
 Description=Dịch vụ phụ trợ chặn quảng cáo YouTube
 After=network.target
 [Service]
-ExecStart=$TM/${TenDuPhong} chay
-ExecStop=$TM/${TenDuPhong} dung
+ExecStart=$TM/${TenDP} chay
+ExecStop=$TM/${TenDP} dung
 [Install]
 WantedBy=multi-user.target
 
@@ -58,9 +62,9 @@ EOF
 }
 
 function CaiYT () {
-	if [ ! -f $TM/$TenDuPhong ]; then
-		cd ${TM}; $dl1 $TenDuPhong $UpURL
-		sudo chmod +x $TenDuPhong; ./$TenDuPhong go; ./$TenDuPhong cai
+	if [ ! -f $TM/$TenDP ]; then
+		cd ${TM}; $dl1 $TenDP $UpURL
+		sudo chmod +x $TenDP; ./$TenDP go; ./$TenDP cai
 fi
 
 }
@@ -69,12 +73,12 @@ function Chay () {
 	while true; do
 		DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 		if [[ $DangChay == "running" ]]; then 
-			InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauVang}$PhienBan${MauXam} đang chạy..."
+			InRa "${TgOK} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam} đang chạy..."
 			InRa "${TgTT} ${ThoiGian}"
 			InRa "${TgTT}"
 		else 
-			if [ -f $TMDichVu/$TenDV ]; then 
-			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}"; 
+			if [ -f $TMDichVu/$DichVuYTB ]; then 
+			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}${PhienBanYTB}${MauXam}"; 
 			sudo systemctl start $TenYTB
 			InRa "${TgTT} ${ThoiGian}"
 			InRa "${TgTT}"
@@ -96,32 +100,32 @@ function Chay () {
 function GoiYT () {
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then 
-		InRa "${TgOK} Dịch vụ ${MauVang}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam} đang chạy..."; 
+		InRa "${TgOK} Dịch vụ ${MauVang}$TenFileYTB ${MauXanh}$PhienBanYTB${MauXam} đang chạy..."; 
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	else 
-		if [ -f $TMDichVu/$TenDV ]; then 
-		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."; 
+		if [ -f $TMDichVu/$DichVuYTB ]; then 
+		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}$TenFileYTB ${MauXanh}$PhienBanYTB${MauXam}..."; 
 		sudo systemctl start $TenYTB; InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"; fi
 	fi
 }
 
 function GoiLaiYT () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."
 	sudo systemctl stop $TenYTB
 	sudo systemctl start $TenYTB
 	sleep 5
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauXam}đang chạy..."
+	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}đang chạy..."
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-	else InRa "${TgNG} Dịch vụ ${MauXanh}chặn quảng cáo YouTube ${MauDo}không chạy${MauXam}..."
-		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}chặn quảng cáo YouTube${MauXam}..."; 
+	else InRa "${TgNG} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauDo}không chạy${MauXam}..."
+		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."; 
 		sudo systemctl restart $TenYTB
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	fi
 }
 
 function Dung () {
-	systemctl stop $TenDuPhong
+	systemctl stop $TenDP
 }
 
 function Go () {
@@ -151,18 +155,17 @@ function CapNhat() {
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật thất bại!!!"; exit 1; fi
 			InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			cd $TM; ./$TenYTB gdp;
-			exit 0;
+			cd $TM; ./$TenFileYTB gdp; exit 0;
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
 	fi
 }
 
-if [ ! -f $TMDichVu/$DVDuPhong ]; then
+if [ ! -f $TMDichVu/$DichVuDP ]; then
 	DichVu
-	sudo chmod +x $TMDichVu/$DVDuPhong
-	sudo systemctl enable $TenDuPhong
-	sudo systemctl start $TenDuPhong
+	sudo chmod +x $TMDichVu/$DichVuDP
+	sudo systemctl enable $TenDP
+	sudo systemctl start $TenDP
 fi
 
 case "$1" in
