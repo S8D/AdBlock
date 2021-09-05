@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906i"
+PhienBan="210906j"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -74,14 +74,12 @@ function Chay () {
 		DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 		if [[ $DangChay == "running" ]]; then 
 			InRa "${TgOK} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauXam}đang chạy..."
-			InRa "${TgTT} ${ThoiGian}"
-			InRa "${TgTT}"
+			InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 		else 
 			if [ -f $TMDichVu/$DichVuYTB ]; then 
 			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}${PhienBanYTB}${MauXam}"; 
 			sudo systemctl start $TenYTB
-			InRa "${TgTT} ${ThoiGian}"
-			InRa "${TgTT}"
+			InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 			else CaiYT; fi
 		fi
 		COUNT=$(($COUNT + 1))
@@ -115,7 +113,8 @@ function GoiLaiYT () {
 	sudo systemctl start $TenYTB
 	sleep 5
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then InRa "${TgOK} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauXam}đang chạy..."
+	if [[ $DangChay == "running" ]]; then 
+		InRa "${TgOK} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauXam}đang chạy..."
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	else InRa "${TgNG} Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauDo}không chạy${MauXam}..."
 		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."; 
