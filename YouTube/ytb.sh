@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906c"
+PhienBan="210906d"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -387,7 +387,7 @@ function CapNhat() {
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
 		PhienBanMoi=$(${dl2} "${UpURL}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then
-		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
+		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!"; InRa "${TgTT}"
 		else InRa "${TgCB} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
 		    mkdir -p $TM/old; rm -rf $Tam $TMTam
 			cp $0 ${TM}/old/$PhienBan\_$TenFile

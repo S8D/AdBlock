@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906b"
+PhienBan="210906c"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -141,7 +141,7 @@ function CapNhat() {
 	if [ $net -ge 3 ]; then InRa "${TgTT} Đang kiểm tra cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam}..."
 		PhienBanMoi=$(${dl2} "${DuPhongURL}" | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//');
 		if [ $PhienBanMoi == $PhienBan ]; then
-		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!";
+		    InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}là bản mới nhất!"; InRa "${TgTT}"
 		else InRa "${TgCB} Đang cập nhật ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}...";
 		    mkdir -p $TM/old
 			cp $0 ${TM}/old/$PhienBan\_$TenFile
