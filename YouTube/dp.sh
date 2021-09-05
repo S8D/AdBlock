@@ -1,12 +1,12 @@
 #!/bin/bash
-PhienBan="210831h"
+PhienBan="210906a"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-DuPhongURL="https://bom.to/_dp"
-UpURL="https://bom.to/_yt"
+UpURL="https://lienket.vn/yt"
+DuPhongURL="https://lienket.vn/dp"
 ThoiGian=$(date "+%F %T")
 TGNgu="360"
 TGCapNhat="1"

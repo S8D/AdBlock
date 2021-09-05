@@ -1,6 +1,8 @@
 #!/bin/bash
-# Script chặn quảng cáo của YouTube bằng Pi-Hole
 PhienBan="210906a"
+
+# Script chặn quảng cáo của YouTube bằng Pi-Hole
+
 CapNhatCauHinh="1"
 UpURL="https://lienket.vn/yt"
 DuPhongURL="https://lienket.vn/dp"
