@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906a"
+PhienBan="210906b"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -289,7 +289,6 @@ function Cai() {
 }
 
 function Chay() {
-	InRa "${TgTT} ${ThoiGian}"
 	CheckUser	
 	Banner
 	CheckCauHinh
@@ -302,6 +301,7 @@ function Chay() {
 		if [[ $DangChay != "running" ]]; then sudo systemctl start $TenDuPhong; fi
 		echo -e "${TgTT} Quét định kỳ: ${MauXanh}${CheDoQuet}${MauXam}"
 		InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét tiếp sau: ${MauVang}$ThoiGianNgu giây${MauXam}"
+		InRa "${TgTT} ${ThoiGian}"
 		InRa "${TgTT}"
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
