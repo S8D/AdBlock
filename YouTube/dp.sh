@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907e"
+PhienBan="210907f"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -40,12 +40,8 @@ TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
 function InRa () { [ $ImLang -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
 function TTYTB () {
-	if [ -f $TMDichVu/$DichVuYTB ]; then
-		TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//')
-		if [ -f $TMDichVu/$TenFileYTB ]; then
-			PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
-		fi
-	fi
+	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
+	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
 }
 
 function DichVu () {
