@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907e"
+PhienBan="210907f"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -258,20 +258,20 @@ function CaiDichVu () {
 	InRa "${TgTT} ${ThoiGian}"
 	if [ ! -f $TMDichVu/$DichVuYTB ]; then
 		InRa "${TgTT} Nếu bạn di chuyển $TenFile sang nơi khác, vui lòng chạy: ${MauDo}sh $TenFile ${MauXanh}cai${MauXam}";
-		InRa "${TgTT} Đang cài dịch vụ ${MauDo}$DichVuYTB${MauXam}..."; sleep 1
+		InRa "${TgTT} Đang cài dịch vụ ${MauXanh}$DichVuYTB${MauXam}..."; sleep 1
 		TaoDichVu
 		sudo chmod 664 $TMDichVu/$DichVuYTB
-		InRa "${TgOK} Dịch vụ ${MauDo}$DichVuYTB ${MauXam}đã được cài."
-		InRa "${TgTT} Đang bật dịch vụ."; sleep 1
-		systemctl enable $TenYTB 1> /dev/null 2>&1
-		echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t ${MauVang}systemctl start $TenYTB${MauXam}"; echo ''
+		InRa "${TgOK} Dịch vụ ${MauDo}$DichVuYTB ${MauXam}đã được cài!"
+		InRa "${TgTT} Đang bật dịch vụ ${MauXanh}$DichVuYTB${MauXam}."; sleep 1
+		systemctl enable $DichVuYTB 1> /dev/null 2>&1
+		echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t ${MauVang}systemctl start $DichVuYTB${MauXam}"; echo ''
 	else
 		InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
-		InRa "${TgCB} Cài đặt lại dịch vụ..."; echo ''
+		InRa "${TgCB} Đang cài đặt lại dịch vụ ${MauXanh}$DichVuYTB${MauXam}..."; echo ''
 		TaoDichVu
 		systemctl daemon-reload
-		systemctl restart $TenYTB 1> /dev/null 2>&1
-		InRa "${TgOK} Cài đặt lại Hoàn tất."; exit 1
+		systemctl restart $DichVuYTB 1> /dev/null 2>&1
+		InRa "${TgOK} Cài đặt lại dịch vụ ${MauXanh}$DichVuYTB${MauXam} Hoàn tất!"; exit 1
 	fi
 }
 
@@ -291,8 +291,8 @@ function Cai() {
 	DuPhong
 	QuetNhanh=0
 	Quet
-	InRa "${TgOK} Đang gọi dịch vụ."
-	systemctl start $TenYTB 1> /dev/null 2>&1
+	InRa "${TgOK} Đang gọi dịch vụ $DichVuYTB."
+	systemctl start $DichVuYTB 1> /dev/null 2>&1
 	InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
 }
 
@@ -325,10 +325,10 @@ function Chay() {
 
 function Dung() {
 	InRa "${TgTT} ${ThoiGian}"
-	InRa "${TgTT} Dừng chặn quảng cáo YouTube";
-	systemctl stop $TenYTB 1> /dev/null 2>&1
-	InRa "${TgNG} Chặn quảng cáo YouTube đã dừng"
-	service $TenYTB stop
+	InRa "${TgCB} ${MauDo}Dừng ${MauXam}chặn quảng cáo YouTube";
+	systemctl stop $DichVuYTB 1> /dev/null 2>&1
+	InRa "${TgNG} Chặn quảng cáo YouTube đã ${MauDo}dừng${MauXam}!"
+	service $DichVuYTB stop
 	#kill -9 `pgrep $TenYTB`
 	killall $TenYTB
 }
