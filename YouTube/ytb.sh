@@ -359,6 +359,7 @@ function Go() {
 				if [ ! -f ${TMDichVu}/$DichVuYTB ]; then break; fi
 			else continue
 			fi
+			InRa "${TgOK} Đã ${MauDo}gỡ ${MauXam}dịch vụ ${MauXanh}$TenDichVu${MauXam}!"
 		done
 
 		systemctl daemon-reload
