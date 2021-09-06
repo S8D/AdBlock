@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907i"
+PhienBan="210907j"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -142,14 +142,19 @@ function CapNhat() {
 	fi
 }
 
-if [ ! -f $TMDichVu/$DichVuDP ]; then
-	DichVu
-	sudo chmod +x $TMDichVu/$DichVuDP
-	sudo systemctl enable $TenDP
-	sudo systemctl start $TenDP
-fi
+function CaiDP () {
+	if [ ! -f $TMDichVu/$DichVuDP ]; then
+		DichVu
+		sudo chmod +x $TMDichVu/$DichVuDP
+		sudo systemctl enable $TenDP
+		sudo systemctl start $TenDP
+	fi
+}
+
+if [ ! -f $TMDichVu/$DichVuDP ]; then CaiDP; fi
 
 case "$1" in
+	"cai"	) CaiDP			;;
 	"chay"	) Chay			;;
 	"up"	) CapNhat		;;
 	"dung"	) Dung			;;

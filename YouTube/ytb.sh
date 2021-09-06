@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907i"
+PhienBan="210907j"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -232,7 +232,7 @@ function DuPhong () {
 	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
 	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; InRa "${TgTT} Đang cài dịch vụ ${MauDo}$DichVuDP${MauXam}...";
 		$dl1 ${CaiDV} $DuPhongURL; sudo chmod +x ${CaiDV}; fi
-	if [ -f ${CaiDV} ]; then InRa "${TgTT} Đang gọi dịch vụ ${MauDo}$DichVuDP${MauXam}..."; $CaiDV; 
+	if [ -f ${CaiDV} ]; then InRa "${TgTT} Đang gọi dịch vụ ${MauDo}$DichVuDP${MauXam}..."; $CaiDV cai; 
 	else InRa "${TgNG} Không tìm thấy $CaiDV"; exit 1; fi
 }
 
@@ -296,7 +296,7 @@ function Cai() {
 	DuPhong
 	QuetNhanh=0
 	Quet
-	InRa "${TgOK} Đang gọi dịch vụ $DichVuYTB."
+	InRa "${TgOK} Đang gọi dịch vụ ${MauDo}$DichVuYTB${MauXam}."
 	systemctl start $DichVuYTB 1> /dev/null 2>&1
 	InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
 }
