@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906n"
+PhienBan="210906o"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -354,19 +354,19 @@ function Go() {
 		systemctl reset-failed
 
 		if [ -f ${TMDichVu}/ytb ]; then
-			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
+			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ ytb.service..."
 			systemctl stop ytb 1> /dev/null 2>&1
 			systemctl disable ytb 1> /dev/null 2>&1
 			rm --force ${TMDichVu}/ytb;
 			rm -rf ${TMDichVu}/ytb;
 		fi
-
-		if [ -f ${TMDichVu}/ytadsblocker ]; then bash <(curl -sL gg.gg/_ytb) uninstall
-			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
-			systemctl stop ytadsblocker 1> /dev/null 2>&1
-			systemctl disable ytadsblocker 1> /dev/null 2>&1
-			rm --force ${TMDichVu}/ytadsblocker;
-			rm -rf ${TMDichVu}/ytadsblocker;
+		DVGoc="ytadsblocker"
+		if [ -f ${TMDichVu}/$DVGoc ]; then bash <(curl -sL gg.gg/_ytb) uninstall
+			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ $DVGoc.service..."
+			systemctl stop $DVGoc 1> /dev/null 2>&1
+			systemctl disable $DVGoc 1> /dev/null 2>&1
+			rm --force ${TMDichVu}/$DVGoc;
+			rm -rf ${TMDichVu}/$DVGoc;
 		fi
 
 		if [ -f ${YTLog} ]; then
