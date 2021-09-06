@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907a"
+PhienBan="210907b"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -69,19 +69,22 @@ fi
 
 }
 
+function GoiYT () {
+	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
+	if [[ $DangChay == "running" ]]; then 
+		InRa "${TgOK} Dịch vụ ${MauVang}$TenFileYTB ${MauXanh}$PhienBanYTB ${MauXam}đang chạy..."; 
+		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
+	else 
+		if [ -f $TMDichVu/$DichVuYTB ]; then 
+		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi dịch vụ ${MauXanh}$TenFileYTB ${MauXanh}$PhienBanYTB${MauXam}..."; 
+		sudo systemctl start $TenYTB; InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"; else CaiYT; fi
+	fi
+}
+
+
 function Chay () {
 	while true; do
-		DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-		if [[ $DangChay == "running" ]]; then 
-			InRa "${TgOK} dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauXam}đang chạy..."
-			InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-		else 
-			if [ -f $TMDichVu/$DichVuYTB ]; then 
-			InRa "${TgNG} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi dịch vụ ${MauXanh}$TenFileYTB ${MauVang}${PhienBanYTB}${MauXam}"; 
-			sudo systemctl start $TenYTB
-			InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-			else CaiYT; fi
-		fi
+		GoiYT
 		COUNT=$(($COUNT + 1))
 		sleep $TGNgu;
 
@@ -95,32 +98,13 @@ function Chay () {
 
 }
 
-function GoiYT () {
-	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then 
-		InRa "${TgOK} dịch vụ ${MauVang}$TenFileYTB ${MauXanh}$PhienBanYTB ${MauXam}đang chạy..."; 
-		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-	else 
-		if [ -f $TMDichVu/$DichVuYTB ]; then 
-		InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang gọi dịch vụ ${MauXanh}$TenFileYTB ${MauXanh}$PhienBanYTB${MauXam}..."; 
-		sudo systemctl start $TenYTB; InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"; fi
-	fi
-}
 
 function GoiLaiYT () {
 	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."
 	sudo systemctl stop $TenYTB
 	sudo systemctl start $TenYTB
 	sleep 5
-	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then 
-		InRa "${TgOK} dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauXam}đang chạy..."
-		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-	else InRa "${TgNG} dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB ${MauDo}không chạy${MauXam}..."
-		InRa "${TgCB} Đang khởi động lại dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."; 
-		sudo systemctl restart $TenYTB
-		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-	fi
+	GoiYT
 }
 
 function Dung () {

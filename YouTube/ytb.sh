@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907b"
+PhienBan="210907c"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -245,7 +245,7 @@ function GoiDuPhong () {
 	sleep 3
 	DangChay=$(systemctl status $TenDP | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then
-		InRa "${TgOK} dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauXam}đang chạy..."
+		InRa "${TgOK} Dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauXam}đang chạy..."
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	else InRa "${TgNG} dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauDo}không chạy${MauXam}..."
 		InRa "${TgCB} Đang khởi động lại dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP${MauXam}..."
