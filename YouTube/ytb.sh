@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906l"
+PhienBan="210906m"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -342,8 +342,8 @@ function Go() {
 	if [[ "${DOCKER}" != "y" ]]; then		
 		for TenDichVu in $DichVuDP $DichVuYTB; do
 			InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
-			systemctl stop $TenDichVu
-			systemctl disable $TenDichVu
+			systemctl stop $TenDichVu 1> /dev/null 2>&1
+			systemctl disable $TenDichVu 1> /dev/null 2>&1
 			rm -rf ${TMDichVu}/$TenDichVu
 			rm -rf /etc/systemd/system/$TenDichVu
 			rm -rf /etc/systemd/system/$TenDichVu
