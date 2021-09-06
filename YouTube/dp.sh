@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907j"
+PhienBan="210907k"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -61,7 +61,13 @@ function CaiYT () {
 fi
 }
 
-function TTYTB () { if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi; }
+function TTYTB () { 
+	if [ -f $TMDichVu/$DichVuYTB ]; then 
+		TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); 
+		PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); 
+	fi
+	PhienBanYTB=$(echo $PhienBanYTB | sed 's/\n.*//')
+}
 
 function GoiYT () {
 	TTYTB
