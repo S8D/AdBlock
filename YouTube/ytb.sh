@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907g"
+PhienBan="210907h"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -358,12 +358,15 @@ function Go() {
 			rm -rf ${TMDichVu}/$TenDichVu
 			rm -rf /etc/systemd/system/$TenDichVu
 			rm -rf /usr${TMDichVu}/$TenDichVu
+			if [ ! -f ${TMDichVu}/$TenDichVu ]; then
+				InRa "${TgOK} Đã ${MauDo}gỡ ${MauXam}dịch vụ ${MauXanh}$TenDichVu${MauXam}!"
+			fi
 			done
 			if [ ! -f ${TMDichVu}/$DichVuDP ]; then
 				if [ ! -f ${TMDichVu}/$DichVuYTB ]; then break; fi
 			else continue
 			fi
-			InRa "${TgOK} Đã ${MauDo}gỡ ${MauXam}dịch vụ ${MauXanh}$TenDichVu${MauXam}!"
+			
 		done
 
 		systemctl daemon-reload
