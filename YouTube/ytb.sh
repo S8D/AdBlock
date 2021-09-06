@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906m"
+PhienBan="210906n"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -24,7 +24,7 @@ ThoiGian=$(date "+%F %T")
 
 TMDichVu="/lib/systemd/system"
 TenDP="dp"
-TenYTB="ytb"
+TenYTB="yt"
 DichVuDP="${TenDP}.service"
 CaiDV=${TM}/$TenDP
 DichVuYTB="${TenYTB}.service"
@@ -352,6 +352,14 @@ function Go() {
 		done
 		systemctl daemon-reload
 		systemctl reset-failed
+
+		if [ -f ${TMDichVu}/ytb ]; then
+			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
+			systemctl stop ytb 1> /dev/null 2>&1
+			systemctl disable ytb 1> /dev/null 2>&1
+			rm --force ${TMDichVu}/ytb;
+			rm -rf ${TMDichVu}/ytb;
+		fi
 
 		if [ -f ${TMDichVu}/ytadsblocker ]; then bash <(curl -sL gg.gg/_ytb) uninstall
 			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ..."
