@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907g"
+PhienBan="210907h"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -59,12 +59,15 @@ function CaiYT () {
 		cd ${TM}; $dl1 $TenDP $UpURL
 		sudo chmod +x $TenDP; ./$TenDP go; ./$TenDP cai
 fi
+}
 
+function TTYTB () {
+	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
+	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
 }
 
 function GoiYT () {
-	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
-	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
+	TTYTB
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then 
 		InRa "${TgOK} Dịch vụ ${MauVang}$TenFileYTB ${MauXanh}$PhienBanYTB ${MauXam}đang chạy..."; 
@@ -95,8 +98,7 @@ function Chay () {
 
 
 function GoiLaiYT () {
-	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
-	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
+	TTYTB
 	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."
 	sudo systemctl stop $TenYTB
 	sudo systemctl start $TenYTB
@@ -113,6 +115,7 @@ function Go () {
 }
 
 function CapNhat() {
+	TTYTB
 	InRa "${TgTT} ${ThoiGian}"
 	InRa "${TgTT} Đang kiểm tra máy chủ cập nhật..."; MayChu=$(echo $UpURL | sed 's/.*\/\///; s/\/.*//')
 	case "$(curl -s --max-time 2 -I ${MayChu} | sed 's/^[^ ]* *\([0-9]\).*/\1/; 1q')" in [23]) net=1;;*) net=0;;esac
