@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906s"
+PhienBan="210907a"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -15,6 +15,7 @@ PiLog="/var/log/pihole.log"
 Chuyen="/etc/pihole/custom.list"
 mkdir -p /sd; echo ''
 TM="/sd/ytb"; mkdir -p $TM
+Den="${TM}/den.txt"
 CauHinh="${TM}/cauhinh"
 YTLog="${TM}/NhatKy.log"
 TMTam="${TM}/tam"; mkdir -p $TMTam
@@ -33,7 +34,6 @@ TenFile=$(basename $0)
 if [ -f $TM/$TenDP ]; then
 PhienBanDP=$(cat $TM/$TenDP | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 fi
-
 
 # Cài đặt màu sắc
 MauDo="\e[31m"
@@ -94,7 +94,7 @@ else
 		if [[ $QuetNhanh == 1 ]]; then CheDoQuet="Quét Nhanh"; else CheDoQuet="Quét Toàn bộ"; fi
 	else InRa "${TgNG} Không tìm thấy file ${MauDo}$CauHinh${MauXam}!!!"
 	fi
-fi	
+fi
 if [ -f "${CauHinh}" ]; then
 	if [ ${CapNhatCauHinh} == 1 ]; then
 		dv=`grep -w -m 1 "PhienBanCfg" $CauHinh`;PhienBanCfg=$(echo $dv | sed 's/.*\=//')
@@ -179,48 +179,45 @@ function Quet () {
 	InRa "${TgTT} ${ThoiGian}"
 	CheckCauHinh
 	InRa "${TgTT} Đang tìm tên miền con trong Nhật Ký..."
+	cat $Chuyen | grep googlevideo | sed 's/.* //' > $Tam
+
 	if [[ $QuetNhanh == 1 ]]; then
-		DSTenMien=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq)
-		SoLuong=$(cat $PiLog | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
+		cat $PiLog | egrep --only-matching "${CapDo}" | grep -Fvwf $Tam | sort | uniq > $Den
+		DSTenMien=$(cat $Den)
+		SoLuong=$(cat $Den | wc --lines)
 	else
 		InRa "${TgTT} Đang tổng hợp Nhật ký PiHole..."
 		yes | cp -rf ${PiTM}/pihole.lo* ${TMTam}
 		gunzip $TMTam/*.gz
-		DSTenMien=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq)
-		SoLuong=$(cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | sort | uniq | wc --lines)
+		cat $TMTam/pihole.log* | egrep --only-matching "${CapDo}" | grep -Fvwf $Tam | sort | uniq > $Den
+		DSTenMien=$(cat $Den)
+		SoLuong=$(cat $Den | wc --lines)
 	fi
 
 	if [ ! -z "${DSTenMien}" ]; then
 		InRa "${TgTT} Tìm thấy ${MauVang}$SoLuong ${MauXam}tên miền..."; DemTenMien=0
 		for TenMien in $DSTenMien; do ThemTenMien=$(echo ${TenMien} | sed 's/.googlevideo.com//')
-			cat $Chuyen | grep googlevideo | sed 's/.*(\t| )+//' > $Tam
 			if [[ $TenMien == *.googlevideo.com ]]; then DemTenMien=$(($DemTenMien + 1))
 				InRa "${TgTT} Đang thêm ${MauVang}$DemTenMien${MauXam}/${MauXanh}$SoLuong${MauXam}: ${MauXanh}$ThemTenMien${MauXam}";
-				echo $TenMien | grep -Fvwf $Tam | sort | uniq | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
+				echo $TenMien | sort | uniq | awk -v "IP=$SetIP" '{sub(/\r$/,""); print IP" "$0}' >> $Chuyen;
 			else
 			InRa "${TgNG} Tên miền $TenMien ${MauDo}không ${MauXam}được thêm vì sai định dạng!!!"
 			fi
 		done
-		cat $Chuyen | sort | uniq > $Tam; mv $Tam $Chuyen
-		TongSo=$(cat $Chuyen | grep googlevideo | sed 's/.*(\t| )+//' | wc --lines)
+
+		TongSo=$(cat $Chuyen | grep googlevideo | sed 's/.* //' | wc --lines)
 		InRa "${TgOK} Số lượng tên miền đã thêm: ${MauXanh}$DemTenMien${MauXam}"
 		InRa "${TgOK} Tổng số tên miền đang chặn: ${MauVang}$TongSo${MauXam}"
 	else
 		InRa "${TgCB} Không có tên miền nào được thêm."
 	fi
-
-	#if [[ -f "${TMTam}/pihole.log" ]]; then
-	#	InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}file tạm...";
-	#	rm -rf $TMTam
-	#	InRa "${TgOK} Đã xóa file tạm."; sleep 1; echo ''
-	#fi
 }
 
 function TaoDichVu () {
 	cd $TMDichVu && touch $DichVuYTB
 	cat > $DichVuYTB <<-EOF
 [Unit]
-Description=Dịch vụ chặn quảng cáo YouTube bằng Pi-hole
+Description=dịch vụ chặn quảng cáo YouTube bằng Pi-hole
 After=network.target
 [Service]
 ExecStart=$TM/$TenFile chay
@@ -231,24 +228,27 @@ EOF
 }
 
 function DuPhong () {
+	InRa "${TgTT} Đang kiểm tra dịch vụ ${MauDo}$DichVuDP${MauXam}...";
 	TM="/sd/ytb"; CaiDV=${TM}/$TenDP; cd $TM
-	if [ ! -f ${CaiDV} ]; then $dl1 ${CaiDV} $DuPhongURL; sudo chmod +x ${CaiDV}; fi
+	if [ ! -f ${CaiDV} ]; then InRa "${TgTT} Đang cài dịch vụ ${MauDo}$DichVuDP${MauXam}...";
+		$dl1 ${CaiDV} $DuPhongURL; sudo chmod +x ${CaiDV}; fi
 	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
-	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; $dl1 ${CaiDV} $DuPhongURL; sudo chmod +x ${CaiDV}; fi
+	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; InRa "${TgTT} Đang cài dịch vụ ${MauDo}$DichVuDP${MauXam}...";
+		$dl1 ${CaiDV} $DuPhongURL; sudo chmod +x ${CaiDV}; fi
 	if [ -f ${CaiDV} ]; then $CaiDV; else InRa "${TgNG} Không tìm thấy $CaiDV"; exit 1; fi
 }
 
 function GoiDuPhong () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}đang chạy lại Dịch vụ ${MauXanh}$TenDP ${MauVang}$PhienBanDP${MauXam}...";
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}đang chạy lại dịch vụ ${MauXanh}$TenDP ${MauVang}$PhienBanDP${MauXam}...";
 	sudo systemctl stop $TenDP
 	sudo systemctl start $TenDP
 	sleep 3
 	DangChay=$(systemctl status $TenDP | grep Active | sed 's/).*//; s/.*(//')
-	if [[ $DangChay == "running" ]]; then 
-		InRa "${TgOK} Dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauXam}đang chạy..."
+	if [[ $DangChay == "running" ]]; then
+		InRa "${TgOK} dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauXam}đang chạy..."
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-	else InRa "${TgNG} Dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauDo}không chạy${MauXam}..."
-		InRa "${TgCB} Đang khởi động lại Dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP${MauXam}..."
+	else InRa "${TgNG} dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauDo}không chạy${MauXam}..."
+		InRa "${TgCB} Đang khởi động lại dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP${MauXam}..."
 		sudo systemctl restart $TenDP
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	fi
@@ -258,16 +258,16 @@ function CaiDichVu () {
 	InRa "${TgTT} ${ThoiGian}"
 	if [ ! -f $TMDichVu/$DichVuYTB ]; then
 		InRa "${TgTT} Nếu bạn di chuyển $TenFile sang nơi khác, vui lòng chạy: ${MauDo}sh $TenFile ${MauXanh}cai${MauXam}";
-		InRa "${TgTT} Đang cài Dịch vụ..."; sleep 1
+		InRa "${TgTT} Đang cài dịch vụ ${MauDo}$DichVuYTB${MauXam}..."; sleep 1
 		TaoDichVu
 		sudo chmod 664 $TMDichVu/$DichVuYTB
-		InRa "${TgOK} Dịch vụ đã được cài."
-		InRa "${TgTT} Đang bật Dịch vụ."; sleep 1
+		InRa "${TgOK} Dịch vụ ${MauDo}$DichVuYTB ${MauXam}đã được cài."
+		InRa "${TgTT} Đang bật dịch vụ."; sleep 1
 		systemctl enable $TenYTB 1> /dev/null 2>&1
 		echo -e "${TgTT} Để chạy dịch vụ hãy dùng lệnh sau:\n\t ${MauVang}systemctl start $TenYTB${MauXam}"; echo ''
 	else
 		InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt..."; sleep 1
-		InRa "${TgCB} Cài đặt lại Dịch vụ..."; echo ''
+		InRa "${TgCB} Cài đặt lại dịch vụ..."; echo ''
 		TaoDichVu
 		systemctl daemon-reload
 		systemctl restart $TenYTB 1> /dev/null 2>&1
@@ -279,7 +279,7 @@ function Cai() {
 	InRa "${TgTT} ${ThoiGian}"
 	CheckUser
 	CheckDocker
-	CheckPiHole	
+	CheckPiHole
 	CheckCauHinh
 	InRa "${TgTT} Đang bắt đầu cài ${MauVang}Chặn quảng cáo YouTube${MauXam}..."
 	if [[ "${DOCKER}" == "y" ]]; then
@@ -291,13 +291,13 @@ function Cai() {
 	DuPhong
 	QuetNhanh=0
 	Quet
-	InRa "${TgOK} Đang gọi Dịch vụ."
+	InRa "${TgOK} Đang gọi dịch vụ."
 	systemctl start $TenYTB 1> /dev/null 2>&1
 	InRa "${TgOK} Chặn quảng cáo YouTube đã được cài đặt thành công!"
 }
 
 function Chay() {
-	CheckUser	
+	CheckUser
 	Banner
 	CheckCauHinh
 	InRa "${TgOK} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}đang chạy..."
@@ -343,30 +343,33 @@ function Go() {
 		if [ -f ${TMDichVu}/ytb.service ]; then DvYTB="ytb.service"; else DvYTB=; fi
 		if [ ! -f ${TMDichVu}/$DichVuDP ]; then DichVuDP=; fi
 		if [ ! -f ${TMDichVu}/$DichVuYTB ]; then DichVuYTB=; fi
-		for TenDichVu in $DvYTB $DichVuDP $DichVuYTB ; do
-			InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
-			systemctl stop $TenDichVu 1> /dev/null 2>&1
-			systemctl disable $TenDichVu 1> /dev/null 2>&1
+
+		while true; do
+			for TenDichVu in $DvYTB $DichVuYTB $DichVuDP ; do
+			InRa "${TgTT} Đang ${MauDo}dừng ${MauXam}dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
+			systemctl stop $TenDichVu
+			InRa "${TgTT} Đang ${MauDo}vô hiệu hóa ${MauXam}dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
+			systemctl disable $TenDichVu
+			InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
 			rm -rf ${TMDichVu}/$TenDichVu
 			rm -rf /etc/systemd/system/$TenDichVu
-			rm -rf /etc/systemd/system/$TenDichVu
-			rm -rf /usr/lib/systemd/system/$TenDichVu
-			rm -rf /usr/lib/systemd/system/$TenDichVu
+			rm -rf /usr${TMDichVu}/$TenDichVu
+			done
+			if [ ! -f ${TMDichVu}/$DichVuDP ]; then
+				if [ ! -f ${TMDichVu}/$DichVuYTB ]; then break; fi
+			else continue
+			fi
 		done
+
 		systemctl daemon-reload
 		systemctl reset-failed
 		DVGoc="ytadsblocker"
 		if [ -f ${TMDichVu}/$DVGoc ]; then bash <(curl -sL gg.gg/_ytb) uninstall
-			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ $DVGoc.service..."
+			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}dịch vụ $DVGoc.service..."
 			systemctl stop $DVGoc 1> /dev/null 2>&1
 			systemctl disable $DVGoc 1> /dev/null 2>&1
 			rm --force ${TMDichVu}/$DVGoc;
 			rm -rf ${TMDichVu}/$DVGoc;
-		fi
-
-		if [ -f ${YTLog} ]; then
-			InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}Nhật ký..."
-			rm --force ${YTLog};
 		fi
 
 		if [ -f $TMTam/pihole.log ]; then
@@ -379,6 +382,8 @@ function Go() {
 	sed -i '/googlevideo/d' $Chuyen
 	sed -e 's/\n+/\n/' $Chuyen; echo ''
 	killall $TenYTB
+	if [ -f ${YTLog} ]; then InRa "${TgTT} Đang ${MauDo}xóa ${MauXam}Nhật ký..."; rm --force ${YTLog}; fi
+	echo -e "${TgOK} ${MauDo}Gõ ${MauXanh}chặn quảng cáo YouTube ${MauVang}hoàn tất${MauXam}!"
 }
 
 function CapNhat() {
@@ -405,13 +410,13 @@ function CapNhat() {
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${Tam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
 				rm -rf $Tam
-			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật ${MauDo}thất bại${MauXam}!!!"; exit 1; fi			
-			if [ -f $TMDichVu/$DichVuYTB ]; then 
+			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật ${MauDo}thất bại${MauXam}!!!"; exit 1; fi
+			if [ -f $TMDichVu/$DichVuYTB ]; then
 				InRa "${TgCB} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 				if [ ! -f $TMDichVu/$DichVuDP ]; then DuPhong; fi
 				cd $TM; ./$TenDP cl; exit 0
 			fi
-			
+
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
 	fi
