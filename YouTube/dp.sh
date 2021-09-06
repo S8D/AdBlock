@@ -1,10 +1,8 @@
 #!/bin/bash
 PhienBan="210906p"
-
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
+#################################
+# Script chặn quảng cáo dự phòng#
+#################################
 UpURL="http://gg.gg/yt_"
 DuPhongURL="http://gg.gg/dp_"
 ThoiGian=$(date "+%F %T")
@@ -177,7 +175,3 @@ case "$1" in
 	*		) GoiYT			;;
 esac
 echo ''
-
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

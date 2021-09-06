@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906r"
+PhienBan="210906s"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -340,8 +340,10 @@ function Go() {
 
 	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}chặn quảng cáo YouTube ${MauXanh}$PhienBan${MauXam}..."
 	if [[ "${DOCKER}" != "y" ]]; then
-		if [ -f ${TMDichVu}/ytb ]; then DvYTB="ytb"; fi
-		for TenDichVu in $DichVuDP $DichVuYTB $DvYTB; do
+		if [ -f ${TMDichVu}/ytb.service ]; then DvYTB="ytb.service"; else DvYTB=; fi
+		if [ ! -f ${TMDichVu}/$DichVuDP ]; then DichVuDP=; fi
+		if [ ! -f ${TMDichVu}/$DichVuYTB ]; then DichVuYTB=; fi
+		for TenDichVu in $DvYTB $DichVuDP $DichVuYTB ; do
 			InRa "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ ${MauXanh}$TenDichVu${MauXam}..."
 			systemctl stop $TenDichVu 1> /dev/null 2>&1
 			systemctl disable $TenDichVu 1> /dev/null 2>&1
@@ -353,14 +355,6 @@ function Go() {
 		done
 		systemctl daemon-reload
 		systemctl reset-failed
-
-		#if [ -f ${TMDichVu}/ytb ]; then
-		#	echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ ytb.service..."
-		#	systemctl stop ytb 1> /dev/null 2>&1
-		#	systemctl disable ytb 1> /dev/null 2>&1
-		#	rm --force ${TMDichVu}/ytb;
-		#	rm -rf ${TMDichVu}/ytb;
-		#fi
 		DVGoc="ytadsblocker"
 		if [ -f ${TMDichVu}/$DVGoc ]; then bash <(curl -sL gg.gg/_ytb) uninstall
 			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ $DVGoc.service..."
@@ -448,4 +442,3 @@ case "$1" in
 	*		) Banner;GiupDo ;;
 esac
 echo ''
-# Script chặn quảng cáo của YouTube bằng Pi-Hole
