@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907f"
+PhienBan="210907g"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -39,11 +39,6 @@ TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
 TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
 function InRa () { [ $ImLang -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
-function TTYTB () {
-	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
-	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
-}
-
 function DichVu () {
 	cd ${TMDichVu} && touch $DichVuDP
 	cat > $DichVuDP <<-EOF
@@ -68,7 +63,8 @@ fi
 }
 
 function GoiYT () {
-	TTYTB
+	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
+	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then 
 		InRa "${TgOK} Dịch vụ ${MauVang}$TenFileYTB ${MauXanh}$PhienBanYTB ${MauXam}đang chạy..."; 
@@ -99,7 +95,8 @@ function Chay () {
 
 
 function GoiLaiYT () {
-	TTYTB
+	if [ -f $TMDichVu/$DichVuYTB ]; then TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//'); fi
+	if [ -f $TMDichVu/$TenFileYTB ]; then PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//'); fi
 	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} đang ${MauVang}chạy lại ${MauXam}dịch vụ ${MauXanh}$TenFileYTB ${MauVang}$PhienBanYTB${MauXam}..."
 	sudo systemctl stop $TenYTB
 	sudo systemctl start $TenYTB

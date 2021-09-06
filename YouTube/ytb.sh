@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907h"
+PhienBan="210907i"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -232,7 +232,8 @@ function DuPhong () {
 	dv=`grep -w -m 1 "PhienBan" $CaiDV`;PhienBanCai=$(echo $dv | sed 's/.*\=\"//; s/\"$//')
 	if [ -z ${PhienBanCai} ]; then rm -rf $CaiDV; InRa "${TgTT} Đang cài dịch vụ ${MauDo}$DichVuDP${MauXam}...";
 		$dl1 ${CaiDV} $DuPhongURL; sudo chmod +x ${CaiDV}; fi
-	if [ -f ${CaiDV} ]; then $CaiDV; else InRa "${TgNG} Không tìm thấy $CaiDV"; exit 1; fi
+	if [ -f ${CaiDV} ]; then InRa "${TgTT} Đang gọi dịch vụ ${MauDo}$DichVuDP${MauXam}..."; $CaiDV; 
+	else InRa "${TgNG} Không tìm thấy $CaiDV"; exit 1; fi
 }
 
 function TTDP () {
