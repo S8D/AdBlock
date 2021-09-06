@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906m"
+PhienBan="210906n"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -18,7 +18,7 @@ CauHinh="${TM}/cauhinh"
 TMTam="/tmp/ytb"; mkdir -p $TMTam
 upTam="${TM}/tmp"
 YTLog="${TM}/NhatKy.log"
-QUIET="0"
+ImLang="0"
 
 TMDichVu="/lib/systemd/system"
 TenDP="dp"
@@ -44,7 +44,7 @@ TgTT=$(echo -e "[i]") # [i] Information
 TgCB=$(echo -e "[${MauVang}w${MauXam}]") # [w] Warning
 TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
 TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
-function InRa () { [ $QUIET -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
+function InRa () { [ $ImLang -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 
 function DichVu () {
 	cd ${TMDichVu} && touch $DichVuDP

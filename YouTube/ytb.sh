@@ -19,7 +19,7 @@ CauHinh="${TM}/cauhinh"
 YTLog="${TM}/NhatKy.log"
 TMTam="${TM}/tam"; mkdir -p $TMTam
 Tam="${TM}/tmp"
-QUIET="0"
+ImLang="0"
 ThoiGian=$(date "+%F %T")
 
 TMDichVu="/lib/systemd/system"
@@ -47,7 +47,7 @@ TgCB=$(echo -e "[${MauVang}w${MauXam}]") # [w] Warning
 TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
 TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
 
-function InRa () { [ $QUIET -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
+function InRa () { [ $ImLang -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
 function CheckCauHinh () {
 	if [[ -z $CapDo ]]; then InRa "${TgNG} ${MauXanh}Cấp độ quét ${MauDo}chưa được cài đặt${MauXam}!!!"; fi
 	if [[ -z $SetIP ]]; then InRa "${TgNG} ${MauXanh}IP chặn ${MauDo}chưa được cài đặt${MauXam}!!!"; fi
