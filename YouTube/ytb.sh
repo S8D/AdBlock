@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907f"
+PhienBan="210907g"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -31,10 +31,6 @@ CaiDV=${TM}/$TenDP
 DichVuYTB="${TenYTB}.service"
 TenFile=$(basename $0)
 
-if [ -f $TM/$TenDP ]; then
-PhienBanDP=$(cat $TM/$TenDP | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
-fi
-
 # Cài đặt màu sắc
 MauDo="\e[31m"
 MauVang="\e[33m"
@@ -48,6 +44,7 @@ TgNG=$(echo -e "[${MauDo}✗${MauXam}]") # [✗] Error
 TgOK=$(echo -e "[${MauXanh}✓${MauXam}]") # [✓] Ok
 
 function InRa () { [ $ImLang -eq 0 ] && echo -e "$1" ; echo -e "$1" >> $YTLog; }
+
 function CheckCauHinh () {
 	if [[ -z $CapDo ]]; then InRa "${TgNG} ${MauXanh}Cấp độ quét ${MauDo}chưa được cài đặt${MauXam}!!!"; fi
 	if [[ -z $SetIP ]]; then InRa "${TgNG} ${MauXanh}IP chặn ${MauDo}chưa được cài đặt${MauXam}!!!"; fi
@@ -238,7 +235,14 @@ function DuPhong () {
 	if [ -f ${CaiDV} ]; then $CaiDV; else InRa "${TgNG} Không tìm thấy $CaiDV"; exit 1; fi
 }
 
+function TTDP () {
+	if [ -f $TM/$TenDP ]; then
+		PhienBanDP=$(cat $TM/$TenDP | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
+	fi
+}
+
 function GoiDuPhong () {
+	TTDP
 	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}đang ${MauVang}chạy lại ${MauXam}dịch vụ ${MauXanh}$TenDP ${MauVang}$PhienBanDP${MauXam}...";
 	sudo systemctl stop $TenDP
 	sudo systemctl start $TenDP
@@ -247,7 +251,7 @@ function GoiDuPhong () {
 	if [[ $DangChay == "running" ]]; then
 		InRa "${TgOK} Dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauXam}đang chạy..."
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-	else InRa "${TgNG} dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauDo}không chạy${MauXam}..."
+	else InRa "${TgNG} dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP ${MauDo}không chạy${MauXam}!!!"
 		InRa "${TgCB} Đang khởi động lại dịch vụ ${MauVang}$TenDP ${MauXanh}$PhienBanDP${MauXam}..."
 		sudo systemctl restart $TenDP
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
