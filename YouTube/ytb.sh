@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907d"
+PhienBan="210907e"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
