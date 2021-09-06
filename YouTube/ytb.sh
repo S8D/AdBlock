@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907a"
+PhienBan="210907b"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -310,7 +310,7 @@ function Chay() {
 		echo -e "${TgTT} Quét định kỳ: ${MauXanh}${CheDoQuet}${MauXam}"
 		InRa "${TgTT} ${MauDo}$TenFile ${MauXanh}$PhienBan${MauXam} sẽ quét tiếp sau: ${MauVang}$ThoiGianNgu giây${MauXam}"
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
-		sed -i 's/.*sn-.*//' $YTLog; sed -i '/^\s*$/d' $YTLog;
+		#sed -i 's/.*sn-.*//' $YTLog; sed -i '/^\s*$/d' $YTLog;
 		COUNT=$(($COUNT + 1))
 		sleep $ThoiGianNgu;
 
