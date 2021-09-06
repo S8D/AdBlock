@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906o"
+PhienBan="210906p"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -29,7 +29,7 @@ DichVuYTB="${TenYTB}.service"
 TenFile=$(basename $0)
 
 if [ -f $TMDichVu/$DichVuYTB ]; then
-TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*yt\///; s/ .*//')
+TenFileYTB=$(systemctl status $DichVuYTB | grep chay | sed 's/.*ytb\///; s/ .*//')
 PhienBanYTB=$(cat $TM/$TenFileYTB | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//')
 fi
 
