@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906k"
+PhienBan="210906l"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -404,7 +404,7 @@ function CapNhat() {
 				rm -rf $Tam
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật ${MauDo}thất bại${MauXam}!!!"; exit 1; fi			
 			if [ -f $TMDichVu/$DichVuYTB ]; then 
-				InRa "${TgOK} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
+				InRa "${TgCB} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
 				if [ ! -f $TMDichVu/$DichVuDP ]; then DuPhong; fi
 				cd $TM; ./$TenDP cl; exit 0
 			fi
