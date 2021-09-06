@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906q"
+PhienBan="210906r"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -360,7 +360,7 @@ function Go() {
 		#	systemctl disable ytb 1> /dev/null 2>&1
 		#	rm --force ${TMDichVu}/ytb;
 		#	rm -rf ${TMDichVu}/ytb;
-		fi
+		#fi
 		DVGoc="ytadsblocker"
 		if [ -f ${TMDichVu}/$DVGoc ]; then bash <(curl -sL gg.gg/_ytb) uninstall
 			echo -e "${TgTT} Đang ${MauDo}gỡ ${MauXam}Dịch vụ $DVGoc.service..."
