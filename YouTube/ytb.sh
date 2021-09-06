@@ -239,7 +239,7 @@ function DuPhong () {
 }
 
 function GoiDuPhong () {
-	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}đang chạy lại dịch vụ ${MauXanh}$TenDP ${MauVang}$PhienBanDP${MauXam}...";
+	InRa "${TgCB} ${MauDo}$TenFile ${MauXanh}$PhienBan ${MauXam}đang ${MauVang}chạy lại ${MauXam} dịch vụ ${MauXanh}$TenDP ${MauVang}$PhienBanDP${MauXam}...";
 	sudo systemctl stop $TenDP
 	sudo systemctl start $TenDP
 	sleep 3
