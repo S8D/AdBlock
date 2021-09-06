@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210906l"
+PhienBan="210906m"
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  DỊCH VỤ PHỤ TRỢ CHẶN ADS  @
@@ -153,8 +153,9 @@ function CapNhat() {
 			if [ $PhienBanMoi == $PhienBanUp ]; then mv ${upTam} ${TM}/$TenFile
 				InRa "${TgOK} ${MauDo}$TenFile ${MauXam}được ${MauVang}cập nhật ${MauXam}lên ${MauXanh}$PhienBanMoi${MauXam}!"
 			else InRa "${TgNG} ${MauDo}$TenFile ${MauXam}cập nhật ${MauDo}thất bại${MauXam}!!!"; exit 1; fi
+			if [ -f $TM/$TenFileYTB ]; then
 			InRa "${TgCB} Khởi động lại dịch vụ ${MauDo}$TenFile ${MauXanh}$PhienBanMoi${MauXam}...";
-			cd $TM; ./$TenFileYTB gdp; exit 0;
+			cd $TM; ./$TenFileYTB gdp; exit 0; fi
 		fi
 	else InRa "${TgNG} Không có mạng!!! Thoát ra"; exit 1
 	fi
