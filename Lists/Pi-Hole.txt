@@ -1,4 +1,4 @@
-#PhienBan___210812b
+#PhienBan___210907a
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -1500,7 +1500,6 @@ device-provisioning.googleapis.com
 firebaseinappmessaging.googleapis.com
 appsitemsuggest-pa.googleapis.com
 footprints-pa.googleapis.com
-myphonenumbers-pa.googleapis.com
 chromefeedcontentsuggestions-pa.googleapis.com
 offlinepages-pa.googleapis.com
 geomobileservices-pa.googleapis.com
