@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907k"
+PhienBan="210908a"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -70,6 +70,8 @@ function TTYTB () {
 }
 
 function GoiYT () {
+	TenFileYTB=
+	PhienBanYTB=
 	TTYTB
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then 
