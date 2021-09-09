@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210908a"
+PhienBan="210910a"
 #################################
 # Script chặn quảng cáo dự phòng#
 #################################
@@ -75,7 +75,7 @@ function GoiYT () {
 	TTYTB
 	DangChay=$(systemctl status $TenYTB | grep Active | sed 's/).*//; s/.*(//')
 	if [[ $DangChay == "running" ]]; then 
-		InRa "${TgOK} Dịch vụ ${MauVang}$TenFileYTB ${MauXanh}$PhienBanYTB ${MauXam}đang chạy..."; 
+		InRa "${TgOK} Dịch vụ ${MauDo}$TenFileYTB ${MauXanh}$PhienBanYTB ${MauXam}đang chạy..."; 
 		InRa "${TgTT} ${ThoiGian}"; InRa "${TgTT}"
 	else 
 		if [ -f $TMDichVu/$DichVuYTB ]; then 

@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210907k"
+PhienBan="210910a"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -201,13 +201,12 @@ function Quet () {
 			InRa "${TgNG} Tên miền $TenMien ${MauDo}không ${MauXam}được thêm vì sai định dạng!!!"
 			fi
 		done
-
-		TongSo=$(cat $Chuyen | grep googlevideo | sed 's/.* //' | wc --lines)
 		InRa "${TgOK} Số lượng tên miền đã thêm: ${MauXanh}$DemTenMien${MauXam}"
-		InRa "${TgOK} Tổng số tên miền đang chặn: ${MauVang}$TongSo${MauXam}"
 	else
 		InRa "${TgCB} Không có tên miền nào được thêm."
 	fi
+	TongSo=$(cat $Chuyen | grep googlevideo | sed 's/.* //' | wc --lines)
+	InRa "${TgOK} Tổng số tên miền đang chặn: ${MauVang}$TongSo${MauXam}"
 }
 
 function TaoDichVu () {
