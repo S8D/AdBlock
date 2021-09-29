@@ -1,4 +1,4 @@
-#PhienBan___210929a
+#PhienBan___210929b
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -12,11 +12,18 @@ smoot.apple.com
 iadsdk.apple.com
 *adsdk.apple.com
 idiagnostics.apple.com
+doh.dns.apple.com
+doh.dns.apple.com.v.aaplimg.com
 #___Tiền-Ảo____________________________________________________________________
 log.bntrace.com
 sensors.binance.cloud
 jpush.binance.im
+hanqiweb.co
+
 #___Tổng-Hợp___________________________________________________________________
+profitwell.com
+riskified.com
+online-metrix.net
 userleap.com
 3gppnetwork.org
 cdnasset.dantri.com.vn
@@ -1349,7 +1356,6 @@ qualified.com
 counter.opensuse.org
 diags.unc0ver.com
 ada.support
-help-zalo.firebaseio.com
 onclickalgo.com
 onclickperformance.com
 onclickgenius.com
@@ -1533,6 +1539,7 @@ consumer.entitlement.skype.com
 c.microsoft.com 
 
 #___Google_____________________________________________________________________
+firebaselogging-pa.googleapis.com
 geller-pa.googleapis.com
 googlesyndication.com
 googlezip.net
@@ -1609,6 +1616,10 @@ fbcdn2.com
 interncache-*.fbcdn.net
 
 #___VinaGau______________________________________________________________________
+log.api.zaloapp.com
+ads.platform.zalo.me
+help-zalo.firebaseio.com
+trk-pcweb.api.zaloapp.com
 px.za.zalo.me
 baomoi.tts.zalo.ai
 events.zaloapp.com
