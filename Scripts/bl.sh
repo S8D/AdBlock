@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="210929b"
+PhienBan="210929c"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -52,7 +52,7 @@ if [ $OS == $Android ]; then TM="/sdcard"; TMLog="${TM}/dns"
 	[ "$(whoami)" != "root" ] && { echo "Đã lấy SU, hãy chạy lại $(basename "$0")"; exec su "$0" "$@"; }
 fi; cd $TM
 
-tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="/tmp/tam"; rm -f $upTam;
+tmDNS="${TM}/dns"; mkdir -p $tmDNS; upTam="${tmDNS}/tam"; rm -f $upTam;
 Den="${tmDNS}/Den.txt"; if [ ! -f "$Den" ]; then echo '' > $Den; fi; 
 ipDen="${tmDNS}/ipDen.txt"; if [ ! -f "$ipDen" ]; then echo '' > $ipDen; fi; 
 Trang="${tmDNS}/Trang.txt"; if [ ! -f "$Trang" ]; then echo '' > $Trang; fi; 
@@ -104,14 +104,14 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 		fi
 
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
-		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
+		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then mkdir -p ${TM}/dns/old
 			if [ ! -d "/www/cgi-bin" ]; then 
-				sudo cp $0 ${TM}/dns/$PhienBan\_$(basename "$0"); 
+				sudo cp $0 ${TM}/dns/old/$PhienBan\_$(basename "$0"); 
 				sudo $dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 				sudo echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log; 
 				sudo sh ${TM}/$(basename "$0"); 
 			else
-				cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
+				cp $0 ${TM}/dns/old/$PhienBan\_$(basename "$0")
 				$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 				echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 				echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; 
@@ -119,8 +119,8 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			fi
 		fi
 
-		if [ $OS == $Android ]; then
-			cp $0 ${TM}/dns/$PhienBan\_$(basename "$0")
+		if [ $OS == $Android ]; then mkdir -p ${TM}/dns/old
+			cp $0 ${TM}/dns/old/$PhienBan\_$(basename "$0")
 			$dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 			echo "$Time $(basename "$0") được cập nhật lên $PhienBanMoi!"  >> $Log
 			echo "$DauCau Khởi chạy $(basename "$0") $PhienBanMoi..."; 
