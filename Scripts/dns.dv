@@ -1,5 +1,5 @@
 #!/bin/sh /etc/rc.common
-PhienBan="20200411a"
+PhienBan="210929"
 USE_PROCD=1
 
 # starts before dnsmasq starts
@@ -10,6 +10,7 @@ STOP=89
 Chay=/usr/sbin/dns
 if [ -f "/root/dns/CauHinh.toml" ]; then CauHinh=/root/dns/CauHinh.toml; fi
 if [ -f "/sd/dns/CauHinh.toml" ]; then CauHinh=/sd/dns/CauHinh.toml; fi
+if [ -f "/sd/dns/cauhinh.toml" ]; then CauHinh=/sd/dns/cauhinh.toml; fi
 if [ -f "/config/dns/CauHinh.toml" ]; then CauHinh=/config/dns/CauHinh.toml; fi
 
 start_service() {
