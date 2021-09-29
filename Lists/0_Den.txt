@@ -1,4 +1,4 @@
-#PhienBan___201009b
+#PhienBan___210929a
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -12,8 +12,13 @@ smoot.apple.com
 iadsdk.apple.com
 *adsdk.apple.com
 idiagnostics.apple.com
-
+#___Tiền-Ảo____________________________________________________________________
+log.bntrace.com
+sensors.binance.cloud
+jpush.binance.im
 #___Tổng-Hợp___________________________________________________________________
+userleap.com
+3gppnetwork.org
 cdnasset.dantri.com.vn
 appcenter.ms
 sentry-cdn.com

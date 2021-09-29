@@ -1,49 +1,39 @@
 #!/bin/sh
-PhienBan="20200424a"
+PhienBan="210929a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
-dl1="curl -s -L -o"; dl2="curl -s -L"
+dl1="curl -sLo"; dl2="curl -sL"
 
-bl1="https://bit.ly/bl_sh"
-bl2="https://bom.to/_bl"
-bl3="https://tiny.cc/-bl"
+bl1="https://xem.li/_bl"
+bl2="https://mily.vn/_bl"
+bl3="gg.gg/_bl"
 bl4="https://github.com/S8D/AdBlock/raw/master/Scripts/bl.sh"
 
-Trang1="https://bit.ly/_Trang"
-Trang2="https://bom.to/trang"
-Trang3="https://tiny.cc/-Trang"
+Trang1="https://xem.li/Trang"
+Trang2="https://mily.vn/Trang"
+Trang3="gg.gg/_Trang"
 Trang4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Trang.txt"
 
-Den1="https://bit.ly/_Den"
-Den2="https://bom.to/Den"
-Den3="https://tiny.cc/-Den"
+Den1="https://xem.li/Den"
+Den2="https://mily.vn/Den"
+Den3="gg.gg/_Trang"
 Den4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Den.txt"
 
-ipDen1="https://bit.ly/_ipDen"
-ipDen2="https://bom.to/ipDen"
-ipDen3="https://tiny.cc/-ipDen"
+ipDen1="https://xem.li/ipDen"
+ipDen2="https://mily.vn/ipDen"
+ipDen3="gg.gg/ipDen"
 ipDen4="https://github.com/S8D/AdBlock/raw/master/Lists/0_ipDen.txt"
 
-Choang1="https://bit.ly/_Choang"
-Choang2="https://bom.to/Choang"
-Choang3="https://tiny.cc/-Choang"
+Choang1="https://xem.li/Choang"
+Choang2="https://mily.vn/Choang"
+Choang3="gg.gg/Choang"
 Choang4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Choang.txt"
 
-Chuyen1="https://bit.ly/_Chuyen"
-Chuyen2="https://bom.to/Chuyen"
-Chuyen3="https://tiny.cc/-Chuyen"
+Chuyen1="https://xem.li/Chuyen"
+Chuyen2="https://mily.vn/Chuyen"
+Chuyen3="gg.gg/Chuyen_"
 Chuyen4="https://github.com/S8D/AdBlock/raw/master/Lists/0_Chuyen.txt"
-
-ThongBao1="https://bit.ly/_ThongBao"
-ThongBao2="https://bom.to/ThongBao"
-ThongBao3="https://tiny.cc/-ThongBao"
-ThongBao4="https://github.com/S8D/AdBlock/raw/master/Lists/0_ThongBao.txt"
-
-NoiQuy1="https://bit.ly/_NoiQuy"
-NoiQuy2="https://bom.to/noiwy"
-NoiQuy3="https://tiny.cc/-NoiQuy"
-NoiQuy4="https://github.com/S8D/AdBlock/raw/master/Lists/0_NoiQuy.txt"
 
 nds="/sd/nds"
 DV="/etc/init.d/dns"
@@ -52,8 +42,8 @@ OS=`uname -m`; x64="x86_64"; arm="armv7l"; Android="aarch64"; mips="mips"
 if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
 	TM="/sd"; TMLog="/www";
 	cer="/etc/ssl/certs/ca-certificates.crt"; mkdir -p $nds
-	NoiQuy="$nds/NoiQuy.txt";
-	ThongBao="$nds/ThongBao.txt";
+	#NoiQuy="$nds/NoiQuy.txt";
+	#ThongBao="$nds/ThongBao.txt";
 fi; fi
 
 if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then TM="/config/sd"; TMLog="${TM}/dns"; fi; fi
@@ -87,9 +77,9 @@ echo "$DauCau Đang kiểm tra máy chủ cập nhật..."
 #	uThongBao="gg.gg/_ThongBao";
 #_________________________________
 
-CheckNet_1 () { ping -q -c 1 -W 1 bit.ly >/dev/null; }; 
-CheckNet_2 () { ping -q -c 1 -W 1 bom.to >/dev/null; }; 
-CheckNet_3 () { ping -q -c 1 -W 1 tiny.cc >/dev/null; }; 
+CheckNet_1 () { ping -q -c 1 -W 1 xem.li >/dev/null; }; 
+CheckNet_2 () { ping -q -c 1 -W 1 mily.vn >/dev/null; }; 
+CheckNet_3 () { ping -q -c 1 -W 1 gg.gg >/dev/null; }; 
 CheckNet_4 () { ping -q -c 1 -W 1 github.com >/dev/null; };
 
 if CheckNet_1; then UpLink="${bl1}"; uTrang="${Trang1}"; uDen="${Den1}"; uipDen="${ipDen1}"; uChoang="${Choang1}"; uChuyen="${Chuyen1}"; uThongBao="${ThongBao1}"; uNoiQuy="${NoiQuy1}"; net="1"; else
@@ -140,20 +130,11 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 fi
 
 if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
-	opkg list-installed | grep -qw luci-ssl || {
-	echo "$DauCau Đang cài SSL"
-	opkg update;
-	opkg install luci-ssl
-	}
-	opkg list-installed | grep -qw curl || {
-	echo "$DauCau Đang cài cURL"
-	opkg update;
-	opkg install curl
-	}
-	
+	opkg list-installed | grep -qw luci-ssl || { echo "$DauCau Đang cài SSL"; opkg update; opkg install luci-ssl; }
+	opkg list-installed | grep -qw curl || { echo "$DauCau Đang cài cURL"; opkg update; opkg install curl; }	
 	echo "$DauCau Đang cập nhật Bộ lọc"
 	#if [ $net -eq 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
-	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
+	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen; fi
 	if [ -f "$nds" ]; then $DV restart; fi; fi
 fi
 
