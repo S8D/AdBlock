@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="210929d"
+PhienBan="210929e"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -135,19 +135,21 @@ if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cg
 	echo "$DauCau Đang cập nhật Bộ lọc..."
 	#if [ $net -eq 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
 	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen; fi
-	$DV restart
+	$DV restart; fi
 fi
 
-if [ $OS == $mips ]; then if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc..."
-	if [ $net -ge 1 ]; then sudo curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
+if [ $OS == $mips ]; then 
+	if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc..."
+		if [ $net -ge 1 ]; then sudo curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
 	sudo ${tmDNS}/dns  -service stop; sudo ${tmDNS}/dns  -service start
-fi; fi
+	fi
+fi
 
 if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 	echo "$DauCau Đang cập nhật Bộ lọc..."
 	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
-killall dns; killall dns
+	killall dns; killall dns
 fi
 
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
