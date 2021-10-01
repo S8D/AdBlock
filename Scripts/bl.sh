@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="211001a"
+PhienBan="211001b"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -103,7 +103,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then mkdir -p ${TM}/dns/old
-			if [ ! -d "/www/cgi-bin" ]; then 
+			if [ ! -d "/www/cgi-bin" ]; then cd ${tmDNS}
 				sudo cp $0 ${TM}/dns/old/$PhienBan\_$(basename "$0"); 
 				sudo $dl1 $upTam $UpLink; chmod +x $upTam; mv $upTam ${TM}/$0
 				if [ $PhienBanMoi == $(cat ${TM}/$0 | grep PhienBan\= | sed 's/.*\=\"//; s/\"$//') ]; then 
