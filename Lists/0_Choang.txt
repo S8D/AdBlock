@@ -1,4 +1,4 @@
-#PhienBan___211001a
+#PhienBan___211001b
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
@@ -27,7 +27,7 @@ time-a.timefreq.bldrdoc.gov	time2.google.com
 *.keocacuoc.net				t.co
 
 #___Tổng-Hợp__________________________________________
-vozforum.org				forums.voz.vn
+vozforum.org				voz.vn
 *.cookieinfoscript.com		t.co
 *.byet.org					t.co
 *.ifastnet.com				t.co
