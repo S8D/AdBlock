@@ -1,4 +1,4 @@
-#PhienBan___211001b
+#PhienBan___211001c
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -24,6 +24,8 @@ hanqiweb.co
 sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
+c0nnectthed0ts.com
+pushmessage.samsung.com
 profitwell.com
 riskified.com
 online-metrix.net
@@ -438,7 +440,6 @@ vdong.vn
 trending.vn
 quangcao.phanquang.vn
 quangcao.tuoitre.vn
-userstats.shopee.vn
 accesstrade.vn
 aiservice.vn
 logg4u.cnnd.vn
@@ -1368,12 +1369,16 @@ onclickgenius.com
 #pmcontent.com
 
 #___Shopping___________________________________________________________________
+userstats.shopee.vn
+log-collector.shopee.vn
+c-api-bit.shopeemobile.com
 acs-m.lazada.vn
 orange-dc.lazada.com
 acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
+tencent-cloud.com
 tc.qq.com
 uc123.com
 163.com

@@ -1,5 +1,5 @@
 #!/bin/sh
-PhienBan="210929f"
+PhienBan="211001a"
 GetTime=$(date +"%F %a %T"); Time="$GetTime -"
 DauCau="#"
 
@@ -99,9 +99,7 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 			fi
 		fi
 
-		if [ $OS == $Android ]; then
-			echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log
-		fi
+		if [ $OS == $Android ]; then echo "$Time $(basename "$0") $PhienBan là bản mới nhất!"  >> $Log; fi
 
 	else echo "$DauCau Đang cập nhật $(basename "$0") v.$PhienBan lên v.$PhienBanMoi...";
 		if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then mkdir -p ${TM}/dns/old
@@ -133,27 +131,25 @@ if [ $net -ge 1 ]; then echo "$DauCau Đang kiểm tra cập nhật $(basename "
 	fi
 fi
 
-if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then if [ -d "/www/cgi-bin" ]; then
+if [ -d "/www/cgi-bin" ]; then if [ $OS == $x64 ] || [ $OS == $arm ] || [ $OS == $mips ]; then 
 	opkg list-installed | grep -qw luci-ssl || { echo "$DauCau Đang cài SSL"; opkg update; opkg install luci-ssl; }
 	opkg list-installed | grep -qw curl || { echo "$DauCau Đang cài cURL"; opkg update; opkg install curl; }	
 	echo "$DauCau Đang cập nhật Bộ lọc..."
 	#if [ $net -eq 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen $uThongBao $uNoiQuy -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen -o $ThongBao -o $NoiQuy; fi
 	if [ $net -ge 1 ]; then curl -fsL --cacert $cer $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen; fi
-	$DV restart; fi
-fi
-
-if [ $OS == $mips ]; then 
-	if [ ! -d "/www/cgi-bin" ]; then echo "$DauCau Đang cập nhật Bộ lọc..."
+	echo "$DauCau Đang khởi động lại dịch vụ DNSCrypt-Proxy..."; $DV restart; fi
+else
+	if [ $OS == $mips ]; then echo "$DauCau Đang cập nhật Bộ lọc..."
 		if [ $net -ge 1 ]; then sudo curl -fsLk $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang -o $Chuyen ; fi
 	sudo ${tmDNS}/dns  -service stop; sudo ${tmDNS}/dns  -service start
 	fi
-fi
-
-if [ $OS == $Android ]; then
+	
+	if [ $OS == $Android ]; then
 	[ `whoami` = root ] || { echo "Đã cấp quyền SU. Chạy lại $0"; su "$0" "$@"; exit $?; };
 	echo "$DauCau Đang cập nhật Bộ lọc..."
 	$dl2 $uDen $uipDen $uTrang $uChoang $uChuyen -o $Den -o $ipDen -o $Trang -o $Choang  -o $Chuyen
 	killall dns; killall dns
+	fi
 fi
 
 vDen=$(cat $Den | grep .*PhienBan\_ | sed 's/.*\_//');
