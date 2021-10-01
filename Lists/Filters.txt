@@ -1,12 +1,42 @@
 [Adblock Plus 2.0]
-! Version: 210822a
-! Title: mily.vn/ads | xem.li/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
+! Version: 211001a
+! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
 ! Licence: Darias
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-09-29 https://www.showmyip.com
+www.showmyip.com##.bannerad
+www.showmyip.com###content > p
+www.showmyip.com##h1
+
+! 2021-09-29 https://apkadmin.com
+apkadmin.com##.bg-white
+apkadmin.com##.footer
+apkadmin.com##div.file-info:nth-of-type(4)
+apkadmin.com##.navbar-light.navbar-expand-lg.navbar
+apkadmin.com###content > center
+apkadmin.com##.sharetabs
+apkadmin.com##h1
+apkadmin.com###content > div.row > div.col-12 > h2
+
+! 2021-09-30 https://checkip.vip
+checkip.vip##.content
+checkip.vip##footer
+
+! 2021-08-20 https://www.mediafire.com
+www.mediafire.com##.DLExtraInfo-wrap
+mediafire.com###footer
+mediafire.com###header
+mediafire.com##.description
+mediafire.com##.dl-promo-cont
+mediafire.com##.dlInfo-Body
+mediafire.com##.header
+mediafire.com##.sidebar
+mediafire.com##.socialFBContainer
+
 ! 2021-08-21 https://www.cyberciti.biz
 www.cyberciti.biz##body > center
 www.cyberciti.biz###custom_html-9
@@ -1086,14 +1116,6 @@ maclife.vn##.\39 NPE62lv
 mail.yahoo.com##.H_1HKkit.iz_A.p_R
 manuals.plus##.featured-image.site-header
 mazii.net##app-notify
-mediafire.com###footer
-mediafire.com###header
-mediafire.com##.description
-mediafire.com##.dl-promo-cont
-mediafire.com##.dlInfo-Body
-mediafire.com##.header
-mediafire.com##.sidebar
-mediafire.com##.socialFBContainer
 mee.vn##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 mega-debrit.com###Downloader > div.row:first-child
 mega-debrit.com##div.jumbotron.text-center:nth-child(4)
@@ -1933,6 +1955,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/08212b079fee6fbfbae87a120537ae01f21bb88a/68747470733a2f2f692e696d6775722e636f6d2f4d6a66657a5a422e706e67/$image
 ||camo.voz.tech/086fceda960e5622af12f551a7fd48f740ba462a/68747470733a2f2f692e696d6775722e636f6d2f614d3978484f792e706e67/$image
 ||camo.voz.tech/08aac5d987f1de292de1643c6e863c1d850cb884/68747470733a2f2f692e696d6775722e636f6d2f73686a634536782e706e67/$image
+||camo.voz.tech/0b8af405a0b221173c5d96785c23b1010d33fe41/687474703a2f2f692e696d6775722e636f6d2f794242657773742e676966/$image
 ||camo.voz.tech/0c07460a4f51d3f302f5181bef68c07e59c6eee2/68747470733a2f2f692e696d6775722e636f6d2f755739384254462e6a7067/$image
 ||camo.voz.tech/0d5653036937a6f2a86fc5757c55ef9617238ae1/68747470733a2f2f692e696d6775722e636f6d2f345547536154702e706e67/$image
 ||camo.voz.tech/0e069cea79ee7b32afbb9350cdbb96aab566e969/68747470733a2f2f692e696d6775722e636f6d2f79625a6142675a2e676966/$image
@@ -1946,6 +1969,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/172d5b97ab2ea92b5ec26dca0ec290cfd5e94e23/68747470733a2f2f692e696d6775722e636f6d2f7a4f4c3332714f2e6a7067/$image
 ||camo.voz.tech/1733e383b11cc87cfc865903beb8cc2525ba67ce/68747470733a2f2f692e696d6775722e636f6d2f677954503144502e676966/$image
 ||camo.voz.tech/17e2c034fc851b01b57cb549083db54966d325bc/68747470733a2f2f692e696d6775722e636f6d2f374a706c4247592e706e67/$image
+||camo.voz.tech/181da2caf34713132a0280648b2111e3cf9c6ce8/68747470733a2f2f692e696d6775722e636f6d2f744745415761532e706e67/$image
 ||camo.voz.tech/18b3c409a423fa9ecfbe905d2cb49c641ffb99cc/68747470733a2f2f692e696d6775722e636f6d2f7a464e755a54412e706e67/$image
 ||camo.voz.tech/18c50c7652fa97b8f35602b6a8337c1e59881ffc/68747470733a2f2f692e696d6775722e636f6d2f34676d4f414d422e706e67/$image
 ||camo.voz.tech/18f03bf0987058625ea8d25d88d2473be0896b6d/68747470733a2f2f692e696d6775722e636f6d2f344f45504d73562e676966/$image
@@ -1961,9 +1985,11 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/27c16596842fdc0719cc31892cf33c6bce5c0c45/68747470733a2f2f692e696d6775722e636f6d2f4d4d474863786b2e676966/$image
 ||camo.voz.tech/28bec94dfe1a476925e29656e2d094dd1f08903f/68747470733a2f2f692e696d6775722e636f6d2f47756332354f472e676966/$image
 ||camo.voz.tech/2910d759e844bfc0e2b0d81c44ed432c21f6839e/68747470733a2f2f692e696d6775722e636f6d2f3370345546304a2e676966/$image
+||camo.voz.tech/2c58b2db93823ae7eed8f2f28455a6aa1cb8fbc6/68747470733a2f2f692e696d6775722e636f6d2f634238755a72392e706e67/$image
 ||camo.voz.tech/2e66b7692b6c5c7c3e46abce370189b01d33c2b9/68747470733a2f2f692e696d6775722e636f6d2f6e50496e756b722e706e67/$image
 ||camo.voz.tech/2ee5e3be31dddebdafa7dcb543a007fc351bb517/68747470733a2f2f692e696d6775722e636f6d2f674b6e395930792e706e67/$image
 ||camo.voz.tech/2f61db5c10ffe0d507e1abfdbd488559444cd5d3/68747470733a2f2f692e696d6775722e636f6d2f75586e716750422e706e67/$image
+||camo.voz.tech/303ad9c30b72768ae6aa35194067c58174952380/687474703a2f2f692e696d6775722e636f6d2f426467695737522e676966/$image
 ||camo.voz.tech/304c494a7cc4869b911012bb091607ec154c7364/68747470733a2f2f692e696d6775722e636f6d2f6d4b6166674c572e706e67/$image
 ||camo.voz.tech/313cc90c3530f80ae22cf0276382c78c58ad52c8/68747470733a2f2f692e696d6775722e636f6d2f693738433273392e676966/$image
 ||camo.voz.tech/31b2009d630607a16f4b7ded416b48d70bb7c219/68747470733a2f2f692e696d6775722e636f6d2f63564c383148322e676966/$image
@@ -1990,6 +2016,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/4c6180fa4ac98137ea915c10c384e8b9cf7e130e/68747470733a2f2f692e696d6775722e636f6d2f4536626c7a49682e676966/$image
 ||camo.voz.tech/4cedc39b76ee5624f37457ed27eb4e2e3c504af7/68747470733a2f2f692e696d6775722e636f6d2f664a516e69784c2e676966/$image
 ||camo.voz.tech/4d335eaa3abb95ad077794d03fdd6bdd6e6f8604/68747470733a2f2f692e696d6775722e636f6d2f467150534650662e676966/$image
+||camo.voz.tech/50840a06b7fc01bb4f2c74cdaed09c01ea4c4471/68747470733a2f2f692e696d6775722e636f6d2f3933324a7463452e676966/$image
 ||camo.voz.tech/508dbe9732ba3e0f4bb9e745014d2585ea8f20f3/68747470733a2f2f692e696d6775722e636f6d2f753430777341682e706e67/$image
 ||camo.voz.tech/50f46feedb03666ce6f5c90386b94f412432a117/68747470733a2f2f692e696d6775722e636f6d2f6d4d4f717234712e706e67/$image
 ||camo.voz.tech/51b08f7fa677dda33ac53b7f2d2fe44548001715/68747470733a2f2f692e696d6775722e636f6d2f7a515532634a612e706e67/$image
@@ -2001,6 +2028,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/56b83ad771b5931c10e8505f243055adc3a1de25/687474703a2f2f692e696d6775722e636f6d2f554b6943694b682e676966/$image
 ||camo.voz.tech/5befa309654a375afe9482c2334336cc526616bf/68747470733a2f2f692e696d6775722e636f6d2f30464650416a4d2e706e67/$image
 ||camo.voz.tech/5c1501e77aa5ee7ccd89b371a571ca93f55fddc7/68747470733a2f2f692e696d6775722e636f6d2f6f574e537849672e706e67/$image
+||camo.voz.tech/5d6f0586c9f3dfe202e17c9001bf2f00f8b57824/68747470733a2f2f692e696d6775722e636f6d2f576678614162592e676966/$image
 ||camo.voz.tech/5e2ff8e94c0d02378da29d6fc091355a5216bef8/68747470733a2f2f692e696d6775722e636f6d2f777279764453482e706e67/$image
 ||camo.voz.tech/6100a819c572aa224bf0d9eb86ae85d460540b96/68747470733a2f2f692e696d6775722e636f6d2f643167774b61772e706e67/$image
 ||camo.voz.tech/613b034f680df8d211257e5d3708cd44b59a74f0/68747470733a2f2f692e696d6775722e636f6d2f426c59753243722e706e67/$image
@@ -2023,6 +2051,8 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/74766ce6c14a7e126185a7366694858ae9b729e8/68747470733a2f2f692e696d6775722e636f6d2f50613343396b452e706e67/$image
 ||camo.voz.tech/74777d4b460c9c3f1d64fb4d4eaf44b3f75566da/68747470733a2f2f692e696d6775722e636f6d2f363274555a49652e676966/$image
 ||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
+||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
+||camo.voz.tech/7a09c324517568f23936a9674b1882f0bf414d4e/68747470733a2f2f692e696d6775722e636f6d2f674657784e74382e706e67/$image
 ||camo.voz.tech/7a0e4c043aa036d5f65b37b5f6e3c12849a7bb25/68747470733a2f2f692e696d6775722e636f6d2f4a476471677a592e706e67/$image
 ||camo.voz.tech/7b3f21298f12680e31343d31fd721e37137e66d4/68747470733a2f2f692e696d6775722e636f6d2f4a4371383862632e706e67/$image
 ||camo.voz.tech/7cbd70fc16df9eed6178189b54d8e0fe66bda8da/68747470733a2f2f692e696d6775722e636f6d2f573671344964512e706e67/$image
@@ -2031,9 +2061,11 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/7e5f27e5a998124e8ac69245fc346d31f06d4be4/68747470733a2f2f692e696d6775722e636f6d2f51774a305630562e706e67/$image
 ||camo.voz.tech/7f4907c304feb8ec83f1710cfc790a348b29255c/68747470733a2f2f692e696d6775722e636f6d2f58763976754c712e6a7067/$image
 ||camo.voz.tech/7fa6d946803abfc45ad43bf8b169f03ffb480133/68747470733a2f2f692e696d6775722e636f6d2f624762703461502e676966/$image
+||camo.voz.tech/7fbfc3e180a4644247e969dcc36c2e635bf6279c/68747470733a2f2f692e696d6775722e636f6d2f4e6b314c68334b2e706e67/$image
 ||camo.voz.tech/82144372e9637c6f6f0b607116aafcc3bf74559f/68747470733a2f2f692e696d6775722e636f6d2f677654776e56382e676966/$image
 ||camo.voz.tech/829f1054afa2f4b39bd1813e3624762b424f6357/68747470733a2f2f692e696d6775722e636f6d2f49504d4d3363442e676966/$image
 ||camo.voz.tech/846d28d97f5943fdd318d95665628525c9bfeeaf/68747470733a2f2f692e696d6775722e636f6d2f673858586a38752e676966/$image
+||camo.voz.tech/851e091c8d69167979fd61d727287a157d63a437/68747470733a2f2f692e696d6775722e636f6d2f4b674c376d63532e706e67/$image
 ||camo.voz.tech/85276b6cdb3390059dafa6554ede31e5a6cd29e7/68747470733a2f2f692e696d6775722e636f6d2f636447766667672e706e67/$image
 ||camo.voz.tech/86eaea3d6e90ab7e61e1d38c0a7fa19e6109b4e4/68747470733a2f2f692e696d6775722e636f6d2f6f7343704373692e706e67/$image
 ||camo.voz.tech/87b88d5d1ae32a611926f058f841dc1e57037721/68747470733a2f2f692e696d6775722e636f6d2f6a6d4542436b792e676966/$image
@@ -2065,8 +2097,10 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/a78b6a2b1ff041de53d52676ae5dec797ce43f18/68747470733a2f2f692e696d6775722e636f6d2f31796439346c522e706e67/$image
 ||camo.voz.tech/a86263608283c84a741e770e825c304661bc9a2e/68747470733a2f2f692e696d6775722e636f6d2f6e6d76495948652e706e67/$image
 ||camo.voz.tech/aa8dca42d5d7c33d779905323c1c252cfdae4aa9/68747470733a2f2f692e696d6775722e636f6d2f703055746d53762e706e67/$image
+||camo.voz.tech/ac58467e235f4bc2cbdad6269ac1452a866aab7a/68747470733a2f2f692e696d6775722e636f6d2f554b6943694b682e706e67/$image
 ||camo.voz.tech/b1ff1c99460dccd9af3f1f2f0d4fe436e656cde2/68747470733a2f2f692e696d6775722e636f6d2f4b45357469376c2e706e67/$image
 ||camo.voz.tech/b658dddd1d166b5f86898585077567e160590cc6/68747470733a2f2f692e696d6775722e636f6d2f4563563550504c2e706e67/$image
+||camo.voz.tech/b738dd12179ebd863499c25a7d115285dbe83823/68747470733a2f2f692e696d6775722e636f6d2f546d76305778572e706e67/$image
 ||camo.voz.tech/bb70e82a3e302ae997758324aed4ee7bafa67074/68747470733a2f2f692e696d6775722e636f6d2f506d395950314f2e706e67/$image
 ||camo.voz.tech/bd03976fceaa6f1c1275c81a47e5dda8de8cd2d9/68747470733a2f2f692e696d6775722e636f6d2f394442567138412e706e67/$image
 ||camo.voz.tech/bf072fbdf7911acf2243b01882ba7a3b126e4682/68747470733a2f2f692e696d6775722e636f6d2f4d4531744a42302e706e67/$image
@@ -2091,6 +2125,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/d73cdb7927f969fdb595021575298f24217a4c0b/68747470733a2f2f692e696d6775722e636f6d2f587630427454522e706e67/$image
 ||camo.voz.tech/d76332e8a8fea24d3f711a36cc9f76879e07398d/68747470733a2f2f692e696d6775722e636f6d2f583779376573452e706e67/$image
 ||camo.voz.tech/d99a0780d4cccbf491475a1d4354a9fb8a7558ff/68747470733a2f2f692e696d6775722e636f6d2f4e584c6a4376632e706e67/$image
+||camo.voz.tech/dded38a01ec0a32db58494d57286a03ed47ea802/68747470733a2f2f63616d6f2e766f7a2e746563682f386135373934336566343432623439313664343062366261343636303030353831313231613832632f36383734373437303733336132663266363932653639366436373735373232653633366636643266333436383738333134623461366532653637363936362f/$image
 ||camo.voz.tech/ddfa60a877482f0993c4c5550dcefb918f9555d7/68747470733a2f2f692e696d6775722e636f6d2f72686c78704a692e706e673f31/$image
 ||camo.voz.tech/e129193dc46e421b379c99f1d394e8a3363c2a64/68747470733a2f2f692e696d6775722e636f6d2f4d7456446e64632e706e67/$image
 ||camo.voz.tech/e253ade5b8289b8ee5dfaa7e98998e79a556b3d4/68747470733a2f2f692e696d6775722e636f6d2f6b493461396c482e6a7067/$image
@@ -2107,13 +2142,13 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/f623aa186ecf07ffc7eda35e7ad1d4228a84c7cd/68747470733a2f2f692e696d6775722e636f6d2f31425739576a342e706e67/$image
 ||camo.voz.tech/f737483545a5eb6b3f05483538ff5969531f166c/68747470733a2f2f692e696d6775722e636f6d2f4f47306c7358762e706e67/$image
 ||camo.voz.tech/f7cecd3c3c74f72e88f9d8647335aafca06e107d/68747470733a2f2f692e696d6775722e636f6d2f686e656366677a2e676966/$image
+||camo.voz.tech/f88b0ed22a2e05b46223b265fb52d23c3da60ece/68747470733a2f2f692e696d6775722e636f6d2f624839725934662e676966/$image
 ||camo.voz.tech/fb37bc847271b5fcb162727c456a7d85facbb80d/68747470733a2f2f692e696d6775722e636f6d2f317265794c71382e706e67/$image
 ||camo.voz.tech/fcb682e393124e07bdeb1f2a17be5e514898be86/68747470733a2f2f692e696d6775722e636f6d2f486932726b687a2e676966/$image
 ||camo.voz.tech/fcc6cb335ff2a50a86e6db5019749a5de4cac1f0/68747470733a2f2f692e696d6775722e636f6d2f4d7637354757332e676966/$image
 ||camo.voz.tech/fdb97237d6d9b89fde68d968a0facb1a2eeb3048/68747470733a2f2f692e696d6775722e636f6d2f734a30395a76762e676966/$image
 ||camo.voz.tech/fe1c7bad127b6c067ca6125e685b2555e3c090aa/68747470733a2f2f692e696d6775722e636f6d2f6a5849527754642e706e67/$image
 ||camo.voz.tech/fea4494acc721f8c64b3241d5de572f2b71b7066/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
-||camo.voz.tech/76fb7ab2922d284fc3a92c31d0d67ee0c31cf085/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
 ||secure.gravatar.com/avatar/4f3ab752025ef146ecd2f2cb911e5161?s=*$image
 ||voz.vn/attachments/*.190397/$image
 ||voz.vn/attachments/*.218479/$image
@@ -2125,8 +2160,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/attachments/*.259405/$image
 ||voz.vn/attachments/*.282843/$image
 ||voz.vn/attachments/*.288436/$image
-||voz.vn/data/avatars/*.jpg?1603250539$image
-||voz.vn/data/avatars/*.jpg?1608781207$image
+||voz.vn/attachments/*.691087/$image
 ||voz.vn/data/avatars/*.jpg?1583769468$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
 ||voz.vn/data/avatars/*.jpg?1583852384$image
@@ -2173,6 +2207,7 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1603188420$image
 ||voz.vn/data/avatars/*.jpg?1603190823$image
 ||voz.vn/data/avatars/*.jpg?1603250539$image
+||voz.vn/data/avatars/*.jpg?1603250539$image
 ||voz.vn/data/avatars/*.jpg?1603250889$image
 ||voz.vn/data/avatars/*.jpg?1603254072$image
 ||voz.vn/data/avatars/*.jpg?1603256733$image
@@ -2185,24 +2220,33 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/data/avatars/*.jpg?1604257541$image
 ||voz.vn/data/avatars/*.jpg?1605239012$image
 ||voz.vn/data/avatars/*.jpg?1605711549$image
+||voz.vn/data/avatars/*.jpg?1608781207$image
 ||voz.vn/data/avatars/*.jpg?1614358570$image
+||voz.vn/data/avatars/*/1029278.jpg$image
 ||voz.vn/data/avatars/*/1104616.jpg$image
 ||voz.vn/data/avatars/*/1141234.jpg$image
+||voz.vn/data/avatars/*/1209149.jpg$image
+||voz.vn/data/avatars/*/130590.jpg$image
 ||voz.vn/data/avatars/*/1344368.jpg$image
 ||voz.vn/data/avatars/*/1383069.jpg$image
 ||voz.vn/data/avatars/*/1489781.jpg$image
 ||voz.vn/data/avatars/*/1493801.jpg$image
+||voz.vn/data/avatars/*/1531714.jpg$image
+||voz.vn/data/avatars/*/1566813.jpg$image
+||voz.vn/data/avatars/*/1596513.jpg$image
+||voz.vn/data/avatars/*/1678579.jpg$image
+||voz.vn/data/avatars/*/1681079.jpg$image
+||voz.vn/data/avatars/*/1682874.jpg$image
 ||voz.vn/data/avatars/*/1684054.jpg$image
 ||voz.vn/data/avatars/*/1685910.jpg$image
 ||voz.vn/data/avatars/*/1691717.jpg$image
 ||voz.vn/data/avatars/*/1719588.jpg$image
+||voz.vn/data/avatars/*/1722009.jpg?$image
 ||voz.vn/data/avatars/*/1727913.jpg$image
+||voz.vn/data/avatars/*/21728.jpg?$image
 ||voz.vn/data/avatars/*/22911.jpg$image
 ||voz.vn/data/avatars/*/23665.jpg$image
-||voz.vn/data/avatars/*/1209149.jpg$image
-||voz.vn/data/avatars/*/1566813.jpg$image
-||voz.vn/data/avatars/*/130590.jpg$image
-||voz.vn/data/avatars/*/1029278.jpg$image
+||voz.vn/data/avatars/*/38582.jpg$image
 
 
 !#########################################################################################################

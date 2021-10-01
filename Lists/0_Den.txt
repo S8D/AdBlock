@@ -1,4 +1,4 @@
-#PhienBan___211001d
+#PhienBan___211001e
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -269,7 +269,6 @@ tapdb.net
 zdbb.net
 eyeota.net
 nr-data.net
-fast.wistia.net
 algolia.net
 lpsnmedia.net
 adworkmedia.net
