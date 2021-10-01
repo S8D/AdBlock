@@ -1,4 +1,4 @@
-#PhienBan___211001c
+#PhienBan___211001d
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -24,6 +24,7 @@ hanqiweb.co
 sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
+ndmdhs.com
 c0nnectthed0ts.com
 pushmessage.samsung.com
 profitwell.com
