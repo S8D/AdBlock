@@ -1,4 +1,4 @@
-#PhienBan___210929b
+#PhienBan___211001a
 
 #___Apple______________________________________________________________________
 mesu.apple.com
@@ -1616,6 +1616,7 @@ fbcdn2.com
 interncache-*.fbcdn.net
 
 #___VinaGau______________________________________________________________________
+broadcast.api.zaloapp.com
 log.api.zaloapp.com
 ads.platform.zalo.me
 help-zalo.firebaseio.com

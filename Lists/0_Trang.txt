@@ -1,4 +1,4 @@
-#PhienBan___200929b
+#PhienBan___211001a
 #___TongHop________________________________________________________________
 jip-entry.secure.force.com
 ec4ns.ptpt52.com
@@ -20,6 +20,7 @@ storage.googleapis.com
 graph.facebook.com
 login.live.com
 redirector.gvt1.com
+www.right.com.cn
 
 #___VPN____________________________________________________________________
 nordcdn.com
@@ -123,7 +124,7 @@ mirrors.pair.com
 mirrors.tuna.tsinghua.edu.cn
 mirrors.ustc.edu.cn
 mirrors.zju.edu.cn
-
+binance-1259603563.file.myqcloud.com
 #___RutGon_________________________________________________________________
 gg.gg
 bit.ly
