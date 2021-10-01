@@ -1,6 +1,8 @@
-#PhienBan___211001a
+#PhienBan___211001b
 
 #___Apple______________________________________________________________________
+cstat.apple.com
+notes-analytics-events.apple.com
 mesu.apple.com
 securemetrics.apple.com
 *metrics.apple.com
@@ -19,6 +21,7 @@ log.bntrace.com
 sensors.binance.cloud
 jpush.binance.im
 hanqiweb.co
+sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
 profitwell.com
@@ -517,7 +520,6 @@ ad-brix.com
 customerevents.netflix.com
 ichnaea.netflix.com
 cdn.transifex.com
-update.fbsbx.com
 vvpcdke43x.com
 adk2x.com
 ax1x.com
@@ -1608,13 +1610,14 @@ star-z-mini.c10r.facebook.com
 platform-lookaside.fbsbx.com
 connect.facebook.net
 #platform-lookaside.fbsbx.com
+update.fbsbx.com
 an.facebook.com
 crashlogs.whatsapp.net
 #interncache-atn.fbcdn.net
 graph.fbpigeon.com
 fbcdn2.com
 interncache-*.fbcdn.net
-
+dit.whatsapp.net
 #___VinaGau______________________________________________________________________
 broadcast.api.zaloapp.com
 log.api.zaloapp.com
