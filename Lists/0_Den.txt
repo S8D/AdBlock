@@ -1,4 +1,4 @@
-#PhienBan___211002b
+#PhienBan___211002c
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -25,6 +25,15 @@ hanqiweb.co
 sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
+protoolactive.com
+procrackserial.com
+crackkey4u.com
+activatorprokey.com
+activationskey.com
+crackproductkey.com
+mycrackfree.com
+plugrush.com
+amplitude.com
 v9bet88.net
 sin88.biz
 12bvn.com
@@ -835,7 +844,6 @@ urs.cnet.com
 getblueshift.com
 3lift.com
 extads.gameloft.com
-data.microsoft.com
 dw-online.ksosoft.com
 geo[0-9].ggpht.com
 ushareit.com
@@ -1559,6 +1567,7 @@ xunyou.*
 *.ucweb.*
 
 #___MicroSoft__________________________________________________________________
+data.microsoft.com
 appcenter.ms
 insitez.blob.core.windows.net
 outlookmobile-office365-tas.msedge.net
@@ -1594,6 +1603,7 @@ consumer.entitlement.skype.com
 c.microsoft.com 
 
 #___Google_____________________________________________________________________
+e2clock.gcp.gvt2.com
 firebaselogging-pa.googleapis.com
 geller-pa.googleapis.com
 googlesyndication.com
