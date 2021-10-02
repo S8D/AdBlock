@@ -1,11 +1,83 @@
-#PhienBan___211001a
+#PhienBan___211001b
+
 #___TongHop________________________________________________________________
+1drv.ms
+32dc7a4c-ae02-4b9d-8dea-ecced96c9cad.cloudapp.net
+account.nokia.com
+api.fast.com
+ba.mirror.garr.it
+bj.baidupcs.com
+block.opendns.com
+blogs.windows.com
+c-api-bit.shopeemobile.com
+cdnmirrors.s.tuna.tsinghua.edu.cn
+cloud.mail.ru
+codechina.csdn.net
+connectivitycheck.platform.hicloud.com
+d.pcs.baidu.com
+data.microsoft.com
+developer49.baidupan.com
+devicecertificateservice.windowsphone.com
+docs.pivpn.io
+downloads.x-wrt.com
+dss0.bdstatic.com
+escrowproxy.fe.apple-dns.net
+exodus.desync.com
+ftp.sjtu.edu.cn
+ftp.tsukuba.wide.ad.jp
+koolshare.cn
+metric.gstatic.com
+mirror.bjtu.edu.cn
+mirror.hust.edu.cn
+mirror.lzu.edu.cn
+mirrors.bfsu.edu.cn
+mirrors.cqu.edu.cn
+mirrors.dgut.edu.cn
+mirrors.hit.edu.cn
+mirrors.huaweicloud.com
+mirrors.hust.edu.cn
+mirrors.nju.edu.cn
+mirrors.njupt.edu.cn
+mirrors.pku.edu.cn
+mirrors.tuna.tsinghua.edu.cn
+mirrors.ustc.edu.cn
+mitmproxy.org
+msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com
+nj.baidupcs.com
+nordvpn.com
+nrdp.prod.cloud.netflix.com
+nyaa.tracker.wf
+ok.ru
+p53-escrowproxy.icloud.com
+pan.baidu.com
+passport.alibaba.com
+pivpn.io
+portal.mail.ru
+qd.baidupcs.com
+settings-win.data.microsoft.com
+sjtu.edu.cn
+sp1.baidu.com
+tomato.org.cn
+tracker.coppersurfer.tk
+tracker.opentrackr.org
+v10.vortex-win.data.microsoft.com
+v20.vortex-win.data.microsoft.com
+vip.d0.baidupan.com
+vpngate2.jp
+wevpn.com
+www.baidupcs.com
+www.expressvpn.com
+www.gocloud.cn
+www.mydigit.cn
+www.right.com.cn
+www.vpntierlist.com
+x1.xf.client.api.vpngate2.jp
+xray.mail.ru
 jip-entry.secure.force.com
 ec4ns.ptpt52.com
 gstatic.com
 c.speedtest.net
 samsappsbn.vo.llnwd.net
-connectivitycheck.platform.hicloud.com
 nextdns.io
 adsbypasser.github.io
 norton.com
@@ -20,11 +92,10 @@ storage.googleapis.com
 graph.facebook.com
 login.live.com
 redirector.gvt1.com
-www.right.com.cn
+
 
 #___VPN____________________________________________________________________
 nordcdn.com
-nordvpn.com
 2ohvff3e8v46kb8.info
 4qlnp8csnrj5zla.me
 73dkt-vwrqs.xyz
@@ -47,6 +118,7 @@ w569ut7zbkiqf5b.xyz
 wutlk3t9mybdz.info
 x9fnzrtl4x8pynsf.com
 zwyr157wwiu6eior.com
+
 #___IP_____________________________________________________________________
 check-host.net
 checkip.azurewebsites.net
@@ -114,17 +186,12 @@ debian.proxad.net
 download.nus.edu.sg
 ftp.nara.wide.ad.jp
 mirror-hk.koddos.net
-mirrors.bfsu.edu.cn
-mirrors.cqu.edu.cn
-mirrors.huaweicloud.com
-mirrors.hust.edu.cn
 mirrors.layeronline.com
 mirrors.lzu.edu.cn
 mirrors.pair.com
-mirrors.tuna.tsinghua.edu.cn
-mirrors.ustc.edu.cn
 mirrors.zju.edu.cn
 binance-1259603563.file.myqcloud.com
+
 #___RutGon_________________________________________________________________
 gg.gg
 bit.ly
@@ -141,28 +208,3 @@ liveupdate.5A45F.edgecastdns.net
 liveupdate.norton.com
 liveupdate.symantecliveupdate.com
 symantecliveupdate.5A45F.edgecastdns.net
-
-###########################
-#        Whitelist        #
-###########################
-
-## Rules for name-based query whitelisting, one per line
-##
-## Example of valid patterns:
-##
-## ads.*         | matches anything with an "ads." prefix
-## *.example.com | matches example.com and all names within that zone such as www.example.com
-## example.com   | identical to the above
-## =example.com  | whitelists example.com but not *.example.com
-## *sex*         | matches any name containing that substring
-## ads[0-9]*     | matches "ads" followed by one or more digits
-## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
-
-tracker.debian.org
-
-
-
-## Time-based rules
-
-# *.youtube.*  @time-to-play
-# facebook.com @play

@@ -1,4 +1,4 @@
-#PhienBan___211001e
+#PhienBan___211002a
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -24,6 +24,12 @@ hanqiweb.co
 sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
+siftscience.com
+adxpremium.services
+adpone.com
+adjust.world
+adjust.net.in
+push-noti-baomoi.zadn.vn
 ndmdhs.com
 c0nnectthed0ts.com
 pushmessage.samsung.com
@@ -1109,7 +1115,7 @@ display.ugc.bazaarvoice.com
 dynatrace.com
 licenses.adobe.com
 geo*.adobe.com
-dbankcloud.com
+dbankcloud.*
 l9bjkkhaycw6f8f4.soundcloud.com
 faidoud.com
 flipboard.com
@@ -1187,7 +1193,6 @@ loginfra.com
 www.m88vina.com
 taboola.com
 shavar.services.mozilla.com
-fast.wistia.com
 gfe.nvidia.com
 unrulymedia.com
 ads-static.saymedia.com
@@ -1378,6 +1383,7 @@ acs-m.lazada.sg
 #*.lazada.*
 
 #___TQ_________________________________________________________________________
+ixigua.com
 tencent-cloud.com
 tc.qq.com
 uc123.com
@@ -1623,6 +1629,7 @@ graph.fbpigeon.com
 fbcdn2.com
 interncache-*.fbcdn.net
 dit.whatsapp.net
+
 #___VinaGau______________________________________________________________________
 broadcast.api.zaloapp.com
 log.api.zaloapp.com
