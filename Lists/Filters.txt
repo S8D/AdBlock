@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 211001a
+! Version: 211004a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,111 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-10-02 https://voz.vn
+||voz.vn/data/avatars/m/1733/1733063.jpg$image
+||camo.voz.tech/f68f2cce7900e7bcbcfdfb5d2d9fd81a9d835243/68747470733a2f2f692e696d6775722e636f6d2f786431483873532e6a7067/$image
+||camo.voz.tech/053e4ad644e94a509ee3b8c0a81f2fde67c75ad9/68747470733a2f2f692e696d6775722e636f6d2f386435525251772e676966/$image
+||voz.vn/data/avatars/*/1690/1690848.jpg?1632297019$image
+||camo.voz.tech/672e25ec925c63d549dfa91335d0d737ae5ef268/68747470733a2f2f692e696d6775722e636f6d2f454b444e7a53452e676966/$image
+||camo.voz.tech/2a72599aeef0c7b472c7a6149ee36e7f43458d5f/68747470733a2f2f692e696d6775722e636f6d2f50727a623559742e676966/$image
+||camo.voz.tech/536896ceaabc6abcaeed1b443d7bae2d4a059ad9/68747470733a2f2f692e696d6775722e636f6d2f5633736f3942432e706e67/$image
+||voz.vn/data/avatars/*/1749/1749296.jpg$image
+||voz.vn/data/avatars/*/59/59318.jpg$image
+||voz.vn/data/avatars/*/1282/1282980.jpg$image
+||voz.vn/data/avatars/*/1688/1688650.jpg$image
+||camo.voz.tech/91ec556430cc7bda20ea874916f8393e74322f12/687474703a2f2f692e696d6775722e636f6d2f524b70377a576e2e676966/$image
+||voz.vn/data/avatars/*/1709/1709647.jpg$image
+||camo.voz.tech/d580faea03b2a3caf5b4b489124d7479c5b5dc96/68747470733a2f2f692e696d6775722e636f6d2f303037337353352e676966/$image
+||camo.voz.tech/e2a489d9e0906091c2b20e86848b4b35a43a7e48/68747470733a2f2f692e696d6775722e636f6d2f507a4f684b39302e6a706567/$image
+||camo.voz.tech/0b2199acc216516566fce0ce830b5f0ba53d3337/68747470733a2f2f692e696d6775722e636f6d2f4b5058766779592e676966/$image
+||camo.voz.tech/298b4073cf8148b7b5809a1fe4d5c0ebf198dd8e/68747470733a2f2f692e696d6775722e636f6d2f346b7a78506a692e676966/$image
+||camo.voz.tech/8561d93bd1a6a07f583994bd3c04a797ca0b02ec/68747470733a2f2f692e696d6775722e636f6d2f566d39324579442e706e67/$image
+||voz.vn/data/avatars/*/1700/1700054.jpg$image
+
+! 2021-10-03 https://pastehub.net
+pastehub.net##.text-center
+
+! 2021-10-03 https://dl.literaturetimes.com
+dl.literaturetimes.com##.site-header
+dl.literaturetimes.com##.col-md-4.widget-area
+dl.literaturetimes.com###content > .container > .row
+dl.literaturetimes.com##.site-footer
+dl.literaturetimes.com###footer-sidebar
+
+! 2021-10-03 https://ipinfo.io
+ipinfo.io##.clearfix.customers-block
+ipinfo.io##.facilities-sec
+ipinfo.io##.scales-sec
+ipinfo.io##.ipinfo-work
+ipinfo.io##.testimonials-sec
+ipinfo.io##.ip-business
+ipinfo.io##footer
+ipinfo.io##header
+ipinfo.io###hero_banner_left
+
+! 2021-10-03 https://ipwhois.io
+ipwhois.io##.navbar
+ipwhois.io##section.section_choose.pt-3.section:nth-of-type(1)
+ipwhois.io##.bg-white.section_excode.svg.section_choose.pt-3.section
+ipwhois.io##.bg-gray.svg.section_reviews.pt-3.section
+ipwhois.io##section.pt-3.section:nth-of-type(4)
+ipwhois.io##.footop
+ipwhois.io##.footer
+ipwhois.io##p.mt-1.lead:nth-of-type(2)
+ipwhois.io##p.mt-1.lead:nth-of-type(1)
+ipwhois.io##p.mt-1.lead:nth-of-type(3)
+ipwhois.io##div.col-lg-6 > h2
+ipwhois.io##.mt-6.gap-xy
+ipwhois.io##.main-content
+
+! 2021-10-03 https://www.ip2location.com
+www.ip2location.com##.container > .margin-bottom-20.row
+www.ip2location.com##.margin-bottom-40.service-box.row
+www.ip2location.com##.pull-right.font-transform-inherit.header-navigation
+www.ip2location.com##.header
+www.ip2location.com##.col-sm-12 > .margin-bottom-20.row
+www.ip2location.com##.pre-footer
+www.ip2location.com##.footer
+www.ip2location.com##.text-center.col-sm-12.col-md-12
+www.ip2location.com##.col-sm-12 > h2
+www.ip2location.com##.margin-top-10
+www.ip2location.com##[src="https://cdn.ip2location.com/assets/img/trydemo-icon.png"]
+
+! 2021-10-03 https://tools.keycdn.com
+tools.keycdn.com##.pb-6.pt-9.text-white.bg-dark
+tools.keycdn.com##.navbar-dark.bg-dark.navbar-expand-md.navbar--static.navbar
+tools.keycdn.com##.mt-col-sidebar.col-md-9.col-lg-8 > .row
+tools.keycdn.com##.mt-col-sidebar.col-md-9.col-lg-8 > p
+tools.keycdn.com##.py-6.bg-light
+tools.keycdn.com##.py-7
+tools.keycdn.com##.bg-dark--removed.navbar-light.bg-white.navbar-expand-md.navbar--fixed.navbar
+
+! 2021-10-03 https://ip-api.com
+ip-api.com##.header
+ip-api.com##.stick.navbar-dark.navbar-expand-lg.navbar
+ip-api.com##.mb-0.section-header
+ip-api.com##section.pt-3.section:nth-of-type(2)
+ip-api.com##.py-9.footer
+
+! 2021-10-03 https://ipapi.com
+ipapi.com##.inline
+ipapi.com###more_information
+ipapi.com##.showoff
+ipapi.com##.clients
+ipapi.com##.response_features
+ipapi.com##body > div > .cta
+ipapi.com##footer
+ipapi.com##.index.header
+
+! 2021-10-03 https://fastclick.to
+fastclick.to##.mb-xl-7.mb-5
+fastclick.to##.py-lg-6.py-4.footer
+fastclick.to##.mb-3.text-center.h2
+fastclick.to##.py-lg-5.py-3.header > .container > .align-items-center.row
+fastclick.to##.mb-lg-6.mb-4.text-white.download-page
+fastclick.to##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
+fastclick.to##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
+
 ! 2021-09-29 https://www.showmyip.com
 www.showmyip.com##.bannerad
 www.showmyip.com###content > p
