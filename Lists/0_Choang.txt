@@ -1,4 +1,4 @@
-#PhienBan___211001b
+#PhienBan___211003a
 time-a.timefreq.bldrdoc.gov	time2.google.com
 
 #___CoBac_____________________________________________
@@ -68,7 +68,6 @@ vozforum.org				voz.vn
 *.vienthammynevada.com		t.co
 *.metramall.com				t.co
 *.khangcotdonvn				t.co
-*.dyndns.org				t.co
 *.pluso.ru					t.co
 *.bnc.lt					t.co
 *.kochava.com				t.co
