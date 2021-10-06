@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 211004a
+! Version: 211006a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,129 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-10-05 https://checkip.com.vn
+checkip.com.vn###sidebar
+checkip.com.vn###footer
+checkip.com.vn###hat
+
+! 2021-10-05 https://www.checkip.org
+www.checkip.org##.screenshot
+www.checkip.org###ft
+www.checkip.org###hd
+
+! 2021-10-05 https://kiemtraip.com
+kiemtraip.com##[href="raw.php"]
+kiemtraip.com##[href="dns.php"]
+kiemtraip.com##[href^="https://hostingviet.vn/vps-starter-gia-re"]
+kiemtraip.com##[href^="https://hostingviet.vn/hosting-gia-re"]
+kiemtraip.com##font:nth-of-type(1)
+
+! 2021-10-05 https://ip-api.com
+ip-api.com##.header
+ip-api.com##.stick.navbar-dark.navbar-expand-lg.navbar
+ip-api.com##.mb-0.section-header
+ip-api.com##.section-header
+ip-api.com##.py-9.footer
+ip-api.com##section.pt-3.section:nth-of-type(2)
+
+! 2021-10-05 https://tools.keycdn.com
+tools.keycdn.com##.py-7
+tools.keycdn.com##.py-6.bg-light
+tools.keycdn.com##.bg-dark--removed.navbar-light.bg-white.navbar-expand-md.navbar--fixed.navbar
+tools.keycdn.com##.pb-6.pt-9.text-white.bg-dark
+tools.keycdn.com##.navbar-dark.bg-dark.navbar-expand-md.navbar--static.navbar
+tools.keycdn.com##.mt-col-sidebar.col-md-9.col-lg-8 > h1
+tools.keycdn.com##.mb-4.line-height-headings.font-weight-semi-bold.text-muted.text-uppercase.small
+tools.keycdn.com##div.col-md-6:nth-of-type(2)
+tools.keycdn.com##div.col-md-6:nth-of-type(1)
+tools.keycdn.com##.mt-col-sidebar.col-md-9.col-lg-8 > p
+tools.keycdn.com###ip-location-finder-faq
+
+! 2021-10-05 https://whatismyipaddress.com
+whatismyipaddress.com##.fl-node-5db9cbfd898a2.fl-row-bg-none.fl-row-fixed-width.fl-row
+whatismyipaddress.com##.fl-node-5d8e8bfe4bb23.fl-row-bg-none.fl-row-fixed-width.fl-row
+whatismyipaddress.com##.wipa-home-page-tools.fl-node-5d8e8cd141d27.fl-row-bg-color.fl-row-full-width.fl-row
+whatismyipaddress.com##.fl-page-footer-wrap
+whatismyipaddress.com##.fl-node-5d8e3a5751cdb.fl-row-bg-none.fl-row-fixed-width.fl-row
+whatismyipaddress.com##.call-to-action
+whatismyipaddress.com##.desktop.map-wrapper > .text
+
+! 2021-10-05 https://whoer.net
+whoer.net##.section_plans.section_blue.section
+whoer.net##.section_white.section_ip-check.section
+whoer.net##.section_about.section_white.section
+whoer.net##.footer
+whoer.net##.main-ip-info__anonimity
+whoer.net##.header__background
+
+! 2021-10-05 https://ip.sanvu88.net
+ip.sanvu88.net###footer
+ip.sanvu88.net##h1
+
+! 2021-10-05 https://www.iplocation.net
+www.iplocation.net###wrapper
+www.iplocation.net##div.row:nth-of-type(3)
+www.iplocation.net##.col_4_of_12.col
+www.iplocation.net##.col_12_of_12.col > div
+www.iplocation.net##.feedback-row.row
+www.iplocation.net##.col_12_of_12.col > p
+www.iplocation.net###footer
+www.iplocation.net###copyright
+www.iplocation.net##.page_title
+www.iplocation.net##.col_12_of_12.col > h3
+www.iplocation.net##td > [href="/go/hide-ip-with-vpn"]
+
+! 2021-10-05 https://www.ip2location.com
+www.ip2location.com##div.col-sm-6.col-md-6:nth-of-type(3)
+www.ip2location.com###sign-up
+www.ip2location.com##div.col-sm-6.col-md-6 > .clearfix
+www.ip2location.com##.pull-right.btn-group
+www.ip2location.com##.margin-top-20.alert-info.alert
+www.ip2location.com##div.col-sm-6 > .alert-info.alert
+www.ip2location.com##h1
+
+! 2021-10-05 https://iplocation.com
+iplocation.com##.top-row-container
+iplocation.com###footer
+
+! 2021-10-05 https://checkip.thaiware.com
+checkip.thaiware.com##.haeder_is_set
+checkip.thaiware.com##[src="images/checkip_header.jpg"]
+checkip.thaiware.com##.header-block
+checkip.thaiware.com##span:nth-of-type(1)
+checkip.thaiware.com###search_ip_form
+checkip.thaiware.com###container > div > table > tbody
+checkip.thaiware.com##div:nth-of-type(15)
+checkip.thaiware.com##div:nth-of-type(13)
+checkip.thaiware.com###container > div > div > div > div
+checkip.thaiware.com##hr:nth-of-type(1)
+checkip.thaiware.com##hr:nth-of-type(2)
+checkip.thaiware.com##span:nth-of-type(3)
+checkip.thaiware.com##div > [src="https://images.thaiware.com/ico_speed_test.gif"]
+checkip.thaiware.com##.adsbygoogle
+checkip.thaiware.com##.title_right
+||checkip.thaiware.com/images/checkip_background.jpg$image
+
+! 2021-10-04 https://voz.vn
+||voz.vn/data/avatars/*/1713/1713887.jpg$image
+
+! 2021-10-04 https://phebinhvanhoc.com.vn
+phebinhvanhoc.com.vn##.ai-center-v.ai-center-h.ai-viewport-2.ai-viewport-1.code-block-2.code-block
+
+! 2021-10-04 https://financemonk.net
+financemonk.net##.modalpop
+financemonk.net##.footer
+financemonk.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
+financemonk.net##.mb-4.m-0.sharetabs > ul > li
+financemonk.net##.text-center.mt-5
+
+! 2021-10-05 https://www.coingecko.com
+www.coingecko.com##.offset-lg-8.mb-md-4.fixed-bottom
+www.coingecko.com##div.ad-spacer.my-2.tw-items-center.tw-justify-center.row:nth-of-type(2)
+
+! 2021-10-05 https://coinmarketcap.com
+coinmarketcap.com##.cmc-cookie-policy-banner.eMbWzq.sc-17ygyfw-0
+
 ! 2021-10-02 https://voz.vn
 ||voz.vn/data/avatars/m/1733/1733063.jpg$image
 ||camo.voz.tech/f68f2cce7900e7bcbcfdfb5d2d9fd81a9d835243/68747470733a2f2f692e696d6775722e636f6d2f786431483873532e6a7067/$image
