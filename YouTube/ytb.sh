@@ -1,5 +1,5 @@
 #!/bin/bash
-PhienBan="210910a"
+PhienBan="211007a"
 
 # Script chặn quảng cáo của YouTube bằng Pi-Hole
 
@@ -165,7 +165,7 @@ function CheckPiHole() {
 	sslcfg=$(cat /etc/lighttpd/*.conf | grep 443 | sed 's/.*://; s/".*//')
 	if [ -z ${sslcfg} ]; then
 		InRa "${TgNG} PiHole chưa được cấu hình SSL!!!"
-		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslcfg}"; exit 1
+		InRa "${TgTT} Tham khảo cấu hình tại:\n ${sslu}"; exit 1
 	else
 		InRa "${TgOK} PiHole đã bật ${MauXanh}SSL${MauXam}"
 	fi
