@@ -1,4 +1,4 @@
-#PhienBan___211003a
+#PhienBan___211010a
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -25,6 +25,11 @@ hanqiweb.co
 sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
+trackonomics.net
+aaxdetect.com
+firstimpression.io
+dynamicyield.com
+company-target.com
 smartadnetwork.net
 protoolactive.com
 procrackserial.com
@@ -1235,7 +1240,6 @@ an.dongphim.net
 pingdom.net
 adform.net
 daum.net
-wpc.v0cdn.net
 wpc.kappacdn.net
 cs283.wpc.teliasoneracdn.net
 cs126.wpc.teliasoneracdn.net
@@ -1568,6 +1572,13 @@ xunyou.*
 *.ucweb.*
 
 #___MicroSoft__________________________________________________________________
+g.live.com
+settings-win.data.microsoft.com
+web.vortex.data.microsoft.com
+target.microsoft.com
+wcpstatic.microsoft.com
+events.data.microsoft.com
+c1.microsoft.com
 data.microsoft.com
 appcenter.ms
 insitez.blob.core.windows.net
