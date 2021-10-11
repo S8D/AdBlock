@@ -1,4 +1,4 @@
-#PhienBan___211010a
+#PhienBan___211011a
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -1656,7 +1656,6 @@ analytics.google.com
 marketingplatform.google.com
 plus.url.google.com
 s0-2mdn-net.l.google.com
-gstaticadssl.l.google.com
 pagead-googlehosted.l.google.com
 gg.google.com
 adservice.google.com
