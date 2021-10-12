@@ -1,4 +1,4 @@
-#PhienBan___211011a
+#PhienBan___211013a
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -1706,7 +1706,6 @@ baomoi.tts.zalo.ai
 events.zaloapp.com
 store*zalo
 *page*zalo
-polyfill.io
 zplayer.trk.zapps.vn
 zplayer-trk.zdn.vn
 *zpg.zdn.vn
