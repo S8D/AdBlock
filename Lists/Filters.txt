@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 211006a
+! Version: 211016a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,36 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-10-05 https://coinmarketcap.com
+coinmarketcap.com##.iIaJEG.bywovg-2
+
+! 2021-10-06 https://talking.vn
+talking.vn###popup-modal
+talking.vn##.show.modal-backdrop
+
+! 2021-10-07 https://tecadmin.net
+tecadmin.net##.cc-color-override-1827372716.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
+tecadmin.net##.a-wrap-5.a-wrap-base.a-wrap
+
+! 2021-10-07 https://voz.vn
+||camo.voz.tech/06f2d50b0a13a490dbfcfa751dc656d7955837e9/68747470733a2f2f692e696d6775722e636f6d2f6436677161514c2e706e67/$image
+||camo.voz.tech/1aeec54eaa1d164018a6ba7e42346ba44f093255/68747470733a2f2f692e696d6775722e636f6d2f454f706e6d736b2e706e673f31/$image
+||camo.voz.tech/8675ecf6975396b0c8f9642a67790321ab491389/687474703a2f2f692e696d6775722e636f6d2f465937653655312e676966/$image
+||voz.vn/data/avatars/*/1714/1714095.jpg$image
+||voz.vn/data/avatars/m/1699/1699452.jpg$image
+||voz.vn/data/avatars/*/1680/1680897.jpg$image
+||voz.vn/data/avatars/m/27/27028.jpg$image
+||voz.vn/data/avatars/*/62/62985.jpg$image
+||voz.vn/data/avatars/*/39/39727.jpg$image
+
+
+! 2021-10-15 https://askubuntu.com
+askubuntu.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2021-10-16 https://phimnhua.com
+||phimnhua.com/ads/*$media,1p
+
+
 ! 2021-10-05 https://checkip.com.vn
 checkip.com.vn###sidebar
 checkip.com.vn###footer
