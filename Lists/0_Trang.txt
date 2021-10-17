@@ -1,4 +1,4 @@
-#PhienBan___211001b
+#PhienBan___211018a
 
 #___TongHop________________________________________________________________
 1drv.ms
@@ -27,6 +27,10 @@ ftp.sjtu.edu.cn
 ftp.tsukuba.wide.ad.jp
 koolshare.cn
 metric.gstatic.com
+otc-api-hk.eiijo.cn
+otc-wss.eiijo.cn
+mirrors.skyshe.cn
+mirrors.bupt.edu.cn
 mirror.bjtu.edu.cn
 mirror.hust.edu.cn
 mirror.lzu.edu.cn

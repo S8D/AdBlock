@@ -1,4 +1,4 @@
-#PhienBan___211016a
+#PhienBan___211018a
 
 #___Apple______________________________________________________________________
 cstat.apple.com
@@ -25,6 +25,8 @@ hanqiweb.co
 sentry.mservice.io
 
 #___Tổng-Hợp___________________________________________________________________
+alb.reddit.com
+litix.io
 trackonomics.net
 aaxdetect.com
 firstimpression.io
@@ -1284,7 +1286,6 @@ hsleadflows.net
 comscoredirect.net
 typekit.net
 dm-event.net
-footprint.net
 d2k03kvdk5cku0.cloudfront.net
 d2bnxibecyz4h5.cloudfront.net
 dezf3o8j9jdt6.cloudfront.net
