@@ -1,15 +1,17 @@
-#PhienBan___210907a
+#PhienBan___211102a
 
 #___Apple______________________________________________________________________
-mesu.apple.com
-securemetrics.apple.com
-xp.apple.com
-ocsp.apple.com
-metrics.icloud.com
-mesu.g.aaplimg.com
-smoot.apple.com
-iadsdk.apple.com
-idiagnostics.apple.com
+#mesu.apple.com
+#securemetrics.apple.com
+#xp.apple.com
+#ocsp.apple.com
+#metrics.icloud.com
+#mesu.g.aaplimg.com
+#smoot.apple.com
+#iadsdk.apple.com
+#idiagnostics.apple.com
+#e7876.dscg.akamaiedge.net
+#e8218.dscb1.akamaiedge.net
 
 #___Tổng-Hợp___________________________________________________________________
 appcenter.ms
@@ -222,8 +224,6 @@ comscore.net
 ciksolre.net
 beusable.net
 clicktale.net
-e7876.dscg.akamaiedge.net
-e8218.dscb1.akamaiedge.net
 scontent.webcollage.net
 service.game-mode.net
 cdn.krxd.net

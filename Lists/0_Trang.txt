@@ -2,6 +2,7 @@
 
 #___TongHop________________________________________________________________
 aliexpress.com
+i.alicdn.com
 ae01.alicdn.com
 1drv.ms
 32dc7a4c-ae02-4b9d-8dea-ecced96c9cad.cloudapp.net

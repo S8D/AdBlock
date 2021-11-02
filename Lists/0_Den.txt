@@ -16,6 +16,8 @@ iadsdk.apple.com
 idiagnostics.apple.com
 doh.dns.apple.com
 doh.dns.apple.com.v.aaplimg.com
+e8218.dscb1.akamaiedge.net
+e7876.dscg.akamaiedge.net
 
 #___Tiền-Ảo____________________________________________________________________
 log.bntrace.com
@@ -1204,8 +1206,6 @@ izatcloud.net
 cdn.krxd.net
 service.game-mode.net
 scontent.webcollage.net
-e8218.dscb1.akamaiedge.net
-e7876.dscg.akamaiedge.net
 clicktale.net
 beusable.net
 ciksolre.net
