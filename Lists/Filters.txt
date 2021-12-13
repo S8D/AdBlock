@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 211018b
+! Version: 211213a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,44 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-10-17 https://vn.tradingview.com
+vn.tradingview.com##.location-bottom-left-1j0He64l.toast-positioning-wrapper-1j0He64l
+
+! 2021-10-18 https://vi.aliexpress.com
+vi.aliexpress.com##.product-main
+
+! 2021-10-19 https://coin68.com
+coin68.com##.external.ads_image.adlink
+
+! 2021-10-19 https://www.file-upload.com
+www.file-upload.com##header
+www.file-upload.com##footer
+www.file-upload.com##.comparison-row.row
+www.file-upload.com##.mnbt1.btn-success.btn-xs.btn
+www.file-upload.com##.stdt
+www.file-upload.com##.default-ttl
+
+! 2021-10-22 https://coin68.com
+coin68.com##[href="https://coin68.com/author/jane-luu/"] > .photo.avatar-500.avatar
+
+! 2021-10-27 https://tapchibitcoin.io
+tapchibitcoin.io##.lepopup-fadeIn.lepopup-animated.lepopup-popup-overlay
+tapchibitcoin.io##.lepopup-popup-container
+
+! 2021-10-27 https://gialaipc.com.vn
+gialaipc.com.vn##.widget-area
+
+! 2021-11-07 https://serverfault.com
+serverfault.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2021-11-11 https://voz.vn
+||voz.vn/data/avatars/*/1433/1433882.jpg$image
+
+! 2021-11-13 https://stackoverflow.com
+stackoverflow.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2021-11-27 https://www.bbc.com
+www.bbc.com##.e1nbsi9l0.bbc-n7zdg2
 
 ! 2021-10-06 https://talking.vn
 talking.vn###popup-modal
@@ -2152,6 +2190,47 @@ yeuphimmoi.com##.balloon-block
 
 !#########################################################################################################
 !___vOz____________________________________________
+||2.pik.vn/202189e11b46-8926-4870-a789-feaa31f15d56.jpg$image
+||camo.voz.tech/40a252a1a3055fee815adf9ed57d35d41e527f38/68747470733a2f2f692e696d6775722e636f6d2f527437453874582e706e67/$image
+||camo.voz.tech/4127cf54099e931ee853ef5b7e16afa35a1765cf/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3538383336373838323532323732323331332f3931323539353631343634353234383030302f746d6c2e676966/$image
+||camo.voz.tech/616dd5c88d2b7b1b284674d2c624daef061f7e07/68747470733a2f2f692e696d6775722e636f6d2f326b7161645a392e706e67/$image
+||camo.voz.tech/684ba2cf9bd997d0f0ea09cf7872e8c744a077a4/68747470733a2f2f692e696d6775722e636f6d2f6c42417a6146732e706e67/$image
+||camo.voz.tech/9bbae6b2288bb4b4250767b6e97d1bd241f0d54f/68747470733a2f2f692e696d6775722e636f6d2f4d394c4f774d482e706e67/$image
+||camo.voz.tech/9ff038798fe532d7512102da660ada8b91d7a4a4/68747470733a2f2f692e696d6775722e636f6d2f7a38536d4c384b2e706e67/$image
+||camo.voz.tech/a396f94a5ad451ce5184230296717627d4803b76/68747470733a2f2f692e696d6775722e636f6d2f543278716541492e676966/$image
+||camo.voz.tech/a76062a34fd311a37d4f15f79734349ff26e9f98/68747470733a2f2f692e696d6775722e636f6d2f677137743332432e706e67/$image
+||camo.voz.tech/c93a99f0a7fa52474220212787a3a589419aa081/68747470733a2f2f692e696d6775722e636f6d2f646f3736574c562e706e67/$image
+||camo.voz.tech/d102bb40cbe8cb12702e2d81fb0acb4c77bb7d52/68747470733a2f2f692e696d6775722e636f6d2f4b5163346655632e6a706567/$image
+||i.imgur.com/bRac4Af.png$image
+||i.imgur.com/l2L4p5D.gif$image
+||i.imgur.com/mMOqr4q.png$image
+||i.imgur.com/OG0lsXv.png$image
+||i.imgur.com/TAwI4i0.gif$image
+||voz.vn/attachments/121130899_1352059718525804_2399013489701883194_o-jpg.843443/$image
+||voz.vn/attachments/1635689988341-png.843473/$image
+||voz.vn/attachments/b1bba84b-4446-4c0f-9c99-67c18ae9de06-jpg.843534/$image
+||voz.vn/attachments/e88d38be-cd83-412e-ab92-cd8ccb44a957-jpeg.843419/$image
+||voz.vn/data/avatars/*/124958.jpg$image
+||voz.vn/data/avatars/*/1309642.jpg$image
+||voz.vn/data/avatars/*/1422742.jpg$image
+||voz.vn/data/avatars/*/1465327.jpg$image
+||voz.vn/data/avatars/*/1499814.jpg$image
+||voz.vn/data/avatars/*/1636969.jpg$image
+||voz.vn/data/avatars/*/1686152.jpg$image
+||voz.vn/data/avatars/*/1690848.jpg$image
+||voz.vn/data/avatars/*/1690963.jpg$image
+||voz.vn/data/avatars/*/1696448.jpg$image
+||voz.vn/data/avatars/*/1701060.jpg$image
+||voz.vn/data/avatars/*/1709648.jpg$image
+||voz.vn/data/avatars/*/1729914.jpg$image
+||voz.vn/data/avatars/*/1736758.jpg$image
+||voz.vn/data/avatars/*/1772596.jpg$image
+||voz.vn/data/avatars/*/305212.jpg$image
+||voz.vn/data/avatars/*/772822.jpg$image
+||voz.vn/data/avatars/*/1684156.jpg$image
+||voz.vn/data/avatars/*/1701436.jpg$image
+||voz.vn/data/avatars/*/1778682.jpg$image
+||voz.vn/data/avatars/*/1718358.jpg$image
 vn-z.vn##.message-footer > .tagList--thread-39585.tagList
 vn-z.vn##.thread-actionFooter
 voz.vn###div-gpt-ad-1585123925672-0
