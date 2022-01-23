@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 211228b
+! Version: 220124a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,76 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2022-01-19 https://ngochoangit.net
+ngochoangit.net##.pum-active.click_open.auto_open.popmake-overlay.pum-theme-enterprise-blue.pum-theme-144737.pum-overlay.pum
+
+! 2022-01-19 https://download.baominh.tech
+download.baominh.tech##.navbar-default.navbar
+download.baominh.tech###cookie-pop
+download.baominh.tech##footer
+download.baominh.tech##.box-main > h4
+
+! 2022-01-19 https://dl.tech-story.net
+dl.tech-story.net##.navbar-default.navbar
+dl.tech-story.net###cookie-pop
+dl.tech-story.net##.blog-item
+dl.tech-story.net##footer
+dl.tech-story.net##h3 > span
+dl.tech-story.net##.box-main > h4
+dl.tech-story.net##ins.adsbygoogle:nth-of-type(3)
+dl.tech-story.net##ins.adsbygoogle:nth-of-type(4)
+dl.tech-story.net##ins.adsbygoogle:nth-of-type(1)
+dl.tech-story.net##ins.adsbygoogle:nth-of-type(2)
+dl.tech-story.net##ins.adsbygoogle:nth-of-type(5)
+dl.tech-story.net##ins.adsbygoogle:nth-of-type(6)
+
+! 2022-01-19 https://mc-corp.vn
+mc-corp.vn##.sidebar-column-primary.sidebar-column.col-sm-4
+
+! 2022-01-19 https://hoamitech.com
+||hoamitech.com/wp-content/uploads/2021/09/tai-khoan-fshare-vip-2019.jpg$image
+
+! 2022-01-20 https://35express.org
+35express.org##.sidebar
+
+! 2022-01-21 https://opensourcelibs.com
+opensourcelibs.com###flamelab-convo-widget
+
+||https://lh3.googleusercontent.com/-3qk5J_yYj0Q/YaTYTb31kfI/AAAAAAAAAmU/T6sTDlhNqpY8lCPt8nNxwYt2pTjQ8qoYQCLcBGAsYHQ/h120/APP-logos.png$image
+
+! 2022-01-23 https://raspberrypi.stackexchange.com
+raspberrypi.stackexchange.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2022-01-23 https://superuser.com
+superuser.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2022-01-23 https://mega4up.org
+mega4up.org##.app-header
+mega4up.org##.app-footer
+mega4up.org##.text-center.py-3.footer-copyright
+mega4up.org##.compare_table.row
+mega4up.org##.mb-3.list-group-flush.list-group
+mega4up.org##.section-title > .title
+
+! 2022-01-23 https://uploadev.org
+uploadev.org##center
+
+! 2022-01-23 https://hexupload.net
+hexupload.net##[href="https://hexupload.net/premium.html"]
+hexupload.net##h2
+
+! 2022-01-23 https://mega4up.org
+mega4up.org##.text-center.mb-4
+mega4up.org##.section-title
+mega4up.org##.container > .mb-3
+mega4up.org##.d-md-block.d-none.my-3
+mega4up.org##.col-xl-8 > .text-center.my-3
+mega4up.org##.col-xl-4 > .text-center.my-3
+mega4up.org##.mb-4.card > .card
+mega4up.org##.card-body > .mb-3.row
+mega4up.org##.card-body > .desc
+mega4up.org##.text-center.mb-3 > .adsbygoogle
+
 ! 2021-12-28 https://kbytcq.khambenh.gov.vn
 kbytcq.khambenh.gov.vn##div.mt-1.col-12 > .mt-1.font-weight-bold
 kbytcq.khambenh.gov.vn##.px-1.khaibaoyte.container > div.row > .text-center.col-12
