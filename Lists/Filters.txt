@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220124a
+! Version: 220127a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,21 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2022-01-23 https://hangmaytinh.com
+hangmaytinh.com##.ulp-window-container
+hangmaytinh.com##.ulp-fadeIn.ulp-animated.ulp-overlay
+
+! 2022-01-23 https://www.spectra.de
+www.spectra.de##.cookie_wrapper
+
+! 2022-01-24 https://link1s.com
+link1s.com##footer
+link1s.com##.navbar-default.navbar
+link1s.com##h4
+
+! 2022-01-24 https://www.kaspersky.com
+www.kaspersky.com##.CookieBanner_bottom__36qCi.CookieBanner_dark__3fmGK.CookieBanner_transparent__2swlH.CookieBanner_notificationBar__1Bptx
+
 ! 2022-01-19 https://ngochoangit.net
 ngochoangit.net##.pum-active.click_open.auto_open.popmake-overlay.pum-theme-enterprise-blue.pum-theme-144737.pum-overlay.pum
 
