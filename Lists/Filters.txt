@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220127a
+! Version: 220206a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,20 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2022-01-25 https://www.mexc.com
+www.mexc.com##.ant-modal-root
+
+! 2022-02-05 https://ephimmoi.net
+||bit.ly$popup,domain=ephimmoi.net|phimmoichill.net
+||ephimmoi.net/wp-content/uploads/2021/11/*logo*.png$image
+
+! 2022-02-06 https://phimmoichill.net
+phimmoichill.net##.block-note
+phimmoichill.net###goadv
+
+! 2022-02-06 https://biluu.tv
+biluu.tv###popup_banner_beta
+
 ! 2022-01-23 https://hangmaytinh.com
 hangmaytinh.com##.ulp-window-container
 hangmaytinh.com##.ulp-fadeIn.ulp-animated.ulp-overlay
