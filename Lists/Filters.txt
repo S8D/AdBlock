@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220206a
+! Version: 220322a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,232 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+! 2021-11-19 https://vcc-group.vn
+vcc-group.vn##.giuseart-nav
+
+! 2021-11-25 https://kbytcq.khambenh.gov.vn
+kbytcq.khambenh.gov.vn##.px-1.khaibaoyte.container > div.row
+
+! 2021-11-29 https://phukienhqt.vn
+phukienhqt.vn##.suntory-alo-green.suntory-alo-phone
+phukienhqt.vn##.theblogwidgets
+
+! 2021-11-30 https://tantrieuexpress.com
+tantrieuexpress.com##.social-button
+
+! 2021-12-04 https://vuighe.net
+vuighe.net##.banner-masthead.masthead
+
+! 2021-12-29 https://www.tongdaivnpt24h.vn
+www.tongdaivnpt24h.vn###uhchatmobile
+www.tongdaivnpt24h.vn##.suntory-alo-green.suntory-alo-phone
+
+! 2021-12-29 https://vnptnethcm.com
+vnptnethcm.com##.active.lg.right.arcontactus-message.arcontactus-widget
+
+! 2021-12-29 https://capquangvnpt24h.com
+capquangvnpt24h.com##.active.lg.right.arcontactus-message.arcontactus-widget
+
+! 2022-02-05 https://ephimmoi.net
+||ephimmoi.net/wp-content/themes/halimmovies/media/img/body_bg.gif$image
+||ephimmoi.net/wp-content/uploads/2021/11/APP-logo-.png$image
+||ephimmoi.net/wp-content/themes/halimmovies/media/img/item_bgg.gif$image
+
+! 2022-02-13 https://www.tiktok.com
+www.tiktok.com##.middle.guide-container.jsx-1363823401 > .info.jsx-1363823401
+www.tiktok.com##.middle.guide-container.jsx-1363823401 > .btns.jsx-1363823401
+www.tiktok.com##.img-container.jsx-1363823401
+www.tiktok.com##.footer-guide.jsx-1812151264
+||p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/ee72a1962b16431da08b7b62c3fd0887$image
+||p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/f3b1ae26e9bb4bbc83d8e50f01b64dbb$image
+||p16-sign-sg.tiktokcdn.com/obj/*$image
+
+! 2022-02-14 https://nikita.com.vn
+nikita.com.vn##.support_reg
+
+! 2022-03-07 https://www.tapchinuocduc.com
+www.tapchinuocduc.com###sp-footer2
+
+! 2022-03-08 https://vhea.org.vn
+vhea.org.vn##.cta-action
+vhea.org.vn###ftwp-postcontent > .ads-top-page.sp-ads
+vhea.org.vn##.d-md-none.d-sm-none.d-flex.action-mobile
+vhea.org.vn##div.ads-top-page.sp-ads:nth-of-type(2)
+vhea.org.vn##.show.single-addthis
+vhea.org.vn##.sticky.widget-form.widget
+vhea.org.vn##.page-footer
+vhea.org.vn##.ads-sidebar-2.ads-sidebar.sp-ads
+vhea.org.vn##div.ads-top-page.sp-ads:nth-of-type(6)
+vhea.org.vn##.kksr-align-left.kksr-valign-bottom.kk-star-ratings
+vhea.org.vn##.clearfix.comments-area
+
+! 2022-03-08 https://giaminhgroup.com
+giaminhgroup.com###footer
+
+! 2022-03-09 https://blogtienao.com
+blogtienao.com##.hustle-animation-stopped.hustle-show.hustle-image-only.module_id_3.hustle_module_id_3.hustle-palette--midnight.hustle-popup.hustle-ui
+
+! 2022-02-02 https://deviwiki.com
+deviwiki.com###aterrabar
+
+! 2022-02-02 https://voz.vn
+||statics.voz.tech/data/avatars/*/130/130590.jpg$image
+
+! 2022-02-04 https://www.binance.com
+www.binance.com###onetrust-consent-sdk
+
+! 2022-02-18 https://blogtienao.com
+blogtienao.com##.hustle-animation-stopped.hustle-show.hustle-image-only.module_id_3.hustle_module_id_3.hustle-palette--midnight.hustle-popup.hustle-ui
+
+! 2022-02-22 https://phim.vkoolz.net
+phim.vkoolz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
+
+! 2022-02-22 https://trainghiemso.vn
+trainghiemso.vn##.jnews_content_inline_ads.jeg_ad_article.jeg_ad
+
+! 2022-02-22 https://mxtoolbox.com
+mxtoolbox.com###ctl00_divFooter
+
+! 2022-02-22 https://www.checkip.hk
+www.checkip.hk###ADbanner
+www.checkip.hk##h2
+www.checkip.hk##header > p
+www.checkip.hk##footer
+www.checkip.hk##label:nth-of-type(1)
+
+! 2022-02-22 https://vietbeginner.com
+vietbeginner.com##.mts-sidebar-sidebar.c-4-12.sidebar
+vietbeginner.com###site-footer
+vietbeginner.com###header
+vietbeginner.com###site-header
+vietbeginner.com##.rank-math-breadcrumb
+vietbeginner.com##.single_page > header
+
+! 2022-02-22 https://thesafety.us
+thesafety.us##.clearfix.fixed.header
+thesafety.us##div.col-md-12.main:nth-of-type(2)
+thesafety.us##.col-md-3.main
+thesafety.us##.pv-40.dark-bg
+thesafety.us##.footer-inner
+thesafety.us##.page-wrapper > .clearfix
+||thesafety.us/template/images/pages/main-slider5.jpg$image
+thesafety.us##.__not_auth.clearfix.padding-bottom-clear.pv-20 > .container > .row > .col-md-12.main
+thesafety.us##.feedback-create-button-fix
+
+! 2022-02-22 https://www.ip2location.com
+www.ip2location.com##div:nth-of-type(4)
+
+! 2022-02-22 https://ip.giamping.com
+ip.giamping.com##div.container > p
+ip.giamping.com##h3
+ip.giamping.com###adb-enabled
+
+! 2022-02-22 https://www.geolocation.com
+www.geolocation.com##.text-center.col-md-3
+www.geolocation.com##.header
+www.geolocation.com##div.margin-bottom-40:nth-of-type(1)
+www.geolocation.com##div.margin-bottom-40 > h2
+www.geolocation.com##div.margin-bottom-40 > p
+www.geolocation.com##div.margin-bottom-40.row:nth-of-type(5)
+www.geolocation.com##div.margin-bottom-40.row:nth-of-type(6)
+www.geolocation.com##.footer-v1
+
+! 2022-02-22 https://phim.vkoolz.net
+phim.vkoolz.net##.block-keywords
+
+! 2022-02-22 https://kindlehanoi.vn
+kindlehanoi.vn##.fancybox-overlay-fixed.fancybox-overlay
+
+! 2022-02-22 https://trustweb.vn
+trustweb.vn##.mfp-ready.mfp-auto-cursor.mfp-close-btn-in.mfp-wrap
+trustweb.vn##.mfp-ready.mfp-bg
+
+! 2022-02-23 https://phim.vkoolz.net
+phim.vkoolz.net##.block-comments.page-single.block-wrapper
+
+! 2022-02-23 https://bitpay.com
+bitpay.com##.gdpr-component
+
+! 2022-02-23 https://shop.trezor.io
+shop.trezor.io###cookie-bar
+
+! 2022-02-23 https://wiki.tino.org
+wiki.tino.org###ftwp-postcontent > .jnews_content_inline_parallax_ads.jeg_ad_article.jeg_ad
+wiki.tino.org##.brb-collection-widget.widget
+wiki.tino.org##.widget_jnews_module_block_29.widget
+wiki.tino.org##.footer-holder
+
+! 2022-02-23 https://marketingai.vn
+marketingai.vn##.pum-active.click_open.auto_open.pum-overlay-disabled.popmake-overlay.pum-theme-default-theme.pum-theme-49988.pum-overlay.pum
+marketingai.vn##.hotline-phone-ring-wrap
+
+! 2022-02-24 https://chiasenhac.vn
+||bluadz.com
+||chiasenhac.vn/sys/error_slow_bug$xhr,1p
+
+! 2022-02-24 https://www.asus.com
+www.asus.com###cookie-policy-info-bg
+
+! 2022-02-25 https://voz.vn
+||statics.voz.tech/data/avatars/*/39/39727.jpg$image
+
+! 2022-02-25 https://thebank.vn
+thebank.vn##.footer
+
+! 2022-02-25 https://chungkhoanviet.net
+chungkhoanviet.net##.td-footer-template-2.td-container-wrap.td-footer-wrapper
+chungkhoanviet.net##.comments-area
+chungkhoanviet.net##.td-container-wrap.td-sub-footer-container
+
+! 2022-02-26 https://www.browserling.com
+www.browserling.com###tool-description
+www.browserling.com###tool-announcement
+www.browserling.com##h2
+www.browserling.com###tool-fffff
+www.browserling.com###browser-window-top
+www.browserling.com###top-container
+
+! 2022-02-27 https://ichi.pro
+ichi.pro###notify-adblock
+
+! 2022-03-01 https://www.facebook.com
+www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4wl.p8dawk7l.abiwlrkh.l9j0dhe7.k77z8yql.qs9ysxi8.arfg74bv.n00je7tq.f1sip0of.esuyzwwr.i1ao9s8h.a8nywdso.qt6c0cv9.rz4wbd8a.jb3vyjys.hcukyx3x.oygrvhab.cxmmr5t8.kvgmc6g5.p7hjln8o.nhd2j8a9.rq0escxv.r7d6kgcz.e9989ue4.esr5mh6w.qu0x051f.g5ia77u1.oajrlxb2
+
+! 2022-03-09 https://billysoftacademy.com
+billysoftacademy.com###cookie-law-info-bar
+
+! 2022-03-12 https://voz.vn
+||statics.voz.tech/data/avatars/*/486/486784.jpg$image
+
+! 2022-03-15 https://voz.vn
+voz.vn##div.samCodeUnit:nth-of-type(3)
+voz.vn##div.samCodeUnit:nth-of-type(6)
+voz.vn##div.samCodeUnit:nth-of-type(9)
+voz.vn##div.samCodeUnit:nth-of-type(11)
+voz.vn##div.samCodeUnit:nth-of-type(13)
+
+! 2022-03-16 https://voz.vn
+||camo.voz.tech/ca27fc33e0e589855cff78a67dd27cb8bb6017f7/68747470733a2f2f692e696d6775722e636f6d2f544177493469302e676966/$image
+||camo.voz.tech/29017cdf4d1baf64cc37e06ede09d68247925cef/68747470733a2f2f692e696d6775722e636f6d2f6c324c347035442e676966/$image
+
+! 2022-03-17 https://www.bybit.com
+||api.ffbbbdc6d3c353211fe2ba39c9f744cd.com$xhr,domain=www.bybit.com
+
+! 2022-03-17 https://bybit.ada.support
+||bybit.ada.support/embed/modern/button/*/sentry.*.js$script
+
+! 2022-03-17 https://voz.vn
+||statics.voz.tech/data/avatars/*/1027/1027256.jpg$image
+
+! 2022-03-21 https://voz.vn
+||statics.voz.tech/data/avatars/*/1209/1209149.jpg$image
+
+! 2022-03-21 https://userupload.net
+||sharethis.com^
+
+! 2022-03-21 https://uploadrar.com
+uploadrar.com##.app-footer
+
 ! 2022-01-25 https://www.mexc.com
 www.mexc.com##.ant-modal-root
 
