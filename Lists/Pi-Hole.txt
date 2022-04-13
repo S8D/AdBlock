@@ -1,4 +1,4 @@
-#PhienBan___220413a
+#PhienBan___220413b
 
 #___Apple______________________________________________________________________
 #mesu.apple.com
@@ -14,8 +14,21 @@
 #e8218.dscb1.akamaiedge.net
 
 #___Tiền-Ảo____________________________________________________________________
-report.binance.im
+bnappzh.cc
+shyqxxy.com
+hanqiweb.net
+www.bnappzh.cc
+goodusahost.cn
+c.riskified.com
+www.bnappzh.com
+www.hanqiweb.co
 log.bntrace.com
+www.hanqiweb.red
+www.hanqiweb.net
+report.binance.im
+report.binance.gg
+static-file-1259603563.file.myqcloud.com
+domain-config-1259603563.file.myqcloud.com
 
 #___Tổng-Hợp___________________________________________________________________
 qc.zo88.org
