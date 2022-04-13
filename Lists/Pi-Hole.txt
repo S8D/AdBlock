@@ -1,4 +1,4 @@
-#PhienBan___220207a
+#PhienBan___220413a
 
 #___Apple______________________________________________________________________
 #mesu.apple.com
@@ -13,7 +13,17 @@
 #e7876.dscg.akamaiedge.net
 #e8218.dscb1.akamaiedge.net
 
+#___Tiền-Ảo____________________________________________________________________
+report.binance.im
+log.bntrace.com
+
 #___Tổng-Hợp___________________________________________________________________
+qc.zo88.org
+www.gearbest.com
+css.gbtcdn.com
+yggqolmmpdiybm.com
+breaking48times.com
+#
 #picsart.com
 appcenter.ms
 sentry-cdn.com
@@ -1502,7 +1512,7 @@ appsitemsuggest-pa.googleapis.com
 footprints-pa.googleapis.com
 chromefeedcontentsuggestions-pa.googleapis.com
 offlinepages-pa.googleapis.com
-geomobileservices-pa.googleapis.com
+#geomobileservices-pa.googleapis.com
 firebaseperusertopics-pa.googleapis.com
 dialercallinfolookup-pa.googleapis.com
 gmodules.com
@@ -1545,23 +1555,24 @@ fbcdn2.com
 
 #___VinaGau______________________________________________________________________
 px.za.zalo.me
-baomoi.tts.zalo.ai
-events.zaloapp.com
-polyfill.io
-zplayer.trk.zapps.vn
-zplayer-trk.zdn.vn
-n.zing.vn
-360game.vn
-qos-talk.123c.vn
-failover.zingmp3.vn
-log.zingmp3.vn
-failover.zaloapp.com
-jp.zaloapp.com
-setting.api.zaloapp.com
-getpage.api.zaloapp.com
-px.za.zaloapp.com
-stc.za.zaloapp.com
 sp.zalo.me
+baomoi.tts.zalo.ai
+stc.za.zaloapp.com
+px.za.zaloapp.com
+centralized.zaloapp.com
+getpage.api.zaloapp.com
+setting.api.zaloapp.com
+jp.zaloapp.com
+failover.zaloapp.com
+events.zaloapp.com
+log.zingmp3.vn
+failover.zingmp3.vn
+qos-talk.123c.vn
+360game.vn
+n.zing.vn
+zplayer-trk.zdn.vn
+zplayer.trk.zapps.vn
+polyfill.io
 
 #___3X_________________________________________________________________________
 allx.tv
