@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220415a
+! Version: 220416a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -8,7 +8,17 @@
 
 !___Tổng-Hợp_______________________________________
 35express.org##.sidebar
+@@||frontend-m.binance.cloud
+androidhost.org###footer
+androidhost.org##.download-boxes
+androidhost.org##div.adcnt:nth-of-type(1)
+androidhost.org##div.adcnt:nth-of-type(2)
+androidhost.org##div.adcnt:nth-of-type(3)
+androidhost.org##div.adcnt:nth-of-type(4)
+androidhost.org##h2:nth-of-type(3)
+androidhost.org##table:nth-of-type(3)
 anexia.com###cookie-opt-in
+ask.fm##.lightbox_overlay
 askubuntu.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
 bgp.tools##.js-footer.group
 billysoftacademy.com###cookie-law-info-bar
@@ -22,6 +32,7 @@ blogtruyenhinhfpt.com##.td-container-wrap.td-banner-wrap-full
 blogtruyenhinhfpt.com##.td-front-end-display-block.td-more-articles-box
 blogtruyenhinhfpt.com##.td_block_template_1.tdi_2_626.td-g-rec-id-content_top.td-g-rec
 blogtruyenhinhfpt.com##div.cf6e08077c9116300b2c5ffb6e1e6dfe:nth-of-type(3)
+buananetpbun.github.io###myModal
 capquangvnpt24h.com##.active.lg.right.arcontactus-message.arcontactus-widget
 checkip.com.vn###footer
 checkip.com.vn###hat
@@ -64,6 +75,7 @@ dl.tech-story.net##ins.adsbygoogle:nth-of-type(5)
 dl.tech-story.net##ins.adsbygoogle:nth-of-type(6)
 download.baominh.tech###cookie-pop
 download.baominh.tech##.box-main > h4
+download.baominh.tech##.link-description
 download.baominh.tech##.navbar-default.navbar
 download.baominh.tech##footer
 fpttelecom.info.vn##.active.md.right.arcontactus-message.arcontactus-widget
@@ -73,6 +85,9 @@ fpttelecom.info.vn##.nav-dark.hide-for-sticky.header-top
 fpttelecom.info.vn##.sp_modern_wrapper.gf_stylespro_wrapper._wrapper.gform_wrapper.gf_browser_unknown
 fpttelecom.online###uhchatmobile
 fpttelecom.online##.hotline-phone-ring-wrap
+getlink.tienichmaytinh.net###link-view > p
+getlink.tienichmaytinh.net##.navbar-default.navbar
+getlink.tienichmaytinh.net##footer
 gialaipc.com.vn##.widget-area
 giaminhgroup.com###footer
 hangmaytinh.com##.ulp-fadeIn.ulp-animated.ulp-overlay
@@ -145,6 +160,8 @@ iplocation.io##div.col-lg-6:nth-of-type(1)
 ipv6-test.com##.cc_container--open.cc_container.cc_banner
 ipv6-test.com##div.container > .hidden-xs
 ipv6-test.com##div.container:nth-of-type(5)
+kantan.vn###dict-summary
+kantan.vn###home-banner
 kbytcq.khambenh.gov.vn##.px-1.khaibaoyte.container > div.row
 kbytcq.khambenh.gov.vn##.px-1.khaibaoyte.container > div.row > .text-center.col-12
 kbytcq.khambenh.gov.vn##div.mt-1.col-12 > .mt-1.font-weight-bold
@@ -154,6 +171,11 @@ kiemtraip.com##[href^="https://hostingviet.vn/hosting-gia-re"]
 kiemtraip.com##[href^="https://hostingviet.vn/vps-starter-gia-re"]
 kiemtraip.com##font:nth-of-type(1)
 kindlehanoi.vn##.fancybox-overlay-fixed.fancybox-overlay
+krakenfiles.com###cc--main
+krakenfiles.com##.bg-lighter.nk-footer-fluid.nk-footer
+krakenfiles.com##.home-help-block.nk-block
+krakenfiles.com##.nk-block-head-lg.nk-block-head
+krakenfiles.com##.nk-header-fixed.is-light.nk-header-fluid.nk-header
 link1s.com##.navbar-default.navbar
 link1s.com##footer
 link1s.com##h4
@@ -211,6 +233,8 @@ tecadmin.net##.cc-color-override-1827372716.cc-right.cc-bottom.cc-theme-classic.
 thanhnien.vn###docbao-trungqua
 thanhnien.vn##.show.fade.modal-backdrop
 thebank.vn##.footer
+thehouseofportable.com###cookiePopup
+thehouseofportable.com##[href^="https://billing.purevpn.com/aff.php"]
 thesafety.us##.__not_auth.clearfix.padding-bottom-clear.pv-20 > .container > .row > .col-md-12.main
 thesafety.us##.clearfix.fixed.header
 thesafety.us##.col-md-3.main
@@ -255,6 +279,7 @@ vietbeginner.com###site-header
 vietbeginner.com##.mts-sidebar-sidebar.c-4-12.sidebar
 vietbeginner.com##.rank-math-breadcrumb
 vietbeginner.com##.single_page > header
+vinafix.com##.js-bottomFixTarget.u-bottomFixer
 vinfastauto.com###wrapper-cc
 vn.tradingview.com##.location-bottom-left-1j0He64l.toast-positioning-wrapper-1j0He64l
 vn.tradingview.com##.location-bottom-left-uEa3054V.toast-positioning-wrapper-uEa3054V
@@ -272,6 +297,7 @@ whoer.net##.footer
 whoer.net##.form-switch
 whoer.net##.header__background
 whoer.net##.main-ip-info__anonimity
+whoer.net##.popup-counter-deal__wrapper--fadeIn.popup-counter-deal__wrapper
 whoer.net##.section_about.section_white.section
 whoer.net##.section_plans.section_blue.section
 whoer.net##.section_white.section_ip-check.section
@@ -357,6 +383,8 @@ www.mediafire.com###cookie-accept-footer
 www.mexc.com##.ant-modal-root
 www.myip.com##.col-sm-12
 www.myip.com##.sidebar
+www.rfi.fr##.o-ad-container--with-background.o-ad-container--banner-top.o-ad-container
+www.samsung.com###header
 www.silisoftware.com##table
 www.spectra.de##.cookie_wrapper
 www.tapchinuocduc.com###sp-footer2
@@ -381,6 +409,7 @@ www.uptrends.com##section.v--narrowSpacing.o-section:nth-of-type(8)
 www.uptrends.com##section.v--noPaddingBottom.o-section:nth-of-type(1)
 www.uptrends.com##section.v--noPaddingBottom.o-section:nth-of-type(6)
 www.vaticannews.va##.header-main__nav-container > .socialMenu
+www.wimsbios.com##.cc-color-override--1360619034.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
 ||api.ffbbbdc6d3c353211fe2ba39c9f744cd.com$xhr,domain=www.bybit.com
 ||bit.ly$popup,domain=ephimmoi.net|phimmoichill.net
 ||bluadz.com
@@ -2692,19 +2721,26 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
 ||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
+||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
 ||statics.voz.tech/data/avatars/*/*/124958.jpg$image
 ||statics.voz.tech/data/avatars/*/*/130590.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
+||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1498634.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1671568.jpg$image
+||statics.voz.tech/data/avatars/*/*/1676983.jpg$image
+||statics.voz.tech/data/avatars/*/*/1677066.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1685162.jpg$image
+||statics.voz.tech/data/avatars/*/*/1691681.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
+||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
+||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
 ||statics.voz.tech/data/avatars/*/*/39727.jpg$image
 ||statics.voz.tech/data/avatars/*/*/486784.jpg$image
+||statics.voz.tech/data/avatars/*/*/62985.jpg$image
 ||statics.voz.tech/data/avatars/*/*/91433.jpg$image
-||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
 ||voz.vn/attachments/*.190397/$image
 ||voz.vn/attachments/*.218479/$image
 ||voz.vn/attachments/*.218481/$image
@@ -2716,10 +2752,12 @@ vozforums.com##div[style="line-height:80px; "]
 ||voz.vn/attachments/*.282843/$image
 ||voz.vn/attachments/*.288436/$image
 ||voz.vn/attachments/*.691087/$image
+||voz.vn/attachments/*.843419/$image
 ||voz.vn/attachments/*.843443/$image
 ||voz.vn/attachments/*.843473/$image
 ||voz.vn/attachments/*.843534/$image
-||voz.vn/attachments/*.843419/$image
+||voz.vn/attachments/*.968951/$image
+||voz.vn/attachments/*.968953/$image
 ||voz.vn/data/avatars/*.jpg?1583769468$image
 ||voz.vn/data/avatars/*.jpg?1583825436$image
 ||voz.vn/data/avatars/*.jpg?1583852384$image
