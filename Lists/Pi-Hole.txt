@@ -1,4 +1,4 @@
-#PhienBan___220413b
+#PhienBan___220413c
 
 #___Apple______________________________________________________________________
 #mesu.apple.com
@@ -1527,7 +1527,7 @@ chromefeedcontentsuggestions-pa.googleapis.com
 offlinepages-pa.googleapis.com
 #geomobileservices-pa.googleapis.com
 firebaseperusertopics-pa.googleapis.com
-dialercallinfolookup-pa.googleapis.com
+#dialercallinfolookup-pa.googleapis.com
 gmodules.com
 googletagservices.com
 googleadservices.com
