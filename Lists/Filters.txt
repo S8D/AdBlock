@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220416a
+! Version: 220530a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,6 +7,64 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org
+
+! 2022-05-18 https://www.toolaat.com
+www.toolaat.com###tool-description
+www.toolaat.com###top-container
+
+! 2022-05-18 https://voz.vn
+||statics.voz.tech/data/avatars/*/*/68693.jpg$image
+
+! 2022-05-18 http://link.codevn.net
+link.codevn.net###cookie-pop
+link.codevn.net##footer
+link.codevn.net##.text-left
+link.codevn.net##.navbar-default.navbar
+link.codevn.net###link-view > p
+
+! 2022-05-19 https://lookup.icann.org
+lookup.icann.org##rwc-cookie-notification
+
+! 2022-05-19 https://ictnews.vietnamnet.vn
+ictnews.vietnamnet.vn##.text-center.mt-5.iframe-page-fb
+ictnews.vietnamnet.vn##.py-4.row
+ictnews.vietnamnet.vn##.d-none.d-xl-block.mt-4.p-0.navbar.border-bottom.border-top.menu-footer.menu
+ictnews.vietnamnet.vn##.d-xl-block.d-none.box-social
+
+! 2022-05-22 https://voz.vn
+||statics.voz.tech/data/avatars/*/*/712870.jpg$image
+
+! 2022-05-23 https://www.ionos.com
+www.ionos.com###bio_ep
+www.ionos.com###bio_ep_bg
+
+! 2022-05-26 https://www.searchenginejournal.com
+www.searchenginejournal.com###sej-popup-wrapper
+
+! 2022-05-26 https://apkadmin.com
+apkadmin.com###footer
+apkadmin.com###header
+apkadmin.com##.how-to
+apkadmin.com##.text-left.about-apk
+
+! 2022-05-29 https://dnsleaktest.com
+dnsleaktest.com##.footer
+dnsleaktest.com##.container_12 > h2
+
+! 2022-05-30 https://downfile.site
+downfile.site##.footer
+downfile.site###footer
+downfile.site##.site-logo
+downfile.site##.clearfix.entry-content
+downfile.site###content > .captcha-check.mt-1.alert-light.alert
+
+! 2022-05-30 https://app.trangchu.news
+app.trangchu.news##.footer
+app.trangchu.news##.site-logo
+app.trangchu.news##.text-center
+app.trangchu.news##.captcha-check.mt-1.alert-light.alert
+
 35express.org##.sidebar
 @@||frontend-m.binance.cloud
 androidhost.org###footer
@@ -1033,7 +1091,7 @@ www.ods.vn##.fl-page > .call-now
 ##*.navbar.navbar-collapse.navbar-inverse.collapse.navbar-responsive-collapse.navbar-fixed-top.yamm
 ##.adsbygoogle
 ##.copyright-container
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc
+
 *.fsdn.com/con/js/min/sf.js?*
 /adsense/*
 /banners/click/*
