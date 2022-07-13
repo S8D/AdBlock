@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220713a
+! Version: 220713b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -9,6 +9,33 @@
 !___Tổng-Hợp_______________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org
 ##div[class^="jw-logo"]
+
+! 2022-07-11 https://us1.extremecloudiq.com
+us1.extremecloudiq.com##.rightColumn
+
+! 2022-07-11 https://extremecloudiq.com
+extremecloudiq.com##.rightColumn
+extremecloudiq.com##.page-footer
+extremecloudiq.com##.ah-logo
+
+! 2022-07-11 https://us0.extremecloudiq.com
+us0.extremecloudiq.com##.pilot.extreme-branded
+us0.extremecloudiq.com###iq-header
+
+! 2022-07-11 https://www.perfect-privacy.com
+www.perfect-privacy.com###cookiebar
+www.perfect-privacy.com##.bgdark.fixed-top
+www.perfect-privacy.com##.col-md-10.offset-md-1.col-12 > p
+www.perfect-privacy.com##.pt-5.w-100.bglight
+www.perfect-privacy.com##div.w-100.bglight:nth-of-type(7)
+www.perfect-privacy.com###footer
+www.perfect-privacy.com##div.w-100:nth-of-type(8)
+www.perfect-privacy.com##div.py-5.container:nth-of-type(4)
+www.perfect-privacy.com##div.py-5.container:nth-of-type(2)
+www.perfect-privacy.com##div.row:nth-of-type(2)
+www.perfect-privacy.com##div.py-5.container:nth-of-type(6)
+www.perfect-privacy.com##div.w-100:nth-of-type(9)
+www.perfect-privacy.com##div.w-100:nth-of-type(4)
 
 ! 2022-05-30 https://www.limetorrents.lol
 www.limetorrents.lol###rightbar
