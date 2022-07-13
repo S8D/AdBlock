@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220530a
+! Version: 220713a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,7 +7,100 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org
+##div[class^="jw-logo"]
+
+! 2022-05-30 https://www.limetorrents.lol
+www.limetorrents.lol###rightbar
+www.limetorrents.lol###footer
+www.limetorrents.lol##body > div > center
+
+! 2022-05-31 https://rsload.net
+rsload.net##.full > center
+||rsload.net/images5/2120.png
+||rsload.net/images5/downasd1.png
+rsload.net/images5/51rsload5895.png$domain=rsload.net
+rsload.net##.clearfix.video-box.full-text.short-text > center
+rsload.net##[href="https://go.webredir.net/r/f2de0c6878a1bf4828d3f3c92767b08b"]
+rsload.net##[href="https://go.click2bit.net/r/f2de0c6878a1bf4828d3f3c92767b08b"]
+
+! 2022-06-06 https://www.geeksforgeeks.org
+www.geeksforgeeks.org##.login-modal-div
+
+! 2022-06-08 https://banlinhkien.com
+banlinhkien.com##.fancybox-overlay-fixed.fancybox-overlay
+
+! 2022-06-14 https://whoer.net
+whoer.net##.footer
+whoer.net##.form-switch
+whoer.net##.header__background
+whoer.net##.main-ip-info__anonimity
+whoer.net##.vpn.section_promo.section
+whoer.net##.hoster.section_promo.section
+whoer.net##.section_plans.section_blue.section
+whoer.net##.section_about.section_white.section
+whoer.net##.section_white.section_ip-check.section
+whoer.net##.popup-counter-deal__wrapper--fadeIn.popup-counter-deal__wrapper
+
+! 2022-06-19 https://lphim.net
+lphim.net##.module_home_ads
+lphim.net###floating_ads_bottom_textcss_container
+lphim.net###comments
+lphim.net##footer.main
+lphim.net##.module_single_ads
+
+! 2022-06-19 https://db-ip.com
+db-ip.com##.footer
+db-ip.com##.mb-5.container
+db-ip.com##.lead
+
+! 2022-06-22 https://binhluan.90phut2.live
+binhluan.90phut2.live##.uk-open.uk-flex.uk-modal.uk-flex-top
+
+! 2022-06-25 https://phim.vkoolzz.net
+||vkool.net/js/abp.js
+phim.vkoolz.net##.block-comments.page-single.block-wrapper
+phim.vkoolz.net##.block-keywords
+phim.vkoolz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
+phim.vkoolzz.net###overlay
+phim.vkoolzz.net##.block-comments.page-single.block-wrapper
+phim.vkoolzz.net##.block-keywords
+phim.vkoolzz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
+phim.vkoolzz.net##div.right-box:nth-of-type(7)
+phim.vkoolzz.net##footer
+
+
+! 2022-06-29 https://www.tourdulichbentre.com
+www.tourdulichbentre.com##.ads
+
+! 2022-06-29 https://www.facebook.com
+www.facebook.com##.bx45vsiw.h676nmdw.jrc8bbd0.dawyy4b1.o5zgeu5y.to382e16.buofh1pr > .iyyx5f41.dhp61c6y.dp1hu0rb.owwhemhu.qowsmv63.cebpdrjk.bipmatt0.pk4s997a.q3lfd5jv.k5wvi7nf.t1p8iaqh.a8s20v7p.abs2jz4q.a6sixzi8.tojvnm2t > .l9j0dhe7.byvelhso.j83agx80.bp9cbjyn
+
+! 2022-06-29 https://vnexpress.net
+vnexpress.net##.p_header
+vnexpress.net##.social_pin
+vnexpress.net###wrapper_footer
+vnexpress.net###supper_masthead
+vnexpress.net##.col-sticky.sidebar-2
+vnexpress.net##.pin-comment.sidebar-1
+vnexpress.net##.inner-box-business.width_common
+vnexpress.net##.box-category__list-news > .sidebar-2
+
+! 2022-06-29 https://keep.google.com
+@@||play.google.com/log?format=json&hasfast=true&authuser=0$xhr,domain=keep.google.com
+@@||maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true$xhr,domain=keep.google.com
+
+! 2022-06-30 https://mphimmoi1.net
+mphimmoi1.net##.tags
+mphimmoi1.net###footer
+||connect.facebook.net^
+mphimmoi1.net##.keywords
+||mphimmoi1.net/*.mp4$media,1p
+||mphimmoi1.net/pcAds*.xml$xhr,1p
+||mphimmoi1.net/bin168.js$script,1p
+||mphimmoi1.net/Theme/js/wonderfarm*.js$script,1p
+||mphimmoi1.net/Theme/js/jquery.lazyload.min.js$script,1p
+||mphimmoi1.net/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 
 ! 2022-05-18 https://www.toolaat.com
 www.toolaat.com###tool-description
@@ -264,10 +357,6 @@ nikita.com.vn##.support_reg
 opensourcelibs.com###flamelab-convo-widget
 pastebin.com##.popup-container
 phebinhvanhoc.com.vn##.ai-center-v.ai-center-h.ai-viewport-2.ai-viewport-1.code-block-2.code-block
-phim.vkoolz.net##.block-comments.page-single.block-wrapper
-phim.vkoolz.net##.block-keywords
-phim.vkoolz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
-phim.vkoolzz.net###overlay
 phimmoichill.net###goadv
 phimmoichill.net##.block-note
 phongduy.com##.comments
@@ -351,15 +440,6 @@ whatismyipaddress.com##.fl-node-5d8e8bfe4bb23.fl-row-bg-none.fl-row-fixed-width.
 whatismyipaddress.com##.fl-node-5db9cbfd898a2.fl-row-bg-none.fl-row-fixed-width.fl-row
 whatismyipaddress.com##.fl-page-footer-wrap
 whatismyipaddress.com##.wipa-home-page-tools.fl-node-5d8e8cd141d27.fl-row-bg-color.fl-row-full-width.fl-row
-whoer.net##.footer
-whoer.net##.form-switch
-whoer.net##.header__background
-whoer.net##.main-ip-info__anonimity
-whoer.net##.popup-counter-deal__wrapper--fadeIn.popup-counter-deal__wrapper
-whoer.net##.section_about.section_white.section
-whoer.net##.section_plans.section_blue.section
-whoer.net##.section_white.section_ip-check.section
-whoer.net##.vpn.section_promo.section
 wiki.tino.org###ftwp-postcontent > .jnews_content_inline_2_ads.jeg_ad_article.jeg_ad
 wiki.tino.org###ftwp-postcontent > .jnews_content_inline_parallax_ads.jeg_ad_article.jeg_ad
 wiki.tino.org###ftwp-postcontent > .kksr-align-right.kksr-valign-bottom.kk-star-ratings
@@ -1821,10 +1901,6 @@ quantrimang.com##.underlay
 ramleague.net###exposeMask
 ramleague.net##.errorOverlay
 romshared.com###content > div.pageWidth > div.pageContent > table:nth-child(4)
-rsload.net##.clearfix.video-box.full-text.short-text > center
-rsload.net##.full > center
-rsload.net##[href="https://go.click2bit.net/r/f2de0c6878a1bf4828d3f3c92767b08b"]
-rsload.net/images5/51rsload5895.png$domain=rsload.net
 rutgon.cc##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 s.ytimg.com/yts/jsbin/*/www-pagead-id.js
 s2w.me##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div.banner.banner-captcha:first-child
@@ -2277,13 +2353,6 @@ vn-z.vn##.sidebar > ins.adsbygoogle:nth-of-type(1)
 vn-z.vn##center:nth-of-type(2) > .adsbygoogle
 vn-z.vn##ins.adsbygoogle
 vn-z.vn##ins.adsbygoogle:nth-of-type(2)
-vnexpress.net###supper_masthead
-vnexpress.net###wrapper_footer
-vnexpress.net##.box-category__list-news > .sidebar-2
-vnexpress.net##.col-sticky.sidebar-2
-vnexpress.net##.inner-box-business.width_common
-vnexpress.net##.p_header
-vnexpress.net##.pin-comment.sidebar-1
 vnjpclub.com###ampz_inline_bottom
 vnjpclub.com###rt-footer-surround
 vnjpclub.com###rt-sidebar-a
@@ -2777,12 +2846,16 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f734a30395a76762e676966/$image
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6a5849527754642e706e67/$image
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
+||statics.voz.tech/data/avatars/*/*/39727.jpg$image
+||statics.voz.tech/data/avatars/*/*/62985.jpg$image
+||statics.voz.tech/data/avatars/*/*/91433.jpg$image
+||statics.voz.tech/data/avatars/*/*/124958.jpg$image
+||statics.voz.tech/data/avatars/*/*/130590.jpg$image
+||statics.voz.tech/data/avatars/*/*/486784.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
-||statics.voz.tech/data/avatars/*/*/124958.jpg$image
-||statics.voz.tech/data/avatars/*/*/130590.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
@@ -2795,10 +2868,8 @@ vozforums.com##div[style="line-height:80px; "]
 ||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
-||statics.voz.tech/data/avatars/*/*/39727.jpg$image
-||statics.voz.tech/data/avatars/*/*/486784.jpg$image
-||statics.voz.tech/data/avatars/*/*/62985.jpg$image
-||statics.voz.tech/data/avatars/*/*/91433.jpg$image
+||statics.voz.tech/data/avatars/*/*/1239205.jpg$image
+||statics.voz.tech/data/avatars/*/*/1737241.jpg$image
 ||voz.vn/attachments/*.190397/$image
 ||voz.vn/attachments/*.218479/$image
 ||voz.vn/attachments/*.218481/$image
@@ -3477,8 +3548,6 @@ youtube.com##*.video-ads
 ||quantrimang.com/scripts/main?
 ||realclick.*^
 ||ria.fpt.center/attachments/truyen-hinh-fpt-play-hd/8539d1504691299-cac-goi-dich-vu-truyen-hinh-fpt-play-hd-combo-fpt.jpgg$domain=fpt.center
-||rsload.net/images5/2120.png
-||rsload.net/images5/downasd1.png
 ||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
 ||s30.postimg.org^*.png$domain=~langitbox.net
 ||samsung-updates.com/wp-content/plugins/wp-cumulus/swfobject.js
@@ -3507,7 +3576,6 @@ youtube.com##*.video-ads
 ||uplod.ws/responsive_js/paging.js
 ||uptruyen.*
 ||velocecdn.com
-||vkool.net/js/abp.js
 ||ylx-1.com
 ||z6naousb.*^
 
