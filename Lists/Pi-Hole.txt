@@ -1,4 +1,4 @@
-#PhienBan___220413c
+#PhienBan___220727a
 
 #___Apple______________________________________________________________________
 #mesu.apple.com
@@ -695,7 +695,7 @@ agafurretor.com
 cryptonator.com
 webvisor.com
 unreshiramor.com
-zwyr157wwiu6eior.com
+#zwyr157wwiu6eior.com
 platform.tumblr.com
 newsredir.com
 tharbadir.com
