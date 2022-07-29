@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220713b
+! Version: 220729a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -9,6 +9,103 @@
 !___Tổng-Hợp_______________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org
 ##div[class^="jw-logo"]
+
+! 2022-07-13 https://phimdacap.com
+phimdacap.com##body > iframe
+phimdacap.com##center
+phimdacap.com##body > div:nth-child(4)
+||static.phimdacap.com/js/trailer-popup.js?_jv=1.05$script,1p
+||static.phimdacap.com/xml/vast_content.xml?ver=10$xhr,1p
+phimdacap.com##footer
+phimdacap.com##div.right-box:nth-of-type(7)
+
+! 2022-07-14 https://real-debrid.com
+real-debrid.com##[href="/"]
+
+! 2022-07-14 https://www.tranducit.com
+www.tranducit.com##.showfp.section.Sidebar1
+
+! 2022-07-14 https://us1.extremecloudiq.com
+us1.extremecloudiq.com###iq-header
+
+! 2022-07-14 https://happymod.com
+happymod.com##.fot-fixd
+happymod.com##.footer
+happymod.com##.container-right
+happymod.com##.container-left > .clearfix
+happymod.com##.ad-new-box
+happymod.com##.pdt-btn-msg.clearfix
+
+! 2022-07-15 https://dropgalaxy.com
+dropgalaxy.com##.priceTable
+dropgalaxy.com##.pb-5.pt-4.row
+
+! 2022-07-15 https://mega4upload.com
+mega4upload.com##.compare_table.row
+mega4upload.com##.app-footer
+mega4upload.com##.text-center.py-3.footer-copyright
+mega4upload.com##.app-header
+mega4upload.com##.section-title > .title
+mega4upload.com##.mb-3.list-group-flush.list-group
+!mega4upload.com##.btn-sm.btn-success.btn
+mega4upload.com##.mb-4.card > .card > .card-body
+mega4upload.com##.d-md-block.d-none.my-3
+
+! 2022-07-15 https://mega4upload.com
+mega4upload.com##.section-title
+mega4upload.com##.card-body > .mb-3.row
+mega4upload.com##.card-body > .desc
+mega4upload.com##.container > .mb-3.row
+mega4upload.com##h5
+
+! 2022-07-15 https://drop.download
+drop.download##.mb-xl-7.mb-5
+drop.download##.mb-3.text-center.h2
+drop.download##div.mb-5:nth-of-type(4)
+drop.download##.py-3.header_
+drop.download##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
+drop.download##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
+drop.download##.container > .mb-5
+
+! 2022-07-21 https://voz.vn
+||statics.voz.tech/data/avatars/*/*/1714095.jpg$image
+
+! 2022-07-21 https://vnexpress.net
+vnexpress.net##.section-exitintent.section
+
+! 2022-07-22 https://pn.cgchotbox.com
+pn.cgchotbox.com##.adb
+
+! 2022-07-22 http://beta.shortearn.eu
+beta.shortearn.eu###cookie-pop
+beta.shortearn.eu##footer
+beta.shortearn.eu##.text-left
+beta.shortearn.eu###link-view > p
+beta.shortearn.eu##.navbar-default.navbar
+beta.shortearn.eu##h4
+
+! 2022-07-23 https://voz.vn
+||statics.voz.tech/data/avatars/*/*/1588909.jpg$image
+
+! 2022-07-24 https://chat.zalo.me
+||chat.zalo.me/service-worker.*.js$script,domain=chat.zalo.me
+
+! 2022-07-27 https://voz.vn
+voz.vn##.adsbygoogle
+||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
+
+! 2022-07-28 https://voz.vn
+||statics.voz.tech/data/avatars/*/*/1596513.jpg$image
+||statics.voz.tech/data/avatars/*/*/1640681.jpg$image
+
+! 2022-07-28 https://plati.market
+plati.market##.gdpr
+plati.market##.popular_products_links
+
+! 2022-07-28 https://voz.vn
+||i.imgur.com/yBBewst.png$image
+||i.imgur.com/zFNuZTA.png$image
+||i.imgur.com/xKenGVb.png$image
 
 ! 2022-07-11 https://us1.extremecloudiq.com
 us1.extremecloudiq.com##.rightColumn
