@@ -1,4 +1,4 @@
-#PhienBan___220727a
+#PhienBan___220803a
 
 #___Apple______________________________________________________________________
 #mesu.apple.com
@@ -837,7 +837,7 @@ outbrain.com
 appbrain.com
 360in.com
 boi9osyg1uwtyafn.com
-live.adyen.com
+#live.adyen.com
 ensighten.com
 deloplen.com
 miaozhen.com
