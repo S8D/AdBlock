@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220811a
+! Version: 220811b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -9,6 +9,25 @@
 !___Tổng-Hợp_______________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|ephimmoi.net|hh3dhay.xyz
 ##div[class^="jw-logo"]
+
+! 2022-08-10 https://chedrives.com
+chedrives.com###gdpr-cookie-notice
+chedrives.com##header
+chedrives.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
+chedrives.com##.txt
+chedrives.com##.menufooter
+chedrives.com##footer
+chedrives.com###footer2
+chedrives.com##.fileoption > ul
+chedrives.com##.banner1
+chedrives.com##.banner3
+chedrives.com##.banner2
+chedrives.com##.btn-success.btn
+chedrives.com##.sharefile
+chedrives.com##.desc
+chedrives.com##.icofont-zipped
+chedrives.com##.title
+chedrives.com##.\36 27b72d88ee386c1f9fdb0da
 
 ! 2022-02-06 https://apkcombo.com
 apkcombo.com##.apkcombo_desktop_300x250_right.apkcombo_mobile_300x250_bottom.ad-pos-bottom-right.ad-pos
