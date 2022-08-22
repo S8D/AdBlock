@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 220811b
+! Version: 220822a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -7,27 +7,139 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|ephimmoi.net|hh3dhay.xyz
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|ephimmoi.net|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
 
-! 2022-08-10 https://chedrives.com
-chedrives.com###gdpr-cookie-notice
-chedrives.com##header
-chedrives.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
-chedrives.com##.txt
-chedrives.com##.menufooter
-chedrives.com##footer
-chedrives.com###footer2
-chedrives.com##.fileoption > ul
-chedrives.com##.banner1
-chedrives.com##.banner3
-chedrives.com##.banner2
-chedrives.com##.btn-success.btn
-chedrives.com##.sharefile
-chedrives.com##.desc
-chedrives.com##.icofont-zipped
-chedrives.com##.title
-chedrives.com##.\36 27b72d88ee386c1f9fdb0da
+short.pandaznetwork.com##footer.py-5.text-center.wow.zoomIn.animated:nth-child(3)
+short.pandaznetwork.com###mainNav
+
+! 2022-08-14 https://cloudflare.com
+cloudflare.com###dns-info
+cloudflare.com###sni-info
+cloudflare.com###tls-info
+cloudflare.com###dnssec-info
+www.cloudflare.com##.main-footer
+cloudflare.com##.js-adroll-track-click
+cloudflare.com##.main-footer.cms-mainfooter
+cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
+cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
+www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
+
+! 2022-08-14 https://a2zapk.com
+a2zapk.com##.Tags
+a2zapk.com##.WebF
+a2zapk.com###galax2
+||a2zapk.com/js/main2019.js$script,1p
+a2zapk.com##div.NewBlock:nth-of-type(1)
+a2zapk.com##div.ArticleLand:nth-of-type(4)
+a2zapk.com##div.ArticleLand:nth-of-type(5)
+a2zapk.com##div.ArticleLand:nth-of-type(6)
+a2zapk.com##div.ArticleLand:nth-of-type(3) > b
+a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
+
+! 2022-05-09 https://lamtheatmonline.com
+lamtheatmonline.com##[href^="https://mobilebanking.mbbank.com.vn:8443/referral/referred.html"]
+lamtheatmonline.com##.pum-active.click_open.auto_open.popmake-overlay.pum-theme-cutting-edge.pum-theme-1688.pum-overlay.pum
+
+! 2022-05-31 https://cloudviet.com.vn
+cloudviet.com.vn###button-contact-vr
+
+! 2022-06-01 https://www.khadas.com
+www.khadas.com###SITE_FOOTER_WRAPPER
+
+! 2022-06-18 https://tuoi69zz.com
+tuoi69zz.com##body > .float-ckgiua
+tuoi69zz.com##p:nth-of-type(3)
+tuoi69zz.com##section.container.video:nth-of-type(1)
+tuoi69zz.com##footer
+
+! 2022-06-20 https://luathungphat.vn
+luathungphat.vn##.call-now-button
+
+! 2022-07-09 https://www.tourdulichbentre.com
+www.tourdulichbentre.com##.locationbox__popup
+
+! 2022-07-11 https://fpttoanquoc.com
+fpttoanquoc.com##.col-md-16.col-sm-24.col-xs-24 > .panel-body
+fpttoanquoc.com###uhchatmobile
+
+! 2022-07-19 https://www.tiktok.com
+www.tiktok.com##.enx791q2.tiktok-1ba5y2x-DivInfoContainer
+www.tiktok.com##.enx791q5.tiktok-f2axrx-DivGuideBtnContainer
+www.tiktok.com##.enx791q1.tiktok-1ysvvri-DivIconContainer
+
+! 2022-08-05 https://www.vinmec.com
+www.vinmec.com##.share
+www.vinmec.com##.image-area
+www.vinmec.com##.post-banner
+www.vinmec.com##.banner-bottom
+www.vinmec.com##.d-none.popup-area
+www.vinmec.com##.new-landing.footer
+www.vinmec.com##.new-landing.footer
+www.vinmec.com##.coccoc-alo-ph-img-circle
+www.vinmec.com##.coccoc-alo-ph-circle-fill
+www.vinmec.com##.lang-vi.new-landing.page-header
+www.vinmec.com##.chat_bot-vinmec_-chatbot.aip-chat-box
+www.vinmec.com##.pageview-highest.cms.block-content .post-banner-middle
+
+! 2022-08-06 https://dietmoihanhlong.com
+dietmoihanhlong.com###button-contact-vr
+
+! 2022-08-19 https://vancongnghiephp.com
+vancongnghiephp.com###uhchatmobile
+vancongnghiephp.com###congcubayphai
+
+! 2022-08-19 https://vandien.vn
+vandien.vn###uhchatmobile
+vandien.vn##.bocuc_133.bocuc
+
+! 2022-08-19 https://vanphukien.com
+vanphukien.com###uhchatmobile
+vanphukien.com###callnowbutton
+
+! 2022-08-13 http://nguonhd.org
+nguonhd.org###antiAdblock
+
+! 2022-08-14 https://mephimnhat1.com
+||mephimnhat1.com/mmo/$xhr,1p
+mephimnhat1.com##.banner-masthead
+mephimnhat1.com###sponsor-balloon
+||sponsor.imacdn.com/vg/.mp4$media,domain=mephimnhat1.com
+
+! 2022-08-14 https://rtxkeeda.com
+||mobileoffers-db-download.com^
+
+! 2022-08-15 https://text-compare.com
+text-compare.com##.ezmobtrans.ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
+
+! 2022-08-16 https://toithuthuat.com
+toithuthuat.com###pum-11564
+toithuthuat.com###pum-11557
+toithuthuat.com##.pum-active.click_open.auto_open.pum-overlay-disabled.popmake-overlay.pum-theme-default-theme.pum-theme-10771.pum-overlay.pum
+toithuthuat.com##.code-block-6.code-block
+
+! 2022-08-19 https://www.astrill.com
+www.astrill.com##.scrolling.site-header
+www.astrill.com##.subtitle
+www.astrill.com##.site-header
+
+! 2022-08-19 https://sg-gcp.extremecloudiq.com
+extremecloudiq.com##.ah-logo
+extremecloudiq.com##.page-footer
+extremecloudiq.com##.rightColumn
+us0.extremecloudiq.com###iq-header
+us1.extremecloudiq.com###iq-header
+us1.extremecloudiq.com##.rightColumn
+extremecloudiq.com##.grid_7_2.rightColumn
+us0.extremecloudiq.com##.pilot.extreme-branded
+||cloud-cdn2.extremecloudiq.com/static/22.5.1.1/resources/images/placeholders/WiNG/C360-*.svg$image
+
+! 2022-08-21 https://surfshark.com
+surfshark.com##.animateIn.display.js-cookies-popup.sticky-cookies-popup
+surfshark.com##.leaks-content.editor-content
+surfshark.com##.with-laptop.cta-bottom-big
+surfshark.com##.ze-button-active.ze-button
+surfshark.com##.footer
 
 ! 2022-02-06 https://apkcombo.com
 apkcombo.com##.apkcombo_desktop_300x250_right.apkcombo_mobile_300x250_bottom.ad-pos-bottom-right.ad-pos
@@ -78,7 +190,6 @@ tuoitre.vn##.tagandnetwork
 tuoitre.vn##.header-middle
 tuoitre.vn##.is-affixed.fl.networktop.network
 
-
 ! 2022-02-07 https://congnghe.tuoitre.vn
 congnghe.tuoitre.vn##.is-affixed.fl.networktop.network
 
@@ -105,6 +216,18 @@ phimmoichill.net###tags
 phimmoichill.net###goadv
 phimmoichill.net###tag-box
 phimmoichill.net##.block-note
+
+
+! 2021-07-08 https://kptools.net
+kptools.net##.adsslot_gY7RplIyz2.adsbygoogle
+kptools.net##.entry-header
+kptools.net##.footer-holder
+kptools.net##.jeg_share_top_container
+kptools.net##.jnews_module_461_1_60e789fa70a10.jeg_ad_module.jeg_ad
+kptools.net##.jnews_module_461_4_60e789fa71106.jeg_ad_module.jeg_ad
+kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(1)
+kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(3)
+kptools.net##div.vc_row-fluid.vc_inner.wpb_row.vc_row.row > .vc_col-sm-12.vc_column_container.wpb_column
 
 ! 2022-02-13 https://www.odm-design.com
 www.odm-design.com##body > .ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
@@ -169,9 +292,6 @@ thethao247.vn###fb-fanbox
 ! 2022-07-29 https://thuvienhd.com
 thuvienhd.com##.backdrop
 
-! 2022-07-29 https://www.fshare.vn
-www.fshare.vn##.mdc-dialog--open.mdc-dialog
-
 ! 2022-07-29 https://linksvip.net
 linksvip.net##.tags
 linksvip.net##.steps
@@ -220,14 +340,8 @@ tenta.com##.text-center.container
 ! 2022-08-01 https://ydns.io
 ydns.io##.cookie-notice-outer
 
-! 2022-08-03 https://www.vinmec.com
-www.vinmec.com##.new-landing.footer
-
 ! 2022-08-09 https://www.websiteplanet.com
 www.websiteplanet.com###ctrl-d-popup
-
-! 2022-08-09 https://mephimnhat1.com
-mephimnhat1.com###sponsor-balloon
 
 ! 2022-08-10 https://cellphones.com.vn
 cellphones.com.vn##.suggestions-choose-store
@@ -249,9 +363,6 @@ real-debrid.com##[href="/"]
 ! 2022-07-14 https://www.tranducit.com
 www.tranducit.com##.showfp.section.Sidebar1
 
-! 2022-07-14 https://us1.extremecloudiq.com
-us1.extremecloudiq.com###iq-header
-
 ! 2022-07-14 https://happymod.com
 happymod.com##.footer
 happymod.com##.fot-fixd
@@ -259,35 +370,6 @@ happymod.com##.ad-new-box
 happymod.com##.container-right
 happymod.com##.pdt-btn-msg.clearfix
 happymod.com##.container-left > .clearfix
-
-! 2022-07-15 https://dropgalaxy.com
-dropgalaxy.com##.priceTable
-dropgalaxy.com##.pb-5.pt-4.row
-
-! 2022-07-15 https://mega4upload.com
-mega4upload.com##h5
-mega4upload.com##.app-footer
-mega4upload.com##.app-header
-mega4upload.com##.section-title
-mega4upload.com##.compare_table.row
-mega4upload.com##.card-body > .desc
-mega4upload.com##.card-body > .mb-3.row
-mega4upload.com##.container > .mb-3.row
-mega4upload.com##.section-title > .title
-mega4upload.com##.d-md-block.d-none.my-3
-!mega4upload.com##.btn-sm.btn-success.btn
-mega4upload.com##.mb-4.card > .card > .card-body
-mega4upload.com##.mb-3.list-group-flush.list-group
-mega4upload.com##.text-center.py-3.footer-copyright
-
-! 2022-07-15 https://drop.download
-drop.download##.mb-xl-7.mb-5
-drop.download##.py-3.header_
-drop.download##.container > .mb-5
-drop.download##.mb-3.text-center.h2
-drop.download##div.mb-5:nth-of-type(4)
-drop.download##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
-drop.download##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
 
 ! 2022-07-22 https://pn.cgchotbox.com
 pn.cgchotbox.com##.adb
@@ -303,18 +385,6 @@ beta.shortearn.eu##h4
 ! 2022-07-28 https://plati.market
 plati.market##.gdpr
 plati.market##.popular_products_links
-
-! 2022-07-11 https://us1.extremecloudiq.com
-us1.extremecloudiq.com##.rightColumn
-
-! 2022-07-11 https://extremecloudiq.com
-extremecloudiq.com##.rightColumn
-extremecloudiq.com##.page-footer
-extremecloudiq.com##.ah-logo
-
-! 2022-07-11 https://us0.extremecloudiq.com
-us0.extremecloudiq.com##.pilot.extreme-branded
-us0.extremecloudiq.com###iq-header
 
 ! 2022-07-11 https://www.perfect-privacy.com
 www.perfect-privacy.com###cookiebar
@@ -469,13 +539,6 @@ apkadmin.com##.text-left.about-apk
 dnsleaktest.com##.footer
 dnsleaktest.com##.container_12 > h2
 
-! 2022-05-30 https://downfile.site
-downfile.site##.footer
-downfile.site###footer
-downfile.site##.site-logo
-downfile.site##.clearfix.entry-content
-downfile.site###content > .captcha-check.mt-1.alert-light.alert
-
 ! 2022-05-30 https://app.trangchu.news
 app.trangchu.news##.footer
 app.trangchu.news##.site-logo
@@ -484,14 +547,6 @@ app.trangchu.news##.captcha-check.mt-1.alert-light.alert
 
 35express.org##.sidebar
 @@||frontend-m.binance.cloud
-androidhost.org###footer
-androidhost.org##.download-boxes
-androidhost.org##div.adcnt:nth-of-type(1)
-androidhost.org##div.adcnt:nth-of-type(2)
-androidhost.org##div.adcnt:nth-of-type(3)
-androidhost.org##div.adcnt:nth-of-type(4)
-androidhost.org##h2:nth-of-type(3)
-androidhost.org##table:nth-of-type(3)
 anexia.com###cookie-opt-in
 ask.fm##.lightbox_overlay
 askubuntu.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
@@ -568,8 +623,6 @@ giaminhgroup.com###footer
 hangmaytinh.com##.ulp-fadeIn.ulp-animated.ulp-overlay
 hangmaytinh.com##.ulp-window-container
 hangxin.com.vn###uhchatboz
-hexupload.net##[href="https://hexupload.net/premium.html"]
-hexupload.net##h2
 ichi.pro###notify-adblock
 ip-api.com##.header
 ip-api.com##.mb-0.section-header
@@ -646,11 +699,6 @@ kiemtraip.com##[href^="https://hostingviet.vn/hosting-gia-re"]
 kiemtraip.com##[href^="https://hostingviet.vn/vps-starter-gia-re"]
 kiemtraip.com##font:nth-of-type(1)
 kindlehanoi.vn##.fancybox-overlay-fixed.fancybox-overlay
-krakenfiles.com###cc--main
-krakenfiles.com##.bg-lighter.nk-footer-fluid.nk-footer
-krakenfiles.com##.home-help-block.nk-block
-krakenfiles.com##.nk-block-head-lg.nk-block-head
-krakenfiles.com##.nk-header-fixed.is-light.nk-header-fluid.nk-header
 link1s.com##.navbar-default.navbar
 link1s.com##footer
 link1s.com##h4
@@ -727,8 +775,6 @@ tools.keycdn.com##div.col-md-6:nth-of-type(2)
 trainghiemso.vn##.jnews_content_inline_ads.jeg_ad_article.jeg_ad
 trustweb.vn##.mfp-ready.mfp-auto-cursor.mfp-close-btn-in.mfp-wrap
 trustweb.vn##.mfp-ready.mfp-bg
-uploadev.org##center
-uploadrar.com##.app-footer
 vcc-group.vn##.giuseart-nav
 vhea.org.vn###ftwp-postcontent > .ads-top-page.sp-ads
 vhea.org.vn##.ads-sidebar-2.ads-sidebar.sp-ads
@@ -798,12 +844,6 @@ www.csgt.vn##.banner
 www.csgt.vn##[src="https://www.csgt.vn//upload/advert/953325324_abc.jpg"]
 www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4wl.p8dawk7l.abiwlrkh.l9j0dhe7.k77z8yql.qs9ysxi8.arfg74bv.n00je7tq.f1sip0of.esuyzwwr.i1ao9s8h.a8nywdso.qt6c0cv9.rz4wbd8a.jb3vyjys.hcukyx3x.oygrvhab.cxmmr5t8.kvgmc6g5.p7hjln8o.nhd2j8a9.rq0escxv.r7d6kgcz.e9989ue4.esr5mh6w.qu0x051f.g5ia77u1.oajrlxb2
 www.facebook.com##body > .tkr6xdv7.l9j0dhe7
-www.file-upload.com##.comparison-row.row
-www.file-upload.com##.default-ttl
-www.file-upload.com##.mnbt1.btn-success.btn-xs.btn
-www.file-upload.com##.stdt
-www.file-upload.com##footer
-www.file-upload.com##header
 www.geolocation.com##.footer-v1
 www.geolocation.com##.header
 www.geolocation.com##.text-center.col-md-3
@@ -978,52 +1018,15 @@ ipapi.com##body > div > .cta
 ipapi.com##footer
 ipapi.com##.index.header
 
-! 2021-10-03 https://fastclick.to
-fastclick.to##.mb-xl-7.mb-5
-fastclick.to##.py-lg-6.py-4.footer
-fastclick.to##.mb-3.text-center.h2
-fastclick.to##.py-lg-5.py-3.header > .container > .align-items-center.row
-fastclick.to##.mb-lg-6.mb-4.text-white.download-page
-fastclick.to##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
-fastclick.to##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
-
 ! 2021-09-29 https://www.showmyip.com
 www.showmyip.com##.bannerad
 www.showmyip.com###content > p
 www.showmyip.com##h1
 
-! 2022-02-06 https://apkadmin.com
-apkadmin.com##h1
-apkadmin.com###footer
-apkadmin.com###header
-apkadmin.com##.footer
-apkadmin.com##.how-to
-apkadmin.com##.bg-white
-apkadmin.com##.sharetabs
-apkadmin.com###content > center
-apkadmin.com##.text-left.about-apk
-apkadmin.com##.text-center.file-name
-apkadmin.com##.text-center.text > .heading
-apkadmin.com##div.file-info:nth-of-type(4)
-apkadmin.com###content > div.row > div.col-12 > h2
-apkadmin.com##.navbar-light.navbar-expand-lg.navbar
-
 ! 2021-09-30 https://checkip.vip
 checkip.vip##.checkip-title
 checkip.vip##.content
 checkip.vip##footer
-
-! 2022-02-06 https://www.mediafire.com
-mediafire.com###footer
-mediafire.com###header
-mediafire.com##.header
-mediafire.com##.sidebar
-mediafire.com##.description
-mediafire.com##.dlInfo-Body
-mediafire.com##.dl-promo-cont
-mediafire.com##.socialFBContainer
-www.mediafire.com##.DLExtraInfo-wrap
-www.mediafire.com###cookie-accept-footer
 
 ! 2021-08-21 https://www.cyberciti.biz
 www.cyberciti.biz##body > center
@@ -1056,242 +1059,15 @@ ipleak.net###footer_margin
 ! 2021-08-22 https://hidessh.com
 hidessh.com###qdb7
 
-! 2021-07-25 https://www.upload-4ever.com
-www.upload-4ever.com##header
-www.upload-4ever.com##.pl-5.pr-5.appCookieNotice.hide
-www.upload-4ever.com##.pt-0.lighten-5.blue-grey.page-footer
-www.upload-4ever.com##.mb-5.text-center.content-section.col-sm-12
-www.upload-4ever.com##.appHeader
-www.upload-4ever.com##.text-center.col-12 > .my-5
-www.upload-4ever.com##.my-4
-www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
-www.upload-4ever.com##.text-center.p-5.border.col-12 .my-5
-
-! 2021-07-25 https://rapidgator.net
-rapidgator.net##.footer > .in
-rapidgator.net##.header
-rapidgator.net##.descr
-rapidgator.net##tr:nth-of-type(2)
-rapidgator.net##tr:nth-of-type(4)
-rapidgator.net##tr:nth-of-type(5)
-rapidgator.net##tr:nth-of-type(6)
-rapidgator.net##tr:nth-of-type(7)
-rapidgator.net##tr:nth-of-type(8)
-rapidgator.net##tr:nth-of-type(9)
-rapidgator.net##tr:nth-of-type(10)
-rapidgator.net###copy
-rapidgator.net##.table_header
-
 ! 2021-07-02 https://4pda.to
 4pda.ru##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
 4pda.to###logostrip
 4pda.to##[href="https://4pda.to/2021/07/03/3691968/"]
 
-! 2021-07-03 https://fileever.net
-fileever.net###commonId > .col-lg-10.download-box-buttons.col-md-12 > .high-speed-download-button.download-box-button.col-sm-12.col-md-6.col-lg-6
-fileever.net###content > .lft.col-12
-fileever.net###footer
-fileever.net###header
-fileever.net###payments
-fileever.net##.cnthldr > .lft.col-12
-fileever.net##.report
-
-! 2021-07-07 https://hexupload.net
-hexupload.net###iis06o2gfvb1f9o07nea
-hexupload.net###payment-icons
-hexupload.net###secure
-hexupload.net##.btn-danger.btn
-hexupload.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
-hexupload.net##.paybox
-hexupload.net##.position-absolute.p-5.footer
-hexupload.net##.premium-page.py-5.container > font
-hexupload.net##.sharetabs
-hexupload.net##center:nth-of-type(1) > [href="/premium.html"]
-hexupload.net##td:nth-of-type(3)
-hexupload.net##th:nth-of-type(3)
-hexupload.net##tr:nth-of-type(10)
-hexupload.net##tr:nth-of-type(2)
-hexupload.net##tr:nth-of-type(3)
-hexupload.net##tr:nth-of-type(4)
-hexupload.net##tr:nth-of-type(5)
-hexupload.net##tr:nth-of-type(6)
-hexupload.net##tr:nth-of-type(7)
-hexupload.net##tr:nth-of-type(8)
-hexupload.net##tr:nth-of-type(9)
-
-! 2021-07-20 https://tusfiles.com
-tusfiles.com##.cc-color-override--1360619034.cc-right.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
-
-! 2021-07-20 https://www42.zippyshare.com
-www42.zippyshare.com##.center_ad
-www42.zippyshare.com##[href="//www.zippyshare.com/"]
-www42.zippyshare.com##.slickbox > .center
-www42.zippyshare.com##div.right:nth-of-type(5)
-www42.zippyshare.com##div.left:nth-of-type(4)
-www42.zippyshare.com###bottom
-www42.zippyshare.com##div.left:nth-of-type(2)
-www42.zippyshare.com##div.right:nth-of-type(3)
-www42.zippyshare.com##.outer_menu
-www42.zippyshare.com##div.center:nth-of-type(6)
-www42.zippyshare.com##div.center:nth-of-type(3)
-
-! 2021-07-20 https://download.gg
-download.gg##.header
-download.gg##.mt-xl-0.mt-5.order-xl-1.order-2.mb-xl-0.mb-5.col-xl-3
-download.gg##.order-xl-3.order-3.col-xl-3
-download.gg##.card-file.card > .card-body
-download.gg##.card-footer > p
-
-! 2021-07-20 https://drop.download
-drop.download##.py-4.bg-white.features__section
-drop.download##footer
-drop.download##.container > .col-md-12
-drop.download##.bg-white.py-5.payment_methods
-drop.download##.navbar-expand-lg.navbar
-drop.download##.alert-warning.alert
-drop.download##.btn-block.mt-4.btn-danger.btn
-drop.download##li.align-items-center.d-flex:nth-of-type(1)
-drop.download##li.align-items-center.d-flex:nth-of-type(2)
-drop.download##li.align-items-center.d-flex:nth-of-type(3)
-drop.download##li.align-items-center.d-flex:nth-of-type(4)
-drop.download##li.align-items-center.d-flex:nth-of-type(5)
-drop.download##.justify-content-center.align-items-center.d-flex.header
-
-! 2021-07-20 https://www.file-upload.com
-www.file-upload.com###sharebuttons
-www.file-upload.com##.antivirus
-www.file-upload.com##.blocktxt
-
-! 2021-07-20 https://anonfiles.com
-anonfiles.com###header
-anonfiles.com##.text-center.col-md-6.col-xs-12
-
-! 2021-07-20 https://bayfiles.com
-bayfiles.com###header
-bayfiles.com##.text-center.col-md-6.col-xs-12
-
-! 2021-07-20 https://rapidgator.net
-rapidgator.net##th:nth-of-type(3)
-rapidgator.net##td:nth-of-type(3)
-
-! 2021-07-07 https://katfile.com
-katfile.com###sharebuttons
-katfile.com##.free > li > span
-katfile.com##.hidden-xs.col-sm-4
-katfile.com##.navbar-static-top.navbar-default.navbar
-katfile.com##.style3
-katfile.com##[src="/images/n.png"]
-katfile.com##div.col-sm-4:nth-of-type(3)
-katfile.com##footer
-katfile.com##span.sp:nth-of-type(1)
-katfile.com##span.sp:nth-of-type(2)
-
-! 2021-07-08 https://kptools.net
-kptools.net##.adsslot_gY7RplIyz2.adsbygoogle
-kptools.net##.entry-header
-kptools.net##.footer-holder
-kptools.net##.jeg_share_top_container
-kptools.net##.jnews_module_461_1_60e789fa70a10.jeg_ad_module.jeg_ad
-kptools.net##.jnews_module_461_4_60e789fa71106.jeg_ad_module.jeg_ad
-kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(1)
-kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(3)
-kptools.net##div.vc_row-fluid.vc_inner.wpb_row.vc_row.row > .vc_col-sm-12.vc_column_container.wpb_column
-
-! 2021-07-11 https://chedrive.com
-chedrive.com###footer2
-chedrive.com###gdpr-cookie-notice
-chedrive.com##.banner1
-chedrive.com##.banner2
-chedrive.com##.banner3
-chedrive.com##.menufooter
-chedrive.com##.report
-chedrive.com##.sharefile
-chedrive.com##.txt
-chedrive.com##footer
-chedrive.com##header
-
 ! 2021-07-08 https://khiphach.vn
 khiphach.vn###sg-popup-content-wrapper-11167
 khiphach.vn##.sgpb-popup-overlay.sgpb-popup-overlay-11167.sgpb-theme-1-overlay
 khiphach.vn##.sgpb-popup-dialog-main-div-wrapper
-
-! 2021-07-20 https://up-load.io
-up-load.io##ol
-up-load.io##.share
-up-load.io##footer
-!up-load.io##.col-md-8
-up-load.io##.footer-sub
-up-load.io##center > center
-up-load.io##li > center > li
-up-load.io###gdpr-cookie-notice
-up-load.io##.text-center.col-md-8
-up-load.io##.buyPremium.alert-success.alert
-up-load.io##.navbar-fixed-top.navbar-inverse.navbar
-
-! 2021-07-20 https://upfiles.io
-upfiles.io##p
-upfiles.io##.faqs
-upfiles.io###ad-3
-upfiles.io###ad-4
-upfiles.io###ad-1
-upfiles.io##header
-upfiles.io##footer
-upfiles.io##.spacer
-upfiles.io##.divider
-upfiles.io##.page-title
-upfiles.io##.faqs-accordian.accordion
-upfiles.io###file-captcha > .ad-element
-upfiles.io##body > .container > .text-center
-
-! 2021-07-20 https://up-load.io
-up-load.io##.upinfo
-up-load.io##.report
-up-load.io##.share-info
-up-load.io##.col-md-8 > li
-up-load.io##.hidden-xs.icon
-up-load.io##.feather-download.feather
-up-load.io##input.btn-sm.btn-primary.btn:nth-of-type(2)
-
-! 2021-07-20 https://upfiles.io
-upfiles.io###ad-7
-upfiles.io###ad-5
-upfiles.io###ad-11
-upfiles.io##.my-2.countdown
-upfiles.io##.mb-4.file-title
-
-! 2021-07-20 https://uploadev.org
-uploadev.org##.col2
-uploadev.org##footer
-uploadev.org##header
-uploadev.org##.desc1
-uploadev.org###footer2
-uploadev.org##.text-left
-uploadev.org##.offersprim
-uploadev.org##.capcha > p
-uploadev.org##.aboutuplouad
-uploadev.org##li:nth-of-type(9)
-uploadev.org##li:nth-of-type(8)
-uploadev.org##li:nth-of-type(7)
-uploadev.org##li:nth-of-type(6)
-uploadev.org##li:nth-of-type(4)
-uploadev.org##li:nth-of-type(3)
-uploadev.org##li:nth-of-type(2)
-uploadev.org##li:nth-of-type(1)
-uploadev.org###gdpr-cookie-notice
-uploadev.org##.offersfree > .text-center > .dtime
-uploadev.org##.offersfree > .text-center > li > .fa-check.fa
-
-! 2021-07-22 https://userupload.in
-userupload.in##span:nth-of-type(4)
-userupload.in##.navbar-expand-lg.navbar
-userupload.in##.position-absolute.p-4.footer
-userupload.in##.mb-4.aboutFile.col-md-12.col-lg-6
-
-! 2021-07-20 https://userupload.net
-userupload.net##span:nth-of-type(4)
-userupload.net##.navbar-expand-lg.navbar
-userupload.net##.position-absolute.p-4.footer
-userupload.net##.mb-4.aboutFile.col-md-12.col-lg-6
 
 ! 2021-07-08 https://www.msn.com
 www.msn.com##.novig.stb-flex
@@ -1338,13 +1114,14 @@ mega4up.com##.no-gutters.mt-5.single-post.row
 mega4up.com##.mb-3.list-group-flush.list-group
 mega4up.com##.text-center.py-3.footer-copyright
 
-! 2021-07-11 https://vuighe.net
+! 2022-08-13 https://vuighe.net
 vuighe.tv###footer
 ||vuighe.tv/images/*.gif^
 ||vuighe.tv/players/ads/^
 vuighe.net##.banner-300x250
 vuighe.tv##.class_quangcao_benphai
 vuighe.tv##.only-pc.tagcloud.block
+vuighe.net##.balloon-500x300.balloon
 vuighe.net##.banner-masthead.masthead
 
 ! 2021-07-12 https://vnpt.com.vn
@@ -1396,149 +1173,6 @@ dekiru.vn##.active.lg.right.arcontactus-message.arcontactus-widget
 dekiru.vn###footer
 dekiru.vn##div.item-new-relation-dkr:nth-of-type(1)
 
-! 2021-04-29 https://techssting.com
-techssting.com##.footer
-techssting.com##.modalpop
-techssting.com##.text-primary
-techssting.com##.py-3.col-md-12
-techssting.com##.mb-5.text-primary
-techssting.com##.py-3.col-md-12 > ul > li
-techssting.com##.copy.btn-outline-primary.btn
-techssting.com##.mb-4.m-0.sharetabs > ul > li
-techssting.com##.btn-info.btn-sm.btn-block.btn
-techssting.com##.btn-danger.btn-lg.btn-block.btn
-techssting.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-techssting.com##.align-items-center.flex-wrap.d-flex.mt-5.fileInfo
-
-! 2021-05-18 https://dropgalaxy.com
-dropgalaxy.com##.footer
-dropgalaxy.com###modalpop
-dropgalaxy.com##.features
-dropgalaxy.com##.modalpop
-dropgalaxy.com##.pro.features
-dropgalaxy.com##.text-primary
-dropgalaxy.com##.mt-5.col-md-8
-dropgalaxy.com##.py-3.col-md-12
-dropgalaxy.com##.whatFor.features
-dropgalaxy.com###gdpr-cookie-notice
-dropgalaxy.com##.mb-3.alert-danger.alert
-dropgalaxy.com##.mb-4.m-0.sharetabs > ul
-dropgalaxy.com###UmlBRgvDIeornKmhTGblUrujz
-dropgalaxy.com###wCEaVElYlWoOjqfCmTPKnWPPh
-dropgalaxy.com##div.col-md-3:nth-of-type(2)
-dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
-dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
-dropgalaxy.com##.mb-1.pr-5.btn-block.btn-danger.btn
-dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
-dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
-
-douploads.com##footer
-douploads.com##header
-douploads.net##center
-douploads.net##.footer
-douploads.com###sidebar
-douploads.com##.section
-douploads.com###news_last
-douploads.net###news_last
-douploads.net##.text-primary
-douploads.net##.mt-5.col-md-8
-douploads.net##.py-3.col-md-12
-douploads.com##td:nth-of-type(4)
-douploads.com##header:first-child
-douploads.net##.mb-5.text-primary
-douploads.com###gdpr-cookie-notice
-douploads.com##.mb-4.m-0.sharetabs
-douploads.net###gdpr-cookie-notice
-douploads.com##.mngez_lastnews > span
-douploads.com##.fa-arrow-circle-down.fa
-douploads.com##.fa-external-link-square.fa
-douploads.com###sideright > footer:last-child
-douploads.net##.btn-danger.btn-lg.btn-block.btn
-douploads.com###wrapper > div.paymentoffersone1:last-child
-douploads.com/images/StartDownload.gif$domain=douploads.com
-douploads.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
-douploads.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
-douploads.com###wrapper > div.directlinkpage:last-child > div.title:first-child
-douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > a:first-child
-douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.paymentoffersone1:nth-child(5)
-douploads.com###wrapper > div.paymentoffersone1:last-child > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
-douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.row:nth-child(6) > div.col-xs-4.col-sm-4.col-md-4.col-lg-4:nth-child(2) > div.downarea > center:last-child
-douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.paymentoffersone1:nth-child(5) > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
-
-dropapk.to##footer
-dropapk.com##.bicon
-dropapk.com##.section
-dropapk.com###comments
-dropapk.com###mngez-footer
-dropapk.com###mngez-header
-dropapk.com##.mngezpremum2
-dropapk.com###mngez-footer2
-dropapk.com###mngez-topheader
-dropapk.com##.fileoptionright
-dropapk.to##.navbar-expand-lg.navbar
-dropapk.to##.bg-white.py-5.payment_methods
-dropapk.com##.fileoptionleft > .header-right
-dropapk.com##.fileoptionleft > .mngez-optiondet
-dropapk.to##div.text-center.col-md-4:nth-of-type(2)
-dropapk.com##.fileoptionleft > .mngez-optiondet > ul
-dropapk.com##.mngez-download1plus > table > tbody > tr > td:nth-of-type(1)
-dropapk.to##.py-4.bg-white.features__section > .container > .row > .col-md-12
-dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
-dropapk.to##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
-
-file-up.org##.stdt
-file-up.org###boxes
-file-up.org##footer
-file-up.org##header
-file-up.org##.leftcol
-file-up.org##.default-ttl
-file-up.org##.page-wrap > .row
-file-up.org##.mnbt1.btn-success.btn-xs.btn
-file-up.org##form > div.row:nth-of-type(2)
-file-up.org##.text-center.page-wrap > div:nth-of-type(2) > .row
-file-up.org##.text-center.col-md-offset-3.col-md-6 > div:nth-of-type(1)
-
-files.pw##.footerag
-files.pw##.headerag
-files.pw##.copyrightsag
-files.pw##.alert-info.alert
-files.pw##.alert-danger.alert
-files.pw##div.row:nth-of-type(4)
-files.pw##h4.maintitag:nth-of-type(2)
-files.pw##h4.maintitag:nth-of-type(3)
-files.pw##ins.adsbyadop:nth-of-type(1)
-files.pw##ins.adsbyadop:nth-of-type(2)
-files.pw##ins.adsbyadop:nth-of-type(3)
-files.pw##div.adscenter2:nth-of-type(1)
-files.pw##div.adscenter2:nth-of-type(3)
-files.pw##.regcontentdown.regcontent > div:nth-of-type(5)
-files.pw##.regcontentdown.regcontent > .downbtnag.browsebtn
-files.pw##.regcontentdown.regcontent > div.row:nth-of-type(1)
-files.pw##.regcontentdown.regcontent > h4.maintitag:nth-of-type(1)
-
-mixloads.com##footer
-mixloads.com##.navbar-expand-lg.navbar
-mixloads.com##.bg-white.py-5.payment_methods
-mixloads.com##div.text-center.col-md-4:nth-of-type(2)
-mixloads.com##.py-4.bg-white.features__section > .container > .row > .col-md-12
-mixloads.com##div.text-center.col-md-4:nth-of-type(4) > .download_method > .p-0.mx-auto.my-0.features
-mixloads.com##div.text-center.col-md-4:nth-of-type(4) > .download_method > .justify-content-center.align-items-center.d-flex.header
-
-mshare.io##b
-mshare.io###header
-mshare.io##.col-md-5
-mshare.io##.site-footer
-mshare.io##.in.fade.modal
-mshare.io##.copyright-info
-mshare.io##tr:nth-of-type(4)
-mshare.io##tr:nth-of-type(5)
-mshare.io##.text-left.info-page
-mshare.io##.in.fade.modal-backdrop
-mshare.io###push-notification-button
-mshare.io##.file-info.download > div:nth-of-type(3)
-mshare.io##.pricing-grids.text-center.col-md-7 > .text-left.info-page
-
 ! 2021-01-15 https://populist.press
 populist.press##.hustle-optin--default.hustle-optin
 populist.press##.hustle-optin-mask.hustle-popup-mask
@@ -1579,9 +1213,6 @@ dongphuoctayninh.com##.d-block
 ! 2021-05-20 https://www.hnammobile.com
 www.hnammobile.com###popup-banner
 
-! 2021-05-28 https://extremecloudiq.com
-extremecloudiq.com##.grid_7_2.rightColumn
-
 ! 2021-05-28 https://jaanmusic.in
 jaanmusic.in###alert
 
@@ -1614,19 +1245,8 @@ www.ods.vn##.fl-page > .call-now
 /themes/Gargoyle/images/gargoyle-logo.png$image
 /tracking.ashx?
 123job.vn##.current.blocker.jquery-modal
-1fichier.com###footer
-1fichier.com##.ct_warn
-1fichier.com###cookie_box
-1fichier.com##.ui-front.ui-widget-overlay
-1fichier.com##.ui-front.ui-widget-content.ui-widget.ui-corner-all.ui-dialog
-2.2.2.11###fancyFooter
-2.2.2.11##.promo
 2bay.org###boder1
 2bay.org###boder2
-4file.net###header
-4file.net##.extend_premium
-4file.net##div:nth-of-type(2) > table > tbody > tr > td
-4file.net##footer
 4kmovie.site###modal-watch
 4kmovie.site##.modal-dialog-centered.modal-dialog
 4kmovie.site##.show.fade.modal-backdrop
@@ -1638,19 +1258,6 @@ www.ods.vn##.fl-page > .call-now
 @@||ok.animetvn.com
 @@||wolf.animetvn.com
 @||ssl.p.jwpcdn.com
-a2zapk.com###galax2
-a2zapk.com##.Tags
-a2zapk.com##.WebF
-a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
-a2zapk.com##div.ArticleLand:nth-of-type(3) > b
-a2zapk.com##div.ArticleLand:nth-of-type(4)
-a2zapk.com##div.ArticleLand:nth-of-type(5)
-a2zapk.com##div.ArticleLand:nth-of-type(6)
-a2zapk.com##div.NewBlock:nth-of-type(1)
-a2zupload.com###alert
-a2zupload.com###content > div:nth-of-type(1)
-a2zupload.com###taxonomy-list_1-0
-a2zupload.com##.WebF
 accounts.crowdin.com##.cc-color-override-1528406573.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
 adayroi.com###vinfooter
 adayroi.com##.slogan-container
@@ -1668,8 +1275,6 @@ allsolu4u.vn###widget-16
 androidauthority.com##.gcap-version-5.gcap-popup-with-avatar.gcap-logo-rounded.gcap-layout-popup.gcap-iLkZQ.gcap.email-only.gcap-shown
 androidauthority.com##.gcap-version-5.gcap-popuptext.gcap-layout-popup.gcap-KyBef.gcap.email-only.gcap-shown
 androidfacting.blogspot.com##[href="//zukxd6fkxqn.com/1780508.html"]
-androidfilehost.com###CybotCookiebotDialog
-androidfilehost.com##.footer
 animetvn.tv###menubentrai
 animetvn.tv##.bgfff.player-area-group > .gnarty-offads
 animetvn.tv##.footer
@@ -1759,8 +1364,6 @@ canhme.com##.et_bloom_inline_form, .et_bloom_optin, .et_bloom_make_form_visible,
 canhme.com##.et_bloom_popup, .et_bloom_optin, .et_bloom_resize, .et_bloom_optin_1, .et_bloom_auto_popup, .et_bloom_trigger_bottom, .et_bloom_hide_mobile_optin, .et_bloom_visible, .et_bloom_animated
 canhme.com##.site-footer
 canhme.com##.slide-on-scroll
-chiasefile.net##.bottom.shareit
-chiasefile.net##.header-inner
 chiasenhac.vn###csnplayerads > div.jw-controls.jw-reset:last-child > div.jw-controlbar.jw-background-color.jw-reset:last-child
 chiasenhac.vn###footer
 chiasenhac.vn###list_comment_body
@@ -1776,16 +1379,6 @@ chiasesuutam.com###mailmunch-inner-overlay-169048a3444b97c
 chiasesuutam.com###mailmunch-overlay-169048a3444b97c
 chiasesuutam.com###mailmunch-popover-169048a3444b97c
 cleancss.com###ezmobfooter
-cloudflare.com###dns-info
-cloudflare.com###dnssec-info
-cloudflare.com###sni-info
-cloudflare.com###tls-info
-cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
-cloudflare.com##.js-adroll-track-click
-cloudflare.com##.main-footer.cms-mainfooter
-cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
-cloudyfiles.me###header
-cloudyfiles.me##footer
 cnet.com##.entered.dock.inviewElement
 codevn.net###footer
 codevn.net###header
@@ -1799,21 +1392,6 @@ creativesfeed.com##.spu-total-.spu-centered.spu-box
 crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:last-child
 crus.io##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.box-main:first-child > div:nth-child(3)
 cydia.vn###tag_cloud-4
-d-h.st/assets/img/download3.png
-dailyuploads.net##.adsbygoogle
-dailyuploads.net##.container
-dailyuploads.net##.footer
-dailyuploads.net##.navbar-inner
-dailyuploads.net##div:nth-of-type(2) > center
-dailyuploads.net##label
-datafilehost.com##.col-lg-12
-datafilehost.com##.col-md-10.col-sm-10.col-xs-20
-datafilehost.com##.col-md-4.col-xs-6.text-center
-datafilehost.com##.col-sm-3, .col-xs-6
-datafilehost.com##.navbar, .navbar-inverse, .navbar-fixed-top
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:first-child > a:nth-child(8) > h4
-datafilehost.com##div.container:nth-child(2) > div.row:nth-child(2) > div.col-md-6:last-child
-datafilehost.com##div[style="padding-top: 2px;position: absolute; top:1px; width: 100%; background-color: #FFFFFF;"]
 demo-blogvnpt.blogspot.com###footer-wrapper
 demo-blogvnpt.blogspot.com##.tl-midheader
 dienmayviet.com.vn###banner
@@ -1827,8 +1405,6 @@ distrowatch.com##table.News:nth-of-type(1) > tbody > tr:nth-of-type(2) > .News
 distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
 div.box-main:first-child > h4:nth-child(5)
 dl.taive.work###fbox-background
-dll-files.com##.overlay
-dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 dnschecker.org###cookie-box
 dongnaigsm.vn###headerMover > header:last-child
 dongnaigsm.vn###headerProxy
@@ -1860,7 +1436,6 @@ earshot1.com##div.container:nth-child(5) > div.row > div.col-md-10.col-md-offset
 elitepvpers.com###notices > .tborder
 elitepvpers.com###tickerwrapper
 elitepvpers.com##div.cwcontentad:nth-of-type(10)
-extremecloudiq.com##.grid_7_2.rightColumn
 eyes-health.win##[href="https://sylwenys.pw/i6rlquMjowCx3Q0/12654"]
 eyes-health.win##[href="https://travelcram.com"]
 fado.vn###bner-center-modal
@@ -1872,11 +1447,6 @@ fancoiphim.net###encompass > div:nth-of-type(4)
 fancoiphim.net###tu_khoa_tag
 feeding.cloud.geek.nz##.sidebar
 fibervnn.vn###ja-col2
-filedwon.info###container > div:nth-child(3)
-filedwon.info##.leftcol
-filehippo.com###zeus_1522072502357
-filetrip.net###templatemo_footer_wrapper
-filetrip.net##p
 fixthephoto.com##.uk-open.uk-flex.uk-modal.tm-bf-modal.uk-flex-top
 fnote.me##footer
 forum.armbian.com###elGuestTerms
@@ -1896,17 +1466,8 @@ free4pc.icu##body > div:nth-of-type(1)
 free4pc.icu##body > div:nth-of-type(3)
 free4pc.icu##h1
 free4pc.icu##h2
-freefileload.ml##.menu
-freefileload.ml##.right
-freefileload.ml##body > div:nth-of-type(1)
 freetuts.net##div#boxed-content-wrapper.clearfix
 freetuts.net##div#show-popup-bottom
-fshare.vn###boundary
-fshare.vn###livechat_header
-fshare.vn###web-container > footer
-fshare.vn###web-container > footer:nth-child(3)
-fshare.vn##.bannerinfooter
-fshare.vn##.quang-cao-bottom
 ftios.vn##[href^="https://shopee.vn/search/"]
 gameguardian.net###elem_4166736_dialog
 gameguardian.net###elem_8246945_dialog
@@ -1975,16 +1536,6 @@ hoctiengnhatkaoruri.wordpress.com###jp-post-flair
 hoctiengnhatkaoruri.wordpress.com###secondary
 hoctiengnhatkaoruri.wordpress.com##.site-branding
 hoctiengnhatkaoruri.wordpress.com##.widget_eu_cookie_law_widget.widget
-hotfile.pro##.desktop > h3
-hotfile.pro##.file-info > div.row:nth-of-type(4)
-hotfile.pro##.navbar-fixed-top.navbar-inverse.navbar
-hotfile.pro##center:nth-of-type(2)
-hotfile.pro##center:nth-of-type(3)
-hotfile.pro##div.container:nth-of-type(1) > .container
-hotfile.pro##div.container:nth-of-type(1) > center:nth-of-type(1)
-hotfile.pro##div.container:nth-of-type(1) > h2:nth-of-type(1)
-hotfile.pro##div.margin-bottom-15.row:nth-of-type(5)
-hotfile.pro##div:nth-of-type
 howtogeek.com##.email-overlay
 howtogeek.com##.overlay-wrapper
 hvdic.thivien.net##.notification
@@ -1992,16 +1543,6 @@ hybrid-analysis.com###cookie-message-container
 i.imgur.com/A4Kwg6k.png$domain=uploadocean.com
 icutit.ca##.banner-336x280.banner
 ijailbreak.com###om-fqy5jwodan-canvas
-intoupload.net###footer2
-intoupload.net###intro
-intoupload.net###socialmedia
-intoupload.net##.banneradshome
-intoupload.net##.col-lg-5.col-md-5.col-sm-12.col-xs-12
-intoupload.net##.content > table
-intoupload.net##.fa-cloud-download.fa
-intoupload.net##.title
-intoupload.net##.txt
-intoupload.net##footer
 ios.codevn.net##div.container:nth-child(4) > div.col-md-4:last-child > div.post-sidebar > div.post-sidebar-box > div.adssidebar:first-child
 ios.codevn.net##div.container:nth-child(4) > div.col-md-8:first-child > div.ads728:nth-child(2)ios.codevn.net##footer:nth-child(18)
 ios.codevn.net##footer:nth-child(18)
@@ -2078,15 +1619,6 @@ link.karanpc.com##h4
 link.karanpc.com##p:nth-of-type(2)
 link.karanpc.com##p:nth-of-type(3)
 link.karanpc.com##p:nth-of-type(4)
-linkcc.pro###cookie-pop
-linkcc.pro###fbox-background
-linkcc.pro##.banner-468x60.banner
-linkcc.pro##.banner-728x90.banner
-linkcc.pro##.box-main > div > [href^="//oufauthy.net/afu.php"]
-linkcc.pro##.navbar-default.navbar
-linkcc.pro##.text-left
-linkcc.pro##footer
-linkcc.pro##h4
 linkneverdie.net##.show.fade.modal
 linkneverdie.net##.show.fade.modal-backdrop
 linksysinfo.org##.js-bottomFixTarget.u-bottomFixer
@@ -2126,14 +1658,6 @@ mpgh.net##.navi3
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(1)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(2)
 mpgh.net##div:nth-of-type(4) > div > div:nth-of-type(3)
-mshare.xyz##.in.fade.modal
-mshare.xyz##.in.fade.modal-backdrop
-mshares.co##.col-md-5
-mshares.co##.pricing-grids.text-center.col-md-7 > .text-left.info-page
-mshares.co##.site-footer
-mshares.net##div.col-md-4:nth-of-type(1)
-mshares.net##div.col-md-4:nth-of-type(3)
-multifilemirror.com##.darken-2.blue-grey.page-footer
 mxlinux.org###webarx-cookie-notice
 myopenrouter.com###sliding-popup
 news.zing.vn###highlight
@@ -2222,13 +1746,6 @@ samsungvn.com###adsgoogle-top
 samsungvn.com##.welcomeBlock_content
 scloud.ws###block_blogs
 scloud.ws##.tag-cloud, .word-wrap
-secufiles.com###adblockinfo
-secufiles.com###copyright
-secufiles.com###navigation-sticky-wrapper
-secufiles.com##.heading-1
-secufiles.com##.socialsider_opacity.socialsider_bgcolor_white.socialsider_fixed.socialsider_right_middle.socialsider.reponsiveMobileHide
-secufiles.com##div:nth-of-type(3) > div:nth-of-type(4)
-secufiles.com##div:nth-of-type(6)
 semawur.com##.btn-info.btn
 semawur.com##.col-lg-8.col-md-12 > div:nth-of-type(1)
 semawur.com##.main-footer
@@ -2245,13 +1762,6 @@ sendo.vn##.block-tags-search
 sendo.vn##.footer-bottom
 sendo.vn##.footer-top
 sendo.vn##div.float-banner-ev-bottom
-sfiles.org###header
-sfiles.org##.section
-sfiles.org##div:nth-of-type(7)
-sfiles.org##footer
-shink.in###bs-example-navbar-collapse-1
-shink.in##.col-md-6.col-md-offset-3
-shink.in##.collapse.navbar-collapse
 shopee.vn##._1cuZND
 shopee.vn##._2JVXfh
 shopee.vn##._3hdpJC
@@ -2289,34 +1799,12 @@ softwaresde.com###pixcel
 softwaresde.com###spin_download
 softwaresde.com##.content_text > p:nth-of-type(1)
 softwaresde.com##.footerPolicy
-solidfiles.com###header
-solidfiles.com##.premium-promo.box
-solidfiles.com##.social
-solidfiles.com##.top-section
 sonyfan.vn###check-also-box
 sonyfan.vn###sidebar > .theiaStickySidebar
 sonyfan.vn###wrapper > .inner-wrapper > .footer-bottom
 sosanhgia.com###newsletter-ebox
 sosanhgia.com###page-overlay
 sosanhgia.com###promotion-popup
-speed-down.org###container > div > div:nth-of-type(1)
-speed-down.org###container > div > div:nth-of-type(2)
-speed-down.org###container > div > h2
-speed-down.org##.navbar-fixed-top.navbar-inverse.navbar
-speed-down.org##div.container:nth-of-type(3)
-speed-down.org##div.container:nth-of-type(4)
-speed-down.org##div.container:nth-of-type(6)
-speed-down.org##footer
-speed-down.org##input.btn-info.btn:nth-of-type(6)
-speed4up.com###copyright
-speed4up.com###navigation-sticky-wrapper
-speed4up.com##.heading-1
-speed4up.com##.responsiveInfoTable.col-md-3
-speed4up.com##.socialsider_opacity.socialsider_bgcolor_white.socialsider_fixed.socialsider_right_middle.socialsider.reponsiveMobileHide
-speed4up.com##.upgrade-table.text-center.table-striped.table-bordered.table
-speed4up.com##div:nth-of-type(3) > .row
-speed4up.com##div:nth-of-type(3) > div:nth-of-type(3)
-speed4up.com##th.col-md-3:nth-of-type(3)
 speedtest.net###_evh-link
 speedtest.net##div.u-c.pure-u-1-4:nth-of-type(4)
 sum.vn##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
@@ -2327,12 +1815,6 @@ support.kaspersky.com###gdprbarfiller
 support.malwarebytes.com###cookie-consent-alert
 support.malwarebytes.com###cookie-consent-overlay
 tago.vn##div.sbzon:nth-child(26)
-taifile.net###content_download > a:first-child
-taifile.net###content_download > a:nth-child(2)
-taive.in###mainNav
-taive.in##div.container:nth-child(2) > div.row > div.col-md-10.col-md-offset-1 > div.text-left:last-child
-taive.in##footer:nth-child(3)
-taive.in##footer:nth-child(3) > div.copyright-container
 taiwebs.com###cookie_page
 taiwebs.com###fan-exit
 taiwebs.com###fanback
@@ -2446,145 +1928,9 @@ unlockapk.com##.footer--dark.footer
 unlockapk.com##.nav
 unlockapk.com##.WebF
 unlockapk.com##body > div:nth-of-type(3)
-upfile.vn###Footer
-upfile.vn###Header
-upfile.vn##.Download > ins.adsbygoogle:nth-of-type(1)
-upfile.vn##.NormalButton
-upfile.vn##.Wrapper > div:nth-of-type(1)
-upfile.vn##[href="https://tienso.net"]
-upfile.vn##ins.adsbygoogle:nth-of-type(2)
-upfile.vn##p
-upload.ac##.col-md-12 > .row > div:nth-of-type(2)
-upload.ac##.col-md-8 > .row > .clearfix
-upload.ac##.col-xs-10.col-sm-6
-upload.ac##.col-xs-10.col-sm-7
-upload.ac##.fmore
-upload.ac##.navbar-static-top.navbar-inverse.navbar
-upload.ac##.pt20.col-md-4
-upload.ac##.row > .hidden-xs.text-center.boxa
-upload.ac##.row > .hidden-xs.text-center.boxa > center
-upload.ac##footer
-upload4earn.org###socialmedia
-upload4earn.org##.fa-cloud-download.fa
-upload4earn.org##.mngez_premium
-upload4earn.org##.section
-upload4earn.org##.select
-upload4earn.org##center
-upload4earn.org##footer
-upload4earn.org##header
-upload4earn.org##input:nth-of-type(7)
-upload4earn.org##li:nth-of-type(5) > span
-upload4earn.org##nav
-uploaded.net###foot
-uploaded.net###head
-uploaded.net###headmenu
-uploaded.net##.aB.feature
-uploaded.net##.aT > .aT
-uploaded.net##td:nth-of-type(6)
-uploaded.net##tr.feature
-uploaded.net##tr.feature:nth-of-type(11)
-uploaded.net##tr.feature:nth-of-type(13)
-uploaded.net##tr.feature:nth-of-type(5)
-uploaded.net##tr.feature:nth-of-type(7)
-uploaded.net##tr.feature:nth-of-type(9)
-uploadocean.com###header
-uploadocean.com###lkika
-uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
-uploadocean.com##.down1_holder > div:nth-of-type(2)
-uploadocean.com##.premiumbox.download_box
-uploadocean.com##.report
-uploadocean.com##.strip_right
-uploadocean.com##[src="https://uploadocean.com/UploadOcean_images/cloud_download.png"]
-uploadocean.com##a[href="https://uploadocean.com/premium-features.html"] > h2
-uploadocean.com##div.strip_right:nth-of-type(3)
-uploadocean.com##div[style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2147483647; background: black; opacity: 0.01; height: 637px; width: 1366px;"]
-uploadocean.com##footer
-uploadproper.com###container > div:nth-of-type(4)
-uploadproper.com###header
-uploadproper.com##.bicon
-uploadproper.com##.section
-uploadproper.com##center
-uploadproper.com##div.ads_small:nth-of-type(3)
-uploadproper.com##div.ads_small:nth-of-type(4)
-uploadproper.com##footer
-uploadproper.com##input:nth-of-type(7)
-uploadrar.com###footer2
-uploadrar.com###gdpr-cookie-notice
-uploadrar.com###lastnews
-uploadrar.com###news_last
-uploadrar.com##.banner2
-uploadrar.com##.banner3
-uploadrar.com##.blockpage > .title
-uploadrar.com##.btn-lg.btn-success.btn
-uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
-uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
-uploadrar.com##.desc
-uploadrar.com##.fileoption > ul
-uploadrar.com##.icofont-zipped
-uploadrar.com##.menufooter
-uploadrar.com##.sharefile > ul
-uploadrar.com##.txt
-uploadrar.com##div.download0page:nth-of-type(4)
-uploadrar.com##footer
-uploadrar.com##header
-uploadship.com###navigation
-uploadship.com##.AdClear-v9\.10\.2\.753-beta_build_850000753\.apk.CURRENT_PAGE_KEYWxrea.PLAYER.pages
-uploadship.com##.Betternet_5\.2\.2\.apk.CURRENT_PAGE_KEYWxrea.PLAYER.pages
-uploadship.com##.cc-color-override-688238583.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
-uploadship.com##.cp
-uploadship.com##.download > .file-box
-uploadship.com##.download > h2
-uploadship.com##.pageErrors
-uploadship.com##.text
-uploadship.com##.time
-uploadship.com##.UPFS
-uploadship.com##center:nth-of-type(2)
-uploadship.com##div.file-box:nth-of-type(3)
-uploadship.com##div.file-box:nth-of-type(4)
-uploadship.com##div.file-box:nth-of-type(5)
-uploadship.com##div.row:nth-of-type(10)
-uploadship.com##div.row:nth-of-type(11)
-uploadship.com##div.row:nth-of-type(4)
-uploadship.com##div.row:nth-of-type(5)
-uploadship.com##div.row:nth-of-type(6)
-uploadship.com##div:nth-of-type(2) > div.row:nth-of-type(1)
-uploadship.com##footer
-uploadship.com##thead
-uploadship.com##tr:nth-of-type(10) > td:nth-of-type(2)
-uploadship.com##tr:nth-of-type(2)
-uploadship.com##tr:nth-of-type(4)
-uploadship.com##tr:nth-of-type(5)
-uploadship.com##tr:nth-of-type(6)
-uploadship.com##tr:nth-of-type(7)
-uploadship.com##tr:nth-of-type(8)
-uploadship.com##tr:nth-of-type(9)
-uploadshub.com/images/start-download.gif
-uplod.org##.clearfix
-uplod.org##.col-md-4, .pt20
-uplod.org##.navbar, .navbar-inverse, .navbar-static-top
-uplod.org##footer
-uplod.ws###container > h2
-uplod.ws###content:nth-of-type(2)
-uplod.ws##.adsbygoogle
-uplod.ws##.mainfooter
-uplod.ws##.TopMenuMain
 uptobox.com###fan-exit
 urldown.com##.main-footer
 urldown.com##.navbar
-userscloud.com##.footer
-userscloud.com##.innerTB > center
-userscloud.com##.jkfuxayxx1473507998442fwzkra
-userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-main.navbar
-userscloud.com##.text-left.pricing-features
-userscloud.com##.wizard-1.wizard-container
-userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
-userscloud.com##li.col-md-6:nth-of-type(2)
-usersdrive.com##.col-md
-usersdrive.com##.content
-usersdrive.com##.socialmedia
-usersdrive.com##.userdrive-nav.bg-dark.fixed-top.navbar-dark.navbar-expand-md.navbar
-usersdrive.com##main > center
-usersdrive.com##nav.sidebar.bg-dark.d-sm-block.col-md-2.col-sm-3:nth-of-type(2)
 userstyles.org###footer
 userstyles.org##.android_button_banner
 userstyles.org##.android_button_button
@@ -2725,19 +2071,11 @@ www.asus.com###cookie-policy-info
 www.axiomtek.com##.cookies_bar
 www.best-inc.vn##.bex12-cont > div:nth-of-type(1)
 www.best-inc.vn##.bex23-container
-www.cloudflare.com##.main-footer
-www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 www.cpu-monkey.com##.werb_top1.werb
 www.dfi.com##.first-browse
 www.dongphim.net##.luna.ht-footer
 www.draytek.com.tw##footer
-www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
-www.filesend.jp###footer
-www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(1)
-www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(2)
-www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(3)
 www.forum.vnpro.org##.msgbox
-www.fshare.vn##.thumbnail-ic-fc.material-icons
 www.gargoyle-router.com###outer_logo
 www.gigabyte.com###policy-div
 www.grimmstories.com##.cc_container--open.cc_container.cc_banner
@@ -2789,34 +2127,6 @@ www.speedtest.net##.footer
 www.speedtest.net##.modal-container
 www.techinferno.com###elGuestTerms
 www.uplevo.com###sticky
-www.uploadship.com###footer2
-www.uploadship.com##.FI
-www.uploadship.com##.page-box
-www.uploadship.com##.pages
-www.uploadship.com##.pricing > .row
-www.uploadship.com##.pricing > .text-center
-www.uploadship.com##.pricing > center:nth-of-type(1)
-www.uploadship.com##.pricing > center:nth-of-type(4)
-www.uploadship.com##.scrollup
-www.uploadship.com##.table-striped.table-bordered.table.ppdRateTable
-www.uploadship.com##.upl.col-sm-12
-www.uploadship.com##.usndsl
-www.uploadship.com##body > center:nth-of-type(1)
-www.uploadship.com##center:nth-of-type(3) > .rates-ppd.ppdr-pps.ppdr
-www.uploadship.com##center:nth-of-type(3) > center
-www.uploadship.com##div.col-lg-6.col-md-6.col-sm-12.col-xs-12:nth-of-type(1)
-www.uploadship.com##div.col-lg-6.col-md-6.col-sm-12.col-xs-12:nth-of-type(2)
-www.uploadship.com##div.file-box:nth-of-type(10)
-www.uploadship.com##div.file-box:nth-of-type(11)
-www.uploadship.com##div.file-box:nth-of-type(6)
-www.uploadship.com##div.file-box:nth-of-type(9)
-www.uploadship.com##div.row:nth-of-type(12)
-www.uploadship.com##div.row:nth-of-type(13)
-www.uploadship.com##div.row:nth-of-type(3) > .file-box
-www.uploadship.com##div.row:nth-of-type(8)
-www.uploadship.com##div:nth-of-type(7) > .table-striped.table-bordered.table
-www.uploadship.com##div:nth-of-type(7) > div.file-box:nth-of-type(1)
-www.uploadship.com##h2
 www.uptrends.com###promo-banner
 www.uptrends.com##.sub-hero
 www.vietnamworks.com##.fadeIn.animated.footer
@@ -2835,7 +2145,6 @@ yeuphimmoi.com##.balloon-block
 ||2.pik.vn/20202525ec29-cc24-46c4-90fe-8f19bb2a1ff3.jpg$image
 ||2.pik.vn/2020e2bb8f26-44ca-4026-8e33-a23acb68972b.jpg$image
 ||ad.chogiare.vn^
-||androidfilehost.com/assets/images/cloud-bg-new.png$image
 ||aptashant.club
 ||i.imgur.com/u6iyMx4.png$image
 ||i.imgur.com/xJSkDDD.jpg$image
@@ -2860,12 +2169,23 @@ yeuphimmoi.com##.balloon-block
 ||vn-z.vn/data/avatars/*.jpg?1605497958$image
 ||www.anphatpc.com.vn/media/banner/*$image
 ||www.anphatpc.com.vn/media/lib/500x654-vanchuyen2.jpg$image
-||www.filesend.jp/img/file.png$image
 ||www.hdvietnam.com/data/avatars/*.jpg?1588409526$image
 
 !#########################################################################################################
 !___vOz____________________________________________
-! 2022-08-10 https://voz.vn
+! 2022-08-22 https://voz.vn
+vozforum.org###M403005ScriptRootC906261
+vozforum.org##.blockMessage--none.blockMessage
+vozforum.org##.js-bottomFixTarget.u-bottomFixer
+vozforum.org##.noticeScrollContainer.lSSlideOuter
+vozforum.org##.p-footer
+vozforum.org##.p-header
+vozforum.org##.top_important
+vozforums.com###neo_logobar
+vozforums.com##.clearfix
+vozforums.com##div[style="float: right; width: 150px;"]
+vozforums.com##div[style="line-height:80px; "]
+
 voz.vn###footer
 voz.vn###header
 voz.vn##.p-footer
@@ -2896,285 +2216,11 @@ voz.vn##div.samCodeUnit:nth-of-type(13)
 voz.vn##.blockMessage--none.blockMessage
 voz.vn##.thread_view__bottom.adsbygoogle
 voz.vn##.js-bottomFixTarget.u-bottomFixer
-vozforum.org###M403005ScriptRootC906261
-vozforum.org##.blockMessage--none.blockMessage
-vozforum.org##.js-bottomFixTarget.u-bottomFixer
-vozforum.org##.noticeScrollContainer.lSSlideOuter
-vozforum.org##.p-footer
-vozforum.org##.p-header
-vozforum.org##.top_important
-vozforums.com###neo_logobar
-vozforums.com##.clearfix
-vozforums.com##div[style="float: right; width: 150px;"]
-vozforums.com##div[style="line-height:80px; "]
-||i.imgur.com/0ce8kh2.png$image
-||i.imgur.com/0kGF6mz.png$image
-||i.imgur.com/1BW9Wj4.png$image
-||i.imgur.com/1wi66Fj.gif$image
-||i.imgur.com/320PQq9.png$image
-||i.imgur.com/3jw98Ym.jpg$image
-||i.imgur.com/4gmOAMB.png$image
-||i.imgur.com/5W2OAmY.png$image
-||i.imgur.com/7JO4RkJ.png$image
-||i.imgur.com/8kNEyvT.png$image
-||i.imgur.com/9NN5SUy.png$image
-||i.imgur.com/aLfPNwl.jpg$image
-||i.imgur.com/aq4oywg.png$image
-||i.imgur.com/BdgiW7R.png$image
-||i.imgur.com/bRac4Af.png$image
-||i.imgur.com/cB8uZr9.png$image
-||i.imgur.com/cdGvfgg.png$image
-||i.imgur.com/DDhFgYz.png$image
-||i.imgur.com/dNoLyLp.png$image
-||i.imgur.com/dQyVAOZ.gif$image
-||i.imgur.com/Fan97KZ.png$image
-||i.imgur.com/FfsqRRV.png$image
-||i.imgur.com/FY7e6U1.png$image
-||i.imgur.com/g65JYTH.png$image
-||i.imgur.com/g8XXj8u.gif$image
-||i.imgur.com/ghXpJrI.png$image
-||i.imgur.com/gNNoMom.png$image
-||i.imgur.com/gsAGdQo.png$image
-||i.imgur.com/gvTwnV8.gif$image
-||i.imgur.com/h1kRuMc.jpg$image
-||i.imgur.com/hB8nmx5.png$image
-||i.imgur.com/hgSXP8N.png$image
-||i.imgur.com/HR4W6DU.png$image
-||i.imgur.com/HzrdQkW.png$image
-||i.imgur.com/jiz4Eoz.gif$image
-||i.imgur.com/K4Hcd5N.png$image
-||i.imgur.com/KgmQHtR.png$image
-||i.imgur.com/KV0XGIA.gif$image
-||i.imgur.com/KwnKnI0.gif$image
-||i.imgur.com/l2L4p5D.gif$image
-||i.imgur.com/mMOqr4q.png$image
-||i.imgur.com/nmvIYHe.png$image
-||i.imgur.com/NXLjCvc.png$image
-||i.imgur.com/OG0lsXv.png$image
-||i.imgur.com/osCpCsi.png$image
-||i.imgur.com/ouYXbHT.png$image
-||i.imgur.com/qZV215Z.png$image
-||i.imgur.com/rzCjxTh.jpg$image
-||i.imgur.com/sAcB28F.png$image
-||i.imgur.com/TAwI4i0.gif$image
-||i.imgur.com/ttn5qMa.png$image
-||i.imgur.com/TzCgPaI.jpeg$image
-||i.imgur.com/TzCgPaI.jpg$image
-||i.imgur.com/ueBBd8C.png$image
-||i.imgur.com/V092S5K.gif$image
-||i.imgur.com/VvdFMUC.gif$image
-||i.imgur.com/vX6wwz5.png$image
-||i.imgur.com/xjIzSG9.png$image
-||i.imgur.com/xKenGVb.png$image
-||i.imgur.com/yBBewst.png$image
-||i.imgur.com/yP0JAoM.jpg$image
-||i.imgur.com/YpKv8va.png$image
-||i.imgur.com/zFNuZTA.png$image
-||i.imgur.com/ZkoC0RM.png$image
-||voz.vn/attachments/*.190397/$image
-||voz.vn/attachments/*.218479/$image
-||voz.vn/attachments/*.218481/$image
-||voz.vn/attachments/*.218489/$image
-||voz.vn/attachments/*.244943/$image
-||voz.vn/attachments/*.245465/$image
-||voz.vn/attachments/*.253854/$image
-||voz.vn/attachments/*.259405/$image
-||voz.vn/attachments/*.282843/$image
-||voz.vn/attachments/*.288436/$image
-||voz.vn/attachments/*.691087/$image
-||voz.vn/attachments/*.843419/$image
-||voz.vn/attachments/*.843443/$image
-||voz.vn/attachments/*.843473/$image
-||voz.vn/attachments/*.843534/$image
-||voz.vn/attachments/*.968951/$image
-||voz.vn/attachments/*.968953/$image
-||voz.vn/data/avatars/*/22911.jpg$image
-||voz.vn/data/avatars/*/23665.jpg$image
-||voz.vn/data/avatars/*/27028.jpg$image
-||voz.vn/data/avatars/*/38582.jpg$image
-||voz.vn/data/avatars/*/39727.jpg$image
-||voz.vn/data/avatars/*/59318.jpg$image
-||voz.vn/data/avatars/*/62985.jpg$image
-||voz.vn/data/avatars/*/124958.jpg$image
-||voz.vn/data/avatars/*/130590.jpg$image
-||voz.vn/data/avatars/*/1632297019$image
-||voz.vn/data/avatars/*/21728.jpg?$image
-||voz.vn/data/avatars/*/305212.jpg$image
-||voz.vn/data/avatars/*/524268.jpg$image
-||voz.vn/data/avatars/*/772822.jpg$image
-||voz.vn/data/avatars/*/1029278.jpg$image
-||voz.vn/data/avatars/*/1104616.jpg$image
-||voz.vn/data/avatars/*/1141234.jpg$image
-||voz.vn/data/avatars/*/1209149.jpg$image
-||voz.vn/data/avatars/*/1282980.jpg$image
-||voz.vn/data/avatars/*/1309642.jpg$image
-||voz.vn/data/avatars/*/1344368.jpg$image
-||voz.vn/data/avatars/*/1383069.jpg$image
-||voz.vn/data/avatars/*/1422742.jpg$image
-||voz.vn/data/avatars/*/1433882.jpg$image
-||voz.vn/data/avatars/*/1465327.jpg$image
-||voz.vn/data/avatars/*/1489781.jpg$image
-||voz.vn/data/avatars/*/1493801.jpg$image
-||voz.vn/data/avatars/*/1499814.jpg$image
-||voz.vn/data/avatars/*/1531714.jpg$image
-||voz.vn/data/avatars/*/1566813.jpg$image
-||voz.vn/data/avatars/*/1596513.jpg$image
-||voz.vn/data/avatars/*/1636969.jpg$image
-||voz.vn/data/avatars/*/1678579.jpg$image
-||voz.vn/data/avatars/*/1680897.jpg$image
-||voz.vn/data/avatars/*/1681079.jpg$image
-||voz.vn/data/avatars/*/1682874.jpg$image
-||voz.vn/data/avatars/*/1684054.jpg$image
-||voz.vn/data/avatars/*/1684156.jpg$image
-||voz.vn/data/avatars/*/1685910.jpg$image
-||voz.vn/data/avatars/*/1686152.jpg$image
-||voz.vn/data/avatars/*/1688650.jpg$image
-||voz.vn/data/avatars/*/1690848.jpg$image
-||voz.vn/data/avatars/*/1690963.jpg$image
-||voz.vn/data/avatars/*/1691717.jpg$image
-||voz.vn/data/avatars/*/1696448.jpg$image
-||voz.vn/data/avatars/*/1699452.jpg$image
-||voz.vn/data/avatars/*/1700054.jpg$image
-||voz.vn/data/avatars/*/1701060.jpg$image
-||voz.vn/data/avatars/*/1701436.jpg$image
-||voz.vn/data/avatars/*/1709647.jpg$image
-||voz.vn/data/avatars/*/1709648.jpg$image
-||voz.vn/data/avatars/*/1713887.jpg$image
-||voz.vn/data/avatars/*/1714095.jpg$image
-||voz.vn/data/avatars/*/1718358.jpg$image
-||voz.vn/data/avatars/*/1719588.jpg$image
-||voz.vn/data/avatars/*/1727913.jpg$image
-||voz.vn/data/avatars/*/1729914.jpg$image
-||voz.vn/data/avatars/*/1733063.jpg$image
-||voz.vn/data/avatars/*/1736758.jpg$image
-||voz.vn/data/avatars/*/1749296.jpg$image
-||voz.vn/data/avatars/*/1772596.jpg$image
-||voz.vn/data/avatars/*/1778682.jpg$image
-||voz.vn/data/avatars/*/1722009.jpg?$image
-||voz.vn/data/avatars/*.jpg?1583769468$image
-||voz.vn/data/avatars/*.jpg?1583825436$image
-||voz.vn/data/avatars/*.jpg?1583852384$image
-||voz.vn/data/avatars/*.jpg?1583898120$image
-||voz.vn/data/avatars/*.jpg?1583916304$image
-||voz.vn/data/avatars/*.jpg?1583916620$image
-||voz.vn/data/avatars/*.jpg?1583939566$image
-||voz.vn/data/avatars/*.jpg?1584165875$image
-||voz.vn/data/avatars/*.jpg?1584170364$image
-||voz.vn/data/avatars/*.jpg?1584256609$image
-||voz.vn/data/avatars/*.jpg?1584266087$image
-||voz.vn/data/avatars/*.jpg?1584321821$image
-||voz.vn/data/avatars/*.jpg?1584322499$image
-||voz.vn/data/avatars/*.jpg?1584352674$image
-||voz.vn/data/avatars/*.jpg?1584451201$image
-||voz.vn/data/avatars/*.jpg?1584549291$image
-||voz.vn/data/avatars/*.jpg?1584707702$image
-||voz.vn/data/avatars/*.jpg?1584928152$image
-||voz.vn/data/avatars/*.jpg?1584944652$image
-||voz.vn/data/avatars/*.jpg?1585120395$image
-||voz.vn/data/avatars/*.jpg?1585666647$image
-||voz.vn/data/avatars/*.jpg?1585997570$image
-||voz.vn/data/avatars/*.jpg?1587238032$image
-||voz.vn/data/avatars/*.jpg?1588156820$image
-||voz.vn/data/avatars/*.jpg?1592457432$image
-||voz.vn/data/avatars/*.jpg?1593083961$image
-||voz.vn/data/avatars/*.jpg?1593439309$image
-||voz.vn/data/avatars/*.jpg?1594500240$image
-||voz.vn/data/avatars/*.jpg?1594512745$image
-||voz.vn/data/avatars/*.jpg?1594821857$image
-||voz.vn/data/avatars/*.jpg?1598096039$image
-||voz.vn/data/avatars/*.jpg?1598409629$image
-||voz.vn/data/avatars/*.jpg?1599925958$image
-||voz.vn/data/avatars/*.jpg?1600612535$image
-||voz.vn/data/avatars/*.jpg?1600837310$image
-||voz.vn/data/avatars/*.jpg?1601120425$image
-||voz.vn/data/avatars/*.jpg?1601375238$image
-||voz.vn/data/avatars/*.jpg?1602507930$image
-||voz.vn/data/avatars/*.jpg?1602678332$image
-||voz.vn/data/avatars/*.jpg?1602763633$image
-||voz.vn/data/avatars/*.jpg?1603160384$image
-||voz.vn/data/avatars/*.jpg?1603182867$image
-||voz.vn/data/avatars/*.jpg?1603183089$image
-||voz.vn/data/avatars/*.jpg?1603188420$image
-||voz.vn/data/avatars/*.jpg?1603190823$image
-||voz.vn/data/avatars/*.jpg?1603250539$image
-||voz.vn/data/avatars/*.jpg?1603250889$image
-||voz.vn/data/avatars/*.jpg?1603254072$image
-||voz.vn/data/avatars/*.jpg?1603256733$image
-||voz.vn/data/avatars/*.jpg?1603258007$image
-||voz.vn/data/avatars/*.jpg?1603263097$image
-||voz.vn/data/avatars/*.jpg?1603344032$image
-||voz.vn/data/avatars/*.jpg?1603381714$image
-||voz.vn/data/avatars/*.jpg?1603694246$image
-||voz.vn/data/avatars/*.jpg?1603986301$image
-||voz.vn/data/avatars/*.jpg?1604257541$image
-||voz.vn/data/avatars/*.jpg?1605239012$image
-||voz.vn/data/avatars/*.jpg?1605711549$image
-||voz.vn/data/avatars/*.jpg?1608781207$image
-||voz.vn/data/avatars/*.jpg?1614358570$image
-||statics.voz.tech/data/avatars/*/*/21772.jpg$image
-||statics.voz.tech/data/avatars/*/*/39727.jpg$image
-||statics.voz.tech/data/avatars/*/*/62985.jpg$image
-||statics.voz.tech/data/avatars/*/*/68693.jpg$image
-||statics.voz.tech/data/avatars/*/*/72562.jpg$image
-||statics.voz.tech/data/avatars/*/*/91433.jpg$image
-||statics.voz.tech/data/avatars/*/*/124958.jpg$image
-||statics.voz.tech/data/avatars/*/*/130590.jpg$image
-||statics.voz.tech/data/avatars/*/*/168699.jpg$image
-||statics.voz.tech/data/avatars/*/*/360696.jpg$image
-||statics.voz.tech/data/avatars/*/*/486784.jpg$image
-||statics.voz.tech/data/avatars/*/*/538726.jpg$image
-||statics.voz.tech/data/avatars/*/*/712870.jpg$image
-||statics.voz.tech/data/avatars/*/*/951904.jpg$image
-||statics.voz.tech/data/avatars/*/*/989870.jpg$image
-||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
-||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
-||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
-||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
-||statics.voz.tech/data/avatars/*/*/1108747.jpg$image
-||statics.voz.tech/data/avatars/*/*/1173913.jpg$image
-||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
-||statics.voz.tech/data/avatars/*/*/1239205.jpg$image
-||statics.voz.tech/data/avatars/*/*/1334944.jpg$image
-||statics.voz.tech/data/avatars/*/*/1391247.jpg$image
-||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
-||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
-||statics.voz.tech/data/avatars/*/*/1478859.jpg$image
-||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
-||statics.voz.tech/data/avatars/*/*/1498634.jpg$image
-||statics.voz.tech/data/avatars/*/*/1588909.jpg$image
-||statics.voz.tech/data/avatars/*/*/1596513.jpg$image
-||statics.voz.tech/data/avatars/*/*/1628429.jpg$image
-||statics.voz.tech/data/avatars/*/*/1640681.jpg$image
-||statics.voz.tech/data/avatars/*/*/1651173.jpg$image
-||statics.voz.tech/data/avatars/*/*/1658037.jpg$image
-||statics.voz.tech/data/avatars/*/*/1671568.jpg$image
-||statics.voz.tech/data/avatars/*/*/1672591.jpg$image
-||statics.voz.tech/data/avatars/*/*/1675535.jpg$image
-||statics.voz.tech/data/avatars/*/*/1676983.jpg$image
-||statics.voz.tech/data/avatars/*/*/1677066.jpg$image
-||statics.voz.tech/data/avatars/*/*/1685162.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691681.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691717.jpg$image
-||statics.voz.tech/data/avatars/*/*/1695340.jpg$image
-||statics.voz.tech/data/avatars/*/*/1696590.jpg$image
-||statics.voz.tech/data/avatars/*/*/1697745.jpg$image
-||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
-||statics.voz.tech/data/avatars/*/*/1704501.jpg$image
-||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
-||statics.voz.tech/data/avatars/*/*/1714095.jpg$image
-||statics.voz.tech/data/avatars/*/*/1721572.jpg$image
-||statics.voz.tech/data/avatars/*/*/1737241.jpg$image
-||statics.voz.tech/data/avatars/*/*/1749296.jpg$image
-||statics.voz.tech/data/avatars/*/*/1768422.jpg$image
-||statics.voz.tech/data/avatars/*/*/1771406.jpg$image
-||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
-||statics.voz.tech/data/avatars/*/*/1776657.jpg$image
-||statics.voz.tech/data/avatars/*/*/1780397.jpg$image
-||statics.voz.tech/data/avatars/*/*/1793285.jpg$image
-||statics.voz.tech/data/avatars/*/*/1809650.jpg$image
-||statics.voz.tech/data/avatars/*/*/1815332.jpg$image
-||statics.voz.tech/data/avatars/*/*/1820361.jpg$image
-||statics.voz.tech/data/avatars/*/*/1823053.jpg$image
+voz.vn##div.message--post.message:nth-of-type(1)
+voz.vn##div.message--post.message:nth-of-type(2)
+voz.vn##div.message--post.message:nth-of-type(3)
+voz.vn##div.message--post.message:nth-of-type(4)
+voz.vn##div.message--post.message:nth-of-type(5)
 ||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f31425739576a342e676966/$image
 ||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f34676d4f414d422e676966/$image
 ||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f426467695737522e676966/$image
@@ -3407,10 +2453,772 @@ vozforums.com##div[style="line-height:80px; "]
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f454f706e6d736b2e706e673f31/$image
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f72686c78704a692e706e673f31/$image
 ||camo.voz.tech/*/23732323331332f3931323539353631343634353234383030302f746d6c2e676966/$image
-
+||i.imgur.com/*.gif$image,domain=voz.vn
+||i.imgur.com/*.png$image,domain=voz.vn
+||i.imgur.com/*.jpg$image,domain=voz.vn
+||i.imgur.com/*.jpeg$image,domain=voz.vn
+||statics.voz.tech/data/avatars/*/*/21772.jpg$image
+||statics.voz.tech/data/avatars/*/*/39727.jpg$image
+||statics.voz.tech/data/avatars/*/*/62985.jpg$image
+||statics.voz.tech/data/avatars/*/*/68693.jpg$image
+||statics.voz.tech/data/avatars/*/*/72562.jpg$image
+||statics.voz.tech/data/avatars/*/*/91433.jpg$image
+||statics.voz.tech/data/avatars/*/*/124958.jpg$image
+||statics.voz.tech/data/avatars/*/*/130590.jpg$image
+||statics.voz.tech/data/avatars/*/*/168699.jpg$image
+||statics.voz.tech/data/avatars/*/*/360696.jpg$image
+||statics.voz.tech/data/avatars/*/*/486784.jpg$image
+||statics.voz.tech/data/avatars/*/*/538726.jpg$image
+||statics.voz.tech/data/avatars/*/*/712870.jpg$image
+||statics.voz.tech/data/avatars/*/*/951904.jpg$image
+||statics.voz.tech/data/avatars/*/*/989870.jpg$image
+||statics.voz.tech/data/avatars/*/*/994862.jpg$image
+||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
+||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
+||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
+||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
+||statics.voz.tech/data/avatars/*/*/1108747.jpg$image
+||statics.voz.tech/data/avatars/*/*/1173913.jpg$image
+||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
+||statics.voz.tech/data/avatars/*/*/1239205.jpg$image
+||statics.voz.tech/data/avatars/*/*/1334944.jpg$image
+||statics.voz.tech/data/avatars/*/*/1391247.jpg$image
+||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
+||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
+||statics.voz.tech/data/avatars/*/*/1478859.jpg$image
+||statics.voz.tech/data/avatars/*/*/1482089.jpg$image
+||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
+||statics.voz.tech/data/avatars/*/*/1498634.jpg$image
+||statics.voz.tech/data/avatars/*/*/1588909.jpg$image
+||statics.voz.tech/data/avatars/*/*/1596513.jpg$image
+||statics.voz.tech/data/avatars/*/*/1628429.jpg$image
+||statics.voz.tech/data/avatars/*/*/1640681.jpg$image
+||statics.voz.tech/data/avatars/*/*/1651173.jpg$image
+||statics.voz.tech/data/avatars/*/*/1658037.jpg$image
+||statics.voz.tech/data/avatars/*/*/1671568.jpg$image
+||statics.voz.tech/data/avatars/*/*/1672591.jpg$image
+||statics.voz.tech/data/avatars/*/*/1673880.jpg$image
+||statics.voz.tech/data/avatars/*/*/1675535.jpg$image
+||statics.voz.tech/data/avatars/*/*/1676983.jpg$image
+||statics.voz.tech/data/avatars/*/*/1677066.jpg$image
+||statics.voz.tech/data/avatars/*/*/1685162.jpg$image
+||statics.voz.tech/data/avatars/*/*/1687877.jpg$image
+||statics.voz.tech/data/avatars/*/*/1691681.jpg$image
+||statics.voz.tech/data/avatars/*/*/1691717.jpg$image
+||statics.voz.tech/data/avatars/*/*/1695340.jpg$image
+||statics.voz.tech/data/avatars/*/*/1696590.jpg$image
+||statics.voz.tech/data/avatars/*/*/1697745.jpg$image
+||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
+||statics.voz.tech/data/avatars/*/*/1702231.jpg$image
+||statics.voz.tech/data/avatars/*/*/1704501.jpg$image
+||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
+||statics.voz.tech/data/avatars/*/*/1714095.jpg$image
+||statics.voz.tech/data/avatars/*/*/1721572.jpg$image
+||statics.voz.tech/data/avatars/*/*/1737241.jpg$image
+||statics.voz.tech/data/avatars/*/*/1749296.jpg$image
+||statics.voz.tech/data/avatars/*/*/1768422.jpg$image
+||statics.voz.tech/data/avatars/*/*/1771406.jpg$image
+||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
+||statics.voz.tech/data/avatars/*/*/1776657.jpg$image
+||statics.voz.tech/data/avatars/*/*/1780397.jpg$image
+||statics.voz.tech/data/avatars/*/*/1787994.jpg$image
+||statics.voz.tech/data/avatars/*/*/1789564.jpg$image
+||statics.voz.tech/data/avatars/*/*/1793285.jpg$image
+||statics.voz.tech/data/avatars/*/*/1809650.jpg$image
+||statics.voz.tech/data/avatars/*/*/1815332.jpg$image
+||statics.voz.tech/data/avatars/*/*/1820361.jpg$image
+||statics.voz.tech/data/avatars/*/*/1823053.jpg$image
+||voz.vn/attachments/*.190397/$image
+||voz.vn/attachments/*.218479/$image
+||voz.vn/attachments/*.218481/$image
+||voz.vn/attachments/*.218489/$image
+||voz.vn/attachments/*.244943/$image
+||voz.vn/attachments/*.245465/$image
+||voz.vn/attachments/*.253854/$image
+||voz.vn/attachments/*.259405/$image
+||voz.vn/attachments/*.282843/$image
+||voz.vn/attachments/*.288436/$image
+||voz.vn/attachments/*.691087/$image
+||voz.vn/attachments/*.843419/$image
+||voz.vn/attachments/*.843443/$image
+||voz.vn/attachments/*.843473/$image
+||voz.vn/attachments/*.843534/$image
+||voz.vn/attachments/*.968951/$image
+||voz.vn/attachments/*.968953/$image
+||voz.vn/attachments/*.1325579/$image
+||voz.vn/data/avatars/*/22911.jpg$image
+||voz.vn/data/avatars/*/23665.jpg$image
+||voz.vn/data/avatars/*/27028.jpg$image
+||voz.vn/data/avatars/*/38582.jpg$image
+||voz.vn/data/avatars/*/39727.jpg$image
+||voz.vn/data/avatars/*/59318.jpg$image
+||voz.vn/data/avatars/*/62985.jpg$image
+||voz.vn/data/avatars/*/124958.jpg$image
+||voz.vn/data/avatars/*/130590.jpg$image
+||voz.vn/data/avatars/*/1632297019$image
+||voz.vn/data/avatars/*/21728.jpg?$image
+||voz.vn/data/avatars/*/305212.jpg$image
+||voz.vn/data/avatars/*/524268.jpg$image
+||voz.vn/data/avatars/*/772822.jpg$image
+||voz.vn/data/avatars/*/1029278.jpg$image
+||voz.vn/data/avatars/*/1104616.jpg$image
+||voz.vn/data/avatars/*/1141234.jpg$image
+||voz.vn/data/avatars/*/1209149.jpg$image
+||voz.vn/data/avatars/*/1282980.jpg$image
+||voz.vn/data/avatars/*/1309642.jpg$image
+||voz.vn/data/avatars/*/1344368.jpg$image
+||voz.vn/data/avatars/*/1383069.jpg$image
+||voz.vn/data/avatars/*/1422742.jpg$image
+||voz.vn/data/avatars/*/1433882.jpg$image
+||voz.vn/data/avatars/*/1465327.jpg$image
+||voz.vn/data/avatars/*/1489781.jpg$image
+||voz.vn/data/avatars/*/1493801.jpg$image
+||voz.vn/data/avatars/*/1499814.jpg$image
+||voz.vn/data/avatars/*/1531714.jpg$image
+||voz.vn/data/avatars/*/1566813.jpg$image
+||voz.vn/data/avatars/*/1596513.jpg$image
+||voz.vn/data/avatars/*/1636969.jpg$image
+||voz.vn/data/avatars/*/1678579.jpg$image
+||voz.vn/data/avatars/*/1680897.jpg$image
+||voz.vn/data/avatars/*/1681079.jpg$image
+||voz.vn/data/avatars/*/1682874.jpg$image
+||voz.vn/data/avatars/*/1684054.jpg$image
+||voz.vn/data/avatars/*/1684156.jpg$image
+||voz.vn/data/avatars/*/1685910.jpg$image
+||voz.vn/data/avatars/*/1686152.jpg$image
+||voz.vn/data/avatars/*/1688650.jpg$image
+||voz.vn/data/avatars/*/1690848.jpg$image
+||voz.vn/data/avatars/*/1690963.jpg$image
+||voz.vn/data/avatars/*/1691717.jpg$image
+||voz.vn/data/avatars/*/1696448.jpg$image
+||voz.vn/data/avatars/*/1699452.jpg$image
+||voz.vn/data/avatars/*/1700054.jpg$image
+||voz.vn/data/avatars/*/1701060.jpg$image
+||voz.vn/data/avatars/*/1701436.jpg$image
+||voz.vn/data/avatars/*/1709647.jpg$image
+||voz.vn/data/avatars/*/1709648.jpg$image
+||voz.vn/data/avatars/*/1713887.jpg$image
+||voz.vn/data/avatars/*/1714095.jpg$image
+||voz.vn/data/avatars/*/1718358.jpg$image
+||voz.vn/data/avatars/*/1719588.jpg$image
+||voz.vn/data/avatars/*/1727913.jpg$image
+||voz.vn/data/avatars/*/1729914.jpg$image
+||voz.vn/data/avatars/*/1733063.jpg$image
+||voz.vn/data/avatars/*/1736758.jpg$image
+||voz.vn/data/avatars/*/1749296.jpg$image
+||voz.vn/data/avatars/*/1772596.jpg$image
+||voz.vn/data/avatars/*/1778682.jpg$image
+||voz.vn/data/avatars/*/1722009.jpg?$image
+||voz.vn/data/avatars/*.jpg?1583769468$image
+||voz.vn/data/avatars/*.jpg?1583825436$image
+||voz.vn/data/avatars/*.jpg?1583852384$image
+||voz.vn/data/avatars/*.jpg?1583898120$image
+||voz.vn/data/avatars/*.jpg?1583916304$image
+||voz.vn/data/avatars/*.jpg?1583916620$image
+||voz.vn/data/avatars/*.jpg?1583939566$image
+||voz.vn/data/avatars/*.jpg?1584165875$image
+||voz.vn/data/avatars/*.jpg?1584170364$image
+||voz.vn/data/avatars/*.jpg?1584256609$image
+||voz.vn/data/avatars/*.jpg?1584266087$image
+||voz.vn/data/avatars/*.jpg?1584321821$image
+||voz.vn/data/avatars/*.jpg?1584322499$image
+||voz.vn/data/avatars/*.jpg?1584352674$image
+||voz.vn/data/avatars/*.jpg?1584451201$image
+||voz.vn/data/avatars/*.jpg?1584549291$image
+||voz.vn/data/avatars/*.jpg?1584707702$image
+||voz.vn/data/avatars/*.jpg?1584928152$image
+||voz.vn/data/avatars/*.jpg?1584944652$image
+||voz.vn/data/avatars/*.jpg?1585120395$image
+||voz.vn/data/avatars/*.jpg?1585666647$image
+||voz.vn/data/avatars/*.jpg?1585997570$image
+||voz.vn/data/avatars/*.jpg?1587238032$image
+||voz.vn/data/avatars/*.jpg?1588156820$image
+||voz.vn/data/avatars/*.jpg?1592457432$image
+||voz.vn/data/avatars/*.jpg?1593083961$image
+||voz.vn/data/avatars/*.jpg?1593439309$image
+||voz.vn/data/avatars/*.jpg?1594500240$image
+||voz.vn/data/avatars/*.jpg?1594512745$image
+||voz.vn/data/avatars/*.jpg?1594821857$image
+||voz.vn/data/avatars/*.jpg?1598096039$image
+||voz.vn/data/avatars/*.jpg?1598409629$image
+||voz.vn/data/avatars/*.jpg?1599925958$image
+||voz.vn/data/avatars/*.jpg?1600612535$image
+||voz.vn/data/avatars/*.jpg?1600837310$image
+||voz.vn/data/avatars/*.jpg?1601120425$image
+||voz.vn/data/avatars/*.jpg?1601375238$image
+||voz.vn/data/avatars/*.jpg?1602507930$image
+||voz.vn/data/avatars/*.jpg?1602678332$image
+||voz.vn/data/avatars/*.jpg?1602763633$image
+||voz.vn/data/avatars/*.jpg?1603160384$image
+||voz.vn/data/avatars/*.jpg?1603182867$image
+||voz.vn/data/avatars/*.jpg?1603183089$image
+||voz.vn/data/avatars/*.jpg?1603188420$image
+||voz.vn/data/avatars/*.jpg?1603190823$image
+||voz.vn/data/avatars/*.jpg?1603250539$image
+||voz.vn/data/avatars/*.jpg?1603250889$image
+||voz.vn/data/avatars/*.jpg?1603254072$image
+||voz.vn/data/avatars/*.jpg?1603256733$image
+||voz.vn/data/avatars/*.jpg?1603258007$image
+||voz.vn/data/avatars/*.jpg?1603263097$image
+||voz.vn/data/avatars/*.jpg?1603344032$image
+||voz.vn/data/avatars/*.jpg?1603381714$image
+||voz.vn/data/avatars/*.jpg?1603694246$image
+||voz.vn/data/avatars/*.jpg?1603986301$image
+||voz.vn/data/avatars/*.jpg?1604257541$image
+||voz.vn/data/avatars/*.jpg?1605239012$image
+||voz.vn/data/avatars/*.jpg?1605711549$image
+||voz.vn/data/avatars/*.jpg?1608781207$image
+||voz.vn/data/avatars/*.jpg?1614358570$image
 
 !#########################################################################################################
+! Cloud
+
+solidfiles.com###header
+solidfiles.com##.premium-promo.box
+solidfiles.com##.social
+solidfiles.com##.top-section
+
+uploadocean.com###header
+uploadocean.com###lkika
+uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
+uploadocean.com##.down1_holder > div:nth-of-type(2)
+uploadocean.com##.premiumbox.download_box
+uploadocean.com##.report
+uploadocean.com##.strip_right
+uploadocean.com##[src="https://uploadocean.com/UploadOcean_images/cloud_download.png"]
+uploadocean.com##a[href="https://uploadocean.com/premium-features.html"] > h2
+uploadocean.com##div.strip_right:nth-of-type(3)
+uploadocean.com##div[style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2147483647; background: black; opacity: 0.01; height: 637px; width: 1366px;"]
+uploadocean.com##footer
+
+! 2022-08-22 https://dll-files.com
+dll-files.com##.overlay
+dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
+
+! 2022-08-22 https://secufiles.com
+secufiles.com##section:nth-of-type(2)
+secufiles.com##.space--xs.text-center-xs
+secufiles.com##.show.cookiealert.text-center.alert
+secufiles.com##.top-advert.advert-wrapper.text-center.col-md-12
+
+! 2022-08-22 https://androidfilehost.com
+androidfilehost.com###CybotCookiebotDialog
+androidfilehost.com##.footer
+||androidfilehost.com/assets/images/cloud-bg-new.png$image
+
+! 2022-08-22 https://www.filesend.jp
+www.filesend.jp###footer
+||www.filesend.jp/img/file.png$image
+www.filesend.jp##.lighten-1.light-blue
+www.filesend.jp##.container-icons.m8.s12.col
+www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(1)
+www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(2)
+www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(3)
+
+! 2022-08-21 https://uploaded.net
+uploaded.net###foot
+uploaded.net###head
+uploaded.net###headmenu
+uploaded.net##.aB.feature
+uploaded.net##.aT > .aT
+uploaded.net##td:nth-of-type(6)
+uploaded.net##tr.feature
+uploaded.net##tr.feature:nth-of-type(11)
+uploaded.net##tr.feature:nth-of-type(13)
+uploaded.net##tr.feature:nth-of-type(5)
+uploaded.net##tr.feature:nth-of-type(7)
+uploaded.net##tr.feature:nth-of-type(9)
+
+! 2022-08-21 https://upload.ac
+upload.ac##.fmore
+upload.ac##footer
+upload.ac##.pt20.col-md-4
+upload.ac##.col-xs-10.col-sm-6
+upload.ac##.col-xs-10.col-sm-7
+upload.ac##.navbar-expand-lg.navbar
+upload.ac##.col-md-8 > .row > .clearfix
+upload.ac##.mb-4.aboutFile.col-md-12.col-lg-6
+upload.ac##.row > .hidden-xs.text-center.boxa
+upload.ac##.col-md-12 > .row > div:nth-of-type(2)
+upload.ac##.navbar-static-top.navbar-inverse.navbar
+upload.ac##.row > .hidden-xs.text-center.boxa > center
+
+! 2022-08-21 https://dailyuploads.net
+dailyuploads.net##label
+dailyuploads.net##.footer
+dailyuploads.net##.container
+dailyuploads.net##.adsbygoogle
+dailyuploads.net##.navbar-inner
+dailyuploads.net##h2:nth-of-type(1)
+dailyuploads.net##h2:nth-of-type(2)
+dailyuploads.net##div:nth-of-type(2) > center
+dailyuploads.net##[href="https://ninjapcsoft.com/category/adobe-software//"]
+
+! 2021-07-20 https://krakenfiles.com
+krakenfiles.com###cc--main
+krakenfiles.com##.home-help-block.nk-block
+krakenfiles.com##.nk-block-head-lg.nk-block-head
+krakenfiles.com##.bg-lighter.nk-footer-fluid.nk-footer
+krakenfiles.com##.nk-header-fixed.is-light.nk-header-fluid.nk-header
+
+! 2022-08-21 https://mixloads.com
+mixloads.com##.py-3.header_
+mixloads.com##.payment_table.row
+mixloads.com##.mb-3.text-center.h2
+mixloads.com##div.mb-5:nth-of-type(4)
+mixloads.com##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
+mixloads.com###container > div.container:last-child > div.mb-5:nth-child(6)
+mixloads.com##.py-3.mb-5.text-uppercase.btn-lg.rounded.px-xl-5.text-white.border-0.btn-primary.btn.download-btn
+
+! 2021-07-20 https://douploads.net
+douploads.net##center
+douploads.net##.footer
+douploads.net###news_last
+douploads.net##.text-primary
+douploads.net##.mt-5.col-md-8
+douploads.net##.py-3.col-md-12
+douploads.net##.mb-5.text-primary
+douploads.net###gdpr-cookie-notice
+douploads.net##.btn-danger.btn-lg.btn-block.btn
+douploads.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
+
+! 2021-07-20 https://1fichier.com
+1fichier.com###footer
+1fichier.com##.ct_warn
+1fichier.com###cookie_box
+1fichier.com##.ui-front.ui-widget-overlay
+1fichier.com##.ui-front.ui-widget-content.ui-widget.ui-corner-all.ui-dialog
+
+! 2021-07-20 https://androidhost.org
+androidhost.org###footer
+androidhost.org##.download-boxes
+androidhost.org##h2:nth-of-type(3)
+androidhost.org##table:nth-of-type(3)
+androidhost.org##div.adcnt:nth-of-type(1)
+androidhost.org##div.adcnt:nth-of-type(2)
+androidhost.org##div.adcnt:nth-of-type(3)
+androidhost.org##div.adcnt:nth-of-type(4)
+
+! 2021-07-20 https://usersdrive.com
+usersdrive.com##.col-md
+usersdrive.com##.content
+usersdrive.com##.socialmedia
+usersdrive.com##main > center
+usersdrive.com##nav.sidebar.bg-dark.d-sm-block.col-md-2.col-sm-3:nth-of-type(2)
+usersdrive.com##.userdrive-nav.bg-dark.fixed-top.navbar-dark.navbar-expand-md.navbar
+
+! 2022-08-21 https://userscloud.com
+userscloud.com##.footer
+userscloud.com##.innerTB > center
+userscloud.com##.wizard-1.wizard-container
+userscloud.com##li.col-md-6:nth-of-type(2)
+userscloud.com##.text-left.pricing-features
+userscloud.com##.jkfuxayxx1473507998442fwzkra
+userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-main.navbar
+userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
+
+! 2021-07-20 https://uploadrar.com
+uploadrar.com##.txt
+uploadrar.com##.desc
+uploadrar.com##footer
+uploadrar.com##header
+uploadrar.com###footer2
+uploadrar.com##.banner2
+uploadrar.com##.banner3
+uploadrar.com###lastnews
+uploadrar.com###news_last
+uploadrar.com##.app-footer
+uploadrar.com##.menufooter
+uploadrar.com##.icofont-zipped
+uploadrar.com##.sharefile > ul
+uploadrar.com##.fileoption > ul
+uploadrar.com###gdpr-cookie-notice
+uploadrar.com##.blockpage > .title
+uploadrar.com##.btn-lg.btn-success.btn
+uploadrar.com##div.download0page:nth-of-type(4)
+uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
+uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
+
+! 2021-07-20 https://upfiles.io
+upfiles.io##p
+upfiles.io##.faqs
+upfiles.io###ad-3
+upfiles.io###ad-4
+upfiles.io###ad-1
+upfiles.io###ad-7
+upfiles.io###ad-5
+upfiles.io##header
+upfiles.io##footer
+upfiles.io###ad-11
+upfiles.io##.spacer
+upfiles.io##.divider
+upfiles.io##.page-title
+upfiles.io##.my-2.countdown
+upfiles.io##.mb-4.file-title
+upfiles.io##.faqs-accordian.accordion
+upfiles.io###file-captcha > .ad-element
+upfiles.io##body > .container > .text-center
+
+! 2022-08-21 https://dropgalaxy.com
+dropgalaxy.com##.footer
+dropgalaxy.com###modalpop
+dropgalaxy.com##.features
+dropgalaxy.com##.modalpop
+dropgalaxy.com##.priceTable
+dropgalaxy.com##.pro.features
+dropgalaxy.com##.text-primary
+dropgalaxy.com##.pb-5.pt-4.row
+dropgalaxy.com##.mt-5.col-md-8
+dropgalaxy.com##.py-3.col-md-12
+dropgalaxy.com##.whatFor.features
+dropgalaxy.com###gdpr-cookie-notice
+dropgalaxy.com##.mb-3.alert-danger.alert
+dropgalaxy.com##.mb-4.m-0.sharetabs > ul
+dropgalaxy.com###UmlBRgvDIeornKmhTGblUrujz
+dropgalaxy.com###wCEaVElYlWoOjqfCmTPKnWPPh
+dropgalaxy.com##div.col-md-3:nth-of-type(2)
+dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
+dropgalaxy.com##.mb-4.m-0.sharetabs > .adsbygoogle
+dropgalaxy.com##.mb-1.pr-5.btn-block.btn-danger.btn
+dropgalaxy.com##.downloadPage.page.pt-5.container > center
+dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+dropgalaxy.com##div.mt-5.col-md-4:nth-of-type(3) > .adsbygoogle
+dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
+
+! 2022-08-10 https://chedrives.com
+chedrives.com##.txt
+chedrives.com##.desc
+chedrives.com##header
+chedrives.com##footer
+chedrives.com##.title
+chedrives.com###footer2
+chedrives.com##.banner1
+chedrives.com##.banner3
+chedrives.com##.banner2
+chedrives.com##.sharefile
+chedrives.com##.menufooter
+chedrives.com##.icofont-zipped
+chedrives.com##.fileoption > ul
+chedrives.com##.btn-success.btn
+chedrives.com###gdpr-cookie-notice
+chedrives.com##.\36 27b72d88ee386c1f9fdb0da
+chedrives.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
+
+! 2021-05-18 https://douploads.com
+douploads.com##footer
+douploads.com##header
+douploads.com###sidebar
+douploads.com##.section
+douploads.com###news_last
+douploads.com##td:nth-of-type(4)
+douploads.com##header:first-child
+douploads.com###gdpr-cookie-notice
+douploads.com##.mb-4.m-0.sharetabs
+douploads.com##.mngez_lastnews > span
+douploads.com##.fa-arrow-circle-down.fa
+douploads.com##.fa-external-link-square.fa
+douploads.com###sideright > footer:last-child
+||douploads.com/mngez/music/$media,domain=douploads.com
+douploads.com###wrapper > div.paymentoffersone1:last-child
+douploads.com/images/StartDownload.gif$domain=douploads.com
+douploads.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+douploads.com###wrapper > div.directlinkpage:last-child > div.title:first-child
+douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > a:first-child
+douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.paymentoffersone1:nth-child(5)
+douploads.com###wrapper > div.paymentoffersone1:last-child > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
+douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.row:nth-child(6) > div.col-xs-4.col-sm-4.col-md-4.col-lg-4:nth-child(2) > div.downarea > center:last-child
+douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child > div.paymentoffersone1:nth-child(5) > div.content:last-child > div.paymentitem1:first-child > div.paymentitem1inside
+
+! 2022-02-06 https://apkadmin.com
+apkadmin.com##h1
+apkadmin.com###footer
+apkadmin.com###header
+apkadmin.com##.footer
+apkadmin.com##.how-to
+apkadmin.com##.bg-white
+apkadmin.com##.sharetabs
+apkadmin.com###content > center
+apkadmin.com##.text-left.about-apk
+apkadmin.com##.text-center.file-name
+apkadmin.com##.text-center.text > .heading
+apkadmin.com##div.file-info:nth-of-type(4)
+apkadmin.com###content > div.row > div.col-12 > h2
+apkadmin.com##.navbar-light.navbar-expand-lg.navbar
+
+! 2022-07-15 https://mega4upload.com
+mega4upload.com##h5
+mega4upload.com##.app-footer
+mega4upload.com##.app-header
+mega4upload.com##.section-title
+mega4upload.com##.compare_table.row
+mega4upload.com##.card-body > .desc
+mega4upload.com##.card-body > .mb-3.row
+mega4upload.com##.container > .mb-3.row
+mega4upload.com##.section-title > .title
+mega4upload.com##.d-md-block.d-none.my-3
+!mega4upload.com##.btn-sm.btn-success.btn
+mega4upload.com##.mb-4.card > .card > .card-body
+mega4upload.com##.mb-3.list-group-flush.list-group
+mega4upload.com##.text-center.py-3.footer-copyright
+
+! 2022-07-15 https://drop.download
+drop.download##footer
+drop.download##.mb-xl-7.mb-5
+drop.download##.py-3.header_
+drop.download##.container > .mb-5
+drop.download##.alert-warning.alert
+drop.download##.mb-3.text-center.h2
+drop.download##.container > .col-md-12
+drop.download##div.mb-5:nth-of-type(4)
+drop.download##.navbar-expand-lg.navbar
+drop.download##.bg-white.py-5.payment_methods
+drop.download##.btn-block.mt-4.btn-danger.btn
+drop.download##.py-4.bg-white.features__section
+drop.download##li.align-items-center.d-flex:nth-of-type(1)
+drop.download##li.align-items-center.d-flex:nth-of-type(2)
+drop.download##li.align-items-center.d-flex:nth-of-type(3)
+drop.download##li.align-items-center.d-flex:nth-of-type(4)
+drop.download##li.align-items-center.d-flex:nth-of-type(5)
+drop.download##.justify-content-center.align-items-center.d-flex.header
+drop.download##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
+drop.download##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
+
+! 2022-08-13 https://fastclick.to
+fastclick.to##.mb-xl-7.mb-5
+fastclick.to##.py-lg-6.py-4.footer
+fastclick.to##.mb-3.text-center.h2
+fastclick.to##.col-xxl-6.col-xl-8 > .adsbygoogle
+fastclick.to##.mb-lg-6.mb-4.text-white.download-page
+fastclick.to##.py-lg-5.py-3.header > .container > .align-items-center.row
+fastclick.to##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
+fastclick.to##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
+
+! 2022-02-06 https://www.mediafire.com
+mediafire.com###footer
+mediafire.com###header
+mediafire.com##.header
+mediafire.com##.sidebar
+mediafire.com##.description
+mediafire.com##.dlInfo-Body
+mediafire.com##.dl-promo-cont
+mediafire.com##.socialFBContainer
+www.mediafire.com##.DLExtraInfo-wrap
+www.mediafire.com###cookie-accept-footer
+
+! 2021-05-18 https://file-up.org
+file-up.org##.stdt
+file-up.org###boxes
+file-up.org##footer
+file-up.org##header
+file-up.org##.leftcol
+file-up.org##.default-ttl
+file-up.org##.page-wrap > .row
+file-up.org##.mnbt1.btn-success.btn-xs.btn
+file-up.org##form > div.row:nth-of-type(2)
+www.file-up.org##.page-wrap > div.text-center:nth-of-type(2)
+file-up.org##.text-center.page-wrap > div:nth-of-type(2) > .row
+file-up.org##.text-center.col-md-offset-3.col-md-6 > div:nth-of-type(1)
+
+! 2021-07-20 https://anonfiles.com
+anonfiles.com###header
+anonfiles.com##.text-center.col-md-6.col-xs-12
+
+! 2021-07-20 https://bayfiles.com
+bayfiles.com###header
+bayfiles.com##.text-center.col-md-6.col-xs-12
+
+! 2021-07-07 https://katfile.com
+katfile.com##footer
+katfile.com##.style3
+katfile.com###sharebuttons
+katfile.com##.free > li > span
+katfile.com##.hidden-xs.col-sm-4
+katfile.com##[src="/images/n.png"]
+katfile.com##span.sp:nth-of-type(1)
+katfile.com##span.sp:nth-of-type(2)
+katfile.com##div.col-sm-4:nth-of-type(3)
+katfile.com##.navbar-static-top.navbar-default.navbar
+
+! 2021-07-20 https://www.file-upload.com
+www.file-upload.com##.stdt
+www.file-upload.com##footer
+www.file-upload.com##header
+www.file-upload.com##.blocktxt
+www.file-upload.com##.antivirus
+www.file-upload.com##.default-ttl
+www.file-upload.com###sharebuttons
+www.file-upload.com##.comparison-row.row
+www.file-upload.com##.mnbt1.btn-success.btn-xs.btn
+
+! 2021-07-20 https://download.gg
+download.gg##.header
+download.gg##.card-footer > p
+download.gg##.order-xl-3.order-3.col-xl-3
+download.gg##.card-file.card > .card-body
+download.gg##.mt-xl-0.mt-5.order-xl-1.order-2.mb-xl-0.mb-5.col-xl-3
+
+! 2021-07-20 https://www42.zippyshare.com
+www42.zippyshare.com###bottom
+www42.zippyshare.com##.center_ad
+www42.zippyshare.com##.outer_menu
+www42.zippyshare.com##.slickbox > .center
+www42.zippyshare.com##div.left:nth-of-type(4)
+www42.zippyshare.com##div.left:nth-of-type(2)
+www42.zippyshare.com##div.right:nth-of-type(5)
+www42.zippyshare.com##div.right:nth-of-type(3)
+www42.zippyshare.com##div.center:nth-of-type(6)
+www42.zippyshare.com##div.center:nth-of-type(3)
+www42.zippyshare.com##[href="//www.zippyshare.com/"]
+
+! 2021-07-07 https://hexupload.net
+hexupload.net##h2
+hexupload.net###secure
+hexupload.net##.paybox
+hexupload.net##.sharetabs
+hexupload.net###payment-icons
+hexupload.net##.btn-danger.btn
+hexupload.net##td:nth-of-type(3)
+hexupload.net##th:nth-of-type(3)
+hexupload.net##tr:nth-of-type(2)
+hexupload.net##tr:nth-of-type(3)
+hexupload.net##tr:nth-of-type(4)
+hexupload.net##tr:nth-of-type(5)
+hexupload.net##tr:nth-of-type(6)
+hexupload.net##tr:nth-of-type(7)
+hexupload.net##tr:nth-of-type(8)
+hexupload.net##tr:nth-of-type(9)
+hexupload.net##tr:nth-of-type(10)
+hexupload.net###iis06o2gfvb1f9o07nea
+hexupload.net##.position-absolute.p-5.footer
+hexupload.net##.premium-page.py-5.container > font
+hexupload.net##[href="https://hexupload.net/premium.html"]
+hexupload.net##center:nth-of-type(1) > [href="/premium.html"]
+hexupload.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
+
+! 2021-07-20 https://tusfiles.com
+tusfiles.com##.cc-color-override--1360619034.cc-right.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
+
+! 2021-07-11 https://chedrive.com
+chedrive.com###footer2
+chedrive.com###gdpr-cookie-notice
+chedrive.com##.banner1
+chedrive.com##.banner2
+chedrive.com##.banner3
+chedrive.com##.menufooter
+chedrive.com##.report
+chedrive.com##.sharefile
+chedrive.com##.txt
+chedrive.com##footer
+chedrive.com##header
+
+! 2022-07-29 https://www.fshare.vn
+fshare.vn###boundary
+fshare.vn##.bannerinfooter
+fshare.vn###livechat_header
+fshare.vn##.quang-cao-bottom
+fshare.vn###web-container > footer
+www.fshare.vn##.mdc-dialog--open.mdc-dialog
+www.fshare.vn##.thumbnail-ic-fc.material-icons
+fshare.vn###web-container > footer:nth-child(3)
+
+! 2021-07-20 https://up-load.io
+up-load.io##ol
+up-load.io##.share
+up-load.io##footer
+up-load.io##.report
+up-load.io##.upinfo
+!up-load.io##.col-md-8
+up-load.io##.footer-sub
+up-load.io##.share-info
+up-load.io##.col-md-8 > li
+up-load.io##.hidden-xs.icon
+up-load.io##center > center
+up-load.io##li > center > li
+up-load.io###gdpr-cookie-notice
+up-load.io##.text-center.col-md-8
+up-load.io##.feather-download.feather
+up-load.io##.buyPremium.alert-success.alert
+up-load.io##.navbar-fixed-top.navbar-inverse.navbar
+up-load.io##input.btn-sm.btn-primary.btn:nth-of-type(2)
+
+! 2021-07-20 https://uploadev.org
+uploadev.org##.col2
+uploadev.org##footer
+uploadev.org##header
+uploadev.org##.desc1
+uploadev.org##center
+uploadev.org###footer2
+uploadev.org##.text-left
+uploadev.org##.offersprim
+uploadev.org##.capcha > p
+uploadev.org##.aboutuplouad
+uploadev.org##li:nth-of-type(9)
+uploadev.org##li:nth-of-type(8)
+uploadev.org##li:nth-of-type(7)
+uploadev.org##li:nth-of-type(6)
+uploadev.org##li:nth-of-type(4)
+uploadev.org##li:nth-of-type(3)
+uploadev.org##li:nth-of-type(2)
+uploadev.org##li:nth-of-type(1)
+uploadev.org###gdpr-cookie-notice
+uploadev.org##.offersfree > .text-center > .dtime
+uploadev.org##.offersfree > .text-center > li > .fa-check.fa
+
+! 2021-07-22 https://userupload.in
+userupload.in##span:nth-of-type(4)
+userupload.in##.navbar-expand-lg.navbar
+userupload.in##.position-absolute.p-4.footer
+userupload.in##.mb-4.aboutFile.col-md-12.col-lg-6
+
+! 2021-07-20 https://userupload.net
+userupload.net##span:nth-of-type(4)
+userupload.net##.navbar-expand-lg.navbar
+userupload.net##.position-absolute.p-4.footer
+userupload.net##.mb-4.aboutFile.col-md-12.col-lg-6
+
+! 2021-07-25 https://rapidgator.net
+rapidgator.net###copy
+rapidgator.net##.descr
+rapidgator.net##.header
+rapidgator.net##.footer > .in
+rapidgator.net##.table_header
+rapidgator.net##th:nth-of-type(3)
+rapidgator.net##td:nth-of-type(3)
+rapidgator.net##tr:nth-of-type(2)
+rapidgator.net##tr:nth-of-type(4)
+rapidgator.net##tr:nth-of-type(5)
+rapidgator.net##tr:nth-of-type(6)
+rapidgator.net##tr:nth-of-type(7)
+rapidgator.net##tr:nth-of-type(8)
+rapidgator.net##tr:nth-of-type(9)
+rapidgator.net##tr:nth-of-type(10)
+
+! 2021-07-25 https://www.upload-4ever.com
+www.upload-4ever.com##.my-4
+www.upload-4ever.com##header
+www.upload-4ever.com##.appHeader
+www.upload-4ever.com##.text-center.col-12 > .my-5
+www.upload-4ever.com##.pl-5.pr-5.appCookieNotice.hide
+www.upload-4ever.com##.text-center.p-5.border.col-12 .my-5
+www.upload-4ever.com##.pt-0.lighten-5.blue-grey.page-footer
+www.upload-4ever.com##.mb-5.text-center.content-section.col-sm-12
+www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
+
 !___Rút-Gọn________________________________________
+
+linkcc.pro###cookie-pop
+linkcc.pro###fbox-background
+linkcc.pro##.banner-468x60.banner
+linkcc.pro##.banner-728x90.banner
+linkcc.pro##.box-main > div > [href^="//oufauthy.net/afu.php"]
+linkcc.pro##.navbar-default.navbar
+linkcc.pro##.text-left
+linkcc.pro##footer
+linkcc.pro##h4
+
+shink.in###bs-example-navbar-collapse-1
+shink.in##.col-md-6.col-md-offset-3
+shink.in##.collapse.navbar-collapse
 
 123link.carpartsviet31.site##footer
 123link.carpartsviet31.site###cookie-pop
@@ -3789,7 +3597,6 @@ youtube.com###masthead-ad
 @@||www.vnpost.vn^$important,document,~extension
 
 !___Chặn-Toàn-Bộ___________________________________
-|http://$popup,third-party,domain=web.avjie.com|uploadocean.com
 |https://$script,domain=uplod.ws,third-party
 ||*.*.doubleclick.*^ 
 ||*.2mdn.*^
@@ -3896,7 +3703,6 @@ youtube.com###masthead-ad
 ||bannertrack.*^
 ||cdn.ay.gy/js/link-converter.js$script
 ||cdn.engine.4dsply.com^
-||chiasefile.net/wp-content/uploads/euJBBLTGmsSM/aYEtZNpNRSOp.js
 ||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||click.alibaba.com^
 ||coccoc.com/webhp/*.*
@@ -3905,7 +3711,6 @@ youtube.com###masthead-ad
 ||daytiengnhat.edu.vn/upload/administrator/image/*.*
 ||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
 ||dezaula.*^
-||douploads.com/mngez/music/$media,domain=douploads.com
 ||downmienphi.com/images/*.*
 ||downmienphi.net/themes/downmienphi/images/*.*
 ||freetuts.net/public/theme/js/adsense.js
