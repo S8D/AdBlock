@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221123e
+! Version: 221123f
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -13,6 +13,16 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 
 short.pandaznetwork.com##footer.py-5.text-center.wow.zoomIn.animated:nth-child(3)
 short.pandaznetwork.com###mainNav
+
+! 2022-11-23 https://a2zapk.io
+||mobileoffers-db-download.com
+||mobileoffers-dq-download.com
+||mobileoffers-5-w-download.com
+||mobileoffers-7-j-download.com
+rtxkeeda.com###alert
+rtxkeeda.com##.modalpop
+rtxkeeda.com##.modalpop-content
+
 
 ! 2022-09-15 https://i.ghtk.vn
 ||i.ghtk.vn/images/orders.png$image
