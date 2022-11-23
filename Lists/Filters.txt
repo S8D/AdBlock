@@ -1,9 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 220822a
+! Version: 221123a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
 ! Licence: Darias
+! Khuyến nghị nên kết hợp với https://xep.li/Anti
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
@@ -12,6 +13,108 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 
 short.pandaznetwork.com##footer.py-5.text-center.wow.zoomIn.animated:nth-child(3)
 short.pandaznetwork.com###mainNav
+
+! 2022-09-15 https://i.ghtk.vn
+||i.ghtk.vn/images/orders.png$image
+
+! 2022-10-22 https://www.tiktok.com
+www.tiktok.com##.footer-guide.jsx-1812151264
+www.tiktok.com##.img-container.jsx-1363823401
+www.tiktok.com##.e1pecv672.tiktok-12l8cv7-DivFlex0
+www.tiktok.com##.e1dsngob0.tiktok-hsy0fo-DivContainer
+www.tiktok.com##.eib2nuk0.tiktok-1pblmhq-DivBottomBanner
+www.tiktok.com##.enx791q1.tiktok-1ysvvri-DivIconContainer
+www.tiktok.com##.enx791q2.tiktok-1ba5y2x-DivInfoContainer
+www.tiktok.com##.e1gjoq3k0.tiktok-py8jux-DivModalContainer
+www.tiktok.com##.eik3s2010.tiktok-172wa3q-DivFooterWrapper
+www.tiktok.com##.enx791q5.tiktok-f2axrx-DivGuideBtnContainer
+www.tiktok.com##.enx791q5.tiktok-1whmggi-DivGuideBtnContainer
+www.tiktok.com##.middle.guide-container.jsx-1363823401 > .btns.jsx-1363823401
+www.tiktok.com##.middle.guide-container.jsx-1363823401 > .info.jsx-1363823401
+||p16-sign-sg.tiktokcdn.com/obj/*$image
+||p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/54176ef666184f33a299589ce6241092~tplv-f5insbecw7-1:720:720.jpeg$image
+
+
+! 2022-11-11 https://uptobox.com
+uptobox.com###footer
+uptobox.com###fan-exit
+uptobox.com##td:nth-of-type(2)
+uptobox.com##td:nth-of-type(1)
+uptobox.com##.fa-2x.orange.fa-times.fas
+
+! 2022-11-12 https://sg-gcp.extremecloudiq.com
+sg-gcp.extremecloudiq.com###ahElements\/infoCard\/ClientSessionCharts_0
+
+! 2022-11-13 https://mehoathinh.com
+||mehoathinh.com/mmo/*
+||sponsor.imacdn.com
+
+! 2022-11-13 https://www.duhoctrungquoc.vn
+www.duhoctrungquoc.vn###danger_adblock
+
+! 2022-11-17 https://www.teamos.xyz
+teamos-hkrg.com##.wn_description
+teamos-hkrg.com##.dark.floatingItem
+www.teamos.xyz##center:nth-of-type(2)
+teamos-hkrg.com##.js-notices.notices--isMulti.notices--block.notices
+
+! 2022-10-23 https://www.emerald.com.vn
+www.emerald.com.vn###callnow
+www.emerald.com.vn##.visible-xs.facebook-header
+
+! 2022-10-24 https://forum.xda-developers.com
+forum.xda-developers.com###footer
+forum.xda-developers.com###sidepanel
+forum.xda-developers.com###xdadevelopers_leaderboard_atf
+forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
+forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
+
+! 2022-11-08 https://posapp.vn
+posapp.vn##.social-widget
+posapp.vn##.btn-floating-container.download-price-list-md
+posapp.vn##.sp-footer
+posapp.vn##.grecaptcha-badge
+posapp.vn##.popup-noti
+posapp.vn##.hero
+
+! 2022-11-22 https://ipacrack.com
+ipacrack.com##.swal2-backdrop-show.swal2-center.swal2-container
+ios.codevn.net##.swal2-backdrop-show.swal2-center.swal2-container
+
+! 2022-11-20 https://www.ganjing.com
+||gw.ganjing.com/*/tracking-content$xhr
+www.ganjing.com##.cookie_notice_notice_container__8mmBo
+www.ganjing.com##.rightCol > .navItem
+
+! 2022-10-05 https://www.kingspec.com
+www.kingspec.com##.privacyBox
+
+! 2022-09-15 https://www.apkmirror.com
+www.apkmirror.com##.show.set-max-width.container-fluid.apkm-timed-slider
+
+! 2022-09-22 https://www.hikvision.com
+www.hikvision.com##.gdpr-wrapper
+
+! 2022-10-20 https://bcc.thienbang.com
+bcc.thienbang.com##.giuseart-nav
+
+! 2022-10-21 https://thuthuatjb.com
+thuthuatjb.com##.amp_ad_1.amp-ad-wrapper
+thuthuatjb.com##.amp_ad_5.amp-ad-wrapper
+thuthuatjb.com##.amp_ad_3.amp-ad-wrapper
+
+! 2022-11-16 https://mb.dkn.tv
+mb.dkn.tv##.z8leDJcU.post-ad
+mb.dkn.tv##.mQwSDGdA.post-ad
+mb.dkn.tv##.zv3BsZWl.post-ad
+mb.dkn.tv##.grGD6Ivc.post-ad
+mb.dkn.tv##.a4Fym5sY.post-ad
+mb.dkn.tv##.\38 Ne7WU8e.post-ad
+mb.dkn.tv##.\35 7CwpFPd.post-ad
+mb.dkn.tv##.post-content > .row
+mb.dkn.tv###the-post-content > div
+mb.dkn.tv##[src="/newsletter/iframe.php"]
+
 
 ! 2022-08-14 https://cloudflare.com
 cloudflare.com###dns-info
@@ -25,17 +128,51 @@ cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
 cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
 www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 
-! 2022-08-14 https://a2zapk.com
+! 2022-11-17 https://uploadydl.com
+uploadydl.com##strong
+uploadydl.com##.report
+uploadydl.com##.p-1.mt-4
+uploadydl.com##.mt-4.col-md-12
+uploadydl.com##.alert.btn-link
+uploadydl.com##.navbar-expand-lg.navbar
+uploadydl.com##.text-danger.fa-times.fas
+uploadydl.com##.text-success.fa-check.fas
+uploadydl.com##.position-absolute.p-5.footer
+uploadydl.com##.text-center.table-striped.table-bordered.table .btn-primary.btn
+uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(1)
+uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(3)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.row:last-child
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(2)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(3)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(4)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(5)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(6)
+
+! 2022-11-18 https://a2zapk.io
+!a2zapk.com##.WebF
+rtxkeeda.com##.WebF
 a2zapk.com##.Tags
-a2zapk.com##.WebF
 a2zapk.com###galax2
-||a2zapk.com/js/main2019.js$script,1p
+rtxkeeda.com###alert
+rtxkeeda.com##.modalpop
+rtxkeeda.com##.modalpop-content
+@@||rtxkeeda.com/adsby.js$script,1p
 a2zapk.com##div.NewBlock:nth-of-type(1)
 a2zapk.com##div.ArticleLand:nth-of-type(4)
 a2zapk.com##div.ArticleLand:nth-of-type(5)
 a2zapk.com##div.ArticleLand:nth-of-type(6)
 a2zapk.com##div.ArticleLand:nth-of-type(3) > b
 a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
+||mobileoffers-db-download.com
+||mobileoffers-dq-download.com
+||mobileoffers-5-w-download.com
+||mobileoffers-7-j-download.com
+||rtxkeeda.com/gettoken.php$xhr,1p
+||a2zapk.com/js/apk2019.js$script,1p
+||a2zapk.com/js/main2019.js$script,1p
+||rtxkeeda.com/cdn-cgi/challenge-platform/h/g/cv/result/$xhr,1p
+||a2zapk.com/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js$script,1p
+||a2zapk.io/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js$script,1p
 
 ! 2022-05-09 https://lamtheatmonline.com
 lamtheatmonline.com##[href^="https://mobilebanking.mbbank.com.vn:8443/referral/referred.html"]
@@ -62,11 +199,6 @@ www.tourdulichbentre.com##.locationbox__popup
 ! 2022-07-11 https://fpttoanquoc.com
 fpttoanquoc.com##.col-md-16.col-sm-24.col-xs-24 > .panel-body
 fpttoanquoc.com###uhchatmobile
-
-! 2022-07-19 https://www.tiktok.com
-www.tiktok.com##.enx791q2.tiktok-1ba5y2x-DivInfoContainer
-www.tiktok.com##.enx791q5.tiktok-f2axrx-DivGuideBtnContainer
-www.tiktok.com##.enx791q1.tiktok-1ysvvri-DivIconContainer
 
 ! 2022-08-05 https://www.vinmec.com
 www.vinmec.com##.share
@@ -105,9 +237,6 @@ nguonhd.org###antiAdblock
 mephimnhat1.com##.banner-masthead
 mephimnhat1.com###sponsor-balloon
 ||sponsor.imacdn.com/vg/.mp4$media,domain=mephimnhat1.com
-
-! 2022-08-14 https://rtxkeeda.com
-||mobileoffers-db-download.com^
 
 ! 2022-08-15 https://text-compare.com
 text-compare.com##.ezmobtrans.ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
@@ -269,10 +398,6 @@ short.katflys.com##center:nth-of-type(4)
 short.katflys.com##a.btn-sm.btn-primary.btn
 short.katflys.com##.navbar-fixed-top.navbar-inverse.navbar
 
-! 2022-02-15 https://rtxkeeda.com
-rtxkeeda.com##.WebF
-rtxkeeda.com###alert
-
 ! 2022-02-16 https://samic.com.vn
 samic.com.vn##.kw-popup
 samic.com.vn##.kw-popup-overlay
@@ -343,10 +468,12 @@ ydns.io##.cookie-notice-outer
 ! 2022-08-09 https://www.websiteplanet.com
 www.websiteplanet.com###ctrl-d-popup
 
-! 2022-08-10 https://cellphones.com.vn
+! 2022-09-04 https://cellphones.com.vn
+cellphones.com.vn##.active.header-overlay
 cellphones.com.vn##.suggestions-choose-store
 cellphones.com.vn###ematic_background_overlay
 cellphones.com.vn##.box-banner.subscriber-popup
+cellphones.com.vn##.is-active.popup-banner.modal
 
 ! 2022-07-13 https://phimdacap.com
 phimdacap.com##center
@@ -467,20 +594,20 @@ phim.vkoolzz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
 phim.vkoolzz.net##div.right-box:nth-of-type(7)
 phim.vkoolzz.net##footer
 
-
 ! 2022-06-29 https://www.tourdulichbentre.com
 www.tourdulichbentre.com##.ads
 
 ! 2022-06-29 https://www.facebook.com
 www.facebook.com##.bx45vsiw.h676nmdw.jrc8bbd0.dawyy4b1.o5zgeu5y.to382e16.buofh1pr > .iyyx5f41.dhp61c6y.dp1hu0rb.owwhemhu.qowsmv63.cebpdrjk.bipmatt0.pk4s997a.q3lfd5jv.k5wvi7nf.t1p8iaqh.a8s20v7p.abs2jz4q.a6sixzi8.tojvnm2t > .l9j0dhe7.byvelhso.j83agx80.bp9cbjyn
 
-! 2022-07-21 https://vnexpress.net
+! 2022-11-22 https://vnexpress.net
 vnexpress.net##.p_header
 vnexpress.net##.social_pin
 vnexpress.net###wrapper_footer
 vnexpress.net###supper_masthead
 vnexpress.net##.col-sticky.sidebar-2
 vnexpress.net##.pin-comment.sidebar-1
+vnexpress.net##.box-raovat-v2.box-category
 vnexpress.net##.section-exitintent.section
 vnexpress.net##.inner-box-business.width_common
 vnexpress.net##.box-category__list-news > .sidebar-2
@@ -886,10 +1013,6 @@ www.samsung.com###header
 www.silisoftware.com##table
 www.spectra.de##.cookie_wrapper
 www.tapchinuocduc.com###sp-footer2
-www.tiktok.com##.footer-guide.jsx-1812151264
-www.tiktok.com##.img-container.jsx-1363823401
-www.tiktok.com##.middle.guide-container.jsx-1363823401 > .btns.jsx-1363823401
-www.tiktok.com##.middle.guide-container.jsx-1363823401 > .info.jsx-1363823401
 www.tongdaivnpt24h.vn###uhchatmobile
 www.tongdaivnpt24h.vn##.suntory-alo-green.suntory-alo-phone
 www.trejj.net###tidio-chat
@@ -920,9 +1043,6 @@ www.wimsbios.com##.cc-color-override--1360619034.cc-bottom.cc-theme-block.cc-typ
 ||ephimmoi.net/wp-content/uploads/2021/11/APP-logo-.png$image
 ||hoamitech.com/wp-content/uploads/2021/09/tai-khoan-fshare-vip-2019.jpg$image
 ||https://lh3.googleusercontent.com/-3qk5J_yYj0Q/YaTYTb31kfI/AAAAAAAAAmU/T6sTDlhNqpY8lCPt8nNxwYt2pTjQ8qoYQCLcBGAsYHQ/h120/APP-logos.png$image
-||p16-sign-sg.tiktokcdn.com/obj/*$image
-||p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/ee72a1962b16431da08b7b62c3fd0887$image
-||p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/f3b1ae26e9bb4bbc83d8e50f01b64dbb$image
 ||phimnhua.com/ads/*$media,1p
 ||sharethis.com^
 ||thesafety.us/template/images/pages/main-slider5.jpg$image
@@ -1452,10 +1572,6 @@ fnote.me##footer
 forum.armbian.com###elGuestTerms
 forum.dd-wrt.com##.cookieinfo
 forum.uranus.com.vn###ad_global_below_navbar
-forum.xda-developers.com###footer
-forum.xda-developers.com###sidepanel
-forum.xda-developers.com##.leaderboard > div:nth-of-type(2)
-forum.xda-developers.com##.page-showthread.page:nth-of-type(21)
 fpt.center###thread_info
 fptsieutoc.com###de_adblock
 fptsieutoc.com##.bgmodal
@@ -1841,9 +1957,6 @@ tamnhin.net##.col_180.right.clearfix
 tampermonkey.net##td[style="vertical-align: top;"]
 tandoanh.vn##.chatbox-wrapper, .ztb-fbc-widgetfirame
 tanoshiijapanese.com###cnfooter
-teamos-hkrg.com##.dark.floatingItem
-teamos-hkrg.com##.js-notices.notices--isMulti.notices--block.notices
-teamos-hkrg.com##.wn_description
 techshielder.com##.article-floater.wp-block-group
 temp-mail.org##.hidden-xs-sm-md-lg.align-content-right.col
 temp-mail.org##.mail-form-box.main-page-content-inner > p:nth-of-type(1)
@@ -1928,7 +2041,6 @@ unlockapk.com##.footer--dark.footer
 unlockapk.com##.nav
 unlockapk.com##.WebF
 unlockapk.com##body > div:nth-of-type(3)
-uptobox.com###fan-exit
 urldown.com##.main-footer
 urldown.com##.navbar
 userstyles.org###footer
@@ -2173,7 +2285,7 @@ yeuphimmoi.com##.balloon-block
 
 !#########################################################################################################
 !___vOz____________________________________________
-! 2022-08-22 https://voz.vn
+! 2022-11-21 https://voz.vn
 vozforum.org###M403005ScriptRootC906261
 vozforum.org##.blockMessage--none.blockMessage
 vozforum.org##.js-bottomFixTarget.u-bottomFixer
@@ -2473,6 +2585,10 @@ voz.vn##div.message--post.message:nth-of-type(5)
 ||statics.voz.tech/data/avatars/*/*/951904.jpg$image
 ||statics.voz.tech/data/avatars/*/*/989870.jpg$image
 ||statics.voz.tech/data/avatars/*/*/994862.jpg$image
+||statics.voz.tech/data/avatars/*/*/1491789.jpg$image
+||statics.voz.tech/data/avatars/*/*/1679673.jpg$image
+||statics.voz.tech/data/avatars/*/*/1736758.jpg$image
+||statics.voz.tech/data/avatars/*/*/1751766.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
 ||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
@@ -2817,11 +2933,12 @@ userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-main.navbar
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
 
-! 2021-07-20 https://uploadrar.com
+! 2022-11-17 https://uploadrar.com
 uploadrar.com##.txt
 uploadrar.com##.desc
 uploadrar.com##footer
 uploadrar.com##header
+uploadrar.com##.banner1
 uploadrar.com###footer2
 uploadrar.com##.banner2
 uploadrar.com##.banner3
@@ -2835,9 +2952,11 @@ uploadrar.com##.fileoption > ul
 uploadrar.com###gdpr-cookie-notice
 uploadrar.com##.blockpage > .title
 uploadrar.com##.btn-lg.btn-success.btn
+uploadrar.com##.blockpage > .adsbygoogle
 uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
 uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
+uploadrar.com##div.col-lg-4.col-md-4.col-sm-12.col-xs-12 > .adsbygoogle
 
 ! 2021-07-20 https://upfiles.io
 upfiles.io##p
