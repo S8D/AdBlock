@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221123h
+! Version: 221123i
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -15,7 +15,17 @@ short.pandaznetwork.com##footer.py-5.text-center.wow.zoomIn.animated:nth-child(3
 short.pandaznetwork.com###mainNav
 
 ! 2022-11-22 https://vnexpress.net
+vnexpress.net##.p_header
+vnexpress.net##.social_pin
+vnexpress.net###wrapper_footer
+vnexpress.net###supper_masthead
+vnexpress.net##.col-sticky.sidebar-2
+vnexpress.net##.pin-comment.sidebar-1
+vnexpress.net##.box-raovat-v2.box-category
+vnexpress.net##.section-exitintent.section
 vnexpress.net##.width_common.footer-content
+vnexpress.net##.inner-box-business.width_common
+vnexpress.net##.box-category__list-news > .sidebar-2
 
 ! 2022-11-22 https://xosodaiphat.com
 xosodaiphat.com##footer
@@ -635,18 +645,6 @@ www.tourdulichbentre.com##.ads
 
 ! 2022-06-29 https://www.facebook.com
 www.facebook.com##.bx45vsiw.h676nmdw.jrc8bbd0.dawyy4b1.o5zgeu5y.to382e16.buofh1pr > .iyyx5f41.dhp61c6y.dp1hu0rb.owwhemhu.qowsmv63.cebpdrjk.bipmatt0.pk4s997a.q3lfd5jv.k5wvi7nf.t1p8iaqh.a8s20v7p.abs2jz4q.a6sixzi8.tojvnm2t > .l9j0dhe7.byvelhso.j83agx80.bp9cbjyn
-
-! 2022-11-22 https://vnexpress.net
-vnexpress.net##.p_header
-vnexpress.net##.social_pin
-vnexpress.net###wrapper_footer
-vnexpress.net###supper_masthead
-vnexpress.net##.col-sticky.sidebar-2
-vnexpress.net##.pin-comment.sidebar-1
-vnexpress.net##.box-raovat-v2.box-category
-vnexpress.net##.section-exitintent.section
-vnexpress.net##.inner-box-business.width_common
-vnexpress.net##.box-category__list-news > .sidebar-2
 
 ! 2022-06-29 https://keep.google.com
 @@||play.google.com/log?format=json&hasfast=true&authuser=0$xhr,domain=keep.google.com
