@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221123g
+! Version: 221123h
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -8,15 +8,61 @@
 ! ChangeLog: ...
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|ephimmoi.net|hh3dhay.xyz|uploadocean.com
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
 
 short.pandaznetwork.com##footer.py-5.text-center.wow.zoomIn.animated:nth-child(3)
 short.pandaznetwork.com###mainNav
 
+! 2022-11-22 https://vnexpress.net
+vnexpress.net##.width_common.footer-content
+
+! 2022-11-22 https://xosodaiphat.com
+xosodaiphat.com##footer
+
+! 2022-11-22 https://xoso.com.vn
+xoso.com.vn##.footer
+xoso.com.vn##.headermobi.header-content
+
+! 2022-11-22 https://dongphim.to
+dongphim.to##.right-box.top-block
+dongphim.to##.clearfix.myui-foot
+
+! 2022-11-22 https://phimchilltv.net
+phimchilltv.net##.preload-banner
+phimchilltv.net##.preload-smoke.preload-backdrop
+
+! 2022-11-22 https://mv.phimbathu.info
+mv.phimbathu.info##footer
+mv.phimbathu.info##.carousel-fade.slide.carousel
+mv.phimbathu.info##div.panel-vod > .desktop.ad_location
+mv.phimbathu.info##.container > div#ads_location.desktop.ad_location
+
+! 2022-11-22 https://motphimtv.info
+||dc.mpapis.xyz/tracking
+
+! 2022-11-23 https://phimvietsub.co
+phimvietsub.co##.ai-viewport-1.code-block-36.code-block
+phimvietsub.co##.ai-viewport-1.code-block-34.code-block
+phimvietsub.co###post-71365
+phimvietsub.co##.widget_tag_cloud.widget
+phimvietsub.co###dtw_content-2
+
 ! 2022-11-23 codevn.net
-ipacrack.com##.swal2-backdrop-show.swal2-center.swal2-container
+ios.codevn.net##footer
+ios.codevn.net##.comments-area
+ios.codevn.net##.header.jsx-arm64e
+ios.codevn.net###wpd-bubble-wrapper
+ios.codevn.net##.rounded.bg-light.entry-content
 ios.codevn.net##.swal2-backdrop-show.swal2-center.swal2-container
+ipacrack.com##.tags
+ipacrack.com###text-3
+ipacrack.com###site-footer
+ipacrack.com##.comments-area
+ipacrack.com###wpd-bubble-wrapper
+ipacrack.com###site-header > .clear.container
+ipacrack.com##.widget_custom_html.widget.widget_text
+ipacrack.com##.swal2-backdrop-show.swal2-center.swal2-container
 link.codevn.net##h4
 link.codevn.net##footer
 link.codevn.net##.text-left
@@ -337,13 +383,6 @@ gamek.vn##.fl.footer
 samfw.com###block-mess
 samfw.com##.bnud.holder
 
-! 2022-02-12 https://phimmoichill.net
-phimmoichill.net###tags
-phimmoichill.net###goadv
-phimmoichill.net###tag-box
-phimmoichill.net##.block-note
-
-
 ! 2021-07-08 https://kptools.net
 kptools.net##.adsslot_gY7RplIyz2.adsbygoogle
 kptools.net##.entry-header
@@ -609,22 +648,9 @@ vnexpress.net##.section-exitintent.section
 vnexpress.net##.inner-box-business.width_common
 vnexpress.net##.box-category__list-news > .sidebar-2
 
-
 ! 2022-06-29 https://keep.google.com
 @@||play.google.com/log?format=json&hasfast=true&authuser=0$xhr,domain=keep.google.com
 @@||maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true$xhr,domain=keep.google.com
-
-! 2022-06-30 https://mphimmoi1.net
-mphimmoi1.net##.tags
-mphimmoi1.net###footer
-||connect.facebook.net^
-mphimmoi1.net##.keywords
-||mphimmoi1.net/*.mp4$media,1p
-||mphimmoi1.net/pcAds*.xml$xhr,1p
-||mphimmoi1.net/bin168.js$script,1p
-||mphimmoi1.net/Theme/js/wonderfarm*.js$script,1p
-||mphimmoi1.net/Theme/js/jquery.lazyload.min.js$script,1p
-||mphimmoi1.net/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 
 ! 2022-05-18 https://www.toolaat.com
 www.toolaat.com###tool-description
@@ -1022,15 +1048,10 @@ www.uptrends.com##section.v--noPaddingBottom.o-section:nth-of-type(6)
 www.vaticannews.va##.header-main__nav-container > .socialMenu
 www.wimsbios.com##.cc-color-override--1360619034.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
 ||api.ffbbbdc6d3c353211fe2ba39c9f744cd.com$xhr,domain=www.bybit.com
-||bit.ly$popup,domain=ephimmoi.net|phimmoichill.net
 ||bluadz.com
 ||bybit.ada.support/embed/modern/button/*/sentry.*.js$script
 ||checkip.thaiware.com/images/checkip_background.jpg$image
 ||chiasenhac.vn/sys/error_slow_bug$xhr,1p
-||ephimmoi.net/wp-content/themes/halimmovies/media/img/body_bg.gif$image
-||ephimmoi.net/wp-content/themes/halimmovies/media/img/item_bgg.gif$image
-||ephimmoi.net/wp-content/uploads/2021/11/*logo*.png$image
-||ephimmoi.net/wp-content/uploads/2021/11/APP-logo-.png$image
 ||hoamitech.com/wp-content/uploads/2021/09/tai-khoan-fshare-vip-2019.jpg$image
 ||https://lh3.googleusercontent.com/-3qk5J_yYj0Q/YaTYTb31kfI/AAAAAAAAAmU/T6sTDlhNqpY8lCPt8nNxwYt2pTjQ8qoYQCLcBGAsYHQ/h120/APP-logos.png$image
 ||phimnhua.com/ads/*$media,1p
@@ -2169,7 +2190,6 @@ www.best-inc.vn##.bex12-cont > div:nth-of-type(1)
 www.best-inc.vn##.bex23-container
 www.cpu-monkey.com##.werb_top1.werb
 www.dfi.com##.first-browse
-www.dongphim.net##.luna.ht-footer
 www.draytek.com.tw##footer
 www.forum.vnpro.org##.msgbox
 www.gargoyle-router.com###outer_logo
@@ -2234,7 +2254,6 @@ xemphimz.plus##.Toastify
 xemphimz.plus##.Toastify__toast-container--bottom-right.Toastify__toast-container
 xtmobile.vn##.grwf2_backdrop, .wf2-bg-dark
 xyhs.mad.buttobi.net##div:first-child > table:first-child
-yeuphimmoi.com##.balloon-block
 ||ds-assets.cdn.devapps.ru/*.jpg
 ||tawk.to^
 ||2.2.2.11/img/fancyFooter.png$image
@@ -2249,13 +2268,10 @@ yeuphimmoi.com##.balloon-block
 ||itmogeaskli12.live^
 ||lixi88.info^
 ||macoupon.net^
-||media.dongphim.net/media/image/id/*200x$image
-||media.dongphim.net/media/image/id/*640x$image
 ||ogs.google.com.sg/widget/callout$subdocument
 ||omgt3.com^
 ||pushbullet.com
 ||scloud.ws/application/frontend/skin/valley/themes/fon.jpg$image
-||static.dongphim.net/images/chuot.jpeg$image
 ||uhchat.net$subdocument
 ||uhchat.net/$subdocument
 ||upanh.vn-z.vn/images/2020/04/28/Screenshot_2020-04-28-Dich-v-luu-tr-va-chia-s-trc-tuyen.png$image
@@ -3767,7 +3783,6 @@ youtube.com###masthead-ad
 ||*.omiai-jp.*^
 ||*.onclasrv.*^
 ||*.opus-static.*
-||*.phimmoi.*/widget.php
 ||*.plugrush.com^
 ||*.puhtml.^
 ||*.puserving.*^
@@ -3845,7 +3860,6 @@ youtube.com###masthead-ad
 ||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
 ||oth.update.mdt.qq.com:8080/beacon/vercheck$important,app=AndroidEmulator.exe
 ||outlookabsorb.com^
-||phimmoi.net/widget.php
 ||popcash.*^
 ||pushance.com^
 ||pushno.com^
@@ -3873,7 +3887,6 @@ youtube.com###masthead-ad
 ||tiengnhat.minder.vn/wp-content/uploads/2018/10/*
 ||trafflict.*^
 ||tremember.*^
-||uniad.phimmoi.net^
 ||unipay.qq.com^
 ||upera.ir^
 ||uplod.ws/responsive_js/paging.js
