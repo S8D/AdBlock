@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221123d
+! Version: 221123e
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -147,31 +147,6 @@ uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(4)
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(5)
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(6)
-
-! 2022-11-18 https://a2zapk.io
-!a2zapk.com##.WebF
-rtxkeeda.com##.WebF
-a2zapk.com##.Tags
-a2zapk.com###galax2
-rtxkeeda.com###alert
-rtxkeeda.com##.modalpop
-rtxkeeda.com##.modalpop-content
-@@||rtxkeeda.com/adsby.js$script,1p
-!a2zapk.com##div.NewBlock:nth-of-type(1)
-a2zapk.com##div.ArticleLand:nth-of-type(4)
-a2zapk.com##div.ArticleLand:nth-of-type(5)
-a2zapk.com##div.ArticleLand:nth-of-type(6)
-a2zapk.com##div.ArticleLand:nth-of-type(3) > b
-a2zapk.com##[href="https://dropgalaxy.com/free2.html"]
-||mobileoffers-db-download.com
-||mobileoffers-dq-download.com
-||mobileoffers-5-w-download.com
-||mobileoffers-7-j-download.com
-||a2zapk.com/js/apk2019.js$script,1p
-||a2zapk.com/js/main2019.js$script,1p
-||rtxkeeda.com/cdn-cgi/challenge-platform/h/g/cv/result/$xhr,1p
-||a2zapk.com/cdn-cgi/challenge-platform/h/g/scripts/cb/invisible.js$script,1p
-||a2zapk.io/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js$script,1p
 
 ! 2022-05-09 https://lamtheatmonline.com
 lamtheatmonline.com##[href^="https://mobilebanking.mbbank.com.vn:8443/referral/referred.html"]
