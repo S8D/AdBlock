@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221124a
+! Version: 221125a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -12,13 +12,14 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 ##div[class^="jw-logo"]
 
 ! 2022-11-23 https://a2zapk.com
-a2zapk.com,newsjizz.in,rtxkeeda.com,unlockapk.com##.WebF
-
 a2zapk.com##.Tags
 a2zapk.com##.StyleTags > ul
+||a2z.a2zapk.com/dlcount.php
+||tmp.a2zapk.com/advertisement
 a2zapk.com##div.NewBlock:nth-of-type(1)
 a2zapk.com##div.ArticleLand:nth-of-type(5)
 a2zapk.com##div.ArticleLand:nth-of-type(6)
+a2zapk.com,newsjizz.in,rtxkeeda.com,unlockapk.com##.WebF
 
 newsjizz.in###taxonomy-list_1-0
 newsjizz.in##body > div:nth-of-type(3)
@@ -38,6 +39,49 @@ unlockapk.com###content > div:nth-of-type(1)
 ||mobileoffers-db-download.com
 ||mobileoffers-dq-download.com
 techyneed.com##[href="https://t.me/a2zapkchannel"]
+
+! 2022-11-23 https://storeios.net
+storeios.net##.tab-content > .row
+storeios.net##.main-color-2-bg.dark-div
+storeios.net###mota > .row > .notes > p
+storeios.net##div.hidden-xs:nth-of-type(1)
+storeios.net##div.hidden-xs:nth-of-type(4)
+storeios.net##main > .google-ad-leaderboard.gooWidget
+storeios.net##.col-md-8 > .google-ad-leaderboard.gooWidget
+storeios.net##.tab-content > .google-ad-leaderboard.gooWidget
+storeios.net##.clearfix.section_padding_50.our-monthly-membership
+storeios.net##div.col-md-6.col-12 > .google-ad-leaderboard.gooWidget
+storeios.net##.clearfix.section_padding_70.text-center.footer-social-icon
+
+! 2022-11-23 https://www.sammobile.com
+www.sammobile.com##footer
+
+! 2022-11-24 https://taiwebs.com
+!br0wsers.com##.download-info-inner.content > div:nth-of-type(3)
+br0wsers.com###dadview
+br0wsers.com###limit-name
+br0wsers.com###mainHeader
+br0wsers.com##.footerPolicy
+br0wsers.com##.text-center.ads_area1
+br0wsers.com##.text-center.ads_area2
+br0wsers.com##.text-center.ads_area4
+br0wsers.com###div-gpt-ad-1594614775232-0
+taiwebs.com##.top14
+taiwebs.com###fanback
+taiwebs.com##.adv-url
+taiwebs.com##.spoiler
+taiwebs.com###fan-exit
+taiwebs.com##.thumbnail
+taiwebs.com###mainHeader
+taiwebs.com###cookie_page
+taiwebs.com###fancybox-wrap
+taiwebs.com##.alt-message-box
+taiwebs.com###fancybox-overlay
+taiwebs.com###Gioi_Thieu > .adsbyvli
+taiwebs.com###maincontent > .adsbyvli
+taiwebs.com##div.adsbyvli:nth-of-type(1)
+taiwebs.com###maincontent > div > .adsbyvli
+taiwebs.com##.l.download-container.midleft > .topdown
 
 short.pandaznetwork.com##footer.py-5.text-center.wow.zoomIn.animated:nth-child(3)
 
@@ -82,8 +126,8 @@ phimvietsub.co###dtw_content-2
 ipacrack.com,ios.codevn.net##.comments-area
 ipacrack.com,ios.codevn.net###wpd-bubble-wrapper
 ipacrack.com,ios.codevn.net##.swal2-backdrop-show.swal2-center.swal2-container
-
 ios.codevn.net##.header.jsx-arm64e
+ios.codevn.net##.alert-info.alert.no-comments
 ios.codevn.net##.rounded.bg-light.entry-content
 ipacrack.com##.tags
 ipacrack.com###text-3
@@ -889,11 +933,6 @@ boost.ink##.site_slimheader
 boxphanmem.com###post-1546 > div.entry-content:last-child > div:nth-child(15)
 boxphanmem.com###post-1546 > div.entry-content:last-child > div:nth-child(2)
 boxphanmem.com###post-1546 > div.entry-content:last-child > div:nth-child(6)
-br0wsers.com###dadview
-br0wsers.com###div-gpt-ad-1594614775232-0
-br0wsers.com###limit-name
-br0wsers.com###mainHeader
-br0wsers.com##.download-info-inner.content > div:nth-of-type(3)
 buananetpbun.github.io###myModal
 businessnewscurrent.online##div:nth-of-type(12)
 businessnewscurrent.online###container > div:nth-of-type(1)
@@ -1316,18 +1355,6 @@ support.kaspersky.com###gdprbarfiller
 support.malwarebytes.com###cookie-consent-alert
 support.malwarebytes.com###cookie-consent-overlay
 tago.vn##div.sbzon:nth-child(26)
-taiwebs.com###cookie_page
-taiwebs.com###fan-exit
-taiwebs.com###fanback
-taiwebs.com###fancybox-overlay
-taiwebs.com###fancybox-wrap
-taiwebs.com###mainHeader
-taiwebs.com##.adv-url
-taiwebs.com##.alt-message-box
-taiwebs.com##.l.download-container.midleft > .topdown
-taiwebs.com##.spoiler
-taiwebs.com##.thumbnail
-taiwebs.com##.top14
 talk.secafe.vn###headerProxy
 talk.secafe.vn##.hs-hide-900
 talk.secafe.vn##.hs-hide-992
@@ -2693,7 +2720,7 @@ wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site###cookie-pop
 
-we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.tv,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com##.footer
+we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.tv,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,vnexpress.net,www.grimmstories.com##.footer
 
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,businessnewscurrent.online###footer
 
