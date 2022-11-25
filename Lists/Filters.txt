@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221125a
+! Version: 221125b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -10,6 +10,10 @@
 !___Tổng-Hợp_______________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
+
+! 2022-11-24 https://rapidgator.net
+rapidgator.net##[href^="https://play.google.com/store/apps/details"]
+||rapidgator.net/images/bg-container.png$image
 
 ! 2022-11-23 https://a2zapk.com
 a2zapk.com##.Tags
@@ -57,7 +61,6 @@ storeios.net##.clearfix.section_padding_70.text-center.footer-social-icon
 www.sammobile.com##footer
 
 ! 2022-11-24 https://taiwebs.com
-!br0wsers.com##.download-info-inner.content > div:nth-of-type(3)
 br0wsers.com###dadview
 br0wsers.com###limit-name
 br0wsers.com###mainHeader
@@ -250,6 +253,8 @@ uploadydl.com##.position-absolute.p-5.footer
 uploadydl.com##.text-center.table-striped.table-bordered.table .btn-primary.btn
 uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(1)
 uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(3)
+uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.row:last-child
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(2)
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(3)
@@ -2380,9 +2385,14 @@ userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-main.navbar
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
 
-! 2022-11-17 https://uploadrar.com
+! 2022-11-24 https://uploadrar.com
+uploadrar.com,chedrives.com##.desc
+uploadrar.com##.banner1
+uploadrar.com##.banner3
 uploadrar.com###lastnews
 uploadrar.com###news_last
+uploadrar.com##.menufooter
+uploadrar.com##body > form
 uploadrar.com##.app-footer
 uploadrar.com##.icofont-zipped
 uploadrar.com##.sharefile > ul
@@ -2390,6 +2400,8 @@ uploadrar.com##.fileoption > ul
 uploadrar.com###gdpr-cookie-notice
 uploadrar.com##.blockpage > .title
 uploadrar.com##.btn-lg.btn-success.btn
+uploadrar.com###commonId > .adsbygoogle
+uploadrar.com##.banner2 > .as_ads_guard
 uploadrar.com##.blockpage > .adsbygoogle
 uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
@@ -2441,7 +2453,6 @@ dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-
 chedrive.com###gdpr-cookie-notice
 
 ! 2022-08-10 https://chedrives.com
-chedrives.com##.desc
 chedrives.com##.title
 chedrives.com##.icofont-zipped
 chedrives.com##.fileoption > ul
@@ -2711,7 +2722,7 @@ wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,ch
 
 ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com##.header
 
-ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ploadrar.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,anonfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
+ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,uploadrar.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,anonfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
 
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,###link-view > p
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
