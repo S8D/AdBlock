@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221125b
+! Version: 221126a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -2387,8 +2387,8 @@ userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; po
 
 ! 2022-11-24 https://uploadrar.com
 uploadrar.com,chedrives.com##.desc
-uploadrar.com##.banner1
-uploadrar.com##.banner3
+uploadrar.com##header
+uploadrar.com##.banner*
 uploadrar.com###lastnews
 uploadrar.com###news_last
 uploadrar.com##.menufooter
@@ -2400,13 +2400,10 @@ uploadrar.com##.fileoption > ul
 uploadrar.com###gdpr-cookie-notice
 uploadrar.com##.blockpage > .title
 uploadrar.com##.btn-lg.btn-success.btn
-uploadrar.com###commonId > .adsbygoogle
-uploadrar.com##.banner2 > .as_ads_guard
-uploadrar.com##.blockpage > .adsbygoogle
 uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
 uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
-uploadrar.com##div.col-lg-4.col-md-4.col-sm-12.col-xs-12 > .adsbygoogle
+
 
 ! 2021-07-20 https://upfiles.io
 upfiles.io##p
@@ -2718,11 +2715,11 @@ ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoct
 
 win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
 
-wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,checkip.thaiware.com##.adsbygoogle
+wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,checkip.thaiware.com,uploadrar.com##.adsbygoogle
 
 ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com##.header
 
-ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,uploadrar.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,anonfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
+ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,anonfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
 
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,###link-view > p
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
