@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221126a
+! Version: 221128a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -11,9 +11,15 @@
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
 
-! 2022-11-24 https://rapidgator.net
-rapidgator.net##[href^="https://play.google.com/store/apps/details"]
-||rapidgator.net/images/bg-container.png$image
+! 2022-11-27 https://namlee.net
+namlee.net##.entry-tags
+namlee.net##.site-footer
+namlee.net##.comments-area
+namlee.net##.article-footer
+namlee.net###wpd-post-rating
+namlee.net##.article-copyright
+namlee.net###wpd-bubble-wrapper
+namlee.net##.widget_custom_html.widget.widget_text
 
 ! 2022-11-23 https://a2zapk.com
 a2zapk.com##.Tags
@@ -57,9 +63,6 @@ storeios.net##.tab-content > .google-ad-leaderboard.gooWidget
 storeios.net##.clearfix.section_padding_50.our-monthly-membership
 storeios.net##div.col-md-6.col-12 > .google-ad-leaderboard.gooWidget
 storeios.net##.clearfix.section_padding_70.text-center.footer-social-icon
-
-! 2022-11-23 https://www.sammobile.com
-www.sammobile.com##footer
 
 ! 2022-11-24 https://taiwebs.com
 br0wsers.com###dadview
@@ -133,7 +136,6 @@ ipacrack.com,ios.codevn.net##.swal2-backdrop-show.swal2-center.swal2-container
 ios.codevn.net##.header.jsx-arm64e
 ios.codevn.net##.alert-info.alert.no-comments
 ios.codevn.net##.rounded.bg-light.entry-content
-ipacrack.com##.tags
 ipacrack.com###text-3
 ipacrack.com###site-footer
 ipacrack.com###site-header > .clear.container
@@ -480,7 +482,7 @@ thethao247.vn###fb-fanbox
 thuvienhd.com##.backdrop
 
 ! 2022-07-29 https://linksvip.net
-linksvip.net##.tags
+
 linksvip.net##.mainbar
 linksvip.net##.top.row
 linksvip.net##.jumbotron-right
@@ -2599,11 +2601,12 @@ www42.zippyshare.com##div.center:nth-of-type(6)
 www42.zippyshare.com##div.center:nth-of-type(3)
 www42.zippyshare.com##[href="//www.zippyshare.com/"]
 
-! 2021-07-25 https://rapidgator.net
+! 2022-11-24 https://rapidgator.net
 rapidgator.net###copy
 rapidgator.net##.descr
 rapidgator.net##.footer > .in
 rapidgator.net##.table_header
+||rapidgator.net/images/bg-container.png$image
 rapidgator.net,hexupload.net##th:nth-of-type(3)
 rapidgator.net,hexupload.net##td:nth-of-type(3)
 rapidgator.net,hexupload.net##tr:nth-of-type(2)
@@ -2613,6 +2616,7 @@ rapidgator.net,hexupload.net##tr:nth-of-type(6)
 rapidgator.net,hexupload.net##tr:nth-of-type(7)
 rapidgator.net,hexupload.net##tr:nth-of-type(8)
 rapidgator.net,hexupload.net##tr:nth-of-type(9)
+rapidgator.net##[href^="https://play.google.com/store/apps/details"]
 
 ! 2021-07-07 https://hexupload.net
 hexupload.net###secure
@@ -2691,6 +2695,7 @@ www.upload-4ever.com##.mb-5.text-center.content-section.col-sm-12
 www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 
 !___Rút-Gọn________________________________________
+ipacrack.com,linksvip.net##.tags
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
 123link.pw,123link.pro##.dark.ads-block-warning
@@ -2737,7 +2742,7 @@ we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.
 
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,businessnewscurrent.online###footer
 
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
 
 ! 2021-07-24 https://mega4up.com
 mega4up.com##h5
