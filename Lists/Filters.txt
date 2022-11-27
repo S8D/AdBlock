@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221128b
+! Version: 221128c
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -10,6 +10,55 @@
 !___Tổng-Hợp_______________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
+ipacrack.com,linksvip.net##.tags
+ez4linkss.com,ckk.ai##h3:nth-of-type(1)
+ez4linkss.com,ckk.ai##h3:nth-of-type(2)
+123link.pw,123link.pro##.dark.ads-block-warning
+hexupload.net,rapidgator.net##tr:nth-of-type(10)
+clk.sh,xemlink.net,ipchicken.com##p:nth-of-type(5)
+megaurl.in,megaurl.top,megaurl.club##.navbar-default
+shareyou.pro,share4you.top,dropgalaxy.com##.features
+clk.sh,xemlink.net,link.karanpc.com##p:nth-of-type(4)
+semawur.com,temp-mail.org,safelinku.net##.main-header
+p-load.io,chedrive.com,uploadydl.com,uploadocean.com##.report
+vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center
+chedrive.com,uploadev.org,uploadrar.com,chedrives.com###footer2
+linkcc.pro,link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
+free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com##h2
+linku.us,semawur.com,urldown.com,safelinku.net,www.cloudflare.com##.main-footer
+free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
+wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
+123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
+ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com##p:nth-of-type(3)
+123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
+lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.box-main > h4
+clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com##p:nth-of-type(2)
+linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com##h4
+clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
+
+ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
+
+win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
+
+wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,checkip.thaiware.com##.adsbygoogle
+
+ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com##.header
+
+ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,anonfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
+
+oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,###link-view > p
+wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
+
+wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu##.text-left
+
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site###cookie-pop
+
+we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.tv,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,vnexpress.net,www.grimmstories.com##.footer
+
+gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,businessnewscurrent.online###footer
+
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
+
 
 ! 2022-11-27 https://namlee.net
 namlee.net##.entry-tags
@@ -1110,9 +1159,6 @@ goo.gl/i5gr3Z$domain=thuviensoft.net
 gophim.tv##[href="https://bit.ly/3dg70E7"]
 h30434.www3.hp.com##.lia-quilt-column-icons.lia-quilt-column-single.lia-quilt-column-24.lia-quilt-column > .lia-quilt-column-alley-single.lia-quilt-column-alley
 h30434.www3.hp.com##.optanon-alert-box-wrapper
-hackthue.com###zb-753e3 > div.zb-sp-trigger.ztb-right.ztb-left-button:first-child
-hackthue.com###zb-overlay-1182790
-hackthue.com##div:nth-child(35)
 hangmaytinh.com##.ulp-fadeIn.ulp-animated.ulp-overlay
 hangmaytinh.com##.ulp-window-container
 hangxin.com.vn###uhchatboz
@@ -1472,7 +1518,6 @@ valid.x86.fr##.cc_container--open.cc_container.cc_banner
 vandyke.com###gdpr-alert
 vandyke.com###gdpr-cover
 vcc-group.vn##.giuseart-nav
-vetmang.net##[href="https://vetmang.net/phim-sex-viet-nam/"] > [src="https://pbs.twimg.com/media/EZ1v54gVAAEtlsi?format=png"]
 vhea.org.vn###ftwp-postcontent > .ads-top-page.sp-ads
 vhea.org.vn##.ads-sidebar-2.ads-sidebar.sp-ads
 vhea.org.vn##.clearfix.comments-area
@@ -2696,54 +2741,6 @@ www.upload-4ever.com##.mb-5.text-center.content-section.col-sm-12
 www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 
 !___Rút-Gọn________________________________________
-ipacrack.com,linksvip.net##.tags
-ez4linkss.com,ckk.ai##h3:nth-of-type(1)
-ez4linkss.com,ckk.ai##h3:nth-of-type(2)
-123link.pw,123link.pro##.dark.ads-block-warning
-hexupload.net,rapidgator.net##tr:nth-of-type(10)
-clk.sh,xemlink.net,ipchicken.com##p:nth-of-type(5)
-megaurl.in,megaurl.top,megaurl.club##.navbar-default
-shareyou.pro,share4you.top,dropgalaxy.com##.features
-clk.sh,xemlink.net,link.karanpc.com##p:nth-of-type(4)
-semawur.com,temp-mail.org,safelinku.net##.main-header
-p-load.io,chedrive.com,uploadydl.com,uploadocean.com##.report
-vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center
-chedrive.com,uploadev.org,uploadrar.com,chedrives.com###footer2
-linkcc.pro,link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
-free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com##h2
-linku.us,semawur.com,urldown.com,safelinku.net,www.cloudflare.com##.main-footer
-free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
-wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
-123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
-ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com##p:nth-of-type(3)
-123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
-lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.box-main > h4
-clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com##p:nth-of-type(2)
-linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com##h4
-clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
-
-ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
-
-win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
-
-wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,checkip.thaiware.com##.adsbygoogle
-
-ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com##.header
-
-ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,anonfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
-
-oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,###link-view > p
-wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
-
-wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu##.text-left
-
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site###cookie-pop
-
-we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.tv,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,vnexpress.net,www.grimmstories.com##.footer
-
-gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,businessnewscurrent.online###footer
-
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
 
 ! 2021-07-24 https://mega4up.com
 mega4up.com##h5
@@ -3123,6 +3120,7 @@ checkip.vip##.checkip-title
 
 ! 2021-08-22 https://browserleaks.com
 browserleaks.com###bg_hand
+browserleaks.com###comments
 ||browserleaks.com/img/logo.png$image
 ||browserleaks.com/img/logo*g?v=32108433$image
 
