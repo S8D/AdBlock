@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221128d
+! Version: 221130a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -13,18 +13,21 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 ipacrack.com,linksvip.net##.tags
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
+trainghiemso.vn,wiki.tino.org##.jeg_post_tags
 123link.pw,123link.pro##.dark.ads-block-warning
 hexupload.net,rapidgator.net##tr:nth-of-type(10)
 clk.sh,xemlink.net,ipchicken.com##p:nth-of-type(5)
 megaurl.in,megaurl.top,megaurl.club##.navbar-default
 shareyou.pro,share4you.top,dropgalaxy.com##.features
+trainghiemso.vn,kptools.net##.jeg_share_top_container
 clk.sh,xemlink.net,link.karanpc.com##p:nth-of-type(4)
 semawur.com,temp-mail.org,safelinku.net##.main-header
+kptools.net,wiki.tino.org,trainghiemso.vn##.footer-holder
+anonfiles.com,bayfiles.com##.text-center.col-md-6.col-xs-12
 p-load.io,chedrive.com,uploadydl.com,uploadocean.com##.report
 vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center
 chedrive.com,uploadev.org,uploadrar.com,chedrives.com###footer2
 linkcc.pro,link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
-chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net##.comments-area
 free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com##h2
 linku.us,semawur.com,urldown.com,safelinku.net,www.cloudflare.com##.main-footer
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
@@ -32,6 +35,7 @@ wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-contai
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
 ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com##p:nth-of-type(3)
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
+chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net,trainghiemso.vn##.comments-area
 lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.box-main > h4
 clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com##p:nth-of-type(2)
 linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com##h4
@@ -59,6 +63,27 @@ we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,businessnewscurrent.online###footer
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
+
+! 2022-11-28 https://www.takez.co
+www.takez.co###footer-bg
+www.takez.co##h3
+www.takez.co##.header-atas
+www.takez.co###minisite > .section.header
+www.takez.co###wrapper-indzign
+www.takez.co###dstats
+www.takez.co###toshowshortlink
+
+! 2022-11-28 https://forum.release-apk.com
+forum.release-apk.com##.cc-color-override--1687565279.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
+
+! 2022-11-29 https://trainghiemso.vn
+trainghiemso.vn##.jeg_author_image
+trainghiemso.vn###mvp-foot-bot-wrap
+trainghiemso.vn##.normal.jeg_container.jeg_midbar
+trainghiemso.vn##.attachment-, .size-, .wp-post-image
+trainghiemso.vn##.jnews_article_top_ads.jeg_article.jeg_ad
+trainghiemso.vn##.jnews_content_inline_ads.jeg_ad_article.jeg_ad
+trainghiemso.vn##.js-rmp-widgets-container--181203.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
 
 ! 2022-11-27 https://animehay.pro
 animehay.pro##div.ah-frame-bg:nth-of-type(11)
@@ -478,8 +503,6 @@ samfw.com##.bnud.holder
 ! 2021-07-08 https://kptools.net
 kptools.net##.adsslot_gY7RplIyz2.adsbygoogle
 kptools.net##.entry-header
-kptools.net##.footer-holder
-kptools.net##.jeg_share_top_container
 kptools.net##.jnews_module_461_1_60e789fa70a10.jeg_ad_module.jeg_ad
 kptools.net##.jnews_module_461_4_60e789fa71106.jeg_ad_module.jeg_ad
 kptools.net##div.vc_col-sm-2.vc_column_container.wpb_column:nth-of-type(1)
@@ -1189,8 +1212,6 @@ hoctiengnhatkaoruri.wordpress.com###jp-post-flair
 hoctiengnhatkaoruri.wordpress.com##.site-branding
 hoctiengnhatkaoruri.wordpress.com###eu-cookie-law > form
 hoctiengnhatkaoruri.wordpress.com##.widget_eu_cookie_law_widget.widget
-howtogeek.com##.email-overlay
-howtogeek.com##.overlay-wrapper
 hvdic.thivien.net##.notification
 hybrid-analysis.com###cookie-message-container
 i.imgur.com/A4Kwg6k.png$domain=uploadocean.com
@@ -1488,9 +1509,6 @@ tipsalert.xyz##[href="http://sundhopen.site/irYVmWipkXnzo9/12656"]
 tipsalert.xyz##[href="https://travelcram.com"]
 topbank.vn###SiteLeft
 topbank.vn###SiteRight
-trainghiemso.vn###mvp-foot-bot-wrap
-trainghiemso.vn##.attachment-, .size-, .wp-post-image
-trainghiemso.vn##.jnews_content_inline_ads.jeg_ad_article.jeg_ad
 tranducit.com##.popScroll
 trithucvn.net###post-sidebar
 trustweb.vn##.mfp-ready.mfp-auto-cursor.mfp-close-btn-in.mfp-wrap
@@ -1622,8 +1640,6 @@ wiki.tino.org###ftwp-postcontent > .jnews_content_inline_parallax_ads.jeg_ad_art
 wiki.tino.org###ftwp-postcontent > .kksr-align-right.kksr-valign-bottom.kk-star-ratings
 wiki.tino.org##.brb-collection-widget.widget
 wiki.tino.org##.content-inner > .jnews_content_inline_2_ads.jeg_ad_article.jeg_ad
-wiki.tino.org##.footer-holder
-wiki.tino.org##.jeg_post_tags
 wiki.tino.org##.jeg_share_bottom_container
 wiki.tino.org##.jnews_content_bottom_ads.jeg_article.jeg_ad
 wiki.tino.org##.jnews_content_top_ads.jeg_article.jeg_ad
@@ -2600,12 +2616,6 @@ file-up.org##form > div.row:nth-of-type(2)
 file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 file-up.org##.text-center.page-wrap > div:nth-of-type(2) > .row
 file-up.org##.text-center.col-md-offset-3.col-md-6 > div:nth-of-type(1)
-
-! 2021-07-20 https://anonfiles.com
-anonfiles.com##.text-center.col-md-6.col-xs-12
-
-! 2021-07-20 https://bayfiles.com
-bayfiles.com##.text-center.col-md-6.col-xs-12
 
 katfile.com##.style3
 katfile.com##.free > li > span
