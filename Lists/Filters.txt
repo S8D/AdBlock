@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221130a
+! Version: 221130b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -76,9 +76,17 @@ www.takez.co###toshowshortlink
 ! 2022-11-28 https://forum.release-apk.com
 forum.release-apk.com##.cc-color-override--1687565279.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
 
+! 2022-11-29 https://www.howtogeek.com
+www.howtogeek.com##.message
+www.howtogeek.com##.site-footer
+www.howtogeek.com##.email-overlay
+www.howtogeek.com##.overlay-wrapper
+www.howtogeek.com##.adslot970.adslot
+
 ! 2022-11-29 https://trainghiemso.vn
 trainghiemso.vn##.jeg_author_image
 trainghiemso.vn###mvp-foot-bot-wrap
+trainghiemso.vn###selectShareContainer
 trainghiemso.vn##.normal.jeg_container.jeg_midbar
 trainghiemso.vn##.attachment-, .size-, .wp-post-image
 trainghiemso.vn##.jnews_article_top_ads.jeg_article.jeg_ad
@@ -1698,8 +1706,6 @@ www.hanoicomputer.vn##.pb-3.pr-3.pt-3.pl-3.flex-row.d-flex
 www.hanoicomputer.vn##.widget-preview--action-text
 www.hotcourses.vn###ckieOvrlayDiv
 www.hotcourses.vn###footerId
-www.howtogeek.com##.email-overlay
-www.howtogeek.com##.overlay-wrapper
 www.icann.org##.cookie-notification
 www.kaspersky.com##.CookieBanner_bottom__36qCi.CookieBanner_dark__3fmGK.CookieBanner_transparent__2swlH.CookieBanner_notificationBar__1Bptx
 www.lenovo.com###cboxOverlay
