@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221202a
+! Version: 221202b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -360,10 +360,11 @@ cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
 cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
 www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 
-! 2022-11-17 https://uploadydl.com
+! 2022-12-02 https://uploadydl.com
 uploadydl.com##strong
 uploadydl.com##.aflink
 uploadydl.com##.p-1.mt-4
+uploadydl.com##.p-5.footer
 uploadydl.com##.mt-4.col-md-12
 uploadydl.com##.alert.btn-link
 uploadydl.com##.navbar-expand-lg.navbar
@@ -381,6 +382,10 @@ uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(4)
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(5)
 uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(6)
+
+! 2022-11-27 https://www.reddit.com
+www.reddit.com##shreddit-async-loader:nth-of-type(2)
+www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._3Ig_EsWWVLquWs2yBBQjec._1DK52RbaamLOWw5UPaht_S
 
 ! 2022-05-09 https://lamtheatmonline.com
 lamtheatmonline.com##[href^="https://mobilebanking.mbbank.com.vn:8443/referral/referred.html"]
@@ -1741,7 +1746,6 @@ www.pti.com.vn##.scroll-fixed.header
 www.raspberrypi.org##.c-cookie-banner
 www.raspberrypi.org##.c-cookie-banner__container
 www.raspberrypi.org##.c-cookie-banner__content
-www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._3Ig_EsWWVLquWs2yBBQjec._1DK52RbaamLOWw5UPaht_S
 www.rfi.fr##.m-interstitial__ad
 www.rfi.fr##.o-ad-container--with-background.o-ad-container--banner-top.o-ad-container
 www.sendo.vn##.panelContent_3c89
