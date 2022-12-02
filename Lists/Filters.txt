@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221201a
+! Version: 221202a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -68,6 +68,10 @@ we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,www.ipa4fun.com,businessnewscurrent.online###footer
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
+
+! 2022-12-01 https://urlk.ga
+urlk.ga##.text-center.text-white.bg-primary.content-section
+urlk.ga##.text-white.bg-black.content-section
 
 ! 2022-11-30 https://www.terabox.com
 www.terabox.com##.drainage
@@ -273,23 +277,6 @@ ipacrack.com##.widget_custom_html.widget.widget_text
 ! 2022-09-15 https://i.ghtk.vn
 ||i.ghtk.vn/images/orders.png$image
 
-! 2022-10-22 https://www.tiktok.com
-www.tiktok.com##.footer-guide.jsx-1812151264
-www.tiktok.com##.img-container.jsx-1363823401
-www.tiktok.com##.e1pecv672.tiktok-12l8cv7-DivFlex0
-www.tiktok.com##.e1dsngob0.tiktok-hsy0fo-DivContainer
-www.tiktok.com##.eib2nuk0.tiktok-1pblmhq-DivBottomBanner
-www.tiktok.com##.enx791q1.tiktok-1ysvvri-DivIconContainer
-www.tiktok.com##.enx791q2.tiktok-1ba5y2x-DivInfoContainer
-www.tiktok.com##.e1gjoq3k0.tiktok-py8jux-DivModalContainer
-www.tiktok.com##.eik3s2010.tiktok-172wa3q-DivFooterWrapper
-www.tiktok.com##.enx791q5.tiktok-f2axrx-DivGuideBtnContainer
-www.tiktok.com##.enx791q5.tiktok-1whmggi-DivGuideBtnContainer
-www.tiktok.com##.middle.guide-container.jsx-1363823401 > .btns.jsx-1363823401
-www.tiktok.com##.middle.guide-container.jsx-1363823401 > .info.jsx-1363823401
-||p16-sign-sg.tiktokcdn.com/obj/*$image
-||p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/54176ef666184f33a299589ce6241092~tplv-f5insbecw7-1:720:720.jpeg$image
-
 uptobox.com###fan-exit
 uptobox.com##td:nth-of-type(2)
 uptobox.com##td:nth-of-type(1)
@@ -375,6 +362,7 @@ www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray
 
 ! 2022-11-17 https://uploadydl.com
 uploadydl.com##strong
+uploadydl.com##.aflink
 uploadydl.com##.p-1.mt-4
 uploadydl.com##.mt-4.col-md-12
 uploadydl.com##.alert.btn-link
