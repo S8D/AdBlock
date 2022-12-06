@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221202b
+! Version: 221206a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -11,11 +11,19 @@
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
 ipacrack.com,linksvip.net##.tags
+hexupload.net,apkadmin.com##.sharetabs
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
+distrowatch.com,dnsleaktest.com,upfiles.io##p
 trainghiemso.vn,wiki.tino.org##.jeg_post_tags
 bayfiles.com##.text-center.col-md-6.col-xs-12
+hexupload.net,uploadydl.com##tr:nth-of-type(3)
 www.ipa.tuandb.name.vn,phongduy.com##.comments
+rapidgator.net,hexupload.net##td:nth-of-type(3)
+rapidgator.net,hexupload.net##th:nth-of-type(3)
+rapidgator.net,hexupload.net##tr:nth-of-type(7)
+rapidgator.net,hexupload.net##tr:nth-of-type(8)
+rapidgator.net,hexupload.net##tr:nth-of-type(9)
 123link.pw,123link.pro##.dark.ads-block-warning
 hexupload.net,rapidgator.net##tr:nth-of-type(10)
 clk.sh,xemlink.net,ipchicken.com##p:nth-of-type(5)
@@ -27,12 +35,16 @@ semawur.com,temp-mail.org,safelinku.net##.main-header
 kolombox.com,short.katflys.com,up-load.io##.footer-sub
 www.ip2location.com,www.ipa4fun.com##div:nth-of-type(4)
 kptools.net,wiki.tino.org,trainghiemso.vn##.footer-holder
+rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(2)
+rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(4)
+rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(5)
+rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(6)
 iosddl.net,secufiles.com##.show.cookiealert.text-center.alert
 p-load.io,chedrive.com,uploadydl.com,uploadocean.com##.report
 vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center
 chedrive.com,uploadev.org,uploadrar.com,chedrives.com###footer2
 www.astrill.com,nvnorthwest.com,dl.literaturetimes.com##.site-header
-linkcc.pro,link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
+link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
 linku.us,semawur.com,urldown.com,safelinku.net,www.cloudflare.com##.main-footer
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
 wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
@@ -59,15 +71,15 @@ ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,p
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,###link-view > p
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
 
-wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com##.text-left
+wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com##.text-left
 
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com###cookie-pop
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com###cookie-pop
 
 we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.tv,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,vnexpress.net,www.grimmstories.com##.footer
 
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,www.ipa4fun.com,businessnewscurrent.online###footer
 
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,linkcc.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
 
 ! 2022-12-01 https://urlk.ga
 urlk.ga##.text-center.text-white.bg-primary.content-section
@@ -128,6 +140,18 @@ trainghiemso.vn##.attachment-, .size-, .wp-post-image
 trainghiemso.vn##.jnews_article_top_ads.jeg_article.jeg_ad
 trainghiemso.vn##.jnews_content_inline_ads.jeg_ad_article.jeg_ad
 trainghiemso.vn##.js-rmp-widgets-container--181203.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
+
+! 2022-12-02 https://bikae.net
+bikae.net##.top-banner-ads
+bikae.net##.site-footer
+bikae.net##.top-banner-ads
+bikae.net##.under-article-ads
+bikae.net##.bottom.entry-sns-data
+bikae.net##.site-footer
+bikae.net##.top-banner-ads
+bikae.net##.top-banner-ads
+bikae.net##.under-article-ads
+bikae.net##.site-footer
 
 ! 2022-11-27 https://animehay.pro
 animehay.pro##div.ah-frame-bg:nth-of-type(11)
@@ -361,6 +385,9 @@ cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-se
 www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 
 ! 2022-12-02 https://uploadydl.com
+! 2022-12-02 https://uploadydl.com
+uploadydl.com##.text-dark
+uploadydl.com##.text-danger
 uploadydl.com##strong
 uploadydl.com##.aflink
 uploadydl.com##.p-1.mt-4
@@ -761,9 +788,6 @@ www.searchenginejournal.com###sej-popup-wrapper
 apkadmin.com##.how-to
 apkadmin.com##.text-left.about-apk
 
-! 2022-05-29 https://dnsleaktest.com
-dnsleaktest.com##.container_12 > h2
-
 ! 2022-05-30 https://app.trangchu.news
 app.trangchu.news##.site-logo
 app.trangchu.news##.captcha-check.mt-1.alert-light.alert
@@ -1010,21 +1034,6 @@ bianhot.site##.premium
 bianhot.site##.mt-4.col-md-12
 bianhot.site##.sv-nav.navbar-dark.navbar-expand-md.navbar
 bianhot.site##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
-bikae.net##.under-article-ads
-bikae.net##.adslot_3.adsbygoogle
-bikae.net##.bottom.entry-sns-data
-bikae.net##.has-table.article-author
-bikae.net##p:nth-of-type(0) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(1) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(2) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(3) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(4) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(5) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(6) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(7) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(8) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(9) > .adslot_1.adsbygoogle
-bikae.net##p:nth-of-type(10) > .adslot_1.adsbygoogle
 billysoftacademy.com###cookie-law-info-bar
 biluu.tv###popup_banner_beta
 bitly.com###banner-cookie
@@ -1109,7 +1118,6 @@ dienmayviet.com.vn###banner
 dienmayviet.com.vn###divAdRight
 dinhhieu.vn###floating_banner_left
 dinhhieu.vn###floating_banner_right
-distrowatch.com##p
 distrowatch.com##body > table:nth-of-type(3)
 distrowatch.com##.News1 > table:nth-of-type(2)
 distrowatch.com##td:nth-of-type(2) > table:nth-of-type(3)
@@ -2496,7 +2504,6 @@ uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 uploadrar.com##div.col-lg-4.col-md-4.col-sm-12.col-xs-12 > .adsbygoogle
 
 ! 2021-07-20 https://upfiles.io
-upfiles.io##p
 upfiles.io##.faqs
 upfiles.io###ad-3
 upfiles.io###ad-4
@@ -2573,7 +2580,6 @@ douploads.com###wrapper > div.directlinkpage:last-child > div.content:last-child
 ! 2022-02-06 https://apkadmin.com
 apkadmin.com##.how-to
 apkadmin.com##.bg-white
-apkadmin.com##.sharetabs
 apkadmin.com###content > center
 apkadmin.com##.text-left.about-apk
 apkadmin.com##.text-center.file-name
@@ -2684,24 +2690,13 @@ rapidgator.net##.descr
 rapidgator.net##.footer > .in
 rapidgator.net##.table_header
 ||rapidgator.net/images/bg-container.png$image
-rapidgator.net,hexupload.net##th:nth-of-type(3)
-rapidgator.net,hexupload.net##td:nth-of-type(3)
-rapidgator.net,hexupload.net##tr:nth-of-type(2)
-rapidgator.net,hexupload.net##tr:nth-of-type(4)
-rapidgator.net,hexupload.net##tr:nth-of-type(5)
-rapidgator.net,hexupload.net##tr:nth-of-type(6)
-rapidgator.net,hexupload.net##tr:nth-of-type(7)
-rapidgator.net,hexupload.net##tr:nth-of-type(8)
-rapidgator.net,hexupload.net##tr:nth-of-type(9)
 rapidgator.net##[href^="https://play.google.com/store/apps/details"]
 
 ! 2021-07-07 https://hexupload.net
 hexupload.net###secure
 hexupload.net##.paybox
-hexupload.net##.sharetabs
 hexupload.net###payment-icons
 hexupload.net##.btn-danger.btn
-hexupload.net##tr:nth-of-type(3)
 hexupload.net###iis06o2gfvb1f9o07nea
 hexupload.net##.position-absolute.p-5.footer
 hexupload.net##.premium-page.py-5.container > font
@@ -2792,11 +2787,6 @@ shrinkbuck.com###link-view > p:nth-child(3)
 shrinkbuck.com##div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top.cc-color-override--1360619034:first-child
 shrinkbuck.com##div.cc-window.cc-banner.cc-type-info.cc-theme-block.cc-top.cc-color-override--1360619034:nth-child(2)
 shrinkbuck.com##div.wrapper:nth-child(3) > div.content-wrapper:nth-child(2) > div.container.banner-container > section.content > div.row:last-child > div.col-md-10.col-md-offset-1 > div.box.box-success > div.box-body.text-center > div.banner.banner-captcha:first-child
-
-linkcc.pro###fbox-background
-linkcc.pro##.banner-468x60.banner
-linkcc.pro##.banner-728x90.banner
-linkcc.pro##.box-main > div > [href^="//oufauthy.net/afu.php"]
 
 shink.in###bs-example-navbar-collapse-1
 shink.in##.col-md-6.col-md-offset-3
@@ -3073,11 +3063,11 @@ kiemtraip.com##font:nth-of-type(1)
 kiemtraip.com##[href^="https://hostingviet.vn/hosting-gia-re"]
 kiemtraip.com##[href^="https://hostingviet.vn/vps-starter-gia-re"]
 
-! 2021-05-30 https://dnsleaktest.com
-dnsleaktest.com##p
+! 2022-05-29 https://dnsleaktest.com
 dnsleaktest.com##li:nth-of-type(2)
 dnsleaktest.com##li:nth-of-type(3)
 dnsleaktest.com##li:nth-of-type(1)
+dnsleaktest.com##.container_12 > h2
 
 dnschecker.org###cookie-box
 
