@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221207a
+! Version: 221207b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -78,7 +78,7 @@ wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com###cookie-pop
 
-we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.tv,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,vnexpress.net,www.grimmstories.com##.footer
+we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.vn,inksvip.net,vnpt.com.vn,animetvn.pro,taiwebs.com,vipshare.co,happymod.com,anotepad.com,apkadmin.com,surfshark.com,douploads.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,app.trangchu.news,strongleakstest.com,www.ip2location.com,androidfilehost.com,vnexpress.net,www.grimmstories.com##.footer
 
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,www.ipa4fun.com,businessnewscurrent.online###footer
 
@@ -1010,10 +1010,10 @@ androidauthority.com##.gcap-version-5.gcap-popup-with-avatar.gcap-logo-rounded.g
 androidauthority.com##.gcap-version-5.gcap-popuptext.gcap-layout-popup.gcap-KyBef.gcap.email-only.gcap-shown
 androidfacting.blogspot.com##[href="//zukxd6fkxqn.com/1780508.html"]
 anexia.com###cookie-opt-in
-animetvn.tv###menubentrai
-animetvn.tv##.play_comment
-animetvn.tv##.home-main-right
-animetvn.tv##.bgfff.player-area-group > .gnarty-offads
+animetvn.pro###menubentrai
+animetvn.pro##.play_comment
+animetvn.pro##.home-main-right
+animetvn.pro##.bgfff.player-area-group > .gnarty-offads
 anonyviet.com##.redirect-message > div:nth-of-type(1) > .adsadsia
 apk4free.net##.code-block-4.code-block
 apk4free.net##.header-container.container
