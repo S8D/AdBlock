@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221207b
+! Version: 221207c
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -84,6 +84,14 @@ gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
 
+! 2022-12-06 https://animevietsub.me
+animevietsub.to##.pc-catfixx
+animevietsub.me##.tag-list-main
+animevietsub.me##.ad-center-header.Ads
+animevietsub.to##section.Wdgt:nth-of-type(3)
+animevietsub.me,animevietsub.to,vietnamnet.vn##.Footer
+animevietsub.to,animevietsub.me##div.Dvr-300:nth-of-type(1)
+
 ! 2022-12-06 https://pandaz.cgchotbox.com
 pn.cgchotbox.com##.adb
 pandaz.cgchotbox.com##.gmr-content
@@ -162,12 +170,6 @@ animehay.pro##div.ah-frame-bg:nth-of-type(11)
 
 ! 2022-02-07 https://animehay.club
 animehay.club###middle-box-screen
-
-! 2022-11-27 http://animevietsub.to
-animevietsub.to##.pc-catfixx
-animevietsub.to,vietnamnet.vn##.Footer
-animevietsub.to##div.Dvr-300:nth-of-type(1)
-animevietsub.to##section.Wdgt:nth-of-type(3)
 
 ! 2022-11-27 https://animevi.net
 animevi.net##.div-warning-text
