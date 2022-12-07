@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221206a
+! Version: 221207a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -17,6 +17,7 @@ ez4linkss.com,ckk.ai##h3:nth-of-type(2)
 distrowatch.com,dnsleaktest.com,upfiles.io##p
 trainghiemso.vn,wiki.tino.org##.jeg_post_tags
 bayfiles.com##.text-center.col-md-6.col-xs-12
+dekiru.vn,www.speedtest.net##.modal-container
 hexupload.net,uploadydl.com##tr:nth-of-type(3)
 www.ipa.tuandb.name.vn,phongduy.com##.comments
 rapidgator.net,hexupload.net##td:nth-of-type(3)
@@ -35,6 +36,7 @@ semawur.com,temp-mail.org,safelinku.net##.main-header
 kolombox.com,short.katflys.com,up-load.io##.footer-sub
 www.ip2location.com,www.ipa4fun.com##div:nth-of-type(4)
 kptools.net,wiki.tino.org,trainghiemso.vn##.footer-holder
+link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(2)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(4)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(5)
@@ -44,7 +46,6 @@ p-load.io,chedrive.com,uploadydl.com,uploadocean.com##.report
 vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center
 chedrive.com,uploadev.org,uploadrar.com,chedrives.com###footer2
 www.astrill.com,nvnorthwest.com,dl.literaturetimes.com##.site-header
-link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
 linku.us,semawur.com,urldown.com,safelinku.net,www.cloudflare.com##.main-footer
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
 wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
@@ -57,8 +58,10 @@ lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.b
 clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com##p:nth-of-type(2)
 clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
 wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,checkip.thaiware.com##.adsbygoogle
-canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
+vandien.vn,vanphukien.com,fpttoanquoc.com,fpttelecom.online,vancongnghiephp.com,www.tongdaivnpt24h.vn###uhchatmobile
 ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
+
+bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
 
 linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com##h4
 
@@ -80,6 +83,14 @@ we25.vn,whoer.net,db-ip.com,m.genk.vn,thebank.vn,ipwhois.io,afamily.vn,xoso.com.
 gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,giaminhgroup.com,ipgeolocation.io,www.iplocation.net,vienthongtayninh.vn,www.limetorrents.lol,www.perfect-privacy.com,forum.xda-developers.com,www.ipa4fun.com,businessnewscurrent.online###footer
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
+
+! 2022-12-06 https://pandaz.cgchotbox.com
+pn.cgchotbox.com##.adb
+pandaz.cgchotbox.com##.gmr-content
+pandaz.cgchotbox.com###footer-container
+pandaz.cgchotbox.com##.clearfix.gmr-menuwrap
+pandaz.cgchotbox.com##.gmr-headwrapper.clearfix
+pandaz.cgchotbox.com##.clearfix.gmr-secondmenuwrap
 
 ! 2022-12-01 https://urlk.ga
 urlk.ga##.text-center.text-white.bg-primary.content-section
@@ -114,13 +125,13 @@ anonfiles.com##code.text-center.center-block.btc-address-box:nth-of-type(2)
 anonfiles.com##.notice-top.alert-maintenance.text-center.alert-warning.alert.small
 
 ! 2022-11-28 https://www.takez.co
-www.takez.co###footer-bg
 www.takez.co##h3
-www.takez.co##.header-atas
-www.takez.co###minisite > .section.header
-www.takez.co###wrapper-indzign
 www.takez.co###dstats
+www.takez.co###footer-bg
+www.takez.co##.header-atas
+www.takez.co###wrapper-indzign
 www.takez.co###toshowshortlink
+www.takez.co###minisite > .section.header
 
 ! 2022-11-28 https://forum.release-apk.com
 forum.release-apk.com##.cc-color-override--1687565279.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
@@ -143,15 +154,8 @@ trainghiemso.vn##.js-rmp-widgets-container--181203.js-rmp-widgets-container.rmp-
 
 ! 2022-12-02 https://bikae.net
 bikae.net##.top-banner-ads
-bikae.net##.site-footer
-bikae.net##.top-banner-ads
 bikae.net##.under-article-ads
 bikae.net##.bottom.entry-sns-data
-bikae.net##.site-footer
-bikae.net##.top-banner-ads
-bikae.net##.top-banner-ads
-bikae.net##.under-article-ads
-bikae.net##.site-footer
 
 ! 2022-11-27 https://animehay.pro
 animehay.pro##div.ah-frame-bg:nth-of-type(11)
@@ -432,7 +436,6 @@ www.tourdulichbentre.com##.locationbox__popup
 
 ! 2022-07-11 https://fpttoanquoc.com
 fpttoanquoc.com##.col-md-16.col-sm-24.col-xs-24 > .panel-body
-fpttoanquoc.com###uhchatmobile
 
 ! 2022-08-05 https://www.vinmec.com
 www.vinmec.com##.share
@@ -452,15 +455,12 @@ www.vinmec.com##.pageview-highest.cms.block-content .post-banner-middle
 dietmoihanhlong.com###button-contact-vr
 
 ! 2022-08-19 https://vancongnghiephp.com
-vancongnghiephp.com###uhchatmobile
 vancongnghiephp.com###congcubayphai
 
 ! 2022-08-19 https://vandien.vn
-vandien.vn###uhchatmobile
 vandien.vn##.bocuc_133.bocuc
 
 ! 2022-08-19 https://vanphukien.com
-vanphukien.com###uhchatmobile
 vanphukien.com###callnowbutton
 
 ! 2022-08-13 http://nguonhd.org
@@ -685,9 +685,6 @@ happymod.com##.ad-new-box
 happymod.com##.container-right
 happymod.com##.pdt-btn-msg.clearfix
 happymod.com##.container-left > .clearfix
-
-! 2022-07-22 https://pn.cgchotbox.com
-pn.cgchotbox.com##.adb
 
 ! 2022-07-28 https://plati.market
 plati.market##.gdpr
@@ -919,7 +916,7 @@ www.bbc.com##.fOqUqv.Wrapper-sc-7g3fro-0
 
 ! 2021-02-11 https://dekiru.vn
 kantan.vn###learn-on-dekiru
-dekiru.vn##.modal-container
+
 dekiru.vn###email-subscription-form
 dekiru.vn##div.item-new-relation-dkr:nth-of-type(1)
 
@@ -1179,7 +1176,6 @@ fptsieutoc.com###de_adblock
 fptsieutoc.com##.bgmodal
 fptsieutoc.com##.warning
 fpttelecom.info.vn##.header-main
-fpttelecom.online###uhchatmobile
 fpttelecom.info.vn##.footer-wrapper
 fpttelecom.online##.hotline-phone-ring-wrap
 fpttelecom.info.vn##.nav-dark.hide-for-sticky.header-top
@@ -1767,10 +1763,8 @@ www.snbforums.com##.Notices.FloatingContainer
 www.snbforums.com##.js-bottomFixTarget.u-bottomFixer
 www.snbforums.com##div.widget-container.widget-group-no-name.section:nth-of-type(2)
 www.spectra.de##.cookie_wrapper
-www.speedtest.net##.modal-container
 www.tapchinuocduc.com###sp-footer2
 www.techinferno.com###elGuestTerms
-www.tongdaivnpt24h.vn###uhchatmobile
 www.tongdaivnpt24h.vn##.suntory-alo-green.suntory-alo-phone
 www.trejj.net###tidio-chat
 www.trejj.net,apk4free.net##.copyrights
