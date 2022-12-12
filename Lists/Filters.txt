@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 221207d
+! Version: 221212a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -84,6 +84,71 @@ gg.gg,voz.vn,bash.ws,vn-z.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,xosodaiphat.com,link.codevn.net,downmienphi.net,thuviensoft.net,uploadocean.com,www.123link.biz,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,getlink.tienichmaytinh.net,www.sammobile.com,123link.carpartsviet31.site##footer
 
+! 2022-12-06 https://animevietsub.me
+animevietsub.to##.pc-catfixx
+animevietsub.me##.tag-list-main
+animevietsub.me###invideo_wrapper
+animevietsub.me##.ad-center-header.Ads
+animevietsub.to##section.Wdgt:nth-of-type(3)
+animevietsub.me,animevietsub.to,vietnamnet.vn##.Footer
+animevietsub.to,animevietsub.me##div.Dvr-300:nth-of-type(1)
+
+! 2022-12-06 https://thuthuatjb.com
+thuthuatjb.com##.amp_ad_1.amp-ad-wrapper
+thuthuatjb.com##.amp_ad_5.amp-ad-wrapper
+thuthuatjb.com##.amp_ad_3.amp-ad-wrapper
+thuthuatjb.com##.dark-widgetized-area.dark-skin.site-footer
+thuthuatjb.com##.share-buttons-bottom.share-buttons
+thuthuatjb.com##.post-tags-modern.post-bottom-tags.post-bottom-meta
+thuthuatjb.com##.comments-area
+thuthuatjb.com##.js-rmp-widgets-container--10139.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
+thuthuatjb.com##.compact-comments
+
+! 2022-12-11 https://fikper.com
+fikper.com##.css-1yjo05o
+fikper.com##.css-h5fkc8.MuiBox-root
+fikper.com##.css-16j30i3.MuiBox-root
+fikper.com##.css-1wbz3t9.MuiTableHead-root
+fikper.com##.css-281t3g > .css-0.MuiBox-root
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(1)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(2)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(3)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(4)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(5)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(6)
+fikper.com##.css-1wcdbav.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiAppBar-root.MuiPaper-elevation4.MuiPaper-elevation.MuiPaper-root
+fikper.com##.css-pi5mf6.MuiButton-containedSizeMedium.MuiButton-sizeMedium.MuiButton-containedPrimary.MuiButton-contained.MuiButton-root.MuiButtonBase-root
+
+! 2022-12-11 https://mega4upload.com
+mega4upload.com##h5
+mega4upload.com##.app-footer
+mega4upload.com##.app-header
+mega4upload.com##.section-title
+mega4upload.com##center > .title
+mega4upload.com##ins.adsbygoogle
+mega4upload.com##.compare_table.row
+mega4upload.com##.card-body > .desc
+mega4upload.com##div.col-xl-12 > center
+mega4upload.com##.card-body > .mb-3.row
+mega4upload.com##.container > .mb-3.row
+mega4upload.com##.section-title > .title
+mega4upload.com##.d-md-block.d-none.my-3
+mega4upload.com##.mb-4.card > .card > .card-body
+mega4upload.com##.mb-3.list-group-flush.list-group
+mega4upload.com##.text-center.py-3.footer-copyright
+mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child
+mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child > div.card-body
+
+! 2022-12-11 https://uploadydl.com
+uploadydl.com##div.rounded.p-0.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+
+! 2022-12-11 https://ddownload.com
+ddownload.com##.navbar-expand-lg.navbar
+ddownload.com##.plans-wrapper
+ddownload.com##.position-absolute.p-4.footer
+ddownload.com##.position-relative.plan-header
+ddownload.com##.report-abuse
+
 ! 2022-12-06 https://animetvn.pro
 animetvn.pro###mobile-ads
 animetvn.pro###menubentrai
@@ -94,14 +159,6 @@ animetvn.pro###hide_catfish_pc
 animetvn.pro##body > .gnarty-offads
 animetvn.pro##.film_play_rating_wrap
 animetvn.pro##.bgfff.player-area-group > .gnarty-offads
-
-! 2022-12-06 https://animevietsub.me
-animevietsub.to##.pc-catfixx
-animevietsub.me##.tag-list-main
-animevietsub.me##.ad-center-header.Ads
-animevietsub.to##section.Wdgt:nth-of-type(3)
-animevietsub.me,animevietsub.to,vietnamnet.vn##.Footer
-animevietsub.to,animevietsub.me##div.Dvr-300:nth-of-type(1)
 
 ! 2022-12-06 https://pandaz.cgchotbox.com
 pn.cgchotbox.com##.adb
@@ -372,11 +429,6 @@ www.hikvision.com##.gdpr-wrapper
 
 ! 2022-10-20 https://bcc.thienbang.com
 bcc.thienbang.com##.giuseart-nav
-
-! 2022-10-21 https://thuthuatjb.com
-thuthuatjb.com##.amp_ad_1.amp-ad-wrapper
-thuthuatjb.com##.amp_ad_5.amp-ad-wrapper
-thuthuatjb.com##.amp_ad_3.amp-ad-wrapper
 
 ! 2022-11-16 https://mb.dkn.tv
 mb.dkn.tv##.z8leDJcU.post-ad
@@ -1394,15 +1446,6 @@ open.spotify.com##._54af59bf42b44701f2393fc90cbc58cc-scss
 opensourcelibs.com###flamelab-convo-widget
 openwrt.org##.cookielaw-bottom.cookielaw-banner
 osdn.net###cookie-bar
-ouo.io##.about
-ouo.io##.footer-copy
-ouo.io##.join-now
-ouo.io##section.content:nth-child(2) > div.container > div.row > div.col-md-6.col-md-offset-3 > div.skip-container > div.text-center > h4:first-child
-ouo.press##.about
-ouo.press##.blog-post
-ouo.press##.footer-copy
-ouo.press##.join-now
-ouo.press##.navbar.navbar-default.navbar-top
 pan.baidu.com###activateGuidePopupOuter
 pan.baidu.com###unzip-vip-intro
 pan.baidu.com###web-right-view
@@ -2591,22 +2634,6 @@ apkadmin.com##div.file-info:nth-of-type(4)
 apkadmin.com###content > div.row > div.col-12 > h2
 apkadmin.com##.navbar-light.navbar-expand-lg.navbar
 
-! 2022-07-15 https://mega4upload.com
-mega4upload.com##h5
-mega4upload.com##.app-footer
-mega4upload.com##.app-header
-mega4upload.com##.section-title
-mega4upload.com##.compare_table.row
-mega4upload.com##.card-body > .desc
-mega4upload.com##.card-body > .mb-3.row
-mega4upload.com##.container > .mb-3.row
-mega4upload.com##.section-title > .title
-mega4upload.com##.d-md-block.d-none.my-3
-!mega4upload.com##.btn-sm.btn-success.btn
-mega4upload.com##.mb-4.card > .card > .card-body
-mega4upload.com##.mb-3.list-group-flush.list-group
-mega4upload.com##.text-center.py-3.footer-copyright
-
 drop.download##.py-3.header_
 drop.download##.container > .mb-5
 drop.download##.alert-warning.alert
@@ -2855,6 +2882,13 @@ share4you.pro##.banner-728x90.banner
 share4you.pro##.box-main > .banner-336x280.banner
 share4you.pro##div.banner-336x280.banner:nth-of-type(3)
 share4you.pro##div.banner-336x280.banner:nth-of-type(4) > .banner-inner
+
+ouo.press##.blog-post
+ouo.io,ouo.press##.about
+ouo.io,ouo.press##.join-now
+ouo.io,ouo.press##.footer-copy
+ouo.press##.navbar.navbar-default.navbar-top
+ouo.io##section.content:nth-child(2) > div.container > div.row > div.col-md-6.col-md-offset-3 > div.skip-container > div.text-center > h4:first-child
 
 shareurl.pro##.center
 shareurl.pro##.center > div
