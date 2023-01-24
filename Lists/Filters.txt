@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 230124a
+! Version: 230124b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -13,12 +13,20 @@ $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|un
 
 mega4up.com,mega4upload.com##h5
 ipacrack.com,linksvip.net##.tags
+www.takez.co,pandaznetwork.com##h3
+uploadrar.com,chedrives.com##.desc
+pandaznetwork.com,anonfiles.com##hr
+chedrives.com,uploadrar.com##header
+uploadrar.com,chedrives.com##.banner1
+uploadrar.com,chedrives.com##.banner3
 hexupload.net,apkadmin.com##.sharetabs
 www.trejj.net,apk4free.net##.copyrights
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
+uploadrar.com,chedrives.com##.menufooter
 drop.download,mixloads.com##.py-3.header_
 laodong.vn,vietbeginner.com###site-header
+mega4up.org,mega4upload.com##.section-title
 ipacrack.com,vietbeginner.com###site-footer
 app.trangchu.news,pastehub.net##.text-center
 distrowatch.com,dnsleaktest.com,upfiles.io##p
@@ -38,6 +46,7 @@ drop.download,fastclick.to##.mb-3.text-center.h2
 ipacrack.com,ios.codevn.net###wpd-bubble-wrapper
 hexupload.net,rapidgator.net##tr:nth-of-type(10)
 drop.download,downmienphi.net##.alert-warning.alert
+mega4up.org,mega4upload.com##.section-title > .title
 mega4up.org,mega4up.com,mega4upload.com##.app-header
 megaurl.in,megaurl.top,megaurl.club##.navbar-default
 shareyou.pro,share4you.top,dropgalaxy.com##.features
@@ -55,6 +64,8 @@ semawur.com,temp-mail.org,safelinku.net##.main-header-sub
 link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
 www.cyberciti.biz,kinhtedothi.vn,drivebit.in##body > center
 animevietsub.to,animevietsub.me##div.Dvr-300:nth-of-type(1)
+dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(1)
+dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(2)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(2)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(4)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(5)
@@ -70,17 +81,19 @@ ipacrack.com,ios.codevn.net##.swal2-backdrop-show.swal2-center.swal2-container
 clk.sh,xemlink.net,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(4)
 p-load.io,chedrive.com,uploadydl.com,uploadocean.com,dev.miuiflash.com##.report
 linku.us,semawur.com,urldown.com,safelinku.net,www.cloudflare.com##.main-footer
+short.pandaznetwork.com,pandaznetwork.com##.animated.zoomIn.wow.text-center.py-5
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
 wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
-free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com,anonfiles.com##h2
+free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com,anonfiles.com,filedot.to##h2
 lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.box-main > h4
 clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
 ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(3)
 chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net,trainghiemso.vn,thuthuatjb.com,gocmod.com##.comments-area
 vandien.vn,vanphukien.com,fpttoanquoc.com,fpttelecom.online,vancongnghiephp.com,www.tongdaivnpt24h.vn###uhchatmobile
 ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
+
 clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(2)
 
 bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
@@ -100,7 +113,7 @@ filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,s
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,###link-view > p
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
 
-wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com##.text-left
+wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com,pandaznetwork.com##.text-left
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com,pandaznetwork.com###cookie-pop
 
@@ -157,14 +170,6 @@ uhdmovies.org.in##.box-inner-p-bigger.gridlove-box.gridlove-comments
 ! 2022-12-27 https://filerio.in
 filerio.in##.py-4.bg-white.features__section
 
-! 2022-12-28 https://chedrives.com
-chedrives.com##header
-chedrives.com##.banner3
-chedrives.com##.banner2
-chedrives.com##.banner1
-chedrives.com##.sharefile
-chedrives.com##.menufooter
-
 ! 2022-12-28 https://dev.miuiflash.com
 dev.miuiflash.com##.position-absolute.p-5.footer
 dev.miuiflash.com##.mb-4.aboutFile.col-md-12.col-lg-6
@@ -192,28 +197,29 @@ www.comss.ru##div.col-lg-4.col-md-5.col-sm-6:nth-of-type(1)
 ! 2023-01-12 https://animetvn.info
 animetvn.info###fbox-background
 
-! 2023-01-12 https://pandaznetwork.com
-pandaznetwork.com##.text-white.bg-primary
-pandaznetwork.com##.animated.zoomIn.wow.text-center.py-5
-pandaznetwork.com##.text-left
-pandaznetwork.com##hr
-pandaznetwork.com##h4
+! 2022-12-26 https://vnmod.net
+vnmod.net##.float-ck-center-lt
+vnmod.net###ads-preload
+vnmod.net##.footer
 
-! 2023-01-16 https://vnav.vn
-vnav.vn###widget-columns-98 > .columns-table > .columns-row > .column-1.widget-column
+! 2023-01-19 https://pandaznetwork.com
+pandaznetwork.com##.blog-content
+
+! 2023-01-08 https://pandaznetwork.com
+pandaznetwork.com##.text-white.bg-primary
+pandaznetwork.com##.animated.fadeInDown.wow.navbar-dark.navbar-expand-lg.osahan-navbar.navbar
+
+! 2023-01-20 https://vnav.vn
 vnav.vn##.sharePage
+vnav.vn##.aboveTopBreadcrumb.samBannerUnit
+vnav.vn###widget-columns-98 > .columns-table > .columns-row > .column-1.widget-column
 
 ! 2023-01-17 https://animehay.pro
 animehay.pro###middle-box-screen
 
 ! 2023-01-17 https://filedot.to
-filedot.to##.downloadbtn2
 filedot.to##.downleft
-filedot.to##h2
-
-! 2023-01-19 https://pandaznetwork.com
-pandaznetwork.com##.blog-content
-pandaznetwork.com##h3
+filedot.to##.downloadbtn2
 
 ! 2023-01-19 https://4share.vn
 4share.vn##.affiliate
@@ -224,9 +230,6 @@ pandaznetwork.com##h3
 4share.vn##center > div > [href="/payment"]
 4share.vn##[src="/public/images/4s/vietmediaf-4s.png"]
 4share.vn###main_content_t > center:first-child > table > tbody > tr > td:nth-child(2) > center:last-child
-
-! 2023-01-20 https://vnav.vn
-vnav.vn##.aboveTopBreadcrumb.samBannerUnit
 
 ! 2023-01-23 https://www.waveform.com
 www.waveform.com##.top-container.flex-container
@@ -267,7 +270,6 @@ fikper.com##.css-1wcdbav.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiAppB
 fikper.com##.css-pi5mf6.MuiButton-containedSizeMedium.MuiButton-sizeMedium.MuiButton-containedPrimary.MuiButton-contained.MuiButton-root.MuiButtonBase-root
 
 ! 2022-12-11 https://mega4upload.com
-mega4upload.com##.section-title
 mega4upload.com##center > .title
 mega4upload.com##ins.adsbygoogle
 mega4upload.com##.compare_table.row
@@ -275,7 +277,6 @@ mega4upload.com##.card-body > .desc
 mega4upload.com##div.col-xl-12 > center
 mega4upload.com##.card-body > .mb-3.row
 mega4upload.com##.container > .mb-3.row
-mega4upload.com##.section-title > .title
 mega4upload.com##.d-md-block.d-none.my-3
 mega4upload.com##.mb-4.card > .card > .card-body
 mega4upload.com##.mb-3.list-group-flush.list-group
@@ -321,11 +322,7 @@ www.ipa.tuandb.name.vn##.sharepost
 ! 2022-11-30 https://www.ipa4fun.com
 www.ipa4fun.com##.cc-color-override-688238583.cc-right.cc-bottom.cc-theme-block.cc-type-info.cc-floating.cc-window
 
-! 2022-12-01 https://short.pandaznetwork.com
-short.pandaznetwork.com##.animated.zoomIn.wow.text-center.py-5
-
 ! 2022-12-01 https://anonfiles.com
-anonfiles.com##hr
 anonfiles.com##.developer-notice
 anonfiles.com##.sister-sites.col-xs-12 > p
 anonfiles.com###header > .col-md-6.col-xs-12
@@ -337,7 +334,6 @@ anonfiles.com##code.text-center.center-block.btc-address-box:nth-of-type(2)
 anonfiles.com##.notice-top.alert-maintenance.text-center.alert-warning.alert.small
 
 ! 2022-11-28 https://www.takez.co
-www.takez.co##h3
 www.takez.co###dstats-bg
 www.takez.co##.header-atas
 www.takez.co###wrapper-indzign
@@ -1121,9 +1117,13 @@ www.uvnc.com##[src^="data:image/png;base64,"]
 ! 2021-03-08 https://vn.cytron.io
 vn.cytron.io##.ht-tms--float-bottom.ht-tms--float-left.ht-tms--float
 
-! 2021-03-12 https://hellobacsi.com
+! 2022-12-05 https://hellobacsi.com
+hellobacsi.com##.subot--container
 hellobacsi.com##.lead-modal__header
+hellobacsi.com##.hBZlCI.sc-bf596d95-7
+hellobacsi.com##.undefined.idyRmb.sc-cCCCpg
 hellobacsi.com##.le-newbuilder-overlay.lead-modal__body
+hellobacsi.com##.modal--animate-scale.lead-modal-wrapper.lead-modal
 
 ! 2021-03-13 https://www.samsung.com
 www.samsung.com##.cookie-bar__desc--ellipsis.cookie-bar__desc
@@ -2526,7 +2526,6 @@ drop.download##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.
 dll-files.com##.overlay
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 
-mega4up.org##.section-title
 mega4up.org##.text-center.mb-4
 mega4up.org##.card-body > .desc
 mega4up.org##.compare_table.row
@@ -2534,7 +2533,6 @@ mega4up.org##.container > .mb-3
 mega4up.org##.mb-4.card > .card
 mega4up.org##.card-body > .mb-3.row
 mega4up.org##.d-md-block.d-none.my-3
-mega4up.org##.section-title > .title
 mega4up.org##.col-xl-4 > .text-center.my-3
 mega4up.org##.col-xl-8 > .text-center.my-3
 mega4up.org##.text-center.mb-3 > .adsbygoogle
@@ -2562,15 +2560,15 @@ www.filesend.jp##div:nth-of-type(3) > .section > .row > div.s12.col:nth-of-type(
 uploaded.net###foot
 uploaded.net###head
 uploaded.net###headmenu
-uploaded.net##.aB.feature
 uploaded.net##.aT > .aT
-uploaded.net##td:nth-of-type(6)
 uploaded.net##tr.feature
-uploaded.net##tr.feature:nth-of-type(11)
-uploaded.net##tr.feature:nth-of-type(13)
+uploaded.net##.aB.feature
+uploaded.net##td:nth-of-type(6)
 uploaded.net##tr.feature:nth-of-type(5)
 uploaded.net##tr.feature:nth-of-type(7)
 uploaded.net##tr.feature:nth-of-type(9)
+uploaded.net##tr.feature:nth-of-type(11)
+uploaded.net##tr.feature:nth-of-type(13)
 
 ! 2022-08-21 https://upload.ac
 upload.ac##.pt20.col-md-4
@@ -2587,8 +2585,6 @@ upload.ac##.row > .hidden-xs.text-center.boxa > center
 dailyuploads.net##label
 dailyuploads.net##.container
 dailyuploads.net##.navbar-inner
-dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(1)
-dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(2)
 dailyuploads.net##div:nth-of-type(2) > center
 dailyuploads.net##[href="https://ninjapcsoft.com/category/adobe-software//"]
 
@@ -2646,13 +2642,8 @@ userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-ma
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
 
 ! 2022-11-24 https://uploadrar.com
-uploadrar.com,chedrives.com##.desc
-uploadrar.com##header
-uploadrar.com##.banner1
-uploadrar.com##.banner3
 uploadrar.com###lastnews
 uploadrar.com###news_last
-uploadrar.com##.menufooter
 uploadrar.com##body > form
 uploadrar.com##.icofont-zipped
 uploadrar.com##.sharefile > ul
@@ -2711,8 +2702,10 @@ dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-
 ! 2021-07-11 https://chedrive.com
 chedrive.com###gdpr-cookie-notice
 
-! 2022-08-10 https://chedrives.com
+! 2022-12-28 https://chedrives.com
 chedrives.com##.title
+chedrives.com##.banner2
+chedrives.com##.sharefile
 chedrives.com##.icofont-zipped
 chedrives.com##.fileoption > ul
 chedrives.com##.btn-success.btn
