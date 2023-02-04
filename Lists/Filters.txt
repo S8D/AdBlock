@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 230124b
+! Version: 230204a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -16,7 +16,7 @@ ipacrack.com,linksvip.net##.tags
 www.takez.co,pandaznetwork.com##h3
 uploadrar.com,chedrives.com##.desc
 pandaznetwork.com,anonfiles.com##hr
-chedrives.com,uploadrar.com##header
+uploadrar.com,chedrives.com##header
 uploadrar.com,chedrives.com##.banner1
 uploadrar.com,chedrives.com##.banner3
 hexupload.net,apkadmin.com##.sharetabs
@@ -164,6 +164,75 @@ blog.officialboypalak.in##.wp-has-aspect-ratio.wp-embed-aspect-16-9.wp-block-emb
 blog.officialboypalak.in##.dark\:border-gray-500.border-gray-200.border-t.px-4.py-6.dark\:text-gray-200.text-gray-500.text-center.mx-auto.container
 blog.officialboypalak.in##.text-center.dark\:border-gray-500.border-gray-200.border-b.items-center.justify-between.lg\:flex.px-4.lg\:py-6.py-4.mx-auto.container
 
+! 2023-01-27 https://downloadly.net
+downloadly.ir##h2 > .mom-e3lanat-wrap
+downloadly.net##.controls_right.color_secondary.wwqqw.w-actionbox
+downloadly.ir##div.base-box:nth-of-type(2) > .mom-e3lanat-wrap > .mom-e3lanat > .mom-e3lanat-inner > .mom-e3lan > .e3lan-code
+
+! 2023-01-27 https://scloud.ws
+scloud.ws##.ls-clearfix.layout-footer
+scloud.ws##.js-block-default.ls-block--has-tabs.ls-block--tags.ls-block
+scloud.ws##.js-activity-block-recent.js-block-default.ls-block--has-tabs.ls-block--activity-recent.ls-block--primary.ls-block
+
+! 2023-01-27 https://www.centfile.com
+www.centfile.com##.top
+www.centfile.com##footer
+www.centfile.com##.report
+www.centfile.com###fixedban
+www.centfile.com##.spacing-30
+www.centfile.com##.collapse.row
+www.centfile.com##tr:nth-of-type(5)
+www.centfile.com##input:nth-of-type(6)
+www.centfile.com##.alter.pricing-table
+www.centfile.com##center:nth-of-type(1)
+www.centfile.com##center:nth-of-type(2)
+www.centfile.com##.pricingboxes-comparison
+www.centfile.com##.p-0.mx-auto.my-0.features
+www.centfile.com##.btn-block.mt-4.btn-danger.btn
+www.centfile.com##div.text-center.col-md-4:nth-of-type(1)
+www.centfile.com##.justify-content-center.align-items-center.d-flex.header
+
+! 2023-01-27 https://cdn.gcplayer.net
+||cdn.gcplayer.net/m3u8/avtfhd.m3u8$xhr,domain=cdn.gcplayer.net
+||cdn.gcplayer.net/assets/js/prebid-ads.js$script,domain=cdn.gcplayer.net
+||cdn.gcplayer.net/assets/js/devtools-detector.js$script,domain=cdn.gcplayer.net
+||cdn.gcplayer.net/assets/js/detect-adblocker.min.js$script,domain=cdn.gcplayer.net
+||ssl.p.jwpcdn.com/player/v/8.18.4/provider.hlsjs.js$script,domain=cdn.gcplayer.net
+
+! 2023-01-27 https://gocphim.net
+||cdn.discordapp.com/attachments/1056499424030904403/1063393490404376586/video888.mp4$media,domain=gocphim.net
+
+! 2023-01-27 https://dienthoaivui.com.vn
+dienthoaivui.com.vn##.elementor-section-height-default.elementor-section-boxed.elementor-element-ea1dfe3.elementor-element.elementor-top-section.elementor-section
+
+! 2023-01-29 https://apkmody.io
+apkmody.io##.ad-unit
+apkmody.io##.body-fixed-footer
+apkmody.io##div.response-download-btn.wp-block-button__width-50.has-custom-width.wp-block-button:nth-of-type(2)
+
+! 2023-01-29 https://moddroid.com
+moddroid.com###ad_block_reminder_dialog
+
+! 2023-01-29 https://modxda.com
+modxda.com##.ads
+modxda.com##.customad
+modxda.com##.adsbygoogle
+
+! 2023-02-02 https://www.right.com.cn
+www.right.com.cn##.a_pt
+www.right.com.cn###sitefocus
+www.right.com.cn##.a_mu
+www.right.com.cn##.cl.hdc > h2
+
+! 2023-02-03 https://www.unknowncheats.me
+www.unknowncheats.me##.alt1 > center
+www.unknowncheats.me###bab > table > tbody > tr > td
+
+! 2023-02-03 https://www.arcai.com
+www.arcai.com##.user-detail-card-ad
+www.arcai.com##div.ng-star-inserted.ng-tns-c348-0.m-1.flex-column.d-flex:nth-of-type(2)
+www.arcai.com##div.ng-star-inserted.ng-tns-c348-0.m-1.flex-column.d-flex > div.ng-tns-c348-0 > .ng-tns-c348-0.d-flex
+
 ! 2022-12-27 https://uhdmovies.org.in
 uhdmovies.org.in##.box-inner-p-bigger.gridlove-box.gridlove-comments
 
@@ -253,21 +322,6 @@ thuthuatjb.com##.share-buttons-bottom.share-buttons
 thuthuatjb.com##.post-tags-modern.post-bottom-tags.post-bottom-meta
 thuthuatjb.com##.js-rmp-widgets-container--10139.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
 thuthuatjb.com##.compact-comments
-
-! 2022-12-11 https://fikper.com
-fikper.com##.css-1yjo05o
-fikper.com##.css-h5fkc8.MuiBox-root
-fikper.com##.css-16j30i3.MuiBox-root
-fikper.com##.css-1wbz3t9.MuiTableHead-root
-fikper.com##.css-281t3g > .css-0.MuiBox-root
-fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(1)
-fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(2)
-fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(3)
-fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(4)
-fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(5)
-fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(6)
-fikper.com##.css-1wcdbav.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiAppBar-root.MuiPaper-elevation4.MuiPaper-elevation.MuiPaper-root
-fikper.com##.css-pi5mf6.MuiButton-containedSizeMedium.MuiButton-sizeMedium.MuiButton-containedPrimary.MuiButton-contained.MuiButton-root.MuiButtonBase-root
 
 ! 2022-12-11 https://mega4upload.com
 mega4upload.com##center > .title
@@ -1305,8 +1359,6 @@ dongnaigsm.vn###headerMover > header:last-child
 dongnaigsm.vn###headerProxy
 download.baominh.tech##.link-description
 download.com.vn###ouibounce-modal
-downloadly.ir##div.base-box:nth-of-type(2) > .mom-e3lanat-wrap > .mom-e3lanat > .mom-e3lanat-inner > .mom-e3lan > .e3lan-code
-downloadly.ir##h2 > .mom-e3lanat-wrap
 downmienphi.com###fanback
 downmienphi.com###fan-exit
 downmienphi.net##.mb-5.text-primary:nth-child(4):nth-child(5)
@@ -2641,7 +2693,8 @@ userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-main.navbar
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
 
-! 2022-11-24 https://uploadrar.com
+! 2023-01-29 https://uploadrar.com
+uploadrar.com###footer2
 uploadrar.com###lastnews
 uploadrar.com###news_last
 uploadrar.com##body > form
