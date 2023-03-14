@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 230204a
+! Version: 230314a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -11,19 +11,25 @@
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com
 ##div[class^="jw-logo"]
 
+vn-z.vn,voz.vn##.p-body-sidebar
 mega4up.com,mega4upload.com##h5
 ipacrack.com,linksvip.net##.tags
 www.takez.co,pandaznetwork.com##h3
 uploadrar.com,chedrives.com##.desc
+uploady.io,uploadydl.com##.p-1.mt-4
 pandaznetwork.com,anonfiles.com##hr
 uploadrar.com,chedrives.com##header
+www.hdvietnam.xyz,vnav.vn##.sharePage
 uploadrar.com,chedrives.com##.banner1
 uploadrar.com,chedrives.com##.banner3
 hexupload.net,apkadmin.com##.sharetabs
+bkhost.vn,www.zcine.net##.in.fade.modal
 www.trejj.net,apk4free.net##.copyrights
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
+mega4upload.com,vn-z.vn##ins.adsbygoogle
 uploadrar.com,chedrives.com##.menufooter
+uploady.io,uploadydl.com##.alert.btn-link
 drop.download,mixloads.com##.py-3.header_
 laodong.vn,vietbeginner.com###site-header
 mega4up.org,mega4upload.com##.section-title
@@ -33,7 +39,6 @@ distrowatch.com,dnsleaktest.com,upfiles.io##p
 trainghiemso.vn,wiki.tino.org##.jeg_post_tags
 bayfiles.com##.text-center.col-md-6.col-xs-12
 dekiru.vn,www.speedtest.net##.modal-container
-vnav.vn,allsolu4u.vn,hdvietnam.com###logoBlock
 hexupload.net,uploadydl.com##tr:nth-of-type(3)
 www.ipa.tuandb.name.vn,phongduy.com##.comments
 rapidgator.net,hexupload.net##td:nth-of-type(3)
@@ -42,15 +47,20 @@ rapidgator.net,hexupload.net##tr:nth-of-type(7)
 rapidgator.net,hexupload.net##tr:nth-of-type(8)
 rapidgator.net,hexupload.net##tr:nth-of-type(9)
 123link.pw,123link.pro##.dark.ads-block-warning
+bkhost.vn,www.zcine.net##.in.fade.modal-backdrop
 drop.download,fastclick.to##.mb-3.text-center.h2
 ipacrack.com,ios.codevn.net###wpd-bubble-wrapper
 hexupload.net,rapidgator.net##tr:nth-of-type(10)
+mega4upload.com,mega4up.com##.container > .mb-3.row
 drop.download,downmienphi.net##.alert-warning.alert
+mega4upload.com,mega4up.org##.d-md-block.d-none.my-3
 mega4up.org,mega4upload.com##.section-title > .title
 mega4up.org,mega4up.com,mega4upload.com##.app-header
 megaurl.in,megaurl.top,megaurl.club##.navbar-default
 shareyou.pro,share4you.top,dropgalaxy.com##.features
+onedrive.gdrive.vip,www.csgt.vn,jtexpress.vn##.banner
 trainghiemso.vn,kptools.net##.jeg_share_top_container
+uploady.io,bianhot.site,uploadydl.com##.mt-4.col-md-12
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(6)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(7)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(8)
@@ -62,6 +72,7 @@ xemlink.net,blog.officialboypalak.in##p:nth-of-type(12)
 a2zapk.com,newsjizz.in,rtxkeeda.com,unlockapk.com##.WebF
 semawur.com,temp-mail.org,safelinku.net##.main-header-sub
 link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
+mega4upload.com,mega4up.com,mega4up.org##.compare_table.row
 www.cyberciti.biz,kinhtedothi.vn,drivebit.in##body > center
 animevietsub.to,animevietsub.me##div.Dvr-300:nth-of-type(1)
 dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(1)
@@ -72,10 +83,14 @@ rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(5)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(6)
 iosddl.net,secufiles.com##.show.cookiealert.text-center.alert
 www.ip2location.com,www.ipa4fun.com##div:nth-of-type(4)-holder
+mega4upload.com,mega4up.com,mega4up.org##.card-body > .mb-3.row
+vnav.vn,allsolu4u.vn,hdvietnam.com,www.hdvietnam.xyz###logoBlock
 drop.download,fastclick.to,mixloads.com##div.mb-5:nth-of-type(4)
 vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center2
 mega4up.org,mega4up.com,uploadrar.com,mega4upload.com##.app-footer
 www.astrill.com,nvnorthwest.com,dl.literaturetimes.com##.site-header
+mega4upload.com,mega4up.org,mega4up.com##.mb-3.list-group-flush.list-group
+mega4upload.com,mega4up.org,mega4up.com##.text-center.py-3.footer-copyright
 clk.sh,xemlink.net,ipchicken.com,blog.officialboypalak.in##p:nth-of-type(5)
 ipacrack.com,ios.codevn.net##.swal2-backdrop-show.swal2-center.swal2-container
 clk.sh,xemlink.net,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(4)
@@ -85,28 +100,39 @@ short.pandaznetwork.com,pandaznetwork.com##.animated.zoomIn.wow.text-center.py-5
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
 wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
+uploady.io,hexupload.net,dev.miuiflash.com,uploadydl.com##.position-absolute.p-5.footer
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
-free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com,anonfiles.com,filedot.to##h2
+uploady.io,uploadydl.com##.text-center.table-striped.table-bordered.table .btn-primary.btn
 lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.box-main > h4
+uploady.io,uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(1)
+uploady.io,uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(3)
+free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com,anonfiles.com,filedot.to##h2
 clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
 ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(3)
+
+uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+
+uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
+
 chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net,trainghiemso.vn,thuthuatjb.com,gocmod.com##.comments-area
+
 vandien.vn,vanphukien.com,fpttoanquoc.com,fpttelecom.online,vancongnghiephp.com,www.tongdaivnpt24h.vn###uhchatmobile
+
 ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
 
 clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(2)
 
 bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
 
-upload.ac,filerio.in,drop.download,ddownload.com,uploadydl.com,dev.miuiflash.com,userupload.net,userupload.in##.navbar-expand-lg.navbar
+upload.ac,filerio.in,drop.download,ddownload.com,uploadydl.com,dev.miuiflash.com,userupload.net,userupload.in,uploady.io##.navbar-expand-lg.navbar
 
-linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com##h4
+linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com,techy.veganab.co##h4
 
 win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
 
 ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com##.header
 
-wi.cr,voz.vn,megaurl.in,kenhtao.net,megaurl.top,megaurl.club,dailyuploads.net,checkip.thaiware.com,www.comss.ru,chedrives.com,fastclick.to,drop.download##.adsbygoogle
+wi.cr,voz.vn,megaurl.in,modxda.com,kenhtao.net,megaurl.top,megaurl.club,www.comss.ru,fastclick.to,chedrives.com,drop.download,userupload.in,userupload.net,dailyuploads.net,xe.baogiaothong.vn,checkip.thaiware.com,atgt.baogiaothong.vn##.adsbygoogle
 
 filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
 
@@ -115,13 +141,238 @@ wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.co
 
 wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com,pandaznetwork.com##.text-left
 
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com,pandaznetwork.com###cookie-pop
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com,pandaznetwork.com,techy.veganab.co###cookie-pop
 
-ouo.io,tiki.vn,we25.vn,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com##.footer
+ouo.io,tiki.vn,we25.vn,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,surfshark.com,vnmod.net##.footer
 
 gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,giaminhgroup.com,ipgeolocation.io,www.hotcourses.vn,www.iplocation.net,vienthongtayninh.vn,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online###footer
 
-wi.cr,ckk.ai,clk.sh,oko.sh,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
+wi.cr,ckk.ai,clk.sh,oko.sh,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site,www.centfile.com,techy.veganab.co,dienmaycholon.vn##footer
+
+! 2023-03-14 https://uploady.io
+uploady.io##.alert-danger.alert
+uploady.io##.p-0.mb-3 > center > .aflink
+uploady.io##.shadow.text-center.flex-fill.card
+uploady.io##div.text-center.col-md-6:nth-of-type(1)
+uploady.io##div.text-center.col-md-6:nth-of-type(2)
+uploady.io##.rounded.p-0.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12
+uploady.io##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white > center > .aflink
+uploady.io##.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-lg-8.col-md-12.col-sm-12.col-xs-12
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:first-child
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(2)
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(3)
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(4)
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(5)
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(6)
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:last-child > td:last-child
+uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:last-child > td:first-child
+
+! 2022-12-11 https://uploadydl.com
+uploadydl.com##strong
+uploadydl.com##.aflink
+uploadydl.com##.text-dark
+uploadydl.com##.p-5.footer
+uploadydl.com##.text-danger
+uploadydl.com##.text-danger.fa-times.fas
+uploadydl.com##.text-success.fa-check.fas
+uploadydl.com##div.rounded.p-0.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.row:last-child
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(2)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(3)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(4)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(5)
+uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(6)
+
+! 2022-07-14 https://surfshark.com
+surfshark.com##.ze-button-active.ze-button
+surfshark.com##.with-laptop.cta-bottom-big
+surfshark.com##.leaks-content.editor-content
+surfshark.com##.animateIn.display.js-cookies-popup.sticky-cookies-popup
+
+! 2022-08-19 https://www.astrill.com
+www.astrill.com##.subtitle
+www.astrill.com###vpn-leak-test-about
+www.astrill.com##.scrolling.site-header
+www.astrill.com###livehelp_float_button
+www.astrill.com##.how-is-it-best.uk-section
+www.astrill.com##.site-footer.uk-section-secondary.uk-section
+www.astrill.com##.uk-margin-top.uk-text-center.try-astrill-simple
+www.astrill.com##.partners.uk-padding-small.uk-section-border-bottom.uk-section-secondary.uk-section
+www.astrill.com##.hover-active.trigger-hover.moon-left.uk-section-primary-gradient.uk-section-primary.uk-section
+
+! 2022-07-14 https://nordvpn.com
+nordvpn.com##.cc-color-override--1748216957.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
+
+! 2023-02-28 https://vn-z.vn
+vn-z.vn##.aside-content
+vn-z.vn##.p-navHeaderLinks
+vn-z.vn##.thread-actionFooter
+vn-z.vn##.main-item.relatedThreads
+vn-z.vn##ins.adsbygoogle:nth-of-type(2)
+vn-z.vn##.blockMessage--none.blockMessage
+vn-z.vn##.js-bottomFixTarget.u-bottomFixer
+vn-z.vn##center:nth-of-type(2) > .adsbygoogle
+||vn-z.vn/data/avatars/*.jpg?1605497958$image
+vn-z.vn##.p-body-inner > center:nth-of-type(1)
+vn-z.vn##.js-notices.notices--scrolling.notices
+vn-z.vn##.sidebar > ins.adsbygoogle:nth-of-type(1)
+vn-z.vn##.message-footer > .tagList--thread-42225.tagList
+vn-z.vn##.p-body-sidebar > ins.adsbygoogle:nth-of-type(1)
+
+! 2023-03-14 https://veganab.co
+veganab.co##.text-center.wpsafe-top
+veganab.co##.is-sticky.normal-side.tie-col-xs-12.tie-col-md-4.sidebar
+veganab.co##.without-background.normal-width.container.section-wrapper
+
+! 2023-03-14 https://techy.veganab.co
+techy.veganab.co##.short
+techy.veganab.co##.affix-top.fadeInDown.wow.navbar-fixed-top.navbar-default.navbar
+
+! 2023-02-03 https://fikper.com
+fikper.com##.css-1yjo05o
+fikper.com##.css-1mrfdnu.MuiBox-root
+fikper.com##.css-1wbz3t9.MuiTableHead-root
+fikper.com##.css-dgfa99.MuiTypography-body1.MuiTypography-root
+fikper.com##.css-1rriedm.MuiTypography-body1.MuiTypography-root
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(1)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(2)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(3)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(4)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(5)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(6)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(7)
+fikper.com##tr.css-1gq8cor.MuiTableRow-hover.MuiTableRow-root:nth-of-type(8)
+!fikper.com##.css-40n6wm.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded.MuiPaper-elevation.MuiPaper-root
+fikper.com##.css-1wcdbav.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiAppBar-root.MuiPaper-elevation4.MuiPaper-elevation.MuiPaper-root
+fikper.com##.css-13vm30a.MuiButton-containedSizeMedium.MuiButton-sizeMedium.MuiButton-containedPrimary.MuiButton-contained.MuiButton-root.MuiButtonBase-root
+fikper.com##td.css-14t1rfb.MuiTableCell-sizeMedium.MuiTableCell-alignCenter.MuiTableCell-body.MuiTableCell-root > .css-4homwk.MuiTypography-body1.MuiTypography-root
+
+! 2023-02-04 https://app.multcloud.com
+app.multcloud.com##div.popup:nth-of-type(5)
+multcloud.com##div.offer-offline:first-child
+
+! 2023-02-05 https://cracked.io
+cracked.io##center
+cracked.io##div.mycode_align > .mycode_b
+cracked.io##.scaleimages.signature > div.mycode_align
+cracked.io###posts > div > [href="https://bit.ly/3trHpk9"]
+cracked.io##div:nth-of-type(4) > [href="https://bit.ly/3trHpk9"]
+cracked.io###pid_26769972 > .scaleimages.signature > .mycode_align
+cracked.io###post_26769972 > .poststatus-offline.post-box > .post_author_wrapper > div > div > .postbit_bg_main.post-author > .post-inner-wrapper > .post-avatar
+cracked.io###post_26769972 > .poststatus-offline.post-box > .post_author_wrapper > div > div > .postbit_bg_main.post-author > .post-inner-wrapper > .post-container > .post-awards
+
+! 2023-02-05 https://paste.fo
+paste.fo##.banners
+
+! 2023-02-06 https://yts.mx
+yts.mx###koaquu
+
+! 2023-02-06 https://thepiratebay.org
+thepiratebay.org##.ad120.col-left
+thepiratebay.org##.ad120.col-right
+thepiratebay.org##.ad468.col-right
+thepiratebay.org##.align-center.ad728
+
+! 2023-02-06 https://eztv.yt
+eztv.yt###header_logo
+
+! 2023-02-06 https://www.hdvietnam.me
+www.hdvietnam.me##.blockMessage--none.blockMessage
+
+! 2023-02-06 https://www.hdvietnam.xyz
+www.hdvietnam.xyz##footer.pageWidth
+www.hdvietnam.xyz##.TagContainer.tagBlock
+www.hdvietnam.xyz##.baseHtml.ugc.SelectQuoteContainer.messageText > span
+www.hdvietnam.xyz##[src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/hdvncom/&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"]
+
+hdvietnam.com###youtube
+hdvietnam.com##.hdvn_head
+hdvietnam.com###topbillboard
+hdvietnam.com###yamaha_ads_1
+hdvietnam.com###yamaha_ads_2.pageWidth
+hdvietnam.com###sidebar_container
+hdvietnam.com##.vnxf_banner_6.vnxf_banner
+hdvietnam.com##div#vnxf_banner_12.ads_pc:nth-of-type(5)
+hdvietnam.com##div#vnxf_banner_12.ads_pc:nth-of-type(2) > .vnxf_banner_12.vnxf_banner
+||www.hdvietnam.com/data/avatars/*.jpg?1588409526$image
+
+! 2023-02-08 https://onedrive.gdrive.vip
+onedrive.gdrive.vip##h2#aform
+onedrive.gdrive.vip##.fp-completely.active.fp-table.fp-section.comment.section > .fp-tableCell > .mdui-container
+
+! 2023-02-08 https://eurorack.vn
+eurorack.vn##.fixed_menu
+eurorack.vn##.b24-widget-button-visible.b24-widget-button-position-bottom-right.b24-widget-button-wrapper
+
+! 2023-02-10 https://4pda.to
+4pda.to##.o8QmRYIaQiQBOtoHTBJ5z2KUq > table
+
+! 2023-03-01 https://dev.miuiflash.com
+dev.miuiflash.com###featuredimage
+
+! 2023-03-01 https://anonyviet.com
+anonyviet.com##.normal.jeg_navbar_wrapper.jeg_container.jeg_midbar
+anonyviet.com###text-5
+anonyviet.com###custom_html-9
+anonyviet.com###custom_html-6
+anonyviet.com###custom_html-8
+
+! 2023-03-01 https://craxpro.io
+craxpro.io##.js-bottomFixTarget.u-bottomFixer
+
+! 2023-03-02 https://vpnpro.com
+vpnpro.com##.in.modal0.providerModal-nordvpnBrand.providerModal.modal
+vpnpro.com##.in.modal-backdrop
+
+! 2023-03-03 https://download-new.apkmody.fun
+download-new.apkmody.fun###primaryimage
+download-new.apkmody.fun##.isPc.thirdShareBox
+download-new.apkmody.fun##div.entry-content:nth-of-type(5)
+download-new.apkmody.fun##.body-fixed-footer
+download-new.apkmody.fun###fixed-donate
+
+! 2023-03-03 https://apkmody.io
+apkmody.io##.isPc.thirdShareBox
+apkmody.io###fixed-donate
+apkmody.io##.padding-bottom-100.padding-top-30.has-small-font-size.has-very-light-gray-background-color
+apkmody.io##.padding-top-15
+apkmody.io##.ad-unit
+apkmody.io##p:nth-of-type(6)
+apkmody.io##div.main-entry-content.entry-content.entry-block:nth-of-type(6)
+apkmody.io##.donate-content
+apkmody.io##.ad-unit
+apkmody.io##div.entry-content:nth-of-type(3)
+
+! 2023-02-10 https://bizflycloud.vn
+bizflycloud.vn##.order-sm-first.left-sidebar.col-lg-2.col-sm-3.col-12
+bizflycloud.vn###new-20220611113014396 > div
+
+! 2023-02-11 https://baseus-vn.com
+baseus-vn.com##.lightbox-white.lightbox-content.lightbox-by-id
+baseus-vn.com##.active.lg.right.arcontactus-message.arcontactus-widget
+baseus-vn.com##.mfp-ready.mfp-auto-cursor.mfp-close-btn-in.mfp-wrap
+
+! 2023-02-22 https://myhotlive.tv
+myhotlive.tv##.maskBox
+myhotlive.tv##.swiperBox
+myhotlive.tv##.videoChat
+
+! 2023-03-05 https://dienthoaivui.com.vn
+dienthoaivui.com.vn##.elementor-widget-shortcode.elementor-widget.elementor-element-8274fbe.elementor-element
+
+! 2023-03-05 https://dienmaycholon.vn
+dienmaycholon.vn###lhc_container_v2
+
+
+! 2023-03-09 https://baomoi.com
+||log.baomoi.com^
+m.baomoi.com##.bm_AY
+baomoi.com##.bm_FS.bm_Kp
+baomoi.com##.adtima-loaded
+baomoi.com###BaoMoi_Footer
+
+! 2023-02-27 https://dev.miuiflash.com
+dev.miuiflash.com###featuredimage
 
 ! 2022-12-12 https://unix.stackexchange.com
 unix.stackexchange.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
@@ -137,8 +388,14 @@ mrlaptop.vn##.kksr-align-center.kksr-valign-bottom.kk-star-ratings
 ! 2022-12-13 https://biphimmoi.net
 biphimmoi.net###_AM_POPUP_FRAME
 
-! 2022-12-13 https://gocmod.com
+! 2023-02-09 https://forum.gocmod.com
 gocmod.com##.view-app-rate
+forum.gocmod.com##.p-body-pageContent > li
+||forum.gocmod.com/data/avatars/*/*/2.jpg$image
+forum.gocmod.com##.blockMessage--none.blockMessage
+forum.gocmod.com##.js-bottomFixTarget.u-bottomFixer
+forum.gocmod.com##.js-notices.notices--block.notices
+forum.gocmod.com##.samCustomSize.samAlignCenter.samCodeUnit
 
 ! 2022-12-15 https://wiki.manjaro.org
 wiki.manjaro.org###mw-data-after-content
@@ -148,6 +405,7 @@ u.pcloud.link##.cookie_consent_holder
 
 ! 2022-12-25 https://www.iphonecake.com
 www.iphonecake.com##.ui-footer
+iphonecake.com##div.container:nth-child(2) > div.ui-app-detail:nth-child(2) > div.row > div.col-md-9.right-side:last-child > div.ui-grid-right > a.ui-download:nth-child(3)
 
 ! 2022-12-27 https://blog.officialboypalak.in
 blog.officialboypalak.in##.wp-block-table
@@ -176,7 +434,6 @@ scloud.ws##.js-activity-block-recent.js-block-default.ls-block--has-tabs.ls-bloc
 
 ! 2023-01-27 https://www.centfile.com
 www.centfile.com##.top
-www.centfile.com##footer
 www.centfile.com##.report
 www.centfile.com###fixedban
 www.centfile.com##.spacing-30
@@ -216,7 +473,6 @@ moddroid.com###ad_block_reminder_dialog
 ! 2023-01-29 https://modxda.com
 modxda.com##.ads
 modxda.com##.customad
-modxda.com##.adsbygoogle
 
 ! 2023-02-02 https://www.right.com.cn
 www.right.com.cn##.a_pt
@@ -240,7 +496,6 @@ uhdmovies.org.in##.box-inner-p-bigger.gridlove-box.gridlove-comments
 filerio.in##.py-4.bg-white.features__section
 
 ! 2022-12-28 https://dev.miuiflash.com
-dev.miuiflash.com##.position-absolute.p-5.footer
 dev.miuiflash.com##.mb-4.aboutFile.col-md-12.col-lg-6
 
 ! 2022-12-28 https://apkadmin.com
@@ -256,10 +511,6 @@ kakaku.com##.c-ad_frameWrap
 ||s.yimg.jp/images/auct/salespromotion/*$image
 page.auctions.yahoo.co.jp###js-BannerFrameHensei
 
-! 2022-12-28 https://bkhost.vn
-bkhost.vn##.in.fade.modal
-bkhost.vn##.in.fade.modal-backdrop
-
 ! 2023-01-01 https://www.comss.ru
 www.comss.ru##div.col-lg-4.col-md-5.col-sm-6:nth-of-type(1)
 
@@ -269,7 +520,6 @@ animetvn.info###fbox-background
 ! 2022-12-26 https://vnmod.net
 vnmod.net##.float-ck-center-lt
 vnmod.net###ads-preload
-vnmod.net##.footer
 
 ! 2023-01-19 https://pandaznetwork.com
 pandaznetwork.com##.blog-content
@@ -279,7 +529,6 @@ pandaznetwork.com##.text-white.bg-primary
 pandaznetwork.com##.animated.fadeInDown.wow.navbar-dark.navbar-expand-lg.osahan-navbar.navbar
 
 ! 2023-01-20 https://vnav.vn
-vnav.vn##.sharePage
 vnav.vn##.aboveTopBreadcrumb.samBannerUnit
 vnav.vn###widget-columns-98 > .columns-table > .columns-row > .column-1.widget-column
 
@@ -322,21 +571,6 @@ thuthuatjb.com##.share-buttons-bottom.share-buttons
 thuthuatjb.com##.post-tags-modern.post-bottom-tags.post-bottom-meta
 thuthuatjb.com##.js-rmp-widgets-container--10139.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
 thuthuatjb.com##.compact-comments
-
-! 2022-12-11 https://mega4upload.com
-mega4upload.com##center > .title
-mega4upload.com##ins.adsbygoogle
-mega4upload.com##.compare_table.row
-mega4upload.com##.card-body > .desc
-mega4upload.com##div.col-xl-12 > center
-mega4upload.com##.card-body > .mb-3.row
-mega4upload.com##.container > .mb-3.row
-mega4upload.com##.d-md-block.d-none.my-3
-mega4upload.com##.mb-4.card > .card > .card-body
-mega4upload.com##.mb-3.list-group-flush.list-group
-mega4upload.com##.text-center.py-3.footer-copyright
-mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child
-mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child > div.card-body
 
 ! 2022-12-11 https://ddownload.com
 ddownload.com##.plans-wrapper
@@ -507,6 +741,7 @@ vnexpress.net##.box-raovat-v2.box-category
 vnexpress.net##.section-exitintent.section
 vnexpress.net##.width_common.footer-content
 vnexpress.net##.inner-box-business.width_common
+vnexpress.net##div.wrap-hd-adblock:nth-child(23)
 vnexpress.net##.box-category__list-news > .sidebar-2
 
 ! 2022-11-22 https://xoso.com.vn
@@ -632,31 +867,6 @@ cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
 cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
 www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 
-! 2022-12-11 https://uploadydl.com
-uploadydl.com##strong
-uploadydl.com##.aflink
-uploadydl.com##.p-1.mt-4
-uploadydl.com##.text-dark
-uploadydl.com##.p-5.footer
-uploadydl.com##.text-danger
-uploadydl.com##.mt-4.col-md-12
-uploadydl.com##.alert.btn-link
-uploadydl.com##.text-danger.fa-times.fas
-uploadydl.com##.text-success.fa-check.fas
-uploadydl.com##.position-absolute.p-5.footer
-uploadydl.com##.text-center.table-striped.table-bordered.table .btn-primary.btn
-uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(1)
-uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(3)
-uploadydl.com##div.rounded.p-0.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
-uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
-uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
-uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.row:last-child
-uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(2)
-uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(3)
-uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(4)
-uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(5)
-uploadydl.com###container > div.container.py-5.download-page:nth-child(6) > div.row > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > table.table.table-bordered.table-striped.text-center:first-child > tbody > tr:nth-child(6)
-
 ! 2022-11-27 https://www.reddit.com
 www.reddit.com##shreddit-async-loader:nth-of-type(2)
 www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._3Ig_EsWWVLquWs2yBBQjec._1DK52RbaamLOWw5UPaht_S
@@ -724,10 +934,6 @@ toithuthuat.com###pum-11557
 toithuthuat.com##.code-block-6.code-block
 toithuthuat.com##.pum-active.click_open.auto_open.pum-overlay-disabled.popmake-overlay.pum-theme-default-theme.pum-theme-10771.pum-overlay.pum
 
-! 2022-08-19 https://www.astrill.com
-www.astrill.com##.subtitle
-www.astrill.com##.scrolling.site-header
-
 ! 2022-08-19 https://sg-gcp.extremecloudiq.com
 extremecloudiq.com##.ah-logo
 extremecloudiq.com##.rightColumn
@@ -752,13 +958,6 @@ apkcombo.com##.apkcombo_desktop_728x90_top.apkcombo_mobile_300x250_top.mb-20.ad-
 
 ! 2022-02-06 https://www.100apkdl.com
 www.100apkdl.com##.fot-fixd
-
-! 2022-02-06 https://forum.gocmod.com
-forum.gocmod.com##.p-body-pageContent > li
-forum.gocmod.com##.blockMessage--none.blockMessage
-forum.gocmod.com##.js-bottomFixTarget.u-bottomFixer
-forum.gocmod.com##.js-notices.notices--block.notices
-forum.gocmod.com##.samCustomSize.samAlignCenter.samCodeUnit
 
 ! 2022-02-07 https://emmyhdang.com
 emmyhdang.com##.default-max-width.site-footer
@@ -859,7 +1058,6 @@ thethao247.vn###fb-fanbox
 thuvienhd.com##.backdrop
 
 ! 2022-07-29 https://linksvip.net
-
 linksvip.net##.mainbar
 linksvip.net##.top.row
 linksvip.net##.jumbotron-right
@@ -1255,7 +1453,6 @@ autoitvn.com###g207
 beta.chiasenhac.vn###csnplayerads
 bgp.tools##.js-footer.group
 bianhot.site##.premium
-bianhot.site##.mt-4.col-md-12
 bianhot.site##.sv-nav.navbar-dark.navbar-expand-md.navbar
 bianhot.site##.cc-color-override--1885674784.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
 billysoftacademy.com###cookie-law-info-bar
@@ -1450,15 +1647,6 @@ hangmaytinh.com##.ulp-fadeIn.ulp-animated.ulp-overlay
 hangmaytinh.com##.ulp-window-container
 harblaze.com##.text-center.container
 hardreset.info###modal-facebook
-hdvietnam.com###youtube
-hdvietnam.com##.hdvn_head
-hdvietnam.com###topbillboard
-hdvietnam.com###yamaha_ads_1
-hdvietnam.com###yamaha_ads_2.pageWidth
-hdvietnam.com###sidebar_container
-hdvietnam.com##.vnxf_banner_6.vnxf_banner
-hdvietnam.com##div#vnxf_banner_12.ads_pc:nth-of-type(5)
-hdvietnam.com##div#vnxf_banner_12.ads_pc:nth-of-type(2) > .vnxf_banner_12.vnxf_banner
 hoctiengnhatkaoruri.wordpress.com###actionbar
 hoctiengnhatkaoruri.wordpress.com###jp-post-flair
 hoctiengnhatkaoruri.wordpress.com##.site-branding
@@ -1476,7 +1664,6 @@ iosddl.net##.cc_container--open.cc_container.cc_banner
 iosddl.net##.cc_message
 iosgods.com##.ipsJS_hide.ipsPad_half
 iosgods.com##.ipsLayout_container > .ipsGrid_collapsePhone.ipsGrid
-iphonecake.com##div.container:nth-child(2) > div.ui-app-detail:nth-child(2) > div.row > div.col-md-9.right-side:last-child > div.ui-grid-right > a.ui-download:nth-child(3)
 ipsw.me##.alert-info.alert.col-md-12
 ipsw.me##.cc_container--open.cc_container.cc_banner
 it-swarm.net##.adn
@@ -1492,7 +1679,6 @@ jlptvietnam.com##.adtester-container-113.adtester-container.banner-1.ezoic-ad
 jlptvietnam.com##.adtester-container-115.adtester-container.large-leaderboard-2.ezoic-ad
 jlptvietnam.com##tr:nth-of-type(20)
 jtexpress.vn###homepage-popup
-jtexpress.vn##.banner
 jtexpress.vn##.fp-auto-height.section.pt-4.font-small.page-footer
 jtexpress.vn##.show.modal-backdrop
 kantan.vn###dict-summary
@@ -1822,19 +2008,6 @@ vmaniac.com##body > div:nth-of-type(4)
 vmaniac.com##div.zopim:nth-of-type(1)
 vmaniac.com##div:nth-of-type(2)
 vn-mg5.mail.yahoo.com###yui_3_16_0_ym19_1_1470067565642_20421
-vn-z.vn##.aside-content
-vn-z.vn##.p-body-sidebar
-vn-z.vn##ins.adsbygoogle
-vn-z.vn##.p-navHeaderLinks
-vn-z.vn##.main-item.relatedThreads
-vn-z.vn##ins.adsbygoogle:nth-of-type(2)
-vn-z.vn##.blockMessage--none.blockMessage
-vn-z.vn##.js-bottomFixTarget.u-bottomFixer
-vn-z.vn##center:nth-of-type(2) > .adsbygoogle
-vn-z.vn##.p-body-inner > center:nth-of-type(1)
-vn-z.vn##.js-notices.notices--scrolling.notices
-vn-z.vn##.sidebar > ins.adsbygoogle:nth-of-type(1)
-vn-z.vn##.p-body-sidebar > ins.adsbygoogle:nth-of-type(1)
 vn.tradingview.com##.location-bottom-left-1j0He64l.toast-positioning-wrapper-1j0He64l
 vn.tradingview.com##.location-bottom-left-uEa3054V.toast-positioning-wrapper-uEa3054V
 vnjpclub.com###ampz_inline_bottom
@@ -1915,7 +2088,6 @@ www.comunicazione.va###spc-popup-cookie
 www.cpu-monkey.com##.werb_top1.werb
 www.csgt.vn###divAdLeft
 www.csgt.vn###divAdRight
-www.csgt.vn##.banner
 www.csgt.vn##[src="https://www.csgt.vn//upload/advert/953325324_abc.jpg"]
 www.forum.vnpro.org##.msgbox
 www.gargoyle-router.com###outer_logo
@@ -2017,34 +2189,32 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 ||thesafety.us/template/images/pages/main-slider5.jpg$image
 ||uhchat.net$subdocument
 ||uhchat.net/$subdocument
-||upanh.vn-z.vn/images/2020/04/28/Screenshot_2020-04-28-Dich-v-luu-tr-va-chia-s-trc-tuyen.png$image
 ||userstyles.org/ui/images/280x294.png$image
 ||viettuans.vn/media/banner/*$image
 ||vipshare.co/img/*$image
-||vn-z.vn/data/avatars/*.jpg?1605497958$image
 ||www.anphatpc.com.vn/media/banner/*$image
 ||www.anphatpc.com.vn/media/lib/500x654-vanchuyen2.jpg$image
-||www.hdvietnam.com/data/avatars/*.jpg?1588409526$image
 
 !#########################################################################################################
 !___vOz____________________________________________
+||i.imgur.com/*.gif$image,domain=voz.vn
+||i.imgur.com/*.png$image,domain=voz.vn
+||i.imgur.com/*.jpg$image,domain=voz.vn
+||i.imgur.com/*.jpeg$image,domain=voz.vn
+
 ! 2022-12-28 https://voz.vn
-||statics.voz.tech/data/avatars/*/*/571075.jpg$image
-||statics.voz.tech/data/avatars/*/*/1653013.jpg$image
-||statics.voz.tech/data/avatars/*/*/1754306.jpg$image
-||statics.voz.tech/data/avatars/*/*/990080.jpg$image
+vozforum.org##.p-header
+vozforums.com##.clearfix
+vozforums.com###neo_logobar
+vozforum.org##.top_important
 vozforum.org###M403005ScriptRootC906261
 vozforum.org##.blockMessage--none.blockMessage
+vozforums.com##div[style="line-height:80px; "]
 vozforum.org##.js-bottomFixTarget.u-bottomFixer
 vozforum.org##.noticeScrollContainer.lSSlideOuter
-vozforum.org##.p-header
-vozforum.org##.top_important
-vozforums.com###neo_logobar
-vozforums.com##.clearfix
 vozforums.com##div[style="float: right; width: 150px;"]
-vozforums.com##div[style="line-height:80px; "]
+
 voz.vn,vozforum.org##.p-footer
-voz.vn##.p-body-sidebar
 voz.vn###div-gpt-ad-1585123925672-0
 voz.vn###div-gpt-ad-1585125824987-0
 voz.vn###div-gpt-ad-1585126204480-0
@@ -2075,6 +2245,235 @@ voz.vn##div.message--post.message:nth-of-type(2)
 voz.vn##div.message--post.message:nth-of-type(3)
 voz.vn##div.message--post.message:nth-of-type(4)
 voz.vn##div.message--post.message:nth-of-type(5)
+
+||voz.vn/attachments/*.190397/$image
+||voz.vn/attachments/*.218479/$image
+||voz.vn/attachments/*.218481/$image
+||voz.vn/attachments/*.218489/$image
+||voz.vn/attachments/*.244943/$image
+||voz.vn/attachments/*.245465/$image
+||voz.vn/attachments/*.253854/$image
+||voz.vn/attachments/*.259405/$image
+||voz.vn/attachments/*.282843/$image
+||voz.vn/attachments/*.288436/$image
+||voz.vn/attachments/*.691087/$image
+||voz.vn/attachments/*.843419/$image
+||voz.vn/attachments/*.843443/$image
+||voz.vn/attachments/*.843473/$image
+||voz.vn/attachments/*.843534/$image
+||voz.vn/attachments/*.968951/$image
+||voz.vn/attachments/*.968953/$image
+||voz.vn/attachments/*.1325579/$image
+||voz.vn/data/avatars/*/22911.jpg$image
+||voz.vn/data/avatars/*/23665.jpg$image
+||voz.vn/data/avatars/*/27028.jpg$image
+||voz.vn/data/avatars/*/38582.jpg$image
+||voz.vn/data/avatars/*/39727.jpg$image
+||voz.vn/data/avatars/*/59318.jpg$image
+||voz.vn/data/avatars/*/62985.jpg$image
+||voz.vn/data/avatars/*/124958.jpg$image
+||voz.vn/data/avatars/*/130590.jpg$image
+||voz.vn/data/avatars/*/1632297019$image
+||voz.vn/data/avatars/*/21728.jpg?$image
+||voz.vn/data/avatars/*/305212.jpg$image
+||voz.vn/data/avatars/*/524268.jpg$image
+||voz.vn/data/avatars/*/772822.jpg$image
+||voz.vn/data/avatars/*/1029278.jpg$image
+||voz.vn/data/avatars/*/1104616.jpg$image
+||voz.vn/data/avatars/*/1141234.jpg$image
+||voz.vn/data/avatars/*/1209149.jpg$image
+||voz.vn/data/avatars/*/1282980.jpg$image
+||voz.vn/data/avatars/*/1309642.jpg$image
+||voz.vn/data/avatars/*/1344368.jpg$image
+||voz.vn/data/avatars/*/1383069.jpg$image
+||voz.vn/data/avatars/*/1422742.jpg$image
+||voz.vn/data/avatars/*/1433882.jpg$image
+||voz.vn/data/avatars/*/1465327.jpg$image
+||voz.vn/data/avatars/*/1489781.jpg$image
+||voz.vn/data/avatars/*/1493801.jpg$image
+||voz.vn/data/avatars/*/1499814.jpg$image
+||voz.vn/data/avatars/*/1531714.jpg$image
+||voz.vn/data/avatars/*/1566813.jpg$image
+||voz.vn/data/avatars/*/1596513.jpg$image
+||voz.vn/data/avatars/*/1636969.jpg$image
+||voz.vn/data/avatars/*/1678579.jpg$image
+||voz.vn/data/avatars/*/1680897.jpg$image
+||voz.vn/data/avatars/*/1681079.jpg$image
+||voz.vn/data/avatars/*/1682874.jpg$image
+||voz.vn/data/avatars/*/1684054.jpg$image
+||voz.vn/data/avatars/*/1684156.jpg$image
+||voz.vn/data/avatars/*/1685910.jpg$image
+||voz.vn/data/avatars/*/1686152.jpg$image
+||voz.vn/data/avatars/*/1688650.jpg$image
+||voz.vn/data/avatars/*/1690848.jpg$image
+||voz.vn/data/avatars/*/1690963.jpg$image
+||voz.vn/data/avatars/*/1691717.jpg$image
+||voz.vn/data/avatars/*/1696448.jpg$image
+||voz.vn/data/avatars/*/1699452.jpg$image
+||voz.vn/data/avatars/*/1700054.jpg$image
+||voz.vn/data/avatars/*/1701060.jpg$image
+||voz.vn/data/avatars/*/1701436.jpg$image
+||voz.vn/data/avatars/*/1709647.jpg$image
+||voz.vn/data/avatars/*/1709648.jpg$image
+||voz.vn/data/avatars/*/1713887.jpg$image
+||voz.vn/data/avatars/*/1714095.jpg$image
+||voz.vn/data/avatars/*/1718358.jpg$image
+||voz.vn/data/avatars/*/1719588.jpg$image
+||voz.vn/data/avatars/*/1727913.jpg$image
+||voz.vn/data/avatars/*/1729914.jpg$image
+||voz.vn/data/avatars/*/1733063.jpg$image
+||voz.vn/data/avatars/*/1736758.jpg$image
+||voz.vn/data/avatars/*/1749296.jpg$image
+||voz.vn/data/avatars/*/1772596.jpg$image
+||voz.vn/data/avatars/*/1778682.jpg$image
+||voz.vn/data/avatars/*/1722009.jpg?$image
+||voz.vn/data/avatars/*.jpg?1583769468$image
+||voz.vn/data/avatars/*.jpg?1583825436$image
+||voz.vn/data/avatars/*.jpg?1583852384$image
+||voz.vn/data/avatars/*.jpg?1583898120$image
+||voz.vn/data/avatars/*.jpg?1583916304$image
+||voz.vn/data/avatars/*.jpg?1583916620$image
+||voz.vn/data/avatars/*.jpg?1583939566$image
+||voz.vn/data/avatars/*.jpg?1584165875$image
+||voz.vn/data/avatars/*.jpg?1584170364$image
+||voz.vn/data/avatars/*.jpg?1584256609$image
+||voz.vn/data/avatars/*.jpg?1584266087$image
+||voz.vn/data/avatars/*.jpg?1584321821$image
+||voz.vn/data/avatars/*.jpg?1584322499$image
+||voz.vn/data/avatars/*.jpg?1584352674$image
+||voz.vn/data/avatars/*.jpg?1584451201$image
+||voz.vn/data/avatars/*.jpg?1584549291$image
+||voz.vn/data/avatars/*.jpg?1584707702$image
+||voz.vn/data/avatars/*.jpg?1584928152$image
+||voz.vn/data/avatars/*.jpg?1584944652$image
+||voz.vn/data/avatars/*.jpg?1585120395$image
+||voz.vn/data/avatars/*.jpg?1585666647$image
+||voz.vn/data/avatars/*.jpg?1585997570$image
+||voz.vn/data/avatars/*.jpg?1587238032$image
+||voz.vn/data/avatars/*.jpg?1588156820$image
+||voz.vn/data/avatars/*.jpg?1592457432$image
+||voz.vn/data/avatars/*.jpg?1593083961$image
+||voz.vn/data/avatars/*.jpg?1593439309$image
+||voz.vn/data/avatars/*.jpg?1594500240$image
+||voz.vn/data/avatars/*.jpg?1594512745$image
+||voz.vn/data/avatars/*.jpg?1594821857$image
+||voz.vn/data/avatars/*.jpg?1598096039$image
+||voz.vn/data/avatars/*.jpg?1598409629$image
+||voz.vn/data/avatars/*.jpg?1599925958$image
+||voz.vn/data/avatars/*.jpg?1600612535$image
+||voz.vn/data/avatars/*.jpg?1600837310$image
+||voz.vn/data/avatars/*.jpg?1601120425$image
+||voz.vn/data/avatars/*.jpg?1601375238$image
+||voz.vn/data/avatars/*.jpg?1602507930$image
+||voz.vn/data/avatars/*.jpg?1602678332$image
+||voz.vn/data/avatars/*.jpg?1602763633$image
+||voz.vn/data/avatars/*.jpg?1603160384$image
+||voz.vn/data/avatars/*.jpg?1603182867$image
+||voz.vn/data/avatars/*.jpg?1603183089$image
+||voz.vn/data/avatars/*.jpg?1603188420$image
+||voz.vn/data/avatars/*.jpg?1603190823$image
+||voz.vn/data/avatars/*.jpg?1603250539$image
+||voz.vn/data/avatars/*.jpg?1603250889$image
+||voz.vn/data/avatars/*.jpg?1603254072$image
+||voz.vn/data/avatars/*.jpg?1603256733$image
+||voz.vn/data/avatars/*.jpg?1603258007$image
+||voz.vn/data/avatars/*.jpg?1603263097$image
+||voz.vn/data/avatars/*.jpg?1603344032$image
+||voz.vn/data/avatars/*.jpg?1603381714$image
+||voz.vn/data/avatars/*.jpg?1603694246$image
+||voz.vn/data/avatars/*.jpg?1603986301$image
+||voz.vn/data/avatars/*.jpg?1604257541$image
+||voz.vn/data/avatars/*.jpg?1605239012$image
+||voz.vn/data/avatars/*.jpg?1605711549$image
+||voz.vn/data/avatars/*.jpg?1608781207$image
+||voz.vn/data/avatars/*.jpg?1614358570$image
+
+||statics.voz.tech/data/avatars/*/*/21772.jpg$image
+||statics.voz.tech/data/avatars/*/*/39727.jpg$image
+||statics.voz.tech/data/avatars/*/*/62985.jpg$image
+||statics.voz.tech/data/avatars/*/*/68693.jpg$image
+||statics.voz.tech/data/avatars/*/*/72562.jpg$image
+||statics.voz.tech/data/avatars/*/*/91433.jpg$image
+||statics.voz.tech/data/avatars/*/*/571075.jpg$image
+||statics.voz.tech/data/avatars/*/*/990080.jpg$image
+||statics.voz.tech/data/avatars/*/*/805174.jpg$image
+||statics.voz.tech/data/avatars/*/*/124958.jpg$image
+||statics.voz.tech/data/avatars/*/*/130590.jpg$image
+||statics.voz.tech/data/avatars/*/*/168699.jpg$image
+||statics.voz.tech/data/avatars/*/*/360696.jpg$image
+||statics.voz.tech/data/avatars/*/*/486784.jpg$image
+||statics.voz.tech/data/avatars/*/*/538726.jpg$image
+||statics.voz.tech/data/avatars/*/*/712870.jpg$image
+||statics.voz.tech/data/avatars/*/*/951904.jpg$image
+||statics.voz.tech/data/avatars/*/*/989870.jpg$image
+||statics.voz.tech/data/avatars/*/*/994862.jpg$image
+||statics.voz.tech/data/avatars/*/*/1653013.jpg$image
+||statics.voz.tech/data/avatars/*/*/1754306.jpg$image
+||statics.voz.tech/data/avatars/*/*/1250994.jpg$image
+||statics.voz.tech/data/avatars/*/*/1482414.jpg$image
+||statics.voz.tech/data/avatars/*/*/1596645.jpg$image
+||statics.voz.tech/data/avatars/*/*/1669095.jpg$image
+||statics.voz.tech/data/avatars/*/*/1819915.jpg$image
+||statics.voz.tech/data/avatars/*/*/1491789.jpg$image
+||statics.voz.tech/data/avatars/*/*/1679673.jpg$image
+||statics.voz.tech/data/avatars/*/*/1736758.jpg$image
+||statics.voz.tech/data/avatars/*/*/1751766.jpg$image
+||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
+||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
+||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
+||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
+||statics.voz.tech/data/avatars/*/*/1108747.jpg$image
+||statics.voz.tech/data/avatars/*/*/1173913.jpg$image
+||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
+||statics.voz.tech/data/avatars/*/*/1239205.jpg$image
+||statics.voz.tech/data/avatars/*/*/1334944.jpg$image
+||statics.voz.tech/data/avatars/*/*/1391247.jpg$image
+||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
+||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
+||statics.voz.tech/data/avatars/*/*/1478859.jpg$image
+||statics.voz.tech/data/avatars/*/*/1482089.jpg$image
+||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
+||statics.voz.tech/data/avatars/*/*/1498634.jpg$image
+||statics.voz.tech/data/avatars/*/*/1588909.jpg$image
+||statics.voz.tech/data/avatars/*/*/1596513.jpg$image
+||statics.voz.tech/data/avatars/*/*/1628429.jpg$image
+||statics.voz.tech/data/avatars/*/*/1640681.jpg$image
+||statics.voz.tech/data/avatars/*/*/1651173.jpg$image
+||statics.voz.tech/data/avatars/*/*/1658037.jpg$image
+||statics.voz.tech/data/avatars/*/*/1671568.jpg$image
+||statics.voz.tech/data/avatars/*/*/1672591.jpg$image
+||statics.voz.tech/data/avatars/*/*/1673880.jpg$image
+||statics.voz.tech/data/avatars/*/*/1675535.jpg$image
+||statics.voz.tech/data/avatars/*/*/1676983.jpg$image
+||statics.voz.tech/data/avatars/*/*/1677066.jpg$image
+||statics.voz.tech/data/avatars/*/*/1685162.jpg$image
+||statics.voz.tech/data/avatars/*/*/1687877.jpg$image
+||statics.voz.tech/data/avatars/*/*/1691681.jpg$image
+||statics.voz.tech/data/avatars/*/*/1691717.jpg$image
+||statics.voz.tech/data/avatars/*/*/1695340.jpg$image
+||statics.voz.tech/data/avatars/*/*/1696590.jpg$image
+||statics.voz.tech/data/avatars/*/*/1697745.jpg$image
+||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
+||statics.voz.tech/data/avatars/*/*/1702231.jpg$image
+||statics.voz.tech/data/avatars/*/*/1704501.jpg$image
+||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
+||statics.voz.tech/data/avatars/*/*/1714095.jpg$image
+||statics.voz.tech/data/avatars/*/*/1721572.jpg$image
+||statics.voz.tech/data/avatars/*/*/1737241.jpg$image
+||statics.voz.tech/data/avatars/*/*/1749296.jpg$image
+||statics.voz.tech/data/avatars/*/*/1768422.jpg$image
+||statics.voz.tech/data/avatars/*/*/1771406.jpg$image
+||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
+||statics.voz.tech/data/avatars/*/*/1776657.jpg$image
+||statics.voz.tech/data/avatars/*/*/1780397.jpg$image
+||statics.voz.tech/data/avatars/*/*/1787994.jpg$image
+||statics.voz.tech/data/avatars/*/*/1789564.jpg$image
+||statics.voz.tech/data/avatars/*/*/1793285.jpg$image
+||statics.voz.tech/data/avatars/*/*/1809650.jpg$image
+||statics.voz.tech/data/avatars/*/*/1815332.jpg$image
+||statics.voz.tech/data/avatars/*/*/1820361.jpg$image
+||statics.voz.tech/data/avatars/*/*/1823053.jpg$image
+
 ||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f31425739576a342e676966/$image
 ||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f34676d4f414d422e676966/$image
 ||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f426467695737522e676966/$image
@@ -2307,226 +2706,6 @@ voz.vn##div.message--post.message:nth-of-type(5)
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f454f706e6d736b2e706e673f31/$image
 ||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f72686c78704a692e706e673f31/$image
 ||camo.voz.tech/*/23732323331332f3931323539353631343634353234383030302f746d6c2e676966/$image
-||i.imgur.com/*.gif$image,domain=voz.vn
-||i.imgur.com/*.png$image,domain=voz.vn
-||i.imgur.com/*.jpg$image,domain=voz.vn
-||i.imgur.com/*.jpeg$image,domain=voz.vn
-||statics.voz.tech/data/avatars/*/*/21772.jpg$image
-||statics.voz.tech/data/avatars/*/*/39727.jpg$image
-||statics.voz.tech/data/avatars/*/*/62985.jpg$image
-||statics.voz.tech/data/avatars/*/*/68693.jpg$image
-||statics.voz.tech/data/avatars/*/*/72562.jpg$image
-||statics.voz.tech/data/avatars/*/*/91433.jpg$image
-||statics.voz.tech/data/avatars/*/*/124958.jpg$image
-||statics.voz.tech/data/avatars/*/*/130590.jpg$image
-||statics.voz.tech/data/avatars/*/*/168699.jpg$image
-||statics.voz.tech/data/avatars/*/*/360696.jpg$image
-||statics.voz.tech/data/avatars/*/*/486784.jpg$image
-||statics.voz.tech/data/avatars/*/*/538726.jpg$image
-||statics.voz.tech/data/avatars/*/*/712870.jpg$image
-||statics.voz.tech/data/avatars/*/*/951904.jpg$image
-||statics.voz.tech/data/avatars/*/*/989870.jpg$image
-||statics.voz.tech/data/avatars/*/*/994862.jpg$image
-||statics.voz.tech/data/avatars/*/*/1491789.jpg$image
-||statics.voz.tech/data/avatars/*/*/1679673.jpg$image
-||statics.voz.tech/data/avatars/*/*/1736758.jpg$image
-||statics.voz.tech/data/avatars/*/*/1751766.jpg$image
-||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
-||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
-||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
-||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
-||statics.voz.tech/data/avatars/*/*/1108747.jpg$image
-||statics.voz.tech/data/avatars/*/*/1173913.jpg$image
-||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
-||statics.voz.tech/data/avatars/*/*/1239205.jpg$image
-||statics.voz.tech/data/avatars/*/*/1334944.jpg$image
-||statics.voz.tech/data/avatars/*/*/1391247.jpg$image
-||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
-||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
-||statics.voz.tech/data/avatars/*/*/1478859.jpg$image
-||statics.voz.tech/data/avatars/*/*/1482089.jpg$image
-||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
-||statics.voz.tech/data/avatars/*/*/1498634.jpg$image
-||statics.voz.tech/data/avatars/*/*/1588909.jpg$image
-||statics.voz.tech/data/avatars/*/*/1596513.jpg$image
-||statics.voz.tech/data/avatars/*/*/1628429.jpg$image
-||statics.voz.tech/data/avatars/*/*/1640681.jpg$image
-||statics.voz.tech/data/avatars/*/*/1651173.jpg$image
-||statics.voz.tech/data/avatars/*/*/1658037.jpg$image
-||statics.voz.tech/data/avatars/*/*/1671568.jpg$image
-||statics.voz.tech/data/avatars/*/*/1672591.jpg$image
-||statics.voz.tech/data/avatars/*/*/1673880.jpg$image
-||statics.voz.tech/data/avatars/*/*/1675535.jpg$image
-||statics.voz.tech/data/avatars/*/*/1676983.jpg$image
-||statics.voz.tech/data/avatars/*/*/1677066.jpg$image
-||statics.voz.tech/data/avatars/*/*/1685162.jpg$image
-||statics.voz.tech/data/avatars/*/*/1687877.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691681.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691717.jpg$image
-||statics.voz.tech/data/avatars/*/*/1695340.jpg$image
-||statics.voz.tech/data/avatars/*/*/1696590.jpg$image
-||statics.voz.tech/data/avatars/*/*/1697745.jpg$image
-||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
-||statics.voz.tech/data/avatars/*/*/1702231.jpg$image
-||statics.voz.tech/data/avatars/*/*/1704501.jpg$image
-||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
-||statics.voz.tech/data/avatars/*/*/1714095.jpg$image
-||statics.voz.tech/data/avatars/*/*/1721572.jpg$image
-||statics.voz.tech/data/avatars/*/*/1737241.jpg$image
-||statics.voz.tech/data/avatars/*/*/1749296.jpg$image
-||statics.voz.tech/data/avatars/*/*/1768422.jpg$image
-||statics.voz.tech/data/avatars/*/*/1771406.jpg$image
-||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
-||statics.voz.tech/data/avatars/*/*/1776657.jpg$image
-||statics.voz.tech/data/avatars/*/*/1780397.jpg$image
-||statics.voz.tech/data/avatars/*/*/1787994.jpg$image
-||statics.voz.tech/data/avatars/*/*/1789564.jpg$image
-||statics.voz.tech/data/avatars/*/*/1793285.jpg$image
-||statics.voz.tech/data/avatars/*/*/1809650.jpg$image
-||statics.voz.tech/data/avatars/*/*/1815332.jpg$image
-||statics.voz.tech/data/avatars/*/*/1820361.jpg$image
-||statics.voz.tech/data/avatars/*/*/1823053.jpg$image
-||voz.vn/attachments/*.190397/$image
-||voz.vn/attachments/*.218479/$image
-||voz.vn/attachments/*.218481/$image
-||voz.vn/attachments/*.218489/$image
-||voz.vn/attachments/*.244943/$image
-||voz.vn/attachments/*.245465/$image
-||voz.vn/attachments/*.253854/$image
-||voz.vn/attachments/*.259405/$image
-||voz.vn/attachments/*.282843/$image
-||voz.vn/attachments/*.288436/$image
-||voz.vn/attachments/*.691087/$image
-||voz.vn/attachments/*.843419/$image
-||voz.vn/attachments/*.843443/$image
-||voz.vn/attachments/*.843473/$image
-||voz.vn/attachments/*.843534/$image
-||voz.vn/attachments/*.968951/$image
-||voz.vn/attachments/*.968953/$image
-||voz.vn/attachments/*.1325579/$image
-||voz.vn/data/avatars/*/22911.jpg$image
-||voz.vn/data/avatars/*/23665.jpg$image
-||voz.vn/data/avatars/*/27028.jpg$image
-||voz.vn/data/avatars/*/38582.jpg$image
-||voz.vn/data/avatars/*/39727.jpg$image
-||voz.vn/data/avatars/*/59318.jpg$image
-||voz.vn/data/avatars/*/62985.jpg$image
-||voz.vn/data/avatars/*/124958.jpg$image
-||voz.vn/data/avatars/*/130590.jpg$image
-||voz.vn/data/avatars/*/1632297019$image
-||voz.vn/data/avatars/*/21728.jpg?$image
-||voz.vn/data/avatars/*/305212.jpg$image
-||voz.vn/data/avatars/*/524268.jpg$image
-||voz.vn/data/avatars/*/772822.jpg$image
-||voz.vn/data/avatars/*/1029278.jpg$image
-||voz.vn/data/avatars/*/1104616.jpg$image
-||voz.vn/data/avatars/*/1141234.jpg$image
-||voz.vn/data/avatars/*/1209149.jpg$image
-||voz.vn/data/avatars/*/1282980.jpg$image
-||voz.vn/data/avatars/*/1309642.jpg$image
-||voz.vn/data/avatars/*/1344368.jpg$image
-||voz.vn/data/avatars/*/1383069.jpg$image
-||voz.vn/data/avatars/*/1422742.jpg$image
-||voz.vn/data/avatars/*/1433882.jpg$image
-||voz.vn/data/avatars/*/1465327.jpg$image
-||voz.vn/data/avatars/*/1489781.jpg$image
-||voz.vn/data/avatars/*/1493801.jpg$image
-||voz.vn/data/avatars/*/1499814.jpg$image
-||voz.vn/data/avatars/*/1531714.jpg$image
-||voz.vn/data/avatars/*/1566813.jpg$image
-||voz.vn/data/avatars/*/1596513.jpg$image
-||voz.vn/data/avatars/*/1636969.jpg$image
-||voz.vn/data/avatars/*/1678579.jpg$image
-||voz.vn/data/avatars/*/1680897.jpg$image
-||voz.vn/data/avatars/*/1681079.jpg$image
-||voz.vn/data/avatars/*/1682874.jpg$image
-||voz.vn/data/avatars/*/1684054.jpg$image
-||voz.vn/data/avatars/*/1684156.jpg$image
-||voz.vn/data/avatars/*/1685910.jpg$image
-||voz.vn/data/avatars/*/1686152.jpg$image
-||voz.vn/data/avatars/*/1688650.jpg$image
-||voz.vn/data/avatars/*/1690848.jpg$image
-||voz.vn/data/avatars/*/1690963.jpg$image
-||voz.vn/data/avatars/*/1691717.jpg$image
-||voz.vn/data/avatars/*/1696448.jpg$image
-||voz.vn/data/avatars/*/1699452.jpg$image
-||voz.vn/data/avatars/*/1700054.jpg$image
-||voz.vn/data/avatars/*/1701060.jpg$image
-||voz.vn/data/avatars/*/1701436.jpg$image
-||voz.vn/data/avatars/*/1709647.jpg$image
-||voz.vn/data/avatars/*/1709648.jpg$image
-||voz.vn/data/avatars/*/1713887.jpg$image
-||voz.vn/data/avatars/*/1714095.jpg$image
-||voz.vn/data/avatars/*/1718358.jpg$image
-||voz.vn/data/avatars/*/1719588.jpg$image
-||voz.vn/data/avatars/*/1727913.jpg$image
-||voz.vn/data/avatars/*/1729914.jpg$image
-||voz.vn/data/avatars/*/1733063.jpg$image
-||voz.vn/data/avatars/*/1736758.jpg$image
-||voz.vn/data/avatars/*/1749296.jpg$image
-||voz.vn/data/avatars/*/1772596.jpg$image
-||voz.vn/data/avatars/*/1778682.jpg$image
-||voz.vn/data/avatars/*/1722009.jpg?$image
-||voz.vn/data/avatars/*.jpg?1583769468$image
-||voz.vn/data/avatars/*.jpg?1583825436$image
-||voz.vn/data/avatars/*.jpg?1583852384$image
-||voz.vn/data/avatars/*.jpg?1583898120$image
-||voz.vn/data/avatars/*.jpg?1583916304$image
-||voz.vn/data/avatars/*.jpg?1583916620$image
-||voz.vn/data/avatars/*.jpg?1583939566$image
-||voz.vn/data/avatars/*.jpg?1584165875$image
-||voz.vn/data/avatars/*.jpg?1584170364$image
-||voz.vn/data/avatars/*.jpg?1584256609$image
-||voz.vn/data/avatars/*.jpg?1584266087$image
-||voz.vn/data/avatars/*.jpg?1584321821$image
-||voz.vn/data/avatars/*.jpg?1584322499$image
-||voz.vn/data/avatars/*.jpg?1584352674$image
-||voz.vn/data/avatars/*.jpg?1584451201$image
-||voz.vn/data/avatars/*.jpg?1584549291$image
-||voz.vn/data/avatars/*.jpg?1584707702$image
-||voz.vn/data/avatars/*.jpg?1584928152$image
-||voz.vn/data/avatars/*.jpg?1584944652$image
-||voz.vn/data/avatars/*.jpg?1585120395$image
-||voz.vn/data/avatars/*.jpg?1585666647$image
-||voz.vn/data/avatars/*.jpg?1585997570$image
-||voz.vn/data/avatars/*.jpg?1587238032$image
-||voz.vn/data/avatars/*.jpg?1588156820$image
-||voz.vn/data/avatars/*.jpg?1592457432$image
-||voz.vn/data/avatars/*.jpg?1593083961$image
-||voz.vn/data/avatars/*.jpg?1593439309$image
-||voz.vn/data/avatars/*.jpg?1594500240$image
-||voz.vn/data/avatars/*.jpg?1594512745$image
-||voz.vn/data/avatars/*.jpg?1594821857$image
-||voz.vn/data/avatars/*.jpg?1598096039$image
-||voz.vn/data/avatars/*.jpg?1598409629$image
-||voz.vn/data/avatars/*.jpg?1599925958$image
-||voz.vn/data/avatars/*.jpg?1600612535$image
-||voz.vn/data/avatars/*.jpg?1600837310$image
-||voz.vn/data/avatars/*.jpg?1601120425$image
-||voz.vn/data/avatars/*.jpg?1601375238$image
-||voz.vn/data/avatars/*.jpg?1602507930$image
-||voz.vn/data/avatars/*.jpg?1602678332$image
-||voz.vn/data/avatars/*.jpg?1602763633$image
-||voz.vn/data/avatars/*.jpg?1603160384$image
-||voz.vn/data/avatars/*.jpg?1603182867$image
-||voz.vn/data/avatars/*.jpg?1603183089$image
-||voz.vn/data/avatars/*.jpg?1603188420$image
-||voz.vn/data/avatars/*.jpg?1603190823$image
-||voz.vn/data/avatars/*.jpg?1603250539$image
-||voz.vn/data/avatars/*.jpg?1603250889$image
-||voz.vn/data/avatars/*.jpg?1603254072$image
-||voz.vn/data/avatars/*.jpg?1603256733$image
-||voz.vn/data/avatars/*.jpg?1603258007$image
-||voz.vn/data/avatars/*.jpg?1603263097$image
-||voz.vn/data/avatars/*.jpg?1603344032$image
-||voz.vn/data/avatars/*.jpg?1603381714$image
-||voz.vn/data/avatars/*.jpg?1603694246$image
-||voz.vn/data/avatars/*.jpg?1603986301$image
-||voz.vn/data/avatars/*.jpg?1604257541$image
-||voz.vn/data/avatars/*.jpg?1605239012$image
-||voz.vn/data/avatars/*.jpg?1605711549$image
-||voz.vn/data/avatars/*.jpg?1608781207$image
-||voz.vn/data/avatars/*.jpg?1614358570$image
 
 !#########################################################################################################
 ! Cloud
@@ -2577,19 +2756,6 @@ drop.download##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.
 !2022-08-22 https://dll-files.com
 dll-files.com##.overlay
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
-
-mega4up.org##.text-center.mb-4
-mega4up.org##.card-body > .desc
-mega4up.org##.compare_table.row
-mega4up.org##.container > .mb-3
-mega4up.org##.mb-4.card > .card
-mega4up.org##.card-body > .mb-3.row
-mega4up.org##.d-md-block.d-none.my-3
-mega4up.org##.col-xl-4 > .text-center.my-3
-mega4up.org##.col-xl-8 > .text-center.my-3
-mega4up.org##.text-center.mb-3 > .adsbygoogle
-mega4up.org##.mb-3.list-group-flush.list-group
-mega4up.org##.text-center.py-3.footer-copyright
 
 ! 2022-08-22 https://secufiles.com
 secufiles.com##section:nth-of-type(2)
@@ -2866,7 +3032,6 @@ hexupload.net##.paybox
 hexupload.net###payment-icons
 hexupload.net##.btn-danger.btn
 hexupload.net###iis06o2gfvb1f9o07nea
-hexupload.net##.position-absolute.p-5.footer
 hexupload.net##.premium-page.py-5.container > font
 hexupload.net##[href="https://hexupload.net/premium.html"]
 hexupload.net##center:nth-of-type(1) > [href="/premium.html"]
@@ -2917,6 +3082,9 @@ uploadev.org###gdpr-cookie-notice
 uploadev.org##.offersfree > .text-center > .dtime
 uploadev.org##.offersfree > .text-center > li > .fa-check.fa
 
+! 2023-03-02 https://userupload.net
+userupload.net##.mb-4.col-md-4 .report
+
 ! 2021-07-22 https://userupload.in
 userupload.net,userupload.in##span:nth-of-type(4)
 userupload.net,userupload.in##.position-absolute.p-4.footer
@@ -2934,16 +3102,28 @@ www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 
 !___Rút-Gọn________________________________________
 
+! 2022-12-11 https://mega4upload.com
+mega4upload.com##center > .title
+mega4upload.com##.card-body > .desc
+mega4upload.com##div.col-xl-12 > center
+mega4upload.com##.mb-4.card > .card > .card-body
+mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child
+mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child > div.card-body
+
 ! 2021-07-24 https://mega4up.com
 mega4up.com##.col-xl-8
-mega4up.com##.compare_table.row
-mega4up.com##.card-body > .mb-3.row
-mega4up.com##.container > .mb-3.row
 mega4up.com##div.col-md-4:nth-of-type(1)
 mega4up.com##div.col-md-4:nth-of-type(3)
 mega4up.com##.no-gutters.mt-5.single-post.row
-mega4up.com##.mb-3.list-group-flush.list-group
-mega4up.com##.text-center.py-3.footer-copyright
+
+mega4up.org##.text-center.mb-4
+mega4up.org##.card-body > .desc
+mega4up.org##.container > .mb-3
+mega4up.org##.mb-4.card > .card
+
+mega4up.org##.col-xl-4 > .text-center.my-3
+mega4up.org##.col-xl-8 > .text-center.my-3
+mega4up.org##.text-center.mb-3 > .adsbygoogle
 
 shrinkbuck.com###myTopnav
 shrinkbuck.com###link-view > p:nth-child(2)
@@ -3508,7 +3688,6 @@ youtube.com###masthead-ad
 ||i.imgur.com$domain=jetleech.com
 ||jwge1505.*^
 ||kenh76.vn/js/popupamthuc.js
-||log.baomoi.com^
 ||log.news.zing.vn^
 ||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
 ||macintosh.vn/forum/js/jquery.gallery.js
