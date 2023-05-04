@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 230504a
+! Version: 230504
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -39,7 +39,8 @@ app.trangchu.news,pastehub.net##.text-center
 distrowatch.com,dnsleaktest.com,upfiles.io##p
 trainghiemso.vn,wiki.tino.org##.jeg_post_tags
 bayfiles.com##.text-center.col-md-6.col-xs-12
-dekiru.vn,www.speedtest.net##.modal-container
+!dekiru.vn,www.speedtest.net##.modal-container
+dekiru.vn##.modal-container
 hexupload.net,uploadydl.com##tr:nth-of-type(3)
 www.ipa.tuandb.name.vn,phongduy.com##.comments
 rapidgator.net,hexupload.net##td:nth-of-type(3)
