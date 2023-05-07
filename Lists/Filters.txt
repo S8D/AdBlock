@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 230507a
+! Version: 230507b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -154,6 +154,49 @@ gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.co
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site,www.centfile.com,techy.veganab.co,movie.vkool.org,dienmaycholon.vn,www.myfutureguide.in,mneylink.com,count.vipurl.in##footer
 
+! 2023-05-07 https://movie.vkool.org
+||me88vn2.com^
+movie.vkool.org##.box-rating
+movie.vkool.org##.block-tags
+movie.vkool.org##.block-comments.page-single.block-wrapper
+
+! 2022-06-25 https://phim.vkoolzz.net
+||vkool.net/js/abp.js
+phim.vkoolzz.net###overlay
+phim.vkoolz.net##.block-keywords
+phim.vkoolzz.net##.block-keywords
+phim.vkoolz.net##.block-comments.page-single.block-wrapper
+phim.vkoolzz.net##.block-comments.page-single.block-wrapper
+phim.vkoolz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
+phim.vkoolzz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
+
+! 2023-05-07 https://ophim1.cc
+ophim1.cc##.xl\:p-0.p-2.mt-16.leading-6.text-sm
+
+! 2023-05-07 https://phimtho.tv
+phimtho.tv##.py-2.text-xl.font-medium
+phimtho.tv##.py-1.gap-1.flex-wrap.flex
+phimtho.tv##.py-2.text-center.bg-main-700\/40 > .mt-2
+phimtho.tv##.clear-both.bottom-0.relative.mt-2.bg-main-800
+
+! 2023-05-07 https://phimmoichilly.com
+phimmoichilly.com##.sosmed
+phimmoichilly.com###footer
+phimmoichilly.com##.socialts
+phimmoichilly.com##.box-rating
+phimmoichilly.com##.tags.bottom
+phimmoichilly.com##.infox > .rating
+phimmoichilly.com##div.bixbox:nth-of-type(6)
+phimmoichilly.com##.thumbook > .rt > .rating
+
+! 2023-05-07 https://ssphim.cc
+ssphim.cc###tags
+ssphim.cc##.rating-block
+ssphim.cc###_AM_POPUP_FRAME
+ssphim.cc##.clearfix.myui-foot
+ssphim.cc##.text-center.rating-block
+ssphim.cc##.jw-reset.jw-logo-top-right.jw-logo
+
 ! 2023-03-14 https://veganab.co
 veganab.co##.text-center.wpsafe-top
 veganab.co##.is-sticky.normal-side.tie-col-xs-12.tie-col-md-4.sidebar
@@ -239,13 +282,6 @@ uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row
 uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:last-child > td:last-child
 uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:last-child > td:first-child
 
-! 2023-05-06 https://ssphim.cc
-ssphim.cc###tags
-ssphim.cc###_AM_POPUP_FRAME
-ssphim.cc##.clearfix.myui-foot
-ssphim.cc##.text-center.rating-block
-ssphim.cc##.jw-reset.jw-logo-top-right.jw-logo
-
 ! 2023-05-06 https://gameguardian.net
 gameguardian.net###ips_uid_1399_3
 gameguardian.net###ips_uid_7676_3
@@ -276,7 +312,10 @@ phimmoinay.tv##.block-m.fstory-tags
 phimmoinay.tv##.comment-movies.block-inside
 phimmoinay.tv##.mobi-hide.col-xs-12.col-md-3
 
-! 2023-05-04 https://phimvsub.net
+! 2023-05-07 https://phimvsub.net
+phimvsub.net##.sticky-lasted
+phimvsub.net##.mv-tags.list-unstyled
+phimvsub.net##div.mv-block-content.mv-content:nth-of-type(3)
 phimvsub.net##.fancybox-can-swipe.fancybox-is-open.fancybox-container
 
 ! 2023-04-11 https://ugreenvietnam.com
@@ -1384,16 +1423,6 @@ db-ip.com##.mb-5.container
 
 ! 2022-06-22 https://binhluan.90phut2.live
 binhluan.90phut2.live##.uk-open.uk-flex.uk-modal.uk-flex-top
-
-! 2022-06-25 https://phim.vkoolzz.net
-||vkool.net/js/abp.js
-phim.vkoolzz.net###overlay
-phim.vkoolz.net##.block-keywords
-phim.vkoolzz.net##.block-keywords
-phim.vkoolz.net##.block-comments.page-single.block-wrapper
-phim.vkoolzz.net##.block-comments.page-single.block-wrapper
-phim.vkoolz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
-phim.vkoolzz.net##[src="https://www6.cbox.ws/box/?boxid=831416&boxtag=a1zaTL"]
 
 ! 2022-06-29 https://www.tourdulichbentre.com
 www.tourdulichbentre.com##.ads
