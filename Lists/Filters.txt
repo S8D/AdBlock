@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 231002a
+! Version: 231002b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -176,27 +176,25 @@ www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:
 youtube.com##:matches-path(/shorts) body:remove()
 
 !_________________________________
+4gviet.com,id.4gre.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
+sky4g.com,shopvpn.net,4ghatde.net,go.tnetz.pro,4gsinhvien.me,wibuvpn.store,4gmienphi.asia,panel.shopvpn4g.vn,wibuvpn.yunagrp.com##.active.tbpopup
+skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
+
 ! 2023-09-27 https://panel.shopvpn4g.vn
-panel.shopvpn4g.vn##.active.tbpopup
-panel.shopvpn4g.vn##.text-center.mb-12
 ||shopvpn4g.vn/images/banner1.jpg$image
 ||vipmax.vn/wp-content/uploads/2017/07/ngam-gai-khoa-than-15.jpg$image
 
 ! 2023-09-27 https://id.4gre.net
 id.4gre.net##.slick-track
-id.4gre.net##.text-center.mb-12
 ||source.unsplash.com/random$image
 
 ! 2023-09-25 https://go.tnetz.pro
 ||tnetz.pro/nenweb.png$image
-go.tnetz.pro##.active.tbpopup
 ||haycafe.vn/wp-content/uploads/2022/05/Hinh-nen-cute-mau-xanh-duong-bau-troi.jpg$image
 ||techvccloud.mediacdn.vn/280518386289090560/2021/6/8/mang-internet-la-gi-3-16231378908761663023686.jpg$image
 
 ! 2023-09-27 https://4gsinhvien.me
 4gsinhvien.me##.gif-container
-4gsinhvien.me##.active.tbpopup
-4gsinhvien.me##.text-center.mb-12
 ||4gsinhvien.me/theme/gif/start.gif$image
 ||wallpaperaccess.com/full/2319702.jpg$image
 4gsinhvien.me##[src="https://i.imgur.com/c8LSI5n.gif"]
@@ -208,10 +206,8 @@ go.tnetz.pro##.active.tbpopup
 5gtocdocao.com##.static
 5gtocdocao.com###exampleModal
 5gtocdocao.com##.show.fade.modal
-5gtocdocao.com##.text-center.mb-12
 5gtocdocao.com##.show.fade.modal-backdrop
 5gtocdocao.com##.arcontactus-message-button
-5gtocdocao.com##.mr-1.btn-black.btn.ant-dropdown-trigger
 5gtocdocao.com##.active.lg.right.arcontactus-message.arcontactus-widget
 5gtocdocao.com##body,html:style(overflow: auto !important; position: initial !important;)
 ||5gtocdocao.com/static/picture/5g1.jpg$image
@@ -226,9 +222,7 @@ go.tnetz.pro##.active.tbpopup
 ||vhb.vn/wp-content/uploads/2020/02/52088600vectorillustrationofgoldvipcard.jpg$image
 
 ! 2023-09-26 https://4gviet.com
-4gviet.com##.text-center.mb-12
 4gviet.com##div:nth-of-type(4)
-4gviet.com##.mr-1.btn-black.btn.ant-dropdown-trigger
 4gviet.com##.active.lg.right.arcontactus-message.arcontactus-widget
 ||4gviet.com/*.mp3
 ||client.crisp.chat^
@@ -274,7 +268,6 @@ csadata4g.me##.mb-3.v2board-logo
 ||www.hoasen.edu.vn/tcnh/wp-content/uploads/sites/23/2022/04/contact-us-banner-1.jpg$image
 
 ! 2023-08-29 https://wibuvpn.yunagrp.com
-wibuvpn.yunagrp.com##.active.tbpopup
 wibuvpn.yunagrp.com##.active.lg.right.arcontactus-message.arcontactus-widget
 dangnhapvpn.yunagrp.com##.v2board-bg-pixels.mb-0.bg-image.block-rounded.block
 ||media.tenor.com/orMEST6wEYwAAAAC/purple.gif$image
@@ -287,7 +280,6 @@ dangnhapvpn.yunagrp.com##.v2board-bg-pixels.mb-0.bg-image.block-rounded.block
 
 ! 2023-07-24 https://skypn.fun
 ||cucdoc.vn/upload/data/images/do-hoa/background/anh-nen-anime-dep-5.jpg$image
-skypn.fun##.text-center.mb-12
 ||cucdoc.vn/upload/data/images/do-hoa/background/anh-nen-anime-dep-5.jpg$image
 
 ! 2023-07-23 https://daily4g.com
@@ -298,7 +290,6 @@ daily4g.com##.text-muted.font-size-sm.font-w700.text-uppercase
 ||hoangai.fun/bg1.jpg$image
 
 ! 2023-08-23 https://shopvpn.net
-shopvpn.net##.active.tbpopup
 ||i.gifer.com/*.gif$image
 ||i.gifer.com/IrF.gif$image
 ||i.gifer.com/3QAe.gif$image
@@ -317,12 +308,10 @@ hunglapis.id.vn##.text-center.mb-3
 
 ! 2023-08-15 https://zenpn.com
 ||w.wallhaven.cc/full/rd/wallhaven-rdqz9m.jpg$image
-zenpn.com##.text-center.mb-12
 
 ! 2023-08-16 https://wibuvpn.store
 ||hentaiz.space/theme/v2board/assets/favicons/backgroud.jpg$image
 ||wallpapercave.com/wp/wp9005946.jpg$image
-wibuvpn.store##.active.tbpopup
 
 ! 2023-08-17 https://zingfast.vn
 ||i.imgur.com/2AQ9NTp.png$image
@@ -340,7 +329,6 @@ wibuvpn.store##.active.tbpopup
 
 ! 2023-08-17 https://vpngiare.net
 ||vpngiare.net/theme/Nmquan/Tet.gif$image
-vpngiare.net##.text-center.mb-12
 vpngiare.net###popup-giua-man-hinh
 ||play-lh.googleusercontent.com/dQbjuW6Jrwzavx7UCwvGzA_sleZe3-Km1KISpMLGVf1Be5N6hN6-tdKxE5RDQvOiGRg$image
 ||i.postimg.cc/rwYt2MCP/F822-FE90-6-FD2-49-A1-A494-8086-B82587-A3.jpg$image
@@ -371,7 +359,6 @@ net5g.pro##.text-center.mb-3
 
 ! 2023-08-24 https://sky4g.com
 ||i.pinimg.com/736x/8d/c9/15/8dc915c8c83baa1287c915182bedaa80.jpg$image
-sky4g.com##.active.tbpopup
 ||png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-simple-fashion-technology-light-poster-design-background-image_187735.jpg$image
 
 ! 2023-08-28 https://4gchill.com
@@ -382,7 +369,6 @@ sky4g.com##.active.tbpopup
 ||*/theme/v2board/assets/i18n/fa-IR.js
 
 ! 2023-08-26 https://4ghatde.net
-4ghatde.net##.active.tbpopup
 ||4ghatde.net/theme/GIF/hatde01.gif$image
 ||img.upanh.tv/2023/04/14/4GHATDE.NET-2.png$image
 ||img.upanh.tv/2023/07/09/Thiet-ke-chua-co-ten-7.png$image
@@ -398,7 +384,6 @@ free4g.vn##div.text-center:nth-of-type(7)
 
 ! 2023-09-01 https://vpndata.xyz
 vpndata.xyz##.text-center.mb-3
-vpndata.xyz##.text-center.mb-12
 vpndata.xyz##.hotline-phone-ring-wrap
 ||i.imgur.com/2dNOb4k.png$image
 ||i.imgur.com/c8LSI5n.gif$image
@@ -409,7 +394,6 @@ vpndata.xyz##.hotline-phone-ring-wrap
 ||i0.wp.com/i448.photobucket.com/albums/qq201/Pepro1912/ANIMATION/Doraemon/103123.gif$image
 
 ! 2023-09-02 https://4gmienphi.asia
-4gmienphi.asia##.active.tbpopup
 ||assetsio.reedpopcdn.com/Thumb5_Yj17LW3.png$image
 
 ! 2023-09-27 https://vpndata.takeshi.dev
