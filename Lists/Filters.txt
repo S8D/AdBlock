@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 230507b
+! Version: 231002a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -154,6 +154,763 @@ gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.co
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site,www.centfile.com,techy.veganab.co,movie.vkool.org,dienmaycholon.vn,www.myfutureguide.in,mneylink.com,count.vipurl.in##footer
 
+!_________________________________
+www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
+www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
+www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
+www.youtube.com##ytd-reel-shelf-renderer
+m.youtube.com##ytm-reel-shelf-renderer
+m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
+m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer,ytm-video-with-context-renderer)
+m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
+youtube.com##:matches-path(/shorts) body:remove()
+
+!_________________________________
+! 2023-09-27 https://panel.shopvpn4g.vn
+panel.shopvpn4g.vn##.active.tbpopup
+panel.shopvpn4g.vn##.text-center.mb-12
+||shopvpn4g.vn/images/banner1.jpg$image
+||vipmax.vn/wp-content/uploads/2017/07/ngam-gai-khoa-than-15.jpg$image
+
+! 2023-09-27 https://id.4gre.net
+id.4gre.net##.slick-track
+id.4gre.net##.text-center.mb-12
+||source.unsplash.com/random$image
+
+! 2023-09-25 https://go.tnetz.pro
+||tnetz.pro/nenweb.png$image
+go.tnetz.pro##.active.tbpopup
+||haycafe.vn/wp-content/uploads/2022/05/Hinh-nen-cute-mau-xanh-duong-bau-troi.jpg$image
+||techvccloud.mediacdn.vn/280518386289090560/2021/6/8/mang-internet-la-gi-3-16231378908761663023686.jpg$image
+
+! 2023-09-27 https://4gsinhvien.me
+4gsinhvien.me##.gif-container
+4gsinhvien.me##.active.tbpopup
+4gsinhvien.me##.text-center.mb-12
+||4gsinhvien.me/theme/gif/start.gif$image
+||wallpaperaccess.com/full/2319702.jpg$image
+4gsinhvien.me##[src="https://i.imgur.com/c8LSI5n.gif"]
+||thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-gif-khu-rung-nguyen-sinh.gif$image
+||png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-background-banner-image_125518.jpg$image
+
+! 2023-09-26 https://5gtocdocao.com
+5gtocdocao.com##.icons
+5gtocdocao.com##.static
+5gtocdocao.com###exampleModal
+5gtocdocao.com##.show.fade.modal
+5gtocdocao.com##.text-center.mb-12
+5gtocdocao.com##.show.fade.modal-backdrop
+5gtocdocao.com##.arcontactus-message-button
+5gtocdocao.com##.mr-1.btn-black.btn.ant-dropdown-trigger
+5gtocdocao.com##.active.lg.right.arcontactus-message.arcontactus-widget
+5gtocdocao.com##body,html:style(overflow: auto !important; position: initial !important;)
+||5gtocdocao.com/static/picture/5g1.jpg$image
+||5gtocdocao.com/static/picture/vpn1.jpg$image
+||vhb.vn/wp-content/uploads/2020/02/*.jpg$image
+||5gtocdocao.com/static/images/hero-g-bg.png$image
+||5gtocdocao.com/static/picture/lienquan.jpg$image
+||i.im.ge/2023/07/28/9I9rhm.anh-nen-mau-tim.png$image
+||idconline.vn/blog/wp-content/uploads/2021/08/*.jpg$image
+||cdn.thuvienphapluat.vn/phap-luat/2022-2/LTT/tb-tet-duong-lich.png$image
+||idconline.vn/blog/wp-content/uploads/2021/08/anti-ddos-idc-online2.jpg$image
+||vhb.vn/wp-content/uploads/2020/02/52088600vectorillustrationofgoldvipcard.jpg$image
+
+! 2023-09-26 https://4gviet.com
+4gviet.com##.text-center.mb-12
+4gviet.com##div:nth-of-type(4)
+4gviet.com##.mr-1.btn-black.btn.ant-dropdown-trigger
+4gviet.com##.active.lg.right.arcontactus-message.arcontactus-widget
+||4gviet.com/*.mp3
+||client.crisp.chat^
+||4gviet.com/theme/PNG/nen.png
+||4gviet.com/image/tt.png$image
+||4gviet.com/theme/PNG/nen.png$image
+||4gviet.com/theme/PNG/antiddos.png$image
+
+! 2023-07-21 https://htpn.me
+4g.tintuc247.top##.isi
+4g.tintuc247.top##.inner
+4g.tintuc247.top##.header
+4g.tintuc247.top###levelmaxblock
+htpn.me##.pageLoadingC
+htpn.me##.active.starSvg
+htpn.me##.mb-20px.img-align-left-mobile.max-height-120px-on-mobile.wp-block-image > .is-resized.size-large.aligncenter
+share247.info##.navbar-expand-lg.navbar
+share247.info##.position-absolute.p-5.footer
+||4g.tintuc247.top/theme/GIF/nhacv2.mp3$media,domain=4g.tintuc247.top
+||img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg$image
+||haycafe.vn/wp-content/uploads/2021/12/Hinh-anh-gif-chuyen-tau-dem-dai-bat-tan.gif$image
+||blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2UiwkC42_TYds4b_D8KSno9kj9OIihVmwdYfTanM12xQC9dlWLaDpY8UM74mscXm2OJwMQ30HC-OEvpvSYNRAFttVLIiIUmiFCDx8oRMYkdOTc6nxAp0nbWyzz9qGTXCuCoHizwiIiGcZPHTOhigPrvlrhA0d7yHlq3lRr0Bczp5QlIKmu5mSo49_/s70/curmiku6.png$image,domain=4g.tintuc247.top
+
+! 2023-08-25 https://dvsteam.net
+dvsteam.net###dvs-buttons
+dvsteam.net##.show.fade.modal
+dvsteam.net##.text-center.mb-3
+dvsteam.net##.show.fade.modal-backdrop
+dvsteam.net##.active.lg.right.arcontactus-message.arcontactus-widget
+||dvsteam.net/logodvs.png$image
+||i.imgur.com/lpIOK45.png$image
+||haycafe.vn/wp-content/uploads/2021/12/Hinh-anh-gif-ve-mua.gif$image
+||www.gstatic.com/atari/embeds/7925c5f8e01bacb9b4b0a3783ae0b867/intermediate-frame-minified.html$subdocument
+
+! 2023-08-25 https://csadata4g.me
+csadata4g.me##.slick-track
+csadata4g.me##.font-size-h1
+csadata4g.me##.text-center.mb-3
+csadata4g.me##.mb-3.v2board-logo
+||i.gifer.com/SzOV.gif$image
+||upload.wikimedia.org/wikipedia/commons/2/2a/Csa_4g.png$image
+||upload.wikimedia.org/wikipedia/commons/b/b7/Driveregne.png$image
+||www.hoasen.edu.vn/tcnh/wp-content/uploads/sites/23/2022/04/contact-us-banner-1.jpg$image
+
+! 2023-08-29 https://wibuvpn.yunagrp.com
+wibuvpn.yunagrp.com##.active.tbpopup
+wibuvpn.yunagrp.com##.active.lg.right.arcontactus-message.arcontactus-widget
+dangnhapvpn.yunagrp.com##.v2board-bg-pixels.mb-0.bg-image.block-rounded.block
+||media.tenor.com/orMEST6wEYwAAAAC/purple.gif$image
+||hentaiz.space/theme/v2board/assets/favicons/backgroud.jpg$image
+
+! 2023-08-30 https://api.speed4g.me
+||api.speed4g.me/public/assets/images/background.jpg$image
+||speed4g.me/theme/GIF/bgr.gif$image
+||speed4g.me/theme/GIF/bia.png$image
+
+! 2023-07-24 https://skypn.fun
+||cucdoc.vn/upload/data/images/do-hoa/background/anh-nen-anime-dep-5.jpg$image
+skypn.fun##.text-center.mb-12
+||cucdoc.vn/upload/data/images/do-hoa/background/anh-nen-anime-dep-5.jpg$image
+
+! 2023-07-23 https://daily4g.com
+daily4g.com##.text-muted.font-size-sm.font-w700.text-uppercase
+||timanhdep.com/wp-content/uploads/2022/06/anh-gif-chill-hinh-gif-anime-dep-06.gif$image
+
+! 2023-08-11 https://hoangai.fun
+||hoangai.fun/bg1.jpg$image
+
+! 2023-08-23 https://shopvpn.net
+shopvpn.net##.active.tbpopup
+||i.gifer.com/*.gif$image
+||i.gifer.com/IrF.gif$image
+||i.gifer.com/3QAe.gif$image
+||tonghop.shopvpn.net/phaidaucuoctinh.mp3
+
+! 2023-08-12 https://hunglapis.id.vn
+||i.imgur.com/N66yQNN.jpg$image
+||i.imgur.com/N66yQNN.jpg$image
+hunglapis.id.vn##.text-center.mb-3
+
+! 2023-08-13 https://4gtocdo.click
+||image.winudf.com/v2/image/YXBwLm5ldHdvcmtyZXNlYXJjaC52cG5fc2NyZWVuXzFfMTUyOTM3MzMxNV8wODQ/screen-1.webp$image
+
+! 2023-08-13 https://4gchill.com
+||toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-minh-hoa-4k-chu-de-thien-nhien.jpg$image
+
+! 2023-08-15 https://zenpn.com
+||w.wallhaven.cc/full/rd/wallhaven-rdqz9m.jpg$image
+zenpn.com##.text-center.mb-12
+
+! 2023-08-16 https://wibuvpn.store
+||hentaiz.space/theme/v2board/assets/favicons/backgroud.jpg$image
+||wallpapercave.com/wp/wp9005946.jpg$image
+wibuvpn.store##.active.tbpopup
+
+! 2023-08-17 https://zingfast.vn
+||i.imgur.com/2AQ9NTp.png$image
+||cacnuoc.vn/wp-content/uploads/2018/01/cac-nuoc-chau-a-e1516873994530.jpg$image
+
+! 2023-08-17 https://panel.tltvpn.com
+||png.pngtree.com/thumb_back/fh260/back_pic/03/54/06/62579986dba62df.jpg$image
+
+! 2023-08-17 https://vpn4g.xyz
+||thuthuatnhanh.com/wp-content/uploads/2021/11/hinh-anh-chill-dep.jpg$image
+
+! 2023-08-17 https://go.kanevip.com
+||i.pinimg.com/originals/45/b2/e7/45b2e764d14cf9dee6dc3ed1ba0ad680.gif$image
+||i.pinimg.com/564x/bd/11/20/bd11206d58c6c54ca4263567ad2edc63.jpg$image
+
+! 2023-08-17 https://vpngiare.net
+||vpngiare.net/theme/Nmquan/Tet.gif$image
+vpngiare.net##.text-center.mb-12
+vpngiare.net###popup-giua-man-hinh
+||play-lh.googleusercontent.com/dQbjuW6Jrwzavx7UCwvGzA_sleZe3-Km1KISpMLGVf1Be5N6hN6-tdKxE5RDQvOiGRg$image
+||i.postimg.cc/rwYt2MCP/F822-FE90-6-FD2-49-A1-A494-8086-B82587-A3.jpg$image
+||play-lh.googleusercontent.com/dQbjuW6Jrwzavx7UCwvGzA_sleZe3-Km1KISpMLGVf1Be5N6hN6-tdKxE5RDQvOiGRg$image
+
+! 2023-08-17 https://hmqvpn4g.online
+||i.postimg.cc/Bb8ftvFK/taoanhdep-logo-kimloai-2573.jpg$image
+
+! 2023-08-18 https://hackdata.me
+||c4.wallpaperflare.com/wallpaper/614/734/421/video-game-endless-space-2-wallpaper-preview.jpg$image
+
+! 2023-08-18 https://japan.shoptuantruong.com
+||shoptuantruong.com/nen2.png$image
+||res.klook.com/image/upload/q_85/c_fill,w_1360/v1596021224/blog/a5nzbvlpm0gfyniy6s7r.webp$image
+
+! 2023-08-18 https://4glade.xyz
+||i.imgur.com/b5VEdd3.png$image
+
+! 2023-08-19 https://net5g.pro
+||images.pexels.com/photos/9304329/pexels-photo-9304329.jpeg$image
+net5g.pro##.text-center.mb-3
+
+! 2023-08-21 https://mangtac.com
+||i.pinimg.com/564x/b9/fc/7f/b9fc7f461f13e8e6d80659059e044cb3.jpg$image
+
+! 2023-08-21 https://portal.zingfast.vn
+||pdp.edu.vn/wp-content/uploads/2021/01/hinh-nen-4k-tuyet-dep-cho-may-tinh.jpg$image
+
+! 2023-08-24 https://sky4g.com
+||i.pinimg.com/736x/8d/c9/15/8dc915c8c83baa1287c915182bedaa80.jpg$image
+sky4g.com##.active.tbpopup
+||png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-simple-fashion-technology-light-poster-design-background-image_187735.jpg$image
+
+! 2023-08-28 https://4gchill.com
+||*/theme/v2board/assets/i18n/zh-CN.js
+||*/theme/v2board/assets/i18n/ja-JP.js
+||*/theme/v2board/assets/i18n/ko-KR.js
+||*/theme/v2board/assets/i18n/zh-TW.js
+||*/theme/v2board/assets/i18n/fa-IR.js
+
+! 2023-08-26 https://4ghatde.net
+4ghatde.net##.active.tbpopup
+||4ghatde.net/theme/GIF/hatde01.gif$image
+||img.upanh.tv/2023/04/14/4GHATDE.NET-2.png$image
+||img.upanh.tv/2023/07/09/Thiet-ke-chua-co-ten-7.png$image
+||media.giphy.com/media/wobKCP6HaN4PFa5hD3/giphy.gif$image
+||img.upanh.tv/2023/07/29/Black-Modern-Coming-Soon-Facebook-Post.png$image
+||i.upanh.org/2023/07/08/Blue-Yellow-Modern-Minimalist-Business-Banking-Facebook-Post-1080--720-px3e5636a463c9720b.png$image
+
+! 2023-08-30 https://free4g.vn
+||free4g.vn/demo1/dist/assets/media/illustrations/sketchy-1/14-dark.png$image
+free4g.vn##.h-40px
+free4g.vn##div.text-center:nth-of-type(5)
+free4g.vn##div.text-center:nth-of-type(7)
+
+! 2023-09-01 https://vpndata.xyz
+vpndata.xyz##.text-center.mb-3
+vpndata.xyz##.text-center.mb-12
+vpndata.xyz##.hotline-phone-ring-wrap
+||i.imgur.com/2dNOb4k.png$image
+||i.imgur.com/c8LSI5n.gif$image
+||img.freepik.com/free-vector/*.jpg$image
+||az705044.vo.msecnd.net/20200528/28-5-2020-5-36-22-pm.png$image
+||znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/2.jpg$image
+||img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg$image
+||i0.wp.com/i448.photobucket.com/albums/qq201/Pepro1912/ANIMATION/Doraemon/103123.gif$image
+
+! 2023-09-02 https://4gmienphi.asia
+4gmienphi.asia##.active.tbpopup
+||assetsio.reedpopcdn.com/Thumb5_Yj17LW3.png$image
+
+! 2023-09-27 https://vpndata.takeshi.dev
+||i.upanh.org/2023/07/02/62506385_p0fea2161499942c35.jpeg$image
+vpndata.takeshi.dev##.text-center.mb-3
+
+! 2023-08-26 https://my.texpn.net
+my.texpn.net##.icons
+||haycafe.vn/wp-content/uploads/2022/03/Hinh-nen-iOS-13-4K.jpg$image
+my.texpn.net##.arcontactus-message-button
+
+! 2023-08-28 https://vpn5sao.com
+vpn5sao.com##.active.lg.right.arcontactus-message.arcontactus-widget
+
+! 2023-08-28 https://www.360nippon.com
+www.360nippon.com##.mfp-ready.penci-promo-popup-wrapper.mfp-ani-wrap.mfp-auto-cursor.mfp-close-btn-in.mfp-wrap
+www.360nippon.com##.mfp-ready.penci-promo-popup-wrapper.mfp-ani-wrap.mfp-bg
+
+! 2023-05-30 https://vnm.windscribe.com
+vnm.windscribe.com##.css-1x59bg5-IconButton
+
+! 2023-06-03 https://patched.to
+patched.to##.midBar
+patched.to###posts > div > .partners
+patched.to##.actual-container > div > .partners
+
+! 2023-06-04 https://craxpro.io
+craxpro.io##.random-tips.block
+
+! 2023-06-17 https://paste.fo
+paste.fo##[src="https://paste.fo/assets/img/default.png"]
+paste.fo##[src="https://i.ibb.co/1vJ9Myx/a.gif"]
+paste.fo##.header
+
+! 2023-06-17 https://www.cellmapper.net
+www.cellmapper.net##.cc-color-override-646839691.cc-top.cc-theme-block.cc-type-info.cc-floating.cc-window
+
+! 2023-07-19 https://accgroup.vn
+accgroup.vn##.social-group
+accgroup.vn##.sticky.header
+
+! 2023-07-20 https://fpthue.vn
+fpthue.vn##.drag-wrapper-right.drag-wrapper
+fpthue.vn##.right.zalo-container
+fpthue.vn###callnowbutton
+
+! 2023-07-23 https://panel.tltvpn.com
+panel.tltvpn.com##.b24-widget-button-visible.b24-widget-button-position-bottom-right.b24-widget-button-wrapper
+
+! 2023-08-16 https://vietfones.vn
+vietfones.vn##.share-button
+
+! 2023-07-21 https://giamping.com
+giamping.com##.elementor-widget-wp-widget-tag_cloud.elementor-widget.elementor-element-7959921.elementor-element
+giamping.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-745417d.elementor-element.elementor-top-section.elementor-section
+
+! 2023-08-17 https://phimtho.tv
+phimtho.tv###popup_banner_beta
+
+! 2023-07-23 https://id.4gre.net
+||wallpaperset.com/w/full/a/c/7/369420.jpg$image
+||wallpaperset.com/w/full/a/c/7/369420.jpg$image
+
+! 2023-07-31 https://hungmobile.vn
+hungmobile.vn##.popup-all-page
+hungmobile.vn##.__b-popup1__.b-modal
+
+! 2023-07-31 https://imeicheck.net
+imeicheck.net##.ImeiCheckAnswer_mobileHidden__ZIMBy.ImeiCheckAnswer_resultContainer__Ql1ST > .BlurredResults_wrapper__qdVV9 > .BlurredResults_alert__rPAc6
+
+! 2023-08-08 https://hhpanda.com
+hhpanda.com##.clearfix.myui-foot
+hhpanda.com##div.clearfix.myui-panel-bg.myui-panel:nth-of-type(4)
+hhpanda.com##.a-af-player > center
+hhpanda.com##.text-center.rating-block
+
+! 2023-08-09 https://vnnic.vn
+vnnic.vn##.col-xs-12.col-sm-12.col-md-12.col-lg-12.footer
+vnnic.vn##.col-xs-12.col-sm-12.col-md-12.col-lg-12.bottom-page
+vnnic.vn##.vnnic-banner-wide
+
+! 2023-08-09 https://ph5gvpn.online
+||i.pinimg.com/564x/bb/57/a9/bb57a9f862f58f63ef5f405907c6fb6e.jpg$image
+||media2.giphy.com/media/XxePWdpdifKZr1Uhix/giphy.gif$image
+
+! 2023-08-10 https://emojipedia.org
+emojipedia.org##.md\:min-w-\[400px\].min-w-\[300px\].h-\[257px\].relative.AdContainer_ad__DSJgp
+emojipedia.org##footer.md\:pl-12.w-full.flex-col.flex
+
+! 2023-06-24 https://www.facebook.com
+www.facebook.com##.xdt5ytf.x78zum5.xs83m0k.x1iyjqo2.x1r8uery.xeuugli.x193iq5w.x1ja2u2z.x1n2onr6.x9f619 > .xh8yej3.x1n2onr6.x5yr21d
+
+! 2023-06-28 https://www.thegioididong.com
+www.thegioididong.com##div.boxpromote:nth-of-type(1)
+www.thegioididong.com##.header-top-bar
+www.thegioididong.com##div.boxpromote:nth-of-type(5)
+www.thegioididong.com##.footer
+www.thegioididong.com##.wrapcomment
+www.thegioididong.com##.kwLst
+www.thegioididong.com##.boxpromote
+www.thegioididong.com##.tlt
+www.thegioididong.com##li:nth-of-type(3)
+
+! 2023-06-28 https://vinid.net
+vinid.net###VinID-popup-modal
+vinid.net##.show.modal-backdrop
+
+! 2023-06-29 https://motchill.tv
+||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchill.tv
+||motchill.tv/files/300x250.html$subdocument,1p
+
+zingnews.vn#@#.type-text.the-article
+
+! 2023-07-07 https://game.nega.vn
+game.nega.vn##.ai-viewport-2.ai-viewport-1.code-block-2.code-block
+
+! 2023-07-07 https://tinde.tech
+
+! 2023-07-07 https://1short.info
+1short.info##[src="https://jslib.win/storage/guide.mp4"]
+
+! 2023-07-07 https://linkvip.io
+linkvip.io##.mt-4 > .text-center
+linkvip.io##.mt-4
+linkvip.io##.text-center.row.card-body > .mb-4.fw-bold
+linkvip.io##.iframe-huong-dan
+linkvip.io##.text-center.card-body > .mb-2
+linkvip.io##.mb-4.card > .text-center.card-body
+linkvip.io##.mb-4 > h4
+
+! 2023-07-07 https://note1s.com
+note1s.com##.text-white.bg-primary.px-3.py-5.text-center
+note1s.com##.shadow-sm.bg-primary.navbar-light.navbar-expand-md.navbar
+note1s.com###cookie-pop
+note1s.com##h2
+
+! 2023-07-07 https://rubicmarketing.com
+rubicmarketing.com###footer
+rubicmarketing.com##.nitro-offscreen.last-row.fullwidth.vc_row-fluid.wpb_row.vc_row
+rubicmarketing.com##div.nitro-offscreen.vc_row-fluid.wpb_row.vc_row:nth-of-type(22)
+rubicmarketing.com##.lazyloaded.nitro-offscreen.vc_row-has-fill.vc_custom_1618499645328.vc_row-fluid.wpb_row.vc_row
+rubicmarketing.com##.desktop-header
+rubicmarketing.com##.lazyloaded.vc_row-has-fill.vc_custom_1622449907370.vc_row-fluid.wpb_row.vc_row
+
+! 2023-07-09 https://nhacaiuytinvnz.com
+nhacaiuytinvnz.com##.relative.space-page-without-title.box-100.space-page-section
+nhacaiuytinvnz.com##.ads1.space-page-wrapper
+nhacaiuytinvnz.com##.relative.space-header-height
+
+! 2023-07-09 https://smartlink.vip
+smartlink.vip##.footer
+smartlink.vip##.header-container
+
+! 2023-07-09 https://nhacaiuytinvnz.com
+nhacaiuytinvnz.com##div.relative.box-25.space-content-section.space-footer-top-desc1:nth-of-type(4)
+nhacaiuytinvnz.com##div.relative.box-25.space-content-section.space-footer-top-desc1:nth-of-type(3)
+nhacaiuytinvnz.com##div.relative.box-25.space-content-section.space-footer-top-desc1:nth-of-type(2)
+nhacaiuytinvnz.com##.relative.box-100.space-footer-copy
+nhacaiuytinvnz.com###text-2 > .textwidget > p
+nhacaiuytinvnz.com##.banner-nhacai-bottom
+nhacaiuytinvnz.com###text-2 > .relative.space-widget-title
+
+! 2023-07-09 https://blitly.io
+blitly.io##.banner-image
+
+! 2023-07-09 https://www.bsport.bet
+www.bsport.bet##.hfeed.container.grid-container.site
+www.bsport.bet##.footer-widget-4
+www.bsport.bet##.footer-widget-3
+www.bsport.bet##.footer-widget-2
+www.bsport.bet###text-3
+www.bsport.bet##.float-ck-center-lt
+www.bsport.bet##.fixc.gb-container-576eb9a4.gb-container
+www.bsport.bet##.has-inline-mobile-toggle.grid-container.site-header
+www.bsport.bet##.site-info
+
+! 2023-07-13 https://k21academy.com
+k21academy.com##.ub-emb-container
+
+! 2023-07-13 https://laptopmart.com.vn
+laptopmart.com.vn###popup-dialog > .modal-dialog
+laptopmart.com.vn##.in.base-popup.fade.modal
+laptopmart.com.vn##.active.lg.right.arcontactus-message.arcontactus-widget
+laptopmart.com.vn##.in.fade.modal-backdrop
+
+! 2023-07-13 https://vneid.dancuquocgia.gov.vn
+vneid.dancuquocgia.gov.vn##.right-container
+||vneid.dancuquocgia.gov.vn/auth/resources/*/login/vneid/img/pattern.png$image
+||vneid.dancuquocgia.gov.vn/auth/resources/*/login/vneid/img/logo-bca.png$image
+vneid.dancuquocgia.gov.vn##.logo-container
+||vneid.dancuquocgia.gov.vn/auth/resources/0zjyk/login/vneid/img/pattern.png$image
+
+! 2023-07-17 https://motchill.info
+motchill.info##.play-tags
+motchill.info###footer
+motchill.info##.box-rating
+
+! 2023-07-17 https://chillhay.in
+chillhay.in##.ad_float.ad_location
+chillhay.in###page-info > .block
+chillhay.in###footer
+chillhay.in##.detail > .tabs-content
+chillhay.in###comment
+chillhay.in##.block > .below_of_player.ad_location
+
+! 2023-07-20 https://helurl.com
+||helurl.com/storage/homepage/6c2e7e63-11a9-4325-a44b-9ca9012d8553.svg$image
+
+! 2023-07-21 https://pasted.to
+pasted.to##center
+
+! 2023-07-21 https://crax.pro
+crax.pro##.js-bottomFixTarget.u-bottomFixer
+
+! 2023-05-24 https://github.com
+github.com##[href="https://visitcount.itsvg.in"]
+github.com##[href^="https://app.codacy.com/gh/luxysiv/revanced-nonroot/dashboard"]
+
+! 2023-05-26 https://movie.vkool.org
+movie.vkool.org###sideAdsRight
+movie.vkool.org###sideAdsLeft
+movie.vkool.org##div#adtop-watch.watch-banner-2.ad-container
+
+! 2023-06-04 https://paste.bin.sx
+paste.bin.sx##div#abDetectorModal.ab-detector-wrap:nth-of-type(7)
+
+! 2023-06-05 https://ghostbin.me
+ghostbin.me##center
+ghostbin.me##button
+ghostbin.me##.footer
+
+! 2023-06-05 https://craxpro.io
+craxpro.io##.random-tips.block
+
+! 2023-06-06 https://www.ixl.com
+www.ixl.com##.no-recommendations.wyzant-navigation-banner-container
+www.ixl.com###yui_3_18_1_1_1686056636795_1585
+
+! 2023-06-06 https://controlc.com
+controlc.com##.pad10.rounded10.whiteBG > div > div > [href]
+
+! 2023-06-06 https://pandaznetwork.freemodsapp.xyz
+pandaznetwork.freemodsapp.xyz##.adb
+pandaznetwork.freemodsapp.xyz##.adsbygoogle
+
+! 2023-06-15 https://www.rawask.com
+www.rawask.com##p
+www.rawask.com##.pGV
+www.rawask.com##.pSh
+www.rawask.com## span
+www.rawask.com###aChp
+www.rawask.com##.zmImg
+www.rawask.com###HTML2
+www.rawask.com##.pCntn
+www.rawask.com##.pFoot
+www.rawask.com##footer
+www.rawask.com##.blogAd
+www.rawask.com##.blogMn
+www.rawask.com##.brdCmb
+www.rawask.com##.header
+www.rawask.com###top-widget
+www.rawask.com###postBody > b
+www.rawask.com###notif-widget
+www.rawask.com##.ps.pSml.pInf
+www.rawask.com###postBody > ol
+www.rawask.com##.ntry > .pThmb
+www.rawask.com##.sidebar.blogItm
+www.rawask.com###postBody > table
+www.rawask.com##.itm.sml.aTtl.pTtl
+www.rawask.com##div.separator:nth-of-type(9)
+www.rawask.com##[src="https://bwidget.crictimes.org/"]
+
+! 2023-06-07 https://www.cloudkp.com
+www.cloudkp.com###header-wrap
+www.cloudkp.com##.post-header
+www.cloudkp.com###footer-wrapper
+www.cloudkp.com###sidebar-wrapper
+www.cloudkp.com##.comments-system-blogger.blog-post-comments
+
+! 2023-06-07 https://pandaznetwork.com
+pandaznetwork.com##footer
+pandaznetwork.com##.navbar-default.navbar
+pandaznetwork.com##.r-bg
+
+! 2023-06-09 https://toolss.net
+toolss.net##.gmr-single.gmr-box-content
+toolss.net###footer-sidebar
+toolss.net###footer-container
+toolss.net###block-3 > .is-layout-flow.wp-block-group > .wp-block-group__inner-container
+toolss.net##.top-header
+
+! 2023-06-14 https://dichvucong.dancuquocgia.gov.vn
+dichvucong.dancuquocgia.gov.vn##.footer-box
+
+! 2023-06-14 https://luatsux.vn
+luatsux.vn##.col-md-4.jeg_sticky_sidebar.jeg_sidebar
+luatsux.vn###button-contact-vr
+
+! 2023-06-15 https://throwbin.in
+throwbin.in###adModel
+
+! 2023-06-15 https://codebeautify.org
+codebeautify.org##.ezmobtrans.ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
+
+! 2023-06-15 https://nsaneforums.com
+nsaneforums.com##.ipsAttachLink_image.ipsAttachLink
+
+! 2023-06-16 https://dichvucong.bocongan.gov.vn
+dichvucong.bocongan.gov.vn##.bca-footer
+
+! 2023-06-16 https://dichvucong.dancuquocgia.gov.vn
+dichvucong.dancuquocgia.gov.vn##.mart20.banner
+
+! 2023-06-16 https://craxpro.io
+crax.pro##[href="https://xlead.pw"]
+crax.pro##div.samItem:nth-of-type(3)
+craxpro.io##[href="https://xlead.pw"]
+craxpro.io##div.samItem:nth-of-type(3)
+
+! 2023-06-16 https://vietnix.vn
+vietnix.vn##.elementor-sticky--effects.elementor-section--handles-inside.elementor-sticky--active.elementor-sticky.elementor-widget-image.elementor-widget.elementor-hidden-mobile.elementor-hidden-tablet.e-transform.elementor-element-9ac78fd.elementor-element > .elementor-widget-container
+vietnix.vn##.elementor-location-header.elementor-102764.elementor
+
+! 2023-06-17 https://pastehook.com
+pastehook.com##.bd-lead > .is-multiline.columns
+
+! 2023-06-19 https://moddingzone.in
+moddingzone.in## ins.adsbygoogle
+moddingzone.in###wrapper > .container
+moddingzone.in##.fixed-header-on.no-header-img.topbar-transparent.header-ads-desktop.main_menu.one-mobile-menu.main-menu-mobile-on
+moddingzone.in###footer
+
+! 2023-06-19 https://apkupload.in
+apkupload.in##.adb
+
+! 2023-06-19 https://www.europeup.com
+www.europeup.com##.adsbygoogle
+www.europeup.com##.left-image
+www.europeup.com###footer
+www.europeup.com###header
+www.europeup.com##.download_paid
+
+! 2023-06-21 https://web1s.info
+web1s.info##.footer
+web1s.info##.text-center.mt-2
+web1s.info##.isqcoyqhqcsbvbummwruymmisqcoyqhqcsbvbu.isqcoyqhqcsbvbummtupntmmisqcoyqhqcsbvbu
+web1s.info##.isqcoyqhqcsbvbummorvmownupruqmwruymmisqcoyqhqcsbvbu.isqcoyqhqcsbvbummorvmownupruqmmisqcoyqhqcsbvbu
+web1s.info##.qbpvvfnexyqsoskfjhsjkdfhommwruymmqbpvvfnexyqsoskfjhsjkdfho.qbpvvfnexyqsoskfjhsjkdfhommtupntmmqbpvvfnexyqsoskfjhsjkdfho
+web1s.info##.qbpvvfnexyqsoskfjhsjkdfhommorvmownupruqmwruymmqbpvvfnexyqsoskfjhsjkdfho.qbpvvfnexyqsoskfjhsjkdfhommorvmownupruqmmqbpvvfnexyqsoskfjhsjkdfho
+web1s.info##.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummwruymmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummtupntmmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju
+web1s.info##.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummorvmownupruqmwruymmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummorvmownupruqmmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju
+
+! 2023-05-07 https://phimlau.com
+phimlau.com##.ad-preload
+phimlau.com##.ad-bottom-right
+phimlau.com##.ad-ballon-right
+phimlau.com##.ad-ballon-left
+phimlau.com##.ad-300.right-box.ad-container
+phimlau.com##div.right-box:nth-of-type(9)
+phimlau.com##body > .row > .col-lg-12
+phimlau.com##footer
+phimlau.com##div.right-box:nth-of-type(5)
+phimlau.com##.block-tags
+phimlau.com##.block-comments.page-single.block-wrapper
+phimlau.com##.movie-info > .row > .col-lg-12
+phimlau.com###watch-block > .row > .col-lg-12
+
+! 2023-05-07 https://nsaneforums.com
+nsaneforums.com###comment-1786731_wrap > .cPost_contentWrap > .ipsPadding_vertical.ipsBorder_top.ipsResponsive_hidePhone > .ipsType_richText.ipsType_light
+nsaneforums.com###comment-1786656_wrap > .cPost_contentWrap > .ipsPadding_vertical.ipsBorder_top.ipsResponsive_hidePhone > .ipsType_richText.ipsType_light
+
+! 2023-05-08 https://genk.vn
+genk.vn##.hide-on-loading.clearfix.genk-footer-wrapper
+genk.vn##.clearfix.klw-new-socials
+
+! 2023-05-12 https://ssphim.cc
+ssphim.cc###ads-preload
+
+! 2023-05-12 https://www.netflix.com
+www.netflix.com##.uma-modal.nf-modal
+www.netflix.com##.error.message
+
+! 2023-05-13 https://account.ipvanish.com
+account.ipvanish.com###footer
+
+! 2023-05-14 https://hacktacks.com
+hacktacks.com##.adsbygoogle
+hacktacks.com##.site-main
+hacktacks.com##.site-footer
+hacktacks.com##.site-header
+hacktacks.com###tp-text
+
+! 2023-05-14 https://indianshortner.com
+indianshortner.com##.blog-item
+indianshortner.com###cookie-pop
+indianshortner.com##.text-white.bg-primary
+indianshortner.com##h4
+indianshortner.com##.animated.zoomIn.wow.text-center.py-5
+
+! 2023-05-16 https://baomoi.com
+||api.baomoi.com/a465/n/ext/test?data=abstatus,6,168$xhr,1p
+||api.baomoi.com/a465/n/trackpv/?aid=&uid=&siteId=1987681391595708118&category=the-gioi&atmrk=0.31922475611920464$image,1p
+||adtima-media.zascdn.me/*.jpg$image,domain=baomoi.com
+baomoi.com##.gItNcged
+baomoi.com##.bm_FX
+baomoi.com##div.bm_Fw:nth-of-type(5)
+baomoi.com##ul:nth-of-type(2)
+
+! 2023-05-16 https://cordtpoint.co.in
+cordtpoint.co.in##.adb
+
+! 2023-05-22 https://nguyenvanbao.com
+nguyenvanbao.com##.text-center > p
+nguyenvanbao.com##.footer
+nguyenvanbao.com##.site-logo
+nguyenvanbao.com##.text-center > .text-center
+
+! 2023-05-22 https://www.byboe.com
+www.byboe.com##ins.adsbygoogle
+www.byboe.com##p
+www.byboe.com##h2.text-center
+www.byboe.com##.footer
+www.byboe.com##.site-logo
+
+! 2023-05-22 https://anhdep24.com
+anhdep24.com##.site-logo
+anhdep24.com##p
+anhdep24.com##h2.text-center
+anhdep24.com##.footer
+
+! 2023-05-22 https://link1s.com
+link1s.com##.navbar-default.navbar
+link1s.com##h4
+
+! 2023-05-22 https://app.trangchu.news
+app.trangchu.news##.hfeed.container.grid-container.site
+app.trangchu.news##.footer-bar-align-right.footer-bar-active.site-footer
+app.trangchu.news##.stuckElement.sub-menu-right.has-menu-bar-items.nav-align-right.main-navigation.has-branding.auto-hide-sticky
+
+! 2023-09-03 https://weather.com
+weather.com##.DaybreakLargeScreen--regionSidebar--20oS9.regionSidebar.region-sidebar
+
+! 2023-09-22 https://mbjremix.com
+mbjremix.com##.adb
+
+! 2023-09-22 https://magiamgia.com
+magiamgia.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
+
+! 2023-09-27 https://paste.ee
+paste.ee##.footer
+paste.ee##.alert-info.alert
+paste.ee##.alert-success.alert
+
+! 2023-08-23 https://www.snbforums.com
+www.snbforums.com##.leaderboard_snbad
+www.snbforums.com###div-gpt-ad-300-right
+www.snbforums.com###div-gpt-ad-300-inline1
+www.snbforums.com###div-gpt-ad-300-inline2
+www.snbforums.com###div-gpt-ad-300-inline3
+www.snbforums.com##.Notices.FloatingContainer
+www.snbforums.com##.js-bottomFixTarget.u-bottomFixer
+www.snbforums.com##div.widget-container.widget-group-no-name.section:nth-of-type(2)
+
+! 2023-08-25 https://www.sierrawireless.com
+www.sierrawireless.com###onetrust-consent-sdk
+www.sierrawireless.com##.intercom-namespace
+www.sierrawireless.com###onetrust-consent-sdk
+
+! 2023-09-27 https://matcha-jp.com
+matcha-jp.com##.cookie-info
+
+! 2023-09-27 https://logistics.lazada.vn
+logistics.lazada.vn###lex-footer
+logistics.lazada.vn##.footer-address
+logistics.lazada.vn##[href^="https://survey.alibaba.com/apps/zhiliao/m0LIcuT_Q"]
+
+! 2023-09-27 https://www.ninjavan.co
+www.ninjavan.co##div.kontent-type\=container:nth-of-type(2)
+www.ninjavan.co##.dVnmFA.styles__BannerSection-y04tzl-0.bRGpeP.styles__PaddedContainer-sc-1t7gjzb-0
+www.ninjavan.co##.kpaBma.styles__BannerSection-y04tzl-0.ecCPqF.styles__PaddedContainer-sc-1t7gjzb-0
+www.ninjavan.co##.jpiRYf.styles__StyledFooter-sc-6ejeta-1.iURrBF.styles__PaddedContainer-sc-1t7gjzb-0
+
+! 2023-09-20 https://check-host.net
+check-host.net##.atrholkt11wr.mt-4
+check-host.net##.atrholkt11wr.mt-2 > .relative.nrkzbcharzcont
+
+! 2023-09-29 https://vnit.vn
+vnit.vn##.banner > [href="https://vnit.vn/sua-laptop-lay-lien-uy-tin/"]
+vnit.vn##footer
+||vnit.vn/keyboardtest/bacgr.jpg$image
+
+! 2023-09-29 https://keyboard-test.space
+||keyboard-test.space/bacgr.jpg$image
+keyboard-test.space##footer
+
+! 2023-09-30 https://lienquan.garena.vn
+lienquan.garena.vn##.img_18
+
+! 2023-10-01 https://laixehaivan.edu.vn
+laixehaivan.edu.vn##.hotline-phone-ring-wrap
+
 ! 2023-05-07 https://movie.vkool.org
 ||me88vn2.com^
 movie.vkool.org##.box-rating
@@ -237,12 +994,25 @@ djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
 ! 2023-05-06 https://thecubexguide.com
 thecubexguide.com##[src="//ad.a-ads.com/2199444?size=336x280"]
 
-! 2023-05-05 https://dev.miuiflash.com
-dev.miuiflash.com###div-gpt-ad-1674557068084-0
-dev.miuiflash.com###div-gpt-ad-1674557199794-0
+! 2023-06-14 https://dev.miuiflash.com
 dev.miuiflash.com###div-gpt-ad-1674556925254-0
 dev.miuiflash.com###div-gpt-ad-1674556967582-0
+dev.miuiflash.com###div-gpt-ad-1674557068084-0
+dev.miuiflash.com###div-gpt-ad-1674557199794-0
+dev.miuiflash.com###div-gpt-ad-1686117595695-0
+dev.miuiflash.com###div-gpt-ad-1686117682241-0
+dev.miuiflash.com###div-gpt-ad-1686117822643-0
+dev.miuiflash.com###div-gpt-ad-1686117884470-0
 dev.miuiflash.com##.mb-4.aboutFile.col-md-12.col-lg-6
+
+! 2023-05-10 https://uploady.io
+uploady.io##tr:nth-of-type(1)
+uploady.io##tr:nth-of-type(2)
+uploady.io##tr:nth-of-type(3)
+uploady.io##tr:nth-of-type(4)
+uploady.io##tr:nth-of-type(5)
+uploady.io##tr:nth-of-type(6)
+uploady.io##.table-bordered.bg-white.mt-2.table .table-success.text-center > .d-prem.rounded.text-white.bg-success.btn-sm.btn
 
 ! 2023-05-04 https://uploady.io
 uploady.io##.text-center.p-2.bg-white.col-6
@@ -743,7 +1513,8 @@ moddroid.com###ad_block_reminder_dialog
 modxda.com##.ads
 modxda.com##.customad
 
-! 2023-02-02 https://www.right.com.cn
+! 2023-08-08 https://www.right.com.cn
+www.right.com.cn##.a_t.wp
 www.right.com.cn##.a_pt
 www.right.com.cn##.a_mu
 www.right.com.cn###sitefocus
@@ -915,6 +1686,26 @@ animevi.net##.div-warning-text
 animevi.net##.div-list-tag-content.col-sm-12
 animevi.net##.div-view-video > .clearfix.section-bar
 
+! 2023-05-13 https://apkupload.in
+apkupload.in##.adb
+
+! 2023-08-16 https://a2zapk.io
+a2zapk.io##.Tags
+a2zapk.io##.WebF
+a2zapk.io##.Right
+a2zapk.io##.modalpop
+a2zapk.io###dlbtn > span
+a2zapk.io##.btnDownload1
+a2zapk.io##.DownLoadBotton span
+a2zapk.io##div.NewBlock:nth-of-type(1)
+a2zapk.io###div-gpt-ad-1689930918138-0
+a2zapk.io###div-gpt-ad-1689952596717-0
+a2zapk.io###div-gpt-ad-1689952633186-0
+a2zapk.io##div.ArticleLand:nth-of-type(5)
+a2zapk.io##div.ArticleLand:nth-of-type(6)
+a2zapk.io##[href="https://telegram.me/a2zapkofficial"]
+a2zapk.io##div.ArticleLand > [href="https://telegram.me/a2zapkofficial"]
+
 ! 2022-11-23 https://a2zapk.com
 a2zapk.com##.Tags
 a2zapk.com##.StyleTags > ul
@@ -1022,7 +1813,8 @@ phimvietsub.co##.ai-viewport-1.code-block-34.code-block
 
 ! CodeVN
 
-! 2022-11-30 https://namlee.net
+! 2023-09-23 https://ios.codevn.net
+ios.codevn.net##.adsbygoogle
 namlee.net##.entry-tags
 namlee.net##.adsparallax
 namlee.net##.article-footer
@@ -1553,9 +2345,28 @@ vuighe.net##.banner-masthead.masthead
 vnpt.com.vn##.apps
 vnpt.com.vn##.sub-footer
 
-! 2021-06-08 https://xem.li
+! 2023-08-30 https://xem.li
+xem.li###pixels
+xem.li##.form_opt
+xem.li###parameters
+xem.li##h4:nth-of-type(2)
+xem.li##h4:nth-of-type(1)
 xem.li##.main > .container
+xem.li##div.form-group:nth-of-type(6)
+xem.li##div.form-group:nth-of-type(4)
+xem.li##div.form-group:nth-of-type(10)
 xem.li##.cc-color-override-1971232268.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
+
+||7wjhwd7.com^
+
+! 2023-07-23 https://rapidcloud.cc
+rapidcloud.cc##.position-absolute.p-5.footer
+rapidcloud.cc##.navbar-expand-lg.navbar
+rapidcloud.cc##.sharetabs
+rapidcloud.cc###sharebuttons
+rapidcloud.cc##div.alert-success.alert.countdown:nth-of-type(1)
+rapidcloud.cc##widgetbot-crate
+rapidcloud.cc##.report
 
 ! 2021-06-26 https://discord.com
 discordapp.com###app-mount > div:nth-of-type(2)
@@ -2356,13 +3167,6 @@ www.rfi.fr##.o-ad-container--with-background.o-ad-container--banner-top.o-ad-con
 www.sendo.vn##.panelContent_3c89
 www.silisoftware.com##table
 www.smarthomebeginner.com###ezmobfooter
-www.snbforums.com##.leaderboard_snbad
-www.snbforums.com###div-gpt-ad-300-inline1
-www.snbforums.com###div-gpt-ad-300-inline2
-www.snbforums.com###div-gpt-ad-300-inline3
-www.snbforums.com##.Notices.FloatingContainer
-www.snbforums.com##.js-bottomFixTarget.u-bottomFixer
-www.snbforums.com##div.widget-container.widget-group-no-name.section:nth-of-type(2)
 www.spectra.de##.cookie_wrapper
 www.tapchinuocduc.com###sp-footer2
 www.techinferno.com###elGuestTerms
@@ -2478,6 +3282,7 @@ voz.vn##div.message--post.message:nth-of-type(3)
 voz.vn##div.message--post.message:nth-of-type(4)
 voz.vn##div.message--post.message:nth-of-type(5)
 
+||voz.vn/attachments/*.1940420/$image
 ||voz.vn/attachments/*.190397/$image
 ||voz.vn/attachments/*.218479/$image
 ||voz.vn/attachments/*.218481/$image
@@ -2497,6 +3302,11 @@ voz.vn##div.message--post.message:nth-of-type(5)
 ||voz.vn/attachments/*.968953/$image
 ||voz.vn/attachments/*.1325579/$image
 ||voz.vn/attachments/*.1714660/$image
+||statics.voz.tech/data/avatars/*/*/1427823.jpg$image
+||statics.voz.tech/data/avatars/*/*/1690005.jpg$image
+||statics.voz.tech/data/avatars/*/*/1708098.jpg$image
+||statics.voz.tech/data/avatars/*/*/391960.jpg$image
+||statics.voz.tech/data/avatars/*/*/70050.jpg$image
 ||voz.vn/data/avatars/*/22911.jpg$image
 ||voz.vn/data/avatars/*/23665.jpg$image
 ||voz.vn/data/avatars/*/27028.jpg$image
@@ -3128,9 +3938,13 @@ upfiles.io##.faqs-accordian.accordion
 upfiles.io###file-captcha > .ad-element
 upfiles.io##body > .container > .text-center
 
-! 2022-08-21 https://dropgalaxy.com
+! 2023-09-20 https://dropgalaxy.com
+dropgalaxy.com###apkad2
+dropgalaxy.com##.modalpop
 dropgalaxy.com###modalpop
 dropgalaxy.com##.priceTable
+dropgalaxy.com###tokenstatus
+dropgalaxy.com##.float-right
 dropgalaxy.com##.pro.features
 dropgalaxy.com##.text-primary
 dropgalaxy.com##.pb-5.pt-4.row
@@ -3148,6 +3962,62 @@ dropgalaxy.com##.mb-1.pr-5.btn-block.btn-danger.btn
 dropgalaxy.com##.downloadPage.page.pt-5.container > center
 dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
 dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
+dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=0&controls=0"]
+
+! 2023-09-09 https://fastcare.vn
+fastcare.vn##.active.popup-block
+fastcare.vn##.socials
+fastcare.vn##.img_ads_ct.lazy
+
+! 2023-09-11 https://viendidong.com
+viendidong.com##.dock-hotline
+viendidong.com##.zalo-chat-widget
+
+! 2023-09-11 https://minhtuanmobile.com
+minhtuanmobile.com##.modal-dialog-centered.modal-dialog > .modal-content
+
+! 2023-09-12 https://www.phukiensamsung.com
+www.phukiensamsung.com##.mobile.fixFace
+
+! 2023-07-29 https://www.mobifone.vn
+www.mobifone.vn##.call-online
+
+! 2023-09-23 https://links.apksvip.com
+links.apksvip.com##footer
+links.apksvip.com##.text-left
+links.apksvip.com###cookie-pop
+links.apksvip.com##.adsbygoogle
+links.apksvip.com##.box-main > h4
+links.apksvip.com##.navbar-default.navbar
+
+! 2023-09-23 https://hoanghapc.vn
+hoanghapc.vn##.popup-container
+
+! 2023-09-26 https://www.topcv.vn
+www.topcv.vn###anti-scam
+www.topcv.vn###footer-desktop
+www.topcv.vn###support-ticket-root
+www.topcv.vn##.hidden-sm.hidden-xs
+www.topcv.vn##.box-white.box-sharing
+www.topcv.vn##.in.fade.modal-backdrop
+tuyendung.topcv.vn##.exit-intent-popup
+www.topcv.vn##.in.show-footer-checkbox.fade.modal
+www.topcv.vn##body,html:style(overflow: auto !important; position: initial !important;)
+
+! 2023-05-08 https://thuyetminhviet.com
+thuyetminhviet.com###floating_ads_bottom_textcss_container
+thuyetminhviet.com###ouibounce-modal
+
+! 2023-05-13 https://cordtpoint.co.in
+cordtpoint.co.in##.adb
+
+! 2023-05-13 https://www.europeup.com
+www.europeup.com###header
+www.europeup.com###footer
+www.europeup.com##.report
+www.europeup.com##.left-image
+www.europeup.com##.download_paid
+www.europeup.com##div.col-2.lft:nth-of-type(4)
 
 ! 2021-07-11 https://chedrive.com
 chedrive.com###gdpr-cookie-notice
@@ -3313,8 +4183,11 @@ uploadev.org###gdpr-cookie-notice
 uploadev.org##.offersfree > .text-center > .dtime
 uploadev.org##.offersfree > .text-center > li > .fa-check.fa
 
-! 2023-04-13 https://userupload.net
+! 2023-09-18 https://userupload.net
+userupload.net##.done
+userupload.net##.note
 userupload.net##.mb-4.col-md-4 .report
+userupload.net##.mb-4.aboutFile.col-md-6
 
 ! 2021-07-22 https://userupload.in
 userupload.net,userupload.in##span:nth-of-type(4)
