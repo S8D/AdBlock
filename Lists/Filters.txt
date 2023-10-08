@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 231002b
+! Version: 231009a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -189,6 +189,7 @@ id.4gre.net##.slick-track
 ||source.unsplash.com/random$image
 
 ! 2023-09-25 https://go.tnetz.pro
+go.tnetz.pro##.text-center.mb-3
 ||tnetz.pro/nenweb.png$image
 ||haycafe.vn/wp-content/uploads/2022/05/Hinh-nen-cute-mau-xanh-duong-bau-troi.jpg$image
 ||techvccloud.mediacdn.vn/280518386289090560/2021/6/8/mang-internet-la-gi-3-16231378908761663023686.jpg$image
@@ -478,6 +479,51 @@ vnnic.vn##.vnnic-banner-wide
 ! 2023-08-09 https://ph5gvpn.online
 ||i.pinimg.com/564x/bb/57/a9/bb57a9f862f58f63ef5f405907c6fb6e.jpg$image
 ||media2.giphy.com/media/XxePWdpdifKZr1Uhix/giphy.gif$image
+
+! 2023-10-03 https://4gviet.com
+||4gviet.com/theme/PNG/sp.png$image
+
+! 2023-10-04 https://www.up-4ever.net
+www.up-4ever.net##.pl-5.pr-5.appCookieNotice.hide
+www.up-4ever.net##.pt-0.lighten-5.blue-grey.page-footer
+www.up-4ever.net##.text-center.table-borderless.table-striped.table
+www.up-4ever.net##.mb-5.text-center.content-section.col-sm-12
+www.up-4ever.net##.appHeader
+www.up-4ever.net##.section > .blue-gradient-mask
+www.up-4ever.net##.row > .text-uppercase.text-center.pt-5.mb-3
+www.up-4ever.net##.mb-2.m-0
+
+! 2023-10-04 https://datavpn.io.vn
+||i.postimg.cc/3N8nndgd/IMG-4305.jpg$image
+||datavpn.io.vn/theme/photo/batnhac1.gif$image
+datavpn.io.vn##.text-center.mb-12
+||i.postimg.cc/Vvg3VWRV/IMG-3875.png$image
+||i.postimg.cc/T14LMR0Q/IMG-3847.jpg$image
+datavpn.io.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
+datavpn.io.vn##.gif-container
+||datavpn.io.vn/theme/photo/*.mp3
+datavpn.io.vn##.snowflakes
+
+! 2023-10-04 https://vpngiare.net
+vpngiare.net##.w-100.p-3 > .text-center
+vpngiare.net##[src="https://i.postimg.cc/D0nhmn4R/6fr-unscreen.gif"]
+
+! 2023-10-06 https://freenote.biz
+freenote.biz###cookie-pop
+freenote.biz##.pt-4.mt-4.text-md-left.text-center.page-footer
+
+! 2023-10-06 https://ht4gvpn.com
+ht4gvpn.com##.text-center.mb-12
+ht4gvpn.com##.gif-container
+ht4gvpn.com##.active.lg.right.lh-message.lh-widget
+ht4gvpn.com##.text-center.mb-3
+ht4gvpn.com##div:nth-of-type(12)
+ht4gvpn.com##.mr-1.btn-black.btn.ant-dropdown-trigger
+ht4gvpn.com##.ant-drawer-right.ant-drawer
+
+! 2023-10-08 https://voz.vn
+||data.voz.vn/avatars/*/*/1691088.jpg$image
+
 
 ! 2023-08-10 https://emojipedia.org
 emojipedia.org##.md\:min-w-\[400px\].min-w-\[300px\].h-\[257px\].relative.AdContainer_ad__DSJgp
