@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 231208b
+! Version: 231208c
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -193,46 +193,6 @@ didonghan.vn##.popupImage
 
 ! 2023-11-07 https://phimmoiyyy.net
 phimmoiyyy.net###contenedor > .module_single_ads
-
-! 2023-12-07 https://www.apkmoddone.com
-file.apkmoddone.com##.pGV
-file.apkmoddone.com##.pSh
-file.apkmoddone.com###aChp
-file.apkmoddone.com##.pFoot
-file.apkmoddone.com##.brdCmb
-file.apkmoddone.com##.header
-file.apkmoddone.com##.section.mobMn
-file.apkmoddone.com##p:nth-of-type(1)
-file.apkmoddone.com##p:nth-of-type(2)
-file.apkmoddone.com##p:nth-of-type(3)
-file.apkmoddone.com##p:nth-of-type(4)
-file.apkmoddone.com##p:nth-of-type(5)
-file.apkmoddone.com##p:nth-of-type(6)
-file.apkmoddone.com##p:nth-of-type(7)
-file.apkmoddone.com##p:nth-of-type(8)
-file.apkmoddone.com##p:nth-of-type(9)
-file.apkmoddone.com##p:nth-of-type(10)
-file.apkmoddone.com##p:nth-of-type(11)
-file.apkmoddone.com##p:nth-of-type(12)
-file.apkmoddone.com##p:nth-of-type(13)
-file.apkmoddone.com##p:nth-of-type(14)
-file.apkmoddone.com##p:nth-of-type(15)
-file.apkmoddone.com##p:nth-of-type(16)
-file.apkmoddone.com##p:nth-of-type(17)
-file.apkmoddone.com##p:nth-of-type(18)
-file.apkmoddone.com##p:nth-of-type(19)
-file.apkmoddone.com##p:nth-of-type(20)
-file.apkmoddone.com##p:nth-of-type(21)
-file.apkmoddone.com##p:nth-of-type(22)
-file.apkmoddone.com##tr:nth-of-type(1)
-file.apkmoddone.com##tr:nth-of-type(2)
-file.apkmoddone.com##.slide.section.mobMn
-file.apkmoddone.com##.itm.sml.aTtl.pTtl > span
-www.apkmoddone.com###fNtf
-www.apkmoddone.com##.arWG
-www.apkmoddone.com###anchor-ad
-www.apkmoddone.com###addons-widget
-www.apkmoddone.com##div.sAG:nth-of-type(6)
 
 ! 2023-10-10 https://tuigoihang.vn
 tuigoihang.vn##.chaty-channel-list
