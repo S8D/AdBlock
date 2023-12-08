@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 231208a
+! Version: 231208b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -11,6 +11,7 @@
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com|mega4upload.com
 ##div[class^="jw-logo"]
 
+dekiru.vn##.modal-container
 vn-z.vn,voz.vn##.p-body-sidebar
 mega4up.com,mega4upload.com##h5
 ipacrack.com,linksvip.net##.tags
@@ -27,7 +28,6 @@ bkhost.vn,www.zcine.net##.in.fade.modal
 www.trejj.net,apk4free.net##.copyrights
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
-
 uploadrar.com,chedrives.com##.menufooter
 uploady.io,uploadydl.com##.alert.btn-link
 drop.download,mixloads.com##.py-3.header_
@@ -36,11 +36,9 @@ www.4funbox.com,www.terabox.com##.drainage
 mega4up.org,mega4upload.com##.section-title
 ipacrack.com,vietbeginner.com###site-footer
 app.trangchu.news,pastehub.net##.text-center
-distrowatch.com,dnsleaktest.com,upfiles.io##p
 trainghiemso.vn,wiki.tino.org##.jeg_post_tags
 bayfiles.com##.text-center.col-md-6.col-xs-12
 !dekiru.vn,www.speedtest.net##.modal-container
-dekiru.vn##.modal-container
 hexupload.net,uploadydl.com##tr:nth-of-type(3)
 www.ipa.tuandb.name.vn,phongduy.com##.comments
 rapidgator.net,hexupload.net##td:nth-of-type(3)
@@ -86,6 +84,7 @@ rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(6)
 iosddl.net,secufiles.com##.show.cookiealert.text-center.alert
 djxmaza.in,thecubexguide.com,dev.miuiflash.com###featuredimage
 www.ip2location.com,www.ipa4fun.com##div:nth-of-type(4)-holder
+vpngame.pro,v1.hack5g.com,techrobot.com,dll-files.com##.overlay
 mega4upload.com,mega4up.com,mega4up.org##.card-body > .mb-3.row
 vnav.vn,allsolu4u.vn,hdvietnam.com,www.hdvietnam.xyz###logoBlock
 drop.download,fastclick.to,mixloads.com##div.mb-5:nth-of-type(4)
@@ -103,6 +102,7 @@ short.pandaznetwork.com,pandaznetwork.com##.animated.zoomIn.wow.text-center.py-5
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
 wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
+anhdep24.com,www.byboe.com,www.rawask.com,distrowatch.com,dnsleaktest.com,upfiles.io##p
 uploady.io,hexupload.net,dev.miuiflash.com,uploadydl.com##.position-absolute.p-5.footer
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
 uploady.io,uploadydl.com##.text-center.table-striped.table-bordered.table .btn-primary.btn
@@ -110,12 +110,17 @@ lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.b
 uploady.io,uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(1)
 uploady.io,uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(3)
 clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
+apkupload.in,mbjremix.com,apkupload.in,cordtpoint.co.in,pn.cgchotbox.com,pandaznetwork.freemodsapp.xyz##.adb
 free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com,anonfiles.com,filedot.to,urlsh.us##h2
 ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(3)
 
-uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+4gviet.com,id.4gre.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
 
-uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
+nam4g.com,net5g.pro,dvsteam.net,vpndata.xyz,ht4gvpn.com,go.tnetz.pro,csadata4g.me,v1.hack5g.com,hunglapis.id.vn,vpndata.takeshi.dev##.text-center.mb-3
+
+sky4g.com,shopvpn.net,4ghatde.net,go.tnetz.pro,4gsinhvien.me,wibuvpn.store,4gmienphi.asia,panel.shopvpn4g.vn,wibuvpn.yunagrp.com,hoangai.fun,nam4g.com##.active.tbpopup
+
+nam4g.com,ht4gvpn.com,datavpn.io.vn,5gsinhvien.com,skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
 
 chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net,trainghiemso.vn,thuthuatjb.com,gocmod.com##.comments-area
 
@@ -123,36 +128,41 @@ vandien.vn,vanphukien.com,fpttoanquoc.com,fpttelecom.online,vancongnghiephp.com,
 
 ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
 
+uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+
+uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
+
 clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(2)
 
-bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
+win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
 
-p-load.io,chedrive.com,uploadydl.com,uploadocean.com,dev.miuiflash.com,userupload.net,www.centfile.com,thecubexguide.com,djxmaza.in##.report
+p-load.io,chedrive.com,uploadydl.com,uploadocean.com,dev.miuiflash.com,userupload.net,www.centfile.com,thecubexguide.com,djxmaza.in,www.europeup.com,rapidcloud.cc##.report
 
 upload.ac,filerio.in,drop.download,ddownload.com,uploadydl.com,dev.miuiflash.com,userupload.net,userupload.in,uploady.io##.navbar-expand-lg.navbar
 
 linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com,techy.veganab.co,pandaznetwork.com##h4
 
-win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
+disheye.com,hacktacks.com,finance.cordtpoint.co.in,bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
 
 ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com,www.myfutureguide.in##.header
 
-filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
-
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,get.megaurl.in###link-view > p
+
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
 
 wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com,pandaznetwork.com##.text-left
 
-wi.cr,voz.vn,vn-z.vn,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,browserleaks.com,dailyuploads.net,xe.baogiaothong.vn,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn##.adsbygoogle
+www.expandurl.net,www.europeup.com,filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
 
-wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,beta.shortearn.eu,dl.tech-story.net,123link.ghego.site,download.baominh.tech,123link.carpartsviet31.site,short.pandaznetwork.com,pandaznetwork.com,techy.veganab.co,count.vipurl.in,mneylink.com###cookie-pop
+wi.cr,voz.vn,vn-z.vn,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz##.adsbygoogle
 
-ouo.io,tiki.vn,we25.vn,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,link.karanpc.com,ww.speedtest.net,dailyuploads.net,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,surfshark.com,vnmod.net,member.ivacy.com##.footer
+wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,note1s.com,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,freenote.biz,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,count.vipurl.in,techy.veganab.co,links.apksvip.com,beta.shortearn.eu,dl.tech-story.net,pandaznetwork.com,indianshortner.com,123link.ghego.site,download.baominh.tech,short.pandaznetwork.com,123link.carpartsviet31.site###cookie-pop
 
-gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,giaminhgroup.com,ipgeolocation.io,www.hotcourses.vn,www.iplocation.net,vienthongtayninh.vn,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online,xemphimplus.site,phimmoinay.tv###footer
+gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,chillhay.in,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,motchill.info,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,phimmoinay.tv,moddingzone.in,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,www.europeup.com,giaminhgroup.com,ipgeolocation.io,xemphimplus.site,phimmoichilly.com,www.hotcourses.vn,rubicmarketing.com,www.iplocation.net,vienthongtayninh.vn,account.ipvanish.com,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online###footer
 
-wi.cr,ckk.ai,clk.sh,oko.sh,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,www.file-upload.com,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site,www.centfile.com,techy.veganab.co,movie.vkool.org,dienmaycholon.vn,www.myfutureguide.in,mneylink.com,count.vipurl.in##footer
+ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com##.footer
+
+wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,phimlau.com,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,movie.vkool.org,count.vipurl.in,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 
 !_________________________________
 www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
@@ -176,9 +186,6 @@ www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:
 youtube.com##:matches-path(/shorts) body:remove()
 
 !_________________________________
-4gviet.com,id.4gre.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
-sky4g.com,shopvpn.net,4ghatde.net,go.tnetz.pro,4gsinhvien.me,wibuvpn.store,4gmienphi.asia,panel.shopvpn4g.vn,wibuvpn.yunagrp.com##.active.tbpopup
-skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
 
 ! 2023-10-27 https://didonghan.vn
 didonghan.vn##.wr
@@ -192,7 +199,6 @@ file.apkmoddone.com##.pGV
 file.apkmoddone.com##.pSh
 file.apkmoddone.com###aChp
 file.apkmoddone.com##.pFoot
-file.apkmoddone.com##footer
 file.apkmoddone.com##.brdCmb
 file.apkmoddone.com##.header
 file.apkmoddone.com##.section.mobMn
@@ -244,8 +250,8 @@ nhathuoc365.vn##.clearfix.call_me
 
 ! 2023-11-30 https://doctruyenchufull.com
 doctruyenchufull.com##.topbanner.text-center
-doctruyenchufull.com##.p-md-5.py-5.px-3.blog-post > .text-center
 doctruyenchufull.com##div.text-center:nth-of-type(4)
+doctruyenchufull.com##.p-md-5.py-5.px-3.blog-post > .text-center
 
 ! 2023-11-30 https://mobilecity.vn
 mobilecity.vn###gototop
@@ -275,7 +281,6 @@ threadreaderapp.com##.pb-4.top-ad.container
 ! 2023-05-13 https://indianshortner.com
 indianshortner.com##h4
 indianshortner.com##.blog-item
-indianshortner.com###cookie-pop
 indianshortner.com##.text-white.bg-primary
 indianshortner.com##.animated.zoomIn.wow.text-center.py-5
 
@@ -288,11 +293,9 @@ ukrainefrontlines.com##.wpd-bubble-count-second
 thuyetminhviet.com###floating_ads_bottom_textcss_container
 
 ! 2023-06-17 https://cordtpoint.co.in
-cordtpoint.co.in##.adb
 cordtpoint.co.in###status
 cordtpoint.co.in##.site-header
 cordtpoint.co.in##.site-content
-finance.cordtpoint.co.in##.site-footer
 cordtpoint.co.in##.site-info > .hm-container
 cordtpoint.co.in##.header-main-area > .hm-container
 x.cordtpoint.co.in##.mh-container-outer.mh-container
@@ -330,20 +333,16 @@ id.4gre.net##.slick-track
 
 ! 2023-11-30 https://go.tnetz.pro
 ||tnetz.pro/nenweb.png$image
-go.tnetz.pro##.text-center.mb-3
 ||haycafe.vn/wp-content/uploads/2022/05/Hinh-nen-cute-mau-xanh-duong-bau-troi.jpg$image
 ||thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-sac-mau-dan-xen-dep_100021530.jpg$image
 ||techvccloud.mediacdn.vn/280518386289090560/2021/6/8/mang-internet-la-gi-3-16231378908761663023686.jpg$image
 
 ! 2023-10-11 https://vpngame.pro
-vpngame.pro##.overlay
 vpngame.pro##div.d-inline-block.dropdown:nth-of-type(2)
 vpngame.pro##.active.lg.right.arcontactus-message.arcontactus-widget
 ||toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-anime-cute.jpg$image
 
 ! 2023-11-20 https://v1.hack5g.com
-v1.hack5g.com##.overlay
-v1.hack5g.com##.text-center.mb-3
 v1.hack5g.com##div#test:nth-of-type(6)
 v1.hack5g.com##div#test:nth-of-type(7)
 v1.hack5g.com##div#test:nth-of-type(5)
@@ -356,16 +355,12 @@ aqvpn.me##.ant-dropdown-trigger.mr-1.btn
 
 ! 2023-10-28 https://5gsinhvien.com
 ||i.imgur.com/7Oqle4x.gif$image
-5gsinhvien.com##.text-center.mb-12
 ||5gsinhvien.com/theme/GIF/nhac.mp3$media,1p
 ||5gsinhvien.com/theme/GIF/banner-5gsinhvien-3.png$image
 ||scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-n%E1%BB%81n-m%C3%A1y-t%C3%ADnh-c%E1%BB%B1c-%C4%91%E1%BA%B9p-Gearvn.jpg$image
 ||scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-n%E1%BB%81n-m%C3%A1y-t%C3%ADnh-c%E1%BB%B1c-%C4%91%E1%BA%B9p-Gearvn.jpg$image
 
 ! 2023-10-29 https://nam4g.com
-nam4g.com##.active.tbpopup
-nam4g.com##.text-center.mb-3
-nam4g.com##.text-center.mb-12
 nam4g.com##.w-100.p-3 > .text-center
 ||i.postimg.cc/s2xv1xVS/hinh-nen-pc-full-hd-002.jpg$image
 ||i.postimg.cc/s2xv1xVS/hinh-nen-pc-full-hd-002.jpg$image
@@ -433,7 +428,6 @@ share247.info##.position-absolute.p-5.footer
 ! 2023-08-25 https://dvsteam.net
 dvsteam.net###dvs-buttons
 dvsteam.net##.show.fade.modal
-dvsteam.net##.text-center.mb-3
 dvsteam.net##.show.fade.modal-backdrop
 dvsteam.net##.active.lg.right.arcontactus-message.arcontactus-widget
 ||dvsteam.net/logodvs.png$image
@@ -444,7 +438,6 @@ dvsteam.net##.active.lg.right.arcontactus-message.arcontactus-widget
 ! 2023-08-25 https://csadata4g.me
 csadata4g.me##.slick-track
 csadata4g.me##.font-size-h1
-csadata4g.me##.text-center.mb-3
 csadata4g.me##.mb-3.v2board-logo
 ||i.gifer.com/SzOV.gif$image
 ||upload.wikimedia.org/wikipedia/commons/2/2a/Csa_4g.png$image
@@ -452,15 +445,15 @@ csadata4g.me##.mb-3.v2board-logo
 ||www.hoasen.edu.vn/tcnh/wp-content/uploads/sites/23/2022/04/contact-us-banner-1.jpg$image
 
 ! 2023-08-29 https://wibuvpn.yunagrp.com
-wibuvpn.yunagrp.com##.active.lg.right.arcontactus-message.arcontactus-widget
-dangnhapvpn.yunagrp.com##.v2board-bg-pixels.mb-0.bg-image.block-rounded.block
 ||media.tenor.com/orMEST6wEYwAAAAC/purple.gif$image
 ||hentaiz.space/theme/v2board/assets/favicons/backgroud.jpg$image
+wibuvpn.yunagrp.com##.active.lg.right.arcontactus-message.arcontactus-widget
+dangnhapvpn.yunagrp.com##.v2board-bg-pixels.mb-0.bg-image.block-rounded.block
 
 ! 2023-08-30 https://api.speed4g.me
-||api.speed4g.me/public/assets/images/background.jpg$image
 ||speed4g.me/theme/GIF/bgr.gif$image
 ||speed4g.me/theme/GIF/bia.png$image
+||api.speed4g.me/public/assets/images/background.jpg$image
 
 ! 2023-07-24 https://skypn.fun
 ||cucdoc.vn/upload/data/images/do-hoa/background/anh-nen-anime-dep-5.jpg$image
@@ -472,7 +465,6 @@ daily4g.com##.text-muted.font-size-sm.font-w700.text-uppercase
 
 ! 2023-10-31 https://hoangai.fun
 ||hoangai.fun/bg1.jpg$image
-hoangai.fun##.active.tbpopup
 
 ! 2023-08-23 https://shopvpn.net
 ||i.gifer.com/*.gif$image
@@ -483,7 +475,6 @@ hoangai.fun##.active.tbpopup
 ! 2023-08-12 https://hunglapis.id.vn
 ||i.imgur.com/N66yQNN.jpg$image
 ||i.imgur.com/N66yQNN.jpg$image
-hunglapis.id.vn##.text-center.mb-3
 
 ! 2023-08-13 https://4gtocdo.click
 ||image.winudf.com/v2/image/YXBwLm5ldHdvcmtyZXNlYXJjaC52cG5fc2NyZWVuXzFfMTUyOTM3MzMxNV8wODQ/screen-1.webp$image
@@ -534,7 +525,6 @@ vpngiare.net###popup-giua-man-hinh
 
 ! 2023-08-19 https://net5g.pro
 ||images.pexels.com/photos/9304329/pexels-photo-9304329.jpeg$image
-net5g.pro##.text-center.mb-3
 
 ! 2023-08-21 https://mangtac.com
 ||i.pinimg.com/564x/b9/fc/7f/b9fc7f461f13e8e6d80659059e044cb3.jpg$image
@@ -568,7 +558,6 @@ free4g.vn##div.text-center:nth-of-type(5)
 free4g.vn##div.text-center:nth-of-type(7)
 
 ! 2023-09-01 https://vpndata.xyz
-vpndata.xyz##.text-center.mb-3
 vpndata.xyz##.hotline-phone-ring-wrap
 ||i.imgur.com/2dNOb4k.png$image
 ||i.imgur.com/c8LSI5n.gif$image
@@ -583,7 +572,6 @@ vpndata.xyz##.hotline-phone-ring-wrap
 
 ! 2023-09-27 https://vpndata.takeshi.dev
 ||i.upanh.org/2023/07/02/62506385_p0fea2161499942c35.jpeg$image
-vpndata.takeshi.dev##.text-center.mb-3
 
 ! 2023-08-26 https://my.texpn.net
 my.texpn.net##.icons
@@ -680,7 +668,6 @@ www.up-4ever.net##.mb-2.m-0
 ! 2023-10-04 https://datavpn.io.vn
 ||i.postimg.cc/3N8nndgd/IMG-4305.jpg$image
 ||datavpn.io.vn/theme/photo/batnhac1.gif$image
-datavpn.io.vn##.text-center.mb-12
 ||i.postimg.cc/Vvg3VWRV/IMG-3875.png$image
 ||i.postimg.cc/T14LMR0Q/IMG-3847.jpg$image
 datavpn.io.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
@@ -693,21 +680,18 @@ vpngiare.net##.w-100.p-3 > .text-center
 vpngiare.net##[src="https://i.postimg.cc/D0nhmn4R/6fr-unscreen.gif"]
 
 ! 2023-10-06 https://freenote.biz
-freenote.biz###cookie-pop
 freenote.biz##.pt-4.mt-4.text-md-left.text-center.page-footer
 
 ! 2023-10-06 https://ht4gvpn.com
-ht4gvpn.com##.text-center.mb-12
 ht4gvpn.com##.gif-container
-ht4gvpn.com##.active.lg.right.lh-message.lh-widget
-ht4gvpn.com##.text-center.mb-3
 ht4gvpn.com##div:nth-of-type(12)
-ht4gvpn.com##.mr-1.btn-black.btn.ant-dropdown-trigger
 ht4gvpn.com##.ant-drawer-right.ant-drawer
+||pbs.twimg.com/media/Fi1ONQ0WAAMfTeo.jpg$image
+ht4gvpn.com##.active.lg.right.lh-message.lh-widget
+ht4gvpn.com##.mr-1.btn-black.btn.ant-dropdown-trigger
 
 ! 2023-10-08 https://voz.vn
 ||data.voz.vn/avatars/*/*/1691088.jpg$image
-
 
 ! 2023-08-10 https://emojipedia.org
 emojipedia.org##.md\:min-w-\[400px\].min-w-\[300px\].h-\[257px\].relative.AdContainer_ad__DSJgp
@@ -720,7 +704,6 @@ www.facebook.com##.xdt5ytf.x78zum5.xs83m0k.x1iyjqo2.x1r8uery.xeuugli.x193iq5w.x1
 www.thegioididong.com##div.boxpromote:nth-of-type(1)
 www.thegioididong.com##.header-top-bar
 www.thegioididong.com##div.boxpromote:nth-of-type(5)
-www.thegioididong.com##.footer
 www.thegioididong.com##.wrapcomment
 www.thegioididong.com##.kwLst
 www.thegioididong.com##.boxpromote
@@ -749,8 +732,6 @@ zingnews.vn#@#.type-text.the-article
 ! 2023-07-07 https://game.nega.vn
 game.nega.vn##.ai-viewport-2.ai-viewport-1.code-block-2.code-block
 
-! 2023-07-07 https://tinde.tech
-
 ! 2023-07-07 https://1short.info
 1short.info##[src="https://jslib.win/storage/guide.mp4"]
 
@@ -766,11 +747,9 @@ linkvip.io##.mb-4 > h4
 ! 2023-07-07 https://note1s.com
 note1s.com##.text-white.bg-primary.px-3.py-5.text-center
 note1s.com##.shadow-sm.bg-primary.navbar-light.navbar-expand-md.navbar
-note1s.com###cookie-pop
 note1s.com##h2
 
 ! 2023-07-07 https://rubicmarketing.com
-rubicmarketing.com###footer
 rubicmarketing.com##.nitro-offscreen.last-row.fullwidth.vc_row-fluid.wpb_row.vc_row
 rubicmarketing.com##div.nitro-offscreen.vc_row-fluid.wpb_row.vc_row:nth-of-type(22)
 rubicmarketing.com##.lazyloaded.nitro-offscreen.vc_row-has-fill.vc_custom_1618499645328.vc_row-fluid.wpb_row.vc_row
@@ -783,7 +762,6 @@ nhacaiuytinvnz.com##.ads1.space-page-wrapper
 nhacaiuytinvnz.com##.relative.space-header-height
 
 ! 2023-07-09 https://smartlink.vip
-smartlink.vip##.footer
 smartlink.vip##.header-container
 
 ! 2023-07-09 https://nhacaiuytinvnz.com
@@ -827,13 +805,11 @@ vneid.dancuquocgia.gov.vn##.logo-container
 
 ! 2023-07-17 https://motchill.info
 motchill.info##.play-tags
-motchill.info###footer
 motchill.info##.box-rating
 
 ! 2023-07-17 https://chillhay.in
 chillhay.in##.ad_float.ad_location
 chillhay.in###page-info > .block
-chillhay.in###footer
 chillhay.in##.detail > .tabs-content
 chillhay.in###comment
 chillhay.in##.block > .below_of_player.ad_location
@@ -862,7 +838,6 @@ paste.bin.sx##div#abDetectorModal.ab-detector-wrap:nth-of-type(7)
 ! 2023-06-05 https://ghostbin.me
 ghostbin.me##center
 ghostbin.me##button
-ghostbin.me##.footer
 
 ! 2023-06-05 https://craxpro.io
 craxpro.io##.random-tips.block
@@ -875,11 +850,8 @@ www.ixl.com###yui_3_18_1_1_1686056636795_1585
 controlc.com##.pad10.rounded10.whiteBG > div > div > [href]
 
 ! 2023-06-06 https://pandaznetwork.freemodsapp.xyz
-pandaznetwork.freemodsapp.xyz##.adb
-pandaznetwork.freemodsapp.xyz##.adsbygoogle
 
 ! 2023-06-15 https://www.rawask.com
-www.rawask.com##p
 www.rawask.com##.pGV
 www.rawask.com##.pSh
 www.rawask.com## span
@@ -888,7 +860,6 @@ www.rawask.com##.zmImg
 www.rawask.com###HTML2
 www.rawask.com##.pCntn
 www.rawask.com##.pFoot
-www.rawask.com##footer
 www.rawask.com##.blogAd
 www.rawask.com##.blogMn
 www.rawask.com##.brdCmb
@@ -929,6 +900,30 @@ luatsux.vn###button-contact-vr
 ! 2023-06-15 https://throwbin.in
 throwbin.in###adModel
 
+! 2023-11-07 https://www.thietbigiaothong24h.com
+www.thietbigiaothong24h.com###dnn_ctr571538_Catalog_ctl01_tabs1-2
+www.thietbigiaothong24h.com###dnn_ctr571538_Catalog_ctl01_tabs1-1 .bodydesktop p
+www.thietbigiaothong24h.com##.ui-state-active.ui-tabs-active.ui-corner-top.ui-state-default
+
+! 2023-05-14 https://disheye.com
+disheye.com##.site-main
+disheye.com##.is-right-sidebar.sidebar.widget-area
+disheye.com##.has-inline-mobile-toggle.site-header
+
+! 2023-05-14 https://dwnld.povathemes.com
+dwnld.povathemes.com##.position-relative.footer
+dwnld.povathemes.com##.mb-20.h4-font.color-primary
+dwnld.povathemes.com##.cookie-pop.bg-color-darkblue
+dwnld.povathemes.com##.border-bottom-light.pb-30.pt-30.header
+dwnld.povathemes.com##.navbar-dark.navbar-expand-lg.navbar-sticky.navbar
+dwnld.povathemes.com##.bg-color-darkblue.hero--dark.hero.space-bottom--lg
+
+! 2023-05-14 https://bastinews.xyz
+bastinews.xyz##body > center
+bastinews.xyz##center:nth-of-type(2)
+bastinews.xyz##.code-block-1.code-block
+bastinews.xyz###div-gpt-ad-1681287792661-0
+
 ! 2023-06-15 https://codebeautify.org
 codebeautify.org##.ezmobtrans.ezmob-footer-desktop.ezo_ad.ezoic-floating-bottom.ezmob-footer
 
@@ -958,20 +953,8 @@ pastehook.com##.bd-lead > .is-multiline.columns
 moddingzone.in## ins.adsbygoogle
 moddingzone.in###wrapper > .container
 moddingzone.in##.fixed-header-on.no-header-img.topbar-transparent.header-ads-desktop.main_menu.one-mobile-menu.main-menu-mobile-on
-moddingzone.in###footer
-
-! 2023-06-19 https://apkupload.in
-apkupload.in##.adb
-
-! 2023-06-19 https://www.europeup.com
-www.europeup.com##.adsbygoogle
-www.europeup.com##.left-image
-www.europeup.com###footer
-www.europeup.com###header
-www.europeup.com##.download_paid
 
 ! 2023-06-21 https://web1s.info
-web1s.info##.footer
 web1s.info##.text-center.mt-2
 web1s.info##.isqcoyqhqcsbvbummwruymmisqcoyqhqcsbvbu.isqcoyqhqcsbvbummtupntmmisqcoyqhqcsbvbu
 web1s.info##.isqcoyqhqcsbvbummorvmownupruqmwruymmisqcoyqhqcsbvbu.isqcoyqhqcsbvbummorvmownupruqmmisqcoyqhqcsbvbu
@@ -988,7 +971,6 @@ phimlau.com##.ad-ballon-left
 phimlau.com##.ad-300.right-box.ad-container
 phimlau.com##div.right-box:nth-of-type(9)
 phimlau.com##body > .row > .col-lg-12
-phimlau.com##footer
 phimlau.com##div.right-box:nth-of-type(5)
 phimlau.com##.block-tags
 phimlau.com##.block-comments.page-single.block-wrapper
@@ -1011,18 +993,14 @@ www.netflix.com##.uma-modal.nf-modal
 www.netflix.com##.error.message
 
 ! 2023-05-13 https://account.ipvanish.com
-account.ipvanish.com###footer
 
 ! 2023-05-14 https://hacktacks.com
-hacktacks.com##.adsbygoogle
 hacktacks.com##.site-main
-hacktacks.com##.site-footer
 hacktacks.com##.site-header
 hacktacks.com###tp-text
 
 ! 2023-05-14 https://indianshortner.com
 indianshortner.com##.blog-item
-indianshortner.com###cookie-pop
 indianshortner.com##.text-white.bg-primary
 indianshortner.com##h4
 indianshortner.com##.animated.zoomIn.wow.text-center.py-5
@@ -1038,22 +1016,17 @@ baomoi.com##ul:nth-of-type(2)
 
 ! 2023-05-22 https://nguyenvanbao.com
 nguyenvanbao.com##.text-center > p
-nguyenvanbao.com##.footer
 nguyenvanbao.com##.site-logo
 nguyenvanbao.com##.text-center > .text-center
 
 ! 2023-05-22 https://www.byboe.com
 www.byboe.com##ins.adsbygoogle
-www.byboe.com##p
 www.byboe.com##h2.text-center
-www.byboe.com##.footer
 www.byboe.com##.site-logo
 
 ! 2023-05-22 https://anhdep24.com
 anhdep24.com##.site-logo
-anhdep24.com##p
 anhdep24.com##h2.text-center
-anhdep24.com##.footer
 
 ! 2023-05-22 https://link1s.com
 link1s.com##.navbar-default.navbar
@@ -1068,13 +1041,11 @@ app.trangchu.news##.stuckElement.sub-menu-right.has-menu-bar-items.nav-align-rig
 weather.com##.DaybreakLargeScreen--regionSidebar--20oS9.regionSidebar.region-sidebar
 
 ! 2023-09-22 https://mbjremix.com
-mbjremix.com##.adb
 
 ! 2023-09-22 https://magiamgia.com
 magiamgia.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
 
 ! 2023-09-27 https://paste.ee
-paste.ee##.footer
 paste.ee##.alert-info.alert
 paste.ee##.alert-success.alert
 
@@ -1113,12 +1084,10 @@ check-host.net##.atrholkt11wr.mt-2 > .relative.nrkzbcharzcont
 
 ! 2023-09-29 https://vnit.vn
 vnit.vn##.banner > [href="https://vnit.vn/sua-laptop-lay-lien-uy-tin/"]
-vnit.vn##footer
 ||vnit.vn/keyboardtest/bacgr.jpg$image
 
 ! 2023-09-29 https://keyboard-test.space
 ||keyboard-test.space/bacgr.jpg$image
-keyboard-test.space##footer
 
 ! 2023-09-30 https://lienquan.garena.vn
 lienquan.garena.vn##.img_18
@@ -1153,7 +1122,6 @@ phimtho.tv##.clear-both.bottom-0.relative.mt-2.bg-main-800
 
 ! 2023-05-07 https://phimmoichilly.com
 phimmoichilly.com##.sosmed
-phimmoichilly.com###footer
 phimmoichilly.com##.socialts
 phimmoichilly.com##.box-rating
 phimmoichilly.com##.tags.bottom
@@ -1280,15 +1248,14 @@ gameguardian.net##.ipsJS_hide.ipsPad_half
 pro.imdb.com##.ab_widget > .a-section
 
 ! 2023-05-06 https://www.expandurl.net
-www.expandurl.net###header
 www.expandurl.net###page-content > p
 www.expandurl.net###core > .m-parallax
 www.expandurl.net###wrapper > .m-parallax
 
 ! 2023-05-03 https://xemphimplus.site
-xemphimplus.site##.float-ck-center-lt
-xemphimplus.site##.footer-credit
 xemphimplus.site##h5
+xemphimplus.site##.footer-credit
+xemphimplus.site##.float-ck-center-lt
 
 ! 2023-05-04 https://phimmoinay.tv
 phimmoinay.tv###sampleAds
@@ -1388,13 +1355,9 @@ forum.mobilism.org###sig10253884
 
 ! 2023-04-14 https://blogcafeit.com
 blogcafeit.com###cookieConsent
-blogcafeit.com##.adsbygoogle
 
 ! 2023-04-17 https://vpnalert.com
 vpnalert.com##.elementor-popup-modal.dialog-type-lightbox.dialog-type-buttons.dialog-lightbox-widget.dialog-widget
-
-! 2023-04-17 https://techrobot.com
-techrobot.com##.overlay
 
 ! 2023-04-20 https://tinhte.vn
 tinhte.vn###widget-6
@@ -1433,7 +1396,6 @@ www.terabox.com##.rotation
 
 ! 2023-06-07 https://pandaznetwork.com
 pandaznetwork.com##.r-bg
-pandaznetwork.com##footer
 pandaznetwork.com##.blog-content
 pandaznetwork.com##.navbar-default.navbar
 pandaznetwork.com##.text-white.bg-primary
@@ -1840,7 +1802,6 @@ animetvn.pro##.film_play_rating_wrap
 animetvn.pro##.bgfff.player-area-group > .gnarty-offads
 
 ! 2022-12-06 https://pandaz.cgchotbox.com
-pn.cgchotbox.com##.adb
 pandaz.cgchotbox.com##.gmr-content-container
 pandaz.cgchotbox.com##.clearfix.gmr-menuwrap
 pandaz.cgchotbox.com##.gmr-headwrapper.clearfix
@@ -1910,7 +1871,6 @@ animevi.net##.div-list-tag-content.col-sm-12
 animevi.net##.div-view-video > .clearfix.section-bar
 
 ! 2023-05-13 https://apkupload.in
-apkupload.in##.adb
 
 ! 2023-08-16 https://a2zapk.io
 a2zapk.io##.Tags
@@ -2037,7 +1997,6 @@ phimvietsub.co##.ai-viewport-1.code-block-34.code-block
 ! CodeVN
 
 ! 2023-09-23 https://ios.codevn.net
-ios.codevn.net##.adsbygoogle
 namlee.net##.entry-tags
 namlee.net##.adsparallax
 namlee.net##.article-footer
@@ -2589,7 +2548,6 @@ rapidcloud.cc##.sharetabs
 rapidcloud.cc###sharebuttons
 rapidcloud.cc##div.alert-success.alert.countdown:nth-of-type(1)
 rapidcloud.cc##widgetbot-crate
-rapidcloud.cc##.report
 
 ! 2021-06-26 https://discord.com
 discordapp.com###app-mount > div:nth-of-type(2)
@@ -4023,7 +3981,6 @@ drop.download##.no-gutters.justify-content-lg-center.flex-nowrap.payment_table.r
 drop.download##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
 
 !2022-08-22 https://dll-files.com
-dll-files.com##.overlay
 dll-files.com##section.with-client-pitch.file-download.bg-beige-light:nth-child(4) > div.section-content.wrap > section.file-versions.open.bg-white.split:last-child > div.client-cta-box.scroll-box:last-child
 
 ! 2022-08-22 https://secufiles.com
@@ -4207,10 +4164,7 @@ www.phukiensamsung.com##.mobile.fixFace
 www.mobifone.vn##.call-online
 
 ! 2023-09-23 https://links.apksvip.com
-links.apksvip.com##footer
 links.apksvip.com##.text-left
-links.apksvip.com###cookie-pop
-links.apksvip.com##.adsbygoogle
 links.apksvip.com##.box-main > h4
 links.apksvip.com##.navbar-default.navbar
 
@@ -4232,10 +4186,7 @@ www.topcv.vn##body,html:style(overflow: auto !important; position: initial !impo
 thuyetminhviet.com###floating_ads_bottom_textcss_container
 thuyetminhviet.com###ouibounce-modal
 
-! 2023-05-13 https://www.europeup.com
-www.europeup.com###header
-www.europeup.com###footer
-www.europeup.com##.report
+! 2023-06-19 https://www.europeup.com
 www.europeup.com##.left-image
 www.europeup.com##.download_paid
 www.europeup.com##div.col-2.lft:nth-of-type(4)
