@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
-! Version: 231009a
+! Version: 231208a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
 ! Licence: Darias
-! Khuyến nghị nên kết hợp với https://xep.li/Anti
-! ChangeLog: ...
+! Khuyến nghị nên kết hợp với https://xem.li/Anti
+! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
 $popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com|mega4upload.com
@@ -180,6 +180,146 @@ youtube.com##:matches-path(/shorts) body:remove()
 sky4g.com,shopvpn.net,4ghatde.net,go.tnetz.pro,4gsinhvien.me,wibuvpn.store,4gmienphi.asia,panel.shopvpn4g.vn,wibuvpn.yunagrp.com##.active.tbpopup
 skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
 
+! 2023-10-27 https://didonghan.vn
+didonghan.vn##.wr
+didonghan.vn##.popupImage
+
+! 2023-11-07 https://phimmoiyyy.net
+phimmoiyyy.net###contenedor > .module_single_ads
+
+! 2023-12-07 https://www.apkmoddone.com
+file.apkmoddone.com##.pGV
+file.apkmoddone.com##.pSh
+file.apkmoddone.com###aChp
+file.apkmoddone.com##.pFoot
+file.apkmoddone.com##footer
+file.apkmoddone.com##.brdCmb
+file.apkmoddone.com##.header
+file.apkmoddone.com##.section.mobMn
+file.apkmoddone.com##p:nth-of-type(1)
+file.apkmoddone.com##p:nth-of-type(2)
+file.apkmoddone.com##p:nth-of-type(3)
+file.apkmoddone.com##p:nth-of-type(4)
+file.apkmoddone.com##p:nth-of-type(5)
+file.apkmoddone.com##p:nth-of-type(6)
+file.apkmoddone.com##p:nth-of-type(7)
+file.apkmoddone.com##p:nth-of-type(8)
+file.apkmoddone.com##p:nth-of-type(9)
+file.apkmoddone.com##p:nth-of-type(10)
+file.apkmoddone.com##p:nth-of-type(11)
+file.apkmoddone.com##p:nth-of-type(12)
+file.apkmoddone.com##p:nth-of-type(13)
+file.apkmoddone.com##p:nth-of-type(14)
+file.apkmoddone.com##p:nth-of-type(15)
+file.apkmoddone.com##p:nth-of-type(16)
+file.apkmoddone.com##p:nth-of-type(17)
+file.apkmoddone.com##p:nth-of-type(18)
+file.apkmoddone.com##p:nth-of-type(19)
+file.apkmoddone.com##p:nth-of-type(20)
+file.apkmoddone.com##p:nth-of-type(21)
+file.apkmoddone.com##p:nth-of-type(22)
+file.apkmoddone.com##tr:nth-of-type(1)
+file.apkmoddone.com##tr:nth-of-type(2)
+file.apkmoddone.com##.slide.section.mobMn
+file.apkmoddone.com##.itm.sml.aTtl.pTtl > span
+www.apkmoddone.com###fNtf
+www.apkmoddone.com##.arWG
+www.apkmoddone.com###anchor-ad
+www.apkmoddone.com###addons-widget
+www.apkmoddone.com##div.sAG:nth-of-type(6)
+
+! 2023-10-10 https://tuigoihang.vn
+tuigoihang.vn##.chaty-channel-list
+
+! 2023-10-12 https://uploadrar.com
+uploadrar.com###open_preferences_center
+
+! 2023-10-14 https://phimmoichillh.net
+||phimmoichillh.net/player/icon-noads.png$image
+phimmoichillh.net###hide_catfish
+
+! 2023-10-15 https://nhathuoc365.vn
+nhathuoc365.vn##.zalo-chat-widget
+nhathuoc365.vn##.clearfix.call_me
+
+! 2023-11-30 https://doctruyenchufull.com
+doctruyenchufull.com##.topbanner.text-center
+doctruyenchufull.com##.p-md-5.py-5.px-3.blog-post > .text-center
+doctruyenchufull.com##div.text-center:nth-of-type(4)
+
+! 2023-11-30 https://mobilecity.vn
+mobilecity.vn###gototop
+mobilecity.vn##.clearfix.header-top
+mobilecity.vn##.mobilecity-messenger
+mobilecity.vn##.menu-home-mobile.responsive-control-box
+
+! 2023-12-01 https://techusnews.com
+techusnews.com###foo
+techusnews.com###header > div
+techusnews.com##.ct-footer-copyright
+techusnews.com##.my-4.py-4.text-center
+techusnews.com##.py-6.mx-auto.container > center
+techusnews.com##.mx-auto.max-w-5xl.break-words.blog_styles
+techusnews.com##.mb-2.uppercase.text-lg.font-semibold.text-red-400
+techusnews.com##a.dark\:hover\:bg-night-400.px-6.py-4.hover\:bg-gray-200.block:nth-of-type(2)
+techusnews.com##a.dark\:hover\:bg-night-400.px-6.py-4.hover\:bg-gray-200.block:nth-of-type(3)
+techusnews.com##a.dark\:hover\:bg-night-400.px-6.py-4.hover\:bg-gray-200.block:nth-of-type(4)
+techusnews.com##a.dark\:hover\:bg-night-400.px-6.py-4.hover\:bg-gray-200.block:nth-of-type(5)
+techusnews.com##a.dark\:hover\:bg-night-400.px-6.py-4.hover\:bg-gray-200.block:nth-of-type(6)
+techusnews.com##a.dark\:hover\:bg-night-400.px-6.py-4.hover\:bg-gray-200.block:nth-of-type(1)
+techusnews.com##.hover\:opacity-90.dark\:text-gray-200.dark\:bg-night-400.text-gray-500.transition-all.tracking-wide.cursor-pointer.uppercase.bg-gray-200.mt-6.py-2.px-6.mx-auto.block.text-center
+
+! 2023-05-13 https://threadreaderapp.com
+threadreaderapp.com##.pb-4.top-ad.container
+
+! 2023-05-13 https://indianshortner.com
+indianshortner.com##h4
+indianshortner.com##.blog-item
+indianshortner.com###cookie-pop
+indianshortner.com##.text-white.bg-primary
+indianshortner.com##.animated.zoomIn.wow.text-center.py-5
+
+! 2023-05-16 https://ukrainefrontlines.com
+ukrainefrontlines.com##.navbar
+ukrainefrontlines.com###wpd-bubble-wrapper
+ukrainefrontlines.com##.wpd-bubble-count-second
+
+! 2023-05-16 https://thuyetminhviet.com
+thuyetminhviet.com###floating_ads_bottom_textcss_container
+
+! 2023-06-17 https://cordtpoint.co.in
+cordtpoint.co.in##.adb
+cordtpoint.co.in###status
+cordtpoint.co.in##.site-header
+cordtpoint.co.in##.site-content
+finance.cordtpoint.co.in##.site-footer
+cordtpoint.co.in##.site-info > .hm-container
+cordtpoint.co.in##.header-main-area > .hm-container
+x.cordtpoint.co.in##.mh-container-outer.mh-container
+flash1.cordtpoint.co.in##.mh-container-outer.mh-container
+flash1.cordtpoint.co.in###floating_ads_bottom_textcss_container
+finance.cordtpoint.co.in###floating_ads_bottom_textcss_container
+
+! 2023-06-23 https://yo.fan
+yo.fan##.blur
+yo.fan##.post-header
+yo.fan##.post-actions
+yo.fan##app-secondary-header
+yo.fan##.ng-lazyloaded.ng-star-inserted.media
+
+! 2023-07-23 https://onehack.us
+onehack.us##.sbqskfjhsjkdfhskfjhsjkdfhdskfjhsjkdfhcwskaoskfjhsjkdfhskfjhsjkdfhmmwruymmsbqskfjhsjkdfhskfjhsjkdfhdskfjhsjkdfhcwskaoskfjhsjkdfhskfjhsjkdfh.sbqskfjhsjkdfhskfjhsjkdfhdskfjhsjkdfhcwskaoskfjhsjkdfhskfjhsjkdfhmmtupntmmsbqskfjhsjkdfhskfjhsjkdfhdskfjhsjkdfhcwskaoskfjhsjkdfhskfjhsjkdfh
+
+! 2023-11-16 https://thietbimamnonvietmy.vn
+thietbimamnonvietmy.vn###zalo-vr
+thietbimamnonvietmy.vn###phone-vr
+
+! 2023-11-17 https://orangepi.vn
+orangepi.vn##.z-top-3.fill.fixed.page-loader
+
+! 2023-11-19 https://minicomputer.vn
+minicomputer.vn##.z-top-3.fill.fixed.page-loader
+
 ! 2023-09-27 https://panel.shopvpn4g.vn
 ||shopvpn4g.vn/images/banner1.jpg$image
 ||vipmax.vn/wp-content/uploads/2017/07/ngam-gai-khoa-than-15.jpg$image
@@ -188,21 +328,58 @@ skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro
 id.4gre.net##.slick-track
 ||source.unsplash.com/random$image
 
-! 2023-09-25 https://go.tnetz.pro
-go.tnetz.pro##.text-center.mb-3
+! 2023-11-30 https://go.tnetz.pro
 ||tnetz.pro/nenweb.png$image
+go.tnetz.pro##.text-center.mb-3
 ||haycafe.vn/wp-content/uploads/2022/05/Hinh-nen-cute-mau-xanh-duong-bau-troi.jpg$image
+||thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-sac-mau-dan-xen-dep_100021530.jpg$image
 ||techvccloud.mediacdn.vn/280518386289090560/2021/6/8/mang-internet-la-gi-3-16231378908761663023686.jpg$image
 
-! 2023-09-27 https://4gsinhvien.me
+! 2023-10-11 https://vpngame.pro
+vpngame.pro##.overlay
+vpngame.pro##div.d-inline-block.dropdown:nth-of-type(2)
+vpngame.pro##.active.lg.right.arcontactus-message.arcontactus-widget
+||toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-anime-cute.jpg$image
+
+! 2023-11-20 https://v1.hack5g.com
+v1.hack5g.com##.overlay
+v1.hack5g.com##.text-center.mb-3
+v1.hack5g.com##div#test:nth-of-type(6)
+v1.hack5g.com##div#test:nth-of-type(7)
+v1.hack5g.com##div#test:nth-of-type(5)
+||img.thuthuat123.com/uploads/2019/10/11/hinh-nen-den-toc-do_023944237.jpg$image
+
+! 2023-10-11 https://aqvpn.me
+aqvpn.me##.ant-dropdown-trigger.mr-1.btn
+||supperclean.vn/wp-content/uploads/2021/01/386f47c88a7aaa497ec6edc1c02cc9b6-scaled.jpg$image
+||vtv1.mediacdn.vn/thumb_w/640/2021/9/19/20200928-all-about-mooncakes-00-feat-940x627-16320384133071929902098.jpg$image
+
+! 2023-10-28 https://5gsinhvien.com
+||i.imgur.com/7Oqle4x.gif$image
+5gsinhvien.com##.text-center.mb-12
+||5gsinhvien.com/theme/GIF/nhac.mp3$media,1p
+||5gsinhvien.com/theme/GIF/banner-5gsinhvien-3.png$image
+||scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-n%E1%BB%81n-m%C3%A1y-t%C3%ADnh-c%E1%BB%B1c-%C4%91%E1%BA%B9p-Gearvn.jpg$image
+||scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-n%E1%BB%81n-m%C3%A1y-t%C3%ADnh-c%E1%BB%B1c-%C4%91%E1%BA%B9p-Gearvn.jpg$image
+
+! 2023-10-29 https://nam4g.com
+nam4g.com##.active.tbpopup
+nam4g.com##.text-center.mb-3
+nam4g.com##.text-center.mb-12
+nam4g.com##.w-100.p-3 > .text-center
+||i.postimg.cc/s2xv1xVS/hinh-nen-pc-full-hd-002.jpg$image
+||i.postimg.cc/s2xv1xVS/hinh-nen-pc-full-hd-002.jpg$image
+
+! 2023-11-28 https://4gsinhvien.me
 4gsinhvien.me##.gif-container
 ||4gsinhvien.me/theme/gif/start.gif$image
 ||wallpaperaccess.com/full/2319702.jpg$image
 4gsinhvien.me##[src="https://i.imgur.com/c8LSI5n.gif"]
+4gsinhvien.me##.active.lg.right.arcontactus-message.arcontactus-widget
 ||thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-gif-khu-rung-nguyen-sinh.gif$image
 ||png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-background-banner-image_125518.jpg$image
 
-! 2023-09-26 https://5gtocdocao.com
+! 2023-10-02 https://5gtocdocao.com
 5gtocdocao.com##.icons
 5gtocdocao.com##.static
 5gtocdocao.com###exampleModal
@@ -221,6 +398,12 @@ go.tnetz.pro##.text-center.mb-3
 ||cdn.thuvienphapluat.vn/phap-luat/2022-2/LTT/tb-tet-duong-lich.png$image
 ||idconline.vn/blog/wp-content/uploads/2021/08/anti-ddos-idc-online2.jpg$image
 ||vhb.vn/wp-content/uploads/2020/02/52088600vectorillustrationofgoldvipcard.jpg$image
+
+! 2023-12-07 https://sieuthi4g.com
+sieuthi4g.com##.show.fade.modal
+sieuthi4g.com###snowflakeContainer
+sieuthi4g.com##.text-center.footer
+||ia801203.us.archive.org/30/items/y-2meta.com-last-christmas-george-michael-wham-beth-acoustic-piano-cover-lyrics-/*.mp3
 
 ! 2023-09-26 https://4gviet.com
 4gviet.com##div:nth-of-type(4)
@@ -287,8 +470,9 @@ dangnhapvpn.yunagrp.com##.v2board-bg-pixels.mb-0.bg-image.block-rounded.block
 daily4g.com##.text-muted.font-size-sm.font-w700.text-uppercase
 ||timanhdep.com/wp-content/uploads/2022/06/anh-gif-chill-hinh-gif-anime-dep-06.gif$image
 
-! 2023-08-11 https://hoangai.fun
+! 2023-10-31 https://hoangai.fun
 ||hoangai.fun/bg1.jpg$image
+hoangai.fun##.active.tbpopup
 
 ! 2023-08-23 https://shopvpn.net
 ||i.gifer.com/*.gif$image
@@ -543,9 +727,18 @@ www.thegioididong.com##.boxpromote
 www.thegioididong.com##.tlt
 www.thegioididong.com##li:nth-of-type(3)
 
-! 2023-06-28 https://vinid.net
+! 2023-11-16 https://vinid.net
+vinid.net##p:nth-of-type(4)
+vinid.net##p:nth-of-type(5)
+vinid.net##p:nth-of-type(2)
+vinid.net##p:nth-of-type(11)
+vinid.net##p:nth-of-type(17)
+vinid.net##p:nth-of-type(23)
+vinid.net##p:nth-of-type(24)
+vinid.net##p:nth-of-type(30)
 vinid.net###VinID-popup-modal
 vinid.net##.show.modal-backdrop
+vinid.net##.btn-qa-download__wrap
 
 ! 2023-06-29 https://motchill.tv
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchill.tv
@@ -719,11 +912,6 @@ www.cloudkp.com###footer-wrapper
 www.cloudkp.com###sidebar-wrapper
 www.cloudkp.com##.comments-system-blogger.blog-post-comments
 
-! 2023-06-07 https://pandaznetwork.com
-pandaznetwork.com##footer
-pandaznetwork.com##.navbar-default.navbar
-pandaznetwork.com##.r-bg
-
 ! 2023-06-09 https://toolss.net
 toolss.net##.gmr-single.gmr-box-content
 toolss.net###footer-sidebar
@@ -847,9 +1035,6 @@ baomoi.com##.gItNcged
 baomoi.com##.bm_FX
 baomoi.com##div.bm_Fw:nth-of-type(5)
 baomoi.com##ul:nth-of-type(2)
-
-! 2023-05-16 https://cordtpoint.co.in
-cordtpoint.co.in##.adb
 
 ! 2023-05-22 https://nguyenvanbao.com
 nguyenvanbao.com##.text-center > p
@@ -1246,8 +1431,11 @@ www.4funbox.com##.bottom-tip-wrap
 ! 2022-11-30 https://www.terabox.com
 www.terabox.com##.rotation
 
-! 2023-03-14 https://pandaznetwork.com
+! 2023-06-07 https://pandaznetwork.com
+pandaznetwork.com##.r-bg
+pandaznetwork.com##footer
 pandaznetwork.com##.blog-content
+pandaznetwork.com##.navbar-default.navbar
 pandaznetwork.com##.text-white.bg-primary
 pandaznetwork.com##.animated.fadeInDown.wow.navbar-dark.navbar-expand-lg.osahan-navbar.navbar
 
@@ -1394,6 +1582,11 @@ craxpro.io##.js-bottomFixTarget.u-bottomFixer
 ! 2023-03-02 https://vpnpro.com
 vpnpro.com##.in.modal-backdrop
 vpnpro.com##.in.modal0.providerModal-nordvpnBrand.providerModal.modal
+
+! 2023-05-10 https://apkmody.com
+apkmody.com##.above-ad-unit
+apkmody.com##.margin-top-15.has-text-align-left.has-background.has-light-green-cyan-background-color.wp-block-group.is-layout-constrained
+apkmody.com##.margin-bottom-15.is-style-pill-shape.has-visible-labels.has-normal-icon-size.wp-block-social-links.is-layout-flex.is-nowrap.is-content-justification-center.is-horizontal.wp-container-flex-center
 
 ! 2023-03-03 https://download-new.apkmody.fun
 download-new.apkmody.fun###primaryimage
@@ -3979,6 +4172,7 @@ dropgalaxy.com##.pro.features
 dropgalaxy.com##.text-primary
 dropgalaxy.com##.pb-5.pt-4.row
 dropgalaxy.com##.mt-5.col-md-8
+dropgalaxy.com##.mt-5.col-md-12
 dropgalaxy.com##.py-3.col-md-12
 dropgalaxy.com##.whatFor.features
 dropgalaxy.com###gdpr-cookie-notice
@@ -4037,9 +4231,6 @@ www.topcv.vn##body,html:style(overflow: auto !important; position: initial !impo
 ! 2023-05-08 https://thuyetminhviet.com
 thuyetminhviet.com###floating_ads_bottom_textcss_container
 thuyetminhviet.com###ouibounce-modal
-
-! 2023-05-13 https://cordtpoint.co.in
-cordtpoint.co.in##.adb
 
 ! 2023-05-13 https://www.europeup.com
 www.europeup.com###header
