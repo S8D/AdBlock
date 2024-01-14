@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 240114a
+! Version: 240114b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -190,6 +190,32 @@ youtube.com##:matches-path(/shorts) body:remove()
 ! 2024-01-01 https://www.youtube.com
 www.youtube.com##.opened
 www.youtube.com##ytd-popup-container.ytd-app.style-scope
+
+! 2024-01-14 https://phimmoiyyy.net
+phimmoiyyy.net##footer.main
+phimmoiyyy.net##div.sbox:nth-of-type(6)
+
+! 2024-01-14 https://phimchill.me
+phimchill.me###popup
+phimchill.me###catfish-banner
+phimchill.me###footer
+phimchill.me##.tags
+phimchill.me##.keywords
+phimchill.me##.btn-groups
+
+! 2024-01-14 https://motchill.vn
+motchill.vn##.tags
+motchill.vn##.keywords
+
+! 2024-01-14 https://motphim.tw
+motphim.tw##.tags
+motphim.tw##.keywords
+motphim.tw##.des
+motphim.tw###footer
+motphim.tw##.btn-groups
+motphim.tw##.play-tags
+motphim.tw##.box-rating
+motphim.tw##.note > div
 
 ! 2024-01-03 https://www.senki.org
 www.senki.org##.formkit-overlay.seva-overlay
