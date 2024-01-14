@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 231208e
+! Version: 240114a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -8,7 +8,7 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com|mega4upload.com
+$popup,third-party,domain=web.avjie.com|mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com|mega4upload.com|mv.phimbathu.one
 ##div[class^="jw-logo"]
 
 dekiru.vn##.modal-container
@@ -158,9 +158,9 @@ wi.cr,voz.vn,vn-z.vn,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,k
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,note1s.com,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,freenote.biz,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,count.vipurl.in,techy.veganab.co,links.apksvip.com,beta.shortearn.eu,dl.tech-story.net,pandaznetwork.com,indianshortner.com,123link.ghego.site,download.baominh.tech,short.pandaznetwork.com,123link.carpartsviet31.site###cookie-pop
 
-gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,chillhay.in,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,motchill.info,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,phimmoinay.tv,moddingzone.in,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,www.europeup.com,giaminhgroup.com,ipgeolocation.io,xemphimplus.site,phimmoichilly.com,www.hotcourses.vn,rubicmarketing.com,www.iplocation.net,vienthongtayninh.vn,account.ipvanish.com,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online###footer
+gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,chillhay.in,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,motchill.info,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,phimmoinay.tv,moddingzone.in,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,www.europeup.com,giaminhgroup.com,ipgeolocation.io,xemphimplus.site,phimmoichilly.com,www.hotcourses.vn,rubicmarketing.com,www.iplocation.net,vienthongtayninh.vn,account.ipvanish.com,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online,motchill.vn,motchill.pw,mv.phimbathu.one###footer
 
-ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com##.footer
+ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com,dlupload.com,phimwin.com,vinaphone.com.vn##.footer
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,phimlau.com,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,phimdacap.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,movie.vkool.org,count.vipurl.in,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 
@@ -186,10 +186,170 @@ www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:
 youtube.com##:matches-path(/shorts) body:remove()
 
 !_________________________________
-! 2023-12-07 https://file.apkmoddone.com
+
+! 2024-01-01 https://www.youtube.com
+www.youtube.com##.opened
+www.youtube.com##ytd-popup-container.ytd-app.style-scope
+
+! 2024-01-03 https://www.senki.org
+www.senki.org##.formkit-overlay.seva-overlay
+
+! 2024-01-04 https://chaziyu.com
+chaziyu.com##.MODBanana > div > div
+
+! 2024-01-06 https://www.truecaller.com
+www.truecaller.com##.left-0.top-0.z-1000.h-full.w-full.p-4.justify-center.items-center.flex.fixed.modal
+
+! 2023-12-27 https://linhviet.vn
+linhviet.vn##.giuseart-nav
+
+! 2023-12-27 https://ssinterior.vn
+ssinterior.vn##.show.fade.modal
+ssinterior.vn##.show.fade.modal-backdrop
+
+! 2024-01-02 https://phimmoiyyy.net
+phimmoiyyy.net##.module_home_ads
+phimmoiyyy.net###floating_ads_bottom_textcss_container
+
+! 2024-01-04 https://subnhanhs.com
+subnhanhs.com###floating_ads_bottom_textcss_container
+
+! 2024-01-02 https://phimchill.me
+||phimchill.me/storage/images/logo-nobg.png$image
+
+! 2023-07-17 https://motchill.info
+motchill.info,motchill.net##.play-tags
+
+! 2023-07-17 https://chillhay.in
+chillhay.in###comment
+chillhay.in###page-info > .block
+chillhay.in##.ad_float.ad_location
+chillhay.in##.detail > .tabs-content
+chillhay.in##.block > .below_of_player.ad_location
+
+! 2023-06-29 https://motchill.tv
+||motchill.tv/files/300x250.html$subdocument,1p
+||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchill.tv
+
+! 2024-01-04 https://motchill.vn
+motchill.vn###mp-preload-popup-overlay
+motchill.vn,motchill.pw,motphim.tw###catfish
+motchill.vn,motchill.pw##[href="https://bit.ly/3MoeQhZ"]
+
+! 2023-10-14 https://phimmoichillh.net
+phimmoichillh.net###hide_catfish
+||phimmoichillh.net/player/icon-noads.png$image
+
+! 2024-01-04 https://motchill.pw
+motchill.pw##.detail
+motchill.pw###ads_preload
+
+! 2022-02-08 https://motchill.net
+motchill.net##.keywords
+motchill.net##.tagcloud.block
+
+! 2023-05-07 https://phimmoichilly.com
+phimmoichilly.com##.sosmed
+phimmoichilly.com##.socialts
+phimmoichilly.com##.tags.bottom
+phimmoichilly.com##.infox > .rating
+phimmoichilly.com##div.bixbox:nth-of-type(6)
+phimmoichilly.com##.thumbook > .rt > .rating
+motchill.info,phimmoichilly.com,movie.vkool.org##.box-rating
+
+! 2024-01-14 https://mv.phimbathu.one
+mv.phimbathu.one##.tagcloud.block
+mv.phimbathu.one##.fn-slide-show.slide
+mv.phimbathu.one##.info-film-text.block
+mv.phimbathu.one##.block-body > .desktop.ad_location
+mv.phimbathu.one##div#ads_location.desktop.ad_location:nth-of-type(13)
+mv.phimbathu.one##div#ads_location.desktop.ad_location:nth-of-type(14)
+
+mv.phimbathu.info##.carousel-fade.slide.carousel
+mv.phimbathu.info##div.panel-vod > .desktop.ad_location
+mv.phimbathu.info##.container > div#ads_location.desktop.ad_location
+
+! 2024-01-02 https://motphim.tw
+motphim.tw###mp-preload
+motphim.tw###mp-preload-popup-overlay
+
+! 2024-01-07 https://www.jumbomail.me
+www.jumbomail.me##.prevent-close-notification.cookies-usage-container
+
+! 2024-01-07 https://btmulu.cyou
+btmulu.cyou##article.item:nth-of-type(1)
+btmulu.cyou##article.item:nth-of-type(2)
+btmulu.cyou##article.item:nth-of-type(3)
+
+! 2024-01-08 https://www.wireshark.org
+www.wireshark.org##p:nth-of-type(2)
+www.wireshark.org##p:nth-of-type(1)
+www.wireshark.org##p:nth-of-type(3)
+www.wireshark.org##.astro-ABISHH35.right-side
+
+! 2024-01-09 https://frdl.to
+frdl.to###sharebuttons
+frdl.to##.navbar-expand-lg.navbar
+frdl.to##.position-absolute.p-5.footer
+
+! 2024-01-09 https://dlupload.com
+dlupload.com##p.my-2
+dlupload.com##div.my-2
+dlupload.com##.text-responsive
+dlupload.com##.col-md-12.col-lg-12
+dlupload.com##div.col-12 > .col-lg-12
+dlupload.com##div.col-12:nth-of-type(6)
+dlupload.com##div.col-12:nth-of-type(3)
+dlupload.com###file_detail_main_thumbnail
+dlupload.com##.pl-3.px-2.py-3 > div > div > small
+dlupload.com##.col-lg-12 > center > .row > div.col-lg-6
+dlupload.com##.mt-2.w-100.justify-content-between.d-flex
+dlupload.com##div.col-12 > .justify-content-center.d-flex
+dlupload.com##.border-left.col-12.col-sm-12.col-md-6.col-lg-6
+dlupload.com##.theme-border.shadow.mb-3.card > .row > div.col-12
+dlupload.com##.tooltip-selector.m-1.shadow.btn-info.btn-block.btn
+dlupload.com##div.col-12.col-sm-6.col-md-6.col-lg-4:nth-of-type(2)
+dlupload.com##div.col-12.col-sm-6.col-md-6.col-lg-4:nth-of-type(3)
+dlupload.com##.tooltip-selector.mt-3.continue-btn-bg.btn-block.btn
+dlupload.com##.pl-3.px-2.py-3 > div > div > center > .row > div.col-lg-6
+dlupload.com##.shadow.sidebar.bg-light.d-md-block.d-none.col-lg-2.col-md-3
+dlupload.com##.rounded.mx-0.mt-2.theme-border.bg-white.row > .col-12 > .text-muted
+dlupload.com##div.btn-incomplete.shadow-sm.border-left-color.my-3.p-1.btn-block.btn:nth-of-type(6)
+dlupload.com##div.btn-incomplete.shadow-sm.border-left-color.my-3.p-1.btn-block.btn:nth-of-type(4)
+dlupload.com##.btn-active.blink-me.btn-incomplete.shadow-sm.border-left-color.my-3.p-1.btn-block.btn
+dlupload.com##.justify-content-center.pt-2.col-12.col-sm-12.col-md-6.col-lg-6 > div > center > .row > div.col-lg-6
+
+! 2024-01-10 https://btmulu.cyou
+btmulu.cyou##div.container:nth-of-type(2)
+
+! 2024-01-10 https://therarbg.com
+therarbg.com##div.snowflake
+therarbg.com##.mb-3.justify-content-md-center.row
+||therarbg.com/static/rarbg/image/bknd_body.jpg$image
+therarbg.com##div.justify-content-md-center.row:nth-of-type(3)
+
+! 2023-05-03 https://xemphimplus.site
+xemphimplus.site##h5
+xemphimplus.site##.footer-credit
+xemphimplus.site##.float-ck-center-lt
+
+! 2021-03-27 https://xemphim.club
+xemphim.club,phimwin.com##.Toastify
+xemphim.club##.has-text-centered.is-info.notification
+xemphim.club##.common_notificationRequest__iIwFj.notification.container
+
+! 2024-01-14 https://phimwin.com
+phimwin.com##.genres.level
+phimwin.com##.comments-section
+phimwin.com##.has-text-centered.is-info.notification
+
+! 2023-12-07 https://www.apkmoddone.com
+file.apkmoddone.com##.b
+file.apkmoddone.com##.pCm
 file.apkmoddone.com##.pGV
 file.apkmoddone.com##.pSh
 file.apkmoddone.com###aChp
+file.apkmoddone.com##.aScr
 file.apkmoddone.com##.jsLd
 file.apkmoddone.com##.pCntn
 file.apkmoddone.com##.pFoot
@@ -199,6 +359,8 @@ file.apkmoddone.com##.header
 file.apkmoddone.com###nldblog-ad
 file.apkmoddone.com###top-widget
 file.apkmoddone.com##.stick.header
+file.apkmoddone.com###backTop > svg
+file.apkmoddone.com##.section.mobMn
 file.apkmoddone.com##.pCntn > .pSnpt
 file.apkmoddone.com##.sidebar.blogItm
 file.apkmoddone.com##p:nth-of-type(1)
@@ -233,6 +395,7 @@ file.apkmoddone.com##div:nth-of-type(16)
 file.apkmoddone.com##div:nth-of-type(18)
 file.apkmoddone.com##div:nth-of-type(20)
 file.apkmoddone.com##div:nth-of-type(22)
+file.apkmoddone.com##.slide.section.mobMn
 file.apkmoddone.com###postBody > div > div
 file.apkmoddone.com###SETTLEMENT_BREAKDOWN
 file.apkmoddone.com##.tr-caption-container
@@ -241,6 +404,17 @@ file.apkmoddone.com##.hm.blogTtl > .dt.title
 file.apkmoddone.com##.pCntn > .pSml.pInf > .pJmp
 file.apkmoddone.com###EMERGING_MARKETS_OUTPERFORM
 file.apkmoddone.com##.pCntn > .pSml.pInf > .pbl.pTtmp.aTtmp
+www.apkmoddone.com###fNtf
+www.apkmoddone.com##.arWG
+www.apkmoddone.com##footer
+
+! 2023-12-13 https://speedtest.vn
+speedtest.vn###bigIp
+
+! 2023-12-16 https://trungtamthuoc.com
+trungtamthuoc.com##a.fancybox
+trungtamthuoc.com##.cs-zalochat
+trungtamthuoc.com##.fblinebong1
 
 ! 2023-10-27 https://didonghan.vn
 didonghan.vn##.wr
@@ -254,10 +428,6 @@ tuigoihang.vn##.chaty-channel-list
 
 ! 2023-10-12 https://uploadrar.com
 uploadrar.com###open_preferences_center
-
-! 2023-10-14 https://phimmoichillh.net
-||phimmoichillh.net/player/icon-noads.png$image
-phimmoichillh.net###hide_catfish
 
 ! 2023-10-15 https://nhathuoc365.vn
 nhathuoc365.vn##.zalo-chat-widget
@@ -357,7 +527,8 @@ vpngame.pro##div.d-inline-block.dropdown:nth-of-type(2)
 vpngame.pro##.active.lg.right.arcontactus-message.arcontactus-widget
 ||toigingiuvedep.vn/wp-content/uploads/2021/06/hinh-anh-anime-cute.jpg$image
 
-! 2023-11-20 https://v1.hack5g.com
+! 2023-12-12 https://v1.hack5g.com
+v1.hack5g.com##.show.fade.modal
 v1.hack5g.com##div#test:nth-of-type(6)
 v1.hack5g.com##div#test:nth-of-type(7)
 v1.hack5g.com##div#test:nth-of-type(5)
@@ -380,12 +551,20 @@ nam4g.com##.w-100.p-3 > .text-center
 ||i.postimg.cc/s2xv1xVS/hinh-nen-pc-full-hd-002.jpg$image
 ||i.postimg.cc/s2xv1xVS/hinh-nen-pc-full-hd-002.jpg$image
 
-! 2023-11-28 https://4gsinhvien.me
+! 2023-12-26 https://vpnviet.com
+vpnviet.com##.text-center.mb-3
+||vpnviet.com/static/images/hero-g-bg-login.png$image
+vpnviet.com##.ant-dropdown-open.ant-dropdown-trigger.mr-1.btn
+
+! 2023-12-23 https://4gsinhvien.me
 4gsinhvien.me##.gif-container
-||4gsinhvien.me/theme/gif/start.gif$image
-||wallpaperaccess.com/full/2319702.jpg$image
 4gsinhvien.me##[src="https://i.imgur.com/c8LSI5n.gif"]
 4gsinhvien.me##.active.lg.right.arcontactus-message.arcontactus-widget
+||tientv.com/noel/*t.png$image
+||tientv.com/noel/top*t.png$image
+||tientv.com/noel/topright.png$image
+||4gsinhvien.me/theme/gif/start.gif$image
+||wallpaperaccess.com/full/2319702.jpg$image
 ||thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-gif-khu-rung-nguyen-sinh.gif$image
 ||png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-background-banner-image_125518.jpg$image
 
@@ -558,11 +737,12 @@ vpngiare.net###popup-giua-man-hinh
 ||*/theme/v2board/assets/i18n/zh-TW.js
 ||*/theme/v2board/assets/i18n/fa-IR.js
 
-! 2023-08-26 https://4ghatde.net
+! 2024-01-01 https://4ghatde.net
 ||4ghatde.net/theme/GIF/hatde01.gif$image
 ||img.upanh.tv/2023/04/14/4GHATDE.NET-2.png$image
 ||img.upanh.tv/2023/07/09/Thiet-ke-chua-co-ten-7.png$image
 ||media.giphy.com/media/wobKCP6HaN4PFa5hD3/giphy.gif$image
+||i.ibb.co/9ZYK0JS/8926014bf2dbf158a5a10b98d8f39840.jpg$image
 ||img.upanh.tv/2023/07/29/Black-Modern-Coming-Soon-Facebook-Post.png$image
 ||i.upanh.org/2023/07/08/Blue-Yellow-Modern-Minimalist-Business-Banking-Facebook-Post-1080--720-px3e5636a463c9720b.png$image
 
@@ -654,9 +834,9 @@ imeicheck.net##.ImeiCheckAnswer_mobileHidden__ZIMBy.ImeiCheckAnswer_resultContai
 
 ! 2023-08-08 https://hhpanda.com
 hhpanda.com##.clearfix.myui-foot
-hhpanda.com##div.clearfix.myui-panel-bg.myui-panel:nth-of-type(4)
 hhpanda.com##.a-af-player > center
 hhpanda.com##.text-center.rating-block
+hhpanda.com##div.clearfix.myui-panel-bg.myui-panel:nth-of-type(4)
 
 ! 2023-08-09 https://vnnic.vn
 vnnic.vn##.col-xs-12.col-sm-12.col-md-12.col-lg-12.footer
@@ -670,15 +850,19 @@ vnnic.vn##.vnnic-banner-wide
 ! 2023-10-03 https://4gviet.com
 ||4gviet.com/theme/PNG/sp.png$image
 
-! 2023-10-04 https://www.up-4ever.net
+! 2024-01-04 https://www.up-4ever.net
+www.up-4ever.net##.mb-2.m-0
+www.up-4ever.net##.appHeader
+www.up-4ever.net##.adsbygoogle
+www.up-4ever.net##.section > .blue-gradient-mask
 www.up-4ever.net##.pl-5.pr-5.appCookieNotice.hide
 www.up-4ever.net##.pt-0.lighten-5.blue-grey.page-footer
-www.up-4ever.net##.text-center.table-borderless.table-striped.table
 www.up-4ever.net##.mb-5.text-center.content-section.col-sm-12
-www.up-4ever.net##.appHeader
-www.up-4ever.net##.section > .blue-gradient-mask
+www.up-4ever.net##div.text-center.mb-3.col-md-4:nth-of-type(1)
+www.up-4ever.net##div.text-center.mb-3.col-md-5:nth-of-type(3)
 www.up-4ever.net##.row > .text-uppercase.text-center.pt-5.mb-3
-www.up-4ever.net##.mb-2.m-0
+www.up-4ever.net##.text-center.table-borderless.table-striped.table
+www.up-4ever.net##.text-center.p-5.border.col-12 > center > .text-center.mb-3.mt-3
 
 ! 2023-10-04 https://datavpn.io.vn
 ||i.postimg.cc/3N8nndgd/IMG-4305.jpg$image
@@ -737,10 +921,6 @@ vinid.net##p:nth-of-type(30)
 vinid.net###VinID-popup-modal
 vinid.net##.show.modal-backdrop
 vinid.net##.btn-qa-download__wrap
-
-! 2023-06-29 https://motchill.tv
-||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchill.tv
-||motchill.tv/files/300x250.html$subdocument,1p
 
 zingnews.vn#@#.type-text.the-article
 
@@ -818,17 +998,6 @@ vneid.dancuquocgia.gov.vn##.right-container
 vneid.dancuquocgia.gov.vn##.logo-container
 ||vneid.dancuquocgia.gov.vn/auth/resources/0zjyk/login/vneid/img/pattern.png$image
 
-! 2023-07-17 https://motchill.info
-motchill.info##.play-tags
-motchill.info##.box-rating
-
-! 2023-07-17 https://chillhay.in
-chillhay.in##.ad_float.ad_location
-chillhay.in###page-info > .block
-chillhay.in##.detail > .tabs-content
-chillhay.in###comment
-chillhay.in##.block > .below_of_player.ad_location
-
 ! 2023-07-20 https://helurl.com
 ||helurl.com/storage/homepage/6c2e7e63-11a9-4325-a44b-9ca9012d8553.svg$image
 
@@ -863,8 +1032,6 @@ www.ixl.com###yui_3_18_1_1_1686056636795_1585
 
 ! 2023-06-06 https://controlc.com
 controlc.com##.pad10.rounded10.whiteBG > div > div > [href]
-
-! 2023-06-06 https://pandaznetwork.freemodsapp.xyz
 
 ! 2023-06-15 https://www.rawask.com
 www.rawask.com##.pGV
@@ -1112,7 +1279,6 @@ laixehaivan.edu.vn##.hotline-phone-ring-wrap
 
 ! 2023-05-07 https://movie.vkool.org
 ||me88vn2.com^
-movie.vkool.org##.box-rating
 movie.vkool.org##.block-tags
 movie.vkool.org##.block-comments.page-single.block-wrapper
 
@@ -1134,15 +1300,6 @@ phimtho.tv##.py-2.text-xl.font-medium
 phimtho.tv##.py-1.gap-1.flex-wrap.flex
 phimtho.tv##.py-2.text-center.bg-main-700\/40 > .mt-2
 phimtho.tv##.clear-both.bottom-0.relative.mt-2.bg-main-800
-
-! 2023-05-07 https://phimmoichilly.com
-phimmoichilly.com##.sosmed
-phimmoichilly.com##.socialts
-phimmoichilly.com##.box-rating
-phimmoichilly.com##.tags.bottom
-phimmoichilly.com##.infox > .rating
-phimmoichilly.com##div.bixbox:nth-of-type(6)
-phimmoichilly.com##.thumbook > .rt > .rating
 
 ! 2023-05-07 https://ssphim.cc
 ssphim.cc###tags
@@ -1203,18 +1360,21 @@ dev.miuiflash.com###div-gpt-ad-1686117822643-0
 dev.miuiflash.com###div-gpt-ad-1686117884470-0
 dev.miuiflash.com##.mb-4.aboutFile.col-md-12.col-lg-6
 
-! 2023-05-10 https://uploady.io
+! 2023-12-08 https://uploady.io
+uploady.io##.adsbygoogle
 uploady.io##tr:nth-of-type(1)
 uploady.io##tr:nth-of-type(2)
 uploady.io##tr:nth-of-type(3)
 uploady.io##tr:nth-of-type(4)
 uploady.io##tr:nth-of-type(5)
 uploady.io##tr:nth-of-type(6)
-uploady.io##.table-bordered.bg-white.mt-2.table .table-success.text-center > .d-prem.rounded.text-white.bg-success.btn-sm.btn
-
-! 2023-05-04 https://uploady.io
+uploady.io##.alert-danger.alert
+uploady.io##.p-0.mb-3 > center > .aflink
 uploady.io##.text-center.p-2.bg-white.col-6
+uploady.io##.shadow.text-center.flex-fill.card
 uploady.io##.text-center.p-2.table-success.col-6
+uploady.io##div.text-center.col-md-6:nth-of-type(1)
+uploady.io##div.text-center.col-md-6:nth-of-type(2)
 uploady.io##div.text-center.p-1.bg-white.col-6:nth-of-type(4)
 uploady.io##div.text-center.p-1.bg-white.col-6:nth-of-type(7)
 uploady.io##div.text-center.p-1.bg-white.col-6:nth-of-type(10)
@@ -1224,23 +1384,17 @@ uploady.io##div.text-center.p-1.bg-white.col-6:nth-of-type(19)
 uploady.io##div.p-1.border-bottom.border-top.text-center.col-12
 uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(5)
 uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(8)
-uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(20)
-uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(23)
 uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(11)
 uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(14)
 uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(17)
+uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(20)
+uploady.io##div.text-center.p-1.table-success.col-6:nth-of-type(23)
+uploady.io##.rounded.p-0.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12
 uploady.io##div.p-1.border-bottom.border-top.text-center.col-12:nth-of-type(21)
 uploady.io##.d-sm-none.d-block.pt-4.pb-5.container > .pb-0.mt-3.alert-success.alert
-
-! 2023-03-14 https://uploady.io
-uploady.io##.alert-danger.alert
-uploady.io##.p-0.mb-3 > center > .aflink
-uploady.io##.shadow.text-center.flex-fill.card
-uploady.io##div.text-center.col-md-6:nth-of-type(1)
-uploady.io##div.text-center.col-md-6:nth-of-type(2)
-uploady.io##.rounded.p-0.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12
 uploady.io##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white > center > .aflink
 uploady.io##.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-lg-8.col-md-12.col-sm-12.col-xs-12
+uploady.io##.table-bordered.bg-white.mt-2.table .table-success.text-center > .d-prem.rounded.text-white.bg-success.btn-sm.btn
 uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:first-child
 uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(2)
 uploady.io###container > div.container.py-5.download-page:nth-child(7) > div.row:first-child > div.col-md-12.bg-white.border.rounded-lg.shadow-sm.mb-3.py-3.page-content.rounded:nth-child(3) > div.table-responsive > table.table.table-bordered.table-striped.text-center > tbody > tr:nth-child(3)
@@ -1266,11 +1420,6 @@ pro.imdb.com##.ab_widget > .a-section
 www.expandurl.net###page-content > p
 www.expandurl.net###core > .m-parallax
 www.expandurl.net###wrapper > .m-parallax
-
-! 2023-05-03 https://xemphimplus.site
-xemphimplus.site##h5
-xemphimplus.site##.footer-credit
-xemphimplus.site##.float-ck-center-lt
 
 ! 2023-05-04 https://phimmoinay.tv
 phimmoinay.tv###sampleAds
@@ -1415,6 +1564,21 @@ pandaznetwork.com##.blog-content
 pandaznetwork.com##.navbar-default.navbar
 pandaznetwork.com##.text-white.bg-primary
 pandaznetwork.com##.animated.fadeInDown.wow.navbar-dark.navbar-expand-lg.osahan-navbar.navbar
+
+! 2022-12-06 https://pandaz.cgchotbox.com
+pandaz.cgchotbox.com##.gmr-content-container
+pandaz.cgchotbox.com##.clearfix.gmr-menuwrap
+pandaz.cgchotbox.com##.gmr-headwrapper.clearfix
+pandaz.cgchotbox.com##.clearfix.gmr-secondmenuwrap
+
+! 2024-01-06 https://panda.studyis.xyz
+panda.studyis.xyz##.mh-header
+panda.studyis.xyz##.mh-copyright-wrap
+panda.studyis.xyz##.mh-content.mh-loop
+panda.studyis.xyz###wpsafe-generate > h4
+panda.studyis.xyz##.mh-clearfix.mh-wrapper
+panda.studyis.xyz###wpsafelink-landing > p
+panda.studyis.xyz##.tag-life-insurance.tag-homeowners-renters-insurance.tag-health-insurance.tag-business-insurance.tag-auto-insurance.category-insurance.hentry.has-post-thumbnail.format-standard.status-publish.type-post.post.post-5067.mh-clearfix.mh-loop-item
 
 ! 2022-12-11 https://uploadydl.com
 uploadydl.com##strong
@@ -1587,6 +1751,11 @@ apkmody.io##.padding-bottom-100.padding-top-30.has-small-font-size.has-very-ligh
 ! 2023-02-10 https://bizflycloud.vn
 bizflycloud.vn###new-20220611113014396 > div
 bizflycloud.vn##.order-sm-first.left-sidebar.col-lg-2.col-sm-3.col-12
+
+
+! 2023-12-15 https://baseus.vn
+baseus.vn##.addThis_listSharing
+baseus.vn##.ega-toc--left.ega-toc__button
 
 ! 2023-02-11 https://baseus-vn.com
 baseus-vn.com##.lightbox-white.lightbox-content.lightbox-by-id
@@ -1816,12 +1985,6 @@ animetvn.pro##body > .gnarty-offads
 animetvn.pro##.film_play_rating_wrap
 animetvn.pro##.bgfff.player-area-group > .gnarty-offads
 
-! 2022-12-06 https://pandaz.cgchotbox.com
-pandaz.cgchotbox.com##.gmr-content-container
-pandaz.cgchotbox.com##.clearfix.gmr-menuwrap
-pandaz.cgchotbox.com##.gmr-headwrapper.clearfix
-pandaz.cgchotbox.com##.clearfix.gmr-secondmenuwrap
-
 ! 2022-12-01 https://urlk.ga
 urlk.ga##.text-white.bg-black.content-section
 urlk.ga##.text-center.text-white.bg-primary.content-section
@@ -1988,17 +2151,6 @@ vnexpress.net##.box-category__list-news > .sidebar-2
 ! 2022-11-22 https://xoso.com.vn
 xoso.com.vn##.headermobi.header-content
 
-! 2022-11-22 https://dongphim.to
-dongphim.to##.right-box.top-block
-dongphim.to##.clearfix.myui-foot
-
-! 2022-11-22 https://phimchilltv.net
-phimchilltv.net##.preload-banner
-phimchilltv.net##.preload-smoke.preload-backdrop
-mv.phimbathu.info##.carousel-fade.slide.carousel
-mv.phimbathu.info##div.panel-vod > .desktop.ad_location
-mv.phimbathu.info##.container > div#ads_location.desktop.ad_location
-
 ! 2022-11-22 https://motphimtv.info
 ||dc.mpapis.xyz/tracking
 
@@ -2159,11 +2311,6 @@ vanphukien.com###callnowbutton
 
 ! 2022-08-13 http://nguonhd.org
 nguonhd.org###antiAdblock
-
-! 2022-02-08 https://motchill.net
-motchill.net##.keywords
-motchill.net##.play-tags
-motchill.net##.tagcloud.block
 
 ! 2022-08-14 https://mephimnhat1.com
 ||mephimnhat1.com/mmo/$xhr,1p
@@ -2538,17 +2685,26 @@ vuighe.tv##.only-pc.tagcloud.block
 vuighe.net##.balloon-500x300.balloon
 vuighe.net##.banner-masthead.masthead
 
+! 2023-12-08 https://vinaphone.com.vn
+vinaphone.com.vn##.img-fluid
+
+! 2023-12-19 https://my.vnpt.com.vn
+my.vnpt.com.vn##.show.modal.progress.fade
+my.vnpt.com.vn##.show.modal-backdrop.fade
+
 ! 2021-07-12 https://vnpt.com.vn
 vnpt.com.vn##.apps
 vnpt.com.vn##.sub-footer
 
-! 2023-08-30 https://xem.li
+! 2024-01-04 https://xem.li
 xem.li###pixels
 xem.li##.form_opt
 xem.li###parameters
+xem.li##ins.adsbygoogle
 xem.li##h4:nth-of-type(2)
 xem.li##h4:nth-of-type(1)
 xem.li##.main > .container
+xem.li##.clearfix.ad_729.ads
 xem.li##div.form-group:nth-of-type(6)
 xem.li##div.form-group:nth-of-type(4)
 xem.li##div.form-group:nth-of-type(10)
@@ -2630,11 +2786,6 @@ hellobacsi.com##.modal--animate-scale.lead-modal-wrapper.lead-modal
 
 ! 2021-03-13 https://www.samsung.com
 www.samsung.com##.cookie-bar__desc--ellipsis.cookie-bar__desc
-
-! 2021-03-27 https://xemphim.club
-xemphim.club##.Toastify
-xemphim.club##.has-text-centered.is-info.notification
-xemphim.club##.common_notificationRequest__iIwFj.notification.container
 
 ! 2021-04-29 https://dongphuoctayninh.com
 dongphuoctayninh.com##.d-block
@@ -4279,16 +4430,18 @@ katfile.com##span.sp:nth-of-type(2)
 katfile.com##div.col-sm-4:nth-of-type(3)
 katfile.com##.navbar-static-top.navbar-default.navbar
 
-! 2021-07-20 https://www.file-upload.com
-www.file-upload.com##.blocktxt
-www.file-upload.com##.antivirus
+! 2023-12-08 https://www.file-upload.org
+www.file-upload.org##.stdt
+www.file-upload.org##header
+www.file-upload.org##footer
 www.file-upload.com,file-up.org##.default-ttl
-www.file-upload.com,katfile.com###sharebuttons
-www.file-upload.com##.comparison-row.row
-www.file-upload.com##.mnbt1.btn-success.btn-xs.btn
+www.file-upload.org,www.file-upload.com##.blocktxt
+www.file-upload.org,www.file-upload.com##.antivirus
+www.file-upload.org,www.file-upload.com##.comparison-row.row
+www.file-upload.org,www.file-upload.com,katfile.com###sharebuttons
+www.file-upload.org,www.file-upload.com##.mnbt1.btn-success.btn-xs.btn
 
 ! 2021-07-20 https://download.gg
-
 download.gg##.card-footer > p
 download.gg##.order-xl-3.order-3.col-xl-3
 download.gg##.card-file.card > .card-body
@@ -4393,14 +4546,16 @@ www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 
 !___Rút-Gọn________________________________________
 
-! 2023-04-13 https://mega4upload.com
+! 2023-12-08 https://mega4upload.com
 ||weaped.com
+mega4upload.com##.card
 mega4upload.com##center > .title
 mega4upload.com##.card-body > .desc
 mega4upload.com##div.col-xl-12 > center
 ||mega4upload.com/js/paging.js$script,1p
 ||mega4upload.com/js/jquery.paging.js$script,1p
 mega4upload.com##.mb-4.card > .card > .card-body
+mega4upload.com###\32 f8eceae-7159-4a70-8b4a-7b0c9a45f476
 ||causcs.com/script/yzfdmoan.js$script,domain=mega4upload.com
 mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child
 mega4upload.com##div.subpage-content:nth-child(4) > div.container:first-child > div.mb-4:last-child > div.card:last-child > div.card-body
@@ -4567,7 +4722,6 @@ www.checkip.org###hd
 www.checkip.hk##header > p
 www.checkip.org##.screenshot
 www.checkip.hk##label:nth-of-type(1)
--v1
 www.geolocation.com##.text-center.col-md-3
 www.geolocation.com##div.margin-bottom-40 > p
 www.geolocation.com##div.margin-bottom-40 > h2
