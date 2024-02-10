@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 240114b
+! Version: 240210a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -187,6 +187,102 @@ youtube.com##:matches-path(/shorts) body:remove()
 
 !_________________________________
 
+! 2024-01-14 https://xemphim.in
+xemphim.in##.Toastify
+
+! 2024-01-24 https://viettelpost.com.vn
+viettelpost.com.vn###popup_vipo
+
+! 2024-01-25 https://aikopanel.com
+||i.ibb.co/gdMk3vK/Hoshino-AI.png$image
+
+! 2024-01-30 https://www.tiktok.com
+www.tiktok.com##.eg439om2.css-1e4hvda-DivModalContent
+www.tiktok.com##.e1gjoq3k0.css-py8jux-DivModalContainer
+
+! 2024-02-07 https://hoanghamobile.com
+hoanghamobile.com##.current.blocker.jquery-modal
+
+! 2024-02-10 https://dl.mncupdates.com
+dl.mncupdates.com##.mh-header
+dl.mncupdates.com##.mh-copyright-wrap
+dl.mncupdates.com##.mh-content.mh-loop
+dl.mncupdates.com###wpsafe-generate > h4
+dl.mncupdates.com##.mh-clearfix.mh-wrapper
+dl.mncupdates.com##.mh-sidebar.mh-widget-col-1
+
+! 2024-01-14 https://viettelfamily.com
+viettelfamily.com##.messInPublic
+
+! 2024-01-14 https://bom.so
+bom.so##.site_logo
+
+! 2024-01-15 https://voz.vn
+||data.voz.vn/avatars/*/70/70050.jpg$image
+
+! 2024-01-22 https://thuvienphapluat.vn
+thuvienphapluat.vn##.container > div.row > .col-xs-12 > .gg_ads
+thuvienphapluat.vn###bttop
+
+! 2024-01-22 https://aikocute.tech
+||i.ibb.co/gdMk3vK/Hoshino-AI.png$image
+
+! 2024-01-23 https://mytour.vn
+mytour.vn##.Footer_container__m0n0r
+mytour.vn##.top-0.sticky.z-10.bg-\[\#cb002d\].w-\[100\%\]
+mytour.vn##.sm\:p-3.sm\:border.top-24.sticky.mt-3.font-semibold.min-h-min.border-0.rounded-xl.p-0.relate-blog > [href^="https://mytour.vn/uu-dai/uu-dai-tung-bung-don-mung-nam-moi-khach-san-giam-300k"]
+
+! 2024-01-23 https://frdl.to
+frdl.to###fdmMsg
+frdl.to##.report
+frdl.to##.done > b
+
+! 2024-01-24 https://5gtocdocao.com
+||1.bp.blogspot.com/-EhWw8jF-c3I/XU-pn4RGGYI/AAAAAAAAA-U/3DIjFAXcu4kBWSg2GduhCe1Ym_A-AdFCgCLcBGAs/s1600/Kotizon-bo-suu-tap-hinh-nen-danh-cho-laptop-cuc-net-full-hd-1.jpg$image
+
+! 2024-01-24 https://taplai.com
+taplai.com##.display-none.display-block-md.p-2
+
+! 2024-01-25 https://lifebox.vn
+lifebox.vn##.zpWinThemeBanner
+
+! 2024-01-25 https://4gsinhvien.me
+4gsinhvien.me##.speech-bubble
+
+! 2024-01-26 https://daylaixehanoi.vn
+daylaixehanoi.vn##.footer-wrapper
+
+! 2024-01-30 https://tenvpndata.io.vn
+||i.imgur.com/iIoIEAD.gif$image
+
+! 2024-01-30 https://5gtocdocao.com
+||gcs.tripi.vn/public-tripi/tripi-feed/img/473747LYC/hinh-nen-powerpoint-tet-1-2.png$image
+
+! 2024-02-06 https://www.messenger.com
+www.messenger.com##.x1vjfegm.x1n2onr6.__fb-light-mode
+www.messenger.com##.x1d52u69.x1yztbdb.xktsk01.xw7yly9
+
+! 2024-02-07 https://4gsinhvien.me
+||fptshop.com.vn/Uploads/Originals/2023/11/2/638345555566444723_hinh-nen-doraemon_.jpg$image
+
+! 2024-02-07 https://go.tnetz.pro
+||myvt.net/wp-content/uploads/2021/06/tuyen-ctv.jpg$image
+
+! 2024-02-07 https://4g.tintuc247.top
+||img.freepik.com/premium-vector/vietnamese-tet-banner-is-designed-with-image-children-wearing-traditional-costumes_313905-4616.jpg?w=996$image
+
+! 2024-02-09 https://4ghatde.net
+||i.ibb.co/M1HQW92/4.png$image
+||i.ibb.co/M1HQW92/4.png$image
+||i.ibb.co/MRQpLqw/3.png$image
+||i.imgur.com/Dl20Zw1.jpg$image
+||img.upanh.tv/2023/10/13/Purple-Blue-Neon-Gaming-Stream-Facebook-Cover-6.png$image
+||i.upanh.org/2023/10/12/Purple-Blue-Neon-Gaming-Stream-Facebook-Cover-10617949ae3c27931.png$image
+
+! 2024-02-10 https://daohaisan.vn
+daohaisan.vn##.show.isCVH.fade.modal
+daohaisan.vn##.show.fade.modal-backdrop
+
 ! 2024-01-01 https://www.youtube.com
 www.youtube.com##.opened
 www.youtube.com##ytd-popup-container.ytd-app.style-scope
@@ -196,12 +292,17 @@ phimmoiyyy.net##footer.main
 phimmoiyyy.net##div.sbox:nth-of-type(6)
 
 ! 2024-01-14 https://phimchill.me
-phimchill.me###popup
-phimchill.me###catfish-banner
-phimchill.me###footer
 phimchill.me##.tags
+phimchill.me###popup
+phimchill.me###footer
 phimchill.me##.keywords
 phimchill.me##.btn-groups
+phimchill.me###catfish-banner
+
+! 2024-01-14 https://phimchili.com
+phimchili.com##.site-footer
+phimchili.com##.post-rating
+phimchili.com##div.post-block-content.post-content:nth-of-type(4)
 
 ! 2024-01-14 https://motchill.vn
 motchill.vn##.tags
@@ -534,8 +635,17 @@ orangepi.vn##.z-top-3.fill.fixed.page-loader
 ! 2023-11-19 https://minicomputer.vn
 minicomputer.vn##.z-top-3.fill.fixed.page-loader
 
-! 2023-09-27 https://panel.shopvpn4g.vn
+! 2024-01-22 https://gocvpn.net
+gocvpn.net##.show.fade.modal
+gocvpn.net##.text-center.mb-3
+gocvpn.net##.text-center.mb-12
+gocvpn.net##.show.fade.modal-backdrop
+||images.pexels.com/photos/339119/pexels-photo-339119.jpeg$image
+||images.pexels.com/photos/339119/pexels-photo-339119.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1$image
+
+! 2024-01-23 https://panel.shopvpn4g.vn
 ||shopvpn4g.vn/images/banner1.jpg$image
+panel.shopvpn4g.vn##fontpanel.shopvpn4g.vn
 ||vipmax.vn/wp-content/uploads/2017/07/ngam-gai-khoa-than-15.jpg$image
 
 ! 2023-09-27 https://id.4gre.net
@@ -620,7 +730,7 @@ sieuthi4g.com###snowflakeContainer
 sieuthi4g.com##.text-center.footer
 ||ia801203.us.archive.org/30/items/y-2meta.com-last-christmas-george-michael-wham-beth-acoustic-piano-cover-lyrics-/*.mp3
 
-! 2023-09-26 https://4gviet.com
+! 2024-02-06 https://4gviet.com
 4gviet.com##div:nth-of-type(4)
 4gviet.com##.active.lg.right.arcontactus-message.arcontactus-widget
 ||4gviet.com/*.mp3
@@ -629,6 +739,7 @@ sieuthi4g.com##.text-center.footer
 ||4gviet.com/image/tt.png$image
 ||4gviet.com/theme/PNG/nen.png$image
 ||4gviet.com/theme/PNG/antiddos.png$image
+||i.imgur.com/2i9nvZw.png$image
 
 ! 2023-07-21 https://htpn.me
 4g.tintuc247.top##.isi
@@ -2039,7 +2150,9 @@ www.takez.co###wrapper-indzign
 www.takez.co###toshowshortlink
 www.takez.co###minisite > .section.header
 
-! 2022-11-28 https://forum.release-apk.com
+! 2024-01-23 https://forum.release-apk.com
+forum.release-apk.com###M431771ScriptRootC1498896
+forum.release-apk.com###page-body > .forumbg > .inner > .topics.topiclist
 forum.release-apk.com##.cc-color-override--1687565279.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
 
 ! 2022-11-29 https://www.howtogeek.com
