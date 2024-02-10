@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 240210a
+! Version: 240210b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -640,6 +640,7 @@ gocvpn.net##.show.fade.modal
 gocvpn.net##.text-center.mb-3
 gocvpn.net##.text-center.mb-12
 gocvpn.net##.show.fade.modal-backdrop
+||itexpress.vn/API/files/img/snow-medium.png
 ||images.pexels.com/photos/339119/pexels-photo-339119.jpeg$image
 ||images.pexels.com/photos/339119/pexels-photo-339119.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1$image
 
