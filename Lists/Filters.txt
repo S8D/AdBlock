@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 240210b
+! Version: 240516a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -186,6 +186,217 @@ www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:
 youtube.com##:matches-path(/shorts) body:remove()
 
 !_________________________________
+
+! 2024-04-29 https://shopgamedvl.online
+||shopgamedvl.online/song/1.mp3$media,1p
+
+! 2024-05-01 https://blitly.io
+blitly.io##h4
+blitly.io##.footer
+blitly.io##hr.mb-32
+blitly.io##.note-vpn
+blitly.io##.note-text
+blitly.io##.google-wrap
+blitly.io##.header-container
+blitly.io##.guild-video-container
+blitly.io##.title-short.guild-title
+blitly.io##.scroll-to.topdown.header-container
+blitly.io##.justify-content-center.row > div.col-12
+
+! 2024-05-01 https://fun88.ong
+fun88.ong###main
+fun88.ong###col-482488523
+fun88.ong###col-1166671499
+fun88.ong##.sticky-jump.has-sticky.header
+fun88.ong###col-1957186496 > .col-inner > h3
+fun88.ong###row-2133109874 > .large-4.small-12.medium-4.col
+fun88.ong##.text-center.medium-text-center.dark.absolute-footer
+
+! 2024-05-09 https://web1s.asia
+web1s.asia##center
+web1s.asia##p:nth-of-type(7)
+web1s.asia##p:nth-of-type(8)
+web1s.asia##p:nth-of-type(5)
+web1s.asia##p:nth-of-type(2)
+web1s.asia##h3:nth-of-type(2)
+web1s.asia##.mb-3.content > div.mb-3
+web1s.asia##div.mb-5.text-center > p
+web1s.asia##.col-xxl-9 > div > .mb-3.content
+web1s.asia##h4.text-center.mb-3:nth-of-type(2)
+web1s.asia##h4.mb-3.text-center:nth-of-type(1)
+web1s.asia##.justify-content-center.d-flex.mb-2
+web1s.asia##.mb-3.content > h3.text-center.mb-3
+web1s.asia##.mb-3.text-center.text-gray-800.fw-bold.fs-2hx
+web1s.asia##[src="https://www.youtube.com/embed/D4AirUzSHyc"]
+
+! 2024-05-04 https://ab77app.com
+ab77app.com##.dmca-badge
+ab77app.com##.site-header
+ab77app.com##.kt-clear.hfeed.wrap
+||ab77app.com/wp-content/uploads/*$image
+ab77app.com##.footer-section-inner-items-1.site-footer-section.site-footer-top-section-1
+ab77app.com##.footer-section-inner-items-1.site-footer-section.site-footer-top-section-3
+ab77app.com##.kadence-columne4c982-80.wp-block-kadence-column > .kt-inside-inner-col > p
+ab77app.com##.site-footer-row-mobile-layout-default.site-footer-row-tablet-layout-default.site-footer-row-layout-standard.site-footer-focus-item.site-footer-row-container.site-middle-footer-wrap
+
+! 2024-05-04 https://ae888.wales
+ae888.wales###main
+ae888.wales###col-645882331
+ae888.wales###col-1861086254
+ae888.wales###col-1789551180
+ae888.wales###col-2112169068
+ae888.wales###col-1942725599
+ae888.wales###col-1840501548
+ae888.wales##.sticky-jump.has-sticky.header
+ae888.wales##.large-3.small-12.medium-2.col
+ae888.wales###col-420458948 > .dark.col-inner > .text
+ae888.wales###col-381093212 > .dark.col-inner > .text
+ae888.wales###col-2128515143 > .dark.col-inner > .text
+ae888.wales##.text-center.medium-text-center.dark.absolute-footer
+
+||voz.vn/proxy.php^
+
+! 2024-05-09 https://gamingiwin88.net
+gamingiwin88.net###main
+gamingiwin88.net##.header
+gamingiwin88.net###row-828119220
+gamingiwin88.net###col-884035919
+gamingiwin88.net###col-388205686
+gamingiwin88.net###col-1129488383
+gamingiwin88.net###col-1265971232
+gamingiwin88.net###row-390942868 > .large-12.small-12.col
+gamingiwin88.net##.text-center.medium-text-center.dark.absolute-footer
+
+! 2024-05-09 https://1mlink.vip
+1mlink.vip##footer
+1mlink.vip###cookie-pop
+1mlink.vip##.navbar-default.navbar
+
+! 2024-05-09 https://yeumoney.com
+yeumoney.com##.header-section
+yeumoney.com##.footer-section
+
+! 2024-05-09 https://link4m.com
+link4m.com##body > .style-4
+link4m.com##p:nth-of-type(2)
+link4m.com##p:nth-of-type(1)
+link4m.com##.navbar-default.navbar
+link4m.com##.text-center.box-body > h4
+link4m.com###captcha-html-wrapper > h4
+link4m.com##div.text-left:nth-of-type(2)
+
+! 2024-05-09 https://tooltx.xyz
+tooltx.xyz##.footer
+tooltx.xyz##.header
+
+! 2024-05-09 https://dongphucsaigon.com
+dongphucsaigon.com##.elementor-36.elementor
+dongphucsaigon.com##.elementor-location-header.elementor-80.elementor
+dongphucsaigon.com##.hentry.status-publish.type-page.page.post-473.elementor-location-single.elementor-43848.elementor
+dongphucsaigon.com##.elementor-element-d5ce97a.elementor-element.elementor-inner-column.elementor-col-25.elementor-column
+dongphucsaigon.com##.elementor-element-8b09bb0.elementor-element.elementor-inner-column.elementor-col-25.elementor-column
+dongphucsaigon.com##.elementor-element-3f57873.elementor-element.elementor-inner-column.elementor-col-25.elementor-column
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-48222e80.elementor-element.elementor-top-section.elementor-section
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-f02f9be.elementor-element.elementor-inner-section.elementor-section
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-89b73e0.elementor-element.elementor-inner-section.elementor-section
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-hidden-mobile.elementor-hidden-tablet.elementor-element-2b8fdfe7.elementor-element.elementor-top-section.elementor-section
+
+! 2024-05-12 https://indexsubtitle.cc
+indexsubtitle.cc##div.row:nth-of-type(2)
+
+! 2024-05-12 https://androiddatahost.com
+androiddatahost.com##.adsbygoogle
+
+! 2024-05-15 https://efhjd.com
+efhjd.com##.faqs
+efhjd.com##footer
+efhjd.com###ad-20
+efhjd.com###ad-21
+efhjd.com###ad-22
+efhjd.com##header
+efhjd.com###ad-24
+efhjd.com###ad-25
+efhjd.com###ad-23
+efhjd.com###ad-26
+efhjd.com###ad-27
+efhjd.com##.spacer
+efhjd.com##fieldset
+efhjd.com##.mt-1.mb-4.file-title
+efhjd.com##.divider > .container > hr
+
+! 2024-05-04 https://asideway.com
+asideway.com##.mt-3.text-center
+asideway.com##.my-3.mx-auto.container.footer
+
+! 2024-05-04 https://sha-mod.online
+sha-mod.online##ins.adsbygoogle
+
+! 2024-05-04 https://baomoi.com
+baomoi.com##.p-\[15px\].pb-\[8x\].bg-\[\#f7f7f7\].block
+baomoi.com##.block.is-show.bg-\[\#f2f2f2\].mt-0.min-h-\[280px\].h-\[280px\].z-\[99\].relative
+
+! 2024-05-07 https://tuvanquangminh.com
+tuvanquangminh.com##.header
+tuvanquangminh.com###content
+tuvanquangminh.com##.dev-nav
+tuvanquangminh.com##.col-lg-5
+tuvanquangminh.com###subheader
+tuvanquangminh.com##.copyright
+tuvanquangminh.com##div.col-md-6.col-lg-3:nth-of-type(3)
+tuvanquangminh.com##div.col-md-6.col-lg-3:nth-of-type(5)
+tuvanquangminh.com##div.col-md-6.col-lg-4 > .footer_menu > h3
+tuvanquangminh.com##div.col-md-6.col-lg-4 > .footer_info_main.footer_infomation > h3
+tuvanquangminh.com##div.col-md-6.col-lg-4 > .footer_info_main.footer_infomation > .footer_infomation_content > p
+
+! 2024-04-29 https://68.183.225.17
+68.183.225.17###text-7
+68.183.225.17##.site-info
+68.183.225.17##.site-header
+68.183.225.17##.footer-widget-2
+68.183.225.17##.footer-widget-4
+68.183.225.17##.footer-widget-3
+68.183.225.17###text-2 > .widget-title
+68.183.225.17###text-2 > .textwidget > p
+68.183.225.17##.hfeed.container.grid-container.site
+68.183.225.17##.stuckElement.sub-menu-right.nav-align-center.main-navigation
+
+! 2024-04-29 https://167.99.77.125
+167.99.77.125##header
+167.99.77.125###footer
+167.99.77.125##p:nth-of-type(2)
+167.99.77.125##p:nth-of-type(3)
+167.99.77.125###main-body-wrapper
+167.99.77.125##.title-column.title
+167.99.77.125##.wp-image-5254.size-full.aligncenter
+167.99.77.125##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(4)
+
+! 2024-05-04 https://178.128.18.55
+178.128.18.55###block-8 > p
+178.128.18.55##.site-header
+178.128.18.55##.kt-clear.hfeed.wrap
+||178.128.18.55/wp-content/uploads/*$image
+178.128.18.55###block-10 > ul > li:nth-of-type(6)
+178.128.18.55###block-10 > ul > li:nth-of-type(4)
+178.128.18.55##.footer-section-inner-items-1.site-footer-section.site-footer-middle-section-4
+178.128.18.55##.footer-section-inner-items-1.site-footer-section.site-footer-middle-section-3
+178.128.18.55##.site-footer-row-mobile-layout-default.site-footer-row-tablet-layout-default.site-footer-row-layout-standard.site-footer-focus-item.site-footer-row-container.site-bottom-footer-wrap
+
+! 2024-05-07 https://165.22.63.250
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_184.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_177.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_168.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_162.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_155.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_146.vc_row_inner
+165.22.63.250##.td-container-wrap.td-main-page-wrap.td-main-content-wrap
+165.22.63.250##.td_block_template_1.td-pb-border-top.tdi_210.tdm_block_inline_text.td_block_wrap.tdm_block
+165.22.63.250##.td_block_template_1.td-pb-border-top.tdi_188.tdm_block_inline_text.td_block_wrap.tdm_block > .tdm-descr
+
+! 2024-05-09 https://165.22.63.250
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_196.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_189.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_180.vc_row_inner
+165.22.63.250##.td_block_template_1.td-pb-border-top.tdi_222.tdm_block_inline_text.td_block_wrap.tdm_block
 
 ! 2024-01-14 https://xemphim.in
 xemphim.in##.Toastify
@@ -4688,9 +4899,10 @@ www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 
 ! 2023-12-08 https://mega4upload.com
 ||weaped.com
-mega4upload.com##.card
+!mega4upload.com##.card
+mega4upload.com##.card-body
 mega4upload.com##center > .title
-mega4upload.com##.card-body > .desc
+!mega4upload.com##.card-body > .desc
 mega4upload.com##div.col-xl-12 > center
 ||mega4upload.com/js/paging.js$script,1p
 ||mega4upload.com/js/jquery.paging.js$script,1p
