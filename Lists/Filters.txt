@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 240516a
+! Version: 240516b
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -4900,9 +4900,9 @@ www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 ! 2023-12-08 https://mega4upload.com
 ||weaped.com
 !mega4upload.com##.card
-mega4upload.com##.card-body
+!mega4upload.com##.card-body
 mega4upload.com##center > .title
-!mega4upload.com##.card-body > .desc
+mega4upload.com##.card-body > .desc
 mega4upload.com##div.col-xl-12 > center
 ||mega4upload.com/js/paging.js$script,1p
 ||mega4upload.com/js/jquery.paging.js$script,1p
