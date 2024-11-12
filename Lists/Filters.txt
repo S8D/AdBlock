@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241112b
+! Version: 241112c
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -190,17 +190,25 @@ youtube.com##:matches-path(/shorts) body:remove()
 ! 2024-04-29 https://shopgamedvl.online
 ||shopgamedvl.online/song/1.mp3$media,1p
 
+
+! 12 thg 11, 2024 https://dailyuploads.net
+||dailyuploads.net/images_mega/download_complete.png$image
+dailyuploads.net###header
+||dailyuploads.net/images_mega/download.png$image
+dailyuploads.net##.sharetabs
+||dailyuploads.net/images_mega/download.png$image
+
 ! 12 thg 11, 2024 https://flash.getpczone.com
-flash.getpczone.com###footer2
-flash.getpczone.com###gdpr-cookie-notice
 flash.getpczone.com##.txt
-flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
-flash.getpczone.com###news_last
-flash.getpczone.com##.fileoption > ul
 flash.getpczone.com##.title
+flash.getpczone.com###footer2
+flash.getpczone.com###news_last
 flash.getpczone.com##.sharefile
 flash.getpczone.com##.icofont-zipped
+flash.getpczone.com##.fileoption > ul
+flash.getpczone.com###gdpr-cookie-notice
 flash.getpczone.com##.btn-lg.btn-info.btn
+flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 
 ! 12 thg 11, 2024 https://upfiles-urls.com
 upfiles-urls.com##.faqs
