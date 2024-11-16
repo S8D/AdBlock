@@ -1,0 +1,1108 @@
+[Adblock Plus 2.0]
+! Version: 241116a
+! Title: xem.li/cobac | tiny.cc/cobac
+! Expires: 1 days
+! Homepage: gg.gg/a_ | tiny.cc/_a
+! Licence: Darias
+! Tổng hợp các trang cá cược vô bổ
+! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
+
+! 11 thg 11, 2024 https://bet88won.com
+123dzo.vip###main
+123dzo.vip###text-3
+123dzo.vip###text-7
+123dzo.vip##.logo.flex-col
+123dzo.vip##p:nth-of-type(1)
+123dzo.vip##p:nth-of-type(2)
+123dzo.vip##p:nth-of-type(3)
+123dzo.vip###text-5 > .widget-title
+123dzo.vip##.flex-has-center.nav-dark.wide-nav.header-bottom
+123dzo.vip##.text-center.medium-text-center.dark.absolute-footer
+
+128.199.208.110###main
+128.199.208.110###row-526665659
+128.199.208.110##.large-5.small-12.medium-5.col
+128.199.208.110##.sticky-jump.has-sticky.header-full-width.header
+128.199.208.110##.text-center.medium-text-center.dark.absolute-footer
+
+12betus.com###main
+12bet.events###main
+12betus.com##.dmca-badge
+12bet.events###col-47019299
+12betus.com##.logo.flex-col
+12bet.events###col-862994295
+12bet.events###col-1069966399
+12bet.events###col-1909371334
+12bet.events###col-1954394316
+12bet.events###col-2066534857
+12betus.com##.sticky-jump.has-sticky.header
+12betus.com##center > [href="https://12betus.com/"]
+12bet.events###footer > .lg-y.md-y.y.lg-x.md-x.x.has-hover.img
+12bet.events##.sticky-jump.has-sticky.header-full-width.header
+12bet.events##.text-center.medium-text-center.dark.absolute-footer
+12bet.events###col-516323827 > .col-inner > .section-title-container.container
+
+178.128.115.187,139.162.63.62,139.162.1.233,139.162.9.119##.dmca-badge
+139.162.63.62,139.162.1.233,139.162.9.119##.relative.space-header-2-height
+139.162.63.62,139.162.1.233,139.162.9.119##.relative.left.box-50.space-footer-copy-left
+178.128.115.187,139.162.63.62,139.162.1.233,139.162.9.119##.relative.box-100.space-title-box
+178.128.115.187,139.162.63.62,139.162.1.233,139.162.9.119##.relative.box-100.space-page-section
+178.128.115.187,139.162.63.62,139.162.1.233,139.162.9.119##.relative.box-25.space-footer-top-desc
+178.128.115.187,139.162.63.62,139.162.1.233,139.162.9.119##.relative.text-right.box-25.space-footer-top-soc
+
+178.128.115.187##table:nth-of-type(2)
+178.128.115.187##.relative.space-header-2-top
+178.128.115.187##.relative.box-100.space-footer-copy
+178.128.115.187##.custom-html-widget.textwidget > .alignleft
+
+15.235.200.96###main
+15.235.200.96###col-129787701
+15.235.200.96###col-454650466
+15.235.200.96###col-495103105
+15.235.200.96###col-761724540
+15.235.200.96###col-903260862
+15.235.200.96###col-937953336
+15.235.200.96###col-1027504799
+15.235.200.96###col-1586576612
+15.235.200.96###col-1769511257
+15.235.200.96###col-1924945296
+15.235.200.96###col-2035123250
+15.235.200.96###col-2112589448
+15.235.200.96##li:nth-of-type(7)
+15.235.200.96##.hide-for-small.section
+15.235.200.96###col-36831464 > .col-inner > p
+15.235.200.96##.sticky-jump.has-sticky.header
+15.235.200.96###col-36831464 > .col-inner > h3
+15.235.200.96###col-482628883 > .col-inner > p
+15.235.200.96###col-773621910 > .col-inner > p
+15.235.200.96###col-911542288 > .col-inner > p
+15.235.200.96###col-914935641 > .col-inner > p
+15.235.200.96###col-963148345 > .col-inner > p
+15.235.200.96###col-1692299810 > .col-inner > p
+15.235.200.96###col-244600101 > .col-inner > h3
+15.235.200.96###col-482628883 > .col-inner > h3
+15.235.200.96###col-558053961 > .col-inner > h3
+15.235.200.96###col-773621910 > .col-inner > h3
+15.235.200.96###col-914935641 > .col-inner > h3
+15.235.200.96###col-963148345 > .col-inner > h3
+15.235.200.96###col-1417618375 > .col-inner > h3
+15.235.200.96###col-1692299810 > .col-inner > h3
+15.235.200.96###col-1857852448 > .col-inner > h3
+15.235.200.96##.text-center.medium-text-center.dark.absolute-footer
+
+15.235.203.122##header
+15.235.203.122###footer
+15.235.203.122###main-body-wrapper
+15.235.203.122##.title-column.title
+15.235.203.122##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(3)
+15.235.203.122##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(4)
+15.235.203.122##div.col-md-3.col-sm-6.col-xs-12 > .textwidget > p
+
+157.230.45.184###text-2
+157.230.45.184##.site-content
+157.230.45.184##.banner-bottom
+157.230.45.184###text-3 > .widget-title
+157.230.45.184##.cm-col-12.cm-col-md-6.cm-col-lg-7
+157.230.45.184##.cm-header-style-one.general-header
+157.230.45.184##div.cm-col-12.cm-col-lg-4:nth-of-type(2)
+157.230.45.184##div.cm-col-12.cm-col-lg-4:nth-of-type(3)
+
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_146.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_155.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_162.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_167.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_168.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_176.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_177.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_180.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_183.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_184.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_189.vc_row_inner
+165.22.63.250##.td-pb-row.wpb_row.vc_inner.vc_row.tdi_196.vc_row_inner
+165.22.63.250##.td-container-wrap.td-main-page-wrap.td-main-content-wrap
+165.22.63.250##.td_block_template_1.td-pb-border-top.tdi_210.tdm_block_inline_text.td_block_wrap.tdm_block
+165.22.63.250##.td_block_template_1.td-pb-border-top.tdi_222.tdm_block_inline_text.td_block_wrap.tdm_block
+165.22.63.250##.td_block_template_1.td-pb-border-top.tdi_188.tdm_block_inline_text.td_block_wrap.tdm_block > .tdm-descr
+
+165.232.174.129###col-1346599186
+165.232.174.129###col-1672868366
+165.232.174.129###col-532865774 > .col-inner > p
+165.232.174.129###col-1303859232 > .col-inner > p
+165.232.174.129###col-1303859232 > .col-inner > .section-title-container.container
+165.232.174.129###col-532865774 > .col-inner > .section-title-container.container > .section-title-normal.section-title
+
+167.99.77.125##header
+167.99.77.125###footer
+167.99.77.125##p:nth-of-type(2)
+167.99.77.125##p:nth-of-type(3)
+167.99.77.125###main-body-wrapper
+167.99.77.125##.title-column.title
+167.99.77.125##.wp-image-5254.size-full.aligncenter
+167.99.77.125##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(4)
+
+178.128.106.23###footer
+178.128.106.23###main-body-wrapper
+178.128.106.23##.title-column.title
+178.128.106.23##header > .container > .row
+178.128.106.23##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(2)
+178.128.106.23##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(3)
+178.128.106.23##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(4)
+178.128.106.23##div.col-md-3.col-sm-6.col-xs-12 > .textwidget > p
+
+178.128.18.55###block-8 > p
+178.128.18.55##.site-header
+178.128.18.55##.kt-clear.hfeed.wrap
+178.128.18.55###block-10 > ul > li:nth-of-type(4)
+178.128.18.55###block-10 > ul > li:nth-of-type(6)
+178.128.18.55##.footer-section-inner-items-1.site-footer-section.site-footer-middle-section-3
+178.128.18.55##.footer-section-inner-items-1.site-footer-section.site-footer-middle-section-4
+178.128.18.55##.site-footer-row-mobile-layout-default.site-footer-row-tablet-layout-default.site-footer-row-layout-standard.site-footer-focus-item.site-footer-row-container.site-bottom-footer-wrap
+
+188.166.185.213###main
+188.166.185.213###gap-4249443
+188.166.185.213##.image-cover
+188.166.185.213###row-48763888
+188.166.185.213###gap-220422245
+188.166.185.213###gap-468554385
+188.166.185.213###gap-557203625
+188.166.185.213###gap-682764683
+188.166.185.213###gap-791360332
+188.166.185.213###gap-818117408
+188.166.185.213###row-124747369
+188.166.185.213###row-498646830
+188.166.185.213###row-605972295
+188.166.185.213###row-730044335
+188.166.185.213###row-834023808
+188.166.185.213###row-895891571
+188.166.185.213###row-898357522
+188.166.185.213###row-912157218
+188.166.185.213###row-957614141
+188.166.185.213###row-986372986
+188.166.185.213###gap-1059483446
+188.166.185.213###gap-1120232250
+188.166.185.213###gap-1165075060
+188.166.185.213###gap-1447441960
+188.166.185.213###gap-1674541968
+188.166.185.213###gap-1703813851
+188.166.185.213###gap-1999859141
+188.166.185.213###gap-2050741345
+188.166.185.213###row-1069189074
+188.166.185.213###row-1085079564
+188.166.185.213###row-1174769695
+188.166.185.213###row-1210941333
+188.166.185.213###row-1691061966
+188.166.185.213###row-1847317625
+188.166.185.213###row-1976296239
+188.166.185.213###row-1979473565
+188.166.185.213##.block-footer.section
+188.166.185.213##.from_the_blog_excerpt
+188.166.185.213##.nav-dark.show-logo-center.header-main
+188.166.185.213##div.clearfix.divider.is-divider:nth-of-type(9)
+188.166.185.213###footer > .home-icon.row-full-width.row-small.row
+188.166.185.213##.flickity-enabled.is-draggable.slider-nav-push.slider-nav-reveal.row-slider.slider.small-columns-1.medium-columns-1.large-columns-3.row
+
+188.166.189.155##.content-area
+188.166.189.155###row-192308388
+188.166.189.155###row-572826308
+188.166.189.155###row-774677937
+188.166.189.155###row-786140482
+188.166.189.155###row-913665195
+188.166.189.155###row-953135864
+188.166.189.155###row-958219683
+188.166.189.155###row-1432375175
+188.166.189.155###row-1497659668
+188.166.189.155###row-1848096965
+188.166.189.155###row-1876385369
+188.166.189.155###section_737186380
+188.166.189.155###text-488799139 > p > span
+188.166.189.155###text-644969362 > p > span
+188.166.189.155##.sticky-jump.has-sticky.header
+188.166.189.155##.page-wrapper.blog-single.blog-wrapper
+188.166.189.155###row-509649984 > .large-12.small-12.col
+188.166.189.155###row-1152953893 > .large-12.small-12.col
+188.166.189.155##.has-hover.box-blog-post.box-text-bottom.box-normal.box > .box-image
+
+188.166.189.40###main
+188.166.189.40###row-229678687
+188.166.189.40###row-292769745
+188.166.189.40###row-332659757
+188.166.189.40###row-366646803
+188.166.189.40###row-604416062
+188.166.189.40###row-791971121
+188.166.189.40###row-795275813
+188.166.189.40###row-878587842
+188.166.189.40###row-898857771
+188.166.189.40###row-959394113
+188.166.189.40###row-1148693877
+188.166.189.40###row-1221336327
+188.166.189.40###row-1279807699
+188.166.189.40###row-1356761821
+188.166.189.40###row-1558246000
+188.166.189.40###row-1596833534
+188.166.189.40###row-1671953511
+188.166.189.40###row-1747333059
+188.166.189.40###row-1842512967
+188.166.189.40###row-2116414748
+188.166.189.40###text-794172167 > p > span
+188.166.189.40###text-1300213659 > p > span
+188.166.189.40###text-1799272087 > p > span
+188.166.189.40###text-2869180235 > p > span
+188.166.189.40##.active.plain.accordion-title
+188.166.189.40##.sticky-jump.has-sticky.header
+188.166.189.40##div.accordion-item:nth-of-type(2)
+188.166.189.40##div.accordion-item:nth-of-type(3)
+188.166.189.40##.wp-image-510.size-medium.alignnone
+
+188.166.208.162##.box-image
+188.166.208.162##.dmca-badge
+188.166.208.162###row-223304024
+188.166.208.162###row-1383384201
+188.166.208.162##center > strong
+188.166.208.162##.clearfix.gap-element
+188.166.208.162##.row-divided.row-large.row
+188.166.208.162##.sticky-jump.has-sticky.header
+188.166.208.162##.section-title-container.container
+188.166.208.162##.block-button.block-game.row-collapse.row
+188.166.208.162##.hide-for-medium.block-slider.relative.slider-wrapper
+
+188.166.223.203###main
+188.166.223.203###row-56601781
+188.166.223.203###row-134860102
+188.166.223.203###row-277223878
+188.166.223.203###row-1010818077
+188.166.223.203###row-1163116510
+188.166.223.203###row-1634855941
+188.166.223.203###row-1867620063
+188.166.223.203###row-2138933049
+188.166.223.203###text-1148933896
+188.166.223.203###text-1217508645
+188.166.223.203##.footer-acc.accordion
+188.166.223.203###text-1194347829 > p > span
+188.166.223.203###text-3605905831 > p > span
+188.166.223.203##.sticky-jump.has-sticky.header
+188.166.223.203##.has-hover.box-blog-post.box-text-bottom.box-normal.box > .box-image
+
+188.166.224.89##.content-area
+188.166.224.89###row-569012664
+188.166.224.89###row-1780258198
+188.166.224.89##p:nth-of-type(2)
+188.166.224.89##.box-socials.section
+188.166.224.89##.sticky-jump.has-sticky.header
+188.166.224.89##.lg-y.md-y.y.lg-x.md-x.x.footer-logo.has-hover.img
+188.166.224.89##.text-center.medium-text-center.dark.absolute-footer
+188.166.224.89##.flickity-enabled.slider-nav-push.slider-nav-reveal.row-slider.slider.small-columns-1.medium-columns-1.large-columns-4.row
+
+1mlink.vip##footer
+1mlink.vip###cookie-pop
+1mlink.vip##.navbar-default.navbar
+
+51.79.140.132###main
+51.79.140.132##.dmca-badge
+51.79.140.132###col-643695244
+51.79.140.132###col-928078712
+51.79.140.132###col-1413445047
+51.79.140.132###col-1783786450
+51.79.140.132##li:nth-of-type(7)
+51.79.140.132##.hide-for-small.section
+51.79.140.132##.sticky-jump.has-sticky.header
+51.79.140.132###col-646692851 > .col-inner > p
+51.79.140.132###col-1157625667 > .col-inner > p
+51.79.140.132###col-300045047 > .col-inner > h3
+51.79.140.132###col-389944587 > .col-inner > h3
+51.79.140.132###col-646692851 > .col-inner > h3
+51.79.140.132###col-1157625667 > .col-inner > h3
+51.79.140.132###section_924649891 > .relative.section-content
+51.79.140.132##.text-center.medium-text-center.dark.absolute-footer
+
+51.79.142.145##hr
+51.79.142.145##header
+51.79.142.145###footer
+51.79.142.145##li:nth-of-type(1)
+51.79.142.145##li:nth-of-type(2)
+51.79.142.145##li:nth-of-type(3)
+51.79.142.145###main-body-wrapper
+51.79.142.145##.title-column.title
+51.79.142.145##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(2)
+51.79.142.145##div.col-md-3.col-sm-6.col-xs-12:nth-of-type(4)
+51.79.142.145##div.col-md-3.col-sm-6.col-xs-12 > .textwidget > p
+
+51.79.142.146##p:nth-of-type(1)
+51.79.142.146##p:nth-of-type(2)
+51.79.142.146##p:nth-of-type(3)
+51.79.142.146##.widget.nav_menu-2
+51.79.142.146##.banner-nhacai-bottom
+51.79.142.146##.ads1.space-page-wrapper
+51.79.142.146##.relative.space-header-height
+51.79.142.146##.relative.box-100.space-footer-copy
+51.79.142.146###text-2 > .relative.space-widget-title
+51.79.142.146##.widget.nav_menu-3 > .relative.space-widget-title
+51.79.142.146##.relative.space-page-without-title.box-100.space-page-section
+51.79.142.146##.menu-item-10098.menu-item-object-page.menu-item-type-post_type.menu-item
+51.79.142.146##div.relative.box-25.space-content-section.space-footer-top-desc1:nth-of-type(4)
+
+51.79.143.232###main
+51.79.143.232###text-4
+51.79.143.232###text-5
+51.79.143.232##.dmca-badge
+51.79.143.232###col-37059912
+51.79.143.232###col-480641593
+51.79.143.232###col-1062105408
+51.79.143.232###col-1351941199
+51.79.143.232###col-2006582519
+51.79.143.232###col-2056261841
+51.79.143.232###col-2112899864
+51.79.143.232###col-2115367323
+51.79.143.232###text-3 > .widget-title
+51.79.143.232##.hide-for-small.section
+51.79.143.232###text-3 > .textwidget > p
+51.79.143.232##.page-wrapper.content-area
+51.79.143.232###text-3 > .small.is-divider
+51.79.143.232###col-61853432 > .col-inner > p
+51.79.143.232###col-86303619 > .col-inner > p
+51.79.143.232##.sticky-jump.has-sticky.header
+51.79.143.232###col-456823786 > .col-inner > p
+51.79.143.232###col-61853432 > .col-inner > h3
+51.79.143.232###col-86303619 > .col-inner > h3
+51.79.143.232###col-975271911 > .col-inner > p
+51.79.143.232##.footer-1.footer.footer-widgets
+51.79.143.232###col-224088376 > .col-inner > h3
+51.79.143.232###col-327680403 > .col-inner > h3
+51.79.143.232###col-456823786 > .col-inner > h3
+51.79.143.232###col-975271911 > .col-inner > h3
+51.79.143.232##.text-center.medium-text-center.dark.absolute-footer
+51.79.143.232##.small-text-center.medium-text-center.dark.absolute-footer
+
+51.79.250.53###main
+51.79.250.53###col-513599374
+51.79.250.53###col-630991635
+51.79.250.53###col-1005813310
+51.79.250.53###col-1218031257
+51.79.250.53##.float-ck-center-lt
+51.79.250.53###text-3028755575 > p
+51.79.250.53###text-3174577577 > p
+51.79.250.53##.sticky-jump.has-sticky.header
+51.79.250.53##.text-center.medium-text-center.dark.absolute-footer
+51.79.250.53##.icon-style-fill.relative.share-row.share-icons.social-icons
+51.79.250.53###col-387533360 > .col-inner > .section-title-container.container
+51.79.250.53###col-1964223260 > .col-inner > .section-title-container.container
+51.79.250.53###col-674909282 > .col-inner > .lg-y.md-y.y.lg-x.md-x.x.has-hover.img
+51.79.250.53###col-1761435837 > .col-inner > .lg-y.md-y.y.lg-x.md-x.x.has-hover.img
+
+68.183.180.50###text-3
+68.183.180.50###text-6
+68.183.180.50###text-4 > .widget-title
+68.183.180.50##.copyright-footer > strong
+68.183.180.50##.page-wrapper.content-area
+68.183.180.50###text-4 > .small.is-divider
+68.183.180.50##.pull-right.footer-secondary
+68.183.180.50##.sticky-jump.has-sticky.header
+68.183.180.50##.footer-1.footer.footer-widgets
+
+68.183.182.70###main
+68.183.182.70###row-61193981
+68.183.182.70###row-99374226
+68.183.182.70###row-124268555
+68.183.182.70###row-166699228
+68.183.182.70###row-175309624
+68.183.182.70###row-305148702
+68.183.182.70###row-321898798
+68.183.182.70###row-383242324
+68.183.182.70###row-428706006
+68.183.182.70###row-441720604
+68.183.182.70###row-442125690
+68.183.182.70###row-548865032
+68.183.182.70###row-610002923
+68.183.182.70###row-628808069
+68.183.182.70###row-639430159
+68.183.182.70###row-639698331
+68.183.182.70###row-644357164
+68.183.182.70###row-675814448
+68.183.182.70###row-696916766
+68.183.182.70###row-703181171
+68.183.182.70###row-710590374
+68.183.182.70###row-713185537
+68.183.182.70###row-790429696
+68.183.182.70###row-874610319
+68.183.182.70###row-942276022
+68.183.182.70###row-946111091
+68.183.182.70###row-954770269
+68.183.182.70###row-1056443853
+68.183.182.70###row-1128076094
+68.183.182.70###row-1130948965
+68.183.182.70###row-1131317754
+68.183.182.70###row-1181705165
+68.183.182.70###row-1190112962
+68.183.182.70###row-1220301662
+68.183.182.70###row-1267709729
+68.183.182.70###row-1272959697
+68.183.182.70###row-1280665834
+68.183.182.70###row-1289017514
+68.183.182.70###row-1292492668
+68.183.182.70###row-1364050913
+68.183.182.70###row-1438807481
+68.183.182.70###row-1439239240
+68.183.182.70###row-1513003581
+68.183.182.70###row-1538279480
+68.183.182.70###row-1615730695
+68.183.182.70###row-1633866234
+68.183.182.70###row-1666613453
+68.183.182.70###row-1672032979
+68.183.182.70###row-1708621345
+68.183.182.70###row-1718143422
+68.183.182.70###row-1719332675
+68.183.182.70###row-1861424765
+68.183.182.70###row-1911930466
+68.183.182.70###row-1922221468
+68.183.182.70###row-1935732541
+68.183.182.70###row-1954113613
+68.183.182.70###row-2002303036
+68.183.182.70###row-2061329646
+68.183.182.70###row-2096071956
+68.183.182.70##.active.plain.accordion-title
+68.183.182.70##.sticky-jump.has-sticky.header
+68.183.182.70##div.accordion-item:nth-of-type(2)
+68.183.182.70##div.accordion-item:nth-of-type(3)
+68.183.182.70###row-704323891 > .large-12.small-12.col
+68.183.182.70##[src="//traffic-user.net/theme_v2/assets/img/8link-io.png"]
+68.183.182.70##.flickity-enabled.slider-nav-push.slider-nav-reveal.row-slider.slider.small-columns-1.medium-columns-1.large-columns-3.row
+
+68.183.225.17###text-7
+68.183.225.17##.site-info
+68.183.225.17##.footer-widget-2
+68.183.225.17##.footer-widget-3
+68.183.225.17##.footer-widget-4
+68.183.225.17###text-2 > .widget-title
+68.183.225.17###text-2 > .textwidget > p
+68.183.225.17##.hfeed.container.grid-container.site
+68.183.225.17##.stuckElement.sub-menu-right.nav-align-center.main-navigation
+
+88bet.cab###main
+88bet.cab###row-97170508
+88bet.cab###row-493747087
+88bet.cab###row-502161346
+88bet.cab###row-576720934
+88bet.cab###row-738381637
+88bet.cab###row-862561145
+88bet.cab###row-1072837608
+88bet.cab###row-1697164334
+88bet.cab###row-1707816503
+88bet.cab###row-2014463390
+88bet.cab###text-1019913217
+88bet.cab###text-2881323770
+88bet.cab##.plain.accordion-title
+88bet.cab##.sticky-jump.has-sticky.header
+
+88bet.ceo##p:nth-of-type(3)
+88bet.ceo##center:nth-of-type(2)
+88bet.ceo##.relative.space-header-height
+88bet.ceo##.relative.box-100.space-title-box
+88bet.ceo##.relative.box-100.space-footer-copy
+88bet.ceo##.relative.box-100.space-page-section
+88bet.ceo##div.wp-block-column-is-layout-flow.is-layout-flow.wp-block-column:nth-of-type(3)
+88bet.ceo##div.wp-block-column-is-layout-flow.is-layout-flow.wp-block-column > .wp-block-heading
+88bet.ceo##.wp-block-column-is-layout-flow.is-layout-flow.is-vertically-aligned-top.wp-block-column
+
+88fvip.com##.dmca-badge
+88fvip.com###row-1294428333
+
+8link.io##h2
+8link.io##.footer-wrapper
+8link.io##.sl-challenge__getkey.position-relative
+8link.io##.sl-header.bg-light.navbar-light.navbar-expand-lg.navbar
+8link.io##.position-relative.sl-challenge__border.sl-challenge__code > [src]
+8link.io##.sl-challenge__border.sl-challenge__getcode.container > h3.text-center
+8link.io##.flex-column.align-items-center.justify-content-center.d-flex.sl-challenge__border.sl-challenge__video
+
+8xbet.market###main
+8xbet.market###col-1612653866
+8xbet.market###col-1671019503
+8xbet.market###text-1675228459 > h3
+8xbet.market###text-3418337945 > h3
+8xbet.market##.large-6.small-12.medium-6.col
+8xbet.market##.sticky-jump.has-sticky.header
+8xbet.market##.text-center.medium-text-center.dark.absolute-footer
+
+8xbet17.bet##.card-body
+8xbet17.bet##.ex-banner
+8xbet17.bet##.fixed-btn
+8xbet17.bet##.ex-footer-social
+8xbet17.bet##.topnav.ex-header
+8xbet17.bet##.blog.page-archive
+8xbet17.bet##.about.col-md-3.col-sm-6.col-12
+8xbet17.bet##div.col-md-3.col-sm-6.col-12 > h3
+8xbet17.bet##div.col-md-3.col-sm-6.col-12 > div
+8xbet17.bet##div.col-md-3.col-sm-6.col-12:nth-of-type(1)
+8xbet17.bet##div.col-md-3.col-sm-6.col-12:nth-of-type(2)
+8xbet17.bet##.justify-content-center.flex-md-row.d-md-flex.flex-column.d-inline-flex
+8xbet17.bet##div.col-md-3.col-sm-6.col-12 > [href="https://8xbet17.bet/8xbet-danh-bac-trach-nhiem/"]
+
+ab77app.com##.dmca-badge
+ab77app.com##.site-header
+ab77app.com##.kt-clear.hfeed.wrap
+ab77app.com##.footer-section-inner-items-1.site-footer-section.site-footer-top-section-1
+ab77app.com##.footer-section-inner-items-1.site-footer-section.site-footer-top-section-3
+ab77app.com##.kadence-columne4c982-80.wp-block-kadence-column > .kt-inside-inner-col > p
+ab77app.com##.site-footer-row-mobile-layout-default.site-footer-row-tablet-layout-default.site-footer-row-layout-standard.site-footer-focus-item.site-footer-row-container.site-middle-footer-wrap
+
+ae888.wales###main
+ae888.wales###col-645882331
+ae888.wales###col-1789551180
+ae888.wales###col-1840501548
+ae888.wales###col-1861086254
+ae888.wales###col-1942725599
+ae888.wales###col-2112169068
+ae888.wales##.large-3.small-12.medium-2.col
+ae888.wales##.sticky-jump.has-sticky.header
+ae888.wales###col-381093212 > .dark.col-inner > .text
+ae888.wales###col-420458948 > .dark.col-inner > .text
+ae888.wales###col-2128515143 > .dark.col-inner > .text
+ae888.wales##.text-center.medium-text-center.dark.absolute-footer
+
+asideway.com##.mt-3.text-center
+asideway.com##.my-3.mx-auto.container.footer
+
+bet88us.com###main
+bet88us.com###col-75102488
+bet88us.com###col-806767510
+bet88us.com###col-1298576574
+bet88us.com###col-1369866118
+bet88us.com###section_107647960
+bet88us.com###section_1702522595
+bet88us.com##.sticky-jump.has-sticky.header
+bet88us.com##.relative.section-content > center
+bet88us.com##.flickity-enabled.slider-nav-push.slider-nav-reveal.row-slider.slider.small-columns-1.medium-columns-1.large-columns-3.row
+
+bet88won.com###main
+bet88won.com###col-422056874
+bet88won.com###col-681493016
+bet88won.com###col-784197053
+bet88won.com###col-861898555
+bet88won.com###section_1306934345
+bet88won.com###section_1420090934
+bet88won.com##.sticky-jump.has-sticky.header
+bet88won.com##.flickity-enabled.slider-nav-push.slider-nav-reveal.row-slider.slider.small-columns-1.medium-columns-1.large-columns-3.row
+
+betvisa.tel##p > span
+betvisa.tel##h2 > span
+betvisa.tel##h3 > span
+betvisa.tel##li > span
+betvisa.tel##.footer-wrapper
+betvisa.tel##p:nth-of-type(1)
+betvisa.tel##p:nth-of-type(3)
+betvisa.tel##p:nth-of-type(4)
+betvisa.tel##p:nth-of-type(29)
+betvisa.tel##p:nth-of-type(30)
+betvisa.tel##p:nth-of-type(31)
+betvisa.tel##p:nth-of-type(32)
+betvisa.tel##ul:nth-of-type(4)
+betvisa.tel##ul:nth-of-type(5)
+betvisa.tel##ul:nth-of-type(6)
+betvisa.tel##ul:nth-of-type(7)
+betvisa.tel##h3:nth-of-type(10)
+betvisa.tel##.col-inner > ul > li
+betvisa.tel##.sticky-jump.has-sticky.header
+betvisa.tel##.lg-y.md-y.y.lg-x.md-x.x.has-hover.img
+
+bk8.lv###main
+bk8.lv###row-162642857
+bk8.lv###row-354820403
+bk8.lv###row-381121490
+bk8.lv###row-480194113
+bk8.lv###row-726976760
+bk8.lv###row-760924639
+bk8.lv###row-902318361
+bk8.lv###row-1123131832
+bk8.lv###row-1321073973
+bk8.lv###row-1663088368
+bk8.lv###row-1818451343
+bk8.lv###row-2051179288
+bk8.lv###row-2071920624
+bk8.lv###row-2074685967
+bk8.lv###row-2131934357
+bk8.lv###text-1016470925 > p > span
+bk8.lv###text-1238252643 > p > span
+bk8.lv###text-4168172762 > p > span
+bk8.lv##.sticky-jump.has-sticky.header
+bk8.lv###row-944830067 > .large-12.small-12.col
+
+bk8keo.com###main
+bk8keo.com###row-18838127
+bk8keo.com###row-114742766
+bk8keo.com###row-396657181
+bk8keo.com###row-759954239
+bk8keo.com###row-1109156333
+bk8keo.com###row-1134727537
+bk8keo.com###row-1303375415
+bk8keo.com###row-1336444476
+bk8keo.com###row-1471094484
+bk8keo.com###row-1578373638
+bk8keo.com###row-1660317786
+bk8keo.com###row-1991561959
+bk8keo.com###text-2475023348
+bk8keo.com###text-4278489139 > p > span
+bk8keo.com##.sticky-jump.has-sticky.header
+bk8keo.com##.has-hover.box-blog-post.box-text-bottom.box-normal.box > .box-image
+
+blitly.io##h4
+blitly.io##.footer
+blitly.io##hr.mb-32
+blitly.io##.note-vpn
+blitly.io##.note-text
+blitly.io##.google-wrap
+blitly.io##.header-container
+blitly.io##.guild-video-container
+blitly.io##.title-short.guild-title
+blitly.io##.scroll-to.topdown.header-container
+blitly.io##.justify-content-center.row > div.col-12
+
+bonglantv.tv###brx-content
+bonglantv.tv###brxe-fhkxgm
+bonglantv.tv###brxe-lltdgf
+bonglantv.tv###brxe-sfxnzx
+bonglantv.tv##.float-ck-center-lt
+bonglantv.tv###brxe-efnccb > .brxe-block
+bonglantv.tv###menu-primary-menu > .bricks-menu-item.menu-item-347.current_page_item.page-item-37.page_item.current-menu-item.menu-item-home.menu-item-object-page.menu-item-type-post_type.menu-item
+
+dolphintour.vn##.car_boxs
+dolphintour.vn##.contact-icon
+dolphintour.vn##.main-footer-2
+dolphintour.vn##.fix-tour-footer
+dolphintour.vn##.footer-copyright
+dolphintour.vn##.navbar-inverse.navbar
+dolphintour.vn##.hidden-xs.top_bar_travel
+
+dongphucsaigon.com##.elementor-36.elementor
+dongphucsaigon.com##.elementor-location-header.elementor-80.elementor
+dongphucsaigon.com##.hentry.status-publish.type-page.page.post-473.elementor-location-single.elementor-43848.elementor
+dongphucsaigon.com##.elementor-element-3f57873.elementor-element.elementor-inner-column.elementor-col-25.elementor-column
+dongphucsaigon.com##.elementor-element-8b09bb0.elementor-element.elementor-inner-column.elementor-col-25.elementor-column
+dongphucsaigon.com##.elementor-element-d5ce97a.elementor-element.elementor-inner-column.elementor-col-25.elementor-column
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-48222e80.elementor-element.elementor-top-section.elementor-section
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-89b73e0.elementor-element.elementor-inner-section.elementor-section
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-element-f02f9be.elementor-element.elementor-inner-section.elementor-section
+dongphucsaigon.com##.elementor-section-height-default.elementor-section-boxed.elementor-hidden-mobile.elementor-hidden-tablet.elementor-element-2b8fdfe7.elementor-element.elementor-top-section.elementor-section
+
+duyhacker.com##.swal2-backdrop-show.swal2-center.swal2-container
+
+efhjd.com##.faqs
+efhjd.com###ad-20
+efhjd.com###ad-21
+efhjd.com###ad-22
+efhjd.com###ad-23
+efhjd.com###ad-24
+efhjd.com###ad-25
+efhjd.com###ad-26
+efhjd.com###ad-27
+efhjd.com##footer
+efhjd.com##header
+efhjd.com##.spacer
+efhjd.com##fieldset
+efhjd.com##.mt-1.mb-4.file-title
+efhjd.com##.divider > .container > hr
+
+f88maxxx.net##p:nth-of-type(1)
+f88maxxx.net##.relative.space-header-2-top
+f88maxxx.net##.relative.box-100.space-footer
+f88maxxx.net##.relative.space-shortcode-4.space-shortcode-wrap
+
+f8bet.in.net###main
+f8bet.in.net###col-292892186
+f8bet.in.net###col-352027344
+f8bet.in.net###col-1975661707
+f8bet.in.net###col-2003750115
+f8bet.in.net###col-248992600 > .col-inner > p
+f8bet.in.net###col-657003995 > .col-inner > p
+f8bet.in.net###col-1290480308 > .col-inner > p
+f8bet.in.net###col-1314437886 > .col-inner > p
+f8bet.in.net##.sticky-shrink.has-sticky.header
+f8bet.in.net###col-657003995 > .col-inner > .row
+f8bet.in.net###col-1314437886 > .col-inner > .row
+f8bet.in.net###col-657003995 > .col-inner > .text
+f8bet.in.net###col-1251352586 > .col-inner > .text
+f8bet.in.net###col-1314437886 > .col-inner > .text
+f8bet.in.net##div.menu-item.flex.ux-menu-link:nth-of-type(5)
+f8bet.in.net##.text-center.medium-text-center.dark.absolute-footer
+
+fa88.is###main
+fa88.is###col-122795102
+fa88.is###col-753368883
+fa88.is###col-987403893
+fa88.is###col-1004376775
+fa88.is###col-1326099502
+fa88.is###col-1655580744
+fa88.is###row-1745972654
+fa88.is###row-1898774731
+fa88.is##li:nth-of-type(6)
+fa88.is###text-447780170 > h3
+fa88.is###text-1837478622 > h3
+fa88.is##.sticky-jump.has-sticky.header
+fa88.is##.text-center.full-width.follow-icons.social-icons
+
+fb88.coupons##.dmca-badge
+fb88.coupons##.content-area
+fb88.coupons##.logo.flex-col
+fb88.coupons##[src="//traffic-user.net/theme_v2/assets/img/8link-io.png"]
+
+fb88.deals##.dmca-badge
+fb88.deals###row-1195435073
+fb88.deals##center > strong
+fb88.deals##.sticky-jump.has-sticky.header
+fb88.deals##.section-title-container.container
+fb88.deals##.hide-for-medium.block-slider.relative.slider-wrapper
+fb88.deals##[src="//traffic-user.net/theme_v2/assets/img/8link-io.png"]
+fb88.deals##.flickity-enabled.is-draggable.slider-nav-push.slider-nav-reveal.row-slider.slider.small-columns-1.medium-columns-1.large-columns-3.row
+
+fb88.sbs##.site-content
+fb88.sbs##.grid-container.site-footer
+fb88.sbs##.gb-container-bc2e09f4.gb-container
+fb88.sbs##.grid-container.secondary-navigation
+
+fun88.ong###main
+fun88.ong###col-482488523
+fun88.ong###col-1166671499
+fun88.ong##.sticky-jump.has-sticky.header
+fun88.ong###col-1957186496 > .col-inner > h3
+fun88.ong###row-2133109874 > .large-4.small-12.medium-4.col
+fun88.ong##.text-center.medium-text-center.dark.absolute-footer
+
+gamingiwin88.net###main
+gamingiwin88.net##.header
+gamingiwin88.net###col-388205686
+gamingiwin88.net###col-884035919
+gamingiwin88.net###row-828119220
+gamingiwin88.net###col-1129488383
+gamingiwin88.net###col-1265971232
+gamingiwin88.net###row-390942868 > .large-12.small-12.col
+gamingiwin88.net##.text-center.medium-text-center.dark.absolute-footer
+
+guongtrangtri.net###main
+guongtrangtri.net##.footer-wrapper
+guongtrangtri.net##[href="tel:0943.482.596"]
+guongtrangtri.net##.sticky-jump.has-sticky.header
+guongtrangtri.net##div > [href="tel:0346.333.256"]
+guongtrangtri.net##div > [href="tel:0914.20.8386"]
+guongtrangtri.net##div > [href="tel:0916.389.892"]
+guongtrangtri.net##div > [href="tel:0987.699.236"]
+guongtrangtri.net##div > [href="tel:091.66.11.055"]
+guongtrangtri.net##body > div > div > [href="tel:0989.685.236"]
+
+hoaphatdoor.vn##.hotline
+hoaphatdoor.vn##.footer-wrapper
+hoaphatdoor.vn##.sticky-jump.has-sticky.header
+
+jpxsport.com##.footer
+jpxsport.com##p:nth-of-type(32)
+jpxsport.com##ul:nth-of-type(10)
+jpxsport.com##ul:nth-of-type(11)
+jpxsport.com##.sweb-mobile-action
+
+khungtranhthudo.com###main
+khungtranhthudo.com###col-311438234
+khungtranhthudo.com###col-646858971
+khungtranhthudo.com##.sticky-jump.has-sticky.header
+khungtranhthudo.com##div > [href="tel:0916.317.236"]
+khungtranhthudo.com##.text-center.medium-text-center.dark.absolute-footer
+
+link4m.com##body > .style-4
+link4m.com##p:nth-of-type(1)
+link4m.com##p:nth-of-type(2)
+link4m.com##.navbar-default.navbar
+link4m.com###captcha-html-wrapper > h4
+link4m.com##.text-center.box-body > h4
+link4m.com##div.text-left:nth-of-type(2)
+
+maitraffic.com###main
+maitraffic.com###col-84823328
+maitraffic.com###col-768285446
+maitraffic.com###col-937571193
+maitraffic.com###col-1364149764
+maitraffic.com###text-872581142
+maitraffic.com###text-4108774284
+maitraffic.com###button-contact-vr
+maitraffic.com##.sticky-jump.has-sticky.header
+maitraffic.com##.small-text-center.medium-text-center.dark.absolute-footer
+maitraffic.com##.transparent.sticky-jump.has-sticky.has-transparent.header
+
+megalink.pro##footer
+megalink.pro##.navbar-default.navbar
+megalink.pro##.btn-lg.btn-primary.btn
+
+mmo4me.com##.link--external.link
+mmo4me.com##.p-body-inner > .block-container
+
+nhakhoadangluu.com.vn###wrapper
+nhakhoadangluu.com.vn###section_2009505432
+nhakhoadangluu.com.vn##.text-center.medium-text-center.dark.absolute-footer
+
+noithat5s.com##header
+noithat5s.com##.rowfoot2
+noithat5s.com##.col4.colfoot
+noithat5s.com###main-container
+noithat5s.com##.col1.colfoot > li > strong
+noithat5s.com##ul.col2.colfoot > li > strong
+noithat5s.com##ul.col2.colfoot:nth-of-type(3)
+
+onlinecasinohub.us###main
+onlinecasinohub.us###col-18274375
+onlinecasinohub.us###col-895666528
+onlinecasinohub.us###col-1169644039
+onlinecasinohub.us###col-2092699862
+onlinecasinohub.us##.follow-icons.social-icons
+onlinecasinohub.us##.sticky-jump.has-sticky.header
+onlinecasinohub.us###col-316779566 > .col-inner > p
+onlinecasinohub.us###col-808098715 > .col-inner > p
+onlinecasinohub.us###col-262878275 > .col-inner > .uppercase
+onlinecasinohub.us###col-316779566 > .col-inner > .uppercase
+onlinecasinohub.us###col-808098715 > .col-inner > .uppercase
+onlinecasinohub.us###col-1414233248 > .col-inner > .uppercase
+
+owly.top##.footer
+owly.top##.note-vpn
+owly.top##.banner-image
+owly.top##.convert-title
+owly.top##.header-container
+owly.top##.convert-paragraph
+owly.top##p.mb-8:nth-of-type(1)
+owly.top##p.mb-8:nth-of-type(2)
+owly.top##.section-box.guild-video
+owly.top##.title-short.guild-title
+owly.top##.justify-content-center.row > div.col-12
+
+philaphoto.com###main
+philaphoto.com###col-541006850
+philaphoto.com##.large-2.small-6.medium-2.col
+philaphoto.com##.large-4.small-6.medium-4.col
+philaphoto.com##.sticky-jump.has-sticky.header
+philaphoto.com###col-1369476708 > .col-inner > .text
+philaphoto.com##.text-center.medium-text-center.dark.absolute-footer
+
+s66.casa##.dark-page-wrapper.dark
+s66.casa##.large-4.small-12.medium-4.col
+s66.casa##.sticky-jump.has-sticky.header
+s66.casa###col-116722979 > .col-inner > p
+s66.casa###col-116722979 > .col-inner > ul
+s66.casa###col-1641365546 > .col-inner > p
+s66.casa###col-1641365546 > .col-inner > ul
+s66.casa##.small-text-center.medium-text-center.dark.absolute-footer
+
+seo4rum.edu.vn###text-1053870745
+seo4rum.edu.vn##.large-12.small-12.col
+seo4rum.edu.vn##.large-6.small-12.medium-7.col
+
+sha-mod.online##ins.adsbygoogle
+
+sv388.vegas###main
+sv388.vegas##.dmca-badge
+sv388.vegas###col-113002714
+sv388.vegas###col-595061352
+sv388.vegas###col-971119582
+sv388.vegas###col-1141163706
+sv388.vegas###col-1429724981
+sv388.vegas###col-2115795714
+sv388.vegas###col-345941888 > .col-inner > .text
+sv388.vegas###col-1611279129 > .col-inner > .text
+sv388.vegas##.lg-y.md-y.y.lg-x.md-x.x.has-hover.img
+sv388.vegas##.sticky-jump.has-sticky.has-transparent.transparent.header
+sv388.vegas###col-1611279129 > .col-inner > .lg-y.md-y.y.lg-x.md-x.x.has-hover.img
+
+sv388thomo.it.com##.footer-wrapper
+sv388thomo.it.com###section_2040593810
+sv388thomo.it.com##.sticky-jump.has-sticky.header
+sv388thomo.it.com##.dark.text-left.col-inner > .text
+sv388thomo.it.com##.section-title-container.container
+
+taigo88.poker###main
+taigo88.poker###text-2
+taigo88.poker###text-4
+taigo88.poker###text-6
+taigo88.poker##.header
+taigo88.poker##.order-5.ready.notifications
+taigo88.poker##.order-3.flex_row.fixed_ctact.fixed_tele
+taigo88.poker##.order-4.flex_row.fixed_ctact.fixed_facebook
+taigo88.poker##a.flex_row.fixed_ctact.fixed_tel:nth-of-type(1)
+taigo88.poker##.ready.slick-slider.slick-initialized.banner_slider
+
+tooltx.xyz##.footer
+tooltx.xyz##.header
+
+traffic24h.net##.embed-youtube
+traffic24h.net##p.mb-2:nth-of-type(9)
+traffic24h.net##p.mb-2:nth-of-type(10)
+traffic24h.net##.mb-5.mt-6.text-center > .mb-3
+traffic24h.net##.bg-no-repeat.bg-cover.bg-center.header
+traffic24h.net##.py-6.mt-4.bg-no-repeat.bg-cover.bg-center.footer
+traffic24h.net##p.font-medium.mb-2.items-center.flex:nth-of-type(8)
+traffic24h.net##div.mb-2.font-bold.text-2xl.guide-text:nth-of-type(9)
+traffic24h.net##p.font-medium.mb-2.text-\[\#5a5a5a\].text-lg:nth-of-type(4)
+traffic24h.net##p.font-medium.mb-2.text-\[\#5a5a5a\].text-lg:nth-of-type(7)
+traffic24h.net##h3.mb-2.uppercase.font-bold.text-2xl.guide-text:nth-of-type(1)
+traffic24h.net##h3.mb-2.uppercase.font-bold.text-2xl.guide-text:nth-of-type(2)
+traffic24h.net##.flex-wrap.font-medium.mb-2.text-\[\#5a5a5a\].text-lg.items-center.flex
+
+trafficseo.net##.cta-lptech
+trafficseo.net##.footer-wrapper
+trafficseo.net##.header-wrapper
+trafficseo.net###content > .text
+trafficseo.net###section_114170530
+trafficseo.net###section_509652511
+trafficseo.net###section_1228147380
+trafficseo.net###section_1267212720
+trafficseo.net###section_1513727762
+trafficseo.net###section_1867050969
+trafficseo.net###section_1970533057
+trafficseo.net###section_2055834288
+trafficseo.net###section_2136844160
+trafficseo.net##.section-dem.section
+trafficseo.net##.section-logo.section
+trafficseo.net##.dark.section5.section
+trafficseo.net##.section-tinh-nang.section
+trafficseo.net##.dark.section1.section10.section
+trafficseo.net###section_2139782607 > .relative.section-content > .row
+
+tuvanquangminh.com##.header
+tuvanquangminh.com###content
+tuvanquangminh.com##.dev-nav
+tuvanquangminh.com##.col-lg-5
+tuvanquangminh.com###subheader
+tuvanquangminh.com##.copyright
+tuvanquangminh.com##div.col-md-6.col-lg-3:nth-of-type(3)
+tuvanquangminh.com##div.col-md-6.col-lg-3:nth-of-type(5)
+tuvanquangminh.com##div.col-md-6.col-lg-4 > .footer_menu > h3
+tuvanquangminh.com##div.col-md-6.col-lg-4 > .footer_info_main.footer_infomation > h3
+tuvanquangminh.com##div.col-md-6.col-lg-4 > .footer_info_main.footer_infomation > .footer_infomation_content > p
+
+v9betusdt.com###main
+v9betusdt.com###row-62988453
+v9betusdt.com###row-1178133427
+v9betusdt.com##.sticky-jump.has-sticky.header
+v9betusdt.com##p:nth-of-type(1) > [href="https://v9betusdt.com/"]
+v9betusdt.com###text-3983422705 > p > [href="https://v9betusdt.com/"]
+v9betusdt.com##.has-hover.box-blog-post.box-text-bottom.box-normal.box > .box-image
+
+vn88.lv##.dmca-badge
+vn88.lv###row-1953521228
+vn88.lv##.sticky-jump.has-sticky.header
+vn88.lv##.section-title-container.container
+vn88.lv##center > [href="https://vn88.lv/"]
+vn88.lv###row-726280842 > .large-12.small-12.col
+vn88.lv##.block-button.block-game.row-collapse.row
+
+vuotlink.vip##p > span
+vuotlink.vip##.copyright-container
+vuotlink.vip##.navbar-default.navbar
+vuotlink.vip##.btn-lg.btn-primary.btn
+vuotlink.vip##a[href^="https://pugmainlyapologize.com/g93vdv4u"]:nth-of-type(1)
+vuotlink.vip##a[href^="https://pugmainlyapologize.com/g93vdv4u"]:nth-of-type(2)
+
+w88.giving###main
+w88.giving###row-574885917
+w88.giving###row-654838796
+w88.giving###row-730698323
+w88.giving###row-1057117316
+w88.giving##.block-footer.section
+w88.giving##.sticky-jump.has-sticky.header
+w88.giving###footer > .home-icon.row-full-width.row-small.row
+w88.giving##div.is-selected.post-item.col > .col-inner > .plain > .has-hover.box-blog-post.box-text-bottom.box-normal.box > .box-image
+
+web1s.asia##center
+web1s.asia##.header
+web1s.asia##footer.pt-3
+web1s.asia##p:nth-of-type(2)
+web1s.asia##p:nth-of-type(5)
+web1s.asia##p:nth-of-type(7)
+web1s.asia##p:nth-of-type(8)
+web1s.asia##h3:nth-of-type(2)
+web1s.asia##.fw-bold.btn-primary.btn
+web1s.asia##.fw-bold.btn-success.btn
+web1s.asia##.fw-bold.btn-warning.btn
+web1s.asia##.mb-3.content > div.mb-3
+web1s.asia##div.mb-5.text-center > p
+web1s.asia##.fw-bold.btn-success.btn-lg.btn
+web1s.asia##.col-xxl-9 > div > .mb-3.content
+web1s.asia##.fixed-bottom-right.btn-dark.btn
+web1s.asia##h4.mb-3.text-center:nth-of-type(1)
+web1s.asia##h4.text-center.mb-3:nth-of-type(2)
+web1s.asia##.justify-content-center.d-flex.mb-2
+web1s.asia##.mb-3.content > h3.text-center.mb-3
+web1s.asia##.my-5.justify-content-center.d-flex
+web1s.asia##.mb-3.text-center.text-gray-800.fw-bold.fs-2hx
+web1s.asia##.mb-5.text-center.text-gray-800.fw-bold.fs-1hx
+web1s.asia##[src="https://www.youtube.com/embed/D4AirUzSHyc"]
+
+web1s.info##.text-center.mt-2
+web1s.info##.isqcoyqhqcsbvbummwruymmisqcoyqhqcsbvbu.isqcoyqhqcsbvbummtupntmmisqcoyqhqcsbvbu
+web1s.info##.isqcoyqhqcsbvbummorvmownupruqmwruymmisqcoyqhqcsbvbu.isqcoyqhqcsbvbummorvmownupruqmmisqcoyqhqcsbvbu
+web1s.info##.qbpvvfnexyqsoskfjhsjkdfhommwruymmqbpvvfnexyqsoskfjhsjkdfho.qbpvvfnexyqsoskfjhsjkdfhommtupntmmqbpvvfnexyqsoskfjhsjkdfho
+web1s.info##.qbpvvfnexyqsoskfjhsjkdfhommorvmownupruqmwruymmqbpvvfnexyqsoskfjhsjkdfho.qbpvvfnexyqsoskfjhsjkdfhommorvmownupruqmmqbpvvfnexyqsoskfjhsjkdfho
+web1s.info##.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummwruymmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummtupntmmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju
+web1s.info##.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummorvmownupruqmwruymmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju.askfjhsjkdfhskfjhsjkdfhvpwdxpgtyhjummorvmownupruqmmaskfjhsjkdfhskfjhsjkdfhvpwdxpgtyhju
+
+www.atascasino.wiki###col-55539414
+www.atascasino.wiki##.row-main.row
+www.atascasino.wiki##.widget-title
+www.atascasino.wiki###row-337002395
+www.atascasino.wiki###row-351992509
+www.atascasino.wiki###row-565609011
+www.atascasino.wiki###row-650271664
+www.atascasino.wiki###row-1634401764
+www.atascasino.wiki###section_643888848
+www.atascasino.wiki###section_1850828098
+www.atascasino.wiki##.section-faq.section
+www.atascasino.wiki##.section-post.section
+www.atascasino.wiki##.section-home-game.section
+www.atascasino.wiki##.section-new-content.section
+www.atascasino.wiki##.sticky-jump.has-sticky.header
+www.atascasino.wiki###col-1923250131 > .col-inner > ul
+www.atascasino.wiki##.section-game-2.section-game-1.section
+
+www.jbo247.org###main
+www.jbo247.org###divFLRALeft
+www.jbo247.org###divFLRARight
+www.jbo247.org##.logo.flex-col
+www.jbo247.org###wrapper > .row
+www.jbo247.org##.align-middle.row
+www.jbo247.org##.menu-item-design-default.active.menu-item-21433.current_page_item.page-item-15646.page_item.current-menu-item.menu-item-home.menu-item-object-page.menu-item-type-post_type.menu-item
+
+yeumoney.com##.footer-section
+yeumoney.com##.header-section
+yeumoney.com##.box-google-text
+yeumoney.com##.visible.fadeInUp.box-video
+yeumoney.com##.visible.fadeInUp.-lv2.heading
+yeumoney.com##.visible.fadeInUp.box-step-link
+yeumoney.com##p.box-google-note:nth-of-type(2)
+yeumoney.com##p.box-google-note:nth-of-type(3)
+yeumoney.com##p.visible.fadeInUp:nth-of-type(2)
+yeumoney.com##p.visible.fadeInUp:nth-of-type(3)
+yeumoney.com##.visible.mt-3.fadeInUp.box-step-title
+yeumoney.com##p.visible.fadeInUp.box-step-title:nth-of-type(2)
+yeumoney.com##p.visible.fadeInUp.box-step-title:nth-of-type(4)
+yeumoney.com##p.visible.fadeInUp.box-step-title:nth-of-type(5)
+yeumoney.com##p.visible.fadeInUp.box-step-title:nth-of-type(6)
+yeumoney.com##p.visible.fadeInUp.box-step-title:nth-of-type(8)
+yeumoney.com##p.visible.fadeInUp.box-step-title:nth-of-type(10)
+yeumoney.com##p.visible.mt-1.fadeInUp.box-step-getCode > .text-danger
+yeumoney.com##p.visible.mt-1.fadeInUp.box-step-getCode:nth-of-type(7)
+
+||img.mmo4me.com/image.php$image
+||taigo88.poker/wp-content/*$image
+||bk8.lv/wp-content/uploads/*$image
+||vn88.lv/wp-content/uploads/$image
+||fb88.sbs/wp-content/uploads/*$image
+||88bet.cab/wp-content/uploads/*$image
+||ab77app.com/wp-content/uploads/*$image
+||betvisa.tel/wp-content/uploads/*$image
+||onlinecasinohub.us/wp-content/*g$image
+||shopgamedvl.online/song/1.mp3$media,1p
+||f88maxxx.net/wp-content/uploads/*$image
+||139.99.36.130/wp-content/uploads/*$image
+||178.128.18.55/wp-content/uploads/*$image
+||51.79.142.146/wp-content/uploads/*$image
+||bonglantv.tv/wp-content/uploads/*g$image
+||hoaphatdoor.vn/wp-content/uploads/*$image
+||188.166.208.162/wp-content/uploads/*$image
+||188.166.223.203/wp-content/uploads/*$image
+||jpxsport.com/wp-content/uploads/202*g$image
+||68.183.225.17/wp-content/uploads/2024/*$image
+||bonglantv.tv/wp-content/uploads/bl_bg-6.png$image
+||taigo88.poker/wp-content/uploads/2023/09/bg.jpg$image
+||traffic-user.net/theme_v2/assets/img/8link-io.png$image
