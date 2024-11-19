@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241116a
+! Version: 241120a
 ! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: gg.gg/a_ | tiny.cc/_a
@@ -16,22 +16,19 @@ vn-z.vn,voz.vn##.p-body-sidebar
 mega4up.com,mega4upload.com##h5
 ipacrack.com,linksvip.net##.tags
 www.takez.co,pandaznetwork.com##h3
-flash.getpczone.com,uploadrar.com,chedrives.com##.desc
 uploady.io,uploadydl.com##.p-1.mt-4
 pandaznetwork.com,anonfiles.com##hr
-flash.getpczone.com,uploadrar.com,chedrives.com##header
 www.hdvietnam.xyz,vnav.vn##.sharePage
-flash.getpczone.com,uploadrar.com,chedrives.com##.banner1
-flash.getpczone.com,uploadrar.com,chedrives.com##.banner3
 hexupload.net,apkadmin.com##.sharetabs
 bkhost.vn,www.zcine.net##.in.fade.modal
 www.trejj.net,apk4free.net##.copyrights
 ez4linkss.com,ckk.ai##h3:nth-of-type(1)
 ez4linkss.com,ckk.ai##h3:nth-of-type(2)
-flash.getpczone.com,uploadrar.com,chedrives.com##.menufooter
 uploady.io,uploadydl.com##.alert.btn-link
 drop.download,mixloads.com##.py-3.header_
 laodong.vn,vietbeginner.com###site-header
+phimtho.com,chillhaytv.com##.the_tag_list
+vn-z.vn,dl.tech-story.net##ins.adsbygoogle
 www.4funbox.com,www.terabox.com##.drainage
 mega4up.org,mega4upload.com##.section-title
 ipacrack.com,vietbeginner.com###site-footer
@@ -60,21 +57,27 @@ megaurl.in,megaurl.top,megaurl.club##.navbar-default
 shareyou.pro,share4you.top,dropgalaxy.com##.features
 onedrive.gdrive.vip,www.csgt.vn,jtexpress.vn##.banner
 trainghiemso.vn,kptools.net##.jeg_share_top_container
+flash.getpczone.com,uploadrar.com,chedrives.com##.desc
 uploady.io,bianhot.site,uploadydl.com##.mt-4.col-md-12
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(6)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(7)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(8)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(9)
 bangkeocaonghe.vn,hcmfpt.vn,hangxin.com.vn###uhchatboz
+flash.getpczone.com,uploadrar.com,chedrives.com##header
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(10)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(11)
 xemlink.net,blog.officialboypalak.in##p:nth-of-type(12)
 a2zapk.com,newsjizz.in,rtxkeeda.com,unlockapk.com##.WebF
+flash.getpczone.com,uploadrar.com,chedrives.com##.banner1
+flash.getpczone.com,uploadrar.com,chedrives.com##.banner3
 semawur.com,temp-mail.org,safelinku.net##.main-header-sub
 link.codevn.net,beta.shortearn.eu##.navbar-default.navbar
 mega4upload.com,mega4up.com,mega4up.org##.compare_table.row
 www.cyberciti.biz,kinhtedothi.vn,drivebit.in##body > center
 animevietsub.to,animevietsub.me##div.Dvr-300:nth-of-type(1)
+phimtho.com,chillhaytv.com,xemphimplus.site##.footer-credit
+flash.getpczone.com,uploadrar.com,chedrives.com##.menufooter
 dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(1)
 dailyuploads.net,blog.officialboypalak.in##h2:nth-of-type(2)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(2)
@@ -82,16 +85,14 @@ rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(4)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(5)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(6)
 iosddl.net,secufiles.com##.show.cookiealert.text-center.alert
-djxmaza.in,thecubexguide.com,dev.miuiflash.com###featuredimage
 www.ip2location.com,www.ipa4fun.com##div:nth-of-type(4)-holder
 vpngame.pro,v1.hack5g.com,techrobot.com,dll-files.com##.overlay
 mega4upload.com,mega4up.com,mega4up.org##.card-body > .mb-3.row
+a2zapk.io,rtxkeeda.com,dropgalaxy.com,financemonk.net##.modalpop
 vnav.vn,allsolu4u.vn,hdvietnam.com,www.hdvietnam.xyz###logoBlock
 drop.download,fastclick.to,mixloads.com##div.mb-5:nth-of-type(4)
 vmaniac.com,uploadev.org,douploads.net,angkeocaonghe.vn##center2
 tuoitre.vn,congnghe.tuoitre.vn##.is-affixed.fl.networktop.network
-mega4up.org,mega4up.com,flash.getpczone.com,uploadrar.com,mega4upload.com##.app-footer
-www.astrill.com,nvnorthwest.com,dl.literaturetimes.com##.site-header
 mega4upload.com,mega4up.org,mega4up.com##.mb-3.list-group-flush.list-group
 mega4upload.com,mega4up.org,mega4up.com##.text-center.py-3.footer-copyright
 clk.sh,xemlink.net,ipchicken.com,blog.officialboypalak.in##p:nth-of-type(5)
@@ -102,49 +103,39 @@ short.pandaznetwork.com,pandaznetwork.com##.animated.zoomIn.wow.text-center.py-5
 free4pc.icu,ip.sanvu88.net,ip2location.com,www.showmyip.com,www.ip2location.com##h1
 wi.cr,short.pe,megaurl.in,123link.pw,megaurl.top,megaurl.club##.copyright-container
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:last-child
+mega4up.org,mega4up.com,flash.getpczone.com,uploadrar.com,mega4upload.com##.app-footer
 anhdep24.com,www.byboe.com,www.rawask.com,distrowatch.com,dnsleaktest.com,upfiles.io##p
-uploady.io,hexupload.net,dev.miuiflash.com,uploadydl.com##.position-absolute.p-5.footer
 123link.ghego.site,123link.carpartsviet31.site##div.ads-block-warning.dark:nth-child(17)
 uploady.io,uploadydl.com##.text-center.table-striped.table-bordered.table .btn-primary.btn
 lopte.pro,shareyou.pro,share4you.pro,dl.tech-story.net,download.baominh.tech##.box-main > h4
 uploady.io,uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(1)
 uploady.io,uploadydl.com##div.rounded.p-1.mb-3.shadow-sm.rounded-lg.border.bg-white:nth-of-type(3)
+hacktacks.com,cordtpoint.co.in,www.astrill.com,nvnorthwest.com,dl.literaturetimes.com##.site-header
 clk.sh,semawur.com,wikiall.org,shrinkearn.com,browserleaks.com,ez4linkss.com,ckk.ai##p:nth-of-type(1)
 apkupload.in,mbjremix.com,apkupload.in,cordtpoint.co.in,pn.cgchotbox.com,pandaznetwork.freemodsapp.xyz##.adb
 free4pc.icu,xemlink.net,hexupload.net,ww.checkip.hk,www.browserling.com,anonfiles.com,filedot.to,urlsh.us##h2
 ckk.ai,clk.sh,xemlink.net,tuoi69zz.com,ipchicken.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(3)
-
+chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net,trainghiemso.vn,thuthuatjb.com,gocmod.com##.comments-area
+vandien.vn,vanphukien.com,fpttoanquoc.com,fpttelecom.online,vancongnghiephp.com,www.tongdaivnpt24h.vn###uhchatmobile
+ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
+uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
+uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
+clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(2)
 4gviet.com,id.4gre.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
+win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
+
 
 nam4g.com,net5g.pro,dvsteam.net,vpndata.xyz,ht4gvpn.com,go.tnetz.pro,csadata4g.me,v1.hack5g.com,hunglapis.id.vn,vpndata.takeshi.dev##.text-center.mb-3
 
-sky4g.com,shopvpn.net,4ghatde.net,go.tnetz.pro,4gsinhvien.me,wibuvpn.store,4gmienphi.asia,panel.shopvpn4g.vn,wibuvpn.yunagrp.com,hoangai.fun,nam4g.com##.active.tbpopup
-
-nam4g.com,ht4gvpn.com,datavpn.io.vn,5gsinhvien.com,skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
-
-chungkhoanviet.net,ipacrack.com,ios.codevn.net,namlee.net,trainghiemso.vn,thuthuatjb.com,gocmod.com##.comments-area
-
-vandien.vn,vanphukien.com,fpttoanquoc.com,fpttelecom.online,vancongnghiephp.com,www.tongdaivnpt24h.vn###uhchatmobile
-
-ikae.net,ukshare.net,phanmemtop.net,www.cyberciti.biz,learningfromtrip.info,hoctiengnhatkaoruri.wordpress.com###colophon
-
-uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(1)
-
-uploady.io,uploadydl.com##div.rounded.page-content.p-3.mb-3.shadow-sm.rounded-lg.border.bg-white.col-md-12:nth-of-type(3)
-
-clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com,blog.officialboypalak.in##p:nth-of-type(2)
-
-win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
-
-p-load.io,chedrive.com,uploadydl.com,uploadocean.com,dev.miuiflash.com,userupload.net,www.centfile.com,thecubexguide.com,djxmaza.in,www.europeup.com,rapidcloud.cc##.report
-
-upload.ac,filerio.in,drop.download,ddownload.com,uploadydl.com,dev.miuiflash.com,userupload.net,userupload.in,uploady.io##.navbar-expand-lg.navbar
-
 linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com,techy.veganab.co,pandaznetwork.com##h4
+
+sky4g.com,shopvpn.net,4ghatde.net,go.tnetz.pro,4gsinhvien.me,wibuvpn.store,4gmienphi.asia,panel.shopvpn4g.vn,wibuvpn.yunagrp.com,hoangai.fun,nam4g.com##.active.tbpopup
 
 disheye.com,hacktacks.com,finance.cordtpoint.co.in,bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
 
 ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com,www.myfutureguide.in##.header
+
+nam4g.com,ht4gvpn.com,datavpn.io.vn,5gsinhvien.com,skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
 
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,get.megaurl.in###link-view > p
 
@@ -154,52 +145,52 @@ wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,
 
 www.expandurl.net,www.europeup.com,filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
 
-wi.cr,voz.vn,vn-z.vn,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,flash.getpczone.com,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz##.adsbygoogle
-
+wi.cr,voz.vn,vn-z.vn,uploady.io,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,androiddatahost.com,www.freeproxy.world,flash.getpczone.com,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz##.adsbygoogle
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,note1s.com,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,freenote.biz,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,count.vipurl.in,techy.veganab.co,links.apksvip.com,beta.shortearn.eu,dl.tech-story.net,pandaznetwork.com,indianshortner.com,123link.ghego.site,download.baominh.tech,short.pandaznetwork.com,123link.carpartsviet31.site###cookie-pop
 
-gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,chillhay.in,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,motchill.info,flash.getpczone.com,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,phimmoinay.tv,moddingzone.in,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,www.europeup.com,giaminhgroup.com,ipgeolocation.io,xemphimplus.site,phimmoichilly.com,www.hotcourses.vn,rubicmarketing.com,www.iplocation.net,vienthongtayninh.vn,account.ipvanish.com,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online,motchill.vn,motchill.pw,mv.phimbathu.one###footer
+motphim.tw,phimtho.com,phimchill.me,chillhaytv.com,workupload.com,gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,chillhay.in,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,motchill.info,flash.getpczone.com,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,phimmoinay.tv,moddingzone.in,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,www.europeup.com,giaminhgroup.com,ipgeolocation.io,xemphimplus.site,phimmoichilly.com,www.hotcourses.vn,rubicmarketing.com,www.iplocation.net,vienthongtayninh.vn,account.ipvanish.com,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online,motchill.vn,motchill.pw,mv.phimbathu.one###footer
 
-ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com,dlupload.com,phimwin.com,vinaphone.com.vn##.footer
+kohi.vn,ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,animevietsub.me,animevietsub.to,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com,dlupload.com,phimwin.com,vinaphone.com.vn##.footer
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,phimlau.com,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,phimdacap.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,movie.vkool.org,count.vipurl.in,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
+!_________________________________
 
 !_________________________________
-www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-guide-entry-renderer)
-www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(ytd-mini-guide-entry-renderer)
-www.youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-grid-video-renderer,ytd-rich-item-renderer)
-www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(ytd-item-section-renderer)
-www.youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-www.youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
-www.youtube.com##ytd-rich-shelf-renderer[is-shorts]
-www.youtube.com##ytd-reel-shelf-renderer
-m.youtube.com##ytm-reel-shelf-renderer
-m.youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
-m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
-m.youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
-m.youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer,ytm-video-with-context-renderer)
-m.youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
-youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
-www.youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
-youtube.com##:matches-path(/shorts) body:remove()
+! 16 thg 11, 2024 https://shopee.vn
+shopee.vn##._1cuZND
+shopee.vn##._2JVXfh
+shopee.vn##._3hdpJC
+shopee.vn##.shopee-popup
+shopee.vn##._3sSQpy.Pca2IN
+shopee.vn##.item-card-special
+shopee.vn##.shopee-search-user-brief
+shopee.vn##shopee-banner-popup-stateful
+shopee.vn##.shopee-floating-icons__wrapper
+shopee.vn##.popup-banner__img__block-bottom
+shopee.vn##.shopee-popup__overlay__block-legal-vn
+shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(1)
+shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(2)
+shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(3)
+shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(4)
+shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(5)
 
-!_________________________________
+! 16 thg 11, 2024 https://spx.vn
+spx.vn##.advertise-modal
+
+! 18 thg 11, 2024 https://thitruongdienmay.com
+thitruongdienmay.com###popup_ads
+thitruongdienmay.com,vpnpro.com##.in.modal-backdrop
+
 ! 13 thg 11, 2024 https://kdata.vn
 kdata.vn###form_popup
 
-! 13 thg 11, 2024 https://www.freeproxy.world
-www.freeproxy.world##.adsbygoogle
-
 ! 16 thg 11, 2024 https://financemonk.net
-financemonk.net##.modalpop
 financemonk.net##.mys-wrapper
 financemonk.net###tokennstatus
+financemonk.net##.text-center.mt-5
 financemonk.net##.mb-4.m-0.sharetabs
-
-! 16 thg 11, 2024 https://financemonk.net
-financemonk.net##.modalpop
+financemonk.net##.mb-4.m-0.sharetabs > ul > li
+financemonk.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
 
 ! 24 thg 9, 2024 https://kipflix.xyz
 kipflix.xyz###adblocker-popup-container
@@ -211,23 +202,14 @@ hydrahd.cc##div.info.alert:nth-of-type(1)
 sisik.eu##.cc-color-override--1645678099.cc-bottom.cc-theme-block.cc-type-info.cc-banner.cc-window
 
 ! 8 thg 10, 2024 https://chillhaytv.com
-chillhaytv.com###popup-giua-man-hinh
 chillhaytv.com###mobileCatfish
-chillhaytv.com###footer
-chillhaytv.com##.footer-credit
-chillhaytv.com##.the_tag_list
+chillhaytv.com###popup-giua-man-hinh
 chillhaytv.com##.slogan.col-sm-6.col-md-3
 chillhaytv.com##div.clearfix.htmlwrap:nth-of-type(15)
 
 ! 8 thg 10, 2024 https://phimtho.com
-phimtho.com###footer
-phimtho.com##.footer-credit
-phimtho.com##.the_tag_list
 phimtho.com###freebie
 phimtho.com##div.clearfix.htmlwrap:nth-of-type(17)
-
-! 9 thg 10, 2024 https://workupload.com
-workupload.com###footer
 
 ! 16 thg 10, 2024 https://baomoi.com
 ||api.baomoi.com/a465/n/ext/test
@@ -242,16 +224,12 @@ shrinkforearn.in##body > .footer
 www.armdesigner.com###floatDivBoxs
 
 ! 12 thg 11, 2024 https://kohi.vn
-kohi.vn##.footer
-kohi.vn##.table-of-content.is-hidden-mobile.is-3.column
 kohi.vn##.is-9.column > div > span
 kohi.vn##.p-50-mobile.p-1.card.nav-mobile
+kohi.vn##.table-of-content.is-hidden-mobile.is-3.column
 
 ! 2024-05-12 https://indexsubtitle.cc
 indexsubtitle.cc##div.row:nth-of-type(2)
-
-! 2024-05-12 https://androiddatahost.com
-androiddatahost.com##.adsbygoogle
 
 ! 2024-05-04 https://baomoi.com
 baomoi.com##.p-\[15px\].pb-\[8x\].bg-\[\#f7f7f7\].block
@@ -288,8 +266,9 @@ viettelfamily.com##.messInPublic
 bom.so##.site_logo
 
 ! 2024-01-22 https://thuvienphapluat.vn
-thuvienphapluat.vn##.container > div.row > .col-xs-12 > .gg_ads
 thuvienphapluat.vn###bttop
+thuvienphapluat.vn##.container > div.row > .col-xs-12 > .gg_ads
+||cdn.thuvienphapluat.vn/phap-luat/2022-2/LTT/tb-tet-duong-lich.png$image
 
 ! 2024-01-22 https://aikocute.tech
 ||i.ibb.co/gdMk3vK/Hoshino-AI.png$image
@@ -350,10 +329,6 @@ www.messenger.com##.x1d52u69.x1yztbdb.xktsk01.xw7yly9
 daohaisan.vn##.show.isCVH.fade.modal
 daohaisan.vn##.show.fade.modal-backdrop
 
-! 2024-01-01 https://www.youtube.com
-www.youtube.com##.opened
-www.youtube.com##ytd-popup-container.ytd-app.style-scope
-
 ! 2024-01-14 https://phimmoiyyy.net
 phimmoiyyy.net##footer.main
 phimmoiyyy.net##div.sbox:nth-of-type(6)
@@ -379,7 +354,6 @@ motchill.vn,motchill.pw,motphim.tw###catfish
 motchill.vn,motchill.pw##[href="https://bit.ly/3MoeQhZ"]
 phimchill.me##.tags
 phimchill.me###popup
-phimchill.me###footer
 phimchill.me##.keywords
 phimchill.me##.btn-groups
 phimchili.com##.post-rating
@@ -399,7 +373,6 @@ phimmoichilly.com##div.bixbox:nth-of-type(6)
 motphim.tw##.tags
 motphim.tw##.keywords
 motphim.tw##.des
-motphim.tw###footer
 motphim.tw##.btn-groups
 motphim.tw##.play-tags
 motphim.tw##.box-rating
@@ -515,7 +488,6 @@ therarbg.com##div.justify-content-md-center.row:nth-of-type(3)
 
 ! 2023-05-03 https://xemphimplus.site
 xemphimplus.site##h5
-xemphimplus.site##.footer-credit
 xemphimplus.site##.float-ck-center-lt
 
 ! 2021-03-27 https://xemphim.club
@@ -664,7 +636,6 @@ thuyetminhviet.com###floating_ads_bottom_textcss_container
 
 ! 2023-06-17 https://cordtpoint.co.in
 cordtpoint.co.in###status
-cordtpoint.co.in##.site-header
 cordtpoint.co.in##.site-content
 cordtpoint.co.in##.site-info > .hm-container
 cordtpoint.co.in##.header-main-area > .hm-container
@@ -779,7 +750,6 @@ vpnviet.com##.ant-dropdown-open.ant-dropdown-trigger.mr-1.btn
 ||5gtocdocao.com/static/picture/lienquan.jpg$image
 ||i.im.ge/2023/07/28/9I9rhm.anh-nen-mau-tim.png$image
 ||idconline.vn/blog/wp-content/uploads/2021/08/*.jpg$image
-||cdn.thuvienphapluat.vn/phap-luat/2022-2/LTT/tb-tet-duong-lich.png$image
 ||idconline.vn/blog/wp-content/uploads/2021/08/anti-ddos-idc-online2.jpg$image
 ||vhb.vn/wp-content/uploads/2020/02/52088600vectorillustrationofgoldvipcard.jpg$image
 
@@ -1343,7 +1313,6 @@ www.netflix.com##.error.message
 
 ! 2023-05-14 https://hacktacks.com
 hacktacks.com##.site-main
-hacktacks.com##.site-header
 hacktacks.com###tp-text
 
 ! 2023-05-14 https://indianshortner.com
@@ -1512,7 +1481,6 @@ djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(7)
 djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
 
 ! 9 thg 11, 2024 https://uploady.io
-uploady.io##.adsbygoogle
 uploady.io##tr:nth-of-type(1)
 uploady.io##tr:nth-of-type(2)
 uploady.io##tr:nth-of-type(3)
@@ -1764,7 +1732,6 @@ vn-z.vn##.aside-content
 vn-z.vn##.p-navHeaderLinks
 vn-z.vn##.thread-actionFooter
 vn-z.vn##.main-item.relatedThreads
-vn-z.vn##ins.adsbygoogle:nth-of-type(2)
 vn-z.vn##.blockMessage--none.blockMessage
 vn-z.vn##.js-bottomFixTarget.u-bottomFixer
 ||vn-z.vn/data/avatars/*.jpg?1605497958$image
@@ -1859,7 +1826,6 @@ anonyviet.com##.redirect-message > div:nth-of-type(1) > .adsadsia
 anonyviet.com##.normal.jeg_navbar_wrapper.jeg_container.jeg_midbar
 
 ! 2023-03-02 https://vpnpro.com
-vpnpro.com##.in.modal-backdrop
 vpnpro.com##.in.modal0.providerModal-nordvpnBrand.providerModal.modal
 
 ! 2023-05-10 https://apkmody.com
@@ -2194,7 +2160,6 @@ animevi.net##.div-view-video > .clearfix.section-bar
 a2zapk.io##.Tags
 a2zapk.io##.WebF
 a2zapk.io##.Right
-a2zapk.io##.modalpop
 a2zapk.io###dlbtn > span
 a2zapk.io##.btnDownload1
 a2zapk.io##.DownLoadBotton span
@@ -2222,7 +2187,6 @@ newsjizz.in###content > div:nth-of-type(1)
 newsjizz.in##div.ArticleLand:nth-of-type(3)
 
 rtxkeeda.com##.NewBlock
-rtxkeeda.com##.modalpop
 rtxkeeda.com##.modalpop-content
 
 unlockapk.com##.nav--dark.footer
@@ -2740,11 +2704,6 @@ apkadmin.com##.text-left.about-apk
 app.trangchu.news##.site-logo
 app.trangchu.news##.captcha-check.mt-1.alert-light.alert
 
-! 2021-10-04 https://financemonk.net
-financemonk.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
-financemonk.net##.mb-4.m-0.sharetabs > ul > li
-financemonk.net##.text-center.mt-5
-
 ! 2021-10-05 https://www.coingecko.com
 www.coingecko.com##.offset-lg-8.mb-md-4.fixed-bottom
 www.coingecko.com##div.ad-spacer.my-2.tw-items-center.tw-justify-center.row:nth-of-type(2)
@@ -2784,25 +2743,6 @@ www.msn.com##.novig.stb-flex
 
 ! 2021-07-08 https://nvnorthwest.com
 nvnorthwest.com###genesis-footer-widgets
-
-! 2021-07-08 https://kinhtedothi.vn_main
-
-! 2023-04-17 https://shopee.vn
-shopee.vn##._1cuZND
-shopee.vn##._2JVXfh
-shopee.vn##._3hdpJC
-shopee.vn##.shopee-popup
-shopee.vn##._3sSQpy.Pca2IN
-shopee.vn##.item-card-special
-shopee.vn##.shopee-search-user-brief
-shopee.vn##.shopee-floating-icons__wrapper
-shopee.vn##.popup-banner__img__block-bottom
-shopee.vn##.shopee-popup__overlay__block-legal-vn
-shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(1)
-shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(2)
-shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(3)
-shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(4)
-shopee.vn##div.shopee-search-item-result__item.col-xs-2-4:nth-of-type(5)
 
 ! 2021-07-08 https://helpdeskgeek.com
 helpdeskgeek.com##.et_bloom_animated.et_bloom_visible.et_bloom_hide_mobile_optin.et_bloom_auto_popup.et_bloom_optin_2.et_bloom_resize.et_bloom_optin.et_bloom_popup
@@ -3088,12 +3028,6 @@ div.box-main:first-child > h4:nth-child(5)
 dl.taive.work###fbox-background
 dl.tech-story.net##h3 > span
 dl.tech-story.net##.blog-item
-dl.tech-story.net##ins.adsbygoogle:nth-of-type(1)
-dl.tech-story.net##ins.adsbygoogle:nth-of-type(2)
-dl.tech-story.net##ins.adsbygoogle:nth-of-type(3)
-dl.tech-story.net##ins.adsbygoogle:nth-of-type(4)
-dl.tech-story.net##ins.adsbygoogle:nth-of-type(5)
-dl.tech-story.net##ins.adsbygoogle:nth-of-type(6)
 dongnaigsm.vn###headerMover > header:last-child
 dongnaigsm.vn###headerProxy
 download.baominh.tech##.link-description
@@ -3720,530 +3654,6 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 
 !#########################################################################################################
 !___vOz____________________________________________
-||i.imgur.com/*.gif$image,domain=voz.vn
-||i.imgur.com/*.png$image,domain=voz.vn
-||i.imgur.com/*.jpg$image,domain=voz.vn
-||i.imgur.com/*.jpeg$image,domain=voz.vn
-
-! 2024-01-15 https://voz.vn
-||voz.vn/proxy.php^
-||data.voz.vn/avatars/*/70/70050.jpg$image
-||data.voz.vn/avatars/*/*/1691088.jpg$image
-
-! 2022-12-28 https://voz.vn
-vozforum.org##.p-header
-vozforums.com##.clearfix
-vozforums.com###neo_logobar
-vozforum.org##.top_important
-vozforum.org###M403005ScriptRootC906261
-vozforum.org##.blockMessage--none.blockMessage
-vozforums.com##div[style="line-height:80px; "]
-vozforum.org##.js-bottomFixTarget.u-bottomFixer
-vozforum.org##.noticeScrollContainer.lSSlideOuter
-vozforums.com##div[style="float: right; width: 150px;"]
-
-voz.vn,vozforum.org##.p-footer
-voz.vn###div-gpt-ad-1585123925672-0
-voz.vn###div-gpt-ad-1585125824987-0
-voz.vn###div-gpt-ad-1585126204480-0
-voz.vn###div-gpt-ad-1585282468498-0
-voz.vn###div-gpt-ad-1585374150797-0
-voz.vn###div-gpt-ad-1594315151905-0
-voz.vn###div-gpt-ad-1594315183557-0
-voz.vn###div-gpt-ad-1594404262667-0
-voz.vn###div-gpt-ad-1594467721317-0
-voz.vn###div-gpt-ad-1594489728424-0
-voz.vn###div-gpt-ad-1594489774592-0
-voz.vn###div-gpt-ad-1594489799286-0
-voz.vn##div.samCodeUnit:nth-of-type(2)
-voz.vn##div.samCodeUnit:nth-of-type(3)
-voz.vn##div.samCodeUnit:nth-of-type(5)
-voz.vn##div.samCodeUnit:nth-of-type(6)
-voz.vn##div.samCodeUnit:nth-of-type(8)
-voz.vn##div.samCodeUnit:nth-of-type(9)
-voz.vn##div.samCodeUnit:nth-of-type(10)
-voz.vn##div.samCodeUnit:nth-of-type(11)
-voz.vn##div.samCodeUnit:nth-of-type(12)
-voz.vn##div.samCodeUnit:nth-of-type(13)
-voz.vn##.blockMessage--none.blockMessage
-
-voz.vn##.js-bottomFixTarget.u-bottomFixer
-voz.vn##div.message--post.message:nth-of-type(1)
-voz.vn##div.message--post.message:nth-of-type(2)
-voz.vn##div.message--post.message:nth-of-type(3)
-voz.vn##div.message--post.message:nth-of-type(4)
-voz.vn##div.message--post.message:nth-of-type(5)
-
-||voz.vn/attachments/*.1940420/$image
-||voz.vn/attachments/*.190397/$image
-||voz.vn/attachments/*.218479/$image
-||voz.vn/attachments/*.218481/$image
-||voz.vn/attachments/*.218489/$image
-||voz.vn/attachments/*.244943/$image
-||voz.vn/attachments/*.245465/$image
-||voz.vn/attachments/*.253854/$image
-||voz.vn/attachments/*.259405/$image
-||voz.vn/attachments/*.282843/$image
-||voz.vn/attachments/*.288436/$image
-||voz.vn/attachments/*.691087/$image
-||voz.vn/attachments/*.843419/$image
-||voz.vn/attachments/*.843443/$image
-||voz.vn/attachments/*.843473/$image
-||voz.vn/attachments/*.843534/$image
-||voz.vn/attachments/*.968951/$image
-||voz.vn/attachments/*.968953/$image
-||voz.vn/attachments/*.1325579/$image
-||voz.vn/attachments/*.1714660/$image
-||statics.voz.tech/data/avatars/*/*/1427823.jpg$image
-||statics.voz.tech/data/avatars/*/*/1690005.jpg$image
-||statics.voz.tech/data/avatars/*/*/1708098.jpg$image
-||statics.voz.tech/data/avatars/*/*/391960.jpg$image
-||statics.voz.tech/data/avatars/*/*/70050.jpg$image
-||voz.vn/data/avatars/*/22911.jpg$image
-||voz.vn/data/avatars/*/23665.jpg$image
-||voz.vn/data/avatars/*/27028.jpg$image
-||voz.vn/data/avatars/*/38582.jpg$image
-||voz.vn/data/avatars/*/39727.jpg$image
-||voz.vn/data/avatars/*/59318.jpg$image
-||voz.vn/data/avatars/*/62985.jpg$image
-||voz.vn/data/avatars/*/124958.jpg$image
-||voz.vn/data/avatars/*/130590.jpg$image
-||voz.vn/data/avatars/*/1632297019$image
-||voz.vn/data/avatars/*/21728.jpg?$image
-||voz.vn/data/avatars/*/305212.jpg$image
-||voz.vn/data/avatars/*/524268.jpg$image
-||voz.vn/data/avatars/*/772822.jpg$image
-||voz.vn/data/avatars/*/1029278.jpg$image
-||voz.vn/data/avatars/*/1104616.jpg$image
-||voz.vn/data/avatars/*/1141234.jpg$image
-||voz.vn/data/avatars/*/1209149.jpg$image
-||voz.vn/data/avatars/*/1282980.jpg$image
-||voz.vn/data/avatars/*/1309642.jpg$image
-||voz.vn/data/avatars/*/1344368.jpg$image
-||voz.vn/data/avatars/*/1383069.jpg$image
-||voz.vn/data/avatars/*/1422742.jpg$image
-||voz.vn/data/avatars/*/1433882.jpg$image
-||voz.vn/data/avatars/*/1465327.jpg$image
-||voz.vn/data/avatars/*/1489781.jpg$image
-||voz.vn/data/avatars/*/1493801.jpg$image
-||voz.vn/data/avatars/*/1499814.jpg$image
-||voz.vn/data/avatars/*/1531714.jpg$image
-||voz.vn/data/avatars/*/1566813.jpg$image
-||voz.vn/data/avatars/*/1596513.jpg$image
-||voz.vn/data/avatars/*/1636969.jpg$image
-||voz.vn/data/avatars/*/1678579.jpg$image
-||voz.vn/data/avatars/*/1680897.jpg$image
-||voz.vn/data/avatars/*/1681079.jpg$image
-||voz.vn/data/avatars/*/1682874.jpg$image
-||voz.vn/data/avatars/*/1684054.jpg$image
-||voz.vn/data/avatars/*/1684156.jpg$image
-||voz.vn/data/avatars/*/1685910.jpg$image
-||voz.vn/data/avatars/*/1686152.jpg$image
-||voz.vn/data/avatars/*/1688650.jpg$image
-||voz.vn/data/avatars/*/1690848.jpg$image
-||voz.vn/data/avatars/*/1690963.jpg$image
-||voz.vn/data/avatars/*/1691717.jpg$image
-||voz.vn/data/avatars/*/1696448.jpg$image
-||voz.vn/data/avatars/*/1699452.jpg$image
-||voz.vn/data/avatars/*/1700054.jpg$image
-||voz.vn/data/avatars/*/1701060.jpg$image
-||voz.vn/data/avatars/*/1701436.jpg$image
-||voz.vn/data/avatars/*/1709647.jpg$image
-||voz.vn/data/avatars/*/1709648.jpg$image
-||voz.vn/data/avatars/*/1713887.jpg$image
-||voz.vn/data/avatars/*/1714095.jpg$image
-||voz.vn/data/avatars/*/1718358.jpg$image
-||voz.vn/data/avatars/*/1719588.jpg$image
-||voz.vn/data/avatars/*/1727913.jpg$image
-||voz.vn/data/avatars/*/1729914.jpg$image
-||voz.vn/data/avatars/*/1733063.jpg$image
-||voz.vn/data/avatars/*/1736758.jpg$image
-||voz.vn/data/avatars/*/1749296.jpg$image
-||voz.vn/data/avatars/*/1772596.jpg$image
-||voz.vn/data/avatars/*/1778682.jpg$image
-||voz.vn/data/avatars/*/1722009.jpg?$image
-||voz.vn/data/avatars/*.jpg?1583769468$image
-||voz.vn/data/avatars/*.jpg?1583825436$image
-||voz.vn/data/avatars/*.jpg?1583852384$image
-||voz.vn/data/avatars/*.jpg?1583898120$image
-||voz.vn/data/avatars/*.jpg?1583916304$image
-||voz.vn/data/avatars/*.jpg?1583916620$image
-||voz.vn/data/avatars/*.jpg?1583939566$image
-||voz.vn/data/avatars/*.jpg?1584165875$image
-||voz.vn/data/avatars/*.jpg?1584170364$image
-||voz.vn/data/avatars/*.jpg?1584256609$image
-||voz.vn/data/avatars/*.jpg?1584266087$image
-||voz.vn/data/avatars/*.jpg?1584321821$image
-||voz.vn/data/avatars/*.jpg?1584322499$image
-||voz.vn/data/avatars/*.jpg?1584352674$image
-||voz.vn/data/avatars/*.jpg?1584451201$image
-||voz.vn/data/avatars/*.jpg?1584549291$image
-||voz.vn/data/avatars/*.jpg?1584707702$image
-||voz.vn/data/avatars/*.jpg?1584928152$image
-||voz.vn/data/avatars/*.jpg?1584944652$image
-||voz.vn/data/avatars/*.jpg?1585120395$image
-||voz.vn/data/avatars/*.jpg?1585666647$image
-||voz.vn/data/avatars/*.jpg?1585997570$image
-||voz.vn/data/avatars/*.jpg?1587238032$image
-||voz.vn/data/avatars/*.jpg?1588156820$image
-||voz.vn/data/avatars/*.jpg?1592457432$image
-||voz.vn/data/avatars/*.jpg?1593083961$image
-||voz.vn/data/avatars/*.jpg?1593439309$image
-||voz.vn/data/avatars/*.jpg?1594500240$image
-||voz.vn/data/avatars/*.jpg?1594512745$image
-||voz.vn/data/avatars/*.jpg?1594821857$image
-||voz.vn/data/avatars/*.jpg?1598096039$image
-||voz.vn/data/avatars/*.jpg?1598409629$image
-||voz.vn/data/avatars/*.jpg?1599925958$image
-||voz.vn/data/avatars/*.jpg?1600612535$image
-||voz.vn/data/avatars/*.jpg?1600837310$image
-||voz.vn/data/avatars/*.jpg?1601120425$image
-||voz.vn/data/avatars/*.jpg?1601375238$image
-||voz.vn/data/avatars/*.jpg?1602507930$image
-||voz.vn/data/avatars/*.jpg?1602678332$image
-||voz.vn/data/avatars/*.jpg?1602763633$image
-||voz.vn/data/avatars/*.jpg?1603160384$image
-||voz.vn/data/avatars/*.jpg?1603182867$image
-||voz.vn/data/avatars/*.jpg?1603183089$image
-||voz.vn/data/avatars/*.jpg?1603188420$image
-||voz.vn/data/avatars/*.jpg?1603190823$image
-||voz.vn/data/avatars/*.jpg?1603250539$image
-||voz.vn/data/avatars/*.jpg?1603250889$image
-||voz.vn/data/avatars/*.jpg?1603254072$image
-||voz.vn/data/avatars/*.jpg?1603256733$image
-||voz.vn/data/avatars/*.jpg?1603258007$image
-||voz.vn/data/avatars/*.jpg?1603263097$image
-||voz.vn/data/avatars/*.jpg?1603344032$image
-||voz.vn/data/avatars/*.jpg?1603381714$image
-||voz.vn/data/avatars/*.jpg?1603694246$image
-||voz.vn/data/avatars/*.jpg?1603986301$image
-||voz.vn/data/avatars/*.jpg?1604257541$image
-||voz.vn/data/avatars/*.jpg?1605239012$image
-||voz.vn/data/avatars/*.jpg?1605711549$image
-||voz.vn/data/avatars/*.jpg?1608781207$image
-||voz.vn/data/avatars/*.jpg?1614358570$image
-
-||statics.voz.tech/data/avatars/*/*/21772.jpg$image
-||statics.voz.tech/data/avatars/*/*/39727.jpg$image
-||statics.voz.tech/data/avatars/*/*/62985.jpg$image
-||statics.voz.tech/data/avatars/*/*/68693.jpg$image
-||statics.voz.tech/data/avatars/*/*/72562.jpg$image
-||statics.voz.tech/data/avatars/*/*/91433.jpg$image
-||statics.voz.tech/data/avatars/*/*/873229.jpg$image
-||statics.voz.tech/data/avatars/*/*/571075.jpg$image
-||statics.voz.tech/data/avatars/*/*/990080.jpg$image
-||statics.voz.tech/data/avatars/*/*/805174.jpg$image
-||statics.voz.tech/data/avatars/*/*/124958.jpg$image
-||statics.voz.tech/data/avatars/*/*/130590.jpg$image
-||statics.voz.tech/data/avatars/*/*/168699.jpg$image
-||statics.voz.tech/data/avatars/*/*/360696.jpg$image
-||statics.voz.tech/data/avatars/*/*/486784.jpg$image
-||statics.voz.tech/data/avatars/*/*/538726.jpg$image
-||statics.voz.tech/data/avatars/*/*/712870.jpg$image
-||statics.voz.tech/data/avatars/*/*/951904.jpg$image
-||statics.voz.tech/data/avatars/*/*/989870.jpg$image
-||statics.voz.tech/data/avatars/*/*/994862.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691088.jpg$image
-||statics.voz.tech/data/avatars/*/*/1414976.jpg$image
-||statics.voz.tech/data/avatars/*/*/1653013.jpg$image
-||statics.voz.tech/data/avatars/*/*/1754306.jpg$image
-||statics.voz.tech/data/avatars/*/*/1250994.jpg$image
-||statics.voz.tech/data/avatars/*/*/1482414.jpg$image
-||statics.voz.tech/data/avatars/*/*/1596645.jpg$image
-||statics.voz.tech/data/avatars/*/*/1669095.jpg$image
-||statics.voz.tech/data/avatars/*/*/1819915.jpg$image
-||statics.voz.tech/data/avatars/*/*/1491789.jpg$image
-||statics.voz.tech/data/avatars/*/*/1679673.jpg$image
-||statics.voz.tech/data/avatars/*/*/1736758.jpg$image
-||statics.voz.tech/data/avatars/*/*/1751766.jpg$image
-||statics.voz.tech/data/avatars/*/*/1019514.jpg$image
-||statics.voz.tech/data/avatars/*/*/1027256.jpg$image
-||statics.voz.tech/data/avatars/*/*/1038831.jpg$image
-||statics.voz.tech/data/avatars/*/*/1079299.jpg$image
-||statics.voz.tech/data/avatars/*/*/1108747.jpg$image
-||statics.voz.tech/data/avatars/*/*/1173913.jpg$image
-||statics.voz.tech/data/avatars/*/*/1209149.jpg$image
-||statics.voz.tech/data/avatars/*/*/1239205.jpg$image
-||statics.voz.tech/data/avatars/*/*/1334944.jpg$image
-||statics.voz.tech/data/avatars/*/*/1391247.jpg$image
-||statics.voz.tech/data/avatars/*/*/1447805.jpg$image
-||statics.voz.tech/data/avatars/*/*/1458168.jpg$image
-||statics.voz.tech/data/avatars/*/*/1478859.jpg$image
-||statics.voz.tech/data/avatars/*/*/1482089.jpg$image
-||statics.voz.tech/data/avatars/*/*/1489781.jpg$image
-||statics.voz.tech/data/avatars/*/*/1498634.jpg$image
-||statics.voz.tech/data/avatars/*/*/1588909.jpg$image
-||statics.voz.tech/data/avatars/*/*/1596513.jpg$image
-||statics.voz.tech/data/avatars/*/*/1628429.jpg$image
-||statics.voz.tech/data/avatars/*/*/1640681.jpg$image
-||statics.voz.tech/data/avatars/*/*/1651173.jpg$image
-||statics.voz.tech/data/avatars/*/*/1658037.jpg$image
-||statics.voz.tech/data/avatars/*/*/1671568.jpg$image
-||statics.voz.tech/data/avatars/*/*/1672591.jpg$image
-||statics.voz.tech/data/avatars/*/*/1673880.jpg$image
-||statics.voz.tech/data/avatars/*/*/1675535.jpg$image
-||statics.voz.tech/data/avatars/*/*/1676983.jpg$image
-||statics.voz.tech/data/avatars/*/*/1677066.jpg$image
-||statics.voz.tech/data/avatars/*/*/1685162.jpg$image
-||statics.voz.tech/data/avatars/*/*/1687877.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691681.jpg$image
-||statics.voz.tech/data/avatars/*/*/1691717.jpg$image
-||statics.voz.tech/data/avatars/*/*/1695340.jpg$image
-||statics.voz.tech/data/avatars/*/*/1696590.jpg$image
-||statics.voz.tech/data/avatars/*/*/1697745.jpg$image
-||statics.voz.tech/data/avatars/*/*/1697759.jpg$image
-||statics.voz.tech/data/avatars/*/*/1702231.jpg$image
-||statics.voz.tech/data/avatars/*/*/1704501.jpg$image
-||statics.voz.tech/data/avatars/*/*/1705400.jpg$image
-||statics.voz.tech/data/avatars/*/*/1714095.jpg$image
-||statics.voz.tech/data/avatars/*/*/1721572.jpg$image
-||statics.voz.tech/data/avatars/*/*/1737241.jpg$image
-||statics.voz.tech/data/avatars/*/*/1749296.jpg$image
-||statics.voz.tech/data/avatars/*/*/1768422.jpg$image
-||statics.voz.tech/data/avatars/*/*/1771406.jpg$image
-||statics.voz.tech/data/avatars/*/*/1775558.jpg$image
-||statics.voz.tech/data/avatars/*/*/1776657.jpg$image
-||statics.voz.tech/data/avatars/*/*/1780397.jpg$image
-||statics.voz.tech/data/avatars/*/*/1787994.jpg$image
-||statics.voz.tech/data/avatars/*/*/1789564.jpg$image
-||statics.voz.tech/data/avatars/*/*/1793285.jpg$image
-||statics.voz.tech/data/avatars/*/*/1809650.jpg$image
-||statics.voz.tech/data/avatars/*/*/1815332.jpg$image
-||statics.voz.tech/data/avatars/*/*/1820361.jpg$image
-||statics.voz.tech/data/avatars/*/*/1823053.jpg$image
-
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f31425739576a342e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f34676d4f414d422e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f426467695737522e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f465937653655312e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f4a45576f49646c2e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f4b5630584749412e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f4d4531744a42302e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f524b70377a576e2e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f554b6943694b682e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f6767756d65556c2e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f75586e716750422e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f78434f396368642e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f794242657773742e676966/$image
-||camo.voz.tech/*/687474703a2f2f692e696d6775722e636f6d2f7a464e755a54412e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f303037337353352e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f30464650416a4d2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f31425739576a342e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f317265794c71382e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3177693636466a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f317845756f30322e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f31796439346c522e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3244344a73446c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f326b7161645a392e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3279396e7063552e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f333230505171392e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3370345546304a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f33716555666e512e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f337a78655841522e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f344d49797979712e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f344f45504d73562e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f34524a4433674f2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f345547536154702e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f34676d4f414d422e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f346b7a78506a692e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f35483378546d4f2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3575624761576d2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f363274555a49652e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f366634595870512e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3671346d4f6d342e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f367152514b31692e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f374a4f34526b4a2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f374a706c4247592e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f37506c4b694f342e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f38307a4a4277332e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f384c73497368582e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f386435525251772e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f3933324a7463452e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f394442567138412e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f394e4e355355792e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f395a434a5265482e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4132585737734e2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4259434f704e542e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f42613838566b322e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f426467695737522e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f426c59753243722e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f43654267586c732e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4536626c7a49682e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f454232525555362e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4548566f6962532e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f454b444e7a53452e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4563563550504c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f46524e6f61306f2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f465937653655312e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f466673715252562e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f467150534650662e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f46756b755673692e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4731757a3948432e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4737794c6f58712e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4759413378354a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f476b59645869452e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f47756332354f472e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f485234573644552e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f486932726b687a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f487232744f6b492e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f49504d4d3363442e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4a434674704a6f2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4a4371383862632e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4a45576f49646c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4a476471677a592e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b34486364354e2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b41556467486f2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b45357469376c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b5058766779592e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b5630584749412e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b674c376d63532e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4c5454326355522e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4d394c4f774d482e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4d4531744a42302e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4d4d474863786b2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4d6a66657a5a422e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4d7456446e64632e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4d7637354757332e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4e584c6a4376632e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4e6b314c68334b2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4f47306c7358762e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f50613343396b452e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f506d395950314f2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f50727a623559742e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f51387347634c4f2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f516367306f71772e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f51774a305630562e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f524b70377a576e2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f527437453874582e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5276396362767a2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f53446850684d502e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f534769496b6f492e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f53694a5a6d50482e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f543278716541492e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f544177493469302e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5447613445724c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f546d76305778572e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f547a43675061492e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f554b6943694b682e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f55526f6970724f2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5566626a4b51342e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5630393253354b2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5633736f3942432e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f566d39324579442e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f567664464d55432e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f573671344964512e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5761776d41774d2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f576632395268672e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f576678614162592e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f576b30796450522e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f577a35317a75442e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f583779376573452e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f587630427454522e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f58763976754c712e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f594873356636482e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5a36366f5572352e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5a42746e436b6b2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f5a445937774b672e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f61494d457130642e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f614d3978484f792e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f615765536c77302e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f616458636968782e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f624762703461502e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f624839725934662e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6265616b5769792e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f634238755a72392e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f63564c383148322e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f636447766667672e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f636745394d6b492e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f643167774b61772e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6436677161514c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6444634a43464e2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f646f3736574c562e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f664450763439532e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f664a516e69784c2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f666e49465246442e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f673858586a38752e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f674657784e74382e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f674b6e395930792e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f676858704a72492e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f677137743332432e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f677654776e56382e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f677954503144502e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f68316b52754d632e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6842386e6d78352e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f686e656366677a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f693738433273392e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f696e58513861472e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6972476f59725a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6a5733766477512e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6a5849527754642e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6a616e4465784d2e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6a624a6a6d54692e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6a6d4542436b792e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6b493461396c482e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6c324c347035442e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6c42417a6146732e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6c6875566c636d2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6d46686a4432372e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6d4b6166674c572e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6d4d4f717234712e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6d656f715170412e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6d75526d586b672e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6e4d3130497a4c2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6e50496e756b722e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6e6d76495948652e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6f574e537849672e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f6f7343704373692e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f703055746d53762e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f703253305931542e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f706141326f38592e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f71436a4249574e2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f715a563231355a2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f724e457a5a51432e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f727a436a7854682e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f734a30395a76762e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f73686a634536782e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7435496364425a2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f744676765768792e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f744745415761532e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f753337323065342e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f753430777341682e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f755739384254462e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f75586e716750422e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f756d4f387063592e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f75713164676e6b2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f757a51623279742e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7631666d4d44642e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f76493033586d582e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f76686d513172512e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f766e336c4545652e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f767245534753592e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f76766c4269477a2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7745716c626f422e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f77466264446b752e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f777279764453482e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f78434f396368642e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f786431483873532e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f786a497a5347392e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f794157356433732e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f79417561386f642e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f794242657773742e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f79625a6142675a2e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a38536d4c384b2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a43584f4e4d312e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a464e755a54412e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a4d757435386e2e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a4f4c3332714f2e6a7067/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a515532634a612e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a535149334e662e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a59654e614c642e706e67/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f7a75516a3851322e676966/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f4b5163346655632e6a706567/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f507a4f684b39302e6a706567/$image
-||camo.voz.tech/*/32653633366636643266333436383738333134623461366532653637363936362f/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f454f706e6d736b2e706e673f31/$image
-||camo.voz.tech/*/68747470733a2f2f692e696d6775722e636f6d2f72686c78704a692e706e673f31/$image
-||camo.voz.tech/*/23732323331332f3931323539353631343634353234383030302f746d6c2e676966/$image
 
 !#########################################################################################################
 ! Cloud
@@ -4301,7 +3711,6 @@ secufiles.com##.top-advert.advert-wrapper.text-center.col-md-12
 
 ! 2022-08-22 https://androidfilehost.com
 androidfilehost.com###CybotCookiebotDialog
-
 ||androidfilehost.com/assets/images/cloud-bg-new.png$image
 
 ||www.filesend.jp/img/file.png$image
@@ -4470,7 +3879,6 @@ upfiles.io##body > .container > .text-center
 
 ! 16 thg 11, 2024 https://dropgalaxy.com
 dropgalaxy.com###apkad2
-dropgalaxy.com##.modalpop
 dropgalaxy.com###modalpop
 dropgalaxy.com##.float-left
 dropgalaxy.com##.priceTable
@@ -4497,42 +3905,42 @@ dropgalaxy.com##div.downloadPage.premium.page.pt-5.container:nth-of-type(8)
 dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
 dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=0&controls=0"]
 
-! 16 thg 11, 2024 https://jytechs.in
+! 20 thg 11, 2024 https://jytechs.in
 jytechs.in###about
 jytechs.in##.report
 jytechs.in##center > p
 jytechs.in##center > .premium
-jytechs.in###downloadNow > .done
-jytechs.in##center:nth-of-type(1)
-jytechs.in##.navbar-expand-lg.navbar
-jytechs.in##.mb-4.download-btn > span
 jytechs.in##.btn-block.btn-success.btn
-jytechs.in###div-gpt-ad-1705723983006-0
-jytechs.in###div-gpt-ad-1705724086182-0
-jytechs.in###div-gpt-ad-1705724260640-0
 jytechs.in##.position-absolute.p-5.footer
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(4)
 jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(9)
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(12)
-jytechs.in##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
-jytechs.in##[href="https://random-affiliate.atimaze.com/trck/eclick/bc5b412be4df3b85c4faa4a79d106f9d&fn=Adobe_Scan_v24.10.28-google-dynamic_v8_Mod_By_ElaMods_____.apk"]
 
-! 16 thg 11, 2024 https://thecubexguide.com
+! 20 thg 11, 2024 https://thecubexguide.com
 thecubexguide.com###aboutdis
-thecubexguide.com##center:nth-of-type(1)
-thecubexguide.com##.mb-4.download-btn > span
 thecubexguide.com##center:nth-of-type(2) > p
 thecubexguide.com##.btn-block.btn-success.btn
-thecubexguide.com###div-gpt-ad-1705723983006-0
-thecubexguide.com###div-gpt-ad-1705724086182-0
-thecubexguide.com###div-gpt-ad-1705724260640-0
+thecubexguide.com##.position-absolute.p-5.footer
 thecubexguide.com##center:nth-of-type(2) > .premium
-thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(4)
-thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(12)
+thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
 thecubexguide.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(1)
 thecubexguide.com##[href="https://random-affiliate.atimaze.com/trck/eclick/bc5b412be4df3b85c4faa4a79d106f9d&fn=Adobe_Acrobat_24.12.0.36520.Beta_uni_Mod_by_ElaMods_____.apk"]
-thecubexguide.com##[href="https://random-affiliate.atimaze.com/trck/eclick/bc5b412be4df3b85c4faa4a79d106f9d&fn=Adobe_Scan_v24.10.28-google-dynamic_v8_Mod_By_ElaMods_____.apk"]
+
+djxmaza.in,thecubexguide.com,dev.miuiflash.com###featuredimage
+uploady.io,hexupload.net,dev.miuiflash.com,uploadydl.com##.position-absolute.p-5.footer
+p-load.io,chedrive.com,uploadydl.com,uploadocean.com,dev.miuiflash.com,userupload.net,www.centfile.com,thecubexguide.com,djxmaza.in,www.europeup.com,rapidcloud.cc##.report
+jytechs.in,thecubexguide.com,upload.ac,filerio.in,drop.download,ddownload.com,uploadydl.com,dev.miuiflash.com,userupload.net,userupload.in,uploady.io##.navbar-expand-lg.navbar
+
+jytechs.in,thecubexguide.com###downloadNow > .done
+jytechs.in,thecubexguide.com##center:nth-of-type(1)
+jytechs.in,thecubexguide.com##.mb-4.download-btn > span
+jytechs.inthecubexguide.com###div-gpt-ad-1705724086182-0
+jytechs.in,thecubexguide.com###div-gpt-ad-1705724260640-0
+jytechs.in,thecubexguide.com###div-gpt-ad-1705723983006-0
+jytechs.in,thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
+jytechs.in,thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(4)
+jytechs.in,thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(12)
+jytechs.in,thecubexguide.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
+jytechs.in,thecubexguide.com##[href="https://random-affiliate.atimaze.com/trck/eclick/bc5b412be4df3b85c4faa4a79d106f9d&fn=Adobe_Scan_v24.10.28-google-dynamic_v8_Mod_By_ElaMods_____.apk"]
+jytechs.in,thecubexguide.com##[href="https://random-affiliate.atimaze.com/trck/eclick/bc5b412be4df3b85c4faa4a79d106f9d&fn=HTTP_Custom_5.11.29-RC90_Adsfree___uni_Mod_by_ElaMods_on_telegram_.apk"]
 
 ! 16 thg 11, 2024 https://www.up-4ever.net
 www.up-4ever.net##h2
@@ -5017,7 +4425,6 @@ ip2location.com##div.col-sm-6.col-md-6:nth-of-type(3)
 ip2location.com##div.margin-bottom-40.row:nth-of-type(2)
 
 ipchicken.com##body > p
-
 ipchicken.com##[src="images/7.gif"]
 ipchicken.com##table:nth-of-type(3)
 ipchicken.com##table:nth-of-type(5)
@@ -5172,12 +4579,254 @@ www.facebook.com##.aghb5jc5.h676nmdw.bi6gxh9e.oi9244e8.aov4n071.g5gj957u.buofh1p
 www.facebook.com##.bx45vsiw.h676nmdw.jrc8bbd0.dawyy4b1.o5zgeu5y.to382e16.buofh1pr > .iyyx5f41.dhp61c6y.dp1hu0rb.owwhemhu.qowsmv63.cebpdrjk.bipmatt0.pk4s997a.q3lfd5jv.k5wvi7nf.t1p8iaqh.a8s20v7p.abs2jz4q.a6sixzi8.tojvnm2t > .l9j0dhe7.byvelhso.j83agx80.bp9cbjyn
 www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4wl.p8dawk7l.abiwlrkh.l9j0dhe7.k77z8yql.qs9ysxi8.arfg74bv.n00je7tq.f1sip0of.esuyzwwr.i1ao9s8h.a8nywdso.qt6c0cv9.rz4wbd8a.jb3vyjys.hcukyx3x.oygrvhab.cxmmr5t8.kvgmc6g5.p7hjln8o.nhd2j8a9.rq0escxv.r7d6kgcz.e9989ue4.esr5mh6w.qu0x051f.g5ia77u1.oajrlxb2
 
+!___Ngoại-Lệ_______________________________________
+@@$important,document,~extension$domain=1.1.1.1|2.2.2.1|2.2.2.2|2.2.2.3|2.2.2.4|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
+@@_social_icons.
+@@||uplod.it^$elemhide
+@@||mshare.io/js/ads.js
+@@/js/show_ads.js^$domain=shink.in
+@@speedtest.vnix.vn/sizing/count.php
+@@||sd.ty^$important,document,~extension
+@@||4.3.2.1^$important,document,~extension
+@@||noc.org^$important,document,~extension
+@@||ip.gg.gg^$important,document,~extension
+@@||shopee.vn^$important,document,~extension
+@@||urlex.org^$important,document,~extension
+@@||bgp.he.net^$important,document,~extension
+@@||dd-wrt.com^$important,document,~extension
+@@||jcgcom.com^$important,document,~extension
+@@||192.168.0.1^$important,document,~extension
+@@||192.168.1.1^$important,document,~extension
+@@||archive.org^$important,document,~extension
+@@||coolstar.org^$important,document,~extension
+@@||my.lazada.vn^$important,document,~extension
+@@||puziness.com^$important,document,~extension
+@@||www.asus.com^$important,document,~extension
+@@||member.fpt.vn^$important,document,~extension
+@@||www.lazada.vn^$important,document,~extension
+@@||www.vnpost.vn^$important,document,~extension
+@@||cart.lazada.vn^$important,document,~extension
+@@||router.asus.com^$important,document,~extension
+@@||www.netgear.com^$important,document,~extension
+@@||www.broadcom.com^$important,document,~extension
+@@||www.sosanhgia.com^$important,document,~extension
+@@||signup.opendns.com^$important,document,~extension
+@@||www.routerlogin.net^$important,document,~extension
+@@||www.vitinhlehuy.com^$important,document,~extension
+@@||forum.draytek.com.vn^$important,document,~extension
+@@||www.chiemtaimobile.vn^$important,document,~extension
+@@||dashboard.umbrella.com^$important,document,~extension
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
+@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr|mshare.io
+
+!___Chặn-Toàn-Bộ___________________________________
+|https://$script,domain=uplod.ws,third-party
+||*.8ox.*^
+||*.2mdn.*^
+||*.civi.*^
+||*.uniad.*
+||*.zdbb.*^
+||*.cpm20.*^
+||*.puhtml.^
+||*.yadro.*^
+||*.adk2.com^
+||*.adlabs.*^
+||*.adloft.*^
+||*.admicro.*
+||*.adriver.*
+||*.adtima.*^
+||*.adtrue.*^
+||*.amcdn.vn^
+||*.betrad.*^
+||*.bitpit.*^
+||*.coccoc.*^
+||*.disqus.*^
+||*.eclick.*^
+||*.exosrv.*^
+||*.hotlog.*^
+||*.qiqivv.*^
+||*.addthis.*^
+||*.adright.*^
+||*.cpmstar.*^
+||*.dumedia.*^
+||*.hit4hit.*^
+||*.kjsrv.net^
+||*.microad.*^
+||*.moatads.*^
+||*.mookie1.*^
+||*.oclasrv.*^
+||*.tamanae.*^
+||*.vnnv777.*^
+||*.anthill.vn^
+||*.exdynsrv.*^
+||*.hibids10.*^
+||*.juicyads.*^
+||*.mobile-10.^
+||*.mybestmv.*^
+||*.omiai-jp.*^
+||*.onclasrv.*^
+||*.servebom.*^
+||*.upload69.*^
+||*.webstats.*^
+||*.adnetwork.*^
+||*.adskeeper.*^
+||*.bnserving.*^
+||*.disquscdn.*^
+||*.infolinks.*^
+||*.puserving.*^
+||*.maxonclick.*^
+||*.oclaserver.*^
+||*.opus-static.*
+||*.plugrush.com^
+||*.revcontent.*^
+||*.sabavision.*^
+||*.wap4dollar.*^
+||*.advertserve.*^
+||*.doubleclick.*^
+||*.linkbucks.com^
+||*.serving-sys.*^
+||*.statcounter.*^
+||*.terraclicks.*^
+||*.adtimaserver.*^
+||*.bubblesmedia.*^
+||*.directadvert.*^
+||*.fhawywadfjlo.*^
+||*.liveinternet.*^
+||*.google.com/*_204
+||*.*.doubleclick.*^ 
+||*.eboundservices.*^
+||*.adsafeprotected.*^
+||*.amazon-adsystem.*^
+||*.google-analytics.*^
+||*.googleadservices.*^
+||*.googlesyndication.*^
+||*.googletagservices.*^
+||*.googlevideo.com/*_204
+||*.twitter.*/*/*_iframe*
+||*.comeadvertisewithus.*^
+||*.advertisingwouldbegreat.*^
+||*.tikicdn.com/ts/banner/*$domain=tiki.vn
+||*.googleusercontent.*^$domain=upload4earn.org
+||hh-btr.*^
+||upera.ir^
+||ylx-1.com
+||adclixx.*^
+||dezaula.*^
+||popcash.*^
+||uptruyen.*
+||1ea1sley.*^
+||adlmerge.*^
+||adx.com.ru^
+||criteo.net^
+||jwge1505.*^
+||pushno.com^
+||sbbanner.*^
+||shalleda.*^
+||z6naousb.*^
+||adnetasia.*^
+||arrassley.*^
+||mellowads.*^
+||realclick.*^
+||trafflict.*^
+||tremember.*^
+||adtrackers.*^
+||hitcounter.*^
+||pushance.com^
+||velocecdn.com
+||apinas.nct.vn^
+||bannertrack.*^
+||gigaonclick.*^
+||onclickmega.*^
+||unipay.qq.com^
+||2go7v1nes8.com^
+||google*.*/*_204
+||secafe.vn/ads/*
+||money.yandex.ru^
+||qccoccocmedia.*^
+||ads.crackhex.com^
+||log.news.zing.vn^
+||click.alibaba.com^
+||google.*.*/pagead^
+||outlookabsorb.com^
+||asc.quantrimang.com
+||adsrvmedia.adk2x.com
+||coccoc.com/webhp/*.*
+||marketing.vatgia.com^
+||cdn.engine.4dsply.com^
+||scorecardresearch.com^
+||downmienphi.com/images/*.*
+||shink.in/imagenes/logo.png
+||sp.zalo.me/plugins/share?*
+||kenh76.vn/js/popupamthuc.js
+||shink.in/img/downloadad.png
+||d29i6o40xcgdai.cloudfront.net
+||quantrimang.com/scripts/main?
+||mystatus.skype.com/smallicon/*
+||i.imgur.com$domain=jetleech.com
+||mazii.net/img_fa/banner_mina.png
+||uplod.ws/responsive_js/paging.js
+||masterconn.qq.com/q.cgi$important
+||scloud.ws/templates/fon.jpg$image
+||freetuts.net/public/theme/js/my.js
+||macintosh.vn/forum/js/jscustome.js
+||mpgh.net/images/mini_offur.png$image
+||cdn.ay.gy/js/link-converter.js$script
+||adangamer.com/modern_theme/build/js/*^
+||freetuts.net/public/theme/js/adsense.js
+||macintosh.vn/forum/js/jquery.gallery.js
+||stc.sp.zdn.vn/zaloid/client/zavisitor.js
+||android.bugly.qq.com/rqd/async^$important
+||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
+||s30.postimg.org^*.png$domain=~langitbox.net
+||downmienphi.net/themes/downmienphi/images/*.*
+||tiengnhat.minder.vn/wp-content/uploads/2017/11/*
+||tiengnhat.minder.vn/wp-content/uploads/2018/10/*
+||daytiengnhat.edu.vn/upload/administrator/image/*.*
+||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
+||source.unsplash.com/category/objects/800x600$image
+||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
+||media.adnetwork.vn/assets/js/abd.inpage.preroll.v1.js
+||sublimetext.com/updates/3/stable/updatecheck$important
+||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
+||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
+||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
+||samsung-updates.com/wp-content/plugins/wp-cumulus/swfobject.js
+||samsung-updates.com/wp-content/plugins/wp-cumulus/tagcloud.swf
+||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
+||shareurl.pro/public/themes/z-Responsive/assets/img/header.jpg$image
+||hoctiengnhatkaoruri.files.wordpress.com/2015/02/background-sakura.jpg$image
+||oth.update.mdt.qq.com:8080/beacon/vercheck$important,app=AndroidEmulator.exe
+||ria.fpt.center/attachments/truyen-hinh-fpt-play-hd/8539d1504691299-cac-goi-dich-vu-truyen-hinh-fpt-play-hd-combo-fpt.jpgg$domain=fpt.center
+
 !___YouTube________________________________________
+! 2024-01-01 https://www.youtube.com
+youtube.com##.opened
+youtube.com##ytm-reel-shelf-renderer
+youtube.com##ytd-reel-shelf-renderer
+youtube.com##ytd-rich-shelf-renderer[is-shorts]
+youtube.com##ytd-popup-container.ytd-app.style-scope
+youtube.com##ytd-search .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+youtube.com##ytm-pivot-bar-renderer div.pivot-shorts:upward(ytm-pivot-bar-item-renderer)
+youtube.com##yt-icon.ytd-thumbnail-overlay-time-status-renderer.style-scope:not([hidden]):upward(6)
+youtube.com##ytd-browse[page-subtype="home"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-rich-item-renderer)
+youtube.com##ytd-browse[page-subtype="trending"] .ytd-thumbnail[href^="/shorts/"]:upward(ytd-video-renderer)
+www.youtube.com##ytd-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(guide-entry-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer .ytd-thumbnail[href^="/shorts/"]:upward(item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] .ytd-thumbnail[href^="/shorts/"]:upward(grid-video-renderer,ytd-rich-item-renderer)
+www.youtube.com##ytd-mini-guide-renderer a.yt-simple-endpoint path[d^="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33"]:upward(mini-guide-entry-renderer)
+youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer)
+youtube.com##ytm-browse ytm-item-section-renderer ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-video-with-context-renderer)
+youtube.com##ytm-search ytm-thumbnail-overlay-time-status-renderer[data-style="SHORTS"]:upward(ytm-compact-video-renderer,ytm-video-with-context-renderer)
+youtube.com##ytm-single-column-watch-next-results-renderer ytm-thumbnail-overlay-time-status-renderer span:has-text(/^(0:\d\d|1:0\d)$/):upward(ytm-video-with-context-renderer)
+
+youtube.com##*.video-ads
+youtube.com###masthead-ad
+youtube.com##:matches-path(/shorts) body:remove()
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+
 ||youtube.com/*_204?
 ||youtube.com/pagead^
-youtube.com##*.video-ads
 ||youtube.com/ptracking?
-youtube.com###masthead-ad
 ||youtube.com/ad_companion^
 ||youtube.com/api/stats/ads^
 ||youtube.com/api/stats/qoe^
@@ -5193,224 +4842,5 @@ youtube.com###masthead-ad
 ||youtube.com/embed/yrW0oyMNzfU$subdocument
 ||youtube.com/embed/*$domain=www.fshare.vn|abc.com
 ||www.google.com/appserve/security-bugs/log/youtube
-
-!___Ngoại-Lệ_______________________________________
-@@$important,document,~extension$domain=1.1.1.1|2.2.2.1|2.2.2.2|2.2.2.3|2.2.2.4|3.3.3.1|4.3.2.1|192.168.0.1|192.168.1.1|responsivevoice.org|account.samsung.com|save.thoaimedia.com|www.exrapidleech.info
-@@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr|mshare.io
-@@/js/show_ads.js^$domain=shink.in
-@@_social_icons.
-@@speedtest.vnix.vn/sizing/count.php
-@@||192.168.0.1^$important,document,~extension
-@@||192.168.1.1^$important,document,~extension
-@@||4.3.2.1^$important,document,~extension
-@@||archive.org^$important,document,~extension
-@@||bgp.he.net^$important,document,~extension
-@@||cart.lazada.vn^$important,document,~extension
-@@||coolstar.org^$important,document,~extension
-@@||dashboard.umbrella.com^$important,document,~extension
-@@||dd-wrt.com^$important,document,~extension
-@@||forum.draytek.com.vn^$important,document,~extension
-@@||ip.gg.gg^$important,document,~extension
-@@||jcgcom.com^$important,document,~extension
-@@||member.fpt.vn^$important,document,~extension
-@@||mshare.io/js/ads.js
-@@||my.lazada.vn^$important,document,~extension
-@@||noc.org^$important,document,~extension
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
-@@||puziness.com^$important,document,~extension
-@@||router.asus.com^$important,document,~extension
-@@||sd.ty^$important,document,~extension
-@@||shopee.vn^$important,document,~extension
-@@||signup.opendns.com^$important,document,~extension
-@@||uplod.it^$elemhide
-@@||urlex.org^$important,document,~extension
-@@||www.asus.com^$important,document,~extension
-@@||www.broadcom.com^$important,document,~extension
-@@||www.chiemtaimobile.vn^$important,document,~extension
-@@||www.lazada.vn^$important,document,~extension
-@@||www.netgear.com^$important,document,~extension
-@@||www.routerlogin.net^$important,document,~extension
-@@||www.sosanhgia.com^$important,document,~extension
-@@||www.vitinhlehuy.com^$important,document,~extension
-@@||www.vnpost.vn^$important,document,~extension
-
-!___Chặn-Toàn-Bộ___________________________________
-|https://$script,domain=uplod.ws,third-party
-||*.*.doubleclick.*^ 
-||*.2mdn.*^
-||*.8ox.*^
-||*.addthis.*^
-||*.adk2.com^
-||*.adlabs.*^
-||*.adloft.*^
-||*.admicro.*
-||*.adnetwork.*^
-||*.adright.*^
-||*.adriver.*
-||*.adsafeprotected.*^
-||*.adskeeper.*^
-||*.adtima.*^
-||*.adtimaserver.*^
-||*.adtrue.*^
-||*.advertisingwouldbegreat.*^
-||*.advertserve.*^
-||*.amazon-adsystem.*^
-||*.amcdn.vn^
-||*.anthill.vn^
-||*.betrad.*^
-||*.bitpit.*^
-||*.bnserving.*^
-||*.bubblesmedia.*^
-||*.civi.*^
-||*.coccoc.*^
-||*.comeadvertisewithus.*^
-||*.cpm20.*^
-||*.cpmstar.*^
-||*.directadvert.*^
-||*.disqus.*^
-||*.disquscdn.*^
-||*.doubleclick.*^
-||*.dumedia.*^
-||*.eboundservices.*^
-||*.eclick.*^
-||*.exdynsrv.*^
-||*.exosrv.*^
-||*.fhawywadfjlo.*^
-||*.google-analytics.*^
-||*.google.com/*_204
-||*.googleadservices.*^
-||*.googlesyndication.*^
-||*.googletagservices.*^
-||*.googleusercontent.*^$domain=upload4earn.org
-||*.googlevideo.com/*_204
-||*.hibids10.*^
-||*.hit4hit.*^
-||*.hotlog.*^
-||*.infolinks.*^
-||*.juicyads.*^
-||*.kjsrv.net^
-||*.linkbucks.com^
-||*.liveinternet.*^
-||*.maxonclick.*^
-||*.microad.*^
-||*.moatads.*^
-||*.mobile-10.^
-||*.mookie1.*^
-||*.mybestmv.*^
-||*.oclaserver.*^
-||*.oclasrv.*^
-||*.omiai-jp.*^
-||*.onclasrv.*^
-||*.opus-static.*
-||*.plugrush.com^
-||*.puhtml.^
-||*.puserving.*^
-||*.qiqivv.*^
-||*.revcontent.*^
-||*.sabavision.*^
-||*.servebom.*^
-||*.serving-sys.*^
-||*.statcounter.*^
-||*.tamanae.*^
-||*.terraclicks.*^
-||*.tikicdn.com/ts/banner/*$domain=tiki.vn
-||*.twitter.*/*/*_iframe*
-||*.uniad.*
-||*.upload69.*^
-||*.vnnv777.*^
-||*.wap4dollar.*^
-||*.webstats.*^
-||*.yadro.*^
-||*.zdbb.*^
-||1ea1sley.*^
-||2go7v1nes8.com^
-||adangamer.com/modern_theme/build/js/*^
-||adclixx.*^
-||adlmerge.*^
-||adnetasia.*^
-||ads.crackhex.com^
-||adsrvmedia.adk2x.com
-||adtrackers.*^
-||adx.com.ru^
-||android.bugly.qq.com/rqd/async^$important
-||apinas.nct.vn^
-||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
-||arrassley.*^
-||asc.quantrimang.com
-||bannertrack.*^
-||cdn.ay.gy/js/link-converter.js$script
-||cdn.engine.4dsply.com^
-||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
-||click.alibaba.com^
-||coccoc.com/webhp/*.*
-||criteo.net^
-||d29i6o40xcgdai.cloudfront.net
-||daytiengnhat.edu.vn/upload/administrator/image/*.*
-||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
-||dezaula.*^
-||downmienphi.com/images/*.*
-||downmienphi.net/themes/downmienphi/images/*.*
-||freetuts.net/public/theme/js/adsense.js
-||freetuts.net/public/theme/js/my.js
-||gigaonclick.*^
-||google*.*/*_204
-||google.*.*/pagead^
-||hh-btr.*^
-||hitcounter.*^
-||hoctiengnhatkaoruri.files.wordpress.com/2015/02/background-sakura.jpg$image
-||i.imgur.com$domain=jetleech.com
-||jwge1505.*^
-||kenh76.vn/js/popupamthuc.js
-||log.news.zing.vn^
-||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
-||macintosh.vn/forum/js/jquery.gallery.js
-||macintosh.vn/forum/js/jscustome.js
-||marketing.vatgia.com^
-||masterconn.qq.com/q.cgi$important
-||mazii.net/img_fa/banner_mina.png
-||media.adnetwork.vn/assets/js/abd.inpage.preroll.v1.js
-||mellowads.*^
-||money.yandex.ru^
-||mpgh.net/images/mini_offur.png$image
-||mystatus.skype.com/smallicon/*
-||neuvoo.com/services/jobroll/?publisher=5972fbbe&lang=vi$subdocument
-||onclickmega.*^
-||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
-||oth.update.mdt.qq.com:8080/beacon/vercheck$important,app=AndroidEmulator.exe
-||outlookabsorb.com^
-||popcash.*^
-||pushance.com^
-||pushno.com^
-||qccoccocmedia.*^
-||quantrimang.com/scripts/main?
-||realclick.*^
-||ria.fpt.center/attachments/truyen-hinh-fpt-play-hd/8539d1504691299-cac-goi-dich-vu-truyen-hinh-fpt-play-hd-combo-fpt.jpgg$domain=fpt.center
-||s30.postimg.org/9p2zsj3a7/64226277_p0_1.png
-||s30.postimg.org^*.png$domain=~langitbox.net
-||samsung-updates.com/wp-content/plugins/wp-cumulus/swfobject.js
-||samsung-updates.com/wp-content/plugins/wp-cumulus/tagcloud.swf
-||sbbanner.*^
-||scloud.ws/templates/fon.jpg$image
-||scorecardresearch.com^
-||secafe.vn/ads/*
-||shalleda.*^
-||shareurl.pro/public/themes/z-Responsive/assets/img/header.jpg$image
-||shink.in/imagenes/logo.png
-||shink.in/img/downloadad.png
-||source.unsplash.com/category/objects/800x600$image
-||sp.zalo.me/plugins/share?*
-||stc.sp.zdn.vn/zaloid/client/zavisitor.js
-||sublimetext.com/updates/3/stable/updatecheck$important
-||tiengnhat.minder.vn/wp-content/uploads/2017/11/*
-||tiengnhat.minder.vn/wp-content/uploads/2018/10/*
-||trafflict.*^
-||tremember.*^
-||unipay.qq.com^
-||upera.ir^
-||uplod.ws/responsive_js/paging.js
-||uptruyen.*
-||velocecdn.com
-||ylx-1.com
-||z6naousb.*^
 
 !___Hết____________________________________________
