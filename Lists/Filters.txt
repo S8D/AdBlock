@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
-! Version: 241120b
-! Title: xem.li/ads | mily.vn/ads | gg.gg/a_ | tiny.cc/_a | bit.ly/_qc | bom.to/loc
+! Version: 241205a
+! Title: xem.li/ads | mily.vn/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
-! Homepage: gg.gg/a_ | tiny.cc/_a
+! Homepage: xem.li/ads | tiny.cc/_a
 ! Licence: Darias
 ! Khuyến nghị nên kết hợp với https://xem.li/Anti
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=mixloads.com|uploadrar.com|a2zapk.com|unlockapk.com|dropapk.to|vozforum.org|clicknupload.cc|uploaded.net|mega4up.org|rarbgway.org|hh3dhay.xyz|uploadocean.com|mega4upload.com|mv.phimbathu.one|upfiles-urls.com|flash.getpczone.com
+$popup,third-party,domain=a2zapk.com|dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|uploadrar.com|unlockapk.com|watchseries.pe|clicknupload.cc|uploadocean.com|mega4upload.com|mv.phimbathu.one|upfiles-urls.com|flash.getpczone.com
 ##div[class^="jw-logo"]
 
 dekiru.vn##.modal-container
@@ -155,6 +155,19 @@ kohi.vn,ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,laz
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,phimlau.com,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,phimdacap.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,movie.vkool.org,count.vipurl.in,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 !_________________________________
 
+! 1 thg 12, 2024 https://mi21.eu
+mi21.eu##.cc-color-override--1562186077.cc-left.cc-bottom.cc-theme-edgeless.cc-type-opt-out.cc-floating.cc-window
+
+! 1 thg 12, 2024 https://usth.edu.vn
+usth.edu.vn##.content-popup
+
+! 5 thg 12, 2024 https://vuaphimmoi1.com
+vuaphimmoi1.com##.block-tags
+vuaphimmoi1.com##.box-rating
+vuaphimmoi1.com##.jw-marquee.marquee
+vuaphimmoi1.com##.block-comments.page-single.block-wrapper
+vuaphimmoi1.com##div#adtop-watch.watch-banner-2.ad-container
+
 !_________________________________
 ! 16 thg 11, 2024 https://shopee.vn
 shopee.vn##._1cuZND
@@ -283,8 +296,14 @@ frdl.to###fdmMsg
 frdl.to##.report
 frdl.to##.done > b
 
-! 2024-01-24 https://5gtocdocao.com
-||1.bp.blogspot.com/-EhWw8jF-c3I/XU-pn4RGGYI/AAAAAAAAA-U/3DIjFAXcu4kBWSg2GduhCe1Ym_A-AdFCgCLcBGAs/s1600/Kotizon-bo-suu-tap-hinh-nen-danh-cho-laptop-cuc-net-full-hd-1.jpg$image
+! 1 thg 12, 2024 https://5gtocdocao.com
+5gtocdocao.com##.icons
+5gtocdocao.com##.static
+5gtocdocao.com###exampleModal
+5gtocdocao.com##.active.tbpopup
+5gtocdocao.com##.show.fade.modal
+5gtocdocao.com##.show.fade.modal-backdrop
+5gtocdocao.com##.arcontactus-message-button
 
 ! 2024-01-24 https://taplai.com
 taplai.com##.display-none.display-block-md.p-2
@@ -300,9 +319,6 @@ daylaixehanoi.vn##.footer-wrapper
 
 ! 2024-01-30 https://tenvpndata.io.vn
 ||i.imgur.com/iIoIEAD.gif$image
-
-! 2024-01-30 https://5gtocdocao.com
-||gcs.tripi.vn/public-tripi/tripi-feed/img/473747LYC/hinh-nen-powerpoint-tet-1-2.png$image
 
 ! 2024-02-06 https://www.messenger.com
 www.messenger.com##.x1vjfegm.x1n2onr6.__fb-light-mode
@@ -673,7 +689,8 @@ gocvpn.net##.show.fade.modal-backdrop
 ||images.pexels.com/photos/339119/pexels-photo-339119.jpeg$image
 ||images.pexels.com/photos/339119/pexels-photo-339119.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1$image
 
-! 2024-01-23 https://panel.shopvpn4g.vn
+! 1 thg 12, 2024 https://panel.shopvpn4g.vn
+panel.shopvpn4g.vn##.popup
 ||shopvpn4g.vn/images/banner1.jpg$image
 panel.shopvpn4g.vn##fontpanel.shopvpn4g.vn
 ||vipmax.vn/wp-content/uploads/2017/07/ngam-gai-khoa-than-15.jpg$image
@@ -734,24 +751,6 @@ vpnviet.com##.ant-dropdown-open.ant-dropdown-trigger.mr-1.btn
 ||thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-gif-khu-rung-nguyen-sinh.gif$image
 ||png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-background-banner-image_125518.jpg$image
 
-! 2023-10-02 https://5gtocdocao.com
-5gtocdocao.com##.icons
-5gtocdocao.com##.static
-5gtocdocao.com###exampleModal
-5gtocdocao.com##.show.fade.modal
-5gtocdocao.com##.show.fade.modal-backdrop
-5gtocdocao.com##.arcontactus-message-button
-5gtocdocao.com##.active.lg.right.arcontactus-message.arcontactus-widget
-5gtocdocao.com##body,html:style(overflow: auto !important; position: initial !important;)
-||5gtocdocao.com/static/picture/5g1.jpg$image
-||5gtocdocao.com/static/picture/vpn1.jpg$image
-||vhb.vn/wp-content/uploads/2020/02/*.jpg$image
-||5gtocdocao.com/static/images/hero-g-bg.png$image
-||5gtocdocao.com/static/picture/lienquan.jpg$image
-||i.im.ge/2023/07/28/9I9rhm.anh-nen-mau-tim.png$image
-||idconline.vn/blog/wp-content/uploads/2021/08/*.jpg$image
-||idconline.vn/blog/wp-content/uploads/2021/08/anti-ddos-idc-online2.jpg$image
-||vhb.vn/wp-content/uploads/2020/02/52088600vectorillustrationofgoldvipcard.jpg$image
 
 ! 2023-12-07 https://sieuthi4g.com
 sieuthi4g.com##.show.fade.modal
@@ -1625,7 +1624,8 @@ stacksocial.com##.css-h52rc8
 ! 2023-04-11 https://rargb.to
 rargb.to##.lista > tbody > tr > td > table
 
-! 2023-04-13 https://forum.mobilism.org
+! 1 thg 12, 2024 https://forum.mobilism.org
+forum.mobilism.org###sig11406073
 forum.mobilism.org###sig10253884
 
 ! 2023-04-14 https://blogcafeit.com
@@ -2267,7 +2267,18 @@ phimvietsub.co##.ai-viewport-1.code-block-34.code-block
 
 ! CodeVN
 
-! 2023-09-23 https://ios.codevn.net
+! 1 thg 12, 2024 https://ios.codevn.net
+ios.codevn.net##.header.jsx-arm64e
+ios.codevn.net###fuckyou_phatnguyxn
+ios.codevn.net###primary > div.mt-3
+ios.codevn.net##div.m-3:nth-of-type(1)
+ios.codevn.net##div.m-3:nth-of-type(2)
+ios.codevn.net##.alert-info.alert.no-comments
+ios.codevn.net##.rounded.bg-light.entry-content
+ios.codevn.net##div.ads-single.mb-3.mt-1:nth-of-type(4)
+ipacrack.com###text-3
+ipacrack.com###site-header > .clear.container
+ipacrack.com##.widget_custom_html.widget.widget_text
 namlee.net##.entry-tags
 namlee.net##.adsparallax
 namlee.net##.article-footer
@@ -2276,13 +2287,6 @@ namlee.net##p:nth-of-type(29)
 namlee.net##.article-copyright
 namlee.net###wpd-bubble-wrapper
 namlee.net##.widget_custom_html.widget.widget_text
-ios.codevn.net##.header.jsx-arm64e
-ios.codevn.net##.alert-info.alert.no-comments
-ios.codevn.net##.rounded.bg-light.entry-content
-ipacrack.com###text-3
-ipacrack.com###site-header > .clear.container
-ipacrack.com##.widget_custom_html.widget.widget_text
-
 ! 2022-09-15 https://i.ghtk.vn
 ||i.ghtk.vn/images/orders.png$image
 
@@ -3654,8 +3658,10 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 
 !#########################################################################################################
 !___vOz____________________________________________
-! 20 thg 11, 2024 https://voz.vn
+! 2 thg 12, 2024 https://voz.vn
 voz.vn##.blockMessage--none.blockMessage
+||voz.vn/proxy.php?image=https%3A%2F%2Fi.imgur.com$image
+||voz.vn/proxy.php?image=https%3A%2F%2F0ms.dev%2Fmirrors%2Fi.imgur.com$image
 
 !#########################################################################################################
 ! Cloud
