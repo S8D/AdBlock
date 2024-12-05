@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241205a
+! Version: 241205b
 ! Title: xem.li/ads | mily.vn/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -8,7 +8,7 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=a2zapk.com|dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|uploadrar.com|unlockapk.com|watchseries.pe|clicknupload.cc|uploadocean.com|mega4upload.com|mv.phimbathu.one|upfiles-urls.com|flash.getpczone.com
+$popup,third-party,domain=a2zapk.com|dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|uploadrar.com|unlockapk.com|watchseries.pe|clicknupload.cc|uploadocean.com|mega4upload.com|mv.phimbathu.one|upfiles-urls.com|flash.getpczone.com|fmoviesto.cc
 ##div[class^="jw-logo"]
 
 dekiru.vn##.modal-container
@@ -154,6 +154,15 @@ kohi.vn,ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,laz
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,lphim.net,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,phimlau.com,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,phimdacap.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,movie.vkool.org,count.vipurl.in,www.waveform.com,blog.cloud365.vn,phim.vkoolzz.net,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,mv.phimbathu.info,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 !_________________________________
+! 5 thg 12, 2024 https://watchseries.pe
+||boringoccasion.pro^
+||stylish-knife.com^
+
+! 5 thg 12, 2024 https://ophim17.cc
+||s[1-5].phim1280.tv/adjump/*
+
+! 4 thg 12, 2024 https://vpstaiwa.com
+vpstaiwa.com##center
 
 ! 1 thg 12, 2024 https://mi21.eu
 mi21.eu##.cc-color-override--1562186077.cc-left.cc-bottom.cc-theme-edgeless.cc-type-opt-out.cc-floating.cc-window
