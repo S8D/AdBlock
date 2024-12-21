@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241207d
+! Version: 241221a
 ! Title: xem.li/ads | mily.vn/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -8,7 +8,7 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=a2zapk.com|dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|uploadrar.com|unlockapk.com|watchseries.pe|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|fmoviesto.cc
+$popup,third-party,domain=a2zapk.io|dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net
 ##div[class^="jw-logo"]
 
 dekiru.vn##.modal-container
@@ -154,17 +154,34 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 ||www.facebook.com/*/plugins/*$subdocument
 ||scontent.xx.fbcdn.net^$domain=phimtho.net
 
-! 6 thg 12, 2024 animevietsub.cx
-/^.*?animevietsub.*?$/##.announcement
-
+! 20 thg 12, 2024 animevietsub
 /^.*?animevietsub.*?$/##.Footer
 /^.*?animevietsub.*?$/###mv-keywords
 /^.*?animevietsub.*?$/##.widget-area
+/^.*?animevietsub.*?$/##.announcement
 /^.*?animevietsub.*?$/##main > .fbcmt
+/^.*?animevietsub.*?$/###invideo_wrapper
 /^.*?animevietsub.*?$/##.ad-center-980.Adv
 /^.*?animevietsub.*?$/##main > .watch-notice
 /^.*?animevietsub.*?$/##.ad-center-header.Adv
 /^.*?animevietsub.*?$/##.Container.Body > .fbcmt
+||animevietsub.*/statics/images/loading.heart.gif
+||lh6.googleusercontent.com/DKOFK047OChE35TAROUux9747riGULvvKG4In3skBqZkMoa3VI4FJ81wEQkOLVPkp7GgbDykG6tlSw45h46awqVeWJ1WG1laAb-Bo0k2Ht1f6szHKoyK3btYYnk=s0
+
+! 21 thg 12, 2024 https://animehay.moe
+/^.*?animehay.moe.*?$/##.ah_footer
+/^.*?animehay.moe.*?$/##.no-touch > div
+/^.*?animehay.moe.*?$/##.fw-500.flex-ver-center.flex
+/^.*?animehay.moe.*?$/##div.ah-frame-bg:nth-of-type(11)
+/^.*?animehay.moe.*?$/##.under_player.flex-hozi-center.flex-column.flex
+/^.*?animehay.moe.*?$/##.info-movie > div.ah-frame-bg > .flex-space-auto.flex
+||animehay.*/themes/js_ob/comments.js
+
+! 7 thg 12, 2024 https://eztvx.to
+eztvx.to###header_logo
+
+! 9 thg 12, 2024 https://ww4.fmovies.co
+ww4.fmovies.co##body > div
 
 ! 7 thg 12, 2024 https://fmoviesto.cc
 fmoviesto.cc##.m_i-d-comment
@@ -201,10 +218,12 @@ chillhaytv.com##.slogan.col-sm-6.col-md-3
 chillhaytv.com##div.clearfix.htmlwrap:nth-of-type(15)
 
 ! 7 thg 12, 2024 https://mv.phimbathu.one
+*.dbanime.net/ads/*
+mv.phimbathu.one/ads/*
+i.imgur.com/removed.png
+embed.123embed.net/ads/*
 ||connect.facebook.net^$domain=mv.phimbathu.one
 ||scontent.xx.fbcdn.net^$domain=mv.phimbathu.one
-mv.phimbathu.one/ads/*
-embed.123embed.net/ads/*
 mv.phimbathu.one###footer
 mv.phimbathu.one##.block-title
 mv.phimbathu.one##.comment.block
@@ -295,11 +314,50 @@ phimnhua.net##.ibetlogo
 phimnhua.net##.header__logo
 
 !_________________________________
+! 7 thg 12, 2024 https://www.scenetime.com
+www.scenetime.com###head-container
+||www.scenetime.com/pic/3508921.jpg$image
+||www.scenetime.com/pic/stlogo1.png$image
+www.scenetime.com##div > [href="/donate.php"]
+||img.streamvd.club/players/logonc.png$image
+
+||firmwarex.net/wp-content/plugins/deblocker/js/ads.min.js
+||firmwarex.net/wp-content/plugins/download-manager/assets//fancybox/*
+||fonts.googleapis.com/css?family=Poppins:600&display=swap
+||https://use.fontawesome.com/releases/v6.2.0/css/all.css
+
+! 11 thg 12, 2024 https://web.archive.org
+web.archive.org##div.message--post.message:nth-of-type(1)
+web.archive.org##div.message--post.message:nth-of-type(2)
+web.archive.org##div.message--post.message:nth-of-type(3)
+web.archive.org##div.message--post.message:nth-of-type(4)
+web.archive.org##div.message--post.message:nth-of-type(5)
+
 ! 5 thg 12, 2024 https://watchseries.pe
 ||stylish-knife.com^
 ||boringoccasion.pro^
 watchseries.pe##.show.fade.modal-backdrop
 watchseries.pe##.show.modalshare-2.premodal-share.premodal.fade.modal
+
+! 21 thg 12, 2024 https://down.mdiaload.com
+down.mdiaload.com##footer
+down.mdiaload.com##.footer-sub
+down.mdiaload.com##center > div
+down.mdiaload.com##div.container:nth-of-type(6)
+down.mdiaload.com##div.demand-supply:nth-of-type(1)
+down.mdiaload.com##div.demand-supply:nth-of-type(2)
+down.mdiaload.com##div.demand-supply:nth-of-type(5)
+down.mdiaload.com##div.demand-supply:nth-of-type(3)
+
+! 19 thg 12, 2024 https://giaonhan247.vn
+giaonhan247.vn##.mfp-ready.\30 .animated.mfp-bg
+giaonhan247.vn##.mfp-ready.\30 .animated.mfp-auto-cursor.mfp-close-btn-in.mfp-wrap
+
+! 20 thg 12, 2024 https://subdl.com
+subdl.com##.mt-4.items-center.justify-center.flex
+
+! 20 thg 12, 2024 https://www.tvmaze.com
+www.tvmaze.com##.margin-bottom.grid-padding-x.grid-x
 
 ! 4 thg 12, 2024 https://vpstaiwa.com
 vpstaiwa.com##center
@@ -432,10 +490,14 @@ mytour.vn##.Footer_container__m0n0r
 mytour.vn##.top-0.sticky.z-10.bg-\[\#cb002d\].w-\[100\%\]
 mytour.vn##.sm\:p-3.sm\:border.top-24.sticky.mt-3.font-semibold.min-h-min.border-0.rounded-xl.p-0.relate-blog > [href^="https://mytour.vn/uu-dai/uu-dai-tung-bung-don-mung-nam-moi-khach-san-giam-300k"]
 
-! 2024-01-23 https://frdl.to
+! 17 thg 12, 2024 https://frdl.to
+frdl.to##.footer
 frdl.to###fdmMsg
 frdl.to##.report
 frdl.to##.done > b
+frdl.to###sharebuttons
+frdl.to##.navbar-expand-lg.navbar
+frdl.to##.position-absolute.p-5.footer
 
 ! 1 thg 12, 2024 https://5gtocdocao.com
 5gtocdocao.com##.icons
@@ -474,11 +536,12 @@ www.messenger.com##.x1d52u69.x1yztbdb.xktsk01.xw7yly9
 ! 2024-02-07 https://4g.tintuc247.top
 ||img.freepik.com/premium-vector/vietnamese-tet-banner-is-designed-with-image-children-wearing-traditional-costumes_313905-4616.jpg?w=996$image
 
-! 2024-02-09 https://4ghatde.net
+! 9 thg 12, 2024 https://4ghatde.net
 ||i.ibb.co/M1HQW92/4.png$image
 ||i.ibb.co/M1HQW92/4.png$image
 ||i.ibb.co/MRQpLqw/3.png$image
 ||i.imgur.com/Dl20Zw1.jpg$image
+4ghatde.net##.slick-initialized.slick-slider
 ||img.upanh.tv/2023/10/13/Purple-Blue-Neon-Gaming-Stream-Facebook-Cover-6.png$image
 ||i.upanh.org/2023/10/12/Purple-Blue-Neon-Gaming-Stream-Facebook-Cover-10617949ae3c27931.png$image
 
@@ -518,11 +581,6 @@ www.wireshark.org##p:nth-of-type(2)
 www.wireshark.org##p:nth-of-type(1)
 www.wireshark.org##p:nth-of-type(3)
 www.wireshark.org##.astro-ABISHH35.right-side
-
-! 2024-01-09 https://frdl.to
-frdl.to###sharebuttons
-frdl.to##.navbar-expand-lg.navbar
-frdl.to##.position-absolute.p-5.footer
 
 ! 2024-01-09 https://dlupload.com
 dlupload.com##p.my-2
@@ -1067,7 +1125,7 @@ vpngiare.net##[src="https://i.postimg.cc/D0nhmn4R/6fr-unscreen.gif"]
 ! 2023-10-06 https://freenote.biz
 freenote.biz##.pt-4.mt-4.text-md-left.text-center.page-footer
 
-! 2023-10-06 https://ht4gvpn.com
+! 15 thg 12, 2024 https://ht4gvpn.com
 ht4gvpn.com##.gif-container
 ht4gvpn.com##div:nth-of-type(12)
 ht4gvpn.com##.ant-drawer-right.ant-drawer
@@ -1080,6 +1138,7 @@ emojipedia.org##.md\:min-w-\[400px\].min-w-\[300px\].h-\[257px\].relative.AdCont
 emojipedia.org##footer.md\:pl-12.w-full.flex-col.flex
 
 ! 2023-06-24 https://www.facebook.com
+||www.facebook.com/*/plugins/*$subdocument
 www.facebook.com##.xdt5ytf.x78zum5.xs83m0k.x1iyjqo2.x1r8uery.xeuugli.x193iq5w.x1ja2u2z.x1n2onr6.x9f619 > .xh8yej3.x1n2onr6.x5yr21d
 
 ! 2023-06-28 https://www.thegioididong.com
@@ -1385,8 +1444,9 @@ www.sierrawireless.com###onetrust-consent-sdk
 ! 2023-09-27 https://matcha-jp.com
 matcha-jp.com##.cookie-info
 
-! 2023-09-27 https://logistics.lazada.vn
+! 19 thg 12, 2024 https://www.lazada.vn
 logistics.lazada.vn###lex-footer
+www.lazada.vn##div:nth-of-type(12)
 logistics.lazada.vn##.footer-address
 logistics.lazada.vn##[href^="https://survey.alibaba.com/apps/zhiliao/m0LIcuT_Q"]
 
@@ -1754,7 +1814,6 @@ www.hdvietnam.me##.blockMessage--none.blockMessage
 www.hdvietnam.xyz##footer.pageWidth
 www.hdvietnam.xyz##.TagContainer.tagBlock
 www.hdvietnam.xyz##.baseHtml.ugc.SelectQuoteContainer.messageText > span
-www.hdvietnam.xyz##[src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/hdvncom/&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"]
 
 hdvietnam.com###youtube
 hdvietnam.com##.hdvn_head
@@ -2075,25 +2134,14 @@ bikae.net##.top-banner-ads
 bikae.net##.under-article-ads
 bikae.net##.bottom.entry-sns-data
 
-! 2023-01-17 https://animehay.pro
-animehay.pro,animehay.club###middle-box-screen
-
-! 2022-11-27 https://animehay.pro
-animehay.pro##div.ah-frame-bg:nth-of-type(11)
-
-! 2022-11-27 https://animevi.net
-animevi.net##.div-warning-text
-animevi.net##.div-list-tag-content.col-sm-12
-animevi.net##.div-view-video > .clearfix.section-bar
-
-! 2023-05-13 https://apkupload.in
-
-! 2023-08-16 https://a2zapk.io
+! 17 thg 12, 2024 https://a2zapk.io
 a2zapk.io##.Tags
 a2zapk.io##.WebF
 a2zapk.io##.Right
+a2zapk.io###a-ads4
 a2zapk.io###dlbtn > span
 a2zapk.io##.btnDownload1
+a2zapk.io##.col-lg-9 > center
 a2zapk.io##.DownLoadBotton span
 a2zapk.io##div.NewBlock:nth-of-type(1)
 a2zapk.io###div-gpt-ad-1689930918138-0
@@ -2103,15 +2151,6 @@ a2zapk.io##div.ArticleLand:nth-of-type(5)
 a2zapk.io##div.ArticleLand:nth-of-type(6)
 a2zapk.io##[href="https://telegram.me/a2zapkofficial"]
 a2zapk.io##div.ArticleLand > [href="https://telegram.me/a2zapkofficial"]
-
-! 2022-11-23 https://a2zapk.com
-a2zapk.com##.Tags
-a2zapk.com##.StyleTags > ul
-||a2z.a2zapk.com/dlcount.php
-||tmp.a2zapk.com/advertisement
-a2zapk.com##div.NewBlock:nth-of-type(1)
-a2zapk.com##div.ArticleLand:nth-of-type(5)
-a2zapk.com##div.ArticleLand:nth-of-type(6)
 
 newsjizz.in###taxonomy-list_1-0
 newsjizz.in##body > div:nth-of-type(3)
@@ -2170,7 +2209,8 @@ taiwebs.com###maincontent > div > .adsbyvli
 taiwebs.com##.l.download-container.midleft > .topdown
 .py-5.text-center.wow.zoomIn.animated:nth-child(3)
 
-! 2022-11-22 https://vnexpress.net
+! 7 thg 12, 2024 https://vnexpress.net
+vnexpress.net##.tags
 vnexpress.net##.p_header
 vnexpress.net##.social_pin
 vnexpress.net###wrapper_footer
@@ -2290,7 +2330,8 @@ cloudflare.com##.esni-checker > div.esni-checker__results-section:nth-of-type(1)
 cloudflare.com##.tile__content--1200px.tile__content > .esni-checker__results-section
 www.cloudflare.com##.show-dt-only.flash-banner--not-localized.flash-banner--gray.flash-banner
 
-! 2022-11-27 https://www.reddit.com
+! 8 thg 12, 2024 https://www.reddit.com
+www.reddit.com##.\@container
 www.reddit.com##shreddit-async-loader:nth-of-type(2)
 www.reddit.com##._1acwN_tUhJ8w-n7oCp-Aw3._3Ig_EsWWVLquWs2yBBQjec._1DK52RbaamLOWw5UPaht_S
 
@@ -3552,10 +3593,9 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 
 !#########################################################################################################
 !___vOz____________________________________________
-! 2 thg 12, 2024 https://voz.vn
+! 8 thg 12, 2024 https://voz.vn
 voz.vn##.blockMessage--none.blockMessage
-||voz.vn/proxy.php?image=https%3A%2F%2Fi.imgur.com$image
-||voz.vn/proxy.php?image=https%3A%2F%2F0ms.dev%2Fmirrors%2Fi.imgur.com$image
+||voz.vn/proxy.php?image=*.imgur.com*$image
 
 !#########################################################################################################
 ! Cloud
@@ -3818,21 +3858,31 @@ dropgalaxy.com##div.downloadPage.premium.page.pt-5.container:nth-of-type(8)
 dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
 dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=0&controls=0"]
 
-! 20 thg 11, 2024 https://jytechs.in
+! 17 thg 12, 2024 https://jytechs.in
+jytechs.in##u
 jytechs.in###about
 jytechs.in##.report
 jytechs.in##center > p
 jytechs.in##center > .premium
 jytechs.in##.btn-block.btn-success.btn
+jytechs.in###div-gpt-ad-1705724086182-0
 jytechs.in##.position-absolute.p-5.footer
+jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(5)
 jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(9)
+jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
+jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(13)
 
-! 20 thg 11, 2024 https://thecubexguide.com
+! 18 thg 12, 2024 https://thecubexguide.com
+thecubexguide.com##u
 thecubexguide.com###aboutdis
 thecubexguide.com##center:nth-of-type(2) > p
 thecubexguide.com##.btn-block.btn-success.btn
+thecubexguide.com###div-gpt-ad-1705724086182-0
 thecubexguide.com##.position-absolute.p-5.footer
 thecubexguide.com##center:nth-of-type(2) > .premium
+thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(5)
+thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(11)
+thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(13)
 thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
 thecubexguide.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(1)
 thecubexguide.com##[href="https://random-affiliate.atimaze.com/trck/eclick/bc5b412be4df3b85c4faa4a79d106f9d&fn=Adobe_Acrobat_24.12.0.36520.Beta_uni_Mod_by_ElaMods_____.apk"]
