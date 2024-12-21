@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
-! Version: 241221b
-! Title: t.ly/ad_ | xem.li/ads | mily.vn/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc
+! Version: 241221a
+! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
 ! Licence: Darias
