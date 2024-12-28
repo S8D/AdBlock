@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241229a
+! Version: 241229b
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -144,7 +144,6 @@ www.expandurl.net,www.europeup.com,filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.i
 wi.cr,voz.vn,vn-z.vn,uploady.io,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,androiddatahost.com,www.freeproxy.world,flash.getpczone.com,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz##.adsbygoogle
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,note1s.com,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,freenote.biz,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,count.vipurl.in,techy.veganab.co,links.apksvip.com,beta.shortearn.eu,dl.tech-story.net,pandaznetwork.com,indianshortner.com,123link.ghego.site,download.baominh.tech,short.pandaznetwork.com,123link.carpartsviet31.site###cookie-pop
 
-workupload.com,gg.gg,voz.vn,bash.ws,vn-z.vn,4share.vn,vuighe.tv,dekiru.vn,ipleak.net,chillhay.in,uptobox.com,hh3dhay.xyz,leech.ninja,openload.co,www.takez.co,chedrive.com,uploadev.org,motchill.net,linksvip.net,apkadmin.com,websosanh.vn,1fichier.com,motchill.info,flash.getpczone.com,uploadrar.com,chedrives.com,chiasenhac.vn,getintopc.com,www.alc.co.jp,www.ntdvn.com,mediafire.com,moddingzone.in,checkip.com.vn,ip.sanvu88.net,iplocation.com,sinhvienit.net,userstyles.org,www.yubico.com,pointfshare.com,premiumleech.eu,quantrimang.com,www.filesend.jp,androidhost.org,www.ipa4fun.com,www.europeup.com,giaminhgroup.com,ipgeolocation.io,www.hotcourses.vn,rubicmarketing.com,www.iplocation.net,vienthongtayninh.vn,account.ipvanish.com,pandaz.cgchotbox.com,www.limetorrents.lol,dl.literaturetimes.com,www.perfect-privacy.com,forum.xda-developers.com,demo-blogvnpt.blogspot.com,businessnewscurrent.online,motchill.vn,motchill.pw###footer
 
 kohi.vn,ouo.io,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com,dlupload.com,vinaphone.com.vn##.footer
 
@@ -218,10 +217,10 @@ chillhaytv.com##.slogan.col-sm-6.col-md-3
 chillhaytv.com##div.clearfix.htmlwrap:nth-of-type(15)
 
 ! 7 thg 12, 2024 https://mv.phimbathu.one
-*.dbanime.net/ads/*
-mv.phimbathu.one/ads/*
+||*.dbanime.net/ads/*
+||mv.phimbathu.one/ads/*
 i.imgur.com/removed.png
-embed.123embed.net/ads/*
+||embed.123embed.net/ads/*
 ||connect.facebook.net^$domain=mv.phimbathu.one
 ||scontent.xx.fbcdn.net^$domain=mv.phimbathu.one
 mv.phimbathu.one###footer
@@ -2316,6 +2315,7 @@ xoso.com.vn##.headermobi.header-content
 ! CodeVN
 
 ! 1 thg 12, 2024 https://ios.codevn.net
+||ios.codevn.net^$popup
 ios.codevn.net##.header.jsx-arm64e
 ios.codevn.net###fuckyou_phatnguyxn
 ios.codevn.net###primary > div.mt-3
@@ -2964,7 +2964,6 @@ ask.fm##.lightbox_overlay
 askubuntu.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
 askubuntu.com##.z-banner.r0.l0.b0.ps-fixed.ff-sans.p8
 autoitvn.com###g207
-beta.chiasenhac.vn###csnplayerads
 bgp.tools##.js-footer.group
 bianhot.site##.premium
 bianhot.site##.sv-nav.navbar-dark.navbar-expand-md.navbar
@@ -3017,15 +3016,6 @@ canhme.com##.entry-footer
 canhme.com##.slide-on-scroll
 canhme.com##.et_bloom_inline_form, .et_bloom_optin, .et_bloom_make_form_visible, .et_bloom_optin_6
 canhme.com##.et_bloom_popup, .et_bloom_optin, .et_bloom_resize, .et_bloom_optin_1, .et_bloom_auto_popup, .et_bloom_trigger_bottom, .et_bloom_hide_mobile_optin, .et_bloom_visible, .et_bloom_animated
-chiasenhac.vn##.box_space
-chiasenhac.vn###post_comment
-chiasenhac.vn###right1_banner
-chiasenhac.vn##.form-comment-0.box_form_comment
-chiasenhac.vn##.detail_lyric_1.mb-4.card > div:nth-of-type(1)
-chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child
-chiasenhac.vn##section.wrapper_content:nth-child(2) > div.box_space:nth-child(3)
-chiasenhac.vn###csnplayerads > div.jw-controls.jw-reset:last-child > hiasenhac.vn###list_comment_body
-chiasenhac.vn##div.mu-wrapper:nth-child(2) > div.mu-main > div.footer:last-child > div.f-c:nth-child(2) > ul
 chiasesuutam.com###mailmunch-inner-overlay-169048a3444b97c
 chiasesuutam.com###mailmunch-overlay-169048a3444b97c
 chiasesuutam.com###mailmunch-popover-169048a3444b97c
@@ -3427,7 +3417,8 @@ tudienabc.com###container > div.row:nth-child(4)
 tuhoconline.net##.clearfix.footer-socket-wrapper-widgets-wrapper
 tuhoconline.net##.sd-content
 tuhoconline.net##.wpcr3_in_content.wpcr3_respond_1
-tuhoconline.net##h5:nth-of-type(2)||tuhoconline.net/wp-content/uploads/*
+tuhoconline.net##h5:nth-of-type(2)
+||tuhoconline.net/wp-content/uploads/*
 tuhoconline.net##h5:nth-of-type(3)
 tuhoconline.net##h5:nth-of-type(4)
 twitter.com##div.r-zchlnj.r-1xcajam.r-12vffkv.r-1d2f490.r-1p0dtai.r-aqfbo4.css-1dbjc4n
@@ -3651,7 +3642,6 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 ||bluadz.com
 ||bybit.ada.support/embed/modern/button/*/sentry.*.js$script
 ||chat.zalo.me/service-worker.*.js$script,domain=chat.zalo.me
-||chiasenhac.vn/sys/error_slow_bug$xhr,1p
 ||ds-assets.cdn.devapps.ru/*.jpg
 ||hoamitech.com/wp-content/uploads/2021/09/tai-khoan-fshare-vip-2019.jpg$image
 ||https://lh3.googleusercontent.com/-3qk5J_yYj0Q/YaTYTb31kfI/AAAAAAAAAmU/T6sTDlhNqpY8lCPt8nNxwYt2pTjQ8qoYQCLcBGAsYHQ/h120/APP-logos.png$image
@@ -4627,36 +4617,8 @@ www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4w
 @@||mshare.io/js/ads.js
 @@/js/show_ads.js^$domain=shink.in
 @@speedtest.vnix.vn/sizing/count.php
-@@||sd.ty^$important,document,~extension
-@@||4.3.2.1^$important,document,~extension
-@@||noc.org^$important,document,~extension
-@@||ip.gg.gg^$important,document,~extension
-@@||shopee.vn^$important,document,~extension
-@@||urlex.org^$important,document,~extension
-@@||bgp.he.net^$important,document,~extension
-@@||dd-wrt.com^$important,document,~extension
-@@||jcgcom.com^$important,document,~extension
-@@||192.168.0.1^$important,document,~extension
-@@||192.168.1.1^$important,document,~extension
-@@||archive.org^$important,document,~extension
-@@||coolstar.org^$important,document,~extension
-@@||my.lazada.vn^$important,document,~extension
-@@||puziness.com^$important,document,~extension
-@@||www.asus.com^$important,document,~extension
-@@||member.fpt.vn^$important,document,~extension
-@@||www.lazada.vn^$important,document,~extension
-@@||www.vnpost.vn^$important,document,~extension
-@@||cart.lazada.vn^$important,document,~extension
-@@||router.asus.com^$important,document,~extension
-@@||www.netgear.com^$important,document,~extension
-@@||www.broadcom.com^$important,document,~extension
-@@||www.sosanhgia.com^$important,document,~extension
-@@||signup.opendns.com^$important,document,~extension
-@@||www.routerlogin.net^$important,document,~extension
-@@||www.vitinhlehuy.com^$important,document,~extension
-@@||forum.draytek.com.vn^$important,document,~extension
-@@||www.chiemtaimobile.vn^$important,document,~extension
-@@||dashboard.umbrella.com^$important,document,~extension
+@@||sd.ty|4.3.2.1|noc.org|shopee.vn|urlex.org|bgp.he.net|dd-wrt.com|jcgcom.com|192.168.0.1|192.168.1.1|archive.org|coolstar.org|my.lazada.vn|puziness.com|www.asus.com|member.fpt.vn|www.lazada.vn|www.vnpost.vn|cart.lazada.vn|router.asus.com|www.netgear.com|www.broadcom.com|www.sosanhgia.com|signup.opendns.com|www.routerlogin.net|www.vitinhlehuy.com|forum.draytek.com.vn|www.chiemtaimobile.vn|dashboard.umbrella.com^$important,document,~extension
+
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=www.mega-debrit.com|downmienphi.com
 @@/js/ads.js^$domain=curs.io|adlinkme.com|cut-earn.com|cutwin.com|123link.co|123link.pw|gram.im|megaurl.in|wi.cr|mshare.io
 
@@ -4780,7 +4742,6 @@ www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4w
 ||onclickmega.*^
 ||unipay.qq.com^
 ||2go7v1nes8.com^
-||google*.*/*_204
 ||secafe.vn/ads/*
 ||money.yandex.ru^
 ||qccoccocmedia.*^
@@ -4791,7 +4752,6 @@ www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4w
 ||outlookabsorb.com^
 ||asc.quantrimang.com
 ||adsrvmedia.adk2x.com
-||coccoc.com/webhp/*.*
 ||marketing.vatgia.com^
 ||cdn.engine.4dsply.com^
 ||scorecardresearch.com^
@@ -4825,11 +4785,9 @@ www.facebook.com##.mio9le5o.pmk7jnqg.g2fypklz.gqgwhnc0 > div > .a8c37x1j.lzcic4w
 ||daytiengnhat.edu.vn/upload/administrator/image/*.*
 ||daytiengnhat.edu.vn/upload/itqweb/image/slides/*.*
 ||source.unsplash.com/category/objects/800x600$image
-||apis.google.com/u/0/se/0/_/+1$domain=*.chiasenhac.vn
 ||media.adnetwork.vn/assets/js/abd.inpage.preroll.v1.js
 ||sublimetext.com/updates/3/stable/updatecheck$important
 ||log4x.nixcdn.com^$domain=www.nhaccuatui.com,third-party
-||chiasenhac.vn/videojs-vast-plugin-master/logo_csn_1s.mp4
 ||onhax.me/cdn-cgi/nexp/dok3v=1613a3a185/cloudflare/rocket.js
 ||samsung-updates.com/wp-content/plugins/wp-cumulus/swfobject.js
 ||samsung-updates.com/wp-content/plugins/wp-cumulus/tagcloud.swf
