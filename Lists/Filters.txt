@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241221a
+! Version: 241229a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -121,7 +121,6 @@ clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com
 4gviet.com,id.4gre.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.mr-1.btn-black.btn.ant-dropdown-trigger
 win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
 
-
 nam4g.com,net5g.pro,dvsteam.net,vpndata.xyz,ht4gvpn.com,go.tnetz.pro,csadata4g.me,v1.hack5g.com,hunglapis.id.vn,vpndata.takeshi.dev##.text-center.mb-3
 
 linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com,techy.veganab.co,pandaznetwork.com##h4
@@ -154,7 +153,8 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 ||www.facebook.com/*/plugins/*$subdocument
 ||scontent.xx.fbcdn.net^$domain=phimtho.net
 
-! 20 thg 12, 2024 animevietsub
+! 29 thg 12, 2024 animevietsub
+!||animevietsub.*^$domain=~googleusercontent.com
 /^.*?animevietsub.*?$/##.Footer
 /^.*?animevietsub.*?$/###mv-keywords
 /^.*?animevietsub.*?$/##.widget-area
@@ -165,17 +165,17 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 /^.*?animevietsub.*?$/##main > .watch-notice
 /^.*?animevietsub.*?$/##.ad-center-header.Adv
 /^.*?animevietsub.*?$/##.Container.Body > .fbcmt
-||animevietsub.*/statics/images/loading.heart.gif
+||animevietsub.*^/statics/images/loading.heart.gif
 ||lh6.googleusercontent.com/DKOFK047OChE35TAROUux9747riGULvvKG4In3skBqZkMoa3VI4FJ81wEQkOLVPkp7GgbDykG6tlSw45h46awqVeWJ1WG1laAb-Bo0k2Ht1f6szHKoyK3btYYnk=s0
 
 ! 21 thg 12, 2024 https://animehay.moe
-/^.*?animehay.moe.*?$/##.ah_footer
-/^.*?animehay.moe.*?$/##.no-touch > div
-/^.*?animehay.moe.*?$/##.fw-500.flex-ver-center.flex
-/^.*?animehay.moe.*?$/##div.ah-frame-bg:nth-of-type(11)
-/^.*?animehay.moe.*?$/##.under_player.flex-hozi-center.flex-column.flex
-/^.*?animehay.moe.*?$/##.info-movie > div.ah-frame-bg > .flex-space-auto.flex
-||animehay.*/themes/js_ob/comments.js
+/^.*?animehay.*?$/##.ah_footer
+/^.*?animehay.*?$/##.no-touch > div
+/^.*?animehay.*?$/##.fw-500.flex-ver-center.flex
+/^.*?animehay.*?$/##div.ah-frame-bg:nth-of-type(11)
+/^.*?animehay.*?$/##.under_player.flex-hozi-center.flex-column.flex
+/^.*?animehay.*?$/##.info-movie > div.ah-frame-bg > .flex-space-auto.flex
+||animehay.*^/themes/js_ob/comments.js
 
 ! 7 thg 12, 2024 https://eztvx.to
 eztvx.to###header_logo
@@ -313,6 +313,16 @@ phimnhua.net##.footer
 phimnhua.net##.ibetlogo
 phimnhua.net##.header__logo
 
+! 23 thg 12, 2024 https://vietsubtw.net
+vietsubtw.net##.footer
+vietsubtw.net##.mp-adz
+vietsubtw.net##.header > div > center
+vietsubtw.net##.active.header > div > center
+||hdpic.pro^
+||phamhuyen.shop^
+||vietsubtw.net/vast/*
+||vietsubtw.net/js/tivigo66.js
+||raw.githubusercontent.com/mrcotb/aadriver/*$image
 !_________________________________
 ! 7 thg 12, 2024 https://www.scenetime.com
 www.scenetime.com###head-container
@@ -339,15 +349,22 @@ web.archive.org##div.message--post.message:nth-of-type(5)
 watchseries.pe##.show.fade.modal-backdrop
 watchseries.pe##.show.modalshare-2.premodal-share.premodal.fade.modal
 
-! 21 thg 12, 2024 https://down.mdiaload.com
+! 22 thg 12, 2024 https://down.mdiaload.com
+down.mdiaload.com##.share
 down.mdiaload.com##footer
+down.mdiaload.com##.upinfo
+down.mdiaload.com##div > font
+down.mdiaload.com##.sharetabs
 down.mdiaload.com##.footer-sub
+down.mdiaload.com##.compare-col
 down.mdiaload.com##center > div
+down.mdiaload.com##div.container:nth-of-type(7)
 down.mdiaload.com##div.container:nth-of-type(6)
 down.mdiaload.com##div.demand-supply:nth-of-type(1)
 down.mdiaload.com##div.demand-supply:nth-of-type(2)
 down.mdiaload.com##div.demand-supply:nth-of-type(5)
 down.mdiaload.com##div.demand-supply:nth-of-type(3)
+down.mdiaload.com##input.btn-info.btn:nth-of-type(6)
 
 ! 19 thg 12, 2024 https://giaonhan247.vn
 giaonhan247.vn##.mfp-ready.\30 .animated.mfp-bg
@@ -499,6 +516,95 @@ frdl.to###sharebuttons
 frdl.to##.navbar-expand-lg.navbar
 frdl.to##.position-absolute.p-5.footer
 
+! 25 thg 12, 2024 https://4ghatde.net
+||4ghatde.net$domain=i.ibb.co|i.imgur.com|i.upanh.org|img.upanh.tv|media.giphy.com
+4ghatde.net##.card-img-top
+4ghatde.net##.slick-initialized.slick-slider
+
+5g.edu.vn,5gvuduy.net,my.ztdata.net,sieudata5g.com##.mb-3.aikopanel-logo
+
+! 26 thg 12, 2024 https://vpn.nguyendinhnghi.id.vn
+||raw.githubusercontent.com/MonkeyDev21/avatar/main/IMG_20240321_122436_911.jpg$image
+||raw.githubusercontent.com/MonkeyDev21/avatar/main/*g$image
+||raw.githubusercontent.com/MonkeyDev21/avatar/main/*$image
+
+! 26 thg 12, 2024 https://my.ztdata.net
+||4ghatde.net$domain=s1.nordcdn.com
+
+! 26 thg 12, 2024 https://5gvuduy.net
+||5gvuduy.net$domain=i.ibb.co
+
+! 26 thg 12, 2024 https://uyenip.net
+uyenip.net##.text-dark-dvs
+uyenip.net##.active.tbpopup
+uyenip.net##.mb-3.text-muted.font-size-sm
+
+! 27 thg 12, 2024 https://hoathinh4k3.top
+hoathinh4k3.top##.lh
+hoathinh4k3.top###catfish
+hoathinh4k3.top##.bxx__lag
+hoathinh4k3.top##.footer-wrapper
+hoathinh4k3.top###popup-giua-man-hinh
+hoathinh4k3.top##.flex-center.hide-for-medium.flex-col
+hoathinh4k3.top##center > [href="https://154.82.109.163/1535401.html"]
+
+! 28 thg 12, 2024 https://copilot.microsoft.com
+copilot.microsoft.com##.z-10.contrast-more\:border-2.flex-col.flex.relative.pointer-events-auto
+
+! 2024-03-22 https://www.charactercountonline.com
+www.charactercountonline.com##.adUnit
+www.charactercountonline.com##.mobileAdUnit
+
+! 31 thg 10, 2024 https://aruljohn.com
+aruljohn.com##h1 > span
+
+! 10 thg 12, 2024 https://ptehelper.com.au
+ptehelper.com.au##.elementor-element-384150d.elementor-element.elementor-top-column.elementor-col-50.elementor-column
+
+! 10 thg 12, 2024 https://pasal.edu.vn
+pasal.edu.vn##.box-fixer
+
+! 10 thg 12, 2024 https://vn.elsaspeak.com
+vn.elsaspeak.com##.banner
+vn.elsaspeak.com##.list-category
+vn.elsaspeak.com##.show.fade.modal-backdrop
+vn.elsaspeak.com##.show.fade.modal.elsa-modal
+
+! 17 thg 12, 2024 https://pixeldrain.com
+||pixeldrain.com/res/img/nebula.webp$image
+
+! 17 thg 12, 2024 https://firmwarex.net
+||firmwarex.net/wp-admin/admin-ajax.php$xhr,1p
+||firmwarex.net/wp-content/plugins/download-manager/assets//fancybox/fancybox.umd.js?_=1734417226050$xhr,1p
+||firmwarex.net/wp-content/cache/perfmatters/firmwarex.net/minify/4048968be16c.front.min.css$stylesheet,1p
+||firmwarex.net/wp-content/cache/perfmatters/firmwarex.net/minify/845574795e73.acf4b8bb3.min.css$stylesheet,1p
+
+! 17 thg 12, 2024 https://hfile.net
+hfile.net##.show.cookies
+hfile.net##.mt-auto.footer
+
+! 20 thg 12, 2024 https://hcmfpt.vn
+hcmfpt.vn##.boxFixed2 > .hidden-sm.hidden-xs
+
+! 21 thg 12, 2024 https://developer.android.com
+developer.android.com##.sdk-terms.dialog-content-stretch
+
+! 22 thg 12, 2024 https://support.oppo.com
+support.oppo.com###main-alert-ad > [href^="https://support.oppo.com/vn/answer/"]
+
+! 27 thg 12, 2024 https://chatgpt.com
+chatgpt.com##.z-20.right-0.left-0.bottom-full.absolute
+
+! 27 thg 12, 2024 https://www.partitionwizard.com
+www.partitionwizard.com##.promotion-popup-wrap
+www.partitionwizard.com##.promotion-popup-fixed-wrap
+
+! 1 thg 12, 2024 https://mi21.eu
+mi21.eu##.cc-color-override--1562186077.cc-left.cc-bottom.cc-theme-edgeless.cc-type-opt-out.cc-floating.cc-window
+
+! 1 thg 12, 2024 https://usth.edu.vn
+usth.edu.vn##.content-popup
+
 ! 1 thg 12, 2024 https://5gtocdocao.com
 5gtocdocao.com##.icons
 5gtocdocao.com##.static
@@ -535,15 +641,6 @@ www.messenger.com##.x1d52u69.x1yztbdb.xktsk01.xw7yly9
 
 ! 2024-02-07 https://4g.tintuc247.top
 ||img.freepik.com/premium-vector/vietnamese-tet-banner-is-designed-with-image-children-wearing-traditional-costumes_313905-4616.jpg?w=996$image
-
-! 9 thg 12, 2024 https://4ghatde.net
-||i.ibb.co/M1HQW92/4.png$image
-||i.ibb.co/M1HQW92/4.png$image
-||i.ibb.co/MRQpLqw/3.png$image
-||i.imgur.com/Dl20Zw1.jpg$image
-4ghatde.net##.slick-initialized.slick-slider
-||img.upanh.tv/2023/10/13/Purple-Blue-Neon-Gaming-Stream-Facebook-Cover-6.png$image
-||i.upanh.org/2023/10/12/Purple-Blue-Neon-Gaming-Stream-Facebook-Cover-10617949ae3c27931.png$image
 
 ! 2024-02-10 https://daohaisan.vn
 daohaisan.vn##.show.isCVH.fade.modal
@@ -850,7 +947,6 @@ vpnviet.com##.ant-dropdown-open.ant-dropdown-trigger.mr-1.btn
 ||thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-anh-gif-khu-rung-nguyen-sinh.gif$image
 ||png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-background-banner-image_125518.jpg$image
 
-
 ! 2023-12-07 https://sieuthi4g.com
 sieuthi4g.com##.show.fade.modal
 sieuthi4g.com###snowflakeContainer
@@ -1000,15 +1096,6 @@ vpngiare.net###popup-giua-man-hinh
 ||*/theme/v2board/assets/i18n/ko-KR.js
 ||*/theme/v2board/assets/i18n/zh-TW.js
 ||*/theme/v2board/assets/i18n/fa-IR.js
-
-! 2024-01-01 https://4ghatde.net
-||4ghatde.net/theme/GIF/hatde01.gif$image
-||img.upanh.tv/2023/04/14/4GHATDE.NET-2.png$image
-||img.upanh.tv/2023/07/09/Thiet-ke-chua-co-ten-7.png$image
-||media.giphy.com/media/wobKCP6HaN4PFa5hD3/giphy.gif$image
-||i.ibb.co/9ZYK0JS/8926014bf2dbf158a5a10b98d8f39840.jpg$image
-||img.upanh.tv/2023/07/29/Black-Modern-Coming-Soon-Facebook-Post.png$image
-||i.upanh.org/2023/07/08/Blue-Yellow-Modern-Minimalist-Business-Banking-Facebook-Post-1080--720-px3e5636a463c9720b.png$image
 
 ! 2023-08-30 https://free4g.vn
 ||free4g.vn/demo1/dist/assets/media/illustrations/sketchy-1/14-dark.png$image
@@ -1872,7 +1959,6 @@ apkmody.io##.padding-bottom-100.padding-top-30.has-small-font-size.has-very-ligh
 ! 2023-02-10 https://bizflycloud.vn
 bizflycloud.vn###new-20220611113014396 > div
 bizflycloud.vn##.order-sm-first.left-sidebar.col-lg-2.col-sm-3.col-12
-
 
 ! 2023-12-15 https://baseus.vn
 baseus.vn##.addThis_listSharing
@@ -3593,9 +3679,13 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 
 !#########################################################################################################
 !___vOz____________________________________________
-! 8 thg 12, 2024 https://voz.vn
+! 29 thg 12, 2024 https://voz.vn
 voz.vn##.blockMessage--none.blockMessage
-||voz.vn/proxy.php?image=*.imgur.com*$image
+||data.voz.vn/avatars/*/*/1726496.jpg$image
+||voz.vn/attachments/1734684192210-jpeg.2840011/$image
+
+||voz.vn/proxy.php?image=https://i.imgur.com$image
+||voz.vn/proxy.php?image=https://0ms.dev/mirrors/i.imgur.com$image
 
 !#########################################################################################################
 ! Cloud
@@ -3925,7 +4015,6 @@ www.up-4ever.net##.my-5.g-3.row > div.col-lg-4.col-12:nth-of-type(1)
 www.up-4ever.net##.blue-bg-2.p-relative.breadcrumb-height.breadcrumb__area
 www.up-4ever.net##.header-container.gap-3.flex-wrap.w-100.justify-content-between.align-items-center.d-flex > .gap-2.align-items-center.d-flex
 
-
 ! 2023-09-09 https://fastcare.vn
 fastcare.vn##.active.popup-block
 fastcare.vn##.socials
@@ -4096,16 +4185,6 @@ hexupload.net##.fixed-top.navbarLayout.navbar-expand-md.navbar
 ! 2021-07-20 https://tusfiles.com
 tusfiles.com##.cc-color-override--1360619034.cc-right.cc-bottom.cc-theme-edgeless.cc-type-info.cc-floating.cc-window
 
-! 2022-07-29 https://www.fshare.vn
-fshare.vn###boundary
-fshare.vn##.bannerinfooter
-fshare.vn###livechat_header
-fshare.vn##.quang-cao-bottom
-fshare.vn###web-container > footer
-www.fshare.vn##.mdc-dialog--open.mdc-dialog
-www.fshare.vn##.thumbnail-ic-fc.material-icons
-fshare.vn###web-container > footer:nth-child(3)
-
 ! 2021-07-20 https://up-load.io
 up-load.io##ol
 up-load.io##.upinfo
@@ -4160,7 +4239,6 @@ www.upload-4ever.com##.mb-5.text-center.content-section.col-sm-12
 www.upload-4ever.com##.mb-2.border-right.col-sm-10.col-md-12.col-lg > div
 
 !___Rút-Gọn________________________________________
-
 
 ! 2021-07-24 https://mega4up.com
 mega4up.com##.col-xl-8
