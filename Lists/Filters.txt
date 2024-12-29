@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241229b
+! Version: 241229c
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -152,13 +152,15 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 ||www.facebook.com/*/plugins/*$subdocument
 ||scontent.xx.fbcdn.net^$domain=phimtho.net
 
-! 29 thg 12, 2024 animevietsub
+! 29 thg 12, 2024 https://animevietsub.biz
 !||animevietsub.*^$domain=~googleusercontent.com
 /^.*?animevietsub.*?$/##.Footer
+/^.*?animevietsub.*?$##.VotesCn
 /^.*?animevietsub.*?$/###mv-keywords
 /^.*?animevietsub.*?$/##.widget-area
 /^.*?animevietsub.*?$/##.announcement
 /^.*?animevietsub.*?$/##main > .fbcmt
+/^.*?animevietsub.*?$##.social-button
 /^.*?animevietsub.*?$/###invideo_wrapper
 /^.*?animevietsub.*?$/##.ad-center-980.Adv
 /^.*?animevietsub.*?$/##main > .watch-notice
