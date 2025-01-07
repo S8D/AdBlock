@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250107b
+! Version: 250107c
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -8,7 +8,7 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net
+$popup,third-party,domain=dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net|ipacrack.com|ios.codevn.net
 ##div[class^="jw-logo"]
 
 dekiru.vn##.modal-container
