@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250107a
+! Version: 250107b
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -8,7 +8,7 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=a2zapk.io|dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net
+$popup,third-party,domain=dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net
 ##div[class^="jw-logo"]
 
 dekiru.vn##.modal-container
@@ -152,6 +152,16 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 ||www.facebook.com/*/plugins/*
 ||scontent.xx.fbcdn.net^$domain=phimtho.net
 
+! 7 thg 1, 2025 https://apkarchive.org
+apkarchive.org##.bg-zinc-900.py-8.h-fit
+apkarchive.org##div.mb-5:nth-of-type(2)
+apkarchive.org##.mb-4.mt-6.flex-wrap.gap-5.flex
+apkarchive.org##a.text-lg.drop_menu_item:nth-of-type(1)
+apkarchive.org##a.text-lg.drop_menu_item:nth-of-type(2)
+apkarchive.org##.pt-5.justify-center.items-center.flex.sharer
+apkarchive.org##.border-b.pb-8.mb-6.mt-6.flex-wrap.gap-5.flex
+apkarchive.org##.py-2.sm\:justify-start.justify-center.items-center.flex.sharer
+
 ! 2 thg 1, 2025 https://www.gotit.vn
 www.gotit.vn##.footer
 www.gotit.vn###cookie-consent-body
@@ -163,14 +173,16 @@ turbobit.net##.main-menu
 turbobit.net##.max-speed-time
 turbobit.net##td.download-button.no-border:nth-of-type(3)
 
-! 4 thg 1, 2025 https://apkpure.net
-apkpure.net##.ad-adsense.js-ad-slot
-
-! 4 thg 1, 2025 https://apk.dog
+! 7 thg 1, 2025 https://apk.dog
 apk.dog##.adv_text
 apk.dog##.logo_icon
 apk.dog##.logo_text
 apk.dog##.adx_center
+apk.dog##.mb-2r.textleft.dwn_faq
+apk.dog##div.tableWrap > .header2r
+
+! 4 thg 1, 2025 https://apkpure.net
+apkpure.net##.ad-adsense.js-ad-slot
 
 ! 4 thg 1, 2025 https://apkpure.com
 apkpure.com##.ad-box
@@ -569,12 +581,15 @@ mytour.vn##.Footer_container__m0n0r
 mytour.vn##.top-0.sticky.z-10.bg-\[\#cb002d\].w-\[100\%\]
 mytour.vn##.sm\:p-3.sm\:border.top-24.sticky.mt-3.font-semibold.min-h-min.border-0.rounded-xl.p-0.relate-blog > [href^="https://mytour.vn/uu-dai/uu-dai-tung-bung-don-mung-nam-moi-khach-san-giam-300k"]
 
-! 17 thg 12, 2024 https://frdl.to
+! 7 thg 1, 2025 https://frdl.to
+frdl.to##ol
 frdl.to##.footer
 frdl.to###fdmMsg
 frdl.to##.report
+frdl.to##.seperate
 frdl.to##.done > b
 frdl.to###sharebuttons
+frdl.to##.btn-lg.btn-warning.btn
 frdl.to##.navbar-expand-lg.navbar
 frdl.to##.position-absolute.p-5.footer
 
@@ -3950,7 +3965,17 @@ flash.getpczone.com###gdpr-cookie-notice
 flash.getpczone.com##.btn-lg.btn-info.btn
 flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 
-! 12 thg 11, 2024 https://upfiles-urls.com
+! 7 thg 1, 2025 https://upfiles.app
+upfiles.app##.faqs
+upfiles.app##footer
+upfiles.app##header
+upfiles.app##.spacer
+upfiles.app##fieldset
+upfiles.app##.container > h2
+upfiles.app##.my-2.countdown
+upfiles.app##.mt-1.mb-4.file-title
+upfiles.app##.divider > .container > hr
+upfiles.app##.text-center.mt-1.mb-4.file-title
 upfiles-urls.com##.faqs
 upfiles-urls.com##footer
 upfiles-urls.com##header
