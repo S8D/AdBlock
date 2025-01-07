@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250107c
+! Version: 250108a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -3965,17 +3965,24 @@ flash.getpczone.com###gdpr-cookie-notice
 flash.getpczone.com##.btn-lg.btn-info.btn
 flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 
-! 7 thg 1, 2025 https://upfiles.app
-upfiles.app##.faqs
-upfiles.app##footer
-upfiles.app##header
-upfiles.app##.spacer
-upfiles.app##fieldset
-upfiles.app##.container > h2
-upfiles.app##.my-2.countdown
-upfiles.app##.mt-1.mb-4.file-title
-upfiles.app##.divider > .container > hr
-upfiles.app##.text-center.mt-1.mb-4.file-title
+! 8 thg 1, 2025 upfiles
+/^.*?upfiles.*?$/##.faqs
+/^.*?upfiles.*?$/##footer
+/^.*?upfiles.*?$/##header
+/^.*?upfiles.*?$/##.spacer
+/^.*?upfiles.*?$/##fieldset
+/^.*?upfiles.*?$/##.container > h2
+/^.*?upfiles.*?$/##.my-2.countdown
+/^.*?upfiles.*?$/##.mt-1.mb-4.file-title
+/^.*?upfiles.*?$/##.divider > .container > hr
+/^.*?upfiles.*?$/##+js(set-constant, blurred, false)
+/^.*?upfiles.*?$/##.text-center.mt-1.mb-4.file-title
+/^.*?upfiles.*?$/##+js(abort-current-script, Math, break;case $.)
+/^.*?upfiles.*?$/##+js(addEventListener-defuser, click, shouldOpenPopUp)
+/^.*?upfiles.*?$/##+js(addEventListener-defuser, DOMContentLoaded, history.go)
+/^.*?upfiles.*?$/##+js(abort-on-property-read, app_vars.force_disable_adblock)
+/^.*?upfiles.*?$/##+js(set-constant, app_vars.force_disable_adblock, undefined)
+
 upfiles-urls.com##.faqs
 upfiles-urls.com##footer
 upfiles-urls.com##header
@@ -3985,23 +3992,6 @@ upfiles-urls.com##.mt-1.mb-4.file-title
 ||cdn.jsdelivr.net/gh/prebid/*
 ||upfiles-urls.com/cdn-cgi/challenge-platform/scripts/jsd/*
 ||upfiles-urls.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/*
-
-! 2021-07-20 https://upfiles.io
-upfiles.io##.faqs
-upfiles.io###ad-3
-upfiles.io###ad-4
-upfiles.io###ad-1
-upfiles.io###ad-7
-upfiles.io###ad-5
-upfiles.io###ad-11
-upfiles.io##.spacer
-upfiles.io##.divider
-upfiles.io##.page-title
-upfiles.io##.my-2.countdown
-upfiles.io##.mb-4.file-title
-upfiles.io##.faqs-accordian.accordion
-upfiles.io###file-captcha > .ad-element
-upfiles.io##body > .container > .text-center
 
 ! 16 thg 11, 2024 https://dropgalaxy.com
 dropgalaxy.com###apkad2
