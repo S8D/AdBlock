@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 241229d
+! Version: 250107a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -152,8 +152,65 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 ||www.facebook.com/*/plugins/*
 ||scontent.xx.fbcdn.net^$domain=phimtho.net
 
-! 29 thg 12, 2024 https://animevietsub.biz
-!||animevietsub.*^$domain=~googleusercontent.com
+! 2 thg 1, 2025 https://www.gotit.vn
+www.gotit.vn##.footer
+www.gotit.vn###cookie-consent-body
+
+! 2 thg 1, 2025 https://turbobit.net
+turbobit.net##.footer
+turbobit.net##center
+turbobit.net##.main-menu
+turbobit.net##.max-speed-time
+turbobit.net##td.download-button.no-border:nth-of-type(3)
+
+! 4 thg 1, 2025 https://apkpure.net
+apkpure.net##.ad-adsense.js-ad-slot
+
+! 4 thg 1, 2025 https://apk.dog
+apk.dog##.adv_text
+apk.dog##.logo_icon
+apk.dog##.logo_text
+apk.dog##.adx_center
+
+! 4 thg 1, 2025 https://apkpure.com
+apkpure.com##.ad-box
+apkpure.com##.ad-title.js-ad-slot
+apkpure.com##div.ad-adsense.js-ad-slot
+
+! 29 thg 12, 2024 https://www.fshare.vn
+www.fshare.vn##.mdc-dialog--open.mdc-dialog
+www.fshare.vn###web-container > footer
+
+! 2 thg 1, 2025 https://forum.mobilism.me
+||i.imgur.com/f4iQvAL.png$image
+
+! 2 thg 1, 2025 https://www.rophim.net
+www.rophim.net##footer
+www.rophim.net##.child-discuss.child-box
+
+! 5 thg 1, 2025 https://mega4upload.net
+mega4upload.net##.card-body
+mega4upload.net##.app-footer
+mega4upload.net##.app-header
+mega4upload.net##center > .title
+mega4upload.net##.compare_table.row
+mega4upload.net##.d-md-block.d-none.my-3
+mega4upload.net###downloadForm > .mb-3.text-center
+mega4upload.net##.mb-3.list-group-flush.list-group
+mega4upload.net##.text-center.py-3.footer-copyright
+||mega4upload.net/assets/js/app.js
+||mega4upload.net/js/force-open.js
+||mega4upload.net/assets/js/packages.js
+||mega4upload.net/assets/js/packages2.js
+
+! 6 thg 1, 2025 https://craxpro.io
+||craxpro.io/*achments/*$image
+
+! 6 thg 1, 2025 https://go.tnetz.pro
+go.tnetz.pro##.h4-dvs-mb-3
+||*.tnetz.pro/nenweb.png$image
+
+! 6 thg 1, 2025 animevietsub
 /^.*?animevietsub.*?$/##.ClFx
 /^.*?animevietsub.*?$/##.Footer
 /^.*?animevietsub.*?$/##.VotesCn
@@ -167,7 +224,10 @@ wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ip
 /^.*?animevietsub.*?$/##main > .watch-notice
 /^.*?animevietsub.*?$/##.ad-center-header.Adv
 /^.*?animevietsub.*?$/##.Container.Body > .fbcmt
-||animevietsub.*^/statics/images/loading.heart.gif
+||animevietsub.*^/statics/images/loading.heart.gif$image
+||animevietsub.*^/statics/images/error.png$image
+
+||static.fbcdns.net/api/domain-info/animevietsub.biz
 ||lh6.googleusercontent.com/DKOFK047OChE35TAROUux9747riGULvvKG4In3skBqZkMoa3VI4FJ81wEQkOLVPkp7GgbDykG6tlSw45h46awqVeWJ1WG1laAb-Bo0k2Ht1f6szHKoyK3btYYnk=s0
 
 ! 21 thg 12, 2024 https://animehay.moe
@@ -638,9 +698,6 @@ www.messenger.com##.x1d52u69.x1yztbdb.xktsk01.xw7yly9
 ! 2024-02-07 https://4gsinhvien.me
 ||fptshop.com.vn/Uploads/Originals/2023/11/2/638345555566444723_hinh-nen-doraemon_.jpg$image
 
-! 2024-02-07 https://go.tnetz.pro
-||myvt.net/wp-content/uploads/2021/06/tuyen-ctv.jpg$image
-
 ! 2024-02-07 https://4g.tintuc247.top
 ||img.freepik.com/premium-vector/vietnamese-tet-banner-is-designed-with-image-children-wearing-traditional-costumes_313905-4616.jpg?w=996$image
 
@@ -897,12 +954,6 @@ panel.shopvpn4g.vn##fontpanel.shopvpn4g.vn
 id.4gre.net##.slick-track
 ||source.unsplash.com/random$image
 
-! 2023-11-30 https://go.tnetz.pro
-||tnetz.pro/nenweb.png$image
-||haycafe.vn/wp-content/uploads/2022/05/Hinh-nen-cute-mau-xanh-duong-bau-troi.jpg$image
-||thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-sac-mau-dan-xen-dep_100021530.jpg$image
-||techvccloud.mediacdn.vn/280518386289090560/2021/6/8/mang-internet-la-gi-3-16231378908761663023686.jpg$image
-
 ! 2023-10-11 https://vpngame.pro
 vpngame.pro##div.d-inline-block.dropdown:nth-of-type(2)
 vpngame.pro##.active.lg.right.arcontactus-message.arcontactus-widget
@@ -966,11 +1017,16 @@ sieuthi4g.com##.text-center.footer
 ||4gviet.com/theme/PNG/antiddos.png$image
 ||i.imgur.com/2i9nvZw.png$image
 
-! 2023-07-21 https://htpn.me
+! 4 thg 1, 2025 https://4g.tintuc247.top
 4g.tintuc247.top##.isi
 4g.tintuc247.top##.inner
 4g.tintuc247.top##.header
+4g.tintuc247.top##.f1-effect
+4g.tintuc247.top##.h4-dvs-mb-3
 4g.tintuc247.top###levelmaxblock
+4g.tintuc247.top##.text-center.mb-3
+4g.tintuc247.top##.aikopanel-background
+4g.tintuc247.top##[src="https://i.imgur.com/SXCtWIU.gif"]
 htpn.me##.pageLoadingC
 htpn.me##.active.starSvg
 htpn.me##.mb-20px.img-align-left-mobile.max-height-120px-on-mobile.wp-block-image > .is-resized.size-large.aligncenter
@@ -2137,7 +2193,7 @@ filedot.to##.downloadbtn2
 
 ! 2023-01-23 https://www.waveform.com
 www.waveform.com##.hidden-xs.above-nav
-www.waveform.com##.top-container.flex-container
+!www.waveform.com##.top-container.flex-container
 www.waveform.com##.main-page.main-page-description.container
 www.waveform.com##.hidden-xs.navbar-static-top.navbar-inverse.navbar
 
@@ -2222,15 +2278,18 @@ bikae.net##.top-banner-ads
 bikae.net##.under-article-ads
 bikae.net##.bottom.entry-sns-data
 
-! 17 thg 12, 2024 https://a2zapk.io
+! 5 thg 1, 2025 https://a2zapk.io
 a2zapk.io##.Tags
 a2zapk.io##.WebF
 a2zapk.io##.Right
+a2zapk.io###a-ads5
 a2zapk.io###a-ads4
 a2zapk.io###dlbtn > span
 a2zapk.io##.btnDownload1
+a2zapk.io##.ObbExplainCont
 a2zapk.io##.col-lg-9 > center
 a2zapk.io##.DownLoadBotton span
+a2zapk.io##center:nth-of-type(2)
 a2zapk.io##div.NewBlock:nth-of-type(1)
 a2zapk.io###div-gpt-ad-1689930918138-0
 a2zapk.io###div-gpt-ad-1689952596717-0
@@ -3876,14 +3935,17 @@ dailyuploads.net##.navbar-inner
 ||dailyuploads.net/images_mega/download_complete.png$image
 dailyuploads.net##[href="https://ninjapcsoft.com/category/adobe-software//"]
 
-! 12 thg 11, 2024 https://flash.getpczone.com
+! 7 thg 1, 2025 https://flash.getpczone.com
 flash.getpczone.com##.txt
 flash.getpczone.com##.title
 flash.getpczone.com###footer2
+flash.getpczone.com##.banner2
 flash.getpczone.com###news_last
 flash.getpczone.com##.sharefile
 flash.getpczone.com##.icofont-zipped
+flash.getpczone.com##[src*="/watch"]
 flash.getpczone.com##.fileoption > ul
+flash.getpczone.com##[src="about:blank"]
 flash.getpczone.com###gdpr-cookie-notice
 flash.getpczone.com##.btn-lg.btn-info.btn
 flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
@@ -3891,10 +3953,13 @@ flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 ! 12 thg 11, 2024 https://upfiles-urls.com
 upfiles-urls.com##.faqs
 upfiles-urls.com##footer
-upfiles-urls.com##.divider
 upfiles-urls.com##header
+upfiles-urls.com##.divider
 upfiles-urls.com##fieldset
 upfiles-urls.com##.mt-1.mb-4.file-title
+||cdn.jsdelivr.net/gh/prebid/*
+||upfiles-urls.com/cdn-cgi/challenge-platform/scripts/jsd/*
+||upfiles-urls.com/cdn-cgi/challenge-platform/h/g/scripts/jsd/*
 
 ! 2021-07-20 https://upfiles.io
 upfiles.io##.faqs
