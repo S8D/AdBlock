@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250126a
+! Version: 250126b
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -81,6 +81,7 @@ rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(5)
 rapidgator.net,hexupload.net,uploadydl.com##tr:nth-of-type(6)
 iosddl.net,secufiles.com##.show.cookiealert.text-center.alert
 www.ip2location.com,www.ipa4fun.com##div:nth-of-type(4)-holder
+djxmaza.in,thecubexguide.com,dev.miuiflash.com###featuredimage
 vpngame.pro,v1.hack5g.com,techrobot.com,dll-files.com##.overlay
 mega4upload.com,mega4up.com,mega4up.org##.card-body > .mb-3.row
 a2zapk.io,rtxkeeda.com,dropgalaxy.com,financemonk.net##.modalpop
@@ -126,6 +127,8 @@ clk.sh,ckk.ai,semawur.com,wikiall.org,xemlink.net,ez4linkss.com,link.karanpc.com
 
 win10.vn,phimxxx.tv,getintopc.com,douploads.com,sitecuatui.com,checkip.com.vn,jlptvietnam.com,daviesmediadesign.com###sidebar
 
+phimtho.com,motchill.am,chillhaytv.com,phimchill.asia,phimmoinay.info,mv.phimbathu.one,phimmoichill.art,apkadmin.com,mixrootmod.com###footer
+
 nam4g.com,net5g.pro,dvsteam.net,vpndata.xyz,ht4gvpn.com,go.tnetz.pro,csadata4g.me,v1.hack5g.com,hunglapis.id.vn,vpndata.takeshi.dev##.text-center.mb-3
 
 linku.us,ink1s.com,semawur.com,tipsalert.xyz,link.codevn.net,link.karanpc.com,blogginggyanbox.com,short.pandaznetwork.com,techy.veganab.co,pandaznetwork.com##h4
@@ -142,8 +145,6 @@ ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2lo
 
 nam4g.com,ht4gvpn.com,datavpn.io.vn,5gsinhvien.com,skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
 
-phimtho.com,motchill.am,chillhaytv.com,phimchill.asia,phimmoinay.info,mv.phimbathu.one,phimmoichill.art,apkadmin.com,mixrootmod.com###footerdjxmaza.in,thecubexguide.com,dev.miuiflash.com###featuredimage
-
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,get.megaurl.in###link-view > p
 
 a2zapk.io,jytechs.in,br0wsers.com,worldmak.com,bastinews.xyz,www.snbforums.com,thecubexguide.com,hindimeadvice.com,speed.flyhomes.one,download.newsharsh.com,technoinformations.com,xd.technoinformations.com,jytechs.inthecubexguide.com##div[id^="div-gpt-ad-"]
@@ -156,7 +157,7 @@ www.expandurl.net,www.europeup.com,filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.i
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,note1s.com,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,freenote.biz,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,count.vipurl.in,techy.veganab.co,links.apksvip.com,beta.shortearn.eu,dl.tech-story.net,pandaznetwork.com,indianshortner.com,123link.ghego.site,download.baominh.tech,short.pandaznetwork.com,123link.carpartsviet31.site###cookie-pop
 
-wi.cr,voz.vn,vn-z.vn,uploady.io,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,androiddatahost.com,www.freeproxy.world,flash.getpczone.com,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz,proxyium.com,mixrootmod.com##.adsbygoogle##.adsbygoogle
+wi.cr,voz.vn,vn-z.vn,uploady.io,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,androiddatahost.com,www.freeproxy.world,flash.getpczone.com,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz,proxyium.com,mixrootmod.com##.adsbygoogle
 
 ouo.io,frdl.to,kohi.vn,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,phimwin.com,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,modsfire.com,apkcombo.app,www.gotit.vn,turbobit.net,phimnhua.net,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,dlupload.com,vietsubtw.net,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,filespayout.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,vinaphone.com.vn,www.mediafire.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com##.footer
 
@@ -1069,9 +1070,6 @@ didonghan.vn##.popupImage
 
 ! 2023-10-10 https://tuigoihang.vn
 tuigoihang.vn##.chaty-channel-list
-
-! 2023-10-12 https://uploadrar.com
-uploadrar.com###open_preferences_center
 
 ! 2023-10-15 https://nhathuoc365.vn
 nhathuoc365.vn##.zalo-chat-widget
@@ -3975,27 +3973,6 @@ filespayout.com##.download-meta .text-muted
 filespayout.com##.rounded.p-1.justify-content-between.d-flex
 filespayout.com##.belanosima-bold.mt-5.mb-1.text-dark.text-left
 
-uploadocean.com###lkika
-uploadocean.com##.strip_right
-uploadocean.com##.premiumbox.download_box
-uploadocean.com##div.strip_right:nth-of-type(3)
-uploadocean.com##.down1_holder > div:nth-of-type(2)
-uploadocean.com##a[href="https://uploadocean.com/premium-features.html"] > h2
-uploadocean.com##.big_res.ads_big:nth-of-type(2) > .adsbygoogle:nth-of-type(1)
-uploadocean.com##[src="https://uploadocean.com/UploadOcean_images/cloud_download.png"]
-uploadocean.com##div[style="position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 2147483647;
-
-! 2022-12-13 https://fastclick.to
-fastclick.to##.py-lg-6.py-4.footer
-fastclick.to##.py-lg-5.py-3.header
-fastclick.to##.btn-sm.p-0.text-danger.btn
-fastclick.to##.mb-lg-6.mb-4.text-white.download-page
-fastclick.to##.py-lg-5.py-3.header > .container > .align-items-center.row
-fastclick.to##.mb-lg-7.mb-4.shadow-lg.rounded-lg.bg-white.dowload-features
-fastclick.to###container > div.container:last-child > div.mb-5:nth-child(11)
-fastclick.to##.no-gutters.justify-content-lg-center.flex-nowrap.payment_table.row
-fastclick.to##.py-3.mb-5.text-uppercase.btn-lg.rounded-pill.px-xl-5.text-white.border-0.bg-gradient-1.btn.download-btn
-
 ! 2022-12-13 https://drop.download
 drop.download##.container > .mb-5
 drop.download##.container > .col-md-12
@@ -4110,7 +4087,7 @@ userscloud.com##.jkfuxayxx1473507998442fwzkra
 userscloud.com##.navbar-dropdown-hover.navbar-fixed-top.navbar-default.navbar-main.navbar
 userscloud.com##div[style="width: 1280px; height: 595px; top: 0px; left: 0px; position: absolute; z-index: 999999; cursor: pointer;"]
 
-! 2023-01-29 https://uploadrar.com
+! 2023-10-12 https://uploadrar.com
 uploadrar.com###footer2
 uploadrar.com###lastnews
 uploadrar.com###news_last
@@ -4121,6 +4098,7 @@ uploadrar.com##.fileoption > ul
 uploadrar.com###gdpr-cookie-notice
 uploadrar.com##.blockpage > .title
 uploadrar.com##.btn-lg.btn-success.btn
+uploadrar.com###open_preferences_center
 uploadrar.com##.banner2 > .as_ads_guard
 uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
