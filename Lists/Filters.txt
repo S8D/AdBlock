@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250130a
+! Version: 250130b
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -163,8 +163,9 @@ ouo.io,frdl.to,kohi.vn,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shope
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,count.vipurl.in,www.waveform.com,blog.cloud365.vn,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 !_________________________________
-! 8 thg 1, 2025 https://anonyviet.com
-anonyviet.com##.TnITTtw-inside-layout.TnITTtw-t
+
+! 27 thg 1, 2025 https://www.y2mate.com
+www.y2mate.com###share-place-download
 
 ! 19 thg 1, 2025 https://modsfire.com
 modsfire.com##h1
@@ -723,7 +724,8 @@ thitruongdienmay.com,vpnpro.com##.in.modal-backdrop
 ! 13 thg 11, 2024 https://kdata.vn
 kdata.vn###form_popup
 
-! 16 thg 11, 2024 https://financemonk.net
+! 27 thg 1, 2025 https://financemonk.net
+financemonk.net###a-ads5
 financemonk.net##.mys-wrapper
 financemonk.net###tokennstatus
 financemonk.net##.text-center.mt-5
@@ -2185,11 +2187,12 @@ onedrive.gdrive.vip##.fp-completely.active.fp-table.fp-section.comment.section >
 eurorack.vn##.fixed_menu
 eurorack.vn##.b24-widget-button-visible.b24-widget-button-position-bottom-right.b24-widget-button-wrapper
 
-! 2023-03-01 https://anonyviet.com
+! 8 thg 1, 2025 https://anonyviet.com
 anonyviet.com###text-5
 anonyviet.com###custom_html-9
 anonyviet.com###custom_html-6
 anonyviet.com###custom_html-8
+anonyviet.com##.TnITTtw-inside-layout.TnITTtw-t
 anonyviet.com##.redirect-message > div:nth-of-type(1) > .adsadsia
 anonyviet.com##.normal.jeg_navbar_wrapper.jeg_container.jeg_midbar
 
@@ -4213,6 +4216,7 @@ smartfeecalculator.com###downloadNow > .done
 smartfeecalculator.com##.navbar-expand-lg.navbar
 smartfeecalculator.com##p.aboutDis:nth-of-type(n+1)
 smartfeecalculator.com##.position-absolute.p-5.footer
+smartfeecalculator.com##a.mb-4.btn-block.btn-primary.btn:nth-of-type(n+2)
 smartfeecalculator.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(n+1)
 smartfeecalculator.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(n+1)
 
