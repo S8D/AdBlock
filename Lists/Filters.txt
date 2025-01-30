@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250126c
+! Version: 250130a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -147,7 +147,7 @@ nam4g.com,ht4gvpn.com,datavpn.io.vn,5gsinhvien.com,skypn.fun,zenpn.com,4gviet.co
 
 oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyou.pro,cyahealth.com,share4you.pro,ez4linkss.com,tipsalert.xyz,www.123link.biz,link.codevn.net,beta.shortearn.eu,getlink.tienichmaytinh.net,get.megaurl.in###link-view > p
 
-a2zapk.io,jytechs.in,br0wsers.com,worldmak.com,bastinews.xyz,www.snbforums.com,thecubexguide.com,hindimeadvice.com,speed.flyhomes.one,download.newsharsh.com,technoinformations.com,xd.technoinformations.com,jytechs.inthecubexguide.com##div[id^="div-gpt-ad-"]
+a2zapk.io,apk.newsharsh.com,smartfeecalculator.com,br0wsers.com,worldmak.com,bastinews.xyz,www.snbforums.com,hindimeadvice.com,speed.flyhomes.one,download.newsharsh.com,technoinformations.com,xd.technoinformations.com##div[id^="div-gpt-ad-"]
 
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
 
@@ -195,7 +195,6 @@ infidrive.net##.dark\:bg-slate-950\/80.data-\[state\=open\]\:fade-in-0.data-\[st
 ! 10 thg 1, 2025 https://platinmods.com
 ||e7.pngegg.com/pngimages/984/587/png-clipart-state-of-palestine-flag-of-palestine-free-palestine-movement-t-shirt-logo-others-flag-text-thumbnail.png$image
 
-
 ||player.autoembed.cc/vast/vast.xml
 ||autoembed.cc/ads/*
 
@@ -216,8 +215,53 @@ teraboxfast.com##.py-8.text-gray-600.bg-gray-100
 teraboxfast.com##div.mb-8.justify-center.flex:nth-of-type(1)
 teraboxfast.com##.to-purple-100.via-blue-100.from-purple-100.bg-gradient-to-br.py-16
 
-! 20 thg 1, 2025 https://worldmak.com
+! 27 thg 1, 2025 https://www.turbomods.xyz
+www.turbomods.xyz##.post-share
+www.turbomods.xyz###footer-wrapper
+||turbomods.xyz^$csp=script-src 'self'
+
+! 27 thg 1, 2025 https://leeapk.com
+leeapk.com##.js-rmp-widgets-container--16054.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
+
+! 27 thg 1, 2025 https://me.worldmak.com
+me.worldmak.com##.site-footer
+me.worldmak.com##.ast-no-thumbnail.entry-header
 worldmak.com,xd.technoinformations.com##body > center
+me.worldmak.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
+! 27 thg 1, 2025 https://bjp.org.in
+bjp.org.in###foo
+bjp.org.in##.site-footer
+bjp.org.in###content > .ast-container
+
+! 27 thg 1, 2025 https://nearjob.in
+nearjob.in##.site-footer
+nearjob.in##.wp-block-heading
+nearjob.in##p:nth-of-type(n+1)
+nearjob.in##li:nth-of-type(n+1)
+nearjob.in##.secondary.widget-area
+nearjob.in##.ast-breadcrumbs-wrapper
+nearjob.in##.post-navigation.navigation
+nearjob.in##.comment-form-position-below.comments-area
+nearjob.in##.single-layout-1.ast-post-format- > .entry-header
+nearjob.in##.ast-container--.ast-single-related-posts-container
+nearjob.in##.ez-toc-container-direction.ez-toc-custom.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_71
+nearjob.in##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
+! 27 thg 1, 2025 https://apk.newsharsh.com
+apk.newsharsh.com##.ct-footer
+apk.newsharsh.com###main-container
+apk.newsharsh.com##.hfeed.site-main
+apk.newsharsh.com###main-container > .ct-header
+
+! 27 thg 1, 2025 https://getfile.newsharsh.com
+getfile.newsharsh.com##.ct-footer
+getfile.newsharsh.com##.entry-content
+getfile.newsharsh.com##.ct-container-full
+getfile.newsharsh.com###main > .ct-container
+getfile.newsharsh.com##.ct-comments-container
+getfile.newsharsh.com###main-container > .ct-header
+getfile.newsharsh.com##.ct-hidden-sm.ct-trending-block
 
 ! 25 thg 1, 2025 https://download.newsharsh.com
 download.newsharsh.com##.ct-footer
@@ -2152,7 +2196,9 @@ anonyviet.com##.normal.jeg_navbar_wrapper.jeg_container.jeg_midbar
 ! 2023-03-02 https://vpnpro.com
 vpnpro.com##.in.modal0.providerModal-nordvpnBrand.providerModal.modal
 
-! 2023-05-10 https://apkmody.com
+! 27 thg 1, 2025 https://apkmody.com
+apkmody.com###ad-unit-1
+apkmody.com###ad-unit-2
 apkmody.com##.above-ad-unit
 apkmody.com##.margin-top-15.has-text-align-left.has-background.has-light-green-cyan-background-color.wp-block-group.is-layout-constrained
 apkmody.com##.margin-bottom-15.is-style-pill-shape.has-visible-labels.has-normal-icon-size.wp-block-social-links.is-layout-flex.is-nowrap.is-content-justification-center.is-horizontal.wp-container-flex-center
@@ -4155,41 +4201,20 @@ dropgalaxy.com##div.downloadPage.premium.page.pt-5.container:nth-of-type(8)
 dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
 dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=0&controls=0"]
 
-! 8 thg 1, 2025 thecubexguide.com | jytechs.in | devuploads.com
+! 30 thg 1, 2025 smartfeecalculator.com | thecubexguide.com | jytechs.in | devuploads.com
 ||devuploads.com/devfiles/js/devtools.js
-jytechs.in###about
-jytechs.in###adBlocked > p
-jytechs.in###adBlocked > .done
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(5)
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(9)
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
-jytechs.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(13)
-
-jytechs.in,thecubexguide.com##u
-jytechs.in,thecubexguide.com##.report
-jytechs.in,thecubexguide.com##center > p
-jytechs.in,thecubexguide.com##center > .premium
-jytechs.in,thecubexguide.com###downloadNow > .done
-jytechs.in,thecubexguide.com##center:nth-of-type(1)
-jytechs.in,thecubexguide.com##.mb-4.download-btn > span
-jytechs.in,thecubexguide.com##.btn-block.btn-success.btn
-jytechs.in,thecubexguide.com##.position-absolute.p-5.footer
-jytechs.in,thecubexguide.com##[href="https://random-affiliate.atimaze.com"]
-jytechs.in,thecubexguide.com##a.mb-4.btn-block.btn-primary.btn:nth-of-type(n+2)
-jytechs.in,thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
-jytechs.in,thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(4)
-jytechs.in,thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(12)
-jytechs.in,thecubexguide.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
-
-thecubexguide.com###aboutdis
-thecubexguide.com###adBlocked > p
-thecubexguide.com##center:nth-of-type(2) > p
-thecubexguide.com##center:nth-of-type(2) > .premium
-thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(5)
-thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
-thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(11)
-thecubexguide.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(13)
-thecubexguide.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(1)
+smartfeecalculator.com##.report
+smartfeecalculator.com###aboutdis
+smartfeecalculator.com##center > p
+smartfeecalculator.com###featuredimage
+smartfeecalculator.com###XJZOhE3Ytfg3cSFy
+smartfeecalculator.com##p:nth-of-type(n+1)
+smartfeecalculator.com###downloadNow > .done
+smartfeecalculator.com##.navbar-expand-lg.navbar
+smartfeecalculator.com##p.aboutDis:nth-of-type(n+1)
+smartfeecalculator.com##.position-absolute.p-5.footer
+smartfeecalculator.com##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(n+1)
+smartfeecalculator.com##div#about.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(n+1)
 
 ! 16 thg 11, 2024 https://www.up-4ever.net
 www.up-4ever.net##h2
