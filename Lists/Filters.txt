@@ -2269,26 +2269,28 @@ forum.gocmod.com##.js-notices.notices--block.notices
 forum.gocmod.com##.samCustomSize.samAlignCenter.samCodeUnit
 
 ! 03 thg 2, 2025 https://file.gocmod.com
-! Chặn và vô hiệu hóa scripts:
+! Chặn và vô hiệu hóa scripts: X
 !file.gocmod.com##+js(aopr, ads)
 !file.gocmod.com##+js(aopr, randomAd)
 !file.gocmod.com##+js(aopr, banners)
 !file.gocmod.com##+js(aopr, banner)
 !file.gocmod.com##+js(aopr, document.write)
 
-! Xóa và chặn thẻ <script>:
+! Xóa và chặn thẻ <script>: X
 !file.gocmod.com##script:contains(randomAd)
 !file.gocmod.com##script:contains(banner)
 
 ! Set hàm rỗng hoặc không làm gì:
-!file.gocmod.com##+js(set, ads, [])
-!file.gocmod.com##+js(set, randomAd, null)
-!file.gocmod.com##+js(set, banners, [])
-!file.gocmod.com##+js(set, banner, null)
-!file.gocmod.com##+js(set, document.write, noopFunc => {})
+file.gocmod.com##+js(set, ads, [])
+file.gocmod.com##+js(set, randomAd, null)
+file.gocmod.com##+js(set, banners, [])
+file.gocmod.com##+js(set, banner, null)
+file.gocmod.com##+js(set, document.write, noopFunc => {})
 
-! Chặn popup:
-file.gocmod.com##+js(aopr, window.open)
+! Chặn popup: X
+!file.gocmod.com##+js(aopr, window.open)
+
+
 
 file.gocmod.com##.active.nav-bar
 file.gocmod.com##.mt-5.file-card
