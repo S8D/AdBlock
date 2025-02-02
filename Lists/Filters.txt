@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250203e
+! Version: 250203f
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -2274,8 +2274,8 @@ file.gocmod.com##+js(set, banners, [])
 file.gocmod.com##+js(set, banner, null)
 file.gocmod.com##script:contains(shopee)
 file.gocmod.com##+js(set, randomAd, null)
-file.gocmod.com##+js(set, document.write, noopFunc => {})
-file.gocmod.com##+js(set, document.getElementById, noopFunc => {})
+!file.gocmod.com##+js(set, document.write, noopFunc => {})
+!file.gocmod.com##+js(set, document.getElementById, noopFunc => {})
 
 file.gocmod.com##.active.nav-bar
 file.gocmod.com##.mt-5.file-card
