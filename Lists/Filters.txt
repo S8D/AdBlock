@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250202c
+! Version: 250203b
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -139,8 +139,6 @@ p-load.io,chedrive.com,uploadydl.com,uploadocean.com,dev.miuiflash.com,useruploa
 
 jytechs.in,thecubexguide.com,upload.ac,filerio.in,drop.download,ddownload.com,uploadydl.com,dev.miuiflash.com,userupload.net,userupload.in,uploady.io##.navbar-expand-lg.navbar
 
-disheye.com,hacktacks.com,finance.cordtpoint.co.in,bikae.net,canhme.com,nvnorthwest.com,dl.literaturetimes.com,namlee.net,www.howtogeek.com,www.ipa.tuandb.name.vn##.site-footer
-
 ip-api.com,ip-api.com,taiwebs.com,download.gg,mediafire.com,rapidgator.net,ip2location.com,strongleakstest.com,www.geolocation.com,www.ip2location.com,www.myfutureguide.in##.header
 
 nam4g.com,ht4gvpn.com,datavpn.io.vn,5gsinhvien.com,skypn.fun,zenpn.com,4gviet.com,id.4gre.net,vpndata.xyz,vpngiare.net,go.tnetz.pro,4gsinhvien.me,5gtocdocao.com,panel.shopvpn4g.vn##.text-center.mb-12
@@ -150,6 +148,8 @@ oko.sh,ckk.ai,tmearn.com,megaurl.in,xemlink.net,cutpaid.com,megaurl.link,shareyo
 a2zapk.io,apk.newsharsh.com,smartfeecalculator.com,br0wsers.com,worldmak.com,bastinews.xyz,www.snbforums.com,hindimeadvice.com,speed.flyhomes.one,download.newsharsh.com,technoinformations.com,xd.technoinformations.com##div[id^="div-gpt-ad-"]
 
 wi.cr,ckk.ai,oko.sh,tiny.do,opte.pro,123link.pw,tmearn.com,metechy.co,cutpaid.com,123link.pro,paylink.pro,xemlink.net,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,cyahealth.com,share4you.pro,shrinkearn.com,www.123link.biz,short.pandaznetwork.com###mainNav
+
+bikae.net,bjp.org.in,nearjob.in,canhme.com,namlee.net,disheye.com,techarmor.xyz,hacktacks.com,biharakhbar.in,me.worldmak.com,insurifying.com,nvnorthwest.com,taxsearchhelp.com,hindimeadvice.com,www.howtogeek.com,speed.flyhomes.one,ninjamodz.mtcremix.com,dl.literaturetimes.com,www.ipa.tuandb.name.vn,finance.cordtpoint.co.in##.site-footer
 
 wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com,pandaznetwork.com##.text-left
 
@@ -163,20 +163,6 @@ ouo.io,frdl.to,kohi.vn,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shope
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,count.vipurl.in,www.waveform.com,blog.cloud365.vn,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 !_________________________________
-! 31 thg 1, 2025 https://insurifying.com
-insurifying.com##.site-footer
-insurifying.com##p:nth-of-type(n+0)
-insurifying.com##.secondary.widget-area
-insurifying.com##.ast-breadcrumbs-wrapper
-insurifying.com##.post-navigation.navigation
-insurifying.com##ul.wp-block-list:nth-of-type(n+0)
-insurifying.com##ol.wp-block-list:nth-of-type(n+0)
-insurifying.com##h4.wp-block-heading:nth-of-type(n+1)
-insurifying.com##.comment-form-position-below.comments-area
-insurifying.com##.single-layout-1.ast-post-format- > .entry-header
-insurifying.com##.ast-container--.ast-single-related-posts-container
-insurifying.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_72
-insurifying.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
 
 ! 30 thg 1, 2025 https://sabkiyojana.com
 sabkiyojana.com###myNextInst
@@ -246,18 +232,15 @@ www.turbomods.xyz###footer-wrapper
 leeapk.com##.js-rmp-widgets-container--16054.js-rmp-widgets-container.rmp-main-container.rmp-wp-plugin.rmp-widgets-container
 
 ! 27 thg 1, 2025 https://me.worldmak.com
-me.worldmak.com##.site-footer
 me.worldmak.com##.ast-no-thumbnail.entry-header
 worldmak.com,xd.technoinformations.com##body > center
 me.worldmak.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
 
 ! 27 thg 1, 2025 https://bjp.org.in
 bjp.org.in###foo
-bjp.org.in##.site-footer
 bjp.org.in###content > .ast-container
 
 ! 27 thg 1, 2025 https://nearjob.in
-nearjob.in##.site-footer
 nearjob.in##.wp-block-heading
 nearjob.in##p:nth-of-type(n+1)
 nearjob.in##li:nth-of-type(n+1)
@@ -311,7 +294,6 @@ foodtechnos.in##.btn-danger.btn
 
 ! 20 thg 1, 2025 https://techarmor.xyz
 techarmor.xyz##body > p
-techarmor.xyz##.site-footer
 techarmor.xyz##.site-content
 techarmor.xyz##ins > div > ins
 techarmor.xyz##div > div > ins
@@ -329,7 +311,6 @@ forum.mobilism.me##[src="https://images.mobilism.org/?dm=IOIQV67T"]
 forum.mobilism.org##[src="https://images.mobilism.org/?dm=IOIQV67T"]
 
 ! 20 thg 1, 2025 https://ninjamodz.mtcremix.com
-ninjamodz.mtcremix.com##.site-footer
 ninjamodz.mtcremix.com###ast-desktop-header
 ninjamodz.mtcremix.com###content > .ast-container
 
@@ -340,34 +321,41 @@ shortxlinks.com##.sponsors-section
 shortxlinks.com##.bg_cover.footer-area
 shortxlinks.com##.text-white.bg-primary
 
+! 3 thg 2, 2025 gplinks.co
+biharakhbar.in,taxsearchhelp.com##h4.wp-block-heading
+biharakhbar.in,taxsearchhelp.com##ol.wp-block-list:nth-of-type(n+1)
+biharakhbar.in,insurifying.com,taxsearchhelp.com##p:nth-of-type(n+0)
+insurifying.com,taxsearchhelp.com##ul.wp-block-list:nth-of-type(n+0)
+biharakhbar.in,insurifying.com,taxsearchhelp.com##.secondary.widget-area
+biharakhbar.in,insurifying.com,taxsearchhelp.com##.ast-breadcrumbs-wrapper
+biharakhbar.in,insurifying.com,taxsearchhelp.com##.post-navigation.navigation
+biharakhbar.in,insurifying.com,taxsearchhelp.com##.comment-form-position-below.comments-area
+biharakhbar.in,insurifying.com,taxsearchhelp.com##.single-layout-1.ast-post-format- > .entry-header
+biharakhbar.in,insurifying.com,taxsearchhelp.com##.ast-container--.ast-single-related-posts-container
+insurifying.com,taxsearchhelp.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
 ! 20 thg 1, 2025 https://biharakhbar.in
-biharakhbar.in##p:nth-of-type(4)
-biharakhbar.in##p:nth-of-type(3)
-biharakhbar.in##p:nth-of-type(2)
-biharakhbar.in##h4.wp-block-heading
+biharakhbar.in###myNextInst
 biharakhbar.in##ul.wp-block-list > li
-biharakhbar.in##.secondary.widget-area
 biharakhbar.in##.clear.entry-content > p
-biharakhbar.in##.ast-breadcrumbs-wrapper
-biharakhbar.in##.post-navigation.navigation
-biharakhbar.in##ol.wp-block-list:nth-of-type(n+1)
 biharakhbar.in##h3.wp-block-heading:nth-of-type(n+1)
-biharakhbar.in##.comment-form-position-below.comments-area
-biharakhbar.in##.single-layout-1.ast-post-format- > .entry-header
-biharakhbar.in##.ast-container--.ast-single-related-posts-container
 biharakhbar.in###ast-desktop-header > .main-header-bar-wrap.ast-main-header-wrap
 biharakhbar.in##.ez-toc-container-direction.ez-toc-custom.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_71
+
+! 31 thg 1, 2025 https://insurifying.com | gplinks.co
+insurifying.com##ol.wp-block-list:nth-of-type(n+0)
+insurifying.com##h4.wp-block-heading:nth-of-type(n+1)
+insurifying.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_72
+
+! 3 thg 2, 2025 https://taxsearchhelp.com | gplinks.co
+taxsearchhelp.com##h3.wp-block-heading:nth-of-type(n+0)
+taxsearchhelp.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_71
 
 ! 20 thg 1, 2025 https://gplinks.co
 gplinks.co##.content-wrapper > .mb-2.navbar-light.transparent.center-nav.navbar-expand-lg.navbar
 gplinks.co##.bg-soft-primary
 
-! 20 thg 1, 2025 https://biharakhbar.in
-biharakhbar.in##.site-footer
-biharakhbar.in###myNextInst
-
 ! 20 thg 1, 2025 https://hindimeadvice.com
-hindimeadvice.com##.site-footer
 hindimeadvice.com##.comments-area
 hindimeadvice.com##.inside-article
 hindimeadvice.com###wpsafegenerate > div
@@ -405,7 +393,6 @@ speedlinkurl.com##div:nth-of-type(3)
 speedlinkurl.com##.navbar-default.navbar
 
 ! 24 thg 1, 2025 https://speed.flyhomes.one
-speed.flyhomes.one##.site-footer
 speed.flyhomes.one##.post-navigation.navigation
 speed.flyhomes.one##.comment-form-position-below.comments-area
 speed.flyhomes.one##.ast-blog-layout-4-grid.ast-grid-3.primary.content-area
@@ -4226,9 +4213,11 @@ dropgalaxy.com##div.downloadPage.premium.page.pt-5.container:nth-of-type(8)
 dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
 dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=0&controls=0"]
 
-! 2 thg 2, 2025 djxmaza.in | smartfeecalculator.com | thecubexguide.com | jytechs.in | devuploads.com
+! 3 thg 2, 2025 djxmaza.in | smartfeecalculator.com | thecubexguide.com | jytechs.in | devuploads.com
 ||devuploads.com/devfiles/js/devtools.js
+djxmaza.in###dlad
 djxmaza.in##rssapp-ticker
+djxmaza.in##.btn-danger.btn
 djxmaza.in##.navbar-expand-lg.navbar
 djxmaza.in##.position-absolute.p-5.footer
 djxmaza.in##div.text-center:nth-of-type(n+4)
