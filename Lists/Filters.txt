@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250130c
+! Version: 250202a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -8,7 +8,7 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net|ipacrack.com|ios.codevn.net|upfiles.app
+$popup,third-party,domain=dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net|ipacrack.com|ios.codevn.net|upfiles.app|file.gocmod.com
 ##div[class^="jw-logo"]
 
 vn-z.vn,voz.vn##.p-body-sidebar
@@ -163,6 +163,21 @@ ouo.io,frdl.to,kohi.vn,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shope
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,count.vipurl.in,www.waveform.com,blog.cloud365.vn,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 !_________________________________
+! 31 thg 1, 2025 https://insurifying.com
+insurifying.com##.site-footer
+insurifying.com##p:nth-of-type(n+0)
+insurifying.com##.secondary.widget-area
+insurifying.com##.ast-breadcrumbs-wrapper
+insurifying.com##.post-navigation.navigation
+insurifying.com##ul.wp-block-list:nth-of-type(n+0)
+insurifying.com##ol.wp-block-list:nth-of-type(n+0)
+insurifying.com##h4.wp-block-heading:nth-of-type(n+1)
+insurifying.com##.comment-form-position-below.comments-area
+insurifying.com##.single-layout-1.ast-post-format- > .entry-header
+insurifying.com##.ast-container--.ast-single-related-posts-container
+insurifying.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_72
+insurifying.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
 ! 30 thg 1, 2025 https://sabkiyojana.com
 sabkiyojana.com###myNextInst
 sabkiyojana.com##.py-3.bg-light
@@ -1871,16 +1886,6 @@ count.vipurl.in##.navbar-default.navbar
 count.vipurl.in##[src="https://count.vipurl.in/webroot/prop1.html"]
 count.vipurl.in##[src="https://count.vipurl.in/webroot/prop2.html"]
 
-! 2023-05-06 https://djxmaza.in
-djxmaza.in###downloadNow > .done
-djxmaza.in##.navbar-expand-lg.navbar
-djxmaza.in##.position-absolute.p-5.footer
-djxmaza.in##[src="//ad.a-ads.com/2204586?size=336x280"]
-djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(2)
-djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(3)
-djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(7)
-djxmaza.in##div.mb-4.aboutFile.col-md-12.col-lg-6:nth-of-type(10)
-
 ! 9 thg 11, 2024 https://uploady.io
 uploady.io##tr:nth-of-type(n+1)
 uploady.io##.alert-danger.alert
@@ -2275,6 +2280,15 @@ forum.gocmod.com##.blockMessage--none.blockMessage
 forum.gocmod.com##.js-bottomFixTarget.u-bottomFixer
 forum.gocmod.com##.js-notices.notices--block.notices
 forum.gocmod.com##.samCustomSize.samAlignCenter.samCodeUnit
+
+! 31 thg 1, 2025 https://file.gocmod.com
+file.gocmod.com##.active.nav-bar
+file.gocmod.com##.mt-5.file-card
+file.gocmod.com##.mt-5.file-links
+file.gocmod.com##div:nth-of-type(6)
+file.gocmod.com##div.col:nth-of-type(5)
+file.gocmod.com##div.mt-5:nth-of-type(2)
+file.gocmod.com##div.mt-5:nth-of-type(4)
 
 ! 2022-12-15 https://wiki.manjaro.org
 wiki.manjaro.org###mw-data-after-content
@@ -4210,8 +4224,15 @@ dropgalaxy.com##div.downloadPage.premium.page.pt-5.container:nth-of-type(8)
 dropgalaxy.com##.downloadPage.page.pt-5.container > .row > div.col-md-12:nth-of-type(1)
 dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=0&controls=0"]
 
-! 30 thg 1, 2025 smartfeecalculator.com | thecubexguide.com | jytechs.in | devuploads.com
+! 2 thg 2, 2025 djxmaza.in | smartfeecalculator.com | thecubexguide.com | jytechs.in | devuploads.com
 ||devuploads.com/devfiles/js/devtools.js
+
+djxmaza.in##rssapp-ticker
+djxmaza.in##div.text-center:nth-of-type(n+4)
+djxmaza.in##div.mb-4.text-center:nth-of-type(5)
+djxmaza.in##div.alert-danger.alert:nth-of-type(n+1)
+djxmaza.in##div.mb-4.aboutFile.col-12:nth-of-type(n+1)
+
 smartfeecalculator.com##.report
 smartfeecalculator.com###aboutdis
 smartfeecalculator.com##center > p
