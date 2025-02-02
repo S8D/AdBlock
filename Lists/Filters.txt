@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250202a
+! Version: 250202b
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -4226,8 +4226,9 @@ dropgalaxy.com##[src="https://www.youtube.com/embed/4L1BBUB8YW0?mute=1&showinfo=
 
 ! 2 thg 2, 2025 djxmaza.in | smartfeecalculator.com | thecubexguide.com | jytechs.in | devuploads.com
 ||devuploads.com/devfiles/js/devtools.js
-
 djxmaza.in##rssapp-ticker
+djxmaza.in##.navbar-expand-lg.navbar
+djxmaza.in##.position-absolute.p-5.footer
 djxmaza.in##div.text-center:nth-of-type(n+4)
 djxmaza.in##div.mb-4.text-center:nth-of-type(5)
 djxmaza.in##div.alert-danger.alert:nth-of-type(n+1)
