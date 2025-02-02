@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250202b
+! Version: 250202c
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -2604,7 +2604,7 @@ xoso.com.vn##.headermobi.header-content
 
 ! CodeVN
 
-! 1 thg 12, 2024 https://ios.codevn.net
+! 2 thg 2, 2025 https://ios.codevn.net
 ||ios.codevn.net^$popup
 ios.codevn.net##.header.jsx-arm64e
 ios.codevn.net###fuckyou_phatnguyxn
@@ -2613,7 +2613,9 @@ ios.codevn.net##div.m-3:nth-of-type(1)
 ios.codevn.net##div.m-3:nth-of-type(2)
 ios.codevn.net##.alert-info.alert.no-comments
 ios.codevn.net##.rounded.bg-light.entry-content
+ios.codevn.net##+js(set, handleAdPopup, noopFunc)
 ios.codevn.net##div.ads-single.mb-3.mt-1:nth-of-type(4)
+ios.codevn.net,link.codevn.net##+js(rmnt, script, afterRedirectUrl)
 ipacrack.com###text-3
 ipacrack.com###site-header > .clear.container
 ipacrack.com##.widget_custom_html.widget.widget_text
