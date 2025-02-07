@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250203f
+! Version: 250207a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -8,7 +8,8 @@
 ! ChangeLog: Tổng hợp bộ lọc từ các trình duyệt
 
 !___Tổng-Hợp_______________________________________
-$popup,third-party,domain=dropapk.to|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|clicknupload.cc|uploadocean.com|mega4upload.com|upfiles-urls.com|flash.getpczone.com|dashboard.ssplay.net|ipacrack.com|ios.codevn.net|upfiles.app|file.gocmod.com
+$popup,third-party,domain=dropapk.to|gocmod.com|file.gocmod.com|upfiles.io|upfiles.app|haxi.online|upfiles.com|upfilesurls.com|upfiles-urls.com|mega4up.org|hh3dhay.xyz|mixloads.com|vozforum.org|uploaded.net|rarbgway.org|fmoviesto.cc|ipacrack.com|uploadrar.com|unlockapk.com|userupload.in|watchseries.pe|animevietsub.*|ios.codevn.net|hypershort.com|apkmoddone.com|clicknupload.cc|uploadocean.com|mega4upload.com|flash.getpczone.com|dashboard.ssplay.net
+
 ##div[class^="jw-logo"]
 
 vn-z.vn,voz.vn##.p-body-sidebar
@@ -163,6 +164,151 @@ ouo.io,frdl.to,kohi.vn,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shope
 
 wi.cr,ckk.ai,clk.sh,oko.sh,vnit.vn,vnav.vn,tiny.do,fnote.me,idsly.cc,short.pe,ipinfo.io,ipapi.com,upload.ac,lopte.pro,filerio.in,filedot.to,tuoitre.vn,link1s.com,upfiles.io,up-load.io,123link.pw,tmearn.com,megaurl.in,metechy.co,checkip.vip,nhattao.com,file-up.org,katfile.com,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,tuoi69zz.com,bianhot.site,kolombox.com,viettuans.vn,chedrive.com,uploadev.org,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,u.pcloud.link,hdvietnam.com,flash.getpczone.com,uploadrar.com,chedrives.com,douploads.com,drop.download,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,www.rawask.com,ios.codevn.net,www.checkip.hk,shrinkearn.com,downmienphi.com,downmienphi.net,xosodaiphat.com,link.codevn.net,thuviensoft.net,uploadocean.com,www.123link.biz,count.vipurl.in,www.waveform.com,blog.cloud365.vn,browserleaks.com,tiengnhatpro.net,www.centfile.com,techy.veganab.co,dienmaycholon.vn,pandaznetwork.com,links.apksvip.com,bangkeocaonghe.vn,short.katflys.com,beta.shortearn.eu,dl.tech-story.net,www.snbforums.com,www.sammobile.com,www.draytek.com.tw,123link.ghego.site,file.apkmoddone.com,keyboard-test.space,www.file-upload.com,www.myfutureguide.in,download.baominh.tech,short.pandaznetwork.com,getlink.tienichmaytinh.net,123link.carpartsviet31.site##footer
 !_________________________________
+! 3 thg 2, 2025 https://appdoze.com
+appdoze.com###footer
+appdoze.com##.comments-area.box
+
+! 3 thg 2, 2025 https://damag.net
+damag.net###hide
+damag.net##div.row:nth-of-type(2)
+
+! 5 thg 2, 2025 https://ww.smallshorts.com
+ww.smallshorts.com##footer
+ww.smallshorts.com###cookie-pop
+ww.smallshorts.com##.navbar-default.navbar
+
+! 5 thg 2, 2025 https://bheemjyoti.in
+bheemjyoti.in###foo
+bheemjyoti.in###overlay
+bheemjyoti.in##.site-footer
+bheemjyoti.in##.comments-area
+bheemjyoti.in##p:nth-of-type(n+1)
+bheemjyoti.in##div[id^="div-gpt-ad-"]
+bheemjyoti.in##.has-inline-mobile-toggle.site-header
+bheemjyoti.in##.category-healthcare.hentry.format-standard.status-publish.type-post.post.post-3035
+bheemjyoti.in##.category-top-hospitals.category-healthcare.hentry.format-standard.status-publish.type-post.post.post-3027
+bheemjyoti.in##.category-top-hospitals.category-healthcare.hentry.format-standard.status-publish.type-post.post.post-3039
+bheemjyoti.in##.category-top-hospitals.category-healthcare.hentry.format-standard.status-publish.type-post.post.post-3041
+bheemjyoti.in##.category-top-hospitals.category-healthcare.hentry.format-standard.status-publish.type-post.post.post-3043
+
+! 5 thg 2, 2025 https://sasthoidami.com
+sasthoidami.com###foo
+sasthoidami.com###overlay
+sasthoidami.com##.site-footer
+sasthoidami.com##.comments-area
+sasthoidami.com##div[id^="div-gpt-ad-"]
+sasthoidami.com##.hfeed.container.grid-container.site
+sasthoidami.com##.has-inline-mobile-toggle.site-header
+sasthoidami.com##.category-healthcare.category-health.hentry.format-standard.status-publish.type-post.post.post-618
+
+! 6 thg 2, 2025 https://9exams.com
+9exams.com##h1
+9exams.com##.adb
+9exams.com##p:nth-of-type(n+0)
+9exams.com##li:nth-of-type(n+0)
+9exams.com##h2:nth-of-type(n+0)
+9exams.com##h3:nth-of-type(n+0)
+9exams.com###advertisement-block
+9exams.com##div[id^="div-gpt-ad-"]
+9exams.com##blockquote:nth-of-type(n+0)
+
+! 5 thg 2, 2025 https://www.happymod.to
+www.happymod.to##.modCon
+www.happymod.to##.footer-style
+www.happymod.to##.mtop20.clearfix
+www.happymod.to##div.box:nth-of-type(4)
+www.happymod.to##a.appdetail-btn:nth-of-type(2)
+www.happymod.to##div.secondary-btn.appdetail-btn > p
+
+! 5 thg 2, 2025 https://happymod.com
+happymod.com##.fot-fixd
+happymod.com##.ad-new-box
+happymod.com##.download-desc
+happymod.com##.container-right
+happymod.com##.pdt-btn-msg.clearfix
+happymod.com##div.part:nth-of-type(n+1)
+happymod.com##.container-left > .clearfix
+happymod.com##a.download-btn:nth-of-type(1)
+happymod.com##div.content-li.later:nth-of-type(10)
+happymod.com##.downloading.cbox > .dtlink.download-btn
+
+! 5 thg 2, 2025 https://hypershort.com
+hypershort.com##fieldset
+hypershort.com###nav-header
+hypershort.com##.click-form
+hypershort.com##.main-footer
+hypershort.com###preview-link
+hypershort.com##.home-heading
+hypershort.com##.steps-to-earn
+hypershort.com##.register-banner
+hypershort.com##.partners-container
+hypershort.com##.linkcontain > button
+
+! 5 thg 2, 2025 https://www.sitemini.io.vn
+www.sitemini.io.vn##.arWG
+www.sitemini.io.vn##footer
+www.sitemini.io.vn##.brdCmb
+www.sitemini.io.vn##.pgs.header
+www.sitemini.io.vn##.itm.aTtl.pTtl
+www.sitemini.io.vn##.blogAd > .section
+www.sitemini.io.vn##div.ls:nth-of-type(n+1)
+
+! 5 thg 2, 2025 https://apkmoddone.phongroblox.com
+apkmoddone.phongroblox.com##.pSh
+apkmoddone.phongroblox.com##.pGV
+apkmoddone.phongroblox.com###aChp
+apkmoddone.phongroblox.com##footer
+apkmoddone.phongroblox.com##.pFoot
+apkmoddone.phongroblox.com##.blogMn
+apkmoddone.phongroblox.com##.header
+apkmoddone.phongroblox.com##.brdCmb
+apkmoddone.phongroblox.com##.separator
+apkmoddone.phongroblox.com##.Blog.widget
+apkmoddone.phongroblox.com##.ps.pSml.pInf
+apkmoddone.phongroblox.com##.sidebar.blogItm
+apkmoddone.phongroblox.com##p:nth-of-type(n+0)
+apkmoddone.phongroblox.com##.itm.sml.aTtl.pTtl
+apkmoddone.phongroblox.com##.FeaturedPost.widget
+apkmoddone.phongroblox.com###postBody > .HTML.widget
+
+! 6 thg 2, 2025 https://60fps.one
+60fps.one##.site-footer
+60fps.one##.secondary.widget-area
+60fps.one##.ast-breadcrumbs-wrapper
+60fps.one##.ast-related-posts-wrapper
+60fps.one##.post-navigation.navigation
+60fps.one##.ast-related-posts-title-section
+60fps.one##.single-layout-1.ast-post-format-
+60fps.one##.comment-form-position-below.comments-area
+60fps.one##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
+! 3 thg 2, 2025 https://download.kenhtao.net | https://ipa.kenhtao.net
+kenhtao.net##.wrap-footer
+ipa.kenhtao.net##.footer_new
+kenhtao.net##.social-section
+kenhtao.net##.desktop-ad-social
+download.kenhtao.net##.text-left
+download.kenhtao.net###cookie-pop
+download.kenhtao.net##.box-main > h4
+download.kenhtao.net##.copyright-container
+download.kenhtao.net##.navbar-default.navbar
+
+! 3 thg 2, 2025 https://ipaomtk.com
+ipaomtk.com##.footer
+ipaomtk.com##.no-comments
+ipaomtk.com##.advertisement
+ipaomtk.com##.f-app-main-text > .advertisement
+
+! 6 thg 2, 2025 https://bochickenstore.com
+bochickenstore.com##.sm-active.sm-wrapper
+
+! 4 thg 2, 2025 https://m.leeapks.com
+m.leeapks.com##.site-main
+m.leeapks.com##.site-header
+m.leeapks.com###footer-container
+m.leeapks.com##.pos-stickymenu.top-header
+m.leeapks.com##div.col-md-12:nth-of-type(1)
+leeapks.com##.perfecty-push-dialog-container.site
 
 ! 30 thg 1, 2025 https://sabkiyojana.com
 sabkiyojana.com###myNextInst
@@ -188,9 +334,6 @@ technoinformations.com##.background-overlay
 
 ! 9 thg 1, 2025 https://worldmak.com
 worldmak.com###main-container
-
-! 9 thg 1, 2025 https://leeapks.com
-leeapks.com##.perfecty-push-dialog-container.site
 
 ! 9 thg 1, 2025 https://timfshare.com
 timfshare.com##.mui-znjaa1.MuiBox-root
@@ -322,6 +465,8 @@ shortxlinks.com##.bg_cover.footer-area
 shortxlinks.com##.text-white.bg-primary
 
 ! 3 thg 2, 2025 gplinks.co
+! 3 thg 2, 2025 https://taxsearchhelp.com
+taxsearchhelp.com##h2.wp-block-heading:nth-of-type(n+1)
 biharakhbar.in,taxsearchhelp.com##h4.wp-block-heading
 biharakhbar.in,taxsearchhelp.com##ol.wp-block-list:nth-of-type(n+1)
 biharakhbar.in,insurifying.com,taxsearchhelp.com##p:nth-of-type(n+0)
@@ -827,12 +972,19 @@ mytour.vn##.Footer_container__m0n0r
 mytour.vn##.top-0.sticky.z-10.bg-\[\#cb002d\].w-\[100\%\]
 mytour.vn##.sm\:p-3.sm\:border.top-24.sticky.mt-3.font-semibold.min-h-min.border-0.rounded-xl.p-0.relate-blog > [href^="https://mytour.vn/uu-dai/uu-dai-tung-bung-don-mung-nam-moi-khach-san-giam-300k"]
 
-! 7 thg 1, 2025 https://frdl.to
+! 6 thg 2, 2025 https://frdl.io
+frdl.io##ol
+frdl.io##.footer
+frdl.io##.seperate
+frdl.io##.btn-lg.btn-warning.btn
+frdl.io##.d-sm-block.d-none.report
+frdl.io##.mb-4.col-md-8 > .row > b
+frdl.io##.fixed-top.bg-freedlink.header
 frdl.to##ol
 frdl.to###fdmMsg
 frdl.to##.report
-frdl.to##.seperate
 frdl.to##.done > b
+frdl.to##.seperate
 frdl.to###sharebuttons
 frdl.to##.btn-lg.btn-warning.btn
 frdl.to##.navbar-expand-lg.navbar
@@ -1866,7 +2018,8 @@ loanhelpful.net##.dark-widgetized-area.dark-skin.site-footer
 loanhelpful.net##.mobile-header-default.has-normal-width-logo.has-shadow.top-nav-above.top-nav-default-light.top-nav-light.top-nav-active.no-stream-item.main-nav-
 loanhelpful.net##.mobile-header-default.has-normal-width-logo.has-shadow.top-nav-above.top-nav-default-light.top-nav-light.top-nav-active.no-stream-item.main-nav-boxed.main-nav-below.main-nav-default-dark.main-nav-dark.header-layout-3.theme-header
 
-! 2023-05-06 https://count.vipurl.in
+! 2025-02-07 https://count.vipurl.in
+@@||count.vipurl.in/js/ads.js^
 count.vipurl.in##center:nth-of-type(1)
 count.vipurl.in##center:nth-of-type(2)
 count.vipurl.in##.navbar-default.navbar
@@ -2598,8 +2751,7 @@ vnexpress.net##.box-category__list-news > .sidebar-2
 xoso.com.vn##.headermobi.header-content
 
 ! CodeVN
-
-! 2 thg 2, 2025 https://ios.codevn.net
+! 3 thg 2, 2025 https://ios.codevn.net | https://link.codevn.net
 ||ios.codevn.net^$popup
 ios.codevn.net##.header.jsx-arm64e
 ios.codevn.net###fuckyou_phatnguyxn
@@ -2610,7 +2762,12 @@ ios.codevn.net##.alert-info.alert.no-comments
 ios.codevn.net##.rounded.bg-light.entry-content
 ios.codevn.net##+js(set, handleAdPopup, noopFunc)
 ios.codevn.net##div.ads-single.mb-3.mt-1:nth-of-type(4)
+ios.codevn.net##div.ads-single.mb-3.mt-1:nth-of-type(n+1)
 ios.codevn.net,link.codevn.net##+js(rmnt, script, afterRedirectUrl)
+link.codevn.net##.banner-468x60.banner
+link.codevn.net##.banner-728x90.banner
+link.codevn.net##.banner-336x280.banner
+link.codevn.net##div.banner-captcha.banner:nth-of-type(n+1)
 ipacrack.com###text-3
 ipacrack.com###site-header > .clear.container
 ipacrack.com##.widget_custom_html.widget.widget_text
@@ -2938,13 +3095,6 @@ real-debrid.com##[href="/"]
 
 ! 2022-07-14 https://www.tranducit.com
 www.tranducit.com##.showfp.section.Sidebar1
-
-! 2022-07-14 https://happymod.com
-happymod.com##.fot-fixd
-happymod.com##.ad-new-box
-happymod.com##.container-right
-happymod.com##.pdt-btn-msg.clearfix
-happymod.com##.container-left > .clearfix
 
 ! 2022-07-28 https://plati.market
 plati.market##.gdpr
@@ -3466,9 +3616,6 @@ kbytcq.khambenh.gov.vn##.px-1.khaibaoyte.container > div.row
 kbytcq.khambenh.gov.vn##.px-1.khaibaoyte.container > div.row > .text-center.col-12
 kbytcq.khambenh.gov.vn##div.mt-1.col-12 > .mt-1.font-weight-bold
 kenh14.vn###kenh14-footer-wrapper
-kenhtao.net##.desktop-ad-social
-kenhtao.net##.social-section
-kenhtao.net##.wrap-footer
 khangthinh.net.vn###divAdLeft
 khangthinh.net.vn###divAdRight
 kichnguon.com##.mfp-content
@@ -4116,6 +4263,21 @@ uploadrar.com##div.download0page:nth-of-type(4)
 uploadrar.com##.col-lg-8.col-md-8.col-sm-12.col-xs-12
 uploadrar.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
 
+! 7 thg 1, 2025 https://flash.getpczone.com
+flash.getpczone.com##.txt
+flash.getpczone.com##.title
+flash.getpczone.com###footer2
+flash.getpczone.com##.banner2
+flash.getpczone.com###news_last
+flash.getpczone.com##.sharefile
+flash.getpczone.com##.icofont-zipped
+flash.getpczone.com##[src*="/watch"]
+flash.getpczone.com##.fileoption > ul
+flash.getpczone.com##[src="about:blank"]
+flash.getpczone.com###gdpr-cookie-notice
+flash.getpczone.com##.btn-lg.btn-info.btn
+flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
+
 ! 16 thg 11, 2024 https://mega4upload.com
 ||weaped.com
 mega4upload.com##center > .title
@@ -4142,22 +4304,28 @@ dailyuploads.net##.navbar-inner
 ||dailyuploads.net/images_mega/download_complete.png$image
 dailyuploads.net##[href="https://ninjapcsoft.com/category/adobe-software//"]
 
-! 7 thg 1, 2025 https://flash.getpczone.com
-flash.getpczone.com##.txt
-flash.getpczone.com##.title
-flash.getpczone.com###footer2
-flash.getpczone.com##.banner2
-flash.getpczone.com###news_last
-flash.getpczone.com##.sharefile
-flash.getpczone.com##.icofont-zipped
-flash.getpczone.com##[src*="/watch"]
-flash.getpczone.com##.fileoption > ul
-flash.getpczone.com##[src="about:blank"]
-flash.getpczone.com###gdpr-cookie-notice
-flash.getpczone.com##.btn-lg.btn-info.btn
-flash.getpczone.com##.col-md-offset-2.col-lg-4.col-md-4.col-sm-12.col-xs-12
+! 7 thg 2, 2025 UpFiles | haxi.online
+haxi.online##.faqs
+haxi.online##footer
+haxi.online##header
+haxi.online##.spacer
+haxi.online##.divider
+haxi.online##fieldset
+haxi.online##[id^="ad-"]
+haxi.online##.mt-1.mb-4.file-title
+haxi.online##.text-center > .my-3.ad-element
+haxi.online###file-captcha > .my-3.ad-element
+haxi.online##.d-block.text-center.alert-danger.alert
 
-! 8 thg 1, 2025 upfiles
+upfiles.io,haxi.online,upfiles.app,upfiles.com,upfilesurls.com,upfiles-urls.com#@#.ad-inner
+upfiles.io,haxi.online,upfiles.app,upfiles.com,upfilesurls.com,upfiles-urls.com#@#.ad-element
+upfiles.io,haxi.online,upfiles.app,upfiles.com,upfilesurls.com,upfiles-urls.com#%#//scriptlet('prevent-window-open')
+upfiles.io,haxi.online,upfiles.app,upfiles.com,upfilesurls.com,upfiles-urls.com#%#//scriptlet("set-constant", "blurred", "false")
+upfiles.io,haxi.online,upfiles.app,upfiles.com,upfilesurls.com,upfiles-urls.com#%#//scriptlet('set-constant', 'shouldOpenPopUp', 'false')
+upfiles.io,haxi.online,upfiles.app,upfiles.com,upfilesurls.com,upfiles-urls.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
+
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=upfiles.io|haxi.online|upfiles.app|upfiles.com|upfilesurls.com|upfiles-urls.com
+
 /^.*?upfiles.*?$/##.faqs
 /^.*?upfiles.*?$/##footer
 /^.*?upfiles.*?$/##header
@@ -4187,8 +4355,8 @@ upfiles-urls.com##.mt-1.mb-4.file-title
 
 upfiles.app##+js(rmnt, script, click)
 upfiles.app##+js(rmnt, script, hk6vdj4z)
-upfiles.app##+js(rmnt, script, dseveralmefarketi)
 upfiles.app##^script:has-text(onpopstate)
+upfiles.app##+js(rmnt, script, dseveralmefarketi)
 
 ||dseveralmefarketi.com^
 ||ukuleqasforsale.com^
@@ -4332,6 +4500,7 @@ file-up.org##.page-wrap > div.text-center:nth-of-type(2)
 file-up.org##.text-center.page-wrap > div:nth-of-type(2) > .row
 file-up.org##.text-center.col-md-offset-3.col-md-6 > div:nth-of-type(1)
 
+! 6 thg 2, 2025 https://katfile.com
 katfile.com##.style3
 katfile.com##.free > li > span
 katfile.com##.hidden-xs.col-sm-4
@@ -4340,6 +4509,7 @@ katfile.com##span.sp:nth-of-type(1)
 katfile.com##span.sp:nth-of-type(2)
 katfile.com##div.col-sm-4:nth-of-type(3)
 katfile.com##.navbar-static-top.navbar-default.navbar
+katfile.com##[src="https://katfile.com/images/h527515_dl.gif"]
 
 ! 2023-12-08 https://www.file-upload.org
 www.file-upload.org##.stdt
