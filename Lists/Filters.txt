@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250207a
+! Version: 250208a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -271,6 +271,20 @@ apkmoddone.phongroblox.com##.itm.sml.aTtl.pTtl
 apkmoddone.phongroblox.com##.FeaturedPost.widget
 apkmoddone.phongroblox.com###postBody > .HTML.widget
 
+! 7 thg 2, 2025 https://agrisathi.com
+agrisathi.com##.site-footer
+agrisathi.com##p:nth-of-type(n+1)
+agrisathi.com##li:nth-of-type(n+0)
+agrisathi.com##h3.wp-block-heading
+agrisathi.com##.secondary.widget-area
+agrisathi.com##.post-navigation.navigation
+agrisathi.com##h4.wp-block-heading:nth-of-type(n+0)
+agrisathi.com##.comment-form-position-below.comments-area
+agrisathi.com##.single-layout-1.ast-post-format- > .entry-header
+agrisathi.com##.ast-container--.ast-single-related-posts-container
+agrisathi.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_72
+agrisathi.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
 ! 6 thg 2, 2025 https://60fps.one
 60fps.one##.site-footer
 60fps.one##.secondary.widget-area
@@ -465,8 +479,9 @@ shortxlinks.com##.bg_cover.footer-area
 shortxlinks.com##.text-white.bg-primary
 
 ! 3 thg 2, 2025 gplinks.co
-! 3 thg 2, 2025 https://taxsearchhelp.com
-taxsearchhelp.com##h2.wp-block-heading:nth-of-type(n+1)
+gplinks.co##.bg-soft-primary
+gplinks.co##.content-wrapper > .mb-2.navbar-light.transparent.center-nav.navbar-expand-lg.navbar
+
 biharakhbar.in,taxsearchhelp.com##h4.wp-block-heading
 biharakhbar.in,taxsearchhelp.com##ol.wp-block-list:nth-of-type(n+1)
 biharakhbar.in,insurifying.com,taxsearchhelp.com##p:nth-of-type(n+0)
@@ -478,6 +493,10 @@ biharakhbar.in,insurifying.com,taxsearchhelp.com##.comment-form-position-below.c
 biharakhbar.in,insurifying.com,taxsearchhelp.com##.single-layout-1.ast-post-format- > .entry-header
 biharakhbar.in,insurifying.com,taxsearchhelp.com##.ast-container--.ast-single-related-posts-container
 insurifying.com,taxsearchhelp.com##.ast-mobile-header-inline.ast-builder-menu-toggle-icon.ast-hide-custom-menu-mobile.ast-logo-title-inline.ast-primary-menu-enabled.header-main-layout-1.site-header
+
+taxsearchhelp.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_71
+taxsearchhelp.com##h2.wp-block-heading:nth-of-type(n+1)
+taxsearchhelp.com##h3.wp-block-heading:nth-of-type(n+0)
 
 ! 20 thg 1, 2025 https://biharakhbar.in
 biharakhbar.in###myNextInst
@@ -491,14 +510,6 @@ biharakhbar.in##.ez-toc-container-direction.ez-toc-custom.ez-toc-counter.counter
 insurifying.com##ol.wp-block-list:nth-of-type(n+0)
 insurifying.com##h4.wp-block-heading:nth-of-type(n+1)
 insurifying.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_72
-
-! 3 thg 2, 2025 https://taxsearchhelp.com | gplinks.co
-taxsearchhelp.com##h3.wp-block-heading:nth-of-type(n+0)
-taxsearchhelp.com##.ez-toc-container-direction.ez-toc-grey.ez-toc-counter.counter-hierarchy.ez-toc-v2_0_71
-
-! 20 thg 1, 2025 https://gplinks.co
-gplinks.co##.content-wrapper > .mb-2.navbar-light.transparent.center-nav.navbar-expand-lg.navbar
-gplinks.co##.bg-soft-primary
 
 ! 20 thg 1, 2025 https://hindimeadvice.com
 hindimeadvice.com##.comments-area
@@ -2414,22 +2425,17 @@ mrlaptop.vn##.kksr-align-center.kksr-valign-bottom.kk-star-ratings
 ! 17 thg 1, 2025 https://gocmod.com
 gocmod.com##center
 gocmod.com##.view-app-rate
+gocmod.com##^script:has-text(shopee)
 forum.gocmod.com##.p-body-pageContent > li
-||forum.gocmod.com/data/avatars/*/*/2.jpg$image
 forum.gocmod.com##.blockMessage--none.blockMessage
 forum.gocmod.com##.js-bottomFixTarget.u-bottomFixer
 forum.gocmod.com##.js-notices.notices--block.notices
 forum.gocmod.com##.samCustomSize.samAlignCenter.samCodeUnit
+||cdn.statically.io^$domain=gocmod.com
+||forum.gocmod.com/data/avatars/*/*/2.jpg$image
+
 
 ! 03 thg 2, 2025 https://file.gocmod.com
-file.gocmod.com##+js(set, ads, [])
-file.gocmod.com##+js(set, banners, [])
-file.gocmod.com##+js(set, banner, null)
-file.gocmod.com##script:contains(shopee)
-file.gocmod.com##+js(set, randomAd, null)
-!file.gocmod.com##+js(set, document.write, noopFunc => {})
-!file.gocmod.com##+js(set, document.getElementById, noopFunc => {})
-
 file.gocmod.com##.active.nav-bar
 file.gocmod.com##.mt-5.file-card
 file.gocmod.com##.mt-5.file-links
@@ -2437,6 +2443,7 @@ file.gocmod.com##div:nth-of-type(6)
 file.gocmod.com##div.col:nth-of-type(5)
 file.gocmod.com##div.mt-5:nth-of-type(2)
 file.gocmod.com##div.mt-5:nth-of-type(4)
+file.gocmod.com##^script:has-text(shopee)
 
 ! 2022-12-15 https://wiki.manjaro.org
 wiki.manjaro.org###mw-data-after-content
@@ -2632,7 +2639,11 @@ www.takez.co###wrapper-indzign
 www.takez.co###toshowshortlink
 www.takez.co###minisite > .section.header
 
-! 2024-01-23 https://forum.release-apk.com
+! 2025-02-08 https://forum.release-apk.com
+@@||forum.release-apk.com^$generichide
+@@||adskeeper.com^$domain=forum.release-apk.com
+@@||www.googletagmanager.com^$domain=forum.release-apk.com
+@@||pagead2.googlesyndication.com^$domain=forum.release-apk.com
 forum.release-apk.com###M431771ScriptRootC1498896
 forum.release-apk.com###page-body > .forumbg > .inner > .topics.topiclist
 forum.release-apk.com##.cc-color-override--1687565279.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
