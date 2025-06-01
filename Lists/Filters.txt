@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Version: 250212a
+! Version: 250601a
 ! Title: xem.li/ads | tiny.cc/_a | bit.ly/_qc | bom.to/loc | mily.vn/ads
 ! Expires: 1 days
 ! Homepage: xem.li/ads | tiny.cc/_a
@@ -159,11 +159,11 @@ bikae.net,bjp.org.in,nearjob.in,canhme.com,namlee.net,disheye.com,techarmor.xyz,
 
 wi.cr,ckk.ai,oko.sh,tiny.do,short.pe,lopte.pro,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.pro,megaurl.top,uploadev.org,megaurl.club,licklink.net,megaurl.link,shareyou.pro,ez4linkss.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,www.123link.biz,eta.shortearn.eu,short.pandaznetwork.com,pandaznetwork.com##.text-left
 
-www.expandurl.net,www.europeup.com,filedot.to,apkadmin.com,ouo.io,voz.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
+www.expandurl.net,www.europeup.com,filedot.to,apkadmin.com,ouo.io,.vn,pinfo.io,ouo.press,ile-up.org,eech.ninja,semawur.com,hedrive.com,ploadev.org,pkadmin.com,ouploads.com,pkadmin.com,ediafire.com,bayfiles.com,remiumleech.eu,sinhvienit.net,iengnhatpro.net,solidfiles.com,www.samsung.com,uploadocean.com,vietbeginner.com,ww.file-upload.com,www.upload-4ever.com,usinessnewscurrent.online###header
 
 wi.cr,ckk.ai,clk.sh,oko.sh,tiny.do,idsly.cc,short.pe,lopte.pro,note1s.com,123link.pw,tmearn.com,megaurl.in,metechy.co,cutpaid.com,123link.vip,123link.pro,paylink.pro,megaurl.top,xemlink.net,freenote.biz,megaurl.club,licklink.net,megaurl.link,shareurl.pro,shareyou.pro,mneylink.com,loptelink.pro,ez4linkss.com,cyahealth.com,adangamer.com,share4you.pro,safelinku.net,shrinkearn.com,link.codevn.net,count.vipurl.in,techy.veganab.co,links.apksvip.com,beta.shortearn.eu,dl.tech-story.net,pandaznetwork.com,indianshortner.com,123link.ghego.site,download.baominh.tech,short.pandaznetwork.com,123link.carpartsviet31.site###cookie-pop
 
-wi.cr,voz.vn,vn-z.vn,uploady.io,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,androiddatahost.com,www.freeproxy.world,flash.getpczone.com,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz,proxyium.com,mixrootmod.com##.adsbygoogle
+wi.cr,.vn,vn-z.vn,uploady.io,megaurl.in,modxda.com,kptools.net,mega4up.org,xemlink.net,kenhtao.net,megaurl.top,fastclick.to,megaurl.link,megaurl.club,www.comss.ru,hacktacks.com,ipchicken.com,safelinku.net,uploadrar.com,chedrives.com,drop.download,userupload.in,blogcafeit.com,ios.codevn.net,dropgalaxy.com,userupload.net,link.codevn.net,mega4upload.com,www.europeup.com,browserleaks.com,dailyuploads.net,links.apksvip.com,xe.baogiaothong.vn,androiddatahost.com,www.freeproxy.world,flash.getpczone.com,www.grimmstories.com,checkip.thaiware.com,atgt.baogiaothong.vn,pandaznetwork.freemodsapp.xyz,proxyium.com,mixrootmod.com##.adsbygoogle
 
 ouo.io,frdl.to,kohi.vn,tiki.vn,we25.vn,paste.ee,appdb.to,sendo.vn,vubey.yt,shopee.vn,lazada.vn,ouo.press,whoer.net,db-ip.com,m.genk.vn,vnmod.net,web1s.info,gocmod.com,up-load.io,thebank.vn,ipwhois.io,afamily.vn,phimwin.com,ghostbin.me,hh3dhay.xyz,kenhtao.net,kptools.net,xoso.com.vn,inksvip.net,vnpt.com.vn,taiwebs.com,vipshare.co,modsfire.com,apkcombo.app,www.gotit.vn,turbobit.net,phimnhua.net,anhdep24.com,br0wsers.com,thesafety.us,kolombox.com,animetvn.pro,happymod.com,anotepad.com,apkadmin.com,dlupload.com,vietsubtw.net,smartlink.vip,www.byboe.com,unlockapk.com,us.24h.com.vn,notepad4t.pro,iplocation.io,wiki.tino.org,vietnamnet.vn,surfshark.com,douploads.net,vnexpress.net,kinhtedothi.vn,rapidgator.net,nhaccuatui.com,sinhvienit.net,userscloud.com,dropgalaxy.com,filespayout.com,maytinhlion.com,tuhoconline.net,trainghiemso.vn,dnsleaktest.com,ip2location.com,financemonk.net,nguyenvanbao.com,link.karanpc.com,ww.speedtest.net,dailyuploads.net,member.ivacy.com,vinaphone.com.vn,www.mediafire.com,short.katflys.com,app.trangchu.news,fpttelecom.info.vn,www.geolocation.com,strongleakstest.com,www.ip2location.com,androidfilehost.com,www.grimmstories.com,www.thegioididong.com##.footer
 
@@ -4170,10 +4170,11 @@ xyhs.mad.buttobi.net##div:first-child > table:first-child
 
 !#########################################################################################################
 !___vOz____________________________________________
-! 29 thg 12, 2024 https://voz.vn
-voz.vn##.blockMessage--none.blockMessage
-||data.voz.vn/avatars/*/*/1726496.jpg$image
-||voz.vn/attachments/1734684192210-jpeg.2840011/$image
+! 01 thg 06, 2025 https://voz.vn
+voz.vn##div[class^="div-pw-"]:style(display:none!important)
+voz.vn##.p-body-sidebar,.p-body-sidebarCol:style(display:none!important)
+voz.vn##.p-body-pageContent:style(max-width: 100% !important;width: 100% !important;)
+voz.vn##.is-sticky:style(position: unset!important;)
 
 ||voz.vn/proxy.php?image=https://i.imgur.com$image
 ||voz.vn/proxy.php?image=https://0ms.dev/mirrors/i.imgur.com$image
